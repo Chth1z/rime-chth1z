@@ -1,9 +1,9 @@
 [package]
 name = "rime_zhiyi"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 license = "GPL-3.0-or-later"
-description = "In-process Lua 5.4 ONNX neural sentence reranker for Weasel/librime using Zhiyi 1.4V2-Long-L12 (Apache-2.0)"
+description = "In-process Lua 5.4 ONNX neural sentence reranker for Weasel/librime (Zhiyi ML-pumpkin-1103 KV-cache + Wanxiang .gram fusion + P2C synthesis)"
 
 [lib]
 crate-type = ["cdylib"]

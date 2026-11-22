@@ -6,18 +6,34 @@ use std::time::Instant;
 
 use ort::environment::Environment;
 use ort::session::{builder::GraphOptimizationLevel, Session};
-use ort::value::Tensor;
+use ort::value::{Tensor, TensorRef};
 use serde::Deserialize;
 use tokenizers::Tokenizer;
 
+use crate::gram::WanxiangGram;
 use crate::pinyin::{full_pinyin_to_units, zrm_input_to_units};
 
 const CONTEXT_CHARS: usize = 128;
 const LRU_CAPACITY: usize = 256;
+const KV_CACHE_CAPACITY: usize = 16;
+
+#[derive(Deserialize)]
+struct MlSubConfig {
+    #[serde(default = "default_old_chars")]
+    old_chars: usize,
+    #[serde(default)]
+    pinyin: HashMap<String, Vec<String>>,
+}
+
+fn default_old_chars() -> usize {
+    6163
+}
 
 #[derive(Deserialize)]
 struct UnifiedVocabFile {
     units: Vec<String>,
+    #[serde(default)]
+    chars: Vec<String>,
     readings: HashMap<String, Vec<String>>,
     #[serde(default = "default_max_slots")]
     max_slots: usize,
@@ -25,6 +41,8 @@ struct UnifiedVocabFile {
     choice_context_tokens: usize,
     #[serde(default = "default_cand_tokens")]
     choice_candidate_tokens: usize,
+    #[serde(default)]
+    ml: Option<MlSubConfig>,
 }
 
 fn default_max_slots() -> usize {
@@ -37,6 +55,46 @@ fn default_cand_tokens() -> usize {
     16
 }
 
+#[derive(Clone, Copy)]
+pub struct FusionWeights {
+    pub w_logit: f64,
+    pub w_rank: f64,
+    pub w_gram: f64,
+    pub w_char_lp: f64,
+    pub w_ctx_lp: f64,
+}
+
+impl Default for FusionWeights {
+    fn default() -> Self {
+        Self {
+            w_logit: 0.91,
+            w_rank: -1.26,
+            w_gram: 0.05,
+            w_char_lp: 0.40,
+            w_ctx_lp: -0.39,
+        }
+    }
+}
+
+#[derive(Clone)]
+pub struct RerankResult {
+    pub order: Vec<usize>,
+    pub p2c_text: Option<String>,
+    pub p2c_pos: u8, // 0 = none, 1 = top-1, 2 = top-2
+    pub logits: Vec<f32>,
+    pub gram_deltas: Vec<f32>,
+    pub char_lps: Vec<f32>,
+}
+
+#[derive(Clone)]
+struct CachedEval {
+    logits: Vec<f32>,
+    gram_deltas: Vec<f32>,
+    char_lps: Vec<f32>,
+    p2c_text: Option<String>,
+    p2c_margin: f32,
+}
+
 #[derive(Hash, PartialEq, Eq, Clone)]
 struct CacheKey {
     ctx_tail: String,
@@ -45,17 +103,34 @@ struct CacheKey {
     cands: Vec<String>,
 }
 
+struct ContextKv {
+    p: usize,
+    enc_k: Vec<f32>,
+    enc_v: Vec<f32>,
+    choice_k: Vec<f32>,
+    choice_v: Vec<f32>,
+    mask: Vec<bool>,
+}
+
 pub struct ZhiyiStats {
     pub calls: u64,
     pub cache_hits: u64,
+    pub kv_hits: u64,
     pub total_infer_ms: f64,
+    pub fused_kv: bool,
+    pub has_gram: bool,
 }
 
 pub struct ZhiyiEngine {
     model_dir: PathBuf,
     session: Session,
+    use_fused_kv: bool,
     tokenizer: Tokenizer,
     unit_ids: HashMap<String, i64>,
+    chars: Vec<String>,
+    char_to_id: HashMap<char, usize>,
+    syl_to_cids: HashMap<String, Vec<usize>>,
+    old_chars: usize,
     readings: HashMap<String, Vec<String>>,
     valid_syllables: HashSet<String>,
     max_slots: usize,
@@ -64,7 +139,9 @@ pub struct ZhiyiEngine {
     cls_id: i64,
     sep_id: i64,
     mask_id: i64,
-    lru_map: HashMap<CacheKey, Vec<f32>>,
+    gram: Option<WanxiangGram>,
+    kv_cache: VecDeque<(String, ContextKv)>,
+    lru_map: HashMap<CacheKey, CachedEval>,
     lru_order: VecDeque<CacheKey>,
     pub stats: ZhiyiStats,
 }
@@ -87,7 +164,7 @@ fn ensure_ort_env(ort_dll: &Path) -> Result<&'static Environment, String> {
         .map_err(|e| e.clone())
 }
 
-pub fn init_engine(model_dir: &Path, ort_dll: &Path, threads: usize) -> Result<(), String> {
+pub fn init_engine(model_dir: &Path, ort_dll: &Path, gram_path: Option<&Path>, threads: usize) -> Result<(), String> {
     if let Some(m) = ENGINE.get() {
         let g = m.lock().map_err(|_| "engine mutex poisoned".to_string())?;
         if g.model_dir == model_dir {
@@ -98,7 +175,18 @@ pub fn init_engine(model_dir: &Path, ort_dll: &Path, threads: usize) -> Result<(
 
     let ort_env = ensure_ort_env(ort_dll)?;
 
-    let onnx_path = model_dir.join("laya.int8g.onnx");
+    // Prefer fused KV-cache graph (ML-pumpkin-1103) when present; fallback to whole graph
+    let fused_path = model_dir.join("laya.one.fused.int8g.onnx");
+    let kv_path = model_dir.join("laya.one.int8g.onnx");
+    let whole_path = model_dir.join("laya.int8g.onnx");
+    let (onnx_path, use_fused_kv) = if fused_path.is_file() {
+        (fused_path, true)
+    } else if kv_path.is_file() {
+        (kv_path, true)
+    } else {
+        (whole_path, false)
+    };
+
     let tok_path = model_dir.join("tokenizer.json");
     let vocab_path = model_dir.join("unified_vocab.json");
 
@@ -114,6 +202,36 @@ pub fn init_engine(model_dir: &Path, ort_dll: &Path, threads: usize) -> Result<(
             valid_syllables.insert(syl.to_string());
         }
         unit_ids.insert(name, idx as i64);
+    }
+
+    let mut char_to_id: HashMap<char, usize> = HashMap::with_capacity(uv.chars.len());
+    for (idx, s) in uv.chars.iter().enumerate() {
+        if let Some(ch) = s.chars().next() {
+            if s.chars().count() == 1 {
+                char_to_id.insert(ch, idx);
+            }
+        }
+    }
+
+    let old_chars = uv.ml.as_ref().map(|m| m.old_chars).unwrap_or(uv.chars.len()).min(uv.chars.len());
+    let pinyin_src = uv
+        .ml
+        .as_ref()
+        .filter(|m| !m.pinyin.is_empty())
+        .map(|m| &m.pinyin)
+        .unwrap_or(&uv.readings);
+
+    let mut syl_to_cids: HashMap<String, Vec<usize>> = HashMap::with_capacity(450);
+    for (ch_str, rlist) in pinyin_src {
+        if let Some(ch) = ch_str.chars().next() {
+            if let Some(&cid) = char_to_id.get(&ch) {
+                if cid < old_chars {
+                    for syl in rlist {
+                        syl_to_cids.entry(syl.clone()).or_default().push(cid);
+                    }
+                }
+            }
+        }
     }
 
     let tokenizer = Tokenizer::from_file(&tok_path)
@@ -140,11 +258,25 @@ pub fn init_engine(model_dir: &Path, ort_dll: &Path, threads: usize) -> Result<(
         .commit_from_file(&onnx_path)
         .map_err(|e| format!("load {}: {}", onnx_path.display(), e))?;
 
+    let gram = gram_path.and_then(|gp| {
+        if gp.is_file() {
+            WanxiangGram::open(gp, -15.5, -4.0).ok()
+        } else {
+            None
+        }
+    });
+    let has_gram = gram.is_some();
+
     let mut engine = ZhiyiEngine {
         model_dir: model_dir.to_path_buf(),
         session,
+        use_fused_kv,
         tokenizer,
         unit_ids,
+        chars: uv.chars,
+        char_to_id,
+        syl_to_cids,
+        old_chars,
         readings: uv.readings,
         valid_syllables,
         max_slots: uv.max_slots,
@@ -153,34 +285,35 @@ pub fn init_engine(model_dir: &Path, ort_dll: &Path, threads: usize) -> Result<(
         cls_id,
         sep_id,
         mask_id,
+        gram,
+        kv_cache: VecDeque::with_capacity(KV_CACHE_CAPACITY + 2),
         lru_map: HashMap::with_capacity(LRU_CAPACITY + 16),
         lru_order: VecDeque::with_capacity(LRU_CAPACITY + 16),
         stats: ZhiyiStats {
             calls: 0,
             cache_hits: 0,
+            kv_hits: 0,
             total_infer_ms: 0.0,
+            fused_kv: use_fused_kv,
+            has_gram,
         },
     };
 
-    // Single untimed warmup pass so kernels are paged in before the user's first sentence
+    // Single untimed warmup pass (also pre-populates empty-context KV cache!)
     let warmup_cands = vec!["你好".to_string(), "拟好".to_string()];
-    let _ = engine.score_candidates("", "nihk", true, &warmup_cands);
+    let _ = engine.evaluate("", "nihk", true, &warmup_cands);
     engine.lru_map.clear();
     engine.lru_order.clear();
-    engine.stats = ZhiyiStats {
-        calls: 0,
-        cache_hits: 0,
-        total_infer_ms: 0.0,
-    };
+    engine.stats.calls = 0;
+    engine.stats.cache_hits = 0;
+    engine.stats.kv_hits = 0;
+    engine.stats.total_infer_ms = 0.0;
 
     let _ = ENGINE.set(Mutex::new(engine));
     Ok(())
 }
 
-/// Non-blocking background initialization for WeaselServer startup (returns in <0.1 ms).
-/// Until the background thread finishes (~1.2s), `rerank_indices` returns Err("not ready")
-/// immediately so typing is never stalled.
-pub fn init_engine_async(model_dir: PathBuf, ort_dll: PathBuf, threads: usize) {
+pub fn init_engine_async(model_dir: PathBuf, ort_dll: PathBuf, gram_path: Option<PathBuf>, threads: usize) {
     if ENGINE.get().is_some() {
         return;
     }
@@ -190,7 +323,7 @@ pub fn init_engine_async(model_dir: PathBuf, ort_dll: PathBuf, threads: usize) {
     let _ = std::thread::Builder::new()
         .name("rime-zhiyi-init".to_string())
         .spawn(move || {
-            if init_engine(&model_dir, &ort_dll, threads).is_err() {
+            if init_engine(&model_dir, &ort_dll, gram_path.as_deref(), threads).is_err() {
                 ASYNC_STARTED.store(false, Ordering::Release);
             }
         });
@@ -198,6 +331,12 @@ pub fn init_engine_async(model_dir: PathBuf, ort_dll: PathBuf, threads: usize) {
 
 pub fn is_ready() -> bool {
     ENGINE.get().is_some()
+}
+
+pub fn model_dir_path() -> Option<PathBuf> {
+    let mutex = ENGINE.get()?;
+    let eng = mutex.lock().ok()?;
+    Some(eng.model_dir.clone())
 }
 
 fn utf8_tail(s: &str, max_chars: usize) -> &str {
@@ -233,11 +372,7 @@ fn common_prefix_chars(cands: &[String]) -> usize {
         }
     }
     let min_len = cands.iter().map(|s| s.chars().count()).min().unwrap_or(0);
-    if lcp >= min_len {
-        0
-    } else {
-        lcp
-    }
+    if lcp >= min_len { 0 } else { lcp }
 }
 
 impl ZhiyiEngine {
@@ -253,13 +388,88 @@ impl ZhiyiEngine {
         }
     }
 
-    pub fn score_candidates(
+    fn compute_context_kv(&mut self, ctx_final: &str) -> Result<ContextKv, String> {
+        let mut ids: Vec<i64> = Vec::with_capacity(self.context_tokens + 2);
+        ids.push(self.cls_id);
+        if !ctx_final.is_empty() {
+            let cids = self.encode_ids(ctx_final);
+            let start = cids.len().saturating_sub(self.context_tokens);
+            ids.extend_from_slice(&cids[start..]);
+        }
+        ids.push(self.sep_id);
+        let p = ids.len();
+        let uids = vec![0i64; p];
+
+        let z_enc = vec![0.0f32; 12 * 6 * 64];
+        let z_ch = vec![0.0f32; 2 * 6 * 64];
+
+        let t_ids = Tensor::from_array(([1usize, p], ids)).map_err(|e| format!("ctx ids: {}", e))?;
+        let t_uid = Tensor::from_array(([1usize, p], uids)).map_err(|e| format!("ctx uid: {}", e))?;
+        let t_ek = TensorRef::from_array_view(([12usize, 1, 6, 1, 64], z_enc.as_slice())).map_err(|e| format!("ek: {}", e))?;
+        let t_ev = TensorRef::from_array_view(([12usize, 1, 6, 1, 64], z_enc.as_slice())).map_err(|e| format!("ev: {}", e))?;
+        let t_ck = TensorRef::from_array_view(([2usize, 1, 6, 1, 64], z_ch.as_slice())).map_err(|e| format!("ck: {}", e))?;
+        let t_cv = TensorRef::from_array_view(([2usize, 1, 6, 1, 64], z_ch.as_slice())).map_err(|e| format!("cv: {}", e))?;
+        let t_pm = Tensor::from_array(([1usize, 1], vec![false])).map_err(|e| format!("pm: {}", e))?;
+        let t_mp = Tensor::from_array(([1usize, 1], vec![0i64])).map_err(|e| format!("mp: {}", e))?;
+        let t_sp = Tensor::from_array(([1usize, 1], vec![0i64])).map_err(|e| format!("sp: {}", e))?;
+
+        let t0 = Instant::now();
+        let outputs = self
+            .session
+            .run(ort::inputs![
+                "input_ids" => t_ids,
+                "unit_ids" => t_uid,
+                "past_enc_k" => t_ek,
+                "past_enc_v" => t_ev,
+                "past_choice_k" => t_ck,
+                "past_choice_v" => t_cv,
+                "past_mask" => t_pm,
+                "marker_pos" => t_mp,
+                "slot_pos" => t_sp,
+            ])
+            .map_err(|e| format!("ctx run: {}", e))?;
+        self.stats.total_infer_ms += t0.elapsed().as_secs_f64() * 1000.0;
+
+        let (_, ek) = outputs["present_enc_k"].try_extract_tensor::<f32>().map_err(|e| format!("out ek: {}", e))?;
+        let (_, ev) = outputs["present_enc_v"].try_extract_tensor::<f32>().map_err(|e| format!("out ev: {}", e))?;
+        let (_, ck) = outputs["present_choice_k"].try_extract_tensor::<f32>().map_err(|e| format!("out ck: {}", e))?;
+        let (_, cv) = outputs["present_choice_v"].try_extract_tensor::<f32>().map_err(|e| format!("out cv: {}", e))?;
+
+        Ok(ContextKv {
+            p,
+            enc_k: ek.to_vec(),
+            enc_v: ev.to_vec(),
+            choice_k: ck.to_vec(),
+            choice_v: cv.to_vec(),
+            mask: vec![true; p],
+        })
+    }
+
+    fn get_or_compute_kv_index(&mut self, ctx_final: &str) -> Result<usize, String> {
+        if let Some(pos) = self.kv_cache.iter().position(|(k, _)| k == ctx_final) {
+            self.stats.kv_hits += 1;
+            return Ok(pos);
+        }
+        let kv = self.compute_context_kv(ctx_final)?;
+        if self.kv_cache.len() >= KV_CACHE_CAPACITY {
+            // Keep empty context pinned if it's at front; evict oldest non-empty
+            if let Some(evict) = self.kv_cache.iter().position(|(k, _)| !k.is_empty()) {
+                self.kv_cache.remove(evict);
+            } else {
+                self.kv_cache.pop_front();
+            }
+        }
+        self.kv_cache.push_back((ctx_final.to_string(), kv));
+        Ok(self.kv_cache.len() - 1)
+    }
+
+    fn evaluate(
         &mut self,
         context: &str,
         raw_input: &str,
         is_double_pinyin: bool,
         cands: &[String],
-    ) -> Result<Vec<f32>, String> {
+    ) -> Result<CachedEval, String> {
         self.stats.calls += 1;
         let ctx_tail = utf8_tail(context, CONTEXT_CHARS);
         let key = CacheKey {
@@ -278,9 +488,8 @@ impl ZhiyiEngine {
         } else {
             full_pinyin_to_units(raw_input, &cands[0], &self.readings, &self.valid_syllables)
         };
+        let orig_units_len = units.len();
 
-        // Pre-encode candidates; only shift LCP on ultra-long (>16 token) sentences
-        // where candidate_tokens truncation would clip the differing tail.
         let mut cand_toks: Vec<Vec<i64>> = cands
             .iter()
             .map(|c| {
@@ -292,9 +501,11 @@ impl ZhiyiEngine {
             .collect();
 
         let mut eff_ctx = ctx_tail.to_string();
+        let mut shifted_lcp = false;
         if cand_toks.iter().any(|t| t.len() > self.candidate_tokens) {
             let lcp = common_prefix_chars(cands);
             if lcp > 0 {
+                shifted_lcp = true;
                 let prefix_str: String = cands[0].chars().take(lcp).collect();
                 eff_ctx.push_str(&prefix_str);
                 cand_toks = cands
@@ -313,9 +524,209 @@ impl ZhiyiEngine {
             }
         }
 
+        let ctx_final = utf8_tail(&eff_ctx, CONTEXT_CHARS).to_string();
+        let (logits, char_logits, n_slots, vocab_chars) = if self.use_fused_kv {
+            self.run_fused_kv(&ctx_final, &units, &cand_toks)?
+        } else {
+            self.run_whole_graph(&ctx_final, &units, &cand_toks)?
+        };
+
+        // Compute exact Wanxiang .gram deltas (0.01 ms, 0 MB extra RAM)
+        let gram_deltas: Vec<f32> = if let Some(ref g) = self.gram {
+            let raw_g: Vec<f64> = cands.iter().map(|c| g.score_sentence_per_char(c)).collect();
+            let g0 = raw_g.first().copied().unwrap_or(0.0);
+            raw_g.into_iter().map(|x| (x - g0) as f32).collect()
+        } else {
+            vec![0.0f32; cands.len()]
+        };
+
+        // Decode char_logits head (0.00 ms extra inference!) for both candidate scoring & P2C synthesis
+        let mut char_lps = vec![0.0f32; cands.len()];
+        let mut p2c_text: Option<String> = None;
+        let mut p2c_margin: f32 = -100.0;
+
+        let can_decode_p2c = !shifted_lcp
+            && orig_units_len > 0
+            && orig_units_len <= self.max_slots
+            && n_slots == orig_units_len
+            && vocab_chars >= self.old_chars
+            && !self.chars.is_empty();
+
+        if can_decode_p2c {
+            let mut gen_chars: Vec<char> = Vec::with_capacity(n_slots);
+            let mut slot_lps: Vec<HashMap<usize, f32>> = Vec::with_capacity(n_slots);
+            let mut gen_sum = 0.0f32;
+            let mut all_full = true;
+
+            for (j, (kind, syl)) in units.iter().enumerate() {
+                if *kind != "f" {
+                    all_full = false;
+                }
+                let row = &char_logits[j * vocab_chars..(j + 1) * vocab_chars];
+                if let Some(allowed) = self.syl_to_cids.get(syl) {
+                    let mut max_v = f32::NEG_INFINITY;
+                    let mut best_cid = allowed[0];
+                    for &cid in allowed {
+                        let v = row[cid];
+                        if v > max_v {
+                            max_v = v;
+                            best_cid = cid;
+                        }
+                    }
+                    let sum_e: f32 = allowed.iter().map(|&cid| (row[cid] - max_v).exp()).sum();
+                    let lse = max_v + sum_e.ln();
+                    let mut map = HashMap::with_capacity(allowed.len());
+                    for &cid in allowed {
+                        map.insert(cid, row[cid] - lse);
+                    }
+                    gen_sum += max_v - lse;
+                    if let Some(ch) = self.chars[best_cid].chars().next() {
+                        gen_chars.push(ch);
+                    }
+                    slot_lps.push(map);
+                } else {
+                    all_full = false;
+                    slot_lps.push(HashMap::new());
+                }
+            }
+
+            if all_full && gen_chars.len() == n_slots {
+                let mut raw_clp = Vec::with_capacity(cands.len());
+                for c in cands {
+                    let mut s = 0.0f32;
+                    let mut cnt = 0usize;
+                    for (j, ch) in c.chars().take(n_slots).enumerate() {
+                        cnt += 1;
+                        let lp = self
+                            .char_to_id
+                            .get(&ch)
+                            .and_then(|cid| slot_lps[j].get(cid))
+                            .copied()
+                            .unwrap_or(-15.0);
+                        s += lp;
+                    }
+                    if cnt < n_slots {
+                        s += -15.0 * ((n_slots - cnt) as f32);
+                    }
+                    raw_clp.push(s / (n_slots as f32));
+                }
+                let c0 = raw_clp[0];
+                let max_cand_clp = raw_clp.iter().copied().fold(f32::NEG_INFINITY, f32::max);
+                for (i, &v) in raw_clp.iter().enumerate() {
+                    char_lps[i] = v - c0;
+                }
+                let gen_str: String = gen_chars.into_iter().collect();
+                let gen_mean = gen_sum / (n_slots as f32);
+                if !cands.iter().any(|c| c == &gen_str) {
+                    p2c_margin = gen_mean - max_cand_clp;
+                    p2c_text = Some(gen_str);
+                }
+            }
+        }
+
+        let res = CachedEval {
+            logits,
+            gram_deltas,
+            char_lps,
+            p2c_text,
+            p2c_margin,
+        };
+
+        if self.lru_map.len() >= LRU_CAPACITY {
+            if let Some(old) = self.lru_order.pop_front() {
+                self.lru_map.remove(&old);
+            }
+        }
+        self.lru_order.push_back(key.clone());
+        self.lru_map.insert(key, res.clone());
+        Ok(res)
+    }
+
+    fn run_fused_kv(
+        &mut self,
+        ctx_final: &str,
+        units: &[(&'static str, String)],
+        cand_toks: &[Vec<i64>],
+    ) -> Result<(Vec<f32>, Vec<f32>, usize, usize), String> {
+        let kv_idx = self.get_or_compute_kv_index(ctx_final)?;
+
+        let mut ids: Vec<i64> = Vec::with_capacity(192);
+        let mut uids: Vec<i64> = Vec::with_capacity(192);
+        let mut slots: Vec<i64> = Vec::with_capacity(self.max_slots);
+        for (kind, text) in units.iter().take(self.max_slots) {
+            slots.push(ids.len() as i64);
+            ids.push(self.mask_id);
+            let k = format!("{}:{}", kind, text);
+            uids.push(*self.unit_ids.get(&k).unwrap_or(&0));
+        }
+        ids.push(self.sep_id);
+        uids.push(0);
+
+        let mut markers: Vec<i64> = Vec::with_capacity(cand_toks.len());
+        for ctok in cand_toks {
+            markers.push(ids.len() as i64);
+            ids.push(self.mask_id);
+            uids.push(0);
+            let take = ctok.len().min(self.candidate_tokens);
+            ids.extend_from_slice(&ctok[..take]);
+            uids.resize(ids.len(), 0);
+        }
+        ids.push(self.sep_id);
+        uids.push(0);
+
+        let seq_len = ids.len();
+        let n_markers = markers.len();
+        let real_slots = slots.len();
+        if slots.is_empty() {
+            slots.push(0);
+        }
+        let n_slots_in = slots.len();
+
+        let kv = &self.kv_cache[kv_idx].1;
+        let t_ids = Tensor::from_array(([1usize, seq_len], ids)).map_err(|e| format!("ids: {}", e))?;
+        let t_uid = Tensor::from_array(([1usize, seq_len], uids)).map_err(|e| format!("uid: {}", e))?;
+        let t_ek = TensorRef::from_array_view(([12usize, 1, 6, kv.p, 64], kv.enc_k.as_slice())).map_err(|e| format!("ek: {}", e))?;
+        let t_ev = TensorRef::from_array_view(([12usize, 1, 6, kv.p, 64], kv.enc_v.as_slice())).map_err(|e| format!("ev: {}", e))?;
+        let t_ck = TensorRef::from_array_view(([2usize, 1, 6, kv.p, 64], kv.choice_k.as_slice())).map_err(|e| format!("ck: {}", e))?;
+        let t_cv = TensorRef::from_array_view(([2usize, 1, 6, kv.p, 64], kv.choice_v.as_slice())).map_err(|e| format!("cv: {}", e))?;
+        let t_pm = TensorRef::from_array_view(([1usize, kv.p], kv.mask.as_slice())).map_err(|e| format!("pm: {}", e))?;
+        let t_mp = Tensor::from_array(([1usize, n_markers], markers)).map_err(|e| format!("mp: {}", e))?;
+        let t_sp = Tensor::from_array(([1usize, n_slots_in], slots)).map_err(|e| format!("sp: {}", e))?;
+
+        let t0 = Instant::now();
+        let outputs = self
+            .session
+            .run(ort::inputs![
+                "input_ids" => t_ids,
+                "unit_ids" => t_uid,
+                "past_enc_k" => t_ek,
+                "past_enc_v" => t_ev,
+                "past_choice_k" => t_ck,
+                "past_choice_v" => t_cv,
+                "past_mask" => t_pm,
+                "marker_pos" => t_mp,
+                "slot_pos" => t_sp,
+            ])
+            .map_err(|e| format!("key run: {}", e))?;
+        self.stats.total_infer_ms += t0.elapsed().as_secs_f64() * 1000.0;
+
+        let (_, l_slice) = outputs["logits"].try_extract_tensor::<f32>().map_err(|e| format!("logits: {}", e))?;
+        let logits: Vec<f32> = l_slice.iter().take(n_markers).copied().collect();
+
+        let (c_shape, c_slice) = outputs["char_logits"].try_extract_tensor::<f32>().map_err(|e| format!("char_logits: {}", e))?;
+        let vocab_chars = c_shape.last().copied().unwrap_or(0) as usize;
+        let cl = c_slice.iter().take(real_slots * vocab_chars).copied().collect();
+        Ok((logits, cl, real_slots, vocab_chars))
+    }
+
+    fn run_whole_graph(
+        &mut self,
+        ctx_final: &str,
+        units: &[(&'static str, String)],
+        cand_toks: &[Vec<i64>],
+    ) -> Result<(Vec<f32>, Vec<f32>, usize, usize), String> {
         let mut ids: Vec<i64> = Vec::with_capacity(256);
         ids.push(self.cls_id);
-        let ctx_final = utf8_tail(&eff_ctx, CONTEXT_CHARS);
         if !ctx_final.is_empty() {
             let cids = self.encode_ids(ctx_final);
             let start = cids.len().saturating_sub(self.context_tokens);
@@ -323,49 +734,41 @@ impl ZhiyiEngine {
         }
         ids.push(self.sep_id);
 
-        let mut unit_ids: Vec<i64> = vec![0; ids.len()];
+        let mut uids: Vec<i64> = vec![0; ids.len()];
         let mut slots: Vec<i64> = Vec::with_capacity(self.max_slots);
         for (kind, text) in units.iter().take(self.max_slots) {
             slots.push(ids.len() as i64);
             ids.push(self.mask_id);
             let k = format!("{}:{}", kind, text);
-            unit_ids.push(*self.unit_ids.get(&k).unwrap_or(&0));
+            uids.push(*self.unit_ids.get(&k).unwrap_or(&0));
         }
         ids.push(self.sep_id);
-        unit_ids.push(0);
+        uids.push(0);
 
         let mut markers: Vec<i64> = Vec::with_capacity(cand_toks.len());
-        for ctok in &cand_toks {
+        for ctok in cand_toks {
             markers.push(ids.len() as i64);
             ids.push(self.mask_id);
             let take = ctok.len().min(self.candidate_tokens);
             ids.extend_from_slice(&ctok[..take]);
         }
         ids.push(self.sep_id);
-        unit_ids.resize(ids.len(), 0);
+        uids.resize(ids.len(), 0);
 
         let seq_len = ids.len();
         let n_markers = markers.len();
+        let real_slots = slots.len();
         if slots.is_empty() {
             slots.push(0);
         }
-        let n_slots = slots.len();
+        let n_slots_in = slots.len();
 
-        let attention_mask: Vec<i64> = vec![1; seq_len];
-        let marker_mask: Vec<bool> = vec![true; n_markers];
-
-        let t_ids = Tensor::from_array(([1usize, seq_len], ids))
-            .map_err(|e| format!("tensor input_ids: {}", e))?;
-        let t_att = Tensor::from_array(([1usize, seq_len], attention_mask))
-            .map_err(|e| format!("tensor attention_mask: {}", e))?;
-        let t_uid = Tensor::from_array(([1usize, seq_len], unit_ids))
-            .map_err(|e| format!("tensor unit_ids: {}", e))?;
-        let t_mpos = Tensor::from_array(([1usize, n_markers], markers))
-            .map_err(|e| format!("tensor marker_pos: {}", e))?;
-        let t_mmask = Tensor::from_array(([1usize, n_markers], marker_mask))
-            .map_err(|e| format!("tensor marker_mask: {}", e))?;
-        let t_spos = Tensor::from_array(([1usize, n_slots], slots))
-            .map_err(|e| format!("tensor slot_pos: {}", e))?;
+        let t_ids = Tensor::from_array(([1usize, seq_len], ids)).map_err(|e| format!("ids: {}", e))?;
+        let t_att = Tensor::from_array(([1usize, seq_len], vec![1i64; seq_len])).map_err(|e| format!("att: {}", e))?;
+        let t_uid = Tensor::from_array(([1usize, seq_len], uids)).map_err(|e| format!("uid: {}", e))?;
+        let t_mp = Tensor::from_array(([1usize, n_markers], markers)).map_err(|e| format!("mp: {}", e))?;
+        let t_mm = Tensor::from_array(([1usize, n_markers], vec![true; n_markers])).map_err(|e| format!("mm: {}", e))?;
+        let t_sp = Tensor::from_array(([1usize, n_slots_in], slots)).map_err(|e| format!("sp: {}", e))?;
 
         let t0 = Instant::now();
         let outputs = self
@@ -374,66 +777,100 @@ impl ZhiyiEngine {
                 "input_ids" => t_ids,
                 "attention_mask" => t_att,
                 "unit_ids" => t_uid,
-                "marker_pos" => t_mpos,
-                "marker_mask" => t_mmask,
-                "slot_pos" => t_spos,
+                "marker_pos" => t_mp,
+                "marker_mask" => t_mm,
+                "slot_pos" => t_sp,
             ])
-            .map_err(|e| format!("session run: {}", e))?;
+            .map_err(|e| format!("whole run: {}", e))?;
         self.stats.total_infer_ms += t0.elapsed().as_secs_f64() * 1000.0;
 
-        let (_, slice) = outputs["logits"]
-            .try_extract_tensor::<f32>()
-            .map_err(|e| format!("extract logits: {}", e))?;
-        let logits: Vec<f32> = slice.iter().take(n_markers).copied().collect();
+        let (_, l_slice) = outputs["logits"].try_extract_tensor::<f32>().map_err(|e| format!("logits: {}", e))?;
+        let logits: Vec<f32> = l_slice.iter().take(n_markers).copied().collect();
 
-        if self.lru_map.len() >= LRU_CAPACITY {
-            if let Some(old) = self.lru_order.pop_front() {
-                self.lru_map.remove(&old);
-            }
-        }
-        self.lru_order.push_back(key.clone());
-        self.lru_map.insert(key, logits.clone());
-        Ok(logits)
+        let (c_shape, c_slice) = outputs["char_logits"].try_extract_tensor::<f32>().map_err(|e| format!("char_logits: {}", e))?;
+        let vocab_chars = c_shape.last().copied().unwrap_or(0) as usize;
+        let cl = c_slice.iter().take(real_slots * vocab_chars).copied().collect();
+        Ok((logits, cl, real_slots, vocab_chars))
     }
 }
 
-pub fn rerank_indices(
+pub fn rerank(
     context: &str,
     raw_input: &str,
     is_double_pinyin: bool,
     cands: &[String],
-    rank_penalty: f64,
-) -> Result<Vec<usize>, String> {
+    weights: FusionWeights,
+    p2c_top1_th: f32,
+    p2c_top2_th: f32,
+) -> Result<RerankResult, String> {
     if cands.len() < 2 {
-        return Ok((1..=cands.len()).collect());
+        return Ok(RerankResult {
+            order: (1..=cands.len()).collect(),
+            p2c_text: None,
+            p2c_pos: 0,
+            logits: vec![0.0; cands.len()],
+            gram_deltas: vec![0.0; cands.len()],
+            char_lps: vec![0.0; cands.len()],
+        });
     }
     let mutex = ENGINE.get().ok_or_else(|| "engine not ready".to_string())?;
     let mut eng = mutex.lock().map_err(|_| "engine mutex poisoned".to_string())?;
-    let logits = eng.score_candidates(context, raw_input, is_double_pinyin, cands)?;
+    let eval = eng.evaluate(context, raw_input, is_double_pinyin, cands)?;
 
-    let max_l = logits.iter().copied().fold(f32::NEG_INFINITY, f32::max) as f64;
-    let sum_exp: f64 = logits.iter().map(|&x| ((x as f64) - max_l).exp()).sum();
+    let has_ctx = if context.trim().chars().count() >= 2 { 1.0 } else { 0.0 };
+    let max_l = eval.logits.iter().copied().fold(f32::NEG_INFINITY, f32::max) as f64;
+    let sum_exp: f64 = eval.logits.iter().map(|&x| ((x as f64) - max_l).exp()).sum();
     let lse = max_l + sum_exp.ln();
 
-    let mut order: Vec<(usize, f64)> = logits
+    let mut order: Vec<(usize, f64)> = eval
+        .logits
         .iter()
         .enumerate()
         .map(|(i, &x)| {
             let lp = (x as f64) - lse;
-            let score = lp - rank_penalty * ((i as f64) + 1.0).ln();
+            let score = weights.w_logit * lp
+                + weights.w_rank * ((i as f64) + 1.0).ln()
+                + weights.w_gram * (eval.gram_deltas[i] as f64)
+                + weights.w_char_lp * (eval.char_lps[i] as f64)
+                + weights.w_ctx_lp * lp * has_ctx;
             (i + 1, score)
         })
         .collect();
     order.sort_by(|a, b| b.1.total_cmp(&a.1).then_with(|| a.0.cmp(&b.0)));
-    Ok(order.into_iter().map(|(idx, _)| idx).collect())
+
+    // P2C synthesis gating: only activate with preceding context where char_logits is strongly calibrated
+    let (p2c_text, p2c_pos) = if has_ctx > 0.5 {
+        if let Some(ref txt) = eval.p2c_text {
+            if p2c_top1_th > 0.0 && eval.p2c_margin > p2c_top1_th {
+                (Some(txt.clone()), 1u8)
+            } else if p2c_top2_th > 0.0 && eval.p2c_margin > p2c_top2_th {
+                (Some(txt.clone()), 2u8)
+            } else {
+                (None, 0u8)
+            }
+        } else {
+            (None, 0u8)
+        }
+    } else {
+        (None, 0u8)
+    };
+
+    Ok(RerankResult {
+        order: order.into_iter().map(|(idx, _)| idx).collect(),
+        p2c_text,
+        p2c_pos,
+        logits: eval.logits,
+        gram_deltas: eval.gram_deltas,
+        char_lps: eval.char_lps,
+    })
 }
 
-pub fn get_stats() -> (bool, u64, u64, f64) {
+pub fn get_stats() -> (bool, u64, u64, u64, f64, bool, bool) {
     let Some(mutex) = ENGINE.get() else {
-        return (false, 0, 0, 0.0);
+        return (false, 0, 0, 0, 0.0, false, false);
     };
     let Ok(eng) = mutex.lock() else {
-        return (false, 0, 0, 0.0);
+        return (false, 0, 0, 0, 0.0, false, false);
     };
     let infer_calls = eng.stats.calls.saturating_sub(eng.stats.cache_hits);
     let avg = if infer_calls > 0 {
@@ -441,5 +878,13 @@ pub fn get_stats() -> (bool, u64, u64, f64) {
     } else {
         0.0
     };
-    (true, eng.stats.calls, eng.stats.cache_hits, avg)
+    (
+        true,
+        eng.stats.calls,
+        eng.stats.cache_hits,
+        eng.stats.kv_hits,
+        avg,
+        eng.stats.fused_kv,
+        eng.stats.has_gram,
+    )
 }
