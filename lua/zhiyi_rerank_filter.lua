@@ -200,7 +200,7 @@ local function get_preceding_context(context, segment_start, live_preedit, raw_s
 end
 
 local function load_fusion_weights(cfg, ns)
-    local defaults = { 0.91, -1.26, 0.05, 0.40, -0.39 }
+    local defaults = { 1.0, -1.4, 0.05, 0.15, 0.0 }
     local list = cfg:get_list(ns .. "/fusion_weights")
     if list and list.size >= 5 then
         local out = {}
@@ -327,31 +327,23 @@ function M.init(env)
                 end
             end
 
-            -- Log ALL corrections (rank >= 2 or custom edit) + 10% sample of accepted top-1
-            local should_log = (chosen_rank ~= 1)
-            if not should_log then
-                env.feedback_sample_n = env.feedback_sample_n + 1
-                if (env.feedback_sample_n % 10) == 0 then
-                    should_log = true
-                end
-            end
-            if should_log then
-                native_mod.log_feedback(
-                    env.schema_id,
-                    snap.raw_seg,
-                    snap.pre_ctx,
-                    snap.cands,
-                    snap.logits,
-                    snap.gram_deltas,
-                    snap.char_lps,
-                    snap.p2c_text or "",
-                    snap.shown[1] or "",
-                    norm_commit,
-                    chosen_rank,
-                    false,
-                    env.feedback_path
-                )
-            end
+            -- Log 100% of multi-candidate commits (unbiased stream -> zero selection bias for MAP tuning;
+            -- disk usage is strictly bounded by feedback.rs 5 MiB auto-rotation ~15,000 sentences).
+            native_mod.log_feedback(
+                env.schema_id,
+                snap.raw_seg,
+                snap.pre_ctx,
+                snap.cands,
+                snap.logits,
+                snap.gram_deltas,
+                snap.char_lps,
+                snap.p2c_text or "",
+                snap.shown[1] or "",
+                norm_commit,
+                chosen_rank,
+                false,
+                env.feedback_path
+            )
         end)
     end
 end

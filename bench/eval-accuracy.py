@@ -372,12 +372,12 @@ def create_isolated_env(rime_dir: pathlib.Path, schema_id: str, yaml_overrides: 
     if yaml_overrides:
         for section_key, val in yaml_overrides.items():
             sec, key = section_key.split("/", 1)
-            # Replace existing key inside section or insert right after section header
-            sec_re = re.compile(rf"(?m)^{re.escape(sec)}:\r?\n((?:  .*\r?\n)*)")
+            # Replace existing key (including indented block lists) inside section or insert right after header
+            sec_re = re.compile(rf"(?m)^{re.escape(sec)}:\r?\n((?:  .*(?:\r?\n|$))*)")
             m = sec_re.search(raw)
             if m:
                 body = m.group(1)
-                key_re = re.compile(rf"(?m)^  {re.escape(key)}:.*$")
+                key_re = re.compile(rf"(?m)^  {re.escape(key)}:.*(?:\r?\n    .*)*")
                 if key_re.search(body):
                     new_body = key_re.sub(f"  {key}: {val}", body, count=1)
                 else:
