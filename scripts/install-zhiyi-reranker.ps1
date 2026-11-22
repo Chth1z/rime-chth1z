@@ -1,9 +1,10 @@
 <#
 .SYNOPSIS
-    Build and install the native Rust + ONNX Runtime Zhiyi neural reranker into %APPDATA%\Rime\zhiyi\.
+    Build and install the native Rust + ONNX Runtime Zhiyi ML-pumpkin-1103 neural reranker
+    into %APPDATA%\Rime\zhiyi\.
 .DESCRIPTION
-    1. Downloads Zhiyi 1.4V2-Long-L12 int8 ONNX model (Apache-2.0) from qingjian-team/qingjian-models
-       with SHA-256 verification (reuses existing files unless -ForceDownload is set).
+    1. Downloads Zhiyi ML-pumpkin-1103 int8 fused KV-cache ONNX model (Apache-2.0) from
+       dd1000001000/zhiyi_models and verifies exact SHA-256 of laya.one.fused.int8g.onnx.
     2. Locates onnxruntime.dll (from -OrtDllPath, existing %APPDATA%\Rime\zhiyi\, local Python
        onnxruntime package, or official Microsoft.ML.OnnxRuntime NuGet package).
     3. Builds native\rime_zhiyi (Rust cdylib Lua 5.4 module) via `cargo build --release`.
@@ -13,6 +14,7 @@
 param(
     [string]$RimeDir = (Join-Path $env:APPDATA "Rime"),
     [string]$OrtDllPath = "",
+    [string]$LocalArchive = "",
     [switch]$ForceDownload,
     [switch]$SkipBuild
 )
@@ -22,53 +24,71 @@ $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 $zhiyiDir = Join-Path $RimeDir "zhiyi"
 $crateDir = Join-Path $repoRoot "native\rime_zhiyi"
 
-$modelUrl    = "https://github.com/qingjian-team/qingjian-models/releases/download/zhiyi-onnx-v1.0.0/zhiyi-onnx-v1.0.0.tar.gz.part1"
-$modelSha256 = "d693c2a262613888202e2de73b9bfce9f6421db3db2e1b7e1109aac9a296d5f3"
+$modelUrl    = "https://github.com/dd1000001000/zhiyi_models/releases/download/model-ml-pumpkin-1103/laya-ml-pumpkin-1103-int8g.zip"
+$fusedSha256 = "c273b2cfc46179e9df2a94aaa381bb6fb1d55862fe8834b4631950180d521ca5"
 
 New-Item -ItemType Directory -Force -Path $zhiyiDir | Out-Null
 
-# 1. Ensure Zhiyi ONNX model files exist (Apache-2.0)
+# 1. Ensure ML-pumpkin-1103 fused KV-cache model files exist (Apache-2.0)
+$fusedTarget = Join-Path $zhiyiDir "laya.one.fused.int8g.onnx"
 $needModel = $ForceDownload -or `
-    -not (Test-Path (Join-Path $zhiyiDir "laya.int8g.onnx")) -or `
+    -not (Test-Path $fusedTarget) -or `
     -not (Test-Path (Join-Path $zhiyiDir "tokenizer.json")) -or `
     -not (Test-Path (Join-Path $zhiyiDir "unified_vocab.json"))
+
+if (-not $needModel) {
+    $curHash = (Get-FileHash $fusedTarget -Algorithm SHA256).Hash.ToLowerInvariant()
+    if ($curHash -ne $fusedSha256) {
+        Write-Output "Existing laya.one.fused.int8g.onnx hash differs; refreshing..."
+        $needModel = $true
+    }
+}
 
 if ($needModel) {
     $stage = Join-Path $env:TEMP ("rime-zhiyi-dl-" + (Get-Date -Format "yyyyMMddHHmmss"))
     New-Item -ItemType Directory -Force -Path $stage | Out-Null
     try {
-        $archive = Join-Path $stage "zhiyi-onnx.tar.gz"
-        Write-Output "Downloading Zhiyi 1.4V2-Long-L12 ONNX model (~70 MB, Apache-2.0)..."
-        & curl.exe -fSL --retry 3 --connect-timeout 20 -o $archive $modelUrl
-        if ($LASTEXITCODE -ne 0) { throw "Model download failed (ExitCode=$LASTEXITCODE)" }
-
-        $actualHash = (Get-FileHash $archive -Algorithm SHA256).Hash.ToLowerInvariant()
-        if ($actualHash -ne $modelSha256) {
-            throw "SHA-256 mismatch! Expected=$modelSha256 Got=$actualHash"
+        if ($LocalArchive -and (Test-Path $LocalArchive)) {
+            $archive = (Resolve-Path $LocalArchive).Path
+            Write-Output "Using local model archive: $archive"
+        } else {
+            $archive = Join-Path $stage "ml-pumpkin-1103.zip"
+            Write-Output "Downloading Zhiyi ML-pumpkin-1103 ONNX package (~199 MB, Apache-2.0)..."
+            & curl.exe -fSL --retry 3 --connect-timeout 20 -o $archive $modelUrl
+            if ($LASTEXITCODE -ne 0) { throw "Model download failed (ExitCode=$LASTEXITCODE)" }
         }
-        Write-Output "Model archive verified (SHA-256: $($actualHash.Substring(0,12))...)."
 
         $extDir = Join-Path $stage "extracted"
         New-Item -ItemType Directory -Force -Path $extDir | Out-Null
-        & tar.exe -xzf $archive -C $extDir
-        if ($LASTEXITCODE -ne 0) { throw "tar extraction failed (ExitCode=$LASTEXITCODE)" }
+        Expand-Archive -Path $archive -DestinationPath $extDir -Force
 
-        $srcModelDir = (Get-ChildItem $extDir -Recurse -Filter "laya.int8g.onnx" | Select-Object -First 1).DirectoryName
-        if (-not $srcModelDir) { throw "laya.int8g.onnx not found in extracted archive." }
+        $fusedSrc = (Get-ChildItem $extDir -Recurse -Filter "laya.one.fused.int8g.onnx" | Select-Object -First 1)
+        if (-not $fusedSrc) { throw "laya.one.fused.int8g.onnx not found in archive." }
+        $actualHash = (Get-FileHash $fusedSrc.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+        if ($actualHash -ne $fusedSha256) {
+            throw "SHA-256 mismatch on laya.one.fused.int8g.onnx! Expected=$fusedSha256 Got=$actualHash"
+        }
+        Write-Output "Verified laya.one.fused.int8g.onnx (SHA-256: $($actualHash.Substring(0,12))...)."
 
-        foreach ($f in @("laya.int8g.onnx", "tokenizer.json", "unified_vocab.json", "LICENSE")) {
+        $srcModelDir = $fusedSrc.DirectoryName
+        foreach ($f in @("laya.one.fused.int8g.onnx", "tokenizer.json", "unified_vocab.json", "rl_agent_config.json", "LICENSE")) {
             $src = Join-Path $srcModelDir $f
             if (Test-Path $src) {
                 Copy-Item $src (Join-Path $zhiyiDir $f) -Force
             }
         }
-        Write-Output "Installed Zhiyi ONNX model files to $zhiyiDir."
+        # Clean up superseded whole-graph file if present so disk stays tidy (~84 MB saved)
+        foreach ($old in @("laya.int8g.onnx", "laya.one.int8g.onnx")) {
+            $op = Join-Path $zhiyiDir $old
+            if (Test-Path $op) { Remove-Item $op -Force -ErrorAction SilentlyContinue }
+        }
+        Write-Output "Installed Zhiyi ML-pumpkin-1103 fused KV-cache model to $zhiyiDir."
     }
     finally {
         Remove-Item $stage -Recurse -Force -ErrorAction SilentlyContinue
     }
 } else {
-    Write-Output "Zhiyi ONNX model files already present in $zhiyiDir."
+    Write-Output "Zhiyi ML-pumpkin-1103 model already verified in $zhiyiDir."
 }
 
 # 2. Resolve onnxruntime.dll
@@ -90,7 +110,7 @@ if (-not (Test-Path $targetOrt) -or $OrtDllPath) {
         try {
             $nupkg = Join-Path $stageOrt "ort.zip"
             Write-Output "Downloading official Microsoft.ML.OnnxRuntime (win-x64) from NuGet..."
-            & curl.exe -fSL --retry 3 --connect-timeout 20 -o $nupkg "https://www.nuget.org/api/v2/package/Microsoft.ML.OnnxRuntime/1.20.1"
+            & curl.exe -fSL --retry 3 --connect-timeout 20 -o $nupkg "https://www.nuget.org/api/v2/package/Microsoft.ML.OnnxRuntime"
             if ($LASTEXITCODE -ne 0) { throw "ONNX Runtime download failed." }
             $ortEx = Join-Path $stageOrt "ex"
             Expand-Archive -Path $nupkg -DestinationPath $ortEx -Force
