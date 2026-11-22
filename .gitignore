@@ -20,7 +20,6 @@ auto_update/
 # Temporary benchmark & editor files
 bench/tmp/
 neural/
-zhiyi/
 *.onnx
 feedback.jsonl
 *.log

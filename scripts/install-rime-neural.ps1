@@ -16,7 +16,8 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$localInstaller = "D:\Github\rime-neural\scripts\install.ps1"
+$repoRoot       = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
+$localInstaller = Join-Path (Split-Path $repoRoot -Parent) "rime-neural\scripts\install.ps1"
 
 if (Test-Path $localInstaller) {
     $params = @{

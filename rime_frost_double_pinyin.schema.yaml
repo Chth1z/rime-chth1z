@@ -71,7 +71,7 @@ engine:
     - lua_filter@*tw_dual_filter               # 臺灣繁體雙出：首選 s2twp 臺灣用法，有詞彙差異時次選 s2tw 臺灣正體原詞
     - uniquifier
 
-# 萬象 400 MB LTS 語法模型（經 1,600 句公開語料 + 2,956 連續子句實測調優）
+# 萬象 LTS 語法模型
 grammar:
   language: wanxiang-lts-zh-hans
   non_collocation_penalty: -4
@@ -83,14 +83,14 @@ chth1z_pipeline:
   pin_max_scan: 40
   gc_interval: 16
 
-# 端側神經整句重排（Chth1z/rime-neural：知意 ML-pumpkin-1103 KV-cache ＋ 萬象 .gram 融合 ＋ Pass-2 校驗 P2C ＋ 非阻塞 UIA 上下文）
+# 端側神經整句重排（Chth1z/rime-neural）
 rime_neural:
   option_name: neural_rerank
   pinyin_layout: auto
   max_candidates: 8
-  # 通用跨領域先驗 [logit_lp, ln(rank+1), gram_delta, char_lp, logit_lp*has_ctx]（經未見跨領域盲測防過擬合驗證）
+  # 5 維線性融合權重 [logit_lp, ln(rank+1), gram_delta, char_lp, logit_lp*has_ctx]
   fusion_weights: [1.0, -1.4, 0.05, 0.15, 0.0]
-  # Pass-2 跨編碼器 ＋ .gram 交叉驗證 P2C 門控（僅對 ~7% 高潛力 OOV 候選複用 KV-cache 驗證）
+  # Pass-2 跨編碼器 ＋ .gram 交叉驗證 P2C 門控
   p2c_verify_margin: 0.20
   p2c_top1_logit_diff: 2.0
   p2c_top1_min_gram_diff: -2.0

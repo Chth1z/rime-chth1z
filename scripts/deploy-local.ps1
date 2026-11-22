@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Deploy rime-chth1z (D:\Github\rime-chth1z) + profiles/ + themes/ to %APPDATA%\Rime safely.
+    Deploy rime-chth1z + profiles/ + themes/ to %APPDATA%\Rime safely.
 .DESCRIPTION
     Preserves *.userdb, wanxiang-lts-zh-hans.gram, custom_phrase.txt, installation.yaml, user.yaml,
     and auto_update/. Runs WeaselDeployer /deploy, verifies ExitCode=0, restarts single WeaselServer,
@@ -118,7 +118,11 @@ if ($p.ExitCode -ne 0) { throw "WeaselDeployer failed with ExitCode=$($p.ExitCod
 
 Start-Sleep -Milliseconds 400
 if (-not (Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)) {
-    Start-Process -FilePath $serverExe
+    try {
+        Invoke-CimMethod -ClassName Win32_Process -MethodName Create -Arguments @{ CommandLine = "`"$serverExe`"" } | Out-Null
+    } catch {
+        Start-Process -FilePath $serverExe
+    }
     Start-Sleep -Milliseconds 600
 }
 $procs = Get-Process -Name WeaselServer -ErrorAction SilentlyContinue

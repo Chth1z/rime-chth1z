@@ -339,7 +339,7 @@ def create_isolated_env(rime_dir: pathlib.Path, schema_id: str, yaml_overrides: 
     tmp = pathlib.Path(tempfile.mkdtemp(prefix="rime-eval-"))
     (tmp / "logs").mkdir()
     (tmp / "build").mkdir()
-    for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "neural", "zhiyi"):
+    for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "neural"):
         src = rime_dir / d
         if src.exists():
             subprocess.run(["cmd", "/c", "mklink", "/J", str(tmp / d), str(src)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
@@ -391,7 +391,7 @@ def create_isolated_env(rime_dir: pathlib.Path, schema_id: str, yaml_overrides: 
 
 
 def cleanup_isolated_env(tmp: pathlib.Path) -> None:
-    for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "neural", "zhiyi"):
+    for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "neural"):
         p = tmp / d
         if p.exists():
             subprocess.run(["cmd", "/c", "rmdir", str(p)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -475,7 +475,7 @@ def main() -> None:
     ap.add_argument("--limit", type=int, default=0, help="Max sentences (0 = all)")
     ap.add_argument("--override", action="append", default=[], help="section/key=value")
     ap.add_argument("--show-errors", type=int, default=0)
-    ap.add_argument("--neural", action="store_true", help="Enable Zhiyi ONNX neural reranking (sync init)")
+    ap.add_argument("--neural", action="store_true", help="Enable rime-neural ONNX reranking (sync init)")
     args = ap.parse_args()
 
     text = pathlib.Path(args.corpus).read_text(encoding="utf-8")

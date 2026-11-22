@@ -349,7 +349,11 @@ try {
 
         Start-Sleep -Milliseconds 400
         if ($wasRunning -and -not (Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue)) {
-            Start-Process -FilePath $serverExe
+            try {
+                Invoke-CimMethod -ClassName Win32_Process -MethodName Create -Arguments @{ CommandLine = "`"$serverExe`"" } | Out-Null
+            } catch {
+                Start-Process -FilePath $serverExe
+            }
             Write-Log "Restarted WeaselServer.exe."
         }
 

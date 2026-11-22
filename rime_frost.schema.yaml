@@ -81,7 +81,7 @@ chth1z_pipeline:
   pin_max_scan: 40
   gc_interval: 16
 
-# 端側神經整句重排（Chth1z/rime-neural：知意 ML-pumpkin-1103 KV-cache ＋ 萬象 .gram 融合 ＋ Pass-2 校驗 P2C ＋ 非阻塞 UIA 上下文）
+# 端側神經整句重排（Chth1z/rime-neural）
 rime_neural:
   option_name: neural_rerank
   pinyin_layout: auto
