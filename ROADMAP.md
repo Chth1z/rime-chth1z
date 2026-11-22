@@ -31,7 +31,7 @@
   - 上游词库照常全量同步，另写脚本统计哪些扩展词库（如 `41448`、`GB18030-2022`、`game`、`luna`）容易冒出冷僻词或干扰词（例如顺手看下 `xianzaiyongxialaihaiyouyixieyanchi` 为何将 `鹽池` 排在 `延遲` 前面），对比去掉后的首选率和部署耗时。
 - [ ] **微调个别 `s2twp` 词条**
   - 保留常用的台湾信息词（`軟體 / 資訊 / 記憶體 / 網路 / 滑鼠 / 預設 / 檔案`），看需要把个别不太习惯的词（比如 `优化` 保留 `優化`）单独覆盖。
-- [ ] **把本机 Windows 定时更新切到本仓库**
-  - 让 `RimeFrostWeeklyUpdate` 改成拉 `Chth1z/rime-chth1z` 和 `wanxiang-lts-zh-hans.gram`（并调用 `scripts/deploy-local.ps1` 逻辑），避免自动任务覆盖自研脚本与方案。
+- [x] **把本机 Windows 定时更新切到本仓库**
+  - 新增 `scripts/update-local.ps1`（由 `deploy-local.ps1` 同步至 `%APPDATA%\Rime\auto_update\Update-RimeChth1z.ps1`），Windows 计划任务已切换为 `RimeChth1zWeeklyUpdate`（每周日 03:30，紧随 GitHub Actions 02:00 词库同步），拉取 `Chth1z/rime-chth1z` 与 `wanxiang-lts-zh-hans.gram`；本地仓库干净时自动 `git pull --ff-only`，有未提交改动时走临时 zip 隔离更新。
 - [ ] **电池模式实测留档**
   - 下次拔电时顺手跑一次 `bench/bench-rime.ps1`，补全 `PROJECT_CONTEXT.md` 的电池实测值。
