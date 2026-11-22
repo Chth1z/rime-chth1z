@@ -13,17 +13,17 @@
 - [gaboolic/rime-schema-compare](https://github.com/gaboolic/rime-schema-compare)：离线整句与文字准确率评测口径参考来源。
 - [rime/weasel（小狼毫）](https://github.com/rime/weasel) / [rime/librime](https://github.com/rime/librime)：Windows 客户端与核心引擎。
 - [amzxyz/rime-wanxiang-data](https://github.com/amzxyz/rime-wanxiang-data)：配合使用的 `wanxiang-lts-zh-hans.gram` 语法模型（体积较大，不放进本仓库）。
-- [dd1000001000/zhiyi_ime（知意输入法）](https://github.com/dd1000001000/zhiyi_ime) / [qingjian-team/qingjian-models](https://github.com/qingjian-team/qingjian-models)：可选的端侧神经整句重排模型 `知意 1.4V2-Long-L12` int8 ONNX（Apache-2.0，由安装脚本按需下载并做 SHA-256 校验，不入 Git）。
+- [dd1000001000/zhiyi_ime（知意输入法）](https://github.com/dd1000001000/zhiyi_ime) / [dd1000001000/zhiyi_models](https://github.com/dd1000001000/zhiyi_models)：可选的端侧神经整句重排模型 `知意 ML-pumpkin-1103` int8 KV-cache ONNX（Apache-2.0，由安装脚本按需下载并做 SHA-256 校验，不入 Git）。
 
 ## 目录说明
 
 - `cn_dicts/`、`cn_dicts_cell/`、`en_dicts/`、`opencc/`：自动同步自白霜上游的词库与词表
-- `lua/`：端侧神经重排滤镜（`zhiyi_rerank_filter.lua`）、单遍合并管线（`chth1z_pipeline_filter.lua`）、台湾繁体双出滤镜（`tw_dual_filter.lua`）及修改过的 Lua 脚本
-- `native/rime_zhiyi/`：Rust 编写的 Lua 5.4 原生扩展模块，动态解析官方小狼毫 `rime.dll` 导出的 Lua C API 并调用 ONNX Runtime，无需重新编译 `rime.dll`
+- `lua/`：仅保留 7 个实际启用脚本——端侧神经重排滤镜（`zhiyi_rerank_filter.lua`）、单遍合并管线（`chth1z_pipeline_filter.lua`）、台湾繁体双出滤镜（`tw_dual_filter.lua`）及日期/农历/计算器/以词定字脚本（其余未引用上游脚本已清理）
+- `native/rime_zhiyi/`：Rust 编写的 Lua 5.4 原生扩展模块（v0.2.0），动态解析官方小狼毫 `rime.dll` 导出的 Lua C API，内置前缀 KV-cache ONNX 推理、`wanxiang-lts-zh-hans.gram` 直接内存映射评分、`char_logits` P2C 候选合成及本地脱敏选词反馈记录，无需重新编译 `rime.dll`
 - `profiles/`：`rime.lua`（Lua 5.4 GC 调优）及留空的 `*.custom.yaml`（核心配置已收口至根目录方案）
 - `themes/`：小狼毫外观配置（`apple_graphite_dark`）
 - `bench/`：调用本机 `rime.dll` 的功能回归测试（`accuracy-test.ps1`）、按键耗时测试（`bench-rime.ps1`）和语料准确率评测（`eval-accuracy.py`）
-- `scripts/`：本地同步词库、查看上游更新、编译安装神经重排模块（`install-zhiyi-reranker.ps1`）、部署到 `%APPDATA%\Rime` 及本机周更脚本
+- `scripts/`：本地同步词库、查看上游更新、编译安装神经重排模块（`install-zhiyi-reranker.ps1`）、个人融合权重离线校准（`tune-personal-fusion.py`）、部署到 `%APPDATA%\Rime` 及本机周更脚本
 - `docs/upstream-issues/`：向上游反馈问题的约定、模板和记录
 - `PROJECT_CONTEXT.md` / `ROADMAP.md`：背景记录与待办清单
 

@@ -51,3 +51,19 @@
   - 利用小狼毫 `rime.dll` 导出的 154 个 Lua 5.4 C API 符号动态绑定，无需重新编译 `rime.dll`；使用 `GetModuleHandleExA(PIN)` 钉驻进程解决重新部署卸载崩溃，配合后台异步预热（0 ms 启动延迟）、256 条 LRU 缓存、自然码全音节双射还原、`t2s.json` 繁体上下文归一化与严格 `sentence`-only 门控。
   - 配套一键构建/校验安装脚本 `scripts/install-zhiyi-reranker.ps1`（SHA-256 校验模型包）；未安装模型或关闭 `neural_rerank` 时自动零开销透传。
   - 官方小狼毫 `0.17.4` 端到端实测通过：1,600 句双拼整句率 `75.12% → 81.31%`（科技 `81.00% → 90.50%`，全拼科技 `80.50% → 91.50%`），插电按键均值 `2.1 ms` / 峰值 `12.9 ms`，3 轮连续重新部署零崩溃，88/88 回归测试全过。
+
+## P4 — 神经重排 v0.2.0（KV-cache ＋ `.gram` 融合 ＋ P2C ＋ 个人反馈闭环）与仓库架构收口（已完成）
+
+- [x] **升级 `知意 ML-pumpkin-1103` 融合前缀 KV-cache ONNX（`laya.one.fused.int8g.onnx`，Apache-2.0）**
+  - 在 `native/rime_zhiyi` 实现 16 槽前缀 KV-cache 缓存与零拷贝 `TensorRef` 传入，上下文编码与按键解码彻底解耦。
+  - 官方小狼毫插电实测双拼按键压至 **`1st-key 0.1 ms / rest 1.6 ms / 峰值 9.8 ms`**（全拼 `4.2 ms / 峰值 12.6 ms`），同时 1,600 句无上下文 live 整句率从 `79.44%` 跃升至 **`80.75%`**，真实 `commit_history` 跃升至 **`81.94%`**（离线带标点上下文 **`84.31%–84.5%`**，盲测验证集 **`83.80%`**）。
+- [x] **直接共享内存映射 `wanxiang-lts-zh-hans.gram` ＋ 零开销 `char_logits` P2C 候选合成**
+  - 新增 `native/rime_zhiyi/src/gram.rs`（Win32 `CreateFileMappingW` 零额外物理内存复用 `Rime::Grammar/1.0` Darts trie，`~0.01 ms` 查出精确 N-gram 逐字对数分差），配合五维低维先验融合 `[0.91, -1.26, 0.05, 0.40, -0.39]` 将神经误改量压低近一半（`-33 → -18`）。
+  - 同次 ONNX 前向解码 `char_logits` 头，对高置信 OOV 人名/热词在首/次位合成神经候选（合并召回上限 **`92.06%`**，零额外推理耗时）。
+- [x] **隐私优先本地选词反馈记录与离线个体权重校准**
+  - 新增 `native/rime_zhiyi/src/feedback.rs` 与 `lua/zhiyi_rerank_filter.lua` `commit_notifier` 挂钩（严格在首次 `yield` 前保存候选快照，避开 Rime `Menu` 懒求值协程暂停）：自动脱敏数字串/邮箱/URL 为 `<REDACTED>`、截断上下文 64 字、5 MiB 自动轮转、全量记录翻页纠错＋10% 抽样首项确认，测试临时目录自动关闭不污染线上日志。
+  - 新增 `scripts/tune-personal-fusion.py`：在通用先验附近以 5 折交叉验证 L2 岭回归微调 5 维权重（样本 `< 30` 条时自动保护不改先验）。
+- [x] **仓库架构清理与全量代码审计**
+  - 删除 `lua/` 中 12 个未被引用的上游遗留脚本（仅留 7 个活跃脚本），更新 `deploy-local.ps1` / `update-local.ps1` 自动清理旧文件并同步 `opencc/t2s.json`；修正 `install-zhiyi-reranker.ps1` NuGet ORT 版本回退与 SHA-256 校验；通过 3/3 Rust 单元测试、88/88 冷/热回归测试与 3 轮重新部署零崩溃验证。
+- [ ] **（后续可选）Windows UIA 异步非阻塞跨应用光标上下文**
+  - 为避免同步 COM UIA 调用阻塞 `WeaselServer.exe` 主线程（Electron / 全屏游戏等慢响应窗口），需独立后台 STA 线程 ＋ 超时丢弃 ＋ 严格 `IsPassword` 密码框屏蔽，待有真实跨应用续写需求时再单独验证上线。
