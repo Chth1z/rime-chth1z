@@ -31,8 +31,6 @@ switcher:
     - chinese_english
     - emoji
     - ascii_punct
-    - pin_cand
-    - neural_rerank
   fold_options: false           # 一級平面選單，不用點進二級選單
   abbreviate_options: true
   option_list_separator: ' / '

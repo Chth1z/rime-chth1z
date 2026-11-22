@@ -37,8 +37,9 @@ try {
         $src = Join-Path $RimeDir $d
         if (Test-Path $src) { cmd /c mklink /J "$benchDir\$d" "$src" | Out-Null }
     }
-    Get-ChildItem $RimeDir -File | Where-Object { $_.Extension -in @(".yaml", ".lua", ".txt") } |
-        ForEach-Object { Copy-Item $_.FullName $benchDir }
+    Get-ChildItem $RimeDir -File | Where-Object {
+        $_.Extension -in @(".yaml", ".lua", ".txt") -and $_.Name -notin @("user.yaml", "installation.yaml")
+    } | ForEach-Object { Copy-Item $_.FullName $benchDir }
     Get-ChildItem $RimeDir -File -Filter "*.gram" | ForEach-Object {
         cmd /c mklink /H "$benchDir\$($_.Name)" "$($_.FullName)" | Out-Null
     }
@@ -240,6 +241,8 @@ public static class RimeAccuracyRunner {
 
     foreach ($tc in $suite.cases) {
         [RimeAccuracyRunner]::EnsureSchema($tc.schema)
+        # Deterministic baseline for regression suite regardless of user.yaml toggle state
+        [RimeAccuracyRunner]::SetOption("traditionalization", $true)
 
         $savedOpts = @{}
         if ($tc.PSObject.Properties.Name -contains "options" -and $tc.options) {

@@ -19,20 +19,18 @@ schema:
 menu:
   page_size: 5
 
+# 可切換開關不設 reset，交由 default.yaml 的 save_options 寫入 user.yaml 持久化，重新部署後保留上次選擇
 switches:
   - name: traditionalization
-    reset: 1
     states: [ 簡體, 臺繁 ]
   - name: full_shape
     states: [ 半角, 全角 ]
   - name: ascii_punct
     states: [ 中標, 英標 ]
   - name: chinese_english
-    reset: 0
     states: [ 翻譯關, 翻譯開 ]
   - name: ascii_mode
   - name: emoji
-    reset: 0
   - name: pin_cand
     reset: 1
   - name: neural_rerank
