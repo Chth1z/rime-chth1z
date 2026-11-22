@@ -70,5 +70,8 @@
   - **KV 缓存 Pass-2 跨编码器 ＋ `.gram` 交叉验证 P2C（`src/zhiyi.rs`）**：仅对 `7.7%` 高潜力新颖 P2C 候选复用前缀 KV-cache 做 3 候选直面校验，同时在有/无上下文生效；离线带标点上下文推至 **`85.19%`**（盲测验证 **`84.60%`**，`+15/-1`），官方小狼毫无标点连续实跑推至 **`82.31%`**（文字 **`97.00%`**），全拼科技零上下文 **`91.00%`**（文字 `98.67%`）。
   - **非阻塞后台 Windows UIA 跨应用光标前文（`src/uia.rs`）**：独立 STA 线程读取光标前 64 字、自动剥离行内预编辑串；热路径仅同步比对 `HWND` ＋ 读取短锁快照（`< 2 µs`，永不阻塞），切窗口立刻清空旧窗口上下文防跨应用串味，硬屏蔽 `IsPassword` 与常见密码管理器进程；3 轮热部署 0 崩溃、0 Lua 报错。
   - **CI/CD 与开源发布准备**：新增 `.github/workflows/build-native-reranker.yml`（`cargo fmt --check` ＋ 严格 `clippy -D warnings` ＋ `cargo test` ＋ Windows x64 预编译包与 SHA-256）、`scripts/install-zhiyi-reranker.ps1 -PrebuiltDll`、`docs/neural-reranker-guide.md`；Rust 模块协议已切为 `Apache-2.0`，待确定正式仓库命名后即可一键拆出独立开源插件仓库。
-- [ ] **拆分独立开源插件仓库（待定最终命名）**
-  - 将已打磨完毕的 `native/rime_zhiyi/`、`lua/zhiyi_rerank_filter.lua`、安装/调参脚本与 CI workflow 拆至独立 Apache-2.0 仓库并发布首个带预编译 DLL 的 GitHub Release。
+- [x] **跨领域防过拟合审计与无偏个人调参重构（已完成）**
+  - 在 840 句完全未触碰过的新闻/小说/散文/旧科技/08-30 知乎语料上实跑盲测，抓出并移除在知乎开发集轻微领域过拟合的 `w_ctx_lp = -0.39` 项，切回跨领域最优通用先验 `[1.0, -1.4, 0.05, 0.15, 0.0]`（840 句 OOD `60.48% → 68.57%`，文字 `93.52%`）。
+  - 抓出旧版 `tune-personal-fusion.py` 因 10% 首项抽样选择偏差＋30 样本阈值导致的严重过拟合（零假设 25/25 伤精度），改为 100% 无偏日志＋Newton MAP＋5 折 NLL＋成对 95% 置信检验（`min_samples = 100`），25 轮仿真零假设误伤 `0/25`、真实偏移检出 `88%–100%`。
+- [ ] **拆分独立开源插件仓库 `Chth1z/rime-neural`（命名已定）**
+  - 将已打磨并完成防过拟合审计的 `native/rime_zhiyi/`、`lua/zhiyi_rerank_filter.lua`、安装/调参脚本与 CI workflow 拆至独立 Apache-2.0 仓库 `Chth1z/rime-neural` 并发布首个带预编译 DLL 的 GitHub Release。

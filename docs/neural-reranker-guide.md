@@ -65,7 +65,7 @@ patch:
     option_name: neural_rerank
     pinyin_layout: auto          # auto | full | zrm | flypy | mspy | sogou | abc | ziguang | jiajia
     max_candidates: 8
-    fusion_weights: [0.91, -1.26, 0.05, 0.40, -0.39]
+    fusion_weights: [1.0, -1.4, 0.05, 0.15, 0.0]
     p2c_verify_margin: 0.20      # Pass-2 跨编码器 + .gram 校验触发阈值（仅 ~7% 句子触发）
     p2c_top1_logit_diff: 2.0
     p2c_top1_min_gram_diff: -2.0
@@ -82,13 +82,13 @@ patch:
 
 ## 3. 本地个性化权重校准（可选）
 
-日常使用一段时间后，本地 `%APPDATA%\Rime\zhiyi\feedback.jsonl` 会积累你手动翻页纠错的脱敏记录（自动遮蔽 4 位以上数字串、邮箱、URL 与长 token）。运行：
+日常使用一段时间后，本地 `%APPDATA%\Rime\zhiyi\feedback.jsonl` 会无偏全量记录多候选整句上屏事件（自动脱敏 4 位以上数字串、邮箱、URL 与长 token，5 MiB 自动轮转）。运行：
 
 ```powershell
 python scripts/tune-personal-fusion.py
 ```
 
-脚本会在通用五维先验 `[0.91, -1.26, 0.05, 0.40, -0.39]` 附近以 **5 折交叉验证 L2 岭回归**搜索更贴合你个人习惯的微调权重（记录不足 30 条时自动保持先验不变，防止小样本过拟合）。
+脚本会在通用跨领域先验 `[1.0, -1.4, 0.05, 0.15, 0.0]` 附近以 **Newton-Raphson MAP 岭回归 ＋ 5 折交叉验证对数损失（NLL）＋ 成对 95% 置信区间检验** 搜索个人微调权重；样本不足 `100` 条或检验不显著时自动维持先验不变，避免小样本过拟合。
 
 ---
 
