@@ -66,7 +66,7 @@ engine:
     - table_translator@cn_en                   # 中英混合詞彙
     - lua_translator@*calculator               # 計算機（/vs 觸發）
   filters:
-    - lua_filter@*zhiyi_rerank_filter          # 端側 ONNX 神經整句重排（知意 1.4V2-Long-L12，未安裝或關閉時零開銷透傳）
+    - lua_filter@*zhiyi_rerank_filter          # 端側 ONNX 神經整句重排（知意 ML-pumpkin-1103 KV-cache，未安裝或關閉時零開銷透傳）
     - lua_filter@*chth1z_pipeline_filter       # 單遍合併濾鏡：置頂 + 錯音提示 + 英文大小寫 + 短英文降權 + 低頻 GC
     - simplifier@emoji
     - simplifier@chinese_english
@@ -85,13 +85,17 @@ chth1z_pipeline:
   pin_max_scan: 40
   gc_interval: 16
 
-# 端側神經整句重排（需先執行 scripts/install-zhiyi-reranker.ps1 安裝模型與 DLL）
+# 端側神經整句重排（知意 ML-pumpkin-1103 KV-cache ＋ 萬象 .gram 融合 ＋ P2C 合成，需執行 scripts/install-zhiyi-reranker.ps1）
 zhiyi_rerank:
   option_name: neural_rerank
   max_candidates: 8
-  rank_penalty: 1.4
+  # 五維低維融合先驗 [zhiyi_lp, ln(rank+1), gram_delta, char_lp, zhiyi_lp*has_ctx]（可用 scripts/tune-personal-fusion.py 個人化校準）
+  fusion_weights: [0.91, -1.26, 0.05, 0.40, -0.39]
+  p2c_top1_threshold: 1.0
+  p2c_top2_threshold: 0.45
   threads: 8
   min_input_len: 4
+  log_feedback: true
   sync_init: false
 
 date_translator:
