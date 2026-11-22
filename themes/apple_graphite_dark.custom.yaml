@@ -1,0 +1,70 @@
+patch:
+  # Apple 暗色石墨藍（直排 5 候選・全字集 Noto Sans CJK TC 13pt Medium / 阿拉伯序號 11pt Regular・同心圓角與無滲色優化）
+  "style/color_scheme": apple_graphite_dark
+  "style/color_scheme_dark": apple_graphite_dark
+  "style/antialias_mode": grayscale
+  "style/font_face": "Noto Sans CJK TC:medium, Segoe UI Emoji"
+  "style/label_font_face": "Noto Sans CJK TC"
+  "style/comment_font_face": "Noto Sans CJK TC"
+  "style/font_point": 13
+  "style/label_font_point": 11
+  "style/comment_font_point": 11
+  "style/inline_preedit": true
+  "style/preedit_type": composition
+  "style/horizontal": false
+  "style/vertical_text": false
+  "style/label_format": "%s"
+  "style/mark_text": ""
+  "style/enhanced_position": true
+  "style/display_tray_icon": false
+  "style/candidate_abbreviate_length": 0
+  "style/hover_type": none
+  "style/paging_on_scroll": true
+  # 垂直光學居中：DirectWrite UNIFORM 行盒（linespacing=132%, baseline=105%, align_type=center）
+  "style/layout/linespacing": 132
+  "style/layout/baseline": 105
+  "style/layout/align_type": center
+  "style/layout/max_height": 0
+  "style/layout/max_width": 0
+  "style/layout/min_height": 0
+  "style/layout/min_width": 132
+  "style/layout/border": 1
+  "style/layout/border_width": 1
+  # 緊湊幾何與嚴格同心圓角：
+  # margin_x(13) - hilite_padding_x(8) = 5；margin_y(8) - hilite_padding_y(3) = 5（四邊等距溝槽 5）
+  # corner_radius(11) = round_corner(6) + gutter(5)；candidate_spacing(6) = 2 * hilite_padding_y(3)
+  "style/layout/margin_x": 13
+  "style/layout/margin_y": 8
+  "style/layout/spacing": 6
+  "style/layout/candidate_spacing": 6
+  "style/layout/hilite_spacing": 7
+  "style/layout/hilite_padding": 3
+  "style/layout/hilite_padding_x": 8
+  "style/layout/hilite_padding_y": 3
+  "style/layout/shadow_radius": 8
+  "style/layout/shadow_offset_x": 0
+  "style/layout/shadow_offset_y": 4
+  "style/layout/corner_radius": 11
+  "style/layout/round_corner": 6
+  "style/layout/type": vertical
+  # Weasel 預設色碼為 ABGR (0xAABBGGRR / 0xBBGGRR)
+  "preset_color_schemes/apple_graphite_dark":
+    name: "蘋果石墨暗色／Apple Graphite Dark"
+    author: "Antigravity"
+    back_color: 0x262626                      # RGB #262626（純中性 macOS 暗色石墨灰）
+    border_color: 0x3F3F3F                    # RGB #3F3F3F（純中性 1px 外框）
+    shadow_color: 0x70000000                  # 外窗環境陰影
+    text_color: 0xDCDCDC                      # RGB #DCDCDC（對比度 11.0:1）
+    candidate_text_color: 0xDCDCDC            # RGB #DCDCDC
+    candidate_back_color: 0x00000000
+    label_color: 0x848484                     # RGB #848484（純中性銀灰序號，對比度 4.05:1）
+    comment_text_color: 0x969696              # RGB #969696（註解文字提升至 5.12:1，符合 WCAG AA）
+    hilited_text_color: 0xFFFFFF
+    hilited_back_color: 0x353535              # RGB #353535（非 inline 回退編碼底色）
+    hilited_candidate_back_color: 0xCE622C    # RGB #2C62CE（廣色域校正 macOS 暗色選單藍，對比度 5.61:1）
+    hilited_candidate_border_color: 0x47FF9B68 # 28% #689BFF（極輕微 1px 內緣光邊）
+    hilited_candidate_shadow_color: 0x00000000 # 關閉行內底光，徹底消除第 2 行滲色污染
+    hilited_candidate_text_color: 0xFFFFFF    # RGB #FFFFFF
+    hilited_label_color: 0xFFEADC             # RGB #DCEAFF（對比度 4.56:1，符合 WCAG AA）
+    hilited_comment_text_color: 0xFFEADC      # RGB #DCEAFF
+    hilited_mark_color: 0x00000000

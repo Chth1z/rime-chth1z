@@ -1,0 +1,27 @@
+# Rime runtime / build artifacts
+build/
+*.userdb/
+*.userdb.txt
+*.gram
+*.gram.new
+installation.yaml
+user.yaml
+weasel.yaml
+sync/
+logs/
+auto_update/
+
+# Root-level local overrides (curated profiles & themes live under profiles/ and themes/)
+*.custom.yaml
+!profiles/**/*.custom.yaml
+!themes/**/*.custom.yaml
+!profiles/**/*.custom.dict.yaml
+
+# Temporary benchmark & editor files
+bench/tmp/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc

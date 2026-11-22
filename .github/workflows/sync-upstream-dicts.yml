@@ -1,0 +1,78 @@
+name: Sync Upstream Dictionaries (rime-frost)
+
+on:
+  schedule:
+    # Weekly Sunday 02:00 UTC+8 (Saturday 18:00 UTC)
+    - cron: '0 18 * * 6'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-upstream-dicts
+  cancel-in-progress: false
+
+jobs:
+  sync-dicts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+
+      - name: Fetch upstream rime-frost dictionaries only
+        id: sync
+        run: |
+          git remote add upstream https://github.com/gaboolic/rime-frost.git
+          git fetch upstream master --depth=1
+          UPSTREAM_SHA=$(git rev-parse --short upstream/master)
+          echo "upstream_sha=${UPSTREAM_SHA}" >> "$GITHUB_OUTPUT"
+
+          # Sync ONLY pure upstream data files — never touch custom lua/, schemas, profiles/, themes/, or workflows
+          git checkout upstream/master -- \
+            cn_dicts/ \
+            cn_dicts_cell/ \
+            en_dicts/ \
+            opencc/STCharacters.ocd2 \
+            opencc/STPhrases.ocd2 \
+            opencc/TWPhrases.ocd2 \
+            opencc/TWVariants.ocd2 \
+            opencc/chinese_english.txt \
+            opencc/english_chinese.txt \
+            opencc/emoji.txt \
+            opencc/others.txt
+
+      - name: Verify dictionary & OpenCC integrity
+        run: |
+          python3 - <<'PY'
+          import json, pathlib
+          root = pathlib.Path('.')
+          required_dicts = [
+              'cn_dicts/8105.dict.yaml',
+              'cn_dicts/base.dict.yaml',
+              'cn_dicts/ext.dict.yaml',
+              'cn_dicts/corrections.dict.yaml',
+              'en_dicts/en.dict.yaml',
+              'en_dicts/en_ext.dict.yaml',
+          ]
+          for rel in required_dicts:
+              p = root / rel
+              assert p.exists() and p.stat().st_size > 100, f"Invalid dict: {rel}"
+          for jf in (root / 'opencc').glob('*.json'):
+              json.loads(jf.read_text(encoding='utf-8'))
+          print("Integrity check PASSED.")
+          PY
+
+      - name: Commit and push if dictionaries changed
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Dictionaries already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cn_dicts/ cn_dicts_cell/ en_dicts/ opencc/
+          git commit -m "chore(dicts): sync upstream rime-frost @ ${{ steps.sync.outputs.upstream_sha }}"
+          git push origin HEAD:main

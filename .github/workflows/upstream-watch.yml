@@ -1,0 +1,95 @@
+name: Upstream Watch (frost / rime-ice / weasel / wanxiang)
+
+on:
+  schedule:
+    # Weekly Monday 09:00 UTC+8 (01:00 UTC)
+    - cron: '0 1 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  watch-upstreams:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Query 4 upstreams and update rolling tracking issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess, urllib.request
+
+          HEADERS = {"User-Agent": "rime-chth1z-upstream-watcher/1.0"}
+          if os.environ.get("GH_TOKEN"):
+              HEADERS["Authorization"] = f"Bearer {os.environ['GH_TOKEN']}"
+
+          def fetch_json(url):
+              req = urllib.request.Request(url, headers=HEADERS)
+              with urllib.request.urlopen(req, timeout=20) as r:
+                  return json.loads(r.read().decode("utf-8"))
+
+          frost_lua = fetch_json("https://api.github.com/repos/gaboolic/rime-frost/commits?path=lua&per_page=5")
+          frost_root = fetch_json("https://api.github.com/repos/gaboolic/rime-frost/commits?per_page=5")
+          ice_lua = fetch_json("https://api.github.com/repos/iDvel/rime-ice/commits?path=lua&per_page=5")
+          weasel_rel = fetch_json("https://api.github.com/repos/rime/weasel/releases/tags/latest")
+          wx_rel = fetch_json("https://api.github.com/repos/amzxyz/rime-wanxiang-data/releases/tags/LTS")
+
+          def fmt_commits(items):
+              lines = []
+              for c in items:
+                  sha = c["sha"][:8]
+                  date = c["commit"]["committer"]["date"][:10]
+                  msg = c["commit"]["message"].splitlines()[0]
+                  url = c["html_url"]
+                  lines.append(f"- `{date}` [`{sha}`]({url}) {msg}")
+              return "\n".join(lines)
+
+          weasel_inst = next((a for a in weasel_rel.get("assets", []) if a["name"].endswith("installer.exe")), None)
+          gram_asset = next((a for a in wx_rel.get("assets", []) if a["name"] == "wanxiang-lts-zh-hans.gram"), None)
+
+          weasel_line = (
+              f"- **{weasel_rel.get('name', 'latest')}**: `{weasel_inst['name']}` (updated `{weasel_inst['updated_at'][:10]}`) — [Download]({weasel_inst['browser_download_url']})"
+              if weasel_inst else "- No installer found"
+          )
+          gram_line = (
+              f"- **`wanxiang-lts-zh-hans.gram`**: `{gram_asset['size'] / 1048576:.2f} MB`, updated `{gram_asset['updated_at'][:10]}`, digest `{gram_asset.get('digest', 'n/a')}`"
+              if gram_asset else "- No gram asset found"
+          )
+
+          body = f"""## 上游多源更新追蹤摘要
+
+          > 此 Issue 由 `.github/workflows/upstream-watch.yml` 每週自動刷新。詞庫由 `sync-upstream-dicts.yml` 自動同步，其餘引擎／腳本／客戶端更新在此審閱後按需移植或對照。
+
+          ### 1. `gaboolic/rime-frost`（最新總覽）
+          {fmt_commits(frost_root)}
+
+          ### 2. `gaboolic/rime-frost`（`lua/` 變更）
+          {fmt_commits(frost_lua)}
+
+          ### 3. `iDvel/rime-ice`（上游母庫 `lua/` 變更）
+          {fmt_commits(ice_lua)}
+
+          ### 4. `rime/weasel` Nightly（Windows 客戶端）
+          {weasel_line}
+
+          ### 5. `amzxyz/rime-wanxiang-data`（400 MB LTS 語法模型）
+          {gram_line}
+          """
+          body = "\n".join(line[10:] if line.startswith("          ") else line for line in body.splitlines())
+
+          repo = os.environ["GITHUB_REPOSITORY"]
+          title = "[Upstream Watch] 上游引擎與腳本更新追蹤"
+          existing = json.loads(subprocess.check_output(
+              ["gh", "issue", "list", "-R", repo, "--state", "open", "--search", f'"{title}" in:title', "--json", "number,title"],
+              text=True
+          ))
+          match = next((i for i in existing if i["title"] == title), None)
+          if match:
+              subprocess.check_call(["gh", "issue", "edit", str(match["number"]), "-R", repo, "--body", body])
+              print(f"Updated rolling issue #{match['number']}")
+          else:
+              subprocess.check_call(["gh", "issue", "create", "-R", repo, "--title", title, "--body", body])
+              print("Created rolling issue")
+          PY
