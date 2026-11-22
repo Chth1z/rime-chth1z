@@ -339,7 +339,7 @@ def create_isolated_env(rime_dir: pathlib.Path, schema_id: str, yaml_overrides: 
     tmp = pathlib.Path(tempfile.mkdtemp(prefix="rime-eval-"))
     (tmp / "logs").mkdir()
     (tmp / "build").mkdir()
-    for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts"):
+    for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "zhiyi"):
         src = rime_dir / d
         if src.exists():
             subprocess.run(["cmd", "/c", "mklink", "/J", str(tmp / d), str(src)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
@@ -355,15 +355,19 @@ def create_isolated_env(rime_dir: pathlib.Path, schema_id: str, yaml_overrides: 
         elif f.is_file() and f.suffix == ".gram":
             subprocess.run(["cmd", "/c", "mklink", "/H", str(tmp / f.name), str(f)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
 
-    # Disable user_dict for clean reproducible evaluation & apply overrides in compiled build/<schema>.schema.yaml
     schema_path = tmp / "build" / f"{schema_id}.schema.yaml"
     raw = schema_path.read_text(encoding="utf-8")
 
-    # Ensure enable_user_dict: false under translator:
-    if re.search(r"(?m)^  enable_user_dict:", raw):
-        raw = re.sub(r"(?m)^  enable_user_dict:.*$", "  enable_user_dict: false", raw)
-    else:
-        raw = re.sub(r"(?m)^translator:\r?\n", "translator:\n  enable_user_dict: false\n", raw, count=1)
+    # Disable user_dict specifically inside translator: section (avoid matching melt_eng/enable_user_dict)
+    trans_re = re.compile(r"(?m)^translator:\r?\n((?:  .*\r?\n)*)")
+    tm = trans_re.search(raw)
+    if tm:
+        tbody = tm.group(1)
+        if re.search(r"(?m)^  enable_user_dict:", tbody):
+            tbody = re.sub(r"(?m)^  enable_user_dict:.*$", "  enable_user_dict: false", tbody, count=1)
+        else:
+            tbody = "  enable_user_dict: false\n" + tbody
+        raw = raw[:tm.start(1)] + tbody + raw[tm.end(1):]
 
     if yaml_overrides:
         for section_key, val in yaml_overrides.items():
@@ -387,7 +391,7 @@ def create_isolated_env(rime_dir: pathlib.Path, schema_id: str, yaml_overrides: 
 
 
 def cleanup_isolated_env(tmp: pathlib.Path) -> None:
-    for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts"):
+    for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "zhiyi"):
         p = tmp / d
         if p.exists():
             subprocess.run(["cmd", "/c", "rmdir", str(p)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -400,16 +404,22 @@ def evaluate(
     sentences: List[str],
     overrides: Optional[Dict[str, str]] = None,
     show_errors: int = 0,
+    neural: bool = False,
 ) -> Dict[str, float]:
     weasel_dir = find_weasel_dir()
     double_pinyin = "double_pinyin" in schema_id
     pairs = [(s, sentence_to_keys(s, double_pinyin)) for s in sentences]
     pairs = [(s, k) for s, k in pairs if k]
 
-    tmp = create_isolated_env(rime_dir, schema_id, overrides)
+    eff_overrides = dict(overrides or {})
+    if neural:
+        eff_overrides.setdefault("zhiyi_rerank/sync_init", "true")
+
+    tmp = create_isolated_env(rime_dir, schema_id, eff_overrides)
     try:
         eng = RimeEngine(weasel_dir, tmp, tmp / "logs")
         eng.select_schema(schema_id)
+        eng.dll.RimeSetOption(eng.sid, b"neural_rerank", neural)
         # Warmup
         eng.decode_sentence("nihk" if double_pinyin else "nihao")
 
@@ -465,6 +475,7 @@ def main() -> None:
     ap.add_argument("--limit", type=int, default=0, help="Max sentences (0 = all)")
     ap.add_argument("--override", action="append", default=[], help="section/key=value")
     ap.add_argument("--show-errors", type=int, default=0)
+    ap.add_argument("--neural", action="store_true", help="Enable Zhiyi ONNX neural reranking (sync init)")
     args = ap.parse_args()
 
     text = pathlib.Path(args.corpus).read_text(encoding="utf-8")
@@ -477,7 +488,7 @@ def main() -> None:
         k, v = item.split("=", 1)
         overrides[k] = v
 
-    res = evaluate(pathlib.Path(args.rime_dir), args.schema, sents, overrides, args.show_errors)
+    res = evaluate(pathlib.Path(args.rime_dir), args.schema, sents, overrides, args.show_errors, neural=args.neural)
     print(
         f"[{args.schema}] n={res['n']} | sent_acc={res['sent_acc']:.2f}% ({res['exact']}/{res['n']}) "
         f"| char_acc={res['char_acc']:.2f}% | {res['ms_per_key']:.2f} ms/key"

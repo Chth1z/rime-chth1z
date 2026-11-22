@@ -13,7 +13,8 @@
 #>
 param(
     [string]$RimeDir  = (Join-Path $env:APPDATA "Rime"),
-    [string]$SchemaId = "rime_frost_double_pinyin"
+    [string]$SchemaId = "rime_frost_double_pinyin",
+    [switch]$WaitNeural
 )
 
 $ErrorActionPreference = "Stop"
@@ -34,7 +35,7 @@ $benchDir = Join-Path $env:TEMP ("rime-frost-bench-" + (Get-Date -Format "yyyyMM
 New-Item -ItemType Directory -Force -Path "$benchDir\logs" | Out-Null
 
 try {
-    foreach ($d in @("build", "lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts")) {
+    foreach ($d in @("build", "lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "zhiyi")) {
         $src = Join-Path $RimeDir $d
         if (Test-Path $src) { cmd /c mklink /J "$benchDir\$d" "$src" | Out-Null }
     }
@@ -68,7 +69,7 @@ public static class RimeFrostBench {
     [DllImport("rime.dll", CallingConvention=CallingConvention.Cdecl)] static extern void RimeClearComposition(UIntPtr sid);
     [DllImport("kernel32.dll", CharSet=CharSet.Unicode)] static extern bool SetDllDirectory(string lpPathName);
 
-    public static void Run(string weaselDir, string userDir, string logDir, string schemaId) {
+    public static void Run(string weaselDir, string userDir, string logDir, string schemaId, int waitNeuralMs) {
         SetDllDirectory(weaselDir);
         var t = new RimeTraits();
         t.data_size = Marshal.SizeOf(typeof(RimeTraits)) - sizeof(int);
@@ -88,6 +89,9 @@ public static class RimeFrostBench {
         RimeSelectSchema(sid, schemaId);
         swInit.Stop();
         Console.WriteLine("Init + SelectSchema : {0:F1} ms", swInit.Elapsed.TotalMilliseconds);
+        if (waitNeuralMs > 0) {
+            System.Threading.Thread.Sleep(waitNeuralMs);
+        }
 
         // Warmup
         foreach (char ch in "nihk") RimeProcessKey(sid, (int)ch, 0);
@@ -150,10 +154,11 @@ public static class RimeFrostBench {
 "@
     }
 
-    [RimeFrostBench]::Run($weaselDir, $benchDir, "$benchDir\logs", $SchemaId)
+    $waitMs = if ($WaitNeural) { 2000 } else { 0 }
+    [RimeFrostBench]::Run($weaselDir, $benchDir, "$benchDir\logs", $SchemaId, $waitMs)
 }
 finally {
-    foreach ($d in @("build", "lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts")) {
+    foreach ($d in @("build", "lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "zhiyi")) {
         if (Test-Path "$benchDir\$d") { cmd /c rmdir "$benchDir\$d" 2>$null | Out-Null }
     }
     Remove-Item $benchDir -Recurse -Force -ErrorAction SilentlyContinue
