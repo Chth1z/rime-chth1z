@@ -66,6 +66,12 @@ if (Test-Path $themeFile) {
 } else {
     Write-Warning "Theme file not found: $themeFile (keeping existing weasel.custom.yaml)"
 }
+$updaterSrc = Join-Path $repoRoot "scripts\update-local.ps1"
+if (Test-Path $updaterSrc) {
+    $autoDir = Join-Path $rimeDir "auto_update"
+    New-Item -ItemType Directory -Force -Path $autoDir | Out-Null
+    Copy-Item $updaterSrc (Join-Path $autoDir "Update-RimeChth1z.ps1") -Force
+}
 
 # 4. Deploy & restart single WeaselServer
 $p = Start-Process -FilePath (Join-Path $weaselDir "WeaselDeployer.exe") -ArgumentList "/deploy" -Wait -PassThru
