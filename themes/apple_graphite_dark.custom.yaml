@@ -47,6 +47,12 @@ patch:
   "style/layout/corner_radius": 11
   "style/layout/round_corner": 6
   "style/layout/type": vertical
+  # 指定應用專屬初始選項（不覆蓋小狼毫預設的其他 app_options，也不會寫壞 user.yaml 全局記憶）
+  # Claude 桌面端固定預設臺灣繁體雙出；其餘程式沿用 user.yaml（預設簡中）
+  "app_options/claude.exe":
+    traditionalization: true
+  "app_options/claude-desktop.exe":
+    traditionalization: true
   # Weasel 預設色碼為 ABGR (0xAABBGGRR / 0xBBGGRR)
   "preset_color_schemes/apple_graphite_dark":
     name: "蘋果石墨暗色／Apple Graphite Dark"
