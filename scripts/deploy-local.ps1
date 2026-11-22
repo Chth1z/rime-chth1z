@@ -8,7 +8,8 @@
 #>
 param(
     [string]$Theme = "apple_graphite_dark",
-    [switch]$RunBench
+    [switch]$RunBench,
+    [switch]$Verify
 )
 
 $ErrorActionPreference = "Stop"
@@ -79,6 +80,10 @@ if (-not (Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)) {
 $procs = Get-Process -Name WeaselServer -ErrorAction SilentlyContinue
 Write-Output "WeaselServer running: count=$($procs.Count) PID=$($procs.Id)"
 
-if ($RunBench) {
+if ($Verify) {
+    & (Join-Path $repoRoot "bench\accuracy-test.ps1")
+    if ($LASTEXITCODE -ne 0) { throw "accuracy-test.ps1 failed" }
+}
+if ($RunBench -or $Verify) {
     & (Join-Path $repoRoot "bench\bench-rime.ps1")
 }

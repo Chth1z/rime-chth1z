@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     Reproducible millisecond keystroke latency benchmark for librime (rime.dll).
 .DESCRIPTION
@@ -109,10 +109,19 @@ public static class RimeFrostBench {
         Console.WriteLine("All 26 1st-keys a-z : avg={0:F1} ms | max={1:F1} ms ('{2}') | slow(>15ms)={3}",
             azSum / 26.0, azMax, azMaxCh, string.IsNullOrEmpty(slowKeys) ? "none" : slowKeys.Trim());
 
-        // 2. Sentence benchmark
+        // 2. Sentence benchmark (valid Natural Double Pinyin & Full Pinyin sentences)
         string[] inputs = schemaId.Contains("double_pinyin")
-            ? new string[] { "nihk", "xzyxlhuyxeyij", "wmjrtqzmydqqkk", "zgyydfqjyhlmyyuzmujj" }
-            : new string[] { "nihao", "xianzaiyongxialaihaiyouyixieyanchi", "womenjintianzenmeyang" };
+            ? new string[] {
+                "nihk",                          // ni hao (4 keys)
+                "womfjntmzfmeyh",                // wo men jin tian zen me yang (14 keys)
+                "xmzlysxwllhlybyixxyjii",        // xian zai yong xia lai hai you yi xie yan chi (22 keys)
+                "jntmtmqivfdehfhkwoxdqugsyrwj"   // jin tian tian qi zhen de hen hao wo xiang qu gong yuan wan (28 keys)
+            }
+            : new string[] {
+                "nihao",
+                "womenjintianzenmeyang",
+                "xianzaiyongxialaihaiyouyixieyanchi"
+            };
 
         double fSum = 0, rSum = 0, sMax = 0; int rCnt = 0;
         foreach (var inp in inputs) {

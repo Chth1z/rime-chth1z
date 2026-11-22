@@ -1,0 +1,379 @@
+{
+  "cases": [
+    {
+      "name": "dp: short phrase nihk",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "nihk",
+      "first_text": "你好",
+      "first_comment_empty": true,
+      "no_raw_pinyin_comment": true
+    },
+    {
+      "name": "dp: medium sentence womfjntmzfmeyh",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "womfjntmzfmeyh",
+      "first_text": "我們今天怎麼樣",
+      "no_raw_pinyin_comment": true
+    },
+    {
+      "name": "dp: long sentence 14 chars",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "jntmtmqivfdehfhkwoxdqugsyrwj",
+      "first_text": "今天天氣真的很好我想去公園玩",
+      "no_raw_pinyin_comment": true
+    },
+    {
+      "name": "dp: s2twp 软件 -> 軟體",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "rrjm",
+      "first_text": "軟體"
+    },
+    {
+      "name": "dp: s2twp 内存 -> 記憶體",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "nzcp",
+      "first_text": "記憶體"
+    },
+    {
+      "name": "dp: s2twp 网络 -> 網路",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "whlo",
+      "first_text": "網路"
+    },
+    {
+      "name": "dp: s2twp 鼠标 -> 滑鼠",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "uubc",
+      "first_text": "滑鼠"
+    },
+    {
+      "name": "dp: s2twp 默认 -> 預設",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "morf",
+      "first_text": "預設"
+    },
+    {
+      "name": "dp: s2twp 文件 -> 檔案",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "wfjm",
+      "first_text": "檔案"
+    },
+    {
+      "name": "dp: s2twp 信息 -> 資訊",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "xnxi",
+      "first_text": "資訊"
+    },
+    {
+      "name": "dp: toggle traditionalization=false -> 软件",
+      "schema": "rime_frost_double_pinyin",
+      "options": { "traditionalization": false },
+      "keys": "rrjm",
+      "first_text": "软件"
+    },
+    {
+      "name": "dp: corrector 馄饨 (hun dun)",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "hpdp",
+      "any_text_with_comment": { "text": "餛飩", "comment": "馄(hun)饨(tun)" },
+      "no_raw_pinyin_comment": true
+    },
+    {
+      "name": "dp: corrector 主角 (zhu jiao)",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "vujc",
+      "first_text": "主角",
+      "first_comment": "zhǔ jué",
+      "no_raw_pinyin_comment": true
+    },
+    {
+      "name": "dp: corrector 角色 (jiao se)",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "jcse",
+      "first_text": "角色",
+      "first_comment": "jué sè",
+      "no_raw_pinyin_comment": true
+    },
+    {
+      "name": "dp: corrector 按捺 (an nai)",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "ajnl",
+      "any_text_with_comment": { "text": "按捺", "comment": "按耐(捺nà)" },
+      "no_raw_pinyin_comment": true
+    },
+    {
+      "name": "dp: autocap Hello -> Hello",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "Hello",
+      "first_text": "Hello"
+    },
+    {
+      "name": "dp: autocap HEllo -> HELLO",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "HEllo",
+      "first_text": "HELLO"
+    },
+    {
+      "name": "dp: autocap lowercase hello unchanged",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "hello",
+      "first_text": "hello"
+    },
+    {
+      "name": "dp: autocap PS keeps Photoshop intact",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "PS",
+      "first_text": "PS",
+      "any_text": "Photoshop"
+    },
+    {
+      "name": "dp: uppercase Nous not hijacked by lunar",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "Nous",
+      "first_text": "Nous",
+      "no_text_regex": "无效日期|無效日期"
+    },
+    {
+      "name": "dp: uppercase VEGF not hijacked by calculator",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "VEGF",
+      "first_text": "VEGF",
+      "no_text_regex": "解析失败|解析失敗"
+    },
+    {
+      "name": "dp: uppercase RTX4090 not hijacked by number",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "RTX",
+      "first_text": "RTX",
+      "no_text_regex": "数值超限|元整"
+    },
+    {
+      "name": "dp: reduce_english nous -> Chinese before nous",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "nous",
+      "text_before": ["諾", "nous"]
+    },
+    {
+      "name": "dp: reduce_english bien -> 比恩 before bien",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "bien",
+      "text_before": ["比恩", "bien"]
+    },
+    {
+      "name": "dp: reduce_english rug -> 如果 first",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "rug",
+      "first_text": "如果"
+    },
+    {
+      "name": "dp: date_translator date",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "date",
+      "first_text_regex": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    {
+      "name": "dp: date_translator time",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "time",
+      "first_text_regex": "^\\d{2}:\\d{2}$"
+    },
+    {
+      "name": "dp: date_translator week",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "week",
+      "first_text_regex": "^星期[日一二三四五六]$"
+    },
+    {
+      "name": "dp: date_translator datetime ISO 8601",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "datetime",
+      "first_text_regex": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}([+-]\\d{2}:\\d{2}|Z)$"
+    },
+    {
+      "name": "dp: lunar translator",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "lunar",
+      "first_text_regex": "^[〇一二三四五六七八九]{4}年"
+    },
+    {
+      "name": "dp: calculator /vs1+2*3",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "/vs1+2*3",
+      "first_text": "7",
+      "any_text": "1+2*3=7"
+    },
+    {
+      "name": "dp: calculator /vs5!",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "/vs5!",
+      "first_text": "120"
+    },
+    {
+      "name": "dp: select_character first [",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "nihk[",
+      "commit": "你"
+    },
+    {
+      "name": "dp: select_character last ]",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "nihk]",
+      "commit": "好"
+    },
+    {
+      "name": "dp: select_character repeated confirmed prefix",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "nihknihk{Down}{Space}[",
+      "commit": "你好你"
+    },
+    {
+      "name": "dp: select_character partial candidate preserves right input",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "nihkwomf{Down}[",
+      "commit": "你",
+      "first_text": "我們"
+    },
+    {
+      "name": "dp: select_character mid-cursor preserves right input",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "nihkwomf{Left}{Left}[",
+      "commit": "你",
+      "first_text": "我們"
+    },
+    {
+      "name": "dp: select_character caret at start does not duplicate input",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "nihkwomf{Home}[",
+      "commit": "你",
+      "preedit": ""
+    },
+    {
+      "name": "dp: backtick direct commit",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "`",
+      "commit": "`"
+    },
+    { "name": "dp: pin q -> 去", "schema": "rime_frost_double_pinyin", "keys": "q", "first_text": "去", "first_comment_empty": true },
+    { "name": "dp: pin w -> 我", "schema": "rime_frost_double_pinyin", "keys": "w", "first_text": "我", "first_comment_empty": true },
+    { "name": "dp: pin e -> 而", "schema": "rime_frost_double_pinyin", "keys": "e", "first_text": "而", "first_comment_empty": true },
+    { "name": "dp: pin r -> 人", "schema": "rime_frost_double_pinyin", "keys": "r", "first_text": "人", "first_comment_empty": true },
+    { "name": "dp: pin t -> 他", "schema": "rime_frost_double_pinyin", "keys": "t", "first_text": "他", "first_comment_empty": true },
+    { "name": "dp: pin y -> 有", "schema": "rime_frost_double_pinyin", "keys": "y", "first_text": "有", "first_comment_empty": true },
+    { "name": "dp: pin u -> 是", "schema": "rime_frost_double_pinyin", "keys": "u", "first_text": "是", "first_comment_empty": true },
+    { "name": "dp: pin i -> 出", "schema": "rime_frost_double_pinyin", "keys": "i", "first_text": "出", "first_comment_empty": true },
+    { "name": "dp: pin o -> 哦", "schema": "rime_frost_double_pinyin", "keys": "o", "first_text": "哦", "first_comment_empty": true },
+    { "name": "dp: pin p -> 配", "schema": "rime_frost_double_pinyin", "keys": "p", "first_text": "配", "first_comment_empty": true },
+    { "name": "dp: pin a -> 啊", "schema": "rime_frost_double_pinyin", "keys": "a", "first_text": "啊", "first_comment_empty": true },
+    { "name": "dp: pin s -> 算", "schema": "rime_frost_double_pinyin", "keys": "s", "first_text": "算", "first_comment_empty": true },
+    { "name": "dp: pin d -> 的", "schema": "rime_frost_double_pinyin", "keys": "d", "first_text": "的", "first_comment_empty": true },
+    { "name": "dp: pin f -> 非", "schema": "rime_frost_double_pinyin", "keys": "f", "first_text": "非", "first_comment_empty": true },
+    { "name": "dp: pin g -> 個", "schema": "rime_frost_double_pinyin", "keys": "g", "first_text": "個", "first_comment_empty": true },
+    { "name": "dp: pin h -> 和", "schema": "rime_frost_double_pinyin", "keys": "h", "first_text": "和", "first_comment_empty": true },
+    { "name": "dp: pin j -> 就", "schema": "rime_frost_double_pinyin", "keys": "j", "first_text": "就", "first_comment_empty": true },
+    { "name": "dp: pin k -> 可", "schema": "rime_frost_double_pinyin", "keys": "k", "first_text": "可", "first_comment_empty": true },
+    { "name": "dp: pin l -> 了", "schema": "rime_frost_double_pinyin", "keys": "l", "first_text": "了", "first_comment_empty": true },
+    { "name": "dp: pin z -> 在", "schema": "rime_frost_double_pinyin", "keys": "z", "first_text": "在", "first_comment_empty": true },
+    { "name": "dp: pin x -> 小", "schema": "rime_frost_double_pinyin", "keys": "x", "first_text": "小", "first_comment_empty": true },
+    { "name": "dp: pin c -> 從", "schema": "rime_frost_double_pinyin", "keys": "c", "first_text": "從", "first_comment_empty": true },
+    { "name": "dp: pin v -> 這", "schema": "rime_frost_double_pinyin", "keys": "v", "first_text": "這", "first_comment_empty": true },
+    { "name": "dp: pin b -> 吧", "schema": "rime_frost_double_pinyin", "keys": "b", "first_text": "吧", "first_comment_empty": true },
+    { "name": "dp: pin n -> 你", "schema": "rime_frost_double_pinyin", "keys": "n", "first_text": "你", "first_comment_empty": true },
+    { "name": "dp: pin m -> 嗎", "schema": "rime_frost_double_pinyin", "keys": "m", "first_text": "嗎", "first_comment_empty": true },
+    {
+      "name": "dp: pin_cand=false disables pinning on p",
+      "schema": "rime_frost_double_pinyin",
+      "options": { "pin_cand": false },
+      "keys": "p",
+      "no_first_text": "配"
+    },
+    {
+      "name": "fp: short phrase nihao",
+      "schema": "rime_frost",
+      "keys": "nihao",
+      "first_text": "你好",
+      "first_comment_empty": true,
+      "no_raw_pinyin_comment": true
+    },
+    {
+      "name": "fp: sentence womenjintianzenmeyang",
+      "schema": "rime_frost",
+      "keys": "womenjintianzenmeyang",
+      "first_text": "我們今天怎麼樣",
+      "no_raw_pinyin_comment": true
+    },
+    {
+      "name": "fp: s2twp ruanjian -> 軟體",
+      "schema": "rime_frost",
+      "keys": "ruanjian",
+      "first_text": "軟體"
+    },
+    {
+      "name": "fp: corrector hundun",
+      "schema": "rime_frost",
+      "keys": "hundun",
+      "any_text_with_comment": { "text": "餛飩", "comment": "馄(hun)饨(tun)" },
+      "no_raw_pinyin_comment": true
+    },
+    {
+      "name": "fp: corrector zhujiao",
+      "schema": "rime_frost",
+      "keys": "zhujiao",
+      "first_text": "主角",
+      "first_comment": "zhǔ jué"
+    },
+    {
+      "name": "fp: autocap Hello",
+      "schema": "rime_frost",
+      "keys": "Hello",
+      "first_text": "Hello"
+    },
+    {
+      "name": "fp: autocap HEllo -> HELLO",
+      "schema": "rime_frost",
+      "keys": "HEllo",
+      "first_text": "HELLO"
+    },
+    {
+      "name": "fp: reduce_english rug -> 如果 first",
+      "schema": "rime_frost",
+      "keys": "rug",
+      "first_text": "如果"
+    },
+    {
+      "name": "fp: date rq",
+      "schema": "rime_frost",
+      "keys": "rq",
+      "first_text_regex": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    {
+      "name": "fp: time sj",
+      "schema": "rime_frost",
+      "keys": "sj",
+      "first_text_regex": "^\\d{2}:\\d{2}$"
+    },
+    {
+      "name": "fp: week xq",
+      "schema": "rime_frost",
+      "keys": "xq",
+      "first_text_regex": "^星期[日一二三四五六]$"
+    },
+    {
+      "name": "fp: lunar nl",
+      "schema": "rime_frost",
+      "keys": "nl",
+      "first_text_regex": "^[〇一二三四五六七八九]{4}年"
+    },
+    {
+      "name": "fp: calculator /vs2^10",
+      "schema": "rime_frost",
+      "keys": "/vs2^10",
+      "first_text_regex": "^1024(\\.0)?$"
+    },
+    { "name": "fp: pin q -> 去", "schema": "rime_frost", "keys": "q", "first_text": "去", "first_comment_empty": true },
+    { "name": "fp: pin w -> 我", "schema": "rime_frost", "keys": "w", "first_text": "我", "first_comment_empty": true },
+    { "name": "fp: pin er -> 而", "schema": "rime_frost", "keys": "er", "first_text": "而", "first_comment_empty": true },
+    { "name": "fp: pin sh -> 是", "schema": "rime_frost", "keys": "sh", "first_text": "是", "first_comment_empty": true },
+    { "name": "fp: pin ch -> 出", "schema": "rime_frost", "keys": "ch", "first_text": "出", "first_comment_empty": true },
+    { "name": "fp: pin zh -> 這", "schema": "rime_frost", "keys": "zh", "first_text": "這", "first_comment_empty": true }
+  ]
+}
