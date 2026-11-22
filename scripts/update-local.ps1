@@ -73,7 +73,7 @@ function Sync-RepoToRime([string]$SourceRoot, [string]$TargetRimeDir, [string]$T
         if (Test-Path $src) { Copy-Item $src (Join-Path $TargetRimeDir "en_dicts\$ef") -Force }
     }
     Copy-Item (Join-Path $SourceRoot "lua\*.lua") (Join-Path $TargetRimeDir "lua") -Force
-    foreach ($of in @("s2tw.json","s2twp.json","STPhrases.ocd2","STCharacters.ocd2","TWPhrases.ocd2","TWVariants.ocd2","emoji.json","emoji.txt","others.txt","chinese_english.json","chinese_english.txt","english_chinese.txt")) {
+    foreach ($of in @("s2tw.json","s2twp.json","STPhrases.ocd2","STCharacters.ocd2","TWPhrases.ocd2","TWVariants.ocd2","t2s.json","TSCharacters.ocd2","TSPhrases.ocd2","emoji.json","emoji.txt","others.txt","chinese_english.json","chinese_english.txt","english_chinese.txt")) {
         $src = Join-Path $SourceRoot "opencc\$of"
         if (Test-Path $src) { Copy-Item $src (Join-Path $TargetRimeDir "opencc\$of") -Force }
     }
@@ -97,7 +97,16 @@ function Sync-RepoToRime([string]$SourceRoot, [string]$TargetRimeDir, [string]$T
     if (Test-Path $selfUpdater) {
         Copy-Item $selfUpdater (Join-Path $TargetRimeDir "auto_update\Update-RimeChth1z.ps1") -Force
     }
-    foreach ($rel in @("radical_pinyin.dict.yaml","radical_pinyin.schema.yaml","rime_frost_aux.dict.yaml","rime_frost_aux.schema.yaml","lua\aux_lookup_filter.lua","lua\aux_code")) {
+    $obsolete = @(
+        "radical_pinyin.dict.yaml","radical_pinyin.schema.yaml",
+        "rime_frost_aux.dict.yaml","rime_frost_aux.schema.yaml",
+        "lua\aux_lookup_filter.lua","lua\aux_code",
+        "lua\autocap_filter.lua","lua\cn_en_spacer.lua","lua\corrector.lua",
+        "lua\en_spacer.lua","lua\force_gc.lua","lua\is_in_user_dict.lua",
+        "lua\long_word_filter.lua","lua\number_translator.lua","lua\pin_cand_filter.lua",
+        "lua\reduce_english_filter.lua","lua\unicode.lua","lua\v_filter.lua"
+    )
+    foreach ($rel in $obsolete) {
         $obs = Join-Path $TargetRimeDir $rel
         if (Test-Path $obs) { Remove-Item $obs -Recurse -Force -ErrorAction SilentlyContinue }
     }

@@ -21,6 +21,8 @@ auto_update/
 bench/tmp/
 native/rime_zhiyi/target/
 zhiyi/
+*.onnx
+feedback.jsonl
 *.log
 *.tmp
 .DS_Store

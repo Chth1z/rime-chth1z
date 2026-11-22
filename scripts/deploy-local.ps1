@@ -42,7 +42,7 @@ foreach ($ef in @("en.dict.yaml", "en_ext.dict.yaml", "cn_en.txt", "cn_en_double
     if (Test-Path $src) { Copy-Item $src (Join-Path $rimeDir "en_dicts\$ef") -Force }
 }
 Copy-Item (Join-Path $repoRoot "lua\*.lua") (Join-Path $rimeDir "lua") -Force
-foreach ($of in @("s2tw.json","s2twp.json","STPhrases.ocd2","STCharacters.ocd2","TWPhrases.ocd2","TWVariants.ocd2","emoji.json","emoji.txt","others.txt","chinese_english.json","chinese_english.txt","english_chinese.txt")) {
+foreach ($of in @("s2tw.json","s2twp.json","STPhrases.ocd2","STCharacters.ocd2","TWPhrases.ocd2","TWVariants.ocd2","t2s.json","TSCharacters.ocd2","TSPhrases.ocd2","emoji.json","emoji.txt","others.txt","chinese_english.json","chinese_english.txt","english_chinese.txt")) {
     $src = Join-Path $repoRoot "opencc\$of"
     if (Test-Path $src) { Copy-Item $src (Join-Path $rimeDir "opencc\$of") -Force }
 }
@@ -80,7 +80,19 @@ $obsoleteRelPaths = @(
     "rime_frost_aux.dict.yaml",
     "rime_frost_aux.schema.yaml",
     "lua\aux_lookup_filter.lua",
-    "lua\aux_code"
+    "lua\aux_code",
+    "lua\autocap_filter.lua",
+    "lua\cn_en_spacer.lua",
+    "lua\corrector.lua",
+    "lua\en_spacer.lua",
+    "lua\force_gc.lua",
+    "lua\is_in_user_dict.lua",
+    "lua\long_word_filter.lua",
+    "lua\number_translator.lua",
+    "lua\pin_cand_filter.lua",
+    "lua\reduce_english_filter.lua",
+    "lua\unicode.lua",
+    "lua\v_filter.lua"
 )
 foreach ($rel in $obsoleteRelPaths) {
     $obs = Join-Path $rimeDir $rel
