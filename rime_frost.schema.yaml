@@ -83,13 +83,17 @@ chth1z_pipeline:
   pin_max_scan: 40
   gc_interval: 16
 
-# 端側神經整句重排（知意 ML-pumpkin-1103 KV-cache ＋ 萬象 .gram 融合 ＋ P2C 合成，需執行 scripts/install-zhiyi-reranker.ps1）
+# 端側神經整句重排 v0.3.0（知意 ML-pumpkin-1103 KV-cache ＋ 萬象 .gram 融合 ＋ Pass-2 校驗 P2C ＋ 非阻塞 UIA 上下文）
 zhiyi_rerank:
   option_name: neural_rerank
+  pinyin_layout: auto
   max_candidates: 8
   fusion_weights: [0.91, -1.26, 0.05, 0.40, -0.39]
-  p2c_top1_threshold: 1.0
-  p2c_top2_threshold: 0.45
+  p2c_verify_margin: 0.20
+  p2c_top1_logit_diff: 2.0
+  p2c_top1_min_gram_diff: -2.0
+  p2c_top2_logit_diff: 0.5
+  enable_uia_context: true
   threads: 8
   min_input_len: 6
   log_feedback: true
