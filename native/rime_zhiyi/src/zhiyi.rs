@@ -67,11 +67,11 @@ pub struct FusionWeights {
 impl Default for FusionWeights {
     fn default() -> Self {
         Self {
-            w_logit: 0.91,
-            w_rank: -1.26,
+            w_logit: 1.0,
+            w_rank: -1.4,
             w_gram: 0.05,
-            w_char_lp: 0.40,
-            w_ctx_lp: -0.39,
+            w_char_lp: 0.15,
+            w_ctx_lp: 0.0,
         }
     }
 }

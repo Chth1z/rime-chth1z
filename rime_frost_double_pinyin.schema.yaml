@@ -90,8 +90,8 @@ zhiyi_rerank:
   option_name: neural_rerank
   pinyin_layout: auto
   max_candidates: 8
-  # 五維低維融合先驗 [zhiyi_lp, ln(rank+1), gram_delta, char_lp, zhiyi_lp*has_ctx]（可用 scripts/tune-personal-fusion.py 個人化校準）
-  fusion_weights: [0.91, -1.26, 0.05, 0.40, -0.39]
+  # 通用跨領域先驗 [zhiyi_lp, ln(rank+1), gram_delta, char_lp, zhiyi_lp*has_ctx]（經未見跨領域盲測防過擬合驗證）
+  fusion_weights: [1.0, -1.4, 0.05, 0.15, 0.0]
   # Pass-2 跨編碼器 ＋ .gram 交叉驗證 P2C 門控（僅對 ~7% 高潛力 OOV 候選複用 KV-cache 驗證）
   p2c_verify_margin: 0.20
   p2c_top1_logit_diff: 2.0

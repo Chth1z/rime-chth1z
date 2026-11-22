@@ -88,7 +88,7 @@ zhiyi_rerank:
   option_name: neural_rerank
   pinyin_layout: auto
   max_candidates: 8
-  fusion_weights: [0.91, -1.26, 0.05, 0.40, -0.39]
+  fusion_weights: [1.0, -1.4, 0.05, 0.15, 0.0]
   p2c_verify_margin: 0.20
   p2c_top1_logit_diff: 2.0
   p2c_top1_min_gram_diff: -2.0
