@@ -231,7 +231,7 @@ public static class RimeAccuracyRunner {
     [RimeAccuracyRunner]::Init($weaselDir, $benchDir, "$benchDir\logs")
     if ($WaitNeural) {
         [RimeAccuracyRunner]::EnsureSchema("rime_frost_double_pinyin")
-        Start-Sleep -Milliseconds 2000
+        Start-Sleep -Milliseconds 4500
     }
 
     $passed = 0

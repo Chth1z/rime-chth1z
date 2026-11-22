@@ -154,7 +154,8 @@ public static class RimeFrostBench {
 "@
     }
 
-    $waitMs = if ($WaitNeural) { 2000 } else { 0 }
+    # Background ORT init takes ~0.8s on AC and ~2.7s on battery
+    $waitMs = if ($WaitNeural) { 4500 } else { 0 }
     [RimeFrostBench]::Run($weaselDir, $benchDir, "$benchDir\logs", $SchemaId, $waitMs)
 }
 finally {
