@@ -1,0 +1,65 @@
+name: Build Native Neural Reranker
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "native/rime_zhiyi/**"
+      - "lua/zhiyi_rerank_filter.lua"
+      - ".github/workflows/build-native-reranker.yml"
+  pull_request:
+    paths:
+      - "native/rime_zhiyi/**"
+      - "lua/zhiyi_rerank_filter.lua"
+  workflow_dispatch:
+
+jobs:
+  build-windows-x64:
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: native/rime_zhiyi
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Rust stable toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+
+      - name: Cache Cargo registry & build
+        uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: native/rime_zhiyi
+
+      - name: Check formatting
+        run: cargo fmt --all -- --check
+
+      - name: Run Clippy (strict)
+        run: cargo clippy --all-targets -- -D warnings
+
+      - name: Run unit tests
+        run: cargo test --locked
+
+      - name: Build release DLL (win-x64)
+        run: cargo build --release --locked
+
+      - name: Package artifact & SHA-256
+        shell: pwsh
+        working-directory: .
+        run: |
+          New-Item -ItemType Directory -Force -Path dist | Out-Null
+          Copy-Item native/rime_zhiyi/target/release/rime_zhiyi.dll dist/rime_zhiyi.dll
+          Copy-Item lua/zhiyi_rerank_filter.lua dist/zhiyi_rerank_filter.lua
+          $h = (Get-FileHash dist/rime_zhiyi.dll -Algorithm SHA256).Hash.ToLowerInvariant()
+          "$h  rime_zhiyi.dll" | Set-Content -Path dist/SHA256SUMS.txt -Encoding ASCII
+          Compress-Archive -Path dist/rime_zhiyi.dll, dist/zhiyi_rerank_filter.lua, dist/SHA256SUMS.txt -DestinationPath dist/rime-neural-reranker-win-x64.zip -Force
+
+      - name: Upload Windows x64 release bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: rime-neural-reranker-win-x64
+          path: |
+            dist/rime-neural-reranker-win-x64.zip
+            dist/SHA256SUMS.txt

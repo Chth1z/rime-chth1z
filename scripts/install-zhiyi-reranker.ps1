@@ -15,6 +15,7 @@ param(
     [string]$RimeDir = (Join-Path $env:APPDATA "Rime"),
     [string]$OrtDllPath = "",
     [string]$LocalArchive = "",
+    [string]$PrebuiltDll = "",
     [switch]$ForceDownload,
     [switch]$SkipBuild
 )
@@ -130,17 +131,21 @@ if (-not (Test-Path $targetOrt) -or $OrtDllPath) {
     Write-Output "onnxruntime.dll already present in $zhiyiDir."
 }
 
-# 3. Build native Rust Lua 5.4 module
-$builtDll = Join-Path $crateDir "target\release\rime_zhiyi.dll"
-if (-not $SkipBuild -or -not (Test-Path $builtDll)) {
+# 3. Resolve or build native Rust Lua 5.4 module
+$builtDll = if ($PrebuiltDll -and (Test-Path $PrebuiltDll)) {
+    (Resolve-Path $PrebuiltDll).Path
+} else {
+    Join-Path $crateDir "target\release\rime_zhiyi.dll"
+}
+if (-not $PrebuiltDll -and (-not $SkipBuild -or -not (Test-Path $builtDll))) {
     if (-not (Get-Command cargo -ErrorAction SilentlyContinue)) {
-        throw "cargo not found. Install Rust toolchain (https://rustup.rs) to build native\rime_zhiyi."
+        throw "cargo not found. Pass -PrebuiltDll <path> from Releases or install Rust (https://rustup.rs)."
     }
     Write-Output "Building native\rime_zhiyi (release)..."
     & cargo build --release --manifest-path (Join-Path $crateDir "Cargo.toml")
     if ($LASTEXITCODE -ne 0) { throw "cargo build failed (ExitCode=$LASTEXITCODE)" }
 }
-if (-not (Test-Path $builtDll)) { throw "Built DLL missing: $builtDll" }
+if (-not (Test-Path $builtDll)) { throw "Native DLL missing: $builtDll" }
 
 # 4. Stop WeaselServer cleanly (so DLL is not locked), copy rime_zhiyi.dll, restart
 $weaselDir = (Get-ChildItem "C:\Program Files\Rime" -Directory -Filter "weasel-*" -ErrorAction SilentlyContinue |
