@@ -38,6 +38,16 @@
 - [x] **把本机 Windows 定时更新切到本仓库**
   - 新增 `scripts/update-local.ps1`（由 `deploy-local.ps1` 同步至 `%APPDATA%\Rime\auto_update\Update-RimeChth1z.ps1`），Windows 计划任务已切换为 `RimeChth1zWeeklyUpdate`（每周日 03:30，紧随 GitHub Actions 02:00 词库同步），拉取 `Chth1z/rime-chth1z` 与 `wanxiang-lts-zh-hans.gram`；本地仓库干净时自动 `git pull --ff-only`，有未提交改动时走临时 zip 隔离更新。
 - [ ] **电池模式实测留档**
-  - 下次拔电时顺手跑一次 `bench/bench-rime.ps1`，补全 `PROJECT_CONTEXT.md` 的电池实测值。
+  - 下次拔电时顺手跑一次 `bench/bench-rime.ps1` 与 `bench/bench-rime.ps1 -WaitNeural`，补全 `PROJECT_CONTEXT.md` 的电池实测值。
 - [ ] **（按需）静态词库顽固冷词降权**
   - 若日常使用中遇到 `Ctrl+K` 删不掉的静态词库干扰词，再考虑轻量移植 `rime-ice` 的 `cold_word_drop`。
+
+## P3 — 端侧神经整句重排（零魔改官方小狼毫，已完成）
+
+- [x] **离线评估 Rime 多整句召回上限与多款开源重排模型**
+  - 定位到 `librime 1.17` 默认 `translator/sentence_cutoff_threshold: 0.1` 会截断 `55.4%` 的多整句 beam；调至 `0.3`（`max_sentences: 8`）以几乎零开销把 Top-8 Oracle 拉到 `90.25%`（Top-10 `91.12%`），同时保留对高置信单候选（准确率 `97.4%`）的零开销跳过。
+  - 在 1,600 句双拼语料上横向实测 `msime-4M`（`76.12%`）、`msime-25M`（`78.81%`）与 `知意 1.4V2-Long-L12` ONNX（`83.06%–84.25%`），确认联合交叉编码器架构的知意模型（Apache-2.0）表现与性价比最优。
+- [x] **编写原生 Rust Lua 5.4 ONNX 模块并接入官方未修改小狼毫（`native/rime_zhiyi/` ＋ `lua/zhiyi_rerank_filter.lua`）**
+  - 利用小狼毫 `rime.dll` 导出的 154 个 Lua 5.4 C API 符号动态绑定，无需重新编译 `rime.dll`；使用 `GetModuleHandleExA(PIN)` 钉驻进程解决重新部署卸载崩溃，配合后台异步预热（0 ms 启动延迟）、256 条 LRU 缓存、自然码全音节双射还原、`t2s.json` 繁体上下文归一化与严格 `sentence`-only 门控。
+  - 配套一键构建/校验安装脚本 `scripts/install-zhiyi-reranker.ps1`（SHA-256 校验模型包）；未安装模型或关闭 `neural_rerank` 时自动零开销透传。
+  - 官方小狼毫 `0.17.4` 端到端实测通过：1,600 句双拼整句率 `75.12% → 81.31%`（科技 `81.00% → 90.50%`，全拼科技 `80.50% → 91.50%`），插电按键均值 `2.1 ms` / 峰值 `12.9 ms`，3 轮连续重新部署零崩溃，88/88 回归测试全过。
