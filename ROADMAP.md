@@ -65,5 +65,10 @@
   - 新增 `scripts/tune-personal-fusion.py`：在通用先验附近以 5 折交叉验证 L2 岭回归微调 5 维权重（样本 `< 30` 条时自动保护不改先验）。
 - [x] **仓库架构清理与全量代码审计**
   - 删除 `lua/` 中 12 个未被引用的上游遗留脚本（仅留 7 个活跃脚本），更新 `deploy-local.ps1` / `update-local.ps1` 自动清理旧文件并同步 `opencc/t2s.json`；修正 `install-zhiyi-reranker.ps1` NuGet ORT 版本回退与 SHA-256 校验；通过 3/3 Rust 单元测试、88/88 冷/热回归测试与 3 轮重新部署零崩溃验证。
-- [ ] **（后续可选）Windows UIA 异步非阻塞跨应用光标上下文**
-  - 为避免同步 COM UIA 调用阻塞 `WeaselServer.exe` 主线程（Electron / 全屏游戏等慢响应窗口），需独立后台 STA 线程 ＋ 超时丢弃 ＋ 严格 `IsPassword` 密码框屏蔽，待有真实跨应用续写需求时再单独验证上线。
+- [x] **v0.3.0 开源级通用架构重构、Windows UIA 跨应用上下文与 Pass-2 校验 P2C（已完成）**
+  - **通用全布局支持（`src/pinyin.rs`）**：重构为数据驱动 `PinyinLayout`，自动识别并支持全拼 ＋ 7 种主流 Rime 双拼（自然码 / 小鹤 / 微软 / 搜狗 / 智能 ABC / 紫光 / 拼音加加，完整兼容微软/搜狗/紫光的分号 `;` 韵母键），通过全 7 套方案 × 425 音节穷举往返单测。
+  - **KV 缓存 Pass-2 跨编码器 ＋ `.gram` 交叉验证 P2C（`src/zhiyi.rs`）**：仅对 `7.7%` 高潜力新颖 P2C 候选复用前缀 KV-cache 做 3 候选直面校验，同时在有/无上下文生效；离线带标点上下文推至 **`85.19%`**（盲测验证 **`84.60%`**，`+15/-1`），官方小狼毫无标点连续实跑推至 **`82.31%`**（文字 **`97.00%`**），全拼科技零上下文 **`91.00%`**（文字 `98.67%`）。
+  - **非阻塞后台 Windows UIA 跨应用光标前文（`src/uia.rs`）**：独立 STA 线程读取光标前 64 字、自动剥离行内预编辑串；热路径仅同步比对 `HWND` ＋ 读取短锁快照（`< 2 µs`，永不阻塞），切窗口立刻清空旧窗口上下文防跨应用串味，硬屏蔽 `IsPassword` 与常见密码管理器进程；3 轮热部署 0 崩溃、0 Lua 报错。
+  - **CI/CD 与开源发布准备**：新增 `.github/workflows/build-native-reranker.yml`（`cargo fmt --check` ＋ 严格 `clippy -D warnings` ＋ `cargo test` ＋ Windows x64 预编译包与 SHA-256）、`scripts/install-zhiyi-reranker.ps1 -PrebuiltDll`、`docs/neural-reranker-guide.md`；Rust 模块协议已切为 `Apache-2.0`，待确定正式仓库命名后即可一键拆出独立开源插件仓库。
+- [ ] **拆分独立开源插件仓库（待定最终命名）**
+  - 将已打磨完毕的 `native/rime_zhiyi/`、`lua/zhiyi_rerank_filter.lua`、安装/调参脚本与 CI workflow 拆至独立 Apache-2.0 仓库并发布首个带预编译 DLL 的 GitHub Release。
