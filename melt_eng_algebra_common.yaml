@@ -52,13 +52,13 @@ algebra_common:
   - derive/^.+$/\U$0/
   # 首字母大写
   - derive/^./\U$0/
-  # 前 2~10 个字母大写
+  # 前 2~4 个字母大写（配合 autocap_filter 覆盖误按 Shift 与前两位大写转全大写，大幅缩减 melt_eng.prism.bin 体积）
   - derive/^([a-z]{2})/\U$1/
   - derive/^([a-z]{3})/\U$1/
   - derive/^([a-z]{4})/\U$1/
-  - derive/^([a-z]{5})/\U$1/
-  - derive/^([a-z]{6})/\U$1/
-  - derive/^([a-z]{7})/\U$1/
-  - derive/^([a-z]{8})/\U$1/
-  - derive/^([a-z]{9})/\U$1/
-  - derive/^([a-z]{10})/\U$1/
+  # - derive/^([a-z]{5})/\U$1/
+  # - derive/^([a-z]{6})/\U$1/
+  # - derive/^([a-z]{7})/\U$1/
+  # - derive/^([a-z]{8})/\U$1/
+  # - derive/^([a-z]{9})/\U$1/
+  # - derive/^([a-z]{10})/\U$1/
