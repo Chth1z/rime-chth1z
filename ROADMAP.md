@@ -37,8 +37,8 @@
   - 为方案中 `pin_cand_filter` 含 Tab 项补齐双引号，全仓库 15 份 YAML 全部通过严格 YAML 1.1/1.2 校验无告警；`default.yaml` 补回小键盘四则运算符供 `/vs` 计算器使用；`deploy-local.ps1` / `update-local.ps1` 清理 `%APPDATA%\Rime` 内 6 处早期遗留无用文件。
 - [x] **把本机 Windows 定时更新切到本仓库**
   - 新增 `scripts/update-local.ps1`（由 `deploy-local.ps1` 同步至 `%APPDATA%\Rime\auto_update\Update-RimeChth1z.ps1`），Windows 计划任务已切换为 `RimeChth1zWeeklyUpdate`（每周日 03:30，紧随 GitHub Actions 02:00 词库同步），拉取 `Chth1z/rime-chth1z` 与 `wanxiang-lts-zh-hans.gram`；本地仓库干净时自动 `git pull --ff-only`，有未提交改动时走临时 zip 隔离更新。
-- [ ] **电池模式实测留档**
-  - 下次拔电时顺手跑一次 `bench/bench-rime.ps1` 与 `bench/bench-rime.ps1 -WaitNeural`，补全 `PROJECT_CONTEXT.md` 的电池实测值。
+- [x] **电池模式实测留档（2026-11-23，电量 94–95%）**
+  - 纯统计双拼 `0.4 / 1.6 ms`（峰值 `5.2 ms`）；v0.2.0 神经重排双拼 **`0.4 / 4.1 ms`**（峰值 **`22.3 ms`**）、全拼 `0.3 / 9.2 ms`（峰值 `27.9 ms`）；同时修正 `bench-rime.ps1` / `accuracy-test.ps1` 的 `-WaitNeural` 等待时长（`2000 → 4500 ms`）以适配电池下约 `2.7 s` 的后台冷加载。
 - [ ] **（按需）静态词库顽固冷词降权**
   - 若日常使用中遇到 `Ctrl+K` 删不掉的静态词库干扰词，再考虑轻量移植 `rime-ice` 的 `cold_word_drop`。
 

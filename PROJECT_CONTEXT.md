@@ -33,9 +33,9 @@
 | :--- | :---: | :---: | :--- |
 | 白霜原始 `pin_cand_filter`（单字母含不可达多字词） | `180.7 ms / 18.1 ms` | `52.7 ms / 5.5 ms` | 上游默认 |
 | 删掉单字母不可达词 ＋ 旧版 `rime.lua`（`inc(80,300)`） | `~18 ms / ~15 ms` | `5.3 ms / 6.0 ms` | `pause < 100` 导致 Lua 5.4 无间歇 GC |
-| 修正 GC（`inc(150,200)`）＋ 合并滤镜 ＋ 台湾双出 ＋ 语法调优（纯统计） | `~0.4 ms / ~1.0 ms`（估） | **`0.1 ms / 0.4 ms`**（峰值 `0.9 ms`） | `max_sentences: 8, cutoff: 0.3`，88 项回归全过 |
-| ＋ 端侧知意 ONNX 神经整句重排（v0.1.0，`1.4V2-Long-L12`，8 线程 CPU） | 待拔电实测 | `0.1 ms / 2.1 ms`（峰值 `12.9 ms`） | 全拼 `0.1 / 5.0 ms`（峰值 `15.7 ms`），88 项回归全过 |
-| ＋ 端侧神经重排 v0.2.0（`ML-pumpkin-1103` KV-cache ＋ `.gram` 融合 ＋ P2C） | 待拔电实测 | **`0.1 ms / 1.6 ms`**（峰值 **`9.8 ms`**） | 全拼 `0.1 / 4.2 ms`（峰值 `12.6 ms`），88 项回归全过 |
+| 修正 GC（`inc(150,200)`）＋ 合并滤镜 ＋ 台湾双出 ＋ 语法调优（纯统计） | **`0.4 ms / 1.6 ms`**（峰值 `5.2 ms`） | **`0.1 ms / 0.4 ms`**（峰值 `0.9 ms`） | `max_sentences: 8, cutoff: 0.3`，88 项回归全过 |
+| ＋ 端侧知意 ONNX 神经整句重排（v0.1.0，`1.4V2-Long-L12`，8 线程 CPU） | 未单测（已升级 v0.2.0） | `0.1 ms / 2.1 ms`（峰值 `12.9 ms`） | 全拼 `0.1 / 5.0 ms`（峰值 `15.7 ms`），88 项回归全过 |
+| ＋ 端侧神经重排 v0.2.0（`ML-pumpkin-1103` KV-cache ＋ `.gram` 融合 ＋ P2C） | **`0.4 ms / 4.1 ms`**（峰值 **`22.3 ms`**） | **`0.1 ms / 1.6 ms`**（峰值 **`9.8 ms`**） | 全拼插电 `4.2 ms`/电池 `9.2 ms`（峰值 `12.6`/`27.9 ms`），88 项回归全过 |
 
 ### 语料准确率评测（`bench/eval-accuracy.py`，复用 `gaboolic/rime-schema-compare` 公开语料与同义归一化口径）
 
@@ -58,7 +58,7 @@
 3. 词库消融（800 句实测）：去掉 `41448` 和 `GB18030-2022` 准确率零损失（`622/800 = 77.75%`），可减少 ~10 万生僻字干扰；`composite`（62 万加权短语）贡献 `+1.13%`，必须保留；加入 `tencent` 增重 `10 MB` 但准确率贡献 `0.00%`，保持关闭；双拼下开启 `enable_correction` 会让整句率从 `72.88%` 暴跌至 `57.57%`，保持关闭。
 4. 官方小狼毫 `0.17.4` 的 `rime.dll` 原生导出全部 154 个 Lua 5.4 C API 符号且开放 `package.loadlib`。`native/rime_zhiyi`（v0.2.0）通过 `GetModuleHandleA("rime.dll")` 动态解析符号，并用 `GetModuleHandleExA(PIN | FROM_ADDRESS)` 钉驻宿主进程避免重新部署崩溃；同时以 Win32 `CreateFileMappingW` 直接共享映射 `wanxiang-lts-zh-hans.gram`（0 MB 额外物理内存，`~0.01 ms`），利用 `laya.one.fused.int8g.onnx` 16 槽前缀 KV-cache 缓存上下文、同次前向解码 `char_logits` 合成 P2C 候选，并经 `commit_notifier` 将脱敏后的选词纠错事件写入本地 `%APPDATA%\Rime\zhiyi\feedback.jsonl`（5 MiB 自动轮转，不入 Git，配合 `scripts/tune-personal-fusion.py` 5 折交叉验证岭回归离线微调 5 维先验权重）。
 5. 仓库 `lua/` 目录已完成收口清理：删除 12 个未被引用的上游遗留脚本（仅保留 7 个实际启用脚本），并在 `deploy-local.ps1` / `update-local.ps1` 中同步自动清理 `%APPDATA%\Rime\lua\`。
-6. 这台机器插电和电池相差约 3.3 倍，开启 v0.2.0 神经重排插电峰值 `9.8 ms`（双拼均值 `1.6 ms`），电池实测待补。
+6. 这台机器插电和电池相差约 2.5–3.3 倍，开启 v0.2.0 神经重排后双拼均值插电 `1.6 ms`（峰值 `9.8 ms`）、电池实测 `4.1 ms`（峰值 `22.3 ms`），全拼电池 `9.2 ms`（峰值 `27.9 ms`），后台异步冷加载电池约 `2.7 s`（不阻塞启动）。
 
 ## 4. 平时协作的基本约定
 
