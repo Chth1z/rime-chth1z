@@ -25,23 +25,18 @@
 
 ## 3. 已测出的性能数据（`bench/bench-rime.ps1`）
 
-通过本机 `rime.dll` 隔离测试（不碰线上 `userdb`，同一组短中长句）：
+通过本机 `rime.dll` 隔离测试（不碰线上 `userdb`，有效自然码双拼短/中/长句，均含 400 MB 万象模型＋`s2twp`＋`melt_eng`）：
 
-| 状态 | 电池（首键 / 后续键） | 插电（首键 / 后续键） |
-| :--- | :---: | :---: |
-| 白霜原始 `pin_cand_filter`（单字母含不可达多字词） | `180.7 ms / 18.1 ms` | `52.7 ms / 5.5 ms` |
-| 删掉单字母不可达多字词 ＋ 挪到 `corrector` 之前 | `~18 ms / ~15 ms` | **`5.4 ms / 5.1 ms`**（26 键最高 `8.3 ms`） |
-| 关掉全部 4 个高频 Lua 滤镜和 `force_gc`（纯 C++ 参照） | `3.5 ms / 3.9 ms` | **`1.1 ms / 1.1 ms`** |
+| 状态 | 电池（首键 / 后续键） | 插电（首键 / 后续键） | 备注 |
+| :--- | :---: | :---: | :--- |
+| 白霜原始 `pin_cand_filter`（单字母含不可达多字词） | `180.7 ms / 18.1 ms` | `52.7 ms / 5.5 ms` | 上游默认 |
+| 删掉单字母不可达词 ＋ 旧版 `rime.lua`（`inc(80,300)`） | `~18 ms / ~15 ms` | `5.3 ms / 6.0 ms` | `pause < 100` 导致 Lua 5.4 无间歇 GC |
+| 修正 GC（`inc(150,200)`）＋ 合并滤镜 `chth1z_pipeline_filter` | `~0.4 ms / ~1.0 ms`（估） | **`0.1 ms / 0.3 ms`**（峰值 `0.8 ms`） | 万键压测均值 `0.17 ms`、`p99 0.46 ms`、`dMem +0.05 MB` |
 
 已经核实的事实：
-1. 400 MB 万象模型本身几乎不拖慢按键（开关差 < 0.2 ms）；`s2twp` 约 1 ms；`melt_eng` < 1 ms；界面渲染线程全天只占 0.42 s CPU。
-2. 这台机器插电和电池相差约 3.3 倍，所以看延迟时要照顾电池状态（尽量压在 16 ms 一帧以内）。
-3. 剩下的 4.3 ms（电池约 14 ms）主要来自多个 Lua 滤镜逐层遍历：
-   - `corrector` + `spelling_hints: 8`：`+1.5 ms`（`corrections.dict.yaml` 里没有单字词条，却对单字也做反查）
-   - `pin_cand_filter` 空跑透传：`+1.2 ms`
-   - `reduce_english_filter`：`+0.9 ms`
-   - `autocap_filter`：`+0.4 ms`
-   - `force_gc`：`+0.3 ms`
+1. 400 MB 万象模型本身几乎不拖慢按键（开关差 < 0.2 ms）；`s2twp` 约 0.1–0.2 ms；`melt_eng` 缩减前 5–10 位大写派生后 `melt_eng.prism.bin` 从 `6.82 MB` 降到 `4.97 MB`。
+2. 之前剩下的 4–5 ms 主要根因是 `profiles/rime.lua` 里误写了 `collectgarbage("incremental", 80, 300)`：Lua 5.4 中 `pause < 100` 会取消 GC 间隔，每次分配都在持续跑完整 GC，导致每个 Lua 滤镜都被放大约 1 ms。改为 `collectgarbage("incremental", 150, 200)` 并合并 4 个高频滤镜为 `lua/chth1z_pipeline_filter.lua`（内建每 16 键一次 `step`）后，双拼压到 `0.1 / 0.3 ms`，全拼压到 `0.1 / 0.7 ms`（且清除了全拼 `e -> 而` 不可达造成的 `19.5 ms` 尖峰）。
+3. 这台机器插电和电池相差约 3.3 倍，现在插电均值不到 `0.3 ms`、峰值 `< 1.0 ms`，电池下也能稳在单帧（`16 ms`）以内。
 
 ## 4. 平时协作的基本约定
 
