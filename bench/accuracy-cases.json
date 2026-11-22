@@ -23,53 +23,75 @@
       "no_raw_pinyin_comment": true
     },
     {
-      "name": "dp: s2twp 软件 -> 軟體",
+      "name": "dp: tw_dual 优化 -> 1.最佳化 2.優化",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "ybhw",
+      "first_text": "最佳化",
+      "second_text": "優化"
+    },
+    {
+      "name": "dp: tw_dual 程序优化 -> 1.程式最佳化 2.程序優化",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "igxuybhw",
+      "first_text": "程式最佳化",
+      "second_text": "程序優化"
+    },
+    {
+      "name": "dp: tw_dual 软件 -> 1.軟體 2.軟件",
       "schema": "rime_frost_double_pinyin",
       "keys": "rrjm",
-      "first_text": "軟體"
+      "first_text": "軟體",
+      "second_text": "軟件"
     },
     {
-      "name": "dp: s2twp 内存 -> 記憶體",
+      "name": "dp: tw_dual 内存 -> 1.記憶體 2.內存",
       "schema": "rime_frost_double_pinyin",
       "keys": "nzcp",
-      "first_text": "記憶體"
+      "first_text": "記憶體",
+      "second_text": "內存"
     },
     {
-      "name": "dp: s2twp 网络 -> 網路",
+      "name": "dp: tw_dual 网络 -> 1.網路 2.網絡",
       "schema": "rime_frost_double_pinyin",
       "keys": "whlo",
-      "first_text": "網路"
+      "first_text": "網路",
+      "second_text": "網絡"
     },
     {
-      "name": "dp: s2twp 鼠标 -> 滑鼠",
+      "name": "dp: tw_dual 鼠标 -> 1.滑鼠 2.鼠標",
       "schema": "rime_frost_double_pinyin",
       "keys": "uubc",
-      "first_text": "滑鼠"
+      "first_text": "滑鼠",
+      "second_text": "鼠標"
     },
     {
-      "name": "dp: s2twp 默认 -> 預設",
+      "name": "dp: tw_dual 默认 -> 1.預設 2.默認",
       "schema": "rime_frost_double_pinyin",
       "keys": "morf",
-      "first_text": "預設"
+      "first_text": "預設",
+      "second_text": "默認"
     },
     {
-      "name": "dp: s2twp 文件 -> 檔案",
+      "name": "dp: tw_dual 文件 -> 1.檔案 2.文件",
       "schema": "rime_frost_double_pinyin",
       "keys": "wfjm",
-      "first_text": "檔案"
+      "first_text": "檔案",
+      "second_text": "文件"
     },
     {
-      "name": "dp: s2twp 信息 -> 資訊",
+      "name": "dp: tw_dual 信息 -> 1.資訊 2.信息",
       "schema": "rime_frost_double_pinyin",
       "keys": "xnxi",
-      "first_text": "資訊"
+      "first_text": "資訊",
+      "second_text": "信息"
     },
     {
-      "name": "dp: toggle traditionalization=false -> 软件",
+      "name": "dp: toggle traditionalization=false -> 软件 (no dual)",
       "schema": "rime_frost_double_pinyin",
       "options": { "traditionalization": false },
       "keys": "rrjm",
-      "first_text": "软件"
+      "first_text": "软件",
+      "no_text_regex": "軟體|軟件"
     },
     {
       "name": "dp: corrector 馄饨 (hun dun)",
@@ -302,10 +324,18 @@
       "no_raw_pinyin_comment": true
     },
     {
-      "name": "fp: s2twp ruanjian -> 軟體",
+      "name": "fp: tw_dual ruanjian -> 1.軟體 2.軟件",
       "schema": "rime_frost",
       "keys": "ruanjian",
-      "first_text": "軟體"
+      "first_text": "軟體",
+      "second_text": "軟件"
+    },
+    {
+      "name": "fp: tw_dual chengxuyouhua -> 1.程式最佳化 2.程序優化",
+      "schema": "rime_frost",
+      "keys": "chengxuyouhua",
+      "first_text": "程式最佳化",
+      "second_text": "程序優化"
     },
     {
       "name": "fp: corrector hundun",

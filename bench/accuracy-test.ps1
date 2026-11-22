@@ -253,11 +253,17 @@ public static class RimeAccuracyRunner {
         $errs = New-Object System.Collections.Generic.List[string]
         $cands = $res.Candidates
         $firstText = if ($cands.Count -gt 0) { $cands[0].Text } else { "<none>" }
+        $secondText = if ($cands.Count -gt 1) { $cands[1].Text } else { "<none>" }
         $firstComment = if ($cands.Count -gt 0) { $cands[0].Comment } else { "" }
 
         if ($tc.PSObject.Properties.Name -contains "first_text") {
             if ($firstText -ne $tc.first_text) {
                 $errs.Add("first_text expected '$($tc.first_text)' got '$firstText'")
+            }
+        }
+        if ($tc.PSObject.Properties.Name -contains "second_text") {
+            if ($secondText -ne $tc.second_text) {
+                $errs.Add("second_text expected '$($tc.second_text)' got '$secondText'")
             }
         }
         if ($tc.PSObject.Properties.Name -contains "no_first_text") {
