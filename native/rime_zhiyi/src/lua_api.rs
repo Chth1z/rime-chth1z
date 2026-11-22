@@ -11,7 +11,11 @@ const GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS: u32 = 0x00000004;
 
 extern "system" {
     fn GetModuleHandleA(lpModuleName: *const c_char) -> *mut c_void;
-    fn GetModuleHandleExA(dwFlags: u32, lpModuleName: *const c_void, phModule: *mut *mut c_void) -> c_int;
+    fn GetModuleHandleExA(
+        dwFlags: u32,
+        lpModuleName: *const c_void,
+        phModule: *mut *mut c_void,
+    ) -> c_int;
     fn GetProcAddress(hModule: *mut c_void, lpProcName: *const c_char) -> *const c_void;
 }
 
@@ -34,6 +38,8 @@ pub struct LuaApi {
     pub createtable: unsafe extern "C" fn(LuaState, c_int, c_int),
     pub pushcclosure: unsafe extern "C" fn(LuaState, LuaCFunction, c_int),
     pub setfield: unsafe extern "C" fn(LuaState, c_int, *const c_char),
+    pub getfield: unsafe extern "C" fn(LuaState, c_int, *const c_char) -> c_int,
+    pub lua_type: unsafe extern "C" fn(LuaState, c_int) -> c_int,
     pub tolstring: unsafe extern "C" fn(LuaState, c_int, *mut usize) -> *const c_char,
     pub pushlstring: unsafe extern "C" fn(LuaState, *const c_char, usize) -> *const c_char,
     pub pushboolean: unsafe extern "C" fn(LuaState, c_int),
@@ -56,7 +62,7 @@ static API: OnceLock<Result<LuaApi, &'static str>> = OnceLock::new();
 
 pub unsafe fn get_api() -> Result<&'static LuaApi, &'static str> {
     API.get_or_init(|| {
-        let h = GetModuleHandleA(b"rime.dll\0".as_ptr() as *const c_char);
+        let h = GetModuleHandleA(c"rime.dll".as_ptr());
         if h.is_null() {
             return Err("rime.dll module handle not found");
         }
@@ -66,6 +72,7 @@ pub unsafe fn get_api() -> Result<&'static LuaApi, &'static str> {
                 if p.is_null() {
                     return Err(concat!("missing symbol in rime.dll: ", $name));
                 }
+                #[allow(clippy::missing_transmute_annotations)]
                 std::mem::transmute(p)
             }};
         }
@@ -73,6 +80,8 @@ pub unsafe fn get_api() -> Result<&'static LuaApi, &'static str> {
             createtable: sym!("lua_createtable"),
             pushcclosure: sym!("lua_pushcclosure"),
             setfield: sym!("lua_setfield"),
+            getfield: sym!("lua_getfield"),
+            lua_type: sym!("lua_type"),
             tolstring: sym!("lua_tolstring"),
             pushlstring: sym!("lua_pushlstring"),
             pushboolean: sym!("lua_pushboolean"),

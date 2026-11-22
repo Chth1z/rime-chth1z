@@ -33,7 +33,11 @@ fn sanitize_context(ctx: &str) -> String {
             return;
         }
         let has_digit = run.bytes().any(|b| b.is_ascii_digit());
-        if (has_digit && run.len() >= 4) || run.len() >= 12 || run.contains("://") || run.contains('@') {
+        if (has_digit && run.len() >= 4)
+            || run.len() >= 12
+            || run.contains("://")
+            || run.contains('@')
+        {
             dst.push_str("<REDACTED>");
         } else {
             dst.push_str(run);
@@ -94,8 +98,14 @@ mod tests {
 
     #[test]
     fn test_sanitize_redacts_secrets() {
-        assert_eq!(sanitize_context("我的手机是13812345678请记下"), "我的手机是<REDACTED>请记下");
-        assert_eq!(sanitize_context("邮箱abc@example.com发过去"), "邮箱<REDACTED>发过去");
+        assert_eq!(
+            sanitize_context("我的手机是13812345678请记下"),
+            "我的手机是<REDACTED>请记下"
+        );
+        assert_eq!(
+            sanitize_context("邮箱abc@example.com发过去"),
+            "邮箱<REDACTED>发过去"
+        );
         assert_eq!(sanitize_context("用AI跑大模型"), "用AI跑大模型");
     }
 }

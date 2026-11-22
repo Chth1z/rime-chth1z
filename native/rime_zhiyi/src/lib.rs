@@ -2,6 +2,7 @@ mod feedback;
 mod gram;
 mod lua_api;
 mod pinyin;
+mod uia;
 mod zhiyi;
 
 use std::ffi::{c_char, c_int};
@@ -9,7 +10,12 @@ use std::panic::{catch_unwind, AssertUnwindSafe};
 use std::path::{Path, PathBuf};
 
 use lua_api::{get_api, pop, push_str, read_str, LuaInteger, LuaState};
-use zhiyi::FusionWeights;
+use pinyin::PinyinLayout;
+use uia::UiaContext;
+use zhiyi::{FusionWeights, P2cConfig};
+
+const LUA_TTABLE: c_int = 5;
+const LUA_TSTRING: c_int = 4;
 
 unsafe fn read_str_array(api: &lua_api::LuaApi, l: LuaState, idx: c_int) -> Vec<String> {
     let n = (api.rawlen)(l, idx);
@@ -47,38 +53,114 @@ unsafe fn push_f32_array(api: &lua_api::LuaApi, l: LuaState, vals: &[f32]) {
 
 unsafe fn read_weights(api: &lua_api::LuaApi, l: LuaState, idx: c_int) -> FusionWeights {
     let mut w = FusionWeights::default();
-    let n = (api.rawlen)(l, idx);
-    if n == 0 {
-        // Fallback: allow scalar rank_penalty for backwards compatibility
-        let mut isnum: c_int = 0;
-        let rp = (api.tonumberx)(l, idx, &mut isnum);
-        if isnum != 0 {
-            w.w_logit = 1.0;
-            w.w_rank = -rp.abs();
-            w.w_gram = 0.0;
-            w.w_char_lp = 0.0;
-            w.w_ctx_lp = 0.0;
+    if (api.lua_type)(l, idx) == LUA_TTABLE {
+        let vals = read_f32_array(api, l, idx);
+        if !vals.is_empty() {
+            w.w_logit = vals[0] as f64;
+        }
+        if vals.len() >= 2 {
+            w.w_rank = vals[1] as f64;
+        }
+        if vals.len() >= 3 {
+            w.w_gram = vals[2] as f64;
+        }
+        if vals.len() >= 4 {
+            w.w_char_lp = vals[3] as f64;
+        }
+        if vals.len() >= 5 {
+            w.w_ctx_lp = vals[4] as f64;
         }
         return w;
     }
-    let vals = read_f32_array(api, l, idx);
-    if vals.len() >= 1 { w.w_logit = vals[0] as f64; }
-    if vals.len() >= 2 { w.w_rank = vals[1] as f64; }
-    if vals.len() >= 3 { w.w_gram = vals[2] as f64; }
-    if vals.len() >= 4 { w.w_char_lp = vals[3] as f64; }
-    if vals.len() >= 5 { w.w_ctx_lp = vals[4] as f64; }
+
+    // Backwards-compatible fallback: scalar rank_penalty
+    let mut isnum: c_int = 0;
+    let rp = (api.tonumberx)(l, idx, &mut isnum);
+    if isnum != 0 {
+        w.w_logit = 1.0;
+        w.w_rank = -rp.abs();
+        w.w_gram = 0.0;
+        w.w_char_lp = 0.0;
+        w.w_ctx_lp = 0.0;
+    }
     w
+}
+
+unsafe fn read_table_f32(
+    api: &lua_api::LuaApi,
+    l: LuaState,
+    idx: c_int,
+    field: &std::ffi::CStr,
+    default_val: f32,
+) -> f32 {
+    (api.getfield)(l, idx, field.as_ptr());
+    let mut isnum: c_int = 0;
+    let v = (api.tonumberx)(l, -1, &mut isnum);
+    pop(api, l, 1);
+    if isnum != 0 {
+        v as f32
+    } else {
+        default_val
+    }
+}
+
+unsafe fn read_p2c_cfg(api: &lua_api::LuaApi, l: LuaState, idx: c_int) -> P2cConfig {
+    let mut cfg = P2cConfig::default();
+    if (api.lua_type)(l, idx) == LUA_TTABLE {
+        cfg.verify_margin = read_table_f32(api, l, idx, c"verify_margin", cfg.verify_margin);
+        cfg.top1_logit_diff = read_table_f32(api, l, idx, c"top1_logit_diff", cfg.top1_logit_diff);
+        cfg.top1_min_gram_diff =
+            read_table_f32(api, l, idx, c"top1_min_gram_diff", cfg.top1_min_gram_diff);
+        cfg.top2_logit_diff = read_table_f32(api, l, idx, c"top2_logit_diff", cfg.top2_logit_diff);
+        cfg.legacy_top1_margin =
+            read_table_f32(api, l, idx, c"legacy_top1_margin", cfg.legacy_top1_margin);
+        cfg.legacy_top2_margin =
+            read_table_f32(api, l, idx, c"legacy_top2_margin", cfg.legacy_top2_margin);
+        return cfg;
+    }
+    // Backwards compatibility with v0.2.0 positional `(p2c_top1_th, p2c_top2_th)`
+    let mut isnum: c_int = 0;
+    let t1 = (api.tonumberx)(l, idx, &mut isnum);
+    if isnum != 0 {
+        cfg.legacy_top1_margin = t1 as f32;
+    }
+    isnum = 0;
+    let t2 = (api.tonumberx)(l, idx + 1, &mut isnum);
+    if isnum != 0 {
+        cfg.legacy_top2_margin = t2 as f32;
+    }
+    cfg
+}
+
+unsafe fn read_layout(api: &lua_api::LuaApi, l: LuaState, idx: c_int) -> PinyinLayout {
+    if (api.lua_type)(l, idx) == LUA_TSTRING {
+        if let Some(s) = read_str(api, l, idx) {
+            return PinyinLayout::from_name_or_schema(&s, "");
+        }
+    }
+    // Backwards compatibility with boolean `is_double_pinyin`
+    if (api.toboolean)(l, idx) != 0 {
+        PinyinLayout::Zrm
+    } else {
+        PinyinLayout::Full
+    }
 }
 
 /// init(model_dir, ort_dll, threads, [gram_path])
 unsafe extern "C" fn lua_init(l: LuaState) -> c_int {
-    let Ok(api) = get_api() else { return 0; };
+    let Ok(api) = get_api() else {
+        return 0;
+    };
     let res = catch_unwind(AssertUnwindSafe(|| -> Result<(), String> {
         let model_dir = read_str(api, l, 1).ok_or("missing arg 1: model_dir")?;
         let ort_dll = read_str(api, l, 2).ok_or("missing arg 2: ort_dll")?;
         let mut isnum: c_int = 0;
         let threads_raw = (api.tointegerx)(l, 3, &mut isnum);
-        let threads = if isnum != 0 && threads_raw > 0 { threads_raw as usize } else { 8 };
+        let threads = if isnum != 0 && threads_raw > 0 {
+            threads_raw as usize
+        } else {
+            8
+        };
         let gram_path = read_str(api, l, 4).filter(|s| !s.is_empty());
         zhiyi::init_engine(
             Path::new(&model_dir),
@@ -108,15 +190,28 @@ unsafe extern "C" fn lua_init(l: LuaState) -> c_int {
 
 /// init_async(model_dir, ort_dll, threads, [gram_path])
 unsafe extern "C" fn lua_init_async(l: LuaState) -> c_int {
-    let Ok(api) = get_api() else { return 0; };
+    let Ok(api) = get_api() else {
+        return 0;
+    };
     let res = catch_unwind(AssertUnwindSafe(|| -> Result<(), String> {
         let model_dir = read_str(api, l, 1).ok_or("missing arg 1: model_dir")?;
         let ort_dll = read_str(api, l, 2).ok_or("missing arg 2: ort_dll")?;
         let mut isnum: c_int = 0;
         let threads_raw = (api.tointegerx)(l, 3, &mut isnum);
-        let threads = if isnum != 0 && threads_raw > 0 { threads_raw as usize } else { 8 };
-        let gram_path = read_str(api, l, 4).filter(|s| !s.is_empty()).map(PathBuf::from);
-        zhiyi::init_engine_async(PathBuf::from(model_dir), PathBuf::from(ort_dll), gram_path, threads);
+        let threads = if isnum != 0 && threads_raw > 0 {
+            threads_raw as usize
+        } else {
+            8
+        };
+        let gram_path = read_str(api, l, 4)
+            .filter(|s| !s.is_empty())
+            .map(PathBuf::from);
+        zhiyi::init_engine_async(
+            PathBuf::from(model_dir),
+            PathBuf::from(ort_dll),
+            gram_path,
+            threads,
+        );
         Ok(())
     }));
     (api.pushboolean)(l, if matches!(res, Ok(Ok(()))) { 1 } else { 0 });
@@ -124,34 +219,104 @@ unsafe extern "C" fn lua_init_async(l: LuaState) -> c_int {
 }
 
 unsafe extern "C" fn lua_is_ready(l: LuaState) -> c_int {
-    let Ok(api) = get_api() else { return 0; };
+    let Ok(api) = get_api() else {
+        return 0;
+    };
     (api.pushboolean)(l, if zhiyi::is_ready() { 1 } else { 0 });
     1
 }
 
-/// rerank(context, raw_input, is_dp, cands_tbl, weights_tbl_or_alpha, [p2c_top1_th], [p2c_top2_th])
-/// Returns { order={...}, p2c_text=str|nil, p2c_pos=0|1|2, logits={...}, gram_deltas={...}, char_lps={...} }
-unsafe extern "C" fn lua_rerank(l: LuaState) -> c_int {
-    let Ok(api) = get_api() else { return 0; };
-    let res = catch_unwind(AssertUnwindSafe(|| -> Result<zhiyi::RerankResult, String> {
-        if !zhiyi::is_ready() {
-            return Err("not ready".to_string());
-        }
-        let ctx = read_str(api, l, 1).unwrap_or_default();
+/// resolve_layout(layout_opt, schema_id) -> (layout_name, is_dp, uses_semicolon)
+unsafe extern "C" fn lua_resolve_layout(l: LuaState) -> c_int {
+    let Ok(api) = get_api() else {
+        return 0;
+    };
+    let opt = read_str(api, l, 1).unwrap_or_default();
+    let schema = read_str(api, l, 2).unwrap_or_default();
+    let layout = PinyinLayout::from_name_or_schema(&opt, &schema);
+    push_str(api, l, layout.as_str());
+    (api.pushboolean)(l, if layout.is_double_pinyin() { 1 } else { 0 });
+    (api.pushboolean)(l, if layout.uses_semicolon() { 1 } else { 0 });
+    3
+}
+
+/// set_uia_enabled(bool)
+unsafe extern "C" fn lua_set_uia_enabled(l: LuaState) -> c_int {
+    let Ok(api) = get_api() else {
+        return 0;
+    };
+    let enable = (api.toboolean)(l, 1) != 0;
+    uia::set_enabled(enable);
+    (api.pushboolean)(l, 1);
+    1
+}
+
+/// query_uia_context(live_preedit, raw_input) -> (status_str, text_str, hwnd_int)
+unsafe extern "C" fn lua_query_uia_context(l: LuaState) -> c_int {
+    let Ok(api) = get_api() else {
+        return 0;
+    };
+    let res = catch_unwind(AssertUnwindSafe(|| {
+        let preedit = read_str(api, l, 1).unwrap_or_default();
         let raw_input = read_str(api, l, 2).unwrap_or_default();
-        let is_dp = (api.toboolean)(l, 3) != 0;
-        let cands = read_str_array(api, l, 4);
-        let weights = read_weights(api, l, 5);
-
-        let mut isnum: c_int = 0;
-        let t1 = (api.tonumberx)(l, 6, &mut isnum);
-        let p2c_top1_th = if isnum != 0 { t1 as f32 } else { 1.0 };
-        isnum = 0;
-        let t2 = (api.tonumberx)(l, 7, &mut isnum);
-        let p2c_top2_th = if isnum != 0 { t2 as f32 } else { 0.45 };
-
-        zhiyi::rerank(&ctx, &raw_input, is_dp, &cands, weights, p2c_top1_th, p2c_top2_th)
+        let ctx = uia::query_context(&preedit, &raw_input);
+        let hwnd = uia::foreground_hwnd();
+        (ctx, hwnd)
     }));
+    match res {
+        Ok((UiaContext::Blocked, hwnd)) => {
+            push_str(api, l, "blocked");
+            push_str(api, l, "");
+            (api.pushinteger)(l, hwnd as LuaInteger);
+            3
+        }
+        Ok((UiaContext::Text(txt), hwnd)) => {
+            push_str(api, l, "text");
+            push_str(api, l, &txt);
+            (api.pushinteger)(l, hwnd as LuaInteger);
+            3
+        }
+        Ok((UiaContext::WindowChanged, hwnd)) => {
+            push_str(api, l, "window_changed");
+            push_str(api, l, "");
+            (api.pushinteger)(l, hwnd as LuaInteger);
+            3
+        }
+        _ => {
+            push_str(api, l, "fallback");
+            push_str(api, l, "");
+            (api.pushinteger)(l, uia::foreground_hwnd() as LuaInteger);
+            3
+        }
+    }
+}
+
+/// kick_uia_refresh() -> nil (non-blocking background refresh hint after commit)
+unsafe extern "C" fn lua_kick_uia_refresh(_l: LuaState) -> c_int {
+    let _ = catch_unwind(AssertUnwindSafe(uia::kick_refresh));
+    0
+}
+
+/// rerank(context, raw_input, layout_str_or_bool, cands_tbl, weights_tbl, [p2c_cfg_tbl])
+unsafe extern "C" fn lua_rerank(l: LuaState) -> c_int {
+    let Ok(api) = get_api() else {
+        return 0;
+    };
+    let res = catch_unwind(AssertUnwindSafe(
+        || -> Result<zhiyi::RerankResult, String> {
+            if !zhiyi::is_ready() {
+                return Err("not ready".to_string());
+            }
+            let ctx = read_str(api, l, 1).unwrap_or_default();
+            let raw_input = read_str(api, l, 2).unwrap_or_default();
+            let layout = read_layout(api, l, 3);
+            let cands = read_str_array(api, l, 4);
+            let weights = read_weights(api, l, 5);
+            let p2c_cfg = read_p2c_cfg(api, l, 6);
+
+            zhiyi::rerank(&ctx, &raw_input, layout, &cands, weights, p2c_cfg)
+        },
+    ));
 
     match res {
         Ok(Ok(rr)) => {
@@ -162,26 +327,26 @@ unsafe extern "C" fn lua_rerank(l: LuaState) -> c_int {
                 (api.pushinteger)(l, idx as LuaInteger);
                 (api.rawseti)(l, -2, (i + 1) as LuaInteger);
             }
-            (api.setfield)(l, -2, b"order\0".as_ptr() as *const c_char);
+            (api.setfield)(l, -2, c"order".as_ptr());
 
             if let Some(ref txt) = rr.p2c_text {
                 push_str(api, l, txt);
             } else {
                 (api.pushnil)(l);
             }
-            (api.setfield)(l, -2, b"p2c_text\0".as_ptr() as *const c_char);
+            (api.setfield)(l, -2, c"p2c_text".as_ptr());
 
             (api.pushinteger)(l, rr.p2c_pos as LuaInteger);
-            (api.setfield)(l, -2, b"p2c_pos\0".as_ptr() as *const c_char);
+            (api.setfield)(l, -2, c"p2c_pos".as_ptr());
 
             push_f32_array(api, l, &rr.logits);
-            (api.setfield)(l, -2, b"logits\0".as_ptr() as *const c_char);
+            (api.setfield)(l, -2, c"logits".as_ptr());
 
             push_f32_array(api, l, &rr.gram_deltas);
-            (api.setfield)(l, -2, b"gram_deltas\0".as_ptr() as *const c_char);
+            (api.setfield)(l, -2, c"gram_deltas".as_ptr());
 
             push_f32_array(api, l, &rr.char_lps);
-            (api.setfield)(l, -2, b"char_lps\0".as_ptr() as *const c_char);
+            (api.setfield)(l, -2, c"char_lps".as_ptr());
 
             1
         }
@@ -192,11 +357,18 @@ unsafe extern "C" fn lua_rerank(l: LuaState) -> c_int {
     }
 }
 
-/// log_feedback(schema, raw_input, context, cands_tbl, logits_tbl, gram_tbl, char_tbl, p2c_cand_or_nil, shown_top1, chosen_text, chosen_rank, reverted)
+/// log_feedback(schema, raw_input, context, cands_tbl, logits_tbl, gram_tbl, char_tbl, p2c_cand_or_nil, shown_top1, chosen_text, chosen_rank, reverted, [log_path])
 unsafe extern "C" fn lua_log_feedback(l: LuaState) -> c_int {
-    let Ok(api) = get_api() else { return 0; };
+    let Ok(api) = get_api() else {
+        return 0;
+    };
     let res = catch_unwind(AssertUnwindSafe(|| -> Result<(), String> {
-        let mdir = zhiyi::model_dir_path().ok_or("engine not ready")?;
+        let log_path = match read_str(api, l, 13).filter(|s| !s.is_empty()) {
+            Some(p) => PathBuf::from(p),
+            None => zhiyi::model_dir_path()
+                .ok_or("engine not ready")?
+                .join("feedback.jsonl"),
+        };
         let schema = read_str(api, l, 1).unwrap_or_default();
         let raw_input = read_str(api, l, 2).unwrap_or_default();
         let ctx = read_str(api, l, 3).unwrap_or_default();
@@ -226,49 +398,67 @@ unsafe extern "C" fn lua_log_feedback(l: LuaState) -> c_int {
             chosen_rank,
             reverted,
         };
-        feedback::append_feedback(&mdir.join("feedback.jsonl"), &rec)
+        feedback::append_feedback(&log_path, &rec)
     }));
     (api.pushboolean)(l, if matches!(res, Ok(Ok(()))) { 1 } else { 0 });
     1
 }
 
 unsafe extern "C" fn lua_stats(l: LuaState) -> c_int {
-    let Ok(api) = get_api() else { return 0; };
-    let (ready, calls, hits, kv_hits, avg_ms, fused_kv, has_gram) = zhiyi::get_stats();
-    (api.createtable)(l, 0, 7);
+    let Ok(api) = get_api() else {
+        return 0;
+    };
+    let (ready, calls, hits, kv_hits, p2c_pass2, avg_ms, fused_kv, has_gram) = zhiyi::get_stats();
+    (api.createtable)(l, 0, 9);
     (api.pushboolean)(l, if ready { 1 } else { 0 });
-    (api.setfield)(l, -2, b"ready\0".as_ptr() as *const c_char);
+    (api.setfield)(l, -2, c"ready".as_ptr());
     (api.pushinteger)(l, calls as LuaInteger);
-    (api.setfield)(l, -2, b"calls\0".as_ptr() as *const c_char);
+    (api.setfield)(l, -2, c"calls".as_ptr());
     (api.pushinteger)(l, hits as LuaInteger);
-    (api.setfield)(l, -2, b"cache_hits\0".as_ptr() as *const c_char);
+    (api.setfield)(l, -2, c"cache_hits".as_ptr());
     (api.pushinteger)(l, kv_hits as LuaInteger);
-    (api.setfield)(l, -2, b"kv_hits\0".as_ptr() as *const c_char);
+    (api.setfield)(l, -2, c"kv_hits".as_ptr());
+    (api.pushinteger)(l, p2c_pass2 as LuaInteger);
+    (api.setfield)(l, -2, c"p2c_pass2_calls".as_ptr());
     (api.pushnumber)(l, avg_ms);
-    (api.setfield)(l, -2, b"avg_ms\0".as_ptr() as *const c_char);
+    (api.setfield)(l, -2, c"avg_ms".as_ptr());
     (api.pushboolean)(l, if fused_kv { 1 } else { 0 });
-    (api.setfield)(l, -2, b"fused_kv\0".as_ptr() as *const c_char);
+    (api.setfield)(l, -2, c"fused_kv".as_ptr());
     (api.pushboolean)(l, if has_gram { 1 } else { 0 });
-    (api.setfield)(l, -2, b"has_gram\0".as_ptr() as *const c_char);
+    (api.setfield)(l, -2, c"has_gram".as_ptr());
+    (api.pushboolean)(l, if uia::is_enabled() { 1 } else { 0 });
+    (api.setfield)(l, -2, c"uia_enabled".as_ptr());
     1
 }
 
+/// Lua 5.4 C module entry point invoked via `package.loadlib(..., "luaopen_rime_zhiyi")`.
+///
+/// # Safety
+/// Must only be called by the host Lua 5.4 VM (`librime-lua` / `rime.dll`) with a valid `lua_State*`.
 #[no_mangle]
 pub unsafe extern "C" fn luaopen_rime_zhiyi(l: LuaState) -> c_int {
     lua_api::pin_self_module(luaopen_rime_zhiyi as *const std::ffi::c_void);
-    let Ok(api) = get_api() else { return 0; };
-    (api.createtable)(l, 0, 6);
-    (api.pushcclosure)(l, lua_init, 0);
-    (api.setfield)(l, -2, b"init\0".as_ptr() as *const c_char);
-    (api.pushcclosure)(l, lua_init_async, 0);
-    (api.setfield)(l, -2, b"init_async\0".as_ptr() as *const c_char);
-    (api.pushcclosure)(l, lua_is_ready, 0);
-    (api.setfield)(l, -2, b"is_ready\0".as_ptr() as *const c_char);
-    (api.pushcclosure)(l, lua_rerank, 0);
-    (api.setfield)(l, -2, b"rerank\0".as_ptr() as *const c_char);
-    (api.pushcclosure)(l, lua_log_feedback, 0);
-    (api.setfield)(l, -2, b"log_feedback\0".as_ptr() as *const c_char);
-    (api.pushcclosure)(l, lua_stats, 0);
-    (api.setfield)(l, -2, b"stats\0".as_ptr() as *const c_char);
+    let Ok(api) = get_api() else {
+        return 0;
+    };
+    (api.createtable)(l, 0, 10);
+
+    macro_rules! export_fn {
+        ($name:literal, $func:ident) => {
+            (api.pushcclosure)(l, $func, 0);
+            (api.setfield)(l, -2, concat!($name, "\0").as_ptr() as *const c_char);
+        };
+    }
+
+    export_fn!("init", lua_init);
+    export_fn!("init_async", lua_init_async);
+    export_fn!("is_ready", lua_is_ready);
+    export_fn!("resolve_layout", lua_resolve_layout);
+    export_fn!("set_uia_enabled", lua_set_uia_enabled);
+    export_fn!("query_uia_context", lua_query_uia_context);
+    export_fn!("kick_uia_refresh", lua_kick_uia_refresh);
+    export_fn!("rerank", lua_rerank);
+    export_fn!("log_feedback", lua_log_feedback);
+    export_fn!("stats", lua_stats);
     1
 }

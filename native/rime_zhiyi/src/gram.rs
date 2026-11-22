@@ -104,7 +104,11 @@ fn encode_char(ch: char, out: &mut Vec<u8>) {
 }
 
 impl WanxiangGram {
-    pub fn open(path: &Path, collocation_penalty: f64, non_collocation_penalty: f64) -> Result<Self, String> {
+    pub fn open(
+        path: &Path,
+        collocation_penalty: f64,
+        non_collocation_penalty: f64,
+    ) -> Result<Self, String> {
         let wide: Vec<u16> = path
             .as_os_str()
             .encode_wide()
@@ -158,7 +162,7 @@ impl WanxiangGram {
             let rel_off = i32::from_le_bytes(bytes[40..44].try_into().unwrap()) as isize;
             let da_off = (40isize + rel_off) as usize;
             let da_bytes = da_size.saturating_mul(4);
-            if da_off % 4 != 0 || da_off.saturating_add(da_bytes) > bytes.len() {
+            if !da_off.is_multiple_of(4) || da_off.saturating_add(da_bytes) > bytes.len() {
                 UnmapViewOfFile(view as *const c_void);
                 CloseHandle(mapping);
                 CloseHandle(file);
@@ -230,8 +234,8 @@ impl WanxiangGram {
                     break;
                 };
                 let mut ok = true;
-                for c_idx in (i - cl)..i {
-                    for &b in &encoded[c_idx] {
+                for enc in &encoded[(i - cl)..i] {
+                    for &b in enc {
                         node_pos ^= Self::offset(u) ^ (b as usize);
                         let Some(next_u) = self.unit(node_pos) else {
                             ok = false;
@@ -269,7 +273,8 @@ impl WanxiangGram {
                     }
                     if Self::has_leaf(u) {
                         if let Some(leaf) = self.unit(node_pos ^ Self::offset(u)) {
-                            let val = (Self::value(leaf) as f64) / 10000.0 + self.collocation_penalty;
+                            let val =
+                                (Self::value(leaf) as f64) / 10000.0 + self.collocation_penalty;
                             if val > best {
                                 best = val;
                             }
@@ -292,13 +297,20 @@ mod tests {
         let Ok(appdata) = std::env::var("APPDATA") else {
             return;
         };
-        let p = Path::new(&appdata).join("Rime").join("wanxiang-lts-zh-hans.gram");
+        let p = Path::new(&appdata)
+            .join("Rime")
+            .join("wanxiang-lts-zh-hans.gram");
         if !p.is_file() {
             return;
         }
         let gram = WanxiangGram::open(&p, -15.5, -4.0).expect("open gram");
         let s1 = gram.score_sentence_per_char("所有按键都在传送带上循环滚动");
         let s2 = gram.score_sentence_per_char("所有案件都在传送带上循环滚动");
-        assert!(s2 > s1, "expected 案件 ({}) > 按键 ({}) in raw N-gram", s2, s1);
+        assert!(
+            s2 > s1,
+            "expected 案件 ({}) > 按键 ({}) in raw N-gram",
+            s2,
+            s1
+        );
     }
 }

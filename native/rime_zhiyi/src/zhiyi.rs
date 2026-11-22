@@ -11,7 +11,7 @@ use serde::Deserialize;
 use tokenizers::Tokenizer;
 
 use crate::gram::WanxiangGram;
-use crate::pinyin::{full_pinyin_to_units, zrm_input_to_units};
+use crate::pinyin::{input_to_units, PinyinLayout};
 
 const CONTEXT_CHARS: usize = 128;
 const LRU_CAPACITY: usize = 256;
@@ -76,6 +76,34 @@ impl Default for FusionWeights {
     }
 }
 
+#[derive(Clone, Copy)]
+pub struct P2cConfig {
+    /// Minimum Pass-1 `char_logits` margin to trigger KV-cached Pass-2 cross-encoder check (<= 0 disables Pass-2).
+    pub verify_margin: f32,
+    /// Minimum Pass-2 cross-encoder logit lead over Rime's best candidate to promote P2C to #1.
+    pub top1_logit_diff: f32,
+    /// Minimum Wanxiang `.gram` per-char score delta floor to allow #1 promotion.
+    pub top1_min_gram_diff: f32,
+    /// Minimum Pass-2 cross-encoder logit lead to insert P2C safely at #2.
+    pub top2_logit_diff: f32,
+    /// Legacy Pass-1-only fallback margins (used only when running non-KV graph or Pass-2 disabled).
+    pub legacy_top1_margin: f32,
+    pub legacy_top2_margin: f32,
+}
+
+impl Default for P2cConfig {
+    fn default() -> Self {
+        Self {
+            verify_margin: 0.20,
+            top1_logit_diff: 2.0,
+            top1_min_gram_diff: -2.0,
+            top2_logit_diff: 0.5,
+            legacy_top1_margin: 1.0,
+            legacy_top2_margin: 0.45,
+        }
+    }
+}
+
 #[derive(Clone)]
 pub struct RerankResult {
     pub order: Vec<usize>,
@@ -93,13 +121,14 @@ struct CachedEval {
     char_lps: Vec<f32>,
     p2c_text: Option<String>,
     p2c_margin: f32,
+    p2c_verified: Option<(f32, f32)>,
 }
 
 #[derive(Hash, PartialEq, Eq, Clone)]
 struct CacheKey {
     ctx_tail: String,
     raw_input: String,
-    is_dp: bool,
+    layout: PinyinLayout,
     cands: Vec<String>,
 }
 
@@ -116,6 +145,7 @@ pub struct ZhiyiStats {
     pub calls: u64,
     pub cache_hits: u64,
     pub kv_hits: u64,
+    pub p2c_pass2_calls: u64,
     pub total_infer_ms: f64,
     pub fused_kv: bool,
     pub has_gram: bool,
@@ -164,7 +194,12 @@ fn ensure_ort_env(ort_dll: &Path) -> Result<&'static Environment, String> {
         .map_err(|e| e.clone())
 }
 
-pub fn init_engine(model_dir: &Path, ort_dll: &Path, gram_path: Option<&Path>, threads: usize) -> Result<(), String> {
+pub fn init_engine(
+    model_dir: &Path,
+    ort_dll: &Path,
+    gram_path: Option<&Path>,
+    threads: usize,
+) -> Result<(), String> {
     if let Some(m) = ENGINE.get() {
         let g = m.lock().map_err(|_| "engine mutex poisoned".to_string())?;
         if g.model_dir == model_dir {
@@ -213,7 +248,12 @@ pub fn init_engine(model_dir: &Path, ort_dll: &Path, gram_path: Option<&Path>, t
         }
     }
 
-    let old_chars = uv.ml.as_ref().map(|m| m.old_chars).unwrap_or(uv.chars.len()).min(uv.chars.len());
+    let old_chars = uv
+        .ml
+        .as_ref()
+        .map(|m| m.old_chars)
+        .unwrap_or(uv.chars.len())
+        .min(uv.chars.len());
     let pinyin_src = uv
         .ml
         .as_ref()
@@ -293,6 +333,7 @@ pub fn init_engine(model_dir: &Path, ort_dll: &Path, gram_path: Option<&Path>, t
             calls: 0,
             cache_hits: 0,
             kv_hits: 0,
+            p2c_pass2_calls: 0,
             total_infer_ms: 0.0,
             fused_kv: use_fused_kv,
             has_gram,
@@ -301,19 +342,32 @@ pub fn init_engine(model_dir: &Path, ort_dll: &Path, gram_path: Option<&Path>, t
 
     // Single untimed warmup pass (also pre-populates empty-context KV cache!)
     let warmup_cands = vec!["你好".to_string(), "拟好".to_string()];
-    let _ = engine.evaluate("", "nihk", true, &warmup_cands);
+    let _ = engine.evaluate(
+        "",
+        "nihk",
+        PinyinLayout::Zrm,
+        &warmup_cands,
+        FusionWeights::default(),
+        0.0,
+    );
     engine.lru_map.clear();
     engine.lru_order.clear();
     engine.stats.calls = 0;
     engine.stats.cache_hits = 0;
     engine.stats.kv_hits = 0;
+    engine.stats.p2c_pass2_calls = 0;
     engine.stats.total_infer_ms = 0.0;
 
     let _ = ENGINE.set(Mutex::new(engine));
     Ok(())
 }
 
-pub fn init_engine_async(model_dir: PathBuf, ort_dll: PathBuf, gram_path: Option<PathBuf>, threads: usize) {
+pub fn init_engine_async(
+    model_dir: PathBuf,
+    ort_dll: PathBuf,
+    gram_path: Option<PathBuf>,
+    threads: usize,
+) {
     if ENGINE.get().is_some() {
         return;
     }
@@ -372,7 +426,39 @@ fn common_prefix_chars(cands: &[String]) -> usize {
         }
     }
     let min_len = cands.iter().map(|s| s.chars().count()).min().unwrap_or(0);
-    if lcp >= min_len { 0 } else { lcp }
+    if lcp >= min_len {
+        0
+    } else {
+        lcp
+    }
+}
+
+fn rank_order_from_features(
+    logits: &[f32],
+    gram_deltas: &[f32],
+    char_lps: &[f32],
+    has_ctx: f64,
+    weights: FusionWeights,
+) -> Vec<usize> {
+    let max_l = logits.iter().copied().fold(f32::NEG_INFINITY, f32::max) as f64;
+    let sum_exp: f64 = logits.iter().map(|&x| ((x as f64) - max_l).exp()).sum();
+    let lse = max_l + sum_exp.ln();
+
+    let mut scored: Vec<(usize, f64)> = logits
+        .iter()
+        .enumerate()
+        .map(|(i, &x)| {
+            let lp = (x as f64) - lse;
+            let score = weights.w_logit * lp
+                + weights.w_rank * ((i as f64) + 1.0).ln()
+                + weights.w_gram * (gram_deltas[i] as f64)
+                + weights.w_char_lp * (char_lps[i] as f64)
+                + weights.w_ctx_lp * lp * has_ctx;
+            (i, score)
+        })
+        .collect();
+    scored.sort_by(|a, b| b.1.total_cmp(&a.1).then_with(|| a.0.cmp(&b.0)));
+    scored.into_iter().map(|(idx, _)| idx).collect()
 }
 
 impl ZhiyiEngine {
@@ -403,15 +489,24 @@ impl ZhiyiEngine {
         let z_enc = vec![0.0f32; 12 * 6 * 64];
         let z_ch = vec![0.0f32; 2 * 6 * 64];
 
-        let t_ids = Tensor::from_array(([1usize, p], ids)).map_err(|e| format!("ctx ids: {}", e))?;
-        let t_uid = Tensor::from_array(([1usize, p], uids)).map_err(|e| format!("ctx uid: {}", e))?;
-        let t_ek = TensorRef::from_array_view(([12usize, 1, 6, 1, 64], z_enc.as_slice())).map_err(|e| format!("ek: {}", e))?;
-        let t_ev = TensorRef::from_array_view(([12usize, 1, 6, 1, 64], z_enc.as_slice())).map_err(|e| format!("ev: {}", e))?;
-        let t_ck = TensorRef::from_array_view(([2usize, 1, 6, 1, 64], z_ch.as_slice())).map_err(|e| format!("ck: {}", e))?;
-        let t_cv = TensorRef::from_array_view(([2usize, 1, 6, 1, 64], z_ch.as_slice())).map_err(|e| format!("cv: {}", e))?;
-        let t_pm = Tensor::from_array(([1usize, 1], vec![false])).map_err(|e| format!("pm: {}", e))?;
-        let t_mp = Tensor::from_array(([1usize, 1], vec![0i64])).map_err(|e| format!("mp: {}", e))?;
-        let t_sp = Tensor::from_array(([1usize, 1], vec![0i64])).map_err(|e| format!("sp: {}", e))?;
+        let t_ids =
+            Tensor::from_array(([1usize, p], ids)).map_err(|e| format!("ctx ids: {}", e))?;
+        let t_uid =
+            Tensor::from_array(([1usize, p], uids)).map_err(|e| format!("ctx uid: {}", e))?;
+        let t_ek = TensorRef::from_array_view(([12usize, 1, 6, 1, 64], z_enc.as_slice()))
+            .map_err(|e| format!("ek: {}", e))?;
+        let t_ev = TensorRef::from_array_view(([12usize, 1, 6, 1, 64], z_enc.as_slice()))
+            .map_err(|e| format!("ev: {}", e))?;
+        let t_ck = TensorRef::from_array_view(([2usize, 1, 6, 1, 64], z_ch.as_slice()))
+            .map_err(|e| format!("ck: {}", e))?;
+        let t_cv = TensorRef::from_array_view(([2usize, 1, 6, 1, 64], z_ch.as_slice()))
+            .map_err(|e| format!("cv: {}", e))?;
+        let t_pm =
+            Tensor::from_array(([1usize, 1], vec![false])).map_err(|e| format!("pm: {}", e))?;
+        let t_mp =
+            Tensor::from_array(([1usize, 1], vec![0i64])).map_err(|e| format!("mp: {}", e))?;
+        let t_sp =
+            Tensor::from_array(([1usize, 1], vec![0i64])).map_err(|e| format!("sp: {}", e))?;
 
         let t0 = Instant::now();
         let outputs = self
@@ -430,10 +525,18 @@ impl ZhiyiEngine {
             .map_err(|e| format!("ctx run: {}", e))?;
         self.stats.total_infer_ms += t0.elapsed().as_secs_f64() * 1000.0;
 
-        let (_, ek) = outputs["present_enc_k"].try_extract_tensor::<f32>().map_err(|e| format!("out ek: {}", e))?;
-        let (_, ev) = outputs["present_enc_v"].try_extract_tensor::<f32>().map_err(|e| format!("out ev: {}", e))?;
-        let (_, ck) = outputs["present_choice_k"].try_extract_tensor::<f32>().map_err(|e| format!("out ck: {}", e))?;
-        let (_, cv) = outputs["present_choice_v"].try_extract_tensor::<f32>().map_err(|e| format!("out cv: {}", e))?;
+        let (_, ek) = outputs["present_enc_k"]
+            .try_extract_tensor::<f32>()
+            .map_err(|e| format!("out ek: {}", e))?;
+        let (_, ev) = outputs["present_enc_v"]
+            .try_extract_tensor::<f32>()
+            .map_err(|e| format!("out ev: {}", e))?;
+        let (_, ck) = outputs["present_choice_k"]
+            .try_extract_tensor::<f32>()
+            .map_err(|e| format!("out ck: {}", e))?;
+        let (_, cv) = outputs["present_choice_v"]
+            .try_extract_tensor::<f32>()
+            .map_err(|e| format!("out cv: {}", e))?;
 
         Ok(ContextKv {
             p,
@@ -467,15 +570,17 @@ impl ZhiyiEngine {
         &mut self,
         context: &str,
         raw_input: &str,
-        is_double_pinyin: bool,
+        layout: PinyinLayout,
         cands: &[String],
+        weights: FusionWeights,
+        p2c_verify_margin: f32,
     ) -> Result<CachedEval, String> {
         self.stats.calls += 1;
         let ctx_tail = utf8_tail(context, CONTEXT_CHARS);
         let key = CacheKey {
             ctx_tail: ctx_tail.to_string(),
             raw_input: raw_input.to_string(),
-            is_dp: is_double_pinyin,
+            layout,
             cands: cands.to_vec(),
         };
         if let Some(cached) = self.lru_map.get(&key) {
@@ -483,11 +588,13 @@ impl ZhiyiEngine {
             return Ok(cached.clone());
         }
 
-        let mut units = if is_double_pinyin {
-            zrm_input_to_units(raw_input)
-        } else {
-            full_pinyin_to_units(raw_input, &cands[0], &self.readings, &self.valid_syllables)
-        };
+        let mut units = input_to_units(
+            layout,
+            raw_input,
+            &cands[0],
+            &self.readings,
+            &self.valid_syllables,
+        );
         let orig_units_len = units.len();
 
         let mut cand_toks: Vec<Vec<i64>> = cands
@@ -624,12 +731,58 @@ impl ZhiyiEngine {
             }
         }
 
+        // Optional KV-cached Pass-2 Cross-Encoder + .gram verification of promising novel P2C candidates
+        // Triggers on only ~6-7% of sentences; reuses warm prefix KV-cache (~4-5 ms on AC, ~0.3 ms amortized).
+        let mut p2c_verified: Option<(f32, f32)> = None;
+        if self.use_fused_kv && p2c_verify_margin > 0.0 && p2c_margin > p2c_verify_margin {
+            if let Some(ref p2c_str) = p2c_text {
+                let has_ctx_f = if context.trim().chars().count() >= 2 {
+                    1.0
+                } else {
+                    0.0
+                };
+                let rank0 =
+                    rank_order_from_features(&logits, &gram_deltas, &char_lps, has_ctx_f, weights);
+                let best_idx = rank0[0];
+                let mut probe_cands: Vec<&str> = Vec::with_capacity(3);
+                probe_cands.push(cands[best_idx].as_str());
+                if rank0.len() >= 2 {
+                    probe_cands.push(cands[rank0[1]].as_str());
+                }
+                probe_cands.push(p2c_str.as_str());
+                let probe_toks: Vec<Vec<i64>> = probe_cands
+                    .iter()
+                    .map(|c| {
+                        let mut s = String::with_capacity(c.len() + 1);
+                        s.push(' ');
+                        s.push_str(c);
+                        self.encode_ids(&s)
+                    })
+                    .collect();
+
+                if let Ok((l2, _, _, _)) = self.run_fused_kv(&ctx_final, &units, &probe_toks) {
+                    if let (Some(&l_best), Some(&l_p2c)) = (l2.first(), l2.last()) {
+                        self.stats.p2c_pass2_calls += 1;
+                        let gdiff = if let Some(ref g) = self.gram {
+                            (g.score_sentence_per_char(p2c_str)
+                                - g.score_sentence_per_char(&cands[best_idx]))
+                                as f32
+                        } else {
+                            0.0
+                        };
+                        p2c_verified = Some((l_p2c - l_best, gdiff));
+                    }
+                }
+            }
+        }
+
         let res = CachedEval {
             logits,
             gram_deltas,
             char_lps,
             p2c_text,
             p2c_margin,
+            p2c_verified,
         };
 
         if self.lru_map.len() >= LRU_CAPACITY {
@@ -683,15 +836,24 @@ impl ZhiyiEngine {
         let n_slots_in = slots.len();
 
         let kv = &self.kv_cache[kv_idx].1;
-        let t_ids = Tensor::from_array(([1usize, seq_len], ids)).map_err(|e| format!("ids: {}", e))?;
-        let t_uid = Tensor::from_array(([1usize, seq_len], uids)).map_err(|e| format!("uid: {}", e))?;
-        let t_ek = TensorRef::from_array_view(([12usize, 1, 6, kv.p, 64], kv.enc_k.as_slice())).map_err(|e| format!("ek: {}", e))?;
-        let t_ev = TensorRef::from_array_view(([12usize, 1, 6, kv.p, 64], kv.enc_v.as_slice())).map_err(|e| format!("ev: {}", e))?;
-        let t_ck = TensorRef::from_array_view(([2usize, 1, 6, kv.p, 64], kv.choice_k.as_slice())).map_err(|e| format!("ck: {}", e))?;
-        let t_cv = TensorRef::from_array_view(([2usize, 1, 6, kv.p, 64], kv.choice_v.as_slice())).map_err(|e| format!("cv: {}", e))?;
-        let t_pm = TensorRef::from_array_view(([1usize, kv.p], kv.mask.as_slice())).map_err(|e| format!("pm: {}", e))?;
-        let t_mp = Tensor::from_array(([1usize, n_markers], markers)).map_err(|e| format!("mp: {}", e))?;
-        let t_sp = Tensor::from_array(([1usize, n_slots_in], slots)).map_err(|e| format!("sp: {}", e))?;
+        let t_ids =
+            Tensor::from_array(([1usize, seq_len], ids)).map_err(|e| format!("ids: {}", e))?;
+        let t_uid =
+            Tensor::from_array(([1usize, seq_len], uids)).map_err(|e| format!("uid: {}", e))?;
+        let t_ek = TensorRef::from_array_view(([12usize, 1, 6, kv.p, 64], kv.enc_k.as_slice()))
+            .map_err(|e| format!("ek: {}", e))?;
+        let t_ev = TensorRef::from_array_view(([12usize, 1, 6, kv.p, 64], kv.enc_v.as_slice()))
+            .map_err(|e| format!("ev: {}", e))?;
+        let t_ck = TensorRef::from_array_view(([2usize, 1, 6, kv.p, 64], kv.choice_k.as_slice()))
+            .map_err(|e| format!("ck: {}", e))?;
+        let t_cv = TensorRef::from_array_view(([2usize, 1, 6, kv.p, 64], kv.choice_v.as_slice()))
+            .map_err(|e| format!("cv: {}", e))?;
+        let t_pm = TensorRef::from_array_view(([1usize, kv.p], kv.mask.as_slice()))
+            .map_err(|e| format!("pm: {}", e))?;
+        let t_mp =
+            Tensor::from_array(([1usize, n_markers], markers)).map_err(|e| format!("mp: {}", e))?;
+        let t_sp =
+            Tensor::from_array(([1usize, n_slots_in], slots)).map_err(|e| format!("sp: {}", e))?;
 
         let t0 = Instant::now();
         let outputs = self
@@ -710,12 +872,20 @@ impl ZhiyiEngine {
             .map_err(|e| format!("key run: {}", e))?;
         self.stats.total_infer_ms += t0.elapsed().as_secs_f64() * 1000.0;
 
-        let (_, l_slice) = outputs["logits"].try_extract_tensor::<f32>().map_err(|e| format!("logits: {}", e))?;
+        let (_, l_slice) = outputs["logits"]
+            .try_extract_tensor::<f32>()
+            .map_err(|e| format!("logits: {}", e))?;
         let logits: Vec<f32> = l_slice.iter().take(n_markers).copied().collect();
 
-        let (c_shape, c_slice) = outputs["char_logits"].try_extract_tensor::<f32>().map_err(|e| format!("char_logits: {}", e))?;
+        let (c_shape, c_slice) = outputs["char_logits"]
+            .try_extract_tensor::<f32>()
+            .map_err(|e| format!("char_logits: {}", e))?;
         let vocab_chars = c_shape.last().copied().unwrap_or(0) as usize;
-        let cl = c_slice.iter().take(real_slots * vocab_chars).copied().collect();
+        let cl = c_slice
+            .iter()
+            .take(real_slots * vocab_chars)
+            .copied()
+            .collect();
         Ok((logits, cl, real_slots, vocab_chars))
     }
 
@@ -763,12 +933,18 @@ impl ZhiyiEngine {
         }
         let n_slots_in = slots.len();
 
-        let t_ids = Tensor::from_array(([1usize, seq_len], ids)).map_err(|e| format!("ids: {}", e))?;
-        let t_att = Tensor::from_array(([1usize, seq_len], vec![1i64; seq_len])).map_err(|e| format!("att: {}", e))?;
-        let t_uid = Tensor::from_array(([1usize, seq_len], uids)).map_err(|e| format!("uid: {}", e))?;
-        let t_mp = Tensor::from_array(([1usize, n_markers], markers)).map_err(|e| format!("mp: {}", e))?;
-        let t_mm = Tensor::from_array(([1usize, n_markers], vec![true; n_markers])).map_err(|e| format!("mm: {}", e))?;
-        let t_sp = Tensor::from_array(([1usize, n_slots_in], slots)).map_err(|e| format!("sp: {}", e))?;
+        let t_ids =
+            Tensor::from_array(([1usize, seq_len], ids)).map_err(|e| format!("ids: {}", e))?;
+        let t_att = Tensor::from_array(([1usize, seq_len], vec![1i64; seq_len]))
+            .map_err(|e| format!("att: {}", e))?;
+        let t_uid =
+            Tensor::from_array(([1usize, seq_len], uids)).map_err(|e| format!("uid: {}", e))?;
+        let t_mp =
+            Tensor::from_array(([1usize, n_markers], markers)).map_err(|e| format!("mp: {}", e))?;
+        let t_mm = Tensor::from_array(([1usize, n_markers], vec![true; n_markers]))
+            .map_err(|e| format!("mm: {}", e))?;
+        let t_sp =
+            Tensor::from_array(([1usize, n_slots_in], slots)).map_err(|e| format!("sp: {}", e))?;
 
         let t0 = Instant::now();
         let outputs = self
@@ -784,12 +960,20 @@ impl ZhiyiEngine {
             .map_err(|e| format!("whole run: {}", e))?;
         self.stats.total_infer_ms += t0.elapsed().as_secs_f64() * 1000.0;
 
-        let (_, l_slice) = outputs["logits"].try_extract_tensor::<f32>().map_err(|e| format!("logits: {}", e))?;
+        let (_, l_slice) = outputs["logits"]
+            .try_extract_tensor::<f32>()
+            .map_err(|e| format!("logits: {}", e))?;
         let logits: Vec<f32> = l_slice.iter().take(n_markers).copied().collect();
 
-        let (c_shape, c_slice) = outputs["char_logits"].try_extract_tensor::<f32>().map_err(|e| format!("char_logits: {}", e))?;
+        let (c_shape, c_slice) = outputs["char_logits"]
+            .try_extract_tensor::<f32>()
+            .map_err(|e| format!("char_logits: {}", e))?;
         let vocab_chars = c_shape.last().copied().unwrap_or(0) as usize;
-        let cl = c_slice.iter().take(real_slots * vocab_chars).copied().collect();
+        let cl = c_slice
+            .iter()
+            .take(real_slots * vocab_chars)
+            .copied()
+            .collect();
         Ok((logits, cl, real_slots, vocab_chars))
     }
 }
@@ -797,11 +981,10 @@ impl ZhiyiEngine {
 pub fn rerank(
     context: &str,
     raw_input: &str,
-    is_double_pinyin: bool,
+    layout: PinyinLayout,
     cands: &[String],
     weights: FusionWeights,
-    p2c_top1_th: f32,
-    p2c_top2_th: f32,
+    p2c_cfg: P2cConfig,
 ) -> Result<RerankResult, String> {
     if cands.len() < 2 {
         return Ok(RerankResult {
@@ -814,36 +997,55 @@ pub fn rerank(
         });
     }
     let mutex = ENGINE.get().ok_or_else(|| "engine not ready".to_string())?;
-    let mut eng = mutex.lock().map_err(|_| "engine mutex poisoned".to_string())?;
-    let eval = eng.evaluate(context, raw_input, is_double_pinyin, cands)?;
+    let mut eng = mutex
+        .lock()
+        .map_err(|_| "engine mutex poisoned".to_string())?;
+    let eval = eng.evaluate(
+        context,
+        raw_input,
+        layout,
+        cands,
+        weights,
+        p2c_cfg.verify_margin,
+    )?;
 
-    let has_ctx = if context.trim().chars().count() >= 2 { 1.0 } else { 0.0 };
-    let max_l = eval.logits.iter().copied().fold(f32::NEG_INFINITY, f32::max) as f64;
-    let sum_exp: f64 = eval.logits.iter().map(|&x| ((x as f64) - max_l).exp()).sum();
-    let lse = max_l + sum_exp.ln();
+    let has_ctx = if context.trim().chars().count() >= 2 {
+        1.0
+    } else {
+        0.0
+    };
+    let order0 = rank_order_from_features(
+        &eval.logits,
+        &eval.gram_deltas,
+        &eval.char_lps,
+        has_ctx,
+        weights,
+    );
 
-    let mut order: Vec<(usize, f64)> = eval
-        .logits
-        .iter()
-        .enumerate()
-        .map(|(i, &x)| {
-            let lp = (x as f64) - lse;
-            let score = weights.w_logit * lp
-                + weights.w_rank * ((i as f64) + 1.0).ln()
-                + weights.w_gram * (eval.gram_deltas[i] as f64)
-                + weights.w_char_lp * (eval.char_lps[i] as f64)
-                + weights.w_ctx_lp * lp * has_ctx;
-            (i + 1, score)
-        })
-        .collect();
-    order.sort_by(|a, b| b.1.total_cmp(&a.1).then_with(|| a.0.cmp(&b.0)));
-
-    // P2C synthesis gating: only activate with preceding context where char_logits is strongly calibrated
-    let (p2c_text, p2c_pos) = if has_ctx > 0.5 {
-        if let Some(ref txt) = eval.p2c_text {
-            if p2c_top1_th > 0.0 && eval.p2c_margin > p2c_top1_th {
+    // P2C synthesis gating:
+    //   1. Preferred path: KV-cached Pass-2 Cross-Encoder + .gram verification (works with & without context)
+    //   2. Fallback path (non-KV graph or Pass-2 disabled): context-gated Pass-1 char_logits margin
+    let (p2c_text, p2c_pos) = if let Some(ref txt) = eval.p2c_text {
+        if let Some((ldiff, gdiff)) = eval.p2c_verified {
+            if p2c_cfg.top1_logit_diff > 0.0
+                && ldiff > p2c_cfg.top1_logit_diff
+                && gdiff > p2c_cfg.top1_min_gram_diff
+            {
                 (Some(txt.clone()), 1u8)
-            } else if p2c_top2_th > 0.0 && eval.p2c_margin > p2c_top2_th {
+            } else if p2c_cfg.top2_logit_diff > 0.0
+                && ldiff > p2c_cfg.top2_logit_diff
+                && gdiff > (p2c_cfg.top1_min_gram_diff - 1.5)
+            {
+                (Some(txt.clone()), 2u8)
+            } else {
+                (None, 0u8)
+            }
+        } else if has_ctx > 0.5 {
+            if p2c_cfg.legacy_top1_margin > 0.0 && eval.p2c_margin > p2c_cfg.legacy_top1_margin {
+                (Some(txt.clone()), 1u8)
+            } else if p2c_cfg.legacy_top2_margin > 0.0
+                && eval.p2c_margin > p2c_cfg.legacy_top2_margin
+            {
                 (Some(txt.clone()), 2u8)
             } else {
                 (None, 0u8)
@@ -856,7 +1058,7 @@ pub fn rerank(
     };
 
     Ok(RerankResult {
-        order: order.into_iter().map(|(idx, _)| idx).collect(),
+        order: order0.into_iter().map(|idx| idx + 1).collect(),
         p2c_text,
         p2c_pos,
         logits: eval.logits,
@@ -865,12 +1067,12 @@ pub fn rerank(
     })
 }
 
-pub fn get_stats() -> (bool, u64, u64, u64, f64, bool, bool) {
+pub fn get_stats() -> (bool, u64, u64, u64, u64, f64, bool, bool) {
     let Some(mutex) = ENGINE.get() else {
-        return (false, 0, 0, 0, 0.0, false, false);
+        return (false, 0, 0, 0, 0, 0.0, false, false);
     };
     let Ok(eng) = mutex.lock() else {
-        return (false, 0, 0, 0, 0.0, false, false);
+        return (false, 0, 0, 0, 0, 0.0, false, false);
     };
     let infer_calls = eng.stats.calls.saturating_sub(eng.stats.cache_hits);
     let avg = if infer_calls > 0 {
@@ -883,6 +1085,7 @@ pub fn get_stats() -> (bool, u64, u64, u64, f64, bool, bool) {
         eng.stats.calls,
         eng.stats.cache_hits,
         eng.stats.kv_hits,
+        eng.stats.p2c_pass2_calls,
         avg,
         eng.stats.fused_kv,
         eng.stats.has_gram,
