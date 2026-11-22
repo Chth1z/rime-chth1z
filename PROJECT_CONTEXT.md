@@ -13,6 +13,7 @@
 | `upstream`（`gaboolic/rime-frost`） | `cn_dicts/`、`cn_dicts_cell/`、`en_dicts/`、`opencc/` | `.github/workflows/sync-upstream-dicts.yml` 每周自动同步；本地可用 `scripts/sync-dicts-local.ps1` |
 | `upstream`（`gaboolic/rime-frost`） | `lua/` 与方案改动 | 本地只读远端 `upstream`（已锁 `no_push`，可随时 `git show` 对比）＋ `upstream-watch.yml` 每周汇总 |
 | `rime-ice`（`iDvel/rime-ice`） | 母库 `lua/` 修复与改进 | 本地只读远端 `rime-ice`（已锁 `no_push`）＋ `upstream-watch.yml` 每周汇总 |
+| `Chth1z/rime-neural`（`Release`） | 端侧 ONNX 神经整句重排插件（DLL ＋ `rime_neural.lua`） | `scripts/install-rime-neural.ps1` ＋ `update-local.ps1` 每周校验 SHA-256 自动更新 |
 | `amzxyz/rime-wanxiang-data`（`LTS`） | `wanxiang-lts-zh-hans.gram`（不入 Git） | `upstream-watch.yml` 记录 SHA-256，本机单独更新 |
 | `rime/weasel`（`latest` Nightly） | Windows 客户端与 `librime` 版本 | `upstream-watch.yml` ＋ `scripts/check-upstreams.ps1` |
 
@@ -21,7 +22,7 @@
 - **系统与硬件**：Windows 11（`zh-Hant-TW` / `0x0404`），Intel Core Ultra 7 255HX，32 GB 内存
 - **输入法**：Weasel Nightly `0.17.4.98.f96ed24`（`librime 1.17.0`、`Lua 5.4.8`、Direct2D WARP）
 - **字体**：系统已装 Google 官方完整版 `NotoSansCJK.ttc` + `NotoSerifCJK.ttc`（繁简日韩无缺字），以及 `Chiron GoRound TC VF`、`Inter Variable Text`、`LXGW WenKai TC`、`Newsreader`、`Source Serif 4`、`Plus Jakarta Sans`
-- **当前自用配置**：自然码双拼（主力）＋ 全拼（备用），挂 `wanxiang-lts-zh-hans.gram`（372.68 MB，`collocation_penalty: -15.5`、`non_collocation_penalty: -4`、`contextual_suggestions: false`）、台湾繁体双出滤镜（`tw_dual_filter.lua`：首选 `s2twp` 台湾用法，次选 `s2tw` 台湾正体保留原词）、竖排 5 候选（`F4` 菜单单页 6 项），主题 `apple_graphite_dark`（`#262626`、`#2C62CE`、`Noto Sans CJK TC:medium` 13pt / 11pt 阿拉伯数字）
+- **当前自用配置**：自然码双拼（主力）＋ 全拼（备用），挂 `wanxiang-lts-zh-hans.gram`（372.68 MB，`collocation_penalty: -15.5`、`non_collocation_penalty: -4`、`contextual_suggestions: false`）、独立插件 `Chth1z/rime-neural`（`v1.0.0` 官方发行版，`ML-pumpkin-1103` KV-cache ＋ `.gram` 共享映射 ＋ Pass-2 P2C ＋ 非阻塞 UIA）、台湾繁体双出滤镜（`tw_dual_filter.lua`：首选 `s2twp` 台湾用法，次选 `s2tw` 台湾正体保留原词；全局持久化在 `user.yaml`，`claude.exe` / `claude-desktop.exe` 通过 `app_options` 固定臺繁、其余默认简中）、竖排 5 候选（`F4` 菜单单页 6 项），主题 `apple_graphite_dark`（`#262626`、`#2C62CE`、`Noto Sans CJK TC:medium` 13pt / 11pt 阿拉伯数字）
 
 ## 3. 已测出的性能与准确率数据
 
@@ -36,7 +37,8 @@
 | 修正 GC（`inc(150,200)`）＋ 合并滤镜 ＋ 台湾双出 ＋ 语法调优（纯统计） | **`0.4 ms / 1.6 ms`**（峰值 `5.2 ms`） | **`0.1 ms / 0.4 ms`**（峰值 `0.9 ms`） | `max_sentences: 8, cutoff: 0.3`，88 项回归全过 |
 | ＋ 端侧知意 ONNX 神经整句重排（v0.1.0，`1.4V2-Long-L12`，8 线程 CPU） | 未单测（已升级 v0.2.0） | `0.1 ms / 2.1 ms`（峰值 `12.9 ms`） | 全拼 `0.1 / 5.0 ms`（峰值 `15.7 ms`），88 项回归全过 |
 | ＋ 端侧神经重排 v0.2.0（`ML-pumpkin-1103` KV-cache ＋ `.gram` 融合 ＋ P2C） | `0.4 ms / 4.1 ms`（峰值 `22.3 ms`） | `0.1 ms / 1.6 ms`（峰值 `9.8 ms`） | 全拼插电 `4.2 ms`/电池 `9.2 ms`（峰值 `12.6`/`27.9 ms`），88 项回归全过 |
-| ＋ 端侧神经重排 v0.3.0（＋ Pass-2 校验 P2C ＋ 非阻塞 UIA ＋ 7 种双拼通用） | 待补测（同架构） | **`0.1 ms / 1.8 ms`**（峰值 **`10.3 ms`**） | 全拼 `0.1 / 4.3 ms`（峰值 `13.5 ms`），88 项回归＋3 轮热部署全过 |
+| ＋ 端侧神经重排 v0.3.0（＋ Pass-2 校验 P2C ＋ 非阻塞 UIA ＋ 7 种双拼通用） | 待补测（同架构） | `0.1 ms / 1.8 ms`（峰值 `10.3 ms`） | 全拼 `0.1 / 4.3 ms`（峰值 `13.5 ms`），88 项回归＋3 轮热部署全过 |
+| ＋ 独立正式版 `Chth1z/rime-neural` `v1.0.0`（官方 GitHub Release 安装实测） | 同架构（`~4.1 ms`） | **`0.1 ms / 2.0 ms`**（峰值 **`11.5 ms`**） | 全拼 `0.2 / 4.7 ms`（峰值 `14.7 ms`），90/90 冷热回归全过 |
 
 ### 语料准确率评测（`bench/eval-accuracy.py`，复用 `gaboolic/rime-schema-compare` 公开语料与同义归一化口径）
 
@@ -59,12 +61,18 @@
   - 此前仅在 400 句知乎开发集拟合的 `w_ctx_lp = -0.39` 交互项在未见领域存在轻微领域过拟合（实得 `67.98%`，散文被拖低）；
   - 回归奥卡姆剃刀跨领域先验 **`[1.0, -1.4, 0.05, 0.15, 0.0]` ＋ Pass-2 校验 P2C** 后，840 句未见跨领域跃升至全场最高 **`68.57%`**（576/840，**`+8.09%`**，文字 **`93.52%`**，散文 `37.0% → 46.4%`）；同时发现旧版个人调参脚本因「10% 抽样首项＋未加权 0-1 准确率 CV＋30 样本阈值」存在严重选择偏差过拟合（零假设下 25/25 伤准确率），已改为 **100% 无偏全量记录 ＋ Newton MAP ＋ 5 折 NLL 交叉验证 ＋ 成对 95% 置信区间门控（`N >= 100`）**，25 轮盲测零假设误伤降至 `0/25`、真实偏移检测率达 `88%–100%`。
 
+- **独立开源正式版 `Chth1z/rime-neural` `v1.0.0`（全面深度审计优化后正式实跑，默认先验 `[1.0, -1.4, 0.05, 0.15, 0.0]`）**：
+  - 1,600 句双拼官方小狼毫连续 `commit_history` 实跑：**`82.19%`**（1315/1600，文字 **`97.05%`**；科技 **`91.00%`**、开发 `79.75%`、盲测验证 **`81.40%`**）；
+  - 840 句 5 个完全未见跨领域（新闻/小说/散文/旧科技/08-30 知乎）官方小狼毫实跑：**`68.57%`**（576/840，**`+8.09%`**，文字 **`93.52%`**）；
+  - 全拼科技 200 句官方小狼毫实跑：单句零上下文 **`89.50%`**（179/200，文字 `98.42%`）、连续 `commit_history` **`91.00%`**（182/200，文字 **`98.72%`**）；
+  - 动态 ONNX 自省验证：同份 `rime_neural.dll` 零重编直接跑 8 层轻量 `zhen-feather`（`laya.one.w4.onnx`，`choice_compact=true`），双拼科技 200 句达 **`88.50%`**（177/200，文字 `98.23%`）。
+
 已经核实的事实：
 1. 400 MB 万象模型本身几乎不拖慢按键；`melt_eng` 缩减前 5–10 位大写派生后 `melt_eng.prism.bin` 从 `6.82 MB` 降到 `4.97 MB`。
 2. 之前 `5–6 ms` 的主因是 `profiles/rime.lua` 里误写了 `collectgarbage("incremental", 80, 300)`（`pause < 100` 取消 GC 间隔）；改为 `(150, 200)` 并合并滤镜后，纯统计双拼压到 `0.1 / 0.4 ms`（峰值 `0.9 ms`）。
 3. 词库消融（800 句实测）：去掉 `41448` 和 `GB18030-2022` 准确率零损失（`622/800 = 77.75%`），可减少 ~10 万生僻字干扰；`composite`（62 万加权短语）贡献 `+1.13%`，必须保留；加入 `tencent` 增重 `10 MB` 但准确率贡献 `0.00%`，保持关闭；双拼下开启 `enable_correction` 会让整句率从 `72.88%` 暴跌至 `57.57%`，保持关闭。
-4. 官方小狼毫 `0.17.4` 的 `rime.dll` 原生导出全部 154 个 Lua 5.4 C API 符号且开放 `package.loadlib`。`native/rime_zhiyi`（v0.2.0）通过 `GetModuleHandleA("rime.dll")` 动态解析符号，并用 `GetModuleHandleExA(PIN | FROM_ADDRESS)` 钉驻宿主进程避免重新部署崩溃；同时以 Win32 `CreateFileMappingW` 直接共享映射 `wanxiang-lts-zh-hans.gram`（0 MB 额外物理内存，`~0.01 ms`），利用 `laya.one.fused.int8g.onnx` 16 槽前缀 KV-cache 缓存上下文、同次前向解码 `char_logits` 合成 P2C 候选，并经 `commit_notifier` 将脱敏后的选词纠错事件写入本地 `%APPDATA%\Rime\zhiyi\feedback.jsonl`（5 MiB 自动轮转，不入 Git，配合 `scripts/tune-personal-fusion.py` 5 折交叉验证岭回归离线微调 5 维先验权重）。
-5. 仓库 `lua/` 目录已完成收口清理：删除 12 个未被引用的上游遗留脚本（仅保留 7 个实际启用脚本），并在 `deploy-local.ps1` / `update-local.ps1` 中同步自动清理 `%APPDATA%\Rime\lua\`。
+4. 官方小狼毫 `0.17.4` 的 `rime.dll` 原生导出全部 154 个 Lua 5.4 C API 符号且开放 `package.loadlib`。独立开源插件 [`Chth1z/rime-neural`](https://github.com/Chth1z/rime-neural)（Apache-2.0，安装于 `%APPDATA%\Rime\neural\` 与 `lua\rime_neural.lua`）通过 `GetModuleHandleA("rime.dll")` 动态解析符号并钉驻宿主进程避免重新部署崩溃；支持 7 大双拼（3,008/3,008 零失配）＋ 记忆化全拼、动态模型层数/头数与 `choice_compact` 自省、选择性 ORT 输出裁剪、`.gram` 共享映射、KV 缓存 Pass-2 校验 P2C、`RangeFromChild`＋`U+FFFC` 钳制的非阻塞 UIA 上下文与原词脱敏反馈（配合 Newton MAP + 5 折 NLL + 95% CI 离线调参）。
+5. 仓库 `lua/` 目录已完成收口清理：仅保留 6 个自用活跃脚本（`rime_neural.lua` 由 `Chth1z/rime-neural` 发行包随 DLL 原子同步），并在 `deploy-local.ps1` / `update-local.ps1` 中同步自动清理 `%APPDATA%\Rime\lua\` 遗留文件。
 6. 这台机器插电和电池相差约 2.5–3.3 倍，开启 v0.2.0 神经重排后双拼均值插电 `1.6 ms`（峰值 `9.8 ms`）、电池实测 `4.1 ms`（峰值 `22.3 ms`），全拼电池 `9.2 ms`（峰值 `27.9 ms`），后台异步冷加载电池约 `2.7 s`（不阻塞启动）。
 
 ## 4. 平时协作的基本约定

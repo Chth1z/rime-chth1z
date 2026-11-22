@@ -1,11 +1,11 @@
 <#
 .SYNOPSIS
-    Weekly updater for Chth1z/rime-chth1z + Wanxiang LTS grammar model + Weasel Nightly check.
+    Weekly updater for Chth1z/rime-chth1z + Chth1z/rime-neural (Release) + Wanxiang LTS gram + Weasel Nightly check.
 .DESCRIPTION
-    Checks Chth1z/rime-chth1z (main) and amzxyz/rime-wanxiang-data (LTS .gram).
+    Checks Chth1z/rime-chth1z (main), Chth1z/rime-neural (latest Release), and amzxyz/rime-wanxiang-data (LTS .gram).
     If a clean local git clone exists at $RepoDir on branch main, fast-forwards it via git pull --ff-only;
     otherwise downloads the GitHub zip archive to a temp staging directory without touching dirty local edits.
-    Preserves *.userdb, custom_phrase.txt, installation.yaml, user.yaml, and auto_update/.
+    Preserves *.userdb, custom_phrase.txt, installation.yaml, user.yaml, neural/feedback.jsonl, and auto_update/.
 #>
 param(
     [switch]$Force,
@@ -19,7 +19,7 @@ $rimeDir   = Join-Path $env:APPDATA "Rime"
 $workDir   = Join-Path $rimeDir "auto_update"
 $stateFile = Join-Path $workDir "state.json"
 $logFile   = Join-Path $workDir "update.log"
-$headers   = @{ "User-Agent" = "RimeChth1zWeeklyUpdater/1.0" }
+$headers   = @{ "User-Agent" = "RimeChth1zWeeklyUpdater/1.1" }
 
 New-Item -ItemType Directory -Force -Path $workDir | Out-Null
 
@@ -104,7 +104,8 @@ function Sync-RepoToRime([string]$SourceRoot, [string]$TargetRimeDir, [string]$T
         "lua\autocap_filter.lua","lua\cn_en_spacer.lua","lua\corrector.lua",
         "lua\en_spacer.lua","lua\force_gc.lua","lua\is_in_user_dict.lua",
         "lua\long_word_filter.lua","lua\number_translator.lua","lua\pin_cand_filter.lua",
-        "lua\reduce_english_filter.lua","lua\unicode.lua","lua\v_filter.lua"
+        "lua\reduce_english_filter.lua","lua\unicode.lua","lua\v_filter.lua",
+        "lua\zhiyi_rerank_filter.lua"
     )
     foreach ($rel in $obsolete) {
         $obs = Join-Path $TargetRimeDir $rel
@@ -112,7 +113,6 @@ function Sync-RepoToRime([string]$SourceRoot, [string]$TargetRimeDir, [string]$T
     }
 }
 
-# Process mutex to avoid overlapping runs
 $createdNew = $false
 $mutex = New-Object System.Threading.Mutex($true, "Local\RimeChth1zWeeklyUpdate", [ref]$createdNew)
 if (-not $createdNew) {
@@ -121,10 +121,11 @@ if (-not $createdNew) {
 }
 
 try {
-    Write-Log "=== Weekly update check (Chth1z/rime-chth1z / Wanxiang LTS / Weasel Nightly) ==="
+    Write-Log "=== Weekly update check (rime-chth1z / rime-neural / Wanxiang LTS / Weasel Nightly) ==="
 
     $state = [ordered]@{
         repo_sha       = ""
+        neural_tag     = ""
         gram_sha256    = ""
         gram_meta      = ""
         weasel_nightly = ""
@@ -133,7 +134,7 @@ try {
     }
     if (Test-Path $stateFile) {
         $loaded = Get-Content $stateFile -Raw -Encoding UTF8 | ConvertFrom-Json
-        foreach ($k in @("repo_sha","gram_sha256","gram_meta","weasel_nightly","last_check","last_update")) {
+        foreach ($k in @("repo_sha","neural_tag","gram_sha256","gram_meta","weasel_nightly","last_check","last_update")) {
             if ($loaded.PSObject.Properties.Name -contains $k -and $loaded.$k) {
                 $state[$k] = [string]$loaded.$k
             }
@@ -144,6 +145,17 @@ try {
     $repoCommit     = Invoke-RestMethod "https://api.github.com/repos/Chth1z/rime-chth1z/commits/main" -Headers $headers -TimeoutSec 20
     $remoteRepoSha  = [string]$repoCommit.sha
     $remoteRepoDate = [string]$repoCommit.commit.committer.date
+
+    $neuralRel      = $null
+    $neuralAsset    = $null
+    $remoteNeuralTag = ""
+    try {
+        $neuralRel = Invoke-RestMethod "https://api.github.com/repos/Chth1z/rime-neural/releases/latest" -Headers $headers -TimeoutSec 20
+        $remoteNeuralTag = [string]$neuralRel.tag_name
+        $neuralAsset = $neuralRel.assets | Where-Object { $_.name -match 'win-x64\.zip$' } | Select-Object -First 1
+    } catch {
+        Write-Log "[WARN] Could not query Chth1z/rime-neural latest release: $_"
+    }
 
     $wxRelease = Invoke-RestMethod "https://api.github.com/repos/amzxyz/rime-wanxiang-data/releases/tags/LTS" -Headers $headers -TimeoutSec 20
     $gramAsset = $wxRelease.assets | Where-Object { $_.name -eq "wanxiang-lts-zh-hans.gram" } | Select-Object -First 1
@@ -161,7 +173,7 @@ try {
     $remoteWeaselName = if ($weaselAsset) { [string]$weaselAsset.name } else { "" }
 
     $gramTag = if ($remoteGramSha) { $remoteGramSha.Substring(0, 12) + "..." } else { $remoteGramMeta }
-    Write-Log "Remote: Repo=$($remoteRepoSha.Substring(0,8)) ($remoteRepoDate) | Gram=$gramTag | Weasel=$remoteWeaselName"
+    Write-Log "Remote: Repo=$($remoteRepoSha.Substring(0,8)) ($remoteRepoDate) | Neural=$remoteNeuralTag | Gram=$gramTag | Weasel=$remoteWeaselName"
 
     $localGramPath = Join-Path $rimeDir "wanxiang-lts-zh-hans.gram"
     $localGramSha  = if (Test-Path $localGramPath) {
@@ -170,6 +182,7 @@ try {
 
     if ($InitOnly) {
         $state.repo_sha       = $remoteRepoSha
+        $state.neural_tag     = $remoteNeuralTag
         $state.gram_sha256    = if ($localGramSha) { $localGramSha } else { $remoteGramSha }
         $state.gram_meta      = $remoteGramMeta
         $state.weasel_nightly = $remoteWeaselName
@@ -180,8 +193,10 @@ try {
         exit 0
     }
 
-    $needRepo = $Force -or ($remoteRepoSha -ne $state.repo_sha)
-    $needGram = $false
+    $neuralInstalled = Test-Path (Join-Path $rimeDir "neural")
+    $needRepo   = $Force -or ($remoteRepoSha -ne $state.repo_sha)
+    $needNeural = $neuralInstalled -and [bool]$neuralAsset -and ($Force -or ($remoteNeuralTag -ne $state.neural_tag))
+    $needGram   = $false
     if ($Force) {
         $needGram = [bool]$gramAsset
     } elseif ($remoteGramSha) {
@@ -194,8 +209,8 @@ try {
         Write-Log "[NOTICE] New Weasel Nightly available: $remoteWeaselName (requires manual admin install)"
     }
 
-    if (-not $needRepo -and -not $needGram) {
-        Write-Log "Repository and Wanxiang LTS model are both up to date."
+    if (-not $needRepo -and -not $needNeural -and -not $needGram) {
+        Write-Log "Repository, rime-neural, and Wanxiang LTS model are all up to date."
         $state.last_check  = (Get-Date -Format "o")
         $state.gram_sha256 = $localGramSha
         if ($remoteGramMeta) { $state.gram_meta = $remoteGramMeta }
@@ -209,7 +224,7 @@ try {
     New-Item -ItemType Directory -Force -Path $stage | Out-Null
 
     try {
-        # 2. Prepare repo source (prefer clean local git fast-forward; fallback to zip archive)
+        # 2. Prepare repo source
         $deploySource = $null
         if ($needRepo) {
             $usedLocalGit = $false
@@ -246,6 +261,36 @@ try {
             }
         }
 
+        # 2b. Prepare rime-neural official release bundle (DLL + Lua + SHA-256)
+        $neuralStageDll = $null
+        $neuralStageLua = $null
+        if ($needNeural) {
+            Write-Log "Downloading Chth1z/rime-neural $remoteNeuralTag ($($neuralAsset.name))..."
+            $nZip = Join-Path $stage $neuralAsset.name
+            Invoke-CurlDownload $neuralAsset.browser_download_url $nZip
+            $nEx = Join-Path $stage "neural"
+            Expand-Archive -Path $nZip -DestinationPath $nEx -Force
+            $dll = Join-Path $nEx "rime_neural.dll"
+            $lua = Join-Path $nEx "rime_neural.lua"
+            $sum = Join-Path $nEx "SHA256SUMS.txt"
+            if (-not (Test-Path $dll) -or -not (Test-Path $lua)) {
+                throw "rime-neural release bundle missing DLL or Lua script."
+            }
+            if (Test-Path $sum) {
+                $expDll = (Get-Content $sum | Where-Object { $_ -match 'rime_neural\.dll$' } | Select-Object -First 1) -split '\s+' | Select-Object -First 1
+                if ($expDll) {
+                    $gotDll = (Get-FileHash $dll -Algorithm SHA256).Hash.ToLowerInvariant()
+                    if ($gotDll -ne $expDll.ToLowerInvariant()) {
+                        throw "rime_neural.dll SHA-256 mismatch (got=$gotDll, expected=$expDll)"
+                    }
+                }
+            }
+            $neuralStageDll = $dll
+            $neuralStageLua = $lua
+            Write-Log "rime-neural $remoteNeuralTag verified."
+        }
+
+        # 2c. Prepare Wanxiang LTS .gram
         $newGramPath = $null
         $dlGramHash  = ""
         if ($needGram) {
@@ -281,6 +326,12 @@ try {
             Sync-RepoToRime -SourceRoot $deploySource -TargetRimeDir $rimeDir -ThemeName $Theme
         }
 
+        if ($needNeural -and $neuralStageDll -and $neuralStageLua) {
+            Write-Log "Installing rime-neural $remoteNeuralTag..."
+            Copy-Item $neuralStageDll (Join-Path $rimeDir "neural\rime_neural.dll") -Force
+            Copy-Item $neuralStageLua (Join-Path $rimeDir "lua\rime_neural.lua") -Force
+        }
+
         if ($needGram -and $newGramPath) {
             Write-Log "Atomically replacing Wanxiang LTS model..."
             $tmpTarget = "$localGramPath.new"
@@ -302,7 +353,8 @@ try {
             Write-Log "Restarted WeaselServer.exe."
         }
 
-        if ($needRepo) { $state.repo_sha = $remoteRepoSha }
+        if ($needRepo)   { $state.repo_sha   = $remoteRepoSha }
+        if ($needNeural) { $state.neural_tag = $remoteNeuralTag }
         if ($needGram) {
             $state.gram_sha256 = $dlGramHash
             $state.gram_meta   = $remoteGramMeta

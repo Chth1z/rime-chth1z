@@ -19,7 +19,7 @@ auto_update/
 
 # Temporary benchmark & editor files
 bench/tmp/
-native/rime_zhiyi/target/
+neural/
 zhiyi/
 *.onnx
 feedback.jsonl

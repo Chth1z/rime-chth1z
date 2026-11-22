@@ -339,7 +339,7 @@ def create_isolated_env(rime_dir: pathlib.Path, schema_id: str, yaml_overrides: 
     tmp = pathlib.Path(tempfile.mkdtemp(prefix="rime-eval-"))
     (tmp / "logs").mkdir()
     (tmp / "build").mkdir()
-    for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "zhiyi"):
+    for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "neural", "zhiyi"):
         src = rime_dir / d
         if src.exists():
             subprocess.run(["cmd", "/c", "mklink", "/J", str(tmp / d), str(src)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
@@ -391,7 +391,7 @@ def create_isolated_env(rime_dir: pathlib.Path, schema_id: str, yaml_overrides: 
 
 
 def cleanup_isolated_env(tmp: pathlib.Path) -> None:
-    for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "zhiyi"):
+    for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "neural", "zhiyi"):
         p = tmp / d
         if p.exists():
             subprocess.run(["cmd", "/c", "rmdir", str(p)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -413,7 +413,7 @@ def evaluate(
 
     eff_overrides = dict(overrides or {})
     if neural:
-        eff_overrides.setdefault("zhiyi_rerank/sync_init", "true")
+        eff_overrides.setdefault("rime_neural/sync_init", "true")
 
     tmp = create_isolated_env(rime_dir, schema_id, eff_overrides)
     try:

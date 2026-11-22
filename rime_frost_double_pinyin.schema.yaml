@@ -5,7 +5,7 @@
 schema:
   schema_id: rime_frost_double_pinyin
   name: 自然碼雙拼
-  version: "2026-11-22"
+  version: "2026-11-23"
   author:
     - Dvel
     - gaboolic
@@ -64,7 +64,7 @@ engine:
     - table_translator@cn_en                   # 中英混合詞彙
     - lua_translator@*calculator               # 計算機（/vs 觸發）
   filters:
-    - lua_filter@*zhiyi_rerank_filter          # 端側 ONNX 神經整句重排（知意 ML-pumpkin-1103 KV-cache，未安裝或關閉時零開銷透傳）
+    - lua_filter@*rime_neural                  # 端側 ONNX 神經整句重排（Chth1z/rime-neural，未安裝或關閉時零開銷透傳）
     - lua_filter@*chth1z_pipeline_filter       # 單遍合併濾鏡：置頂 + 錯音提示 + 英文大小寫 + 短英文降權 + 低頻 GC
     - simplifier@emoji
     - simplifier@chinese_english
@@ -83,12 +83,12 @@ chth1z_pipeline:
   pin_max_scan: 40
   gc_interval: 16
 
-# 端側神經整句重排 v0.3.0（知意 ML-pumpkin-1103 KV-cache ＋ 萬象 .gram 融合 ＋ Pass-2 校驗 P2C ＋ 非阻塞 UIA 上下文）
-zhiyi_rerank:
+# 端側神經整句重排（Chth1z/rime-neural：知意 ML-pumpkin-1103 KV-cache ＋ 萬象 .gram 融合 ＋ Pass-2 校驗 P2C ＋ 非阻塞 UIA 上下文）
+rime_neural:
   option_name: neural_rerank
   pinyin_layout: auto
   max_candidates: 8
-  # 通用跨領域先驗 [zhiyi_lp, ln(rank+1), gram_delta, char_lp, zhiyi_lp*has_ctx]（經未見跨領域盲測防過擬合驗證）
+  # 通用跨領域先驗 [logit_lp, ln(rank+1), gram_delta, char_lp, logit_lp*has_ctx]（經未見跨領域盲測防過擬合驗證）
   fusion_weights: [1.0, -1.4, 0.05, 0.15, 0.0]
   # Pass-2 跨編碼器 ＋ .gram 交叉驗證 P2C 門控（僅對 ~7% 高潛力 OOV 候選複用 KV-cache 驗證）
   p2c_verify_margin: 0.20
@@ -96,7 +96,7 @@ zhiyi_rerank:
   p2c_top1_min_gram_diff: -2.0
   p2c_top2_logit_diff: 0.5
   enable_uia_context: true
-  threads: 8
+  threads: 0
   min_input_len: 4
   log_feedback: true
   sync_init: false
@@ -242,10 +242,6 @@ recognizer:
   patterns:
     punct: "^/([0-9]|10|[A-Za-z]+)$"
     calculator: "^/vs.*$"
-    gregorian_to_lunar: "^$"
-    number: "^$"
-    unicode: "^$"
-    radical_lookup: "^$"
 
 key_binder:
   import_preset: default

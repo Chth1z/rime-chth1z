@@ -30,9 +30,17 @@ if ($wasRunning) {
         if (-not (Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)) { break }
         Start-Sleep -Milliseconds 250
     }
+    Get-Process -Name WeaselServer -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
 }
 
 # 2. Sync dicts (excluding tencent), en_dicts, lua, opencc, root schemas
+New-Item -ItemType Directory -Force -Path `
+    (Join-Path $rimeDir "cn_dicts"), `
+    (Join-Path $rimeDir "cn_dicts_cell"), `
+    (Join-Path $rimeDir "en_dicts"), `
+    (Join-Path $rimeDir "lua"), `
+    (Join-Path $rimeDir "opencc") | Out-Null
+
 Get-ChildItem (Join-Path $repoRoot "cn_dicts") -File | Where-Object { $_.Name -ne "tencent.dict.yaml" } | ForEach-Object {
     Copy-Item $_.FullName (Join-Path $rimeDir "cn_dicts\$($_.Name)") -Force
 }
@@ -92,7 +100,8 @@ $obsoleteRelPaths = @(
     "lua\pin_cand_filter.lua",
     "lua\reduce_english_filter.lua",
     "lua\unicode.lua",
-    "lua\v_filter.lua"
+    "lua\v_filter.lua",
+    "lua\zhiyi_rerank_filter.lua"
 )
 foreach ($rel in $obsoleteRelPaths) {
     $obs = Join-Path $rimeDir $rel

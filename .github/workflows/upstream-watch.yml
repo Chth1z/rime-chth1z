@@ -1,4 +1,4 @@
-name: Upstream Watch (frost / rime-ice / weasel / wanxiang)
+name: Upstream Watch (frost / rime-ice / rime-neural / weasel / wanxiang)
 
 on:
   schedule:
@@ -14,25 +14,32 @@ jobs:
   watch-upstreams:
     runs-on: ubuntu-latest
     steps:
-      - name: Query 4 upstreams and update rolling tracking issue
+      - name: Query upstreams and update rolling tracking issue
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 - <<'PY'
           import json, os, subprocess, urllib.request
 
-          HEADERS = {"User-Agent": "rime-chth1z-upstream-watcher/1.0"}
+          HEADERS = {"User-Agent": "rime-chth1z-upstream-watcher/1.1"}
           if os.environ.get("GH_TOKEN"):
               HEADERS["Authorization"] = f"Bearer {os.environ['GH_TOKEN']}"
 
-          def fetch_json(url):
+          def fetch_json(url, optional=False):
               req = urllib.request.Request(url, headers=HEADERS)
-              with urllib.request.urlopen(req, timeout=20) as r:
-                  return json.loads(r.read().decode("utf-8"))
+              try:
+                  with urllib.request.urlopen(req, timeout=20) as r:
+                      return json.loads(r.read().decode("utf-8"))
+              except Exception:
+                  if optional:
+                      return None
+                  raise
 
           frost_lua = fetch_json("https://api.github.com/repos/gaboolic/rime-frost/commits?path=lua&per_page=5")
           frost_root = fetch_json("https://api.github.com/repos/gaboolic/rime-frost/commits?per_page=5")
           ice_lua = fetch_json("https://api.github.com/repos/iDvel/rime-ice/commits?path=lua&per_page=5")
+          neural_rel = fetch_json("https://api.github.com/repos/Chth1z/rime-neural/releases/latest", optional=True)
+          zhiyi_rels = fetch_json("https://api.github.com/repos/dd1000001000/zhiyi_models/releases?per_page=3", optional=True)
           weasel_rel = fetch_json("https://api.github.com/repos/rime/weasel/releases/tags/latest")
           wx_rel = fetch_json("https://api.github.com/repos/amzxyz/rime-wanxiang-data/releases/tags/LTS")
 
@@ -45,6 +52,18 @@ jobs:
                   url = c["html_url"]
                   lines.append(f"- `{date}` [`{sha}`]({url}) {msg}")
               return "\n".join(lines)
+
+          neural_line = (
+              f"- **`{neural_rel['tag_name']}`** (published `{neural_rel['published_at'][:10]}`) — [{neural_rel['html_url']}]({neural_rel['html_url']})"
+              if neural_rel else "- (no release found)"
+          )
+          zhiyi_lines = (
+              "\n".join(
+                  f"- `{r['published_at'][:10]}` [`{r['tag_name']}`]({r['html_url']}) {r.get('name', '')}"
+                  for r in zhiyi_rels
+              )
+              if zhiyi_rels else "- (unavailable)"
+          )
 
           weasel_inst = next((a for a in weasel_rel.get("assets", []) if a["name"].endswith("installer.exe")), None)
           gram_asset = next((a for a in wx_rel.get("assets", []) if a["name"] == "wanxiang-lts-zh-hans.gram"), None)
@@ -60,7 +79,7 @@ jobs:
 
           body = f"""## 上游多源更新追蹤摘要
 
-          > 此 Issue 由 `.github/workflows/upstream-watch.yml` 每週自動刷新。詞庫由 `sync-upstream-dicts.yml` 自動同步，其餘引擎／腳本／客戶端更新在此審閱後按需移植或對照。
+          > 此 Issue 由 `.github/workflows/upstream-watch.yml` 每週自動刷新。詞庫由 `sync-upstream-dicts.yml` 自動同步，其餘引擎／插件／客戶端更新在此審閱後按需跟進。
 
           ### 1. `gaboolic/rime-frost`（最新總覽）
           {fmt_commits(frost_root)}
@@ -71,10 +90,16 @@ jobs:
           ### 3. `iDvel/rime-ice`（上游母庫 `lua/` 變更）
           {fmt_commits(ice_lua)}
 
-          ### 4. `rime/weasel` Nightly（Windows 客戶端）
+          ### 4. `Chth1z/rime-neural`（端側神經重排插件）
+          {neural_line}
+
+          ### 5. `dd1000001000/zhiyi_models`（ONNX 模型最新發行）
+          {zhiyi_lines}
+
+          ### 6. `rime/weasel` Nightly（Windows 客戶端）
           {weasel_line}
 
-          ### 5. `amzxyz/rime-wanxiang-data`（400 MB LTS 語法模型）
+          ### 7. `amzxyz/rime-wanxiang-data`（400 MB LTS 語法模型）
           {gram_line}
           """
           body = "\n".join(line[10:] if line.startswith("          ") else line for line in body.splitlines())

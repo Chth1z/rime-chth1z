@@ -203,14 +203,13 @@ local function variance(...)
 end
 calcPlugin["var"] = variance
 
--- 阶乘
+-- 阶乘（限制 n <= 170 且为非负整数，避免 IEEE 754 溢出与超大阶乘阻塞输入法）
 local function factorial(x)
-  -- 不能为负数
-  if x < 0 then return nil end
+  if type(x) ~= "number" or x < 0 or x > 170 or x ~= math.floor(x) then return nil end
   if x == 0 or x == 1 then return 1 end
 
   local result = 1
-  for i = 1, x do
+  for i = 2, x do
     result = result * i
   end
 

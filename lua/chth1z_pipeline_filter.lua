@@ -283,7 +283,7 @@ function M.func(input, env)
                     else
                         text = text:gsub("^%a", string.upper)
                     end
-                    cand = Candidate(cand.type, cand.start, cand._end, text, cand.comment)
+                    cand = cand:to_shadow_candidate(cand.type, text, cand.comment)
                 end
             end
         end

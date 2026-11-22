@@ -1,9 +1,9 @@
 <#
 .SYNOPSIS
-    Check latest updates across all 4 upstreams: rime-frost, rime-ice (lua), Weasel Nightly, and Wanxiang LTS gram.
+    Check latest updates across all upstreams: rime-frost, rime-ice (lua), rime-neural, Weasel Nightly, and Wanxiang LTS gram.
 #>
 $ErrorActionPreference = "Stop"
-$headers = @{ "User-Agent" = "rime-chth1z-checker/1.0" }
+$headers = @{ "User-Agent" = "rime-chth1z-checker/1.1" }
 
 Write-Output "=== 1. gaboolic/rime-frost (latest 5 commits) ==="
 $frost = Invoke-RestMethod "https://api.github.com/repos/gaboolic/rime-frost/commits?per_page=5" -Headers $headers -TimeoutSec 20
@@ -17,7 +17,20 @@ $ice | ForEach-Object {
     "{0}  {1}  {2}" -f $_.commit.committer.date.Substring(0,10), $_.sha.Substring(0,8), ($_.commit.message -split "`n")[0]
 }
 
-Write-Output "`n=== 3. rime/weasel Nightly (latest) ==="
+Write-Output "`n=== 3. Chth1z/rime-neural (latest Release) ==="
+try {
+    $nr = Invoke-RestMethod "https://api.github.com/repos/Chth1z/rime-neural/releases/latest" -Headers $headers -TimeoutSec 20
+    Write-Output ("Remote : {0} (published {1})" -f $nr.tag_name, $nr.published_at.Substring(0,10))
+} catch {
+    Write-Output "Remote : (not yet published)"
+}
+$localDll = Join-Path $env:APPDATA "Rime\neural\rime_neural.dll"
+if (Test-Path $localDll) {
+    $lh = (Get-FileHash $localDll -Algorithm SHA256).Hash.ToLowerInvariant()
+    Write-Output ("Local  : {0:N2} MB, sha256:{1}" -f ((Get-Item $localDll).Length/1MB), $lh.Substring(0,16))
+}
+
+Write-Output "`n=== 4. rime/weasel Nightly (latest) ==="
 $weasel = Invoke-RestMethod "https://api.github.com/repos/rime/weasel/releases/tags/latest" -Headers $headers -TimeoutSec 20
 $inst = $weasel.assets | Where-Object { $_.name -match 'installer\.exe$' } | Select-Object -First 1
 if ($inst) {
@@ -26,7 +39,7 @@ if ($inst) {
 $localVer = (Select-String -Path (Join-Path $env:APPDATA "Rime\installation.yaml") -Pattern 'distribution_version:' -ErrorAction SilentlyContinue).Line
 if ($localVer) { Write-Output "Local  : $($localVer.Trim())" }
 
-Write-Output "`n=== 4. amzxyz/rime-wanxiang-data LTS (.gram) ==="
+Write-Output "`n=== 5. amzxyz/rime-wanxiang-data LTS (.gram) ==="
 $wx = Invoke-RestMethod "https://api.github.com/repos/amzxyz/rime-wanxiang-data/releases/tags/LTS" -Headers $headers -TimeoutSec 20
 $gram = $wx.assets | Where-Object { $_.name -eq "wanxiang-lts-zh-hans.gram" } | Select-Object -First 1
 if ($gram) {

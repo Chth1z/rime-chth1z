@@ -33,7 +33,7 @@ $benchDir = Join-Path $env:TEMP ("rime-accuracy-" + (Get-Date -Format "yyyyMMddH
 New-Item -ItemType Directory -Force -Path "$benchDir\logs" | Out-Null
 
 try {
-    foreach ($d in @("build", "lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "zhiyi")) {
+    foreach ($d in @("build", "lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "neural", "zhiyi")) {
         $src = Join-Path $RimeDir $d
         if (Test-Path $src) { cmd /c mklink /J "$benchDir\$d" "$src" | Out-Null }
     }
@@ -375,7 +375,7 @@ public static class RimeAccuracyRunner {
     if ($failed -gt 0) { exit 1 }
 }
 finally {
-    foreach ($d in @("build", "lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "zhiyi")) {
+    foreach ($d in @("build", "lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "neural", "zhiyi")) {
         if (Test-Path "$benchDir\$d") { cmd /c rmdir "$benchDir\$d" 2>$null | Out-Null }
     }
     Remove-Item $benchDir -Recurse -Force -ErrorAction SilentlyContinue

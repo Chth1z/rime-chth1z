@@ -231,6 +231,18 @@
       "first_text": "120"
     },
     {
+      "name": "dp: calculator huge factorial guard /vs200!",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "/vs200!",
+      "first_comment": "解析失败"
+    },
+    {
+      "name": "dp: ZRM zero-initial alias ajqr -> 安全",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "ajqr",
+      "first_text": "安全"
+    },
+    {
       "name": "dp: select_character first [",
       "schema": "rime_frost_double_pinyin",
       "keys": "nihk[",

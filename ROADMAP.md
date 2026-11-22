@@ -73,5 +73,9 @@
 - [x] **跨领域防过拟合审计与无偏个人调参重构（已完成）**
   - 在 840 句完全未触碰过的新闻/小说/散文/旧科技/08-30 知乎语料上实跑盲测，抓出并移除在知乎开发集轻微领域过拟合的 `w_ctx_lp = -0.39` 项，切回跨领域最优通用先验 `[1.0, -1.4, 0.05, 0.15, 0.0]`（840 句 OOD `60.48% → 68.57%`，文字 `93.52%`）。
   - 抓出旧版 `tune-personal-fusion.py` 因 10% 首项抽样选择偏差＋30 样本阈值导致的严重过拟合（零假设 25/25 伤精度），改为 100% 无偏日志＋Newton MAP＋5 折 NLL＋成对 95% 置信检验（`min_samples = 100`），25 轮仿真零假设误伤 `0/25`、真实偏移检出 `88%–100%`。
-- [ ] **拆分独立开源插件仓库 `Chth1z/rime-neural`（命名已定）**
-  - 将已打磨并完成防过拟合审计的 `native/rime_zhiyi/`、`lua/zhiyi_rerank_filter.lua`、安装/调参脚本与 CI workflow 拆至独立 Apache-2.0 仓库 `Chth1z/rime-neural` 并发布首个带预编译 DLL 的 GitHub Release。
+- [x] **拆分独立开源插件仓库 [`Chth1z/rime-neural`](https://github.com/Chth1z/rime-neural) 并发布正式版 `v1.0.0`**
+  - 将端侧神经重排拆至独立 Apache-2.0 仓库 `Chth1z/rime-neural`（`rime_neural.dll` ＋ `lua/rime_neural.lua` ＋ 通用示例配置 ＋ 自动编译发版 CI ＋ 一键安装/MAP 调参脚本），并在发版前完成深度全面审计与优化：
+    - 修复自然码 `ZERO_ZRM` 缺失 5 项自引零声母别名（`aj/ak/al/ef/ez`），3,008 项 7 大双拼全量码表 0 失配；修复全拼 `walk` 缺少记忆化可能导致最坏指数回溯问题并尊重显式 `'` 分隔符；
+    - 修复 Electron/Chromium 下 UIA 跨出输入框泄漏周边按钮文字问题（`RangeFromChild` 钳制 ＋ `U+FFFC` 截断）、首键异步预热、窗口切换竞态与 `s2twp` 反馈抓取原词；
+    - 新增 ONNX 模型动态层数/头数与 `choice_compact` 自省（同时支持 12 层 `ML-pumpkin-1103` 与 8 层 `zhen-feather`）、选择性 ORT 输出裁剪、零 HashMap 分配 `char_logits` 解码、零堆分配 `.gram` 评分与真 LRU 缓存。
+  - `rime-chth1z` 同步移除重复的原生源码，改为直接消费 `Chth1z/rime-neural` 正式 Release（`scripts/install-rime-neural.ps1` 与周更脚本 `update-local.ps1` 自动校验 SHA-256 升级），同时完成自用部分体检（修复 `calculator.lua` 超大阶乘上限、`lunar.lua` 整理为 `M.init` 模块并移除死函数、`chth1z_pipeline_filter.lua` `autocap` 保留 `preedit`、清理主方案死 `recognizer` 正则）。

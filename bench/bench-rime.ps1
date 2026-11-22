@@ -35,7 +35,7 @@ $benchDir = Join-Path $env:TEMP ("rime-frost-bench-" + (Get-Date -Format "yyyyMM
 New-Item -ItemType Directory -Force -Path "$benchDir\logs" | Out-Null
 
 try {
-    foreach ($d in @("build", "lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "zhiyi")) {
+    foreach ($d in @("build", "lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "neural", "zhiyi")) {
         $src = Join-Path $RimeDir $d
         if (Test-Path $src) { cmd /c mklink /J "$benchDir\$d" "$src" | Out-Null }
     }
@@ -160,7 +160,7 @@ public static class RimeFrostBench {
     [RimeFrostBench]::Run($weaselDir, $benchDir, "$benchDir\logs", $SchemaId, $waitMs)
 }
 finally {
-    foreach ($d in @("build", "lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "zhiyi")) {
+    foreach ($d in @("build", "lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "neural", "zhiyi")) {
         if (Test-Path "$benchDir\$d") { cmd /c rmdir "$benchDir\$d" 2>$null | Out-Null }
     }
     Remove-Item $benchDir -Recurse -Force -ErrorAction SilentlyContinue
