@@ -97,6 +97,10 @@ function Sync-RepoToRime([string]$SourceRoot, [string]$TargetRimeDir, [string]$T
     if (Test-Path $selfUpdater) {
         Copy-Item $selfUpdater (Join-Path $TargetRimeDir "auto_update\Update-RimeChth1z.ps1") -Force
     }
+    foreach ($rel in @("radical_pinyin.dict.yaml","radical_pinyin.schema.yaml","rime_frost_aux.dict.yaml","rime_frost_aux.schema.yaml","lua\aux_lookup_filter.lua","lua\aux_code")) {
+        $obs = Join-Path $TargetRimeDir $rel
+        if (Test-Path $obs) { Remove-Item $obs -Recurse -Force -ErrorAction SilentlyContinue }
+    }
 }
 
 # Process mutex to avoid overlapping runs

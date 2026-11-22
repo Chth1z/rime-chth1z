@@ -73,6 +73,23 @@ if (Test-Path $updaterSrc) {
     Copy-Item $updaterSrc (Join-Path $autoDir "Update-RimeChth1z.ps1") -Force
 }
 
+# 3b. Remove known obsolete upstream files no longer referenced by schemas
+$obsoleteRelPaths = @(
+    "radical_pinyin.dict.yaml",
+    "radical_pinyin.schema.yaml",
+    "rime_frost_aux.dict.yaml",
+    "rime_frost_aux.schema.yaml",
+    "lua\aux_lookup_filter.lua",
+    "lua\aux_code"
+)
+foreach ($rel in $obsoleteRelPaths) {
+    $obs = Join-Path $rimeDir $rel
+    if (Test-Path $obs) {
+        Remove-Item $obs -Recurse -Force -ErrorAction SilentlyContinue
+        Write-Output "Removed obsolete file: $rel"
+    }
+}
+
 # 4. Deploy & restart single WeaselServer
 $p = Start-Process -FilePath (Join-Path $weaselDir "WeaselDeployer.exe") -ArgumentList "/deploy" -Wait -PassThru
 Write-Output "WeaselDeployer ExitCode: $($p.ExitCode)"
