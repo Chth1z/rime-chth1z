@@ -66,7 +66,7 @@ engine:
     - lua_filter@*chth1z_pipeline_filter       # 單遍合併濾鏡：置頂 + 錯音提示 + 英文大小寫 + 短英文降權 + 低頻 GC
     - simplifier@emoji
     - simplifier@chinese_english
-    - simplifier@traditionalize
+    - lua_filter@*tw_dual_filter               # 臺灣繁體雙出：首選 s2twp 臺灣用法，有詞彙差異時次選 s2tw 臺灣正體原詞
     - uniquifier
 
 grammar:
@@ -74,7 +74,7 @@ grammar:
   non_collocation_penalty: -4
   collocation_max_length: 5
   collocation_min_length: 2
-  collocation_penalty: -14
+  collocation_penalty: -15.5
 
 chth1z_pipeline:
   pin_max_scan: 40
@@ -121,36 +121,36 @@ reduce_english_filter:
 
 # 僅保留全拼可命中的單編碼／簡碼置頂（移除全拼 e 鍵不可達的「而」，改置頂於 er）
 pin_cand_filter:
-  - q	去
-  - w	我
-  - er	而
-  - r	人
-  - t	他
-  - y	有
-  - sh	是
-  - ch	出
-  - o	哦
-  - p	配
-  - a	啊
-  - s	算
-  - d	的
-  - f	非
-  - g	个
-  - h	和
-  - j	就
-  - k	可
-  - l	了
-  - z	在
-  - x	小
-  - c	从
-  - zh	这
-  - b	吧
-  - n	你
-  - m	吗
+  - "q\t去"
+  - "w\t我"
+  - "er\t而"
+  - "r\t人"
+  - "t\t他"
+  - "y\t有"
+  - "sh\t是"
+  - "ch\t出"
+  - "o\t哦"
+  - "p\t配"
+  - "a\t啊"
+  - "s\t算"
+  - "d\t的"
+  - "f\t非"
+  - "g\t个"
+  - "h\t和"
+  - "j\t就"
+  - "k\t可"
+  - "l\t了"
+  - "z\t在"
+  - "x\t小"
+  - "c\t从"
+  - "zh\t这"
+  - "b\t吧"
+  - "n\t你"
+  - "m\t吗"
 
 translator:
   dictionary: rime_frost
-  contextual_suggestions: true
+  contextual_suggestions: false
   max_sentences: 3
   max_homophones: 8
   max_homographs: 2
@@ -203,10 +203,10 @@ emoji:
   opencc_config: emoji.json
   inherit_comment: false
 
-traditionalize:
+tw_dual_filter:
   option_name: traditionalization
-  opencc_config: s2twp.json
-  tips: none
+  twp_config: s2twp.json
+  tw_config: s2tw.json
   tags: [ abc, number, gregorian_to_lunar ]
 
 punctuator:
