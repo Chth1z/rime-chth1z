@@ -18,10 +18,7 @@ use_preset_vocabulary: false
 电子版说明	dian zi ban shuo ming	0
 渡头馀落日	du tou yu luo ri	2
 杕杜	duo du	2
-耳著明月璫	er zhu ming yue dang	0
 繁钦	fan qin	3
-隔篱呼取尽馀杯	ge li hu qu jin yu bei	0
-今日得宽馀	jin ri de kuan yu	1
 旧时栏楯	jiu shi lan dun	1
 乐国乐国	le guo yue guo	2
 李憕	li deng	1
@@ -46,6 +43,7 @@ use_preset_vocabulary: false
 埏埴以为器	yan zhi yi wei qi	3
 曳裾王门不称情	ye ju wang men bu cheng qing	1
 野有死麕	ye you si qun	21
+衣裳楚楚	yi shang chu chu	5
 驿树西连汉畤平	yi shu xi lian han chou ping	0
 有杕之杜	you duo zhi du	0
 玉盆纤手弄清泉	yu pen qian shou nong qing quan	5
@@ -56,7 +54,6 @@ use_preset_vocabulary: false
 郑馀庆	zheng yu qing	0
 中华民族的	zhong hua min zu de	0
 终南望馀雪	zhong nan wang yu xue	0
-朱庆馀	zhu qing yu	12
 阿保之劳	a bao zhi lao	0
 阿鼻叫唤	a bi jiao huan	1
 阿狗阿猫	a gou a mao	2
@@ -1689,7 +1686,7 @@ use_preset_vocabulary: false
 兵分势弱	bing fen shi ruo	0
 病风丧心	bing feng sang xin	0
 并概青云	bing gai qing yun	0
-兵戈抢攘	bing ge qiang rang	0
+兵戈抢攘	bing ge cheng rang	0
 兵革互兴	bing ge hu xing	0
 兵革满道	bing ge man dao	0
 秉公灭私	bing gong mie si	0
@@ -12745,7 +12742,7 @@ use_preset_vocabulary: false
 疾之若仇	ji zhi ruo chou	0
 继志述事	ji zhi shu shi	0
 辑志协力	ji zhi xie li	0
-赍志以没	ji zhi yi mei	0
+赍志以没	ji zhi yi mo	0
 棘枝战锤	ji zhi zhan chui	0
 积重不返	ji zhong bu fan	0
 击钟陈鼎	ji zhong chen ding	0
@@ -14128,7 +14125,7 @@ use_preset_vocabulary: false
 泾渭不辩	jing wei bu bian	0
 泾渭不分	jing wei bu fen	0
 泾渭不杂	jing wei bu za	0
-井味复碱	jing wei fu jian	0
+井味复咸	jing wei fu xian	0
 泾渭了然	jing wei liao ran	0
 经纬天下	jing wei tian xia	0
 泾渭同流	jing wei tong liu	0
@@ -15365,7 +15362,7 @@ use_preset_vocabulary: false
 狼顾鸱张	lang gu chi zhang	0
 狼顾鸱跱	lang gu chi zhi	0
 狼顾狐疑	lang gu hu yi	0
-狼顾麇惊	lang gu qun jing	0
+狼顾麇惊	lang gu jun jing	0
 狼顾鸢视	lang gu yuan shi	0
 狼号鬼哭	lang hao gui ku	0
 浪迹浮踪	lang ji fu zong	0
@@ -22084,7 +22081,6 @@ use_preset_vocabulary: false
 融液贯通	rong ye guan tong	0
 荣膺鹗荐	rong ying e jian	0
 荣膺鹗选	rong ying e xuan	0
-荣膺鸮荐	rong ying xiao jian	0
 冗余检验	rong yu jian yan	0
 容斋四笔	rong zhai si bi	2
 荣宗耀祖	rong zong yao zu	0
@@ -27644,7 +27640,7 @@ use_preset_vocabulary: false
 言来语去	yan lai yu qu	2
 眼泪往肚里咽	yan lei wang du li yan	0
 言类悬河	yan lei xuan he	0
-腌里巴臜	yan li ba za	0
+腌里巴臜	a li ba za	0
 言利不言情	yan li bu yan qing	0
 眼里出大口内垂涎	yan li chu da kou nei chui xian	0
 眼里揉不进砂子去	yan li rou bu jin sha zi qu	0
@@ -29244,7 +29240,6 @@ use_preset_vocabulary: false
 鹰瞵鹗视	ying lin e shi	1
 鹰瞵虎攫	ying lin hu jue	0
 鹰瞵虎视	ying lin hu shi	1
-鹰瞵鸮视	ying lin xiao shi	0
 膺箓受图	ying lu shou tu	0
 盈满之咎	ying man zhi jiu	0
 迎门请盗	ying men qing dao	0
@@ -31707,7 +31702,6 @@ use_preset_vocabulary: false
 做张做智	zuo zhang zuo zhi	0
 左支右调	zuo zhi you tiao	0
 作作有芒	zuo zuo you mang	0
-女为周南召南矣乎	nv wei zhou nan zhao nan yi hu	0
 人而不为周南召南	ren er bu wei zhou nan zhao nan	0
 行有馀力	xing you yu li	0
 言不可不慎也夫子之不可及	yan bu ke bu shen ye fu zi zhi bu ke ji	0

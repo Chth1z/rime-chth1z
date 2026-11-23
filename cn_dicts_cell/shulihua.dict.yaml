@@ -26420,7 +26420,7 @@ use_preset_vocabulary: false
 二苯并冠醚	er ben bing guan mi	0
 二苯并咔唑	er ben bing ka zuo	0
 二苯并咪唑	er ben bing mi zuo	0
-二苯并芘	er ben bing pi	0
+二苯并芘	er ben bing bi	0
 二苯丙烷	er ben bing wan	0
 二苯丙烯酮	er ben bing xi tong	0
 二苯次膦酸	er ben ci lin suan	0
@@ -28161,6 +28161,7 @@ use_preset_vocabulary: false
 黄河制氧	huang he zhi yang	0
 黄糊精	huang hu jing	0
 磺化反应	huang hua fan ying	7
+磺化酞菁钴	huang hua tai jing gu	0
 磺基丙氨酸	huang ji bing an suan	0
 磺基橙	huang ji cheng	0
 磺基水杨酸	huang ji shui yang suan	0
@@ -30393,7 +30394,6 @@ use_preset_vocabulary: false
 黏蛋白胃	nian dan bai wei	0
 粘度	nian du	100
 粘度标准液	nian du biao zhun ye	0
-粘合剂	nian he ji	35
 粘合剂分散剂	nian he ji fen san ji	0
 粘胶纤维	nian jiao xian wei	13
 鸟氨酸醋酸盐	niao an suan cu suan yan	0
@@ -34006,7 +34006,7 @@ use_preset_vocabulary: false
 一元强酸	yi yuan qiang suan	1
 乙原碳酸钾	yi yuan tan suan jia	0
 银氨溶液	yin an rong ye	15
-茚并芘	yin bing pi	1
+茚并芘	yin bing bi	1
 银布	yin bu	2
 阴床	yin chuang	0
 茚醇	yin chun	0
@@ -35305,6 +35305,7 @@ use_preset_vocabulary: false
 氟铌酸钾	fu ni suan jia	0
 甘露糖酸内酯	gan lu tang suan nei zhi	0
 刚玉粉	gang yu fen	0
+高粱红	gao liang hong	0
 锆砂	gao sha	0
 高香草酸	gao xiang cao suan	0
 镉棒	ge bang	0
@@ -35584,10 +35585,15 @@ use_preset_vocabulary: false
 乙螨唑	yi man zuo	1
 噻虫胺	sai chong an	1
 苯二酚	ben er fen	2
-标碳烷	biao tan wan	5
-标键烷	biao jian wan	5
-水磁双阻	shui ci shuang zu	5
+水磁双阻	shui ci shuang zu	122
 基弧	ji hu	102
 静定问题	jing ding wen ti	15
 束缚电子	shu fu dian zi	16
-粘合剂	zhan he ji	35
+流场	liu chang	156
+光场	guang chang	134
+势场	shi chang	125
+像场	xiang chang	119
+波场	bo chang	116
+第谷	di gu	105
+粗粒化	cu li hua	56
+线极化	xian ji hua	51

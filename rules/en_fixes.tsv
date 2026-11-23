@@ -1,22 +1,21 @@
 # target_file	old_word	old_code	action	new_word	new_code	weight	reason
 # 英文词库修正/删除/调权规则（action 限 delete / replace / reweight）
-en_dicts/en.dict.yaml	AcDbLine	*	delete				R1清理英文主库错拼/非英语/垃圾词
-en_dicts/en.dict.yaml	Auch	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	AcDbLine	*	delete				清理英文主库误入的 AutoCAD ObjectARX API 类名
+en_dicts/en.dict.yaml	Auch	*	delete				清理英文主库生僻法国小城专名噪音
 en_dicts/en.dict.yaml	Bilder	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	Bizjournalshire	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	ChillSeph	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	Faire	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	Ffremont	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	Musica	*	delete				R1清理英文主库错拼/非英语/垃圾词
-en_dicts/en.dict.yaml	Oder	*	delete				R1清理英文主库错拼/非英语/垃圾词
-en_dicts/en.dict.yaml	RFT	*	delete				R1清理英文主库错拼/非英语/垃圾词
-en_dicts/en.dict.yaml	acdbentity	*	delete				R1清理英文主库错拼/非英语/垃圾词
-en_dicts/en.dict.yaml	adipex	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	RFT	*	delete				清理英文主库误入的缩写噪音（RTF 已规范收录）
+en_dicts/en.dict.yaml	acdbentity	*	delete				清理英文主库误入的 AutoCAD ObjectARX API 类名
+en_dicts/en.dict.yaml	adipex	*	delete				清理英文主库混入的小写处方药广告语料词条
 en_dicts/en.dict.yaml	amature	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	beastiality	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	cameltoe	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	centro	*	delete				R1清理英文主库错拼/非英语/垃圾词
-en_dicts/en.dict.yaml	cialis	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	cialis	*	delete				清理英文主库混入的小写处方药广告语料词条
 en_dicts/en.dict.yaml	definately	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	der	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	deutsch	*	delete				R1清理英文主库错拼/非英语/垃圾词
@@ -27,18 +26,17 @@ en_dicts/en.dict.yaml	fetisch	*	delete				R1清理英文主库错拼/非英语/�
 en_dicts/en.dict.yaml	filme	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	gratuit	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	hoteles	*	delete				R1清理英文主库错拼/非英语/垃圾词
-en_dicts/en.dict.yaml	impressum	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	impressum	*	delete				清理英文主库德语出版专词（非通用英语）
 en_dicts/en.dict.yaml	knowledgestorm	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	ladyboy	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	lesbianas	*	delete				R1清理英文主库错拼/非英语/垃圾词
-en_dicts/en.dict.yaml	levitra	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	levitra	*	delete				清理英文主库混入的小写处方药广告语料词条
 en_dicts/en.dict.yaml	livesex	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	milfseeker	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	millenium	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	neu	*	delete				R1清理英文主库错拼/非英语/垃圾词
-en_dicts/en.dict.yaml	phentermine	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	pichunter	*	delete				R1清理英文主库错拼/非英语/垃圾词
-en_dicts/en.dict.yaml	recherche	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	recherche	*	delete				清理英文主库无重音法语借词（recherché）
 en_dicts/en.dict.yaml	sexcam	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	starsmerchant	*	delete				R1清理英文主库错拼/非英语/垃圾词
 en_dicts/en.dict.yaml	telefonsex	*	delete				R1清理英文主库错拼/非英语/垃圾词
@@ -56,13 +54,12 @@ en_dicts/en_ext.dict.yaml	beyatch	*	delete				R1清理英文扩展库错拼或�
 en_dicts/en_ext.dict.yaml	bilibili	bilibili	delete				R2清理英文扩展库重复或错误码词
 en_dicts/en_ext.dict.yaml	fo	*	delete				R1清理英文扩展库错拼或垃圾词
 en_dicts/en_ext.dict.yaml	fuckity	*	delete				R1清理英文扩展库错拼或垃圾词
-en_dicts/en_ext.dict.yaml	hading	*	delete				R1清理英文扩展库错拼或垃圾词
+en_dicts/en_ext.dict.yaml	hading	*	delete				清理英文扩展库极生僻地质分词噪音词条
 en_dicts/en_ext.dict.yaml	heil	*	delete				R1清理英文扩展库错拼或垃圾词
 en_dicts/en_ext.dict.yaml	iPhone 17 Plus	iPhone	delete				R2清理英文扩展库重复或错误码词
 en_dicts/en_ext.dict.yaml	limon	*	delete				R1清理英文扩展库错拼或垃圾词
 en_dicts/en_ext.dict.yaml	shitwork	*	delete				R1清理英文扩展库错拼或垃圾词
 en_dicts/en_ext.dict.yaml	unfo	*	delete				R1清理英文扩展库错拼或垃圾词
-en_dicts/en_ext.dict.yaml	unhumified	unhumified	delete				R2清理英文扩展库重复或错误码词
 en_dicts/en_ext.dict.yaml	Btitish	Btitish	replace	British	British		R1/R2英文拼写与大小写修正
 en_dicts/en_ext.dict.yaml	Cinity	Cinity	replace	CINITY	CINITY		R1/R2英文拼写与大小写修正
 en_dicts/en_ext.dict.yaml	Endnote	Endnote	replace	EndNote	EndNote		R1/R2英文拼写与大小写修正
@@ -76,7 +73,7 @@ en_dicts/en_ext.dict.yaml	Philppines	Philppines	replace	Philippines	Philippines	
 en_dicts/en_ext.dict.yaml	PlistEdit	pliPlistEdit	replace	PlistEdit	PlistEdit		R1/R2英文拼写与大小写修正
 en_dicts/en_ext.dict.yaml	Procedural Language / PostGres Structured Query Language	PL/pgSQL	replace	Procedural Language/PostgreSQL	PL/pgSQL		R1/R2英文拼写与大小写修正
 en_dicts/en_ext.dict.yaml	R.I.P	R.I.P	replace	R.I.P.	R.I.P.		R1/R2英文拼写与大小写修正
-en_dicts/en_ext.dict.yaml	RFT	RFT	replace	RTF	RTF		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	RFT	RFT	replace	RTF	RTF		清理英文主库误入的缩写噪音（RTF 已规范收录）
 en_dicts/en_ext.dict.yaml	Rich Text Format	RFT	replace	Rich Text Format	RTF		R1/R2英文拼写与大小写修正
 en_dicts/en_ext.dict.yaml	Texshop	Texshop	replace	TeXShop	TeXShop		R1/R2英文拼写与大小写修正
 en_dicts/en_ext.dict.yaml	blackFriday	blackFriday	replace	Black Friday	BlackFriday		R1/R2英文拼写与大小写修正
@@ -104,7 +101,7 @@ en_dicts/en_ext.dict.yaml	PreSearch	PreSearch	replace	Presearch	Presearch		官�
 en_dicts/en_ext.dict.yaml	bromite	bromite	replace	Bromite	Bromite		官方品牌大小写(Bromite)
 en_dicts/en_ext.dict.yaml	Initial Public Offerings	IPO	replace	Initial Public Offering	IPO		与单数缩写IPO匹配
 en_dicts/en_ext.dict.yaml	espanso	espanso	replace	Espanso	Espanso		官方品牌大小写(Espanso)
-en_dicts/en_ext.dict.yaml	okey	okey	delete				拼写错误(正拼okay，保留okey-dokey)
+en_dicts/en_ext.dict.yaml	okey	okey	delete				清理英文主库低频非正式拼写变体（主用 okay）
 en_dicts/en_ext.dict.yaml	sider	sider	replace	Sider	Sider		官方AI产品品牌大小写(Sider)
 en_dicts/en_ext.dict.yaml	traefik	traefik	replace	Traefik	Traefik		官方品牌大小写(Traefik)
 en_dicts/en_ext.dict.yaml	Asics	Asics	replace	ASICS	ASICS		官方品牌全大写缩写(ASICS)
@@ -132,11 +129,11 @@ en_dicts/en.dict.yaml	thumbzilla	*	delete				色情网站域名抓取垃圾
 en_dicts/en.dict.yaml	voyeurweb	*	delete				色情网站域名抓取垃圾
 en_dicts/en.dict.yaml	sublimedirectory	*	delete				SEO垃圾目录域名
 en_dicts/en.dict.yaml	viewpicture	*	delete				网页URL残片(viewpicture.php)
-en_dicts/en.dict.yaml	didrex	*	delete				网络黑药房垃圾词
-en_dicts/en.dict.yaml	fioricet	*	delete				网络黑药房垃圾词
-en_dicts/en.dict.yaml	meridia	*	delete				网络黑药房退市减肥药垃圾词
-en_dicts/en.dict.yaml	propecia	*	delete				网络黑药房垃圾词
-en_dicts/en.dict.yaml	ultram	*	delete				网络黑药房垃圾词(保留通用名tramadol)
+en_dicts/en.dict.yaml	didrex	*	delete				清理英文主库混入的已停产处方药广告语料词条
+en_dicts/en.dict.yaml	fioricet	*	delete				清理英文主库混入的小写处方药广告语料词条
+en_dicts/en.dict.yaml	meridia	*	delete				清理英文主库混入的已退市处方药广告语料词条
+en_dicts/en.dict.yaml	propecia	*	delete				清理英文主库混入的小写处方药广告语料词条
+en_dicts/en.dict.yaml	ultram	*	delete				清理英文主库混入的小写处方药广告语料词条
 en_dicts/en.dict.yaml	ladyboys	*	delete				色情抓取词(单数ladyboy已删)
 en_dicts/en.dict.yaml	shemale	*	delete				色情抓取歧视词
 en_dicts/en.dict.yaml	shemales	*	delete				色情抓取歧视词
@@ -157,3 +154,4 @@ en_dicts/en.dict.yaml	travestis	*	delete				非英语西/法语成人抓取垃�
 en_dicts/en.dict.yaml	verzeichnis	*	delete				非英语德语抓取垃圾
 en_dicts/en.dict.yaml	FujiFilm	FujiFilm	replace	Fujifilm	Fujifilm		官方品牌大小写(Fujifilm)
 en_dicts/en.dict.yaml	ZDnet	ZDnet	replace	ZDNet	ZDNet		官方品牌大小写(ZDNet)
+en_dicts/en.dict.yaml	Negro	*	delete				清理歧视性过时词条（补齐 en_ext 漏网项）

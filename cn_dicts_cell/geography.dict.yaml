@@ -316,6 +316,7 @@ use_preset_vocabulary: false
 大羚羊保护区	da ling yang bao hu qu	0
 大隆组	da long zu	0
 大陆被动边缘	da lu bei dong bian yuan	0
+大陆车阀说	da lu che fa shuo	0
 大陆地震	da lu di zhen	0
 大陆度	da lu du	0
 大陆复原	da lu fu yuan	0
@@ -949,6 +950,7 @@ use_preset_vocabulary: false
 俯冲带	fu chong dai	63
 俯冲断层	fu chong duan ceng	0
 负地貌	fu di mao	0
+浮雕影像地图	fu diao ying xiang di tu	0
 复合土地利用	fu he tu di li yong	0
 福利地理	fu li di li	0
 扶南国	fu nan guo	1
@@ -1833,7 +1835,7 @@ use_preset_vocabulary: false
 森林气候	sen lin qi hou	2
 森林上限	sen lin shang xian	0
 森林水文学	sen lin shui wen xue	0
-莎车国	suo che guo	2
+莎车国	sha che guo	2
 沙赫利苏伯兹	sha he li su bo zi	0
 沙垅	sha long	0
 沙漠城镇	sha mo cheng zhen	3
@@ -2329,6 +2331,9 @@ use_preset_vocabulary: false
 硬磐	ying pan	0
 鹰山组	ying shan zu	0
 影响半径	ying xiang ban jing	3
+影像地图	ying xiang di tu	0
+影像灰度	ying xiang hui du	0
+影像判读	ying xiang pan du	0
 英雄港中心区	ying xiong gang zhong xin qu	0
 应用地理学	ying yong di li xue	1
 应用地图学	ying yong di tu xue	0
@@ -2463,6 +2468,7 @@ use_preset_vocabulary: false
 正残积风化壳	zheng can ji feng hua qiao	0
 正常地貌	zheng chang di mao	0
 正地貌	zheng di mao	1
+正射影像地图	zheng she ying xiang di tu	0
 正旋回	zheng xuan hui	0
 正阳组	zheng yang zu	0
 正韵律	zheng yun lv	0

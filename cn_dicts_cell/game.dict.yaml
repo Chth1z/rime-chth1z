@@ -9869,6 +9869,7 @@ use_preset_vocabulary: false
 逆天坛	ni tian tan	0
 逆天无头灵	ni tian wu tou ling	0
 匿影	ni ying	2
+粘合剂	nian he ji	311
 粘土精	nian tu jing	0
 酿酒的辛苦	niang jiu de xin ku	0
 酿酒地	niang jiu di	1
@@ -15661,7 +15662,7 @@ use_preset_vocabulary: false
 大巡	da xun	3
 大野柚布子	da ye you bu zi	0
 大鱼突击	da yu tu ji	0
-大月红叶	da yue gong ye	0
+大月红叶	da yue hong ye	0
 待查找	dai cha zhao	4
 黛朵	dai duo	0
 怠惰的监视者	dai duo de jian shi zhe	0
@@ -17456,7 +17457,7 @@ use_preset_vocabulary: false
 希佩尔海军上将级	xi pei er hai jun shang jiang ji	3
 希佩尔海军上将级改装	xi pei er hai jun shang jiang ji gai zhuang	0
 袭扰战术	xi rao zhan shu	1
-汐见雪菜	xi xian xue cai	0
+汐见雪菜	xi jian xue cai	0
 夕星	xi xing	0
 吸血鬼之吻	xi xue gui zhi wen	2
 吸引火力	xi yin huo li	112
@@ -104373,7 +104374,7 @@ use_preset_vocabulary: false
 斑驳的切制铜楼梯	ban bo de qie zhi tong lou ti	0
 斑驳的切制铜台阶	ban bo de qie zhi tong tai jie	0
 斑驳的铜灯	ban bo de tong deng	0
-斑驳的铜格栅	ban bo de tong ge shan	0
+斑驳的铜格栅	ban bo de tong ge zha	0
 斑驳的铜活板门	ban bo de tong huo ban men	0
 斑驳的铜块	ban bo de tong kuai	0
 斑驳的铜门	ban bo de tong men	0
@@ -106259,7 +106260,7 @@ use_preset_vocabulary: false
 铁靴子	tie xue zi	1
 铜灯	tong deng	9
 通告管理员命令	tong gao guan li yuan ming ling	0
-铜格栅	tong ge shan	0
+铜格栅	tong ge zha	0
 铜光焕发	tong guang huan fa	0
 铜活板门	tong huo ban men	0
 铜块	tong kuai	29
@@ -106273,7 +106274,7 @@ use_preset_vocabulary: false
 涂蜡的斑驳切制铜楼梯	tu la de ban bo qie zhi tong lou ti	0
 涂蜡的斑驳切制铜台阶	tu la de ban bo qie zhi tong tai jie	0
 涂蜡的斑驳铜灯	tu la de ban bo tong deng	0
-涂蜡的斑驳铜格栅	tu la de ban bo tong ge shan	0
+涂蜡的斑驳铜格栅	tu la de ban bo tong ge zha	0
 涂蜡的斑驳铜活板门	tu la de ban bo tong huo ban men	0
 涂蜡的斑驳铜块	tu la de ban bo tong kuai	0
 涂蜡的斑驳铜门	tu la de ban bo tong men	0
@@ -106282,7 +106283,7 @@ use_preset_vocabulary: false
 涂蜡的切制铜楼梯	tu la de qie zhi tong lou ti	0
 涂蜡的切制铜台阶	tu la de qie zhi tong tai jie	0
 涂蜡的铜灯	tu la de tong deng	0
-涂蜡的铜格栅	tu la de tong ge shan	0
+涂蜡的铜格栅	tu la de tong ge zha	0
 涂蜡的铜活板门	tu la de tong huo ban men	0
 涂蜡的铜块	tu la de tong kuai	0
 涂蜡的铜门	tu la de tong men	0
@@ -106291,7 +106292,7 @@ use_preset_vocabulary: false
 涂蜡的锈蚀切制铜楼梯	tu la de xiu shi qie zhi tong lou ti	0
 涂蜡的锈蚀切制铜台阶	tu la de xiu shi qie zhi tong tai jie	0
 涂蜡的锈蚀铜灯	tu la de xiu shi tong deng	0
-涂蜡的锈蚀铜格栅	tu la de xiu shi tong ge shan	0
+涂蜡的锈蚀铜格栅	tu la de xiu shi tong ge zha	0
 涂蜡的锈蚀铜活板门	tu la de xiu shi tong huo ban men	0
 涂蜡的锈蚀铜块	tu la de xiu shi tong kuai	0
 涂蜡的锈蚀铜门	tu la de xiu shi tong men	0
@@ -106300,7 +106301,7 @@ use_preset_vocabulary: false
 涂蜡的氧化切制铜楼梯	tu la de yang hua qie zhi tong lou ti	0
 涂蜡的氧化切制铜台阶	tu la de yang hua qie zhi tong tai jie	0
 涂蜡的氧化铜灯	tu la de yang hua tong deng	0
-涂蜡的氧化铜格栅	tu la de yang hua tong ge shan	0
+涂蜡的氧化铜格栅	tu la de yang hua tong ge zha	0
 涂蜡的氧化铜活板门	tu la de yang hua tong huo ban men	0
 涂蜡的氧化铜块	tu la de yang hua tong kuai	0
 涂蜡的氧化铜门	tu la de yang hua tong men	0
@@ -106438,7 +106439,7 @@ use_preset_vocabulary: false
 锈蚀的切制铜楼梯	xiu shi de qie zhi tong lou ti	0
 锈蚀的切制铜台阶	xiu shi de qie zhi tong tai jie	0
 锈蚀的铜灯	xiu shi de tong deng	0
-锈蚀的铜格栅	xiu shi de tong ge shan	0
+锈蚀的铜格栅	xiu shi de tong ge zha	0
 锈蚀的铜活板门	xiu shi de tong huo ban men	0
 锈蚀的铜块	xiu shi de tong kuai	0
 锈蚀的铜门	xiu shi de tong men	0
@@ -106501,7 +106502,7 @@ use_preset_vocabulary: false
 氧化的切制铜楼梯	yang hua de qie zhi tong lou ti	0
 氧化的切制铜台阶	yang hua de qie zhi tong tai jie	0
 氧化的铜灯	yang hua de tong deng	0
-氧化的铜格栅	yang hua de tong ge shan	0
+氧化的铜格栅	yang hua de tong ge zha	0
 氧化的铜活板门	yang hua de tong huo ban men	0
 氧化的铜块	yang hua de tong kuai	0
 氧化的铜门	yang hua de tong men	0
@@ -122087,7 +122088,7 @@ use_preset_vocabulary: false
 少主的下落	shao zhu de xia luo	0
 社稷之危	she ji zhi wei	0
 射手座黄金圣斗士	she shou zuo huang jin sheng dou shi	0
-什长	shi chang	11
+什长	shi zhang	11
 神刀铁胳膊	shen dao tie ge bo	0
 神风护法	shen feng hu fa	0
 神风惊云	shen feng jing yun	0
@@ -122694,7 +122695,7 @@ use_preset_vocabulary: false
 恶魔之翔	e mo zhi xiang	0
 厄图拉斯之拳	e tu la si zhi quan	0
 二郎神天眼	er lang shen tian yan	0
-番红裹腰	fan gong guo yao	0
+番红裹腰	fan hong guo yao	0
 焚火射弩	fen huo she nu	0
 格里斯瓦德的杰作	ge li si wa de de jie zuo	0
 弓匠的骄傲	gong jiang de jiao ao	0
@@ -122734,9 +122735,9 @@ use_preset_vocabulary: false
 迦陀朵	jia tuo duo	0
 迦陀朵的法能	jia tuo duo de fa neng	0
 迦陀朵的归返	jia tuo duo de gui fan	0
-迦陀朵的遗志	jia tuo duo de wei zhi	0
+迦陀朵的遗志	jia tuo duo de yi zhi	0
 坚果锤	jian guo chui	0
-强横护腕	jiang heng hu wan	0
+强横护腕	qiang heng hu wan	0
 乔丹之石	qiao dan zhi shi	11
 杰桑尼库	jie sang ni ku	0
 金宝的金牌	jin bao de jin pai	0
@@ -122759,7 +122760,7 @@ use_preset_vocabulary: false
 克里森船长的华服	ke li sen chuan zhang de hua fu	0
 克里森船长的斜桅	ke li sen chuan zhang de xie wei	0
 空洞低语之戒	kong dong di yu zhi jie	0
-空灵无恶	kong ling mo e	0
+空灵无恶	kong ling wu e	0
 寇图尔的箍带	kou tu er de gu dai	0
 骷髅扣戒	ku lou kou jie	0
 夸夏仰	kua xia yang	0
@@ -122797,10 +122798,10 @@ use_preset_vocabulary: false
 秘术帽	mi shu mao	0
 秘辛指箍	mi xin zhi gu	0
 灭亡凝视	mie wang ning shi	0
-无尽长路	mo jin chang lu	0
+无尽长路	wu jin chang lu	0
 无尽之战	wu jin zhi zhan	3
 魔胎	mo tai	3
-无畏勇者之祷文	mo wei yong zhe zhi dao wen	0
+无畏勇者之祷文	wu wei yong zhe zhi dao wen	0
 魔物猎人	mo wu lie ren	0
 暮光护面	mu guang hu mian	0
 牧牛杖	mu niu zhang	5
@@ -122868,7 +122869,7 @@ use_preset_vocabulary: false
 踏火行靴	ta huo xing xue	0
 塔拉夏的缠腰	ta la xia de chan yao	0
 塔拉夏的坚定怒目	ta la xia de jian ding nu mu	0
-塔拉夏的无情追猎	ta la xia de mo qing zhui lie	0
+塔拉夏的无情追猎	ta la xia de wu qing zhui lie	0
 塔拉夏的睿智之容	ta la xia de rui zhi zhi rong	0
 塔拉夏的誓诚	ta la xia de shi cheng	0
 塔拉夏的牺牲	ta la xia de xi sheng	0
@@ -122885,7 +122886,7 @@ use_preset_vocabulary: false
 屠夫剁刀	tu fu duo dao	0
 屠夫钩镰	tu fu gou lian	0
 吐脓毒弩	tu nong du nu	0
-亡者遗产	wang zhe wei chan	0
+亡者遗产	wang zhe yi chan	0
 畏怖铁块	wei bu tie kuai	0
 兀钢	wu gang	0
 巫师之刺	wu shi zhi ci	1
@@ -122894,7 +122895,7 @@ use_preset_vocabulary: false
 峡湾分岭刃	xia wan fen ling ren	0
 贤者众	xian zhe zhong	0
 向天守	xiang tian shou	0
-邪梦者的遗礼	xie meng zhe de wei li	0
+邪梦者的遗礼	xie meng zhe de yi li	0
 星脊	xing ji	0
 眩盲沙地的苏丹	xuan mang sha di de su dan	0
 玄穹信使	xuan qiong xin shi	0
@@ -141275,7 +141276,7 @@ use_preset_vocabulary: false
 莫旺	mo wang	0
 莫问曲	mo wen qu	0
 莫无道	mo wu dao	0
-无限定怪	mo xian ding guai	0
+无限定怪	wu xian ding guai	0
 摸翔	mo xiang	1
 莫晓玲	mo xiao ling	0
 莫寻常	mo xun chang	0
@@ -148213,3 +148214,4 @@ use_preset_vocabulary: false
 塔利雅	ta li ya	0
 梦见月瑞希	meng jian yue rui xi	0
 挪德卡莱	nuo de ka lai	0
+打本	da ben	30

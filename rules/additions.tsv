@@ -1,6 +1,5 @@
 # target_file	word	py	weight	category	source
 # 词条补录规则（category 限 A / E1 / modern / tech / domain / brand / phonetic / common）
-cn_dicts/8105.dict.yaml	芔	hu	1	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	屮	che	50	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	呇	qi	2	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	颤	zhan	50	phonetic	现汉第7版
@@ -23,7 +22,6 @@ cn_dicts/8105.dict.yaml	辗	nian	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	窨	xun	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	潦	lao	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	阏	e	10	phonetic	现汉第7版
-cn_dicts/8105.dict.yaml	饧	tang	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	薁	yu	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	姥	mu	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	被	pi	10	phonetic	现汉第7版
@@ -34,7 +32,6 @@ cn_dicts/8105.dict.yaml	宛	yuan	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	遗	wei	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	氓	meng	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	掸	shan	10	phonetic	现汉第7版
-cn_dicts/8105.dict.yaml	嗑	he	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	孱	can	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	砉	xu	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	袷	jia	5	phonetic	现汉第7版
@@ -44,7 +41,6 @@ cn_dicts/8105.dict.yaml	焘	dao	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	镦	dui	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	酂	cuo	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	隗	kui	5	phonetic	现汉第7版
-cn_dicts/8105.dict.yaml	車	che	1	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	磏	lian	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	说	yue	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	著	zhuo	30	phonetic	现汉第7版
@@ -70,7 +66,7 @@ cn_dicts/8105.dict.yaml	其	ji	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	钭	tou	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	铤	ding	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	坻	chi	5	phonetic	现汉第7版
-cn_dicts/8105.dict.yaml	廆	gui	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	廆	gui	5	phonetic	通用规范汉字表/汉语大字典
 cn_dicts/8105.dict.yaml	丁	zheng	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	衰	cui	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	溺	niao	5	phonetic	现汉第7版
@@ -205,9 +201,8 @@ cn_dicts/ext.dict.yaml	年平均值	nian ping jun zhi	120	common	R2扩展词补�
 cn_dicts/others.dict.yaml	蚌住	beng zhu	0	common	R1常用口语补录
 cn_dicts/others.dict.yaml	我勒个	wo le ge	0	common	R1常用口语补录
 cn_dicts/others.dict.yaml	软弹	ruan tan	0	common	R1常用口语补录
-cn_dicts_cell/shulihua.dict.yaml	粘合剂	zhan he ji	35	domain	R1口语容错补录
-cn_dicts/8105.dict.yaml	徵	zheng	10	phonetic	通用规范汉字表附注 + L3历史人名：历史人名保留用字（文徵明、魏徵、崔徵、林熊徵、孙鼎徵、叶德徵、休徵、乐徵）
-cn_dicts/8105.dict.yaml	褚	zhu	10	phonetic	现汉第7版：装填丝绵、口袋义（褚小怀大、褚小杯大）
+cn_dicts/8105.dict.yaml	徵	zheng	10	phonetic	L3历史人名保留用字（文徵明、魏徵、崔徵、林熊徵、孙鼎徵、叶德徵、休徵、乐徵）
+cn_dicts/8105.dict.yaml	褚	zhu	10	phonetic	现汉第7版：装填丝绵、口袋义（褚小怀大）
 cn_dicts/8105.dict.yaml	郄	xi	10	phonetic	现汉第7版 + L2中医药名词：古同“隙”；中医经络穴位（郄穴、郄门、浮郄、阴郄；以郄视文）
 cn_dicts/8105.dict.yaml	楯	dun	10	phonetic	现汉第7版：古同“盾”（鬻矛誉楯、赤楯座、日文姓氏楯冈）
 cn_dicts/8105.dict.yaml	偲	si	10	phonetic	现汉第7版：互相督促勉励（切切偲偲；人名李偲、钱偲）
@@ -221,14 +216,14 @@ cn_dicts/8105.dict.yaml	桁	hang	10	phonetic	现汉第7版：古代刑具“桁�
 cn_dicts/8105.dict.yaml	濩	hu	10	phonetic	现汉第7版：布濩、商代乐舞“大濩”（大濩、渊涓蠖濩）
 cn_dicts/8105.dict.yaml	瑱	zhen	10	phonetic	现汉第7版：古通“镇”，压坐席玉器；历史人名（朱瑱、韦瑱）
 cn_dicts/8105.dict.yaml	莩	piao	10	phonetic	现汉第7版：同“殍”，饿死的人（野有饿莩、饿莩填壑）
-cn_dicts/8105.dict.yaml	珩	hang	10	phonetic	现汉第7版：机械加工术语“珩磨 háng mó”（注：base.dict.yaml:109825 现作 珩磨 heng mo 4，可顺带复核）
+cn_dicts/8105.dict.yaml	珩	hang	10	phonetic	现汉第7版：机械加工术语“珩磨 háng mó”
 cn_dicts/8105.dict.yaml	且	ju	10	phonetic	现汉第7版：古助词、通“趄”、历史人名（龙且、蔺且）
 cn_dicts/8105.dict.yaml	宕	tan	10	phonetic	现汉第7版 + L2民政地名：甘肃省标准地名“宕昌 / 宕昌县”
 cn_dicts/8105.dict.yaml	惔	dan	10	phonetic	现汉第7版：古通“淡”，恬静淡泊（恬惔虚无、归草黑栀惔竹叶）
-cn_dicts/8105.dict.yaml	括	gua	10	phonetic	现汉第7版：现汉第7版收“挺括 tǐng guā / 搜括”（挺括有型、面料挺括）
+cn_dicts/8105.dict.yaml	括	gua	10	phonetic	现汉第7版：挺括 tǐng guā（挺括有型、面料挺括）
 cn_dicts/8105.dict.yaml	擿	zhi	10	phonetic	现汉第7版：搔、投掷、以杖点地（冥行擿埴、擿埴索途）
 cn_dicts/8105.dict.yaml	敦	dui	10	phonetic	现汉第7版：古代青铜食器“玉敦”（朱槃玉敦、朱盘玉敦）
-cn_dicts/8105.dict.yaml	玚	chang	10	phonetic	现汉第7版：古代祭祀用圭“玚圭”，亦见历史人名读音（应玚、李玚）
+cn_dicts/8105.dict.yaml	玚	chang	10	phonetic	现汉第7版：古代祭祀用圭“玚圭”（注：建安七子应玚读 yáng）
 cn_dicts/8105.dict.yaml	粥	yu	10	phonetic	现汉第7版：古同“鬻”（卖）；亦见韩愈“群雌粥粥”
 cn_dicts/8105.dict.yaml	从	zong	10	phonetic	现汉第7版：古同“纵”（合从缔交、从横）
 cn_dicts/8105.dict.yaml	喏	re	10	phonetic	现汉第7版：旧时礼节“唱喏 chàng rě”
@@ -236,10 +231,122 @@ cn_dicts/8105.dict.yaml	岂	kai	10	phonetic	现汉第7版：古同“恺/凯”�
 cn_dicts/8105.dict.yaml	派	pa	10	phonetic	现汉第7版：音译词“派司 pā·si”（pass）
 cn_dicts/8105.dict.yaml	溱	zhen	10	phonetic	现汉第7版：古水名“溱水”（溱洧、溱溱）
 cn_dicts/8105.dict.yaml	般	pan	10	phonetic	现汉第7版：古同“盘”（般乐怠敖）、多种（般般）
-cn_dicts/8105.dict.yaml	芥	gai	10	phonetic	现汉第7版：蔬菜名“芥蓝 gài lán / 芥菜”
+cn_dicts/8105.dict.yaml	芥	gai	10	phonetic	现汉第5版旧读：蔬菜名“芥蓝 gài lán”旧读支持
 cn_dicts/8105.dict.yaml	适	kuo	10	phonetic	现汉第7版：姓氏及历史人名（唐德宗李适、南宫适）
 cn_dicts/8105.dict.yaml	陶	yao	10	phonetic	现汉第7版：上古人物名“皋陶 Gāoyáo”（举皋陶）
 cn_dicts/8105.dict.yaml	鲗	ze	10	phonetic	新华字典第12版 + 现汉第7版：香港地名“鲗鱼涌 Zé yú chōng”规范读音
 cn_dicts/8105.dict.yaml	觜	zui	10	phonetic	现汉第7版：古同“嘴”（现汉第7版收 zī / zuǐ 双音）
 cn_dicts/8105.dict.yaml	嗄	a	10	phonetic	现汉第7版：叹词同“啊”（现汉第7版收 shà / á 双音）
 cn_dicts/8105.dict.yaml	擘	bai	10	phonetic	现汉第7版：同“掰”（现汉第7版收 bò / bāi 双音）
+cn_dicts/8105.dict.yaml	那	nei	50	phonetic	现汉第7版：口语“那”合法读音 nèi（那个/那些）
+cn_dicts/base.dict.yaml	那个	nei ge	200	common	现汉第7版：口语合法读音 nèi ge（低于同音“内阁 669”）
+cn_dicts/ext.dict.yaml	谁谁谁	shei shei shei	1042	common	现汉第7版/DICTIONARY_SPEC §3（与 shui shui shui 双音并存）
+cn_dicts/base.dict.yaml	乍暖还寒时候	zha nuan hai han shi hou	12	common	常见口语读音，与教材规范 huan han 并存
+cn_dicts/base.dict.yaml	上都	shang du	50	domain	多义专名：元上都/内蒙古上都镇（低于商都 70）
+cn_dicts/base.dict.yaml	事了	shi liao	100	common	现汉第7版：事情了结（事了拂衣去），与 shi le 并存
+cn_dicts/base.dict.yaml	反角	fan jiao	40	domain	几何反角/航空上反角/外科反角针（与影视反角 fan jue 并存）
+cn_dicts/ext.dict.yaml	得好好	de hao hao	150	common	结构助词“得”（睡得好好的/过得好好的），与 dei hao hao 并存
+cn_dicts/base.dict.yaml	那就得	na jiu de	100	common	动补/动词“得”（那就得了/那就得不偿失），与 na jiu dei 并存
+cn_dicts/ext.dict.yaml	氐土貉	di tu mo	1	domain	汉语大词典：二十八宿星官读 dī tǔ mò
+cn_dicts_cell/composite.dict.yaml	轻薄本	qing bao ben	300	modern	常见口语习惯读音（自 clean-dicts.py 迁入 rules SSOT）
+cn_dicts/ext.dict.yaml	冯诺依曼	feng nuo yi man	160	domain	全库迁移找回：数学家/计算机先驱 John von Neumann
+cn_dicts/ext.dict.yaml	面向对象程序设计	mian xiang dui xiang cheng xu she ji	53	tech	全库迁移找回：计算机学科标准术语 OOP
+cn_dicts/ext.dict.yaml	通证	tong zheng	74	modern	全库迁移找回：通证经济/行政通证
+cn_dicts/base.dict.yaml	短短的	duan duan de	1145	common	全库迁移找回：高频日常重叠短语
+cn_dicts_cell/history.dict.yaml	武帝纪	wu di ji	84	domain	全库迁移找回：《三国志·武帝纪》/《汉书·武帝纪》
+cn_dicts_cell/literature.dict.yaml	王弼注	wang bi zhu	41	domain	全库迁移找回：《老子王弼注》/《周易王弼注》
+cn_dicts_cell/place.dict.yaml	伊纳里	yi na li	35	domain	全库迁移找回：芬兰拉普兰伊纳里市/伊纳里湖(Inari)
+cn_dicts/ext.dict.yaml	花活	hua huo	33	modern	全库迁移找回：高频口语词（整花活）
+cn_dicts/base.dict.yaml	带教	dai jiao	30	common	全库迁移找回：医教/职场常用词（带教老师）
+cn_dicts_cell/game.dict.yaml	打本	da ben	30	domain	全库迁移找回：高频游戏术语（打副本）
+cn_dicts/base.dict.yaml	花材	hua cai	24	common	全库迁移找回：花艺常用名词
+cn_dicts/ext.dict.yaml	实车	shi che	23	modern	全库迁移找回：汽车行业常用词（实车测试）
+cn_dicts/base.dict.yaml	墓主	mu zhu	22	common	全库迁移找回：考古/新闻常用词
+cn_dicts/base.dict.yaml	炖菜	dun cai	22	common	全库迁移找回：日常饮食常用词
+cn_dicts/base.dict.yaml	骨相	gu xiang	21	common	全库迁移找回：日常审美/解剖常用词（骨相美）
+cn_dicts/ext.dict.yaml	滴滴滴	di di di	94	common	全库迁移找回：常用拟声词
+cn_dicts/ext.dict.yaml	举个栗子	ju ge li zi	200	modern	高频网络谐音梗（非无意错字）
+cn_dicts/ext.dict.yaml	臭不要脸	chou bu yao lian	137	common	现汉常用口语熟语
+cn_dicts/ext.dict.yaml	大河田	da he tian	200	modern	《灌篮高手》河田雅史经典通称
+cn_dicts/ext.dict.yaml	海尔洗衣机	hai er xi yi ji	27	brand	常见家电品牌产品词
+cn_dicts_cell/medication.dict.yaml	法令纹	fa ling wen	230	domain	医学美容/面部解剖常用词（从广告块误杀找回）
+cn_dicts_cell/medication.dict.yaml	耳软骨	er ruan gu	48	domain	解剖/整形外科术语（从广告块误杀找回）
+cn_dicts_cell/medication.dict.yaml	双眼皮手术	shuang yan pi shou shu	374	domain	整形外科常用词（从广告块误杀找回）
+cn_dicts_cell/medication.dict.yaml	散粉	san fen	248	common	日常美妆词（从广告块误杀找回）
+cn_dicts_cell/medication.dict.yaml	毛鳞片	mao lin pian	183	domain	毛发生物学术语（从广告块误杀找回）
+cn_dicts_cell/medication.dict.yaml	胜肽	sheng tai	156	domain	生化/护肤常用词（从广告块误杀找回）
+cn_dicts_cell/medication.dict.yaml	整形医生	zheng xing yi sheng	112	domain	医疗职业称谓（从广告块误杀找回）
+cn_dicts_cell/medication.dict.yaml	激光脱毛	ji guang tuo mao	106	domain	皮肤科医美术语（从广告块误杀找回）
+cn_dicts_cell/medication.dict.yaml	皮脂膜	pi zhi mo	91	domain	皮肤科学术语（从广告块误杀找回）
+cn_dicts_cell/medication.dict.yaml	定妆	ding zhuang	71	common	日常美妆词（从广告块误杀找回）
+cn_dicts_cell/medication.dict.yaml	鼻影	bi ying	71	common	日常美妆词（从广告块误杀找回）
+cn_dicts_cell/medication.dict.yaml	硅胶假体	gui jiao jia ti	51	domain	整形外科术语（从广告块误杀找回）
+cn_dicts_cell/medication.dict.yaml	额部	e bu	37	domain	解剖学术语（从广告块误杀找回）
+cn_dicts_cell/medication.dict.yaml	等渗	deng shen	37	domain	医学/物理化学术语（从广告块误杀找回）
+cn_dicts_cell/medication.dict.yaml	鼻整形	bi zheng xing	34	domain	整形外科术语（从广告块误杀找回）
+cn_dicts_cell/medication.dict.yaml	白眼球	bai yan qiu	22	common	日常人体部位词（从广告块误杀找回）
+cn_dicts_cell/medication.dict.yaml	瘢痕增生	ban hen zeng sheng	16	domain	临床皮肤科术语（从广告块误杀找回）
+cn_dicts_cell/medication.dict.yaml	闭合不全	bi he bu quan	13	domain	临床医学术语（如瓣膜闭合不全）
+cn_dicts_cell/medication.dict.yaml	鼻中隔弯曲	bi zhong ge wan qu	7	domain	耳鼻喉科临床术语（从广告块误杀找回）
+cn_dicts_cell/medication.dict.yaml	杜鹃花酸	du juan hua suan	6	domain	皮肤科药物壬二酸别名（从广告块误杀找回）
+cn_dicts/ext.dict.yaml	三宅一生	san zhai yi sheng	463	brand	著名时尚品牌 Issey Miyake（从广告块误杀找回）
+cn_dicts/ext.dict.yaml	海蓝之谜	hai lan zhi mi	76	brand	护肤品牌 La Mer（从广告块误杀找回）
+cn_dicts/ext.dict.yaml	碧柔	bi rou	63	brand	日化品牌 Biore（从广告块误杀找回）
+cn_dicts/ext.dict.yaml	黛珂	dai ke	42	brand	护肤品牌 Cosme Decorte（从广告块误杀找回）
+cn_dicts/ext.dict.yaml	飞科	fei ke	45	brand	国货电器品牌 Flyco（从广告块误杀找回）
+cn_dicts/ext.dict.yaml	汉高	han gao	60	brand	跨国化工消费品企业 Henkel（从广告块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	吃子	chi zi	147	domain	象棋核心术语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	排局	pai ju	113	domain	象棋核心术语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	马炮	ma pao	106	domain	象棋核心术语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	士象	shi xiang	89	domain	象棋核心术语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	双炮	shuang pao	86	domain	象棋核心术语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	横车	heng che	31	domain	象棋核心术语（post_chess_add_ju 自动衍生 heng ju）
+cn_dicts_cell/chess2.dict.yaml	控局	kong ju	20	domain	象棋核心术语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	计时钟	ji shi zhong	15	domain	棋类比赛器材术语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	蹩马腿	bie ma tui	14	domain	象棋核心规则术语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	河界	he jie	14	domain	象棋棋盘核心术语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	直车	zhi che	13	domain	象棋核心术语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	直车	zhi ju	13	domain	象棋标准读音 zhí jū
+cn_dicts_cell/chess2.dict.yaml	横车	heng ju	31	domain	象棋标准读音 héng jū
+cn_dicts_cell/chess2.dict.yaml	投子认负	tou zi ren fu	13	domain	棋类常用成语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	缓手	huan shou	12	domain	棋类核心术语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	边卒	bian zu	11	domain	象棋核心术语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	白脸将	bai lian jiang	11	domain	象棋经典杀法（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	棋例	qi li	10	domain	象棋规则核心术语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	底士	di shi	10	domain	象棋核心术语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	底线防守	di xian fang shou	10	domain	棋类/体育常用术语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	反先	fan xian	9	domain	棋类核心术语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	连环炮	lian huan pao	7	domain	象棋术语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/chess2.dict.yaml	自然限着	zi ran xian zhao	5	domain	象棋规则术语（从 n-gram 尾块误杀找回）
+cn_dicts_cell/place.dict.yaml	桃江县	tao jiang xian	17	domain	湖南益阳桃江县（从 place 尾部抓取块误杀找回）
+cn_dicts_cell/place.dict.yaml	分洪区	fen hong qu	34	domain	水利地理标准术语（从 place 尾部抓取块误杀找回）
+cn_dicts_cell/place.dict.yaml	马恩河	ma en he	22	domain	法国马恩河 Marne（从 place 尾部抓取块误杀找回）
+cn_dicts_cell/place.dict.yaml	美因河	mei yin he	21	domain	德国美因河 Main（从 place 尾部抓取块误杀找回）
+cn_dicts_cell/place.dict.yaml	尼斯河	ni si he	25	domain	欧洲尼斯河 Neisse（从 place 尾部抓取块误杀找回）
+cn_dicts_cell/place.dict.yaml	蓄奴州	xu nu zhou	50	domain	历史地理术语（从 place 尾部抓取块误杀找回）
+cn_dicts_cell/place.dict.yaml	卡坦岛	ka tan dao	30	modern	著名桌游 Catan（从 place 尾部抓取块误杀找回）
+cn_dicts_cell/composite.dict.yaml	韩团	han tuan	236	modern	现代高频词（从 composite 尾块误杀找回）
+cn_dicts_cell/shulihua.dict.yaml	流场	liu chang	156	domain	流体力学核心术语（从 composite 尾块误杀找回）
+cn_dicts_cell/shulihua.dict.yaml	光场	guang chang	134	domain	光学/图形学核心术语（从 composite 尾块误杀找回）
+cn_dicts_cell/composite.dict.yaml	站场	zhan chang	126	domain	铁路/交通工程术语（从 composite 尾块误杀找回）
+cn_dicts_cell/shulihua.dict.yaml	势场	shi chang	125	domain	物理学核心术语（从 composite 尾块误杀找回）
+cn_dicts_cell/shulihua.dict.yaml	像场	xiang chang	119	domain	光学核心术语（从 composite 尾块误杀找回）
+cn_dicts_cell/shulihua.dict.yaml	波场	bo chang	116	domain	地球物理/声学术语（从 composite 尾块误杀找回）
+cn_dicts_cell/shulihua.dict.yaml	第谷	di gu	105	domain	天文学家 Tycho Brahe（从 composite 尾块误杀找回）
+cn_dicts_cell/composite.dict.yaml	法团	fa tuan	70	domain	法律/社会学标准术语（从 composite 尾块误杀找回）
+cn_dicts_cell/composite.dict.yaml	昂撒人	ang sa ren	66	modern	现代高频网络/历史简称（从 composite 尾块误杀找回）
+cn_dicts_cell/composite.dict.yaml	零卡糖	ling ka tang	58	modern	现代食品高频词（从 composite 尾块误杀找回）
+cn_dicts_cell/composite.dict.yaml	工团	gong tuan	58	domain	历史/政治学术语（从 composite 尾块误杀找回）
+cn_dicts_cell/shulihua.dict.yaml	粗粒化	cu li hua	56	domain	统计物理/分子动力学标准术语（从 composite 尾块误杀找回）
+cn_dicts_cell/shulihua.dict.yaml	线极化	xian ji hua	51	domain	电磁学/天线工程标准术语（从 composite 尾块误杀找回）
+cn_dicts_cell/composite.dict.yaml	深研院	shen yan yuan	43	modern	高校深圳研究生院简称（从 composite 尾块误杀找回）
+cn_dicts_cell/composite.dict.yaml	一图流	yi tu liu	43	modern	现代网络高频词（从 composite 尾块误杀找回）
+cn_dicts_cell/composite.dict.yaml	千羽鹤	qian yu he	41	common	川端康成名作/文化名词（从 composite 尾块误杀找回）
+cn_dicts_cell/composite.dict.yaml	汉字学	han zi xue	40	domain	语言学分支学科名（从 composite 尾块误杀找回）
+cn_dicts_cell/industry_product.dict.yaml	进出口代理	jin chu kou dai li	10	domain	外贸常用标准术语（从前缀/后缀过滤找回）
+cn_dicts_cell/industry_product.dict.yaml	软件代理	ruan jian dai li	10	domain	IT商业常用术语（从前缀/后缀过滤找回）
+cn_dicts_cell/industry_product.dict.yaml	医疗器械代理	yi liao qi xie dai li	10	domain	医药商业常用术语（从前缀/后缀过滤找回）
+cn_dicts_cell/industry_product.dict.yaml	二手摩托车	er shou mo tuo che	10	common	日常交易词（从前缀/后缀过滤找回）
+cn_dicts_cell/industry_product.dict.yaml	二手船舶	er shou chuan bo	10	domain	航运交易常用词（从前缀/后缀过滤找回）
+cn_dicts_cell/industry_product.dict.yaml	二手机床	er shou ji chuang	10	domain	工业设备交易词（从前缀/后缀过滤找回）
+cn_dicts_cell/industry_product.dict.yaml	二手锅炉	er shou guo lu	10	domain	工业设备交易词（从前缀/后缀过滤找回）

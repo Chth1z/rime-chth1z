@@ -8693,7 +8693,7 @@ use_preset_vocabulary: false
 而致千里	er zhi qian li	14
 迩之事父	er zhi shi fu	8
 二肿	er zhong	0
-耳著明月珰	er zhu ming yue dang	0
+耳著明月珰	er zhuo ming yue dang	0
 二子乘舟	er zi cheng zhou	4
 而子证之	er zi zheng zhi	0
 而卒莫消长也	er zu mo xiao zhang ye	11
@@ -17956,7 +17956,7 @@ use_preset_vocabulary: false
 夜吟应讶玉绳低	ye yin ying ya yu sheng di	0
 野营万里无城郭	ye ying wan li wu cheng guo	0
 野有蔓草	ye you man cao	65
-野有死麇	ye you si qun	21
+野有死麇	ye you si jun	21
 夜雨翦春韭	ye yu jian chun jiu	1
 野语有之曰	ye yu you zhi yue	0
 叶元良	ye yuan liang	0
@@ -20956,7 +20956,7 @@ use_preset_vocabulary: false
 女得人焉耳乎	nv de ren yan er hu	0
 女弗能救与	nv fu neng jiu yu	0
 女为君子儒	nv wei jun zi ru	1
-女为周南召南矣乎	nv wei zhou nan shao nan yi hu	0
+女为周南召南矣乎	ru wei zhou nan shao nan yi hu	0
 女闻六言六蔽矣乎	nv wen liu yan liu bi yi hu	0
 女奚不曰	nv xi bu yue	0
 女以予为多学而识之者与	nv yi yu wei duo xue er shi zhi zhe yu	0
@@ -22950,7 +22950,7 @@ use_preset_vocabulary: false
 此三者以为文不足	ci san zhe yi wei wen bu zu	3
 此神龟也	ci shen gui ye	0
 此身行作稽山土	ci shen xing zuo ji shan tu	0
-粢盛不洁	zi sheng bu jie	0
+粢盛不洁	zi cheng bu jie	0
 此事不系于职司	ci shi bu ji yu zhi si	0
 此时画阁垂杨岸	ci shi hua ge chui yang an	0
 此失其常然也	ci shi qi chang ran ye	0
@@ -23353,7 +23353,7 @@ use_preset_vocabulary: false
 地之自厚	di zhi zi hou	0
 弟子何异于予	di zi he yi yu yu	0
 弟子勉之	di zi mian zhi	0
-弟子齐宿而后敢言	di zi qi su er hou gan yan	0
+弟子齐宿而后敢言	di zi zhai su er hou gan yan	0
 弟子问于仲尼曰	di zi wen yu zhong ni yue	0
 弟子问于庄子曰	di zi wen yu zhuang zi yue	1
 弟子问曰	di zi wen yue	0
@@ -23952,10 +23952,10 @@ use_preset_vocabulary: false
 而子为我愿之乎	er zi wei wo yuan zhi hu	0
 而自以为得	er zi yi wei de	0
 而子悦之	er zi yue zhi	0
-儿子终日嗥而嗌不嗄	er zi zhong ri hao er ai bu sha	0
+儿子终日嗥而嗌不嗄	er zi zhong ri hao er yi bu sha	0
 而阻力猝来	er zu li cu lai	0
 而卒诎之以非也	er zu qu zhi yi fei ye	0
-发乘矢而后反	fa cheng shi er hou fan	0
+发乘矢而后反	fa sheng shi er hou fan	0
 发动如天地者乎	fa dong ru tian di zhe hu	0
 法而不廛	fa er bu chan	0
 发乎天光者	fa hu tian guang zhe	0
@@ -25249,7 +25249,7 @@ use_preset_vocabulary: false
 红影湿幽窗	hong ying shi you chuang	0
 红妆白日鲜	hong zhuang bai ri xian	0
 后必有灾	hou bi you zai	0
-后车数十承	hou che shu shi cheng	0
+后车数十乘	hou che shu shi sheng	0
 后刺史臣荣	hou ci shi chen rong	3
 侯得一以为天下正	hou de yi yi wei tian xia zheng	0
 侯服于周	hou fu yu zhou	0
@@ -25267,7 +25267,7 @@ use_preset_vocabulary: false
 后世之师	hou shi zhi shi	1
 后死者不得与于斯文也	hou si zhe bu de yu yu si wen ye	0
 侯王无以正	hou wang wu yi zheng	0
-后以大夫	hou yi dai fu	0
+后以大夫	hou yi da fu	0
 后有韦讽前支盾	hou you wei feng qian zhi dun	0
 侯于周服	hou yu zhou fu	0
 忽傍犀奁见翠翘	hu bang xi lian jian cui qiao	0
@@ -29212,8 +29212,8 @@ use_preset_vocabulary: false
 使物自喜	shi wu zi xi	0
 事奚足遗弃而生奚足遗	shi xi zu yi qi er sheng xi zu yi	0
 是下与上同德	shi xia yu shang tong de	0
-使先觉觉后觉	shi xian jiao jiao hou jue	0
-使先觉觉后觉也	shi xian jiao jiao hou jue ye	0
+使先觉觉后觉	shi xian jue jue hou jue	0
+使先觉觉后觉也	shi xian jue jue hou jue ye	0
 使先知觉后知	shi xian zhi jue hou zhi	0
 是相于疵也	shi xiang yu ci ye	0
 是相于技也	shi xiang yu ji ye	0
@@ -31092,7 +31092,7 @@ use_preset_vocabulary: false
 无一而行	wu yi er xing	0
 无以反其性情而复其初	wu yi fan qi xing qing er fu qi chu	0
 吾以夫子为天地	wu yi fu zi wei tian di	0
-无以供粢盛也	wu yi gong zi sheng ye	0
+无以供粢盛也	wu yi gong zi cheng ye	0
 无以供牺牲也	wu yi gong xi sheng ye	0
 无以好恶内伤其身	wu yi hao wu nei shang qi shen	0
 吾亦既许汝矣	wu yi ji xu ru yi	1
@@ -34064,10 +34064,10 @@ use_preset_vocabulary: false
 诸侯吊之	zhu hou diao zhi	0
 诸侯多谋伐寡人者	zhu hou duo mou fa gua ren zhe	1
 诸侯恶其害己也	zhu hou e qi hai ji ye	0
-诸侯耕助以供粢盛	zhu hou geng zhu yi gong zi sheng	0
+诸侯耕助以供粢盛	zhu hou geng zhu yi gong zi cheng	0
 诸侯剑佩鸣相磨	zhu hou jian pei ming xiang mo	0
 诸侯将谋救燕	zhu hou jiang mou jiu yan	1
-诸侯能荐人於天子	zhu hou neng jian ren yu tian zi	0
+诸侯能荐人于天子	zhu hou neng jian ren yu tian zi	0
 诸侯失国而后托于诸侯	zhu hou shi guo er hou tuo yu zhu hou	0
 诸侯虽有善其辞命而至者	zhu hou sui you shan qi ci ming er zhi zhe	0
 诸侯有行文王之政者	zhu hou you xing wen wang zhi zheng zhe	0
@@ -35572,3 +35572,4 @@ use_preset_vocabulary: false
 蛮触之争	man chu zhi zheng	80
 朝菌蟪蛄	zhao jun hui gu	80
 鹏游蝶梦	peng you die meng	80
+王弼注	wang bi zhu	41

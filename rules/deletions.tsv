@@ -1,19 +1,15 @@
 # target_file	word	py	reason
 # 精确删除规则（py=* 匹配目标文件中该词全部读音；严禁硬删 .gram 粘连短语）
-cn_dicts/8105.dict.yaml	薁	ao	R2清理8105错音
 cn_dicts/base.dict.yaml	一笔勾消	*	R1清理错字或噪声词
 cn_dicts/base.dict.yaml	万到	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	上窜下跳	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	下了肚	xia liao du	R2基础词库读音修正
-cn_dicts/base.dict.yaml	下调	xia diao	R1基础词库读音修正
 cn_dicts/base.dict.yaml	下调到	xia diao dao	R1基础词库读音修正
 cn_dicts/base.dict.yaml	不嚼	bu jue	R2基础词库读音修正
 cn_dicts/base.dict.yaml	不完	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	不得	bu dei	R1基础词库读音修正
 cn_dicts/base.dict.yaml	不得了	bu de le	R1基础词库读音修正
-cn_dicts/base.dict.yaml	不熟	bu shou	R2基础词库读音修正
 cn_dicts/base.dict.yaml	东奥会	*	R2清理错字或噪声词
-cn_dicts/base.dict.yaml	个月	*	R1清理错字或噪声词
 cn_dicts/base.dict.yaml	举办地	ju ban de	R1基础词库读音修正
 cn_dicts/base.dict.yaml	也得到	ye dei dao	R1基础词库读音修正
 cn_dicts/base.dict.yaml	书声朗朗	*	R1清理错字或噪声词
@@ -44,7 +40,6 @@ cn_dicts/base.dict.yaml	你得到	ni dei dao	R1基础词库读音修正
 cn_dicts/base.dict.yaml	供给	gong gei	R1基础词库读音修正
 cn_dicts/base.dict.yaml	充电装	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	关卡	guan ka	R1基础词库读音修正
-cn_dicts/base.dict.yaml	刺激素	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	包涵着	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	化学价	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	单薄	dan bao	R1基础词库读音修正
@@ -53,7 +48,6 @@ cn_dicts/base.dict.yaml	卡脖子	ka bo zi	R1基础词库读音修正
 cn_dicts/base.dict.yaml	即早	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	变的	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	可得到	ke dei dao	R1基础词库读音修正
-cn_dicts/base.dict.yaml	号位	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	名符其实	*	R1清理错字或噪声词
 cn_dicts/base.dict.yaml	咋的	za di	R1基础词库读音修正
 cn_dicts/base.dict.yaml	咖啡市	*	R2清理错字或噪声词
@@ -77,7 +71,6 @@ cn_dicts/base.dict.yaml	密钥	mi yao	R2基础词库读音修正
 cn_dicts/base.dict.yaml	对证下药	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	寻问	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	就得到	jiu dei dao	R1基础词库读音修正
-cn_dicts/base.dict.yaml	岁时	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	已来	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	库兹涅	*	R1清理错字或噪声词
 cn_dicts/base.dict.yaml	很拉跨	*	R1清理错字或噪声词
@@ -87,7 +80,6 @@ cn_dicts/base.dict.yaml	得好	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	得就	dei jiu	R1基础词库读音修正
 cn_dicts/base.dict.yaml	得非常	dei fei chang	R1基础词库读音修正
 cn_dicts/base.dict.yaml	心金魂	*	R1清理错字或噪声词
-cn_dicts/base.dict.yaml	怎么着	zen me zhe	R2基础词库读音修正
 cn_dicts/base.dict.yaml	怎的	zen di	R1基础词库读音修正
 cn_dicts/base.dict.yaml	总得来说	*	R1清理错字或噪声词
 cn_dicts/base.dict.yaml	懂得都懂	*	R2清理错字或噪声词
@@ -103,20 +95,17 @@ cn_dicts/base.dict.yaml	无招胜	*	R1清理错字或噪声词
 cn_dicts/base.dict.yaml	既又	*	R1清理错字或噪声词
 cn_dicts/base.dict.yaml	日至	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	日起	*	R2清理错字或噪声词
-cn_dicts/base.dict.yaml	星人	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	是我太	*	R1清理错字或噪声词
 cn_dicts/base.dict.yaml	有涨有落	you zhang you lao	R2基础词库读音修正
 cn_dicts/base.dict.yaml	有点象	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	检查官	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	正儿巴经	*	R2清理错字或噪声词
-cn_dicts/base.dict.yaml	毛人风	*	R1清理错字或噪声词
 cn_dicts/base.dict.yaml	泊松分布	po song fen bu	R1基础词库读音修正
 cn_dicts/base.dict.yaml	流血	liu xie	R2基础词库读音修正
 cn_dicts/base.dict.yaml	消弥	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	深藏不露	shen cang bu lou	R1基础词库读音修正
 cn_dicts/base.dict.yaml	渐渐的	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	游说	you shuo	R1基础词库读音修正
-cn_dicts/base.dict.yaml	熟了	shou le	R2基础词库读音修正
 cn_dicts/base.dict.yaml	熟女	shou nv	R2基础词库读音修正
 cn_dicts/base.dict.yaml	熟知	shou zhi	R2基础词库读音修正
 cn_dicts/base.dict.yaml	熟石灰	shou shi hui	R2基础词库读音修正
@@ -159,7 +148,6 @@ cn_dicts/base.dict.yaml	衣裳	yi chang	R2基础词库读音修正
 cn_dicts/base.dict.yaml	补给我	bu ji wo	R2基础词库读音修正
 cn_dicts/base.dict.yaml	装模做样	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	裸露	luo lou	R1基础词库读音修正
-cn_dicts/base.dict.yaml	解铃还须系铃人	jie ling hai xu xi ling ren	R1基础词库读音修正
 cn_dicts/base.dict.yaml	讲诉	*	R1清理错字或噪声词
 cn_dicts/base.dict.yaml	调不通	diao bu tong	R2基础词库读音修正
 cn_dicts/base.dict.yaml	调优	diao you	R2基础词库读音修正
@@ -172,7 +160,6 @@ cn_dicts/base.dict.yaml	过敏源	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	还不起	hai bu qi	R1基础词库读音修正
 cn_dicts/base.dict.yaml	还得了	hai de le	R1基础词库读音修正
 cn_dicts/base.dict.yaml	还贷了	hai dai le	R2基础词库读音修正
-cn_dicts/base.dict.yaml	道不是	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	那怕	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	那怕是	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	锐不可挡	*	R1清理错字或噪声词
@@ -207,24 +194,21 @@ cn_dicts/corrections.dict.yaml	掺和	can huo	R1/R2清理低文化误读或错�
 cn_dicts/corrections.dict.yaml	施瓦辛格	shi wa xing ge	R1/R2清理低文化误读或错误纠错项
 cn_dicts/corrections.dict.yaml	施瓦辛格	si wa xin ge	R1/R2清理低文化误读或错误纠错项
 cn_dicts/corrections.dict.yaml	曾经	ceng jin	R1/R2清理低文化误读或错误纠错项
-cn_dicts/corrections.dict.yaml	柯伊伯带	ke yi bai dai	R1/R2清理低文化误读或错误纠错项
 cn_dicts/corrections.dict.yaml	歇斯底里	jie si di li	R1/R2清理低文化误读或错误纠错项
 cn_dicts/corrections.dict.yaml	源远流长	yuan yuan liu zhang	R1/R2清理低文化误读或错误纠错项
 cn_dicts/corrections.dict.yaml	烦不胜烦	fan bu shen fan	R1/R2清理低文化误读或错误纠错项
 cn_dicts/corrections.dict.yaml	玛格丽特	ma jia lei te	R1/R2清理低文化误读或错误纠错项
-cn_dicts/corrections.dict.yaml	胆战心惊	dan chan xin jing	R1/R2清理低文化误读或错误纠错项
 cn_dicts/corrections.dict.yaml	自上而下	zhi shang er xia	R1/R2清理低文化误读或错误纠错项
 cn_dicts/corrections.dict.yaml	艾宾浩斯	ai bin hao sen	R1/R2清理低文化误读或错误纠错项
 cn_dicts/corrections.dict.yaml	血脉贲张	xue mai pen zhang	R1/R2清理低文化误读或错误纠错项
 cn_dicts/corrections.dict.yaml	迫不得已	po bu de ji	R1/R2清理低文化误读或错误纠错项
-cn_dicts/corrections.dict.yaml	那个	nei ge	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	那个	nei ge	上游误注为错字“内(那na)个”，实为现汉第7版口语合法读音 nèi（已改由主词库收录）
 cn_dicts/corrections.dict.yaml	阈值	fa zhi	R1/R2清理低文化误读或错误纠错项
 cn_dicts/corrections.dict.yaml	防不胜防	fang bu shen fang	R1/R2清理低文化误读或错误纠错项
 cn_dicts/corrections.dict.yaml	非常	hui chang	R1/R2清理低文化误读或错误纠错项
 cn_dicts/ext.dict.yaml	一一一一	*	R2清理错字或噪声词
 cn_dicts/ext.dict.yaml	一个大	*	R1清理错字或噪声词
 cn_dicts/ext.dict.yaml	一个好	*	R1清理错字或噪声词
-cn_dicts/ext.dict.yaml	一日之长	yi ri zhi chang	R2扩展词库读音修正
 cn_dicts/ext.dict.yaml	万以上	*	R1清理错字或噪声词
 cn_dicts/ext.dict.yaml	万出头	*	R2清理错字或噪声词
 cn_dicts/ext.dict.yaml	万左右	*	R1清理错字或噪声词
@@ -298,7 +282,6 @@ cn_dicts/ext.dict.yaml	土尔其	*	R2清理错字或噪声词
 cn_dicts/ext.dict.yaml	在这一	*	R1清理错字或噪声词
 cn_dicts/ext.dict.yaml	块左右	*	R2清理错字或噪声词
 cn_dicts/ext.dict.yaml	块钱左右	*	R2清理错字或噪声词
-cn_dicts/ext.dict.yaml	型糖尿病	*	R1清理错字或噪声词
 cn_dicts/ext.dict.yaml	增殖税	*	R2清理错字或噪声词
 cn_dicts/ext.dict.yaml	墨守陈规	*	R1清理错字或噪声词
 cn_dicts/ext.dict.yaml	多分钟	*	R2清理错字或噪声词
@@ -432,7 +415,6 @@ cn_dicts/ext.dict.yaml	鹿晗发	*	R1清理错字或噪声词
 cn_dicts/ext.dict.yaml	黑斯廷	*	R1清理错字或噪声词
 cn_dicts/ext.dict.yaml	黑耀石	*	R1清理错字或噪声词
 cn_dicts/ext.dict.yaml	齐恒公	*	R1清理错字或噪声词
-cn_dicts/others.dict.yaml	两个曰	*	R1清理错字或碎片
 cn_dicts/others.dict.yaml	二刺	*	R1清理错字或碎片
 cn_dicts/others.dict.yaml	分裤	*	R1清理错字或碎片
 cn_dicts/others.dict.yaml	原贴	*	R1清理错字或碎片
@@ -712,7 +694,6 @@ cn_dicts_cell/exthot.dict.yaml	长相思断更	*	R1清理热词噪声
 cn_dicts_cell/exthot.dict.yaml	阿黛尔采访	*	R1清理热词噪声
 cn_dicts_cell/exthot.dict.yaml	陈泽抽奖	*	R1清理热词噪声
 cn_dicts_cell/exthot.dict.yaml	降的	*	R1清理热词噪声
-cn_dicts_cell/exthot.dict.yaml	雌小鬼	*	R1清理热词噪声
 cn_dicts_cell/exthot.dict.yaml	霸王茶姬口令	*	R1清理热词噪声
 cn_dicts_cell/exthot.dict.yaml	香缇莫唱错词	*	R1清理热词噪声
 cn_dicts_cell/exthot.dict.yaml	鸡哔你	*	R1清理热词噪声
@@ -777,7 +758,6 @@ cn_dicts_cell/geography.dict.yaml	勘察加火	*	R1清理地理噪声词
 cn_dicts_cell/geography.dict.yaml	叙利至沙洛呐	*	R1清理地理噪声词
 cn_dicts_cell/geography.dict.yaml	地学知识介绍牌	*	R1清理地理噪声词
 cn_dicts_cell/geography.dict.yaml	地形要素划分标准及分值表	*	R1清理地理噪声词
-cn_dicts_cell/geography.dict.yaml	大陆车阀说	*	R1清理地理噪声词
 cn_dicts_cell/geography.dict.yaml	形谷	*	R1清理地理噪声词
 cn_dicts_cell/geography.dict.yaml	有方廷斯	*	R1清理地理噪声词
 cn_dicts_cell/geography.dict.yaml	霍拉圣巴拉巴	*	R1清理地理噪声词
@@ -794,7 +774,6 @@ cn_dicts_cell/history.dict.yaml	田辟彊	tian bi jiang	R1/R2历史词库读音�
 cn_dicts_cell/history.dict.yaml	秃发偄檀	*	R1/R2清理历史错词
 cn_dicts_cell/history.dict.yaml	肯能	*	R1/R2清理历史错词
 cn_dicts_cell/history.dict.yaml	胤禵	yin zhi	R1/R2历史词库读音修正
-cn_dicts_cell/history.dict.yaml	范睢	*	R1/R2清理历史错词
 cn_dicts_cell/history.dict.yaml	许诸	*	R1/R2清理历史错词
 cn_dicts_cell/history.dict.yaml	通证	*	R1/R2清理历史错词
 cn_dicts_cell/history.dict.yaml	重华	zhong hua	R1/R2历史词库读音修正
@@ -990,7 +969,6 @@ cn_dicts_cell/medication.dict.yaml	天行赤眼暴翳病	tian hang chi yan bao y
 cn_dicts_cell/medication.dict.yaml	天行赤眼病	tian hang chi yan bing	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	姜汤调服止嗽频	jiang tang diao fu zhi sou pin	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	实者枳壳易人参	shi zhe zhi ke yi ren can	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	尅伐	*	R1/R2清理医药噪声词
 cn_dicts_cell/medication.dict.yaml	巨阙俞	ju que yu	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	干姜甘草与人参	gan jiang gan cao yu ren can	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	心俞穴	xin yu xue	R1清理医药重复错音行
@@ -1202,11 +1180,8 @@ cn_dicts_cell/idiom.dict.yaml	遣将徵兵	qian jiang zheng bing	繁体“徵”
 cn_dicts_cell/idiom.dict.yaml	选妓徵歌	xuan ji zheng ge	繁体“徵”重复项，idiom.dict.yaml 已有简体“选妓征歌”
 cn_dicts_cell/idiom.dict.yaml	选色徵歌	xuan se zheng ge	繁体“徵”重复项，idiom.dict.yaml 已有简体“选色征歌”
 cn_dicts_cell/idiom.dict.yaml	选舞徵歌	xuan wu zheng ge	繁体“徵”重复项，idiom.dict.yaml 已有简体“选舞征歌”
-cn_dicts_cell/shulihua.dict.yaml	磺化酞箐钴	huang hua tai jing gu	E2错别字（正字为“磺化酞菁钴”，同库其余15条均作“酞菁 tai jing”）
-cn_dicts_cell/medication.dict.yaml	石胡莩	shi hu piao	E2错别字（正字为菊科中药“石胡荽 shí hú suī”/鹅不食草）
 cn_dicts_cell/medication.dict.yaml	嗄日迪五味丸	a ri di wu wei wan	OCR错别字，同库 L37049 已有正词“嘎日迪五味丸 ga ri di wu wei wan”
 cn_dicts_cell/medication.dict.yaml	胲下淋巴结	gai xia lin ba jie	E2错别字，同库 L72870 已有正词“颏下淋巴结 ke xia lin ba jie”
-cn_dicts_cell/medication.dict.yaml	胲下淋巴结肿大	gai xia lin ba jie zhong da	E2错别字（正词为“颏下淋巴结肿大”）
 cn_dicts_cell/game.dict.yaml	魏征徵	wei zheng zheng	游戏语料抓取乱码/重字（魏征+徵；base 已有魏征）
 cn_dicts_cell/game.dict.yaml	阮徵	ruan zheng	繁体重复项，同文件 L107879 紧邻处已有“阮征 ruan zheng 0”
 cn_dicts_cell/game.dict.yaml	叚装	jia zhuang	游戏时装词表异体错字（base 已有“假装 jia zhuang 3987”）
@@ -1268,7 +1243,6 @@ cn_dicts_cell/history.dict.yaml	衤曳衤散	yi ye yi san	Broken split-char for 
 cn_dicts_cell/history.dict.yaml	郭図	guo tu	Trad/JP/variant: 図->图; simplified already in history.dict.yaml
 cn_dicts_cell/history.dict.yaml	阚沢	kan ze	Trad/JP/variant: 沢->泽; simplified already in history.dict.yaml
 cn_dicts_cell/history.dict.yaml	楽林	le lin	Corrupted Koei JP Shinjitai entry (楽 for 乐; likely corrupted 乐綝)
-cn_dicts_cell/history.dict.yaml	淩县	ling xian	Variant/typo 淩县 for 陵县; exact (陵县, ling xian) already in base.dict.yaml
 cn_dicts_cell/history.dict.yaml	母丘倹	mu qiu jian	JP Shinjitai 倹 + typo 母 for 毌 (毌丘俭 exists in composite)
 cn_dicts_cell/history.dict.yaml	唐王朱聿钅粤	tang wang zhu yu jin yue	Broken split-char 钅粤 for 𨱇
 cn_dicts_cell/history.dict.yaml	王経	wang jing	Trad/JP/variant: 経->经; simplified already in base.dict.yaml
@@ -1472,7 +1446,6 @@ cn_dicts_cell/shulihua.dict.yaml	箊酰胺	yu xian an	OCR typo 箊(yu) for 烟/�
 cn_dicts_cell/shulihua.dict.yaml	镀鈀氧化铝	du ba yang hua lv	Trad/JP/variant: 鈀->钯; simplified already in shulihua.dict.yaml
 cn_dicts_cell/shulihua.dict.yaml	氧氯化鋯	yang lv hua gao	Trad/JP/variant: 鋯->锆; simplified already in shulihua.dict.yaml
 cn_dicts_cell/sport.dict.yaml	摺叠	zhe die	Trad/JP/variant: 摺->折; simplified already in base.dict.yaml
-cn_dicts/base.dict.yaml	调景岭	diao jing ling	港铁站名“调景岭”规范读 tiáo jǐng lǐng，clean-dicts.py L1321 已修 place 漏修 base（注：place 权重为 0，亦可 phonetics_fix base）（港铁普通话标准/民政地名(L2)）
 cn_dicts/base.dict.yaml	石厦	shi sha	深圳地铁 3/7 号线“石厦”官方标准读 shí xià，clean-dicts.py L1339 已修 place(w=6) 漏删 base（深圳地铁官方播报/民政地名(L2)）
 cn_dicts/base.dict.yaml	大差市	da cha shi	西安地铁“大差市”官方标准读 dà chāi shì，clean-dicts.py L1325 已修 place(w=1) 漏删 base（西安地铁官方播报/民政地名(L2)）
 cn_dicts_cell/history.dict.yaml	句章	ju zhang	古县名“句章”（今宁波）规范读 gōu zhāng，clean-dicts.py L1563 已修 geography(w=10) 漏修 history（辞海/中国古今地名大词典(L2/L3)）
@@ -1522,12 +1495,6 @@ cn_dicts_cell/medication.dict.yaml	重身	zhong shen	《素问》中医术语“
 cn_dicts_cell/shulihua.dict.yaml	澄清度标准	deng qing du biao zhun	《中国药典》及分析化学“澄清度”（清澈度）规范读 chéng qīng dù；同文件已有 cheng qing du biao zhun（现汉第7版/中国药典(L1/L2)）
 cn_dicts/base.dict.yaml	喔哟	wo yo	《现汉》7版叹词“喔哟”规范读 ō yō（wō 仅用于“喔喔”鸡鸣，R2 L352 已修 wo you -> o yo）；同文件已有 o yo（现汉第7版(L1)）
 cn_dicts/others.dict.yaml	我勒个	wo lei ge	口语“我勒个”（源自“我勒个去”）读 wǒ lè ge，clean-dicts.py L1005 已补 wo le ge 漏删旧 wo lei ge（现汉第7版(L1)）
-cn_dicts_cell/composite.dict.yaml	谁是谁的	shui shi shei de	同词内“谁”前 shui 后 shei 混合残缺克隆（同 clean-dicts.py L199 已修“谁谁 shei shui”）；可删或改全 shui（拼音一致性规范）
-cn_dicts/ext.dict.yaml	没有谁对谁错	mei you shui dui shei cuo	同词内“谁”前 shui 后 shei 混合残缺克隆（注：clean_r2_rules.py L1128 有旧降权条目需联动）；可删或改全 shui（拼音一致性规范）
-cn_dicts/ext.dict.yaml	谁也说服不了谁	shui ye shuo fu bu liao shei	同词内“谁”前 shui 后 shei 混合残缺克隆；可删或改全 shui（拼音一致性规范）
-cn_dicts/ext.dict.yaml	谁都不服谁	shui dou bu fu shei	同词内“谁”前 shui 后 shei 混合残缺克隆；可删或改全 shui（拼音一致性规范）
-cn_dicts/ext.dict.yaml	谁轻谁重	shui qing shei zhong	同词内“谁”前 shui 后 shei 混合残缺克隆；可删或改全 shui（拼音一致性规范）
-cn_dicts/ext.dict.yaml	没有谁离不开谁	mei you shui li bu kai shei	同词内“谁”前 shui 后 shei 混合残缺克隆；可删或改全 shui（拼音一致性规范）
 cn_dicts/ext.dict.yaml	霸气外露	ba qi wai lou	“外露”规范读 wài lù（clean-dicts.py L264 已删 base 的“外露 wai lou”）；同文件已有 ba qi wai lu（现汉第7版(L1)）
 cn_dicts/base.dict.yaml	微露	wei lou	书面词“微露”仅读 wēi lù；同文件已有 wei lu（现汉第7版(L1)）
 cn_dicts/base.dict.yaml	半露	ban lou	书面词“半露”仅读 bàn lù；同文件已有 ban lu（现汉第7版(L1)）
@@ -1568,11 +1535,8 @@ cn_dicts/ext.dict.yaml	薄厚程度	bo hou cheng du	《现汉》7版“薄厚”
 cn_dicts/ext.dict.yaml	印度尼西亚爪哇	yin du ni xi ya zhua wa	地名“爪哇”规范读 zhǎo wā（clean-dicts.py L258 已删 base 的“爪哇 zhua wa”）；同文件已有 zhao wa（现汉第7版/民政地名(L1/L2)）
 cn_dicts/ext.dict.yaml	东爪哇省	dong zhua wa sheng	地名“爪哇”规范读 zhǎo wā；同文件已有 dong zhao wa sheng（现汉第7版/民政地名(L1/L2)）
 cn_dicts_cell/composite.dict.yaml	茶熏八爪鱼	cha xun ba zhao yu	“八爪鱼”规范读 bā zhuǎ yú（clean-dicts.py L578 已修“八爪鱼 ba zhao yu -> ba zhua yu”）；food 已有 ba zhua yu（现汉第7版(L1)）
-cn_dicts/base.dict.yaml	这么着	zhe me zhe	《现汉》7版“这么着”规范读 zhè me zhāo（R2 L393 已删 base 的“怎么着 zen me zhe”）；同文件已有 zhe me zhao（现汉第7版(L1)）
 cn_dicts/ext.dict.yaml	这么着吧	zhe me zhe ba	同上，“这么着”规范读 zhè me zhāo；同文件已有 zhe me zhao ba（现汉第7版(L1)）
 cn_dicts/ext.dict.yaml	先这么着	xian zhe me zhe	同上，“这么着”规范读 zhè me zhāo；同文件已有 xian zhe me zhao（现汉第7版(L1)）
-cn_dicts/ext.dict.yaml	怎么着吧	zen me zhe ba	同上，“怎么着”规范读 zěn me zhāo；同文件已有 zen me zhao ba（现汉第7版(L1)）
-cn_dicts/ext.dict.yaml	怎么着都行	zen me zhe dou xing	同上，“怎么着”规范读 zěn me zhāo；同文件已有 zen me zhao dou xing（现汉第7版(L1)）
 cn_dicts/base.dict.yaml	剥花生	bo hua sheng	口语单用具体动作“剥花生”仅读 bāo huā sheng，绝无 bō 读法；同文件已有 bao hua sheng（现汉第7版(L1)）
 cn_dicts/base.dict.yaml	剥得	bo de	口语动补“剥得”仅读 bāo de；同文件已有 bao de（现汉第7版(L1)）
 cn_dicts/ext.dict.yaml	剥得精光	bo de jing guang	口语“剥得精光”仅读 bāo de jīng guāng；同文件已有 bao de jing guang（现汉第7版(L1)）
@@ -1594,7 +1558,6 @@ cn_dicts/base.dict.yaml	血压	xie ya	书面/医学复音词中「血」规范�
 cn_dicts/base.dict.yaml	血液	xie ye	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	心血	xin xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	鲜血	xian xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
-cn_dicts/base.dict.yaml	瘀血	yu xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	活血	huo xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	血案	xie an	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	血书	xie shu	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
@@ -1603,12 +1566,9 @@ cn_dicts/base.dict.yaml	血亲	xie qin	书面/医学复音词中「血」规范�
 cn_dicts/base.dict.yaml	气血	qi xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	血海	xie hai	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	血肉	xie rou	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
-cn_dicts/base.dict.yaml	输血	shu xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	溶血	rong xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	铁血	tie xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
-cn_dicts/base.dict.yaml	献血	xian xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	贫血	pin xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
-cn_dicts/base.dict.yaml	止血	zhi xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	血清	xie qing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	混血	hun xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	血浆	xie jiang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
@@ -1623,7 +1583,6 @@ cn_dicts/base.dict.yaml	血泪	xie lei	书面/医学复音词中「血」规范�
 cn_dicts/base.dict.yaml	血栓	xie shuan	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	血性	xie xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	血战	xie zhan	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
-cn_dicts/base.dict.yaml	补血	bu xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	血仇	xie chou	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	血脂	xie zhi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	血气	xie qi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
@@ -1632,7 +1591,6 @@ cn_dicts/base.dict.yaml	血癌	xie ai	书面/医学复音词中「血」规范�
 cn_dicts/base.dict.yaml	碧血	bi xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	凉血	liang xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	凝血	ning xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
-cn_dicts/base.dict.yaml	淤血	yu xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	缺血	que xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	血汗	xie han	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/base.dict.yaml	败血	bai xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
@@ -1670,8 +1628,6 @@ cn_dicts/ext.dict.yaml	血糖降低	xie tang jiang di	书面/医学复音词中�
 cn_dicts/ext.dict.yaml	轻度贫血	qing du pin xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	血糖调节	xie tang tiao jie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	血液运行	xie ye yun xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
-cn_dicts/ext.dict.yaml	严重出血	yan zhong chu xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
-cn_dicts/ext.dict.yaml	包扎止血	bao za zhi xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	恶性贫血	e xing pin xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	血液浓度	xie ye nong du	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	降低血糖	jiang di xie tang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
@@ -1761,7 +1717,6 @@ cn_dicts/ext.dict.yaml	血腥地狱	xie xing di yu	书面/医学复音词中「�
 cn_dicts/ext.dict.yaml	血液传染	xie ye chuan ran	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	严重低血糖	yan zhong di xie tang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	直系血亲关系	zhi xi xie qin guan xi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
-cn_dicts/ext.dict.yaml	止血包扎	zhi xie bao za	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	补血调经	bu xie tiao jing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	出血性脑卒中	chu xie xing nao cu zhong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	德系血统	de xi xie tong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
@@ -1784,8 +1739,6 @@ cn_dicts/ext.dict.yaml	血压调节	xie ya tiao jie	书面/医学复音词中「
 cn_dicts/ext.dict.yaml	血液流动速度	xie ye liu dong su du	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	严重的高血压	yan zhong de gao xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	直系血缘关系	zhi xi xie yuan guan xi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
-cn_dicts/ext.dict.yaml	吃什么补血	chi shen me bu xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
-cn_dicts/ext.dict.yaml	阿胶补血	e jiao bu xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	混血模特	hun xie mo te	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	活血行气	huo xie xing qi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	加重高血压	jia zhong gao xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
@@ -1795,7 +1748,6 @@ cn_dicts/ext.dict.yaml	能降血压	neng jiang xie ya	书面/医学复音词中�
 cn_dicts/ext.dict.yaml	调养气血	tiao yang qi xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	血性恶露	xie xing e lu	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	增强血管弹性	zeng qiang xie guan tan xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
-cn_dicts/ext.dict.yaml	参加无偿献血	can jia wu chang xian xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	出血性膀胱炎	chu xie xing pang guang yan	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	传承血脉	chuan cheng xie mai	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	地奥心血康胶囊	di ao xin xie kang jiao nang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
@@ -1817,7 +1769,6 @@ cn_dicts/ext.dict.yaml	血液制品行业	xie ye zhi pin hang ye	书面/医学�
 cn_dicts/ext.dict.yaml	严重高血压	yan zhong gao xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	运行气血	yun xing qi xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	保持血管弹性	bao chi xie guan tan xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
-cn_dicts/ext.dict.yaml	参加献血	can jia xian xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	辅助降血脂	fu zhu jiang xie zhi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	急性缺血性脑卒中	ji xing que xie xing nao cu zhong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	降低血脂和胆固醇	jiang di xie zhi he dan gu chun	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
@@ -1838,7 +1789,6 @@ cn_dicts/ext.dict.yaml	肠降血糖素	chang jiang xie tang su	书面/医学复�
 cn_dicts/ext.dict.yaml	出血性卒中	chu xie xing cu zhong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	辅助降血压	fu zhu jiang xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	恢复血管弹性	hui fu xie guan tan xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
-cn_dicts/ext.dict.yaml	积极参与无偿献血	ji ji can yu wu chang xian xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	降低血压的功效	jiang di xie ya de gong xiao	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	降低血压和胆固醇	jiang di xie ya he dan gu chun	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
 cn_dicts/ext.dict.yaml	降血糖药物	jiang xie tang yao wu	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
@@ -1879,7 +1829,6 @@ cn_dicts_cell/composite.dict.yaml	知已知彼	zhi yi zhi bi	E2错字（正字�
 cn_dicts_cell/composite.dict.yaml	明细帐	ming xi zhang	E2错字（正字：明细账，base已有正词）
 cn_dicts_cell/composite.dict.yaml	相信自已	xiang xin zi yi	E2错字（正字：相信自己）
 cn_dicts_cell/composite.dict.yaml	自已动手	zi yi dong shou	E2错字（正字：自己动手）
-cn_dicts_cell/food.dict.yaml	高梁粟	gao liang su	E2错字（正字：高粱粟，农作物正字为粱）
 cn_dicts_cell/game.dict.yaml	帐号安全	zhang hao an quan	E2错字（正字：账号安全，现汉7规范作账）
 cn_dicts_cell/game.dict.yaml	内测帐号	nei ce zhang hao	E2错字（正字：内测账号，现汉7规范作账）
 cn_dicts_cell/game.dict.yaml	录象播放器	lu xiang bo fang qi	E2错字（正字：录像播放器，现汉7规范作录像）
@@ -1887,33 +1836,12 @@ cn_dicts_cell/game.dict.yaml	晚宴请贴	wan yan qing tie	E2错字（正字：�
 cn_dicts_cell/game.dict.yaml	封停帐号	feng ting zhang hao	E2错字（正字：封停账号，现汉7规范作账）
 cn_dicts_cell/game.dict.yaml	游戏录象	you xi lu xiang	E2错字（正字：游戏录像，现汉7规范作录像）
 cn_dicts_cell/game.dict.yaml	录象功能	lu xiang gong neng	E2错字（正字：录像功能，现汉7规范作录像）
-cn_dicts_cell/geography.dict.yaml	浮雕影象地图	fu diao ying xiang di tu	E2错字（正字：浮雕影像地图，国标GB/T 14950与现汉7规范作影像）
 cn_dicts_cell/geography.dict.yaml	卫星影象	wei xing ying xiang	E2错字（正字：卫星影像）
-cn_dicts_cell/geography.dict.yaml	影象地图	ying xiang di tu	E2错字（正字：影像地图）
 cn_dicts_cell/geography.dict.yaml	影象分辨率	ying xiang fen bian lv	E2错字（正字：影像分辨率）
-cn_dicts_cell/geography.dict.yaml	影象灰度	ying xiang hui du	E2错字（正字：影像灰度）
-cn_dicts_cell/geography.dict.yaml	影象判读	ying xiang pan du	E2错字（正字：影像判读）
 cn_dicts_cell/geography.dict.yaml	影象质量	ying xiang zhi liang	E2错字（正字：影像质量）
-cn_dicts_cell/geography.dict.yaml	正射影象地图	zheng she ying xiang di tu	E2错字（正字：正射影像地图）
 cn_dicts_cell/idiom.dict.yaml	入伏的高梁	ru fu de gao liang	E2错字（正字：入伏的高粱，歇后语指农作物高粱）
-cn_dicts_cell/medication.dict.yaml	高梁泡叶	gao liang pao ye	E2错字（正名：高粱泡叶，蔷薇科中药植物高粱泡）
-cn_dicts_cell/medication.dict.yaml	影象增强显微术	ying xiang zeng qiang xian wei shu	E2错字（正字：影像增强显微术）
 cn_dicts_cell/medication.dict.yaml	录象一体机	lu xiang yi ti ji	E2错字（正字：录像一体机，同文件已有正词）
-cn_dicts_cell/medication.dict.yaml	贲门松驰	ben men song chi	E2错字（正字：贲门松弛，弓字旁弛）
-cn_dicts_cell/medication.dict.yaml	肛门括约肌松驰	gang men kuo yue ji song chi	E2错字（正字：肛门括约肌松弛）
-cn_dicts_cell/medication.dict.yaml	骨骼肌松驰剂	gu ge ji song chi ji	E2错字（正字：骨骼肌松弛剂）
-cn_dicts_cell/medication.dict.yaml	骨热影象图	gu re ying xiang tu	E2错字（正字：骨热影像图）
-cn_dicts_cell/medication.dict.yaml	肌热影象图	ji re ying xiang tu	E2错字（正字：肌热影像图）
-cn_dicts_cell/medication.dict.yaml	睑皮肤松驰	jian pi fu song chi	E2错字（正字：睑皮肤松弛）
-cn_dicts_cell/medication.dict.yaml	结膜松驰	jie mo song chi	E2错字（正字：结膜松弛）
-cn_dicts_cell/medication.dict.yaml	脑热影象图	nao re ying xiang tu	E2错字（正字：脑热影像图）
-cn_dicts_cell/medication.dict.yaml	乳房热影象图	ru fang re ying xiang tu	E2错字（正字：乳房热影像图）
-cn_dicts_cell/medication.dict.yaml	松驰治疗	song chi zhi liao	E2错字（正字：松弛治疗）
 cn_dicts_cell/medication.dict.yaml	小长山东发渡假村	xiao chang shan dong fa du jia cun	E2错字（渡假村->度假村）且旅游地名垃圾混入医疗词库
-cn_dicts_cell/medication.dict.yaml	新生儿贲门松驰	xin sheng er ben men song chi	E2错字（正字：新生儿贲门松弛）
-cn_dicts_cell/medication.dict.yaml	血管热影象图	xue guan re ying xiang tu	E2错字（正字：血管热影像图）
-cn_dicts_cell/medication.dict.yaml	眼热影象图	yan re ying xiang tu	E2错字（正字：眼热影像图）
-cn_dicts_cell/shulihua.dict.yaml	高梁红	gao liang hong	E2错字（正字：高粱红，植物色素/农作物高粱）
 cn_dicts/base.dict.yaml	鹅鹅鹅鹅鹅	e e e e e	无意义叠字刷屏（5连叠，w=2）
 cn_dicts/base.dict.yaml	鹅鹅鹅鹅鹅鹅	e e e e e e	无意义叠字刷屏（6连叠，w=3）
 cn_dicts/base.dict.yaml	发发发发发	fa fa fa fa fa	无意义叠字刷屏（5连叠，w=1）
@@ -2079,8 +2007,8 @@ cn_dicts_cell/medication.dict.yaml	及牛胎血清和马血清	ji niu tai xue qi
 cn_dicts_cell/medication.dict.yaml	甲氧基羟基扁桃酸酸	jia yang ji qiang ji bian tao suan suan	L93753: Corrupted doubled suffix 酸酸
 cn_dicts_cell/medication.dict.yaml	氯环氧丙烷氯环氧丙烷	lv huan yang bing wan lv huan yang bing wan	L100516: Exact X+X duplicate concatenation
 cn_dicts_cell/medication.dict.yaml	毛发号搽剂厦门市一	mao fa hao cha ji xia men shi yi	L101067: Digit-stripped hospital formula (毛发1号搽剂)
-cn_dicts_cell/medication.dict.yaml	粘膜溃疡脂南平市皮	nian mo kui yang zhi nan ping shi pi	L102492: Garbled typo 脂 for 散/膏 + truncated 市皮
-cn_dicts_cell/medication.dict.yaml	粘膜溃疡脂乳膏市皮	nian mo kui yang zhi ru gao shi pi	L102493: Garbled typo 脂乳膏 + truncated 市皮
+cn_dicts_cell/medication.dict.yaml	粘膜溃疡脂南平市皮	nian mo kui yang zhi nan ping shi pi	截断医院制剂名称（“南平市皮”系“南平市皮肤病医院”截断）
+cn_dicts_cell/medication.dict.yaml	粘膜溃疡脂乳膏市皮	nian mo kui yang zhi ru gao shi pi	截断医院制剂名称（尾部“市皮”系医院名截断）
 cn_dicts_cell/medication.dict.yaml	乳膏基质号龙岩市一	ru gao ji zhi hao long yan shi yi	L106063: Digit-stripped hospital formula (基质1号)
 cn_dicts_cell/medication.dict.yaml	未成熟儿孕期小于整周	wei cheng shu er yun qi xiao yu zheng zhou	L110783: Digit-stripped ICD-10 term (小于28/37整周)
 cn_dicts_cell/medication.dict.yaml	型大疱性表皮松解症	xing da pao xing biao pi song jie zheng	L113506: Prefix Roman-numeral-stripped term starting with 型
@@ -2248,3 +2176,40 @@ cn_dicts_cell/composite.dict.yaml	代金卷	dai jin juan	E2错字(正词：代�
 cn_dicts_cell/composite.dict.yaml	入场卷	ru chang juan	E2错字(正词：入场券，corrections已有纠偏)
 cn_dicts_cell/game.dict.yaml	点卷	dian juan	E2错字(正词：点券，corrections已有纠偏)
 cn_dicts_cell/game.dict.yaml	柏咚乄	*	Mars-text/noise with Japanese shime 乄
+cn_dicts/base.dict.yaml	解铃还须系铃人	jie ling hai xu ji ling ren	现汉第7版规范读 xì（已恢复 xi ling ren 并于 corrections 收录 B 类纠错）
+cn_dicts/base.dict.yaml	卡住	ka zhu	现汉第7版规范读 qiǎ zhù（保留 qia zhu 并于 corrections 收录 B 类纠错）
+cn_dicts/others.dict.yaml	郭明錤	guo ming qi	现汉第7版及两岸辞典均读 jī，由 corrections C 类纠错承载
+cn_dicts_cell/shulihua.dict.yaml	粘合剂	*	现汉第7版及全国科技名词委规范为“黏合剂”（base 已收录，zhan he ji 由 corrections 引导）
+cn_dicts_cell/animal.dict.yaml	挪威糜提	*	无此犬种（规范犬种为挪威猎麋犬），上游乱码词条
+cn_dicts_cell/animal.dict.yaml	挪威糜缇	*	无此犬种（规范犬种为挪威猎麋犬），上游乱码词条
+cn_dicts_cell/history.dict.yaml	汪户濩	*	无此历史人名，上游 OCR 误识噪声词条
+cn_dicts_cell/shulihua.dict.yaml	标碳烷	*	无此化合物名称，上游错词垃圾
+cn_dicts_cell/shulihua.dict.yaml	标键烷	*	无此化合物名称，上游错词垃圾
+cn_dicts/base.dict.yaml	回㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	㨃天㨃地	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/base.dict.yaml	没入	mei ru	现汉第7版规范读 mò rù（删除错音以免压过正词“美如”）
+cn_dicts/base.dict.yaml	只露出	zhi lou chu	现汉第7版露出读 lù chū（与已删露出 lou chu 一致，避免压过“只漏出”）
+cn_dicts/base.dict.yaml	频数	pin shuo	现汉第7版统计学术语频数读 pín shù（非 shuò）
+cn_dicts/base.dict.yaml	他穿着	ta chuan zhuo	动态助词“着”规范读 zhe（上游笛卡尔积误注 zhuo）
+cn_dicts/base.dict.yaml	你穿着	ni chuan zhuo	动态助词“着”规范读 zhe（上游笛卡尔积误注 zhuo）
+cn_dicts/base.dict.yaml	我穿着	wo chuan zhuo	动态助词“着”规范读 zhe（上游笛卡尔积误注 zhuo）
+cn_dicts/base.dict.yaml	睡着觉	shui zhao jiao	动态助词“着”规范读 zhe（上游误注 zhao）
+cn_dicts/base.dict.yaml	上调至	shang diao zhi	价格/利率“上调至”规范读 shàng tiáo zhì
+cn_dicts/base.dict.yaml	圆熟	yuan shou	现汉第7版复音书面词“圆熟”读 yuán shú（与已删成熟/熟练一致）
+cn_dicts/ext.dict.yaml	变得成熟	bian de cheng shou	现汉第7版复音词“成熟”读 chéng shú（非口语 shóu）
+cn_dicts/ext.dict.yaml	娴熟地	xian shou de	现汉第7版复音词“娴熟”读 xián shú（非口语 shóu）
+cn_dicts/ext.dict.yaml	成熟度	cheng shou du	现汉第7版复音词“成熟”读 chéng shú（非口语 shóu）
+cn_dicts/ext.dict.yaml	成熟的体系	cheng shou de ti xi	现汉第7版复音词“成熟”读 chéng shú（非口语 shóu）
+cn_dicts/ext.dict.yaml	成熟程度	cheng shou cheng du	现汉第7版复音词“成熟”读 chéng shú（非口语 shóu）
+cn_dicts/ext.dict.yaml	成熟稳重	cheng shou wen zhong	现汉第7版复音词“成熟”读 chéng shú（非口语 shóu）
+cn_dicts/ext.dict.yaml	技术成熟度	ji shu cheng shou du	现汉第7版复音词“成熟”读 chéng shú（非口语 shóu）
+cn_dicts/ext.dict.yaml	熟悉了解	shou xi liao jie	现汉第7版复音词“熟悉”读 shú xī（非口语 shóu）
+cn_dicts/ext.dict.yaml	熟悉度	shou xi du	现汉第7版复音词“熟悉”读 shú xī（非口语 shóu）
+cn_dicts/ext.dict.yaml	熟悉的地方	shou xi de di fang	现汉第7版复音词“熟悉”读 shú xī（非口语 shóu）
+cn_dicts/ext.dict.yaml	熟悉的感觉	shou xi de gan jue	现汉第7版复音词“熟悉”读 shú xī（非口语 shóu）
+cn_dicts/ext.dict.yaml	熟悉程度	shou xi cheng du	现汉第7版复音词“熟悉”读 shú xī（非口语 shóu）
+cn_dicts/ext.dict.yaml	熟练地	shou lian de	现汉第7版复音词“熟练”读 shú liàn（非口语 shóu）
+cn_dicts/ext.dict.yaml	熟练度	shou lian du	现汉第7版复音词“熟练”读 shú liàn（非口语 shóu）
+cn_dicts/ext.dict.yaml	熟练程度	shou lian cheng du	现汉第7版复音词“熟练”读 shú liàn（非口语 shóu）
+cn_dicts/ext.dict.yaml	还不熟悉	hai bu shou xi	现汉第7版复音词“熟悉”读 shú xī（非口语 shóu）
+cn_dicts/ext.dict.yaml	都熟悉	dou shou xi	现汉第7版复音词“熟悉”读 shú xī（非口语 shóu）

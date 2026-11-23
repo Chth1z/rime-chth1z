@@ -41,7 +41,6 @@ sort: by_weight
 仆街仔	pu gai zai	0
 街溜子	gai liu zi	70
 # 「錤」这个字念 ji，但是台湾媒体都会念成 qi，他的英文名 Ming-Chi Kuo 也是接近 qi
-郭明錤	guo ming qi	31
 # 这里的「镐」规范读音为 hao，补充正音与容错读音
 李昌镐	li chang hao	237
 曹世镐	cao shi hao	0
@@ -87,6 +86,7 @@ sort: by_weight
 两个明	liang ge ming	0
 两个朿	liang ge ci	0
 两个乂	liang ge yi	0
+两个曰	liang ge yue	0
 两个尸	liang ge shi	0
 两个户	liang ge hu	0
 两个而	liang ge er	0
@@ -3915,7 +3915,7 @@ sort: by_weight
 鸿蒙智行	hong meng zhi xing	0
 开谈	kai tan	0
 # 2026-11-04 新增：知乎热榜热词（医学术语「心脏压塞」、团队名「永达智诚」、院校简称「鲁艺」、常用词「多省」「疑因」「预载」，来自 zhihu_missing_2026-11-04 分词缺失词）
-心脏压塞	xin zang ya sai	0
+心脏压塞	xin zang ya se	0
 永达智诚	yong da zhi cheng	0
 鲁艺	lu yi	0
 多省	duo sheng	0

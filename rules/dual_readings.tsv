@@ -1,9 +1,14 @@
 # word	py1	w1	note1	py2	w2	note2	target_file	source
 # 说明：A 类双标准词条单点声明；引擎自动确保主词库保留双读音，并在 corrections.dict.yaml 为双方挂注释（主词库已存在读音自动 w=0）
-私钥	si yue	788	规范 sī yuè / 习惯 sī yào	si yao	788	习惯 sī yào / 规范 sī yuè	cn_dicts/base.dict.yaml	现汉第7版/全国科技名词委(L1/L2)
-公钥	gong yue	703	规范 gōng yuè / 习惯 gōng yào	gong yao	703	习惯 gōng yào / 规范 gōng yuè	cn_dicts/base.dict.yaml	现汉第7版/全国科技名词委(L1/L2)
+私钥	si yue	788	规范 sī yuè / 习惯 sī yào	si yao	300	习惯 sī yào / 规范 sī yuè	cn_dicts/base.dict.yaml	现汉第7版/全国科技名词委(L1/L2)
+公钥	gong yue	703	规范 gōng yuè / 习惯 gōng yào	gong yao	300	习惯 gōng yào / 规范 gōng yuè	cn_dicts/base.dict.yaml	现汉第7版/全国科技名词委(L1/L2)
 陈寅恪	chen yin ke	366	规范 陈寅恪(kè) / 旧读 陈寅恪(què)	chen yin que	366	旧读 陈寅恪(què) / 规范 陈寅恪(kè)	cn_dicts/base.dict.yaml	1985审音表/L3人名旧读
 甲壳	jia qiao	94	规范 jiǎ qiào / 常见 jiǎ ké	jia ke	94	常见 jiǎ ké / 规范 jiǎ qiào	cn_dicts/base.dict.yaml	现汉第7版/社会通行习惯(L1/L5)
-凤爪	feng zhao	126	规范 fèng zhǎo / 习惯 fèng zhuǎ	feng zhua	126	习惯 fèng zhuǎ / 规范 fèng zhǎo	cn_dicts/base.dict.yaml	现汉第7版/口语习惯(L1/L5)
-倒模	dao mu	36	规范 dào mú / 习惯 dào mó	dao mo	36	习惯 dào mó / 规范 dào mú	cn_dicts/base.dict.yaml	现汉第7版/行业习惯(L1/L5)
+凤爪	feng zhao	126	规范 fèng zhǎo / 习惯 fèng zhuǎ	feng zhua	126	习惯 fèng zhuǎ / 规范 fèng zhǎo	cn_dicts/base.dict.yaml	现汉第7版“爪”字义/口语习惯(L1/L5)
+倒模	dao mu	36	规范 dào mú / 习惯 dào mó	dao mo	36	习惯 dào mó / 规范 dào mú	cn_dicts/base.dict.yaml	现汉第7版“模”字义/行业习惯(L1/L5)
 珩磨	hang mo	4	规范 háng mó / 常见 héng mó	heng mo	4	常见 héng mó / 规范 háng mó	cn_dicts/base.dict.yaml	现汉第7版/机械术语(L1/L2)
+苯并芘	ben bing bi	45	规范 苯并芘(bǐ) / 习惯 苯并芘(pí)	ben bing pi	45	习惯 苯并芘(pí) / 规范 苯并芘(bǐ)	cn_dicts/base.dict.yaml	现汉第7版/全国科技名词委/台湾习惯(L1/L2/L5)
+乍暖还寒	zha nuan huan han	39	规范 乍暖还(huán)寒 / 常见 hái	zha nuan hai han	39	常见 乍暖还(hái)寒 / 规范 huán	cn_dicts/base.dict.yaml	现汉第7版/统编语文/新华成语大词典(L1/L5)
+流鼻血	liu bi xie	250	规范 liú bí xiě / 常见 liú bí xuè	liu bi xue	402	常见 liú bí xuè / 规范 liú bí xiě	cn_dicts/ext.dict.yaml	现汉第7版口语白读/书面习惯(L1/L5)
+泡椒凤爪	pao jiao feng zhao	62	规范 泡椒凤爪(zhǎo) / 习惯 zhuǎ	pao jiao feng zhua	62	习惯 泡椒凤爪(zhuǎ) / 规范 zhǎo	cn_dicts_cell/food.dict.yaml	现汉第7版“爪”字义/口语习惯(L1/L5)
+山椒凤爪	shan jiao feng zhao	200	规范 山椒凤爪(zhǎo) / 习惯 zhuǎ	shan jiao feng zhua	120	习惯 山椒凤爪(zhuǎ) / 规范 zhǎo	cn_dicts/base.dict.yaml	现汉第7版“爪”字义/口语习惯(L1/L5)

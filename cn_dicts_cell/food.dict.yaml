@@ -2680,7 +2680,6 @@ use_preset_vocabulary: false
 鸡蛋猪柳卷	ji dan zhu liu juan	0
 吉士蛋堡	ji shi dan bao	0
 金钻甜奶油	jin zuan tian nai you	0
-劲爆鸡米花	jin bao ji mi hua	9
 卡雪松露	ka xue song lu	0
 凯撒鸡肉卷	kai sa ji rou juan	0
 烤牛骨	kao niu gu	0
@@ -3525,6 +3524,7 @@ use_preset_vocabulary: false
 干炸虾枣	gan zha xia zao	1
 干炸响铃	gan zha xiang ling	1
 皋火腿	gao huo tui	1
+高粱粟	gao liang su	2
 高邮麻鸭	gao you ma ya	1
 蛤蜊黄鱼羹	ge li huang yu geng	1
 狗爪豆	gou zhao dou	2
@@ -6354,3 +6354,4 @@ use_preset_vocabulary: false
 遵义鸡蛋糕	zun yi ji dan gao	0
 遵义毛峰	zun yi mao feng	0
 沙威玛	sha wei ma	0
+泡椒凤爪	pao jiao feng zhua	62

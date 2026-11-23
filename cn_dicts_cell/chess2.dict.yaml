@@ -1251,7 +1251,6 @@ use_preset_vocabulary: false
 双敬酒	shuang jing jiu	0
 双炮过河	shuang pao guo he	5
 双弃兵	shuang qi bing	0
-双献酒杯	shuang xian jiu bei	0
 顺炮横车对直车	shun pao heng che dui zhi che	3
 顺炮直车边马对缓开车	shun pao zhi che bian ma dui huan kai che	0
 顺炮直车对横车	shun pao zhi che dui heng che	0
@@ -1432,6 +1431,28 @@ use_preset_vocabulary: false
 后车退九	hou che tui jiu	0
 前车进九	qian che jin jiu	0
 前车退九	qian che tui jiu	0
+吃子	chi zi	147
+排局	pai ju	113
+马炮	ma pao	106
+士象	shi xiang	89
+双炮	shuang pao	86
+横车	heng che	31
+控局	kong ju	20
+计时钟	ji shi zhong	15
+蹩马腿	bie ma tui	14
+河界	he jie	14
+直车	zhi che	13
+直车	zhi ju	13
+横车	heng ju	31
+投子认负	tou zi ren fu	13
+缓手	huan shou	12
+边卒	bian zu	11
+棋例	qi li	10
+底士	di shi	10
+底线防守	di xian fang shou	10
+反先	fan xian	9
+连环炮	lian huan pao	7
+自然限着	zi ran xian zhao	5
 # 象棋「车」标准 ju 读音
 车八进八	ju ba jin ba	0
 车八进二	ju ba jin er	0

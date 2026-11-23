@@ -147,8 +147,6 @@ use_preset_vocabulary: false
 牛头㹴	niu tou geng	0
 诺福㹴	nuo fu geng	0
 诺里奇㹴	nuo li qi geng	0
-挪威麋提	nuo wei mi ti	0
-挪威麋缇	nuo wei mi ti	0
 帕森拉希尔㹴	pa sen la xi er geng	0
 彭布罗克柯基犬	peng bu luo ke ke ji quan	0
 骑士查理王猎犬	qi shi cha li wang lie quan	0
@@ -189,7 +187,7 @@ use_preset_vocabulary: false
 威尔士㹴	wei er shi geng	0
 威尔斯激飞可卡长毛猎犬	wei er si ji fei ke ka chang mao lie quan	0
 威尔斯柯基犬	wei er si ke ji quan	0
-威尔斯牧畜犬	wei er si mu chu quan	0
+威尔斯牧畜犬	wei er si mu xu quan	0
 威玛猎犬	wei ma lie quan	0
 威斯拉犬	wei si la quan	0
 沃尔皮诺	wo er pi nuo	0
@@ -238,9 +236,9 @@ use_preset_vocabulary: false
 淡雅彩虹	dan ya cai hong	0
 非黄脸蓝系	fei huang lian lan xi	0
 冠羽	guan yu	9
-华乐	hua yue	12
-华乐蛋白石基因	hua yue dan bai shi ji yin	0
-华乐基因	hua yue ji yin	0
+华乐	hua le	12
+华乐蛋白石基因	hua le dan bai shi ji yin	0
+华乐基因	hua le ji yin	0
 黄绿灰翅	huang lv hui chi	0
 灰翅	hui chi	1
 灰翅蛋白石基因	hui chi dan bai shi ji yin	0

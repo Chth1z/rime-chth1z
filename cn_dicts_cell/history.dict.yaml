@@ -3319,7 +3319,7 @@ use_preset_vocabulary: false
 幅巾	fu jin	2
 黼秀长安	fu xiu chang an	0
 高腰襦裙	gao yao ru qun	0
-宫绛	gong jiang	0
+宫绦	gong tao	0
 勾边	gou bian	20
 汉风时装	han feng shi zhuang	0
 汉服吧	han fu ba	4
@@ -10169,6 +10169,7 @@ use_preset_vocabulary: false
 凌曙	ling shu	0
 凌树屏	ling shu ping	0
 凌霞	ling xia	0
+凌县	ling xian	0
 灵县	ling xian	0
 凌瑄	ling xuan	0
 零阳	ling yang	0
@@ -14188,7 +14189,6 @@ use_preset_vocabulary: false
 汪琥	wang hu	0
 王瑚	wang hu	0
 王祜	wang hu	0
-汪户濩	wang hu huo	0
 王化醇	wang hua chun	0
 王化隆	wang hua long	0
 汪宦	wang huan	0
@@ -14473,7 +14473,7 @@ use_preset_vocabulary: false
 王堂顺	wang tang shun	0
 汪陶	wang tao	0
 王韬	wang tao	11
-汪禔	wang zhi	0
+汪禔	wang ti	0
 王禔	wang zhi	0
 汪体仁	wang ti ren	0
 王天枞	wang tian cong	0
@@ -19769,6 +19769,7 @@ use_preset_vocabulary: false
 雍凉	yong liang	153
 秦楚	qin chu	30
 灭秦	mie qin	173
+范睢	fan sui	40
 秦赵	qin zhao	191
 帝尧	di yao	15
 秦地	qin di	30
@@ -19793,3 +19794,4 @@ use_preset_vocabulary: false
 反秦	fan qin	340
 汉改满	han gai man	1
 满遗	man yi	28
+武帝纪	wu di ji	84

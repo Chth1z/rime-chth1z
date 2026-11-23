@@ -695,6 +695,7 @@ use_preset_vocabulary: false
 复合窗	fu he chuang	0
 钢筋和预应力机械	gang jin he yu ying li ji xie	0
 隔断与吊顶	ge duan yu diao ding	0
+格栅灯	ge shan deng	1
 工程机械配件	gong cheng ji xie pei jian	1
 工程与建筑机械	gong cheng yu jian zhu ji xie	0
 工地施工材料	gong di shi gong cai liao	0
@@ -2333,3 +2334,10 @@ use_preset_vocabulary: false
 洗瓶机	xi ping ji	2
 起锚机	qi mao ji	0
 绞柱	jiao zhu	0
+进出口代理	jin chu kou dai li	10
+软件代理	ruan jian dai li	10
+医疗器械代理	yi liao qi xie dai li	10
+二手摩托车	er shou mo tuo che	10
+二手船舶	er shou chuan bo	10
+二手机床	er shou ji chuang	10
+二手锅炉	er shou guo lu	10

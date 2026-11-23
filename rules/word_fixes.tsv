@@ -6,8 +6,6 @@ cn_dicts/others.dict.yaml	马伊俐	*	马伊琍	ma yi li	R1杂项词库正字修
 cn_dicts_cell/animal.dict.yaml	史塔副郡牛头㹴	*	史塔福郡牛头㹴	shi ta fu jun niu tou geng	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/animal.dict.yaml	小史揉查犬	*	小史柔查犬	xiao shi rou cha quan	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/animal.dict.yaml	彭布罗克歌基犬	*	彭布罗克柯基犬	peng bu luo ke ke ji quan	R1动物词库正字修正	通用规范汉字表
-cn_dicts_cell/animal.dict.yaml	挪威糜提	*	挪威麋提	nuo wei mi ti	R1动物词库正字修正	通用规范汉字表
-cn_dicts_cell/animal.dict.yaml	挪威糜缇	*	挪威麋缇	nuo wei mi ti	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/animal.dict.yaml	桅子灰蝶	*	栀子灰蝶	zhi zi hui die	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/animal.dict.yaml	甄蝶	*	珍蝶	zhen die	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/animal.dict.yaml	眼碟	*	眼蝶	yan die	R1动物词库正字修正	通用规范汉字表
@@ -18,7 +16,7 @@ cn_dicts_cell/animal.dict.yaml	英国小型猎免犬	*	英国小型猎兔犬	yin
 cn_dicts_cell/chess.dict.yaml	双车协士	*	双车胁士	shuang ju xie shi	R1象棋正字修正	通用规范汉字表
 cn_dicts_cell/chess.dict.yaml	太监追黄帝	*	太监追皇帝	tai jian zhui huang di	R1象棋正字修正	通用规范汉字表
 cn_dicts_cell/chess2.dict.yaml	中炮过和车对屏风马横车	*	中炮过河车对屏风马横车	zhong pao guo he ju dui ping feng ma heng ju	R1象棋词库正字修正	通用规范汉字表
-cn_dicts_cell/chess2.dict.yaml	双闲酒杯	*	双献酒杯	shuang xian jiu bei	R1象棋词库正字修正	通用规范汉字表
+cn_dicts_cell/chess2.dict.yaml	双闲酒杯	*	双杯献酒	shuang bei xian jiu	象棋杀法正名为“双杯献酒”，归并入同库规范词条	象棋术语
 cn_dicts_cell/chess2.dict.yaml	葛维浦	*	葛维蒲	ge wei pu	R1象棋词库正字修正	通用规范汉字表
 cn_dicts_cell/food.dict.yaml	东江酿豆付	*	东江酿豆腐	dong jiang niang dou fu	R1食物词库正字修正	通用规范汉字表
 cn_dicts_cell/food.dict.yaml	东譬龙珠	*	东壁龙珠	dong bi long zhu	R1食物词库正字修正	通用规范汉字表
@@ -32,12 +30,12 @@ cn_dicts_cell/history.dict.yaml	东治	*	东冶	dong ye	R1历史词库正字修�
 cn_dicts_cell/history.dict.yaml	刘準	*	刘准	liu zhun	R1历史词库正字修正	辞海/正史
 cn_dicts_cell/history.dict.yaml	孔亻由	*	孔伷	kong zhou	R1历史词库正字修正	辞海/正史
 cn_dicts_cell/history.dict.yaml	宋顺帝刘準	*	宋顺帝刘准	song shun di liu zhun	R1历史词库正字修正	辞海/正史
-cn_dicts_cell/history.dict.yaml	宫絳	*	宫绛	gong jiang	R1历史词库正字修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	宫絳	*	宫绦	gong tao	汉服腰间丝绳配饰正字为“宫绦”(gōng tāo)，原词误作“宫絳”	辞海/汉服文献
 cn_dicts_cell/history.dict.yaml	邹凌澣	*	邹凌瀚	zou ling han	R1历史词库正字修正	辞海/正史
 cn_dicts_cell/history.dict.yaml	鬱林王	*	郁林王	yu lin wang	R1历史词库正字修正	辞海/正史
 cn_dicts_cell/history.dict.yaml	鬱林王萧昭业	*	郁林王萧昭业	yu lin wang xiao zhao ye	R1历史词库正字修正	辞海/正史
 cn_dicts_cell/idiom.dict.yaml	吃著不尽	chi zhu bu jin	吃着不尽	chi zhuo bu jin	R1成语正字正音修正	现汉第7版
-cn_dicts_cell/idiom.dict.yaml	清官能断家务事	*	清官难断家务事	*	R1成语正字修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	清官能断家务事	*	清官难断家务事	qing guan nan duan jia wu shi	R1成语正字修正（显式指定规范拼音）	现汉第7版
 cn_dicts_cell/idiom.dict.yaml	蓴羹鲈脍	*	莼羹鲈脍	*	R1成语繁简规范修正	通用规范汉字表
 cn_dicts_cell/industry_product.dict.yaml	冷墩钢	*	冷镦钢	leng dun gang	R1工业品正字修正	通用规范汉字表
 cn_dicts_cell/industry_product.dict.yaml	摇立绒手套	*	摇粒绒手套	yao li rong shou tao	R1工业品正字修正	通用规范汉字表
@@ -157,14 +155,14 @@ cn_dicts_cell/idiom.dict.yaml	餬口四方	hu kou si fang	糊口四方	*	Trad/JP
 cn_dicts_cell/idiom.dict.yaml	餬口之计	hu kou zhi ji	糊口之计	*	Trad/JP/variant: 餬->糊	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	浑无罣碍	hun wu gua ai	浑无挂碍	*	Trad/JP/variant: 罣->挂	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	齎志而终	ji zhi er zhong	赍志而终	*	Trad/JP/variant: 齎->赍	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/idiom.dict.yaml	齎志以没	ji zhi yi mei	赍志以没	*	Trad/JP/variant: 齎->赍	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/idiom.dict.yaml	齎志以没	ji zhi yi mei	赍志以没	ji zhi yi mo	齎->赍，没（终/死）规范读 mò	现汉第7版
 cn_dicts_cell/idiom.dict.yaml	譾薄之材	jian bo zhi cai	谫薄之材	*	Trad/JP/variant: 譾->谫	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	进退触籓	jin tui chu fan	进退触藩	*	Trad/JP/variant: 籓->藩	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	敬老慈穉	jing lao ci zhi	敬老慈稚	*	Trad/JP/variant: 穉->稚	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/idiom.dict.yaml	井味复硷	jing wei fu jian	井味复碱	*	Trad/JP/variant: 硷->碱	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/idiom.dict.yaml	井味复硷	jing wei fu jian	井味复咸	jing wei fu xian	《北齐书·房豹传》原典为“井味复咸”，上游误作硷	北齐书/汉语大词典
 cn_dicts_cell/idiom.dict.yaml	酒醴麴蘖	jiu li qu nie	酒醴曲蘖	*	Trad/JP/variant: 麴->曲	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	硜然自首	keng ran zi shou	硜然自守	*	Typo 首->守 (keeps classical 硜)	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/idiom.dict.yaml	狼顾麕惊	lang gu qun jing	狼顾麇惊	*	Trad/JP/variant: 麕->麇	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/idiom.dict.yaml	狼顾麕惊	lang gu qun jing	狼顾麇惊	lang gu jun jing	麕->麇且正音 jūn（惊獐义）	汉语大词典/通用规范汉字表
 cn_dicts_cell/idiom.dict.yaml	临渇之掘	lin ke zhi jue	临渴之掘	*	Trad/JP/variant: 渇->渴	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	鴒原之情	ling yuan zhi qing	鸰原之情	*	Trad/JP/variant: 鴒->鸰	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	六尺之讬	liu chi zhi tuo	六尺之托	*	Non-8105 variant 讬->托	通用规范汉字表/DICTIONARY_SPEC §2.6
@@ -179,7 +177,7 @@ cn_dicts_cell/idiom.dict.yaml	骈肩杂遝	pian jian za ta	骈肩杂沓	*	Trad/J
 cn_dicts_cell/idiom.dict.yaml	飘籓坠溷	piao fan zhui hun	飘藩坠溷	*	Trad/JP/variant: 籓->藩	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	启瞶振聋	qi gui zhen long	启聩振聋	qi kui zhen long	Variant 瞶(gui)->聩(kui)	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	弃其馀鱼	qi qi yu yu	弃其余鱼	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/idiom.dict.yaml	荣膺鴞荐	rong ying xiao jian	荣膺鸮荐	*	Trad/JP/variant: 鴞->鸮	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/idiom.dict.yaml	荣膺鴞荐	rong ying xiao jian	荣膺鹗荐	rong ying e jian	《幼学琼林》原典为“荣膺鹗荐”（孔融《荐祢衡表》），上游误作鴞	现汉第7版/幼学琼林
 cn_dicts_cell/idiom.dict.yaml	如蝇附羶	ru ying fu shan	如蝇附膻	*	Trad/JP/variant: 羶->膻	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	食不餬口	shi bu hu kou	食不糊口	*	Trad/JP/variant: 餬->糊	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	沓来麕至	ta lai qun zhi	沓来麇至	*	Trad/JP/variant: 麕->麇	通用规范汉字表/DICTIONARY_SPEC §2.6
@@ -197,8 +195,8 @@ cn_dicts_cell/idiom.dict.yaml	悬狟素飡	xuan huan su can	悬狟素餐	*	Trad/
 cn_dicts_cell/idiom.dict.yaml	諠客夺主	xuan ke duo zhu	喧客夺主	*	Trad/JP/variant: 諠->喧	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	悬鞀建铎	xuan tao jian duo	悬鼗建铎	*	Trad/JP/variant: 鞀->鼗	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	询谋谘度	xun mou zi du	询谋咨度	*	Trad/JP/variant: 谘->咨	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/idiom.dict.yaml	腌里巴臢	yan li ba za	腌里巴臜	*	Trad/JP/variant: 臢->臜	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/idiom.dict.yaml	鹰瞵鴞视	ying lin xiao shi	鹰瞵鸮视	*	Trad/JP/variant: 鴞->鸮	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/idiom.dict.yaml	腌里巴臢	yan li ba za	腌里巴臜	a li ba za	臢->臜，腌臜规范读 ā zā	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	鹰瞵鴞视	ying lin xiao shi	鹰瞵鹗视	ying lin e shi	《吴都赋》/《宋书》正字为“鹰瞵鹗视”，归并入规范词条	汉语大词典/成语词典
 cn_dicts_cell/idiom.dict.yaml	游刃馀地	you ren yu di	游刃余地	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	踰墙避命	yu qiang bi ming	逾墙避命	*	Trad/JP/variant: 踰->逾	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	余音嘹喨	yu yin liao liang	余音嘹亮	*	Trad/JP/variant: 喨->亮	通用规范汉字表/DICTIONARY_SPEC §2.6
@@ -227,31 +225,31 @@ cn_dicts_cell/literature.dict.yaml	张鎡	zhang zi	张镃	*	Trad/JP/variant: 鎡
 cn_dicts_cell/literature.dict.yaml	坠馀辉	zhui yu hui	坠余辉	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	従来佳茗似佳人	cong lai jia ming si jia ren	从来佳茗似佳人	*	Trad/JP/variant: 従->从	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	渡头馀落日	du tou yu luo ri	渡头余落日	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/literature.dict.yaml	耳著明月璫	er zhu ming yue dang	耳著明月珰	*	Trad/JP/variant: 璫->珰	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/literature.dict.yaml	耳著明月璫	er zhu ming yue dang	耳著明月珰	er zhuo ming yue dang	《孔雀东南飞》璫->珰，著（佩戴）规范读 zhuó	统编高中语文/现汉第7版
 cn_dicts_cell/literature.dict.yaml	隔篱呼取尽馀杯	ge li hu qu jin yu bei	隔篱呼取尽余杯	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	悯馀	min yu	悯余	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	清淮奉使千馀里	qing huai feng shi qian yu li	清淮奉使千余里	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	日出雾露馀	ri chu wu lu yu	日出雾露余	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	纨袴不饿死	wan ku bu e si	纨绔不饿死	*	Obsolete variant 袴->绔	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	惟馀钟磬音	wei yu zhong qing yin	惟余钟磬音	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/literature.dict.yaml	野有死麕	ye you si qun	野有死麇	*	Trad/JP/variant: 麕->麇	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/literature.dict.yaml	野有死麕	ye you si qun	野有死麇	ye you si jun	《诗经·召南·野有死麇》麕->麇且正音 jūn（獐子义）	现汉第7版/诗经
 cn_dicts_cell/literature.dict.yaml	馀响入霜钟	yu xiang ru shuang zhong	余响入霜钟	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	云此最吉馀难同	yun ci zui ji yu nan tong	云此最吉余难同	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	百年而後崩	bai nian er hou beng	百年而后崩	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	财货有馀	cai huo you yu	财货有余	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	当如後患何	dang ru hou huan he	当如后患何	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/literature.dict.yaml	弟子齐宿而後敢言	di zi qi su er hou gan yan	弟子齐宿而后敢言	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/literature.dict.yaml	弟子齐宿而後敢言	di zi qi su er hou gan yan	弟子齐宿而后敢言	di zi zhai su er hou gan yan	後->后，且《孟子》齐宿（斋戒）读 zhāi sù	孟子/通用规范汉字表
 cn_dicts_cell/literature.dict.yaml	洞门高阁霭馀辉	dong men gao ge ai yu hui	洞门高阁霭余辉	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	而後受之	er hou shou zhi	而后受之	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	而後以五鼎与	er hou yi wu ding yu	而后以五鼎与	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/literature.dict.yaml	发乘矢而後反	fa cheng shi er hou fan	发乘矢而后反	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/literature.dict.yaml	发乘矢而後反	fa cheng shi er hou fan	发乘矢而后反	fa sheng shi er hou fan	後->后，且《孟子》乘矢（四矢）读 shèng shǐ	孟子/通用规范汉字表
 cn_dicts_cell/literature.dict.yaml	夫民今而後得反之也	fu min jin er hou de fan zhi ye	夫民今而后得反之也	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	故久而後失之也	gu jiu er hou shi zhi ye	故久而后失之也	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	国人皆曰贤然後察之	guo ren jie yue xian ran hou cha zhi	国人皆曰贤然后察之	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	後必有灾	hou bi you zai	后必有灾	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/literature.dict.yaml	後车数十承	hou che shu shi cheng	后车数十承	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/literature.dict.yaml	後车数十承	hou che shu shi cheng	后车数十乘	hou che shu shi sheng	《孟子·滕文公下》原文为“后车数十乘”（shèng）	孟子/现汉第7版
 cn_dicts_cell/literature.dict.yaml	後举而加诸上位	hou ju er jia zhu shang wei	后举而加诸上位	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/literature.dict.yaml	後以大夫	hou yi dai fu	后以大夫	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/literature.dict.yaml	後以大夫	hou yi dai fu	后以大夫	hou yi da fu	後->后，且《孟子》古代官职大夫读 dà fū	孟子/现汉第7版
 cn_dicts_cell/literature.dict.yaml	迴忆后街之屋	hui yi hou jie zhi wu	回忆后街之屋	*	Trad/JP/variant: 迴->回	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	距洞百馀步	ju dong bai yu bu	距洞百余步	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	客踰庖而宴	ke yu pao er yan	客逾庖而宴	*	Trad/JP/variant: 踰->逾	通用规范汉字表/DICTIONARY_SPEC §2.6
@@ -286,8 +284,8 @@ cn_dicts_cell/literature.dict.yaml	如必自为而後用之	ru bi zi wei er hou 
 cn_dicts_cell/literature.dict.yaml	三宿而後出昼	san su er hou chu zhou	三宿而后出昼	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	射者正己而後发	she zhe zheng ji er hou fa	射者正己而后发	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	身直为闺閤之臣	shen zhi wei gui ge zhi chen	身直为闺阁之臣	*	Trad/JP/variant: 閤->阁	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/literature.dict.yaml	使先觉觉後觉	shi xian jiao jiao hou jue	使先觉觉后觉	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/literature.dict.yaml	使先觉觉後觉也	shi xian jiao jiao hou jue ye	使先觉觉后觉也	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/literature.dict.yaml	使先觉觉後觉	shi xian jiao jiao hou jue	使先觉觉后觉	shi xian jue jue hou jue	後->后，且《孟子》觉悟义均读 jué	孟子/现汉第7版
+cn_dicts_cell/literature.dict.yaml	使先觉觉後觉也	shi xian jiao jiao hou jue ye	使先觉觉后觉也	shi xian jue jue hou jue ye	後->后，且《孟子》觉悟义均读 jué	孟子/现汉第7版
 cn_dicts_cell/literature.dict.yaml	使先知觉後知	shi xian zhi jue hou zhi	使先知觉后知	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	是以肠一日而九迴	shi yi chang yi ri er jiu hui	是以肠一日而九回	*	Trad/JP/variant: 迴->回	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	世之相後也	shi zhi xiang hou ye	世之相后也	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
@@ -331,7 +329,7 @@ cn_dicts_cell/medication.dict.yaml	含潄剂	han shu ji	含漱剂	*	Variant 潄-
 cn_dicts_cell/medication.dict.yaml	甲基繖形酮	jia ji san xing tong	甲基伞形酮	*	Trad/JP/variant: 繖->伞	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/medication.dict.yaml	甲基繖形酮半乳糖苷	jia ji san xing tong ban ru tang gan	甲基伞形酮半乳糖苷	*	Trad/JP/variant: 繖->伞	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/medication.dict.yaml	甲基繖形酰半乳糖苷	jia ji san xing xian ban ru tang gan	甲基伞形酰半乳糖苷	*	Trad/JP/variant: 繖->伞	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/medication.dict.yaml	硷冷冻术	jian leng dong shu	碱冷冻术	*	Trad/JP/variant: 硷->碱	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/medication.dict.yaml	硷冷冻术	jian leng dong shu	睑冷冻术	*	ICD-9-CM-3 08.25 眼睑冷冻术（上游 OCR 误作硷，归并入睑冷冻术）	ICD-9-CM-3/医学名词
 cn_dicts_cell/medication.dict.yaml	狂飚龙力壮胶囊	kuang biao long li zhuang jiao nang	狂飙龙力壮胶囊	*	Variant 飚->飙	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/medication.dict.yaml	氯化硝蓝四唑甲撍	lv hua xiao lan si zuo jia qian	氯化硝蓝四唑甲臜	lv hua xiao lan si zuo jia za	OCR typo 撍(qian)->臜(za)	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/medication.dict.yaml	筒箭毒硷意外中毒	tong jian du jian yi wai zhong du	筒箭毒碱意外中毒	*	Trad/JP/variant: 硷->碱	通用规范汉字表/DICTIONARY_SPEC §2.6
@@ -396,3 +394,36 @@ cn_dicts_cell/shulihua.dict.yaml	二氧化矽鳞石英	er yang hua xi lin shi yi
 cn_dicts_cell/shulihua.dict.yaml	四甲氧矽	si jia yang xi	四甲氧硅	si jia yang gui	TW chemistry 矽(xi)->CN IUPAC 硅(gui)	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/sport.dict.yaml	金廷勳	jin ting xun	金廷勋	*	Trad/JP/variant: 勳->勋	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/sport.dict.yaml	赵志燻	zhao zhi xun	赵志熏	*	Trad/JP/variant: 燻->熏	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/history.dict.yaml	淩县	ling xian	凌县	ling xian	秦汉泗水国首县（今江苏泗阳），淩->凌（区别于山东陵县）	汉书/中国历史地名大辞典
+cn_dicts_cell/composite.dict.yaml	苯丙芘	ben bing pi	苯并芘	ben bing bi	错字苯丙芘->苯并芘并正音 bǐ（归并入 base）	现汉第7版/全国科技名词委
+cn_dicts_cell/idiom.dict.yaml	今日得宽馀	jin ri de kuan yu	今日得宽余	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/idiom.dict.yaml	朱庆馀	zhu qing yu	朱庆余	*	Trad/JP/variant: 馀->余（唐代诗人朱庆余）	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/shulihua.dict.yaml	磺化酞箐钴	huang hua tai jing gu	磺化酞菁钴	huang hua tai jing gu	E2错字转正词：酞箐->酞菁	化学命名原则(L2)
+cn_dicts_cell/medication.dict.yaml	石胡莩	shi hu piao	石胡荽	shi hu sui	E2错字转正词：菊科中药石胡荽（鹅不食草）	中国药典/中华本草(L2)
+cn_dicts_cell/medication.dict.yaml	胲下淋巴结肿大	gai xia lin ba jie zhong da	颏下淋巴结肿大	ke xia lin ba jie zhong da	E2错字转正词：胲下->颏下	全国科技名词委(L2)
+cn_dicts_cell/medication.dict.yaml	尅伐	*	克伐	ke fa	中医术语正字：尅伐->克伐	中医药学名词/通用规范汉字表
+cn_dicts_cell/food.dict.yaml	高梁粟	gao liang su	高粱粟	gao liang su	E2错字转正词：高梁->高粱	现汉第7版(L1)
+cn_dicts_cell/medication.dict.yaml	高梁泡叶	gao liang pao ye	高粱泡叶	gao liang pao ye	E2错字转正词：蔷薇科植物高粱泡叶	中国植物志(L2)
+cn_dicts_cell/shulihua.dict.yaml	高梁红	gao liang hong	高粱红	gao liang hong	E2错字转正词：食品着色剂高粱红	国标GB/现汉第7版
+cn_dicts_cell/geography.dict.yaml	浮雕影象地图	fu diao ying xiang di tu	浮雕影像地图	*	异形词转规范词：影象->影像	第一批异形词整理表/GB T 14950
+cn_dicts_cell/geography.dict.yaml	影象地图	ying xiang di tu	影像地图	*	异形词转规范词：影象->影像	第一批异形词整理表
+cn_dicts_cell/geography.dict.yaml	影象灰度	ying xiang hui du	影像灰度	*	异形词转规范词：影象->影像	第一批异形词整理表
+cn_dicts_cell/geography.dict.yaml	影象判读	ying xiang pan du	影像判读	*	异形词转规范词：影象->影像	第一批异形词整理表
+cn_dicts_cell/geography.dict.yaml	正射影象地图	zheng she ying xiang di tu	正射影像地图	*	异形词转规范词：影象->影像	第一批异形词整理表
+cn_dicts_cell/medication.dict.yaml	影象增强显微术	ying xiang zeng qiang xian wei shu	影像增强显微术	*	异形词转规范词：影象->影像	第一批异形词整理表
+cn_dicts_cell/medication.dict.yaml	骨热影象图	gu re ying xiang tu	骨热影像图	*	异形词转规范词：影象->影像	第一批异形词整理表
+cn_dicts_cell/medication.dict.yaml	肌热影象图	ji re ying xiang tu	肌热影像图	*	异形词转规范词：影象->影像	第一批异形词整理表
+cn_dicts_cell/medication.dict.yaml	脑热影象图	nao re ying xiang tu	脑热影像图	*	异形词转规范词：影象->影像	第一批异形词整理表
+cn_dicts_cell/medication.dict.yaml	乳房热影象图	ru fang re ying xiang tu	乳房热影像图	*	异形词转规范词：影象->影像	第一批异形词整理表
+cn_dicts_cell/medication.dict.yaml	血管热影象图	xue guan re ying xiang tu	血管热影像图	*	异形词转规范词：影象->影像	第一批异形词整理表
+cn_dicts_cell/medication.dict.yaml	眼热影象图	yan re ying xiang tu	眼热影像图	*	异形词转规范词：影象->影像	第一批异形词整理表
+cn_dicts_cell/medication.dict.yaml	贲门松驰	ben men song chi	贲门松弛	*	E2错字转正词：松驰->松弛	现汉第7版(L1)
+cn_dicts_cell/medication.dict.yaml	肛门括约肌松驰	gang men kuo yue ji song chi	肛门括约肌松弛	*	E2错字转正词：松驰->松弛	现汉第7版(L1)
+cn_dicts_cell/medication.dict.yaml	骨骼肌松驰剂	gu ge ji song chi ji	骨骼肌松弛剂	*	E2错字转正词：松驰->松弛	现汉第7版(L1)
+cn_dicts_cell/medication.dict.yaml	睑皮肤松驰	jian pi fu song chi	睑皮肤松弛	*	E2错字转正词：松驰->松弛	现汉第7版(L1)
+cn_dicts_cell/medication.dict.yaml	结膜松驰	jie mo song chi	结膜松弛	*	E2错字转正词：松驰->松弛	现汉第7版(L1)
+cn_dicts_cell/medication.dict.yaml	松驰治疗	song chi zhi liao	松弛治疗	*	E2错字转正词：松驰->松弛	现汉第7版(L1)
+cn_dicts_cell/medication.dict.yaml	新生儿贲门松驰	xin sheng er ben men song chi	新生儿贲门松弛	*	E2错字转正词：松驰->松弛	现汉第7版(L1)
+cn_dicts_cell/idiom.dict.yaml	耳著明月璫	er zhu ming yue dang	耳著明月珰	er zhuo ming yue dang	《孔雀东南飞》璫->珰且著读 zhuó（与 literature 去重合并）	统编高中语文/现汉第7版
+cn_dicts_cell/idiom.dict.yaml	隔篱呼取尽馀杯	ge li hu qu jin yu bei	隔篱呼取尽余杯	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/literature.dict.yaml	诸侯能荐人於天子	zhu hou neng jian ren yu tian zi	诸侯能荐人于天子	*	Trad/JP/variant: 於->于	通用规范汉字表/DICTIONARY_SPEC §2.6

@@ -97,6 +97,7 @@ sort: by_weight
 翱	ao	18
 遨	ao	15
 鏊	ao	14
+薁	ao	5
 懊	ao	6
 璈	ao	2
 鏖	ao	4
@@ -8554,7 +8555,6 @@ sort: by_weight
 笮	zuo	4
 岞	zuo	0
 # 补充标准普通话读音
-芔	hu	1
 屮	che	50
 呇	qi	2
 颤	zhan	50
@@ -8577,7 +8577,6 @@ sort: by_weight
 窨	xun	10
 潦	lao	10
 阏	e	10
-饧	tang	10
 薁	yu	10
 姥	mu	10
 被	pi	10
@@ -8588,7 +8587,6 @@ sort: by_weight
 遗	wei	10
 氓	meng	10
 掸	shan	10
-嗑	he	10
 孱	can	10
 砉	xu	5
 袷	jia	5
@@ -8598,7 +8596,6 @@ sort: by_weight
 镦	dui	5
 酂	cuo	5
 隗	kui	5
-車	che	1
 磏	lian	5
 说	yue	10
 著	zhuo	30
@@ -8681,3 +8678,4 @@ sort: by_weight
 觜	zui	10
 嗄	a	10
 擘	bai	10
+那	nei	50

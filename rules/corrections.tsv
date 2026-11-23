@@ -1,131 +1,130 @@
 # word	wrong_py	weight	comment	category	source
 # 纠错与双读音注释覆写（category 限 A / B / C / E1；活跃表重叠项 w=0）
 纨绔子弟	zhi kua zi di	50	纨(wán)绔(kù)子弟	C	R1/R2纠错权重与注释校准
-馄饨	hun dun	300	hún tun	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音（“饨”轻声）
-主角	zhu jiao	450	zhǔ jué	B	R1/R2纠错权重与注释校准
+馄饨	hun dun	150	hún tun	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音（“饨”轻声）
+主角	zhu jiao	200	zhǔ jué	B	R1/R2纠错权重与注释校准
 角色	jiao se	180	jué sè	B	R1/R2纠错权重与注释校准
 说服	shui fu	200	旧读 shuì fú / 规范 shuō fú	A	Round 3 A-dual: KEEP_SECONDARY：与主读音配对为完整A类双标准注释
 道行	dao hang	200	dào heng	B	R1/R2纠错权重与注释校准
 模样	mo yang	200	mú yàng	B	R1/R2纠错权重与注释校准
-有模有样	you mo you yang	100	yǒu mú yǒu yàng	C	R1/R2纠错权重与注释校准
-一模一样	yi mo yi yang	200	yī mú yī yàng	C	R1/R2纠错权重与注释校准
-装模作样	zhuang mo zuo yang	100	zhuāng mú zuò yàng	C	R1/R2纠错权重与注释校准
-人模狗样	ren mo gou yang	100	rén mú gǒu yàng	C	R1/R2纠错权重与注释校准
+有模有样	you mo you yang	100	有模(mú)有样	C	R1/R2纠错权重与注释校准
+一模一样	yi mo yi yang	150	一模(mú)一样	C	R1/R2纠错权重与注释校准
+装模作样	zhuang mo zuo yang	100	装模(mú)作样	C	R1/R2纠错权重与注释校准
+人模狗样	ren mo gou yang	100	人模(mú)狗样	C	R1/R2纠错权重与注释校准
 阿弥陀佛	a mi tuo fo	100	习惯 阿(ā)弥陀佛 / 规范 阿(ē)弥陀佛	A	Round 3 A-dual: UPDATE_SECONDARY：原“ē mí tuó fó”升级为A类双读音注释
-南无阿弥陀佛	na mo a mi tuo fo	50	nā mó ē mí tuó fó	C	R1/R2纠错权重与注释校准
-南无阿弥陀佛	nan wu a mi tuo fo	50	nā mó ē mí tuó fó	C	R1/R2纠错权重与注释校准
-南无阿弥陀佛	nan wu e mi tuo fo	50	nā mó ē mí tuó fó	C	R1/R2纠错权重与注释校准
+南无阿弥陀佛	na mo a mi tuo fo	50	南无阿(ē)弥陀佛	C	R1/R2纠错权重与注释校准
+南无阿弥陀佛	nan wu a mi tuo fo	50	南无(nā mó)阿(ē)弥陀佛	C	R1/R2纠错权重与注释校准
+南无阿弥陀佛	nan wu e mi tuo fo	50	南无(nā mó)阿弥陀佛	C	R1/R2纠错权重与注释校准
 槟榔	bin lang	150	台湾 bīn láng / 大陆 bīng láng	A	Round 3 A-dual: UPDATE_SECONDARY：原“bīng láng”升级为A类两岸双标准注释
 弄堂	nong tang	120	lòng táng	B	R1/R2纠错权重与注释校准
-心宽体胖	xin kuan ti pang	100	xīn kuān tǐ pán	C	R1/R2纠错权重与注释校准
+心宽体胖	xin kuan ti pang	100	心宽体胖(pán)	C	R1/R2纠错权重与注释校准
 埋怨	mai yuan	150	mán yuàn	B	R1/R2纠错权重与注释校准
-虚与委蛇	xu yu wei she	100	xū yǔ wēi yí	C	R1/R2纠错权重与注释校准
+虚与委蛇	xu yu wei she	100	虚与委(wēi)蛇(yí)	C	R1/R2纠错权重与注释校准
 木讷	mu na	100	mù nè	B	R1/R2纠错权重与注释校准
-独乐乐	du le le	50	dú yuè lè	B	R1/R2纠错权重与注释校准
-众乐乐	zhong le le	50	zhòng yuè lè	B	R1/R2纠错权重与注释校准
+独乐乐	du le le	50	独乐(yuè)乐(lè)	B	R1/R2纠错权重与注释校准
+众乐乐	zhong le le	50	众乐(yuè)乐(lè)	B	R1/R2纠错权重与注释校准
 荨麻	xun ma	30	审音拟 xún má / 现汉 qián má	A	R1/R2纠错权重与注释校准
 荨麻疹	qian ma zhen	80	习惯 qián má zhěn / 规范 xún má zhěn	A	Round 3 Style A: A类标签标准化：“异读”->“习惯”（32字）
 模具	mo ju	50	mú jù	B	R1/R2纠错权重与注释校准
 草薙	cao zhi	50	cǎo tì	C	R1/R2纠错权重与注释校准
-草薙京	cao zhi jing	80	cǎo tì jīng	C	R1/R2纠错权重与注释校准
-草薙剑	cao zhi jian	50	cǎo tì jiàn	C	R1/R2纠错权重与注释校准
-贾平凹	jia ping ao	100	jiǎ píng wā	C	R1/R2纠错权重与注释校准
-雪佛兰	xue fo lan	0	规范 xuě fó lán / 旧读 xuě fú lán	A	R1/R2纠错词条补录
+草薙京	cao zhi jing	80	草薙(tì)京	C	R1/R2纠错权重与注释校准
+草薙剑	cao zhi jian	50	草薙(tì)剑	C	R1/R2纠错权重与注释校准
+贾平凹	jia ping ao	100	贾平凹(wā)	C	R1/R2纠错权重与注释校准
+雪佛兰	xue fo lan	0	规范 xuě fó lán / 习惯 xuě fú lán	A	R1/R2纠错词条补录
 强劲	qiang jin	150	qiáng jìng	B	R1/R2纠错权重与注释校准
-胴体	tong ti	200	dòng tǐ	B	R1/R2纠错权重与注释校准
-力能扛鼎	li neng kang ding	50	lì néng gāng dǐng	C	R1/R2纠错权重与注释校准
-鸭绿江	ya lv jiang	100	yā lù jiāng	C	R1/R2纠错权重与注释校准
-大腹便便	da fu bian bian	100	dà fù pián pián	C	R1/R2纠错权重与注释校准
-卡脖子	ka bo zi	150	qiǎ bó zi	B	R1/R2纠错权重与注释校准
+胴体	tong ti	150	dòng tǐ	C	R1/R2纠错权重与注释校准
+力能扛鼎	li neng kang ding	50	力能扛(gāng)鼎	C	R1/R2纠错权重与注释校准
+鸭绿江	ya lv jiang	100	鸭绿(lù)江	C	R1/R2纠错权重与注释校准
+大腹便便	da fu bian bian	100	大腹便(pián)便	C	R1/R2纠错权重与注释校准
+卡脖子	ka bo zi	150	卡(qiǎ)脖子	B	R1/R2纠错权重与注释校准
 掺和	chan he	150	chān huo	B	R1/R2纠错权重与注释校准
-称职	cheng zhi	180	chèn zhí	B	R1/R2纠错权重与注释校准
-太行山	tai xing shan	100	tài háng shān	B	R1/R2纠错权重与注释校准
+称职	cheng zhi	110	chèn zhí	B	R1/R2纠错权重与注释校准
+太行山	tai xing shan	100	太行(háng)山	B	R1/R2纠错权重与注释校准
 发酵	fa xiao	250	fā jiào	B	R1/R2纠错权重与注释校准
-酵母菌	xiao mu jun	80	jiào mǔ jūn	B	R1/R2纠错权重与注释校准
+酵母菌	xiao mu jun	80	酵(jiào)母菌	B	R1/R2纠错权重与注释校准
 殷红	yin hong	15	yān hóng	B	R1/R2纠错权重与注释校准
 暖和	nuan he	150	nuǎn huo	B	R1/R2纠错权重与注释校准
-模棱两可	mo ling liang ke	100	mó léng liǎng kě	C	R1/R2纠错权重与注释校准
-鄱阳湖	pan yang hu	100	pó yáng hú	C	R1/R2纠错权重与注释校准
+模棱两可	mo ling liang ke	100	模棱(léng)两可	C	R1/R2纠错权重与注释校准
+鄱阳湖	pan yang hu	100	鄱(pó)阳湖	C	R1/R2纠错权重与注释校准
 脖颈	bo jing	100	bó gěng	B	R1/R2纠错权重与注释校准
-脖颈儿	bo jing er	50	bó gěng er	B	R1/R2纠错权重与注释校准
-牛皮癣	niu pi xian	50	niú pí xuǎn	B	R1/R2纠错权重与注释校准
-花斑癣	hua ban xian	50	huā bān xuǎn	B	R1/R2纠错权重与注释校准
-脚癣	jiao xian	50	jiǎo xuǎn	B	R1/R2纠错权重与注释校准
+脖颈儿	bo jing er	50	脖颈(gěng)儿	B	R1/R2纠错权重与注释校准
+牛皮癣	niu pi xian	50	牛皮癣(xuǎn)	C	R1/R2纠错权重与注释校准
+花斑癣	hua ban xian	50	花斑癣(xuǎn)	C	R1/R2纠错权重与注释校准
+脚癣	jiao xian	50	jiǎo xuǎn	C	R1/R2纠错权重与注释校准
 结扎	jie zha	100	jié zā	B	R1/R2纠错权重与注释校准
-海参崴	hai shen wei	100	hǎi shēn wǎi	B	R1/R2纠错权重与注释校准
+海参崴	hai shen wei	100	海参崴(wǎi)	C	R1/R2纠错权重与注释校准
 厚朴	hou pu	50	hòu pò	B	R1/R2纠错权重与注释校准
-大宛马	da wan ma	50	dà yuān mǎ	B	R1/R2纠错权重与注释校准
-龇牙	ci ya	50	zī yá	B	R1/R2纠错权重与注释校准
-龇着牙	ci zhe ya	50	zī zhe yá	B	R1/R2纠错权重与注释校准
-龇牙咧嘴	ci ya lie zui	80	zī yá liě zuǐ	C	R1/R2纠错权重与注释校准
+大宛马	da wan ma	50	大宛(yuān)马	C	R1/R2纠错权重与注释校准
+龇牙	ci ya	50	zī yá	C	R1/R2纠错权重与注释校准
+龇着牙	ci zhe ya	50	龇(zī)着牙	C	R1/R2纠错权重与注释校准
+龇牙咧嘴	ci ya lie zui	80	龇(zī)牙咧嘴	C	R1/R2纠错权重与注释校准
 偌大	nuo da	100	ruò dà	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 饮鸩解渴	yin jiu jie ke	50	饮鸩(zhèn)解渴	C	R1/R2纠错权重与注释校准
 宫商角徵羽	gong shang jiao zhi yu	50	宫商角(jué)徵羽	C	R1/R2纠错权重与注释校准
-氙气灯	shan qi deng	80	氙(xiān)气灯	B	R1/R2纠错权重与注释校准
+氙气灯	shan qi deng	80	氙(xiān)气灯	C	R1/R2纠错权重与注释校准
 氙气大灯	shan qi da deng	50	氙(xiān)气大灯	C	R1/R2纠错权重与注释校准
 粘贴	nian tie	150	zhān tiē	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 高句丽	gao ju li	80	高句(gōu)丽	C	R1/R2纠错权重与注释校准
 缩砂密	suo sha mi	50	缩(sù)砂密	B	R1/R2纠错权重与注释校准
-榅桲	wen bo	50	wēn po	B	R1/R2纠错权重与注释校准
-荸荠	bi ji	50	bí qi	B	R1/R2纠错权重与注释校准
+榅桲	wen bo	50	wēn po	C	R1/R2纠错权重与注释校准
+荸荠	bi ji	50	bí qi	C	R1/R2纠错权重与注释校准
 柔荑	rou yi	50	róu tí	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-温庭筠	wen ting jun	50	温庭筠(yún)	B	R1/R2纠错权重与注释校准
+温庭筠	wen ting jun	50	温庭筠(yún)	C	R1/R2纠错权重与注释校准
 三昧真火	san wei zhen huo	80	三昧(mèi)真火	C	R1/R2纠错权重与注释校准
 青𬞟之末	qing ping zhi mo	50	青𬞟(pín)之末	C	R1/R2纠错权重与注释校准
-优惠券	you hui juan	200	优惠券(quàn)	B	R1/R2纠错权重与注释校准
+优惠券	you hui juan	150	优惠券(quàn)	C	R1/R2纠错权重与注释校准
 拱券	gong quan	50	gǒng xuàn	B	R1/R2纠错权重与注释校准
-脑卒中	nao zu zhong	80	nǎo cù zhòng	C	R1/R2纠错权重与注释校准
+脑卒中	nao zu zhong	80	脑卒(cù)中	C	R1/R2纠错权重与注释校准
 潟湖	xie hu	50	xì hú	C	R1/R2纠错权重与注释校准
 果脯	guo pu	50	guǒ fǔ	B	R1/R2纠错权重与注释校准
 肉脯	rou pu	50	ròu fǔ	B	R1/R2纠错权重与注释校准
-白𬶨豚	bai qi tun	50	bái jì tún	B	R1/R2纠错权重与注释校准
+白𬶨豚	bai qi tun	50	白𬶨(jì)豚	C	R1/R2纠错权重与注释校准
 罄竹难书	xin zhu nan shu	80	馨(罄qìng)竹难书	C	R1/R2纠错权重与注释校准
 饮鸩止渴	yin jiu zhi ke	100	饮鸠(鸩zhèn)止渴	C	R1/R2纠错权重与注释校准
 模板	mo ban	40	习惯 mó bǎn / 规范 mú bǎn	A	R1/R2纠错权重与注释校准
 胡茬	hu zha	80	胡渣(茬chá)	C	Round 3 Style A: 补全NO_TONE_MARK声调：cha->chá
 咖喱	ka li	120	gā lí	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 搅和	jiao he	100	jiǎo huo	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音（“和”轻声）
-神祇	shen zhi	50	神祗(祇qí)	B	R1/R2纠错权重与注释校准
+神祇	shen zhi	50	神祗(祇qí)	C	R1/R2纠错权重与注释校准
 黏腻	zhan ni	40	粘(黏nián)腻	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
 黏膜	zhan mo	15	粘(黏nián)膜	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
 黏人	zhan ren	15	粘(黏nián)人	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
 胃黏膜	wei zhan mo	80	胃粘(黏nián)膜	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
 鼻黏膜	bi zhan mo	80	鼻粘(黏nián)膜	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
 烘焙	hong pei	150	烘培(焙bèi)	C	Round 3 Style A: 补全NO_TONE_MARK声调：bei->bèi
-仿佛	pang fo	0	fǎng fú	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
+仿佛	pang fo	20	fǎng fú	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 钮祜禄	niu gu lu	50	钮钴(祜hù)禄	C	Round 3 Style A: 补全NO_TONE_MARK声调：hu->hù
 钮祜禄氏	niu gu lu shi	50	钮钴(祜hù)禄氏	C	Round 3 Style A: 补全NO_TONE_MARK声调：hu->hù
 血脉偾张	xue mai ben zhang	80	常见 血脉贲(bēn)张 / 规范 血脉偾(fèn)张	A	Round 3 Style A: A类标签标准化并补全“贲(bēn)”声调（26字）
 黏合	zhan he	50	粘(黏nián)合	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-一刹那	yi sha na	100	一霎(刹chà)那	B	Round 3 Style A: 补全NO_TONE_MARK声调：cha->chà
+一刹那	yi sha na	100	一霎(刹chà)那	C	Round 3 Style A: 补全NO_TONE_MARK声调：cha->chà
 堂吉诃德	tang ji ke de	80	堂吉柯(诃hē)德	C	Round 3 Style A: 补全NO_TONE_MARK声调：he->hē
 叱咤风云	chi cha feng yun	100	叱诧(咤zhà)风云	C	Round 3 Style A: 补全NO_TONE_MARK声调：zha->zhà
 黏黏糊糊	zhan zhan hu hu	80	粘(黏nián)粘(黏nián)糊糊	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-刹那间	sha na jian	100	霎(刹chà)那间	B	Round 3 Style A: 补全NO_TONE_MARK声调：cha->chà
-刹那	sha na	100	霎(刹chà)那	B	Round 3 Style A: 补全NO_TONE_MARK声调：cha->chà
+刹那间	sha na jian	100	霎(刹chà)那间	C	Round 3 Style A: 补全NO_TONE_MARK声调：cha->chà
+刹那	sha na	100	霎(刹chà)那	C	Round 3 Style A: 补全NO_TONE_MARK声调：cha->chà
 螺蛳粉	luo shi fen	150	螺狮(蛳sī)粉	C	Round 3 Style A: 补全NO_TONE_MARK声调：si->sī
-按捺	an nai	100	按耐(捺nà)	B	R1/R2纠错权重与注释校准
+按捺	an nai	100	按耐(捺nà)	C	R1/R2纠错权重与注释校准
 按捺不住	an nai bu zhu	150	按耐(捺nà)不住	C	R1/R2纠错权重与注释校准
 血脉偾张	xue mai pen zhang	100	血脉喷(偾fèn)张	C	Round 3 Style A: 非双读音项，改用Style A错字纠偏格式“错字(正字zhèng yīn)”
-摩羯座	mo xie zuo	100	魔蝎(摩羯jié)座	B	R1/R2纠错权重与注释校准
+摩羯座	mo xie zuo	100	魔蝎(摩羯jié)座	C	R1/R2纠错权重与注释校准
 仿佛	fang fo	150	fǎng fú	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-仿佛	pang fu	0	fǎng fú	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-纨绔子弟	wan kua zi di	100	纨(wán)绔(kù)子弟	C	R1/R2纠错词条补录
+仿佛	pang fu	20	fǎng fú	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
+纨绔子弟	wan kua zi di	100	纨绔(kù)子弟	C	R1/R2纠错词条补录
 比萨	pi sa	180	常见 披萨 pī sà / 规范 比萨 bǐ sà	A	Round 3 A-dual: UPDATE_SECONDARY：原“音译比(bǐ)萨(sà) / 披萨”标准化为A类“常见/规范”模板
 给予	gei yu	200	jǐ yǔ	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 张柏芝	zhang bai zhi	0	规范 张柏(bǎi)芝 / 习惯 张柏(bó)芝	A	Round 3 Style A: 原注释34字触发LEN>32警告，精简为24字并保持规范/习惯对照
 藤蔓	teng man	150	téng wàn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-吱声	zhi sheng	300	zī shēng	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
+吱声	zhi sheng	120	zī shēng	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 调换	tiao huan	100	diào huàn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 六安	liu an	120	lù ān	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-六合区	liu he qu	50	六(lù)合区	B	R1/R2纠错词条补录
+六合区	liu he qu	50	六(lù)合区	C	R1/R2纠错词条补录
 南京六合	nan jing liu he	50	南京六(lù)合	C	R1/R2纠错词条补录
 关卡	guan ka	150	guān qiǎ	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 供给	gong gei	200	gōng jǐ	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 补给	bu gei	250	bǔ jǐ	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 抹布	mo bu	200	mā bù	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 游说	you shuo	400	yóu shuì	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-下调	xia diao	35	xià tiáo	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 单薄	dan bao	400	dān bó	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 轻薄	qing bao	400	qīng bó	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 躯壳	qu ke	60	qū qiào	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
@@ -137,16 +136,16 @@
 脉脉	mai mai	300	mò mò	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 扛鼎	kang ding	50	gāng dǐng	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 薄膜	bao mo	80	bó mó	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-刘禅	liu chan	200	liú shàn	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
+刘禅	liu chan	150	liú shàn	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 吐蕃	tu fan	50	台湾 tǔ fān / 大陆 tǔ bō	A	Round 3 A-dual: UPDATE_SECONDARY：原“吐蕃(bō)”升级为A类两岸双标准注释
 泊松分布	po song fen bu	50	泊(bó)松分布	C	R1/R2纠错词条补录
-便宜坊	pian yi fang	50	便(biàn)宜坊	B	R1/R2纠错词条补录
+便宜坊	pian yi fang	50	便(biàn)宜坊	C	R1/R2纠错词条补录
 镀铬	du luo	50	dù gè	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 凑合	cou huo	150	còu he	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音并修复NO_TONE_MARK（“合”轻声）
-契诃夫	qi ke fu	100	契科(诃hē)夫	B	R1/R2纠错词条补录
+契诃夫	qi ke fu	100	契科(诃hē)夫	C	R1/R2纠错词条补录
 味噌	wei ceng	0	规范 wèi cēng / 习惯 wèi zēng	A	R1/R2纠错词条补录
 味噌	wei zeng	0	习惯 wèi zēng / 规范 wèi cēng	A	R1/R2纠错词条补录
-雪佛兰	xue fu lan	150	旧读 xuě fú lán / 规范 xuě fó lán	A	R1/R2纠错词条补录
+雪佛兰	xue fu lan	150	习惯 xuě fú lán / 规范 xuě fó lán	A	R1/R2纠错词条补录
 张柏芝	zhang bo zhi	0	习惯 张柏(bó)芝 / 规范 张柏(bǎi)芝	A	Round 3 Style A: 原注释34字触发LEN>32警告，精简为24字并保持习惯/规范对照
 密钥	mi yue	0	规范 mì yuè / 习惯 mì yào	A	R1/R2纠错词条补录
 密钥	mi yao	350	习惯 mì yào / 规范 mì yuè	A	R1/R2纠错词条补录
@@ -160,47 +159,41 @@
 露出	lou chu	150	lù chū	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 露出了	lou chu le	100	露(lù)出了	B	R1/R2纠错词条补录
 成熟	cheng shou	150	chéng shú	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-不熟	bu shou	120	bù shú	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 熟练	shou lian	100	shú liàn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-熟了	shou le	100	shú le	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音（“了”轻声）
 相熟	xiang shou	15	xiāng shú	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 流血	liu xie	80	习惯 liú xiě / 规范 liú xuè	A	Round 3 A-dual: UPDATE_SECONDARY：原“流血(xuè)”升级为A类双读音注释
 血渍	xie zi	30	xuè zì	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 衣裳	yi chang	50	yī shang	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音并修复NO_TONE_MARK（“裳”轻声）
-怎么着	zen me zhe	120	怎么着(zhāo)	B	R1/R2纠错词条补录
 盖聂	gai nie	150	gě niè	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 黄柏	huang bai	40	huáng bò	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 填塞	tian sai	25	tián sè	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 削铁如泥	xiao tie ru ni	80	削(xuē)铁如泥	C	R1/R2纠错词条补录
 宝幢	bao zhuang	15	习惯 bǎo zhuàng / 规范 bǎo chuáng	A	Round 3 A-dual: UPDATE_SECONDARY：原“宝幢(chuáng)”升级为A类双读音注释
 范雎	fan sui	40	范睢(雎jū)	C	Round 3 Style A: 统一为Style A错字纠偏格式“错字(正字zhèng yīn)”（去掉非A类斜杠）
-大迦叶	da jia ye	50	大迦叶(shè)	B	R1/R2纠错词条补录
-泡椒凤爪	pao jiao feng zhua	80	泡椒凤爪(zhǎo)	C	R1/R2纠错词条补录
-山椒凤爪	shan jiao feng zhua	80	山椒凤爪(zhǎo)	C	R1/R2纠错词条补录
+大迦叶	da jia ye	50	大迦叶(shè)	C	R1/R2纠错词条补录
 壳层	ke ceng	30	qiào céng	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-流鼻血	liu bi xie	100	流鼻血(xuè)	B	R1/R2纠错词条补录
 呷哺呷哺	ga bu ga bu	80	呷(xiā)哺呷哺	C	R1/R2纠错词条补录
 花剌子模	hua ci zi mo	80	花剌(là)子模	C	R1/R2纠错词条补录
 自始至终	zhi shi zhi zhong	80	至(自zì)始至终	C	R1/R2纠错词条补录
 无时无刻	wu shi bu ke	80	无时不(无wú)刻	C	R1/R2纠错词条补录
-债券	zhai juan	150	zhài quàn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-证券	zheng juan	30	zhèng quàn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-券商	juan shang	80	quàn shāng	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-消费券	xiao fei juan	100	消费券(quàn)	B	R1/R2纠错词条补录
-代金券	dai jin juan	100	代金券(quàn)	B	R1/R2纠错词条补录
-入场券	ru chang juan	100	入场券(quàn)	B	R1/R2纠错词条补录
-点券	dian juan	80	diǎn quàn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
+债券	zhai juan	150	zhài quàn	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
+证券	zheng juan	30	zhèng quàn	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
+券商	juan shang	80	quàn shāng	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
+消费券	xiao fei juan	100	消费券(quàn)	C	R1/R2纠错词条补录
+代金券	dai jin juan	100	代金券(quàn)	C	R1/R2纠错词条补录
+入场券	ru chang juan	100	入场券(quàn)	C	R1/R2纠错词条补录
+点券	dian juan	80	diǎn quàn	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 暴露	bao lou	150	bào lù	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 透露	tou lou	150	tòu lù	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 披露	pi lou	150	pī lù	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 揭露	jie lou	100	jiē lù	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 显露	xian lou	80	xiǎn lù	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 露骨	lou gu	80	lù gǔ	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-露面	lu mian	150	lòu miàn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
+露面	lu mian	50	lòu miàn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 配角	pei jiao	150	pèi jué	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 男主角	nan zhu jiao	150	男主角(jué)	B	Round 3 Style A: 3字纯纠错仅在易错字“角”后标调（移除非易错字“主”括号）
 女主角	nv zhu jiao	150	女主角(jué)	B	Round 3 Style A: 3字纯纠错仅在易错字“角”后标调（移除非易错字“主”括号）
-角逐	jiao zhu	150	jué zhú	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
+角逐	jiao zhu	90	jué zhú	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 标的	biao de	100	biāo dì	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 剖腹产	pao fu chan	100	刨(剖pōu)腹产	C	Round 3 Style A: 明确为高频错字“刨腹产”纠偏（区别于已删D类误读“解剖/剖析”）
 混淆	hun yao	150	台湾 hùn yáo / 大陆 hùn xiáo	A	Round 3 A-dual: UPDATE_SECONDARY：原“混(hùn)淆(xiáo)”升级为A类两岸双标准注释
@@ -213,7 +206,7 @@
 薄弱	bao ruo	150	bó ruò	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 刻薄	ke bao	100	kè bó	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 浅薄	qian bao	200	qiǎn bó	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-薄荷	bao he	200	bò he	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音（“荷”轻声）
+薄荷	bao he	55	bò he	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音（“荷”轻声）
 削弱	xiao ruo	150	xuē ruò	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 剥削	bo xiao	150	bō xuē	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 削减	xiao jian	200	xuē jiǎn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
@@ -229,8 +222,8 @@
 碳纤维	tan qian wei	100	碳纤(xiān)维	B	R1/R2纠错词条补录
 校准	xiao zhun	150	jiào zhǔn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 校正	xiao zheng	100	jiào zhèng	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-校验	xiao yan	200	jiào yàn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-校对	xiao dui	200	jiào duì	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
+校验	xiao yan	120	jiào yàn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
+校对	xiao dui	65	jiào duì	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 着迷	zhe mi	100	zháo mí	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 着陆	zhe lu	100	zhuó lù	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 着落	zhe luo	80	zhuó luò	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
@@ -247,7 +240,7 @@
 妊娠	ren chen	100	rèn shēn	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 粗犷	cu kuang	100	cū guǎng	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 炽热	zhi re	150	chì rè	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-白炽灯	bai zhi deng	100	白炽(chì)灯	B	R1/R2纠错词条补录
+白炽灯	bai zhi deng	100	白炽(chì)灯	C	R1/R2纠错词条补录
 迫击炮	po ji pao	100	迫(pǎi)击炮	B	R1/R2纠错词条补录
 斡旋	gan xuan	100	wò xuán	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 泥淖	ni zhuo	80	ní nào	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
@@ -264,13 +257,13 @@
 咀嚼	ju jiao	200	jǔ jué	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 禅让	chan rang	100	shàn ràng	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 东莞	dong wan	15	dōng guǎn	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-吐谷浑	tu gu hun	80	吐谷(yù)浑	B	R1/R2纠错词条补录
+吐谷浑	tu gu hun	80	吐谷(yù)浑	C	R1/R2纠错词条补录
 亳州	hao zhou	80	bó zhōu	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-秘鲁	mi lu	200	bì lǔ	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
+秘鲁	mi lu	150	bì lǔ	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 蚌埠	bang bu	15	bèng bù	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 荥阳	rong yang	80	xíng yáng	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 冒顿单于	mao dun dan yu	80	冒(mò)顿(dú)单(chán)于	C	Round 3 Style A: 统一专名括号内拼音为全小写，与规范示例一致
-参差不齐	can ci bu qi	100	参(cēn)差(cī)不齐	C	R1/R2纠错词条补录
+参差不齐	can ci bu qi	100	参(cēn)差不齐	C	R1/R2纠错词条补录
 参差不齐	can cha bu qi	100	参(cēn)差(cī)不齐	C	R1/R2纠错词条补录
 绰绰有余	chao chao you yu	80	绰(chuò)绰有余	C	R1/R2纠错词条补录
 戛然而止	ga ran er zhi	100	戛(jiá)然而止	C	R1/R2纠错词条补录
@@ -330,29 +323,29 @@
 垂涎三尺	chui yan san chi	80	垂涎(xián)三尺	C	R1/R2纠错词条补录
 垂涎欲滴	chui yan yu di	80	垂涎(xián)欲滴	C	R1/R2纠错词条补录
 羽扇纶巾	yu shan lun jin	80	羽扇纶(guān)巾	C	R1/R2纠错词条补录
-奴颜婢膝	nu yan bi qi	80	奴颜婢(bì)膝(xī)	C	R1/R2纠错词条补录
-奴颜婢膝	nu yan bei xi	50	奴颜婢(bì)膝(xī)	C	R1/R2纠错词条补录
+奴颜婢膝	nu yan bi qi	80	奴颜婢膝(xī)	C	R1/R2纠错词条补录
+奴颜婢膝	nu yan bei xi	50	奴颜婢(bì)膝	C	R1/R2纠错词条补录
 恪尽职守	ge jin zhi shou	80	恪(kè)尽职守	C	R1/R2纠错词条补录
 拾级而上	shi ji er shang	80	拾(shè)级而上	C	R1/R2纠错词条补录
 一叶扁舟	yi ye bian zhou	80	一叶扁(piān)舟	C	R1/R2纠错词条补录
 宫商角徵羽	gong shang jiao zheng yu	50	宫商角(jué)徵(zhǐ)羽	C	R1/R2纠错词条补录
-宫商角徵羽	gong shang jue zheng yu	50	宫商角(jué)徵(zhǐ)羽	C	R1/R2纠错词条补录
+宫商角徵羽	gong shang jue zheng yu	50	宫商角徵(zhǐ)羽	C	R1/R2纠错词条补录
 一曝十寒	yi bao shi han	80	一曝(pù)十寒	C	R1/R2纠错词条补录
 稗官野史	bi guan ye shi	50	稗(bài)官野史	C	R1/R2纠错词条补录
 稗官野史	bei guan ye shi	50	稗(bài)官野史	C	R1/R2纠错词条补录
 数见不鲜	shu jian bu xian	80	数(shuò)见不鲜	C	R1/R2纠错词条补录
 舐犊情深	di du qing shen	50	舐(shì)犊情深	C	R1/R2纠错词条补录
 舐犊情深	tian du qing shen	50	舐(shì)犊情深	C	R1/R2纠错词条补录
-怙恶不悛	gu e bu quan	50	怙(hù)恶不悛(quān)	C	R1/R2纠错词条补录
+怙恶不悛	gu e bu quan	50	怙(hù)恶不悛	C	R1/R2纠错词条补录
 怙恶不悛	gu e bu jun	50	怙(hù)恶不悛(quān)	C	R1/R2纠错词条补录
-怙恶不悛	hu e bu jun	50	怙(hù)恶不悛(quān)	C	R1/R2纠错词条补录
-黏性流体	zhan xing liu ti	0	粘(黏nián)性流体	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-黏附分子	zhan fu fen zi	0	粘(黏nián)附分子	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-黏膜免疫	zhan mo mian yi	0	粘(黏nián)膜免疫	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-表观黏度	biao guan zhan du	0	表观粘(黏nián)度	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-黏性力	zhan xing li	0	粘(黏nián)性力	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-黏合力	zhan he li	0	粘(黏nián)合力	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-高黏度	gao zhan du	0	高粘(黏nián)度	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+怙恶不悛	hu e bu jun	50	怙恶不悛(quān)	C	R1/R2纠错词条补录
+黏性流体	zhan xing liu ti	15	粘(黏nián)性流体	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+黏附分子	zhan fu fen zi	15	粘(黏nián)附分子	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+黏膜免疫	zhan mo mian yi	15	粘(黏nián)膜免疫	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+表观黏度	biao guan zhan du	15	表观粘(黏nián)度	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+黏性力	zhan xing li	15	粘(黏nián)性力	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+黏合力	zhan he li	15	粘(黏nián)合力	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+高黏度	gao zhan du	15	高粘(黏nián)度	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
 说服	shuo fu	0	规范 shuō fú / 旧读 shuì fú	A	Round 3 A-dual: ADD_PRIMARY：规范第4节A类示例，补齐主读音w=0双读音注释（L1 shuō fú vs 旧读 shuì fú）
 呆板	dai ban	0	规范 dāi bǎn / 旧读 ái bǎn	A	Round 3 A-dual: ADD_PRIMARY：规范第4节A类示例，补齐主读音w=0双读音注释（L1 dāi bǎn vs 旧读 ái bǎn）
 鼻塞	bi se	0	规范 bí sè / 习惯 bí sāi	A	Round 3 A-dual: ADD_PRIMARY：规范第4节A类示例，补齐主读音w=0双读音注释（L1 bí sè vs 习惯 bí sāi）
@@ -363,16 +356,15 @@
 混淆	hun xiao	0	大陆 hùn xiáo / 台湾 hùn yáo	A	Round 3 A-dual: ADD_PRIMARY：L1大陆规范hùn xiáo与L5台湾国语hùn yáo并行，补齐主读音w=0双标准注释
 流血	liu xue	0	规范 liú xuè / 习惯 liú xiě	A	Round 3 A-dual: ADD_PRIMARY：规范第3节L4/多音字准则明确“流血”书面xuè/口语xiě并行，补齐w=0双读音注释
 阿弥陀佛	e mi tuo fo	0	规范 阿(ē)弥陀佛 / 习惯 阿(ā)弥陀佛	A	Round 3 A-dual: ADD_PRIMARY：L1现汉规范ē与L3佛教梵音通行ā并行，补齐主读音w=0双读音注释
-阿房宫	e pang gong	0	规范 阿(ē)房(páng)宫 / 常见 ā fáng	A	现汉第7版/2016审音拟(L1/L4)
-阿房宫	a fang gong	0	常见 阿(ā)房(fáng)宫 / 规范 ē páng	A	现汉第7版/2016审音拟(L1/L4)
-阿房宫	a pang gong	0	常见 阿(ā)房(páng)宫 / 规范 ē páng	A	现汉第7版/2016审音拟(L1/L4)
-阿房宫	e fang gong	0	常见 阿(ē)房(fáng)宫 / 规范 ē páng	A	现汉第7版/2016审音拟(L1/L4)
+阿房宫	e pang gong	0	规范 阿(ē)房(páng)宫 / 常见 ā fáng	A	现汉第7版/社会通行习惯(L1/L5)
+阿房宫	a fang gong	0	常见 阿(ā)房(fáng)宫 / 规范 ē páng	A	现汉第7版/社会通行习惯(L1/L5)
+阿房宫	a pang gong	0	常见 阿(ā)房(páng)宫 / 规范 ē páng	A	现汉第7版/社会通行习惯(L1/L5)
+阿房宫	e fang gong	0	常见 阿(ē)房(fáng)宫 / 规范 ē páng	A	现汉第7版/社会通行习惯(L1/L5)
 甲壳虫	jia qiao chong	0	规范 甲壳(qiào)虫 / 常见 甲壳(ké)虫	A	现汉第7版/社会通行习惯(L1/L5)
 甲壳虫	jia ke chong	0	常见 甲壳(ké)虫 / 规范 甲壳(qiào)虫	A	现汉第7版/社会通行习惯(L1/L5)
 芥蓝	jie lan	0	规范 jiè lán / 旧读 gài lán	A	现汉第7版/第5版旧读(L1)
 芥蓝	gai lan	0	旧读 gài lán / 规范 jiè lán	A	现汉第7版/第5版旧读(L1)
-郭明錤	guo ming ji	0	规范 郭明錤(jī) / 习惯 郭明錤(qí)	A	现汉第7版/两岸重编辞典均读jī(L1/L3)
-郭明錤	guo ming qi	0	习惯 郭明錤(qí) / 规范 郭明錤(jī)	A	现汉第7版/两岸重编辞典均读jī(L1/L3)
+郭明錤	guo ming qi	31	郭明錤(jī)	C	现汉第7版/两岸重编辞典均读jī(L1/L3)
 周柏豪	zhou bai hao	0	规范 周柏(bǎi)豪 / 习惯 周柏(bó)豪	A	现汉第7版/本人确认读音(L1/L3)
 周柏豪	zhou bo hao	0	习惯 周柏(bó)豪 / 规范 周柏(bǎi)豪	A	现汉第7版/粤语习惯(L1/L3)
 鲗鱼涌	ze yu chong	0	规范 鲗(zé)鱼涌 / 旧读 鲗(zéi)鱼涌	A	现汉第7版/新华字典第12版(L1/L2)
@@ -380,3 +372,10 @@
 角斗	jiao dou	60	jué dòu	B	现汉第7版(L1)，与主角/角色/配角/角逐同属合法多音字习惯
 角斗士	jiao dou shi	100	角(jué)斗士	B	现汉第7版(L1)，与主角/角色/配角/角逐同属合法多音字习惯
 角力	jiao li	60	jué lì	B	现汉第7版(L1)，与主角/角色/配角/角逐同属合法多音字习惯
+打颤	da chan	60	dǎ zhàn	B	现汉第7版（打颤=打战 dǎ zhàn）
+解铃还须系铃人	jie ling hai xu ji ling ren	50	解铃还须系(xì)铃人	B	现汉第7版(L1)
+卡住	ka zhu	150	qiǎ zhù	B	现汉第7版(L1)
+胆战心惊	dan chan xin jing	80	胆颤(战zhàn)心惊	C	现汉第7版/历史通假
+柯伊伯带	ke yi bai dai	60	柯伊柏(伯bó)带	C	全国科技名词委/高频错字(L2)
+黏合剂	zhan he ji	20	粘(黏nián)合剂	B	现汉第7版/全国科技名词委(L1/L2)
+兰若寺	lan ruo si	30	兰若(rě)寺	C	现汉第7版(L1)

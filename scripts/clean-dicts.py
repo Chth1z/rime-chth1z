@@ -290,10 +290,10 @@ def find_entry_span(
 
 
 def fix_non_shenme_shi(word: str, py: str) -> str:
-    """Fix systemic foreign-name/title 什 shen -> shi while preserving 什么/什锦/什物/家什/什刹."""
+    """Fix systemic foreign-name/title 什 shen -> shi while preserving 什么/甚么."""
     if "什" not in word or "shen" not in py.split():
         return py
-    if any(ok in word for ok in ("什么", "什锦", "什物", "家什", "什刹", "甚么")):
+    if any(ok in word for ok in ("什么", "甚么")):
         return py
     return replace_syl_at(word, py, "什", "shen", "shi")
 
@@ -370,7 +370,7 @@ GAME_CHANG_PREFIXES: tuple[str, ...] = (
 )
 
 LEXICAL_LEADING_DE = {
-    "的确", "的话", "的士", "的卢", "的哥", "的姐", "的当", "的黎波里", "的的喀喀湖", "的确良",
+    "的确", "的话", "的士", "的卢", "的哥", "的姐", "的当", "的黎波里", "的里雅斯特", "的的喀喀湖", "的确良",
     "的笃", "的溜", "的砾", "的然", "的实", "的真", "的证", "的字", "的字结构",
 }
 
@@ -380,7 +380,7 @@ def is_leading_de_fragment(word: str, py: str) -> bool:
         return False
     if word in LEXICAL_LEADING_DE:
         return False
-    if any(word.startswith(p) for p in ("的士", "的确", "的卢", "的哥", "的姐", "的黎波里", "的的喀喀")):
+    if any(word.startswith(p) for p in ("的士", "的确", "的卢", "的哥", "的姐", "的黎波里", "的里雅斯特", "的的喀喀")):
         return False
     return py.startswith("de ")
 
@@ -473,8 +473,20 @@ def clean_base(lines: list[str], stats: dict) -> list[str]:
     return out
 
 
+EXT_STANDARD_XIE_MARKERS: tuple[str, ...] = (
+    "一针见血", "血淋淋", "血糊糊", "血晕", "流鼻血", "鼻血",
+    "鸡血", "狗血", "鸭血", "猪血", "羊血", "毛血旺",
+)
+
+
 def clean_ext(lines: list[str], stats: dict) -> list[str]:
     hdr, body = split_header_body(lines)
+    has_xue: set[str] = set()
+    for line in body:
+        p = parse_entry(line)
+        if p and "血" in p[0] and any(ch == "血" and sy == "xue" for ch, sy in zip(p[0], p[1].split())):
+            has_xue.add(p[0])
+
     out = list(hdr)
     for line in body:
         parsed = parse_entry(line)
@@ -487,8 +499,14 @@ def clean_ext(lines: list[str], stats: dict) -> list[str]:
         if is_leading_de_fragment(w, py) or is_leading_le_fragment(w, py):
             stats["deleted_noise_or_typo"] += 1
             continue
-        # Downweight medical xie clones in ext (idempotent: threshold > 50, char-aligned check)
-        if "血" in w and any(ch == "血" and sy == "xie" for ch, sy in zip(w, py.split())) and w_int(wt) > 50:
+        # Downweight medical xie clones in ext only when a xue twin exists and not a standard xiě idiom
+        if (
+            "血" in w
+            and w in has_xue
+            and not any(m in w for m in EXT_STANDARD_XIE_MARKERS)
+            and any(ch == "血" and sy == "xie" for ch, sy in zip(w, py.split()))
+            and w_int(wt) > 50
+        ):
             wt = str(min(w_int(wt) // 8, 50))
             stats["reweighted"] += 1
         out.append(format_entry(w, py, wt, extra))
@@ -825,6 +843,30 @@ def clean_medication(lines: list[str], stats: dict) -> list[str]:
     return out
 
 
+def _fix_post_jp_t2s_py(orig_w: str, sim_w: str, py: str, stats: dict) -> str:
+    """Repair corrupted upstream auto-pinyin carried over after Trad/JP -> Simplified conversion."""
+    rules = (
+        ("姫", "姬", "zhen", "ji"),
+        ("豊", "丰", "li", "feng"),
+        ("無", "无", "mo", "wu"),
+        ("紅", "红", "gong", "hong"),
+        ("見", "见", "xian", "jian"),
+        ("遺", "遗", "wei", "yi"),
+    )
+    for orig_ch, sim_ch, bad_sy, good_sy in rules:
+        if orig_ch in orig_w and bad_sy in py.split():
+            new_py = replace_syl_at(sim_w, py, sim_ch, bad_sy, good_sy)
+            if new_py != py:
+                py = new_py
+                stats["fixed_py"] += 1
+    if "強" in orig_w and "倔強" not in orig_w and "jiang" in py.split():
+        new_py = replace_syl_at(sim_w, py, "强", "jiang", "qiang")
+        if new_py != py:
+            py = new_py
+            stats["fixed_py"] += 1
+    return py
+
+
 def clean_game(lines: list[str], stats: dict) -> list[str]:
     hdr, body = split_header_body(lines)
     quest_span = find_entry_span(body, ("暗虎精", "an hu jing"), ("做任务", "zuo ren wu"))
@@ -840,18 +882,12 @@ def clean_game(lines: list[str], stats: dict) -> list[str]:
         if quest_span and quest_span[0] <= offset <= quest_span[1] and is_game_quantifier_fragment(w):
             stats["deleted_noise_or_typo"] += 1
             continue
-        had_ji = "姫" in w
-        had_feng = "豊" in w
+        orig_w = w
         sim_w = jp_t2s(w)
         if sim_w != w:
             w = sim_w
             stats["fixed_word_or_trad"] += 1
-            if had_ji and "zhen" in py.split():
-                py = replace_syl_at(w, py, "姬", "zhen", "ji")
-                stats["fixed_py"] += 1
-            if had_feng and "li" in py.split():
-                py = replace_syl_at(w, py, "丰", "li", "feng")
-                stats["fixed_py"] += 1
+            py = _fix_post_jp_t2s_py(orig_w, w, py, stats)
         if "角斗士" in w and "jiao" in py.split():
             new_py = replace_syl_at(
                 w, py, "角", "jiao", "jue",
@@ -954,18 +990,12 @@ def clean_name2(lines: list[str], stats: dict) -> list[str]:
             if new_py != py:
                 py = new_py
                 stats["fixed_py"] += 1
-        had_ji = "姫" in w
-        had_feng = "豊" in w
+        orig_w = w
         sim_w = jp_t2s(w)
         if sim_w != w:
             w = sim_w
             stats["fixed_word_or_trad"] += 1
-            if had_ji and "zhen" in py.split():
-                py = replace_syl_at(w, py, "姬", "zhen", "ji")
-                stats["fixed_py"] += 1
-            if had_feng and "li" in py.split():
-                py = replace_syl_at(w, py, "丰", "li", "feng")
-                stats["fixed_py"] += 1
+            py = _fix_post_jp_t2s_py(orig_w, w, py, stats)
         if w_int(wt) > 150:
             wt = "150"
             stats["reweighted"] += 1
@@ -1039,9 +1069,10 @@ def clean_composite(lines: list[str], stats: dict) -> list[str]:
         "关注我的公众号", "点击下方", "点击右上角", "点个赞", "欢迎私信", "私信问我",
         "加我微信", "评论区留言", "图片来自网络", "图片来源于网络", "转载请注明出处",
         "欢迎大家关注", "欢迎关注公众号", "可以关注公众号", "请关注公众号",
-        "后台回复", "本文首发", "点赞收藏", "点赞关注", "一键三连", "私信我",
+        "后台回复", "本文首发", "点赞收藏", "点赞关注", "私信我",
     )
     rep4_re = re.compile(r"(.)\1{3,}")
+    rep4_whitelist = {"呜呜呜呜", "呵呵呵呵", "嘻嘻嘻嘻", "嘿嘿嘿嘿", "嘿嘿嘿嘿嘿"}
 
     existing_pairs: set[tuple[str, str]] = set()
     shei_wt: dict[str, int] = {}
@@ -1087,7 +1118,7 @@ def clean_composite(lines: list[str], stats: dict) -> list[str]:
         if (
             is_leading_de_fragment(w, py)
             or is_leading_le_fragment(w, py)
-            or rep4_re.search(w)
+            or (rep4_re.search(w) and w not in rep4_whitelist)
             or any(sub in w for sub in promo_substrings)
         ):
             stats["deleted_noise_or_typo"] += 1
@@ -1147,11 +1178,8 @@ def clean_composite(lines: list[str], stats: dict) -> list[str]:
                         stats["reweighted"] += 1
         out.append(format_entry(w, py, wt, extra))
 
-    if ("轻薄本", "qing bao ben") not in existing_pairs:
-        shei_additions.append("轻薄本\tqing bao ben\t400")
-        existing_pairs.add(("轻薄本", "qing bao ben"))
     if shei_additions:
-        out.append("# 补充常用口语「谁(shei)」与「轻薄本」读音")
+        out.append("# 补充常用口语「谁(shei)」读音")
         out.extend(shei_additions)
         stats["added"] += len(shei_additions)
     return out

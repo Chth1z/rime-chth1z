@@ -769,6 +769,15 @@ def apply_cn_overlay(
         return lines
 
     hdr, body = _split_header_body(lines)
+    add_keys = {(r.word, r.py) for r in adds} | {
+        (r.word, py) for r in duals for py in (r.py1, r.py2)
+    }
+    pre_existing: set[tuple[str, str]] = set()
+    if pf_map and add_keys:
+        for line in body:
+            p0 = _parse_entry(line)
+            if p0:
+                pre_existing.add((p0[0], p0[1]))
     out_body: list[str] = []
     seen: set[tuple[str, str]] = set()
 
@@ -795,12 +804,15 @@ def apply_cn_overlay(
             hits[wf.rule_id] += 1
             stats["rules_word_fixed"] += 1
 
-        # 3. Phonetic fixes
+        # 3. Phonetic fixes (idempotent when additions/duals restore old_py alongside new_py)
         pf = pf_map.get((w, py))
         if pf is not None:
-            py = pf.new_py
-            hits[pf.rule_id] += 1
-            stats["rules_py_fixed"] += 1
+            if (w, py) in add_keys and (w, pf.new_py) in pre_existing:
+                hits[pf.rule_id] += 1
+            else:
+                py = pf.new_py
+                hits[pf.rule_id] += 1
+                stats["rules_py_fixed"] += 1
 
         # 4. Exact weight rule, followed by wildcard weight rule
         wr_ex = wt_exact.get((w, py))

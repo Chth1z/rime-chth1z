@@ -14791,6 +14791,7 @@ sort: by_weight
 一锅饭	yi guo fan	17
 一锤一锤	yi chui yi chui	23
 一锭银子	yi ding yin zi	15
+一键三连	yi jian san lian	253
 一键下单	yi jian xia dan	50
 一键下载	yi jian xia zai	101
 一键举报	yi jian ju bao	3
@@ -25462,6 +25463,7 @@ sort: by_weight
 告白气球	gao bai qi qiu	161
 告诉全世界	gao su quan shi jie	118
 员工的工资	yuan gong de gong zi	167
+呜呜呜呜	wu wu wu wu	311
 周一至周五	zhou yi zhi zhou wu	144
 周五下午	zhou wu xia wu	153
 周五晚上	zhou wu wan shang	195
@@ -25479,6 +25481,7 @@ sort: by_weight
 周黑鸭	zhou hei ya	192
 味道也不错	wei dao ye bu cuo	109
 味道浓郁	wei dao nong yu	108
+呵呵呵呵	he he he he	238
 呼吸不畅	hu xi bu chang	147
 呼吸灯	hu xi deng	111
 呼声很高	hu sheng hen gao	107
@@ -25898,7 +25901,7 @@ sort: by_weight
 增额终身寿	zeng e zhong shen shou	285
 增额终身寿险	zeng e zhong shen shou xian	1082
 墨墨背单词	mo mo bei dan ci	277
-墨水屏	mo shui ping	25
+墨水屏	mo shui ping	944
 墨菲定律	mo fei ding lv	115
 士兵突击	shi bing tu ji	117
 声临其境	sheng lin qi jing	109
@@ -27155,7 +27158,7 @@ sort: by_weight
 废除死刑	fei chu si xing	231
 座位险	zuo wei xian	247
 康卡斯	kang ka si	282
-康复师	kang fu shi	40
+康复师	kang fu shi	286
 康复期	kang fu qi	110
 康复机构	kang fu ji gou	117
 康复治疗师	kang fu zhi liao shi	105
@@ -30357,7 +30360,7 @@ sort: by_weight
 爱谁谁	ai shui shui	21
 父亲去世	fu qin qu shi	282
 父亲说	fu qin shuo	354
-父元素	fu yuan su	20
+父元素	fu yuan su	221
 父子二人	fu zi er ren	98
 父母养老	fu mu yang lao	86
 父母对孩子	fu mu dui hai zi	164
@@ -32921,7 +32924,7 @@ sort: by_weight
 货币总量	huo bi zong liang	234
 货币政策工具	huo bi zheng ce gong ju	125
 货币金融学	huo bi jin rong xue	419
-货拉拉	huo la la	20
+货拉拉	huo la la	230
 货运飞船	huo yun fei chuan	264
 质疑声	zhi yi sheng	174
 质疑的声音	zhi yi de sheng yin	149
@@ -186412,11 +186415,13 @@ sort: by_weight
 嘻哈街舞	xi ha jie wu	3
 嘻哈说唱	xi ha shuo chang	20
 嘻哈风格	xi ha feng ge	13
+嘻嘻嘻嘻	xi xi xi xi	82
 嘻嘻的笑	xi xi de xiao	1
 嘻螺会	xi luo hui	1
 嘿咻嘿咻	hei xiu hei xiu	8
 嘿嘿傻笑	hei hei sha xiao	7
 嘿嘿冷笑	hei hei leng xiao	2
+嘿嘿嘿嘿嘿	hei hei hei hei hei	48
 嘿嘿的笑	hei hei de xiao	13
 嘿嘿笑	hei hei xiao	32
 嘿嘿笑道	hei hei xiao dao	5
@@ -371140,7 +371145,7 @@ sort: by_weight
 活动二维码	huo dong er wei ma	3
 活动仅限	huo dong jin xian	3
 活动仪式	huo dong yi shi	2
-活动价	huo dong jia	40
+活动价	huo dong jia	424
 活动伊始	huo dong yi shi	1
 活动会场	huo dong hui chang	13
 活动促销	huo dong cu xiao	46
@@ -479730,7 +479735,6 @@ sort: by_weight
 苦难的经历	ku nan de jing li	3
 苦难经历	ku nan jing li	7
 苦难辉煌	ku nan hui huang	11
-苯丙芘	ben bing pi	1
 苯二氮卓类	ben er dan zhuo lei	42
 苯二氮卓类药物	ben er dan zhuo lei yao wu	23
 苯含量	ben han liang	16
@@ -500878,6 +500882,7 @@ sort: by_weight
 谁是老板	shui shi lao ban	1
 谁是英雄	shui shi ying xiong	2
 谁是被害者	shui shi bei hai zhe	9
+谁是谁的	shui shi shui de	17
 谁是谁的谁	shui shi shei de shui	1
 谁是赢家	shui shi ying jia	2
 谁是首富	shui shi shou fu	1
@@ -595469,7 +595474,7 @@ sort: by_weight
 粮不三载	liang bu san zai	7
 取用于国	qu yong yu guo	8
 因粮于敌	yin liang yu di	32
-# 补充常用口语「谁(shei)」与「轻薄本」读音
+# 补充常用口语「谁(shei)」读音
 不是针对谁	bu shi zhen dui shei	143
 卖给谁	mai gei shei	285
 又有谁能	you you shei neng	124
@@ -595939,4 +595944,14 @@ sort: by_weight
 谁同意	shei tong yi	11
 谁最强	shei zui qiang	34
 谁能做到	shei neng zuo dao	85
-轻薄本	qing bao ben	400
+轻薄本	qing bao ben	300
+韩团	han tuan	236
+站场	zhan chang	126
+法团	fa tuan	70
+昂撒人	ang sa ren	66
+零卡糖	ling ka tang	58
+工团	gong tuan	58
+深研院	shen yan yuan	43
+一图流	yi tu liu	43
+千羽鹤	qian yu he	41
+汉字学	han zi xue	40
