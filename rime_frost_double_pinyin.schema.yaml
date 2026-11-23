@@ -226,7 +226,7 @@ tw_dual_filter:
   option_name: traditionalization
   twp_config: s2twp.json
   tw_config: s2tw.json
-  tags: [ abc, number, gregorian_to_lunar ]
+  tags: [ abc ]
 
 punctuator:
   full_shape:

@@ -469,7 +469,7 @@ sort: by_weight
 通新岭	tong xin ling	0
 晒布	shai bu	16
 田贝	tian bei	1
-草埔	cao pu	1
+草埔	cao bu	1
 布吉	bu ji	32
 木棉湾	mu mian wan	2
 大芬	da fen	5
@@ -1174,7 +1174,7 @@ sort: by_weight
 红嘴子	hong zui zi	0
 双丰	shuang feng	1
 长春西站	chang chun xi zhan	0
-兴隆堡	xing long bao	0
+兴隆堡	xing long pu	0
 西环城路	xi huan cheng lu	0
 万福街	wan fu jie	0
 景阳广场	jing yang guang chang	0
@@ -1553,7 +1553,7 @@ sort: by_weight
 古镇口	gu zhen kou	3
 贡口湾	gong kou wan	0
 董家口港	dong jia kou gang	0
-泊里	po li	4
+泊里	bo li	4
 董家口火车站	dong jia kou huo che zhan	0
 孔目湖	kong mu hu	1
 庐山南大道	lu shan nan da dao	2
@@ -1745,7 +1745,6 @@ sort: by_weight
 太榆路	tai yu lu	1
 沟壑区	gou he qu	0
 沧白路	cang bai lu	1
-河水库	he shui ku	1
 河洛镇	he luo zhen	1
 永丰镇	yong feng zhen	3
 永和镇	yong he zhen	1
@@ -1755,7 +1754,6 @@ sort: by_weight
 流花路	liu hua lu	1
 澄江镇	cheng jiang zhen	1
 留和路	liu he lu	3
-西路南	xi lu nan	2
 铜冶镇	tong ye zhen	8
 金雀山	jin que shan	1
 青阳镇	qing yang zhen	1
@@ -1783,14 +1781,12 @@ sort: by_weight
 九都	jiu du	0
 凯里尼亚	kai li ni ya	9
 凯尔盖朗	kai er gai lang	8
-卡尔洛维	ka er luo wei	7
 那喀索斯	na ka suo si	12
 伊基托斯	yi ji tuo si	7
 莫尔多瓦	mo er duo wa	7
 朴次茅斯	pu ci mao si	7
 沃罗涅什	wo luo nie shi	6
 埃迪尔内	ai di er nei	6
-博尔斯克	bo er si ke	5
 朋迪榭里	peng di xie li	5
 萨勒赫城	sa le he cheng	8
 达纳基尔	da na ji er	5
@@ -1817,3 +1813,6 @@ sort: by_weight
 蓄奴州	xu nu zhou	50
 卡坦岛	ka tan dao	30
 宝幢	bao zhuang	15
+宜兴埠	yi xing fu	1
+宜兴埠北	yi xing fu bei	0
+龙爪堰	long zhao yan	0

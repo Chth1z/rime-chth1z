@@ -3,15 +3,15 @@
 cn_dicts/others.dict.yaml	溝呂木	*	沟吕木	gou lv mu	R1杂项词库正字修正	通用规范汉字表
 cn_dicts/others.dict.yaml	王抒	*	王忬	wang yu	R1杂项词库正字修正	通用规范汉字表
 cn_dicts/others.dict.yaml	马伊俐	*	马伊琍	ma yi li	R1杂项词库正字修正	通用规范汉字表
-cn_dicts_cell/animal.dict.yaml	史塔副郡牛头㹴	*	史塔福郡牛头㹴	shi ta fu jun niu tou geng	R1动物词库正字修正	通用规范汉字表
+cn_dicts_cell/animal.dict.yaml	史塔副郡牛头㹴	*	史塔福郡牛头梗	shi ta fu jun niu tou geng	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/animal.dict.yaml	小史揉查犬	*	小史柔查犬	xiao shi rou cha quan	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/animal.dict.yaml	彭布罗克歌基犬	*	彭布罗克柯基犬	peng bu luo ke ke ji quan	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/animal.dict.yaml	桅子灰蝶	*	栀子灰蝶	zhi zi hui die	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/animal.dict.yaml	甄蝶	*	珍蝶	zhen die	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/animal.dict.yaml	眼碟	*	眼蝶	yan die	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/animal.dict.yaml	米尼雪纳瑞犬	*	迷你雪纳瑞犬	mi ni xue na rui quan	R1动物词库正字修正	通用规范汉字表
-cn_dicts_cell/animal.dict.yaml	约瑟猩	*	约瑟㹴	yue se geng	R1动物词库正字修正	通用规范汉字表
-cn_dicts_cell/animal.dict.yaml	美国史塔副郡㹴	*	美国史塔福郡㹴	mei guo shi ta fu jun geng	R1动物词库正字修正	通用规范汉字表
+cn_dicts_cell/animal.dict.yaml	约瑟猩	*	约瑟梗	yue se geng	R1动物词库正字修正	通用规范汉字表
+cn_dicts_cell/animal.dict.yaml	美国史塔副郡㹴	*	美国史塔福郡梗	mei guo shi ta fu jun geng	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/animal.dict.yaml	英国小型猎免犬	*	英国小型猎兔犬	ying guo xiao xing lie tu quan	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/chess.dict.yaml	双车协士	*	双车胁士	shuang ju xie shi	R1象棋正字修正	通用规范汉字表
 cn_dicts_cell/chess.dict.yaml	太监追黄帝	*	太监追皇帝	tai jian zhui huang di	R1象棋正字修正	通用规范汉字表
@@ -430,3 +430,304 @@ cn_dicts_cell/literature.dict.yaml	诸侯能荐人於天子	zhu hou neng jian re
 cn_dicts/base.dict.yaml	粘滞	*	黏滞	nian zhi	W3物性性状规范写作黏滞(nián zhì)	现汉第7版/全国名词委(L1/L2)
 cn_dicts/base.dict.yaml	纵膈	zong ge	纵隔	zong ge	W3解剖学唯一规范写作纵隔	全国名词委(L2)
 cn_dicts_cell/composite.dict.yaml	纵膈肿瘤	zong ge zhong liu	纵隔肿瘤	zong ge zhong liu	W3解剖学唯一规范写作纵隔肿瘤	全国名词委(L2)
+cn_dicts_cell/composite.dict.yaml	经常帐	*	经常账	*	W3清理财会“帐”异形词	第一批异形词整理表
+cn_dicts_cell/composite.dict.yaml	贸易帐	*	贸易账	*	W3清理财会“帐”异形词	第一批异形词整理表
+cn_dicts_cell/idiom.dict.yaml	出门不认帐	*	出门不认账	*	W3清理财会“帐”异形词	第一批异形词整理表
+cn_dicts_cell/idiom.dict.yaml	背公循私	*	背公徇私	*	W5修正形近错字“循→徇”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	对薄公庭	dui bo gong ting	对簿公庭	dui bu gong ting	W5修正“薄→簿”形近错字及读音	现汉第7版
+cn_dicts_cell/history.dict.yaml	妥懽帖睦尔	tuo guan tie mu er	妥欢帖睦尔	tuo huan tie mu er	元顺帝名非8105繁体懽->欢且修正误读 guan->huan	辞海/通用规范汉字表
+cn_dicts_cell/history.dict.yaml	元顺帝妥懽帖睦尔	yuan shun di tuo guan tie mu er	元顺帝妥欢帖睦尔	yuan shun di tuo huan tie mu er	元顺帝名非8105繁体懽->欢且修正误读 guan->huan	辞海/通用规范汉字表
+cn_dicts_cell/literature.dict.yaml	数罟不入池	shu gu bu ru chi	数罟不入洿池	cu gu bu ru wu chi	《孟子》漏字残句补正洿且数读 cù	孟子/统编语文
+cn_dicts_cell/literature.dict.yaml	王使盖大夫王为辅行	wang shi gai dai fu wang wei fu xing	王使盖大夫王欢为辅行	wang shi ge da fu wang huan wei fu xing	《孟子》漏字残句(原字驩简化为欢)且修正盖(gě)大夫(dà fū)	孟子/通用规范汉字表
+cn_dicts_cell/literature.dict.yaml	不可法於者	bu ke fa yu zhe	不可法于后世者	bu ke fa yu hou shi zhe	《孟子·离娄上》漏字残句补正且於->于	孟子/通用规范汉字表
+cn_dicts_cell/literature.dict.yaml	於人心独无乎	yu ren xin du wu hu	于人心独无恔乎	yu ren xin du wu xiao hu	《孟子·公孙丑下》漏字残句补正恔(xiào)且於->于	孟子/通用规范汉字表
+cn_dicts_cell/literature.dict.yaml	是人这所恶也	shi ren zhe suo e ye	是人之所恶也	shi ren zhi suo wu ye	《孟子》错字这->之且厌恶义恶读 wù	孟子
+cn_dicts_cell/literature.dict.yaml	恶用是鶂鶂者为哉	e yong shi yi yi zhe wei zai	恶用是鹢鹢者为哉	wu yong shi yi yi zhe wei zai	《孟子》繁体鶂->鹢且疑问词恶读 wū	孟子/通用规范汉字表
+cn_dicts_cell/literature.dict.yaml	狼籍残红	lang ji can hong	狼藉残红	*	E2错字狼籍->狼藉	现汉第7版
+cn_dicts_cell/literature.dict.yaml	一枕黄梁再现	yi zhen huang liang zai xian	一枕黄粱再现	*	E2错字黄梁->黄粱	现汉第7版
+cn_dicts/ext.dict.yaml	樊于期	fan yu qi	樊於期	fan wu ji	史记人名规范保留於(wū)期(jī)，纠正过度简化与误读	辞海/通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	纨袴不饿死	wan ku bu e si	纨绔不饿死	*	W3异体字袴->绔（与literature同步）	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	恶声狼籍	e sheng lang ji	恶声狼藉	*	E2错字狼籍->狼藉	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	久闻大名如雷灌耳	jiu wen da ming ru lei guan er	久闻大名如雷贯耳	*	E2错字如雷灌耳->如雷贯耳	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	才可容颜十五馀	cai ke rong yan shi wu yu	才可容颜十五余	*	Trad 馀->余（与literature同步）	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	渡头馀落日	du tou yu luo ri	渡头余落日	*	Trad 馀->余（与literature同步）	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	梁父吟成恨有馀	liang fu yin cheng hen you yu	梁父吟成恨有余	*	Trad 馀->余（与literature同步）	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	悯馀	min yu	悯余	*	Trad 馀->余（与literature同步）	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	清淮奉使千馀里	qing huai feng shi qian yu li	清淮奉使千余里	*	Trad 馀->余（与literature同步）	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	日出雾露馀	ri chu wu lu yu	日出雾露余	*	Trad 馀->余（与literature同步）	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	惟馀莽莽	wei yu mang mang	惟余莽莽	*	Trad 馀->余（与literature同步）	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	惟馀钟磬音	wei yu zhong qing yin	惟余钟磬音	*	Trad 馀->余（与literature同步）	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	馀响入霜钟	yu xiang ru shuang zhong	余响入霜钟	*	Trad 馀->余（与literature同步）	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	云此最吉馀难同	yun ci zui ji yu nan tong	云此最吉余难同	*	Trad 馀->余（与literature同步）	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	郑馀庆	zheng yu qing	郑余庆	*	Trad 馀->余（与literature同步）	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	终南望馀雪	zhong nan wang yu xue	终南望余雪	*	Trad 馀->余（与literature同步）	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	行有馀力	xing you yu li	行有余力	*	Trad 馀->余（与literature同步）	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	伺瑕导蠙	si xia dao pin	伺瑕导隙	si xia dao xi	OCR形近错字蠙(pín)->隙(xì)	汉语大词典/通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	伺瑕抵蠙	si xia di pin	伺瑕抵隙	si xia di xi	OCR形近错字蠙(pín)->隙(xì)	汉语大词典/通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	驷之过蠙	si zhi guo pin	驷之过隙	si zhi guo xi	OCR形近错字蠙(pín)->隙(xì)	汉语大词典/通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	有蠙可乘	you pin ke cheng	有隙可乘	you xi ke cheng	OCR形近错字蠙(pín)->隙(xì)	汉语大词典/通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	逾墙窥蠙	yu qiang kui pin	逾墙窥隙	yu qiang kui xi	OCR形近错字蠙(pín)->隙(xì)	汉语大词典/通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	逾墙钻蠙	yu qiang zuan pin	逾墙钻隙	yu qiang zuan xi	OCR形近错字蠙(pín)->隙(xì)	汉语大词典/通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	囊槖充盈	nang tuo chong ying	囊橐充盈	*	非8105异体字槖->橐	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	囊槖累累	nang tuo lei lei	囊橐累累	*	非8105异体字槖->橐	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	囊槖如洗	nang tuo ru xi	囊橐如洗	*	非8105异体字槖->橐	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	囊槖萧然	nang tuo xiao ran	囊橐萧然	*	非8105异体字槖->橐	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	囊槖萧瑟	nang tuo xiao se	囊橐萧瑟	*	非8105异体字槖->橐	通用规范汉字表
+cn_dicts_cell/idiom.dict.yaml	囊槖中物	nang tuo zhong wu	囊橐中物	*	非8105异体字槖->橐	通用规范汉字表
+cn_dicts_cell/geography.dict.yaml	低液限粘土	*	低液限黏土	*	W3地质/岩土规范用黏	第一批异形词整理表/全国科技名词委(L1/L2)
+cn_dicts_cell/geography.dict.yaml	粘质砂土	*	黏质砂土	*	W3土壤/地质规范用黏	第一批异形词整理表/全国科技名词委(L1/L2)
+cn_dicts_cell/geography.dict.yaml	粘滑地震	*	黏滑地震	*	W3地震学规范用黏滑(base已作黏滑)	全国科技名词委地球物理(L2)
+cn_dicts_cell/geography.dict.yaml	沙垅	*	沙垄	*	W3规范异体垅→垄	通用规范汉字表/地理学名词(L1/L2)
+cn_dicts/base.dict.yaml	肉沫茄子	*	肉末茄子	*	W5肉末(肉沫为错字，ext已有肉末茄子)	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	土司面包	*	吐司面包	*	W1面包义用吐司(base已有吐司面包44)	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	烤土司	*	烤吐司	*	W1面包义用吐司(composite已有烤吐司34)	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	竹碳粉	*	竹炭粉	*	W1炭黑/木炭义用炭(composite已有竹炭粉7)	现汉第7版(L1)
+cn_dicts_cell/medication.dict.yaml	鸡从菌	ji cong jun	鸡枞菌	ji zong jun	W5错别字+错音修正	现汉第7版/真菌名词(L1/L2)
+cn_dicts_cell/game.dict.yaml	烘培套餐	hong pei tao can	烘焙套餐	hong bei tao can	W5烘培→烘焙	现汉第7版(L1)
+cn_dicts_cell/game.dict.yaml	绿咖哩	lv ka li	绿咖喱	lv ga li	W3咖哩→咖喱(ext已有绿咖喱27)	现汉第7版(L1)
+cn_dicts_cell/game.dict.yaml	野菜咖哩	ye cai ka li	野菜咖喱	ye cai ga li	W3咖哩→咖喱	现汉第7版(L1)
+cn_dicts/base.dict.yaml	氽大甲	tun da jia	汆大甲	cuan da jia	W5氽(tǔn)误代汆(cuān)	现汉第7版/通用规范汉字表(L1)
+cn_dicts/base.dict.yaml	氽肥肠儿	tun fei chang er	汆肥肠儿	cuan fei chang er	W5氽(tǔn)误代汆(cuān)	现汉第7版(L1)
+cn_dicts/base.dict.yaml	氽灌肠	tun guan chang	汆灌肠	cuan guan chang	W5氽(tǔn)误代汆(cuān)	现汉第7版(L1)
+cn_dicts/base.dict.yaml	氽节子	tun jie zi	汆节子	cuan jie zi	W5氽(tǔn)误代汆(cuān)	现汉第7版(L1)
+cn_dicts/base.dict.yaml	氽鲤鱼	tun li yu	汆鲤鱼	cuan li yu	W5氽(tǔn)误代汆(cuān)	现汉第7版(L1)
+cn_dicts/base.dict.yaml	氽毛豆	tun mao dou	汆毛豆	cuan mao dou	W5氽(tǔn)误代汆(cuān)	现汉第7版(L1)
+cn_dicts/base.dict.yaml	氽三样儿	tun san yang er	汆三样儿	cuan san yang er	W5氽(tǔn)误代汆(cuān)	现汉第7版(L1)
+cn_dicts_cell/food.dict.yaml	地胆头炖猪月展	di dan tou dun zhu yue zhan	地胆头炖猪腱	di dan tou dun zhu jian	OCR拆字月展(𦟌)规范作腱	通用规范汉字表(L1)
+cn_dicts_cell/food.dict.yaml	红参苓术炖牛月展	hong shen ling shu dun niu yue zhan	红参苓术炖牛腱	hong shen ling zhu dun niu jian	OCR拆字月展→腱且白术读zhú	通用规范汉字表/现汉第7版(L1)
+cn_dicts_cell/food.dict.yaml	豆鼓鲇鱼	dou gu nian yu	豆豉鲇鱼	dou chi nian yu	W5豆鼓→豆豉	现汉第7版(L1)
+cn_dicts_cell/food.dict.yaml	豆鼓肉	dou gu rou	豆豉肉	dou chi rou	W5豆鼓→豆豉	现汉第7版(L1)
+cn_dicts_cell/food.dict.yaml	豆鼓鱼	dou gu yu	豆豉鱼	dou chi yu	W5豆鼓→豆豉(base已有豆豉鱼12)	现汉第7版(L1)
+cn_dicts_cell/food.dict.yaml	蓝莓慕丝	*	蓝莓慕斯	*	W3甜品mousse规范作慕斯(base已有)	现汉第7版(L1)
+cn_dicts_cell/food.dict.yaml	酸奶慕丝蛋糕	*	酸奶慕斯蛋糕	*	W3甜品mousse规范作慕斯	现汉第7版(L1)
+cn_dicts_cell/food.dict.yaml	芥茉鸭掌	*	芥末鸭掌	*	W5芥茉→芥末	现汉第7版(L1)
+cn_dicts_cell/food.dict.yaml	蜂蜜凉棕子	*	蜂蜜凉粽子	*	W5棕子→粽子	现汉第7版(L1)
+cn_dicts_cell/food.dict.yaml	鸡棕酥	*	鸡枞酥	*	W5鸡棕→鸡枞	现汉第7版(L1)
+cn_dicts_cell/food.dict.yaml	鸡纵	*	鸡枞	*	W5鸡纵→鸡枞	现汉第7版(L1)
+cn_dicts_cell/food.dict.yaml	胡芦桔翅	*	葫芦桔翅	*	W5胡芦→葫芦	现汉第7版(L1)
+cn_dicts_cell/food.dict.yaml	椰蓉马卡隆	*	椰蓉马卡龙	*	W5法甜macaron规范作马卡龙	社会通行规范(L5)
+cn_dicts_cell/food.dict.yaml	馥郁布朗宁	*	馥郁布朗尼	*	W5甜品brownie规范作布朗尼	社会通行规范(L5)
+cn_dicts_cell/food.dict.yaml	鲜奶泡夫	*	鲜奶泡芙	*	W5甜品puff规范作泡芙	现汉第7版(L1)
+cn_dicts_cell/food.dict.yaml	香酥蛋塔盅	*	香酥蛋挞盅	*	W5大陆规范作蛋挞	现汉第7版(L1)
+cn_dicts_cell/food.dict.yaml	凤梨火腿蛋琣果	feng li huo tui dan beng guo	凤梨火腿蛋贝果	feng li huo tui dan bei guo	W5生造非8105字琣果→贝果	通用规范汉字表(L1)
+cn_dicts_cell/food.dict.yaml	生炒蒜苔肉	*	生炒蒜薹肉	*	W3第一批异形词整理表规范作蒜薹	第一批异形词整理表(L1)
+cn_dicts_cell/sport.dict.yaml	连续不胜记录	*	连续不胜纪录	*	W1体育最佳/连胜连败用纪录（与同库连败纪录一致）	现汉第7版
+cn_dicts_cell/game.dict.yaml	春秋谷粮传	chun qiu gu liang chuan	春秋谷梁传	chun qiu gu liang zhuan	W5错字谷粮->谷梁且正音zhuan（同春秋公羊传）	现汉第7版
+cn_dicts_cell/game.dict.yaml	哪咤凌霄宝殿	na zha ling xiao bao dian	哪吒凌霄宝殿	ne zha ling xiao bao dian	W5错字咤->吒且正音ne zha	现汉第7版
+cn_dicts_cell/game.dict.yaml	主体强化功杀一重	*	主体强化攻杀一重	*	W5错字功杀->攻杀（与同库强化攻杀一致）	游戏技能正字
+cn_dicts_cell/game.dict.yaml	主体强化功杀二重	*	主体强化攻杀二重	*	W5错字功杀->攻杀	游戏技能正字
+cn_dicts_cell/game.dict.yaml	主体强化功杀三重	*	主体强化攻杀三重	*	W5错字功杀->攻杀	游戏技能正字
+cn_dicts_cell/game.dict.yaml	主体强化功杀四重	*	主体强化攻杀四重	*	W5错字功杀->攻杀	游戏技能正字
+cn_dicts_cell/game.dict.yaml	主体强化功杀五重	zhu ti qiang hua gong sha wu zhong	主体强化攻杀五重	zhu ti qiang hua gong sha wu chong	W5错字功杀->攻杀且正音chong	游戏技能正字/现汉第7版
+cn_dicts_cell/game.dict.yaml	主体强化功杀六重	zhu ti qiang hua gong sha liu zhong	主体强化攻杀六重	zhu ti qiang hua gong sha liu chong	W5错字功杀->攻杀且正音chong	游戏技能正字/现汉第7版
+cn_dicts_cell/game.dict.yaml	积分点卷	ji fen dian juan	积分点券	ji fen dian quan	W5错字点卷->点券且正音quan	现汉第7版
+cn_dicts_cell/game.dict.yaml	裁缝大会入场卷	cai feng da hui ru chang juan	裁缝大会入场券	cai feng da hui ru chang quan	W5错字入场卷->入场券且正音quan	现汉第7版
+cn_dicts_cell/game.dict.yaml	迷图闯天关入场卷	mi tu chuang tian guan ru chang juan	迷图闯天关入场券	mi tu chuang tian guan ru chang quan	W5错字入场卷->入场券且正音quan	现汉第7版
+cn_dicts_cell/game.dict.yaml	撞大运入场卷	zhuang da yun ru chang juan	撞大运入场券	zhuang da yun ru chang quan	W5错字入场卷->入场券且正音quan	现汉第7版
+cn_dicts_cell/game.dict.yaml	艾琳的初级抽奖卷	ai lin de chu ji chou jiang juan	艾琳的初级抽奖券	ai lin de chu ji chou jiang quan	W5错字抽奖卷->抽奖券且正音quan	现汉第7版
+cn_dicts_cell/game.dict.yaml	艾琳的中级抽奖卷	ai lin de zhong ji chou jiang juan	艾琳的中级抽奖券	ai lin de zhong ji chou jiang quan	W5错字抽奖卷->抽奖券且正音quan	现汉第7版
+cn_dicts_cell/game.dict.yaml	艾琳的高级抽奖卷	ai lin de gao ji chou jiang juan	艾琳的高级抽奖券	ai lin de gao ji chou jiang quan	W5错字抽奖卷->抽奖券且正音quan	现汉第7版
+cn_dicts_cell/game.dict.yaml	红衣帐本	*	红衣账本	*	W3财会帐本->账本	现汉第7版
+cn_dicts_cell/game.dict.yaml	神秘帐本	*	神秘账本	*	W3财会帐本->账本	现汉第7版
+cn_dicts_cell/game.dict.yaml	交易帐本副本	*	交易账本副本	*	W3财会帐本->账本	现汉第7版
+cn_dicts_cell/game.dict.yaml	魔法天份	*	魔法天分	*	W3异形词天份->天分	第一批异形词整理表
+cn_dicts_cell/game.dict.yaml	高级魔法天份	*	高级魔法天分	*	W3异形词天份->天分	第一批异形词整理表
+cn_dicts_cell/game.dict.yaml	终级魔法天份	*	终级魔法天分	*	W3异形词天份->天分（注：终级*为《梦想世界》游戏原用词，暂保留）	第一批异形词整理表
+cn_dicts_cell/game.dict.yaml	练武场修练	*	练武场修炼	*	W5错字修练->修炼	现汉第7版
+cn_dicts_cell/game.dict.yaml	廻色云弦	*	回色云弦	*	Non-8105 variant: 廻->回	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/game.dict.yaml	廻身箭术	*	回身箭术	*	Non-8105 variant: 廻->回	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/game.dict.yaml	泷廻鉴花	*	泷回鉴花	*	Non-8105 variant: 廻->回	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/game.dict.yaml	智慧之城的讬贸	*	智慧之城的托贸	*	Non-8105 variant: 讬->托（同idiom已修规则）	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/game.dict.yaml	肈始之乡	*	肇始之乡	*	Non-8105 variant: 肈->肇	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/game.dict.yaml	蔓生的埜草	*	蔓生的野草	*	Non-8105 variant: 埜->野	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/game.dict.yaml	沧海之矅	*	沧海之曜	*	Non-8105 variant: 矅->曜	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts/base.dict.yaml	粘滞性	*	黏滞性	nian zhi xing	W3物性性状规范用黏	现汉第7版/全国科技名词委
+cn_dicts/base.dict.yaml	粘滞度	*	黏滞度	nian zhi du	W3物性性状规范用黏	现汉第7版/全国科技名词委
+cn_dicts_cell/composite.dict.yaml	记录贴	*	记录帖	*	W3帖子规范用帖	现汉第7版
+cn_dicts_cell/composite.dict.yaml	直播贴	*	直播帖	*	W3帖子规范用帖	现汉第7版
+cn_dicts_cell/composite.dict.yaml	爆料贴	*	爆料帖	*	W3帖子规范用帖	现汉第7版
+cn_dicts_cell/composite.dict.yaml	精炼的语言	*	精练的语言	*	W3文字简洁规范用精练	第一批异形词整理表
+cn_dicts_cell/composite.dict.yaml	文字精炼	*	文字精练	*	W3文字简洁规范用精练	第一批异形词整理表
+cn_dicts_cell/composite.dict.yaml	短小精炼	*	短小精练	*	W3文字简洁规范用精练	第一批异形词整理表
+cn_dicts_cell/composite.dict.yaml	领导交待	*	领导交代	*	W3交待规范用交代	第一批异形词整理表
+cn_dicts/others.dict.yaml	攻框	*	攻筐	*	W5篮球篮筐规范用筐	现汉第7版
+cn_dicts/others.dict.yaml	冲框	*	冲筐	*	W5篮球篮筐规范用筐	现汉第7版
+cn_dicts/others.dict.yaml	褚赢	*	褚嬴	*	W5《棋魂》角色正名褚嬴	作品官方(L3)
+cn_dicts/others.dict.yaml	慧差	*	彗差	*	W5光学像差规范作彗差	全国科技名词委
+cn_dicts/others.dict.yaml	屯币	*	囤币	*	W5囤积义规范用囤	现汉第7版
+cn_dicts/others.dict.yaml	邝兆雷	*	邝兆镭	*	W5球员正名邝兆镭	公开报道(L3)
+cn_dicts_cell/chess2.dict.yaml	得子得先各得子	de zi de xian ge de zi	得子得先名得子	de zi de xian ming de zi	W5象棋古诀OCR错字各->名	事林广记
+cn_dicts_cell/chess2.dict.yaml	栓链	*	拴链	*	W5绳链牵制规范用拴	现汉第7版
+cn_dicts_cell/chess2.dict.yaml	自来出洞无敌手象棋古谱新编	zi lai chu dong wu di shou xiang qi gu pu xin bian	自出洞来无敌手象棋古谱新编	zi chu dong lai wu di shou xiang qi gu pu xin bian	W5明代古谱正名《自出洞来无敌手》	辞海/象棋史
+cn_dicts_cell/exthot.dict.yaml	帮布	*	邦布	*	W5《绝区零》官方正名邦布	作品官方(L3)
+cn_dicts_cell/geography.dict.yaml	大成历史名城	*	大城历史名城	*	W5泰国阿瑜陀耶大城府错字	世界遗产名录
+cn_dicts_cell/geography.dict.yaml	多明各会	duo ming ge hui	多明我会	duo ming wo hui	W5天主教Dominican Order规范作多明我会	辞海
+cn_dicts_cell/geography.dict.yaml	反象	*	反像	*	W3测绘影像规范用像	测绘学名词
+cn_dicts_cell/geography.dict.yaml	格网座标	*	格网坐标	*	W3坐标规范用坐	现汉第7版/测绘学名词
+cn_dicts_cell/geography.dict.yaml	汉撒同盟城	*	汉萨同盟城	*	W5汉萨同盟错字	辞海
+cn_dicts_cell/geography.dict.yaml	声纳遥感	*	声呐遥感	*	W3水声探测规范用声呐	第一批异形词整理表
+cn_dicts_cell/geography.dict.yaml	卫星象片	*	卫星像片	*	W3测绘影像规范用像	测绘学名词
+cn_dicts_cell/geography.dict.yaml	阳象	*	阳像	*	W3测绘影像规范用像	测绘学名词
+cn_dicts_cell/geography.dict.yaml	阴象	*	阴像	*	W3测绘影像规范用像	测绘学名词
+cn_dicts_cell/geography.dict.yaml	原摩加多尔	yuan mo jia duo er	摩加多尔	mo jia duo er	去世界遗产括号前缀原	世界地名翻译大辞典
+cn_dicts_cell/geography.dict.yaml	植物垂直台带	zhi wu chui zhi tai dai	植物垂直地带	zhi wu chui zhi di dai	W5垂直地带错字台->地	地理学名词
+cn_dicts_cell/industry_product.dict.yaml	粘度计	*	黏度计	*	W3物理黏度规范用黏	现汉第7版/全国科技名词委
+cn_dicts_cell/industry_product.dict.yaml	钳型表	*	钳形表	*	W5钳形表规范用形	JJF 1075
+cn_dicts_cell/industry_product.dict.yaml	建筑用粘合剂	*	建筑用黏合剂	*	W3黏合剂规范用黏	现汉第7版/全国科技名词委
+cn_dicts_cell/industry_product.dict.yaml	冷轧线钳	leng zha xian qian	冷压线钳	leng ya xian qian	W5冷压线钳错字轧->压	电工工具规范
+cn_dicts_cell/name.dict.yaml	马利喀斯	*	玛利喀斯	*	W5《艾尔登法环》官译玛利喀斯	作品官方(L3)
+cn_dicts_cell/idiom.dict.yaml	嚎啕大哭	*	号啕大哭	*	W3第一批异形词整理表规范作号啕大哭	第一批异形词整理表
+cn_dicts_cell/food.dict.yaml	柏皮扣	bai pi kou	柚皮扣	you pi kou	W5菜名OCR错字柏->柚	菜谱正字
+cn_dicts_cell/food.dict.yaml	板兰根粥	*	板蓝根粥	*	W5板蓝根错字	中国药典
+cn_dicts_cell/food.dict.yaml	炒豌豆夹	*	炒豌豆荚	*	W5豌豆荚错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	醋烟肉片儿	cu yan rou pian er	醋熘肉片儿	cu liu rou pian er	W5传统名菜醋熘错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	冬冬菇托儿	dong dong gu tuo er	冬菇托儿	dong gu tuo er	W5叠字录入错词	中国名菜谱
+cn_dicts_cell/food.dict.yaml	干火靠大虾	gan huo kao da xia	干㸆大虾	gan kao da xia	拆字火靠合正为8105字㸆	通用规范汉字表
+cn_dicts_cell/food.dict.yaml	宫庭献鱼	*	宫廷献鱼	*	W5宫廷错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	鼓椒鸡丁	gu jiao ji ding	豉椒鸡丁	chi jiao ji ding	W5豆豉错字鼓->豉	现汉第7版
+cn_dicts_cell/food.dict.yaml	锅蹋韭菜	*	锅塌韭菜	*	W5鲁菜锅塌错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	锅榻腰盒	*	锅塌腰盒	*	W5鲁菜锅塌错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	锅鳎鱼盒	*	锅塌鱼盒	*	W5鲁菜锅塌错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	锅熠银鱼	guo yi yin yu	锅塌银鱼	guo ta yin yu	W5鲁菜锅塌OCR错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	蒿子杆炒肉丝	*	蒿子秆炒肉丝	*	W5茎秆规范用秆	现汉第7版
+cn_dicts_cell/food.dict.yaml	花旗参炖蛋蛋	hua qi shen dun dan dan	花旗参炖蛋	hua qi shen dun dan	W5尾字叠字录入错	菜谱正字
+cn_dicts_cell/food.dict.yaml	豢蝶大虾	huan die da xia	蝴蝶大虾	hu die da xia	W5蝴蝶OCR错字	菜谱正字
+cn_dicts_cell/food.dict.yaml	黄耆茯苓鸡汤	*	黄芪茯苓鸡汤	*	W3药典规范用黄芪	中国药典
+cn_dicts_cell/food.dict.yaml	姜茸柠檬锔鸡腿	*	姜茸柠檬焗鸡腿	*	W5粤菜焗错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	锦锈龙虾	*	锦绣龙虾	*	W5锦绣错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	昆布海澡瘦肉汤	*	昆布海藻瘦肉汤	*	W5海藻错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	馏鱼片	*	熘鱼片	*	W5烹调技法熘错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	么么喳喳珍珠糖水	me me zha zha zhen zhu tang shui	摩摩喳喳珍珠糖水	mo mo zha zha zhen zhu tang shui	W5东南亚甜品规范作摩摩喳喳	社会通行
+cn_dicts_cell/food.dict.yaml	面酱银丝青耗	*	面酱银丝青蚝	*	W5青蚝错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	奶汤棱桃仁	nai tang leng tao ren	奶汤核桃仁	nai tang he tao ren	W5核桃仁OCR错字	菜谱正字
+cn_dicts_cell/food.dict.yaml	泡莱鲫鱼	pao lai ji yu	泡菜鲫鱼	pao cai ji yu	W5泡菜OCR错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	青螺饨鞭笋	qing luo tun bian sun	青螺炖鞭笋	qing luo dun bian sun	W5炖错字饨->炖	现汉第7版
+cn_dicts_cell/food.dict.yaml	清蒸哈什蚂	*	清蒸哈士蟆	*	W3规范作哈士蟆	现汉第7版
+cn_dicts_cell/food.dict.yaml	瓤木花雀	rang mu hua que	瓤禾花雀	rang he hua que	W5禾花雀OCR错字	菜谱正字
+cn_dicts_cell/food.dict.yaml	肉棕鲈鱼	*	肉粽鲈鱼	*	W5粽错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	沙锅炖吊子	*	砂锅炖吊子	*	W3规范作砂锅	第一批异形词整理表
+cn_dicts_cell/food.dict.yaml	沙锅牛尾	*	砂锅牛尾	*	W3规范作砂锅	第一批异形词整理表
+cn_dicts_cell/food.dict.yaml	沙锅鱿鱼	*	砂锅鱿鱼	*	W3规范作砂锅	第一批异形词整理表
+cn_dicts_cell/food.dict.yaml	砂窝鱼头豆腐	sha wo yu tou dou fu	砂锅鱼头豆腐	sha guo yu tou dou fu	W5砂锅错字窝->锅	现汉第7版
+cn_dicts_cell/food.dict.yaml	生暴盐煎肉	*	生爆盐煎肉	*	W5烹调技法爆错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	生嗜鸡块	sheng shi ji kuai	生啫鸡块	sheng zhe ji kuai	W5粤菜生啫OCR错字	菜谱正字
+cn_dicts_cell/food.dict.yaml	什锦水果羔	*	什锦水果糕	*	W5水果糕错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	玟瑰大虾	wen gui da xia	玫瑰大虾	mei gui da xia	W5玫瑰OCR错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	芜爆里脊	wu bao li ji	芫爆里脊	yan bao li ji	W5芫爆OCR错字并正音yan	现汉第7版
+cn_dicts_cell/food.dict.yaml	芜爆山鸡	wu bao shan ji	芫爆山鸡	yan bao shan ji	W5芫爆OCR错字并正音yan	现汉第7版
+cn_dicts_cell/food.dict.yaml	芜爆鲜贝	wu bao xian bei	芫爆鲜贝	yan bao xian bei	W5芫爆OCR错字并正音yan	现汉第7版
+cn_dicts_cell/food.dict.yaml	芜爆散丹	wu bao san dan	芫爆散丹	yan bao san dan	W5芫爆OCR错字并正音yan	现汉第7版
+cn_dicts_cell/food.dict.yaml	五子毛桃煲鸡	wu zi mao tao bao ji	五指毛桃煲鸡	wu zhi mao tao bao ji	W5五指毛桃错字	中国植物志
+cn_dicts_cell/food.dict.yaml	消长止疼茶	*	消胀止疼茶	*	W5消胀错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	油闷春笋	*	油焖春笋	*	W5烹调焖错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	鱼香油菜苔	*	鱼香油菜薹	*	W3菜薹规范用薹	现汉第7版
+cn_dicts_cell/food.dict.yaml	鱼香猪干	*	鱼香猪肝	*	W5猪肝错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	鸳鸳珍珠汤	yuan yuan zhen zhu tang	鸳鸯珍珠汤	yuan yang zhen zhu tang	W5鸳鸯错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	云耳沙榄炖猪搌	*	云耳沙榄炖猪展	*	W5粤菜猪展错字	菜谱正字
+cn_dicts_cell/food.dict.yaml	枣莲炖雪哈	*	枣莲炖雪蛤	*	W5雪蛤错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	子鱼勒丸子汤	zi yu le wan zi tang	子鳓丸子汤	zi le wan zi tang	拆字鱼勒合正为8105字鳓	通用规范汉字表
+cn_dicts_cell/food.dict.yaml	脆署饼	*	脆薯饼	*	W5薯饼错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	东阴宫	*	冬阴功	*	W5冬阴功错字	社会通行
+cn_dicts_cell/food.dict.yaml	美式香酥署格	*	美式香酥薯格	*	W5薯格错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	香脆署棒	*	香脆薯棒	*	W5薯棒错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	香芒墓斯蛋糕	*	香芒慕斯蛋糕	*	W5慕斯错字	社会通行
+cn_dicts_cell/food.dict.yaml	油侵金枪鱼	you qin jin qiang yu	油浸金枪鱼	you jin jin qiang yu	W5油浸错字侵->浸	现汉第7版
+cn_dicts_cell/food.dict.yaml	大边炉	*	打边炉	*	W5打边炉错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	发丝百页	*	发丝百叶	*	W3规范作百叶	第一批异形词整理表
+cn_dicts_cell/food.dict.yaml	奉化摇蜡	feng hua yao la	奉化摇蚶	feng hua yao han	W5奉化摇蚶OCR错字	菜谱正字
+cn_dicts_cell/food.dict.yaml	海蛰腰花	*	海蜇腰花	*	W5海蜇错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	蒿杆炒鳝丝	*	蒿秆炒鳝丝	*	W5茎秆规范用秆	现汉第7版
+cn_dicts_cell/food.dict.yaml	徽州园子	*	徽州圆子	*	W5圆子错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	鸡丝炒耳块	*	鸡丝炒饵块	*	W5云南饵块错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	南瓶晚钟	*	南屏晚钟	*	W5南屏晚钟错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	糯米油稣鸡	*	糯米油酥鸡	*	W5油酥错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	山峡风味烤鱼	shan xia feng wei kao yu	三峡风味烤鱼	san xia feng wei kao yu	W5三峡错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	生敲膳丝	*	生敲鳝丝	*	W5鳝丝错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	松鼠鳃鱼	song shu sai yu	松鼠鳜鱼	song shu gui yu	W5松鼠鳜鱼OCR错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	油浸蝶鱼	*	油浸鲽鱼	*	W5鲽鱼错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	持炉烤鸭	chi lu kao ya	挂炉烤鸭	gua lu kao ya	W5挂炉烤鸭OCR错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	持炉珍珠鸡	chi lu zhen zhu ji	挂炉珍珠鸡	gua lu zhen zhu ji	W5挂炉OCR错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	宫廷小萝葡	gong ting xiao luo pu	宫廷小萝卜	gong ting xiao luo bo	W5萝卜错字并正音bo	现汉第7版
+cn_dicts_cell/food.dict.yaml	挂炉沙板鸡	*	挂炉沙半鸡	*	W5沙半鸡错字	菜谱正字
+cn_dicts_cell/food.dict.yaml	蝴蝶暇卷	*	蝴蝶虾卷	*	W5虾卷错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	慧仁米粥	hui ren mi zhou	薏仁米粥	yi ren mi zhou	W5薏仁OCR错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	敬奉环浆	jing feng huan jiang	敬奉琼浆	jing feng qiong jiang	W5琼浆OCR错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	九百宴	*	九白宴	*	W5清代九白宴错字	辞海
+cn_dicts_cell/food.dict.yaml	龙舟镢鱼	long zhou jue yu	龙舟鳜鱼	long zhou gui yu	W5鳜鱼OCR错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	萝葡条	luo pu tiao	萝卜条	luo bo tiao	W5萝卜错字并正音bo	现汉第7版
+cn_dicts_cell/food.dict.yaml	蒙古亲潘宴	meng gu qin pan yan	蒙古亲藩宴	meng gu qin fan yan	W5亲藩OCR错字	辞海
+cn_dicts_cell/food.dict.yaml	甜酱姜牙	*	甜酱姜芽	*	W5姜芽错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	甜酱萝葡	tian jiang luo pu	甜酱萝卜	tian jiang luo bo	W5萝卜错字并正音bo	现汉第7版
+cn_dicts_cell/food.dict.yaml	暇油黄瓜	*	虾油黄瓜	*	W5虾油错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	香油膳糊	*	香油鳝糊	*	W5鳝糊错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	班指干贝	*	扳指干贝	*	W5扳指错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	炒木锦花	*	炒木槿花	*	W5木槿花错字	中国植物志
+cn_dicts_cell/food.dict.yaml	第板栗煨鸡	di ban li wei ji	板栗煨鸡	ban li wei ji	去爬取前缀第	菜谱正字
+cn_dicts_cell/food.dict.yaml	皋火腿	gao huo tui	如皋火腿	ru gao huo tui	补全如皋火腿首字	中国地名录
+cn_dicts_cell/food.dict.yaml	杭州油乡豆腐皮	hang zhou you xiang dou fu pi	杭州泗乡豆腐皮	hang zhou si xiang dou fu pi	W5泗乡OCR错字	地理标志
+cn_dicts_cell/food.dict.yaml	红色烧牛蹄筋	hong se shao niu ti jin	红烧牛蹄筋	hong shao niu ti jin	W5衍字色	菜谱正字
+cn_dicts_cell/food.dict.yaml	开阳炒苔菜	*	开洋炒苔菜	*	W5江浙开洋错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	龙风汤	*	龙凤汤	*	W5龙凤汤错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	木鱼大烤	*	目鱼大烤	*	W5宁波目鱼错字	菜谱正字
+cn_dicts_cell/food.dict.yaml	清汤火方草茹	qing tang huo fang cao ru	清汤火方草菇	qing tang huo fang cao gu	W5草菇OCR错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	双麻箩卜饼	shuang ma luo bu bing	双麻萝卜饼	shuang ma luo bo bing	W5萝卜错字并正音bo	现汉第7版
+cn_dicts_cell/food.dict.yaml	酸辣鸭雪	*	酸辣鸭血	*	W5鸭血错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	稚羹	*	雉羹	*	W5彭祖雉羹错字	辞海
+cn_dicts_cell/food.dict.yaml	白豪银针茶	*	白毫银针茶	*	W5白毫银针错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	豆沙碗豆黄	*	豆沙豌豆黄	*	W5豌豆黄错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	风庆粑粑卷	*	凤庆粑粑卷	*	W5云南凤庆县错字	中国地名录
+cn_dicts_cell/food.dict.yaml	富阳板粟	fu yang ban su	富阳板栗	fu yang ban li	W5板栗OCR错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	鸡纵菌罐头	*	鸡枞菌罐头	*	W5鸡枞菌错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	井岗翠绿	*	井冈翠绿	*	W5井冈山错字	中国地名录
+cn_dicts_cell/food.dict.yaml	酷蛋白酸钠	ku dan bai suan na	酪蛋白酸钠	lao dan bai suan na	W5酪蛋白OCR错字	GB 2760
+cn_dicts_cell/food.dict.yaml	莲茸层层酥	*	莲蓉层层酥	*	W5大陆规范作莲蓉	现汉第7版
+cn_dicts_cell/food.dict.yaml	临平柑蔗	*	临平甘蔗	*	W5甘蔗错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	鹿宛茶	lu wan cha	鹿苑茶	lu yuan cha	W5湖北鹿苑茶OCR错字	地理标志
+cn_dicts_cell/food.dict.yaml	罗卜红	luo bu hong	萝卜红	luo bo hong	W5GB2760萝卜红错字	GB 2760
+cn_dicts_cell/food.dict.yaml	密汁南瓜	*	蜜汁南瓜	*	W5蜜汁错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	拿破伦酥	*	拿破仑酥	*	W5拿破仑错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	柠酸酸钾	ning suan suan jia	柠檬酸钾	ning meng suan jia	W5柠檬酸钾错字	GB 2760
+cn_dicts_cell/food.dict.yaml	牛羊肉干层油酥饼	niu yang rou gan ceng you su bing	牛羊肉千层油酥饼	niu yang rou qian ceng you su bing	W5千层OCR错字	菜谱正字
+cn_dicts_cell/food.dict.yaml	槭风蛋糕	*	戚风蛋糕	*	W5戚风蛋糕错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	撒子麻花	sa zi ma hua	馓子麻花	san zi ma hua	W5馓子错字并正音san	现汉第7版
+cn_dicts_cell/food.dict.yaml	三色粘糕	san se zhan gao	三色黏糕	san se nian gao	W3黏糕规范用黏并正音nian	现汉第7版
+cn_dicts_cell/food.dict.yaml	山霉	*	山莓	*	W5山莓错字	中国植物志
+cn_dicts_cell/food.dict.yaml	天门冬酰苯氨酸甲酯	tian men dong xian ben an suan jia zhi	天门冬酰苯丙氨酸甲酯	tian men dong xian ben bing an suan jia zhi	W5阿斯巴甜规范名漏丙字	GB 2760
+cn_dicts_cell/food.dict.yaml	无钖毫茶	wu yang hao cha	无锡毫茶	wu xi hao cha	W5无锡OCR错字	中国地名录
+cn_dicts_cell/food.dict.yaml	鲜花滕萝饼	*	鲜花藤萝饼	*	W5藤萝错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	油鸡纵	*	油鸡枞	*	W5鸡枞错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	粘玉米蒸糕	zhan yu mi zheng gao	黏玉米蒸糕	nian yu mi zheng gao	W3黏玉米规范用黏并正音nian	现汉第7版
+cn_dicts_cell/food.dict.yaml	脂肪酸单甘油脂	*	脂肪酸单甘油酯	*	W5酯错字脂->酯	GB 2760
+cn_dicts_cell/food.dict.yaml	植物甲萘醒	zhi wu jia nai xing	植物甲萘醌	zhi wu jia nai kun	W5维生素K1植物甲萘醌OCR错字	GB 14880
+cn_dicts_cell/food.dict.yaml	竹桶粽子	*	竹筒粽子	*	W5竹筒错字	现汉第7版
+cn_dicts_cell/food.dict.yaml	棕香羊排	*	粽香羊排	*	W5粽香错字	现汉第7版
+cn_dicts_cell/shulihua.dict.yaml	固体石腊	*	固体石蜡	*	W5石蜡错字腊->蜡	现汉第7版
+cn_dicts_cell/shulihua.dict.yaml	石腊度	*	石蜡度	*	W5石蜡错字腊->蜡	现汉第7版
+cn_dicts_cell/shulihua.dict.yaml	氯化石腊	*	氯化石蜡	*	W5石蜡错字腊->蜡	现汉第7版
+cn_dicts_cell/shulihua.dict.yaml	头胞利定	*	头孢利定	*	W5头孢错字胞->孢	中国药典
+cn_dicts_cell/shulihua.dict.yaml	蜂腊	*	蜂蜡	*	W5蜂蜡错字腊->蜡	现汉第7版
+cn_dicts_cell/shulihua.dict.yaml	赤道座标	*	赤道坐标	*	W3坐标规范用坐	现汉第7版
+cn_dicts_cell/shulihua.dict.yaml	笛卡尔座标	*	笛卡尔坐标	*	W3坐标规范用坐	现汉第7版
+cn_dicts_cell/shulihua.dict.yaml	对数座标	*	对数坐标	*	W3坐标规范用坐	现汉第7版
+cn_dicts_cell/medication.dict.yaml	对数直线座标图	*	对数直线坐标图	*	W3坐标规范用坐	现汉第7版
+cn_dicts_cell/medication.dict.yaml	分对数对数座标图	*	分对数对数坐标图	*	W3坐标规范用坐	现汉第7版
+cn_dicts_cell/medication.dict.yaml	极座标直角座标转换	*	极坐标直角坐标转换	*	W3坐标规范用坐	现汉第7版
+cn_dicts_cell/medication.dict.yaml	爱滋病抗体	*	艾滋病抗体	*	W3大陆规范作艾滋病	现汉第7版
+cn_dicts_cell/medication.dict.yaml	复盖龈红肿	*	覆盖龈红肿	*	W5覆盖错字复->覆	现汉第7版
+cn_dicts_cell/medication.dict.yaml	球结膜瓣复盖术	*	球结膜瓣覆盖术	*	W5覆盖错字复->覆	现汉第7版
+cn_dicts_cell/medication.dict.yaml	人发人工肌健	*	人发人工肌腱	*	W5肌腱错字健->腱	全国科技名词委
+cn_dicts_cell/medication.dict.yaml	骨盆肩甲骨发育异常	*	骨盆肩胛骨发育异常	*	W5肩胛骨错字甲->胛	全国科技名词委
+cn_dicts_cell/medication.dict.yaml	针炙针	zhen zhi zhen	针灸针	zhen jiu zhen	W5针灸错字炙->灸并正音jiu	现汉第7版
+cn_dicts_cell/medication.dict.yaml	精神烦燥综合症	*	精神烦躁综合征	*	W5烦躁错字燥->躁且统一综合征	现汉第7版
+cn_dicts_cell/medication.dict.yaml	俘获幅射	*	俘获辐射	*	W5辐射错字幅->辐	现汉第7版
+cn_dicts_cell/medication.dict.yaml	家俱起光剂意外中毒	*	家具起光剂意外中毒	*	W3家具规范用具	第一批异形词整理表
+cn_dicts_cell/medication.dict.yaml	身分障碍	*	身份障碍	*	W3身份规范用份	第一批异形词整理表
+cn_dicts_cell/game.dict.yaml	极品蜜腊	*	极品蜜蜡	*	W5蜜蜡错字腊->蜡	现汉第7版
+cn_dicts_cell/game.dict.yaml	蜜腊碎片	*	蜜蜡碎片	*	W5蜜蜡错字腊->蜡	现汉第7版
+cn_dicts_cell/game.dict.yaml	破损蜜腊	*	破损蜜蜡	*	W5蜜蜡错字腊->蜡	现汉第7版
+cn_dicts_cell/game.dict.yaml	上品蜜腊	*	上品蜜蜡	*	W5蜜蜡错字腊->蜡	现汉第7版
+cn_dicts_cell/game.dict.yaml	愚品蜜腊	*	愚品蜜蜡	*	W5蜜蜡错字腊->蜡	现汉第7版
+cn_dicts_cell/game.dict.yaml	珍品蜜腊	*	珍品蜜蜡	*	W5蜜蜡错字腊->蜡	现汉第7版
+cn_dicts_cell/game.dict.yaml	震摄卷	*	震慑卷	*	W5震慑错字摄->慑	现汉第7版
+cn_dicts_cell/game.dict.yaml	震摄之卷	*	震慑之卷	*	W5震慑错字摄->慑	现汉第7版
+cn_dicts_cell/game.dict.yaml	珠联壁合	*	珠联璧合	*	W5珠联璧合错字壁->璧	现汉第7版

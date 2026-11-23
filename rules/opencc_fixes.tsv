@@ -18,3 +18,236 @@ opencc/english_chinese.txt	super-regenerative	replace	super-regenerative a.超�
 opencc/english_chinese.txt	superregenerative	replace	superregenerative a.超再生的	修复原始词典^分隔符乱码与拼错eceiver
 opencc/english_chinese.txt	bestrid	replace	bestrid vbl.跨骑;跨坐;跨过	修复从bestrewn误复制的释义
 opencc/english_chinese.txt	bestridden	replace	bestridden vbl.跨骑;跨坐;跨过	修复从bestrewn误复制的释义
+opencc/others.txt	食盐	delete		合并至opencc/emoji.txt(食盐 🧂 NaCl)消除emoji遮蔽NaCl
+opencc/others.txt	冈井萌华	rename	圆井萌华|圆井萌华 円井萌華	日文新字体円对应简体圆(Marui Moeka)
+opencc/others.txt	希腊字母小写	replace	希腊字母小写 α β γ δ ε ζ η θ ι κ λ μ ν ξ ο π ρ σ ς τ υ φ χ ψ ω	拆分粘连的σς为独立候选σ ς
+opencc/others.txt	小写希腊字母	replace	小写希腊字母 α β γ δ ε ζ η θ ι κ λ μ ν ξ ο π ρ σ ς τ υ φ χ ψ ω	拆分粘连的σς为独立候选σ ς
+opencc/others.txt	纤维素	replace	纤维素 (C₆H₁₀O₅)ₙ	补正下标n为Unicode下标ₙ(U+2099)
+opencc/others.txt	Del	replace	Del Delete ⌫ ⌦	补充前向删除符号⌦(对齐symbols_v)
+opencc/others.txt	delete	replace	delete ⌫ ⌦	补充前向删除符号⌦(对齐symbols_v)
+opencc/others.txt	连字符	replace	连字符 - ‐ －	补充GB/T 15834半角连字符-与‐
+opencc/chinese_english.txt	不入虎穴，焉得虎子	delete		含全角逗号不可达键(紧邻下一行已有无标点正词)
+opencc/chinese_english.txt	不经一事，不长一智	delete		含全角逗号不可达键(紧邻下一行已有无标点正词)
+opencc/chinese_english.txt	摆事实，讲道理	delete		含全角逗号不可达键(紧邻下一行已有无标点正词)
+opencc/chinese_english.txt	比上不足，比下有余	delete		含全角逗号不可达键(紧邻下一行已有无标点正词)
+opencc/chinese_english.txt	百足之虫，死而不僵	delete		含全角逗号不可达键(紧邻下一行已有无标点正词)
+opencc/chinese_english.txt	老骥伏枥，志在千里	delete		含全角逗号不可达键(紧邻下一行已有无标点正词)
+opencc/chinese_english.txt	避其锐气，击其惰归	delete		含全角逗号不可达键(紧邻下一行已有无标点正词)
+opencc/chinese_english.txt	饱食终日，无所用心	delete		含全角逗号不可达键(紧邻下一行已有无标点正词)
+opencc/chinese_english.txt	Ｔ恤	rename	T恤|T恤 T shirt	全角Ｔ不可达，改半角T恤对齐cn_en
+opencc/chinese_english.txt	卡拉ＯＫ	rename	卡拉OK|卡拉OK karaoke	全角ＯＫ不可达，改半角卡拉OK
+opencc/chinese_english.txt	得克萨斯州Ａ与Ｍ大学	rename	得克萨斯州A与M大学|得克萨斯州A与M大学 Texas A&M University	全角ＡＭ不可达，改半角
+opencc/chinese_english.txt	侏儒	replace	侏儒 dwarf lilliputian gnome manikin mannikin pygmy	移除错词midge(蠓虫)与冒犯词midget
+opencc/chinese_english.txt	小工	replace	小工 unskilled laborer	移除陈旧贬义词coolie
+opencc/chinese_english.txt	贝尔斯登－米盖尔	delete		含全角－不可达且英文拼错Milogavie
+opencc/chinese_english.txt	阿盖尔－比特	delete		含全角－不可达且英文拼错Angyll
+opencc/english_chinese.txt	easy	replace	easy adj.容易的;舒服的;安乐的;大方的;宽裕的;宽松的;懒散的	清理繁简混杂截断释义
+opencc/english_chinese.txt	grand	replace	grand adj.盛大的;宏大的;堂皇的;雄伟的;富丽的;漂亮的;豪华的	清理繁简混杂截断释义
+opencc/english_chinese.txt	make	replace	make vt.做;作;造;制造;做成;造成;建设;创作;起草;制定;设置	统一简体与标准分号释义格式
+opencc/english_chinese.txt	mark	replace	mark n.印;记号;符号;标记;分数 vt.加记号于;做标记;记录;打分	修复粘连vt.与繁体字形
+opencc/english_chinese.txt	rude	replace	rude adj.粗陋的;粗笨的;未加工的;原始的;野蛮的;粗暴的;无礼的	统一简体与标准分号释义格式
+opencc/english_chinese.txt	scale	replace	scale n.刻度;比例尺;尺度;规模;鳞片 vt.攀登;按比例缩放	统一简体与标准分号释义格式
+opencc/english_chinese.txt	set	replace	set vt.放;搁;安置;布置;安排;设置;装置;使固定 n.一套;集合	统一简体与标准分号释义格式
+opencc/english_chinese.txt	strange	replace	strange adj.奇怪的;古怪的;不可思议的;陌生的;不熟悉的	统一简体与标准分号释义格式
+opencc/english_chinese.txt	turn	replace	turn vt.转;转动;旋转;使转弯;翻动;转变 n.转动;转弯;轮次	修复双句点vt..与繁体字形
+opencc/english_chinese.txt	correspondent	replace	correspondent n.记者;通讯员;通信者	修复自corespondent误复制释义
+opencc/english_chinese.txt	talisman	replace	talisman n.护身符;避邪物	修复自talesman误复制释义
+opencc/english_chinese.txt	venerate	replace	venerate vt.尊敬;崇敬	修复自venenate误复制释义
+opencc/english_chinese.txt	vindictive	replace	vindictive a.报复心强的;怀恨的	修复自vindicative误复制释义
+opencc/english_chinese.txt	underrate	replace	underrate vt.低估;看轻	修复自错词underate误复制释义
+opencc/english_chinese.txt	Atlanta	replace	Atlanta n.亚特兰大	修复自atalanta误复制释义
+opencc/english_chinese.txt	alumni	replace	alumni n.校友;毕业生	修复自alumna/alumnae误复制释义
+opencc/english_chinese.txt	dereference	replace	dereference [计]解引用;间接引用	修复损坏标记计算机]及错误释义废弃
+opencc/english_chinese.txt	billion	replace	billion n.十亿 a.十亿的	补全残缺词性标a.
+opencc/english_chinese.txt	francs	replace	francs n.法郎	修复与人名Frances混淆的释义
+opencc/english_chinese.txt	representation	replace	representation n.表示;代表;表现	修复自截断词representati误复制释义
+opencc/english_chinese.txt	snatch	replace	snatch vt.抢夺;一把抓住 n.抢夺;片段	修复自错词santch误复制释义
+opencc/english_chinese.txt	Brahmaputra	replace	Brahmaputra n.布拉马普特拉河	修复与Brahma鸡混淆的释义
+opencc/english_chinese.txt	beddable	replace	beddable a.性感的;迷人的	修复自bedabble误复制释义
+opencc/english_chinese.txt	Cervantine	replace	Cervantine a.塞万提斯风格的	修复自cervantite误复制释义
+opencc/english_chinese.txt	cervantite	replace	cervantite n.白锑矿	修复错字白安矿->白锑矿
+opencc/english_chinese.txt	chrysotile	replace	chrysotile n.温石棉	修复自chrysolite误复制释义
+opencc/english_chinese.txt	manikin	replace	manikin n.人体模型;侏儒	修复自manakin误复制释义
+opencc/english_chinese.txt	transmittance	replace	transmittance n.透射率;透光率	修复自transistance误复制释义
+opencc/english_chinese.txt	triffid	replace	triffid n.三脚树(科幻食人植物)	修复自trifid误复制释义
+opencc/english_chinese.txt	hector	replace	hector vt.威吓;欺凌 n.恶霸	修复自hecto误复制释义
+opencc/english_chinese.txt	onium	replace	onium n.鎓离子	修复自ionium误复制释义
+opencc/english_chinese.txt	smudgy	replace	smudgy a.污迹斑斑的;模糊的	修复错误释义
+opencc/english_chinese.txt	smudgily	replace	smudgily ad.污迹斑斑地;模糊地	修复错误释义
+opencc/english_chinese.txt	deoxyribonucleic	replace	deoxyribonucleic a.脱氧核糖的	修复OCR错字趣氧核醣酸
+opencc/english_chinese.txt	castanets	replace	castanets n.响板	清理未闭合截断括号
+opencc/english_chinese.txt	circulate	replace	circulate vi.vt.(使)流通;(使)循环;(使)传播	补全缺失左括号
+opencc/english_chinese.txt	indemnify	replace	indemnify vt.赔偿;补偿;保障	修复错字赔长
+opencc/english_chinese.txt	hostess	replace	hostess n.女主人;女侍者;空姐	修复截断释义女领
+opencc/english_chinese.txt	dangling	replace	dangling a.悬垂的;摇摆的	修复错译悬选择
+opencc/english_chinese.txt	blivet	delete		清理损坏乱码释义看岸Land.
+opencc/english_chinese.txt	mongolian	replace	mongolian n.蒙古人;蒙古语 a.蒙古的;蒙古人的;蒙古语的	移除陈旧冒犯性唐氏症称谓
+opencc/english_chinese.txt	ami	replace	ami n.计算机公司名;PC机ROMBIOS的主要生产厂商之一	修复OCR错字广商->厂商
+opencc/english_chinese.txt	aux	replace	aux n.辅助设备的逻辑设备名;在MSDOS中经常对应于COM1	修复OCR错字输助->辅助
+opencc/english_chinese.txt	carried	replace	carried a.被运的;入神的;忘我的 v.搬运;保持 vbl.搬运;保持	修复OCR错字搬挥->搬运
+opencc/english_chinese.txt	gemological	replace	gemological a.宝石学的	修复词性误标n.宝石学->a.宝石学的
+opencc/english_chinese.txt	gemmological	replace	gemmological a.宝石学的	修复词性误标n.宝石学->a.宝石学的
+opencc/english_chinese.txt	heroin	replace	heroin n.海洛因;吗啡精	修复错字海洛英->海洛因
+opencc/english_chinese.txt	Shakespeare	replace	Shakespeare n.莎士比亚	修复错字沙士比亚->莎士比亚
+opencc/english_chinese.txt	rent-roll	replace	rent-roll n.地租账簿;佃户账簿;租折	修复错字佃互->佃户并规范简体账/折
+opencc/english_chinese.txt	xx	delete		清理无意义噪声词条xx b.不可分离
+opencc/emoji.txt	食盐	replace	食盐 🧂 NaCl	合并others.txt化学式NaCl消除遮蔽
+opencc/emoji.txt	喜欢	replace	喜欢 😍 ❤️	扑克红桃♥️(U+2665)改规范红心❤️(U+2764)
+opencc/emoji.txt	爱心	replace	爱心 💖 ❤️	扑克红桃♥️(U+2665)改规范红心❤️(U+2764)
+opencc/emoji.txt	love	replace	love 💓 💕 👩‍❤️‍👨 ❤️	扑克红桃♥️(U+2665)改规范红心❤️(U+2764)
+opencc/emoji.txt	心形	replace	心形 💟 ❤️	扑克红桃♥️(U+2665)改规范红心❤️(U+2764)
+opencc/emoji.txt	笑中带泪	replace	笑中带泪 😂 🥲 😹	补齐通用人脸笑中带泪emoji(原仅猫脸😹)
+opencc/emoji.txt	喜极而泣	replace	喜极而泣 😂 🥹 🥲	补齐通用人脸喜极而泣emoji(原仅猫脸😹)
+opencc/emoji.txt	拇指向上	replace	拇指向上 👍	移除错误混入的反向emoji👎
+opencc/emoji.txt	拇指向下	add	拇指向下 👎	补全对应拇指向下触发词
+opencc/emoji.txt	金发女	replace	金发女 👱‍♀️	移除无性别基础字符👱(旧字体渲染为男性)
+opencc/emoji.txt	金发女子	replace	金发女子 👱‍♀️	移除无性别基础字符👱(旧字体渲染为男性)
+opencc/emoji.txt	金发女人	replace	金发女人 👱‍♀️	移除无性别基础字符👱(旧字体渲染为男性)
+opencc/emoji.txt	红发男	replace	红发男 👨‍🦰	移除误混入的卷发男👨‍🦱
+opencc/emoji.txt	红发男子	replace	红发男子 👨‍🦰	移除误混入的卷发男👨‍🦱
+opencc/emoji.txt	红发男人	replace	红发男人 👨‍🦰	移除误混入的卷发男👨‍🦱
+opencc/emoji.txt	卷发男	add	卷发男 👨‍🦱	补全缺失的卷发男触发词
+opencc/emoji.txt	卷发男子	add	卷发男子 👨‍🦱	补全缺失的卷发男子触发词
+opencc/emoji.txt	卷发男人	add	卷发男人 👨‍🦱	补全缺失的卷发男人触发词
+opencc/emoji.txt	扑克牌	replace	扑克牌 ♠️ ♥️ ♦️ ♣️ 🃏	修复CLDR误映日本花札🎴为标准扑克牌
+opencc/emoji.txt	Vs.	rename	VS|VS 🆚	含句点不可达键改为VS
+opencc/emoji.txt	白色中方块	replace	白色中方块 ◻	修复黑白反转(◼->◻ U+25FB)
+opencc/emoji.txt	白色中等方块	replace	白色中等方块 ◻	修复黑白反转(◼->◻ U+25FB)
+opencc/emoji.txt	黑色中方块	replace	黑色中方块 ◼	修复黑白反转(◻->◼ U+25FC)
+opencc/emoji.txt	黑色中等方块	replace	黑色中等方块 ◼	修复黑白反转(◻->◼ U+25FC)
+opencc/emoji.txt	大方块	replace	大方块 ⬛ ⬜	修复尺寸错映(中小方块◾◽->大方块⬛⬜)
+opencc/emoji.txt	大正方形	replace	大正方形 ⬛ ⬜	修复尺寸错映(中小方块◾◽->大方块⬛⬜)
+opencc/emoji.txt	白色大方块	replace	白色大方块 ⬜	修复黑白反转且尺寸错映(◾->⬜)
+opencc/emoji.txt	黑色大方块	replace	黑色大方块 ⬛	修复黑白反转且尺寸错映(◽->⬛)
+opencc/emoji.txt	白色小方块	replace	白色小方块 ▫	修复黑白反转(▪->▫ U+25AB)
+opencc/emoji.txt	黑色小方块	replace	黑色小方块 ▪	修复黑白反转(▫->▪ U+25AA)
+opencc/emoji.txt	阿拉伯	rename	阿联酋|阿联酋 🇦🇪	阿拉伯为泛称非阿联酋国旗🇦🇪，改为阿联酋
+opencc/emoji.txt	科科斯（基林）群岛	rename	科科斯群岛|科科斯群岛 🇨🇨	移除全角括号不可达键
+opencc/emoji.txt	刚果（金）	delete		含全角括号不可达键(L4302已有刚果金)
+opencc/emoji.txt	刚果（布）	delete		含全角括号不可达键(L4306已有刚果布)
+opencc/emoji.txt	特里斯坦–达库尼亚群岛	rename	特里斯坦达库尼亚群岛|特里斯坦达库尼亚群岛 🇹🇦	移除短破折号U+2013不可达键
+opencc/emoji.txt	特里斯坦–达库尼亚	rename	特里斯坦达库尼亚|特里斯坦达库尼亚 🇹🇦	移除短破折号U+2013不可达键
+opencc/emoji.txt	手指捏和	rename	手指捏合|手指捏合 🤌	修复同音错字捏和->捏合
+opencc/emoji.txt	狐狸偷	rename	狐狸头|狐狸头 🦊	修复同音错字狐狸偷->狐狸头
+opencc/emoji.txt	盘绕是炸鱼饼	rename	盘绕式炸鱼饼|盘绕式炸鱼饼 🍥	修复错字盘绕是->盘绕式
+opencc/emoji.txt	鞠躬勋章	rename	军功勋章|军功勋章 🎖	修复拼音误字鞠躬->军功
+opencc/emoji.txt	开淫趴	delete		移除低俗性俚语触发词
+opencc/emoji.txt	开银趴	delete		移除低俗性俚语谐音触发词
+opencc/emoji.txt	你妈死了	delete		移除辱骂脏话触发词
+opencc/emoji.txt	NMSL	delete		移除辱骂缩写且不可达触发词
+opencc/emoji.txt	肏你妈	delete		移除辱骂脏话触发词
+opencc/emoji.txt	操你妈	delete		移除辱骂脏话触发词
+opencc/emoji.txt	傻逼	delete		移除辱骂脏话触发词
+opencc/emoji.txt	玻璃	delete		移除日常高频词玻璃的过时贬义误触发👨‍❤️‍👨
+opencc/emoji.txt	鸡巴	delete		移除低俗脏话误映🐔
+opencc/emoji.txt	小鸡鸡	delete		移除低俗谐音误映🐥(小鸡已覆盖)
+opencc/emoji.txt	蟙䘃	delete		非8105生僻扩展A区不可达键
+opencc/english_chinese.txt	administerative	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	adventruous	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	aftertast	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	Aneesa	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	argenting	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	artifical	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	atorney-at-law	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	attenuat	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	backkward	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	balame	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	bambard	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	bedtiime	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	behtlehem	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	bellyacke	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	beravement	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	bizzard	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	brahmapootra	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	britainic	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	cansure	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	cemically	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	cheistopher	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	chidren	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	chimae	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	chogh	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	ckecklist	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	cofacter	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	commumication	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	concent	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	conrner	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	conserator	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	cosmopolitain	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	cyclinder	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	damgling	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	defferent	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	demagogog	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	deoxyriboneucleic	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	depolarzer	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	desiccatant	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	dialys	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	discharage	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	drauhghts	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	dunhuarng	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	elavation	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	eldder	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	eliminatro	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	entaglement	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	extrovertsive	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	familarity	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	forcast	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	frndamental	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	gentel	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	ghettorize	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	gonimeter	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	gound	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	goverment-in-exile	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	grmnasium	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	guly	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	gyromgnetic	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	herion	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	hosstess	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	idemnify	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	illuminoneter	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	imaginabale	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	innoccent	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	involantary	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	juvenscence	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	keystoke	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	laborering	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	lazybonnes	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	lectuer	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	luxemberg	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	maintenability	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	meaniing	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	mebrane	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	narcisssus	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	nonosecond	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	obscur	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	overscolling	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	readmade	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	reciner	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	representati	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	resourrces	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	restaurrateur	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	samlping	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	santch	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	serverest	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	shakeespeare	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	sophisicated	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	spaish	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	specialitys	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	substaintial	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	surrive	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	synesthesea	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	tounament	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	trajactory	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	trans-shippment	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	transfution	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	trnman	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	unabroken	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	underate	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	undound	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	unresloved	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	uvauum	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	viscocity	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	vua	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	winconsin	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	xeroradiogrphy	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	zabra	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	zoroastrainism	delete		清理上游英汉词典OCR/拼写错误词头

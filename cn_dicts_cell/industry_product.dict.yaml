@@ -20,7 +20,6 @@ use_preset_vocabulary: false
 产品防伪	chan pin fang wei	1
 打样机	da yang ji	0
 电晕笔	dian yun bi	0
-镀锡板卷马口铁	du xi ban juan ma kou tie	0
 防伪技术产品	fang wei ji shu chan pin	0
 纺织及皮革类印刷	fang zhi ji pi ge lei yin shua	0
 分离薄膜	fen li bo mo	0
@@ -125,6 +124,7 @@ use_preset_vocabulary: false
 特种塑料	te zhong su liao	1
 通用塑料	tong yong su liao	5
 脱硫机	tuo liu ji	0
+脱模剂	tuo mo ji	1
 文教用橡胶制品	wen jiao yong xiang jiao zhi pin	0
 吸塑加工	xi su jia gong	0
 橡胶裁断机	xiang jiao cai duan ji	0
@@ -282,7 +282,6 @@ use_preset_vocabulary: false
 改善视力	gai shan shi li	35
 改善胃肠	gai shan wei chang	3
 干果类	gan guo lei	20
-柑桔	gan ju	34
 干制水产品	gan zhi shui chan pin	0
 瓜果类	gua guo lei	8
 罐头食品加工设备	guan tou shi pin jia gong she bei	0
@@ -380,7 +379,7 @@ use_preset_vocabulary: false
 量热仪	liang re yi	1
 量仪	liang yi	0
 流量仪表	liu liang yi biao	1
-粘度计	nian du ji	0
+黏度计	nian du ji	0
 扭转试验机	niu zhuan shi yan ji	0
 配料秤	pei liao cheng	0
 皮带秤	pi dai cheng	0
@@ -391,7 +390,7 @@ use_preset_vocabulary: false
 气动量仪	qi dong liang yi	0
 气象仪器	qi xiang yi qi	1
 千分表	qian fen biao	1
-钳型表	qian xing biao	0
+钳形表	qian xing biao	0
 强度试验机	qiang du shi yan ji	0
 热学计量标准器具	re xue ji liang biao zhun qi ju	0
 三坐标测量机	san zuo biao ce liang ji	3
@@ -539,7 +538,6 @@ use_preset_vocabulary: false
 运动垫子	yun dong dian zi	0
 运动服饰	yun dong fu shi	27
 运动护具	yun dong hu ju	12
-折叠床行军床	zhe die chuang xing jun chuang	0
 中式武术服装	zhong shi wu shu fu zhuang	0
 自行车帽	zi xing che mao	0
 组合滑梯	zu he hua ti	0
@@ -687,10 +685,7 @@ use_preset_vocabulary: false
 阀片	fa pian	11
 阀芯	fa xin	19
 防潮材料	fang chao cai liao	2
-防护耳塞耳罩	fang hu er sai er zhao	0
-防护面罩面具	fang hu mian zhao mian ju	0
 防护鞋	fang hu xie	0
-防护眼镜眼罩	fang hu yan jing yan zhao	0
 肥皂架	fei zao jia	3
 复合窗	fu he chuang	0
 钢筋和预应力机械	gang jin he yu ying li ji xie	0
@@ -718,7 +713,7 @@ use_preset_vocabulary: false
 建筑门窗及五金	jian zhu men chuang ji wu jin	0
 建筑配套设施及其他	jian zhu pei tao she shi ji qi ta	0
 建筑图纸	jian zhu tu zhi	20
-建筑用粘合剂	jian zhu yong nian he ji	1
+建筑用黏合剂	jian zhu yong nian he ji	1
 建筑装潢工程承包	jian zhu zhuang huang gong cheng cheng bao	0
 匠作工具	jiang zuo gong ju	0
 金属窗	jin shu chuang	0
@@ -811,7 +806,6 @@ use_preset_vocabulary: false
 介入性材料	jie ru xing cai liao	0
 康复理疗设备	kang fu li liao she bei	0
 矿物原药材	kuang wu yuan yao cai	0
-酶酵素制剂	mei jiao su zhi ji	0
 内科用药	nei ke yong yao	3
 气血循环机	qi xue xun huan ji	0
 人造器官及植入体	ren zao qi guan ji zhi ru ti	0
@@ -993,7 +987,6 @@ use_preset_vocabulary: false
 袋鼠皮革	dai shu pi ge	0
 涤丝提花领带	di si ti hua ling dai	0
 涤丝印花领带	di si yin hua ling dai	0
-电工作鞋	dian gong zuo xie	0
 钉跟机	ding gen ji	0
 多功能擦地拖鞋	duo gong neng ca di tuo xie	0
 儿童短袜	er tong duan wa	0
@@ -1393,7 +1386,6 @@ use_preset_vocabulary: false
 绣花面料	xiu hua mian liao	0
 休闲面料	xiu xian mian liao	0
 亚麻系列面料	ya ma xi lie mian liao	0
-应墩布	ying dun bu	0
 泳装面料	yong zhuang mian liao	0
 玉米纤维	yu mi xian wei	0
 雨衣布	yu yi bu	1
@@ -1661,10 +1653,9 @@ use_preset_vocabulary: false
 布轮	bu lun	1
 裁缝剪	cai feng jian	0
 插齿刀	cha chi dao	0
-成型模	cheng xing mo	0
+成型模	cheng xing mu	0
 齿轮刀具	chi lun dao ju	2
 齿轮加工	chi lun jia gong	2
-冲压模	chong ya mo	1
 厨用刀	chu yong dao	2
 打孔钳	da kong qian	0
 大力钳	da li qian	0
@@ -1687,7 +1678,7 @@ use_preset_vocabulary: false
 碟形弹簧	die xing tan huang	0
 斗齿	dou chi	1
 断线钳	duan xian qian	0
-锻造模	duan zao mo	0
+锻造模	duan zao mu	0
 多功能刀钳	duo gong neng dao qian	0
 多用扳手	duo yong ban shou	0
 多用螺丝刀	duo yong luo si dao	0
@@ -1695,7 +1686,7 @@ use_preset_vocabulary: false
 非标零件加工	fei biao ling jian jia gong	0
 分度盘	fen du pan	0
 分度头	fen du tou	0
-粉末冶金模	fen mo ye jin mo	0
+粉末冶金模	fen mo ye jin mu	0
 钢锉	gang cuo	9
 钢镐	gang gao	0
 钢号码	gang hao ma	0
@@ -1746,9 +1737,9 @@ use_preset_vocabulary: false
 快速经济模具	kuai su jing ji mu ju	0
 拉刀	la dao	4
 拉铆枪	la mao qiang	0
-拉丝模	la si mo	0
+拉丝模	la si mu	0
 冷压接钳	leng ya jie qian	0
-冷轧线钳	leng zha xian qian	0
+冷压线钳	leng ya xian qian	0
 理发剪	li fa jian	4
 鲤鱼钳	li yu qian	0
 螺纹刀具	luo wen dao ju	0
@@ -1810,7 +1801,7 @@ use_preset_vocabulary: false
 涡卷弹簧	wo juan tan huang	0
 五金工具加工	wu jin gong ju jia gong	0
 五金配附件	wu jin pei fu jian	0
-橡胶模	xiang jiao mo	0
+橡胶模	xiang jiao mu	0
 向心滚子轴承	xiang xin gun zi zhou cheng	0
 向心球轴承	xiang xin qiu zhou cheng	0
 斜嘴钳	xie zui qian	0
@@ -2249,7 +2240,7 @@ use_preset_vocabulary: false
 储能机	chu neng ji	0
 出入口机	chu ru kou ji	0
 打胶机	da jiao ji	0
-导线剥皮机	dao xian bo pi ji	0
+导线剥皮机	dao xian bao pi ji	0
 等离子焊机	deng li zi han ji	0
 等离子切割机	deng li zi qie ge ji	4
 电镀加工	dian du jia gong	1
@@ -2262,7 +2253,6 @@ use_preset_vocabulary: false
 电阻焊机	dian zu han ji	0
 端子机	duan zi ji	0
 阀门配件	fa men pei jian	2
-纺纱设备纺机	fang sha she bei fang ji	0
 纺织配件	fang zhi pei jian	0
 非织造布机械	fei zhi zao bu ji xie	0
 服装加工设备	fu zhuang jia gong she bei	0

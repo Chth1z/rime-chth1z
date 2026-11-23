@@ -42,8 +42,8 @@ use_preset_vocabulary: false
 半贴	ban tie	5
 搬位	ban wei	0
 班味	ban wei	1
-半扎	ban zha	2
-帮布	bang bu	0
+半扎	ban za	2
+邦布	bang bu	0
 棒打鲜橙	bang da xian cheng	2
 帮开	bang kai	6
 绑一下	bang yi xia	2
@@ -133,7 +133,7 @@ use_preset_vocabulary: false
 裁判报告	cai pan bao gao	24
 财务造假	cai wu zao jia	348
 菜鱼	cai yu	3
-藏海	cang hai	11
+藏海	zang hai	11
 玱玹	qiang xuan	0
 曾三仙	zeng san xian	0
 曾婉之	zeng wan zhi	0
@@ -255,7 +255,6 @@ use_preset_vocabulary: false
 淀粉肠	dian fen chang	7
 巅峰极速	dian feng ji su	0
 癫公	dian gong	0
-颠公	dian gong	0
 店管家	dian guan jia	0
 颠锅	dian guo	105
 电幻	dian huan	1
@@ -675,7 +674,7 @@ use_preset_vocabulary: false
 开抽	kai chou	1
 开货车	kai huo che	51
 开看	kai kan	4
-凯茜娅	kai qian ya	0
+凯茜娅	kai xi ya	0
 开始推理吧	kai shi tui li ba	4
 开睡	kai shui	1
 看短剧	kan duan ju	0
@@ -893,7 +892,6 @@ use_preset_vocabulary: false
 迷妄之塔	mi wang zhi ta	0
 米学长	mi xue zhang	2
 米游	mi you	2
-迷之操作	mi zhi cao zuo	44
 面刀	mian dao	3
 免胶	mian jiao	8
 免拉手	mian la shou	0
@@ -973,7 +971,7 @@ use_preset_vocabulary: false
 宁红夜	ning hong ye	0
 柠季	ning ji	1
 柠柠	ning ning	0
-牛的嘞	niu de le	0
+牛的嘞	niu de lei	0
 牛脾肽	niu pi tai	0
 纽强	niu qiang	1
 牛哇	niu wa	17
@@ -1224,7 +1222,7 @@ use_preset_vocabulary: false
 树夏	shu xia	0
 束状纹理	shu zhuang wen li	0
 刷小红书	shua xiao hong shu	20
-帅的嘞	shuai de le	0
+帅的嘞	shuai de lei	0
 双减	shuang jian	435
 爽局	shuang ju	3
 双四	shuang si	14
@@ -1263,7 +1261,6 @@ use_preset_vocabulary: false
 塑心	su xin	0
 酸奶罐罐	suan nai guan guan	0
 酸奶碗	suan nai wan	1
-蒜台	suan tai	2
 酸嘢	suan ye	15
 碎冰蓝	sui bing lan	0
 随申办	sui shen ban	14
@@ -1409,10 +1406,10 @@ use_preset_vocabulary: false
 我服了爸爸	wo fu le ba ba	0
 我嫉妒了	wo ji du le	2
 我困得要死	wo kun de yao si	3
-我嘞豆	wo le dou	0
+我嘞豆	wo lei dou	0
 我勒个豆	wo le ge dou	0
-我嘞个豆	wo le ge dou	0
-我嘞个雷	wo le ge lei	0
+我嘞个豆	wo lei ge dou	0
+我嘞个雷	wo lei ge lei	0
 我们一起摇太阳	wo men yi qi yao tai yang	0
 窝囊费	wo nang fei	3
 我跑路了	wo pao lu le	0
@@ -1558,10 +1555,10 @@ use_preset_vocabulary: false
 新手保护期	xin shou bao hu qi	8
 新胎	xin tai	72
 新亚强	xin ya qiang	0
-新质生产力	xin zhi sheng chan li	0
+新质生产力	xin zhi sheng chan li	120
 新主线	xin zhu xian	11
 薪资结构	xin zi jie gou	0
-行的嘞	xing de le	0
+行的嘞	xing de lei	0
 幸福上了	xing fu shang le	0
 型格	xing ge	27
 星光卡	xing guang ka	0
@@ -1641,7 +1638,6 @@ use_preset_vocabulary: false
 已调	yi diao	5
 一顿输出	yi dun shu chu	44
 以燔燎铸名	yi fan liao zhu ming	0
-一份一段	yi fen yi duan	0
 一扶	yi fu	10
 异格	yi ge	8
 乙骨	yi gu	0
@@ -1726,7 +1722,6 @@ use_preset_vocabulary: false
 柚子汁	you zi zhi	3
 语擦	yu ca	3
 预充	yu chong	16
-预定单	yu ding dan	9
 与凤行	yu feng xing	0
 玉骨遥	yu gu yao	0
 玉华染	yu hua ran	0
@@ -1751,7 +1746,6 @@ use_preset_vocabulary: false
 元梦之星	yuan meng zhi xing	0
 原木风	yuan mu feng	39
 院人	yuan ren	0
-原神的	yuan shen de	0
 原神二创	yuan shen er chuang	3
 原生家庭图鉴	yuan sheng jia ting tu jian	0
 渊武	yuan wu	0
@@ -1779,7 +1773,6 @@ use_preset_vocabulary: false
 早上坏	zao shang huai	0
 早十	zao shi	9
 泽禹	ze yu	10
-啫啫煲	ze ze bao	12
 贼离谱	zei li pu	3
 扎完了	zha wan le	3
 斋宫宗	zhai gong zong	0
@@ -1841,7 +1834,7 @@ use_preset_vocabulary: false
 智驾	zhi jia	66
 职教高考	zhi jiao gao kao	0
 智界	zhi jie	0
-之了	zhi le	0
+之了	zhi liao	0
 直面屏	zhi mian ping	17
 知妙	zhi miao	0
 芝小官	zhi xiao guan	0
@@ -1908,6 +1901,6 @@ use_preset_vocabulary: false
 尊嘟	zun du	0
 尊嘟假嘟	zun du jia du	0
 尊嘟吗	zun du ma	0
-座垫	zuo dian	248
 左奇函	zuo qi han	0
 坐滩	zuo tan	0
+葬送的芙莉莲	zang song de fu li lian	80

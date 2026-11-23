@@ -168,9 +168,14 @@ try {
         }
     }
 
-    $weaselRel        = Invoke-RestMethod "https://api.github.com/repos/rime/weasel/releases/tags/latest" -Headers $headers -TimeoutSec 20
-    $weaselAsset      = $weaselRel.assets | Where-Object { $_.name -match 'installer\.exe$' } | Select-Object -First 1
-    $remoteWeaselName = if ($weaselAsset) { [string]$weaselAsset.name } else { "" }
+    $remoteWeaselName = ""
+    try {
+        $weaselRel   = Invoke-RestMethod "https://api.github.com/repos/rime/weasel/releases/tags/latest" -Headers $headers -TimeoutSec 20
+        $weaselAsset = $weaselRel.assets | Where-Object { $_.name -match 'installer\.exe$' } | Select-Object -First 1
+        if ($weaselAsset) { $remoteWeaselName = [string]$weaselAsset.name }
+    } catch {
+        Write-Log "[WARN] Could not query rime/weasel latest release (advisory only): $_"
+    }
 
     $gramTag = if ($remoteGramSha) { $remoteGramSha.Substring(0, 12) + "..." } else { $remoteGramMeta }
     Write-Log "Remote: Repo=$($remoteRepoSha.Substring(0,8)) ($remoteRepoDate) | Neural=$remoteNeuralTag | Gram=$gramTag | Weasel=$remoteWeaselName"
@@ -229,13 +234,15 @@ try {
         if ($needRepo) {
             $usedLocalGit = $false
             if ((Test-Path (Join-Path $RepoDir ".git")) -and (Get-Command git -ErrorAction SilentlyContinue)) {
-                $branch = (& git -C $RepoDir rev-parse --abbrev-ref HEAD 2>$null).Trim()
-                $dirty  = (& git -C $RepoDir status --porcelain 2>$null)
+                $branchOut = & git -C $RepoDir rev-parse --abbrev-ref HEAD 2>$null
+                $branch = if ($LASTEXITCODE -eq 0 -and $branchOut) { ([string]$branchOut).Trim() } else { "" }
+                $dirty  = & git -C $RepoDir status --porcelain 2>$null
                 if ($branch -eq "main" -and -not $dirty) {
                     Write-Log "Fast-forwarding clean local repo at $RepoDir..."
                     & git -C $RepoDir pull --ff-only origin main 2>&1 | Out-Null
                     if ($LASTEXITCODE -eq 0) {
-                        $headSha = (& git -C $RepoDir rev-parse HEAD 2>$null).Trim()
+                        $headOut = & git -C $RepoDir rev-parse HEAD 2>$null
+                        $headSha = if ($LASTEXITCODE -eq 0 -and $headOut) { ([string]$headOut).Trim() } else { "" }
                         if ($headSha -eq $remoteRepoSha) {
                             $deploySource = $RepoDir
                             $usedLocalGit = $true
@@ -276,13 +283,20 @@ try {
             if (-not (Test-Path $dll) -or -not (Test-Path $lua)) {
                 throw "rime-neural release bundle missing DLL or Lua script."
             }
-            if (Test-Path $sum) {
-                $expDll = (Get-Content $sum | Where-Object { $_ -match 'rime_neural\.dll$' } | Select-Object -First 1) -split '\s+' | Select-Object -First 1
-                if ($expDll) {
-                    $gotDll = (Get-FileHash $dll -Algorithm SHA256).Hash.ToLowerInvariant()
-                    if ($gotDll -ne $expDll.ToLowerInvariant()) {
-                        throw "rime_neural.dll SHA-256 mismatch (got=$gotDll, expected=$expDll)"
-                    }
+            if (-not (Test-Path $sum)) {
+                throw "rime-neural release bundle missing SHA256SUMS.txt; refusing unverified binary."
+            }
+            $sumLines = Get-Content $sum -Encoding UTF8
+            foreach ($pair in @(@{ Name = "rime_neural.dll"; Path = $dll }, @{ Name = "rime_neural.lua"; Path = $lua })) {
+                $pattern = [regex]::Escape($pair.Name) + '$'
+                $matchLine = $sumLines | Where-Object { $_ -match $pattern } | Select-Object -First 1
+                if (-not $matchLine) {
+                    throw "SHA256SUMS.txt missing checksum entry for $($pair.Name)"
+                }
+                $expHash = ($matchLine.Trim() -split '\s+')[0].ToLowerInvariant()
+                $gotHash = (Get-FileHash $pair.Path -Algorithm SHA256).Hash.ToLowerInvariant()
+                if ($gotHash -ne $expHash) {
+                    throw "$($pair.Name) SHA-256 mismatch (got=$gotHash, expected=$expHash)"
                 }
             }
             $neuralStageDll = $dll
@@ -328,6 +342,11 @@ try {
 
         if ($needNeural -and $neuralStageDll -and $neuralStageLua) {
             Write-Log "Installing rime-neural $remoteNeuralTag..."
+            if (Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue) {
+                & $serverExe /q 2>$null
+                Start-Sleep -Milliseconds 300
+                Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
+            }
             Copy-Item $neuralStageDll (Join-Path $rimeDir "neural\rime_neural.dll") -Force
             Copy-Item $neuralStageLua (Join-Path $rimeDir "lua\rime_neural.lua") -Force
         }
@@ -339,22 +358,49 @@ try {
             Move-Item -Path $tmpTarget -Destination $localGramPath -Force
         }
 
-        # 5. Deploy & ensure single WeaselServer
+        # 5. Deploy & verify WeaselDeployer log + single WeaselServer
+        if (Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue) {
+            & $serverExe /q 2>$null
+            Start-Sleep -Milliseconds 300
+            Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
+        }
         Write-Log "Running WeaselDeployer /deploy..."
+        $deployStart = Get-Date
         $pDep = Start-Process -FilePath $deployerExe -ArgumentList "/deploy" -Wait -PassThru
         Write-Log "Deploy finished (ExitCode=$($pDep.ExitCode))"
         if ($pDep.ExitCode -ne 0) {
             throw "WeaselDeployer failed (ExitCode=$($pDep.ExitCode)); keeping previous state for retry."
         }
+        $weaselLogDir = Join-Path $env:TEMP "rime.weasel"
+        if (Test-Path $weaselLogDir) {
+            $infoLog = Get-ChildItem $weaselLogDir -Filter "rime.weasel*.INFO*" -File -ErrorAction SilentlyContinue |
+                Where-Object { $_.LastWriteTime -ge $deployStart.AddSeconds(-2) } |
+                Sort-Object LastWriteTime -Descending | Select-Object -First 1
+            if ($infoLog) {
+                $infoLines = Get-Content $infoLog.FullName -Encoding UTF8 -ErrorAction SilentlyContinue
+                $summaryLine = $infoLines | Where-Object { $_ -match 'finished updating schemas:' } | Select-Object -Last 1
+                if ($summaryLine -and ($summaryLine -notmatch '0 failure')) {
+                    throw "WeaselDeployer reported schema failures: $summaryLine"
+                }
+                $badLines = $infoLines | Where-Object { $_ -match '^[EF]\d{8}\s' }
+                if ($badLines) {
+                    throw "WeaselDeployer logged errors in $($infoLog.Name)"
+                }
+            }
+        }
 
         Start-Sleep -Milliseconds 400
-        if ($wasRunning -and -not (Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue)) {
+        $procs = @(Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue)
+        if ($wasRunning -and $procs.Count -eq 0) {
             try {
                 Invoke-CimMethod -ClassName Win32_Process -MethodName Create -Arguments @{ CommandLine = "`"$serverExe`"" } | Out-Null
             } catch {
                 Start-Process -FilePath $serverExe
             }
             Write-Log "Restarted WeaselServer.exe."
+        } elseif ($procs.Count -gt 1) {
+            $procs | Sort-Object StartTime | Select-Object -Skip 1 | Stop-Process -Force -ErrorAction SilentlyContinue
+            Write-Log "Reconciled duplicate WeaselServer.exe instances to a single process."
         }
 
         if ($needRepo)   { $state.repo_sha   = $remoteRepoSha }

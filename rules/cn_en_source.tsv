@@ -52,4 +52,57 @@ add	XS码	XS	ma		true	日常尺码混输词
 add	XL码	XL	ma		true	日常尺码混输词
 add	XXL码	XXL	ma		true	日常尺码混输词
 case_fix	papi酱	Papi		papi		同步修复编码大小写前缀
-replace	V怪客	V	guai ke		true	修复cn_en_abc.txt智能ABC编码错误(Vgcke->Vgyke)
+add	AI智能体	AI	zhi neng ti		true	现代AI高频混输词
+add	AI客服	AI	ke fu		true	现代AI高频混输词
+add	AI翻译	AI	fan yi		true	现代AI高频混输词
+add	AI配音	AI	pei yin		true	现代AI高频混输词
+add	AI算力	AI	suan li		true	现代AI高频混输词
+add	AI眼镜	AI	yan jing		true	现代AI硬件混输词
+add	AI应用	AI	ying yong		true	现代AI高频混输词
+add	LLM模型	LLM	mo xing		true	现代AI术语混输词
+add	GPU显卡	GPU	xian ka		true	现代硬件混输词
+add	CPU温度	CPU	wen du		true	现代硬件混输词
+add	SSD硬盘	SSD	ying pan		true	现代硬件混输词
+add	OLED屏幕	OLED	ping mu		true	现代硬件混输词
+add	LED灯	LED	deng		true	日常高频混输词
+add	HDR模式	HDR	mo shi		true	现代影音混输词
+add	NFC功能	NFC	gong neng		true	现代手机高频混输词
+add	GPS定位	GPS	ding wei		true	日常高频混输词
+add	GPS导航	GPS	dao hang		true	日常高频混输词
+add	OTA升级	OTA	sheng ji		true	现代手机/车机高频混输词
+add	Wi-Fi连接	WiFi	lian jie		true	日常高频混输词
+add	Wi-Fi热点	WiFi	re dian		true	日常高频混输词
+add	VPN节点	VPN	jie dian		true	现代网络高频混输词
+add	SSH连接	SSH	lian jie		true	现代开发高频混输词
+add	SSH密钥	SSH	mi yue		true	现代开发高频混输词（规范音）
+add	SSH密钥	SSH	mi yao		true	现代开发高频混输词（习惯音）
+add	SQL查询	SQL	cha xun		true	现代开发高频混输词
+add	SQL注入	SQL	zhu ru		true	现代开发高频混输词
+add	JSON格式	JSON	ge shi		true	现代开发高频混输词
+add	Docker镜像	Docker	jing xiang		true	现代开发高频混输词
+add	Linux系统	Linux	xi tong		true	现代开发高频混输词
+add	Windows系统	Windows	xi tong		true	日常电脑高频混输词
+add	iPhone手机	iPhone	shou ji		true	日常数码高频混输词
+add	App商店	App	shang dian		true	日常数码高频混输词
+add	PDF文档	PDF	wen dang		true	现代办公高频混输词
+add	PDF格式	PDF	ge shi		true	现代办公高频混输词
+add	PPT课件	PPT	ke jian		true	现代办公高频混输词
+add	A/B测试	AB	ce shi		true	产品/研发高频混输词
+add	KPI考核	KPI	kao he		true	职场高频混输词
+add	OKR考核	OKR	kao he		true	职场高频混输词
+add	SaaS平台	SaaS	ping tai		true	企业服务高频混输词
+add	ETF基金	ETF	ji jin		true	金融高频混输词
+add	IPO上市	IPO	shang shi		true	财经高频混输词
+add	GDP增速	GDP	zeng su		true	财经高频混输词
+add	SUV车型	SUV	che xing		true	汽车高频混输词
+add	MPV车型	MPV	che xing		true	汽车高频混输词
+add	ICU病房	ICU	bing fang		true	医疗高频混输词
+add	HPV疫苗	HPV	yi miao		true	医疗高频混输词
+add	BMI指数	BMI	zhi shu		true	健康高频混输词
+add	刷NFC		shua	NFC	true	日常高频混输词
+add	连Wi-Fi		lian	WiFi	true	日常高频混输词
+add	开VPN		kai	VPN	true	日常高频混输词
+add	写PPT		xie	PPT	true	职场高频混输词
+add	转PDF		zhuan	PDF	true	办公高频混输词
+add	大S		da	S	true	艺人艺名
+add	小S		xiao	S	true	艺人艺名

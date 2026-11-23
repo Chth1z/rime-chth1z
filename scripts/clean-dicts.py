@@ -342,7 +342,7 @@ BASE_XIE_DOWNWEIGHT_WORDS: set[str] = {
     "血崩", "血肿", "血书", "血象", "血尿", "血亲", "血库", "血痂", "贫血", "失血",
     "缺血", "凝血", "溶血", "混血", "输血", "采血", "献血", "验血", "止血", "活血",
     "供血", "补血", "铁血", "冷血", "热血", "充血", "嗜血", "残血", "满血", "淤血",
-    "瘀血", "便血", "尿血", "咯血", "咳血", "呕血", "回血", "吸血", "血迹", "气血",
+    "瘀血", "便血", "咯血", "呕血", "回血", "吸血", "血迹", "气血",
     "血肉", "血色", "血性", "血战", "换血", "血亏", "血条", "血气", "一血", "血洗",
     "掉血", "血样", "带血", "血红", "血源", "加血", "血汗", "血站", "血污", "半血",
     "血拼", "血线", "血案", "血月", "血痕", "血海", "血魔", "血染", "血中", "血厚",
@@ -476,6 +476,7 @@ def clean_base(lines: list[str], stats: dict) -> list[str]:
 EXT_STANDARD_XIE_MARKERS: tuple[str, ...] = (
     "一针见血", "血淋淋", "血糊糊", "血晕", "流鼻血", "鼻血",
     "鸡血", "狗血", "鸭血", "猪血", "羊血", "毛血旺",
+    "吐血", "咳血", "尿血",
 )
 
 
@@ -505,9 +506,9 @@ def clean_ext(lines: list[str], stats: dict) -> list[str]:
             and w in has_xue
             and not any(m in w for m in EXT_STANDARD_XIE_MARKERS)
             and any(ch == "血" and sy == "xie" for ch, sy in zip(w, py.split()))
-            and w_int(wt) > 50
+            and w_int(wt) > 15
         ):
-            wt = str(min(w_int(wt) // 8, 50))
+            wt = str(min(max(w_int(wt) // 8, 1), 15))
             stats["reweighted"] += 1
         out.append(format_entry(w, py, wt, extra))
     return out
@@ -1080,13 +1081,20 @@ def post_add_mi_yue(lines: list[str], stats: dict) -> list[str]:
 
 
 def post_clean_ext_shou_clones(lines: list[str], stats: dict) -> list[str]:
-    """Post-overlay pass: remove redundant 成熟(cheng shou) / 熟练(shou lian) clones when standard twin exists."""
+    """Post-overlay pass: remove redundant non-colloquial shou clones when standard shu twin exists."""
     hdr, body = split_header_body(lines)
     has_std: set[tuple[str, str]] = set()
     for line in body:
         p = parse_entry(line)
         if p:
             has_std.add((p[0], p[1]))
+    shou_pairs = (
+        ("成熟", "cheng shou", "cheng shu"),
+        ("熟练", "shou lian", "shu lian"),
+        ("熟悉", "shou xi", "shu xi"),
+        ("瓜熟蒂落", "gua shou di luo", "gua shu di luo"),
+        ("果熟蒂落", "guo shou di luo", "guo shu di luo"),
+    )
     out = list(hdr)
     for line in body:
         p = parse_entry(line)
@@ -1094,16 +1102,16 @@ def post_clean_ext_shou_clones(lines: list[str], stats: dict) -> list[str]:
             out.append(line)
             continue
         w, py, wt, extra = p
-        if "成熟" in w and "cheng shou" in py:
-            std_py = py.replace("cheng shou", "cheng shu")
-            if (w, std_py) in has_std:
-                stats["deleted_wrong_py"] += 1
-                continue
-        if "熟练" in w and "shou lian" in py:
-            std_py = py.replace("shou lian", "shu lian")
-            if (w, std_py) in has_std:
-                stats["deleted_wrong_py"] += 1
-                continue
+        drop = False
+        for sub, bad_py, good_py in shou_pairs:
+            if sub in w and bad_py in py:
+                std_py = py.replace(bad_py, good_py)
+                if (w, std_py) in has_std:
+                    stats["deleted_wrong_py"] += 1
+                    drop = True
+                    break
+        if drop:
+            continue
         out.append(line)
     return out
 
@@ -1119,8 +1127,14 @@ def post_normalize_medication(lines: list[str], stats: dict) -> list[str]:
         ("粘稠", "黏稠"),
         ("粘度", "黏度"),
         ("粘性", "黏性"),
+        ("粘滞", "黏滞"),
         ("纵膈", "纵隔"),
         ("成份", "成分"),
+        ("切片石腊", "切片石蜡"),
+        ("液状石腊", "液状石蜡"),
+        ("阿斯匹林", "阿司匹林"),
+        ("头胞", "头孢"),
+        ("膑骨", "髌骨"),
     )
     for line in body:
         p = parse_entry(line)
@@ -1177,6 +1191,7 @@ def post_normalize_shulihua(lines: list[str], stats: dict) -> list[str]:
         ("粘稠", "黏稠"),
         ("粘度", "黏度"),
         ("粘性", "黏性"),
+        ("粘滞", "黏滞"),
     )
     for line in body:
         p = parse_entry(line)
@@ -1199,7 +1214,155 @@ def post_normalize_shulihua(lines: list[str], stats: dict) -> list[str]:
 
 
 def post_clean_game_shoulian(lines: list[str], stats: dict) -> list[str]:
-    """Post-overlay pass: normalize 熟练 shou lian -> shu lian in game.dict.yaml."""
+    """Post-overlay pass: systemic game.dict.yaml phonetic and fragment normalizations."""
+    hdr, body = split_header_body(lines)
+    out = list(hdr)
+    mansion_re = re.compile(r"(?:壁|氐|斗|房|箕|角|井|亢|奎|娄|牛|女|室|胃|危|尾|心|虚|翼|张|轸|列)宿")
+    num_chong_re = re.compile(r"[一二三四五六七八九十]重")
+    ji_keep_prefixes = ("级别", "级联", "级数", "级差", "级配", "级次")
+    for line in body:
+        p = parse_entry(line)
+        if not p:
+            out.append(line)
+            continue
+        w, py, wt, extra = p
+        if is_leading_de_fragment(w, py):
+            stats["deleted_noise_or_typo"] += 1
+            continue
+        if w.startswith("级") and len(w) >= 3 and not w.startswith(ji_keep_prefixes):
+            stats["deleted_noise_or_typo"] += 1
+            continue
+        orig_py = py
+        if "熟练" in w and "shou lian" in py:
+            py = replace_syl_at(
+                w, py, "熟", "shou", "shu",
+                cond=lambda wd, sy, i: i + 1 < len(wd) and wd[i + 1] == "练",
+            )
+        if "宿" in w and "su" in py.split():
+            if w == "宿曜":
+                py = replace_syl_at(w, py, "宿", "su", "xiu")
+            elif mansion_re.search(w):
+                py = replace_syl_at(
+                    w, py, "宿", "su", "xiu",
+                    cond=lambda wd, sy, i: i > 0 and wd[i - 1] in "壁氐斗房箕角井亢奎娄牛女室胃危尾心虚翼张轸列",
+                )
+        if "楞伽" in w and "jia" in py.split():
+            py = replace_syl_at(
+                w, py, "伽", "jia", "qie",
+                cond=lambda wd, sy, i: i > 0 and wd[i - 1] == "楞",
+            )
+        if "霓裳" in w and "shang" in py.split():
+            py = replace_syl_at(
+                w, py, "裳", "shang", "chang",
+                cond=lambda wd, sy, i: i > 0 and wd[i - 1] == "霓",
+            )
+        if "云杉" in w and "sha" in py.split():
+            py = replace_syl_at(
+                w, py, "杉", "sha", "shan",
+                cond=lambda wd, sy, i: i > 0 and wd[i - 1] == "云",
+            )
+        if "劲装" in w and "jin" in py.split():
+            py = replace_syl_at(
+                w, py, "劲", "jin", "jing",
+                cond=lambda wd, sy, i: i + 1 < len(wd) and wd[i + 1] == "装",
+            )
+        if num_chong_re.search(w) and "zhong" in py.split():
+            py = replace_syl_at(
+                w, py, "重", "zhong", "chong",
+                cond=lambda wd, sy, i: i > 0 and wd[i - 1] in "一二三四五六七八九十",
+            )
+        if ("吸血" in w or "血石" in w or "吮血" in w) and "xie" in py.split():
+            py = replace_syl_at(
+                w, py, "血", "xie", "xue",
+                cond=lambda wd, sy, i: (i > 0 and wd[i - 1] in "吸吮") or (i + 1 < len(wd) and wd[i + 1] == "石"),
+            )
+        if w.startswith("曾") and py.startswith("ceng ") and not w.startswith(("曾经", "曾到")):
+            py = "zeng " + py[5:]
+        if w.startswith("朴") and py.startswith("pu ") and not w.startswith(("朴实", "朴素", "朴刀", "朴牙刀")):
+            py = "piao " + py[3:]
+        if py != orig_py:
+            stats["fixed_py"] += 1
+        out.append(format_entry(w, py, wt, extra))
+    return out
+
+
+def post_normalize_literature(lines: list[str], stats: dict) -> list[str]:
+    """Post-overlay pass: simplify non-classical preposition 於 -> 于 in literature.dict.yaml."""
+    hdr, body = split_header_body(lines)
+    classical_yu_keep = {
+        "杨於陵", "於陵论价重如金", "於穆不已", "於穆清庙", "以於陵则居之",
+        "处于於陵", "於菟", "於戏", "於乎", "於邑",
+    }
+    out = list(hdr)
+    for line in body:
+        p = parse_entry(line)
+        if not p:
+            out.append(line)
+            continue
+        w, py, wt, extra = p
+        if "於" in w:
+            if w == "处於於陵":
+                w = "处于於陵"
+                stats["fixed_word_or_trad"] += 1
+            elif w not in classical_yu_keep:
+                w = w.replace("於", "于")
+                stats["fixed_word_or_trad"] += 1
+        out.append(format_entry(w, py, wt, extra))
+    return out
+
+
+def post_normalize_food(lines: list[str], stats: dict) -> list[str]:
+    """Post-overlay pass: systemic culinary orthography & phonetic fixes in food.dict.yaml."""
+    hdr, body = split_header_body(lines)
+    qian_to_gan_words = {
+        "乾果四品": "干果四品",
+        "四喜乾果": "四喜干果",
+        "甜辣乾": "甜辣干",
+        "绣球乾贝": "绣球干贝",
+        "紫香乾": "紫香干",
+        "果酱夹心饼乾": "果酱夹心饼干",
+        "枸杞猪乾汤": "枸杞猪肝汤",
+    }
+    out = list(hdr)
+    for line in body:
+        p = parse_entry(line)
+        if not p:
+            out.append(line)
+            continue
+        w, py, wt, extra = p
+        orig_w, orig_py = w, py
+        if w in qian_to_gan_words:
+            new_w = qian_to_gan_words[w]
+            py = replace_syl_at(w, py, "乾", "qian", "gan")
+            w = new_w
+        if "氽" in w:
+            py = replace_syl_at(w, py, "氽", "tun", "cuan")
+            w = w.replace("氽", "汆")
+        for old_sub, new_sub in (("土司", "吐司"), ("咖哩", "咖喱"), ("蕃茄", "番茄")):
+            if old_sub in w:
+                if old_sub == "咖哩" and "ka li" in py:
+                    py = replace_syl_at(w, py, "咖", "ka", "ga", cond=lambda wd, sy, i: i + 1 < len(wd) and wd[i + 1] == "哩")
+                w = w.replace(old_sub, new_sub)
+        if "扒" in w and "ba" in py.split():
+            py = replace_syl_at(w, py, "扒", "ba", "pa")
+        if "芫爆" in w and "yuan" in py.split():
+            py = replace_syl_at(
+                w, py, "芫", "yuan", "yan",
+                cond=lambda wd, sy, i: i + 1 < len(wd) and wd[i + 1] == "爆",
+            )
+        if "饧" in w and "tang" in py.split():
+            py = replace_syl_at(w, py, "饧", "tang", "xing")
+        py = fix_non_shenme_shi(w, py)
+        if w != orig_w:
+            stats["fixed_word_or_trad"] += 1
+        if py != orig_py:
+            stats["fixed_py"] += 1
+        out.append(format_entry(w, py, wt, extra))
+    return out
+
+
+def post_normalize_name2(lines: list[str], stats: dict) -> list[str]:
+    """Post-overlay pass: remove leading-级 RPG fragments and fix Korean surname 朴(piao) in name2."""
     hdr, body = split_header_body(lines)
     out = list(hdr)
     for line in body:
@@ -1208,14 +1371,29 @@ def post_clean_game_shoulian(lines: list[str], stats: dict) -> list[str]:
             out.append(line)
             continue
         w, py, wt, extra = p
-        if "熟练" in w and "shou lian" in py:
-            new_py = replace_syl_at(
-                w, py, "熟", "shou", "shu",
-                cond=lambda wd, sy, i: i + 1 < len(wd) and wd[i + 1] == "练",
-            )
-            if new_py != py:
-                py = new_py
-                stats["fixed_py"] += 1
+        if w.startswith("级") and len(w) >= 3:
+            stats["deleted_noise_or_typo"] += 1
+            continue
+        if w.startswith("朴") and py.startswith("pu ") and not w.startswith(("朴实", "朴素")):
+            py = "piao " + py[3:]
+            stats["fixed_py"] += 1
+        out.append(format_entry(w, py, wt, extra))
+    return out
+
+
+def post_normalize_animal(lines: list[str], stats: dict) -> list[str]:
+    """Post-overlay pass: normalize non-8105 dog breed character 㹴 -> 梗 in animal.dict.yaml."""
+    hdr, body = split_header_body(lines)
+    out = list(hdr)
+    for line in body:
+        p = parse_entry(line)
+        if not p:
+            out.append(line)
+            continue
+        w, py, wt, extra = p
+        if "㹴" in w:
+            w = w.replace("㹴", "梗")
+            stats["fixed_word_or_trad"] += 1
         out.append(format_entry(w, py, wt, extra))
     return out
 
@@ -1423,10 +1601,21 @@ def clean_opencc_texts(manifest: dict, ruleset: dict_rules.RuleSet, rule_hits: d
     # 1. opencc/others.txt
     src_lines = (SRC_ROOT / "opencc/others.txt").read_text(encoding="utf-8").splitlines()
     has_sigma_ma = any(l.startswith("西格玛\t") for l in src_lines)
+    invalid_vs16_pairs = (
+        ("\U0001F648\uFE0F", "\U0001F648"),
+        ("\U0001F94E\uFE0F", "\U0001F94E"),
+        ("\U0001F330\uFE0F", "\U0001F330"),
+        ("\U0001F3A4\uFE0F", "\U0001F3A4"),
+        ("\U0001F18E\uFE0F", "\U0001F18E"),
+        ("\U0001F408\u200D\u2B1B\uFE0F", "\U0001F408\u200D\u2B1B"),
+    )
     out = []
     fixes = 0
     for line in src_lines:
         orig = line
+        for bad_seq, good_seq in invalid_vs16_pairs:
+            if bad_seq in line:
+                line = line.replace(bad_seq, good_seq)
         if line == "匚部\t匚部":
             line = "匚部\t匚部 匚"
         elif line == "春字头\t春字头 春":
@@ -1512,6 +1701,14 @@ def clean_opencc_texts(manifest: dict, ruleset: dict_rules.RuleSet, rule_hits: d
         ec_del = 0
         ec_norm = 0
         pos_re = re.compile(r"^[a-zA-Z]{1,6}(?:\.[a-zA-Z]{1,6})*\.")
+        glued_pos_re = re.compile(r";(?=(?:v|vt|vi|vbl|n|a|adj|ad|adv|prep|conj|pron|num|int|art)\.)")
+        cjk_glued_pos_re = re.compile(r"(?<=[\u4e00-\u9fff])(?=(?:vt|vi|adj|adv|prep|conj)\.)")
+        ec_trad_subs = (
+            ("乾燥", "干燥"), ("乾的", "干的"),
+            ("藉口", "借口"), ("藉以", "借以"), ("藉此", "借此"), ("憑藉", "凭借"),
+            ("重覆", "重复"), ("反覆", "反复"), ("答覆", "答复"), ("回覆", "回复"),
+            ("後", "后"), ("於", "于"), ("摺", "折"), ("醣", "糖"), ("麴", "曲"),
+        )
         for line in ec_lines:
             if "\t" not in line:
                 ec_out.append(line)
@@ -1521,15 +1718,37 @@ def clean_opencc_texts(manifest: dict, ruleset: dict_rules.RuleSet, rule_hits: d
                 ec_del += 1
                 continue
             v2 = re.sub(r"(?:\s+NUM)+$", "", v)
-            v2 = re.sub(r" {2,}", " ", v2).replace(" ;", ";")
+            v2 = v2.replace("计算机]", "[计]")
+            v2 = glued_pos_re.sub(" ", v2)
+            v2 = cjk_glued_pos_re.sub(" ", v2)
+            for old_s, new_s in ec_trad_subs:
+                if old_s in v2:
+                    v2 = v2.replace(old_s, new_s)
+            v2 = re.sub(r" {2,}", " ", v2).replace(" ;", ";").rstrip(" ")
             toks = v2.split(" ")
             merged = toks[:1]
             for t in toks[1:]:
-                if len(merged) >= 2 and not pos_re.match(t):
+                if len(merged) >= 2 and not pos_re.match(t) and not t.startswith("["):
                     merged[-1] += t
                 else:
                     merged.append(t)
-            deduped = list(dict.fromkeys(merged))
+            cleaned_toks: list[str] = [merged[0]]
+            for t in merged[1:]:
+                t = t.rstrip(";")
+                if not t:
+                    continue
+                m_pos = pos_re.match(t)
+                if m_pos:
+                    pfx = m_pos.group(0)
+                    rest = t[len(pfx):]
+                    if ";" in rest:
+                        parts_dedup = list(dict.fromkeys(p for p in rest.split(";") if p))
+                        t = pfx + ";".join(parts_dedup)
+                elif ";" in t:
+                    parts_dedup = list(dict.fromkeys(p for p in t.split(";") if p))
+                    t = ";".join(parts_dedup)
+                cleaned_toks.append(t)
+            deduped = list(dict.fromkeys(cleaned_toks))
             new_line = f"{k}\t{' '.join(deduped)}"
             if new_line != line:
                 ec_norm += 1
@@ -1580,7 +1799,7 @@ def _dedup_within_file(lines: list[str], stats: dict) -> list[str]:
             continue
         seen.add(k)
         w, py, wt, extra = p
-        if wt != "" and w_int(wt) < best_wt[k]:
+        if best_wt[k] > 0 and w_int(wt) < best_wt[k]:
             wt = str(best_wt[k])
         dedup_body.append(format_entry(w, py, wt, extra))
     return hdr + dedup_body
@@ -1657,6 +1876,12 @@ def main() -> None:
             out_lines = post_add_mi_yue(out_lines, st)
         if rel == "cn_dicts/ext.dict.yaml":
             out_lines = post_clean_ext_shou_clones(out_lines, st)
+        elif rel == "cn_dicts_cell/literature.dict.yaml":
+            out_lines = post_normalize_literature(out_lines, st)
+        elif rel == "cn_dicts_cell/food.dict.yaml":
+            out_lines = post_normalize_food(out_lines, st)
+        elif rel == "cn_dicts_cell/animal.dict.yaml":
+            out_lines = post_normalize_animal(out_lines, st)
         elif rel == "cn_dicts_cell/shulihua.dict.yaml":
             out_lines = post_normalize_shulihua(out_lines, st)
         elif rel == "cn_dicts_cell/medication.dict.yaml":
@@ -1664,7 +1889,7 @@ def main() -> None:
         elif rel == "cn_dicts_cell/chess.dict.yaml":
             out_lines = post_chess_add_ju(out_lines, st, move_only=False)
         elif rel == "cn_dicts_cell/chess2.dict.yaml":
-            out_lines = post_chess_add_ju(out_lines, st, move_only=True)
+            out_lines = post_chess_add_ju(out_lines, st, move_only=False)
         elif rel in (
             "cn_dicts_cell/game.dict.yaml",
             "cn_dicts_cell/sport.dict.yaml",
@@ -1674,6 +1899,8 @@ def main() -> None:
             out_lines = post_fix_non_shenme_shi(out_lines, st)
             if rel == "cn_dicts_cell/game.dict.yaml":
                 out_lines = post_clean_game_shoulian(out_lines, st)
+            elif rel == "cn_dicts_cell/name2.dict.yaml":
+                out_lines = post_normalize_name2(out_lines, st)
         cleaned_files[rel] = _dedup_within_file(out_lines, st)
         file_stats[rel] = st
 
@@ -1816,7 +2043,7 @@ def main() -> None:
             "len_mismatch_samples": v_len_mismatch[:10],
             "remaining_lue_nue": len(v_lue_nue),
             "within_file_dups": v_within_dups,
-            "cross_file_dups_active_27": v_cross_dups,
+            "cross_file_dups_active_26": v_cross_dups,
         },
     }
     if args.manifest:
@@ -1847,7 +2074,7 @@ def main() -> None:
         or ver["len_mismatches"]
         or ver["remaining_lue_nue"]
         or ver["within_file_dups"]
-        or ver["cross_file_dups_active_27"]
+        or ver["cross_file_dups_active_26"]
     ):
         raise SystemExit("Post-cleanup invariant check failed!")
 

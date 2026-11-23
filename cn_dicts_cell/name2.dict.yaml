@@ -960,7 +960,7 @@ use_preset_vocabulary: false
 东政胜	dong zheng sheng	0
 东直义	dong zhi yi	0
 东直政	dong zhi zheng	0
-都筑秀纲	dou zhu xiu gang	0
+都筑秀纲	du zhu xiu gang	0
 渡边长	du bian chang	0
 渡边教忠	du bian jiao zhong	0
 渡边糺	du bian jiu	0
@@ -5458,7 +5458,7 @@ use_preset_vocabulary: false
 中森翔太	zhong sen xiang tai	0
 佐贺	zuo he	78
 佐贺亨	zuo he heng	0
-阿郎使道传	a lang shi dao chuan	0
+阿郎使道传	a lang shi dao zhuan	0
 爱丽小屋	ai li xiao wu	43
 爱茉莉	ai mo li	45
 安彩妍	an cai yan	2
@@ -5528,7 +5528,7 @@ use_preset_vocabulary: false
 曹璐	cao lu	1
 草堂洞	cao tang dong	0
 曹在显	cao zai xian	1
-曾坪郡	ceng ping jun	1
+曾坪郡	zeng ping jun	1
 禅云寺	chan yun si	0
 婵真	chan zhen	0
 长城郡	chang cheng jun	1
@@ -6212,51 +6212,51 @@ use_preset_vocabulary: false
 坪山洞	ping shan dong	0
 平泽市	ping ze shi	1
 坡州市	po zhou shi	1
-朴草娥	pu cao e	1
-朴春	pu chun	9
+朴草娥	piao cao e	1
+朴春	piao chun	9
 璞帝妃	pu di fei	0
-朴斗植	pu dou zhi	0
-朴恩杉	pu en shan	0
+朴斗植	piao dou zhi	0
+朴恩杉	piao en shan	0
 浦二洞	pu er dong	0
 蒲公英夫妇	pu gong ying fu fu	1
-朴洸贤	pu guang xian	0
-朴韩星	pu han xing	0
-朴河善	pu he shan	0
-朴惠京	pu hui jing	0
-朴慧京	pu hui jing	0
-朴经	pu jing	5
-朴景丽	pu jing li	2
-朴俊炯	pu jun jiong	0
-朴奎利	pu kui li	3
-朴率美	pu lv mei	0
-朴美妍	pu mei yan	0
-朴敏荷	pu min he	1
-朴明恩	pu ming en	1
+朴洸贤	piao guang xian	0
+朴韩星	piao han xing	0
+朴河善	piao he shan	0
+朴惠京	piao hui jing	0
+朴慧京	piao hui jing	0
+朴经	piao jing	5
+朴景丽	piao jing li	2
+朴俊炯	piao jun jiong	0
+朴奎利	piao kui li	3
+朴率美	piao shuai mei	0
+朴美妍	piao mei yan	0
+朴敏荷	piao min he	1
+朴明恩	piao ming en	1
 浦南洞	pu nan dong	0
-朴瑞俊	pu rui jun	0
-朴善怜	pu shan lian	2
+朴瑞俊	piao rui jun	0
+朴善怜	piao shan lian	2
 朴素贤	pu su xian	0
 朴素珍	pu su zhen	0
 浦项市	pu xiang shi	1
-朴相铉	pu xiang xuan	0
-朴孝珍	pu xiao zhen	0
+朴相铉	piao xiang xuan	0
+朴孝珍	piao xiao zhen	0
 普信阁	pu xin ge	0
-朴秀彬	pu xiu bin	0
-朴秀英	pu xiu ying	1
-朴艺真	pu yi zhen	0
-朴英淑窑	pu ying shu yao	0
-朴有焕	pu you huan	0
-朴誉恩	pu yu en	2
-朴载正	pu zai zheng	0
-朴昭妍	pu zhao yan	1
-朴贞儿	pu zhen er	0
-朴真嬉	pu zhen xi	0
-朴正花	pu zheng hua	2
-朴政珉	pu zheng min	1
-朴正洙	pu zheng zhu	18
-朴重勋	pu zhong xun	3
-朴忠载	pu zhong zai	0
-朴珠贤	pu zhu xian	1
+朴秀彬	piao xiu bin	0
+朴秀英	piao xiu ying	1
+朴艺真	piao yi zhen	0
+朴英淑窑	piao ying shu yao	0
+朴有焕	piao you huan	0
+朴誉恩	piao yu en	2
+朴载正	piao zai zheng	0
+朴昭妍	piao zhao yan	1
+朴贞儿	piao zhen er	0
+朴真嬉	piao zhen xi	0
+朴正花	piao zheng hua	2
+朴政珉	piao zheng min	1
+朴正洙	piao zheng zhu	18
+朴重勋	piao zhong xun	3
+朴忠载	piao zhong zai	0
+朴珠贤	piao zhu xian	1
 漆谷郡	qi gu jun	1
 奇迹马油	qi ji ma you	0
 七良面	qi liang mian	0
@@ -6861,7 +6861,7 @@ use_preset_vocabulary: false
 鬼庭左月	gui ting zuo yue	0
 鬼小岛弥太郎	gui xiao dao mi tai lang	0
 鬼玄蕃	gui xuan fan	0
-鬼之半藏	gui zhi ban cang	0
+鬼之半藏	gui zhi ban zang	0
 鬼作左	gui zuo zuo	0
 国友善兵卫	guo you shan bing wei	0
 海道第一弓	hai dao di yi gong	1
@@ -8026,10 +8026,10 @@ use_preset_vocabulary: false
 曹卉娟	cao hui juan	1
 曹沁芳	cao qin fang	0
 侧田	ce tian	15
-曾爱玲	ceng ai ling	0
-曾佩媛	ceng pei yuan	0
-曾仁郁	ceng ren yu	0
-曾心梅	ceng xin mei	0
+曾爱玲	zeng ai ling	0
+曾佩媛	zeng pei yuan	0
+曾仁郁	zeng ren yu	0
+曾心梅	zeng xin mei	0
 查理派克	cha li pai ke	0
 常艾非	chang ai fei	0
 常安	chang an	6
@@ -8623,7 +8623,7 @@ use_preset_vocabulary: false
 杰瑞李刘易斯	jie rui li liu yi si	0
 街头顽童	jie tou wan tong	0
 杰西卡辛普森	jie xi ka xin pu sen	0
-解昕怡	jie xin yi	0
+解昕怡	xie xin yi	0
 接招合唱团	jie zhao he chang tuan	0
 金布里克	jin bu li ke	0
 金昌贤	jin chang xian	0
@@ -8685,7 +8685,7 @@ use_preset_vocabulary: false
 开心少女组	kai xin shao nv zu	0
 阚杰	kan jie	0
 康净淳	kang jing chun	0
-康康康乐队	kang kang kang le dui	0
+康康康乐队	kang kang kang yue dui	0
 康贤	kang xian	0
 拷秋勤	kao qiu qin	0
 可儿家族	ke er jia zu	0
@@ -9176,14 +9176,14 @@ use_preset_vocabulary: false
 平克弗洛依德	ping ke fu luo yi de	1
 泼猴	po hou	62
 蒲公英合唱团	pu gong ying he chang tuan	0
-朴海珍	pu hai zhen	0
+朴海珍	piao hai zhen	0
 普普乐团	pu pu yue tuan	1
-朴申阳	pu shen yang	0
-朴完奎	pu wan kui	0
-朴贤基	pu xian ji	0
-朴勇河	pu yong he	0
-朴章根	pu zhang gen	0
-朴智宪	pu zhi xian	0
+朴申阳	piao shen yang	0
+朴完奎	piao wan kui	0
+朴贤基	piao xian ji	0
+朴勇河	piao yong he	0
+朴章根	piao zhang gen	0
+朴智宪	piao zhi xian	0
 齐藤和义	qi teng he yi	1
 戚薇	qi wei	67
 七月七组合	qi yue qi zu he	0
@@ -9917,7 +9917,6 @@ use_preset_vocabulary: false
 张海	zhang hai	150
 张寒	zhang han	6
 张皓	zhang hao	1
-张镐哲	zhang hao zhe	0
 张基琦	zhang ji qi	0
 张家玮	zhang jia wei	2
 张晋樵	zhang jin qiao	0
@@ -10642,7 +10641,6 @@ use_preset_vocabulary: false
 破弃咏唱	po qi yong chang	0
 普拉提多	pu la ti duo	0
 浦露	pu lu	0
-朴路美	pu lu mei	0
 浦原	pu yuan	28
 浦原商店	pu yuan shang dian	3
 齐鲁奇	qi lu qi	0
@@ -11040,7 +11038,7 @@ use_preset_vocabulary: false
 中田和宏	zhong tian he hong	0
 冢田正昭	zhong tian zheng zhao	0
 中央四十六室	zhong yang si shi liu shi	15
-咒眼僧伽	zhou yan seng ga	0
+咒眼僧伽	zhou yan seng qie	0
 竹添幸吉郎	zhu tian xing ji lang	0
 缀雷电	zhui lei dian	0
 灼海流	zhuo hai liu	0
@@ -13648,23 +13646,18 @@ use_preset_vocabulary: false
 火之印记	huo zhi yin ji	0
 祸蛛蝎	huo zhu xie	0
 吉布里隆	ji bu li long	0
-级纯净棱晶	ji chun jing leng jing	0
 矶灯笼	ji deng long	0
 吉多	ji duo	14
 基尔波特哨塔	ji er bo te shao ta	0
 吉尔伽美什恩奇都	ji er jia mei shi en qi dou	0
 吉尔伽美什红莲	ji er jia mei shi hong lian	0
 疾风体势	ji feng ti shi	0
-级刚力炼金溶剂	ji gang li lian jin rong ji	0
-级刚力之幻水	ji gang li zhi huan shui	0
-级刚力之灵水	ji gang li zhi ling shui	0
 鸡高汤	ji gao tang	15
 机关般若	ji guan bo re	0
 极光灵砂	ji guang ling sha	0
 极合金正义号	ji he jin zheng yi hao	0
 吉吉	ji ji	137
 吉吉卢恩交易站	ji ji lu en jiao yi zhan	0
-级即死	ji ji si	0
 唧唧咋咋	ji ji za za	3
 基迦巨人比丘	ji jia ju ren bi qiu	0
 基迦巨人僧都	ji jia ju ren seng dou	0
@@ -13693,16 +13686,9 @@ use_preset_vocabulary: false
 技力恢复之羽	ji li hui fu zhi yu	0
 祭礼鲶鱼精	ji li nian yu jing	0
 疾龙的粗皮	ji long de cu pi	0
-级耐力炼金溶剂	ji nai li lian jin rong ji	0
-级耐力之幻水	ji nai li zhi huan shui	0
-级耐力之灵水	ji nai li zhi ling shui	0
 棘鳍鱼	ji qi yu	0
-级巧力炼金溶剂	ji qiao li lian jin rong ji	0
-级巧力之幻水	ji qiao li zhi huan shui	0
-级巧力之灵水	ji qiao li zhi ling shui	0
 基萨尔野菜	ji sa er ye cai	0
 寄生幸存者	ji sheng xing cun zhe	0
-级石化	ji shi hua	0
 祭司鱼	ji si yu	0
 吉坦特莱巴尔	ji tan te lai ba er	0
 极细玻璃纤维	ji xi bo li xian wei	0
@@ -13712,13 +13698,7 @@ use_preset_vocabulary: false
 吉祥天女歼灭战	ji xiang tian nv jian mie zhan	0
 吉祥天女羽衣	ji xiang tian nv yu yi	0
 吉祥天女之形	ji xiang tian nv zhi xing	0
-级意力炼金溶剂	ji yi li lian jin rong ji	0
-级意力之幻水	ji yi li zhi huan shui	0
-级意力之灵水	ji yi li zhi ling shui	0
 激战城塞石卫塔	ji zhan cheng sai shi wei ta	0
-级智力炼金溶剂	ji zhi li lian jin rong ji	0
-级智力之幻水	ji zhi li zhi huan shui	0
-级智力之灵水	ji zhi li zhi ling shui	0
 箕作鲨	ji zuo sha	0
 加比诺老爹的小屋	jia bi nuo lao die de xiao wu	0
 嘉恩艾神纳	jia en ai shen na	0
@@ -15876,7 +15856,6 @@ use_preset_vocabulary: false
 山毛榉木材	shan mao ju mu cai	0
 山毛榉树枝	shan mao ju shu zhi	1
 山毛榉原木	shan mao ju yuan mu	0
-山莓	shan mei	2
 山人岩穴	shan ren yan xue	0
 闪身拳	shan shen quan	0
 山神印	shan shen yin	0
@@ -17041,7 +17020,7 @@ use_preset_vocabulary: false
 星红石原石	xing hong shi yuan shi	0
 星花	xing hua	5
 星桦木木材	xing hua mu mu cai	0
-行会令	xing hui ling	0
+行会令	hang hui ling	0
 星极花	xing ji hua	0
 星极手镯	xing ji shou zhuo	0
 星极项环	xing ji xiang huan	0

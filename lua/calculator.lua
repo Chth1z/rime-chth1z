@@ -137,8 +137,8 @@ calcPlugin["sqrt"] = sqrt
 
 -- x为底的对数, log(10, 100) = log(100) / log(10) = 2
 local function log(x, y)
-  -- 不能为负数或0
-  if x <= 0 or y <= 0 then return nil end
+  -- 底数不能 <= 0 或等于 1，真数不能 <= 0
+  if type(x) ~= "number" or type(y) ~= "number" or x <= 0 or x == 1 or y <= 0 then return nil end
 
   return math.log(y) / math.log(x)
 end
@@ -203,12 +203,12 @@ local function variance(...)
 end
 calcPlugin["var"] = variance
 
--- 阶乘（限制 n <= 170 且为非负整数，避免 IEEE 754 溢出与超大阶乘阻塞输入法）
+-- 阶乘（限制 n <= 170 且为非负整数；n <= 20 保持 64 位精确整数，21..170 自动切换 IEEE 754 浮点）
 local function factorial(x)
   if type(x) ~= "number" or x < 0 or x > 170 or x ~= math.floor(x) then return nil end
   if x == 0 or x == 1 then return 1 end
 
-  local result = 1
+  local result = x <= 20 and 1 or 1.0
   for i = 2, x do
     result = result * i
   end
@@ -252,13 +252,13 @@ function M.func(input, seg, env)
   if fn then
     success, result = pcall(fn)
   end
-  if success and result ~= nil then
+  if success and type(result) == "number" and result == result and result ~= math.huge and result ~= -math.huge then
     result = tostring(result)
-    yield(Candidate(input, seg.start, seg._end, result, ""))
-    yield(Candidate(input, seg.start, seg._end, express .. "=" .. result, ""))
+    yield(Candidate("calculator", seg.start, seg._end, result, ""))
+    yield(Candidate("calculator", seg.start, seg._end, express .. "=" .. result, ""))
   else
-    yield(Candidate(input, seg.start, seg._end, express, "解析失败"))
-    yield(Candidate(input, seg.start, seg._end, code, "入参"))
+    yield(Candidate("calculator", seg.start, seg._end, express, "解析失败"))
+    yield(Candidate("calculator", seg.start, seg._end, code, "入参"))
     -- TODO: 错误信息记录到日志中
     -- print("express: " .. express)
     -- print("code: " .. code)

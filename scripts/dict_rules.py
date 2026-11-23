@@ -76,6 +76,9 @@ COMMENT_HARD_MAX_LEN = 40
 COMMENT_WARN_MAX_LEN = 32
 E1_MAX_WEIGHT = 30
 ALPHANUM_MAX_LEN = 10
+DUAL_READING_NOTE_PREFIXES: tuple[str, ...] = (
+    "规范 ", "习惯 ", "行业 ", "旧读 ", "常见 ", "大陆 ", "台湾 ", "俗读 ", "现汉 ", "审音拟 ",
+)
 
 
 @dataclass(frozen=True)
@@ -438,6 +441,10 @@ def load_ruleset(rules_dir: pathlib.Path, valid_syls: set[str] | None = None) ->
                 rs.errors.append(f"dual_readings.tsv:{idx}: {label} length {len(note)} > {COMMENT_HARD_MAX_LEN}")
             elif len(note) > COMMENT_WARN_MAX_LEN:
                 rs.warnings.append(f"dual_readings.tsv:{idx}: {label} length {len(note)} > {COMMENT_WARN_MAX_LEN} ('{note}')")
+            if not note.startswith(DUAL_READING_NOTE_PREFIXES):
+                rs.errors.append(
+                    f"dual_readings.tsv:{idx}: {label} '{note}' must start with an approved label prefix {DUAL_READING_NOTE_PREFIXES}"
+                )
         dk = (word, min(py1, py2), max(py1, py2))
         if dk in dr_seen:
             rs.errors.append(f"dual_readings.tsv:{idx}: duplicate dual reading entry for '{word}'")
@@ -579,6 +586,8 @@ def load_ruleset(rules_dir: pathlib.Path, valid_syls: set[str] | None = None) ->
             if (old_w, old_c) == (new_w, new_c):
                 rs.errors.append(f"en_fixes.tsv:{idx}: no-op replace for ({old_w}, {old_c})")
                 continue
+            if wt_s != "":
+                _parse_nonneg_int("en_fixes.tsv", idx, wt_s, "weight", rs.errors)
         elif action == "reweight":
             if old_c == "*" or wt_s == "":
                 rs.errors.append(f"en_fixes.tsv:{idx}: reweight requires concrete old_code and weight")
@@ -692,6 +701,22 @@ def load_ruleset(rules_dir: pathlib.Path, valid_syls: set[str] | None = None) ->
                 f"conflict: corrections.tsv:{r.line_no} ({r.word}, {r.wrong_py}) is also deleted in deletions.tsv"
             )
 
+    en_ext_del_exact = {
+        (r.old_word, r.old_code)
+        for r in rs.en_fixes
+        if r.target_file == "en_dicts/en_ext.dict.yaml" and r.action == "delete" and r.old_code != "*"
+    }
+    en_ext_del_wild = {
+        r.old_word
+        for r in rs.en_fixes
+        if r.target_file == "en_dicts/en_ext.dict.yaml" and r.action == "delete" and r.old_code == "*"
+    }
+    for er in rs.en_additions:
+        if (er.word, er.code) in en_ext_del_exact or er.word in en_ext_del_wild:
+            rs.errors.append(
+                f"conflict: en_additions.tsv:{er.line_no} ({er.word}, {er.code}) is deleted in en_fixes.tsv"
+            )
+
     return rs
 
 
@@ -764,6 +789,11 @@ def apply_cn_overlay(
     wt_wild = {r.word: r for r in ruleset.weights if r.target_file == rel and r.py == "*"}
     adds = [r for r in ruleset.additions if r.target_file == rel]
     duals = [r for r in ruleset.dual_readings if r.target_file == rel]
+    dr_weights: dict[tuple[str, str], tuple[int, str]] = {
+        (dr.word, py): (wt_val, dr.rule_id)
+        for dr in duals
+        for py, wt_val in ((dr.py1, dr.w1), (dr.py2, dr.w2))
+    }
 
     if not (pf_map or wf_exact or wf_wild or del_exact or del_wild or wt_exact or wt_wild or adds or duals):
         return lines
@@ -813,6 +843,16 @@ def apply_cn_overlay(
                 py = pf.new_py
                 hits[pf.rule_id] += 1
                 stats["rules_py_fixed"] += 1
+
+        # 3b. Dual-reading declared weights (SSOT enforcement on existing rows)
+        dr_w = dr_weights.get((w, py))
+        if dr_w is not None:
+            dr_wt_val, dr_rid = dr_w
+            hits[dr_rid] += 1
+            new_dr_wt = str(dr_wt_val)
+            if wt != new_dr_wt:
+                wt = new_dr_wt
+                stats["rules_reweighted"] += 1
 
         # 4. Exact weight rule, followed by wildcard weight rule
         wr_ex = wt_exact.get((w, py))
@@ -969,6 +1009,8 @@ def apply_en_overlay(
         rr = rep_map.get((w, code))
         if rr is not None:
             w, code = rr.new_word, rr.new_code
+            if rr.weight != "":
+                wt = rr.weight
             hits[rr.rule_id] += 1
             fixed += 1
 
@@ -1020,6 +1062,7 @@ def apply_opencc_overlay(
     by_key = {r.key: r for r in fixes}
     out: list[str] = []
     seen_keys: set[str] = set()
+    key_to_out_idx: dict[str, int] = {}
     changed = 0
 
     for line in lines:
@@ -1029,7 +1072,11 @@ def apply_opencc_overlay(
         k, _ = line.split("\t", 1)
         r = by_key.get(k)
         if r is None:
+            if k in seen_keys:
+                changed += 1
+                continue
             seen_keys.add(k)
+            key_to_out_idx[k] = len(out)
             out.append(line)
             continue
         if r.action == "delete":
@@ -1041,8 +1088,12 @@ def apply_opencc_overlay(
             new_line = f"{k}\t{r.value}"
             if new_line != line:
                 changed += 1
-            seen_keys.add(k)
-            out.append(new_line)
+            if k in seen_keys:
+                out[key_to_out_idx[k]] = new_line
+            else:
+                seen_keys.add(k)
+                key_to_out_idx[k] = len(out)
+                out.append(new_line)
             continue
         if r.action == "rename":
             hits[r.rule_id] += 1
@@ -1050,10 +1101,18 @@ def apply_opencc_overlay(
             new_line = f"{new_k}\t{new_v}"
             if new_line != line:
                 changed += 1
-            seen_keys.add(new_k)
-            out.append(new_line)
+            if new_k in seen_keys:
+                out[key_to_out_idx[new_k]] = new_line
+            else:
+                seen_keys.add(new_k)
+                key_to_out_idx[new_k] = len(out)
+                out.append(new_line)
+            continue
+        if k in seen_keys:
+            changed += 1
             continue
         seen_keys.add(k)
+        key_to_out_idx[k] = len(out)
         out.append(line)
 
     for r in fixes:

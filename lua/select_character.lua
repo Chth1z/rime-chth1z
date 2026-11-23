@@ -17,7 +17,7 @@ function select.func(key, env)
 
     if
         not key:release()
-        and (context:is_composing() or context:has_menu())
+        and context:has_menu()
         and (env.first_key or env.last_key)
     then
         local repr = key:repr()
@@ -29,10 +29,10 @@ function select.func(key, env)
 
         local input = context.input
         local cand = context:get_selected_candidate()
-        local selected_text = cand and cand.text or input
-        if selected_text == '' then
+        if not cand or cand.text == '' then
             return 2
         end
+        local selected_text = cand.text
 
         local selected_char
         if is_first then

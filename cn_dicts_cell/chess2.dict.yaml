@@ -83,7 +83,6 @@ use_preset_vocabulary: false
 车二退四	che er tui si	0
 车二退五	che er tui wu	0
 车二退一	che er tui yi	0
-车进	che jin	11
 车九进八	che jiu jin ba	0
 车九进二	che jiu jin er	1
 车九进九	che jiu jin jiu	0
@@ -136,7 +135,6 @@ use_preset_vocabulary: false
 车六退四	che liu tui si	0
 车六退五	che liu tui wu	0
 车六退一	che liu tui yi	0
-车平	che ping	0
 车七进八	che qi jin ba	0
 车七进二	che qi jin er	0
 车七进九	che qi jin jiu	0
@@ -215,7 +213,6 @@ use_preset_vocabulary: false
 车四退四	che si tui si	0
 车四退五	che si tui wu	0
 车四退一	che si tui yi	0
-车退	che tui	1
 车五进八	che wu jin ba	0
 车五进二	che wu jin er	0
 车五进九	che wu jin jiu	0
@@ -421,9 +418,6 @@ use_preset_vocabulary: false
 后炮退一	hou pao tui yi	0
 后卒进	hou zu jin	0
 后卒平	hou zu ping	0
-将进	jiang jin	0
-将平	jiang ping	1
-将退	jiang tui	0
 马八进九	ma ba jin jiu	3
 马八进六	ma ba jin liu	0
 马八进七	ma ba jin qi	6
@@ -436,7 +430,6 @@ use_preset_vocabulary: false
 马二退三	ma er tui san	2
 马二退四	ma er tui si	1
 马二退一	ma er tui yi	1
-马进	ma jin	9
 马九进八	ma jiu jin ba	0
 马九进七	ma jiu jin qi	0
 马九退八	ma jiu tui ba	0
@@ -473,7 +466,6 @@ use_preset_vocabulary: false
 马四退六	ma si tui liu	1
 马四退三	ma si tui san	1
 马四退五	ma si tui wu	0
-马退	ma tui	0
 马五进六	ma wu jin liu	0
 马五进七	ma wu jin qi	0
 马五进三	ma wu jin san	0
@@ -538,7 +530,6 @@ use_preset_vocabulary: false
 炮二退四	pao er tui si	0
 炮二退五	pao er tui wu	0
 炮二退一	pao er tui yi	0
-炮进	pao jin	3
 炮九进八	pao jiu jin ba	0
 炮九进二	pao jiu jin er	0
 炮九进九	pao jiu jin jiu	0
@@ -591,7 +582,6 @@ use_preset_vocabulary: false
 炮六退四	pao liu tui si	0
 炮六退五	pao liu tui wu	0
 炮六退一	pao liu tui yi	0
-炮平	pao ping	3
 炮七进八	pao qi jin ba	0
 炮七进二	pao qi jin er	0
 炮七进九	pao qi jin jiu	0
@@ -1004,7 +994,7 @@ use_preset_vocabulary: false
 单霞丽	shan xia li	0
 党斐	dang fei	0
 得子得势	de zi de shi	0
-得子得先各得子	de zi de xian ge de zi	0
+得子得先名得子	de zi de xian ming de zi	0
 得子失势	de zi shi shi	0
 得子失先却是输	de zi shi xian que shi shu	1
 等着困敌	deng zhao kun di	0
@@ -1241,7 +1231,7 @@ use_preset_vocabulary: false
 失子得势	shi zi de shi	0
 失子失势	shi zi shi shi	0
 数闲	shu xian	0
-栓链	shuan lian	0
+拴链	shuan lian	0
 拴链困敌	shuan lian kun di	0
 双杯献酒	shuang bei xian jiu	1
 双车献酒	shuang che xian jiu	0
@@ -1420,7 +1410,7 @@ use_preset_vocabulary: false
 中卒	zhong zu	16
 朱琮思	zhu cong si	0
 竹香斋	zhu xiang zhai	2
-自来出洞无敌手象棋古谱新编	zi lai chu dong wu di shou xiang qi gu pu xin bian	0
+自出洞来无敌手象棋古谱新编	zi chu dong lai wu di shou xiang qi gu pu xin bian	0
 子力价值	zi li jia zhi	38
 阻碍敌军	zu ai di jun	2
 做杀	zuo sha	0
@@ -1506,7 +1496,6 @@ use_preset_vocabulary: false
 车二退四	ju er tui si	0
 车二退五	ju er tui wu	0
 车二退一	ju er tui yi	0
-车进	ju jin	11
 车九进八	ju jiu jin ba	0
 车九进二	ju jiu jin er	1
 车九进九	ju jiu jin jiu	0
@@ -1559,7 +1548,6 @@ use_preset_vocabulary: false
 车六退四	ju liu tui si	0
 车六退五	ju liu tui wu	0
 车六退一	ju liu tui yi	0
-车平	ju ping	0
 车七进八	ju qi jin ba	0
 车七进二	ju qi jin er	0
 车七进九	ju qi jin jiu	0
@@ -1638,7 +1626,6 @@ use_preset_vocabulary: false
 车四退四	ju si tui si	0
 车四退五	ju si tui wu	0
 车四退一	ju si tui yi	0
-车退	ju tui	1
 车五进八	ju wu jin ba	0
 车五进二	ju wu jin er	0
 车五进九	ju wu jin jiu	0
@@ -1747,11 +1734,59 @@ use_preset_vocabulary: false
 前车退四	qian ju tui si	0
 前车退五	qian ju tui wu	0
 前车退一	qian ju tui yi	1
+撤车将	che ju jiang	0
+车炮抽杀	ju pao chou sha	1
+车前马后须相应	ju qian ma hou xu xiang ying	1
+车入花心	ju ru hua xin	0
+二字车	er zi ju	0
+河头车	he tou ju	0
+黑高右横车	hei gao you heng ju	0
+黑进卒左炮封车	hei jin zu zuo pao feng ju	0
+黑平右炮亮车	hei ping you pao liang ju	0
+黑双横车	hei shuang heng ju	0
+黑右车巡河	hei you ju xun he	0
+黑左车巡河	hei zuo ju xun he	0
+红高左横车	hong gao zuo heng ju	0
+红横车占左肋	hong heng ju zhan zuo lei	0
+红两头蛇左车过河	hong liang tou she zuo ju guo he	0
+红双横车正马	hong shuang heng ju zheng ma	0
+红右车过河	hong you ju guo he	0
+红直车正马	hong zhi ju zheng ma	0
+红直横车	hong zhi heng ju	0
+花心车	hua xin ju	0
+缓开车	huan kai ju	2
+进炮应须要辅车	jin pao ying xu yao fu ju	0
+肋车	lei ju	2
+立马车	li ma ju	0
+弃象陷车	qi xiang xian ju	0
+双车献酒	shuang ju xian jiu	0
+顺炮横车对直车	shun pao heng ju dui zhi ju	3
+顺炮直车边马对缓开车	shun pao zhi ju bian ma dui huan kai ju	0
+顺炮直车对横车	shun pao zhi ju dui heng ju	0
+顺炮直车对缓开车	shun pao zhi ju dui huan kai ju	0
 顺炮直车进七兵对缓开车	shun pao zhi ju jin qi bing dui huan kai ju	0
+顺炮直车五六炮对横车	shun pao zhi ju wu liu pao dui heng ju	0
+四车相见	si ju xiang jian	1
+贴身车	tie shen ju	1
+同线车	tong xian ju	0
+正头车	zheng tou ju	0
+中炮对横车敛炮	zhong pao dui heng ju lian pao	0
+中炮过河车边马对屏风马左马盘河	zhong pao guo he ju bian ma dui ping feng ma zuo ma pan he	0
+中炮过河车对屏风马高车保马	zhong pao guo he ju dui ping feng ma gao ju bao ma	0
 中炮过河车对屏风马平炮兑车	zhong pao guo he ju dui ping feng ma ping pao dui ju	0
+中炮过河车对屏风马上士象	zhong pao guo he ju dui ping feng ma shang shi xiang	0
+中炮过河车对屏风马左马盘河	zhong pao guo he ju dui ping feng ma zuo ma pan he	0
 中炮过河车急进中兵对屏风马平炮兑车	zhong pao guo he ju ji jin zhong bing dui ping feng ma ping pao dui ju	0
 中炮过河车进中兵对屏风马两头蛇	zhong pao guo he ju jin zhong bing dui ping feng ma liang tou she	0
 中炮过河车七路马对屏风马平炮兑车	zhong pao guo he ju qi lu ma dui ping feng ma ping pao dui ju	1
+中炮过河车正马对屏风马两头蛇	zhong pao guo he ju zheng ma dui ping feng ma liang tou she	0
+中炮横车对反宫马	zhong pao heng ju dui fan gong ma	0
+中炮横车盘头马对屏风马	zhong pao heng ju pan tou ma dui ping feng ma	0
+中炮横车七路马对屏风马	zhong pao heng ju qi lu ma dui ping feng ma	0
+中炮进七兵过河车对反宫马	zhong pao jin qi bing guo he ju dui fan gong ma	0
+中炮直车对屏风马卒河口炮	zhong pao zhi ju dui ping feng ma zu he kou pao	0
+中炮直车对左炮封车转半途列炮	zhong pao zhi ju dui zuo pao feng ju zhuan ban tu lie pao	0
+中炮直车七路马对屏风马双炮过河	zhong pao zhi ju qi lu ma dui ping feng ma shuang pao guo he	0
 后车进九	hou ju jin jiu	0
 后车退九	hou ju tui jiu	0
 前车进九	qian ju jin jiu	0

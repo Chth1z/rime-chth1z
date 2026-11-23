@@ -11,15 +11,15 @@ use_preset_vocabulary: false
 ...
 阿拉斯加雪橇犬	a la si jia xue qiao quan	2
 爱尔兰长毛水狗	ai er lan chang mao shui gou	0
-爱尔兰㹴	ai er lan geng	0
+爱尔兰梗	ai er lan geng	0
 爱尔兰猎狼犬	ai er lan lie lang quan	0
-爱尔兰软毛㹴	ai er lan ruan mao geng	0
+爱尔兰软毛梗	ai er lan ruan mao geng	0
 爱尔兰水猎犬	ai er lan shui lie quan	0
 爱斯基摩犬	ai si ji mo quan	2
-澳大利亚㹴	ao da li ya geng	0
-澳洲㹴	ao zhou geng	0
+澳大利亚梗	ao da li ya geng	0
+澳洲梗	ao zhou geng	0
 澳洲牧牛犬	ao zhou mu niu quan	0
-澳洲丝毛㹴	ao zhou si mao geng	0
+澳洲丝毛梗	ao zhou si mao geng	0
 巴比伦犬	ba bi lun quan	0
 巴哥犬	ba ge quan	2
 巴赛特猎犬	ba sai te lie quan	0
@@ -31,21 +31,21 @@ use_preset_vocabulary: false
 伴侣犬	ban lv quan	0
 半毛犬	ban mao quan	0
 北京犬	bei jing quan	0
-贝林登㹴	bei lin deng geng	0
-贝灵顿㹴	bei ling dun geng	0
+贝林登梗	bei lin deng geng	0
+贝灵顿梗	bei ling dun geng	0
 贝生吉犬	bei sheng ji quan	0
 毕高犬	bi gao quan	0
 比格猎犬	bi ge lie quan	1
 比格犬	bi ge quan	13
 毕格犬	bi ge quan	0
 比利时牧羊犬	bi li shi mu yang quan	0
-边境㹴	bian jing geng	0
-标准曼彻斯特㹴	biao zhun man che si te geng	0
-伯德㹴	bo de geng	0
+边境梗	bian jing geng	0
+标准曼彻斯特梗	biao zhun man che si te geng	0
+伯德梗	bo de geng	0
 伯恩山犬	bo en shan quan	0
 博美狗	bo mei gou	0
 波美拉尼亚犬	bo mei la ni ya quan	0
-波士顿㹴	bo shi dun geng	0
+波士顿梗	bo shi dun geng	0
 波士顿狗	bo shi dun gou	0
 波音达猎犬	bo yin da lie quan	0
 查理士王猎犬	cha li shi wang lie quan	0
@@ -63,42 +63,41 @@ use_preset_vocabulary: false
 蝶耳犬	die er quan	0
 斗鸡獚	dou ji huang	0
 斗鸡犬	dou ji quan	0
-斗牛㹴	dou niu geng	0
+斗牛梗	dou niu geng	0
 杜宾狗	du bin gou	0
-短脚长身㹴	duan jiao chang shen geng	0
-短脚狄文㹴	duan jiao di wen geng	0
-短毛猎狐㹴	duan mao lie hu geng	0
+短脚长身梗	duan jiao chang shen geng	0
+短脚狄文梗	duan jiao di wen geng	0
+短毛猎狐梗	duan mao lie hu geng	0
 俄罗斯猎犬	e luo si lie quan	0
 法国斗牛犬	fa guo dou niu quan	0
 法兰德斯牧牛犬	fa lan de si mu niu quan	0
 法老王猎犬	fa lao wang lie quan	0
 刚果犬	gang guo quan	0
-刚毛猎狐㹴	gang mao lie hu geng	0
+刚毛猎狐梗	gang mao lie hu geng	0
 高地牧羊犬	gao di mu yang quan	0
 格陵兰犬	ge ling lan quan	0
-㹴类犬	geng lei quan	0
+梗类犬	geng lei quan	0
 古典英国牧羊犬	gu dian ying guo mu yang quan	0
 古英国牧羊犬	gu ying guo mu yang quan	0
 哈巴犬	ha ba quan	0
 荷兰毛狮犬	he lan mao shi quan	0
 蝴蝶犬	hu die quan	1
 狐狸犬	hu li quan	0
-湖畔㹴	hu pan geng	0
+湖畔梗	hu pan geng	0
 黄金猎犬	huang jin lie quan	1
 惠比特	hui bi te	1
 惠比特犬	hui bi te quan	0
 基斯犬	ji si quan	0
 吉娃娃犬	ji wa wa quan	1
-杰克拉西尔㹴	jie ke la xi er geng	0
+杰克拉西尔梗	jie ke la xi er geng	0
 金毛猎犬	jin mao lie quan	2
 金毛寻回犬	jin mao xun hui quan	0
 金色猎犬	jin se lie quan	0
 金丝犬	jin si quan	0
 卷毛比雄犬	juan mao bi xiong quan	0
 卷毛寻回犬	juan mao xun hui quan	0
-凯恩㹴	kai en geng	0
-凯莉蓝㹴	kai li lan geng	0
-凯利兰㹴	kai li lan geng	0
+凯恩梗	kai en geng	0
+凯莉蓝梗	kai li lan geng	0
 柯卡	ke ka	0
 可卡长毛猎犬	ke ka chang mao lie quan	0
 可卡獚	ke ka huang	0
@@ -121,20 +120,20 @@ use_preset_vocabulary: false
 罗江犬	luo jiang quan	0
 罗威那犬	luo wei na quan	0
 罗威纳犬	luo wei na quan	0
-罗威士㹴	luo wei shi geng	0
+罗威士梗	luo wei shi geng	0
 马车犬	ma che quan	0
 玛尔济斯	ma er ji si	0
 马耳他犬	ma er ta quan	0
 马士提夫獒犬	ma shi ti fu ao quan	0
 马士提夫犬	ma shi ti fu quan	0
-曼彻斯特㹴	man che si te geng	0
+曼彻斯特梗	man che si te geng	0
 美国可卡犬	mei guo ke ka quan	0
-美国史塔福郡㹴	mei guo shi ta fu jun geng	0
+美国史塔福郡梗	mei guo shi ta fu jun geng	0
 米格鲁	mi ge lu	4
 米格鲁犬	mi ge lu quan	0
 迷你宾沙犬	mi ni bin sha quan	0
 迷你笃宾犬	mi ni du bin quan	0
-迷你牛头㹴	mi ni niu tou geng	0
+迷你牛头梗	mi ni niu tou geng	0
 迷你史劳策犬	mi ni shi lao ce quan	0
 迷你史纳莎	mi ni shi na sha	0
 迷你雪纳瑞犬	mi ni xue na rui quan	0
@@ -144,10 +143,10 @@ use_preset_vocabulary: false
 牧场长毛猎犬	mu chang chang mao lie quan	0
 牡丹犬	mu dan quan	0
 南非獒犬	nan fei ao quan	0
-牛头㹴	niu tou geng	0
-诺福㹴	nuo fu geng	0
-诺里奇㹴	nuo li qi geng	0
-帕森拉希尔㹴	pa sen la xi er geng	0
+牛头梗	niu tou geng	0
+诺福梗	nuo fu geng	0
+诺里奇梗	nuo li qi geng	0
+帕森拉希尔梗	pa sen la xi er geng	0
 彭布罗克柯基犬	peng bu luo ke ke ji quan	0
 骑士查理王猎犬	qi shi cha li wang lie quan	0
 枪猎犬	qiang lie quan	0
@@ -168,23 +167,22 @@ use_preset_vocabulary: false
 沙皮犬	sha pi quan	1
 圣伯纳犬	sheng bo na quan	1
 狮毛犬	shi mao quan	0
-史柔查㹴	shi rou cha geng	0
-史塔福郡牛头㹴	shi ta fu jun niu tou geng	0
+史柔查梗	shi rou cha geng	0
+史塔福郡牛头梗	shi ta fu jun niu tou geng	0
 实用犬	shi yong quan	0
 狩猎犬	shou lie quan	2
 四国犬	si guo quan	0
-斯开岛㹴	si kai dao geng	0
-丝毛㹴	si mao geng	0
+斯开岛梗	si kai dao geng	0
+丝毛梗	si mao geng	0
 松狮犬	song shi quan	0
 松鼠犬	song shu quan	0
 苏俄牧羊犬	su e mu yang quan	0
 苏俄追踪犬	su e zhui zong quan	0
 苏格兰粗毛牧羊犬	su ge lan cu mao mu yang quan	0
-苏格兰㹴	su ge lan geng	0
 特兰犬	te lan quan	0
-万能㹴	wan neng geng	0
+万能梗	wan neng geng	0
 玩赏犬	wan shang quan	0
-威尔士㹴	wei er shi geng	0
+威尔士梗	wei er shi geng	0
 威尔斯激飞可卡长毛猎犬	wei er si ji fei ke ka chang mao lie quan	0
 威尔斯柯基犬	wei er si ke ji quan	0
 威尔斯牧畜犬	wei er si mu xu quan	0
@@ -192,16 +190,16 @@ use_preset_vocabulary: false
 威斯拉犬	wei si la quan	0
 沃尔皮诺	wo er pi nuo	0
 西伯利亚雪橇犬	xi bo li ya xue qiao quan	0
-西部高地白㹴	xi bu gao di bai geng	0
-西高地白㹴	xi gao di bai geng	0
+西部高地白梗	xi bu gao di bai geng	0
+西高地白梗	xi gao di bai geng	0
 西高地铁利亚	xi gao di tie li ya	0
 喜乐蒂牧羊犬	xi le di mu yang quan	0
 喜乐蒂犬	xi le di quan	0
-西里汉㹴	xi li han geng	0
+西里汉梗	xi li han geng	0
 西摩犬	xi mo quan	0
 西帕凯犬	xi pa kai quan	0
 西施犬	xi shi quan	0
-西藏㹴	xi zang geng	0
+西藏梗	xi zang geng	0
 小丹犬	xiao dan quan	0
 小鹿犬	xiao lu quan	0
 小史柔查犬	xiao shi rou cha quan	0
@@ -218,16 +216,14 @@ use_preset_vocabulary: false
 英国激飞可卡长毛猎犬	ying guo ji fei ke ka chang mao lie quan	0
 英国可卡猎鹬犬	ying guo ke ka lie yu quan	1
 英国小型猎兔犬	ying guo xiao xing lie tu quan	0
-约克夏㹴	yue ke xia geng	0
+约克夏梗	yue ke xia geng	0
 约瑟犬	yue se quan	0
-约瑟㹴	yue se geng	0
+约瑟梗	yue se geng	0
 指标犬	zhi biao quan	0
 中国食犬	zhong guo shi quan	0
 中国狮子犬	zhong guo shi zi quan	0
 中国无毛犬	zhong guo wu mao quan	0
 无毛犬	wu mao quan	2
-鹿鹿	lu lu	20
-狮狮	shi shi	2
 白红眼	bai hong yan	0
 白化蛋白石基因	bai hua dan bai shi ji yin	0
 彩狸	cai li	0
@@ -378,7 +374,7 @@ use_preset_vocabulary: false
 拟幻紫斑蝶	ni huan zi ban die	0
 拟旖斑蝶	ni yi ban die	0
 浓紫彩灰蝶	nong zi cai hui die	0
-朴喙蝶	pu hui die	0
+朴喙蝶	po hui die	0
 迁粉蝶	qian fen die	0
 牵牛灰蝶	qian niu hui die	0
 青斑蝶	qing ban die	0

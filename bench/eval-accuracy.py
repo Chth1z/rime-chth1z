@@ -350,7 +350,7 @@ def create_isolated_env(rime_dir: pathlib.Path, schema_id: str, yaml_overrides: 
             else:
                 shutil.copy2(f, tmp / "build" / f.name)
     for f in rime_dir.iterdir():
-        if f.is_file() and f.suffix in (".yaml", ".lua", ".txt"):
+        if f.is_file() and f.suffix in (".yaml", ".lua", ".txt") and f.name not in ("user.yaml", "installation.yaml"):
             shutil.copy2(f, tmp / f.name)
         elif f.is_file() and f.suffix == ".gram":
             subprocess.run(["cmd", "/c", "mklink", "/H", str(tmp / f.name), str(f)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)

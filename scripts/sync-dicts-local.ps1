@@ -32,8 +32,9 @@ try {
     }
 
     $linter = Join-Path $repoRoot "scripts\dict_lint.py"
+    $lintReport = Join-Path $env:TEMP "rime-chth1z-sync-lint.json"
     if (Test-Path $linter) {
-        python $linter --strict --idempotent --diff-budget
+        python $linter --strict --idempotent --check-collisions --diff-budget --json $lintReport
         if ($LASTEXITCODE -ne 0) { throw "dict_lint.py failed" }
     }
 
@@ -46,8 +47,16 @@ try {
     $status | Write-Output
 
     if ($Commit) {
+        if (Test-Path $lintReport) {
+            $report = Get-Content $lintReport -Raw -Encoding UTF8 | ConvertFrom-Json
+            if ($report.diff_budget -and $report.diff_budget.needs_review) {
+                throw "Diff budget exceeded ($($report.diff_budget.review_reasons -join '; ')); inspect changes before committing manually."
+            }
+        }
         git add cn_dicts/ cn_dicts_cell/ en_dicts/ opencc/ rime_frost.dict.yaml
+        if ($LASTEXITCODE -ne 0) { throw "git add failed" }
         git commit -m "chore(dicts): sync upstream rime-frost @ $sha"
+        if ($LASTEXITCODE -ne 0) { throw "git commit failed" }
         Write-Output "Committed dictionary sync @ $sha."
     }
 }

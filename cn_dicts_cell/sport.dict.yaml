@@ -70,7 +70,7 @@ use_preset_vocabulary: true
 大塞弗	da sai fu	0
 戴丽丽	dai li li	1
 单桧	dan gui	2
-单明杰	dan ming jie	0
+单明杰	shan ming jie	0
 弹网	dan wang	7
 挡球	dang qiu	13
 德佩特里索娃	de pei te li suo wa	0
@@ -283,10 +283,10 @@ use_preset_vocabulary: true
 普劳泽	pu lao ze	0
 普里莫拉茨	pu li mo la ci	1
 普里希	pu li xi	0
-朴美英	pu mei ying	0
-朴美英李倩	pu mei ying li qian	0
+朴美英	piao mei ying	0
+朴美英李倩	piao mei ying li qian	0
 普碳	pu tan	0
-朴英玉	pu ying yu	0
+朴英玉	piao ying yu	0
 齐宝香	qi bao xiang	0
 七夹	qi jia	4
 前冲弧圈球	qian chong hu quan qiu	2
@@ -992,15 +992,15 @@ use_preset_vocabulary: true
 庞斯	pang si	6
 佩特罗维奇	pei te luo wei qi	1
 皮特佩卡里克	pi te pei ka li ke	0
-朴成赫	pu cheng he	0
+朴成赫	piao cheng he	0
 普拉顿斯	pu la dun si	0
 普拉努斯	pu la nu si	0
 普里塔斯	pu li ta si	0
-朴南哲	pu nan zhe	0
-朴男哲	pu nan zhe	0
+朴南哲	piao nan zhe	0
+朴男哲	piao nan zhe	0
 葡萄牙本菲卡队	pu tao ya ben fei ka dui	0
 葡萄牙波尔图队	pu tao ya bo er tu dui	0
-朴哲镇	pu zhe zhen	0
+朴哲镇	piao zhe zhen	0
 奇诚庸	qi cheng yong	4
 齐亚尼	qi ya ni	12
 旗帜飘扬	qi zhi piao yang	9
@@ -2045,7 +2045,7 @@ use_preset_vocabulary: true
 丹尼格兰格	dan ni ge lan ge	0
 单手扣篮	dan shou kou lan	2
 单手上篮	dan shou shang lan	0
-单涛	dan tao	27
+单涛	shan tao	27
 挡切战术	dang qie zhan shu	2
 道比	dao bi	0
 倒灌篮	dao guan lan	0
@@ -2225,7 +2225,7 @@ use_preset_vocabulary: true
 弗瑞斯贝	fu rui si bei	0
 弗耶	fu ye	7
 福伊尔	fu yi er	2
-伽奈特	ga nai te	0
+伽奈特	jia nai te	0
 盖火锅	gai huo guo	1
 干扰罚球	gan rao fa qiu	1
 干扰球	gan rao qiu	57
@@ -2593,7 +2593,7 @@ use_preset_vocabulary: true
 联合中心球馆	lian he zhong xin qiu guan	1
 连胜场数	lian sheng chang shu	3
 连续不胜场数	lian xu bu sheng chang shu	0
-连续不胜记录	lian xu bu sheng ji lu	0
+连续不胜纪录	lian xu bu sheng ji lu	0
 两不沾	liang bu zhan	13
 梁伟	liang wei	27
 辽宁猎人	liao ning lie ren	0
@@ -2772,7 +2772,7 @@ use_preset_vocabulary: true
 明尼苏达森林狼	ming ni su da sen lin lang	4
 明尼苏达森林狼队	ming ni su da sen lin lang dui	4
 名人堂成员	ming ren tang cheng yuan	30
-缪寿守	miu shou shou	0
+缪寿守	miao shou shou	0
 莫罕默德	mo han mo de	1
 莫科	mo ke	18
 莫里斯阿尔蒙德	mo li si a er meng de	0
@@ -3594,7 +3594,7 @@ use_preset_vocabulary: true
 运化转关	yun hua zhuan guan	0
 运手	yun shou	0
 斩手	zhan shou	5
-沾粘连随	zhan zhan lian sui	0
+沾粘连随	zhan nian lian sui	0
 震脚上步	zhen jiao shang bu	0
 指裆锤	zhi dang chui	2
 指裆捶	zhi dang chui	0
@@ -4126,7 +4126,7 @@ use_preset_vocabulary: true
 肩拳	jian quan	0
 将钺	jiang yue	0
 揭斧	jie fu	0
-解和平	jie he ping	0
+解和平	xie he ping	0
 截修鳞	jie xiu lin	0
 节钺	jie yue	11
 金斧	jin fu	5
@@ -4654,7 +4654,6 @@ use_preset_vocabulary: true
 基斯范霍恩	ji si fan huo en	0
 吉喆	ji zhe	93
 贾马尔桑普森	jia ma er sang pu sen	0
-伽奈特	jia nai te	0
 加内特汤普森	jia nei te tang pu sen	0
 贾斯科维休斯	jia si ke wei xiu si	5
 贾斯汀里德	jia si ting li de	0
@@ -6783,8 +6782,8 @@ use_preset_vocabulary: true
 蔡曦	cai xi	0
 曹限东	cao xian dong	0
 岑登	cen deng	5
-曾艾生	ceng ai sheng	0
-曾彦程	ceng yan cheng	0
+曾艾生	zeng ai sheng	0
+曾彦程	zeng yan cheng	0
 查达瑞	cha da rui	0
 查尔斯奥比	cha er si ao bi	0
 查尔斯恩佐比亚	cha er si en zuo bi ya	0
@@ -7405,7 +7404,7 @@ use_preset_vocabulary: true
 法切蒂	fa qie di	34
 法提赫埃吉迪克	fa ti he ai ji di ke	0
 法提赫塞尔坎库尔图卢思	fa ti he sai er kan ku er tu lu si	0
-法提赫塞兰	fa ti he se lan	0
+法提赫塞兰	fa ti he sai lan	0
 法提赫伊根	fa ti he yi gen	0
 法瓦利	fa wa li	5
 法维切特	fa wei qie te	0
@@ -10239,7 +10238,7 @@ use_preset_vocabulary: true
 明斯克运动竞技	ming si ke yun dong jing ji	0
 明塔尔	ming ta er	0
 明堂和也	ming tang he ye	0
-缪中委	miu zhong wei	0
+缪中委	miao zhong wei	0
 莫比多迪亚基特	mo bi duo di ya ji te	0
 莫比利亚	mo bi li ya	0
 莫德里察	mo de li cha	0
@@ -13173,3 +13172,14 @@ use_preset_vocabulary: true
 中羽	zhong yu	165
 同宽	tong kuan	10
 肩同宽	jian tong kuan	10
+违体	wei ti	40
+反跑	fan pao	60
+补扣	bu kou	60
+骑扣	qi kou	60
+保发	bao fa	60
+双误	shuang wu	60
+金满贯	jin man guan	80
+清台	qing tai	60
+匹克球	pi ke qiu	80
+好球带	hao qiu dai	60
+薪资空间	xin zi kong jian	60

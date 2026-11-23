@@ -127,7 +127,7 @@ algebra_sogou:
     - derive/8/ba/
     - derive/9/jq/
     - derive/\+/jw/
-    - derive/#/jy/
+    - derive/#/j;/
 # 智能ABC双拼
 algebra_abc:
   __include: melt_eng_algebra_common:/algebra_common

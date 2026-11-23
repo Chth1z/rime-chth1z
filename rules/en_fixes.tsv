@@ -155,3 +155,176 @@ en_dicts/en.dict.yaml	verzeichnis	*	delete				非英语德语抓取垃圾
 en_dicts/en.dict.yaml	FujiFilm	FujiFilm	replace	Fujifilm	Fujifilm		官方品牌大小写(Fujifilm)
 en_dicts/en.dict.yaml	ZDnet	ZDnet	replace	ZDNet	ZDNet		官方品牌大小写(ZDNet)
 en_dicts/en.dict.yaml	Negro	*	delete				清理歧视性过时词条（补齐 en_ext 漏网项）
+en_dicts/en_ext.dict.yaml	DALL·E	DALL·E	replace	DALL·E	DALLE		编码去除非ASCII间隔号·，对齐 Déjà vu/Dejavu 规范
+en_dicts/en_ext.dict.yaml	iBus	iBus	replace	IBus	IBus		官方专名大小写(IBus = Intelligent Input Bus)
+en_dicts/en_ext.dict.yaml	AVAST!	AVAST!	replace	Avast	Avast		官方品牌已去感叹号并采用规范首字母大写(Avast)
+en_dicts/en_ext.dict.yaml	Better Snap Tool	BetterSnapTool	replace	BetterSnapTool	BetterSnapTool		官方产品名无空格(BetterSnapTool)
+en_dicts/en_ext.dict.yaml	Better Touch Tool	BetterTouchTool	replace	BetterTouchTool	BetterTouchTool		官方产品名无空格(BetterTouchTool)
+en_dicts/en_ext.dict.yaml	Better Zip	BetterZip	replace	BetterZip	BetterZip		官方产品名无空格(BetterZip)
+en_dicts/en_ext.dict.yaml	Clean My Mac	CleanMyMac	replace	CleanMyMac	CleanMyMac		官方产品名无空格(CleanMyMac)
+en_dicts/en_ext.dict.yaml	Clean My Mac X	CleanMyMacX	replace	CleanMyMac X	CleanMyMacX		官方产品名空格规范(CleanMyMac X)
+en_dicts/en_ext.dict.yaml	Color Schemer	ColorSchemer	replace	ColorSchemer	ColorSchemer		官方产品名无空格(ColorSchemer)
+en_dicts/en_ext.dict.yaml	Color Snapper	ColorSnapper	replace	ColorSnapper	ColorSnapper		官方产品名无空格(ColorSnapper)
+en_dicts/en_ext.dict.yaml	Daisy Disk	DaisyDisk	replace	DaisyDisk	DaisyDisk		官方产品名无空格(DaisyDisk)
+en_dicts/en_ext.dict.yaml	Datagraph	Datagraph	replace	DataGraph	DataGraph		官方产品名驼峰大小写(DataGraph)
+en_dicts/en_ext.dict.yaml	LaTeXian	LaTeXian	replace	Latexian	Latexian		官方产品名大小写(Taco Software Latexian)
+en_dicts/en_ext.dict.yaml	Mac Rumors	MacRumors	replace	MacRumors	MacRumors		官方媒体品牌名无空格(MacRumors)
+en_dicts/en_ext.dict.yaml	iPhone 4S	iPhone4S	replace	iPhone 4s	iPhone4s		Apple官方型号大小写(4s小写)
+en_dicts/en_ext.dict.yaml	iPhone 5C	iPhone5C	replace	iPhone 5c	iPhone5c		Apple官方型号大小写(5c小写)
+en_dicts/en_ext.dict.yaml	iPhone 5S	iPhone5S	replace	iPhone 5s	iPhone5s		Apple官方型号大小写(5s小写)
+en_dicts/en_ext.dict.yaml	iPhone 6S	iPhone6S	replace	iPhone 6s	iPhone6s		Apple官方型号大小写(6s小写)
+en_dicts/en_ext.dict.yaml	iPhone 6S Plus	iPhone6SPlus	replace	iPhone 6s Plus	iPhone6sPlus		Apple官方型号大小写(6s小写)
+en_dicts/en_ext.dict.yaml	Pickup Artists	PUA	replace	Pickup Artist	PUA		与单数缩写PUA匹配(对齐IPO规则)
+en_dicts/en_ext.dict.yaml	Key Performance Indicators	KPI	replace	Key Performance Indicator	KPI		与单数缩写KPI匹配(对齐IPO规则)
+en_dicts/en_ext.dict.yaml	maven	maven	replace	Maven	Maven		官方项目名首字母大写(Apache Maven，CLI命令为mvn)
+en_dicts/en_ext.dict.yaml	Moslem	*	delete				过时拼写变体(主库已规范收录Muslim)
+en_dicts/en_ext.dict.yaml	unhumified	*	delete				清理英文扩展库极生僻土壤学术词噪音(同hading)
+en_dicts/en.dict.yaml	everytime	*	delete				英文拼写错误(正确为every time)
+en_dicts/en.dict.yaml	cigaret	*	delete				过时非主流拼写变体(主库已收录cigarette)
+en_dicts/en.dict.yaml	quot	*	delete				HTML实体残片(&quot;)抓取噪音
+en_dicts/en.dict.yaml	middot	*	delete				HTML实体残片(&middot;)抓取噪音
+en_dicts/en.dict.yaml	jelsoft	*	delete				vBulletin页脚版权抓取垃圾(Jelsoft)
+en_dicts/en.dict.yaml	uniprotkb	*	delete				生物信息库表格抓取垃圾(UniProtKB，同sbjct)
+en_dicts/en.dict.yaml	trembl	*	delete				生物信息库表格抓取垃圾(TrEMBL，同sbjct)
+en_dicts/en.dict.yaml	listprice	*	delete				电商HTML字段拼接抓取垃圾(同viewpicture)
+en_dicts/en.dict.yaml	pricetool	*	delete				电商比价抓取拼接垃圾
+en_dicts/en.dict.yaml	prostores	*	delete				已关停eBay ProStores抓取垃圾
+en_dicts/en.dict.yaml	powerseller	*	delete				早期eBay标签拼接抓取垃圾
+en_dicts/en.dict.yaml	vsnet	*	delete				早期新闻组vsnet抓取残片
+en_dicts/en.dict.yaml	libdevel	*	delete				Debian软件源分类标签抓取噪音
+en_dicts/en.dict.yaml	findarticles	*	delete				已关停SEO聚合站域名抓取垃圾
+en_dicts/en.dict.yaml	Bitpipe	*	delete				已关停IT白皮书聚合站域名抓取垃圾
+en_dicts/en.dict.yaml	Bizjournals	*	delete				新闻站域名抓取噪音(同已删Bizjournalshire)
+en_dicts/en.dict.yaml	dealtime	*	delete				早期比价站域名抓取垃圾
+en_dicts/en.dict.yaml	dooyoo	*	delete				已关停点评站域名抓取垃圾
+en_dicts/en.dict.yaml	epinions	*	delete				已关停点评站域名抓取垃圾
+en_dicts/en.dict.yaml	looksmart	*	delete				已关停目录搜索域名抓取垃圾
+en_dicts/en.dict.yaml	mysimon	*	delete				早期比价站域名抓取垃圾
+en_dicts/en.dict.yaml	shopzilla	*	delete				早期比价站域名抓取垃圾
+en_dicts/en.dict.yaml	bizrate	*	delete				早期比价站域名抓取垃圾
+en_dicts/en.dict.yaml	kelkoo	*	delete				早期比价站域名抓取垃圾
+en_dicts/en.dict.yaml	citysearch	*	delete				已关停黄页站域名抓取垃圾
+en_dicts/en.dict.yaml	Ionamin	*	delete				已停产处方减肥药广告语料词条(同adipex/didrex/meridia)
+en_dicts/en.dict.yaml	Bild	*	delete				非英语德语抓取词(复数Bilder已删)
+en_dicts/en.dict.yaml	Dansk	*	delete				非英语丹麦语维基语言链抓取垃圾
+en_dicts/en.dict.yaml	Nederland	*	delete				非英语荷兰语地名抓取垃圾(英文为Netherlands)
+en_dicts/en.dict.yaml	Nederlands	*	delete				非英语荷兰语维基语言链抓取垃圾
+en_dicts/en.dict.yaml	Svenska	*	delete				非英语瑞典语维基语言链抓取垃圾
+en_dicts/en.dict.yaml	Turismo	*	delete				非英语西/意语抓取垃圾(同hoteles/Musica)
+en_dicts/en.dict.yaml	mayen	*	delete				生僻德国小镇专名噪音(同已删Auch)
+en_dicts/en.dict.yaml	monde	*	delete				非英语法语抓取词
+en_dicts/en.dict.yaml	nord	*	delete				非英语法/德语抓取词
+en_dicts/en.dict.yaml	notre	*	delete				非英语法语抓取词
+en_dicts/en.dict.yaml	Nuevo	*	delete				非英语西语抓取词
+en_dicts/en.dict.yaml	soleil	*	delete				非英语法语抓取词
+en_dicts/en.dict.yaml	blanco	*	delete				非英语西语抓取词
+en_dicts/en.dict.yaml	Dec.	Dec	delete				冗余重复项(en_ext已收录Dec./Dec.并由algebra派生Dec)
+en_dicts/en.dict.yaml	Fri.	Fri	delete				冗余重复项(en_ext已收录Fri./Fri.并由algebra派生Fri)
+en_dicts/en.dict.yaml	adobe	*	delete				小写品牌冗余(en_ext已规范收录Adobe)
+en_dicts/en.dict.yaml	adsense	*	delete				小写品牌冗余(en_ext已规范收录AdSense)
+en_dicts/en.dict.yaml	flickr	*	delete				小写品牌冗余(en_ext已规范收录Flickr)
+en_dicts/en.dict.yaml	gpl	*	delete				小写缩写冗余(en_ext已规范收录GPL)
+en_dicts/en.dict.yaml	mastercard	*	delete				小写品牌冗余(en_ext已规范收录Mastercard)
+en_dicts/en.dict.yaml	netscape	*	delete				小写品牌冗余(en_ext已规范收录Netscape)
+en_dicts/en.dict.yaml	playstation	*	delete				小写品牌冗余(en_ext已规范收录PlayStation)
+en_dicts/en.dict.yaml	skype	*	delete				小写品牌冗余(en_ext已规范收录Skype)
+en_dicts/en.dict.yaml	maria	*	delete				小写人名冗余(同文件已收录Maria)
+en_dicts/en.dict.yaml	matthews	*	delete				小写姓氏冗余(同文件已收录Matthews)
+en_dicts/en.dict.yaml	Tiava	*	delete				色情网站域名抓取垃圾(同ampland/thumbzilla/pichunter)
+en_dicts/en.dict.yaml	livecam	*	delete				色情直播抓取词(同livesex/sexcam)
+en_dicts/en.dict.yaml	milfs	*	delete				色情抓取词(同milfseeker)
+en_dicts/en.dict.yaml	Lesbo	*	delete				贬损性俚语/色情抓取词(保留希腊地名Lesbos)
+en_dicts/en.dict.yaml	bukkake	*	delete				硬核色情标签抓取词
+en_dicts/en.dict.yaml	creampie	*	delete				硬核色情标签抓取词
+en_dicts/en.dict.yaml	cumshot	*	delete				硬核色情标签抓取词
+en_dicts/en.dict.yaml	cumshots	*	delete				硬核色情标签抓取词
+en_dicts/en.dict.yaml	deepthroat	*	delete				硬核色情标签抓取词
+en_dicts/en.dict.yaml	facesitting	*	delete				硬核色情标签抓取词
+en_dicts/en.dict.yaml	femdom	*	delete				硬核色情标签抓取词
+en_dicts/en.dict.yaml	footjob	*	delete				硬核色情标签抓取词
+en_dicts/en.dict.yaml	gangbang	*	delete				硬核色情标签抓取词
+en_dicts/en.dict.yaml	gloryhole	*	delete				硬核色情标签抓取词
+en_dicts/en.dict.yaml	handjob	*	delete				硬核色情标签抓取词
+en_dicts/en.dict.yaml	handjobs	*	delete				硬核色情标签抓取词
+en_dicts/en.dict.yaml	strapon	*	delete				硬核色情标签抓取词
+en_dicts/en.dict.yaml	upskirt	*	delete				色情偷拍标签抓取词
+en_dicts/en.dict.yaml	upskirts	*	delete				色情偷拍标签抓取词
+en_dicts/en.dict.yaml	IPSec	IPSec	replace	IPsec	IPsec		IETF RFC 4301官方大小写规范(IPsec)
+en_dicts/en.dict.yaml	Asin	Asin	replace	ASIN	ASIN		Amazon标准识别号官方全大写(ASIN)
+en_dicts/en.dict.yaml	Bittorrent	Bittorrent	replace	BitTorrent	BitTorrent		官方协议与品牌驼峰大小写(BitTorrent)
+en_dicts/en.dict.yaml	Emule	Emule	replace	eMule	eMule		官方软件名大小写(eMule)
+en_dicts/en.dict.yaml	Altavista	Altavista	replace	AltaVista	AltaVista		官方品牌驼峰大小写(AltaVista)
+en_dicts/en.dict.yaml	Bellsouth	Bellsouth	replace	BellSouth	BellSouth		官方品牌驼峰大小写(BellSouth)
+en_dicts/en.dict.yaml	ebay	ebay	replace	eBay	eBay		官方品牌大小写(eBay)
+en_dicts/en.dict.yaml	matlab	matlab	replace	MATLAB	MATLAB		MathWorks官方全大写品牌(MATLAB)
+en_dicts/en.dict.yaml	pubmed	pubmed	replace	PubMed	PubMed		NIH官方数据库驼峰大小写(PubMed)
+en_dicts/en.dict.yaml	mediawiki	mediawiki	replace	MediaWiki	MediaWiki		官方软件名驼峰大小写(MediaWiki)
+en_dicts/en.dict.yaml	medline	medline	replace	MEDLINE	MEDLINE		NIH官方数据库全大写(MEDLINE)
+en_dicts/en.dict.yaml	sandisk	sandisk	replace	SanDisk	SanDisk		官方品牌驼峰大小写(SanDisk)
+en_dicts/en.dict.yaml	firewire	firewire	replace	FireWire	FireWire		Apple官方接口品牌大小写(FireWire)
+en_dicts/en.dict.yaml	gamecube	gamecube	replace	GameCube	GameCube		Nintendo官方主机品牌大小写(GameCube)
+en_dicts/en.dict.yaml	gamespot	gamespot	replace	GameSpot	GameSpot		官方媒体品牌大小写(GameSpot)
+en_dicts/en.dict.yaml	powershot	powershot	replace	PowerShot	PowerShot		Canon官方相机品牌大小写(PowerShot)
+en_dicts/en.dict.yaml	redhat	redhat	replace	Red Hat	RedHat		官方公司与系统品牌名(Red Hat)
+en_dicts/en.dict.yaml	espn	espn	replace	ESPN	ESPN		官方全大写媒体缩写(ESPN)
+en_dicts/en.dict.yaml	suse	suse	replace	SUSE	SUSE		官方Linux品牌全大写(SUSE)
+en_dicts/en.dict.yaml	sparc	sparc	replace	SPARC	SPARC		官方CPU架构缩写全大写(SPARC)
+en_dicts/en.dict.yaml	wma	wma	replace	WMA	WMA		音频格式缩写全大写(对齐WAV/WMV/AVI)
+en_dicts/en.dict.yaml	vbulletin	vbulletin	replace	vBulletin	vBulletin		官方软件名大小写(vBulletin)
+en_dicts/en.dict.yaml	techrepublic	techrepublic	replace	TechRepublic	TechRepublic		官方媒体品牌大小写(TechRepublic)
+en_dicts/en.dict.yaml	netware	netware	replace	NetWare	NetWare		Novell官方系统品牌大小写(NetWare)
+en_dicts/en.dict.yaml	niger	niger	replace	Niger	Niger		国家/河流专名首字母大写(避免小写误读)
+en_dicts/en.dict.yaml	alzheimer	alzheimer	replace	Alzheimer	Alzheimer		人名/病名专名首字母大写(Alzheimer)
+en_dicts/en.dict.yaml	bangkok	bangkok	replace	Bangkok	Bangkok		地名专名首字母大写(Bangkok)
+en_dicts/en.dict.yaml	texas	texas	replace	Texas	Texas		美国州名专名首字母大写(Texas)
+en_dicts/en.dict.yaml	vegas	vegas	replace	Vegas	Vegas		城市专名首字母大写(Vegas)
+en_dicts/en.dict.yaml	holland	holland	replace	Holland	Holland		国家/地区专名首字母大写(Holland)
+en_dicts/en.dict.yaml	hamburg	hamburg	replace	Hamburg	Hamburg		城市专名首字母大写(Hamburg)
+en_dicts/en.dict.yaml	warsaw	warsaw	replace	Warsaw	Warsaw		首都专名首字母大写(Warsaw)
+en_dicts/en.dict.yaml	macedonia	macedonia	replace	Macedonia	Macedonia		国家/地区专名首字母大写(Macedonia)
+en_dicts/en.dict.yaml	mediterranean	mediterranean	replace	Mediterranean	Mediterranean		海域专名首字母大写(Mediterranean)
+en_dicts/en.dict.yaml	antigua	antigua	replace	Antigua	Antigua		国家/岛屿专名首字母大写(Antigua)
+en_dicts/en.dict.yaml	beatles	beatles	replace	Beatles	Beatles		乐队专名首字母大写(Beatles)
+en_dicts/en.dict.yaml	volkswagen	volkswagen	replace	Volkswagen	Volkswagen		汽车品牌首字母大写(Volkswagen)
+en_dicts/en.dict.yaml	porsche	porsche	replace	Porsche	Porsche		汽车品牌首字母大写(Porsche)
+en_dicts/en.dict.yaml	ferrari	ferrari	replace	Ferrari	Ferrari		汽车品牌首字母大写(Ferrari)
+en_dicts/en.dict.yaml	mercedes	mercedes	replace	Mercedes	Mercedes		汽车品牌首字母大写(Mercedes)
+en_dicts/en.dict.yaml	honda	honda	replace	Honda	Honda		汽车品牌首字母大写(Honda)
+en_dicts/en.dict.yaml	hyundai	hyundai	replace	Hyundai	Hyundai		汽车品牌首字母大写(Hyundai)
+en_dicts/en.dict.yaml	nissan	nissan	replace	Nissan	Nissan		汽车品牌首字母大写(Nissan)
+en_dicts/en.dict.yaml	lexus	lexus	replace	Lexus	Lexus		汽车品牌首字母大写(Lexus)
+en_dicts/en.dict.yaml	mazda	mazda	replace	Mazda	Mazda		汽车品牌首字母大写(Mazda)
+en_dicts/en.dict.yaml	subaru	subaru	replace	Subaru	Subaru		汽车品牌首字母大写(Subaru)
+en_dicts/en.dict.yaml	volvo	volvo	replace	Volvo	Volvo		汽车品牌首字母大写(Volvo)
+en_dicts/en.dict.yaml	chevrolet	chevrolet	replace	Chevrolet	Chevrolet		汽车品牌首字母大写(Chevrolet)
+en_dicts/en.dict.yaml	mitsubishi	mitsubishi	replace	Mitsubishi	Mitsubishi		品牌首字母大写(Mitsubishi)
+en_dicts/en.dict.yaml	panasonic	panasonic	replace	Panasonic	Panasonic		品牌首字母大写(Panasonic)
+en_dicts/en.dict.yaml	toshiba	toshiba	replace	Toshiba	Toshiba		品牌首字母大写(Toshiba)
+en_dicts/en.dict.yaml	fujitsu	fujitsu	replace	Fujitsu	Fujitsu		品牌首字母大写(Fujitsu)
+en_dicts/en.dict.yaml	epson	epson	replace	Epson	Epson		品牌首字母大写(Epson)
+en_dicts/en.dict.yaml	casio	casio	replace	Casio	Casio		品牌首字母大写(Casio)
+en_dicts/en.dict.yaml	kodak	kodak	replace	Kodak	Kodak		品牌首字母大写(Kodak)
+en_dicts/en.dict.yaml	sanyo	sanyo	replace	Sanyo	Sanyo		品牌首字母大写(Sanyo)
+en_dicts/en.dict.yaml	garmin	garmin	replace	Garmin	Garmin		品牌首字母大写(Garmin)
+en_dicts/en.dict.yaml	belkin	belkin	replace	Belkin	Belkin		品牌首字母大写(Belkin)
+en_dicts/en.dict.yaml	compaq	compaq	replace	Compaq	Compaq		品牌首字母大写(Compaq)
+en_dicts/en.dict.yaml	symantec	symantec	replace	Symantec	Symantec		品牌首字母大写(Symantec)
+en_dicts/en.dict.yaml	bloomberg	bloomberg	replace	Bloomberg	Bloomberg		品牌首字母大写(Bloomberg)
+en_dicts/en.dict.yaml	hotmail	hotmail	replace	Hotmail	Hotmail		品牌首字母大写(Hotmail)
+en_dicts/en.dict.yaml	rolex	rolex	replace	Rolex	Rolex		品牌首字母大写(Rolex)
+en_dicts/en.dict.yaml	reebok	reebok	replace	Reebok	Reebok		品牌首字母大写(Reebok)
+en_dicts/en.dict.yaml	verizon	verizon	replace	Verizon	Verizon		品牌首字母大写(Verizon)
+en_dicts/en.dict.yaml	expedia	expedia	replace	Expedia	Expedia		品牌首字母大写(Expedia)
+en_dicts/en.dict.yaml	tripadvisor	tripadvisor	replace	Tripadvisor	Tripadvisor		品牌首字母大写(Tripadvisor)
+en_dicts/en.dict.yaml	marriott	marriott	replace	Marriott	Marriott		品牌首字母大写(Marriott)
+en_dicts/en.dict.yaml	hyatt	hyatt	replace	Hyatt	Hyatt		品牌首字母大写(Hyatt)
+en_dicts/en.dict.yaml	solaris	solaris	replace	Solaris	Solaris		OS品牌首字母大写(Solaris)
+en_dicts/en.dict.yaml	bugzilla	bugzilla	replace	Bugzilla	Bugzilla		软件名首字母大写(Bugzilla)
+en_dicts/en.dict.yaml	britannica	britannica	replace	Britannica	Britannica		专名首字母大写(Britannica)
+en_dicts/en.dict.yaml	smithsonian	smithsonian	replace	Smithsonian	Smithsonian		机构专名首字母大写(Smithsonian)
+en_dicts/en.dict.yaml	sega	sega	replace	SEGA	SEGA		官方游戏品牌全大写(SEGA)
+en_dicts/en.dict.yaml	lexmark	lexmark	replace	Lexmark	Lexmark		品牌首字母大写(Lexmark)
+en_dicts/en.dict.yaml	minolta	minolta	replace	Minolta	Minolta		品牌首字母大写(Minolta)
+en_dicts/en.dict.yaml	ticketmaster	ticketmaster	replace	Ticketmaster	Ticketmaster		品牌首字母大写(Ticketmaster)
+en_dicts/en.dict.yaml	bentley	bentley	replace	Bentley	Bentley		品牌/姓氏首字母大写(Bentley)
+en_dicts/en.dict.yaml	arial	arial	replace	Arial	Arial		字体专名首字母大写(Arial)

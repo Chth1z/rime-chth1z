@@ -15,23 +15,25 @@ param(
 $ErrorActionPreference = "Stop"
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 $rimeDir  = Join-Path $env:APPDATA "Rime"
-$weaselDir = (Get-ChildItem "C:\Program Files\Rime" -Directory -Filter "weasel-*" |
+$weaselDir = (Get-ChildItem "C:\Program Files\Rime" -Directory -Filter "weasel-*" -ErrorAction SilentlyContinue |
     Sort-Object LastWriteTime -Descending | Select-Object -First 1).FullName
 if (-not $weaselDir) { throw "Weasel install directory not found." }
 
-Write-Output "Deploying from $repoRoot -> $rimeDir (Theme=$Theme)"
-
-# 1. Stop WeaselServer cleanly
-$serverExe = Join-Path $weaselDir "WeaselServer.exe"
-$wasRunning = [bool](Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)
-if ($wasRunning) {
-    & $serverExe /q 2>$null
+function Stop-WeaselServerClean([string]$ExePath) {
+    if (-not (Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)) { return }
+    & $ExePath /q 2>$null
     for ($i = 0; $i -lt 15; $i++) {
         if (-not (Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)) { break }
         Start-Sleep -Milliseconds 250
     }
     Get-Process -Name WeaselServer -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
 }
+
+Write-Output "Deploying from $repoRoot -> $rimeDir (Theme=$Theme)"
+
+# 1. Stop WeaselServer cleanly
+$serverExe = Join-Path $weaselDir "WeaselServer.exe"
+Stop-WeaselServerClean $serverExe
 
 # 2. Sync dicts (excluding tencent), en_dicts, lua, opencc, root schemas
 New-Item -ItemType Directory -Force -Path `
@@ -111,27 +113,56 @@ foreach ($rel in $obsoleteRelPaths) {
     }
 }
 
-# 4. Deploy & restart single WeaselServer
+# 4. Deploy & verify WeaselDeployer log + single WeaselServer
+Stop-WeaselServerClean $serverExe
+$deployStart = Get-Date
 $p = Start-Process -FilePath (Join-Path $weaselDir "WeaselDeployer.exe") -ArgumentList "/deploy" -Wait -PassThru
 Write-Output "WeaselDeployer ExitCode: $($p.ExitCode)"
 if ($p.ExitCode -ne 0) { throw "WeaselDeployer failed with ExitCode=$($p.ExitCode)" }
 
+$weaselLogDir = Join-Path $env:TEMP "rime.weasel"
+if (Test-Path $weaselLogDir) {
+    $infoLog = Get-ChildItem $weaselLogDir -Filter "rime.weasel*.INFO*" -File -ErrorAction SilentlyContinue |
+        Where-Object { $_.LastWriteTime -ge $deployStart.AddSeconds(-2) } |
+        Sort-Object LastWriteTime -Descending | Select-Object -First 1
+    if ($infoLog) {
+        $infoLines = Get-Content $infoLog.FullName -Encoding UTF8 -ErrorAction SilentlyContinue
+        $summaryLine = $infoLines | Where-Object { $_ -match 'finished updating schemas:' } | Select-Object -Last 1
+        if ($summaryLine) {
+            Write-Output "Deploy log: $summaryLine"
+            if ($summaryLine -notmatch '0 failure') {
+                throw "WeaselDeployer reported schema failures: $summaryLine"
+            }
+        }
+        $badLines = $infoLines | Where-Object { $_ -match '^[EF]\d{8}\s' }
+        if ($badLines) {
+            throw "WeaselDeployer logged errors in $($infoLog.Name): $($badLines | Select-Object -First 3 | Out-String)"
+        }
+    }
+}
+
 Start-Sleep -Milliseconds 400
-if (-not (Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)) {
+$procs = @(Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)
+if ($procs.Count -eq 0) {
     try {
         Invoke-CimMethod -ClassName Win32_Process -MethodName Create -Arguments @{ CommandLine = "`"$serverExe`"" } | Out-Null
     } catch {
         Start-Process -FilePath $serverExe
     }
     Start-Sleep -Milliseconds 600
+    $procs = @(Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)
+} elseif ($procs.Count -gt 1) {
+    $procs | Sort-Object StartTime | Select-Object -Skip 1 | Stop-Process -Force -ErrorAction SilentlyContinue
+    Start-Sleep -Milliseconds 250
+    $procs = @(Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)
 }
-$procs = Get-Process -Name WeaselServer -ErrorAction SilentlyContinue
-Write-Output "WeaselServer running: count=$($procs.Count) PID=$($procs.Id)"
+Write-Output "WeaselServer running: count=$($procs.Count) PID=$($procs.Id -join ',')"
+if ($procs.Count -ne 1) { throw "Expected exactly 1 WeaselServer instance, found $($procs.Count)" }
 
 if ($Verify) {
-    & (Join-Path $repoRoot "bench\accuracy-test.ps1")
+    & (Join-Path $repoRoot "bench\accuracy-test.ps1") -WaitNeural
     if ($LASTEXITCODE -ne 0) { throw "accuracy-test.ps1 failed" }
 }
 if ($RunBench -or $Verify) {
-    & (Join-Path $repoRoot "bench\bench-rime.ps1")
+    & (Join-Path $repoRoot "bench\bench-rime.ps1") -WaitNeural
 }

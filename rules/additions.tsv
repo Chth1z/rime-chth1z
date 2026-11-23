@@ -5,7 +5,7 @@ cn_dicts/8105.dict.yaml	呇	qi	2	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	颤	zhan	50	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	暴	pu	30	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	汤	shang	20	phonetic	现汉第7版
-cn_dicts/8105.dict.yaml	町	ting	200	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	町	ting	30	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	属	zhu	30	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	般	bo	30	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	若	re	30	phonetic	现汉第7版
@@ -32,15 +32,15 @@ cn_dicts/8105.dict.yaml	宛	yuan	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	遗	wei	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	氓	meng	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	掸	shan	10	phonetic	现汉第7版
-cn_dicts/8105.dict.yaml	孱	can	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	孱	can	3	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	砉	xu	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	袷	jia	5	phonetic	现汉第7版
-cn_dicts/8105.dict.yaml	繇	yao	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	繇	yao	50	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	傀	gui	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	焘	dao	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	镦	dui	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	酂	cuo	5	phonetic	现汉第7版
-cn_dicts/8105.dict.yaml	隗	kui	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	隗	kui	2	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	磏	lian	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	说	yue	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	著	zhuo	30	phonetic	现汉第7版
@@ -63,10 +63,10 @@ cn_dicts/8105.dict.yaml	俞	shu	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	转	zhuai	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	食	yi	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	其	ji	5	phonetic	现汉第7版
-cn_dicts/8105.dict.yaml	钭	tou	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	钭	tou	1	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	铤	ding	5	phonetic	现汉第7版
-cn_dicts/8105.dict.yaml	坻	chi	5	phonetic	现汉第7版
-cn_dicts/8105.dict.yaml	廆	gui	5	phonetic	通用规范汉字表/汉语大字典
+cn_dicts/8105.dict.yaml	坻	chi	2	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	廆	gui	2	phonetic	通用规范汉字表/汉语大字典
 cn_dicts/8105.dict.yaml	丁	zheng	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	衰	cui	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	溺	niao	5	phonetic	现汉第7版
@@ -80,7 +80,7 @@ cn_dicts/8105.dict.yaml	侗	tong	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	嗒	ta	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	嘲	zhao	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	荼	shu	5	phonetic	现汉第7版
-cn_dicts/8105.dict.yaml	忪	zhong	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	忪	zhong	1	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	剿	chao	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	铣	xian	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	腊	xi	5	phonetic	现汉第7版
@@ -91,7 +91,6 @@ cn_dicts/base.dict.yaml	丈育	zhang yu	300	common	R1/R2基础词补录
 cn_dicts/base.dict.yaml	经验帖	jing yan tie	1700	common	R1/R2基础词补录
 cn_dicts/base.dict.yaml	大都	da du	400	common	R1/R2基础词补录
 cn_dicts/base.dict.yaml	狗血	gou xue	1141	common	R1/R2基础词补录
-cn_dicts/base.dict.yaml	鸡血	ji xue	550	common	R1/R2基础词补录
 cn_dicts/base.dict.yaml	人行	ren hang	450	common	R1/R2基础词补录
 cn_dicts/base.dict.yaml	自己还	zi ji huan	150	common	R1/R2基础词补录
 cn_dicts/base.dict.yaml	阵型	zhen xing	800	common	R1/R2基础词补录
@@ -211,14 +210,14 @@ cn_dicts/8105.dict.yaml	孖	ma	10	phonetic	现汉第7版 + 全国科技名词委
 cn_dicts/8105.dict.yaml	掞	shan	10	phonetic	现汉第7版：舒展、发扬（摛文掞藻、掞藻飞声、清代大学士王掞、文掞）
 cn_dicts/8105.dict.yaml	桁	hang	10	phonetic	现汉第7版：古代刑具“桁杨”、衣架、浮桥（桁杨相推）
 cn_dicts/8105.dict.yaml	濩	hu	10	phonetic	现汉第7版：布濩、商代乐舞“大濩”（大濩、渊涓蠖濩）
-cn_dicts/8105.dict.yaml	瑱	zhen	10	phonetic	现汉第7版：古通“镇”，压坐席玉器；历史人名（朱瑱、韦瑱）
+cn_dicts/8105.dict.yaml	瑱	zhen	1	phonetic	现汉第7版：古通“镇”，压坐席玉器；历史人名（朱瑱、韦瑱）
 cn_dicts/8105.dict.yaml	莩	piao	10	phonetic	现汉第7版：同“殍”，饿死的人（野有饿莩、饿莩填壑）
 cn_dicts/8105.dict.yaml	珩	hang	10	phonetic	现汉第7版：机械加工术语“珩磨 háng mó”
 cn_dicts/8105.dict.yaml	且	ju	10	phonetic	现汉第7版：古助词、通“趄”、历史人名（龙且、蔺且）
 cn_dicts/8105.dict.yaml	宕	tan	10	phonetic	现汉第7版 + L2民政地名：甘肃省标准地名“宕昌 / 宕昌县”
 cn_dicts/8105.dict.yaml	惔	dan	10	phonetic	现汉第7版：古通“淡”，恬静淡泊（恬惔虚无、归草黑栀惔竹叶）
 cn_dicts/8105.dict.yaml	括	gua	10	phonetic	现汉第7版：挺括 tǐng guā（挺括有型、面料挺括）
-cn_dicts/8105.dict.yaml	擿	zhi	10	phonetic	现汉第7版：搔、投掷、以杖点地（冥行擿埴、擿埴索途）
+cn_dicts/8105.dict.yaml	擿	zhi	1	phonetic	现汉第7版：搔、投掷、以杖点地（冥行擿埴、擿埴索途）
 cn_dicts/8105.dict.yaml	敦	dui	10	phonetic	现汉第7版：古代青铜食器“玉敦”（朱槃玉敦、朱盘玉敦）
 cn_dicts/8105.dict.yaml	玚	chang	10	phonetic	现汉第7版：古代祭祀用圭“玚圭”（注：建安七子应玚读 yáng）
 cn_dicts/8105.dict.yaml	粥	yu	10	phonetic	现汉第7版：古同“鬻”（卖）；亦见韩愈“群雌粥粥”
@@ -231,9 +230,9 @@ cn_dicts/8105.dict.yaml	般	pan	10	phonetic	现汉第7版：古同“盘”（�
 cn_dicts/8105.dict.yaml	芥	gai	10	phonetic	现汉第5版旧读：蔬菜名“芥蓝 gài lán”旧读支持
 cn_dicts/8105.dict.yaml	适	kuo	10	phonetic	现汉第7版：姓氏及历史人名（唐德宗李适、南宫适）
 cn_dicts/8105.dict.yaml	陶	yao	10	phonetic	现汉第7版：上古人物名“皋陶 Gāoyáo”（举皋陶）
-cn_dicts/8105.dict.yaml	鲗	ze	10	phonetic	新华字典第12版 + 现汉第7版：香港地名“鲗鱼涌 Zé yú chōng”规范读音
+cn_dicts/8105.dict.yaml	鲗	ze	2	phonetic	新华字典第12版 + 现汉第7版：香港地名“鲗鱼涌 Zé yú chōng”规范读音
 cn_dicts/8105.dict.yaml	觜	zui	10	phonetic	现汉第7版：古同“嘴”（现汉第7版收 zī / zuǐ 双音）
-cn_dicts/8105.dict.yaml	嗄	a	10	phonetic	现汉第7版：叹词同“啊”（现汉第7版收 shà / á 双音）
+cn_dicts/8105.dict.yaml	嗄	a	3	phonetic	现汉第7版：叹词同“啊”（现汉第7版收 shà / á 双音）
 cn_dicts/8105.dict.yaml	擘	bai	10	phonetic	现汉第7版：同“掰”（现汉第7版收 bò / bāi 双音）
 cn_dicts/8105.dict.yaml	那	nei	50	phonetic	现汉第7版：口语“那”合法读音 nèi（那个/那些）
 cn_dicts/base.dict.yaml	那个	nei ge	200	common	现汉第7版：口语合法读音 nèi ge（低于同音“内阁 669”）
@@ -245,7 +244,6 @@ cn_dicts/base.dict.yaml	反角	fan jiao	40	domain	几何反角/航空上反角/�
 cn_dicts/ext.dict.yaml	得好好	de hao hao	150	common	结构助词“得”（睡得好好的/过得好好的），与 dei hao hao 并存
 cn_dicts/base.dict.yaml	那就得	na jiu de	100	common	动补/动词“得”（那就得了/那就得不偿失），与 na jiu dei 并存
 cn_dicts/ext.dict.yaml	氐土貉	di tu mo	1	domain	汉语大词典：二十八宿星官读 dī tǔ mò
-cn_dicts_cell/composite.dict.yaml	轻薄本	qing bao ben	300	modern	常见口语习惯读音（自 clean-dicts.py 迁入 rules SSOT）
 cn_dicts/ext.dict.yaml	冯诺依曼	feng nuo yi man	160	domain	全库迁移找回：数学家/计算机先驱 John von Neumann
 cn_dicts/ext.dict.yaml	面向对象程序设计	mian xiang dui xiang cheng xu she ji	53	tech	全库迁移找回：计算机学科标准术语 OOP
 cn_dicts/ext.dict.yaml	通证	tong zheng	74	modern	全库迁移找回：通证经济/行政通证
@@ -372,3 +370,262 @@ cn_dicts/others.dict.yaml	甭介	beng jie	10	common	北方方言俗写（低于�
 cn_dicts/others.dict.yaml	巨惠	ju hui	15	common	商业高频词（上游others明示保留）
 cn_dicts/others.dict.yaml	钜惠	ju hui	15	common	商业常见异形词（上游others明示保留）
 cn_dicts/others.dict.yaml	鬓毛衰	bin mao cui	7	common	古诗文旧读容错（贺知章《回乡偶书》）
+cn_dicts/base.dict.yaml	行纪	hang ji	40	domain	民法典第25章(与xing ji游记义并行;严控<航迹72)
+cn_dicts/base.dict.yaml	轧平	ga ping	30	domain	现汉第7版/财会头寸轧平(与ya ping并行)
+cn_dicts/base.dict.yaml	拨备	bo bei	120	domain	银行业核心监管术语(现仅存拨备覆盖率)
+cn_dicts/base.dict.yaml	勾稽	gou ji	60	domain	财会审计高频异形词(严控<购机279)
+cn_dicts/ext.dict.yaml	勾稽关系	gou ji guan xi	80	domain	财会审计实务高频词(高于钩稽关系3)
+cn_dicts/base.dict.yaml	钩稽	gou ji	20	domain	现汉第7版正条(与勾稽并行)
+cn_dicts/base.dict.yaml	解缴	jie jiao	40	domain	财税/财政缴库术语(严控<街角345)
+cn_dicts/base.dict.yaml	解付	jie fu	40	domain	银行汇兑/票据术语(严控<杰夫442)
+cn_dicts/base.dict.yaml	解汇	jie hui	30	domain	银行外汇结算术语(严控<接回244)
+cn_dicts/ext.dict.yaml	托管行	tuo guan hang	60	domain	基金与资管高频机构简称
+cn_dicts/ext.dict.yaml	承销行	cheng xiao hang	50	domain	债券发行高频机构简称
+cn_dicts/base.dict.yaml	缩股	suo gu	50	domain	证券市场术语(严控<锁骨702)
+cn_dicts/base.dict.yaml	破净	po jing	40	domain	证券市场高频术语(严控<破镜46)
+cn_dicts/base.dict.yaml	税盾	shui dun	40	domain	公司理财/税务术语(严控<水遁60)
+cn_dicts/ext.dict.yaml	转移定价	zhuan yi ding jia	80	domain	国际税收核心术语
+cn_dicts/ext.dict.yaml	特别纳税调整	te bie na shui tiao zheng	60	domain	企业所得税法法定术语
+cn_dicts/ext.dict.yaml	船舶吨税	chuan bo dun shui	50	domain	中华人民共和国船舶吨税法
+cn_dicts/ext.dict.yaml	点心债	dian xin zhai	60	domain	香港离岸人民币债券高频术语
+cn_dicts/ext.dict.yaml	超长期特别国债	chao chang qi te bie guo zhai	100	modern	2024-2026财政政策高频核心词
+cn_dicts/ext.dict.yaml	耐心资本	nai xin zi ben	100	modern	中央政治局会议/创投高频词
+cn_dicts/ext.dict.yaml	投早投小	tou zao tou xiao	60	modern	创投金融政策高频词
+cn_dicts/ext.dict.yaml	回购增持	hui gou zeng chi	80	modern	央行结构性货币政策高频词
+cn_dicts/ext.dict.yaml	在岸人民币	zai an ren min bi	80	domain	外汇市场术语(对应离岸人民币)
+cn_dicts/ext.dict.yaml	科技金融	ke ji jin rong	80	modern	中央金融工作会议五篇大文章
+cn_dicts/ext.dict.yaml	数字金融	shu zi jin rong	80	modern	中央金融工作会议五篇大文章
+cn_dicts/ext.dict.yaml	统计套利	tong ji tao li	60	domain	量化交易核心策略术语
+cn_dicts/ext.dict.yaml	跨市场套利	kua shi chang tao li	60	domain	金融交易术语
+cn_dicts/ext.dict.yaml	资产负债表衰退	zi chan fu zhai biao shuai tui	80	domain	宏观经济学高频术语
+cn_dicts/ext.dict.yaml	特里芬难题	te li fen nan ti	60	domain	国际金融学经典术语
+cn_dicts/ext.dict.yaml	跨周期调节	kua zhou qi tiao jie	80	modern	宏观调控政策高频术语
+cn_dicts/ext.dict.yaml	低空经济	di kong jing ji	120	modern	2024政府工作报告高频产业词
+cn_dicts/ext.dict.yaml	平台经济	ping tai jing ji	120	modern	高频宏观经济与监管术语
+cn_dicts/ext.dict.yaml	首发经济	shou fa jing ji	100	modern	中央经济工作会议高频词
+cn_dicts/ext.dict.yaml	情绪消费	qing xu xiao fei	80	modern	现代消费经济高频词
+cn_dicts/ext.dict.yaml	谷子经济	gu zi jing ji	80	modern	现代消费金融高频热点词
+cn_dicts/ext.dict.yaml	一揽子化债	yi lan zi hua zhai	80	modern	财政化债政策高频词
+cn_dicts/ext.dict.yaml	地方政府债务	di fang zheng fu zhai wu	80	domain	财政政策核心术语
+cn_dicts/ext.dict.yaml	地方债置换	di fang zhai zhi huan	80	modern	财政化债高频术语
+cn_dicts/ext.dict.yaml	大规模设备更新	da gui mo she bei geng xin	80	modern	两新政策核心词
+cn_dicts/ext.dict.yaml	消费品以旧换新	xiao fei pin yi jiu huan xin	80	modern	两新政策核心词
+cn_dicts/ext.dict.yaml	保交房	bao jiao fang	100	modern	房地产政策核心词(对应保交楼)
+cn_dicts/ext.dict.yaml	城市更新	cheng shi geng xin	100	modern	住建与不动产高频词
+cn_dicts/ext.dict.yaml	平急两用	ping ji liang yong	60	modern	房地产三大工程高频词
+cn_dicts/ext.dict.yaml	配售型保障性住房	pei shou xing bao zhang xing zhu fang	60	modern	住房制度改革政策术语
+cn_dicts/ext.dict.yaml	房地产融资协调机制	fang di chan rong zi xie tiao ji zhi	60	modern	住建部/金监总局白名单机制
+cn_dicts/base.dict.yaml	绿电	lv dian	80	modern	双碳与电力交易高频词(严控<旅店564)
+cn_dicts/base.dict.yaml	绿证	lv zheng	60	modern	绿色电力证书高频词(严控<律政119)
+cn_dicts/ext.dict.yaml	碳关税	tan guan shui	80	domain	CBAM国际贸易高频术语
+cn_dicts/ext.dict.yaml	原产地规则	yuan chan di gui ze	60	domain	国际贸易与海关法定术语
+cn_dicts/ext.dict.yaml	中间品贸易	zhong jian pin mao yi	60	modern	外贸高质量发展高频词
+cn_dicts/ext.dict.yaml	渐进式延迟退休	jian jin shi yan chi tui xiu	80	modern	全国人大决定高频政策词
+cn_dicts/ext.dict.yaml	行纪合同	hang ji he tong	80	domain	民法典第25章法定典型合同
+cn_dicts/ext.dict.yaml	行纪人	hang ji ren	60	domain	民法典第25章法定术语
+cn_dicts/ext.dict.yaml	营利性质	ying li xing zhi	60	domain	民法典规范搭配(高于盈利性质33)
+cn_dicts/ext.dict.yaml	公平竞争审查	gong ping jing zheng shen cha	80	domain	公平竞争审查条例(2024)
+cn_dicts/ext.dict.yaml	民营经济促进法	min ying jing ji cu jin fa	100	modern	重要国家立法高频词
+cn_dicts/ext.dict.yaml	反电信网络诈骗法	fan dian xin wang luo zha pian fa	80	domain	国家单行法律名称
+cn_dicts/ext.dict.yaml	诉源治理	su yuan zhi li	80	domain	最高法司法治理高频术语
+cn_dicts/ext.dict.yaml	多元解纷	duo yuan jie fen	60	domain	法院纠纷解决机制高频词
+cn_dicts/ext.dict.yaml	行刑衔接	xing xing xian jie	80	domain	行政执法与刑事司法衔接
+cn_dicts/ext.dict.yaml	合规不起诉	he gui bu qi su	60	domain	最高检涉案企业合规术语
+cn_dicts/ext.dict.yaml	涉案企业合规	she an qi ye he gui	60	domain	最高检涉案企业合规术语
+cn_dicts/ext.dict.yaml	法定不起诉	fa ding bu qi su	60	domain	刑诉法法定术语(对应相对/存疑不起诉)
+cn_dicts/ext.dict.yaml	掩隐罪	yan yin zui	60	domain	刑法实务高频简称(对应帮信罪)
+cn_dicts/ext.dict.yaml	公诉书	gong su shu	60	domain	刑事诉讼高频文书
+cn_dicts/ext.dict.yaml	斡旋受贿	wo xuan shou hui	60	domain	刑法第388条法定术语
+cn_dicts/ext.dict.yaml	褫夺公权	chi duo gong quan	60	domain	刑法/政治权利高频术语
+cn_dicts/ext.dict.yaml	留置措施	liu zhi cuo shi	60	domain	监察法法定强制措施
+cn_dicts/ext.dict.yaml	非法羁押	fei fa ji ya	60	domain	刑事诉讼与国家赔偿术语
+cn_dicts/ext.dict.yaml	轻微免罚	qing wei mian fa	60	domain	行政处罚法柔性执法高频词
+cn_dicts/base.dict.yaml	终本	zhong ben	60	domain	法院终结本次执行程序简称(严控<重本179)
+cn_dicts/ext.dict.yaml	先予执行	xian yu zhi xing	60	domain	民事诉讼法法定制度
+cn_dicts/ext.dict.yaml	过错推定	guo cuo tui ding	60	domain	民法典侵权归责原则
+cn_dicts/ext.dict.yaml	法定抵销	fa ding di xiao	60	domain	民法典第568条法定术语
+cn_dicts/ext.dict.yaml	约定抵销	yue ding di xiao	60	domain	民法典第569条法定术语
+cn_dicts/ext.dict.yaml	破产抵销	po chan di xiao	50	domain	企业破产法第40条术语
+cn_dicts/ext.dict.yaml	债权人代位权	zhai quan ren dai wei quan	60	domain	民法典第535条法定术语
+cn_dicts/ext.dict.yaml	法人人格否认	fa ren ren ge fou ren	60	domain	公司法第23条法定制度
+cn_dicts/ext.dict.yaml	刺破公司面纱	ci po gong si mian sha	60	domain	公司法高频法学术语
+cn_dicts/ext.dict.yaml	无固定期限劳动合同	wu gu ding qi xian lao dong he tong	80	domain	劳动合同法第14条高频法定术语
+cn_dicts/ext.dict.yaml	违法辞退	wei fa ci tui	80	domain	劳动争议高频实务词
+cn_dicts/ext.dict.yaml	家务劳动补偿	jia wu lao dong bu chang	60	domain	民法典第1088条法定术语
+cn_dicts/ext.dict.yaml	家庭教育指导令	jia ting jiao yu zhi dao ling	60	domain	家庭教育促进法法定文书
+cn_dicts/ext.dict.yaml	参考性案例	can kao xing an li	60	domain	人民法院案例库核心术语
+cn_dicts/ext.dict.yaml	横向垄断协议	heng xiang long duan xie yi	60	domain	反垄断法核心术语(对应纵向垄断协议)
+cn_dicts/ext.dict.yaml	高效办成一件事	gao xiao ban cheng yi jian shi	80	modern	国务院政务服务高频政策词
+cn_dicts/ext.dict.yaml	未诉先办	wei su xian ban	60	modern	接诉即办基层治理高频词
+cn_dicts/ext.dict.yaml	吹哨报到	chui shao bao dao	60	modern	基层社会治理高频词
+cn_dicts/ext.dict.yaml	容错纠错	rong cuo jiu cuo	60	modern	党建与政务治理高频词
+cn_dicts/base.dict.yaml	倒查	dao cha	40	domain	税务/审计/政法高频词(严控<道岔44)
+cn_dicts/base.dict.yaml	倒签	dao qian	50	domain	法务/外贸合同高频词(严控<道歉6561)
+cn_dicts/8105.dict.yaml	射	yi	5	phonetic	现汉第7版：十二律“无射 wú yì”
+cn_dicts/8105.dict.yaml	嗑	he	5	phonetic	现汉第7版：周易卦名“噬嗑 shì hé”
+cn_dicts/8105.dict.yaml	齐	zhai	5	phonetic	现汉第7版：古同“斋”（齐宿/齐戒）
+cn_dicts/8105.dict.yaml	齐	zi	5	phonetic	现汉第7版：古丧服“齐衰 zī cuī”
+cn_dicts/8105.dict.yaml	数	cu	5	phonetic	现汉第7版：细密义“数罟 cù gǔ”
+cn_dicts/8105.dict.yaml	契	xie	5	phonetic	现汉第7版：商朝始祖“商契/稷契 Xiè”
+cn_dicts/8105.dict.yaml	簇	cou	5	phonetic	现汉第7版/辞海：十二律“太簇 tài còu”
+cn_dicts/8105.dict.yaml	蔟	cou	5	phonetic	现汉第7版/辞海：十二律“太蔟 tài còu”
+cn_dicts_cell/history.dict.yaml	万俟卨	mo qi xie	30	domain	宋史人物（Top5: NONE）
+cn_dicts_cell/history.dict.yaml	皋陶	gao yao	40	domain	上古司法鼻祖（Top5: 膏药297, 高腰120）
+cn_dicts_cell/history.dict.yaml	曾参	zeng shen	60	domain	孔子弟子曾子本名（Top5: NONE）
+cn_dicts_cell/history.dict.yaml	傅说	fu yue	35	domain	商代名相（Top5: 赴约207, 斧钺194, 父曰57）
+cn_dicts_cell/history.dict.yaml	尉缭	yu liao	15	domain	战国兵家（Top5: 语料967, 预料778, 余料21）
+cn_dicts_cell/history.dict.yaml	乐羊	yue yang	30	domain	战国魏将（Top5: 岳阳96, 栎阳70, 越洋69）
+cn_dicts_cell/history.dict.yaml	盖宽饶	ge kuan rao	20	domain	西汉名臣（Top5: NONE）
+cn_dicts_cell/history.dict.yaml	祭遵	zhai zun	20	domain	东汉云台二十八将（Top5: NONE）
+cn_dicts_cell/history.dict.yaml	鲜于	xian yu	60	domain	复姓（Top5: 闲鱼2716, 咸鱼2061, 限于1147）
+cn_dicts_cell/history.dict.yaml	亓官	qi guan	15	domain	复姓/孔子夫人姓氏（Top5: 器官4457, 奇观1166, 弃官61, 企管19）
+cn_dicts_cell/history.dict.yaml	宰父	zai fu	20	domain	复姓（Top5: 再付72, 宰辅38）
+cn_dicts_cell/history.dict.yaml	漆雕开	qi diao kai	20	domain	孔子弟子（Top5: NONE）
+cn_dicts_cell/history.dict.yaml	鄯善	shan shan	40	domain	西域古国/新疆县名（Top5: 闪闪379, 山山99, 讪讪75, 姗姗56）
+cn_dicts_cell/history.dict.yaml	魏徵	wei zheng	80	domain	唐代名相传统正字（Top5: 为正748, 魏征188；与8105徵zheng配套）
+cn_dicts_cell/music.dict.yaml	姑洗	gu xian	30	domain	十二律（Top5: 古县5, 辜限2）
+cn_dicts_cell/music.dict.yaml	无射	wu yi	30	domain	十二律（Top5: 无疑5876, 无意2036, 武艺675）
+cn_dicts_cell/music.dict.yaml	蕤宾	rui bin	30	domain	十二律（Top5: NONE）
+cn_dicts_cell/music.dict.yaml	夹钟	jia zhong	20	domain	十二律（Top5: 家中4092, 加重2810, 甲种47）
+cn_dicts_cell/music.dict.yaml	林钟	lin zhong	30	domain	十二律（Top5: 临终434, 林中365）
+cn_dicts_cell/music.dict.yaml	夷则	yi ze	30	domain	十二律（Top5: 一则1679, 易箦1）
+cn_dicts_cell/music.dict.yaml	仲吕	zhong lv	30	domain	十二律（Top5: 中吕9）
+cn_dicts_cell/music.dict.yaml	应钟	ying zhong	30	domain	十二律（Top5: 营中133, 英中58）
+cn_dicts_cell/music.dict.yaml	清商乐	qing shang yue	30	domain	汉魏六朝乐种（Top5: NONE）
+cn_dicts_cell/music.dict.yaml	斫琴	zhuo qin	30	domain	古琴制作工艺（Top5: NONE）
+cn_dicts_cell/music.dict.yaml	筚篥	bi li	30	domain	古代管乐器（Top5: 比例27795, 笔力471, 哔哩40）
+cn_dicts_cell/music.dict.yaml	般涉调	pan she diao	20	domain	唐宋燕乐宫调（Top5: NONE）
+cn_dicts/base.dict.yaml	阿耨多罗	a nou duo luo	20	domain	佛经高频梵译（Top5: NONE）
+cn_dicts/base.dict.yaml	阿兰若	a lan re	25	domain	佛教清净处（Top5: NONE）
+cn_dicts/base.dict.yaml	辟雍	bi yong	30	domain	古代天子学宫（Top5: 比用272, 必用166）
+cn_dicts/base.dict.yaml	唱喏	chang re	25	domain	古代作揖礼节（Top5: NONE）
+cn_dicts_cell/literature.dict.yaml	否泰	pi tai	30	domain	周易否泰（Top5: 疲态195）
+cn_dicts_cell/literature.dict.yaml	大畜	da xu	18	domain	周易卦名（Top5: 大嘘27, 大虚20）
+cn_dicts_cell/literature.dict.yaml	小畜	xiao xu	25	domain	周易卦名（Top5: 小徐131, 小许42）
+cn_dicts_cell/literature.dict.yaml	贲卦	bi gua	30	domain	周易卦名（Top5: 壁挂248）
+cn_dicts_cell/literature.dict.yaml	屯卦	zhun gua	30	domain	周易卦名（Top5: NONE）
+cn_dicts_cell/literature.dict.yaml	夬卦	guai gua	30	domain	周易卦名（Top5: NONE）
+cn_dicts_cell/literature.dict.yaml	姤卦	gou gua	30	domain	周易卦名（Top5: NONE）
+cn_dicts_cell/literature.dict.yaml	艮卦	gen gua	30	domain	周易卦名（Top5: NONE）
+cn_dicts_cell/literature.dict.yaml	否卦	pi gua	20	domain	周易卦名（Top5: 披挂92, 劈挂27）
+cn_dicts_cell/literature.dict.yaml	剥复	bo fu	18	domain	周易剥复（Top5: 伯父275, 波幅185, 伯符22）
+cn_dicts_cell/literature.dict.yaml	中孚	zhong fu	25	domain	周易卦名（Top5: 重负131, 中伏41, 仲父41）
+cn_dicts_cell/literature.dict.yaml	睽卦	kui gua	20	domain	周易卦名（Top5: NONE）
+cn_dicts_cell/literature.dict.yaml	蹇卦	jian gua	20	domain	周易卦名（Top5: NONE）
+cn_dicts_cell/literature.dict.yaml	涣卦	huan gua	20	domain	周易卦名（Top5: NONE）
+cn_dicts_cell/literature.dict.yaml	萃卦	cui gua	20	domain	周易卦名（Top5: NONE）
+cn_dicts_cell/literature.dict.yaml	革卦	ge gua	20	domain	周易卦名（Top5: NONE）
+cn_dicts_cell/literature.dict.yaml	鼎卦	ding gua	20	domain	周易卦名（Top5: NONE）
+cn_dicts_cell/literature.dict.yaml	被发行吟	pi fa xing yin	30	domain	楚辞渔父典故（Top5: NONE）
+cn_dicts_cell/literature.dict.yaml	何时眼前突兀见此屋	he shi yan qian tu wu xian ci wu	30	domain	杜甫茅屋为秋风所破歌名句（Top5: NONE）
+cn_dicts_cell/literature.dict.yaml	稽颡	qi sang	25	domain	古代丧葬叩拜礼（Top5: NONE）
+cn_dicts_cell/literature.dict.yaml	数奇	shu ji	30	domain	史记李广数奇（Top5: 书籍20768, 庶几80）
+cn_dicts_cell/literature.dict.yaml	数罟	cu gu	15	domain	孟子数罟不入洿池（Top5: 粗估22）
+cn_dicts_cell/literature.dict.yaml	齐衰	zi cui	25	domain	古代五服丧服（Top5: NONE）
+cn_dicts_cell/literature.dict.yaml	斩衰	zhan cui	25	domain	古代五服丧服（Top5: NONE）
+cn_dicts_cell/literature.dict.yaml	绿衣黄裳	lv yi huang chang	25	domain	诗经名句（Top5: NONE）
+cn_dicts_cell/idiom.dict.yaml	行商坐贾	xing shang zuo gu	30	domain	常用成语（Top5: NONE）
+cn_dicts_cell/literature.dict.yaml	不龟手之药	bu jun shou zhi yao	25	domain	庄子逍遥游典故（Top5: NONE）
+cn_dicts_cell/history.dict.yaml	乘舆	sheng yu	30	domain	帝王车驾（Top5: 剩余5008, 胜于533）
+cn_dicts/8105.dict.yaml	丼	dan	10	phonetic	现汉规范/日语借词(原仅收jing=5)
+cn_dicts/base.dict.yaml	花蛤	hua ge	120	common	现汉第7版(原库仅存炒花蛤/辣炒花蛤，严控<花个893)
+cn_dicts/base.dict.yaml	桃脯	tao fu	30	common	现汉第7版(高于桃符11)
+cn_dicts/base.dict.yaml	苹果脯	ping guo fu	30	common	现汉第7版(无碰撞)
+cn_dicts/base.dict.yaml	鸭脯肉	ya pu rou	30	common	现代高频餐饮词(无碰撞)
+cn_dicts/base.dict.yaml	菜脯	cai fu	30	common	现汉第7版/潮汕闽台常见(严控<财富11553)
+cn_dicts/base.dict.yaml	贝果	bei guo	150	modern	高频烘焙词bagel(严控<北国224)
+cn_dicts/base.dict.yaml	隆江猪脚	long jiang zhu jiao	50	common	高频餐饮词(原仅收隆江猪脚饭19，无碰撞)
+cn_dicts/base.dict.yaml	粿条	guo tiao	80	common	潮汕/闽南高频主食(无碰撞)
+cn_dicts/base.dict.yaml	鸡枞	ji zong	50	common	现汉第7版/云南名菌(高于纪总9)
+cn_dicts/base.dict.yaml	鸡枞菌	ji zong jun	60	common	现汉第7版/真菌名词(无碰撞)
+cn_dicts/base.dict.yaml	兰州拉面	lan zhou la mian	120	common	超高频国民餐饮词(无碰撞)
+cn_dicts/base.dict.yaml	和牛	he niu	150	modern	高频餐饮词(无碰撞)
+cn_dicts/base.dict.yaml	澳白	ao bai	60	modern	高频咖啡词Flat White(严控<鳌拜83)
+cn_dicts/base.dict.yaml	牛腱	niu jian	60	common	高频牛肉部位词(严控<牛剑530)
+cn_dicts/base.dict.yaml	碱水包	jian shui bao	50	modern	高频烘焙词(无碰撞)
+cn_dicts/base.dict.yaml	血橙	xue cheng	60	common	高频水果名(严控<学城80)
+cn_dicts/base.dict.yaml	丑橘	chou ju	60	modern	高频水果名不知火(高于丑剧9)
+cn_dicts/base.dict.yaml	河鲀	he tun	120	domain	全国科技名词委动物学规范主形(W2严控<河豚573)
+cn_dicts/base.dict.yaml	兔狲	tu sun	60	common	国家二级保护动物/高频网红野生动物(严控<徒孙83)
+cn_dicts/base.dict.yaml	狞猫	ning mao	50	common	高频猫科动物(无碰撞)
+cn_dicts/base.dict.yaml	梭梭	suo suo	40	domain	防沙治沙核心植物(严控<索索93)
+cn_dicts/base.dict.yaml	雕鸮	diao xiao	30	domain	国家二级保护鸟类(严控<吊销203)
+cn_dicts/base.dict.yaml	游隼	you sun	40	domain	国家二级保护鸟类(严控<有损485)
+cn_dicts/base.dict.yaml	夜鹭	ye lu	30	domain	城市高频涉禽(严控<野鹿34)
+cn_dicts/base.dict.yaml	冰碛湖	bing qi hu	40	domain	中学/大学地理高频术语(无碰撞)
+cn_dicts/base.dict.yaml	锢囚锋	gu qiu feng	30	domain	气象地理标准术语(无碰撞)
+cn_dicts/base.dict.yaml	解州关帝庙	xie zhou guan di miao	10	common	配合解州L1/L2正音xie zhou(原仅有hai zhou 4)
+cn_dicts/base.dict.yaml	锦州	jin zhou	150	common	辽宁地级市(原仅衍生词，高于禁咒54)
+cn_dicts/base.dict.yaml	本溪	ben xi	120	common	辽宁地级市(严控<本系140)
+cn_dicts/base.dict.yaml	阜新	fu xin	80	common	辽宁地级市(严控<福昕99)
+cn_dicts/base.dict.yaml	鸡西	ji xi	80	common	黑龙江地级市(严控<机洗192)
+cn_dicts/base.dict.yaml	松原	song yuan	100	common	吉林地级市(严控<宋元352)
+cn_dicts/base.dict.yaml	辽源	liao yuan	80	common	吉林地级市(严控<燎原167)
+cn_dicts/base.dict.yaml	丽水	li shui	120	common	浙江地级市(高于沥水96)
+cn_dicts/base.dict.yaml	基隆	ji long	80	common	台湾省辖市(高于鸡笼33)
+cn_dicts/base.dict.yaml	嘉义	jia yi	120	common	台湾县市(严控<甲乙274)
+cn_dicts/base.dict.yaml	宜兰	yi lan	80	common	台湾县份(严控<一览546)
+cn_dicts/base.dict.yaml	葵涌	kui chong	60	common	香港地名/港铁荃湾线(无碰撞)
+cn_dicts/base.dict.yaml	氹仔	dang zai	60	common	澳门核心岛区/机场所在地(严控<挡在615)
+cn_dicts/base.dict.yaml	路环	lu huan	40	common	澳门核心岛区(无碰撞)
+cn_dicts/base.dict.yaml	沱江	tuo jiang	60	common	长江重要支流/凤凰古城河流(严控<脱缰83)
+cn_dicts/base.dict.yaml	长汀	chang ting	50	common	国家历史文化名城(原仅长汀县，严控<长亭61)
+cn_dicts/base.dict.yaml	长乐	chang le	80	common	福州长乐区/长乐宫(严控<常乐150)
+cn_dicts/base.dict.yaml	尉氏	yu shi	30	common	河南开封尉氏县(严控<玉石456)
+cn_dicts/base.dict.yaml	大城县	dai cheng xian	25	common	河北廊坊大城县(无碰撞)
+cn_dicts/base.dict.yaml	郫都	pi du	40	common	成都郫都区(原仅郫都区37，无碰撞)
+cn_dicts/base.dict.yaml	黟县	yi xian	30	common	安徽宏村西递所在地(严控<一掀43)
+cn_dicts/base.dict.yaml	井陉	jing xing	30	common	河北石家庄井陉县(严控<经行69)
+cn_dicts/base.dict.yaml	六枝特区	liu zhi te qu	20	common	全国唯一县级特区(无碰撞)
+cn_dicts/base.dict.yaml	撑竿跳高	cheng gan tiao gao	80	domain	现汉第7版/中国田径协会(L1/L2；Top5:撑杆跳高:13)
+cn_dicts/ext.dict.yaml	王兴兴	wang xing xing	80	modern	宇树科技创始人(L3；Top5:EMPTY)
+cn_dicts/ext.dict.yaml	郦波	li bo	40	modern	学者/百家讲坛主讲(L3；严控<李博65)
+cn_dicts/ext.dict.yaml	蒙曼	meng man	80	modern	学者/百家讲坛主讲(L3；Top5:EMPTY)
+cn_dicts/ext.dict.yaml	菅纫姿	jian ren zi	30	modern	演员现用规范名(L3；高于ext旧名菅韧姿:2)
+cn_dicts/ext.dict.yaml	昊铂	hao bo	80	brand	广汽新能源汽车品牌(Top5:浩博:4)
+cn_dicts/ext.dict.yaml	腾势	teng shi	80	brand	比亚迪高端汽车品牌(Top5:EMPTY)
+cn_dicts/ext.dict.yaml	方程豹	fang cheng bao	80	brand	比亚迪新能源品牌(Top5:EMPTY)
+cn_dicts/ext.dict.yaml	零跑	ling pao	80	brand	新能源汽车品牌(严控<领跑419)
+cn_dicts/ext.dict.yaml	飞凡	fei fan	60	brand	上汽新能源品牌(严控<非凡664)
+cn_dicts/ext.dict.yaml	捷途	jie tu	60	brand	奇瑞汽车品牌(严控<截图13022)
+cn_dicts/ext.dict.yaml	爱彼	ai bi	60	brand	瑞士腕表品牌AP(Top5:爱比:35)
+cn_dicts/ext.dict.yaml	博柏利	bo bai li	80	brand	Burberry官方中文名(Top5:EMPTY)
+cn_dicts/ext.dict.yaml	芬迪	fen di	50	brand	奢侈品牌Fendi(严控<坟地184/分地72)
+cn_dicts/ext.dict.yaml	宇舶	yu bo	40	brand	瑞士腕表品牌Hublot(严控<玉帛55)
+cn_dicts_cell/sport.dict.yaml	违体	wei ti	40	domain	篮球高频简称违体犯规(严控<未提45)
+cn_dicts_cell/sport.dict.yaml	反跑	fan pao	60	domain	篮球/足球无球战术术语(Top5:EMPTY)
+cn_dicts_cell/sport.dict.yaml	补扣	bu kou	60	domain	篮球高频术语(严控<不扣134)
+cn_dicts_cell/sport.dict.yaml	骑扣	qi kou	60	domain	篮球高频术语(严控<气口108)
+cn_dicts_cell/sport.dict.yaml	保发	bao fa	60	domain	网球高频术语保住发球局(严控<暴发193)
+cn_dicts_cell/sport.dict.yaml	双误	shuang wu	60	domain	网球高频术语双发失误(Top5:EMPTY)
+cn_dicts_cell/sport.dict.yaml	金满贯	jin man guan	80	domain	网球/乒羽最高荣誉术语(Top5:EMPTY)
+cn_dicts_cell/sport.dict.yaml	清台	qing tai	60	domain	台球/斯诺克高频术语(严控<情态141)
+cn_dicts_cell/sport.dict.yaml	匹克球	pi ke qiu	80	domain	新兴主流球类运动Pickleball(Top5:EMPTY)
+cn_dicts_cell/sport.dict.yaml	好球带	hao qiu dai	60	domain	棒球核心规则术语(Top5:EMPTY)
+cn_dicts_cell/sport.dict.yaml	薪资空间	xin zi kong jian	60	domain	职业体育联盟工资帽术语(Top5:EMPTY)
+cn_dicts_cell/game.dict.yaml	天命人	tian ming ren	100	modern	《黑神话：悟空》主角(Top5:EMPTY)
+cn_dicts_cell/game.dict.yaml	苇名一心	wei ming yi xin	60	modern	《只狼》核心角色(Top5:EMPTY)
+cn_dicts_cell/game.dict.yaml	能天使	neng tian shi	60	modern	《明日方舟》核心角色(Top5:EMPTY)
+cn_dicts_cell/game.dict.yaml	无限暖暖	wu xian nuan nuan	80	modern	热门开放世界换装游戏(Top5:EMPTY)
+cn_dicts_cell/game.dict.yaml	燕云十六声	yan yun shi liu sheng	80	modern	热门国产开放世界武侠游戏(Top5:EMPTY)
+cn_dicts_cell/game.dict.yaml	三角洲行动	san jiao zhou xing dong	80	modern	热门战术射击游戏(Top5:EMPTY)
+cn_dicts_cell/game.dict.yaml	金铲铲之战	jin chan chan zhi zhan	80	modern	热门自走棋手游(Top5:EMPTY)
+cn_dicts_cell/exthot.dict.yaml	葬送的芙莉莲	zang song de fu li lian	80	modern	现象级热门动漫(Top5:EMPTY)
+cn_dicts/8105.dict.yaml	呒	fu	5	phonetic	现汉第7版规范主读fǔ(呒然)
+cn_dicts/8105.dict.yaml	螫	zhe	5	phonetic	现汉第7版口语读zhē(同蜇)
+cn_dicts/8105.dict.yaml	女	ru	2	phonetic	现汉第7版古同汝rǔ
+cn_dicts/8105.dict.yaml	景	ying	2	phonetic	现汉第7版古同影yǐng
+cn_dicts/8105.dict.yaml	杕	duo	1	phonetic	现汉第7版古同舵duò
+cn_dicts/8105.dict.yaml	趯	yue	1	phonetic	现汉第7版古同跃yuè
+cn_dicts/8105.dict.yaml	啫	shi	1	phonetic	现汉第7版古同嗜shì
+cn_dicts/8105.dict.yaml	昳	yi	25	phonetic	现汉第7版主用读音yì(昳丽)
+cn_dicts/8105.dict.yaml	蔈	biao	5	phonetic	通用规范汉字字典/辞海主读biāo(蔈草镇)
+cn_dicts/8105.dict.yaml	妧	wan	5	phonetic	新华字典第12版主读wàn
+cn_dicts/8105.dict.yaml	禔	ti	5	phonetic	新华字典第12版主读tí(禔福/胤禔)
+cn_dicts/base.dict.yaml	长于	zhang yu	150	common	生长于/年长于义zhǎng yú(严控<丈育300)
+cn_dicts/base.dict.yaml	调了	tiao le	300	common	调整调节义tiáo le(严控<跳了1200)
+cn_dicts/base.dict.yaml	大行	da hang	400	domain	国有大行/投行大行义dà háng
+cn_dicts/base.dict.yaml	落了	la le	200	common	遗漏落下义là le(对齐落下la xia)
+cn_dicts/base.dict.yaml	降重	jiang zhong	100	domain	汽车/航天轻量化降重义jiàng zhòng(严控<江中141)
+cn_dicts/base.dict.yaml	新传	xin zhuan	80	common	保留文学传记新传义xīn zhuàn
+cn_dicts/ext.dict.yaml	异尖线虫	yi jian xian chong	40	domain	寄生虫规范专名(替换others分词残片异尖)

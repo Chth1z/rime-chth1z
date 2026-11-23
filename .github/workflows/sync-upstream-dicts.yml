@@ -43,15 +43,19 @@ jobs:
             opencc/others.txt
 
       - name: Run deterministic dictionary & OpenCC cleaner
+        id: clean
+        continue-on-error: true
         run: python3 scripts/clean-dicts.py --manifest /tmp/clean-manifest.json
 
-      - name: Run strict dictionary lint, idempotency, and diff-budget gate
+      - name: Run strict dictionary lint, idempotency, collision, and diff-budget gate
         id: lint
+        if: steps.clean.outcome == 'success'
         continue-on-error: true
         run: |
           python3 scripts/dict_lint.py \
             --strict \
             --idempotent \
+            --check-collisions \
             --diff-budget \
             --max-active-delta 5000 \
             --max-corrections-delta 50 \
@@ -59,16 +63,22 @@ jobs:
             --github-output "$GITHUB_OUTPUT" \
             --json /tmp/lint-report.json
 
-      - name: Open issue and halt if dictionary lint failed
-        if: steps.lint.outcome != 'success' || steps.lint.outputs.lint_ok != 'true'
+      - name: Open issue and halt if cleaner or dictionary lint failed
+        if: steps.clean.outcome != 'success' || steps.lint.outcome != 'success' || steps.lint.outputs.lint_ok != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
+          UPSTREAM_SHA: ${{ steps.sync.outputs.upstream_sha }}
+          CLEAN_OUTCOME: ${{ steps.clean.outcome }}
         run: |
+          TITLE="[CI] 上游词库同步门禁失败 (@ ${UPSTREAM_SHA})"
           python3 - <<'PY' > /tmp/lint-issue.md
-          import json, pathlib
+          import json, os, pathlib
           p = pathlib.Path("/tmp/lint-report.json")
           print("## 上游词库同步被静态门禁拦截\n")
-          print("自动同步 `gaboolic/rime-frost` 后 `scripts/dict_lint.py` 校验未通过，已阻断推送至 `main`。\n")
+          if os.environ.get("CLEAN_OUTCOME") != "success":
+              print("自动同步 `gaboolic/rime-frost` 后 `scripts/clean-dicts.py` 执行失败，已阻断推送至 `main`。\n")
+          else:
+              print("自动同步 `gaboolic/rime-frost` 后 `scripts/dict_lint.py` 校验未通过，已阻断推送至 `main`。\n")
           if p.exists():
               r = json.loads(p.read_text(encoding="utf-8"))
               print(f"- 错误数：`{r.get('error_count', 0)}`")
@@ -80,9 +90,14 @@ jobs:
           else:
               print("未生成 `/tmp/lint-report.json`，请查看本次 GitHub Actions 日志。")
           PY
-          gh issue create \
-            --title "[CI] 上游词库同步门禁失败 (@ ${{ steps.sync.outputs.upstream_sha }})" \
-            --body-file /tmp/lint-issue.md || true
+          EXISTING=$(gh issue list --state open --search "in:title ${UPSTREAM_SHA}" --json number --jq '.[0].number // empty' || true)
+          if [ -z "$EXISTING" ]; then
+            gh issue create \
+              --title "$TITLE" \
+              --body-file /tmp/lint-issue.md || true
+          else
+            echo "Open lint-failure issue #${EXISTING} already exists for ${UPSTREAM_SHA}."
+          fi
           exit 1
 
       - name: Check whether dictionary files changed
@@ -127,7 +142,10 @@ jobs:
           print("请复核变动并在本机跑完 `bench/accuracy-test.ps1` 与盲测验收后再合入 `main`。")
           PY
 
-          if ! gh pr create \
+          EXISTING_PR=$(gh pr list --state open --head "$BRANCH" --json number --jq '.[0].number // empty' || true)
+          if [ -n "$EXISTING_PR" ]; then
+            echo "Review PR #${EXISTING_PR} already exists for branch ${BRANCH}; branch updated."
+          elif ! gh pr create \
             --base main \
             --head "$BRANCH" \
             --title "chore(dicts): sync upstream rime-frost @ ${{ steps.sync.outputs.upstream_sha }} (review required)" \

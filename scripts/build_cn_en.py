@@ -46,7 +46,7 @@ SHUANGPIN_SCHEMES: dict[str, dict[str, dict[str, str]]] = {
         "init": {"zh": "a", "ch": "e", "sh": "v"},
         "fin": {
             "ei": "q", "ian": "w", "iu": "r", "er": "r", "iang": "t", "uang": "t",
-            "ing": "y", "uai": "y", "uo": "o", "uan": "p", "ong": "s", "iong": "s",
+            "ing": "y", "uai": "c", "uo": "o", "uan": "p", "ong": "s", "iong": "s",
             "ia": "d", "ua": "d", "en": "f", "eng": "g", "ang": "h", "an": "j",
             "ao": "k", "ai": "l", "iao": "z", "ie": "x", "in": "c", "ou": "b",
             "un": "n", "ue": "m", "ve": "m", "ui": "m",

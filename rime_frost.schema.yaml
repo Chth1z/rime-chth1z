@@ -180,7 +180,6 @@ translator:
     - xform/$/］/
   preedit_format:
     - xform/([jqxy])v/$1u/
-    - xform/([nl])v/$1v/
     - xform/([nl])ue/$1ve/
 
 melt_eng:
@@ -223,7 +222,7 @@ tw_dual_filter:
   option_name: traditionalization
   twp_config: s2twp.json
   tw_config: s2tw.json
-  tags: [ abc, number, gregorian_to_lunar ]
+  tags: [ abc ]
 
 punctuator:
   full_shape:

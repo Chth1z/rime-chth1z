@@ -10,7 +10,6 @@ cn_dicts/8105.dict.yaml	勒	lei	200	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	勿	wu	500	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	午	wu	1000	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	卬	ang	5	R1/R2单字权重校准
-cn_dicts/8105.dict.yaml	卻	que	3	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	卿	qing	150	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	吾	wu	600	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	呦	you	800	R1/R2单字权重校准
@@ -21,9 +20,9 @@ cn_dicts/8105.dict.yaml	咯	ka	120	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	咯	lo	300	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	咯	luo	80	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	咲	xiao	5	R1/R2单字权重校准
-cn_dicts/8105.dict.yaml	哟	you	150	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	哟	you	20	非L1口语容错严控<悠(119)/诱(113)/柚(77)
 cn_dicts/8105.dict.yaml	唔	wu	300	R1/R2单字权重校准
-cn_dicts/8105.dict.yaml	喔	wo	800	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	喔	wo	250	现汉第7版叹词主读o，压低wo避撞握(763)/卧(383)
 cn_dicts/8105.dict.yaml	喙	hui	50	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	嗔	chen	50	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	嘤	ying	60	R1/R2单字权重校准
@@ -87,7 +86,7 @@ cn_dicts/8105.dict.yaml	爪	zhao	30	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	牠	ta	20	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	瑜	yu	200	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	甑	zeng	15	R1/R2单字权重校准
-cn_dicts/8105.dict.yaml	町	ding	20	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	町	ding	40	主读ding高于次读ting(30)且严控<锭(99)
 cn_dicts/8105.dict.yaml	疑	yi	1000	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	皆	jie	1200	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	盛	cheng	350	R1/R2单字权重校准
@@ -111,7 +110,7 @@ cn_dicts/8105.dict.yaml	绩	ji	800	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	缇	ti	25	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	缪	miao	80	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	缪	miu	60	R1/R2单字权重校准
-cn_dicts/8105.dict.yaml	缪	mou	100	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	缪	mou	40	降权避撞眸(70)，保持miao(80)/miu(60)优先
 cn_dicts/8105.dict.yaml	缯	zeng	10	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	育	yu	1200	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	肽	tai	100	R1/R2单字权重校准
@@ -415,7 +414,6 @@ cn_dicts/base.dict.yaml	提的	ti de	200	R1基础词库权重校准
 cn_dicts/base.dict.yaml	搞基	gao ji	100	R2基础词库权重校准
 cn_dicts/base.dict.yaml	搞技术	gao ji shu	180	R2基础词库权重校准
 cn_dicts/base.dict.yaml	搞的	gao de	200	R1基础词库权重校准
-cn_dicts/base.dict.yaml	摊薄	tan bao	40	R2基础词库权重校准
 cn_dicts/base.dict.yaml	放的	fang de	200	R1基础词库权重校准
 cn_dicts/base.dict.yaml	放血	fang xie	100	R2基础词库权重校准
 cn_dicts/base.dict.yaml	数的	shu de	300	R2基础词库权重校准
@@ -1136,3 +1134,134 @@ cn_dicts_cell/medication.dict.yaml	白及	bai ji	>=120	W2：中国药典法定�
 cn_dicts_cell/medication.dict.yaml	白芨	bai ji	<=20	W2：民间俗写让位于药典正名白及(120)
 cn_dicts/base.dict.yaml	真像	zhen xiang	<=100	W1：保留合法搭配真像(真+像)，温和降权避免干扰真相(9218)
 cn_dicts/base.dict.yaml	胶粘剂	jiao zhan ji	<=100	W2：保留历史国标常用写法，位于规范胶黏剂(150)之后
+cn_dicts/base.dict.yaml	非营利	fei ying li	450	W1校准:民法典法定非营利(450)高于非盈利(150)
+cn_dicts/base.dict.yaml	非盈利	fei ying li	150	W1校准:保留未盈利义项，权重低于非营利
+cn_dicts/base.dict.yaml	营利目的	ying li mu di	60	W1校准:民法典/刑法法定营利目的高于盈利目的
+cn_dicts/base.dict.yaml	盈利目的	ying li mu di	20	W1校准:降权低于营利目的
+cn_dicts_cell/composite.dict.yaml	法治观念	fa zhi guan nian	40	W1校准:现代规范法治观念(40)高于法制观念(22)
+cn_dicts_cell/exthot.dict.yaml	新质生产力	xin zhi sheng chan li	120	现代高频政策核心词摆脱w=0
+cn_dicts/others.dict.yaml	化债	hua zhai	80	现代高频财政金融术语摆脱w=0(优于化斋5)
+cn_dicts/others.dict.yaml	保理	bao li	60	民法典法定合同术语摆脱w=0(严控<暴戾312)
+cn_dicts/others.dict.yaml	双碳	shuang tan	100	现代高频政策能源术语摆脱w=0
+cn_dicts/others.dict.yaml	做市	zuo shi	40	金融市场核心术语摆脱w=0(严控<作势161)
+cn_dicts/others.dict.yaml	碳税	tan shui	45	财税气候术语摆脱w=0(严控<贪睡51)
+cn_dicts/others.dict.yaml	涉诉	she su	80	高频法律实务术语摆脱w=0(严控<射速399)
+cn_dicts_cell/composite.dict.yaml	一网统管	yi wang tong guan	60	高频政务治理术语摆脱w=0
+cn_dicts_cell/composite.dict.yaml	一般纳税人	yi ban na shui ren	80	高频财税法定术语摆脱w=0
+cn_dicts_cell/composite.dict.yaml	养老金融	yang lao jin rong	60	中央金融工作会议五篇大文章摆脱w=0
+cn_dicts/base.dict.yaml	蜡梅	la mei	80	W2现汉/植物学主形蜡梅压过腊梅(68)，严控<辣妹(159)
+cn_dicts_cell/composite.dict.yaml	蚧壳虫	jie ke chong	<=80	W2规范主形介壳虫(100)压过常见异形蚧壳虫(原142倒挂)
+cn_dicts/base.dict.yaml	烧卖	shao mai	260	(可选)W2现汉第7版主形烧卖(原168)压过烧麦(243)
+cn_dicts/base.dict.yaml	撑竿跳	cheng gan tiao	>=100	W2体育规范词形撑竿跳高于撑杆跳(83)
+cn_dicts/8105.dict.yaml	喔	o	500	现汉第7版叹词主读o(严控<哦/噢)
+cn_dicts/8105.dict.yaml	吖	ya	50	防等权撞击常用字芽(347)
+cn_dicts/8105.dict.yaml	欸	e	30	防等权撞击常用字蛾(158)
+cn_dicts/8105.dict.yaml	欸	ai	50	防虚高撞击常用字
+cn_dicts/8105.dict.yaml	孱	chan	20	现汉第7版主读chan高于次读can(3)
+cn_dicts/8105.dict.yaml	忪	song	15	现汉第7版主读song(惺忪)高于次读zhong(1)
+cn_dicts/8105.dict.yaml	鲗	zei	10	现汉第7版主读zei高于区域音ze(2)
+cn_dicts/8105.dict.yaml	廆	wei	5	主读wei高于次读gui(2)
+cn_dicts/8105.dict.yaml	坻	di	10	主读di(宝坻)高于次读chi(2)
+cn_dicts/8105.dict.yaml	隗	wei	10	常用姓氏wei高于次读kui(2)
+cn_dicts/8105.dict.yaml	嗄	sha	12	主读sha高于叹词a(3)
+cn_dicts/8105.dict.yaml	钭	dou	10	现汉第7版唯一规范读音dou高于古音tou(1)
+cn_dicts/8105.dict.yaml	昳	die	5	次读日昳die低于主用昳丽yi(25)
+cn_dicts/8105.dict.yaml	泷	long	45	回调日名偏置，恢复笼(253)/陇(117)/聋(116)/垄(69)排位
+cn_dicts/8105.dict.yaml	贸	mao	280	一级常用字回调摆脱低权(41)，高于非8105冇(115)
+cn_dicts/8105.dict.yaml	珮	pei	5	非8105异体人名用字严控<沛(85)
+cn_dicts/8105.dict.yaml	炁	qi	10	非8105道教异体字严控<麒(136)/祈(79)/歧(21)
+cn_dicts/8105.dict.yaml	侁	shen	5	三级冷僻字0词条严控<哂(60)/蜃(40)/莘(36)
+cn_dicts/8105.dict.yaml	砷	shen	80	化学元素单字校准<慎(286)/婶(260)/渗(173)
+cn_dicts/8105.dict.yaml	弢	tao	12	三级古异体字严控<规范一级字韬(102)
+cn_dicts/8105.dict.yaml	铊	tuo	3	古音次读严控<5%主读ta(104)且<砣(14)
+cn_dicts/8105.dict.yaml	莞	guan	160	主读东莞guan高于次读wan(12)
+cn_dicts/8105.dict.yaml	莞	wan	12	次读莞尔严控<主读guan(160)
+cn_dicts/8105.dict.yaml	釐	xi	5	三级姓氏限用字消除繁体厘频次泄漏，严控<嬉(60)/媳(17)
+cn_dicts/8105.dict.yaml	歙	xi	1	生僻古音次读严控<5%主读she(31)且<媳(17)
+cn_dicts/8105.dict.yaml	叚	xia	3	三级人名限用字0词条严控<暇(42)/遐(25)
+cn_dicts/8105.dict.yaml	见	xian	15	古音次读见通现严控<腺(105)/羡(89)/纤(58)/宪(44)
+cn_dicts/8105.dict.yaml	繇	you	2	次读古同由严控<主读yao(50)
+cn_dicts/8105.dict.yaml	妧	yuan	2	次读严控<媛(79)/沅(77)/鸳(24)/主读wan(5)
+cn_dicts_cell/chess.dict.yaml	铁门栓	tie men shuan	<=5	W2俗写低于规范主形铁门闩(20)
+cn_dicts/base.dict.yaml	铁门闩	tie men shuan	>=20	W2现汉规范主形铁门闩优先
+cn_dicts/base.dict.yaml	坐席	zuo xi	<=100	W2行业词坐席低于规范正形座席(160)
+cn_dicts/base.dict.yaml	座席	zuo xi	>=160	W2现汉规范主形座席优先于坐席
+cn_dicts/ext.dict.yaml	钱锺书	qian zhong shu	>=600	W2通用规范汉字表及本人正字钱锺书优先于钱钟书(574)
+cn_dicts/base.dict.yaml	号啕大哭	hao tao da ku	>=400	W3规范主形号啕大哭承接原idiom嚎啕大哭权重
+cn_dicts/base.dict.yaml	项羽	xiang yu	<=2000	T3历史人名回调低于常用词相遇(3753)
+cn_dicts/base.dict.yaml	姚明	yao ming	<=1200	T3体育人名回调低于常用词要命(1842)
+cn_dicts/base.dict.yaml	拜仁	bai ren	<=1000	T3球队专名回调低于常用词白人(4509)
+cn_dicts/base.dict.yaml	懵逼	meng bi	<=400	T3网络粗俗词回调低于规范动词蒙蔽(789)
+cn_dicts/base.dict.yaml	基友	ji you	<=450	T3社区词回调低于常用词机油(974)
+cn_dicts/base.dict.yaml	周瑜	zhou yu	<=600	T3历史人名回调低于常用词咒语(889)
+cn_dicts/base.dict.yaml	厦大	xia da	<=400	T3高校简称回调低于常用词下达(818)
+cn_dicts/base.dict.yaml	晋国	jin guo	<=400	T3古国专名回调低于常用词进过(715)，对齐赵国/魏国
+cn_dicts_cell/composite.dict.yaml	蹭蹭蹭	ceng ceng ceng	<=50	回调避免压制规范拟声词噌噌噌(150)
+cn_dicts_cell/composite.dict.yaml	噌噌噌	ceng ceng ceng	>=150	现汉规范拟声词噌噌噌优先
+cn_dicts_cell/composite.dict.yaml	货拉拉	huo la la	<=150	T3品牌专名温和封顶低于核心通用词火辣辣(250)
+cn_dicts/base.dict.yaml	火辣辣	huo la la	>=250	核心通用ABB形容词优先于品牌专名货拉拉
+cn_dicts_cell/history.dict.yaml	库伦	ku lun	<=80	历史地名封顶低于物理单位库仑(117)
+cn_dicts_cell/history.dict.yaml	黄初	huang chu	<=60	年号专名封顶低于常用词皇储(96)
+cn_dicts/base.dict.yaml	指板	zhi ban	<=200	T3乐器领域词封顶低于纸板(302)/置办(334)
+cn_dicts/base.dict.yaml	水阻	shui zu	<=80	T3小众词封顶低于现汉通用词水族(89)/睡足(83)
+cn_dicts/base.dict.yaml	黑石	hei shi	<=350	T3专名温和封顶低于常用词黑市(455)
+cn_dicts/base.dict.yaml	见长	jian zhang	<=200	克隆次音降权低于常用词舰长(626)，保留主音jian chang(865)
+cn_dicts/base.dict.yaml	程心	cheng xin	<=300	T3小说人名封顶低于常用词诚心(590)
+cn_dicts/base.dict.yaml	徐晃	xu huang	<=60	T3历史人名封顶低于常用词虚晃(97)
+cn_dicts/base.dict.yaml	西电	xi dian	<=250	T3高校简称封顶低于常用词西点(379)
+cn_dicts/base.dict.yaml	巴基	ba ji	<=180	T3专名封顶低于常用词吧唧(337)/八级(275)
+cn_dicts/base.dict.yaml	郑凡	zheng fan	<=60	T3网文人名封顶低于常用词蒸饭(92)
+cn_dicts/base.dict.yaml	崇祯	chong zhen	<=220	T3历史年号封顶低于常用词重振(289)
+cn_dicts/base.dict.yaml	王源	wang yuan	<=100	T3艺人专名封顶低于常用词望远(131)
+cn_dicts/base.dict.yaml	兵线	bing xian	<=100	T3游戏术语封顶低于交通常用词并线(119)
+cn_dicts/base.dict.yaml	大剑	da jian	<=400	T3游戏武器词封顶低于日常词大件(755)
+cn_dicts/base.dict.yaml	杨仪	yang yi	<=80	T3冷僻三国人名封顶低于核心词洋溢(152)
+cn_dicts/base.dict.yaml	深中	shen zhong	<=180	T3区域简称封顶低于核心词深重(326)
+cn_dicts/base.dict.yaml	江财	jiang cai	<=70	T3高校简称封顶低于将才(118)/酱菜(89)
+cn_dicts/base.dict.yaml	正股	zheng gu	<=120	T3细分金融词封顶低于正骨(179)
+cn_dicts/base.dict.yaml	于禁	yu jin	<=200	T3历史人名封顶低于日常词浴巾(290)
+cn_dicts/base.dict.yaml	盒马	he ma	<=320	T3商业品牌封顶低于常用动物词河马(488)
+cn_dicts/base.dict.yaml	安西	an xi	<=250	T3专名封顶低于常用词安息(372)
+cn_dicts/base.dict.yaml	主材	zhu cai	<=220	T3装修术语封顶低于日常词主菜(336)
+cn_dicts/base.dict.yaml	华农	hua nong	<=160	T3简称封顶低于医学常用词化脓(216)
+cn_dicts/base.dict.yaml	酒款	jiu kuan	<=200	T3酒类词封顶低于日常词旧款(323)
+cn_dicts/base.dict.yaml	王翦	wang jian	<=250	T3历史人名封顶低于常用词望见(353)
+cn_dicts/base.dict.yaml	喉位	hou wei	<=100	T3声乐术语封顶低于后味(134)/后位(116)
+cn_dicts/base.dict.yaml	北服	bei fu	<=300	T3高校简称封顶低于常用词被俘(602)
+cn_dicts/base.dict.yaml	正联	zheng lian	<=200	T3影视社区简称封顶低于正脸(337)
+cn_dicts/base.dict.yaml	减保	jian bao	<=150	T3细分保险词封顶低于常用词简报(227)
+cn_dicts/base.dict.yaml	网叔	wang shu	<=30	T3知乎自媒体昵称封顶低于望舒(196)/王澍(73)
+cn_dicts/base.dict.yaml	易信	yi xin	<=150	T3边缘化品牌封顶低于常用词疑心(230)
+cn_dicts/base.dict.yaml	考案	kao an	<=80	日语借词/截断词封顶低于常用词靠岸(262)
+cn_dicts/base.dict.yaml	法正	fa zheng	<=120	T3三国人名封顶低于常用词发证(166)
+cn_dicts/base.dict.yaml	辉腾	hui teng	<=200	T3停产车型封顶低于日常词会疼(283)
+cn_dicts/base.dict.yaml	取匿	qu ni	<=80	T3知乎社区词封顶低于日常词娶你(107)
+cn_dicts/base.dict.yaml	亏的	kui de	<=250	.gram保底温和降权低于词典正词亏得(465)
+cn_dicts/base.dict.yaml	升的	sheng de	<=200	.gram保底温和降权低于省得(489)/剩的(358)
+cn_dicts/base.dict.yaml	弦的	xian de	<=150	.gram保底温和降权让咸的(369)回首页
+cn_dicts/base.dict.yaml	之气	zhi qi	<=200	.gram保底温和降权低于志气(244)
+cn_dicts/base.dict.yaml	期内	qi nei	<=250	.gram保底温和降权低于气馁(368)
+cn_dicts/base.dict.yaml	视感	shi gan	<=120	.gram保底温和降权低于实干(250)/实感(205)
+cn_dicts/base.dict.yaml	道题	dao ti	<=300	.gram保底温和降权低于导体(1040)
+cn_dicts/base.dict.yaml	万个	wan ge	<=200	.gram保底温和降权低于玩个(913)/挽歌(268)
+cn_dicts/base.dict.yaml	个点	ge dian	<=250	.gram保底温和降权低于格点(275)
+cn_dicts/base.dict.yaml	月至	yue zhi	<=50	.gram保底温和降权低于月氏(93)
+cn_dicts/base.dict.yaml	前先	qian xian	<=50	.gram保底温和降权低于牵线(197)
+cn_dicts/base.dict.yaml	场比赛	chang bi sai	<=50	.gram保底温和降权避免量词碎片虚高
+cn_dicts/ext.dict.yaml	型糖尿病	xing tang niao bing	<=20	.gram保底温和降权(完整词一型/二型糖尿病在composite)
+cn_dicts/ext.dict.yaml	所大学	suo da xue	<=20	.gram保底温和降权
+cn_dicts/ext.dict.yaml	岁那年	sui na nian	<=20	.gram保底温和降权
+cn_dicts/ext.dict.yaml	里有个	li you ge	<=20	.gram保底温和降权
+cn_dicts/ext.dict.yaml	万平方公里	wan ping fang gong li	<=20	.gram保底温和降权
+cn_dicts/ext.dict.yaml	条规定	tiao gui ding	<=20	.gram保底温和降权
+cn_dicts/ext.dict.yaml	或以上	huo yi shang	<=150	.gram保底温和降权(对齐及以下<=150)
+cn_dicts/ext.dict.yaml	米左右	mi zuo you	<=30	.gram保底温和降权
+cn_dicts/ext.dict.yaml	年之久	nian zhi jiu	<=30	.gram保底温和降权
+cn_dicts/ext.dict.yaml	日开始	ri kai shi	<=30	.gram保底温和降权
+cn_dicts/ext.dict.yaml	部电影	bu dian ying	<=30	.gram保底温和降权
+cn_dicts/ext.dict.yaml	个孩子	ge hai zi	<=50	.gram保底温和降权
+cn_dicts/ext.dict.yaml	个多小时	ge duo xiao shi	<=30	.gram保底温和降权
+cn_dicts/ext.dict.yaml	种不同	zhong bu tong	<=20	.gram保底温和降权
+cn_dicts/base.dict.yaml	熟人	shou ren	<=30	口语白读严控低于手刃(253)/兽人(217)/首任(206)/授人(50)
+cn_dicts/base.dict.yaml	红血	hong xie	<=25	游戏口语白读严控低于红鞋(34)/红蟹(31)
+cn_dicts/base.dict.yaml	血线	xie xian	<=23	游戏口语白读补齐降权严控低于谢贤(51)

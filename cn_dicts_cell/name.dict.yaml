@@ -161,7 +161,7 @@ sort: by_weight
 静茹	jing ru	29
 花粥	hua zhou	25
 莫迪	mo di	25
-艾梅柏	ai mei bai	150
+艾梅柏	ai mei bo	150
 某乎	mou hu	25
 顾曾	gu zeng	32
 光遇	guang yu	14
@@ -399,7 +399,6 @@ sort: by_weight
 马斯洛夫	ma si luo fu	34
 林若宁	lin ruo ning	84
 西迪厄斯	xi di e si	38
-亚德里亚	ya de li ya	32
 瓦尔德海姆	wa er de hai mu	32
 约瑟夫森	yue se fu sen	31
 阿维兰热	a wei lan re	31
@@ -408,7 +407,6 @@ sort: by_weight
 增田宗昭	zeng tian zong zhao	34
 圣范锦意	sheng fan jin yi	28
 伊熙尔杜	yi xi er du	33
-和田晓霞	he tian xiao xia	28
 相田彦一	xiang tian yan yi	31
 瓦斯卡尔	wa si ka er	27
 奥尔梅克	ao er mei ke	26
@@ -423,7 +421,6 @@ sort: by_weight
 户粟郁子	hu su yu zi	33
 梅克夫人	mei ke fu ren	22
 长井龙雪	chang jing long xue	25
-久木和凛子	jiu mu he lin zi	24
 格里夫斯	ge li fu si	21
 歌野晶午	ge ye jing wu	21
 梓泽广一	zi ze guang yi	21
@@ -448,10 +445,9 @@ sort: by_weight
 安尼斯顿	an ni si dun	18
 成都五牛	cheng du wu niu	17
 克莱门蒂	ke lai men di	26
-洛维夫人	luo wei fu ren	17
 司马相公	si ma xiang gong	17
 高梨康治	gao li kang zhi	19
-马利喀斯	ma li ka si	17
+玛利喀斯	ma li ka si	17
 彼得罗夫斯基	bi de luo fu si ji	16
 奥洛忒尔	ao luo te er	19
 令狐少侠	ling hu shao xia	16
@@ -537,7 +533,6 @@ sort: by_weight
 松平容保	song ping rong bao	9
 山白朝子	shan bai chao zi	6
 森本晃司	sen ben huang si	5
-和田伯光	he tian bo guang	5
 麻原彰晃	ma yuan zhang huang	5
 权藤俊辅	quan teng jun fu	5
 梓川咲太	zi chuan xiao tai	6
@@ -586,7 +581,6 @@ sort: by_weight
 达梅尔	da mei er	65
 张志凤	zhang zhi feng	64
 尤长靖	you zhang jing	63
-多维奇	duo wei qi	63
 周喆直	zhou zhe zhi	80
 秦嗣新	qin si xin	74
 周子雷	zhou zi lei	67
@@ -599,7 +593,6 @@ sort: by_weight
 宋连娣	song lian di	62
 阿尔基	a er ji	60
 杜子俊	du zi jun	64
-克索斯	ke suo si	61
 秦言续	qin yan xu	58
 斯拉法	si la fa	58
 顾仲安	gu zhong an	72
@@ -697,7 +690,6 @@ sort: by_weight
 林剑鸣	lin jian ming	48
 王跃琨	wang yue kun	43
 图尔斯	tu er si	42
-尼采蒂	ni cai di	42
 德梅尔	de mei er	44
 袁世卿	yuan shi qing	42
 冯提尔	feng ti er	42
@@ -756,16 +748,13 @@ sort: by_weight
 法丽达	fa li da	37
 赫马尼	he ma ni	35
 梁思禽	liang si qin	36
-罗维奇	luo wei qi	35
 陈泽杉	chen ze shan	36
 保加尔	bao jia er	35
 沈鲍洪	shen bao hong	40
-兰尼加	lan ni jia	35
 孙国伟	sun guo wei	35
 吴芷兰	wu zhi lan	35
 范疯子	fan feng zi	35
 许云洁	xu yun jie	36
-吴至贞	wu zhi zhen	34
 冯卓斌	feng zhuo bin	34
 刘维尔	liu wei er	34
 祝春亭	zhu chun ting	36
@@ -806,7 +795,6 @@ sort: by_weight
 郭庆光	guo qing guang	34
 塔肖妮	ta xiao ni	32
 朱贞木	zhu zhen mu	30
-腾哈赫	teng ha he	32
 阙特勤	que te qin	30
 塞莱什	sai lai shi	30
 王绍军	wang shao jun	30
@@ -827,7 +815,6 @@ sort: by_weight
 钱端升	qian duan sheng	27
 辻真先	shi zhen xian	31
 瞿同祖	qu tong zu	47
-夏侯懋	xia hou mao	26
 何凯明	he kai ming	30
 杜子春	du zi chun	26
 邓之诚	deng zhi cheng	25
@@ -1045,7 +1032,6 @@ sort: by_weight
 刘一林	liu yi lin	25
 谢隽意	xie juan yi	24
 夏可欣	xia ke xin	24
-香利奈	xiang li nai	24
 缪德树	miao de shu	28
 戴洪昌	dai hong chang	24
 韩达硕	han da shuo	25
@@ -1082,7 +1068,6 @@ sort: by_weight
 钮先铭	niu xian ming	25
 杰诺米	jie nuo mi	24
 马启琴	ma qi qin	23
-郭霭明	guo ai ming	25
 阿柏星	a bai xing	23
 博伽茹	bo jia ru	25
 赵木成	zhao mu cheng	23
@@ -1097,7 +1082,6 @@ sort: by_weight
 源赖朝	yuan lai chao	34
 曾子	zeng zi	8
 站酷	zhan ku	51
-中为	zhong wei	9
 金专	jin zhuan	51
 北师	bei shi	39
 融创	rong chuang	43
@@ -1191,7 +1175,6 @@ sort: by_weight
 时臣	shi chen	33
 基顿	ji dun	30
 宁次	ning ci	35
-褚嬴	chu ying	43
 老虚	lao xu	41
 良秀	liang xiu	34
 肖老	xiao lao	48
@@ -1253,3 +1236,4 @@ sort: by_weight
 泡利	pao li	23
 老霉	lao mei	23
 蒋桃	jiang tao	22
+包小柏	bao xiao bo	25

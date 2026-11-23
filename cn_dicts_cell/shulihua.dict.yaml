@@ -475,7 +475,6 @@ use_preset_vocabulary: false
 光学传递函数	guang xue chuan di han shu	5
 弧矢光线	hu shi guang xian	1
 弧矢面	hu shi mian	0
-彗差	hui cha	73
 几何能量分布	ji he neng liang fen bu	0
 基轴坐标	ji zhou zuo biao	0
 渐晕	jian yun	5
@@ -12821,7 +12820,7 @@ use_preset_vocabulary: false
 程序文档	cheng xu wen dang	5
 承载单形	cheng zai dan xing	0
 赤道半径	chi dao ban jing	19
-赤道座标	chi dao zuo biao	0
+赤道坐标	chi dao zuo biao	0
 尺度参数	chi du can shu	7
 尺规作图法	chi gui zuo tu fa	1
 持久时间	chi jiu shi jian	0
@@ -13601,7 +13600,6 @@ use_preset_vocabulary: false
 笛卡儿卵形线	di ka er luan xing xian	0
 笛卡尔图	di ka er tu	0
 笛卡儿正负号规则	di ka er zheng fu hao gui ze	0
-笛卡尔座标	di ka er zuo biao	0
 笛卡儿坐标系	di ka er zuo biao xi	1
 底空间	di kong jian	2
 狄拉克测度	di la ke ce du	0
@@ -14020,7 +14018,7 @@ use_preset_vocabulary: false
 对数凸性	dui shu tu xing	0
 对数位势	dui shu wei shi	0
 对数正态分布	dui shu zheng tai fen bu	34
-对数座标	dui shu zuo biao	0
+对数坐标	dui shu zuo biao	0
 对象变数	dui xiang bian shu	0
 对象语言	dui xiang yu yan	0
 对映点	dui ying dian	0
@@ -17841,7 +17839,6 @@ use_preset_vocabulary: false
 联合置信区域	lian he zhi xin qu yu	0
 链级码	lian ji ma	0
 连加号	lian jia hao	0
-连结	lian jie	569
 连接超几何函数	lian jie chao ji he han shu	0
 连接道路	lian jie dao lu	0
 连接群	lian jie qun	0
@@ -27758,7 +27755,7 @@ use_preset_vocabulary: false
 钴试剂	gu shi ji	0
 钴丝	gu si	0
 固体甲醛	gu ti jia quan	0
-固体石腊	gu ti shi la	0
+固体石蜡	gu ti shi la	0
 古希腊哲学	gu xi la zhe xue	88
 固相聚合	gu xiang ju he	0
 固相酶载体	gu xiang mei zai ti	0
@@ -28871,7 +28868,6 @@ use_preset_vocabulary: false
 结构简式	jie gou jian shi	27
 结构水	jie gou shui	0
 结构因子	jie gou yin zi	1
-结晶紫重号	jie jing zi chong hao	0
 解聚酶	jie ju mei	0
 解离能	jie li neng	2
 界面超额	jie mian chao e	0
@@ -29717,7 +29713,6 @@ use_preset_vocabulary: false
 硫氧化物	liu yang hua wu	21
 硫叶立德	liu ye li de	1
 龙胆二糖	long dan er tang	0
-龙胆紫重号	long dan zi chong hao	0
 龙头瓶	long tou ping	0
 笼状重排	long zhuang chong pai	0
 鲁必酰胺	lu bi xian an	0
@@ -31576,7 +31571,7 @@ use_preset_vocabulary: false
 石酒精	shi jiu jing	0
 十九酮	shi jiu tong	0
 蚀刻盐	shi ke yan	0
-石腊度	shi la du	0
+石蜡度	shi la du	0
 十六十八叔胺	shi liu shi ba shu an	0
 十六十八酸	shi liu shi ba suan	0
 十六酸	shi liu suan	0
@@ -32219,7 +32214,7 @@ use_preset_vocabulary: false
 通用指示剂	tong yong zhi shi ji	0
 桐油生熟	tong you sheng shu	0
 铜助焊剂	tong zhu han ji	0
-头胞利定	tou bao li ding	0
+头孢利定	tou bao li ding	0
 透明消失	tou ming xiao shi	1
 透平机	tou ping ji	1
 头尾聚合物	tou wei ju he wu	0
@@ -32247,7 +32242,6 @@ use_preset_vocabulary: false
 托伦斯试剂	tuo lun si shi ji	0
 脱氯塔	tuo lv ta	0
 脱墨剂	tuo mo ji	0
-脱模剂	tuo mo ji	1
 托品醇	tuo pin chun	0
 拓扑矩阵	tuo pu ju zhen	0
 托普勒泵	tuo pu le beng	0
@@ -34753,7 +34747,6 @@ use_preset_vocabulary: false
 氯苯橡胶	lv ben xiang jiao	0
 绿矾油	lv fan you	1
 氯化聚乙烯	lv hua ju yi xi	0
-氯化石腊	lv hua shi la	0
 氯化亚锰	lv hua ya meng	0
 氯化亚钖	lv hua ya yang	0
 铝酸钾	lv suan jia	0
@@ -35099,7 +35092,7 @@ use_preset_vocabulary: false
 磁老化	ci lao hua	0
 磁路的有效尺寸	ci lu de you xiao chi cun	0
 磁能积曲线	ci neng ji qu xian	0
-磁粘滞性	ci nian zhi xing	0
+磁黏滞性	ci nian zhi xing	0
 磁偶极子	ci ou ji zi	23
 磁屏蔽因数	ci ping bi yin shu	0
 磁谱	ci pu	0
@@ -35287,7 +35280,6 @@ use_preset_vocabulary: false
 二氧四氢蝶啶	er yang si qing die ding	0
 番木鳖碱	fan mu bie jian	17
 放线菌酮	fang xian jun tong	0
-蜂腊	feng la	1
 氟苯丙氨酸	fu ben bing an suan	0
 氟锆酸铵	fu gao suan an	0
 氟硅酸钙	fu gui suan gai	0
@@ -35334,10 +35326,8 @@ use_preset_vocabulary: false
 甲基葡糖苷	jia ji pu tang gan	0
 甲基色氨酸	jia ji se an suan	0
 甲基组氨酸	jia ji zu an suan	0
-甲壳素	jia ke su	7
 姜黄试纸	jiang huang shi zhi	0
 降凝剂	jiang ning ji	0
-结晶紫重号	jie jing zi zhong hao	0
 金棒	jin bang	9
 鲸蜡	jing la	8
 精脒	jing mi	1
@@ -35377,7 +35367,6 @@ use_preset_vocabulary: false
 硫酸钇	liu suan yi	0
 硫酸铕	liu suan you	0
 硫茚	liu yin	0
-龙胆紫重号	long dan zi zhong hao	0
 芦荟素	lu hui su	0
 螺甾内酯	luo zai nei zhi	0
 滤板	lv ban	2

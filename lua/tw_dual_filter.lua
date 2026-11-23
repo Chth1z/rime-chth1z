@@ -7,7 +7,8 @@
 --   * Single-character Hanzi candidates:
 --       Expands all 1-to-many Traditional variants via convert_word() (e.g. 发 -> 發/髮,
 --       面 -> 面/麵, 钟 -> 鐘/鍾, 只 -> 只/隻) with deduplication.
---   * Non-Hanzi candidates (ASCII, pure Emoji, symbols): passthrough untouched.
+--   * Non-Hanzi and simplifier-synthesized candidates (ASCII, Emoji, symbols, radicals,
+--       diezi, Japanese names, EN-CN glosses): passthrough untouched.
 -- When traditionalization is disabled: passthrough untouched (Simplified Chinese).
 
 local M = {}
@@ -80,7 +81,7 @@ function M.init(env)
             tags[#tags + 1] = tag_list:get_value_at(i).value
         end
     else
-        tags = { "abc", "number", "gregorian_to_lunar" }
+        tags = { "abc" }
     end
     env.tags = tags
 end
@@ -117,6 +118,9 @@ function M.func(input, env)
     end
 
     for cand in input:iter() do
+        if cand.type == "simplified" then
+            yield(cand)
+        else
         local src = cand.text
         local has_hz, is_single = analyze_text(src)
         if not has_hz then
@@ -161,6 +165,7 @@ function M.func(input, env)
                     yield(cand:to_shadow_candidate(cand.type, tw, cand.comment))
                 end
             end
+        end
         end
     end
 end

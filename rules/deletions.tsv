@@ -2250,3 +2250,518 @@ cn_dicts_cell/medication.dict.yaml	淡豆鼓	dan dou gu	W5错别字，正词淡�
 cn_dicts_cell/medication.dict.yaml	秦纠	qin jiu	W5错别字，正词秦艽
 cn_dicts_cell/medication.dict.yaml	矽肺硅肺	xi fei gui fei	W5同义拼接垃圾词条
 cn_dicts_cell/medication.dict.yaml	血液灌流器活性碳	xue ye guan liu qi huo xing tan	W3活性炭统一用炭
+cn_dicts/ext.dict.yaml	还贷款了	hai dai kuan le	误读冗余(同文件已有huan dai kuan le)
+cn_dicts/base.dict.yaml	轧空	ya kong	误读迁至corrections.tsv(规范gá kōng)
+cn_dicts/base.dict.yaml	摊薄	tan bao	误读迁至corrections.tsv(规范tān bó；同步移除weights.tsv:418)
+cn_dicts/base.dict.yaml	银行帐	*	W3清理财会“帐”异形词(同文件已有银行账)
+cn_dicts/ext.dict.yaml	不认帐	*	W3清理财会“帐”异形词(base已有不认账)
+cn_dicts/ext.dict.yaml	这笔帐	*	W3清理财会“帐”异形词(base已有这笔账)
+cn_dicts/ext.dict.yaml	分类帐	*	W3清理财会“帐”异形词(base已有分类账)
+cn_dicts/ext.dict.yaml	帐面价值	*	W3清理财会“帐”异形词(base已有账面价值)
+cn_dicts/ext.dict.yaml	糊涂帐	*	W3清理财会“帐”异形词(base已有糊涂账)
+cn_dicts_cell/composite.dict.yaml	一笔帐	*	W3清理财会“帐”异形词(base已有一笔账)
+cn_dicts_cell/composite.dict.yaml	不买帐	*	W3清理财会“帐”异形词(base已有不买账)
+cn_dicts_cell/composite.dict.yaml	到帐时间	*	W3清理财会“帐”异形词(同文件已有到账时间)
+cn_dicts_cell/composite.dict.yaml	即时到帐	*	W3清理财会“帐”异形词(同文件已有即时到账)
+cn_dicts_cell/composite.dict.yaml	实时到帐	*	W3清理财会“帐”异形词(同文件已有实时到账)
+cn_dicts_cell/composite.dict.yaml	应付帐款	*	W3清理财会“帐”异形词(base已有应付账款)
+cn_dicts_cell/composite.dict.yaml	往来帐	*	W3清理财会“帐”异形词(base已有往来账)
+cn_dicts_cell/composite.dict.yaml	手工帐	*	W3清理财会“帐”异形词(同文件已有手工账)
+cn_dicts_cell/composite.dict.yaml	经济帐	*	W3清理财会“帐”异形词(base已有经济账)
+cn_dicts_cell/composite.dict.yaml	预收帐款	*	W3清理财会“帐”异形词(同文件已有预收账款)
+cn_dicts_cell/game.dict.yaml	帐簿	*	W3清理财会“帐”异形词(base已有账簿)
+cn_dicts/ext.dict.yaml	不安份	*	W3清理“份”异形词(base已有不安分)
+cn_dicts/ext.dict.yaml	电话薄	*	W5清理“簿→薄”错字(base已有电话簿)
+cn_dicts/ext.dict.yaml	登记薄	*	W5清理“簿→薄”错字(base已有登记簿)
+cn_dicts_cell/composite.dict.yaml	户口薄	*	W5清理“簿→薄”错字(base已有户口簿)
+cn_dicts_cell/composite.dict.yaml	生死薄	*	W5清理“簿→薄”错字(base已有生死簿)
+cn_dicts_cell/composite.dict.yaml	记事薄	*	W5清理“簿→薄”错字(base已有记事簿)
+cn_dicts_cell/idiom.dict.yaml	入铁主薄	*	W5清理“簿→薄”错字(同文件已有入铁主簿)
+cn_dicts_cell/composite.dict.yaml	证卷公司	*	W5清理“券→卷”错字(base已有证券公司)
+cn_dicts_cell/composite.dict.yaml	淘宝优惠卷	*	W5清理“券→卷”错字(同文件已有淘宝优惠券)
+cn_dicts/ext.dict.yaml	首席检查官	*	W5清理“检→察”错字(composite已有首席检察官)
+cn_dicts/ext.dict.yaml	毛胚房	*	W5清理“坯→胚”错字(base已有毛坯房)
+cn_dicts/ext.dict.yaml	强差人意	*	W5清理倒序误读错词(base已有差强人意)
+cn_dicts_cell/composite.dict.yaml	督察院	*	W5清理“都→督”历史机构错字(base已有都察院)
+cn_dicts_cell/composite.dict.yaml	不可抗拒力	*	W5清理法定术语误写(民法典规范为不可抗力)
+cn_dicts_cell/composite.dict.yaml	中央环保督查	*	W5清理规范机构名错字(法定为中央环保督察)
+cn_dicts_cell/composite.dict.yaml	巡视巡查	*	W5清理党内法规术语错字(法定为巡视巡察)
+cn_dicts_cell/composite.dict.yaml	道德与法制	*	W5清理教育部课程名错字(法定为道德与法治)
+cn_dicts/base.dict.yaml	民主权力	*	W5清理法定术语误用(宪法/刑法规范为民主权利)
+cn_dicts/base.dict.yaml	权利游戏	*	W5清理剧名错字(应为权力游戏/权力的游戏)
+cn_dicts_cell/composite.dict.yaml	最高权利	*	W5清理“权→利”误用(base已有最高权力)
+cn_dicts_cell/composite.dict.yaml	权力和义务	*	W5清理法定搭配错字(应为权利和义务)
+cn_dicts_cell/composite.dict.yaml	至高无上的权利	*	W5清理搭配错字(同文件已有至高无上的权力)
+cn_dicts_cell/composite.dict.yaml	侦查兵	*	W1衍生词误配(军事侦察应作侦察兵)
+cn_dicts_cell/composite.dict.yaml	侦查卫星	*	W1衍生词误配(军事侦察应作侦察卫星)
+cn_dicts_cell/composite.dict.yaml	侦查机	*	W1衍生词误配(军事侦察应作侦察机)
+cn_dicts_cell/composite.dict.yaml	侦查敌情	*	W1衍生词误配(军事侦察应作侦察敌情)
+cn_dicts_cell/composite.dict.yaml	侦查部队	*	W1衍生词误配(军事侦察应作侦察部队)
+cn_dicts_cell/composite.dict.yaml	空中侦查	*	W1衍生词误配(军事侦察应作空中侦察)
+cn_dicts_cell/literature.dict.yaml	清乐平	*	词牌名清平乐倒序错词
+cn_dicts_cell/idiom.dict.yaml	小题大作	*	W3第一批异形词整理表淘汰词形（正形：小题大做）
+cn_dicts/base.dict.yaml	如雷灌耳	*	W5 E2错别字成语（正形：如雷贯耳）
+cn_dicts/base.dict.yaml	张惶失措	*	W5 E2错别字成语（正形：张皇失措）
+cn_dicts/base.dict.yaml	合盘托出	*	W5 E2错别字成语（正形：和盘托出）
+cn_dicts/base.dict.yaml	明火执杖	*	W5 E2错别字成语（正形：明火执仗）
+cn_dicts/base.dict.yaml	视如敝履	*	W5 E2错别字成语（正形：视如敝屣）
+cn_dicts/ext.dict.yaml	一片狼籍	*	W5 E2错别字（正形：一片狼藉）
+cn_dicts/ext.dict.yaml	哀声叹气	*	W5 E2错别字成语（正形：唉声叹气）
+cn_dicts/ext.dict.yaml	成群结对	*	W5 E2错别字成语（正形：成群结队）
+cn_dicts/ext.dict.yaml	浅尝则止	*	W5 E2错别字成语（正形：浅尝辄止）
+cn_dicts/ext.dict.yaml	画龙点晴	*	W5 E2错别字成语（正形：画龙点睛）
+cn_dicts/ext.dict.yaml	留芳百世	*	W5 E2错别字成语（正形：流芳百世）
+cn_dicts/ext.dict.yaml	白壁微瑕	*	W5 E2错别字成语（正形：白璧微瑕）
+cn_dicts/ext.dict.yaml	白壁无瑕	*	W5 E2错别字成语（正形：白璧无瑕）
+cn_dicts/ext.dict.yaml	豆寇年华	*	W5 E2错别字成语（正形：豆蔻年华）
+cn_dicts/ext.dict.yaml	利欲薰心	*	W3异体字薰->熏（正形：利欲熏心）
+cn_dicts/ext.dict.yaml	必恭必敬	*	W3第一批异形词整理表淘汰词形（正形：毕恭毕敬）
+cn_dicts/ext.dict.yaml	倍受欢迎	*	W5 E2错别字（正形：备受欢迎）
+cn_dicts/ext.dict.yaml	倍受青睐	*	W5 E2错别字（正形：备受青睐）
+cn_dicts_cell/composite.dict.yaml	膛目结舌	*	W5 E2错别字成语（正形：瞠目结舌）
+cn_dicts_cell/composite.dict.yaml	两全齐美	*	W5 E2错别字成语（正形：两全其美）
+cn_dicts_cell/composite.dict.yaml	义气用事	*	W5 E2错别字成语（正形：意气用事）
+cn_dicts_cell/composite.dict.yaml	如出一撤	*	W5 E2错别字成语（正形：如出一辙）
+cn_dicts_cell/composite.dict.yaml	暂露头角	*	W5 E2错别字成语（正形：崭露头角）
+cn_dicts_cell/composite.dict.yaml	步入后尘	*	W5 E2错别字成语（正形：步人后尘）
+cn_dicts_cell/composite.dict.yaml	淡薄名利	*	W5 E2错别字成语（正形：淡泊名利）
+cn_dicts_cell/composite.dict.yaml	温文而雅	*	W5 E2错别字成语（正形：温文尔雅）
+cn_dicts_cell/composite.dict.yaml	百折不饶	*	W5 E2错别字成语（正形：百折不挠）
+cn_dicts_cell/composite.dict.yaml	百无聊奈	*	W5 E2错别字成语（正形：百无聊赖）
+cn_dicts_cell/composite.dict.yaml	笔耕不缀	*	W5 E2错别字成语（正形：笔耕不辍）
+cn_dicts_cell/composite.dict.yaml	非份之想	*	W3/W5错别字成语（正形：非分之想）
+cn_dicts/base.dict.yaml	喋血	die xie	现汉第7版书面语仅读 dié xuè（base已有die xue）
+cn_dicts/base.dict.yaml	呕血	ou xie	现汉第7版书面语仅读 ǒu xuè（base已有ou xue）
+cn_dicts/base.dict.yaml	泣血	qi xie	现汉第7版书面语仅读 qì xuè（base已有qi xue）
+cn_dicts/base.dict.yaml	歃血	sha xie	现汉第7版书面语仅读 shà xuè（base已有sha xue）
+cn_dicts/base.dict.yaml	饮血	yin xie	现汉第7版书面语仅读 yǐn xuè（base已有yin xue）
+cn_dicts/base.dict.yaml	浴血	yu xie	现汉第7版书面语仅读 yù xuè（base已有yu xue）
+cn_dicts/base.dict.yaml	熟读	shou du	现汉第7版仅读 shú dú（与熟知/熟练等清理口径一致）
+cn_dicts/base.dict.yaml	别传	bie chuan	现汉第7版传记义仅读 bié zhuàn（base已有bie zhuan）
+cn_dicts_cell/medication.dict.yaml	白暨豚	*	W5已确证错字(正形白𬶨豚/白鳍豚已共存)
+cn_dicts_cell/composite.dict.yaml	味增汤	*	W5错形(正形味噌汤已入A类双音)
+cn_dicts_cell/composite.dict.yaml	哨子面	*	W5错形(正形臊子面已在base，错误输入改走corrections)
+cn_dicts_cell/composite.dict.yaml	粑粑柑	*	W5错形(正形耙耙柑已在base，错误输入改走corrections)
+cn_dicts_cell/composite.dict.yaml	烘培店	*	W5错形(composite已有烘焙店91)
+cn_dicts_cell/composite.dict.yaml	烘培工具	*	W5错形(composite已有烘焙工具31)
+cn_dicts/ext.dict.yaml	牛扎糖	*	W5错形(正形牛轧糖已在base，错音改走corrections)
+cn_dicts/base.dict.yaml	鸡汤氽海蚌	*	W5错形(food已有正形鸡汤汆海蚌3)
+cn_dicts/base.dict.yaml	氽丸子	*	W5错形(composite已有正形汆丸子19)
+cn_dicts_cell/food.dict.yaml	甘青宁新藏五省区	*	非美食噪声词
+cn_dicts_cell/food.dict.yaml	盛百威包装	*	非美食企业/包装噪声词
+cn_dicts_cell/food.dict.yaml	激冰冰激凌	*	语料倒装噪声词
+cn_dicts_cell/food.dict.yaml	塞上香哪	*	截断噪声词
+cn_dicts/ext.dict.yaml	鞠婧炜	*	W5名人错字（正形为鞠婧祎）
+cn_dicts/ext.dict.yaml	斯洛克	*	W5体育错字（正形为斯诺克）
+cn_dicts_cell/composite.dict.yaml	旋涡鸣人	*	W5动漫角色错字（base已有规范形漩涡鸣人）
+cn_dicts_cell/name2.dict.yaml	朴路美	*	W5声优错字且错音（ext已有规范形朴璐美 piao lu mei）
+cn_dicts_cell/game.dict.yaml	粘土	*	W3淘汰异形词且w=438反超base规范正词黏土(205)（保留MC复合词粘液块/粘性活塞/粘液球/粘土块等）
+cn_dicts_cell/game.dict.yaml	哪咤	*	W5错字且错音（base已有哪吒 ne zha）
+cn_dicts_cell/game.dict.yaml	哪咤闹海	*	W5错字且错音（base已有哪吒闹海 ne zha nao hai）
+cn_dicts_cell/game.dict.yaml	盗拓	*	W5专名错字（literature已有盗跖 dao zhi）
+cn_dicts_cell/game.dict.yaml	魔蝎星座	*	W5星座错字（正形为摩羯座/摩羯星座）
+cn_dicts_cell/game.dict.yaml	摩蝎	*	W5星座错字（正形为摩羯）
+cn_dicts_cell/game.dict.yaml	登陆器	*	W1登录/登陆错配（base已有登录器:46）
+cn_dicts_cell/game.dict.yaml	连续登陆	*	W1登录/登陆错配（composite已有连续登录:15）
+cn_dicts_cell/game.dict.yaml	了望塔	*	W3淘汰异形词且错音le（base已有瞭望塔 liao wang ta:70）
+cn_dicts_cell/game.dict.yaml	列酒传	*	抓取截断错字（邻行烈酒传送器截断）
+cn_dicts_cell/game.dict.yaml	吧外交官	*	贴吧抓取截断垃圾词
+cn_dicts_cell/game.dict.yaml	野山参骗徒的颤栗	*	抓取粘连拼接垃圾词（野山参+骗徒的颤栗）
+cn_dicts_cell/game.dict.yaml	鋈大酋长换血	*	贴吧错字垃圾词
+cn_dicts_cell/game.dict.yaml	长功击力	*	抓取截断且错字（功击力）
+cn_dicts_cell/history.dict.yaml	陈寅格	*	W5学者专名错字（base已有陈寅恪；顺带检出）
+cn_dicts/base.dict.yaml	露风	lu feng	现汉第7版露风读lòu fēng(同文件已有lou feng)
+cn_dicts/others.dict.yaml	软弹	ruan dan	错音重复(同文件已有软弹 ruan tan)
+cn_dicts_cell/composite.dict.yaml	亦或者是	*	W5 E2错别字(正形:抑或是)
+cn_dicts_cell/composite.dict.yaml	亦或许	*	W5 E2错别字(正形:抑或许)
+cn_dicts_cell/composite.dict.yaml	奥巴梅杨	*	W5球员名错字(sport已有奥巴梅扬)
+cn_dicts_cell/composite.dict.yaml	打回原型	*	W5 E2错别字(正形:打回原形)
+cn_dicts_cell/composite.dict.yaml	招聘启示	*	W5 E2错别字(正形:招聘启事)
+cn_dicts/ext.dict.yaml	寻人启示	*	W5 E2错别字(正形:寻人启事)
+cn_dicts_cell/composite.dict.yaml	吉尼斯记录	*	W1体育纪录误用(正形:吉尼斯纪录)
+cn_dicts_cell/composite.dict.yaml	吉尼斯世界记录	*	W1体育纪录误用(正形:吉尼斯世界纪录)
+cn_dicts_cell/composite.dict.yaml	世界吉尼斯记录	*	W1体育纪录误用(正形:世界吉尼斯纪录)
+cn_dicts/base.dict.yaml	自动登陆	*	W1登录/登陆误用(正形:自动登录)
+cn_dicts/ext.dict.yaml	图穷匕现	*	W5 E2错别字(正形:图穷匕见)
+cn_dicts_cell/composite.dict.yaml	色彩斑澜	*	W5 E2错别字(正形:色彩斑斓)
+cn_dicts/ext.dict.yaml	怨天忧人	*	W5 E2错别字(正形:怨天尤人)
+cn_dicts/base.dict.yaml	明查暗访	*	W5 E2错别字(正形:明察暗访)
+cn_dicts_cell/composite.dict.yaml	烦燥不安	*	W5 E2错别字(正形:烦躁不安)
+cn_dicts_cell/composite.dict.yaml	牛皮鲜	*	W5 E2错别字(正形:牛皮癣)
+cn_dicts/base.dict.yaml	粘着性	*	W3黏着性(同文件已有黏着性)
+cn_dicts/base.dict.yaml	粘着力	*	W3黏着力(同文件已有黏着力)
+cn_dicts/base.dict.yaml	粘着剂	*	W3黏着剂(同文件已有黏着剂)
+cn_dicts/base.dict.yaml	转贴	*	W3帖子规范用帖(base已有转帖)
+cn_dicts/base.dict.yaml	新贴	*	W3帖子规范用帖(base已有新帖)
+cn_dicts_cell/composite.dict.yaml	福利贴	*	W3帖子规范用帖(composite已有福利帖)
+cn_dicts/base.dict.yaml	红通通	*	W3淘汰异形词(base已有红彤彤)
+cn_dicts_cell/composite.dict.yaml	语言精炼	*	W3淘汰异形词(已有语言精练)
+cn_dicts_cell/composite.dict.yaml	老实交待	*	W3淘汰异形词(已有老实交代)
+cn_dicts/ext.dict.yaml	磨拳擦掌	*	W3淘汰异形词(base已有摩拳擦掌)
+cn_dicts_cell/composite.dict.yaml	主动交待	*	W3淘汰异形词(已有主动交代)
+cn_dicts_cell/composite.dict.yaml	交待后事	*	W3淘汰异形词(已有交代后事)
+cn_dicts_cell/composite.dict.yaml	宝贝计画	*	W3淘汰异形词(已有宝贝计划)
+cn_dicts/ext.dict.yaml	倒楣鬼	*	W3淘汰异形词(已有倒霉鬼)
+cn_dicts/8105.dict.yaml	卻	que	非8105繁体异体字(标准字却已在8105，同步删weights.tsv:13)
+cn_dicts/others.dict.yaml	带元	*	知乎自动抽词分词残片
+cn_dicts/others.dict.yaml	蒙板	*	W5错字(base已有蒙版)
+cn_dicts/others.dict.yaml	异尖	*	分词残片(改补完整术语异尖线虫)
+cn_dicts/others.dict.yaml	昂撒	*	W5错字(base已有盎撒)
+cn_dicts/others.dict.yaml	边形	*	分词尾缀残片
+cn_dicts/others.dict.yaml	档杆	*	W5错字(base已有挡杆)
+cn_dicts/others.dict.yaml	磕药	*	W5错字(base已有嗑药)
+cn_dicts/others.dict.yaml	渗人	*	W5错字(base已有瘆人)
+cn_dicts/others.dict.yaml	首冲	*	W5错字(base已有首充)
+cn_dicts/others.dict.yaml	蒜苔	*	W3异形错字(base已有蒜薹)
+cn_dicts/others.dict.yaml	知致	*	分词残片/倒序错词
+cn_dicts/others.dict.yaml	鱼获	*	W5错字(base已有渔获)
+cn_dicts/others.dict.yaml	蚌住	bang zhu	错音重复(同文件已有蚌住 beng zhu)
+cn_dicts_cell/animal.dict.yaml	凯利兰㹴	*	W5错字且非8105字(同文件已有凯利蓝梗)
+cn_dicts_cell/animal.dict.yaml	苏格兰㹴	*	非8105字重复(同文件已有苏格兰梗)
+cn_dicts_cell/animal.dict.yaml	鹿鹿	*	犬种词表尾部昵称噪声
+cn_dicts_cell/animal.dict.yaml	狮狮	*	犬种词表尾部昵称噪声
+cn_dicts_cell/chess2.dict.yaml	车进	*	象棋棋谱剥离数字截断残片
+cn_dicts_cell/chess2.dict.yaml	车平	*	象棋棋谱剥离数字截断残片
+cn_dicts_cell/chess2.dict.yaml	车退	*	象棋棋谱剥离数字截断残片
+cn_dicts_cell/chess2.dict.yaml	将进	*	象棋棋谱剥离数字截断残片
+cn_dicts_cell/chess2.dict.yaml	将平	*	象棋棋谱剥离数字截断残片
+cn_dicts_cell/chess2.dict.yaml	将退	*	象棋棋谱剥离数字截断残片
+cn_dicts_cell/chess2.dict.yaml	马进	*	象棋棋谱剥离数字截断残片
+cn_dicts_cell/chess2.dict.yaml	马退	*	象棋棋谱剥离数字截断残片
+cn_dicts_cell/chess2.dict.yaml	炮进	*	象棋棋谱剥离数字截断残片
+cn_dicts_cell/chess2.dict.yaml	炮平	*	象棋棋谱剥离数字截断残片
+cn_dicts_cell/exthot.dict.yaml	颠公	*	W5错字(同文件已有癫公)
+cn_dicts_cell/exthot.dict.yaml	迷之操作	*	W5错字且反超正形(composite已有谜之操作)
+cn_dicts_cell/exthot.dict.yaml	蒜台	*	W3非推荐词形(base已有蒜薹)
+cn_dicts_cell/exthot.dict.yaml	一份一段	*	W5错字(composite已有一分一段)
+cn_dicts_cell/exthot.dict.yaml	预定单	*	W5错字(base已有预订单)
+cn_dicts_cell/exthot.dict.yaml	原神的	*	截断的字短语残片
+cn_dicts_cell/exthot.dict.yaml	啫啫煲	ze ze bao	无ze音错音重复(ext已有zhe zhe bao)
+cn_dicts_cell/exthot.dict.yaml	座垫	*	W3淘汰异形词(base已有坐垫)
+cn_dicts_cell/geography.dict.yaml	测氡计仪	*	括号剥离拼接畸形词(测氡计/测氡仪)
+cn_dicts_cell/geography.dict.yaml	城堡和城墙	*	世界遗产标题的字截断残片
+cn_dicts_cell/geography.dict.yaml	城堡和文化	*	世界遗产标题双端截断残片
+cn_dicts_cell/geography.dict.yaml	城堡及庄园	*	世界遗产标题的字截断残片
+cn_dicts_cell/geography.dict.yaml	迪奥西亚	*	意大利地名瓦尔迪奥西亚间隔号截断残片
+cn_dicts_cell/geography.dict.yaml	地幔地柱	*	W5衍字错词(base已有地幔柱)
+cn_dicts_cell/geography.dict.yaml	地图谱用	*	OCR讹误非词
+cn_dicts_cell/geography.dict.yaml	花园和城堡	*	世界遗产标题的字截断残片
+cn_dicts_cell/geography.dict.yaml	石燧石	*	前缀重复错词(base已有燧石)
+cn_dicts_cell/geography.dict.yaml	伊索莱	*	意大利地名Isole间隔号截断残片
+cn_dicts_cell/geography.dict.yaml	伊特鲁立亚	*	W5译名错字(composite已有伊特鲁里亚)
+cn_dicts_cell/geography.dict.yaml	泽列	*	捷克地名Zelena词中截断残片
+cn_dicts_cell/industry_product.dict.yaml	镀锡板卷马口铁	*	B2B类目去分隔符拼接垃圾
+cn_dicts_cell/industry_product.dict.yaml	柑桔	*	W3淘汰异形词(base已有柑橘)
+cn_dicts_cell/industry_product.dict.yaml	折叠床行军床	*	B2B类目去分隔符拼接垃圾
+cn_dicts_cell/industry_product.dict.yaml	防护耳塞耳罩	*	B2B类目去分隔符拼接垃圾
+cn_dicts_cell/industry_product.dict.yaml	防护面罩面具	*	B2B类目去分隔符拼接垃圾
+cn_dicts_cell/industry_product.dict.yaml	防护眼镜眼罩	*	B2B类目去分隔符拼接垃圾
+cn_dicts_cell/industry_product.dict.yaml	酶酵素制剂	*	B2B类目去分隔符拼接垃圾
+cn_dicts_cell/industry_product.dict.yaml	电工作鞋	*	漏字错词(电工工作鞋)
+cn_dicts_cell/industry_product.dict.yaml	应墩布	*	面料段录入讹误错词
+cn_dicts_cell/industry_product.dict.yaml	纺纱设备纺机	*	B2B类目去分隔符拼接垃圾
+cn_dicts_cell/name.dict.yaml	亚德里亚	*	W5非规范译名(ext已有亚得里亚)
+cn_dicts_cell/name.dict.yaml	和田晓霞	*	连词和+田晓霞粘连残片
+cn_dicts_cell/name.dict.yaml	久木和凛子	*	小说双主角和字拼接短语
+cn_dicts_cell/name.dict.yaml	洛维夫人	*	达洛维夫人截断残片
+cn_dicts_cell/name.dict.yaml	和田伯光	*	连词和+田伯光粘连残片
+cn_dicts_cell/name.dict.yaml	多维奇	*	斯拉夫语人名尾缀截断残片
+cn_dicts_cell/name.dict.yaml	克索斯	*	古史译名尾缀截断残片
+cn_dicts_cell/name.dict.yaml	尼采蒂	*	多尼采蒂截断残片
+cn_dicts_cell/name.dict.yaml	罗维奇	*	斯拉夫语父名尾缀截断残片
+cn_dicts_cell/name.dict.yaml	兰尼加	*	昔兰尼加截断残片
+cn_dicts_cell/name.dict.yaml	吴至贞	*	W5人名错字(ext已有吴志贞)
+cn_dicts_cell/name.dict.yaml	腾哈赫	*	W5人名错字(base已有滕哈赫)
+cn_dicts_cell/name.dict.yaml	夏侯懋	*	W5历史人名错字(base已有夏侯楙)
+cn_dicts_cell/name.dict.yaml	香利奈	*	W5人名错字(base已有香里奈)
+cn_dicts_cell/name.dict.yaml	郭霭明	*	W5人名错字(ext已有郭蔼明)
+cn_dicts_cell/name.dict.yaml	中为	*	2字分词非词残片
+cn_dicts_cell/place.dict.yaml	河水库	*	XX河水库截断残片
+cn_dicts_cell/place.dict.yaml	西路南	*	XX西路南截断残片
+cn_dicts_cell/place.dict.yaml	卡尔洛维	*	卡罗维发利4字截断残片
+cn_dicts_cell/place.dict.yaml	博尔斯克	*	俄语地名尾缀截断残片
+cn_dicts_cell/food.dict.yaml	安徽菜莲蓬鱼	*	菜系分类名与菜名拼接噪声
+cn_dicts_cell/food.dict.yaml	悲翠裙边	*	OCR错字重复(同文件已有翡翠裙边)
+cn_dicts_cell/food.dict.yaml	补密制豆腐乳	*	截断前缀与错字叠加噪声
+cn_dicts_cell/food.dict.yaml	聪喝识	*	无意义OCR乱码
+cn_dicts_cell/food.dict.yaml	豆瓣卿鱼	*	OCR错字(base已有豆瓣鲫鱼)
+cn_dicts_cell/food.dict.yaml	风炖牡丹	*	W5错字(base已有凤炖牡丹)
+cn_dicts_cell/food.dict.yaml	瓜萎	*	OCR错字(base已有瓜蒌)
+cn_dicts_cell/food.dict.yaml	果仁徘骨	*	OCR错字重复(同文件已有果仁排骨)
+cn_dicts_cell/food.dict.yaml	好丝百叶	*	OCR错字重复(同文件已有发丝百叶)
+cn_dicts_cell/food.dict.yaml	蚝油芦笋砂律	*	W5错字重复(同文件已有蚝油芦笋沙律)
+cn_dicts_cell/food.dict.yaml	红花山药肉麻丸	*	OCR讹误非词
+cn_dicts_cell/food.dict.yaml	花茹田鸡	*	OCR错字重复(同文件已有花菇田鸡)
+cn_dicts_cell/food.dict.yaml	鸡茸跟耳	*	OCR错字重复(同文件已有鸡茸银耳)
+cn_dicts_cell/food.dict.yaml	记子炖丰脑	*	双字OCR错字(同文件已有杞子炖羊脑)
+cn_dicts_cell/food.dict.yaml	减肥菜谱香菇豆腐	*	网页栏目名与菜名拼接噪声
+cn_dicts_cell/food.dict.yaml	蜡椒鱼	*	W5错字重复(同文件已有辣椒鱼)
+cn_dicts_cell/food.dict.yaml	莲篷豆腐	*	W5错字重复(同文件已有莲蓬豆腐)
+cn_dicts_cell/food.dict.yaml	麦立伏参饮	*	OCR讹误非词
+cn_dicts_cell/food.dict.yaml	玫魂果炸	*	双字错字重复(同文件已有玫瑰锅炸)
+cn_dicts_cell/food.dict.yaml	蜜汁山药琢	*	OCR错字重复(同文件已有蜜汁山药球)
+cn_dicts_cell/food.dict.yaml	品品醋黄河鲤鱼	*	叠字讹误抓取噪声
+cn_dicts_cell/food.dict.yaml	蒲江蟹羹	*	W5错字重复(同文件已有浦江蟹羹)
+cn_dicts_cell/food.dict.yaml	清汤鸡把	*	截断讹误噪声
+cn_dicts_cell/food.dict.yaml	三鲜锅粑	*	W3异形重复(同文件已有三鲜锅巴)
+cn_dicts_cell/food.dict.yaml	生牛肉和粉	*	W5错字重复(同文件已有生牛肉河粉)
+cn_dicts_cell/food.dict.yaml	石斛华生米	*	W5错字重复(同文件已有石斛花生米)
+cn_dicts_cell/food.dict.yaml	氏丸子	*	首字截断残片
+cn_dicts_cell/food.dict.yaml	酸菜牛	*	尾字截断残片
+cn_dicts_cell/food.dict.yaml	铁素四色球	*	OCR错字非菜名
+cn_dicts_cell/food.dict.yaml	西湖醋	*	尾字截断残片(base已有西湖醋鱼)
+cn_dicts_cell/food.dict.yaml	盐水鸭亲	*	OCR错字非词
+cn_dicts_cell/food.dict.yaml	薏米膳继	*	OCR乱码非词
+cn_dicts_cell/food.dict.yaml	一品配方	*	OCR错字重复(同文件已有一品酥方)
+cn_dicts_cell/food.dict.yaml	义腿肾鞭	*	OCR错字非词
+cn_dicts_cell/food.dict.yaml	银牙韭菜花	*	W5错字重复(同文件已有银芽韭菜花)
+cn_dicts_cell/food.dict.yaml	油鹏自远方来	*	谐音段子非菜名
+cn_dicts_cell/food.dict.yaml	鱼香芷排	*	错字非词
+cn_dicts_cell/food.dict.yaml	原笼粉蒸	*	尾字截断残片
+cn_dicts_cell/food.dict.yaml	云猪手	*	首字截断残片(白云猪手)
+cn_dicts_cell/food.dict.yaml	浙菜黄焖鸭腰管廷	*	表格抓取粘连乱码
+cn_dicts_cell/food.dict.yaml	汁鲫鱼	*	首字截断残片
+cn_dicts_cell/food.dict.yaml	植物添银花	*	OCR乱码非词
+cn_dicts_cell/food.dict.yaml	踵鱼翅	*	首字截断残片(火踵鱼翅)
+cn_dicts_cell/food.dict.yaml	帕脖芝士	*	错字非词
+cn_dicts_cell/food.dict.yaml	皮萨草叶	*	W5错字
+cn_dicts_cell/food.dict.yaml	葡萄牙姆酒	*	漏字错词
+cn_dicts_cell/food.dict.yaml	奇火腿香肠	*	首字截断残片
+cn_dicts_cell/food.dict.yaml	鸡汤煮千丝	*	OCR错字重复(同文件已有鸡汤煮干丝)
+cn_dicts_cell/food.dict.yaml	牛腩煲水煮牛肉	*	两菜名拼接垃圾
+cn_dicts_cell/food.dict.yaml	莉雀舌毫	*	截断重复(同文件已有茉莉雀舌毫)
+cn_dicts_cell/food.dict.yaml	肉未烧饼	*	OCR错字重复(同文件已有肉末烧饼)
+cn_dicts_cell/food.dict.yaml	油焖鲜蘑蜜汁蕃茄	*	两菜名拼接垃圾
+cn_dicts_cell/food.dict.yaml	籽冬笋	*	截断重复(同文件已有虾籽冬笋)
+cn_dicts_cell/food.dict.yaml	白的虾	*	带字语篇抓取残片
+cn_dicts_cell/food.dict.yaml	龟打	*	无意义截断残片
+cn_dicts_cell/food.dict.yaml	轰动大陆界	*	非美食文章抓取残片
+cn_dicts_cell/food.dict.yaml	虎跑素火煺	*	W5错字重复(同文件已有虎跑素火腿)
+cn_dicts_cell/food.dict.yaml	花茹无黄蛋	*	OCR错字重复(同文件已有花菇无黄蛋)
+cn_dicts_cell/food.dict.yaml	黄耙	*	W5错字重复(同文件已有黄粑)
+cn_dicts_cell/food.dict.yaml	及第粥和艇仔粥	*	和字并列抓取拼接
+cn_dicts_cell/food.dict.yaml	嘉兴的炒蟹粉	*	带的字语篇抓取短语
+cn_dicts_cell/food.dict.yaml	建瓯风干的鸭子	*	带的字语篇抓取短语
+cn_dicts_cell/food.dict.yaml	镜镶豆腐	*	W5错字重复(同文件已有镜箱豆腐)
+cn_dicts_cell/food.dict.yaml	伦敦糕	*	W5错字(base已有伦教糕)
+cn_dicts_cell/food.dict.yaml	清汤越鸡外	*	语篇截断残片
+cn_dicts_cell/food.dict.yaml	蛇油牛肉	*	OCR错字(base已有蚝油牛肉)
+cn_dicts_cell/food.dict.yaml	水煮鱼等	*	尾等字语篇残片
+cn_dicts_cell/food.dict.yaml	水煮鱼为	*	句子截断残片
+cn_dicts_cell/food.dict.yaml	苏式酱肉和酱鸭	*	和字并列抓取拼接
+cn_dicts_cell/food.dict.yaml	乌柳居	*	W5错字重复(同文件已有五柳居)
+cn_dicts_cell/food.dict.yaml	五碗代表	*	语篇截断残片
+cn_dicts_cell/food.dict.yaml	叶儿耙	*	W5错字(base已有叶儿粑)
+cn_dicts_cell/food.dict.yaml	宜兴的汽锅鸡	*	带的字语篇抓取短语
+cn_dicts_cell/food.dict.yaml	愈灸鱼	*	OCR讹误非词
+cn_dicts_cell/food.dict.yaml	镇江的水晶肴蹄	*	带的字语篇抓取短语
+cn_dicts_cell/food.dict.yaml	舟山的梭子蟹	*	带的字语篇抓取短语
+cn_dicts_cell/food.dict.yaml	澳大利亚的芒果	*	带的字语篇抓取短语
+cn_dicts_cell/food.dict.yaml	保健美茶和桂圆茶	*	和字并列抓取拼接
+cn_dicts_cell/food.dict.yaml	醋粟	*	OCR错字(base已有醋栗)
+cn_dicts_cell/food.dict.yaml	洞顶乌龙	*	W5错字(base已有冻顶乌龙)
+cn_dicts_cell/food.dict.yaml	府陈年糟蛋	*	截断残片(base已有叙府陈年糟蛋)
+cn_dicts_cell/food.dict.yaml	福鼎莲芯茶白毫银针茶	*	两茶名拼接垃圾
+cn_dicts_cell/food.dict.yaml	各地糕点名	*	网页目录标题垃圾
+cn_dicts_cell/food.dict.yaml	各地糖果罐头小食品	*	网页目录标题垃圾
+cn_dicts_cell/food.dict.yaml	枸杞和发菜烤麸罐头	*	和字并列抓取拼接
+cn_dicts_cell/food.dict.yaml	广东省海南省	*	两省名目录标题垃圾
+cn_dicts_cell/food.dict.yaml	核桃糕和花生糕	*	和字并列抓取拼接
+cn_dicts_cell/food.dict.yaml	黄米面烤粩	*	非8105字粩混合讹误
+cn_dicts_cell/food.dict.yaml	钾明矾硫酸铝铵	*	GB2760两添加剂拼接垃圾
+cn_dicts_cell/food.dict.yaml	进士糕和状元饼	*	和字并列抓取拼接
+cn_dicts_cell/food.dict.yaml	菁岛啤酒	*	W5错字(base已有青岛啤酒)
+cn_dicts_cell/food.dict.yaml	葵醛	*	W5错字(base已有癸醛)
+cn_dicts_cell/food.dict.yaml	崂山矿泉水和崂山可乐	*	和字并列抓取拼接
+cn_dicts_cell/food.dict.yaml	连雾	*	W5错字(base已有莲雾)
+cn_dicts_cell/food.dict.yaml	硫代二丙酸二月桂	*	化学名截断(base已有硫代二丙酸二月桂酯)
+cn_dicts_cell/food.dict.yaml	湄江茶和美体茶	*	和字并列抓取拼接
+cn_dicts_cell/food.dict.yaml	棉花糖和桔片冻糖	*	和字并列抓取拼接
+cn_dicts_cell/food.dict.yaml	莫等肉松做面包	*	菜谱文章标题抓取垃圾
+cn_dicts_cell/food.dict.yaml	奶油球糖和荔枝硬糖	*	和字并列抓取拼接
+cn_dicts_cell/food.dict.yaml	南京云中的蓝莓芝士	*	带的字博客标题抓取
+cn_dicts_cell/food.dict.yaml	奇异果弥猴桃	*	W5错字且同义拼接
+cn_dicts_cell/food.dict.yaml	清凉的钵仔糕	*	带的字博客标题抓取
+cn_dicts_cell/food.dict.yaml	秋梨膏的做法	*	菜谱网站爬虫尾词
+cn_dicts_cell/food.dict.yaml	山嵛酸硬脂酸	*	GB2760两脂肪酸拼接垃圾
+cn_dicts_cell/food.dict.yaml	生命知已	*	W5错字且非食品词条
+cn_dicts_cell/food.dict.yaml	司盘山梨醇酐单硬脂酸酯	*	GB2760去数字括号残片
+cn_dicts_cell/food.dict.yaml	司盘山梨醇酐单棕榈酸酯	*	GB2760去数字括号残片
+cn_dicts_cell/food.dict.yaml	酥合和羊角蜜	*	和字并列抓取拼接
+cn_dicts_cell/food.dict.yaml	糖米花和糯米饼	*	和字并列抓取拼接
+cn_dicts_cell/food.dict.yaml	提浆月饼和五仁月饼	*	和字并列抓取拼接
+cn_dicts_cell/food.dict.yaml	天目青项茶	*	OCR错字重复(同文件已有天目青顶茶)
+cn_dicts_cell/food.dict.yaml	威肉月饼	*	OCR错字非月饼品类
+cn_dicts_cell/food.dict.yaml	鲜哈蜜瓜汁	*	W5错字重复(同文件已有鲜哈密瓜汁)
+cn_dicts_cell/food.dict.yaml	香酥全鸡和烤全鸭罐头	*	和字并列抓取拼接
+cn_dicts_cell/food.dict.yaml	硝酸钠硝酸钾	*	GB2760两添加剂拼接垃圾
+cn_dicts_cell/food.dict.yaml	洋芋檫檫	*	W5错字(base已有洋芋擦擦)
+cn_dicts_cell/food.dict.yaml	椰子酱和椰子糖	*	和字并列抓取拼接
+cn_dicts_cell/food.dict.yaml	樱桃车里子	*	W5错字且同义拼接
+cn_dicts_cell/food.dict.yaml	炸素鸟或菊花	*	或字目录标题抓取
+cn_dicts_cell/food.dict.yaml	紫梅软糖和大虾糖	*	和字并列抓取拼接
+cn_dicts/base.dict.yaml	看做	*	W3第一批异形词整理表淘汰词形(base已有看作)
+cn_dicts_cell/shulihua.dict.yaml	连结	*	W3第一批异形词整理表淘汰词形(base已有联结)
+cn_dicts/base.dict.yaml	自已	*	W5己/已OCR错字污染(固定成语不能自已仍保留)
+cn_dicts/base.dict.yaml	腰间盘突出	*	W5漏字俗误(ext已有规范词腰椎间盘突出，已配corrections纠错)
+cn_dicts_cell/composite.dict.yaml	恒古不变	*	W5错别字(base已有亘古不变)
+cn_dicts/ext.dict.yaml	阿斯匹灵	*	W3非规范旧译(base已有阿司匹林)
+cn_dicts/ext.dict.yaml	留恋忘返	*	W5错别字(base已有流连忘返)
+cn_dicts/ext.dict.yaml	无尚光荣	*	W5错别字(base已有无上光荣)
+cn_dicts/ext.dict.yaml	显象管	*	W3淘汰异形(base已有显像管)
+cn_dicts/ext.dict.yaml	百页窗	*	W3淘汰异形(base已有百叶窗)
+cn_dicts/base.dict.yaml	鼓惑	*	W5错别字(base已有蛊惑)
+cn_dicts/ext.dict.yaml	参考座标	*	W3坐标规范用坐
+cn_dicts/ext.dict.yaml	横座标	*	W3坐标规范用坐(base已有横坐标)
+cn_dicts/ext.dict.yaml	极座标	*	W3坐标规范用坐(base已有极坐标)
+cn_dicts/ext.dict.yaml	纵座标	*	W3坐标规范用坐(base已有纵坐标)
+cn_dicts/ext.dict.yaml	座标轴	*	W3坐标规范用坐(base已有坐标轴)
+cn_dicts_cell/shulihua.dict.yaml	结晶紫重号	*	化工试剂目录括号数字剥离残损词
+cn_dicts_cell/idiom.dict.yaml	钝爪幼猫	*	网游怪物名混入成语词库(game已有)
+cn_dicts_cell/shulihua.dict.yaml	龙胆紫重号	*	化工试剂目录括号数字剥离残损词
+cn_dicts_cell/idiom.dict.yaml	历历历历开元事	*	诗题与诗句拼接错误(literature已有历历开元事)
+cn_dicts/base.dict.yaml	血虚	xie xu	L1/L2医学复音词规范读xuè(同文件已有xue xu)
+cn_dicts/base.dict.yaml	血肿	xie zhong	L1/L2医学复音词规范读xuè(同文件已有xue zhong)
+cn_dicts/base.dict.yaml	血崩	xie beng	L1/L2医学复音词规范读xuè(同文件已有xue beng)
+cn_dicts/base.dict.yaml	血月	xie yue	L1书面复音词规范读xuè(压制协约，同文件已有xue yue)
+cn_dicts/base.dict.yaml	血痕	xie hen	L1书面复音词规范读xuè(压制泄恨，同文件已有xue hen)
+cn_dicts/base.dict.yaml	血象	xie xiang	L1/L2医学术语规范读xuè(同文件已有xue xiang)
+cn_dicts/base.dict.yaml	血尿	xie niao	L1/L2医学术语规范读xuè(同文件已有xue niao)
+cn_dicts/base.dict.yaml	血魔	xie mo	L1书面复音词规范读xuè(压制邪魔，同文件已有xue mo)
+cn_dicts/base.dict.yaml	血染	xie ran	L1书面复音词规范读xuè(同文件已有xue ran)
+cn_dicts/base.dict.yaml	血中	xie zhong	L1/L2医学书面语规范读xuè(同文件已有xue zhong)
+cn_dicts/base.dict.yaml	骨血	gu xie	L1书面复音词规范读xuè(同文件已有gu xue)
+cn_dicts/base.dict.yaml	血库	xie ku	L1/L2医学术语规范读xuè(同文件已有xue ku)
+cn_dicts/base.dict.yaml	血迹	xie ji	L1书面复音词规范读xuè(同文件已有xue ji)
+cn_dicts/base.dict.yaml	经血	jing xie	L1/L2医学术语规范读xuè(压制警械，同文件已有jing xue)
+cn_dicts/base.dict.yaml	血痂	xie jia	L1/L2医学术语规范读xuè(压制卸甲，同文件已有xue jia)
+cn_dicts/base.dict.yaml	全血	quan xie	L1/L2医学术语规范读xuè(压制全写，同文件已有quan xue)
+cn_dicts/base.dict.yaml	精血	jing xie	L1/L2中医书面词规范读xuè(压制警械，同文件已有jing xue)
+cn_dicts/base.dict.yaml	血症	xie zheng	L1/L2医学术语规范读xuè(同文件已有xue zheng)
+cn_dicts/base.dict.yaml	鸡爪	ji zhao	L1口语鸡爪规范读zhuǎ(压制几招，误读迁入corrections)
+cn_dicts/base.dict.yaml	利爪	li zhua	L1书面利爪规范读zhǎo(误读迁入corrections)
+cn_dicts/base.dict.yaml	染血	ran xie	L1书面复音词规范读xuè(同文件已有ran xue)
+cn_dicts/base.dict.yaml	血祭	xie ji	L1书面复音词规范读xuè(同文件已有xue ji)
+cn_dicts/base.dict.yaml	蓝血	lan xie	L1书面复合词规范读xuè(同文件已有lan xue)
+cn_dicts/base.dict.yaml	脓血	nong xie	L1/L2医学术语规范读xuè(压制农协，同文件已有nong xue)
+cn_dicts/base.dict.yaml	血瘀	xie yu	L1/L2中医术语规范读xuè(同文件已有xue yu)
+cn_dicts/base.dict.yaml	血雾	xie wu	L1书面复音词规范读xuè(压制邪物，同文件已有xue wu)
+cn_dicts/base.dict.yaml	如血	ru xie	L1书面诗词短语规范读xuè(同文件已有ru xue)
+cn_dicts/base.dict.yaml	这么着	zhe me zhe	L1这么着规范读zhāo(同文件已有zhe me zhao)
+cn_dicts/base.dict.yaml	血蹄	xie ti	L3书面游戏专名读xuè(同文件已有xue ti)
+cn_dicts/base.dict.yaml	血钻	xie zuan	L1/L3书面专名读xuè(同文件已有xue zuan)
+cn_dicts/base.dict.yaml	晚熟	wan shou	L1农学书面词规范读shú(同文件已有wan shu)
+cn_dicts/ext.dict.yaml	恶魔之血	e mo zhi xie	L1/L3文言之血结构读xuè(同文件已有e mo zhi xue)
+cn_dicts/base.dict.yaml	潜血	qian xie	L1/L2检验医学术语读xuè(同文件已有qian xue)
+cn_dicts/base.dict.yaml	血路	xie lu	L1书面复音词规范读xuè(同文件已有xue lu)
+cn_dicts/base.dict.yaml	剥光	bo guang	L1口语具体动作剥规范读bāo(同文件已有bao guang)
+cn_dicts/ext.dict.yaml	血泊之中	xie po zhi zhong	L1书面血泊规范读xuè(同文件已有xue po zhi zhong)
+cn_dicts/base.dict.yaml	血狮	xie shi	L1/L3书面专名读xuè(压制谢世，同文件已有xue shi)
+cn_dicts/ext.dict.yaml	怎么着吧	zen me zhe ba	L1怎么着规范读zhāo(同文件已有zen me zhao ba)
+cn_dicts/base.dict.yaml	未熟	wei shou	L1书面复音词未熟规范读shú(同文件已有wei shu)
+cn_dicts/ext.dict.yaml	得白血病	de bai xie bing	L1/L2医学白血病规范读xuè(同文件已有de bai xue bing)
+cn_dicts/base.dict.yaml	血印	xie yin	L1书面复音词规范读xuè(同文件已有xue yin)
+cn_dicts/base.dict.yaml	血盟	xie meng	L1书面复音词规范读xuè(同文件已有xue meng)
+cn_dicts/base.dict.yaml	熟料	shou liao	L1/L2建材术语熟料规范读shú(同文件已有shu liao)
+cn_dicts/base.dict.yaml	血光	xie guang	L1书面复音词规范读xuè(同文件已有xue guang)
+cn_dicts/ext.dict.yaml	倒在血泊中	dao zai xie po zhong	L1书面血泊规范读xuè(同文件已有dao zai xue po zhong)
+cn_dicts/base.dict.yaml	血便	xie bian	L1/L2临床医学术语读xuè(同文件已有xue bian)
+cn_dicts/base.dict.yaml	血衣	xie yi	L1书面复音词规范读xuè(同文件已有xue yi)
+cn_dicts/base.dict.yaml	忒儿	tui er	L1象声词忒儿规范读tēir(同文件已有tei er)
+cn_dicts/base.dict.yaml	血花	xie hua	L1书面复音词规范读xuè(同文件已有xue hua)
+cn_dicts/ext.dict.yaml	血流速度	xie liu su du	L1/L2医学术语规范读xuè(同文件已有xue liu su du)
+cn_dicts/ext.dict.yaml	急性髓系白血病	ji xing sui xi bai xie bing	L1/L2医学术语规范读xuè(同文件已有xue)
+cn_dicts/ext.dict.yaml	降低血尿酸	jiang di xie niao suan	L1/L2检验术语规范读xuè(同文件已有xue)
+cn_dicts/ext.dict.yaml	争得头破血流	zheng de tou po xie liu	L1成语头破血流规范读xuè(同文件已有xue)
+cn_dicts/base.dict.yaml	血雨	xie yu	L1书面复音词规范读xuè(同文件已有xue yu)
+cn_dicts/base.dict.yaml	固定地	gu ding di	L1副词状语助词地读de(同文件已有gu ding de)
+cn_dicts/ext.dict.yaml	肝藏血	gan cang xie	L1/L2中医术语规范读xuè(同文件已有gan cang xue)
+cn_dicts/ext.dict.yaml	血氧浓度	xie yang nong du	L1/L2医学术语规范读xuè(同文件已有xue yang nong du)
+cn_dicts/base.dict.yaml	血淤	xie yu	L1/L2中医术语规范读xuè(同文件已有xue yu)
+cn_dicts/base.dict.yaml	血球	xie qiu	L1/L2医学术语规范读xuè(同文件已有xue qiu)
+cn_dicts/base.dict.yaml	血刃	xie ren	L1书面复音词规范读xuè(同文件已有xue ren)
+cn_dicts/base.dict.yaml	赤血	chi xie	L1书面复音词规范读xuè(同文件已有chi xue)
+cn_dicts/base.dict.yaml	血人	xie ren	L1书面复音词规范读xuè(同文件已有xue ren)
+cn_dicts/base.dict.yaml	隐血	yin xie	L1/L2检验术语规范读xuè(同文件已有yin xue)
+cn_dicts/base.dict.yaml	脐血	qi xie	L1/L2医学术语规范读xuè(同文件已有qi xue)
+cn_dicts/ext.dict.yaml	落下病根	luo xia bing gen	L1落下病根规范读lào xià(同文件已有lao xia bing gen)
+cn_dicts/base.dict.yaml	血火	xie huo	L1书面复音词规范读xuè(同文件已有xue huo)
+cn_dicts_cell/medication.dict.yaml	苔薄白	tai bo bai	L1/L2舌苔厚薄单用规范读báo(同文件已有tai bao bai)
+cn_dicts/base.dict.yaml	血分	xie fen	L1/L2中医温病术语规范读xuè(同文件已有xue fen)
+cn_dicts/ext.dict.yaml	血氧饱和度下降	xie yang bao he du xia jiang	L1/L2医学术语规范读xuè(同文件已有xue)
+cn_dicts/ext.dict.yaml	以血还血	yi xie huan xie	L1成语规范读xuè(同文件已有yi xue huan xue)
+cn_dicts/ext.dict.yaml	血运重建	xie yun chong jian	L1/L2医学术语规范读xuè(同文件已有xue yun chong jian)
+cn_dicts/base.dict.yaml	血氨	xie an	L1/L2生化医学术语规范读xuè(同文件已有xue an)
+cn_dicts/base.dict.yaml	血铅	xie qian	L1/L2毒理医学术语规范读xuè(同文件已有xue qian)
+cn_dicts/ext.dict.yaml	肝主藏血	gan zhu cang xie	L1/L2中医术语规范读xuè(同文件已有gan zhu cang xue)
+cn_dicts/base.dict.yaml	啼血	ti xie	L1书面复音词规范读xuè(同文件已有ti xue)
+cn_dicts/ext.dict.yaml	张着血盆大口	zhang zhe xie pen da kou	L1成语血盆大口规范读xuè(同文件已有xue)
+cn_dicts_cell/game.dict.yaml	若陀龙王	ruo tuo long wang	L3《原神》官配rě tuó(base已有re tuo long wang)
+cn_dicts/base.dict.yaml	血龙	xie long	L1书面专名规范读xuè(同文件已有xue long)
+cn_dicts/ext.dict.yaml	厚薄度	hou bo du	L1物理厚度规范读hòu báo(同文件已有hou bao du)
+cn_dicts/base.dict.yaml	核儿	he er	L1儿化果核儿规范读húr(同文件已有hu er)
+cn_dicts/base.dict.yaml	沥血	li xie	L1书面复音词规范读xuè(同文件已有li xue)
+cn_dicts/base.dict.yaml	血玉	xie yu	L1书面复音词规范读xuè(同文件已有xue yu)
+cn_dicts/base.dict.yaml	血环	xie huan	L1书面专名规范读xuè(同文件已有xue huan)
+cn_dicts/base.dict.yaml	功血	gong xie	L1/L2妇科医学简称规范读xuè(同文件已有gong xue)
+cn_dicts/base.dict.yaml	血证	xie zheng	L1/L2中医术语规范读xuè(同文件已有xue zheng)
+cn_dicts/ext.dict.yaml	降低血胆固醇	jiang di xie dan gu chun	L1/L2医学术语规范读xuè(同文件已有xue)
+cn_dicts/base.dict.yaml	汗血	han xie	L1历史书面词规范读xuè(同文件已有han xue)
+cn_dicts/ext.dict.yaml	血氧饱和度监测	xie yang bao he du jian ce	L1/L2医学术语规范读xuè(同文件已有xue)
+cn_dicts/base.dict.yaml	血痹	xie bi	L1/L2中医病证规范读xuè(同文件已有xue bi)
+cn_dicts/ext.dict.yaml	血行不畅	xie xing bu chang	L1/L2中医书面短语规范读xuè(同文件已有xue)
+cn_dicts/base.dict.yaml	血窦	xie dou	L1/L2解剖医学术语规范读xuè(同文件已有xue dou)
+cn_dicts/base.dict.yaml	血防	xie fang	L1公卫医学简称规范读xuè(同文件已有xue fang)
+cn_dicts_cell/idiom.dict.yaml	趯趯阜螽	yue yue fu zhong	L1诗经趯趯规范读tì tì(literature已有ti ti fu zhong)
+cn_dicts/ext.dict.yaml	堕落之血事件	duo luo zhi xie shi jian	L1/L3文言之血结构规范读xuè(同文件已有xue)
+cn_dicts/ext.dict.yaml	浴血重生	yu xie chong sheng	L1书面浴血规范读xuè(同文件已有yu xue chong sheng)
+cn_dicts/base.dict.yaml	膏血	gao xie	L1书面复音词规范读xuè(同文件已有gao xue)
+cn_dicts/base.dict.yaml	薄袜	bo wa	L1轻薄衣物规范读báo(同文件已有bao wa)
+cn_dicts/base.dict.yaml	血剑	xie jian	L1书面复音词规范读xuè(同文件已有xue jian)
+cn_dicts/base.dict.yaml	血影	xie ying	L1书面复音词规范读xuè(同文件已有xue ying)
+cn_dicts/base.dict.yaml	血疗	xie liao	L1/L2医学简称规范读xuè(同文件已有xue liao)
+cn_dicts/base.dict.yaml	较熟	jiao shou	L1书面复音词规范读shú(碰撞教授，同文件已有jiao shu)
+cn_dicts/base.dict.yaml	乳熟	ru shou	L1/L2农学术语规范读shú(同文件已有ru shu)
+cn_dicts/ext.dict.yaml	遍地哀鸿满城血	bian di ai hong man cheng xie	L1古诗书面语规范读xuè(同文件已有xue)
+cn_dicts_cell/idiom.dict.yaml	与众乐乐	yu zhong le le	L1孟子与众乐乐规范读yuè lè(literature已有yu zhong yue le)
+cn_dicts_cell/composite.dict.yaml	伏尸流血	fu shi liu xie	L1古成语规范读xuè(idiom已有fu shi liu xue)
+cn_dicts/ext.dict.yaml	冰血长津湖	bing xie chang jin hu	L3纪录片专名规范读xuè(同文件已有xue)
+cn_dicts_cell/idiom.dict.yaml	埏埴以为器	yan zhi yi wei qi	L1老子和泥制陶埏规范读shān(literature已有shan)
+cn_dicts_cell/idiom.dict.yaml	是刈是濩	shi yi shi hu	L1诗经濩煮义规范读huò(literature已有huo)
+cn_dicts/base.dict.yaml	瑕瑜互见	xia yu hu jian	L1成语见通现规范读xiàn(idiom已有xia yu hu xian)
+cn_dicts/base.dict.yaml	秋熟	qiu shou	L1农学术语规范读shú(碰撞秋收，同文件已有qiu shu)
+cn_dicts/ext.dict.yaml	血氧饱和度检测	xie yang bao he du jian ce	L1/L2医学术语规范读xuè(同文件已有xue)
+cn_dicts/ext.dict.yaml	血钙浓度	xie gai nong du	L1/L2医学术语规范读xuè(同文件已有xue)
+cn_dicts_cell/idiom.dict.yaml	乐国乐国	le guo yue guo	L1诗经乐国叠语读lè(literature已有le guo le guo)
+cn_dicts/base.dict.yaml	夏熟	xia shou	L1农学术语规范读shú(同文件已有xia shu)
+cn_dicts_cell/idiom.dict.yaml	杕杜	duo du	L1诗经杕杜规范读dì dù(literature已有di du)
+cn_dicts_cell/idiom.dict.yaml	栖栖遑遑	qi qi huang huang	L1成语栖栖规范读xī xī(base已有xi xi huang huang)
+cn_dicts/ext.dict.yaml	殷红的血迹	yan hong de xie ji	L1书面血迹规范读xuè(同文件已有xue ji)
+cn_dicts_cell/game.dict.yaml	薄衬衫	bo chen shan	L1轻薄衣物规范读báo(composite已有bao chen shan)
+cn_dicts/ext.dict.yaml	血氧传感器	xie yang chuan gan qi	L1/L2医学术语规范读xuè(同文件已有xue)
+cn_dicts/ext.dict.yaml	血洒长空	xie sa chang kong	L1书面四字词规范读xuè(同文件已有xue)
+cn_dicts/ext.dict.yaml	血热妄行	xie re wang xing	L1/L2中医术语规范读xuè(同文件已有xue)
+cn_dicts/ext.dict.yaml	血黏度	xie nian du	L1/L2医学术语规范读xuè(同文件已有xue)
+cn_dicts_cell/idiom.dict.yaml	其心塞渊	qi xin sai yuan	L1诗经充实义塞规范读sè(literature已有se)
+cn_dicts/ext.dict.yaml	如嚼鸡肋	ru jue ji lei	L1成语嚼规范读jiáo(idiom已有ru jiao ji lei)
+cn_dicts/ext.dict.yaml	彩色多普勒血流显像	cai se duo pu le xie liu xian xiang	L1/L2医学术语规范读xuè(同文件已有xue)
+cn_dicts_cell/idiom.dict.yaml	旧时栏楯	jiu shi lan dun	L1栏楯规范读lán shǔn(literature已有shun)
+cn_dicts_cell/idiom.dict.yaml	曳裾王门不称情	ye ju wang men bu cheng qing	L1相称义称规范读chèn(literature已有chen)
+cn_dicts_cell/idiom.dict.yaml	李憕	li deng	L3唐代人名李憕读chēng/chéng(literature已有li cheng)
+cn_dicts_cell/idiom.dict.yaml	行行如也	xing xing ru ye	L1论语刚强貌行行读hàng hàng(literature已有hang)
+cn_dicts_cell/idiom.dict.yaml	不称其服	bu cheng qi fu	L1诗经相称义称规范读chèn(literature已有chen)
+cn_dicts_cell/idiom.dict.yaml	卢僎	lu zun	L3唐代诗人卢僎规范读zhuàn(literature已有lu zhuan)
+cn_dicts/base.dict.yaml	血素	xie su	L1/L2生化医学复音词规范读xuè(同文件已有xue su)
+cn_dicts/ext.dict.yaml	斗得头破血流	dou de tou po xie liu	L1成语头破血流规范读xuè(同文件已有xue)
+cn_dicts/ext.dict.yaml	积极参与无偿献血	ji ji can yu wu chang xian xie	L1无偿献血规范读xuè(同文件已有xue)
+cn_dicts/base.dict.yaml	熟丝	shou si	L1/L2纺织术语熟丝规范读shú(同文件已有shu si)
+cn_dicts_cell/shulihua.dict.yaml	脱模剂	tuo mo ji	L1实物模具脱模规范读mú(base已有tuo mu ji)
+cn_dicts_cell/medication.dict.yaml	归草黑栀惔竹叶	gui cao hei zhi tan zhu ye	L1/L2方歌惔通淡读dàn(同文件已有dan)
+cn_dicts_cell/idiom.dict.yaml	我粢既洁	wo ci ji jie	L1诗经祭祀谷物粢规范读zī(literature已有zi)
+cn_dicts_cell/idiom.dict.yaml	有杕之杜	you duo zhi du	L1诗经杕规范读dì(literature已有di)
+cn_dicts_cell/idiom.dict.yaml	正颜色	zheng yan shai	L1论语颜色规范读sè(literature已有se)
+cn_dicts_cell/game.dict.yaml	腰俞	yao yu	L1/L2经穴腰俞规范读shù(medication已有yao shu)
+cn_dicts_cell/game.dict.yaml	郄正	xi zheng	L1姓氏郄规范读Qiè(history已有qie zheng)
+cn_dicts_cell/medication.dict.yaml	随弃式导电粘胶极板	sui qi shi dao dian zhan jiao ji ban	L1/L2黏胶规范读nián(同文件已有nian)
+cn_dicts_cell/idiom.dict.yaml	驿树西连汉畤平	yi shu xi lian han chou ping	L1汉畤规范读hàn zhì(literature已有zhi)
+cn_dicts_cell/name2.dict.yaml	粘土	nian tu	W3异形词清零(正形:base黏土)

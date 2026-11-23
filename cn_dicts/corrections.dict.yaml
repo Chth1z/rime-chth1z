@@ -221,7 +221,6 @@ columns:
 剥削	bo xiao	150	bō xuē
 削减	xiao jian	200	xuē jiǎn
 剥夺	bao duo	150	bō duó
-湖泊	hu bo	150	hú pō
 血泊	xue bo	100	xuè pō
 漂泊	piao po	15	piāo bó
 停泊	ting po	80	tíng bó
@@ -551,7 +550,6 @@ columns:
 穿凿附会	chuan zuo fu hui	60	穿凿(záo)附会
 言之凿凿	yan zhi zuo zuo	60	言之凿(záo)凿
 配给	pei gei	100	pèi jǐ
-说客	shuo ke	150	shuì kè
 南无	nan wu	50	nā mó
 露馅	lu xian	150	lòu xiàn
 露脸	lu lian	150	lòu liǎn
@@ -644,6 +642,326 @@ columns:
 大差市	da cha shi	40	大差(chāi)市
 石厦	shi sha	40	shí xià
 大埔	da pu	50	dà bù
+罚没	fa mei	120	fá mò
+没收	mei shou	60	mò shōu
+账簿	zhang bo	40	zhàng bù
+簿记	bo ji	30	bù jì
+对簿公堂	dui bo gong tang	100	对簿(bù)公堂
+对簿公堂	dui bao gong tang	80	对薄(簿bù)公堂
+折本	zhe ben	100	shé běn
+折耗	zhe hao	12	shé hào
+薄利多销	bao li duo xiao	100	薄(bó)利多销
+摊薄	tan bao	25	tān bó
+削价	xiao jia	30	xuē jià
+给付	gei fu	150	jǐ fù
+轧账	ya zhang	35	gá zhàng
+轧差	ya cha	25	gá chà
+轧空	ya kong	80	gá kōng
+囤积	dun ji	25	tún jī
+囤货	dun huo	120	tún huò
+商贾	shang jia	100	shāng gǔ
+调解	diao jie	150	tiáo jiě
+调剂	diao ji	20	tiáo jì
+调拨	tiao bo	100	diào bō
+调度	tiao du	100	diào dù
+稽核	qi he	80	jī hé
+稽查	qi cha	30	jī chá
+勾稽	gou qi	30	gōu jī
+押解	ya xie	60	yā jiè
+解送	xie song	50	jiè sòng
+重婚	zhong hun	25	chóng hūn
+重婚罪	zhong hun zui	80	重(chóng)婚罪
+复辟	fu pi	30	fù bì
+辟谣	bi yao	80	pì yáo
+弹劾	dan he	80	tán hé
+弹劾	tan hai	50	tán hé
+忖度	cun du	80	cǔn duó
+恪守	ge shou	30	kè shǒu
+僭越	qian yue	15	jiàn yuè
+僭越	jie yue	15	jiàn yuè
+掣肘	zhi zhou	15	chè zhǒu
+缄默	xian mo	15	jiān mò
+觊觎	kai yu	60	jì yú
+睥睨	bi ni	50	pì nì
+毗邻	bi lin	50	pí lín
+褫夺	hu duo	50	chǐ duó
+褫夺	di duo	40	chǐ duó
+攫取	huo qu	30	jué qǔ
+毛坯房	mao pei fang	80	毛胚(坯pī)房
+电话簿	dian hua bao	50	电话薄(簿bù)
+登记簿	deng ji bao	50	登记薄(簿bù)
+户口簿	hu kou bao	50	户口薄(簿bù)
+生死簿	sheng si bao	50	生死薄(簿bù)
+郦食其	li shi qi	60	郦食(yì)其(jī)
+审食其	shen shi qi	40	审食(yì)其(jī)
+龙且	long qie	40	lóng jū
+樊於期	fan yu qi	40	樊於(wū)期(jī)
+万俟	wan si	30	mò qí
+万俟	wan qi	30	mò qí
+万俟卨	wan si xie	40	万俟(mò qí)卨
+皋陶	gao tao	40	gāo yáo
+重耳	zhong er	50	chóng ěr
+夫差	fu cha	30	fū chāi
+墨翟	mo zhai	50	mò dí
+枚乘	mei cheng	15	méi shèng
+岑参	cen can	80	cén shēn
+曾参	zeng can	60	zēng shēn
+李泌	li mi	15	lǐ bì
+李适	li shi	20	lǐ kuò
+尉迟恭	wei chi gong	80	尉(yù)迟恭
+尉迟敬德	wei chi jing de	80	尉(yù)迟敬德
+尉迟	wei chi	80	yù chí
+长孙无忌	chang sun wu ji	80	长(zhǎng)孙无忌
+长孙皇后	chang sun huang hou	60	长(zhǎng)孙皇后
+长孙	chang sun	60	zhǎng sūn
+澹台灭明	dan tai mie ming	40	澹(tán)台灭明
+澹台	dan tai	40	tán tái
+乐毅	le yi	60	yuè yì
+乐进	le jin	60	yuè jìn
+单雄信	dan xiong xin	50	单(shàn)雄信
+单田芳	dan tian fang	60	单(shàn)田芳
+解缙	jie jin	20	xiè jìn
+仇英	chou ying	40	qiú yīng
+查良镛	cha liang yong	50	查(zhā)良镛
+种师道	zhong shi dao	40	种(chóng)师道
+尉缭子	wei liao zi	40	尉(yù)缭子
+张说	zhang shuo	40	zhāng yuè
+傅说	fu shuo	40	fù yuè
+左冯翊	zuo feng yi	30	左冯(píng)翊
+拓跋	ta ba	50	tuò bá
+契丹	qie dan	60	qì dān
+于阗	yu dian	15	yú tián
+疏勒	shu lei	30	shū lè
+阏氏	e shi	25	yān zhī
+阏氏	yan shi	40	yān zhī
+阿堵物	a du wu	40	阿(ē)堵物
+太子洗马	tai zi xi ma	40	太子洗(xiǎn)马
+仆射	pu she	40	pú yè
+尚书仆射	shang shu pu she	40	尚书仆射(yè)
+般若	ban ruo	80	bō rě
+般若波罗蜜	ban ruo bo luo mi	50	般若(bō rě)波罗蜜
+般若波罗蜜多心经	ban ruo bo luo mi duo xin jing	50	般若(bō rě)波罗蜜多心经
+伽蓝	jia lan	25	qié lán
+僧伽	seng jia	30	sēng qié
+楞伽经	leng jia jing	30	楞伽(qié)经
+地藏	di cang	50	dì zàng
+地藏王	di cang wang	50	地藏(zàng)王
+地藏菩萨	di cang pu sa	60	地藏(zàng)菩萨
+大藏经	da cang jing	50	大藏(zàng)经
+道藏	dao cang	30	dào zàng
+三藏	san cang	60	sān zàng
+唐三藏	tang san cang	60	唐三藏(zàng)
+辟谷	pi gu	20	bì gǔ
+辟邪	pi xie	60	bì xié
+辟雍	pi yong	30	bì yōng
+征辟	zheng pi	12	zhēng bì
+大辟	da pi	30	dà bì
+迦叶	jia ye	40	jiā shè
+摩诃迦叶	mo he jia ye	30	摩诃迦叶(shè)
+兰若	lan ruo	30	lán rě
+唱喏	chang nuo	30	chàng rě
+姑洗	gu xi	25	gū xiǎn
+无射	wu she	20	wú yì
+噬嗑	shi ke	40	shì hé
+贲卦	ben gua	30	bì guà
+屯卦	tun gua	30	zhūn guà
+夬卦	jue gua	30	guài guà
+姤卦	hou gua	20	gòu guà
+大畜	da chu	30	dà xù
+小畜	xiao chu	20	xiǎo xù
+否泰	fou tai	40	pǐ tài
+臧否	zang fou	50	zāng pǐ
+陟罚臧否	zhi fa zang fou	40	陟罚臧否(pǐ)
+将进酒	jiang jin jiu	100	将(qiāng)进酒
+梦游天姥吟留别	meng you tian lao yin liu bie	60	梦游天姥(mǔ)吟留别
+天姥山	tian lao shan	40	天姥(mǔ)山
+浩浩汤汤	hao hao tang tang	80	浩浩汤(shāng)汤
+不亦说乎	bu yi shuo hu	80	不亦说(yuè)乎
+被发行吟	bei fa xing yin	40	被(pī)发行吟
+被坚执锐	bei jian zhi rui	40	被(pī)坚执锐
+何时眼前突兀见此屋	he shi yan qian tu wu jian ci wu	40	何时眼前突兀见(xiàn)此屋
+富商大贾	fu shang da jia	60	富商大贾(gǔ)
+身无长物	shen wu zhang wu	60	身无长(cháng)物
+教学相长	jiao xue xiang chang	80	教学相长(zhǎng)
+少长咸集	shao chang xian ji	50	少长(zhǎng)咸集
+霓裳	ni shang	25	ní cháng
+霓裳羽衣曲	ni shang yu yi qu	60	霓裳(cháng)羽衣曲
+清平乐	qing ping le	80	清平乐(yuè)
+乐府	le fu	80	yuè fǔ
+礼乐	li le	60	lǐ yuè
+雅乐	ya le	40	yǎ yuè
+燕乐	yan le	30	yàn yuè
+钧天广乐	jun tian guang le	40	钧天广乐(yuè)
+旦角	dan jiao	60	dàn jué
+丑角	chou jiao	60	chǒu jué
+净角	jing jiao	35	jìng jué
+生角	sheng jiao	20	shēng jué
+名角	ming jiao	40	míng jué
+捧角	peng jiao	40	pěng jué
+行头	hang tou	60	xíng tou
+参商	can shang	50	shēn shāng
+二十八宿	er shi ba su	60	二十八宿(xiù)
+暴虎冯河	bao hu feng he	50	暴虎冯(píng)河
+冯虚御风	feng xu yu feng	50	冯(píng)虚御风
+炮烙	pao lao	60	páo luò
+博闻强识	bo wen qiang shi	60	博闻强识(zhì)
+默而识之	mo er shi zhi	40	默而识(zhì)之
+款识	kuan shi	60	kuǎn zhì
+稽首	ji shou	25	qǐ shǒu
+拜手稽首	bai shou ji shou	40	拜手稽(qǐ)首
+稽颡	ji sang	30	qǐ sǎng
+乳臭未干	ru chou wei gan	80	乳臭(xiù)未干
+铜臭	tong chou	20	tóng xiù
+无声无臭	wu sheng wu chou	40	无声无臭(xiù)
+百夫长	bai fu chang	50	百夫长(zhǎng)
+千夫长	qian fu chang	50	千夫长(zhǎng)
+酋长	qiu chang	30	qiú zhǎng
+族长	zu chang	50	zú zhǎng
+长史	chang shi	40	zhǎng shǐ
+亭长	ting chang	60	tíng zhǎng
+齐衰	qi shuai	30	zī cuī
+斩衰	zhan shuai	30	zhǎn cuī
+上衣下裳	shang yi xia shang	40	上衣下裳(cháng)
+大放厥词	da fang que ci	60	大放厥(jué)词
+暴殄天物	bao zhen tian wu	60	暴殄(tiǎn)天物
+瞠目结舌	tang mu jie she	80	瞠(chēng)目结舌
+众口铄金	zhong kou le jin	40	众口铄(shuò)金
+炙手可热	jiu shou ke re	60	炙(zhì)手可热
+如蚁附膻	ru yi fu tan	40	如蚁附膻(shān)
+方兴未艾	fang xing wei yi	50	方兴未艾(ài)
+差池	chai chi	40	chā chí
+千乘之国	qian cheng zhi guo	50	千乘(shèng)之国
+万乘之尊	wan cheng zhi zun	40	万乘(shèng)之尊
+稗官野乘	bai guan ye cheng	30	稗官野乘(shèng)
+斫琴	zhe qin	30	zhuó qín
+阿房宫赋	e pang gong fu	0	规范 阿(ē)房(páng)宫赋 / 常见 ā fáng
+阿房宫赋	a fang gong fu	0	常见 阿(ā)房(fáng)宫赋 / 规范 ē páng
+阿房宫赋	a pang gong fu	0	常见 阿(ā)房(páng)宫赋 / 规范 ē páng
+阿房宫赋	e fang gong fu	0	常见 阿(ē)房(fáng)宫赋 / 规范 ē páng
+蛤蜊	ha li	100	gé lí
+花蛤	hua ha	80	huā gé
+文蛤	wen ha	50	wén gé
+炒花蛤	chao hua ha	60	炒花蛤(gé)
+辣炒花蛤	la chao hua ha	60	辣炒花蛤(gé)
+牛轧糖	niu zha tang	100	牛轧(gá)糖
+牛轧糖	niu ya tang	60	牛轧(gá)糖
+鳜鱼	jue yu	20	guì yú
+臭鳜鱼	chou jue yu	60	臭鳜(guì)鱼
+松鼠鳜鱼	song shu jue yu	60	松鼠鳜(guì)鱼
+臊子面	shao zi mian	80	哨(臊sào)子面
+岐山臊子面	qi shan shao zi mian	50	岐山哨(臊sào)子面
+蚵仔煎	ke zai jian	50	蚵(é)仔煎
+蚵仔煎	ke zi jian	30	蚵(é)仔煎
+蒸鱼豉油	zheng yu gu you	80	蒸鱼鼓(豉chǐ)油
+蒸鱼豉油	zheng yu shi you	50	蒸鱼豉(chǐ)油
+豉油	gu you	40	chǐ yóu
+豉油鸡	gu you ji	50	鼓(豉chǐ)油鸡
+焙茶	pei cha	60	bèi chá
+芫荽	yuan sui	60	yán sui
+苋菜	jian cai	30	xiàn cài
+耙耙柑	ba ba gan	80	耙(pá)耙柑
+亲子丼	qin zi jing	30	亲子丼(dǎn)
+牛丼	niu jing	30	niú dǎn
+酿皮	rang pi	50	niàng pí
+酿皮子	rang pi zi	40	酿(niàng)皮子
+雪里蕻	xue li gong	50	雪里蕻(hóng)
+醪糟	liao zao	60	láo zāo
+杏脯	xing pu	12	xìng fǔ
+桃脯	tao pu	30	táo fǔ
+苹果脯	ping guo pu	30	苹果脯(fǔ)
+猪肉脯	zhu rou pu	15	猪肉脯(fǔ)
+鸡脯肉	ji fu rou	40	鸡脯(pú)肉
+胸脯	xiong fu	40	xiōng pú
+海参	hai can	12	hǎi shēn
+刀削面	dao xue mian	60	刀削(xiāo)面
+鸡枞	ji cong	30	jī zōng
+鸡枞菌	ji cong jun	50	鸡枞(zōng)菌
+德州扒鸡	de zhou ba ji	50	德州扒(pá)鸡
+扒鸡	ba ji	40	pá jī
+扒海参	ba hai shen	30	扒(pá)海参
+中国劲酒	zhong guo jin jiu	40	中国劲(jìng)酒
+蜱虫	bi chong	30	pí chóng
+蜱虫	bei chong	20	pí chóng
+柞蚕	zha can	40	zuò cán
+柞蚕丝	zha can si	40	柞(zuò)蚕丝
+堰塞湖	yan sai hu	4	堰塞(sè)湖
+堰塞体	yan sai ti	40	堰塞(sè)体
+冰碛	bing ze	40	bīng qì
+冰碛物	bing ze wu	30	冰碛(qì)物
+冰碛湖	bing ze hu	30	冰碛(qì)湖
+乐亭	le ting	60	lào tíng
+乐陵	le ling	40	lào líng
+犍为	jian wei	25	qián wéi
+犍为县	jian wei xian	50	犍(qián)为县
+浒墅关	hu shu guan	60	浒(xǔ)墅关
+甪直	jiao zhi	40	lù zhí
+解州	jie zhou	20	xiè zhōu
+解州关帝庙	jie zhou guan di miao	40	解(xiè)州关帝庙
+吴堡	wu bao	20	wú bǔ
+吴堡县	wu bao xian	40	吴堡(bǔ)县
+浚县	jun xian	50	xùn xiàn
+泌阳	mi yang	15	bì yáng
+荥经	xing jing	40	yíng jīng
+荥经	rong jing	60	yíng jīng
+荥经县	xing jing xian	40	荥(yíng)经县
+荥经县	rong jing xian	40	荥(yíng)经县
+繁峙	fan zhi	40	fán shì
+繁峙县	fan zhi xian	50	繁峙(shì)县
+宕昌	dang chang	50	tàn chāng
+宕昌县	dang chang xian	50	宕(tàn)昌县
+涡阳	wo yang	40	guō yáng
+枞阳	cong yang	60	zōng yáng
+莘县	xin xian	7	shēn xiàn
+百色	bo se	40	bǎi sè
+尉氏	wei shi	40	yù shì
+尉氏县	wei shi xian	50	尉(yù)氏县
+柞水	zuo shui	50	zhà shuǐ
+柞水县	zuo shui xian	50	柞(zhà)水县
+十里堡	shi li bao	50	十里堡(pù)
+柴沟堡	chai gou bao	50	柴沟堡(bǔ)
+大城县	da cheng xian	30	大(dài)城县
+长子县	chang zi xian	50	长(zhǎng)子县
+葵涌	kui yong	60	kuí chōng
+东涌	dong yong	40	dōng chōng
+红磡	hong jian	18	hóng kàn
+草埔	cao pu	40	cǎo bù
+长岭陂	chang ling bei	40	长岭陂(pí)
+区庄	qu zhuang	40	ōu zhuāng
+盱眙	yu tai	12	xū yí
+涪陵	pei ling	40	fú líng
+六盘水	lu pan shui	30	六(liù)盘水
+周鸿祎	zhou hong wei	80	周鸿祎(yī)
+钟睒睒	zhong yan yan	80	钟睒(shǎn)睒
+钟睒睒	zhong dan dan	80	钟睒(shǎn)睒
+鞠婧祎	ju jing wei	80	鞠婧祎(yī)
+单依纯	dan yi chun	80	单(shàn)依纯
+朴树	piao shu	80	pǔ shù
+解晓东	jie xiao dong	50	解(xiè)晓东
+解振华	jie zhen hua	40	解(xiè)振华
+阚清子	gan qing zi	60	阚(kàn)清子
+阚清子	han qing zi	40	阚(kàn)清子
+菅纫姿	guan ren zi	40	菅(jiān)纫姿
+陶喆	tao ji	80	táo zhé
+佘诗曼	yu shi man	60	佘(shé)诗曼
+宋轶	song tie	60	sòng yì
+何炅	he ling	15	hé jiǒng
+何炅	he gui	60	hé jiǒng
+靳东	le dong	40	jìn dōng
+张若昀	zhang ruo jun	50	张若昀(yún)
+哪吒	na zha	80	né zhā
+哪吒汽车	na zha qi che	60	哪(né)吒汽车
+盗跖	dao tuo	30	dào zhí
+盗跖	dao zhe	30	dào zhí
+欧米茄	ou mi qie	80	欧米茄(jiā)
+雪茄	xue qie	80	xuě jiā
+重剑	chong jian	25	zhòng jiàn
+角球	jue qiu	30	jiǎo qiú
+兴隆堡	xing long bao	50	兴隆堡(pù)
+弹幕	tan mu	80	dàn mù
+稀薄	xi bao	100	xī bó
+鸡爪	ji zhao	40	jī zhuǎ
+利爪	li zhua	100	lì zhǎo
+腰椎间盘突出	yao jian pan tu chu	60	腰(椎)间盘突出
 私钥	si yue	0	规范 sī yuè / 习惯 sī yào
 私钥	si yao	0	习惯 sī yào / 规范 sī yuè
 公钥	gong yue	0	规范 gōng yuè / 习惯 gōng yào
@@ -747,8 +1065,8 @@ columns:
 骰子	shai zi	0	习惯 shǎi zi / 规范 tóu zi
 咯血	ka xie	0	规范 kǎ xiě / 常见 kǎ xuè
 咯血	ka xue	0	常见 kǎ xuè / 规范 kǎ xiě
-大咯血	da ka xie	0	规范 大咯(xiě)血 / 常见 xuè
-大咯血	da ka xue	0	常见 大咯(xuè)血 / 规范 xiě
+大咯血	da ka xie	0	规范 大咯血(xiě) / 常见 xuè
+大咯血	da ka xue	0	常见 大咯血(xuè) / 规范 xiě
 填塞	tian se	0	规范 tián sè / 习惯 tián sāi
 填塞	tian sai	0	习惯 tián sāi / 规范 tián sè
 心包填塞	xin bao tian se	0	规范 心包填塞(sè) / 行业 sāi
@@ -811,3 +1129,139 @@ columns:
 大月氏	da rou zhi	0	旧读 大月(ròu)氏 / 规范 yuè
 青玉案	qing yu an	0	规范 青玉案(àn) / 旧读 青玉案(wǎn)
 青玉案	qing yu wan	0	旧读 青玉案(wǎn) / 规范 青玉案(àn)
+表见代理	biao jian dai li	0	规范 表见(jiàn)代理 / 行业 xiàn
+表见代理	biao xian dai li	0	行业 表见(xiàn)代理 / 规范 jiàn
+曹参	cao shen	0	规范 曹参(shēn) / 旧读 cān
+曹参	cao can	0	旧读 曹参(cān) / 规范 shēn
+大乘	da cheng	0	大陆 dà chéng / 台湾 dà shèng
+大乘	da sheng	0	台湾 dà shèng / 大陆 dà chéng
+小乘	xiao cheng	0	大陆 xiǎo chéng / 台湾 xiǎo shèng
+小乘	xiao sheng	0	台湾 xiǎo shèng / 大陆 xiǎo chéng
+大乘佛教	da cheng fo jiao	0	大陆 大乘(chéng)佛教 / 台湾 shèng
+大乘佛教	da sheng fo jiao	0	台湾 大乘(shèng)佛教 / 大陆 chéng
+小乘佛教	xiao cheng fo jiao	0	大陆 小乘(chéng)佛教 / 台湾 shèng
+小乘佛教	xiao sheng fo jiao	0	台湾 小乘(shèng)佛教 / 大陆 chéng
+太簇	tai cou	0	规范 tài còu / 常见 tài cù
+太簇	tai cu	0	常见 tài cù / 规范 tài còu
+角宿	jiao xiu	0	大陆 jiǎo xiù / 旧读 jué xiù
+角宿	jue xiu	0	旧读 jué xiù / 大陆 jiǎo xiù
+一骑红尘	yi qi hong chen	0	规范 一骑(qí)红尘 / 旧读 jì
+一骑红尘	yi ji hong chen	0	旧读 一骑(jì)红尘 / 规范 qí
+一骑红尘妃子笑	yi qi hong chen fei zi xiao	0	规范 一骑(qí)红尘妃子笑 / 旧读 jì
+一骑红尘妃子笑	yi ji hong chen fei zi xiao	0	旧读 一骑(jì)红尘妃子笑 / 规范 qí
+远上寒山石径斜	yuan shang han shan shi jing xie	0	规范 远上寒山石径斜(xié) / 旧读 xiá
+远上寒山石径斜	yuan shang han shan shi jing xia	0	旧读 远上寒山石径斜(xiá) / 规范 xié
+解卦	jie gua	0	规范 jiě guà / 旧读 xiè guà
+解卦	xie gua	0	旧读 xiè guà / 规范 jiě guà
+介壳虫	jie ke chong	0	常见 介壳(ké)虫 / 规范 qiào
+介壳虫	jie qiao chong	0	规范 介壳(qiào)虫 / 常见 ké
+介壳	jie qiao	0	规范 jiè qiào / 常见 jiè ké
+介壳	jie ke	0	常见 jiè ké / 规范 jiè qiào
+解州	xie zhou	0	规范 xiè zhōu / 习惯 hài zhōu
+解州	hai zhou	0	习惯 hài zhōu / 规范 xiè zhōu
+亲子丼	qin zi dan	0	规范 亲子丼(dǎn) / 习惯 dòng
+亲子丼	qin zi dong	0	习惯 亲子丼(dòng) / 规范 dǎn
+牛丼	niu dan	0	规范 niú dǎn / 习惯 niú dòng
+牛丼	niu dong	0	习惯 niú dòng / 规范 niú dǎn
+蚵仔煎	e zi jian	0	规范 蚵仔(zǐ)煎 / 习惯 zǎi
+蚵仔煎	e zai jian	0	习惯 蚵仔(zǎi)煎 / 规范 zǐ
+芥菜	jie cai	0	规范 jiè cài / 旧读 gài cài
+芥菜	gai cai	0	旧读 gài cài / 规范 jiè cài
+味噌汤	wei ceng tang	0	规范 味噌(cēng)汤 / 习惯 zēng
+味噌汤	wei zeng tang	0	习惯 味噌(zēng)汤 / 规范 cēng
+陈柏霖	chen bai lin	0	规范 陈柏(bǎi)霖 / 习惯 bó
+陈柏霖	chen bo lin	0	习惯 陈柏(bó)霖 / 规范 bǎi
+潘玮柏	pan wei bai	0	规范 潘玮柏(bǎi) / 习惯 bó
+潘玮柏	pan wei bo	0	习惯 潘玮柏(bó) / 规范 bǎi
+井柏然	jing bai ran	0	规范 井柏(bǎi)然 / 习惯 bó
+井柏然	jing bo ran	0	习惯 井柏(bó)然 / 规范 bǎi
+刘柏辛	liu bai xin	0	规范 刘柏(bǎi)辛 / 习惯 bó
+刘柏辛	liu bo xin	0	习惯 刘柏(bó)辛 / 规范 bǎi
+宜兴埠	yi xing bu	0	规范 宜兴埠(bù) / 习惯 fù
+宜兴埠	yi xing fu	0	习惯 宜兴埠(fù) / 规范 bù
+宜兴埠北	yi xing bu bei	0	规范 宜兴埠(bù)北 / 习惯 fù
+宜兴埠北	yi xing fu bei	0	习惯 宜兴埠(fù)北 / 规范 bù
+包小柏	bao xiao bai	0	规范 包小柏(bǎi) / 习惯 bó
+包小柏	bao xiao bo	0	习惯 包小柏(bó) / 规范 bǎi
+龙爪堰	long zhao yan	0	规范 龙爪(zhǎo)堰 / 习惯 zhuǎ
+龙爪堰	long zhua yan	0	习惯 龙爪(zhuǎ)堰 / 规范 zhǎo
+谌龙	chen long	0	规范 chén lóng / 旧读 shèn lóng
+谌龙	shen long	0	旧读 shèn lóng / 规范 chén lóng
+垃圾	la ji	0	大陆 lā jī / 台湾 lè sè
+垃圾	le se	0	台湾 lè sè / 大陆 lā jī
+暂时	zan shi	0	大陆 zàn shí / 台湾 zhàn shí
+暂时	zhan shi	0	台湾 zhàn shí / 大陆 zàn shí
+暴露	bao lu	0	大陆 bào lù / 台湾 pù lù
+暴露	pu lu	0	台湾 pù lù / 大陆 bào lù
+出血	chu xue	0	规范 chū xuè / 习惯 chū xiě
+出血	chu xie	0	习惯 chū xiě / 规范 chū xuè
+滑稽	hua ji	0	规范 huá jī / 旧读 gǔ jī
+滑稽	gu ji	0	旧读 gǔ jī / 规范 huá jī
+卡在	qia zai	0	规范 qiǎ zài / 习惯 kǎ zài
+卡在	ka zai	0	习惯 kǎ zài / 规范 qiǎ zài
+哪吒	ne zha	0	大陆 né zhā / 台湾 nuó zhà
+哪吒	nuo zha	0	台湾 nuó zhà / 大陆 né zhā
+着想	zhuo xiang	0	大陆 zhuó xiǎng / 台湾 zháo xiǎng
+着想	zhao xiang	0	台湾 zháo xiǎng / 大陆 zhuó xiǎng
+湖泊	hu po	0	大陆 hú pō / 台湾 hú bó
+湖泊	hu bo	0	台湾 hú bó / 大陆 hú pō
+说服力	shuo fu li	0	规范 说(shuō)服力 / 旧读 shuì
+说服力	shui fu li	0	旧读 说(shuì)服力 / 规范 shuō
+吐血	tu xie	0	规范 tù xiě / 常见 tù xuè
+吐血	tu xue	0	常见 tù xuè / 规范 tù xiě
+血淋淋	xie lin lin	0	规范 xiě lín lín / 常见 xuè
+血淋淋	xue lin lin	0	常见 xuè lín lín / 规范 xiě
+轻薄本	qing bo ben	0	规范 轻薄(bó)本 / 常见 báo
+轻薄本	qing bao ben	0	常见 轻薄(báo)本 / 规范 bó
+攻壳机动队	gong ke ji dong dui	0	常见 攻壳(ké)机动队 / 规范 qiào
+攻壳机动队	gong qiao ji dong dui	0	规范 攻壳(qiào)机动队 / 常见 ké
+打鸡血	da ji xie	0	规范 打鸡血(xiě) / 常见 xuè
+打鸡血	da ji xue	0	常见 打鸡血(xuè) / 规范 xiě
+卡口	qia kou	0	规范 qiǎ kǒu / 习惯 kǎ kǒu
+卡口	ka kou	0	习惯 kǎ kǒu / 规范 qiǎ kǒu
+鸡血	ji xie	0	规范 jī xiě / 常见 jī xuè
+鸡血	ji xue	0	常见 jī xuè / 规范 jī xiě
+湮灭	yan mie	0	大陆 yān miè / 台湾 yīn miè
+湮灭	yin mie	0	台湾 yīn miè / 大陆 yān miè
+武藏	wu cang	0	常见 wǔ cáng / 旧读 wǔ zàng
+武藏	wu zang	0	旧读 wǔ zàng / 常见 wǔ cáng
+卡死	ka si	0	习惯 kǎ sǐ / 规范 qiǎ sǐ
+卡死	qia si	0	规范 qiǎ sǐ / 习惯 kǎ sǐ
+戛纳	ga na	0	规范 gā nà / 旧读 jiá nà
+戛纳	jia na	0	旧读 jiá nà / 规范 gā nà
+着地	zhuo di	0	规范 zhuó dì / 习惯 zháo dì
+着地	zhao di	0	习惯 zháo dì / 规范 zhuó dì
+张角	zhang jiao	0	大陆 zhāng jiǎo / 旧读 zhāng jué
+张角	zhang jue	0	旧读 zhāng jué / 大陆 zhāng jiǎo
+卡住了	qia zhu le	0	规范 卡(qiǎ)住了 / 习惯 kǎ
+卡住了	ka zhu le	0	习惯 卡(kǎ)住了 / 规范 qiǎ
+说客	shuo ke	0	规范 shuō kè / 旧读 shuì kè
+说客	shui ke	0	旧读 shuì kè / 规范 shuō kè
+桑葚	sang shen	0	规范 sāng shèn / 习惯 sāng rèn
+桑葚	sang ren	0	习惯 sāng rèn / 规范 sāng shèn
+公钥加密	gong yue jia mi	0	规范 公钥(yuè)加密 / 习惯 yào
+公钥加密	gong yao jia mi	0	习惯 公钥(yào)加密 / 规范 yuè
+咳血	ke xie	0	规范 ké xiě / 常见 ké xuè
+咳血	ke xue	0	常见 ké xuè / 规范 ké xiě
+尿血	niao xie	0	规范 niào xiě / 常见 niào xuè
+尿血	niao xue	0	常见 niào xuè / 规范 niào xiě
+放血	fang xie	0	规范 fàng xiě / 常见 fàng xuè
+放血	fang xue	0	常见 fàng xuè / 规范 fàng xiě
+千金散尽还复来	qian jin san jin huan fu lai	0	规范 千金散尽还(huán)复来 / 常见 hái
+千金散尽还复来	qian jin san jin hai fu lai	0	常见 千金散尽还(hái)复来 / 规范 huán
+掌掴	zhang guai	0	规范 zhǎng guāi / 旧读 zhǎng guó
+掌掴	zhang guo	0	旧读 zhǎng guó / 规范 zhǎng guāi
+云想衣裳花想容	yun xiang yi shang hua xiang rong	0	规范 云想衣裳(shang)花想容 / 旧读 cháng
+云想衣裳花想容	yun xiang yi chang hua xiang rong	0	旧读 云想衣裳(cháng)花想容 / 规范 shang
+小乔初嫁了	xiao qiao chu jia le	0	规范 小乔初嫁了(le) / 旧读 liǎo
+小乔初嫁了	xiao qiao chu jia liao	0	旧读 小乔初嫁了(liǎo) / 规范 le
+见龙在田	xian long zai tian	0	规范 见(xiàn)龙在田 / 常见 jiàn
+见龙在田	jian long zai tian	0	常见 见(jiàn)龙在田 / 规范 xiàn
+风化壳	feng hua qiao	0	规范 风化壳(qiào) / 常见 ké
+风化壳	feng hua ke	0	常见 风化壳(ké) / 规范 qiào
+甲壳素	jia qiao su	0	规范 甲壳(qiào)素 / 常见 ké
+甲壳素	jia ke su	0	常见 甲壳(ké)素 / 规范 qiào
+褪去	tui qu	0	规范 tuì qù(褪色) / 常见 tùn qù
+褪去	tun qu	0	规范 tùn qù(脱衣) / 常见 tuì qù
+朴树	po shu	0	规范 pò shù(植物) / 习惯 pǔ shù
+朴树	pu shu	0	习惯 pǔ shù(歌手) / 规范 pò shù

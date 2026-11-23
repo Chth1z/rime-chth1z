@@ -1,7 +1,7 @@
 ----------格式为：输入内容<Tab>响应内容1<Space>响应内容2……	----------格式为：输入内容<Tab>响应内容1<Space>响应内容2……
 ----------假装这是注释。不能有重复的行（包括开头），所以注释也不能重复。	----------假装这是注释。不能有重复的行（包括开头），所以注释也不能重复。
 ----------月份星期	----------月份星期
-Ｔ恤	Ｔ恤 T shirt
+T恤	T恤 T shirt
 一	一 one single a an
 一一	一一 one by one
 一万	一万 ten thousand
@@ -960,7 +960,6 @@
 不光	不光 not the only one not only
 不克	不克 cannot not be able to unable to
 不免	不免 unavoidable
-不入虎穴，焉得虎子	不入虎穴，焉得虎子 nothing venture, nothing to gain how can you catch tiger cubs without entering the tiger's lair
 不入虎穴焉得虎子	不入虎穴焉得虎子 nothing venture, nothing to gain how can you catch tiger cubs without entering the tiger's lair
 不公	不公 unjust unfair
 不公平	不公平 unfair
@@ -1302,7 +1301,6 @@
 不管他	不管他 do not pay attention to him forget it regardless of
 不约而同	不约而同 take the same action without prior consultation take the same view without prior consultation happen to coincide
 不经一事	不经一事 wisdom comes from experience you can't gain knowledge without practice
-不经一事，不长一智	不经一事，不长一智 wisdom comes from experience you can't gain knowledge without practice
 不经一事不长一智	不经一事不长一智 wisdom comes from experience you can't gain knowledge without practice
 不经之谈	不经之谈 absurd statement cock-and-bull story
 不经意	不经意 carelessly by accident
@@ -4712,7 +4710,7 @@
 侍者	侍者 waiter
 侍郎	侍郎 assistant minister
 侏	侏 dwarf
-侏儒	侏儒 dwarf lilliputian gnome manikin mannikin midge midget pygmy
+侏儒	侏儒 dwarf lilliputian gnome manikin mannikin pygmy
 侏罗纪	侏罗纪 Jurassic
 侑	侑 urge to eat
 侔	侔 similar comparable equal
@@ -9816,7 +9814,7 @@
 卡帕拉奥阿	卡帕拉奥阿 Kapalua
 卡托维兹	卡托维兹 Katowice
 卡拉	卡拉 Kara Carla
-卡拉ＯＫ	卡拉ＯＫ karaoke
+卡拉OK	卡拉OK karaoke
 卡拉奇	卡拉奇 Karachi
 卡拉迈	卡拉迈 Kalamata
 卡拉马	卡拉马 Calama
@@ -18116,7 +18114,7 @@
 小屯	小屯 small village
 小岛	小岛 isle
 小州	小州 small state
-小工	小工 coolie unskilled laborer
+小工	小工 unskilled laborer
 小巧	小巧 delicate
 小巧玲珑	小巧玲珑 small and exquisite
 小市民	小市民 petty bourgeois
@@ -21042,7 +21040,7 @@
 得了	得了 enough
 得以	得以 able to
 得体	得体 appropriate
-得克萨斯州Ａ与Ｍ大学	得克萨斯州Ａ与Ｍ大学 Texas A&M University
+得克萨斯州A与M大学	得克萨斯州A与M大学 Texas A&M University
 得出	得出 obtain arrive at
 得分	得分 score
 得到	得到 get obtain receive
@@ -24816,7 +24814,6 @@
 摅	摅 set forth spread
 摆	摆 hem at the bottom of garment pendulum place display swing oscillate show move exhibit
 摆事实	摆事实 present the facts
-摆事实，讲道理	摆事实，讲道理 present the facts and reason things out
 摆事实讲道理	摆事实讲道理 present the facts and reason things out
 摆动	摆动 swing sway
 摆子	摆子 malaria
@@ -30050,7 +30047,6 @@
 毓	毓 nourish rear
 比	比 compare compare with compare to contrast gesture ratio associate with near
 比上不足	比上不足 fall short of the best
-比上不足，比下有余	比上不足，比下有余 fall short of the best but be better than the worst can pass muster
 比上不足比下有余	比上不足比下有余 fall short of the best but be better than the worst can pass muster
 比下有余	比下有余 better than the worst
 比不上	比不上 can't compare with
@@ -36331,7 +36327,6 @@
 百货商场	百货商场 general merchandise market
 百货商店	百货商店 department store
 百货店	百货店 department store
-百足之虫，死而不僵	百足之虫，死而不僵 a centipede dies but never falls down old institutions die hard
 百足之虫死而不僵	百足之虫死而不僵 a centipede dies but never falls down old institutions die hard
 百里	百里 hundred li hundred miles
 百里挑一	百里挑一 one in a hundred cream of the crop
@@ -41318,7 +41313,6 @@
 老金	老金 Lao Jin
 老长	老长 very long
 老骥伏枥	老骥伏枥 old people may still cherish high aspirations
-老骥伏枥，志在千里	老骥伏枥，志在千里 old people may still cherish high aspirations an old steed in the stable still aspires to gallop 1000 li
 老骥伏枥志在千里	老骥伏枥志在千里 old people may still cherish high aspirations an old steed in the stable still aspires to gallop 1000 li
 老高	老高 Lao Gao
 老鹰	老鹰 eagle
@@ -46291,7 +46285,6 @@
 贝宁	贝宁 Benin
 贝宁汉	贝宁汉 Bellingham
 贝尔	贝尔 Bell
-贝尔斯登－米盖尔	贝尔斯登－米盖尔 Bearsden and Milogavie Bearsden & Milogavie
 贝尔格莱德	贝尔格莱德 Belgrade
 贝尔法斯特	贝尔法斯特 Belfast
 贝尔法斯特城	贝尔法斯特城 Belfast City
@@ -49059,7 +49052,6 @@
 避乱	避乱 avoid chaos seek shelter from chaos
 避免	避免 avert prevent avoid refrain from
 避其锐气	避其锐气 avoid the enemy when he is fresh
-避其锐气，击其惰归	避其锐气，击其惰归 avoid the enemy when he is fresh and strike him when he is tired and withdraws
 避其锐气击其惰归	避其锐气击其惰归 avoid the enemy when he is fresh and strike him when he is tired and withdraws
 避坑落井	避坑落井 dodge a pit only to fall into a well out of the frying pan into the fire
 避嫌	避嫌 avoid doing anything that may arouse suspicion avoid arousing suspicion
@@ -51108,7 +51100,6 @@
 阿瓦岛	阿瓦岛 Aua Island
 阿瓦鲁	阿瓦鲁 Avarua
 阿皮亚	阿皮亚 Apia
-阿盖尔－比特	阿盖尔－比特 Angyll and Bute
 阿福	阿福 A Fu
 阿科斯塔	阿科斯塔 Acosta
 阿空加瓜	阿空加瓜 Aconcagua
@@ -52753,7 +52744,6 @@
 饱经	饱经 suffer
 饱经风霜	饱经风霜 weather-beaten having experienced the hard ship of life
 饱食终日	饱食终日 eat three square meals a day sated with food
-饱食终日，无所用心	饱食终日，无所用心 eat three square meals a day and do no work sated with food and remain idle
 饱食终日无所用心	饱食终日无所用心 eat three square meals a day and do no work sated with food and remain idle
 饲	饲 raise rear feed
 饲养	饲养 raise rear

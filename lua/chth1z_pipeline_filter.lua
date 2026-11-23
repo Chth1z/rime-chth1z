@@ -178,7 +178,7 @@ function M.init(env)
     env.keep_comment = config:get_bool("translator/keep_comments") or false
     local delimiter = config:get_string("speller/delimiter")
     if delimiter and #delimiter > 0 and delimiter:sub(1, 1) ~= " " then
-        env.delimiter = delimiter:sub(1, 1)
+        env.delimiter = delimiter:sub(1, 1):gsub("([%^%$%(%)%%%.%[%]%*%+%-%?])", "%%%1")
     else
         env.delimiter = nil
     end

@@ -22,14 +22,12 @@ sort: by_weight
 # 「伯伯」方言
 伯伯	bai bai	200
 # 「斜」的古音
-远上寒山石径斜	yuan shang han shan shi jing xia	23
 # 「骑」目前统读 qi
 坐骑	zuo ji	45
 铁骑	tie ji	15
 一骑绝尘	yi ji jue chen	80
 一骑当千	yi qi dang qian	53
 一骑当千	yi ji dang qian	53
-一骑红尘妃子笑	yi ji hong chen fei zi xiao	37
 走单骑	zou dan qi	0
 走单骑	zou dan ji	0
 千里走单骑	qian li zou dan ji	95
@@ -44,7 +42,7 @@ sort: by_weight
 # 这里的「镐」规范读音为 hao，补充正音与容错读音
 李昌镐	li chang hao	237
 曹世镐	cao shi hao	0
-张镐哲	zhang gao zhe	0
+张镐哲	zhang hao zhe	0
 姜成镐	jiang cheng hao	5
 姜镐童	jiang hao tong	0
 张镐濂	zhang hao lian	7
@@ -511,7 +509,7 @@ sort: by_weight
 沪爷	hu ye	0
 何铸	he zhu	0
 军航	jun hang	0
-化债	hua zhai	0
+化债	hua zhai	80
 商飞	shang fei	0
 喂球	wei qiu	0
 穿裆	chuan dang	0
@@ -531,7 +529,6 @@ sort: by_weight
 苏护	su hu	0
 姜后	jiang hou	0
 根因	gen yin	0
-带元	dai yuan	0
 淮东	huai dong	0
 长债	chang zhai	0
 陆聚	lu ju	0
@@ -869,7 +866,7 @@ sort: by_weight
 东决	dong jue	0
 动视	dong shi	0
 肚财	du cai	0
-都乐	du le	0
+都乐	dou le	0
 杜伦	du lun	0
 杜尚	du shang	0
 毒唯	du wei	0
@@ -918,7 +915,7 @@ sort: by_weight
 公大	gong da	0
 弓道	gong dao	0
 攻壳	gong ke	0
-攻框	gong kuang	0
+攻筐	gong kuang	0
 弓片	gong pian	0
 公卫	gong wei	0
 工院	gong yuan	0
@@ -1090,7 +1087,6 @@ sort: by_weight
 妹红	mei hong	0
 魅蓝	mei lan	0
 美末	mei mo	0
-蒙板	meng ban	0
 梦校	meng xiao	0
 米板	mi ban	0
 麋芳	mi fang	0
@@ -1232,7 +1228,7 @@ sort: by_weight
 输注	shu zhu	0
 刷酸	shua suan	0
 摔法	shuai fa	0
-双碳	shuang tan	0
+双碳	shuang tan	100
 双指	shuang zhi	0
 双肘	shuang zhou	0
 税筹	shui chou	0
@@ -1377,7 +1373,6 @@ sort: by_weight
 医工	yi gong	0
 亿航	yi hang	0
 亿健	yi jian	0
-异尖	yi jian	0
 翼尖	yi jian	0
 伊角	yi jiao	0
 依萍	yi ping	0
@@ -1467,7 +1462,7 @@ sort: by_weight
 佐德	zuo de	0
 左公	zuo gong	0
 做球	zuo qiu	0
-做市	zuo shi	0
+做市	zuo shi	40
 # 2026-09-04 新增：高频缺失词（第二轮，词频50-99，已剔除分词碎片）
 阿离	a li	0
 爱隆	ai long	0
@@ -1476,7 +1471,6 @@ sort: by_weight
 安胖	an pang	0
 安溥	an pu	0
 安史	an shi	0
-昂撒	ang sa	0
 奥恩	ao en	0
 奥迷	ao mi	0
 奥日	ao ri	0
@@ -1503,7 +1497,7 @@ sort: by_weight
 保供	bao gong	0
 煲剧	bao ju	0
 保冷	bao leng	0
-保理	bao li	0
+保理	bao li	60
 保录	bao lu	0
 暴漫	bao man	0
 宝能	bao neng	0
@@ -1536,7 +1530,6 @@ sort: by_weight
 边柜	bian gui	0
 边沁	bian qin	0
 扁肉	bian rou	0
-边形	bian xing	0
 变砖	bian zhuan	0
 边桌	bian zhuo	0
 标答	biao da	0
@@ -1607,7 +1600,7 @@ sort: by_weight
 出坑	chu keng	0
 出汤	chu tang	0
 出膛	chu tang	0
-褚赢	chu ying	0
+褚嬴	chu ying	0
 川皇	chuan huang	0
 传接	chuan jie	0
 川农	chuan nong	0
@@ -1650,7 +1643,6 @@ sort: by_weight
 带英	dai ying	0
 贷中	dai zhong	0
 淡奶	dan nai	0
-档杆	dang gan	0
 盗笔	dao bi	0
 盗播	dao bo	0
 导剪	dao jian	0
@@ -1911,7 +1903,7 @@ sort: by_weight
 皇萨	huang sa	0
 皇嗣	huang si	0
 皇孙	huang sun	0
-慧差	hui cha	0
+彗差	hui cha	0
 回寝	hui qin	0
 回输	hui shu	0
 回甜	hui tian	0
@@ -2014,7 +2006,6 @@ sort: by_weight
 课费	ke fei	0
 客路	ke lu	0
 科属	ke shu	0
-磕药	ke yao	0
 可育	ke yu	0
 客战	ke zhan	0
 空窗	kong chuang	0
@@ -2297,7 +2288,6 @@ sort: by_weight
 入菜	ru cai	0
 入题	ru ti	0
 入正	ru zheng	0
-软弹	ruan dan	0
 软垢	ruan gou	0
 软胶	ruan jiao	0
 软著	ruan zhu	0
@@ -2332,7 +2322,7 @@ sort: by_weight
 少糖	shao tang	0
 舌侧	she ce	0
 奢品	she pin	0
-涉诉	she su	0
+涉诉	she su	80
 审丑	shen chou	0
 神锋	shen feng	0
 深烘	shen hong	0
@@ -2340,7 +2330,6 @@ sort: by_weight
 神卡	shen ka	0
 沈马	shen ma	0
 神内	shen nei	0
-渗人	shen ren	0
 审图	shen tu	0
 深外	shen wai	0
 神校	shen xiao	0
@@ -2372,7 +2361,6 @@ sort: by_weight
 失智	shi zhi	0
 首版	shou ban	0
 收边	shou bian	0
-首冲	shou chong	0
 守方	shou fang	0
 狩技	shou ji	0
 手磨	shou mo	0
@@ -2420,7 +2408,6 @@ sort: by_weight
 宿友	su you	0
 素振	su zhen	0
 算例	suan li	0
-蒜苔	suan tai	0
 酸枝	suan zhi	0
 隧穿	sui chuan	0
 随挥	sui hui	0
@@ -2431,7 +2418,7 @@ sort: by_weight
 踏频	ta pin	0
 胎纹	tai wen	0
 谈单	tan dan	0
-碳税	tan shui	0
+碳税	tan shui	45
 汤品	tang pin	0
 烫染	tang ran	0
 唐史	tang shi	0
@@ -2470,7 +2457,7 @@ sort: by_weight
 退社	tui she	0
 推胸	tui xiong	0
 退治	tui zhi	0
-屯币	tun bi	0
+囤币	tun bi	0
 挖机	wa ji	0
 外版	wai ban	0
 外保	wai bao	0
@@ -2553,7 +2540,7 @@ sort: by_weight
 小测	xiao ce	0
 小前	xiao qian	0
 消强	xiao qiang	0
-萧铣	xiao xi	0
+萧铣	xiao xian	0
 校线	xiao xian	0
 小协	xiao xie	0
 咲夜	xiao ye	0
@@ -3126,7 +3113,7 @@ sort: by_weight
 仙服	xian fu	0
 挂谷	gua gu	0
 冷鲜	leng xian	0
-冲框	chong kuang	0
+冲筐	chong kuang	0
 下球	xia qiu	0
 咽齿	yan chi	0
 低仿	di fang	0
@@ -3625,7 +3612,6 @@ sort: by_weight
 万播	wan bo	0
 转负	zhuan fu	0
 转重	zhuan zhong	0
-知致	zhi zhi	0
 刷评	shua ping	0
 国动	guo dong	0
 撕奖	si jiang	0
@@ -3643,7 +3629,6 @@ sort: by_weight
 糯口	nuo kou	0
 鲜辣	xian la	0
 甜薄撑	tian bao cheng	0
-鱼获	yu huo	0
 冰阔乐	bing kuo le	0
 血妈	xue ma	0
 屁王	pi wang	0
@@ -3879,7 +3864,6 @@ sort: by_weight
 狠犟	hen jiang	0
 庭后	ting hou	0
 州级	zhou ji	0
-蚌住	bang zhu	0
 # 2026-10-27 新增：知乎热榜热词（人物名/常用词，来自 zhihu_missing_2026-10-27 分词缺失词）
 刘忍	liu ren	0
 独撑	du cheng	0
@@ -4364,7 +4348,7 @@ sort: by_weight
 棍夫	gun fu	0
 # 人物
 宋欣桥	song xin qiao	0
-邝兆雷	kuang zhao lei	0
+邝兆镭	kuang zhao lei	0
 # 饮食与品牌
 冰煮鲜羊	bing zhu xian yang	0
 天边羊多	tian bian yang duo	0
@@ -4388,3 +4372,4 @@ sort: by_weight
 巨惠	ju hui	15
 钜惠	ju hui	15
 鬓毛衰	bin mao cui	7
+谌龙	shen long	0

@@ -199,14 +199,14 @@ Windows 11	Windows	11
 iPhone 3G	iPhone3G
 iPhone 3GS	iPhone3GS
 iPhone 4	iPhone4
-iPhone 4S	iPhone4S
+iPhone 4s	iPhone4s
 iPhone 5	iPhone5
-iPhone 5C	iPhone5C
-iPhone 5S	iPhone5S
+iPhone 5c	iPhone5c
+iPhone 5s	iPhone5s
 iPhone 6	iPhone6
 iPhone 6 Plus	iPhone6Plus
-iPhone 6S	iPhone6S
-iPhone 6S Plus	iPhone6SPlus
+iPhone 6s	iPhone6s
+iPhone 6s Plus	iPhone6sPlus
 iPhone SE	iPhoneSE
 iPhone 7	iPhone7
 iPhone 7 Plus	iPhone7Plus
@@ -620,9 +620,9 @@ Amazon	Amazon
 Adobe	Adobe
 Axure	Axure
 Bartender	Bartender
-Better Snap Tool	BetterSnapTool
-Better Touch Tool	BetterTouchTool
-Better Zip	BetterZip
+BetterSnapTool	BetterSnapTool
+BetterTouchTool	BetterTouchTool
+BetterZip	BetterZip
 Brackets	Brackets
 BundleHunt	BundleHunt
 Byword	Byword
@@ -639,21 +639,21 @@ CheatSheet	CheatSheet
 Chocolatey	Chocolatey
 choco	choco
 ChemBioDraw	ChemBioDraw
-Clean My Mac	CleanMyMac
-Clean My Mac X	CleanMyMacX
+CleanMyMac	CleanMyMac
+CleanMyMac X	CleanMyMacX
 CloudApp	CloudApp
 CloudMagic	CloudMagic
 CodeBox	CodeBox
 CodeKit	CodeKit
-Color Schemer	ColorSchemer
-Color Snapper	ColorSnapper
+ColorSchemer	ColorSchemer
+ColorSnapper	ColorSnapper
 Control Center	ControlCenter
 Cornerstone	Cornerstone
 Cortana	Cortana
 Curio	Curio
 Current Mac Bundles	CurrentMacBundles
-Daisy Disk	DaisyDisk
-Datagraph	Datagraph
+DaisyDisk	DaisyDisk
+DataGraph	DataGraph
 Day One	DayOne
 Default Folder X	DefaultFolderX
 Desktop	Desktop
@@ -735,14 +735,14 @@ Keka	Keka
 Keyboard Maestro	KeyboardMaestro
 Keycard	Keycard
 KeyCue	KeyCue
-LaTeXian	LaTeXian
+Latexian	Latexian
 Launcher	Launcher
 Little Snitch	LittleSnitch
 Live Photos	LivePhotos
 LiveReload	LiveReload
 LockScreen	LockScreen
 Mac App Store	MacAppStore
-Mac Rumors	MacRumors
+MacRumors	MacRumors
 MacAppDeals	MacAppDeals
 MacBook	MacBook
 MacBook Neo	MacBookNeo
@@ -953,7 +953,7 @@ DMCA	DMCA
 Digital Millennium Copyright Act	DMCA
 Digital Millennium Copyright Act	DigitalMillenniumCopyrightAct
 PUA	PUA
-Pickup Artists	PUA
+Pickup Artist	PUA
 Pickup Artists	PickupArtists
 Dockerfile	Dockerfile
 Docker Hub	DockerHub
@@ -1462,7 +1462,7 @@ datetime	datetime
 Hammerspoon	Hammerspoon
 CrossOver	CrossOver
 hallelujahIM	hallelujahIM
-AVAST!	AVAST!
+Avast	Avast
 Bitdefender	Bitdefender
 ClamAV	ClamAV
 Comodo	Comodo
@@ -1554,7 +1554,6 @@ Jupiter	Jupiter
 Latin	Latin
 Mars	Mars
 Marxist	Marxist
-Moslem	Moslem
 Thanksgiving	Thanksgiving
 Venus	Venus
 X-ray	X-ray
@@ -1766,7 +1765,7 @@ GoFrame	GoFrame
 ORM	ORM
 Object Relational Mapping	ORM
 KPI	KPI
-Key Performance Indicators	KPI
+Key Performance Indicator	KPI
 mutex	mutex
 TIOBE	TIOBE
 DigitalOcean	DigitalOcean
@@ -2015,7 +2014,7 @@ PotPlayer	PotPlayer
 Code::Blocks	Code::Blocks
 Protocol Buffers	ProtocolBuffers
 protobuf	protobuf
-iBus	iBus
+IBus	IBus
 BT	BT
 ProtonMail	ProtonMail
 Elasticsearch	Elasticsearch
@@ -2096,7 +2095,6 @@ Frundles	Frundles
 Brotato	Brotato
 engineman	engineman
 unhuman	unhuman
-unhumified	unhumified
 unhumanize	unhumanize
 P2P	P2P
 2FA	2FA
@@ -2117,7 +2115,7 @@ Altman	Altman
 Ultraman	Ultraman
 GPTs	GPTs
 Sider	Sider
-DALL·E	DALL·E
+DALL·E	DALLE
 e.g.	e.g.
 i.e.	i.e.
 et al.	etal.
@@ -2218,7 +2216,7 @@ Vimscripts	Vimscripts
 kubectl	kubectl
 mvn	mvn
 mvnd	mvnd
-maven	maven
+Maven	Maven
 
 # AI / 工具
 DeepSeek	DeepSeek
@@ -2457,3 +2455,103 @@ LiDAR	LiDAR
 PHEV	PHEV
 BEV	BEV
 EREV	EREV
+SGLang	SGLang
+llama.cpp	llama.cpp
+FlashAttention	FlashAttention
+DeepSpeed	DeepSpeed
+safetensors	safetensors
+Unsloth	Unsloth
+QLoRA	QLoRA
+MLLM	MLLM
+A2A	A2A
+FP8	FP8
+BF16	BF16
+INT4	INT4
+INT8	INT8
+KV Cache	KVCache
+Qwen3	Qwen3
+Claude 4	Claude4
+Gemini 2.5	Gemini2.5
+GLM	GLM
+Hunyuan	Hunyuan
+Kling	Kling
+Suno	Suno
+ElevenLabs	ElevenLabs
+sing-box	sing-box
+mihomo	mihomo
+v2ray	v2ray
+VLESS	VLESS
+ZeroTier	ZeroTier
+OrbStack	OrbStack
+Proxmox	Proxmox
+Playwright	Playwright
+Vitest	Vitest
+pnpm	pnpm
+Ruff	Ruff
+pytest	pytest
+Mypy	Mypy
+Pyright	Pyright
+Polars	Polars
+Typst	Typst
+Biome	Biome
+Rspack	Rspack
+esbuild	esbuild
+Webpack	Webpack
+shadcn/ui	shadcn/ui
+OpenTelemetry	OpenTelemetry
+Caddy	Caddy
+ripgrep	ripgrep
+yt-dlp	yt-dlp
+Synology	Synology
+Immich	Immich
+Jellyfin	Jellyfin
+OIDC	OIDC
+RBAC	RBAC
+mTLS	mTLS
+WAF	WAF
+CVE	CVE
+Snapdragon	Snapdragon
+Ryzen	Ryzen
+DisplayPort	DisplayPort
+Thunderbolt	Thunderbolt
+Mini-LED	Mini-LED
+MicroLED	MicroLED
+AMOLED	AMOLED
+QD-OLED	QD-OLED
+LTPO	LTPO
+DDR4	DDR4
+DDR5	DDR5
+LPDDR5X	LPDDR5X
+GDDR7	GDDR7
+HBM3E	HBM3E
+NFC	NFC
+UWB	UWB
+OTA	OTA
+AEB	AEB
+MPV	MPV
+RTX 5090	RTX5090
+RTX 5080	RTX5080
+M4 Pro	M4Pro
+M4 Max	M4Max
+PCIe 5.0	PCIe5.0
+120Hz	120Hz
+144Hz	144Hz
+240Hz	240Hz
+1080p	1080p
+Keychron	Keychron
+Anker	Anker
+UGREEN	UGREEN
+Insta360	Insta360
+Shokz	Shokz
+miHoYo	miHoYo
+HoYoverse	HoYoverse
+Starlink	Starlink
+Shopify	Shopify
+DingTalk	DingTalk
+WeCom	WeCom
+VLC	VLC
+OBS	OBS
+ICU	ICU
+HPV	HPV
+BMI	BMI
+MRI	MRI

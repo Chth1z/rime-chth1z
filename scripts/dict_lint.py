@@ -47,6 +47,17 @@ ALL_MANAGED_FILES: tuple[str, ...] = (
     *MANAGED_OPENCC_FILES,
 )
 
+DISABLED_UPSTREAM_DICTS: set[str] = {
+    "cn_dicts/41448.dict.yaml",
+    "cn_dicts/GB18030-2022.dict.yaml",
+    "cn_dicts/tencent.dict.yaml",
+}
+
+ALLOW_A_CLASS_HIGH_W2: set[tuple[str, str]] = {
+    ("公钥", "gong yao"),
+    ("密钥", "mi yao"),
+}
+
 
 def _split_header_body(lines: list[str]) -> tuple[list[str], list[str], int]:
     for i, line in enumerate(lines):
@@ -107,7 +118,7 @@ def check_hygiene(root: pathlib.Path, errors: list[str]) -> None:
             s = line.strip()
             if not s or s.startswith("#"):
                 continue
-            if (is_dict or is_cn_en) and "\u3000" in line:
+            if "\u3000" in line:
                 errors.append(f"{rel}:{idx}: full-width space U+3000 in entry")
             if allows_emoji_zwj:
                 key_part = line.split("\t", 1)[0]
@@ -127,6 +138,7 @@ def check_hygiene(root: pathlib.Path, errors: list[str]) -> None:
 def check_cn_invariants(
     root: pathlib.Path,
     valid_syls: set[str],
+    ruleset: dict_rules.RuleSet,
     errors: list[str],
     warnings: list[str],
 ) -> tuple[dict, set[tuple[str, str]], dict[str, list[tuple[str, int, str]]]]:
@@ -188,10 +200,16 @@ def check_cn_invariants(
                     wt_val = 0
                 code_index.setdefault(py, []).append((w, wt_val, rel))
 
-    # Dedicated corrections.dict.yaml contract check (runs after active_keys is fully built)
+    # Dedicated corrections.dict.yaml contract + SSOT coverage check (runs after active_keys is fully built)
+    managed_corr_keys: set[tuple[str, str]] = {
+        (cr.word, cr.wrong_py) for cr in ruleset.corrections
+    } | {
+        (dr.word, py) for dr in ruleset.dual_readings for py in (dr.py1, dr.py2)
+    }
     corr_p = root / "cn_dicts/corrections.dict.yaml"
     corr_entries = 0
     corr_overlap_nonzero = 0
+    corr_unmanaged = 0
     if corr_p.exists():
         _, body, start_idx = _split_header_body(corr_p.read_text(encoding="utf-8").splitlines())
         for idx, line in enumerate(body, start_idx):
@@ -204,6 +222,11 @@ def check_cn_invariants(
                 errors.append(f"cn_dicts/corrections.dict.yaml:{idx}: expected 4 columns, got {len(cols)}")
                 continue
             w, py, wt_s, cmt = cols
+            if (w, py) not in managed_corr_keys:
+                corr_unmanaged += 1
+                errors.append(
+                    f"cn_dicts/corrections.dict.yaml:{idx}: unmanaged entry ({w}, {py}) not declared in rules/corrections.tsv or rules/dual_readings.tsv"
+                )
             try:
                 wt_val = int(wt_s)
             except ValueError:
@@ -227,6 +250,21 @@ def check_cn_invariants(
                     f"cn_dicts/corrections.dict.yaml:{idx}: active overlap ({w}, {py}) must use weight=0, got {wt_val}"
                 )
 
+    # Verify dual_readings.tsv declared weights match actual active CN dict weights
+    actual_by_file_key: dict[tuple[str, str, str], int] = {}
+    for py, entries in code_index.items():
+        for w, wt_val, rel in entries:
+            actual_by_file_key[(rel, w, py)] = wt_val
+    for dr in ruleset.dual_readings:
+        for py, decl_w in ((dr.py1, dr.w1), (dr.py2, dr.w2)):
+            act = actual_by_file_key.get((dr.target_file, dr.word, py))
+            if act is None:
+                errors.append(f"{dr.rule_id}: missing ({dr.word}, {py}) in {dr.target_file}")
+            elif act != decl_w:
+                errors.append(
+                    f"{dr.rule_id}: declared weight {decl_w} != actual weight {act} in {dr.target_file} for ({dr.word}, {py})"
+                )
+
     if invalid_syls:
         errors.append(f"invalid_syllables={len(invalid_syls)} (samples: {invalid_syls[:5]})")
     if len_mismatches:
@@ -236,7 +274,7 @@ def check_cn_invariants(
     if within_dups:
         errors.append(f"within_file_dups={within_dups}")
     if cross_dups:
-        errors.append(f"cross_file_dups_active_27={cross_dups}")
+        errors.append(f"cross_file_dups_active_26={cross_dups}")
 
     stats = {
         "active_cn_entries_excl_corr_luna": active_entry_count,
@@ -246,8 +284,9 @@ def check_cn_invariants(
         "len_mismatches": len(len_mismatches),
         "remaining_lue_nue": len(lue_nue),
         "within_file_dups": within_dups,
-        "cross_file_dups_active_27": cross_dups,
+        "cross_file_dups_active_26": cross_dups,
         "corrections_overlap_nonzero": corr_overlap_nonzero,
+        "corrections_unmanaged": corr_unmanaged,
     }
     return stats, active_keys, code_index
 
@@ -356,11 +395,59 @@ def check_schema_and_opencc(root: pathlib.Path, errors: list[str]) -> None:
             p = root / rel
             if not p.exists():
                 continue
+            seen_keys: set[str] = set()
+            is_ec = rel == "opencc/english_chinese.txt"
             for idx, line in enumerate(p.read_text(encoding="utf-8").splitlines(), 1):
                 if not line.strip():
                     continue
                 if "\t" not in line:
                     errors.append(f"{rel}:{idx}: missing tab separator in OpenCC table")
+                    continue
+                if line != line.rstrip(" "):
+                    errors.append(f"{rel}:{idx}: trailing space in OpenCC entry")
+                k, v = line.split("\t", 1)
+                if not k or not v.strip():
+                    errors.append(f"{rel}:{idx}: empty key or value in OpenCC entry")
+                if k in seen_keys:
+                    errors.append(f"{rel}:{idx}: duplicate key '{k}'")
+                seen_keys.add(k)
+                if "  " in v:
+                    errors.append(f"{rel}:{idx}: double space in value for '{k}'")
+                if is_ec:
+                    if " " in k:
+                        errors.append(f"{rel}:{idx}: whitespace in english_chinese key '{k}'")
+                    if re.search(r"\sNUM$", v):
+                        errors.append(f"{rel}:{idx}: stray trailing NUM in value for '{k}'")
+                    if "计算机]" in v:
+                        errors.append(f"{rel}:{idx}: corrupted '计算机]' tag in value for '{k}'")
+
+    # Guard against unmanaged new upstream dictionary files
+    known_dict_files = set(ALL_MANAGED_FILES) | DISABLED_UPSTREAM_DICTS
+    for sub, pat in (("cn_dicts", "*.dict.yaml"), ("cn_dicts_cell", "*.dict.yaml"), ("en_dicts", "*.dict.yaml"), ("en_dicts", "cn_en*.txt")):
+        sub_dir = root / sub
+        if not sub_dir.exists():
+            continue
+        for f in sorted(sub_dir.glob(pat)):
+            rel = f"{sub}/{f.name}"
+            if rel not in known_dict_files:
+                errors.append(f"unmanaged dictionary file detected: {rel} (must be added to clean-dicts.py & dict_lint.py or explicitly excluded)")
+
+    # Optional PyYAML syntax verification for root, profile, and theme YAML files
+    try:
+        import yaml  # type: ignore
+    except ImportError:
+        yaml = None
+    if yaml is not None:
+        yaml_files = (
+            [p for p in sorted(root.glob("*.yaml")) if not p.name.endswith(".dict.yaml")]
+            + sorted((root / "profiles").glob("*.yaml"))
+            + sorted((root / "themes").glob("*.yaml"))
+        )
+        for yf in yaml_files:
+            try:
+                yaml.safe_load(yf.read_text(encoding="utf-8-sig"))
+            except Exception as exc:
+                errors.append(f"{yf.relative_to(root).as_posix()}: invalid YAML ({exc})")
 
 
 def check_idempotency(root: pathlib.Path, rules_dir: pathlib.Path, errors: list[str]) -> dict:
@@ -459,6 +546,7 @@ def check_collisions(
 
     for ar in ruleset.additions:
         top = _top5(ar.py)
+        top_non_self = [x for x in top if x[0] != ar.word]
         report.append(
             {
                 "source": ar.rule_id,
@@ -469,6 +557,10 @@ def check_collisions(
                 "top5_active": [[w, wt] for w, wt, _ in top],
             }
         )
+        if ar.category == "E1" and top_non_self and ar.weight > max(1, top_non_self[0][1] // 20):
+            warnings.append(
+                f"collision guard: E1 {ar.rule_id} weight {ar.weight} > top1/20 ({top_non_self[0][0]}={top_non_self[0][1]})"
+            )
 
     for wr in ruleset.weights:
         top = _top5(wr.py)
@@ -484,8 +576,9 @@ def check_collisions(
         )
 
     for dr in ruleset.dual_readings:
-        for py, wt in ((dr.py1, dr.w1), (dr.py2, dr.w2)):
+        for idx_py, (py, wt) in enumerate(((dr.py1, dr.w1), (dr.py2, dr.w2))):
             top = _top5(py)
+            top_non_self = [x for x in top if x[0] != dr.word]
             report.append(
                 {
                     "source": dr.rule_id,
@@ -496,6 +589,21 @@ def check_collisions(
                     "top5_active": [[w, wt_v] for w, wt_v, _ in top],
                 }
             )
+            if (
+                idx_py == 1
+                and top_non_self
+                and top_non_self[0][1] >= COMMON_HOMOPHONE_THRESHOLD
+                and wt >= top_non_self[0][1]
+                and (dr.word, py) not in ALLOW_A_CLASS_HIGH_W2
+            ):
+                msg = (
+                    f"collision guard: A-class py2 {dr.rule_id} weight {wt} >= top common active homophone "
+                    f"'{top_non_self[0][0]}' ({top_non_self[0][1]})"
+                )
+                if wt >= 500:
+                    errors.append(msg)
+                else:
+                    warnings.append(msg)
 
     return report
 
@@ -606,7 +714,7 @@ def main() -> None:
     warnings.extend(ruleset.warnings)
 
     check_hygiene(root, errors)
-    cn_stats, _, code_index = check_cn_invariants(root, valid_syls, errors, warnings)
+    cn_stats, _, code_index = check_cn_invariants(root, valid_syls, ruleset, errors, warnings)
     en_stats = check_en_and_cn_en(root, rules_dir, errors)
     check_schema_and_opencc(root, errors)
 
@@ -617,6 +725,9 @@ def main() -> None:
     collision_report = None
     if args.check_collisions:
         collision_report = check_collisions(ruleset, code_index, errors, warnings)
+
+    if args.strict and warnings:
+        errors.extend(f"strict-mode warning: {w}" for w in warnings)
 
     diff_stats = None
     if args.diff_budget:
