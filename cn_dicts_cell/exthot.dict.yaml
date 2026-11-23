@@ -198,7 +198,7 @@ use_preset_vocabulary: false
 存不住钱	cun bu zhu qian	25
 村超	cun chao	0
 存护	cun hu	0
-大馋丫头	da chan ya tou	0
+大馋丫头	da chan ya tou	200
 大单元	da dan yuan	0
 打断施法	da duan shi fa	14
 打歌卡	da ge ka	0
@@ -258,7 +258,7 @@ use_preset_vocabulary: false
 店管家	dian guan jia	0
 颠锅	dian guo	105
 电幻	dian huan	1
-癫火	dian huo	75
+癫火	dian huo	40
 点淘	dian tao	23
 电助力	dian zhu li	13
 电自	dian zi	9
@@ -419,7 +419,7 @@ use_preset_vocabulary: false
 固配	gu pei	0
 顾清寒	gu qing han	0
 顾时夜	gu shi ye	0
-古相思曲	gu xiang si qu	0
+古相思曲	gu xiang si qu	80
 孤战迷城	gu zhan mi cheng	0
 孤爪研磨	gu zhao yan mo	3
 谷子店	gu zi dian	0
@@ -525,7 +525,7 @@ use_preset_vocabulary: false
 换乘了	huan cheng le	0
 幻兽帕鲁	huan shou pa lu	0
 换帅	huan shuai	223
-幻塔	huan ta	146
+幻塔	huan ta	35
 幻星	huan xing	3
 环氧彩砂	huan yang cai sha	6
 缓一天	huan yi tian	3
@@ -621,7 +621,7 @@ use_preset_vocabulary: false
 接接接接	jie jie jie jie	0
 捷尼赛思	jie ni sai si	6
 杰帕德	jie pa de	0
-杰青	jie qing	332
+杰青	jie qing	120
 洁世一	jie shi yi	0
 接姨妈	jie yi ma	0
 金豆芽	jin dou ya	0
@@ -916,7 +916,7 @@ use_preset_vocabulary: false
 魔术特调	mo shu te tiao	0
 茉酸奶	mo suan nai	0
 模玩熊	mo wan xiong	2
-墨雨云间	mo yu yun jian	0
+墨雨云间	mo yu yun jian	200
 墨之影	mo zhi ying	0
 暮蝶	mu die	0
 母鸡卡	mu ji ka	0
@@ -1394,7 +1394,7 @@ use_preset_vocabulary: false
 伪人	wei ren	1
 威飒	wei sa	3
 维神	wei shen	4
-维什戴尔	wei shen dai er	0
+维什戴尔	wei shi dai er	0
 韦驮门	wei tuo men	0
 温格高	wen ge gao	0
 问界	wen jie	83
@@ -1457,7 +1457,7 @@ use_preset_vocabulary: false
 舞阳城	wu yang cheng	5
 乌野	wu ye	72
 无语住了	wu yu zhu le	12
-无语子	wu yu zi	86
+无语子	wu yu zi	15
 无职	wu zhi	66
 物种多样性	wu zhong duo yang xing	81
 袭榜	xi bang	0
@@ -1533,7 +1533,7 @@ use_preset_vocabulary: false
 笑鼠了	xiao shu le	0
 笑鼠我了	xiao shu wo le	0
 笑亖	xiao si	0
-小提	xiao ti	98
+小提	xiao ti	50
 小甜水	xiao tian shui	68
 小象超市	xiao xiang chao shi	0
 小夭	xiao yao	211
@@ -1732,7 +1732,7 @@ use_preset_vocabulary: false
 育辉	yu hui	1
 与辉同行	yu hui tong xing	0
 宇将军	yu jiang jun	11
-预瞄	yu miao	120
+预瞄	yu miao	45
 予你	yu ni	51
 于适	yu shi	0
 欲言难止	yu yan nan zhi	0
@@ -1792,7 +1792,7 @@ use_preset_vocabulary: false
 张桂源	zhang gui yuan	0
 章昊	zhang hao	1
 账清	zhang qing	1
-涨球	zhang qiu	111
+涨球	zhang qiu	45
 张天赋	zhang tian fu	0
 掌瓦	zhang wa	0
 张万森	zhang wan sen	0
@@ -1823,7 +1823,7 @@ use_preset_vocabulary: false
 真无敌了	zhen wu di le	0
 真有实力	zhen you shi li	16
 赈灾粮	zhen zai liang	26
-整板	zheng ban	67
+整板	zheng ban	40
 整顿职场	zheng dun zhi chang	19
 正肩	zheng jian	6
 整懵了	zheng meng le	61

@@ -16,197 +16,381 @@ columns:
   - comment
 ...
 ##### 错音
-纨绔子弟	zhi kua zi di	0	纨(wan)绔(ku)子弟
-馄饨	hun dun	500	馄(hun)饨(tun)
-主角	zhu jiao	1000	zhǔ jué
-角色	jiao se	200	jué sè
-说服	shui fu	500	shuō fú
-道行	dao hang	500	dào heng
+纨绔子弟	zhi kua zi di	50	纨(wán)绔(kù)子弟
+馄饨	hun dun	300	馄(hún)饨(tun)
+主角	zhu jiao	450	zhǔ jué
+角色	jiao se	180	jué sè
+说服	shui fu	200	旧读 shuì fú / 规范 shuō fú
+道行	dao hang	200	dào heng
 模样	mo yang	200	mú yàng
 有模有样	you mo you yang	100	yǒu mú yǒu yàng
 一模一样	yi mo yi yang	200	yī mú yī yàng
 装模作样	zhuang mo zuo yang	100	zhuāng mú zuò yàng
 人模狗样	ren mo gou yang	100	rén mú gǒu yàng
 阿弥陀佛	a mi tuo fo	100	ē mí tuó fó
-南无阿弥陀佛	na mo a mi tuo fo	0	nā mó ē mí tuó fó
-南无阿弥陀佛	nan wu a mi tuo fo	0	nā mó ē mí tuó fó
-南无阿弥陀佛	nan wu e mi tuo fo	0	nā mó ē mí tuó fó
+南无阿弥陀佛	na mo a mi tuo fo	50	nā mó ē mí tuó fó
+南无阿弥陀佛	nan wu a mi tuo fo	50	nā mó ē mí tuó fó
+南无阿弥陀佛	nan wu e mi tuo fo	50	nā mó ē mí tuó fó
 槟榔	bin lang	150	bīng láng
-弄堂	nong tang	150	lòng táng
+弄堂	nong tang	120	lòng táng
 心宽体胖	xin kuan ti pang	100	xīn kuān tǐ pán
 埋怨	mai yuan	150	mán yuàn
 虚与委蛇	xu yu wei she	100	xū yǔ wēi yí
 木讷	mu na	100	mù nè
 独乐乐	du le le	50	dú yuè lè
 众乐乐	zhong le le	50	zhòng yuè lè
-荨麻	xun ma	80	qián má
-荨麻疹	qian ma zhen	80	xún má zhěn
-模具	mo ju	150	mú jù
+荨麻	xun ma	30	审音拟 xún má / 现汉 qián má
+荨麻疹	qian ma zhen	80	异读 qián má zhěn / 规范 xún má zhěn
+模具	mo ju	50	mú jù
 草薙	cao zhi	50	cǎo tì
 草薙京	cao zhi jing	80	cǎo tì jīng
-草薙剑	cao zhi jian	0	cǎo tì jiàn
+草薙剑	cao zhi jian	50	cǎo tì jiàn
 贾平凹	jia ping ao	100	jiǎ píng wā
-雪佛兰	xue fo lan	100	xuě fú lán
+雪佛兰	xue fo lan	0	规范 xuě fó lán / 旧读 xuě fú lán
 强劲	qiang jin	150	qiáng jìng
-胴体	tong ti	280	dòng tǐ
+胴体	tong ti	200	dòng tǐ
 力能扛鼎	li neng kang ding	50	lì néng gāng dǐng
 鸭绿江	ya lv jiang	100	yā lù jiāng
 大腹便便	da fu bian bian	100	dà fù pián pián
 卡脖子	ka bo zi	150	qiǎ bó zi
 掺和	chan he	150	chān huo
-掺和	can huo	100	chān huo
-称职	cheng zhi	300	chèn zhí
+称职	cheng zhi	180	chèn zhí
 太行山	tai xing shan	100	tài háng shān
-歇斯底里	jie si di li	100	xiē sī dǐ lǐ
-发酵	fa xiao	500	fā jiào
-酵母菌	xiao mu jun	0	jiào mǔ jūn
-殷红	yin hong	100	yān hóng
+发酵	fa xiao	250	fā jiào
+酵母菌	xiao mu jun	80	jiào mǔ jūn
+殷红	yin hong	15	yān hóng
 暖和	nuan he	150	nuǎn huo
 模棱两可	mo ling liang ke	100	mó léng liǎng kě
 鄱阳湖	pan yang hu	100	pó yáng hú
 脖颈	bo jing	100	bó gěng
-脖颈儿	bo jing er	0	bó gěng er
-牛皮癣	niu pi xian	0	niú pí xuǎn
-花斑癣	hua ban xian	0	huā bān xuǎn
+脖颈儿	bo jing er	50	bó gěng er
+牛皮癣	niu pi xian	50	niú pí xuǎn
+花斑癣	hua ban xian	50	huā bān xuǎn
 体癣	ti xian	0	tǐ xuǎn
 股癣	gu xian	0	gǔ xuǎn
-脚癣	jiao xian	0	jiǎo xuǎn
+脚癣	jiao xian	50	jiǎo xuǎn
 足癣	zu xian	0	zú xuǎn
 结扎	jie zha	100	jié zā
 海参崴	hai shen wei	100	hǎi shēn wǎi
 厚朴	hou pu	50	hòu pò
-大宛马	da wan ma	0	dà yuān mǎ
+大宛马	da wan ma	50	dà yuān mǎ
 龇牙	ci ya	50	zī yá
-龇着牙	ci zhe ya	0	zī zhe yá
-龇牙咧嘴	ci ya lie zui	0	zī yá liě zuǐ
-头皮屑	tou pi xue	100	tóu pí xiè
+龇着牙	ci zhe ya	50	zī zhe yá
+龇牙咧嘴	ci ya lie zui	80	zī yá liě zuǐ
 偌大	nuo da	100	偌(ruò)大
-饮鸩解渴	yin jiu jie ke	0	饮鸩(zhèn)解渴
-宫商角徵羽	gong shang jiao zhi yu	0	宫商角(jué)徵羽
-氙气灯	shan qi deng	0	氙(xiān)气灯
-氙气大灯	shan qi da deng	0	氙(xiān)气大灯
+饮鸩解渴	yin jiu jie ke	50	饮鸩(zhèn)解渴
+宫商角徵羽	gong shang jiao zhi yu	50	宫商角(jué)徵羽
+氙气灯	shan qi deng	80	氙(xiān)气灯
+氙气大灯	shan qi da deng	50	氙(xiān)气大灯
 氙气手电筒	shan qi shou dian tong	0	氙(xiān)气手电筒
-应该	yin gai	200	应(yīng)该
 粘贴	nian tie	150	粘(zhān)贴
 高句丽	gao ju li	80	高句(gōu)丽
-角斗士	jiao dou shi	80	角(jué)斗士
-缩砂密	suo sha mi	0	缩(sù)砂密
-榅桲	wen bo	0	wēn po
-荸荠	bi ji	0	bí qi
-柔荑	rou yi	0	柔荑(tí)
+缩砂密	suo sha mi	50	缩(sù)砂密
+榅桲	wen bo	50	wēn po
+荸荠	bi ji	50	bí qi
+柔荑	rou yi	50	柔荑(tí)
 柔荑花序	rou yi hua xu	0	柔荑(tí)花序
 手如柔荑	shou ru rou yi	0	手如柔荑(tí)
-温庭筠	wen ting jun	0	温庭筠(yún)
-三昧真火	san wei zhen huo	0	三昧(mèi)真火
-青𬞟之末	qing ping zhi mo	0	青𬞟(pín)之末
+温庭筠	wen ting jun	50	温庭筠(yún)
+三昧真火	san wei zhen huo	80	三昧(mèi)真火
+青𬞟之末	qing ping zhi mo	50	青𬞟(pín)之末
 起于青𬞟之末	qi yu qing ping zhi mo	0	起于青𬞟(pín)之末
 风起于青𬞟之末	feng qi yu qing ping zhi mo	0	风起于青𬞟(pín)之末
-优惠券	you hui juan	150	优惠券(quàn)
-拱券	gong quan	0	gǒng xuàn
-哺乳	pu ru	80	bǔ rǔ
+优惠券	you hui juan	200	优惠券(quàn)
+拱券	gong quan	50	gǒng xuàn
 脑卒中	nao zu zhong	80	nǎo cù zhòng
-潟湖	xie hu	0	xì hú
-果脯	guo pu	0	guǒ fǔ
-肉脯	rou pu	0	ròu fǔ
-白𬶨豚	bai qi tun	0	bái jì tún
+潟湖	xie hu	50	xì hú
+果脯	guo pu	50	guǒ fǔ
+肉脯	rou pu	50	ròu fǔ
+白𬶨豚	bai qi tun	50	bái jì tún
 ##### 错字
-罄竹难书	xin zhu nan shu	0	馨(罄qing)竹难书
-不胜感激	bu shen gan ji	0	不甚(胜sheng)感激
-烦不胜烦	fan bu shen fan	0	烦不甚(胜sheng)烦
-防不胜防	fang bu shen fang	0	防不甚(胜sheng)防
-饮鸩止渴	yin jiu zhi ke	0	饮鸠(鸩zhen)止渴
-模板	mo ban	200	模(mu)板
-胡茬	hu zha	0	胡渣(茬cha)
-阈值	fa zhi	850	阀(阈yu)值
-咖喱	ka li	0	咖(gā)喱(lí)
-感慨	gan gai	0	感概(慨kai)
-曾经	ceng jin	150	曾今(经jing)
-掺和	can he	110	掺(chan)和(huo)
-搅和	jiao he	0	搅(jiao)和(huo)
-神祇	shen zhi	0	神祗(祇qi)
-黏腻	zhan ni	0	粘(黏nian)腻
-黏膜	zhan mo	0	粘(黏nian)膜
-黏人	zhan ren	0	粘(黏nian)人
-胃黏膜	wei zhan mo	0	胃粘(黏nian)膜
-鼻黏膜	bi zhan mo	0	鼻粘(黏nian)膜
+罄竹难书	xin zhu nan shu	80	馨(罄qìng)竹难书
+饮鸩止渴	yin jiu zhi ke	100	饮鸠(鸩zhèn)止渴
+模板	mo ban	40	习惯 mó bǎn / 规范 mú bǎn
+胡茬	hu zha	80	胡渣(茬cha)
+咖喱	ka li	120	咖(gā)喱(lí)
+搅和	jiao he	100	搅(jiǎo)和(huo)
+神祇	shen zhi	50	神祗(祇qí)
+黏腻	zhan ni	40	粘(黏nian)腻
+黏膜	zhan mo	15	粘(黏nian)膜
+黏人	zhan ren	15	粘(黏nian)人
+胃黏膜	wei zhan mo	80	胃粘(黏nian)膜
+鼻黏膜	bi zhan mo	80	鼻粘(黏nian)膜
 烘焙	hong pei	150	烘培(焙bei)
-非常	hui chang	0	灰(非fei)常
 仿佛	pang fo	0	仿(fǎng)佛(fú)
-崩溃	ben kui	150	奔(崩beng)溃
-钮祜禄	niu gu lu	0	钮钴(祜hu)禄
-钮祜禄氏	niu gu lu shi	0	钮钴(祜hu)禄氏
-血脉偾张	xue mai ben zhang	0	血脉贲(偾fen)张
-黏合	zhan he	0	粘(黏nian)合
+钮祜禄	niu gu lu	50	钮钴(祜hu)禄
+钮祜禄氏	niu gu lu shi	50	钮钴(祜hu)禄氏
+血脉偾张	xue mai ben zhang	80	亦作血脉贲张 / 规范偾(fèn)张
+黏合	zhan he	50	粘(黏nian)合
 一刹那	yi sha na	100	一霎(刹cha)那
-乐此不疲	le ci bu bi	0	乐此不彼(疲pi)
-堂吉诃德	tang ji ke de	0	堂吉柯(诃he)德
-叱咤风云	chi cha feng yun	0	叱诧(咤zha)风云
-艾宾浩斯	ai bin hao sen	0	艾宾浩森(斯si)
-胆战心惊	dan chan xin jing	0	胆颤(战zhan)心惊
-自上而下	zhi shang er xia	0	至(自zi)上而下
+堂吉诃德	tang ji ke de	80	堂吉柯(诃he)德
+叱咤风云	chi cha feng yun	100	叱诧(咤zha)风云
 黏性流体	zhan xing liu ti	0	粘(黏nian)性流体
-施瓦辛格	si wa xin ge	0	斯(施shi)瓦辛格
-损人利己	sun ren li yi	0	损人利已(己ji)
 黏附分子	zhan fu fen zi	0	粘(黏nian)附分子
-迫不得已	po bu de ji	0	迫不得己(已yi)
-黏黏糊糊	zhan zhan hu hu	0	粘(黏nian)粘(黏nian)糊糊
+黏黏糊糊	zhan zhan hu hu	80	粘(黏nian)粘(黏nian)糊糊
 黏膜免疫	zhan mo mian yi	0	粘(黏nian)膜免疫
-施瓦辛格	shi wa xing ge	0	施瓦星(辛xin)格
-丰臣秀吉	feng cheng xiu ji	0	丰成(臣chen)秀吉
-柯伊伯带	ke yi bai dai	0	柯伊柏(伯bo)带
-伯恩斯坦	bo en shi tan	0	伯恩施(斯si)坦
-亚里士多德	li shi duo de	0	里士多德(亚里士多德 ya li shi duo de)
-玛格丽特	ma jia lei te	0	玛加(格ge)蕾(丽li)特
-亚历山大	a li shan da	0	阿(亚ya)历山大
-布伦塔诺	bu lun tan nuo	0	布伦坦(塔ta)诺
 表观黏度	biao guan zhan du	0	表观粘(黏nian)度
-刹那间	sha na jian	0	霎(刹cha)那间
-奥伯伦	ao bai lun	0	奥柏(伯bo)伦
+刹那间	sha na jian	100	霎(刹cha)那间
 黏性力	zhan xing li	0	粘(黏nian)性力
 刹那	sha na	100	霎(刹cha)那
 螺蛳粉	luo shi fen	150	螺狮(蛳si)粉
 黏合力	zhan he li	0	粘(黏nian)合力
 高黏度	gao zhan du	0	高粘(黏nian)度
-两个	lia ge	0	俩(两liang)个
-那个	nei ge	0	内(那na)个
 按捺	an nai	100	按耐(捺nà)
 按捺不住	an nai bu zhu	150	按耐(捺nà)不住
-血脉偾张	xue mai pen zhang	100	血脉喷张 | 血脉偾(fèn)张
+血脉偾张	xue mai pen zhang	100	误作喷张 / 规范血脉偾(fèn)张
 摩羯座	mo xie zuo	100	魔蝎(摩羯jié)座
 # 常用易错音与习惯读音提示
 仿佛	fang fo	150	仿(fǎng)佛(fú)
 仿佛	pang fu	0	仿(fǎng)佛(fú)
-纨绔子弟	wan kua zi di	0	纨(wán)绔(kù)子弟
-比萨	pi sa	300	比(bǐ)萨(sà)
+纨绔子弟	wan kua zi di	100	纨(wán)绔(kù)子弟
+比萨	pi sa	180	音译比(bǐ)萨(sà) / 披萨
 给予	gei yu	200	给(jǐ)予(yǔ)
-张柏芝	zhang bai zhi	100	张柏(bó)芝
+张柏芝	zhang bai zhi	0	规范 zhāng bǎi zhī / 习惯 zhāng bó zhī
 藤蔓	teng man	150	藤蔓(wàn)
-吱声	zhi sheng	800	吱(zī)声
+吱声	zhi sheng	300	吱(zī)声
 调换	tiao huan	100	调(diào)换
-六安	liu an	150	六(lù)安
+六安	liu an	120	六(lù)安
 六合区	liu he qu	50	六(lù)合区
 南京六合	nan jing liu he	50	南京六(lù)合
-关卡	guan ka	200	关(guān)卡(qiǎ)
+关卡	guan ka	150	关(guān)卡(qiǎ)
 供给	gong gei	200	供(gōng)给(jǐ)
-补给	bu gei	500	补(bǔ)给(jǐ)
-抹布	mo bu	350	抹(mā)布
-游说	you shuo	800	游(yóu)说(shuì)
-下调	xia diao	150	下调(tiáo)
-单薄	dan bao	800	单薄(bó)
-轻薄	qing bao	800	轻薄(bó)
-躯壳	qu ke	150	躯壳(qiào)
+补给	bu gei	250	补(bǔ)给(jǐ)
+抹布	mo bu	200	抹(mā)布
+游说	you shuo	400	游(yóu)说(shuì)
+下调	xia diao	35	下调(tiáo)
+单薄	dan bao	400	单薄(bó)
+轻薄	qing bao	400	轻薄(bó)
+躯壳	qu ke	60	躯壳(qiào)
 裸露	luo lou	150	裸露(lù)
-外露	wai lou	150	外露(lù)
+外露	wai lou	60	外露(lù)
 深藏不露	shen cang bu lou	100	深藏不露(lù)
 魔爪	mo zhua	150	魔爪(zhǎo)
 爪哇	zhua wa	100	爪(zhǎo)哇
-脉脉	mai mai	500	脉(mò)脉
+脉脉	mai mai	300	脉(mò)脉
 扛鼎	kang ding	50	扛(gāng)鼎
 薄膜	bao mo	80	薄(bó)膜
-刘禅	liu chan	300	刘禅(shàn)
+刘禅	liu chan	200	刘禅(shàn)
 吐蕃	tu fan	50	吐蕃(bō)
 泊松分布	po song fen bu	50	泊(bó)松分布
 便宜坊	pian yi fang	50	便(biàn)宜坊
 镀铬	du luo	50	镀铬(gè)
-凑合	cou huo	150	凑活(合he)
+凑合	cou huo	150	凑合(he)
 契诃夫	qi ke fu	100	契科(诃hē)夫
+# 常用易错音、争议读音与习惯读音提示
+味噌	wei ceng	0	规范 wèi cēng / 习惯 wèi zēng
+味噌	wei zeng	0	习惯 wèi zēng / 规范 wèi cēng
+雪佛兰	xue fu lan	150	旧读 xuě fú lán / 规范 xuě fó lán
+张柏芝	zhang bo zhi	80	习惯 zhāng bó zhī / 规范 zhāng bǎi zhī
+密钥	mi yue	0	规范 mì yuè / 习惯 mì yào
+密钥	mi yao	350	习惯 mì yào / 规范 mì yuè
+模板	mu ban	0	规范 mú bǎn / 习惯 mó bǎn
+荨麻	qian ma	0	现汉 qián má / 审音拟 xún má
+荨麻疹	xun ma zhen	0	规范 xún má zhěn / 异读 qián má zhěn
+血脉偾张	xue mai fen zhang	0	规范血脉偾(fèn)张 / 亦作贲(bēn)张
+呆板	ai ban	30	旧读 ái bǎn / 规范 dāi bǎn
+鼻塞	bi sai	250	口语 bí sāi / 规范 bí sè
+爪牙	zhua ya	100	爪(zhǎo)牙
+露出	lou chu	150	露(lù)出
+露出了	lou chu le	100	露(lù)出了
+成熟	cheng shou	150	成(chéng)熟(shú)
+不熟	bu shou	120	不熟(shú)
+熟练	shou lian	100	熟(shú)练
+熟了	shou le	100	熟(shú)了
+相熟	xiang shou	15	相熟(shú)
+流血	liu xie	80	流血(xuè)
+血渍	xie zi	30	血(xuè)渍
+衣裳	yi chang	50	衣裳(shang)
+怎么着	zen me zhe	120	怎么着(zhāo)
+盖聂	gai nie	150	盖(Gě)聂
+黄柏	huang bai	40	黄柏(bò)
+填塞	tian sai	25	填塞(sè)
+削铁如泥	xiao tie ru ni	80	削(xuē)铁如泥
+宝幢	bao zhuang	15	宝幢(chuáng)
+范雎	fan sui	40	范雎(jū) / 误作范睢
+大迦叶	da jia ye	50	大迦叶(shè)
+泡椒凤爪	pao jiao feng zhua	80	泡椒凤爪(zhǎo)
+山椒凤爪	shan jiao feng zhua	80	山椒凤爪(zhǎo)
+壳层	ke ceng	30	壳(qiào)层
+流鼻血	liu bi xie	100	流鼻血(xuè)
+呷哺呷哺	ga bu ga bu	80	呷(xiā)哺呷哺
+花剌子模	hua ci zi mo	80	花剌(là)子模
+自始至终	zhi shi zhi zhong	80	至(自zì)始至终
+无时无刻	wu shi bu ke	80	无时不(无wú)刻
+债券	zhai juan	150	债(zhài)券(quàn)
+证券	zheng juan	30	证(zhèng)券(quàn)
+券商	juan shang	80	券(quàn)商
+消费券	xiao fei juan	100	消费券(quàn)
+代金券	dai jin juan	100	代金券(quàn)
+入场券	ru chang juan	100	入场券(quàn)
+点券	dian juan	80	点券(quàn)
+氛围	fen fei	120	氛(fēn)围(wéi)
+暴露	bao lou	150	暴(bào)露(lù)
+透露	tou lou	150	透(tòu)露(lù)
+披露	pi lou	150	披(pī)露(lù)
+揭露	jie lou	100	揭(jiē)露(lù)
+显露	xian lou	80	显(xiǎn)露(lù)
+露骨	lou gu	80	露(lù)骨(gǔ)
+露面	lu mian	150	露(lòu)面(miàn)
+配角	pei jiao	150	配(pèi)角(jué)
+男主角	nan zhu jiao	150	男主(zhǔ)角(jué)
+女主角	nv zhu jiao	150	女主(zhǔ)角(jué)
+角逐	jiao zhu	150	角(jué)逐(zhú)
+标的	biao de	100	标的(dì)
+解剖	jie pao	150	解(jiě)剖(pōu)
+剖析	pao xi	150	剖(pōu)析(xī)
+剖腹产	pao fu chan	100	剖(pōu)腹产
+混淆	hun yao	150	混(hùn)淆(xiáo)
+混淆视听	hun yao shi ting	100	混(hùn)淆(xiáo)视听
+混淆是非	hun yao shi fei	50	混(hùn)淆(xiáo)是非
+对称	dui cheng	100	对(duì)称(chèn)
+匀称	yun cheng	100	匀(yún)称(chèn)
+不称职	bu cheng zhi	100	不称(chèn)职
+称心如意	cheng xin ru yi	100	称(chèn)心如意
+薄弱	bao ruo	150	薄(bó)弱(ruò)
+刻薄	ke bao	100	刻(kè)薄(bó)
+浅薄	qian bao	200	浅(qiǎn)薄(bó)
+薄荷	bao he	200	薄(bò)荷(he)
+削弱	xiao ruo	150	削(xuē)弱(ruò)
+剥削	bo xiao	150	剥(bō)削(xuē)
+削减	xiao jian	200	削(xuē)减(jiǎn)
+剥夺	bao duo	150	剥(bō)夺(duó)
+塑料	suo liao	150	塑(sù)料(liào)
+追溯	zhui shuo	100	追(zhuī)溯(sù)
+酵母	xiao mu	80	酵(jiào)母(mǔ)
+湖泊	hu bo	150	湖(hú)泊(pō)
+血泊	xue bo	100	血(xuè)泊(pō)
+漂泊	piao po	15	漂(piāo)泊(bó)
+停泊	ting po	80	停(tíng)泊(bó)
+光纤	guang qian	150	光(guāng)纤(xiān)
+纤维	qian wei	200	纤(xiān)维(wéi)
+膳食纤维	shan shi qian wei	100	膳食纤(xiān)维
+碳纤维	tan qian wei	100	碳纤(xiān)维
+校准	xiao zhun	150	校(jiào)准(zhǔn)
+校正	xiao zheng	100	校(jiào)正(zhèng)
+校验	xiao yan	200	校(jiào)验(yàn)
+校对	xiao dui	200	校(jiào)对(duì)
+着迷	zhe mi	100	着(zháo)迷(mí)
+着陆	zhe lu	100	着(zhuó)陆(lù)
+着落	zhe luo	80	着(zhuó)落(luò)
+卡壳	ka ke	100	卡(qiǎ)壳(ké)
+地壳	di ke	150	地(dì)壳(qiào)
+提防	ti fang	100	提(dī)防(fang)
+决堤	jue ti	80	决(jué)堤(dī)
+堤坝	ti ba	150	堤(dī)坝(bà)
+自给自足	zi gei zi zu	100	自给(jǐ)自足
+供给侧	gong gei ce	100	供(gōng)给(jǐ)侧
+给养	gei yang	80	给(jǐ)养(yǎng)
+自给	zi gei	80	自给(jǐ)
+酗酒	xiong jiu	100	酗(xù)酒(jiǔ)
+分娩	fen wan	100	分(fēn)娩(miǎn)
+妊娠	ren chen	100	妊(rèn)娠(shēn)
+濒临	pin lin	100	濒(bīn)临(lín)
+媲美	bi mei	60	媲(pì)美(měi)
+庇护	pi hu	100	庇(bì)护(hù)
+包庇	bao pi	120	包(bāo)庇(bì)
+麻痹	ma pi	200	麻(má)痹(bì)
+粗犷	cu kuang	100	粗(cū)犷(guǎng)
+炽热	zhi re	150	炽(chì)热(rè)
+白炽灯	bai zhi deng	100	白炽(chì)灯
+迫击炮	po ji pao	100	迫(pǎi)击炮
+斡旋	gan xuan	100	斡(wò)旋(xuán)
+泥淖	ni zhuo	80	泥(ní)淖(nào)
+龟裂	gui lie	100	龟(jūn)裂(liè)
+咋舌	zha she	80	咋(zé)舌(shé)
+咋舌	za she	40	咋(zé)舌(shé)
+令人咋舌	ling ren za she	100	令人咋(zé)舌
+熨帖	yun tie	40	熨(yù)帖(tiē)
+挣扎	zheng za	100	挣(zhēng)扎(zhá)
+捆扎	kun zha	50	捆(kǔn)扎(zā)
+厌恶	yan e	100	厌(yàn)恶(wù)
+可恶	ke e	100	可(kě)恶(wù)
+反省	fan sheng	150	反(fǎn)省(xǐng)
+畸形	qi xing	150	畸(jī)形(xíng)
+咀嚼	ju jiao	200	咀(jǔ)嚼(jué)
+禅让	chan rang	100	禅(shàn)让(ràng)
+东莞	dong wan	15	东(Dōng)莞(guǎn)
+吐谷浑	tu gu hun	80	吐谷(yù)浑
+亳州	hao zhou	80	亳(Bó)州
+秘鲁	mi lu	200	秘(Bì)鲁(lǔ)
+蚌埠	bang bu	15	蚌(Bèng)埠(bù)
+荥阳	rong yang	80	荥(Xíng)阳
+冒顿单于	mao dun dan yu	80	冒(Mò)顿(dú)单(Chán)于
+参差不齐	can ci bu qi	100	参(cēn)差(cī)不齐
+参差不齐	can cha bu qi	100	参(cēn)差(cī)不齐
+绰绰有余	chao chao you yu	80	绰(chuò)绰有余
+戛然而止	ga ran er zhi	100	戛(jiá)然而止
+一蹴而就	yi jiu er jiu	100	一蹴(cù)而就
+良莠不齐	liang xiu bu qi	100	良莠(yǒu)不齐
+如火如荼	ru huo ru cha	80	如火如荼(tú)
+言简意赅	yan jian yi hai	80	言简意赅(gāi)
+深恶痛绝	shen e tong jue	100	深恶(wù)痛绝
+未雨绸缪	wei yu chou miao	100	未雨绸缪(móu)
+面面相觑	mian mian xiang xu	80	面面相觑(qù)
+抽丝剥茧	chou si bao jian	80	抽丝剥(bō)茧
+自怨自艾	zi yuan zi ai	100	自怨自艾(yì)
+如履薄冰	ru lv bao bing	80	如履薄(bó)冰
+鬼使神差	gui shi shen cha	100	鬼使神差(chāi)
+妄自菲薄	wang zi fei bao	80	妄自菲薄(bó)
+恬不知耻	gua bu zhi chi	80	恬(tián)不知耻
+像模像样	xiang mo xiang yang	80	像模(mú)像样
+杞人忧天	ji ren you tian	80	杞(qǐ)人忧天
+高屋建瓴	gao wu jian lin	80	高屋建瓴(líng)
+按图索骥	an tu suo yi	80	按图索骥(jì)
+锲而不舍	qi er bu she	100	锲(qiè)而不舍
+病入膏肓	bing ru gao mang	100	病入膏肓(huāng)
+振聋发聩	zhen long fa gui	80	振聋发聩(kuì)
+发人深省	fa ren shen sheng	80	发人深省(xǐng)
+相形见绌	xiang xing jian zhuo	100	相形见绌(chù)
+相形见绌	xiang xing jian qu	50	相形见绌(chù)
+毛遂自荐	mao shui zi jian	80	毛遂(suì)自荐
+审时度势	shen shi du shi	80	审时度(duó)势
+刚愎自用	gang fu zi yong	100	刚愎(bì)自用
+不着边际	bu zhe bian ji	80	不着(zhuó)边际
+不着痕迹	bu zhe hen ji	80	不着(zhuó)痕迹
+阿谀奉承	a yu feng cheng	80	阿(ē)谀奉承
+不省人事	bu sheng ren shi	80	不省(xǐng)人事
+同仇敌忾	tong chou di qi	100	同仇敌忾(kài)
+同仇敌忾	tong chou di gai	50	同仇敌忾(kài)
+觥筹交错	guang chou jiao cuo	80	觥(gōng)筹交错
+纵横捭阖	zong heng bi he	80	纵横捭(bǎi)阖
+纵横捭阖	zong heng bei he	50	纵横捭(bǎi)阖
+胜券在握	sheng juan zai wo	100	胜券(quàn)在握
+声名狼藉	sheng ming lang jie	80	声名狼藉(jí)
+杯盘狼藉	bei pan lang jie	50	杯盘狼藉(jí)
+草菅人命	cao guan ren ming	100	草菅(jiān)人命
+含情脉脉	han qing mai mai	80	含情脉(mò)脉
+温情脉脉	wen qing mai mai	80	温情脉(mò)脉
+越俎代庖	yue zu dai bao	100	越俎代庖(páo)
+身陷囹圄	shen xian ling wu	80	身陷囹圄(yǔ)
+刚正不阿	gang zheng bu a	80	刚正不阿(ē)
+一丘之貉	yi qiu zhi luo	80	一丘之貉(hé)
+一丘之貉	yi qiu zhi hao	80	一丘之貉(hé)
+莘莘学子	xin xin xue zi	100	莘(shēn)莘学子
+断壁残垣	duan bi can heng	80	断壁残垣(yuán)
+鳞次栉比	lin ci jie bi	100	鳞次栉(zhì)比
+图穷匕见	tu qiong bi jian	100	图穷匕见(xiàn)
+浑身解数	hun shen jie shu	80	浑身解(xiè)数
+金蝉脱壳	jin chan tuo ke	80	金蝉脱壳(qiào)
+呱呱坠地	gua gua zhui di	80	呱(gū)呱坠地
+否极泰来	fou ji tai lai	80	否(pǐ)极泰来
+垂涎三尺	chui yan san chi	80	垂涎(xián)三尺
+垂涎欲滴	chui yan yu di	80	垂涎(xián)欲滴
+羽扇纶巾	yu shan lun jin	80	羽扇纶(guān)巾
+奴颜婢膝	nu yan bi qi	80	奴颜婢(bì)膝(xī)
+奴颜婢膝	nu yan bei xi	50	奴颜婢(bì)膝(xī)
+恪尽职守	ge jin zhi shou	80	恪(kè)尽职守
+破绽百出	po ding bai chu	50	破绽(zhàn)百出
+拾级而上	shi ji er shang	80	拾(shè)级而上
+一叶扁舟	yi ye bian zhou	80	一叶扁(piān)舟
+宫商角徵羽	gong shang jiao zheng yu	50	宫商角(jué)徵(zhǐ)羽
+宫商角徵羽	gong shang jue zheng yu	50	宫商角(jué)徵(zhǐ)羽
+一曝十寒	yi bao shi han	80	一曝(pù)十寒
+稗官野史	bi guan ye shi	50	稗(bài)官野史
+稗官野史	bei guan ye shi	50	稗(bài)官野史
+数见不鲜	shu jian bu xian	80	数(shuò)见不鲜
+舐犊情深	di du qing shen	50	舐(shì)犊情深
+舐犊情深	tian du qing shen	50	舐(shì)犊情深
+怙恶不悛	gu e bu quan	50	怙(hù)恶不悛(quān)
+怙恶不悛	gu e bu jun	50	怙(hù)恶不悛(quān)
+怙恶不悛	hu e bu jun	50	怙(hù)恶不悛(quān)

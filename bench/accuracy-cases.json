@@ -188,15 +188,15 @@
       "name": "dp: corrector 馄饨 (hun dun)",
       "schema": "rime_frost_double_pinyin",
       "keys": "hpdp",
-      "any_text_with_comment": { "text": "餛飩", "comment": "馄(hun)饨(tun)" },
+      "any_text_with_comment": { "text": "餛飩", "comment": "馄(hún)饨(tun)" },
       "no_raw_pinyin_comment": true
     },
     {
-      "name": "dp: corrector 主角 (zhu jiao -> 1.助教 2.主角[zhǔ jué])",
+      "name": "dp: corrector 主角 (zhu jiao -> 1.助教 2.主教 3.主角[zhǔ jué])",
       "schema": "rime_frost_double_pinyin",
       "keys": "vujc",
       "first_text": "助教",
-      "second_text": "主角",
+      "second_text": "主教",
       "any_text_with_comment": { "text": "主角", "comment": "zhǔ jué" },
       "no_raw_pinyin_comment": true
     },
@@ -445,15 +445,15 @@
       "name": "fp: corrector hundun",
       "schema": "rime_frost",
       "keys": "hundun",
-      "any_text_with_comment": { "text": "餛飩", "comment": "馄(hun)饨(tun)" },
+      "any_text_with_comment": { "text": "餛飩", "comment": "馄(hún)饨(tun)" },
       "no_raw_pinyin_comment": true
     },
     {
-      "name": "fp: corrector zhujiao -> 1.助教 2.主角[zhǔ jué]",
+      "name": "fp: corrector zhujiao -> 1.助教 2.主教 3.主角[zhǔ jué]",
       "schema": "rime_frost",
       "keys": "zhujiao",
       "first_text": "助教",
-      "second_text": "主角",
+      "second_text": "主教",
       "any_text_with_comment": { "text": "主角", "comment": "zhǔ jué" }
     },
     {
@@ -509,6 +509,21 @@
     { "name": "fp: pin er -> 而", "schema": "rime_frost", "keys": "er", "first_text": "而", "first_comment_empty": true },
     { "name": "fp: pin sh -> 是", "schema": "rime_frost", "keys": "sh", "first_text": "是", "first_comment_empty": true },
     { "name": "fp: pin ch -> 出", "schema": "rime_frost", "keys": "ch", "first_text": "出", "first_comment_empty": true },
-    { "name": "fp: pin zh -> 這", "schema": "rime_frost", "keys": "zh", "first_text": "這", "first_comment_empty": true }
+    { "name": "fp: pin zh -> 這", "schema": "rime_frost", "keys": "zh", "first_text": "這", "first_comment_empty": true },
+    { "name": "dp: r2 丈育 (vhyu) page-1 without hijacking 章鱼", "schema": "rime_frost_double_pinyin", "keys": "vhyu", "first_text": "章魚", "any_text": "丈育" },
+    { "name": "dp: r2 上海 (uhhl) #1 over 伤害", "schema": "rime_frost_double_pinyin", "keys": "uhhl", "first_text": "上海" },
+    { "name": "dp: r2 时间的 (uijmde) #1 over 实践的", "schema": "rime_frost_double_pinyin", "keys": "uijmde", "first_text": "時間的" },
+    { "name": "dp: r2 截止 (jxvi) promoted above 介质", "schema": "rime_frost_double_pinyin", "keys": "jxvi", "text_before": ["截止", "介質"] },
+    { "name": "dp: r2 味噌 dual wei ceng (wzcg)", "schema": "rime_frost_double_pinyin", "keys": "wzcg", "any_text_with_comment": { "text": "味噌", "comment": "规范 wèi cēng / 习惯 wèi zēng" } },
+    { "name": "dp: r2 味噌 dual wei zeng (wzzg)", "schema": "rime_frost_double_pinyin", "keys": "wzzg", "any_text_with_comment": { "text": "味噌", "comment": "习惯 wèi zēng / 规范 wèi cēng" } },
+    { "name": "dp: r2 雪佛兰 dual xue fo lan (xtfolj)", "schema": "rime_frost_double_pinyin", "keys": "xtfolj", "first_text": "雪佛蘭", "first_comment": "规范 xuě fó lán / 旧读 xuě fú lán" },
+    { "name": "dp: r2 雪佛兰 dual xue fu lan (xtfulj)", "schema": "rime_frost_double_pinyin", "keys": "xtfulj", "first_text": "雪佛蘭", "first_comment": "旧读 xuě fú lán / 规范 xuě fó lán" },
+    { "name": "dp: r2 密钥 dual mi yue (miyt) tw_dual + note", "schema": "rime_frost_double_pinyin", "keys": "miyt", "first_text": "金鑰", "second_text": "密鑰", "first_comment": "规范 mì yuè / 习惯 mì yào" },
+    { "name": "dp: r2 密钥 dual mi yao (miyk)", "schema": "rime_frost_double_pinyin", "keys": "miyk", "any_text_with_comment": { "text": "密鑰", "comment": "习惯 mì yào / 规范 mì yuè" } },
+    { "name": "dp: r2 阈值 removed from fa zhi (favi)", "schema": "rime_frost_double_pinyin", "keys": "favi", "first_text": "法治", "no_text_regex": "閾值|阈值" },
+    { "name": "dp: r2 大都 dual da dou (dadb) & da du (dadu)", "schema": "rime_frost_double_pinyin", "keys": "dadu", "any_text": "大都" },
+    { "name": "dp: r2 AI大模型 (AIdamoxy)", "schema": "rime_frost_double_pinyin", "keys": "AIdamoxy", "first_text": "AI大模型" },
+    { "name": "fp: r2 AI大模型 (AIdamoxing)", "schema": "rime_frost", "keys": "AIdamoxing", "first_text": "AI大模型" },
+    { "name": "fp: r2 LLM (LLM)", "schema": "rime_frost", "keys": "LLM", "first_text": "LLM" }
   ]
 }

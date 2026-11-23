@@ -2615,7 +2615,7 @@ use_preset_vocabulary: false
 赖有高楼百尺	lai you gao lou bai chi	1
 赖有歌眉舒绿	lai you ge mei shu lv	0
 阑干高处	lan gan gao chu	0
-阑干拍遍	lan gan pai bian	0
+阑干拍遍	lan gan pai bian	50
 阑干凭暖	lan gan ping nuan	0
 栏干曲	lan gan qu	0
 栏干生影曲屏东	lan gan sheng ying qu ping dong	0
@@ -4388,7 +4388,7 @@ use_preset_vocabulary: false
 檀樱倚扇	tan ying yi shan	0
 汤沐烟江万顷	tang mu yan jiang wan qing	0
 堂深昼永	tang shen zhou yong	0
-唐婉	tang wan	131
+唐婉	tang wan	30
 饧香更	tang xiang geng	0
 桃花结子	tao hua jie zi	0
 桃花落尽着无所	tao hua luo jin zhe wu suo	0
@@ -19512,7 +19512,7 @@ use_preset_vocabulary: false
 赵嘏	zhao gu	7
 赵光逢	zhao guang feng	0
 照横塘半天残月	zhao heng tang ban tian can yue	0
-召忽死之	zhao hu si zhi	1
+召忽死之	shao hu si zhi	1
 赵骅	zhao hua	0
 赵惠宗	zhao hui zong	0
 招客	zhao ke	6
@@ -19522,7 +19522,7 @@ use_preset_vocabulary: false
 赵令畤	zhao ling zhi	8
 召门弟子曰	zhao men di zi yue	0
 赵孟谦	zhao meng qian	0
-召南	zhao nan	65
+召南	shao nan	65
 赵企	zhao qi	0
 照日深红暖见鱼	zhao ri shen hong nuan jian yu	2
 赵汝钠	zhao ru na	0
@@ -35257,7 +35257,7 @@ use_preset_vocabulary: false
 脂粉香娃割腥啖膻	zhi fen xiang wa ge xing dan shan	1
 治国公马魁	zhi guo gong ma kui	0
 智能儿	zhi neng er	1
-脂批	zhi pi	59
+脂批	zhi pi	25
 脂评本	zhi ping ben	0
 智善	zhi shan	4
 智通	zhi tong	18
@@ -35333,7 +35333,7 @@ use_preset_vocabulary: false
 德充符	de chong fu	100
 应帝王	ying di wang	100
 骈拇	pian mu	80
-胠箧	qu qie	80
+胠箧	qu qie	20
 在宥	zai you	80
 缮性	shan xing	80
 至乐	zhi le	80
@@ -35371,7 +35371,7 @@ use_preset_vocabulary: false
 真宰	zhen zai	80
 吾丧我	wu sang wo	80
 惠施	hui shi	90
-罔两	wang liang	80
+罔两	wang liang	30
 学鸠	xue jiu	70
 斥鴳	chi yan	70
 宋荣子	song rong zi	70
@@ -35387,7 +35387,7 @@ use_preset_vocabulary: false
 瓮㼜大瘿	weng ang da ying	70
 公文轩	gong wen xuan	70
 右师	you shi	70
-秦失	qin shi	70
+秦失	qin yi	70
 接舆	jie yu	70
 柳下季	liu xia ji	70
 蔺且	lin ju	70
@@ -35416,7 +35416,7 @@ use_preset_vocabulary: false
 南郭子綦隐机而坐	nan guo zi qi yin ji er zuo	70
 荅焉似丧其耦	ta yan si sang qi ou	70
 心固可使如死灰乎	xin gu ke shi ru si hui hu	70
-女闻地籁而未闻天籁夫	nv wen di lai er wei wen tian lai fu	70
+女闻地籁而未闻天籁夫	ru wen di lai er wei wen tian lai fu	70
 作则万窍怒呺	zuo ze wan qiao nu hao	70
 而独不闻之翏翏乎	er du bu wen zhi liu liu hu	70
 前者唱于而随者唱喁	qian zhe chang yu er sui zhe chang yong	70
@@ -35493,8 +35493,8 @@ use_preset_vocabulary: false
 三者孰知正处	san zhe shu zhi zheng chu	70
 民食刍豢	min shi chu huan	70
 麋鹿食荐	mi lu shi jian	70
-蝍蛆甘带	ji qu gan dai	70
-猿猵狙以为雌	yuan bian ju yi wei ci	70
+蝍蛆甘带	ji ju gan dai	70
+猿猵狙以为雌	yuan pian ju yi wei ci	70
 子不知利害	zi bu zhi li hai	70
 河汉沍而不能寒	he han hu er bu neng han	70
 若然者	ruo ran zhe	70
@@ -35506,7 +35506,7 @@ use_preset_vocabulary: false
 是黄帝之所听荧也	shi huang di zhi suo ting ying ye	70
 见弹而求鸮炙	jian dan er qiu xiao zhi	70
 挟宇宙	xie yu zhou	70
-置其滑涽	zhi qi hua hun	70
+置其滑涽	zhi qi gu hun	70
 圣人愚芚	sheng ren yu tun	70
 予恶乎知说生之非惑邪	yu wu hu zhi yue sheng zhi fei huo ye	70
 予恶乎知恶死之非弱丧而不知归者邪	yu wu hu zhi wu si zhi fei ruo sang er bu zhi gui zhe ye	70
@@ -35517,7 +35517,7 @@ use_preset_vocabulary: false
 且有大觉而后知此其大梦也	qie you da jue er hou zhi ci qi da meng ye	70
 君乎牧乎	jun hu mu hu	70
 固哉	gu zai	70
-予谓女梦	yu wei nv meng	70
+予谓女梦	yu wei ru meng	70
 亦梦也	yi meng ye	70
 万世之后而一遇大圣	wan shi zhi hou er yi yu da sheng	70
 知其解者	zhi qi jie zhe	70
@@ -35544,7 +35544,7 @@ use_preset_vocabulary: false
 俄然觉	e ran jue	70
 周与胡蝶	zhou yu hu die	70
 则必有分矣	ze bi you fen yi	70
-殆已	dai yi	70
+殆已	dai yi	15
 膝之所踦	xi zhi suo yi	70
 砉然向然	hua ran xiang ran	70
 奏刀騞然	zou dao huo ran	70
@@ -35579,11 +35579,11 @@ use_preset_vocabulary: false
 而知之所为出乎哉	er zhi zhi suo wei chu hu zai	70
 名也者	ming ye zhe	70
 相轧也	xiang ya ye	70
-知也者	zhi ye zhe	70
+知也者	zhi ye zhe	15
 争之器也	zheng zhi qi ye	70
 故善生者	gu shan sheng zhe	70
 乃所以善死也	nai suo yi shan si ye	70
-泉涸	quan he	70
+泉涸	quan he	20
 邴邴乎其似喜乎	bing bing hu qi si xi hu	70
 崔乎其不得已乎	cui hu qi bu de yi hu	70
 謷乎其未可制也	ao hu qi wei ke zhi ye	70
@@ -35601,7 +35601,7 @@ use_preset_vocabulary: false
 汝又何帠以治天下感予之心为	ru you he yi yi zhi tian xia gan yu zhi xin wei	70
 又复问	you fu wen	70
 是于圣人也	shi yu sheng ren ye	70
-猿狙之便执斄之狗来藉	yuan ju zhi bian zhi li zhi gou lai ji	70
+猿狙之便执斄之狗来藉	yuan ju zhi bian zhi li zhi gou lai jie	70
 知人之死生存亡	zhi ren zhi si sheng cun wang	70
 祸福寿夭	huo fu shou yao	70
 期以岁月旬日	qi yi sui yue xun ri	70
@@ -35662,7 +35662,7 @@ use_preset_vocabulary: false
 真在内者	zhen zai nei zhe	70
 神动于外	shen dong yu wai	70
 是所以贵真也	shi suo yi gui zhen ye	70
-芴漠无形	wu mo wu xing	70
+芴漠无形	hu mo wu xing	70
 死与生与	si yu sheng yu	70
 天地并与	tian di bing yu	70
 神明往与	shen ming wang yu	70

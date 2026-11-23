@@ -126,7 +126,6 @@ use_preset_vocabulary: false
 暗黑印记	an hei yin ji	0
 暗黑战士	an hei zhan shi	1
 安徽情意之都	an hui qing yi zhi du	0
-暗之	an zhi	114
 暗之魔龙教主	an zhi mo long jiao zhu	0
 暗之牛魔王	an zhi niu mo wang	0
 傲天海阁	ao tian hai ge	0
@@ -420,7 +419,6 @@ use_preset_vocabulary: false
 虹魔手镯	hong mo shou zhuo	0
 虹魔套装	hong mo tao zhuang	0
 虹魔项链	hong mo xiang lian	0
-红顔	hong yan	0
 红叶血环	hong ye xue huan	0
 红野猪	hong ye zhu	0
 红衣法师	hong yi fa shi	0
@@ -1428,7 +1426,7 @@ use_preset_vocabulary: false
 允许传唤伴侣	yun xu chuan huan ban lv	0
 允许夫妻传送	yun xu fu qi chuan song	0
 允许天地合一	yun xu tian di he yi	0
-戦龙	zhan long	0
+战龙	zhan long	23
 斩马刀	zhan ma dao	40
 战神宝石	zhan shen bao shi	0
 战神戒指	zhan shen jie zhi	0
@@ -2117,7 +2115,7 @@ use_preset_vocabulary: false
 兽人法师	shou ren fa shi	1
 兽人弓箭手	shou ren gong jian shou	0
 兽人战士	shou ren zhan shi	53
-树精	shu jing	57
+树精	shu jing	30
 树模石便鞋	shu mo shi bian xie	0
 树模石长袍	shu mo shi chang pao	0
 树模石护手	shu mo shi hu shou	0
@@ -2259,7 +2257,7 @@ use_preset_vocabulary: false
 战争石锤	zhan zheng shi chui	0
 战争之光	zhan zheng zhi guang	0
 长老的箱子	zhang lao de xiang zi	0
-长牙黑豹	zhang ya hei bao	0
+长牙黑豹	chang ya hei bao	0
 爪牙队长	zhao ya dui zhang	0
 爪牙战士	zhao ya zhan shi	0
 爪牙侦察兵	zhao ya zhen cha bing	0
@@ -4355,7 +4353,7 @@ use_preset_vocabulary: false
 中推一波	zhong tui yi bo	0
 阿莫斯之弓	a mo si zhi gong	0
 阿斯托洛吉斯	a si tuo luo ji si	0
-安柏	an bai	119
+安柏	an bo	119
 暗铁剑	an tie jian	0
 奥兹	ao zi	168
 芭芭拉冲呀	ba ba la chong ya	0
@@ -4497,7 +4495,7 @@ use_preset_vocabulary: false
 黎明神剑	li ming shen jian	2
 璃沙郊	li sha jiao	0
 理水叠山真君	li shui die shan zhen jun	0
-璃月	li yue	351
+璃月	li yue	120
 璃月七星	li yue qi xing	3
 理之冠	li zhi guan	0
 烈焰花	lie yan hua	0
@@ -4701,7 +4699,7 @@ use_preset_vocabulary: false
 百八拾贰式	bai ba shi er shi	1
 坂崎獠	ban qi liao	0
 坂崎琢磨	ban qi zuo mo	3
-比利	bi li	851
+比利	bi li	120
 波格	bo ge	39
 蔡宝健	cai bao jian	9
 蔡宝奇	cai bao qi	2
@@ -4753,7 +4751,7 @@ use_preset_vocabulary: false
 玛克西姆	ma ke xi mu	1
 麦斯玛	mai si ma	0
 麦卓	mai zhuo	5
-美乐	mei le	211
+美乐	mei le	60
 米卓	mi zhuo	2
 目押	mu ya	72
 奈落落	nai luo luo	19
@@ -5165,8 +5163,8 @@ use_preset_vocabulary: false
 变种蚁王宠物蛋	bian zhong yi wang chong wu dan	0
 标记任务奖励	biao ji ren wu jiang li	0
 表情动作	biao qing dong zuo	0
-飚煞	biao sha	0
-飚煞陀罗	biao sha tuo luo	0
+飙煞	biao sha	0
+飙煞陀罗	biao sha tuo luo	0
 别刷	bie shua	19
 冰蚕冠	bing can guan	0
 冰城项链	bing cheng xiang lian	0
@@ -5923,7 +5921,7 @@ use_preset_vocabulary: false
 吊带女装手套	diao dai nv zhuang shou tao	0
 吊带女装鞋	diao dai nv zhuang xie	0
 吊带女装衣	diao dai nv zhuang yi	0
-吊带上衣	diao dai shang yi	0
+吊带上衣	diao dai shang yi	200
 吊带手套	diao dai shou tao	0
 吊带鞋	diao dai xie	0
 吊带衣	diao dai yi	3
@@ -13038,7 +13036,7 @@ use_preset_vocabulary: false
 象牙小段	xiang ya xiao duan	0
 象牙杖柄	xiang ya zhang bing	0
 向野	xiang ye	1
-翔芸	xiang yun	0
+翔艺	xiang yun	0
 小地图上的指示点	xiao di tu shang de zhi shi dian	0
 小地图设置	xiao di tu she zhi	0
 小嘟嘟	xiao du du	2
@@ -13759,7 +13757,7 @@ use_preset_vocabulary: false
 窈窕山鬼	yao tiao shan gui	0
 妖雾击	yao wu ji	0
 邀月	yao yue	23
-耀芸	yao yun	0
+耀艺	yao yun	0
 妖蜘	yao zhi	0
 妖蛛	yao zhu	0
 妖蛛王	yao zhu wang	0
@@ -13957,7 +13955,7 @@ use_preset_vocabulary: false
 鹰击弓	ying ji gong	0
 硬甲	ying jia	6
 硬甲玉片	ying jia yu pian	0
-鹰角	ying jiao	177
+鹰角	ying jiao	80
 营救芝人	ying jiu zhi ren	0
 应龙谷	ying long gu	0
 应龙腿甲	ying long tui jia	0
@@ -14440,11 +14438,11 @@ use_preset_vocabulary: false
 粘之土精	zhan zhi tu jing	0
 张百利	zhang bai li	0
 张财	zhang cai	0
-长角恐兽	zhang jiao kong shou	0
-长角恐兽宠物	zhang jiao kong shou chong wu	0
-长角恐兽宠物蛋	zhang jiao kong shou chong wu dan	0
-长角兽	zhang jiao shou	0
-长角兽玉饰	zhang jiao shou yu shi	0
+长角恐兽	chang jiao kong shou	0
+长角恐兽宠物	chang jiao kong shou chong wu	0
+长角恐兽宠物蛋	chang jiao kong shou chong wu dan	0
+长角兽	chang jiao shou	0
+长角兽玉饰	chang jiao shou yu shi	0
 掌控生死	zhang kong sheng si	6
 张礼成	zhang li cheng	0
 张猎户	zhang lie hu	0
@@ -14453,7 +14451,6 @@ use_preset_vocabulary: false
 张倾国	zhang qing guo	0
 张三牌子	zhang san pai zi	0
 长孙计法腕	zhang sun ji fa wan	0
-张无计	zhang wu ji	1
 张晔	zhang ye	2
 张鹰	zhang ying	0
 张鹰扬	zhang ying yang	0
@@ -15251,7 +15248,7 @@ use_preset_vocabulary: false
 出他先出我	chu ta xian chu wo	1
 打包关系	da bao guan xi	1
 带毒	dai du	112
-挡刀	dang dao	140
+挡刀	dang dao	35
 挡刀民	dang dao min	0
 刀村长	dao cun zhang	0
 倒在夜里	dao zai ye li	0
@@ -15536,7 +15533,7 @@ use_preset_vocabulary: false
 博格改	bo ge gai	0
 博格级	bo ge ji	0
 博加特里级	bo jia te li ji	0
-波拉	bo la	67
+波拉	bo la	15
 伯利恒造船公司	bo li heng zao chuan gong si	0
 伯利恒之星	bo li heng zhi xing	20
 伯鲁克	bo lu ke	0
@@ -15925,7 +15922,7 @@ use_preset_vocabulary: false
 附魔雷达	fu mo lei da	0
 扶桑改	fu sang gai	0
 扶桑级	fu sang ji	2
-富特	fu te	211
+富特	fu te	50
 富田美忧	fu tian mei you	0
 负象限作战	fu xiang xian zuo zhan	0
 拂晓登陆	fu xiao deng lu	0
@@ -17124,7 +17121,7 @@ use_preset_vocabulary: false
 神护樱华	shen hu ying hua	0
 神话之传承	shen hua zhi chuan cheng	0
 深蓝的杰克	shen lan de jie ke	0
-什罗普郡	shen luo pu jun	0
+什罗普郡	shi luo pu jun	0
 神秘的维纳斯	shen mi de wei na si	0
 审判者计划	shen pan zhe ji hua	0
 审判之弹	shen pan zhi dan	0
@@ -17192,7 +17189,7 @@ use_preset_vocabulary: false
 石上静香	shi shang jing xiang	0
 史特拉塞	shi te la sai	1
 实习医生伊格	shi xi yi sheng yi ge	0
-石见舞菜香	shi xian wu cai xiang	0
+石见舞菜香	shi jian wu cai xiang	1
 驶向和平的战士	shi xiang he ping de zhan shi	0
 实验测试	shi yan ce shi	0
 实验机关	shi yan ji guan	0
@@ -17976,7 +17973,6 @@ use_preset_vocabulary: false
 藏王重工	zang wang zhong gong	0
 早春的热情药剂	zao chun de re qing yao ji	0
 早濑莉花	zao lai li hua	0
-早见沙织	zao xian sha zhi	1
 择日而航	ze ri er hang	0
 贼鸥	zei ou	15
 增援飞机	zeng yuan fei ji	0
@@ -18224,7 +18220,7 @@ use_preset_vocabulary: false
 阿弗拉沙	a fu la sha	0
 阿弗拉沙碎片	a fu la sha sui pian	0
 阿高尔	a gao er	0
-阿格罗戈什	a ge luo ge shen	0
+阿格罗戈什	a ge luo ge shi	0
 阿格玛	a ge ma	0
 阿格玛保卫者腿铠	a ge ma bao wei zhe tui kai	0
 阿格曼奇	a ge man qi	0
@@ -18460,7 +18456,7 @@ use_preset_vocabulary: false
 阿米尔的脉冲法杖	a mi er de mai chong fa zhang	0
 阿米尔的审判	a mi er de shen pan	0
 阿米尔雅	a mi er ya	0
-阿米什	a mi shen	4
+阿米什	a mi shi	4
 阿米希尔	a mi xi er	0
 阿莫尼斯	a mo ni si	0
 阿姆伯尔	a mu bo er	0
@@ -18507,11 +18503,11 @@ use_preset_vocabulary: false
 阿萨洛斯	a sa luo si	0
 阿萨南	a sa nan	0
 阿瑟罗克	a se luo ke	0
-阿什卡兹	a shen ka zi	0
-阿什坎迪兄弟会之剑	a shen kan di xiong di hui zhi jian	0
-阿什拉姆	a shen la mu	1
-阿什雷	a shen lei	0
-阿什洛克	a shen luo ke	0
+阿什卡兹	a shi ka zi	0
+阿什坎迪兄弟会之剑	a shi kan di xiong di hui zhi jian	0
+阿什拉姆	a shi la mu	1
+阿什雷	a shi lei	0
+阿什洛克	a shi luo ke	0
 阿什莉的牢笼	a shi li de lao long	0
 阿斯迦	a si jia	0
 阿斯迦的图腾	a si jia de tu teng	0
@@ -19005,12 +19001,12 @@ use_preset_vocabulary: false
 艾索雷葛斯	ai suo lei ge si	1
 艾索雷葛斯之魂	ai suo lei ge si zhi hun	0
 艾塔斯	ai ta si	0
-埃提耶什	ai ti ye shen	16
-埃提耶什的法杖顶部	ai ti ye shen de fa zhang ding bu	0
-埃提耶什的碎片	ai ti ye shen de sui pian	1
-埃提耶什的杖柄	ai ti ye shen de zhang bing	0
-埃提耶什的杖柄末端	ai ti ye shen de zhang bing mo duan	0
-埃提耶什驱魔	ai ti ye shen qu mo	0
+埃提耶什	ai ti ye shi	16
+埃提耶什的法杖顶部	ai ti ye shi de fa zhang ding bu	0
+埃提耶什的碎片	ai ti ye shi de sui pian	1
+埃提耶什的杖柄	ai ti ye shi de zhang bing	0
+埃提耶什的杖柄末端	ai ti ye shi de zhang bing mo duan	0
+埃提耶什驱魔	ai ti ye shi qu mo	0
 艾瓦	ai wa	20
 艾瓦特	ai wa te	1
 艾维尔琳	ai wei er lin	0
@@ -19165,29 +19161,29 @@ use_preset_vocabulary: false
 安戈洛灰烬	an ge luo hui jin	0
 安戈洛巨猩猩的皮	an ge luo ju xing xing de pi	0
 安戈洛泥浆怪样本	an ge luo ni jiang guai yang ben	0
-安格洛什	an ge luo shen	0
-安葛洛什	an ge luo shen	0
-安葛洛什暗影法师	an ge luo shen an ying fa shi	0
-安葛洛什臂甲	an ge luo shen bi jia	0
-安葛洛什的威胁	an ge luo shen de wei xie	0
-安葛洛什攻击计划	an ge luo shen gong ji ji hua	0
-安葛洛什护手	an ge luo shen hu shou	0
-安葛洛什护腿	an ge luo shen hu tui	0
-安葛洛什肩甲	an ge luo shen jian jia	0
-安葛洛什蛮兵	an ge luo shen man bing	0
-安葛洛什殴斗者	an ge luo shen ou dou zhe	0
-安葛洛什萨满祭司	an ge luo shen sa man ji si	0
-安葛洛什哨兵	an ge luo shen shao bing	0
-安葛洛什食魂者	an ge luo shen shi hun zhe	0
-安葛洛什食魂者罩帽	an ge luo shen shi hun zhe zhao mao	0
-安葛洛什食人魔	an ge luo shen shi ren mo	0
-安葛洛什术士	an ge luo shen shu shi	0
-安葛洛什头盔	an ge luo shen tou kui	0
-安葛洛什胸甲	an ge luo shen xiong jia	0
-安葛洛什腰带	an ge luo shen yao dai	0
-安葛洛什要塞	an ge luo shen yao sai	0
-安葛洛什营地	an ge luo shen ying di	0
-安葛洛什重靴	an ge luo shen zhong xue	0
+安格洛什	an ge luo shi	0
+安葛洛什	an ge luo shi	0
+安葛洛什暗影法师	an ge luo shi an ying fa shi	0
+安葛洛什臂甲	an ge luo shi bi jia	0
+安葛洛什的威胁	an ge luo shi de wei xie	0
+安葛洛什攻击计划	an ge luo shi gong ji ji hua	0
+安葛洛什护手	an ge luo shi hu shou	0
+安葛洛什护腿	an ge luo shi hu tui	0
+安葛洛什肩甲	an ge luo shi jian jia	0
+安葛洛什蛮兵	an ge luo shi man bing	0
+安葛洛什殴斗者	an ge luo shi ou dou zhe	0
+安葛洛什萨满祭司	an ge luo shi sa man ji si	0
+安葛洛什哨兵	an ge luo shi shao bing	0
+安葛洛什食魂者	an ge luo shi shi hun zhe	0
+安葛洛什食魂者罩帽	an ge luo shi shi hun zhe zhao mao	0
+安葛洛什食人魔	an ge luo shi shi ren mo	0
+安葛洛什术士	an ge luo shi shu shi	0
+安葛洛什头盔	an ge luo shi tou kui	0
+安葛洛什胸甲	an ge luo shi xiong jia	0
+安葛洛什腰带	an ge luo shi yao dai	0
+安葛洛什要塞	an ge luo shi yao sai	0
+安葛洛什营地	an ge luo shi ying di	0
+安葛洛什重靴	an ge luo shi zhong xue	0
 安戈洛土堆	an ge luo tu dui	0
 安戈洛猩猩的皮	an ge luo xing xing de pi	0
 安格斯特	an ge si te	1
@@ -20430,7 +20426,7 @@ use_preset_vocabulary: false
 巴隆的节杖	ba long de jie zhang	0
 巴隆朗绍尔的头颅	ba long lang shao er de tou lu	0
 巴隆斯	ba long si	0
-巴鲁	ba lu	152
+巴鲁	ba lu	60
 巴鲁斯	ba lu si	34
 巴伦	ba lun	126
 巴罗夫管家铃	ba luo fu guan jia ling	2
@@ -20881,7 +20877,7 @@ use_preset_vocabulary: false
 薄纱外套	bao sha wai tao	0
 薄纱腰带	bao sha yao dai	0
 薄纱战靴	bao sha zhan xue	0
-鲍什	bao shen	10
+鲍什	bao shi	10
 宝石爆炸	bao shi bao zha	1
 宝石袋	bao shi dai	1
 宝石宏	bao shi hong	0
@@ -22075,7 +22071,7 @@ use_preset_vocabulary: false
 伯格瑞姆	bo ge rui mu	0
 伯根	bo gen	10
 伯根的棚屋	bo gen de peng wu	0
-伯古什	bo gu shen	0
+伯古什	bo gu shi	0
 博哈姆	bo ha mu	0
 博哈姆废墟	bo ha mu fei xu	0
 博哈姆废墟阶梯	bo ha mu fei xu jie ti	0
@@ -22424,7 +22420,7 @@ use_preset_vocabulary: false
 部落披风	bu luo pi feng	0
 部落棋子	bu luo qi zi	0
 部落荣誉徽章	bu luo rong yu hui zhang	0
-布洛什	bu luo shen	0
+布洛什	bu luo shi	0
 部落士兵的勋章	bu luo shi bing de xun zhang	0
 部落士官的勋章	bu luo shi guan de xun zhang	0
 部落水晶尘收集量	bu luo shui jing chen shou ji liang	0
@@ -22795,14 +22791,14 @@ use_preset_vocabulary: false
 插槽加成	cha cao jia cheng	0
 查德瑞恩	cha de rui en	0
 查迪斯	cha di si	1
-查尔	cha er	142
+查尔	cha er	35
 插件词语	cha jian ci yu	0
 插件盲	cha jian mang	0
 茶晶石	cha jing shi	0
 察觉弱点	cha jue ruo dian	0
 插孔宝石	cha kong bao shi	0
 查培尔	cha pei er	0
-插旗	cha qi	176
+插旗	cha qi	50
 插旗子	cha qi zi	13
 叉刃巨斧	cha ren ju fu	0
 茶色利刃豹	cha se li ren bao	0
@@ -24247,7 +24243,7 @@ use_preset_vocabulary: false
 大断崖	da duan ya	3
 打断引导	da duan yin dao	2
 大锻砧	da duan zhen	0
-达多什	da duo shen	0
+达多什	da duo shi	0
 达尔安达	da er an da	0
 达尔顿中士	da er dun zhong shi	0
 达尔贡	da er gong	0
@@ -25134,7 +25130,7 @@ use_preset_vocabulary: false
 地卜师外套	di bu shi wai tao	0
 地卜师外衣	di bu shi wai yi	0
 地城	di cheng	54
-地刺	di ci	166
+地刺	di ci	60
 抵达外域	di da wai yu	0
 地道虫	di dao chong	0
 迪迪尔	di di er	0
@@ -26677,7 +26673,7 @@ use_preset_vocabulary: false
 法兰石镶饰长靴	fa lan shi xiang shi chang xue	0
 法雷	fa lei	15
 法蕾尔	fa lei er	0
-法雷什	fa lei shen	0
+法雷什	fa lei shi	0
 法力宝石	fa li bao shi	0
 法力宝石雕文	fa li bao shi diao wen	0
 法力爆炸	fa li bao zha	0
@@ -27151,7 +27147,7 @@ use_preset_vocabulary: false
 放置艾克曼的信号灯	fang zhi ai ke man de xin hao deng	0
 放置奥金鱼漂	fang zhi ao jin yu piao	0
 放置捕熊陷阱	fang zhi bu xiong xian jing	0
-放置戈泰什的头颅	fang zhi ge tai shen de tou lu	0
+放置戈泰什的头颅	fang zhi ge tai shi de tou lu	0
 放置古斯的信号灯	fang zhi gu si de xin hao deng	0
 放置火炬	fang zhi huo ju	2
 放置杰斯托的信号灯	fang zhi jie si tuo de xin hao deng	0
@@ -27273,7 +27269,7 @@ use_preset_vocabulary: false
 飞火护手	fei huo hu shou	0
 飞火护腕	fei huo hu wan	0
 飞火胸甲	fei huo xiong jia	0
-废旧安葛洛什肩铠	fei jiu an ge luo shen jian kai	0
+废旧安葛洛什肩铠	fei jiu an ge luo shi jian kai	0
 废旧的矿工外套	fei jiu de kuang gong wai tao	0
 废旧的皮腰带	fei jiu de pi yao dai	0
 废旧锁甲护腿	fei jiu suo jia hu tui	0
@@ -27689,7 +27685,7 @@ use_preset_vocabulary: false
 疯狂的军犬	feng kuang de jun quan	0
 疯狂的拉姆杜尔	feng kuang de la mu du er	0
 疯狂的裂生者	feng kuang de lie sheng zhe	0
-疯狂的马格利什	feng kuang de ma ge li shen	0
+疯狂的马格利什	feng kuang de ma ge li shi	0
 疯狂的觅血蝙蝠	feng kuang de mi xue bian fu	0
 疯狂的欧加斯	feng kuang de ou jia si	0
 疯狂的守财奴卡波尔	feng kuang de shou cai nu ka bo er	0
@@ -29089,7 +29085,7 @@ use_preset_vocabulary: false
 高拉什	gao la shi	0
 高里	gao li	8
 高里纳	gao li na	0
-高罗什	gao luo shen	0
+高罗什	gao luo shi	0
 高玛	gao ma	0
 高莫克大使	gao mo ke da shi	0
 高耐高韧	gao nai gao ren	1
@@ -29266,8 +29262,8 @@ use_preset_vocabulary: false
 格雷森沙东布瑞克公爵	ge lei sen sha dong bu rui ke gong jue	0
 格雷沙卡	ge lei sha ka	0
 格雷珊	ge lei shan	0
-格雷什卡	ge lei shen ka	0
-格雷什卡的信	ge lei shen ka de xin	0
+格雷什卡	ge lei shi ka	0
+格雷什卡的信	ge lei shi ka de xin	0
 格雷斯比的华丽束腰	ge lei si bi de hua li shu yao	0
 格雷斯通	ge lei si tong	0
 格雷苏	ge lei su	0
@@ -29283,7 +29279,7 @@ use_preset_vocabulary: false
 格里布	ge li bu	0
 格里伏塔	ge li fu ta	0
 格里伏塔的便笺	ge li fu ta de bian jian	0
-格里高	ge li gao	53
+格里高	ge li gao	15
 格里高的遗骸	ge li gao de yi hai	0
 格里哈斯特	ge li ha si te	1
 格里加特	ge li jia te	0
@@ -29310,14 +29306,14 @@ use_preset_vocabulary: false
 格里诺腰带	ge li nuo yao dai	0
 格里诺罩帽	ge li nuo zhao mao	0
 格里塞特厕所钥匙	ge li sai te ce suo yao shi	0
-格里什	ge li shen	2
-格里什虫巢孵化室	ge li shen chong chao fu hua shi	0
-格里什虫卵	ge li shen chong luan	0
-格里什钉刺	ge li shen ding ci	0
-格里什皇后的大脑	ge li shen huang hou de da nao	0
-格里什皇后诱引剂	ge li shen huang hou you yin ji	0
-格里什信息素	ge li shen xin xi su	0
-格里什异种蝎水晶	ge li shen yi zhong xie shui jing	0
+格里什	ge li shi	2
+格里什虫巢孵化室	ge li shi chong chao fu hua shi	0
+格里什虫卵	ge li shi chong luan	0
+格里什钉刺	ge li shi ding ci	0
+格里什皇后的大脑	ge li shi huang hou de da nao	0
+格里什皇后诱引剂	ge li shi huang hou you yin ji	0
+格里什信息素	ge li shi xin xi su	0
+格里什异种蝎水晶	ge li shi yi zhong xie shui jing	0
 格里施纳	ge li shi na	0
 格里施纳宝珠	ge li shi na bao zhu	0
 格里施纳黑暗鸦人	ge li shi na hei an ya ren	0
@@ -29388,8 +29384,8 @@ use_preset_vocabulary: false
 格鲁努斯	ge lu nu si	0
 格鲁努斯削钢	ge lu nu si xue gang	0
 格鲁诺尔	ge lu nuo er	0
-格鲁诺什	ge lu nuo shen	0
-格鲁诺什的头盔	ge lu nuo shen de tou kui	0
+格鲁诺什	ge lu nuo shi	0
+格鲁诺什的头盔	ge lu nuo shi de tou kui	0
 格鲁塔恩	ge lu ta en	0
 格伦达	ge lun da	0
 格伦德尔	ge lun de er	0
@@ -29492,8 +29488,8 @@ use_preset_vocabulary: false
 戈斯的火把	ge si de huo ba	0
 戈斯鲁姆	ge si lu mu	0
 格斯塔恩	ge si ta en	0
-戈泰什	ge tai shen	0
-戈泰什的头颅	ge tai shen de tou lu	0
+戈泰什	ge tai shi	0
+戈泰什的头颅	ge tai shi de tou lu	0
 哥特板甲	ge te ban jia	0
 哥特板甲护手	ge te ban jia hu shou	0
 哥特板甲护腿	ge te ban jia hu tui	0
@@ -29811,7 +29807,7 @@ use_preset_vocabulary: false
 骨堆腕轮	gu dui wan lun	0
 古恩	gu en	66
 古恩的角盔	gu en de jiao kui	0
-古恩格鲁诺什的头盔	gu en ge lu nuo shen de tou kui	0
+古恩格鲁诺什的头盔	gu en ge lu nuo shi de tou kui	0
 古尔达	gu er da	18
 古尔达的伐木机	gu er da de fa mu ji	0
 古尔丹的兜帽	gu er dan de dou mao	0
@@ -29865,8 +29861,8 @@ use_preset_vocabulary: false
 咕拉咕拉的头颅	gu la gu la de tou lu	0
 古拉鲁克	gu la lu ke	0
 古拉摩	gu la mo	0
-古拉莫什的鳞片	gu la mo shen de lin pian	0
-古拉莫什的奇怪设备	gu la mo shen de qi guai she bei	0
+古拉莫什的鳞片	gu la mo shi de lin pian	0
+古拉莫什的奇怪设备	gu la mo shi de qi guai she bei	0
 钴蓝粉碎者	gu lan fen sui zhe	0
 钴蓝矿石	gu lan kuang shi	0
 古老的技艺	gu lao de ji yi	7
@@ -29929,7 +29925,7 @@ use_preset_vocabulary: false
 古树之林	gu shu zhi lin	0
 古树之三联盾牌	gu shu zhi san lian dun pai	0
 古树之心	gu shu zhi xin	0
-古斯	gu si	228
+古斯	gu si	50
 古斯的部队	gu si de bu dui	0
 古斯的信号灯	gu si de xin hao deng	0
 古斯雷克	gu si lei ke	0
@@ -30024,7 +30020,7 @@ use_preset_vocabulary: false
 观察者护腿	guan cha zhe hu tui	0
 观察者护腕	guan cha zhe hu wan	0
 观察者杰哈恩	guan cha zhe jie ha en	0
-观察者克鲁什	guan cha zhe ke lu shen	0
+观察者克鲁什	guan cha zhe ke lu shi	0
 观察者莉萨奥	guan cha zhe li sa ao	0
 观察者软帽	guan cha zhe ruan mao	0
 观察者上衣	guan cha zhe shang yi	0
@@ -30401,21 +30397,21 @@ use_preset_vocabulary: false
 哈尔罗	ha er luo	0
 哈尔蒙	ha er meng	0
 哈尔帕	ha er pa	0
-哈尔什	ha er shen	1
-哈尔什长靴	ha er shen chang xue	0
-哈尔什巢穴	ha er shen chao xue	0
-哈尔什风行者	ha er shen feng xing zhe	0
-哈尔什护肩	ha er shen hu jian	0
-哈尔什护腿	ha er shen hu tui	0
-哈尔什护腕	ha er shen hu wan	0
-哈尔什祭坛	ha er shen ji tan	0
-哈尔什卷轴	ha er shen juan zhou	0
-哈尔什利爪卫兵	ha er shen li zhua wei bing	0
-哈尔什轻帽	ha er shen qing mao	0
-哈尔什手套	ha er shen shou tao	0
-哈尔什外套	ha er shen wai tao	0
-哈尔什峡谷	ha er shen xia gu	0
-哈尔什腰带	ha er shen yao dai	0
+哈尔什	ha er shi	1
+哈尔什长靴	ha er shi chang xue	0
+哈尔什巢穴	ha er shi chao xue	0
+哈尔什风行者	ha er shi feng xing zhe	0
+哈尔什护肩	ha er shi hu jian	0
+哈尔什护腿	ha er shi hu tui	0
+哈尔什护腕	ha er shi hu wan	0
+哈尔什祭坛	ha er shi ji tan	0
+哈尔什卷轴	ha er shi juan zhou	0
+哈尔什利爪卫兵	ha er shi li zhua wei bing	0
+哈尔什轻帽	ha er shi qing mao	0
+哈尔什手套	ha er shi shou tao	0
+哈尔什外套	ha er shi wai tao	0
+哈尔什峡谷	ha er shi xia gu	0
+哈尔什腰带	ha er shi yao dai	0
 哈尔希医生	ha er xi yi sheng	0
 哈尔詹	ha er zhan	0
 哈弗甘	ha fu gan	0
@@ -30573,7 +30569,7 @@ use_preset_vocabulary: false
 哈斯塔特	ha si ta te	0
 哈苏鲁德	ha su lu de	0
 哈索恩的解毒剂	ha suo en de jie du ji	0
-哈塔什	ha ta shen	0
+哈塔什	ha ta shi	0
 哈特拉斯	ha te la si	1
 哈特曼中士	ha te man zhong shi	0
 哈特威尔	ha te wei er	0
@@ -30628,7 +30624,7 @@ use_preset_vocabulary: false
 海盗伪装包	hai dao wei zhuang bao	0
 海盗腰带	hai dao yao dai	0
 海盗装束	hai dao zhuang shu	0
-海德姆什	hai de mu shen	0
+海德姆什	hai de mu shi	0
 海德尼尔敲头槌	hai de ni er qiao tou chui	0
 海德尼尔痛苦使者	hai de ni er tong ku shi zhe	0
 海德尼尔鱼叉	hai de ni er yu cha	0
@@ -33785,7 +33781,7 @@ use_preset_vocabulary: false
 迦尔达拉的徽记之戒	jia er da la de hui ji zhi jie	0
 加尔范上尉	jia er fan shang wei	0
 加尔福特	jia er fu te	0
-加尔高什	jia er gao shen	0
+加尔高什	jia er gao shi	0
 加尔戈	jia er ge	0
 加尔贡的平静休眠护腕	jia er gong de ping jing xiu mian hu wan	0
 加尔克	jia er ke	0
@@ -33885,7 +33881,7 @@ use_preset_vocabulary: false
 加隆的镐	jia long de gao	0
 加鲁德	jia lu de	0
 加卢尔	jia lu er	0
-加鲁什	jia lu shen	4
+加鲁什	jia lu shi	4
 加鲁特	jia lu te	0
 加伦	jia lun	6
 加仑鬼屋	jia lun gui wu	0
@@ -33943,7 +33939,7 @@ use_preset_vocabulary: false
 加塞尔佐格	jia sai er zuo ge	0
 加塞尔佐格的头颅	jia sai er zuo ge de tou lu	0
 贾森农场	jia sen nong chang	0
-伽什	jia shen	2
+伽什	jia shi	2
 加什尔	jia shi er	0
 驾驶手套	jia shi shou tao	0
 驾驶员护腿	jia shi yuan hu tui	0
@@ -36364,7 +36360,7 @@ use_preset_vocabulary: false
 卡邦卡	ka bang ka	0
 卡布彬	ka bu bin	0
 卡崔娜	ka cui na	1
-卡达什图腾	ka da shen tu teng	0
+卡达什图腾	ka da shi tu teng	0
 卡达通灵塔	ka da tong ling ta	0
 卡达许图腾	ka da xu tu teng	0
 卡德	ka de	137
@@ -36409,8 +36405,8 @@ use_preset_vocabulary: false
 卡尔亚的勋章	ka er ya di xun zhang	0
 卡格	ka ge	3
 卡戈鲁尔中士	ka ge lu er zhong shi	0
-卡格罗什	ka ge luo shen	0
-卡格罗什的背包	ka ge luo shen de bei bao	0
+卡格罗什	ka ge luo shi	0
+卡格罗什的背包	ka ge luo shi de bei bao	0
 卡格斯	ka ge si	0
 卡格营地	ka ge ying di	0
 卡古克	ka gu ke	0
@@ -36432,7 +36428,6 @@ use_preset_vocabulary: false
 卡加希亚要塞	ka jia xi ya yao sai	0
 卡加之眼	ka jia zhi yan	0
 卡卡冬	ka ka dong	0
-卡卡希	ka ka xi	0
 卡拉巴	ka la ba	4
 卡拉伯尔训练场	ka la bo er xun lian chang	0
 卡拉波废墟	ka la bo fei xu	0
@@ -36548,7 +36543,7 @@ use_preset_vocabulary: false
 卡图克	ka tu ke	0
 卡图姆	ka tu mu	0
 卡图姆的超级鱼饵	ka tu mu de chao ji yu er	0
-卡托什	ka tuo shen	52
+卡托什	ka tuo shi	52
 卡瓦	ka wa	320
 卡维尔上尉的说服者	ka wei er shang wei de shuo fu zhe	0
 卡温德	ka wen de	0
@@ -36771,14 +36766,14 @@ use_preset_vocabulary: false
 考尔苏	kao er su	0
 考格	kao ge	0
 考格汉	kao ge han	0
-考格雷什	kao ge lei shen	0
+考格雷什	kao ge lei shi	0
 考格斯宾	kao ge si bin	0
 考根	kao gen	0
 考古学家的工作靴	kao gu xue jia de gong zuo xue	0
 考古学家的头颅	kao gu xue jia de tou lu	0
 烤鲑鱼	kao gui yu	4
 考吉尔德	kao ji er de	0
-考基什	kao ji shen	0
+考基什	kao ji shi	0
 考加尔	kao jia er	1
 烤巨蚌	kao ju bang	0
 烤科多肉	kao ke duo rou	0
@@ -37013,8 +37008,8 @@ use_preset_vocabulary: false
 克雷利安	ke lei li an	0
 克雷米	ke lei mi	1
 克雷普塞斯	ke lei pu sai si	0
-克雷什	ke lei shen	16
-克雷什之背	ke lei shen zhi bei	1
+克雷什	ke lei shi	16
+克雷什之背	ke lei shi zhi bei	1
 克雷斯符文	ke lei si fu wen	0
 克雷斯克	ke lei si ke	0
 克雷希斯	ke lei xi si	0
@@ -37051,19 +37046,19 @@ use_preset_vocabulary: false
 克鲁	ke lu	42
 克鲁本	ke lu ben	0
 科卢尔传送门	ke lu er chuan song men	0
-克鲁格什	ke lu ge shen	0
+克鲁格什	ke lu ge shi	0
 克鲁加什	ke lu jia shi	0
 科鲁克莱德	ke lu ke lai de	0
 科鲁拉克	ke lu la ke	0
 克鲁纳里斯	ke lu na li si	0
 克鲁纳里斯的颅骨	ke lu na li si de lu gu	0
-克鲁什	ke lu shen	1
-克鲁什之刃	ke lu shen zhi ren	0
+克鲁什	ke lu shi	1
+克鲁什之刃	ke lu shi zhi ren	0
 克鲁斯克	ke lu si ke	0
 克鲁索洛克恩	ke lu suo luo ke en	0
 克鲁索洛克恩混乱之刃	ke lu suo luo ke en hun luan zhi ren	0
 克鲁伊格	ke lu yi ge	0
-克伦	ke lun	53
+克伦	ke lun	20
 克伦断脊者	ke lun duan ji zhe	0
 克伦卡	ke lun ka	0
 克罗	ke luo	239
@@ -37087,10 +37082,10 @@ use_preset_vocabulary: false
 克罗姆扎的军旗	ke luo mu zha de jun qi	0
 克罗尼亚	ke luo ni ya	0
 克罗尼亚的箱子	ke luo ni ya de xiang zi	0
-克洛什	ke luo shen	0
-克洛什火拳	ke luo shen huo quan	0
-克罗什上尉	ke luo shen shang wei	0
-克罗什上尉的冲撞头盔	ke luo shen shang wei de chong zhuang tou kui	0
+克洛什	ke luo shi	0
+克洛什火拳	ke luo shi huo quan	0
+克罗什上尉	ke luo shi shang wei	0
+克罗什上尉的冲撞头盔	ke luo shi shang wei de chong zhuang tou kui	0
 克罗斯比	ke luo si bi	6
 克罗苏斯	ke luo su si	0
 克罗苏斯的残骸	ke luo su si de can hai	0
@@ -37126,12 +37121,12 @@ use_preset_vocabulary: false
 克萨维亚水样	ke sa wei ya shui yang	0
 克塞拉	ke sai la	0
 克森图	ke sen tu	0
-柯什	ke shen	0
-柯什营地	ke shen ying di	0
+柯什	ke shi	0
+柯什营地	ke shi ying di	0
 刻蚀水晶宝珠	ke shi shui jing bao zhu	0
 可食用的蕨叶	ke shi yong de jue ye	0
 可收缩的爪子	ke shou suo de zhua zi	0
-克斯	ke si	703
+克斯	ke si	40
 克斯雷姆	ke si lei mu	0
 克斯塔姆	ke si ta mu	0
 克斯特拉斯	ke si te la si	0
@@ -37616,9 +37611,9 @@ use_preset_vocabulary: false
 夸格米拉之心	kua ge mi la zhi xin	0
 夸格米拉之眼	kua ge mi la zhi yan	1
 跨山长靴	kua shan chang xue	0
-夸特弗拉什的包裹	kua te fu la shen de bao guo	0
-夸特弗拉什的采矿锄	kua te fu la shen de cai kuang chu	0
-夸特弗拉什的导航机器人	kua te fu la shen de dao hang ji qi ren	0
+夸特弗拉什的包裹	kua te fu la shi de bao guo	0
+夸特弗拉什的采矿锄	kua te fu la shi de cai kuang chu	0
+夸特弗拉什的导航机器人	kua te fu la shi de dao hang ji qi ren	0
 跨越黑暗之门	kua yue hei an zhi men	1
 快步斑马	kuai bu ban ma	0
 快步护腿	kuai bu hu tui	0
@@ -38060,11 +38055,11 @@ use_preset_vocabulary: false
 拉扎鲁斯	la zha lu si	1
 拉扎鲁斯神父	la zha lu si shen fu	0
 拉扎奇	la zha qi	0
-拉扎什	la zha shen	0
-拉扎什寡妇蛛	la zha shen gua fu zhu	0
-拉扎什蝰蛇	la zha shen kui she	0
-拉扎什迅猛龙	la zha shen xun meng long	0
-拉扎什硬币	la zha shen ying bi	0
+拉扎什	la zha shi	0
+拉扎什寡妇蛛	la zha shi gua fu zhu	0
+拉扎什蝰蛇	la zha shi kui she	0
+拉扎什迅猛龙	la zha shi xun meng long	0
+拉扎什硬币	la zha shi ying bi	0
 拉札希寡妇蜘蛛	la zha xi gua fu zhi zhu	0
 拉住熊	la zhu xiong	0
 拉兹	la zi	73
@@ -38918,7 +38913,7 @@ use_preset_vocabulary: false
 莉蒂亚的斩钢剑	li di ya de zhan gang jian	0
 利恩	li en	46
 里恩瓦	li en wa	0
-利尔	li er	124
+利尔	li er	40
 里尔霍夫的飞刀	li er huo fu de fei dao	0
 理发修面	li fa xiu mian	0
 力反馈盾牌	li fan kui dun pai	0
@@ -38945,8 +38940,8 @@ use_preset_vocabulary: false
 礼节之杯	li jie zhi bei	0
 里卡的盾牌与铁锤店	li ka de dun pai yu tie chui dian	0
 里卡努斯	li ka nu si	0
-利卡什	li ka shen	0
-利卡什深渊	li ka shen shen yuan	0
+利卡什	li ka shi	0
+利卡什深渊	li ka shi shen yuan	0
 莉卡之盾	li ka zhi dun	0
 离开毒	li kai du	0
 里克努斯	li ke nu si	0
@@ -40304,7 +40299,7 @@ use_preset_vocabulary: false
 鲁特维尔的召唤完成	lu te wei er de zhao huan wan cheng	0
 芦苇海岸大马哈鱼	lu wei hai an da ma ha yu	0
 芦苇戒指	lu wei jie zhi	0
-鲁维罗什	lu wei luo shen	0
+鲁维罗什	lu wei luo shi	0
 芦苇腰带	lu wei yao dai	0
 卢希恩	lu xi en	0
 露西尔	lu xi er	7
@@ -40442,7 +40437,7 @@ use_preset_vocabulary: false
 洛甘纳尔	luo gan na er	0
 罗戈	luo ge	13
 罗格雷恩	luo ge lei en	0
-洛格罗什	luo ge luo shen	0
+洛格罗什	luo ge luo shi	0
 罗格瓦尔	luo ge wa er	0
 洛古斯	luo gu si	0
 罗哈姆斯元帅	luo ha mu si yuan shuai	0
@@ -40772,10 +40767,10 @@ use_preset_vocabulary: false
 玛尔利斯	ma er li si	0
 玛尔里之触	ma er li zhi chu	0
 玛尔里之眼	ma er li zhi yan	0
-马尔罗什	ma er luo shen	0
+马尔罗什	ma er luo shi	0
 马尔萨	ma er sa	2
-马尔什	ma er shen	0
-马尔什医生	ma er shen yi sheng	0
+马尔什	ma er shi	0
+马尔什医生	ma er shi yi sheng	0
 马尔松	ma er song	0
 玛尔苏斯中士	ma er su si zhong shi	0
 玛尔特迪斯的护手	ma er te di si de hu shou	0
@@ -40790,7 +40785,7 @@ use_preset_vocabulary: false
 麻疯侏儒	ma feng zhu ru	7
 麻风侏儒装束	ma feng zhu ru zhuang shu	0
 马弗拉林	ma fu la lin	0
-玛高什	ma gao shen	0
+玛高什	ma gao shi	0
 玛高兹	ma gao zi	0
 玛戈多格	ma ge duo ge	0
 玛戈尔	ma ge er	1
@@ -40842,7 +40837,7 @@ use_preset_vocabulary: false
 马格兰	ma ge lan	1
 马格兰的信件	ma ge lan de xin jian	0
 马格雷甘	ma ge lei gan	0
-马格利什	ma ge li shen	0
+马格利什	ma ge li shi	0
 玛戈林	ma ge lin	0
 玛格曼达	ma ge man da	0
 玛格曼达洞穴	ma ge man da dong xue	0
@@ -41025,7 +41020,7 @@ use_preset_vocabulary: false
 马洛尔夫	ma luo er fu	0
 玛洛姆之握	ma luo mu zhi wo	0
 玛洛尼	ma luo ni	0
-玛洛什	ma luo shen	0
+玛洛什	ma luo shi	0
 玛洛维尔	ma luo wei er	0
 玛纳杜斯	ma na du si	0
 玛纳斯卡波	ma na si ka bo	0
@@ -41160,7 +41155,7 @@ use_preset_vocabulary: false
 迈瑞尔	mai rui er	0
 麦瑟蕾亚	mai se lei ya	0
 麦森的文件	mai sen de wen jian	0
-麦什洛克	mai shen luo ke	0
+麦什洛克	mai shi luo ke	0
 麦斯符文	mai si fu wen	0
 迈斯林迪尔	mai si lin di er	0
 迈斯特拉	mai si te la	0
@@ -41441,7 +41436,7 @@ use_preset_vocabulary: false
 梅丽雅的光芒头冠	mei li ya de guang mang tou guan	0
 梅林法袍	mei lin fa pao	0
 梅洛克	mei luo ke	0
-梅罗什	mei luo shen	0
+梅罗什	mei luo shi	0
 美梦石	mei meng shi	0
 梅米尼	mei mi ni	0
 每秒法力回复	mei miao fa li hui fu	0
@@ -41772,8 +41767,8 @@ use_preset_vocabulary: false
 米沙	mi sha	29
 米莎	mi sha	156
 米杉	mi shan	0
-米什基	mi shen ji	0
-米什塔	mi shen ta	0
+米什基	mi shi ji	0
+米什塔	mi shi ta	0
 秘誓	mi shi	0
 迷失的暗影法师	mi shi de an ying fa shi	0
 迷失的步行鸟	mi shi de bu xing niao	0
@@ -42341,13 +42336,13 @@ use_preset_vocabulary: false
 莫戈雷斯	mo ge lei si	0
 莫戈洛隆	mo ge luo long	0
 莫戈洛隆之刃	mo ge luo long zhi ren	0
-莫格罗什	mo ge luo shen	0
-莫格罗什要塞	mo ge luo shen yao sai	0
+莫格罗什	mo ge luo shi	0
+莫格罗什要塞	mo ge luo shi yao sai	0
 莫格穆洛克	mo ge mu luo ke	0
 莫格穆洛克的保险箱	mo ge mu luo ke de bao xian xiang	0
 莫格穆洛克的鼻烟	mo ge mu luo ke de bi yan	0
 莫格穆洛克的烈酒	mo ge mu luo ke de lie jiu	0
-莫格什	mo ge shen	0
+莫格什	mo ge shi	0
 莫根	mo gen	0
 摩根的岗哨	mo gen de gang shao	0
 摩根的哨岗	mo gen de shao gang	0
@@ -42468,7 +42463,7 @@ use_preset_vocabulary: false
 墨晶指环	mo jing zhi huan	0
 魔酒	mo jiu	1
 魔锯	mo ju	0
-摩卡什	mo ka shen	0
+摩卡什	mo ka shi	0
 莫克迪普	mo ke di pu	0
 莫克高顿	mo ke gao dun	0
 莫克霍尔	mo ke huo er	0
@@ -42666,12 +42661,12 @@ use_preset_vocabulary: false
 摩沙鲁	mo sha lu	0
 摩沙鲁石板	mo sha lu shi ban	0
 磨砂战锤	mo sha zhan chui	0
-摩什	mo shen	0
-莫什奥格	mo shen ao ge	0
-莫什奥格巨魔山	mo shen ao ge ju mo shan	0
-莫什奥格虐待者	mo shen ao ge nve dai zhe	0
-莫什奥格食人魔山	mo shen ao ge shi ren mo shan	0
-莫什奥格巫医	mo shen ao ge wu yi	0
+摩什	mo shi	0
+莫什奥格	mo shi ao ge	0
+莫什奥格巨魔山	mo shi ao ge ju mo shan	0
+莫什奥格虐待者	mo shi ao ge nve dai zhe	0
+莫什奥格食人魔山	mo shi ao ge shi ren mo shan	0
+莫什奥格巫医	mo shi ao ge wu yi	0
 魔誓	mo shi	0
 魔誓暴徒	mo shi bao tu	0
 魔石壁垒	mo shi bi lei	0
@@ -42915,7 +42910,7 @@ use_preset_vocabulary: false
 穆戈尔	mu ge er	0
 穆戈尔的神圣木棒	mu ge er de shen sheng mu bang	0
 穆格高克	mu ge gao ke	0
-穆格拉什	mu ge la shen	0
+穆格拉什	mu ge la shi	0
 穆格雷斯	mu ge lei si	0
 穆戈特的图腾	mu ge te de tu teng	0
 穆戈特酋长	mu ge te qiu zhang	0
@@ -42980,7 +42975,7 @@ use_preset_vocabulary: false
 穆拉丁罩帽	mu la ding zhao mao	0
 穆拉恩	mu la en	0
 穆拉恩熟麦	mu la en shu mai	0
-穆拉格什	mu la ge shen	0
+穆拉格什	mu la ge shi	0
 穆拉古斯	mu la gu si	0
 姆拉特	mu la te	0
 穆里顿	mu li dun	0
@@ -43120,7 +43115,7 @@ use_preset_vocabulary: false
 纳克雷洛特的头颅	na ke lei luo te de tou lu	0
 纳克雷米斯	na ke lei mi si	0
 纳克罗	na ke luo	0
-纳克罗什酋长	na ke luo shen qiu zhang	0
+纳克罗什酋长	na ke luo shi qiu zhang	0
 纳克迈尼	na ke mai ni	0
 纳克迈尼圣泉	na ke mai ni sheng quan	0
 纳克萨马斯	na ke sa ma si	3
@@ -43317,8 +43312,8 @@ use_preset_vocabulary: false
 奈杉德哨岗	nai shan de shao gang	0
 奈斯托	nai si tuo	0
 耐酸披风	nai suan pi feng	0
-奈塔拉什	nai ta la shen	0
-奈塔拉什的哀嚎	nai ta la shen de ai hao	0
+奈塔拉什	nai ta la shi	0
+奈塔拉什的哀嚎	nai ta la shi de ai hao	0
 奈特弗	nai te fu	0
 奈特雷	nai te lei	1
 奈维尔中尉	nai wei er zhong wei	0
@@ -43907,7 +43902,7 @@ use_preset_vocabulary: false
 诺森德地下城英雄	nuo sen de di xia cheng ying xiong	0
 诺森德炖肉	nuo sen de dun rou	0
 诺森德新兵考试	nuo sen de xin bing kao shi	0
-诺什	nuo shen	2
+诺什	nuo shi	2
 诺斯的冰冷之心	nuo si de bing leng zhi xin	0
 诺斯的特殊药剂	nuo si de te shu yao ji	0
 诺斯的诅咒	nuo si de zu zhou	0
@@ -44025,7 +44020,7 @@ use_preset_vocabulary: false
 帕克维尔	pa ke wei er	1
 帕库	pa ku	0
 帕库少校	pa ku shao xiao	0
-帕拉	pa la	170
+帕拉	pa la	40
 帕兰蒂尔	pa lan di er	1
 帕雷教授	pa lei jiao shou	1
 帕雷斯之眼	pa lei si zhi yan	0
@@ -44221,7 +44216,7 @@ use_preset_vocabulary: false
 疲惫先知衬肩	pi bei xian zhi chen jian	0
 疲惫者	pi bei zhe	3
 皮带尖盾	pi dai jian dun	0
-匹徳非特	pi de fei te	0
+匹德非特	pi de fei te	0
 匹德菲特	pi de fei te	0
 皮尔斯的手枪	pi er si de shou qiang	0
 皮尔斯枪械店	pi er si qiang xie dian	0
@@ -44850,7 +44845,7 @@ use_preset_vocabulary: false
 起泡的软泥怪	qi pao de ruan ni guai	0
 气泡苹果酒	qi pao ping guo jiu	0
 欺骗敌人	qi pian di ren	6
-祈求者耶戈什	qi qiu zhe ye ge shen	0
+祈求者耶戈什	qi qiu zhe ye ge shi	0
 骑士彩带	qi shi cai dai	0
 骑士达米隆	qi shi da mi long	0
 骑士的心酸	qi shi de xin suan	0
@@ -46556,7 +46551,7 @@ use_preset_vocabulary: false
 瑞尼尔副队长	rui ni er fu dui zhang	0
 瑞帕	rui pa	6
 锐锐	rui rui	1
-瑞什	rui shen	3
+瑞什	rui shi	3
 瑞斯班	rui si ban	0
 瑞斯班洞穴	rui si ban dong xue	0
 瑞斯班矿石	rui si ban kuang shi	0
@@ -47567,7 +47562,7 @@ use_preset_vocabulary: false
 沙塔斯无情突袭合剂	sha ta si wu qing tu xi he ji	0
 沙塔斯医院	sha ta si yi yuan	0
 沙塔斯勇士腰带	sha ta si yong shi yao dai	0
-沙泰什	sha tai shen	0
+沙泰什	sha tai shi	0
 沙图尔	sha tu er	0
 沙图尔的传送器	sha tu er de chuan song qi	0
 沙图尔的传送器平台	sha tu er de chuan song qi ping tai	0
@@ -49800,7 +49795,7 @@ use_preset_vocabulary: false
 收割者的礼物	shou ge zhe de li wu	0
 收割者的头颅	shou ge zhe de tou lu	0
 收割者戈提克	shou ge zhe ge ti ke	2
-收割者麦什洛克	shou ge zhe mai shen luo ke	0
+收割者麦什洛克	shou ge zhe mai shi luo ke	0
 手工短裤	shou gong duan ku	0
 手工法杖	shou gong fa zhang	0
 手工精制护腿	shou gong jing zhi hu tui	0
@@ -51356,7 +51351,7 @@ use_preset_vocabulary: false
 索尔森	suo er sen	0
 索尔森废墟	suo er sen fei xu	0
 索尔森之盾	suo er sen zhi dun	0
-索尔塔什	suo er ta shen	0
+索尔塔什	suo er ta shi	0
 索尔之杖	suo er zhi zhang	0
 索菲亚高地	suo fei ya gao di	0
 索夫卡	suo fu ka	0
@@ -51569,8 +51564,8 @@ use_preset_vocabulary: false
 塔兰碎冰者	ta lan sui bing zhe	0
 塔雷尔	ta lei er	0
 塔雷里斯	ta lei li si	0
-塔雷什金	ta lei shen jin	0
-塔雷什森	ta lei shen sen	0
+塔雷什金	ta lei shi jin	0
+塔雷什森	ta lei shi sen	0
 塔雷特	ta lei te	0
 塔里查	ta li cha	0
 塔利的另一个孪生兄弟	ta li de ling yi ge luan sheng xiong di	0
@@ -53057,7 +53052,7 @@ use_preset_vocabulary: false
 吞噬魔法	tun shi mo fa	0
 吞噬魔法效果	tun shi mo fa xiao guo	0
 吞噬披风	tun shi pi feng	0
-吞噬者	tun shi zhe	106
+吞噬者	tun shi zhe	50
 吞噬者芬鲁斯	tun shi zhe fen lu si	0
 吞噬者穆坦努斯	tun shi zhe mu tan nu si	0
 吞噬者特雷姆斯	tun shi zhe te lei mu si	0
@@ -53145,12 +53140,12 @@ use_preset_vocabulary: false
 托塞德林王子	tuo sai de lin wang zi	0
 托塞多雷	tuo sai duo lei	0
 托赛格安息地	tuo sai ge an xi di	0
-托什雷	tuo shen lei	1
-托什雷的基地	tuo shen lei de ji di	0
-托什雷的基地斥候	tuo shen lei de ji di chi hou	0
-托什雷的涡轮电磁炮台	tuo shen lei de wo lun dian ci pao tai	0
-托什雷飞行器	tuo shen lei fei xing qi	0
-托什雷基地英雄帽	tuo shen lei ji di ying xiong mao	0
+托什雷	tuo shi lei	1
+托什雷的基地	tuo shi lei de ji di	0
+托什雷的基地斥候	tuo shi lei de ji di chi hou	0
+托什雷的涡轮电磁炮台	tuo shi lei de wo lun dian ci pao tai	0
+托什雷飞行器	tuo shi lei fei xing qi	0
+托什雷基地英雄帽	tuo shi lei ji di ying xiong mao	0
 拖尸	tuo shi	16
 托泰克	tuo tai ke	0
 托托	tuo tuo	36
@@ -53208,7 +53203,7 @@ use_preset_vocabulary: false
 瓦基瑞安追踪者护胸	wa ji rui an zhui zong zhe hu xiong	0
 瓦加德补给箱	wa jia de bu gei xiang	0
 瓦加德徽记	wa jia de hui ji	0
-瓦加什	wa jia shen	0
+瓦加什	wa jia shi	0
 瓦解法杖	wa jie fa zhang	0
 瓦解怒吼	wa jie nu hou	0
 瓦解者之怒	wa jie zhe zhi nu	0
@@ -53263,12 +53258,12 @@ use_preset_vocabulary: false
 瓦罗卡尔中尉	wa luo ka er zhong wei	0
 瓦罗莫克	wa luo mo ke	0
 瓦罗森	wa luo sen	1
-瓦罗什	wa luo shen	0
-瓦罗什的变形	wa luo shen de bian xing	0
-瓦罗什的传送	wa luo shen de chuan song	0
-瓦罗什的卷轴	wa luo shen de juan zhou	0
-瓦罗什的魔精	wa luo shen de mo jing	0
-瓦罗什之痒	wa luo shen zhi yang	0
+瓦罗什	wa luo shi	0
+瓦罗什的变形	wa luo shi de bian xing	0
+瓦罗什的传送	wa luo shi de chuan song	0
+瓦罗什的卷轴	wa luo shi de juan zhou	0
+瓦罗什的魔精	wa luo shi de mo jing	0
+瓦罗什之痒	wa luo shi zhi yang	0
 瓦洛斯的头颅	wa luo si de tou lu	0
 瓦罗温	wa luo wen	0
 瓦罗温湖	wa luo wen hu	0
@@ -53694,7 +53689,7 @@ use_preset_vocabulary: false
 威尔玛	wei er ma	0
 维尔玛	wei er ma	10
 维尔玛克将军	wei er ma ke jiang jun	0
-威尔什	wei er shen	0
+威尔什	wei er shi	0
 维尔西斯	wei er xi si	0
 未翻译的日记	wei fan yi de ri ji	0
 微风长袍	wei feng chang pao	0
@@ -53770,7 +53765,7 @@ use_preset_vocabulary: false
 畏惧护手	wei ju hu shou	0
 畏惧腿铠	wei ju tui kai	0
 维卡克斯	wei ka ke si	0
-维克	wei ke	414
+维克	wei ke	60
 维克的紧急气囊	wei ke de jin ji qi nang	0
 维克的紧急潜水头盔	wei ke de jin ji qian shui tou kui	0
 维克的钥匙	wei ke de yao shi	0
@@ -54053,7 +54048,7 @@ use_preset_vocabulary: false
 温特斯夫人	wen te si fu ren	0
 温图拉	wen tu la	1
 温图斯	wen tu si	0
-文亚什之弓	wen ya shen zhi gong	0
+文亚什之弓	wen ya shi zhi gong	0
 瘟疫白蚁	wen yi bai yi	0
 瘟疫蝙蝠皮手套	wen yi bian fu pi shou tao	0
 瘟疫波	wen yi bo	0
@@ -54189,8 +54184,8 @@ use_preset_vocabulary: false
 我们曾是战士	wo men ceng shi zhan shi	2
 我闷完	wo men wan	0
 沃姆罗格	wo mu luo ge	0
-沃姆什	wo mu shen	0
-沃姆什的喜悦	wo mu shen de xi yue	0
+沃姆什	wo mu shi	0
+沃姆什的喜悦	wo mu shi de xi yue	0
 沃纳尔大师	wo na er da shi	0
 沃纳古	wo na gu	0
 沃农	wo nong	0
@@ -55029,7 +55024,7 @@ use_preset_vocabulary: false
 吸血之触	xi xue zhi chu	0
 希亚比	xi ya bi	0
 希亚比的烟草	xi ya bi de yan cao	0
-希亚什	xi ya shen	0
+希亚什	xi ya shi	0
 熄焰之水	xi yan zhi shui	0
 蜥蜴采样	xi yi cai yang	0
 蜥蜴的毒囊	xi yi de du nang	0
@@ -55513,7 +55508,7 @@ use_preset_vocabulary: false
 邪齿狼人	xie chi lang ren	0
 蝎虫	xie chong	2
 蝎虫便鞋	xie chong bian xie	0
-蠍虫垫肩	xie chong dian jian	0
+蝎虫垫肩	xie chong dian jian	0
 蝎虫斗篷	xie chong dou peng	0
 蝎虫护肩	xie chong hu jian	0
 蝎虫护腿	xie chong hu tui	0
@@ -55739,7 +55734,7 @@ use_preset_vocabulary: false
 新兵之靴	xin bing zhi xue	0
 辛波的藏身所	xin bo de cang shen suo	0
 信差考雷落锤	xin chai kao lei luo chui	0
-辛达	xin da	312
+辛达	xin da	60
 辛达尔	xin da er	0
 新的部落	xin de bu luo	7
 辛德尔公爵	xin de er gong jue	0
@@ -56012,7 +56007,7 @@ use_preset_vocabulary: false
 星空潜行者护腿	xing kong qian xing zhe hu tui	0
 星空专注	xing kong zhuan zhu	0
 星林	xing lin	1
-星灵	xing ling	851
+星灵	xing ling	120
 星灵长者	xing ling zhang zhe	0
 型密码机	xing mi ma ji	0
 星木	xing mu	3
@@ -56214,7 +56209,7 @@ use_preset_vocabulary: false
 休闲肩甲	xiu xian jian jia	0
 休闲手套	xiu xian shou tao	0
 修行者的护符	xiu xing zhe de hu fu	0
-修行者高罗什	xiu xing zhe gao luo shen	0
+修行者高罗什	xiu xing zhe gao luo shi	0
 休养徽记	xiu yang hui ji	0
 修正补丁	xiu zheng bu ding	1
 袖中弩	xiu zhong nu	0
@@ -57497,15 +57492,15 @@ use_preset_vocabulary: false
 鸦人羽毛	ya ren yu mao	0
 鸦人占卜魔杖	ya ren zhan bu mo zhang	0
 亚瑞加之桥	ya rui jia zhi qiao	0
-亚什	ya shen	4
-亚什虫巢	ya shen chong chao	0
-亚什虫巢档案	ya shen chong chao dang an	0
-亚什虫巢侦查报告	ya shen chong chao zhen cha bao gao	0
-亚什工蝎	ya shen gong xie	0
-亚什巨甲虫的獠牙	ya shen ju jia chong de liao ya	0
-亚什沙行者	ya shen sha xing zhe	0
-亚什拓印	ya shen tuo yin	0
-亚什异种虫脑	ya shen yi zhong chong nao	0
+亚什	ya shi	4
+亚什虫巢	ya shi chong chao	0
+亚什虫巢档案	ya shi chong chao dang an	0
+亚什虫巢侦查报告	ya shi chong chao zhen cha bao gao	0
+亚什工蝎	ya shi gong xie	0
+亚什巨甲虫的獠牙	ya shi ju jia chong de liao ya	0
+亚什沙行者	ya shi sha xing zhe	0
+亚什拓印	ya shi tuo yin	0
+亚什异种虫脑	ya shi yi zhong chong nao	0
 鸦神之爪	ya shen zhi zhao	0
 亚斯拉	ya si la	0
 亚斯拉玛尼斯	ya si la ma ni si	0
@@ -57872,7 +57867,7 @@ use_preset_vocabulary: false
 夜歌	ye ge	5
 耶戈达之戒	ye ge da zhi jie	0
 夜歌森林	ye ge sen lin	0
-耶戈什	ye ge shen	0
+耶戈什	ye ge shi	0
 夜光的焚石	ye guang de fen shi	0
 夜光的火石榴石	ye guang de huo shi liu shi	0
 夜光长者	ye guang zhang zhe	0
@@ -59161,7 +59156,6 @@ use_preset_vocabulary: false
 硬化蝎壳护肩	ying hua xie ke hu jian	0
 硬化蝎壳护腿	ying hua xie ke hu tui	0
 硬化蝎壳护腕	ying hua xie ke hu wan	0
-硬化蠍壳护腕	ying hua xie ke hu wan	0
 硬化蝎壳手套	ying hua xie ke shou tao	0
 硬化蝎壳头盔	ying hua xie ke tou kui	0
 硬化蝎壳胸甲	ying hua xie ke xiong jia	0
@@ -60087,7 +60081,6 @@ use_preset_vocabulary: false
 渔夫的美味	yu fu de mei wei	0
 渔夫小刀	yu fu xiao dao	0
 鱼杆	yu gan	7
-鱼竿	yu gan	175
 预感任务	yu gan ren wu	0
 羽弓	yu gong	0
 羽冠手套	yu guan shou tao	0
@@ -60838,7 +60831,7 @@ use_preset_vocabulary: false
 灾变之刃	zai bian zhi ren	0
 再活化圣所	zai huo hua sheng suo	0
 载货科多兽	zai huo ke duo shou	0
-宰卡鲁什	zai ka lu shen	0
+宰卡鲁什	zai ka lu shi	0
 灾难法衣	zai nan fa yi	0
 灾难法杖	zai nan fa zhang	0
 灾难护肩	zai nan hu jian	0
@@ -60918,7 +60911,7 @@ use_preset_vocabulary: false
 赞丁	zan ding	0
 赞杜沙	zan du sha	0
 赞恩	zan en	74
-赞格玛什稀有孢行者	zan ge ma shen xi you bao xing zhe	0
+赞格玛什稀有孢行者	zan ge ma shi xi you bao xing zhe	0
 赞吉尔	zan ji er	0
 赞吉尔的改良药剂	zan ji er de gai liang yao ji	0
 赞吉尔的徽记	zan ji er de hui ji	0
@@ -61145,7 +61138,7 @@ use_preset_vocabulary: false
 扎普	zha pu	6
 扎瑞恩	zha rui en	0
 扎瑞斯	zha rui si	0
-扎斯	zha si	73
+扎斯	zha si	30
 扎特森的丛林臂甲	zha te sen de cong lin bi jia	0
 炸药车	zha yao che	0
 炸药束	zha yao shu	0
@@ -61525,16 +61518,15 @@ use_preset_vocabulary: false
 杖柄	zhang bing	1
 账号充值	zhang hao chong zhi	10
 账号密码密宝卡	zhang hao mi ma mi bao ka	0
-长角	zhang jiao	65
 掌控药剂	zhang kong yao ji	0
 蟑螂逃跑	zhang lang tao pao	0
 蟑螂油	zhang lang you	0
 长满羽毛的翅膀	zhang man yu mao de chi bang	0
 瘴气衬肩	zhang qi chen jian	0
 掌握力量	zhang wo li liang	0
-长牙剑	zhang ya jian	0
-长牙头盔	zhang ya tou kui	0
-长牙战斧	zhang ya zhan fu	0
+长牙剑	chang ya jian	0
+长牙头盔	chang ya tou kui	0
+长牙战斧	chang ya zhan fu	0
 长者安格雷兹	zhang zhe an ge lei zi	0
 长者奥朗奴	zhang zhe ao lang nu	0
 长者奥洛努	zhang zhe ao luo nu	0
@@ -61696,7 +61688,7 @@ use_preset_vocabulary: false
 召唤符文	zhao huan fu wen	4
 召唤复制虫	zhao huan fu zhi chong	0
 召唤冈瑟尔的幻影	zhao huan gang se er de huan ying	0
-召唤格里什幼虫	zhao huan ge li shen you chong	0
+召唤格里什幼虫	zhao huan ge li shi you chong	0
 召唤公爵	zhao huan gong jue	0
 召唤工蝎群	zhao huan gong xie qun	0
 召唤钩状触须	zhao huan gou zhuang chu xu	0
@@ -61805,7 +61797,7 @@ use_preset_vocabulary: false
 召唤狂怒的幻影	zhao huan kuang nu de huan ying	0
 召唤拉格纳罗斯	zhao huan la ge na luo si	1
 召唤拉瑟莱克	zhao huan la se lai ke	0
-召唤拉扎什诱捕者	zhao huan la zha shen you bu zhe	0
+召唤拉扎什诱捕者	zhao huan la zha shi you bu zhe	0
 召唤蓝鳞蛇	zhao huan lan lin she	0
 召唤蓝龙宝宝	zhao huan lan long bao bao	0
 召唤蓝蛙	zhao huan lan wa	0
@@ -61967,7 +61959,7 @@ use_preset_vocabulary: false
 召唤亚尔基的血脉	zhao huan ya er ji de xue mai	0
 召唤亚奎门塔斯	zhao huan ya kui men ta si	0
 召唤亚雷恩的灵魂	zhao huan ya lei en de ling hun	0
-召唤亚什雄蝎	zhao huan ya shen xiong xie	0
+召唤亚什雄蝎	zhao huan ya shi xiong xie	0
 召唤眼球触须	zhao huan yan qiu chu xu	0
 召唤烟网蜘蛛	zhao huan yan wang zhi zhu	0
 召唤遥控傀儡	zhao huan yao kong kui lei	0
@@ -63455,7 +63447,7 @@ use_preset_vocabulary: false
 主宰之剑	zhu zai zhi jian	5
 主宰之履	zhu zai zhi lv	0
 主宰之眼	zhu zai zhi yan	0
-铸造埃提耶什的杖柄	zhu zao ai ti ye shen de zhang bing	0
+铸造埃提耶什的杖柄	zhu zao ai ti ye shi de zhang bing	0
 铸造好的晋升印章	zhu zao hao de jin sheng yin zhang	0
 铸造护甲的艺术	zhu zao hu jia de yi shu	0
 铸造力量之石	zhu zao li liang zhi shi	0
@@ -64023,7 +64015,7 @@ use_preset_vocabulary: false
 祖鲁希德的钥匙	zu lu xi de de yao shi	0
 祖罗	zu luo	2
 祖罗尔	zu luo er	0
-祖玛洛什酋长的头颅	zu ma luo shen qiu zhang de tou lu	0
+祖玛洛什酋长的头颅	zu ma luo shi qiu zhang de tou lu	0
 祖玛沙尔	zu ma sha er	0
 祖玛维	zu ma wei	0
 祖玛维废墟	zu ma wei fei xu	0
@@ -64143,7 +64135,7 @@ use_preset_vocabulary: false
 佐尔塔尔	zuo er ta er	0
 佐格将军	zuo ge jiang jun	0
 作家的节杖	zuo jia de jie zhang	0
-佐拉	zuo la	117
+佐拉	zuo la	50
 佐拉虫巢	zuo la chong chao	0
 佐拉虫巢档案	zuo la chong chao dang an	0
 佐拉虫巢侦查报告	zuo la chong chao zhen cha bao gao	0
@@ -64180,7 +64172,7 @@ use_preset_vocabulary: false
 座狼幼崽	zuo lang you zai	0
 座狼主	zuo lang zhu	0
 座狼主宰的头颅	zuo lang zhu zai de tou lu	0
-座狼主宰卡鲁什	zuo lang zhu zai ka lu shen	0
+座狼主宰卡鲁什	zuo lang zhu zai ka lu shi	0
 坐鸟飞	zuo niao fei	1
 左撇子的黄铜指虎	zuo pie zi de huang tong zhi hu	0
 左撇子帕德姆普	zuo pie zi pa de mu pu	0
@@ -65149,7 +65141,7 @@ use_preset_vocabulary: false
 暴风城骑士	bao feng cheng qi shi	6
 暴风城勇士	bao feng cheng yong shi	2
 保护之手	bao hu zhi shou	3
-暴龙王克鲁什	bao long wang ke lu shen	0
+暴龙王克鲁什	bao long wang ke lu shi	0
 暴怒狂战士	bao nu kuang zhan shi	0
 宝物据藏者	bao wu ju cang zhe	0
 北郡牧师	bei jun mu shi	5
@@ -65646,7 +65638,7 @@ use_preset_vocabulary: false
 坦克杀手	tan ke sha shou	26
 坦妮娅	tan ni ya	2
 坦尼娅	tan ni ya	0
-谭雅	tan ya	171
+谭雅	tan ya	40
 特斯拉反应堆	te si la fan ying dui	0
 特斯拉激光柱	te si la ji guang zhu	0
 天启驾驶队员	tian qi jia shi dui yuan	0
@@ -66883,7 +66875,6 @@ use_preset_vocabulary: false
 摄魂一击	she hun yi ji	0
 猞猁精	she li jing	0
 猞猁精的尾巴	she li jing de wei ba	0
-摄相头	she xiang tou	0
 蛇阵之毒	she zhen zhi du	0
 神臂弓	shen bi gong	18
 神彪护手	shen biao hu shou	0
@@ -67253,7 +67244,7 @@ use_preset_vocabulary: false
 新手凭证	xin shou ping zheng	0
 新鲜的竹笋	xin xian de zhu sun	5
 新月剑	xin yue jian	0
-性感小野貓	xing gan xiao ye mao	0
+性感小野猫	xing gan xiao ye mao	0
 行囊使用期间删除物品	xing nang shi yong qi jian shan chu wu pin	0
 行囊绶	xing nang shou	0
 幸运宝盒	xing yun bao he	0
@@ -67889,7 +67880,7 @@ use_preset_vocabulary: false
 程旭	cheng xu	1
 程咬金府	cheng yao jin fu	0
 程英	cheng ying	64
-程勇	cheng yong	84
+程勇	cheng yong	15
 澄宇	cheng yu	15
 澄远	cheng yuan	0
 程芝	cheng zhi	0
@@ -68551,7 +68542,7 @@ use_preset_vocabulary: false
 花果山顶	hua guo shan ding	3
 花果山脚	hua guo shan jiao	0
 花果山药师	hua guo shan yao shi	0
-花间	hua jian	85
+花间	hua jian	40
 画金灵牌	hua jin ling pai	0
 华君秋	hua jun qiu	0
 花开富贵白金盘	hua kai fu gui bai jin pan	0
@@ -68834,7 +68825,7 @@ use_preset_vocabulary: false
 巨魔王	ju mo wang	0
 剧情隐藏	ju qing yin cang	1
 沮丧的小哥	ju sang de xiao ge	0
-菊仙	ju xian	389
+菊仙	ju xian	30
 巨蟹卡	ju xie ka	0
 聚元散	ju yuan san	0
 绝尘土狼	jue chen tu lang	0
@@ -69363,7 +69354,7 @@ use_preset_vocabulary: false
 破灭之镯	po mie zhi zhuo	0
 婆婆罗门	po po luo men	0
 蒲草翎羽弓	pu cao ling yu gong	0
-普渡	pu du	153
+普渡	pu du	40
 普渡众生	pu du zhong sheng	41
 蒲花粉簪	pu hua fen zan	0
 铺霜耀日冠	pu shuang yao ri guan	0
@@ -69430,7 +69421,7 @@ use_preset_vocabulary: false
 强法	qiang fa	7
 强法类	qiang fa lei	0
 强化伤害	qiang hua shang hai	2
-强混	qiang hun	119
+强混	qiang hun	25
 强火	qiang huo	2
 枪剑玄剑娥	qiang jian xuan jian e	0
 抢经的黑熊	qiang jing de hei xiong	0
@@ -69971,7 +69962,6 @@ use_preset_vocabulary: false
 尾生卡	wei sheng ka	0
 魏闻常	wei wen chang	0
 煨鲜菱	wei xian ling	0
-魏小宝	wei xiao bao	0
 卫小夏	wei xiao xia	0
 微雨芳尘	wei yu fang chen	0
 未转	wei zhuan	9
@@ -70363,7 +70353,6 @@ use_preset_vocabulary: false
 幽翠兰欲	you cui lan yu	0
 游方术士	you fang shu shi	0
 幽怜魅影	you lian mei ying	0
-幽靈	you ling	4
 幽灵马	you ling ma	4
 幽梦影	you meng ying	19
 幽冥鬼使	you ming gui shi	0
@@ -70504,7 +70493,7 @@ use_preset_vocabulary: false
 张寅	zhang yin	8
 张元方	zhang yuan fang	1
 爪鞭子狐美人	zhao bian zi hu mei ren	0
-赵大	zhao da	102
+赵大	zhao da	25
 赵桧	zhao gui	0
 召唤兽寄存	zhao huan shou ji cun	0
 召唤兽转身灵兽仙	zhao huan shou zhuan shen ling shou xian	0
@@ -71437,7 +71426,7 @@ use_preset_vocabulary: false
 悲怆奏鸣曲	bei chuang zou ming qu	13
 贝多芬暴风雨小段	bei duo fen bao feng yu xiao duan	0
 北京一夜	bei jing yi ye	7
-贝丝	bei si	156
+贝丝	bei si	40
 奔向你	ben xiang ni	0
 缤纷键盘	bin fen jian pan	0
 菠菜进行曲	bo cai jin xing qu	0
@@ -71586,7 +71575,7 @@ use_preset_vocabulary: false
 魔术星	mo shu xing	1
 木库贝斯	mu ku bei si	0
 木偶军团	mu ou jun tuan	0
-楠葉	nan ye	0
+楠叶	nan ye	0
 你的权威	ni de quan wei	0
 牛奶巧克力	niu nai qiao ke li	73
 欧哈玛金熊鼓	ou ha ma jin xiong gu	0
@@ -71653,7 +71642,7 @@ use_preset_vocabulary: false
 无尽的终结	wu jin de zhong jie	0
 舞水者	wu shui zhe	0
 嘻刷刷	xi shua shua	2
-夏草的線路	xia cao de xian lu	0
+夏草的线路	xia cao de xian lu	0
 夏夜之梦	xia ye zhi meng	1
 弦月之刃	xian yue zhi ren	0
 向爱进军	xiang ai jin jun	0
@@ -71835,9 +71824,9 @@ use_preset_vocabulary: false
 大娜迦	da na jia	25
 打泉水	da quan shui	4
 大生命药水	da sheng ming yao shui	0
-大师级利爪徳鲁依训练	da shi ji li zhua de lu yi xun lian	0
+大师级利爪德鲁依训练	da shi ji li zhua de lu yi xun lian	0
 大师级灵魂行者训练	da shi ji ling hun xing zhe xun lian	0
-大师级猛禽徳鲁依训练	da shi ji meng qin de lu yi xun lian	0
+大师级猛禽德鲁依训练	da shi ji meng qin de lu yi xun lian	0
 大师级牧师训练	da shi ji mu shi xun lian	0
 大师级女巫训练	da shi ji nv wu xun lian	0
 大师级女妖训练	da shi ji nv yao xun lian	0
@@ -72106,7 +72095,6 @@ use_preset_vocabulary: false
 利爪之痕	li zhua zhi hen	0
 连环闪电	lian huan shan dian	3
 连环霜冻	lian huan shuang dong	3
-练金术士	lian jin shu shi	0
 两级反转	liang ji fan zhuan	9
 两栖苦难者	liang qi ku nan zhe	0
 两栖人猎手	liang qi ren lie shou	0
@@ -72375,7 +72363,6 @@ use_preset_vocabulary: false
 亡灵法师	wang ling fa shi	38
 微恢复药水	wei hui fu yao shui	0
 维拉德卖的赠品	wei la de mai de zeng pin	0
-我单	wo dan	59
 无敌黑暗猎人	wu di hei an lie ren	0
 无敌黑暗舞者	wu di hei an wu zhe	0
 无敌狂暴者	wu di kuang bao zhe	0
@@ -72650,7 +72637,6 @@ use_preset_vocabulary: false
 铁飞镖	tie fei biao	1
 铁锥	tie zhui	11
 铜头棍	tong tou gun	0
-铜湘玉	tong xiang yu	0
 五凤回阳丸	wu feng hui yang wan	0
 乌玉	wu yu	0
 洗凡	xi fan	0
@@ -72857,7 +72843,7 @@ use_preset_vocabulary: false
 极恶鸟喙	ji e niao hui	0
 棘轮射手改速射枪管	ji lun she shou gai su she qiang guan	0
 棘轮射手速射枪管	ji lun she shou su she qiang guan	0
-加农炮轟蓄能枪管	jia nong pao hong xu neng qiang guan	0
+加农炮轰蓄能枪管	jia nong pao hong xu neng qiang guan	0
 剑豪镰蟹	jian hao lian xie	0
 剑极狼	jian ji lang	0
 剑客护身斧	jian ke hu shen fu	0
@@ -73213,8 +73199,8 @@ use_preset_vocabulary: false
 临别礼物	lin bie li wu	8
 流噶哇嘎忒库挼忧	liu ga wa ga tei ku ruo you	0
 鎏金挖开雅酷烈	liu jin wa kai ya ku lie	0
-竜神剣喰	long shen jian can	0
-竜我敌喰	long wo di can	0
+龙神剑喰	long shen jian can	0
+龙我敌喰	long wo di can	0
 螺旋飞弹	luo xuan fei dan	1
 脉冲双枪	mai chong shuang qiang	0
 脉冲炸弹	mai chong zha dan	1
@@ -73249,7 +73235,6 @@ use_preset_vocabulary: false
 沃斯卡亚工业区	wo si ka ya gong ye qu	7
 现在我们都只是士兵	xian zai wo men dou zhi shi shi bing	0
 香巴里寺庙	xiang ba li si miao	0
-幼儿源	you er yuan	8
 幽灵形态	you ling xing tai	4
 造得起也砸得坏	zao de qi ye za de huai	0
 炸弹来咯	zha dan lai lo	0
@@ -73373,7 +73358,7 @@ use_preset_vocabulary: false
 阿四	a si	70
 阿哇陀那的莲花瓣	a wa tuo na de lian hua ban	0
 阿文	a wen	173
-阿武	a wu	140
+阿武	a wu	30
 阿绣	a xiu	4
 阿雪	a xue	70
 阿雪亲笔信	a xue qin bi xin	0
@@ -73499,7 +73484,7 @@ use_preset_vocabulary: false
 白鼻灰熊肉	bai bi hui xiong rou	0
 白编绫	bai bian ling	0
 白编绫发带	bai bian ling fa dai	0
-白编綾衫	bai bian ling shan	0
+白编绫衫	bai bian ling shan	0
 百变无痕枪	bai bian wu hen qiang	0
 百步穿杨罩	bai bu chuan yang zhao	0
 百步断足	bai bu duan zu	0
@@ -75582,7 +75567,7 @@ use_preset_vocabulary: false
 丁聚财	ding ju cai	0
 定军盔	ding jun kui	0
 定露	ding lu	1
-丁满	ding man	72
+丁满	ding man	15
 丁启	ding qi	3
 鼎器	ding qi	21
 丁弃羽	ding qi yu	0
@@ -77435,7 +77420,7 @@ use_preset_vocabulary: false
 扈大娘	hu da niang	0
 胡大叔	hu da shu	0
 胡德的尸体	hu de de shi ti	0
-胡迪	hu di	315
+胡迪	hu di	80
 蝴蝶暗囊	hu die an nang	0
 蝴蝶镖	hu die biao	1
 胡冬塞	hu dong sai	0
@@ -77698,7 +77683,6 @@ use_preset_vocabulary: false
 黄铜头盔	huang tong tou kui	0
 黄铜啸天冠	huang tong xiao tian guan	0
 黄铜烟杆	huang tong yan gan	0
-黄小明	huang xiao ming	4
 黄骁勇	huang xiao yong	0
 黄毅君	huang yi jun	0
 黄盈	huang ying	2
@@ -77961,7 +77945,6 @@ use_preset_vocabulary: false
 姬别情	ji bie qing	8
 疾病撕咬	ji bing si yao	0
 姬冰竹	ji bing zhu	0
-纪不得	ji bu de	0
 激楚戒	ji chu jie	0
 基础磨石	ji chu mo shi	0
 基础系	ji chu xi	0
@@ -78987,7 +78970,7 @@ use_preset_vocabulary: false
 九羊神功	jiu yang shen gong	0
 九叶甘草	jiu ye gan cao	0
 九疑帝子裤	jiu yi di zi ku	0
-九阴	jiu yin	258
+九阴	jiu yin	80
 九音惊弦六阵	jiu yin jing xian liu zhen	0
 九音惊弦四阵	jiu yin jing xian si zhen	0
 九音惊弦五阵	jiu yin jing xian wu zhen	0
@@ -79050,7 +79033,6 @@ use_preset_vocabulary: false
 巨兽之头骨	ju shou zhi tou gu	0
 巨兽之腿骨	ju shou zhi tui gu	0
 巨兽之尾骨	ju shou zhi wei gu	0
-具无霸	ju wu ba	0
 巨蜈蚣	ju wu gong	0
 巨蜈蚣的毒液	ju wu gong de du ye	0
 聚仙寨恶匪	ju xian zhai e fei	0
@@ -79632,7 +79614,6 @@ use_preset_vocabulary: false
 李弦	li xian	1
 李啸横	li xiao heng	0
 李校尉	li xiao wei	1
-李小遥	li xiao yao	0
 李小遥兵法	li xiao yao bing fa	0
 李秀琳	li xiu lin	0
 李玄霄	li xuan xiao	0
@@ -79742,7 +79723,7 @@ use_preset_vocabulary: false
 梁晓	liang xiao	26
 两小情深	liang xiao qing shen	0
 梁孝义	liang xiao yi	0
-梁秀芸	liang xiu yun	0
+梁秀艺	liang xiu yun	0
 良药愈身心	liang yao yu shen xin	0
 两仪长裤	liang yi chang ku	0
 两仪长靴	liang yi chang xue	0
@@ -80039,7 +80020,7 @@ use_preset_vocabulary: false
 刘寻墨	liu xun mo	0
 流炎腹蛇毒	liu yan fu she du	0
 流炎蝮蛇液	liu yan fu she ye	0
-刘洋	liu yang	203
+刘洋	liu yang	40
 柳叶镖	liu ye biao	1
 柳叶双剑	liu ye shuang jian	0
 刘弈	liu yi	0
@@ -80051,7 +80032,7 @@ use_preset_vocabulary: false
 流域坠	liu yu zhui	0
 柳乐池	liu yue chi	0
 柳月柯	liu yue ke	0
-流云歩摇	liu yun bu yao	0
+流云步摇	liu yun bu yao	0
 流云草	liu yun cao	0
 流云诀	liu yun jue	0
 流云瀑	liu yun pu	0
@@ -80541,7 +80522,7 @@ use_preset_vocabulary: false
 麻辣血肠	ma la xue chang	0
 马力影	ma li ying	0
 马料	ma liao	16
-马六	ma liu	84
+马六	ma liu	30
 麻吕扳指	ma lv ban zhi	0
 马满江	ma man jiang	0
 马明	ma ming	19
@@ -81193,7 +81174,7 @@ use_preset_vocabulary: false
 宁贞婷	ning zhen ting	0
 牛昂	niu ang	0
 牛大	niu da	0
-牛二	niu er	168
+牛二	niu er	35
 牛骨碎片	niu gu sui pian	0
 牛皮护手	niu pi hu shou	0
 牛皮捆绳	niu pi kun sheng	0
@@ -81345,7 +81326,7 @@ use_preset_vocabulary: false
 蓬莱长者	peng lai zhang zhe	0
 蓬莱紫女	peng lai zi nv	0
 捧盘小猴	peng pan xiao hou	0
-彭彭	peng peng	349
+彭彭	peng peng	60
 烹饪材料	peng ren cai liao	2
 烹饪产物	peng ren chan wu	0
 烹饪配方	peng ren pei fang	0
@@ -82148,7 +82129,7 @@ use_preset_vocabulary: false
 取画	qu hua	1
 区慧	qu hui	0
 取回包裹	qu hui bao guo	0
-取酒	qu jiu	83
+取酒	qu jiu	25
 驱魔良药	qu mo liang yao	0
 祛煞汤	qu sha tang	0
 驱尸人	qu shi ren	0
@@ -83551,7 +83532,6 @@ use_preset_vocabulary: false
 朔风营刀兵	shuo feng ying dao bing	0
 烁金囊	shuo jin nang	0
 烁影浮光	shuo ying fu guang	0
-司巴达	si ba da	0
 丝帛弹囊	si bo dan nang	0
 四重精妙	si chong jing miao	0
 丝绸发带	si chou fa dai	0
@@ -85308,7 +85288,7 @@ use_preset_vocabulary: false
 武僧教头	wu seng jiao tou	0
 无上方单	wu shang fang dan	0
 武少十	wu shao shi	0
-物什箱	wu shen xiang	0
+物什箱	wu shi xiang	0
 五圣贡肉	wu sheng gong rou	0
 舞师	wu shi	4
 武士宝箱	wu shi bao xiang	0
@@ -85922,7 +85902,6 @@ use_preset_vocabulary: false
 小猪耳朵	xiao zhu er duo	0
 小爪子	xiao zhua zi	34
 蝎蟾夺魂	xie chan duo hun	0
-谢长	xie chang	94
 谢初情	xie chu qing	0
 邪道士	xie dao shi	1
 谢德员	xie de yuan	0
@@ -87109,7 +87088,7 @@ use_preset_vocabulary: false
 一探沁枫谷	yi tan qin feng gu	0
 一套笔墨纸砚	yi tao bi mo zhi yan	0
 一套纸笔	yi tao zhi bi	0
-伊藤竜二	yi teng long er	0
+伊藤龙二	yi teng long er	0
 一桶碧绿的腐水	yi tong bi lv de fu shui	0
 易通天地	yi tong tian di	0
 意外收获前置	yi wai shou huo qian zhi	0
@@ -87762,8 +87741,7 @@ use_preset_vocabulary: false
 源彩珍珠	yuan cai zhen zhu	0
 远程武器商	yuan cheng wu qi shang	0
 元翠容	yuan cui rong	0
-元大头	yuan da tou	0
-远方亲戚	yuan fang qin qi	63
+远方亲戚	yuan fang qin qi	15
 猿飞菖蒲	yuan fei chang pu	1
 猿飞鬼助	yuan fei gui zhu	0
 缘风梵音襟	yuan feng fan yin jin	0
@@ -87962,7 +87940,7 @@ use_preset_vocabulary: false
 云西	yun xi	0
 云西表现	yun xi biao xian	0
 云相法谛	yun xiang fa di	0
-芸香烤鹿肉	yun xiang kao lu rou	0
+艺香烤鹿肉	yun xiang kao lu rou	0
 云想霓裳	yun xiang ni chang	0
 云霄弓	yun xiao gong	0
 云牙腰带	yun ya yao dai	0
@@ -88057,7 +88035,6 @@ use_preset_vocabulary: false
 战吼眩晕	zhan hou xuan yun	0
 战火南引	zhan huo nan yin	0
 占坑石蕙兰相公尸体	zhan keng shi hui lan xiang gong shi ti	0
-战龙	zhan long	23
 斩龙刃	zhan long ren	0
 展露身手	zhan lu shen shou	2
 沾满血的臭袜子	zhan man xue de chou wa zi	0
@@ -88144,13 +88121,13 @@ use_preset_vocabulary: false
 张孝玄	zhang xiao xuan	0
 张玄灵	zhang xuan ling	0
 张雪山	zhang xue shan	0
-长牙帮护卫	zhang ya bang hu wei	0
-长牙帮马匪	zhang ya bang ma fei	0
-长牙帮马夫	zhang ya bang ma fu	0
-长牙帮马贼	zhang ya bang ma zei	0
-长牙帮女马贼	zhang ya bang nv ma zei	0
-长牙帮探马	zhang ya bang tan ma	0
-长牙帮小头目	zhang ya bang xiao tou mu	0
+长牙帮护卫	chang ya bang hu wei	0
+长牙帮马匪	chang ya bang ma fei	0
+长牙帮马夫	chang ya bang ma fu	0
+长牙帮马贼	chang ya bang ma zei	0
+长牙帮女马贼	chang ya bang nv ma zei	0
+长牙帮探马	chang ya bang tan ma	0
+长牙帮小头目	chang ya bang xiao tou mu	0
 张掖大菜	zhang ye da cai	0
 张翊川	zhang yi chuan	0
 仗义寻父	zhang yi xun fu	0
@@ -88584,7 +88561,7 @@ use_preset_vocabulary: false
 周蒙	zhou meng	0
 周明	zhou ming	24
 周弄楫	zhou nong ji	0
-周琦	zhou qi	829
+周琦	zhou qi	50
 周乔	zhou qiao	1
 周儒	zhou ru	0
 周佟	zhou tong	0
@@ -89668,7 +89645,7 @@ use_preset_vocabulary: false
 飞猴王	fei hou wang	0
 菲托利	fei tuo li	0
 飞妖令符	fei yao ling fu	0
-菲叶芸香草	fei ye yun xiang cao	0
+菲叶艺香草	fei ye yun xiang cao	0
 飞翼手枪	fei yi shou qiang	0
 飞羽爵	fei yu jue	0
 飞羽镯	fei yu zhuo	0
@@ -89697,7 +89674,7 @@ use_preset_vocabulary: false
 风卷残云卷三	feng juan can yun juan san	0
 风卷残云卷四	feng juan can yun juan si	0
 风卷残云卷五	feng juan can yun juan wu	0
-疯狂飚车	feng kuang biao che	1
+疯狂飙车	feng kuang biao che	1
 疯狂盗贼	feng kuang dao zei	0
 疯狂盗贼团	feng kuang dao zei tuan	0
 疯狂女盗贼	feng kuang nv dao zei	0
@@ -89881,7 +89858,7 @@ use_preset_vocabulary: false
 鬼印珠	gui yin zhu	0
 鬼影步	gui ying bu	0
 鬼影闪	gui ying shan	0
-鬼斩	gui zhan	91
+鬼斩	gui zhan	35
 棍棒精通	gun bang jing tong	0
 国粹麻将	guo cui ma jiang	0
 哈穆林	ha mu lin	0
@@ -94705,7 +94682,6 @@ use_preset_vocabulary: false
 还阳术	huan yang shu	0
 幻影翅膀	huan ying chi bang	0
 荒尘	huang chen	0
-皇帝内经	huang di nei jing	18
 皇宫护卫	huang gong hu wei	0
 皇宫守卫	huang gong shou wei	0
 凰火燎原	huang huo liao yuan	0
@@ -94785,7 +94761,7 @@ use_preset_vocabulary: false
 疾风卷	ji feng juan	0
 击风爪	ji feng zhao	0
 疾风之铃	ji feng zhi ling	0
-唧唧歪歪	ji ji wai wai	158
+唧唧歪歪	ji ji wai wai	60
 寂静盔甲	ji jing kui jia	0
 寂静腿甲	ji jing tui jia	0
 极乐回天	ji le hui tian	0
@@ -95132,7 +95108,6 @@ use_preset_vocabulary: false
 蓝色机关人	lan se ji guan ren	0
 狼宝宝	lang bao bao	5
 琅环福地	lang huan fu di	4
-琅環福地	lang huan fu di	0
 狼卡	lang ka	3
 狼卡片	lang ka pian	0
 狼皮裤子	lang pi ku zi	0
@@ -96867,7 +96842,7 @@ use_preset_vocabulary: false
 逍遥罗汉	xiao yao luo han	0
 孝以齐家	xiao yi qi jia	0
 小勇士	xiao yong shi	0
-小芸芸	xiao yun yun	0
+小艺艺	xiao yun yun	0
 小镇后街	xiao zhen hou jie	0
 携带等级	xie dai deng ji	0
 携带数量	xie dai shu liang	14
@@ -96979,7 +96954,7 @@ use_preset_vocabulary: false
 雪凤凰	xue feng huang	0
 血符	xue fu	1
 血鬼	xue gui	4
-薛举	xue ju	78
+薛举	xue ju	30
 血耐	xue nai	1
 血色茶花	xue se cha hua	0
 血兽店	xue shou dian	0
@@ -100922,7 +100897,7 @@ use_preset_vocabulary: false
 红炉一点雪	hong lu yi dian xue	2
 红羽团扇	hong yu tuan shan	0
 护法夜叉大将	hu fa ye cha da jiang	1
-呼唤奧兹守护	hu huan ao zi shou hu	0
+呼唤奥兹守护	hu huan ao zi shou hu	0
 护摩	hu mo	0
 护摩之杖	hu mo zhi zhang	1
 琥珀玥	hu po yue	0
@@ -101278,7 +101253,6 @@ use_preset_vocabulary: false
 生水要诀	sheng shui yao jue	0
 式大将	shi da jiang	0
 侍奉之心	shi feng zhi xin	0
-石见舞菜香	shi jian wu cai xiang	1
 市井杂煮	shi jing za zhu	0
 释凌咏冰	shi ling yong bing	0
 嗜髓蜥	shi sui xi	0
@@ -101667,7 +101641,7 @@ use_preset_vocabulary: false
 豹纹裙边	bao wen qun bian	0
 背带礼结	bei dai li jie	0
 背带裙套装	bei dai qun tao zhuang	0
-被雷	bei lei	60
+被雷	bei lei	20
 蓓蕾帽	bei lei mao	0
 背心装	bei xin zhuang	0
 必胜短装	bi sheng duan zhuang	0
@@ -101915,7 +101889,6 @@ use_preset_vocabulary: false
 港味十足	gang wei shi zu	4
 高帮帆布鞋	gao bang fan bu xie	24
 高帮跑鞋	gao bang pao xie	0
-高根鞋	gao gen xie	1
 高跟鞋子	gao gen xie zi	0
 高级个人同步方向	gao ji ge ren tong bu fang xiang	0
 高腰丽人	gao yao li ren	0
@@ -102695,7 +102668,6 @@ use_preset_vocabulary: false
 情侣上衣	qing lv shang yi	0
 情侣上装	qing lv shang zhuang	0
 情侣套装	qing lv tao zhuang	2
-情侣套裝	qing lv tao zhuang	0
 情侣头巾	qing lv tou jin	0
 情迷牛仔	qing mi niu zai	0
 情迷紫禁	qing mi zi jin	0
@@ -103769,7 +103741,7 @@ use_preset_vocabulary: false
 宗室之花	zong shi zhi hua	0
 宗室之翎	zong shi zhi ling	0
 总务司	zong wu si	1
-恶魂	e hun	119
+恶魂	e hun	15
 高空流水	gao kong liu shui	1
 红石机械	hong shi ji xie	16
 匠魂	jiang hun	9
@@ -103869,7 +103841,7 @@ use_preset_vocabulary: false
 道具箱	dao ju xiang	4
 地球仪气球	di qiu yi qi qiu	0
 地狱沙丘	di yu sha qiu	1
-电一	dian yi	70
+电一	dian yi	25
 定时水炸弹	ding shi shui zha dan	0
 毒水弹	du shui dan	0
 毒性水炸弹	du xing shui zha dan	0
@@ -105728,7 +105700,7 @@ use_preset_vocabulary: false
 命令连锁执行数量限制	ming ling lian suo zhi xing shu liang xian zhi	0
 命名牌	ming ming pai	8
 鸣钟次数	ming zhong ci shu	0
-末地	mo di	290
+末地	mo di	80
 末地传送门框架	mo di chuan song men kuang jia	4
 末地高岛	mo di gao dao	0
 末地高地	mo di gao di	0
@@ -107366,7 +107338,7 @@ use_preset_vocabulary: false
 独龙禅杖	du long chan zhang	0
 毒龙丸	du long wan	0
 毒龙尊者	du long zun zhe	0
-毒手摩什	du shou mo shen	0
+毒手摩什	du shou mo shi	0
 独指禅师	du zhi chan shi	0
 断金块	duan jin kuai	0
 断水岗南麓	duan shui gang nan lu	0
@@ -109245,7 +109217,7 @@ use_preset_vocabulary: false
 墩墩善道	dun dun shan dao	0
 多重餐位	duo chong can wei	0
 多重餐位松木圆桌	duo chong can wei song mu yuan zhuo	0
-多莉	duo li	236
+多莉	duo li	40
 踱山葵	duo shan kui	0
 多托雷	duo tuo lei	0
 多用瓶	duo yong ping	0
@@ -109319,7 +109291,7 @@ use_preset_vocabulary: false
 飞天小宝	fei tian xiao bao	0
 非想风天	fei xiang feng tian	0
 飞行矮堇瓜	fei xing ai jin gua	0
-飞叶迴斜	fei ye hui xie	0
+飞叶回斜	fei ye hui xie	0
 飞叶轮	fei ye lun	0
 飞蝇假饵	fei ying jia er	0
 绯樱鲜虾贝	fei ying xian xia bei	0
@@ -109625,7 +109597,7 @@ use_preset_vocabulary: false
 恒常燃烧的巨藤	heng chang ran shao de ju teng	0
 恒光元件	heng guang yuan jian	0
 横脊	heng ji	0
-横置	heng zhi	252
+横置	heng zhi	60
 衡准大厅	heng zhun da ting	0
 虹彩蔷薇	hong cai qiang wei	0
 红冠雀	hong guan que	0
@@ -110554,7 +110526,7 @@ use_preset_vocabulary: false
 命运的嘲弄	ming yun de chao nong	12
 命运的虚影	ming yun de xu ying	0
 命运的织机	ming yun de zhi ji	3
-明芸花	ming yun hua	0
+明艺花	ming yun hua	0
 命运使徒	ming yun shi tu	0
 明照左右	ming zhao zuo you	0
 鸣驻	ming zhu	0
@@ -111877,7 +111849,7 @@ use_preset_vocabulary: false
 鸦喙戟手	ya hui ji shou	0
 芽绿	ya lv	0
 芽绿锦簇	ya lv jin cu	0
-亚什特的赞歌	ya shen te de zan ge	0
+亚什特的赞歌	ya shi te de zan ge	0
 鸦印	ya yin	0
 鸦羽天狗霆雷召咒	ya yu tian gou ting lei zhao zhou	0
 压制特化型机关	ya zhi te hua xing ji guan	0
@@ -117845,7 +117817,7 @@ use_preset_vocabulary: false
 奥冲	ao chong	1
 奥达曼守护者	ao da man shou hu zhe	0
 奥蛋	ao dan	0
-奥格玛什地狱咆哮	ao ge ma shen di yu pao xiao	0
+奥格玛什地狱咆哮	ao ge ma shi di yu pao xiao	0
 奥格瑞玛狼骑士	ao ge rui ma lang qi shi	1
 奥金尼灵魂祭祀	ao jin ni ling hun ji si	0
 奥垃圾	ao la ji	9
@@ -117870,10 +117842,10 @@ use_preset_vocabulary: false
 白银之枪	bai yin zhi qiang	0
 白银之手教官	bai yin zhi shou jiao guan	1
 白银之手新兵	bai yin zhi shou xin bing	3
-半神	ban shen	345
+半神	ban shen	120
 爆刀	bao dao	6
 爆晶药水	bao jing yao shui	0
-暴龙之王摩什	bao long zhi wang mo shen	0
+暴龙之王摩什	bao long zhi wang mo shi	0
 暴乱狂战士	bao luan kuang zhan shi	5
 暴掠龙幼崽	bao lve long you zai	0
 暴怒的狼人	bao nu de lang ren	1
@@ -118102,7 +118074,7 @@ use_preset_vocabulary: false
 格斗陪练师	ge dou pei lian shi	2
 格斗士	ge dou shi	9
 葛拉卡爬行蟹	ge la ka pa xing xie	0
-格罗玛什地狱咆哮	ge luo ma shen di yu pao xiao	1
+格罗玛什地狱咆哮	ge luo ma shi di yu pao xiao	1
 公辩律师	gong bian lv shi	1
 功夫大师	gong fu da shi	17
 攻击模式	gong ji mo shi	0
@@ -118246,7 +118218,7 @@ use_preset_vocabulary: false
 极性转换	ji xing zhuan huan	1
 基因转接	ji yin zhuan jie	0
 嘉顿	jia dun	36
-加尔鲁什地狱咆哮	jia er lu shen di yu pao xiao	0
+加尔鲁什地狱咆哮	jia er lu shi di yu pao xiao	0
 加基森摆渡人	jia ji sen bai du ren	0
 加基森名媛	jia ji sen ming yuan	0
 加基森枪骑士	jia ji sen qiang qi shi	0
@@ -118545,7 +118517,7 @@ use_preset_vocabulary: false
 赛场观众	sai chang guan zhong	1
 赛场医生	sai chang yi sheng	1
 三头蛇	san tou she	4
-三王	san wang	227
+三王	san wang	25
 瑟拉金之种	se la jin zhi zhong	0
 森哥	sen ge	23
 森金持盾卫士	sen jin chi dun wei shi	3
@@ -118674,7 +118646,7 @@ use_preset_vocabulary: false
 铁炉堡传送门	tie lu bao chuan song men	0
 铁炉堡领袖	tie lu bao ling xiu	0
 铁下巴掀桌大表哥	tie xia ba xian zhuo da biao ge	0
-鉄啄猫头鹰	tie zhuo mao tou ying	0
+铁啄猫头鹰	tie zhuo mao tou ying	0
 同福乱斗	tong fu luan dou	0
 痛苦诗僧	tong ku shi seng	0
 铜皮铁甲	tong pi tie jia	1
@@ -119208,7 +119180,6 @@ use_preset_vocabulary: false
 狸疏	li shu	0
 李探花	li tan hua	4
 李天华	li tian hua	0
-李宵龙	li xiao long	0
 怜花公子	lian hua gong zi	0
 廉颇帽	lian po mao	0
 梁潇	liang xiao	0
@@ -119466,7 +119437,6 @@ use_preset_vocabulary: false
 武诸葛	wu zhu ge	0
 洗点管理员	xi dian guan li yuan	0
 羲和之帽	xi he zhi mao	0
-西郊	xi jiao	152
 喜剧网游	xi ju wang you	0
 西凉河	xi liang he	36
 西王母图腾	xi wang mu tu teng	0
@@ -119675,7 +119645,7 @@ use_preset_vocabulary: false
 窥屏	kui ping	48
 雷炸	lei zha	19
 立体架枪	li ti jia qiang	0
-连狙	lian ju	228
+连狙	lian ju	30
 裂魂骑士	lie hun qi shi	0
 埋包	mai bao	5
 买甲	mai jia	16
@@ -119786,7 +119756,7 @@ use_preset_vocabulary: false
 二张	er zhang	257
 防御马	fang yu ma	9
 费文伟	fei wen wei	2
-飞影	fei ying	207
+飞影	fei ying	50
 焚城	fen cheng	27
 奋强突固	fen qiang tu gu	0
 奋迅	fen xun	10
@@ -119934,7 +119904,7 @@ use_preset_vocabulary: false
 仁爱的神童	ren ai de shen tong	0
 忍戒	ren jie	12
 人马一体	ren ma yi ti	7
-仁王	ren wang	524
+仁王	ren wang	60
 儒生雄才	ru sheng xiong cai	0
 三朝虎臣	san zhao hu chen	0
 尚香	shang xiang	11
@@ -120000,7 +119970,7 @@ use_preset_vocabulary: false
 吴六剑	wu liu jian	1
 无冕之后	wu mian zhi hou	4
 无为的真命主	wu wei de zhen ming zhu	0
-无懈	wu xie	219
+无懈	wu xie	60
 无中	wu zhong	89
 西凉的猛狮	xi liang de meng shi	0
 夏侯涓	xia hou juan	0
@@ -121766,7 +121736,6 @@ use_preset_vocabulary: false
 皇城督统	huang cheng du tong	0
 皇城恶少	huang cheng e shao	0
 皇城窃案	huang cheng qie an	0
-黃金盔	huang jin kui	0
 黄金十二宫任务	huang jin shi er gong ren wu	0
 黄铜须	huang tong xu	0
 回报村长	hui bao cun zhang	0
@@ -122218,7 +122187,7 @@ use_preset_vocabulary: false
 少男探险者	shao nan tan xian zhe	0
 少女的祈祷	shao nv de qi dao	34
 少女的愿望	shao nv de yuan wang	2
-少女冒険者	shao nv mao xian zhe	0
+少女冒险者	shao nv mao xian zhe	0
 少女探险者	shao nv tan xian zhe	0
 少女下落	shao nv xia luo	0
 少女语嫣	shao nv yu yan	0
@@ -122226,7 +122195,7 @@ use_preset_vocabulary: false
 少主的下落	shao zhu de xia luo	0
 社稷之危	she ji zhi wei	0
 射手座黄金圣斗士	she shou zuo huang jin sheng dou shi	0
-什长	shen chang	11
+什长	shi chang	11
 神刀铁胳膊	shen dao tie ge bo	0
 神风护法	shen feng hu fa	0
 神风惊云	shen feng jing yun	0
@@ -122819,7 +122788,6 @@ use_preset_vocabulary: false
 地狱猫护腰	di yu mao hu yao	0
 地狱牧牛杖	di yu mu niu zhang	0
 地狱刑具	di yu xing ju	0
-钉锤	ding dui	0
 斗蓬	dou peng	4
 斗士护手	dou shi hu shou	0
 毒荚	du jia	0
@@ -122868,7 +122836,6 @@ use_preset_vocabulary: false
 回荡狂怒	hui dang kuang nu	0
 晦影之誓	hui ying zhi shi	0
 吉德宾	ji de bin	0
-骑士腰带	ji shi yao dai	0
 祭祀刀	ji si dao	0
 祭司之印	ji si zhi yin	0
 祭塔之齿	ji ta zhi chi	0
@@ -122877,7 +122844,7 @@ use_preset_vocabulary: false
 迦陀朵的法能	jia tuo duo de fa neng	0
 迦陀朵的归返	jia tuo duo de gui fan	0
 迦陀朵的遗志	jia tuo duo de wei zhi	0
-坚果锤	jian guo dui	0
+坚果锤	jian guo chui	0
 强横护腕	jiang heng hu wan	0
 乔丹之石	jiao dan zhi shi	11
 杰桑尼库	jie sang ni ku	0
@@ -122887,7 +122854,6 @@ use_preset_vocabulary: false
 警戒之墙	jing jie zhi qiang	1
 巨大颅骨	ju da lu gu	0
 巨人束腰	ju ren shu yao	0
-脚部	jue bu	0
 绝截	jue jie	0
 卡尔蒂姆之誓	ka er di mu zhi shi	0
 卡修斯之傲	ka xiu si zhi ao	0
@@ -122897,10 +122863,10 @@ use_preset_vocabulary: false
 凯恩的命运	kai en de ming yun	0
 凯恩的学士手套	kai en de xue shi shou tao	0
 克里森	ke li sen	2
-克里森船长的捕鲸靴	ke li sen chuan chang de bu jing xue	0
+克里森船长的捕鲸靴	ke li sen chuan zhang de bu jing xue	0
 克里森船长的缎带	ke li sen chuan chang de duan dai	0
-克里森船长的华服	ke li sen chuan chang de hua fu	0
-克里森船长的斜桅	ke li sen chuan chang de xie wei	0
+克里森船长的华服	ke li sen chuan zhang de hua fu	0
+克里森船长的斜桅	ke li sen chuan zhang de xie wei	0
 空洞低语之戒	kong dong di yu zhi jie	0
 空灵无恶	kong ling mo e	0
 寇图尔的箍带	kou tu er de gu dai	0
@@ -122941,10 +122907,8 @@ use_preset_vocabulary: false
 秘辛指箍	mi xin zhi gu	0
 灭亡凝视	mie wang ning shi	0
 无尽长路	mo jin chang lu	0
-无尽之战	mo jin zhi zhan	0
-磨难	mo nuo	2
+无尽之战	wu jin zhi zhan	3
 魔胎	mo tai	3
-无畏	mo wei	4
 无畏勇者之祷文	mo wei yong zhe zhi dao wen	0
 魔物猎人	mo wu lie ren	0
 暮光护面	mu guang hu mian	0
@@ -122982,9 +122946,8 @@ use_preset_vocabulary: false
 三连宝球	san lian bao qiu	0
 桑吉士燃斧	sang ji shi ran fu	0
 神龙的传奇铁拳	shen long de chuan qi tie quan	0
-神龙的无情猛袭	shen long de mo qing meng xi	0
+神龙的无情猛袭	shen long de wu qing meng xi	0
 神龙圣道	shen long sheng dao	0
-审判之锤	shen pan zhi dui	0
 神圣护御	shen sheng hu yu	0
 神圣救赎	shen sheng jiu shu	1
 神圣清算者	shen sheng qing suan zhe	0
@@ -123153,8 +123116,8 @@ use_preset_vocabulary: false
 阿瑟扎伊	a se zha yi	0
 阿沙比	a sha bi	0
 阿沙罗拉	a sha luo la	0
-阿什姆	a shen mu	0
-阿什伊	a shen yi	0
+阿什姆	a shi mu	0
+阿什伊	a shi yi	0
 阿斯科纳克	a si ke na ke	0
 阿斯里欧斯	a si li ou si	0
 阿斯塔特	a si ta te	97
@@ -123325,7 +123288,7 @@ use_preset_vocabulary: false
 奥迪鲁尔	ao di lu er	0
 奥铎丹	ao duo dan	0
 奥尔古伦	ao er gu lun	0
-奥尔什德	ao er shen de	0
+奥尔什德	ao er shi de	0
 奥法瑞	ao fa rui	0
 奥格奈斯	ao ge nai si	0
 奥格诺	ao ge nuo	0
@@ -123454,7 +123417,7 @@ use_preset_vocabulary: false
 查姆梅	cha mu mei	0
 查浓	cha nong	0
 查欧加	cha ou jia	0
-查什拉	cha shen la	0
+查什拉	cha shi la	0
 茶隼	cha sun	2
 查因兰特	cha yin lan te	0
 查卓斯	cha zhuo si	0
@@ -123613,7 +123576,7 @@ use_preset_vocabulary: false
 俄萨	e sa	0
 厄瑟斯坎马	e se si kan ma	0
 厄沙拉	e sha la	0
-厄什威尔	e shen wei er	0
+厄什威尔	e shi wei er	0
 厄斯特班	e si te ban	0
 俄沃勒	e wo le	0
 恩伯德	en bo de	0
@@ -123722,7 +123685,7 @@ use_preset_vocabulary: false
 各茨提克	ge ci ti ke	0
 戈丹	ge dan	1
 戈多洱	ge duo er	0
-格尔基什	ge er ji shen	0
+格尔基什	ge er ji shi	0
 格夫尔	ge fu er	0
 格汉	ge han	1
 哥肯达马勒达利	ge ken da ma le da li	0
@@ -123767,7 +123730,7 @@ use_preset_vocabulary: false
 哈格科恩	ha ge ke en	0
 哈克尔利	ha ke er li	0
 哈科姆	ha ke mu	0
-哈克什马	ha ke shen ma	0
+哈克什马	ha ke shi ma	0
 哈克坦	ha ke tan	0
 哈莱玛	ha lai ma	0
 哈勒贝尼	ha le bei ni	0
@@ -123926,7 +123889,7 @@ use_preset_vocabulary: false
 加纳森	jia na sen	0
 加纳斯	jia na si	1
 贾日扎	jia ri zha	0
-贾什赞	jia shen zan	0
+贾什赞	jia shi zan	0
 加舒尔茨	jia shu er ci	0
 加速控制理论	jia su kong zhi li lun	0
 贾苏鲁	jia su lu	0
@@ -124036,7 +123999,7 @@ use_preset_vocabulary: false
 克霍尔	ke huo er	0
 科技研究中心	ke ji yan jiu zhong xin	3
 坷拉玛	ke la ma	0
-克拉什兴奋剂	ke la shen xing fen ji	0
+克拉什兴奋剂	ke la shi xing fen ji	0
 克拉维科	ke la wei ke	2
 克拉西勒	ke la xi le	0
 科拉伊尔沃	ke la yi er wo	0
@@ -124211,7 +124174,7 @@ use_preset_vocabulary: false
 马萨勒	ma sa le	0
 马萨努	ma sa nu	0
 马森德	ma sen de	0
-玛什塔蒙	ma shen ta meng	0
+玛什塔蒙	ma shi ta meng	0
 玛斯帕	ma si pa	0
 马斯塔克蒙	ma si ta ke meng	0
 马特亚斯	ma te ya si	0
@@ -124305,7 +124268,7 @@ use_preset_vocabulary: false
 穆勒马	mu le ma	0
 穆利尼	mu li ni	0
 姆沃莱伦	mu wo lai lun	0
-母星	mu xing	600
+母星	mu xing	150
 母星工程学	mu xing gong cheng xue	0
 纳迪惹	na di re	0
 那朵曼	na duo man	0
@@ -124329,7 +124292,7 @@ use_preset_vocabulary: false
 纳米线复合材料	na mi xian fu he cai liao	0
 拿尼	na ni	4
 纳瑟沙拉法	na se sha la fa	0
-那什林	na shen lin	0
+那什林	na shi lin	0
 纳斯勒里	na si le li	0
 纳维特斯	na wei te si	0
 纳夏	na xia	1
@@ -124363,7 +124326,7 @@ use_preset_vocabulary: false
 尼勒鲁特	ni le lu te	0
 尼曼巴尔	ni man ba er	0
 尼沙尔	ni sha er	0
-尼什尔	ni shen er	0
+尼什尔	ni shi er	0
 逆向工程原理	ni xiang gong cheng yuan li	0
 尼亚拜伦	ni ya bai lun	0
 尼伊	ni yi	8
@@ -124434,7 +124397,7 @@ use_preset_vocabulary: false
 帕多尔	pa duo er	0
 帕尔拉	pa er la	1
 帕尔瑟斯	pa er se si	0
-帕克什	pa ke shen	3
+帕克什	pa ke shi	3
 帕鲁德	pa lu de	0
 帕诺拉德	pa nuo la de	0
 帕萨沙	pa sa sha	0
@@ -124579,7 +124542,7 @@ use_preset_vocabulary: false
 瑟米	se mi	0
 瑟米吉	se mi ji	0
 瑟莫	se mo	0
-瑟莫什	se mo shen	0
+瑟莫什	se mo shi	0
 瑟沙特	se sha te	0
 瑟依尔	se yi er	0
 色原理论	se yuan li lun	0
@@ -124613,7 +124576,7 @@ use_preset_vocabulary: false
 舍马尔	she ma er	0
 舍特	she te	0
 深核开采法	shen he kai cai fa	0
-什胡肯	shen hu ken	0
+什胡肯	shi hu ken	0
 审计安全密码集装箱	shen ji an quan mi ma ji zhuang xiang	0
 神经冲击	shen jing chong ji	1
 神经视觉输出分析机	shen jing shi jue shu chu fen xi ji	0
@@ -124692,8 +124655,8 @@ use_preset_vocabulary: false
 索娜玛	suo na ma	0
 索欧米	suo ou mi	0
 索沙里尔	suo sha li er	0
-索什	suo shen	1
-索什恩	suo shen en	0
+索什	suo shi	1
+索什恩	suo shi en	0
 所特塔伊拉	suo te ta yi la	0
 塔达丹	ta da dan	0
 塔达文	ta da wen	0
@@ -124704,12 +124667,12 @@ use_preset_vocabulary: false
 塔罗克技术	ta luo ke ji shu	0
 塔梅卡姆尔	ta mei ka mu er	0
 塔纳尼斯	ta na ni si	0
-塔萨比什	ta sa bi shen	0
+塔萨比什	ta sa bi shi	0
 塔瑟提	ta se ti	0
-塌什喀莱	ta shen ka lai	0
-塔什蒙贡中心	ta shen meng gong zhong xin	0
-塔什蒙贡中央星系	ta shen meng gong zhong yang xing xi	0
-塔什莫贡	ta shen mo gong	0
+塌什喀莱	ta shi ka lai	0
+塔什蒙贡中心	ta shi meng gong zhong xin	0
+塔什蒙贡中央星系	ta shi meng gong zhong yang xing xi	0
+塔什莫贡	ta shi mo gong	0
 塔托卡德	ta tuo ka de	0
 塔辛纳茨	ta xin na ci	0
 泰尔瑞尔	tai er rui er	0
@@ -124739,8 +124702,8 @@ use_preset_vocabulary: false
 特里菲斯	te li fei si	0
 特鲁尔瑟	te lu er se	0
 特瑞尔	te rui er	18
-忒什	tei shen	0
-忒什卡特	tei shen ka te	0
+忒什	tei shi	0
+忒什卡特	tei shi ka te	0
 忒尤	tei you	0
 腾迪耶斯	teng di ye si	0
 提达查	ti da cha	0
@@ -124799,7 +124762,7 @@ use_preset_vocabulary: false
 瓦皮罗拉萨米瓦	wa pi luo la sa mi wa	0
 瓦若乌	wa ruo wu	0
 瓦萨拉	wa sa la	0
-瓦什卡尔	wa shen ka er	0
+瓦什卡尔	wa shi ka er	0
 瓦斯基森	wa si ji sen	0
 瓦托伦	wa tuo lun	0
 瓦乌尔特	wa wu er te	0
@@ -124848,7 +124811,7 @@ use_preset_vocabulary: false
 沃欧拉斯	wo ou la si	0
 沃斯基奥	wo si ji ao	0
 乌比特斯	wu bi te si	0
-乌查什	wu cha shen	0
+乌查什	wu cha shi	0
 乌恩帕斯	wu en pa si	0
 乌尔仑	wu er lun	0
 乌赫多	wu he duo	0
@@ -125058,10 +125021,10 @@ use_preset_vocabulary: false
 伊瑟拉斯	yi se la si	0
 伊森杜迪克	yi sen du di ke	0
 伊森纳洛斯	yi sen na luo si	0
-伊什库尔	yi shen ku er	0
-伊什农	yi shen nong	0
-伊什索蒙	yi shen suo meng	0
-伊什塔	yi shen ta	4
+伊什库尔	yi shi ku er	0
+伊什农	yi shi nong	0
+伊什索蒙	yi shi suo meng	0
+伊什塔	yi shi ta	4
 伊始卡德	yi shi ka de	0
 伊斯卡诺	yi si ka nuo	0
 伊斯科米	yi si ke mi	0
@@ -125166,7 +125129,7 @@ use_preset_vocabulary: false
 泽特	ze te	1
 炸弹发射器	zha dan fa she qi	1
 扎尔杜	zha er du	0
-扎模什	zha mo shen	0
+扎模什	zha mo shi	0
 查文	zha wen	3
 战斗无人机操控	zhan dou wu ren ji cao kong	0
 粘连物	zhan lian wu	1
@@ -125186,7 +125149,7 @@ use_preset_vocabulary: false
 政治关系学	zheng zhi guan xi xue	0
 制导弹精确打击	zhi dao dan jing que da ji	0
 指挥舰技术	zhi hui jian ji shu	0
-支什诺	zhi shen nuo	0
+支什诺	zhi shi nuo	0
 质子弹	zhi zi dan	4
 重导专业研究	zhong dao zhuan ye yan jiu	0
 重突击舰	zhong tu ji jian	0
@@ -125274,7 +125237,6 @@ use_preset_vocabulary: false
 八荒之魂	ba huang zhi hun	0
 八荒之破	ba huang zhi po	0
 八荒之魄	ba huang zhi po	0
-巴天虎	ba tian hu	0
 八珍塔	ba zhen ta	0
 百变汪仔宝宝	bai bian wang zai bao bao	0
 百草链	bai cao lian	0
@@ -125425,7 +125387,7 @@ use_preset_vocabulary: false
 赤钢盔	chi gang kui	0
 赤钢腕甲	chi gang wan jia	0
 赤钢靴	chi gang xue	0
-迟悔芸玲护肩	chi hui yun ling hu jian	0
+迟悔艺玲护肩	chi hui yun ling hu jian	0
 迟悔之懵	chi hui zhi meng	0
 迟悔之沐	chi hui zhi mu	0
 赤炼驹	chi lian ju	0
@@ -126348,7 +126310,7 @@ use_preset_vocabulary: false
 齐民要术叁	qi min yao shu san	0
 齐民要术壹	qi min yao shu yi	0
 七情束	qi qing shu	0
-奇闻异事	qi wen yi shi	61
+奇闻异事	qi wen yi shi	15
 七星冠	qi xing guan	0
 七星肩	qi xing jian	0
 七星锦服	qi xing jin fu	0
@@ -127281,7 +127243,7 @@ use_preset_vocabulary: false
 阿卡拉特的顿悟	a ka la te de dun wu	0
 阿卡拉特的遗物	a ka la te de yi wu	0
 阿卡拉特勇士	a ka la te yong shi	0
-阿坎内什正义使者	a kan nei shen zheng yi shi zhe	0
+阿坎内什正义使者	a kan nei shi zheng yi shi zhe	0
 阿克汉的钢靴	a ke han de gang xue	0
 阿克汉的护手	a ke han de hu shou	0
 阿克汉的肩甲	a ke han de jian jia	0
@@ -127794,7 +127756,6 @@ use_preset_vocabulary: false
 尖刺陷阱	jian ci xian jing	5
 箭道护腕	jian dao hu wan	0
 歼敌扫射	jian di sao she	0
-坚果锤	jian guo chui	0
 坚如钢钉	jian ru gang ding	0
 坚如金刚	jian ru jin gang	0
 剑身碎片	jian shen sui pian	0
@@ -127870,14 +127831,11 @@ use_preset_vocabulary: false
 克雷姆的强力壁垒	ke lei mu de qiang li bi lei	0
 克雷姆的强力护腕	ke lei mu de qiang li hu wan	0
 克雷姆的强力腰带	ke lei mu de qiang li yao dai	0
-克里森船长的捕鲸靴	ke li sen chuan zhang de bu jing xue	0
 克里森船长的绸带	ke li sen chuan zhang de chou dai	0
-克里森船长的华服	ke li sen chuan zhang de hua fu	0
 克里森船长的涉水靴	ke li sen chuan zhang de she shui xue	0
 克里森船长的饰衣	ke li sen chuan zhang de shi yi	0
 克里森船长的丝带	ke li sen chuan zhang de si dai	0
 克里森船长的推裤	ke li sen chuan zhang de tui ku	0
-克里森船长的斜桅	ke li sen chuan zhang de xie wei	0
 科斯莱的腕甲	ke si lai de wan jia	0
 恐怖蝙蝠	kong bu bian fu	0
 恐怖收割	kong bu shou ge	0
@@ -128229,7 +128187,6 @@ use_preset_vocabulary: false
 深厚内力	shen hou nei li	7
 沈家的财宝	shen jia de cai bao	0
 神龙的传说之拳	shen long de chuan shuo zhi quan	0
-神龙的无情猛袭	shen long de wu qing meng xi	0
 神龙之魂	shen long zhi hun	0
 神秘的盒子	shen mi de he zi	1
 神秘卷轴	shen mi juan zhou	5
@@ -128649,7 +128606,6 @@ use_preset_vocabulary: false
 无尽增幅药水	wu jin zeng fu yao shui	0
 无尽之锤	wu jin zhi chui	0
 无尽之途	wu jin zhi tu	0
-无尽之战	wu jin zhi zhan	3
 无尽钻石药水	wu jin zuan shi yao shui	0
 物理调谐	wu li tiao xie	0
 无觅公允	wu mi gong yun	0
@@ -128796,7 +128752,7 @@ use_preset_vocabulary: false
 妖邪必败	yao xie bi bai	0
 夜剿	ye jiao	3
 野兽卫士	ye shou wei shi	0
-夜魇	ye yan	171
+夜魇	ye yan	40
 野猪战宠	ye zhu zhan chong	0
 疫病虫群	yi bing chong qun	0
 伊崔羽	yi cui yu	0
@@ -129609,7 +129565,6 @@ use_preset_vocabulary: false
 暗战侏儒	an zhan zhu ru	0
 霸海盔	ba hai kui	0
 霸王箭	ba wang jian	0
-把武器	ba wu qi	0
 八转	ba zhuan	3
 百锻弓	bai duan gong	0
 白骨洞八层	bai gu dong ba ceng	0
@@ -129722,7 +129677,7 @@ use_preset_vocabulary: false
 蝙蝠精	bian fu jing	10
 变异的千年龟	bian yi de qian nian gui	0
 变异魔鳄	bian yi mo e	0
-飚车王	biao che wang	0
+飙车王	biao che wang	0
 镖局处	biao ju chu	0
 滨海步兵	bin hai bu bing	0
 滨海岛主	bin hai dao zhu	0
@@ -129840,13 +129795,11 @@ use_preset_vocabulary: false
 传送进	chuan song jin	9
 穿透射击	chuan tou she ji	0
 创立帮派	chuang li bang pai	0
-次镖车	ci biao che	0
 刺冰球	ci bing qiu	0
 雌火猪	ci huo zhu	0
 雌火猪魔	ci huo zhu mo	0
 刺客系	ci ke xi	1
 刺穴	ci xue	2
-次以上	ci yi shang	0
 粗布包	cu bu bao	1
 粗布护腕	cu bu hu wan	0
 粗布护腕魔	cu bu hu wan mo	0
@@ -129904,12 +129857,8 @@ use_preset_vocabulary: false
 地系	di xi	15
 地狱爪	di yu zhao	0
 电遁	dian dun	0
-点功勋	dian gong xun	0
-点和第	dian he di	20
 电箭	dian jian	25
-点结束	dian jie shu	0
 电系	dian xi	106
-点之间	dian zhi jian	0
 掉落怪物	diao luo guai wu	0
 迭香迷情	die xiang mi qing	0
 定魂石	ding hun shi	0
@@ -130039,22 +129988,6 @@ use_preset_vocabulary: false
 高级杂货商	gao ji za huo shang	0
 高你	gao ni	0
 高三种	gao san zhong	0
-个恶少	ge e shao	0
-个国家	ge guo jia	0
-个汉字	ge han zi	0
-个合成	ge he cheng	0
-个虎头	ge hu tou	0
-个家族	ge jia zu	0
-个枯骨	ge ku gu	0
-个粮包	ge liang bao	0
-个墓葬	ge mu zang	0
-个女匪	ge nv fei	1
-个甜果	ge tian guo	0
-个铜块	ge tong kuai	0
-个土匪	ge tu fei	5
-个文物	ge wen wu	0
-个犀角	ge xi jiao	0
-个选项	ge xuan xiang	0
 给帮会	gei bang hui	0
 给难民	gei nan min	10
 工厂打手	gong chang da shou	1
@@ -130282,12 +130215,10 @@ use_preset_vocabulary: false
 家族令	jia zu ling	0
 键打开	jian da kai	14
 键切换	jian qie huan	15
-件全是	jian quan shi	0
 坚韧生命	jian ren sheng ming	0
 键选择	jian xuan ze	0
 箭雨摄魂	jian yu she hun	0
 箭支	jian zhi	70
-件装备	jian zhuang bei	17
 降罚神光	jiang fa shen guang	0
 僵尸王	jiang shi wang	8
 姜小鱼	jiang xiao yu	0
@@ -130374,7 +130305,6 @@ use_preset_vocabulary: false
 绝地缚咒	jue di fu zhou	0
 绝命僵尸	jue ming jiang shi	0
 绝命僵尸魔	jue ming jiang shi mo	0
-颗合成	ke he cheng	0
 可争夺	ke zheng duo	0
 口令是	kou ling shi	0
 枯萎人参果	ku wei ren shen guo	0
@@ -130666,15 +130596,10 @@ use_preset_vocabulary: false
 密银钥匙	mi yin yao shi	0
 棉布衣男	mian bu yi nan	0
 棉布衣女	mian bu yi nv	0
-面副旗	mian fu qi	0
 灭虫水	mie chong shui	0
 灭敌斩	mie di zhan	0
 冥府之门	ming fu zhi men	0
-名号的	ming hao de	0
-名或后	ming huo hou	0
-名奖励	ming jiang li	1
 冥王附体	ming wang fu ti	0
-名选手	ming xuan shou	51
 魔法攻击力	mo fa gong ji li	3
 魔法皮肤	mo fa pi fu	0
 魔化犬戎	mo hua quan rong	0
@@ -131156,7 +131081,6 @@ use_preset_vocabulary: false
 天之魔力	tian zhi mo li	0
 天之生命	tian zhi sheng ming	0
 天之套	tian zhi tao	0
-条巨蛇	tiao ju she	3
 铁骨御体	tie gu yu ti	0
 铁骨之魂	tie gu zhi hun	0
 铁龟	tie gui	0
@@ -131576,7 +131500,6 @@ use_preset_vocabulary: false
 战神护体	zhan shen hu ti	0
 战神祝福	zhan shen zhu fu	0
 长老说	zhang lao shuo	6
-张犀皮	zhang xi pi	0
 找锄头	zhao chu tou	0
 召唤风灵	zhao huan feng ling	0
 召唤骸骨守卫	zhao huan hai gu shou wei	0
@@ -131599,9 +131522,6 @@ use_preset_vocabulary: false
 真冰球术	zhen bing qiu shu	0
 阵法书	zhen fa shu	0
 真雷神	zhen lei shen	0
-只骸骨	zhi hai gu	0
-只狐狸	zhi hu li	8
-只狂熊	zhi kuang xiong	1
 之旅了	zhi lv le	0
 炙天刀	zhi tian dao	0
 炙天帝甲男	zhi tian di jia nan	0
@@ -131630,8 +131550,6 @@ use_preset_vocabulary: false
 炙天腰带魔	zhi tian yao dai mo	0
 炙天腰带物	zhi tian yao dai wu	0
 炙天杖	zhi tian zhang	0
-只野猪	zhi ye zhu	9
-只幼狐	zhi you hu	0
 至尊蚌魔	zhi zun bang mo	0
 至尊蚌魔魔	zhi zun bang mo mo	0
 至尊盾	zhi zun dun	0
@@ -132006,7 +131924,7 @@ use_preset_vocabulary: false
 大黑蛭	da hei zhi	0
 大荒赤注神	da huang chi zhu shen	0
 打架王	da jia wang	6
-大迦叶	da jia ye	0
+大迦叶	da jia she	0
 达摩杖	da mo zhang	0
 达摩杖配方	da mo zhang pei fang	0
 大王村近郊	da wang cun jin jiao	0
@@ -132223,7 +132141,6 @@ use_preset_vocabulary: false
 傅应龙	fu ying long	0
 扶云戒	fu yun jie	0
 缚足蛇蛊	fu zu she gu	0
-甘道孚	gan dao fu	0
 甘华木	gan hua mu	0
 干菊花	gan ju hua	1
 甘泉水	gan quan shui	0
@@ -133308,7 +133225,7 @@ use_preset_vocabulary: false
 深渊黑莲	shen yuan hei lian	0
 神州山水图	shen zhou shan shui tu	0
 生产导师	sheng chan dao shi	0
-圣护	sheng hu	113
+圣护	sheng hu	25
 圣教守卫	sheng jiao shou wei	0
 生命大回复药	sheng ming da hui fu yao	0
 圣泉配方	sheng quan pei fang	0
@@ -134413,7 +134330,7 @@ use_preset_vocabulary: false
 法力培养罐	fa li pei yang guan	0
 法师娃	fa shi wa	0
 法术卷轴	fa shu juan zhou	1
-反伤	fan shang	64
+反伤	fan shang	35
 反伤甲	fan shang jia	0
 反震盔甲	fan zhen kui jia	0
 绯想之剑	fei xiang zhi jian	0
@@ -134584,7 +134501,7 @@ use_preset_vocabulary: false
 遥远的蹂躏制霸	yao yuan de rou lin zhi ba	1
 夜刀神十香	ye dao shen shi xiang	0
 夜空之剑	ye kong zhi jian	1
-伊莉雅	yi li ya	492
+伊莉雅	yi li ya	100
 隐身鞋	yin shen xie	0
 音速手刃	yin su shou ren	0
 阴阳玉	yin yang yu	14
@@ -134653,7 +134570,7 @@ use_preset_vocabulary: false
 埃及秃鹫	ai ji tu jiu	0
 埃琳娜的玫瑰念珠	ai lin na de mei gui nian zhu	0
 埃琳娜亲手做的菜	ai lin na qin shou zuo de cai	0
-埃什特拉雷号	ai shen te la lei hao	0
+埃什特拉雷号	ai shi te la lei hao	0
 艾斯拉	ai si la	1
 安比拉民族珠饰长裙	an bi la min zu zhu shi chang qun	0
 安比拉战士的骨饰战服	an bi la zhan shi de gu shi zhan fu	0
@@ -135606,7 +135523,7 @@ use_preset_vocabulary: false
 拉奥孔的右臂	la ao kong de you bi	0
 拉达梅斯与阿依达的墓碑	la da mei si yu a yi da de mu bei	0
 拉古萨	la gu sa	13
-拉克什米女神	la ke shen mi nv shen	0
+拉克什米女神	la ke shi mi nv shen	0
 拉美西斯二世的头饰	la mei xi si er shi de tou shi	0
 拉诺拉拉库	la nuo la la ku	0
 拉帕努伊	la pa nu yi	4
@@ -136392,7 +136309,6 @@ use_preset_vocabulary: false
 王鹫	wang jiu	0
 王女的眼泪	wang nv de yan lei	0
 望乡排钟	wang xiang pai zhong	0
-味噌	wei ceng	64
 伟大战士的长枪	wei da zhan shi de chang qiang	0
 桅顶瞭望台	wei ding liao wang tai	0
 维多利亚的项链	wei duo li ya de xiang lian	0
@@ -136599,7 +136515,7 @@ use_preset_vocabulary: false
 伊兰花	yi lan hua	0
 伊耐斯	yi nai si	0
 医神的神药	yi shen de shen yao	0
-伊什塔尔的项链	yi shen ta er de xiang lian	0
+伊什塔尔的项链	yi shi ta er de xiang lian	0
 医师的誓言	yi shi de shi yan	0
 艺术家的观察方法心得	yi shu jia de guan cha fang fa xin de	0
 伊斯兰帝国士兵	yi si lan di guo shi bing	0
@@ -136710,7 +136626,7 @@ use_preset_vocabulary: false
 运输用单桅纵帆船	yun shu yong dan wei zong fan chuan	0
 运输用卡拉克帆船	yun shu yong ka la ke fan chuan	0
 运输用排桨帆船	yun shu yong pai jiang fan chuan	0
-芸苔	yun tai	4
+艺苔	yun tai	4
 运用甲	yun yong jia	0
 云游厨师	yun you chu shi	0
 云游画家	yun you hua jia	0
@@ -137325,7 +137241,6 @@ use_preset_vocabulary: false
 挥剑试问情	hui jian shi wen qing	0
 汇灵	hui ling	0
 回梦空传幽怨	hui meng kong chuan you yuan	0
-迴梦游仙	hui meng you xian	1
 会神香	hui shen xiang	0
 回生仙饮	hui sheng xian yin	0
 回生照	hui sheng zhao	0
@@ -137686,7 +137601,6 @@ use_preset_vocabulary: false
 美的凄凉	mei di qi liang	0
 梅柳频看	mei liu pin kan	0
 媚眼势	mei yan shi	0
-没药	mei yao	141
 魅影神靴	mei ying shen xue	0
 猛虎出闸	meng hu chu zha	0
 梦幻逍遥	meng huan xiao yao	0
@@ -137861,7 +137775,7 @@ use_preset_vocabulary: false
 情丝暗生	qing si an sheng	0
 青丝巾	qing si jin	0
 青丝软履	qing si ruan lv	0
-情丝未断	qing si wei duan	0
+情丝未断	qing si wei duan	30
 青丝秀衣	qing si xiu yi	0
 青丝绣衣	qing si xiu yi	0
 轻松随意	qing song sui yi	30
@@ -137870,7 +137784,7 @@ use_preset_vocabulary: false
 清微	qing wei	10
 青霞碧云冠	qing xia bi yun guan	0
 青霄	qing xiao	17
-青阳	qing yang	324
+青阳	qing yang	60
 清阳太昭袍	qing yang tai zhao pao	0
 清阳真人	qing yang zhen ren	0
 青幽液	qing you ye	0
@@ -139241,7 +139155,6 @@ use_preset_vocabulary: false
 仇敌三千奈我何	chou di san qian nai wo he	0
 仇赛赛	chou sai sai	0
 仇五	chou wu	0
-初塵	chu chen	0
 初尘	chu chen	0
 出大铁	chu da tie	0
 除荡旷劫	chu dang kuang jie	0
@@ -139318,8 +139231,6 @@ use_preset_vocabulary: false
 崔英	cui ying	1
 翠云嫂	cui yun sao	0
 打帮战	da bang zhan	6
-大便來	da bian lai	0
-大便来	da bian lai	0
 打兵鉴	da bing jian	0
 打策划	da ce hua	0
 大橙武	da cheng wu	9
@@ -139363,7 +139274,6 @@ use_preset_vocabulary: false
 大轻功	da qing gong	17
 大扇子	da shan zi	4
 大圣明尊法	da sheng ming zun fa	0
-大湿	da shi	147
 大师打个菠萝	da shi da ge bo luo	0
 大师的香菇头最帅了	da shi de xiang gu tou zui shuai le	0
 大十九	da shi jiu	0
@@ -139380,7 +139290,6 @@ use_preset_vocabulary: false
 大头鹅	da tou e	0
 大五仙教	da wu xian jiao	1
 大侠号	da xia hao	0
-大俠你缺腿部挂件嗎	da xia ni que tui bu gua jian ma	0
 大侠之路	da xia zhi lu	0
 大小拍	da xiao pai	0
 大小铁拍	da xiao tie pai	0
@@ -139395,7 +139304,6 @@ use_preset_vocabulary: false
 大战来奶	da zhan lai nai	0
 大战来能进本的	da zhan lai neng jin ben de	0
 大战来人	da zhan lai ren	0
-大战来帅比不帅不要来	da zhan lai shuai bi bu shuai bu yao lai	0
 大战来随便	da zhan lai sui bian	0
 大战来五七万小分队	da zhan lai wu qi wan xiao fen dui	0
 大战来小矮砸	da zhan lai xiao ai za	0
@@ -139426,7 +139334,6 @@ use_preset_vocabulary: false
 弹梦	dan meng	1
 单密	dan mi	1
 淡墨清毫	dan mo qing hao	0
-但求一睡王遗风	dan qiu yi shui wang yi feng	0
 但是他爱欺负人	dan shi ta ai qi fu ren	0
 蛋碎岛	dan sui dao	0
 丹霞石林	dan xia shi lin	0
@@ -139452,7 +139359,6 @@ use_preset_vocabulary: false
 道惠	dao hui	0
 道决	dao jue	1
 道可	dao ke	0
-道可道非常道浩气都是大傻帽	dao ke dao fei chang dao hao qi dou shi da sha mao	0
 倒老王	dao lao wang	1
 倒老谢	dao lao xie	0
 道鸣	dao ming	1
@@ -139463,7 +139369,6 @@ use_preset_vocabulary: false
 道允	dao yun	0
 道长的羊屁股	dao zhang de yang pi gu	0
 道长落个山河	dao zhang luo ge shan he	0
-道长你的肾	dao zhang ni de shen	0
 道真	dao zhen	0
 道忠	dao zhong	0
 得饶人处且饶人吧	de rao ren chu qie rao ren ba	5
@@ -139718,7 +139623,7 @@ use_preset_vocabulary: false
 二叽	er ji	0
 二叽山庄	er ji shan zhuang	0
 二萝	er luo	0
-二少	er shao	82
+二少	er shao	30
 二少炖蘑菇	er shao dun mo gu	0
 二十五人秘境	er shi wu ren mi jing	0
 二小姐二少	er xiao jie er shao	0
@@ -140332,7 +140237,6 @@ use_preset_vocabulary: false
 幻身	huan shen	12
 欢小丫	huan xiao ya	0
 黄粑粑	huang ba ba	0
-黃骠	huang biao	0
 黄不惊	huang bu jing	0
 皇甫烈	huang fu lie	0
 皇甫绍	huang fu shao	0
@@ -140636,9 +140540,8 @@ use_preset_vocabulary: false
 解语	jie yu	19
 解语寺	jie yu si	0
 截元丹	jie yuan dan	0
-竭沢	jie ze	0
 金粑粑	jin ba ba	1
-金宝	jin bao	88
+金宝	jin bao	25
 进不了本	jin bu liao ben	4
 金城坊	jin cheng fang	1
 金翅苍羽雕	jin chi cang yu diao	0
@@ -140721,7 +140624,7 @@ use_preset_vocabulary: false
 九宫飞星	jiu gong fei xing	0
 玖舅	jiu jiu	0
 九黎祭司长者	jiu li ji si zhang zhe	0
-鸠罗什	jiu luo shen	0
+鸠罗什	jiu luo shi	0
 酒色财气吕洞宾	jiu se cai qi lv dong bin	0
 就是牡丹前进的方向	jiu shi mu dan qian jin de fang xiang	0
 就他一个大小攻防敢冲进人群	jiu ta yi ge da xiao gong fang gan chong jin ren qun	0
@@ -140806,7 +140709,7 @@ use_preset_vocabulary: false
 可也算白首	ke ye suan bai shou	0
 柯镇善	ke zhen shan	0
 坑爹之路	keng die zhi lu	0
-坑团出大鉄	keng tuan chu da tie	0
+坑团出大铁	keng tuan chu da tie	0
 孔博易	kong bo yi	0
 恐大梦一场	kong da meng yi chang	9
 孔法	kong fa	0
@@ -140942,7 +140845,7 @@ use_preset_vocabulary: false
 李渡城	li du cheng	0
 李渡岭	li du ling	1
 李多难	li duo nan	0
-李二	li er	328
+李二	li er	60
 李二蛮	li er man	0
 里飞丐	li fei gai	0
 里肥傻	li fei sha	0
@@ -141038,7 +140941,6 @@ use_preset_vocabulary: false
 疗伤成效	liao shang cheng xiao	0
 廖阳	liao yang	0
 烈碧光	lie bi guang	0
-劣黃马	lie huang ma	0
 劣磨石	lie mo shi	0
 烈日岗	lie ri gang	0
 烈日斩	lie ri zhan	0
@@ -141054,7 +140956,6 @@ use_preset_vocabulary: false
 林冬海	lin dong hai	0
 凛风堡	lin feng bao	0
 林枫明	lin feng ming	0
-凜风峡	lin feng xia	0
 临风院	lin feng yuan	0
 凛风子	lin feng zi	0
 林浩运	lin hao yun	0
@@ -141498,7 +141399,7 @@ use_preset_vocabulary: false
 莫旺	mo wang	0
 莫问曲	mo wen qu	0
 莫无道	mo wu dao	0
-無限定怪	mo xian ding guai	0
+无限定怪	mo xian ding guai	0
 摸翔	mo xiang	1
 莫晓玲	mo xiao ling	0
 莫寻常	mo xun chang	0
@@ -141578,7 +141479,6 @@ use_preset_vocabulary: false
 南冥谷	nan ming gu	0
 男女神	nan nv shen	4
 南绍皇宫	nan shao huang gong	0
-男神	nan shen	400
 男神卡卢比	nan shen ka lu bi	0
 男神心法	nan shen xin fa	0
 南天别院	nan tian bie yuan	0
@@ -141867,7 +141767,6 @@ use_preset_vocabulary: false
 琴魔	qin mo	5
 秦慕白	qin mu bai	0
 琴棋书画药工茶	qin qi shu hua yao gong cha	0
-琴始皇	qin shi huang	1
 秦叔翰	qin shu han	0
 秦随风	qin sui feng	0
 秦秀	qin xiu	3
@@ -141890,7 +141789,7 @@ use_preset_vocabulary: false
 轻功试炼	qing gong shi lian	0
 情蛊给你了	qing gu gei ni le	0
 青冠	qing guan	3
-青海聰	qing hai cong	0
+青海聪	qing hai cong	0
 情怀队	qing huai dui	0
 清净众生	qing jing zhong sheng	0
 清离	qing li	0
@@ -142797,7 +142696,7 @@ use_preset_vocabulary: false
 王二虎	wang er hu	1
 王峰	wang feng	40
 王谷主的神曲	wang gu zhu de shen qu	0
-王海芸	wang hai yun	0
+王海艺	wang hai yun	0
 王韩	wang han	11
 王剑	wang jian	44
 王剑宇	wang jian yu	0
@@ -142934,7 +142833,7 @@ use_preset_vocabulary: false
 我一定要成为像哥哥一样的男人	wo yi ding yao cheng wei xiang ge ge yi yang de nan ren	0
 我用削弱换依然帅气的脸	wo yong xue ruo huan yi ran shuai qi de lian	0
 我有情缘	wo you qing yuan	0
-我预感我们团要出大鉄	wo yu gan wo men tuan yao chu da tie	0
+我预感我们团要出大铁	wo yu gan wo men tuan yao chu da tie	0
 我最大的奇遇就是遇见你们啊	wo zui da de qi yu jiu shi yu jian ni men a	0
 武安殿	wu an dian	0
 五彩石重铸	wu cai shi chong zhu	0
@@ -143424,7 +143323,7 @@ use_preset_vocabulary: false
 炎威破魔阵	yan wei po mo zhen	0
 烟霞山	yan xia shan	0
 燕小轶	yan xiao yi	0
-燕小芸	yan xiao yun	0
+燕小艺	yan xiao yun	0
 燕秀	yan xiu	0
 雁旋	yan xuan	0
 燕忆眉	yan yi mei	0
@@ -143841,7 +143740,7 @@ use_preset_vocabulary: false
 宇文画	yu wen hua	0
 宇文述学	yu wen shu xue	0
 于无翼	yu wu yi	0
-玉贤	yu xian	369
+玉贤	yu xian	40
 渝襄公刘政会	yu xiang gong liu zheng hui	0
 于小寂	yu xiao ji	0
 余晓璐	yu xiao lu	0
@@ -144127,7 +144026,6 @@ use_preset_vocabulary: false
 制造技能	zhi zao ji neng	0
 智障侠	zhi zhang xia	0
 智障瞎	zhi zhang xia	0
-智尊宝	zhi zun bao	1
 终不过是江湖不见	zhong bu guo shi jiang hu bu jian	0
 众嗔	zhong chen	0
 终老恶人谷	zhong lao e ren gu	0
@@ -144422,7 +144320,7 @@ use_preset_vocabulary: false
 奔雷护腿	ben lei hu tui	0
 奔雷之铠	ben lei zhi kai	0
 奔雷之靴	ben lei zhi xue	0
-冰凍箭之石	bing dong jian zhi shi	0
+冰冻箭之石	bing dong jian zhi shi	0
 冰封箭	bing feng jian	0
 冰封术	bing feng shu	0
 冰后	bing hou	13
@@ -146694,9 +146592,9 @@ use_preset_vocabulary: false
 轰天一剑	hong tian yi jian	0
 红缨盔	hong ying kui	0
 红樱枪	hong ying qiang	1
-後伏班阵	hou fu ban zhen	0
-後伏连阵	hou fu lian zhen	0
-後伏排阵	hou fu pai zhen	0
+后伏班阵	hou fu ban zhen	0
+后伏连阵	hou fu lian zhen	0
+后伏排阵	hou fu pai zhen	0
 厚披风	hou pi feng	1
 虎豹骑	hu bao qi	95
 虎贲大刀	hu ben da dao	0
@@ -146813,7 +146711,7 @@ use_preset_vocabulary: false
 基本武器重铸	ji ben wu qi chong zhu	0
 基本坐骑调教	ji ben zuo qi tiao jiao	0
 戟兵	ji bing	57
-箕谷	ji gu	148
+箕谷	ji gu	40
 机关兵	ji guan bing	2
 机关冲	ji guan chong	0
 机关虎	ji guan hu	0
@@ -148111,7 +148009,7 @@ use_preset_vocabulary: false
 鬃蜥	zong xi	0
 左慈山屋	zuo ci shan wu	0
 暗黑执政官	an hei zhi zheng guan	0
-暴兵	bao bing	75
+暴兵	bao bing	40
 爆炸攻击	bao zha gong ji	1
 孢子塔	bao zi ta	0
 崩甲弹	beng jia dan	0
@@ -148270,7 +148168,7 @@ use_preset_vocabulary: false
 固源岩组	gu yuan yan zu	0
 合成玉	he cheng yu	10
 赫拉格	he la ge	15
-赫默	he mo	71
+赫默	he mo	20
 黑钢	hei gang	26
 护盾高阶术师	hu dun gao jie shu shi	0
 华法琳	hua fa lin	13
@@ -148417,7 +148315,7 @@ use_preset_vocabulary: false
 黑魂	hei hun	694
 锈湖	xiu hu	150
 灵梦	ling meng	655
-星盟	xing meng	482
+星盟	xing meng	60
 塔萨达	ta sa da	149
 云无月	yun wu yue	119
 车枪球	che qiang qiu	109

@@ -136,7 +136,7 @@ use_preset_vocabulary: false
 李睍	li xian	0
 李歆	li xin	5
 李恂	li xun	1
-李炎	li yan	173
+李炎	li yan	60
 李湛	li zhan	16
 李遵顼	li zun xu	0
 廪辛	lin xin	6
@@ -463,8 +463,7 @@ use_preset_vocabulary: false
 洪宪	hong xian	9
 后废帝	hou fei di	3
 后凉	hou liang	12
-后燕	hou yan	76
-忽必列	hu bi lie	4
+后燕	hou yan	25
 桓子	huan zi	4
 桓宗	huan zong	0
 黄初	huang chu	206
@@ -1659,7 +1658,7 @@ use_preset_vocabulary: false
 李迁哲	li qian zhe	0
 李顺兴	li shun xing	0
 李棠	li tang	0
-李贤	li xian	330
+李贤	li xian	100
 李彦	li yan	77
 李延孙	li yan sun	0
 溧阳公主	li yang gong zhu	0
@@ -2794,7 +2793,7 @@ use_preset_vocabulary: false
 奎林	kui lin	22
 魁伦	kui lun	0
 揆叙	kui xu	2
-坤舆全图	kun yu quan tu	0
+坤舆全图	kun yu quan tu	30
 喇布	la bu	0
 拉布敦	la bu dun	0
 赖和木图拉	lai he mu tu la	0
@@ -3312,7 +3311,6 @@ use_preset_vocabulary: false
 衬袍	chen pao	1
 赐服	ci fu	4
 大带	da dai	3
-鞑掳	da lu	0
 大帽	da mao	116
 大明衣冠	da ming yi guan	1
 大袖衫	da xiu shan	1
@@ -5752,7 +5750,7 @@ use_preset_vocabulary: false
 戴经	dai jing	0
 戴炯	dai jiong	0
 戴絅孙	dai jiong sun	0
-代郡	dai jun	97
+代郡	dai jun	20
 戴钧衡	dai jun heng	0
 戴克昌	dai ke chang	0
 戴礼	dai li	10
@@ -6148,7 +6146,7 @@ use_preset_vocabulary: false
 董兆熊	dong zhao xiong	0
 董肇勋	dong zhao xun	0
 董治	dong zhi	0
-东治	dong zhi	83
+东冶	dong ye	30
 董重	dong zhong	8
 董仲书	dong zhong shu	0
 董宗祈	dong zong qi	0
@@ -7281,7 +7279,7 @@ use_preset_vocabulary: false
 管遹群	guan yu qun	0
 关羽也	guan yu ye	0
 管粤秀	guan yue xiu	0
-广都	guang dou	10
+广都	guang du	10
 广干	guang gan	0
 广见	guang jian	0
 广礼	guang li	0
@@ -8042,7 +8040,7 @@ use_preset_vocabulary: false
 华岱	hua dai	1
 华栋	hua dong	21
 化方	hua fang	0
-华妃	hua fei	711
+华妃	hua fei	150
 华复	hua fu	1
 华国才	hua guo cai	0
 华瀚	hua han	0
@@ -8577,7 +8575,7 @@ use_preset_vocabulary: false
 简文帝萧纲	jian wen di xiao gang	1
 菅县	jian xian	0
 简霄	jian xiao	0
-简雍	jian yong	128
+简雍	jian yong	40
 江八斗	jiang ba dou	0
 江柏	jiang bai	2
 江柏青	jiang bai qing	0
@@ -9721,7 +9719,7 @@ use_preset_vocabulary: false
 李旬金	li xun jin	0
 李亚春	li ya chun	1
 李亚蓉	li ya rong	0
-李严	li yan	430
+李严	li yan	80
 李延	li yan	38
 李晏	li yan	4
 李延昰	li yan shi	0
@@ -13843,7 +13841,7 @@ use_preset_vocabulary: false
 天光帝	tian guang di	0
 天纪	tian ji	20
 田炯锦	tian jiong jin	0
-田楷	tian kai	74
+田楷	tian kai	20
 田克岐	tian ke qi	0
 田兰芳	tian lan fang	0
 田垒	tian lei	0
@@ -13938,7 +13936,6 @@ use_preset_vocabulary: false
 童咏	tong yong	2
 童钰	tong yu	0
 童增华	tong zeng hua	0
-通证	tong zheng	74
 通政院	tong zheng yuan	0
 童宗说	tong zong shuo	0
 通醉	tong zui	0
@@ -14252,7 +14249,7 @@ use_preset_vocabulary: false
 王佳一	wang jia yi	3
 王家瓒	wang jia zan	0
 汪篯	wang jian	6
-王坚	wang jian	416
+王坚	wang jian	120
 王建常	wang jian chang	0
 王建衡	wang jian heng	0
 王渐逵	wang jian kui	0
@@ -15205,7 +15202,7 @@ use_preset_vocabulary: false
 吴培风	wu pei feng	0
 吴鹏兵	wu peng bing	0
 吴溥	wu pu	0
-吴起	wu qi	840
+吴起	wu qi	150
 吴妻	wu qi	0
 吴绮	wu qi	0
 吴其泰	wu qi tai	0
@@ -15804,7 +15801,7 @@ use_preset_vocabulary: false
 新汲	xin ji	1
 莘开	xin kai	0
 辛明	xin ming	15
-辛毗	xin pi	55
+辛毗	xin pi	20
 辛评	xin ping	13
 辛全	xin quan	0
 信世昌	xin shi chang	0
@@ -17647,7 +17644,6 @@ use_preset_vocabulary: false
 詹正	zhan zheng	0
 詹智尧	zhan zhi yao	0
 詹忠言	zhan zhong yan	0
-张爱龄	zhang ai ling	0
 章安	zhang an	5
 张安保	zhang an bao	0
 张岸道	zhang an dao	0
@@ -17974,7 +17970,7 @@ use_preset_vocabulary: false
 张秋人	zhang qiu ren	0
 张确	zhang que	0
 张让	zhang rang	96
-张任	zhang ren	117
+张任	zhang ren	50
 张壬	zhang ren	0
 张仁亶	zhang ren dan	10
 张仁济	zhang ren ji	0
@@ -19788,10 +19784,10 @@ use_preset_vocabulary: false
 紫鳞	zi lin	2
 中书郎	zhong shu lang	4
 王霸之气	wang ba zhi qi	64
-暴王	bao wang	50
+暴王	bao wang	10
 项籍	xiang ji	300
 朱标	zhu biao	288
-卫霍	wei huo	366
+卫霍	wei huo	70
 怯薛	qie xue	165
 怯薛军	qie xue jun	12
 徐阶	xu jie	200
@@ -19804,18 +19800,17 @@ use_preset_vocabulary: false
 东皇	dong huang	134
 稼轩	jia xuan	173
 雍凉	yong liang	153
-秦楚	qin chu	133
+秦楚	qin chu	30
 灭秦	mie qin	173
-范睢	fan sui	123
 秦赵	qin zhao	191
-帝尧	di yao	149
-秦地	qin di	117
+帝尧	di yao	15
+秦地	qin di	30
 陈涉	chen she	116
 代汉	dai han	108
 季布	ji bu	115
 伯颜	bo yan	105
 戎狄	rong di	179
-元清	yuan qing	130
+元清	yuan qing	35
 阿瞒	a man	109
 昭公	zhao gong	129
 关陇	guan long	94
@@ -19824,7 +19819,7 @@ use_preset_vocabulary: false
 蒙元	meng yuan	388
 汉初	han chu	397
 两宋	liang song	267
-魏玛	wei ma	333
+魏玛	wei ma	120
 昭帝	zhao di	342
 普军	pu jun	456
 奥军	ao jun	346

@@ -14,11 +14,13 @@ import pathlib
 import re
 from collections import Counter
 
+import clean_r2_rules as r2
+
 REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC_ROOT = REPO_ROOT
 DST_ROOT = REPO_ROOT
 
-TRAD_JP_TO_SIMP = str.maketrans({
+_TRAD_JP_BASE_MAP: dict[str, str] = {
     "亜": "亚", "亞": "亚", "佈": "布", "倉": "仓", "倫": "伦", "傑": "杰", "傳": "传", "優": "优",
     "內": "内", "冨": "富", "凍": "冻", "凜": "凛", "凱": "凯", "則": "则", "剛": "刚", "劊": "刽",
     "劍": "剑", "劑": "剂", "動": "动", "勝": "胜", "勞": "劳", "呂": "吕", "喚": "唤", "喬": "乔",
@@ -68,7 +70,8 @@ TRAD_JP_TO_SIMP = str.maketrans({
     "騎": "骑", "驕": "骄", "髏": "髅", "髙": "高", "髮": "发", "鬥": "斗", "魚": "鱼", "鯨": "鲸",
     "鰂": "鲗", "鱗": "鳞", "鴉": "鸦", "鷹": "鹰", "鹼": "碱", "鹽": "盐", "麗": "丽", "麥": "麦",
     "黃": "黄", "黒": "黑", "點": "点", "齋": "斋", "齒": "齿", "龍": "龙", "醯": "酰",
-})
+}
+TRAD_JP_TO_SIMP = str.maketrans({**r2.R2_EXTRA_TRAD_JP_MAP, **_TRAD_JP_BASE_MAP})
 
 
 class _SimpleConverter:
@@ -672,6 +675,7 @@ def clean_8105(lines: list[str], stats: dict) -> list[str]:
         ("哟", "you"): 150,
         ("铬", "luo"): 15,
     }
+    reweight_map.update(r2.R2_8105_REWEIGHT)
     out = list(hdr)
     seen = set()
     for line in body:
@@ -681,6 +685,9 @@ def clean_8105(lines: list[str], stats: dict) -> list[str]:
                 out.append(line)
             continue
         w, py, wt, extra = parsed
+        if (w, py) in r2.R2_8105_DELETE:
+            stats["deleted_wrong_py"] += 1
+            continue
         if (w, py) == ("芔", "cao"):
             py = "hui"
             stats["fixed_py"] += 1
@@ -738,8 +745,8 @@ def clean_8105(lines: list[str], stats: dict) -> list[str]:
         ("镦", "dui", "5"),
         ("酂", "cuo", "5"),
         ("隗", "kui", "5"),
-        ("車", "che", "10"),
-    ]
+        ("車", "che", "1"),
+    ] + r2.R2_8105_ADDITIONS
     to_add = [(w, py, wt) for (w, py, wt) in additions if (w, py) not in seen]
     if to_add:
         out.append("# 补充标准普通话读音")
@@ -752,13 +759,23 @@ def clean_8105(lines: list[str], stats: dict) -> list[str]:
 
 def clean_base(lines: list[str], stats: dict) -> list[str]:
     hdr, body = split_header_body(lines)
+    base_py_fixes = {**BASE_PY_FIXES, **r2.R2_BASE_PY_FIXES}
+    base_delete = BASE_DELETE_WORDS | r2.R2_BASE_DELETE_WORDS
+    base_reweight = {**BASE_REWEIGHT, **r2.R2_BASE_REWEIGHT}
     shei_wt: dict[str, int] = {}
+    has_zijihai = False
     for line in body:
         p = parse_entry(line)
-        if p and p[0] in BASE_SHUI_SCALE_WORDS and "shei" in p[1].split():
+        if not p:
+            continue
+        if p[0] in BASE_SHUI_SCALE_WORDS and "shei" in p[1].split():
             shei_wt[p[0]] = max(shei_wt.get(p[0], 0), w_int(p[2]))
+        if p[0] == "自己还" and p[1] == "zi ji hai":
+            has_zijihai = True
+    if has_zijihai:
+        base_py_fixes.pop(("自己还", "zi ji huan"), None)
     out = list(hdr)
-    added_shide = False
+    seen: set[tuple[str, str]] = set()
     for line in body:
         parsed = parse_entry(line)
         if not parsed:
@@ -767,18 +784,18 @@ def clean_base(lines: list[str], stats: dict) -> list[str]:
             continue
         w, py, wt, extra = parsed
         py = normalize_lue_nue(py)
-        if w in BASE_DELETE_WORDS:
+        if w in base_delete:
             stats["deleted_noise_or_typo"] += 1
             continue
-        if (w, py) in BASE_PY_FIXES:
-            new_py = BASE_PY_FIXES[(w, py)]
+        if (w, py) in base_py_fixes:
+            new_py = base_py_fixes[(w, py)]
             if new_py is None:
                 stats["deleted_wrong_py"] += 1
                 continue
             py = new_py
             stats["fixed_py"] += 1
-        if (w, py) in BASE_REWEIGHT:
-            new_wt = str(BASE_REWEIGHT[(w, py)])
+        if (w, py) in base_reweight:
+            new_wt = str(base_reweight[(w, py)])
             if wt != new_wt:
                 wt = new_wt
                 stats["reweighted"] += 1
@@ -800,14 +817,17 @@ def clean_base(lines: list[str], stats: dict) -> list[str]:
                 if old_w > target:
                     wt = str(target)
                     stats["reweighted"] += 1
-        if (w, py) == ("是的", "shi de"):
-            added_shide = True
+        seen.add((w, py))
         out.append(format_entry(w, py, wt, extra))
 
-    if not added_shide:
+    additions = [("是的", "shi de", "35000")] + r2.R2_BASE_ADDITIONS
+    to_add = [(w, py, wt) for (w, py, wt) in additions if (w, py) not in seen]
+    if to_add:
         out.append("# 补充高频常用词")
-        out.append("是的\tshi de\t35000")
-        stats["added"] += 1
+        for w, py, wt in to_add:
+            out.append(f"{w}\t{py}\t{wt}")
+            seen.add((w, py))
+            stats["added"] += 1
     return out
 
 
@@ -830,7 +850,12 @@ EXT_TOLERANCE_REWEIGHT: dict[tuple[str, str], int] = {
 
 def clean_ext(lines: list[str], stats: dict) -> list[str]:
     hdr, body = split_header_body(lines)
+    ext_py_fixes = {**EXT_PY_FIXES, **r2.R2_EXT_PY_FIXES}
+    ext_delete = EXT_DELETE_WORDS | r2.R2_EXT_DELETE_WORDS
+    ext_reweight = {**EXT_REWEIGHT, **r2.R2_EXT_REWEIGHT}
+    ext_pair_rw = {**EXT_TOLERANCE_REWEIGHT, **r2.R2_EXT_PAIR_REWEIGHT}
     out = list(hdr)
+    seen: set[tuple[str, str]] = set()
     for line in body:
         parsed = parse_entry(line)
         if not parsed:
@@ -839,27 +864,41 @@ def clean_ext(lines: list[str], stats: dict) -> list[str]:
             continue
         w, py, wt, extra = parsed
         py = normalize_lue_nue(py)
-        if w in EXT_DELETE_WORDS or is_leading_de_fragment(w, py) or is_leading_le_fragment(w, py):
+        if w in ext_delete or is_leading_de_fragment(w, py) or is_leading_le_fragment(w, py):
             stats["deleted_noise_or_typo"] += 1
             continue
-        if (w, py) in EXT_PY_FIXES:
-            new_py = EXT_PY_FIXES[(w, py)]
+        if (w, py) in ext_py_fixes:
+            new_py = ext_py_fixes[(w, py)]
             if new_py is None:
                 stats["deleted_wrong_py"] += 1
                 continue
             py = new_py
             stats["fixed_py"] += 1
-        if (w, py) in EXT_TOLERANCE_REWEIGHT and w_int(wt) > EXT_TOLERANCE_REWEIGHT[(w, py)]:
-            wt = str(EXT_TOLERANCE_REWEIGHT[(w, py)])
+        if (w, py) in r2.R2_EXT_BOOST:
+            new_wt = str(r2.R2_EXT_BOOST[(w, py)])
+            if wt != new_wt:
+                wt = new_wt
+                stats["reweighted"] += 1
+        elif (w, py) in ext_pair_rw and w_int(wt) > ext_pair_rw[(w, py)]:
+            wt = str(ext_pair_rw[(w, py)])
             stats["reweighted"] += 1
         # Downweight medical xie clones in ext (idempotent: threshold > 50)
         if "血" in w and "xie" in py.split() and w_int(wt) > 50:
             wt = str(min(w_int(wt) // 8, 50))
             stats["reweighted"] += 1
-        if w in EXT_REWEIGHT and w_int(wt) > EXT_REWEIGHT[w]:
-            wt = str(EXT_REWEIGHT[w])
+        if w in ext_reweight and w_int(wt) > ext_reweight[w]:
+            wt = str(ext_reweight[w])
             stats["reweighted"] += 1
+        seen.add((w, py))
         out.append(format_entry(w, py, wt, extra))
+
+    to_add = [(w, py, wt) for (w, py, wt) in r2.R2_EXT_ADDITIONS if (w, py) not in seen]
+    if to_add:
+        out.append("# 补充常用短语与现代词")
+        for w, py, wt in to_add:
+            out.append(f"{w}\t{py}\t{wt}")
+            seen.add((w, py))
+            stats["added"] += 1
     return out
 
 
@@ -887,6 +926,7 @@ def clean_others(lines: list[str], stats: dict) -> list[str]:
         ("甜薄撑", "tian bo cheng"): "tian bao cheng",
         ("鸭脯", "ya fu"): "ya pu",
         ("心脏压塞", "xin zang ya se"): "xin zang ya sai",
+        ("椎牛", "zhui niu"): "chui niu",
     }
     others_word_fixes = {
         "溝呂木": ("沟吕木", "gou lv mu"),
@@ -895,17 +935,22 @@ def clean_others(lines: list[str], stats: dict) -> list[str]:
     }
     others_delete_words = {
         "滔博", "原贴", "肉沫", "延用", "颠佬", "自醒",
-        "二刺", "租宝", "分裤", "性价", "触式",
+        "二刺", "租宝", "分裤", "性价", "触式", "两个曰",
+    }
+    others_delete_pairs = {
+        ("爪牙", "zhua ya"),  # moved to corrections.dict.yaml with正音 hint
     }
     tolerance_reweight = {
-        ("坐骑", "zuo ji"): 150,
-        ("铁骑", "tie ji"): 80,
+        ("坐骑", "zuo ji"): 45,
+        ("铁骑", "tie ji"): 15,
         ("一骑绝尘", "yi ji jue chen"): 80,
         ("扑街", "pu gai"): 80,
+        ("伯伯", "bai bai"): 200,
     }
     out = list(hdr)
     seen = set()
     in_legacy_block = False
+    in_diezi_block = False
     for line in body:
         stripped = line.strip()
         if stripped.startswith("##### 错音错字提示"):
@@ -914,12 +959,17 @@ def clean_others(lines: list[str], stats: dict) -> list[str]:
         if in_legacy_block:
             if stripped.startswith("##### 叠字"):
                 in_legacy_block = False
+                in_diezi_block = True
             else:
                 if parse_entry(line):
                     stats["deleted_legacy_hijack"] += 1
                 continue
-        if "这里额外加上 hao 音" in line:
-            out.append("# 这里的「镐」规范读音为 hao，补充 gao 容错读音")
+        if stripped.startswith("##### 叠字"):
+            in_diezi_block = True
+        elif stripped.startswith("##### ") and not stripped.startswith("##### 叠字"):
+            in_diezi_block = False
+        if "这里额外加上 hao 音" in line or "补充 gao 容错读音" in line:
+            out.append("# 这里的「镐」规范读音为 hao，补充正音与容错读音")
             continue
         parsed = parse_entry(line)
         if not parsed:
@@ -928,7 +978,7 @@ def clean_others(lines: list[str], stats: dict) -> list[str]:
             continue
         w, py, wt, extra = parsed
         py = normalize_lue_nue(py)
-        if w in others_delete_words:
+        if w in others_delete_words or (w, py) in others_delete_pairs:
             stats["deleted_noise_or_typo"] += 1
             continue
         if w in others_word_fixes:
@@ -942,6 +992,9 @@ def clean_others(lines: list[str], stats: dict) -> list[str]:
             if wt != new_wt:
                 wt = new_wt
                 stats["reweighted"] += 1
+        elif in_diezi_block and w.startswith(("两个", "三个", "四个")) and w_int(wt) > 0:
+            wt = "0"
+            stats["reweighted"] += 1
         seen.add((w, py))
         out.append(format_entry(w, py, wt, extra))
 
@@ -1073,6 +1126,7 @@ CORRECTIONS_WEIGHTS: dict[tuple[str, str], int] = {
 
 def clean_corrections(lines: list[str], stats: dict) -> list[str]:
     hdr, body = split_header_body(lines)
+    corr_weights = {**CORRECTIONS_WEIGHTS, **r2.R2_CORRECTIONS_WEIGHTS}
     out = list(hdr)
     seen = set()
     for line in body:
@@ -1094,65 +1148,75 @@ def clean_corrections(lines: list[str], stats: dict) -> list[str]:
         if w == "血脉贲张" and py == "xue mai pen zhang":
             stats["deleted_noise_or_typo"] += 1
             continue
-        if w == "血脉偾张" and py == "xue mai pen zhang" and extra != ["血脉喷张 | 血脉偾(fèn)张"]:
-            extra = ["血脉喷张 | 血脉偾(fèn)张"]
-            stats["fixed_comment"] += 1
-        if w == "咖喱" and py == "ka li" and extra != ["咖(gā)喱(lí)"]:
+        # Low-literacy mistakes & transliteration typo junk removed per Round 2 policy
+        if (w, py) in r2.R2_CORRECTIONS_DELETE:
+            stats["deleted_noise_or_typo"] += 1
+            continue
+        if (w, py) in r2.R2_CORRECTIONS_COMMENTS:
+            want_cmt = [r2.R2_CORRECTIONS_COMMENTS[(w, py)]]
+            if extra != want_cmt:
+                extra = want_cmt
+                stats["fixed_comment"] += 1
+        elif w == "咖喱" and py == "ka li" and extra != ["咖(gā)喱(lí)"]:
             extra = ["咖(gā)喱(lí)"]
             stats["fixed_comment"] += 1
-        if w == "仿佛" and py == "pang fo" and extra != ["仿(fǎng)佛(fú)"]:
+        elif w == "仿佛" and py == "pang fo" and extra != ["仿(fǎng)佛(fú)"]:
             extra = ["仿(fǎng)佛(fú)"]
             stats["fixed_comment"] += 1
-        if (w, py) in CORRECTIONS_WEIGHTS:
-            new_wt = str(CORRECTIONS_WEIGHTS[(w, py)])
+        if (w, py) in corr_weights:
+            new_wt = str(corr_weights[(w, py)])
             if wt != new_wt:
                 wt = new_wt
                 stats["reweighted"] += 1
         seen.add((w, py))
         out.append(format_entry(w, py, wt, extra))
 
-    # Calibrated common mispronunciation & habit entries
+    # Calibrated common mispronunciation, dual-reading & polyphone habit entries
     additions = [
         ("仿佛", "fang fo", "150", "仿(fǎng)佛(fú)"),
         ("仿佛", "pang fu", "0", "仿(fǎng)佛(fú)"),
-        ("纨绔子弟", "wan kua zi di", "0", "纨(wán)绔(kù)子弟"),
-        ("比萨", "pi sa", "300", "比(bǐ)萨(sà)"),
+        ("纨绔子弟", "wan kua zi di", "100", "纨(wán)绔(kù)子弟"),
+        ("比萨", "pi sa", "180", "音译比(bǐ)萨(sà) / 披萨"),
         ("给予", "gei yu", "200", "给(jǐ)予(yǔ)"),
-        ("张柏芝", "zhang bai zhi", "100", "张柏(bó)芝"),
+        ("张柏芝", "zhang bai zhi", "0", "规范 zhāng bǎi zhī / 习惯 zhāng bó zhī"),
         ("藤蔓", "teng man", "150", "藤蔓(wàn)"),
-        ("吱声", "zhi sheng", "800", "吱(zī)声"),
+        ("吱声", "zhi sheng", "300", "吱(zī)声"),
         ("调换", "tiao huan", "100", "调(diào)换"),
-        ("六安", "liu an", "150", "六(lù)安"),
+        ("六安", "liu an", "120", "六(lù)安"),
         ("六合区", "liu he qu", "50", "六(lù)合区"),
         ("南京六合", "nan jing liu he", "50", "南京六(lù)合"),
-        ("关卡", "guan ka", "200", "关(guān)卡(qiǎ)"),
+        ("关卡", "guan ka", "150", "关(guān)卡(qiǎ)"),
         ("供给", "gong gei", "200", "供(gōng)给(jǐ)"),
-        ("补给", "bu gei", "500", "补(bǔ)给(jǐ)"),
-        ("抹布", "mo bu", "350", "抹(mā)布"),
-        ("游说", "you shuo", "800", "游(yóu)说(shuì)"),
-        ("下调", "xia diao", "150", "下调(tiáo)"),
-        ("单薄", "dan bao", "800", "单薄(bó)"),
-        ("轻薄", "qing bao", "800", "轻薄(bó)"),
-        ("躯壳", "qu ke", "150", "躯壳(qiào)"),
+        ("补给", "bu gei", "250", "补(bǔ)给(jǐ)"),
+        ("抹布", "mo bu", "200", "抹(mā)布"),
+        ("游说", "you shuo", "400", "游(yóu)说(shuì)"),
+        ("下调", "xia diao", "35", "下调(tiáo)"),
+        ("单薄", "dan bao", "400", "单薄(bó)"),
+        ("轻薄", "qing bao", "400", "轻薄(bó)"),
+        ("躯壳", "qu ke", "60", "躯壳(qiào)"),
         ("裸露", "luo lou", "150", "裸露(lù)"),
-        ("外露", "wai lou", "150", "外露(lù)"),
+        ("外露", "wai lou", "60", "外露(lù)"),
         ("深藏不露", "shen cang bu lou", "100", "深藏不露(lù)"),
         ("魔爪", "mo zhua", "150", "魔爪(zhǎo)"),
         ("爪哇", "zhua wa", "100", "爪(zhǎo)哇"),
-        ("脉脉", "mai mai", "500", "脉(mò)脉"),
+        ("脉脉", "mai mai", "300", "脉(mò)脉"),
         ("扛鼎", "kang ding", "50", "扛(gāng)鼎"),
         ("薄膜", "bao mo", "80", "薄(bó)膜"),
-        ("刘禅", "liu chan", "300", "刘禅(shàn)"),
+        ("刘禅", "liu chan", "200", "刘禅(shàn)"),
         ("吐蕃", "tu fan", "50", "吐蕃(bō)"),
         ("泊松分布", "po song fen bu", "50", "泊(bó)松分布"),
         ("便宜坊", "pian yi fang", "50", "便(biàn)宜坊"),
         ("镀铬", "du luo", "50", "镀铬(gè)"),
-        ("凑合", "cou huo", "150", "凑活(合he)"),
+        ("凑合", "cou huo", "150", "凑合(he)"),
         ("契诃夫", "qi ke fu", "100", "契科(诃hē)夫"),
+    ] + r2.R2_CORRECTIONS_ADDITIONS
+    to_add = [
+        (w, py, wt, cmt)
+        for (w, py, wt, cmt) in additions
+        if (w, py) not in seen and (w, py) not in r2.R2_CORRECTIONS_DELETE
     ]
-    to_add = [(w, py, wt, cmt) for (w, py, wt, cmt) in additions if (w, py) not in seen]
     if to_add:
-        out.append("# 常用易错音与习惯读音提示")
+        out.append("# 常用易错音、争议读音与习惯读音提示")
         for w, py, wt, cmt in to_add:
             out.append(f"{w}\t{py}\t{wt}\t{cmt}")
             seen.add((w, py))
@@ -1211,6 +1275,15 @@ def clean_food(lines: list[str], stats: dict) -> list[str]:
             if new_py != py:
                 py = new_py
                 stats["fixed_py"] += 1
+        if w == "弥猴桃":
+            stats["deleted_noise_or_typo"] += 1
+            continue
+        if w == "干烧大虾" and w_int(wt) < 150:
+            wt = "150"
+            stats["reweighted"] += 1
+        elif w == "玫瑰凉糕" and w_int(wt) < 30:
+            wt = "30"
+            stats["reweighted"] += 1
         out.append(format_entry(w, py, wt, extra))
     return out
 
@@ -1248,7 +1321,7 @@ def clean_place(lines: list[str], stats: dict) -> list[str]:
         ("川藏立交", "chuan cang li jiao"): "chuan zang li jiao",
         ("龙爪堰", "long zhao yan"): "long zhua yan",
         ("大差市", "da cha shi"): "da chai shi",
-        ("宝幢", "bao chuang"): "bao zhuang",
+        ("宝幢", "bao zhuang"): "bao chuang",
         ("查桥", "cha qiao"): "zha qiao",
         ("蛤地", "ha di"): "ge di",
         ("闵行开发区", "min xing kai fa qu"): "min hang kai fa qu",
@@ -1323,8 +1396,14 @@ def clean_place(lines: list[str], stats: dict) -> list[str]:
                 py = new_py
                 stats["fixed_py"] += 1
         # Fix 民乐 weight inflation (716 was from folk music min yue)
-        if w == "民乐" and py == "min le":
+        if w in r2.R2_PLACE_DELETE_WORDS:
+            stats["deleted_noise_or_typo"] += 1
+            continue
+        if w == "民乐" and py == "min le" and wt != "20":
             wt = "20"
+            stats["reweighted"] += 1
+        elif w in r2.R2_PLACE_REWEIGHT and w_int(wt) > r2.R2_PLACE_REWEIGHT[w]:
+            wt = str(r2.R2_PLACE_REWEIGHT[w])
             stats["reweighted"] += 1
         out.append(format_entry(w, py, wt, extra))
     return out
@@ -1401,6 +1480,9 @@ def clean_chess2(lines: list[str], stats: dict) -> list[str]:
             if wt != new_wt:
                 wt = new_wt
                 stats["reweighted"] += 1
+        elif w in r2.R2_CHESS2_REWEIGHT and w_int(wt) > r2.R2_CHESS2_REWEIGHT[w]:
+            wt = str(r2.R2_CHESS2_REWEIGHT[w])
+            stats["reweighted"] += 1
         out.append(format_entry(w, py, wt, extra))
         if move_re.search(w) and "che" in py.split():
             ju_py = replace_syl_at(w, py, "车", "che", "ju")
@@ -1408,7 +1490,8 @@ def clean_chess2(lines: list[str], stats: dict) -> list[str]:
                 ju_additions.append(format_entry(w, ju_py, wt, extra))
                 existing.add((w, ju_py))
     if ju_additions:
-        out.append("# 象棋「车」标准 ju 读音")
+        if "# 象棋「车」标准 ju 读音" not in out:
+            out.append("# 象棋「车」标准 ju 读音")
         out.extend(ju_additions)
         stats["added"] += len(ju_additions)
     return out
@@ -1449,6 +1532,9 @@ def clean_chess(lines: list[str], stats: dict) -> list[str]:
         elif (w, py) == ("长星", "zhang xing"):
             py = "chang xing"
             stats["fixed_py"] += 1
+        if w in r2.R2_CHESS_REWEIGHT and w_int(wt) > r2.R2_CHESS_REWEIGHT[w]:
+            wt = str(r2.R2_CHESS_REWEIGHT[w])
+            stats["reweighted"] += 1
         out.append(format_entry(w, py, wt, extra))
         if "车" in w and "che" in py.split():
             ju_py = replace_syl_at(w, py, "车", "che", "ju")
@@ -1456,7 +1542,8 @@ def clean_chess(lines: list[str], stats: dict) -> list[str]:
                 ju_additions.append(format_entry(w, ju_py, wt, extra))
                 existing.add((w, ju_py))
     if ju_additions:
-        out.append("# 象棋「车」标准 ju 读音")
+        if "# 象棋「车」标准 ju 读音" not in out:
+            out.append("# 象棋「车」标准 ju 读音")
         out.extend(ju_additions)
         stats["added"] += len(ju_additions)
     return out
@@ -1522,6 +1609,9 @@ def clean_geography(lines: list[str], stats: dict) -> list[str]:
         if (w, py) in py_fixes:
             py = py_fixes[(w, py)]
             stats["fixed_py"] += 1
+        if w in r2.R2_GEO_REWEIGHT and w_int(wt) > r2.R2_GEO_REWEIGHT[w]:
+            wt = str(r2.R2_GEO_REWEIGHT[w])
+            stats["reweighted"] += 1
         out.append(format_entry(w, py, wt, extra))
     return out
 
@@ -1593,6 +1683,9 @@ def clean_industry_product(lines: list[str], stats: dict) -> list[str]:
         if (w, py) in py_fixes:
             py = py_fixes[(w, py)]
             stats["fixed_py"] += 1
+        if w == "防撞设施" and w_int(wt) < 120:
+            wt = "120"
+            stats["reweighted"] += 1
         out.append(format_entry(w, py, wt, extra))
     return out
 
@@ -1624,14 +1717,17 @@ def clean_shulihua(lines: list[str], stats: dict) -> list[str]:
         ("乙炔发生器", "yi gui fa sheng qi"): "yi que fa sheng qi",
         ("苯胺红", "ben an gong"): "ben an hong",
     }
+    py_fixes.update(r2.R2_SHULIHUA_PY_FIXES)
     word_fixes = {
         "胡罗卜素": ("胡萝卜素", "hu luo bo su"),
         "三角架": ("三脚架", "san jiao jia"),
         "菸硷": ("烟碱", "yan jian"),
         "异菸肼": ("异烟肼", "yi yan jing"),
         "葡聚糖凝膠": ("葡聚糖凝胶", "pu ju tang ning jiao"),
+        "重铬酸鈉": ("重铬酸钠", "chong ge suan na"),
     }
-    reweight = {"标碳烷": 5, "标键烷": 5, "水磁双阻": 5, "赛罗": 100}
+    reweight = {"标碳烷": 5, "标键烷": 5, "水磁双阻": 5, "赛罗": 100, **r2.R2_SHULIHUA_REWEIGHT}
+    seen_shul: set[tuple[str, str]] = set()
     for offset, line in enumerate(body):
         if news_span and news_span[0] <= offset <= news_span[1]:
             if parse_entry(line):
@@ -1649,12 +1745,16 @@ def clean_shulihua(lines: list[str], stats: dict) -> list[str]:
             if sim_w != w:
                 w = sim_w
                 stats["fixed_word_or_trad"] += 1
-        if w in ("滴滴滴", "同担"):
+        if w in ("滴滴滴", "同担") or w in r2.R2_SHULIHUA_DELETE_WORDS:
             stats["deleted_noise_or_typo"] += 1
             continue
         if w in word_fixes:
             w, py = word_fixes[w]
             stats["fixed_word_or_trad"] += 1
+        norm_py = r2.normalize_shulihua_corrupted_py(w, py, replace_syl_at)
+        if norm_py != py:
+            py = norm_py
+            stats["fixed_py"] += 1
         if (w, py) in py_fixes:
             new_py = py_fixes[(w, py)]
             if new_py is None:
@@ -1662,10 +1762,17 @@ def clean_shulihua(lines: list[str], stats: dict) -> list[str]:
                 continue
             py = new_py
             stats["fixed_py"] += 1
-        if w in reweight:
+        if w in r2.R2_SHULIHUA_BOOST and w_int(wt) < r2.R2_SHULIHUA_BOOST[w]:
+            wt = str(r2.R2_SHULIHUA_BOOST[w])
+            stats["reweighted"] += 1
+        elif w in reweight and w_int(wt) > reweight[w]:
             wt = str(reweight[w])
             stats["reweighted"] += 1
+        seen_shul.add((w, py))
         out.append(format_entry(w, py, wt, extra))
+    if ("粘合剂", "zhan he ji") not in seen_shul:
+        out.append("粘合剂\tzhan he ji\t35")
+        stats["added"] += 1
     return out
 
 
@@ -1809,7 +1916,8 @@ def clean_medication(lines: list[str], stats: dict) -> list[str]:
         "氯氮艹卓": ("氯氮䓬", "lv dan zhuo"),
         "菸碱型受体": ("烟碱型受体", "yan jian xing shou ti"),
     }
-    delete_words = {"海尔洗衣机", "海咯因检测试剂", "种氨基酸", "牛羊等", "尅伐", "派蒙"}
+    med_py_fixes.update(r2.R2_MED_PY_FIXES)
+    delete_words = {"海尔洗衣机", "海咯因检测试剂", "种氨基酸", "牛羊等", "尅伐", "派蒙"} | r2.R2_MED_DELETE_WORDS
 
     # Pre-scan which medical words already have an 'xue' version so we can drop redundant 'xie' clones
     has_xue = set()
@@ -1860,14 +1968,19 @@ def clean_medication(lines: list[str], stats: dict) -> list[str]:
                 if new_py != py:
                     py = new_py
                     stats["fixed_py"] += 1
+        if w in r2.R2_MED_BOOST and w_int(wt) < r2.R2_MED_BOOST[w]:
+            wt = str(r2.R2_MED_BOOST[w])
+            stats["reweighted"] += 1
+        elif w in r2.R2_MED_REWEIGHT and w_int(wt) > r2.R2_MED_REWEIGHT[w]:
+            wt = str(r2.R2_MED_REWEIGHT[w])
+            stats["reweighted"] += 1
         out.append(format_entry(w, py, wt, extra))
     return out
 
 
 def clean_game(lines: list[str], stats: dict) -> list[str]:
     hdr, body = split_header_body(lines)
-    va_span = find_entry_span(body, ("爱心巧克力", "ai xin qiao ke li"), ("团啊", "tuan a"))
-    d3_span = find_entry_span(body, ("阿卡蘭斯之星", "a ka lan si zhi xing"), ("左克林的凝視", "zuo ke lin de ning shi"))
+    quest_span = find_entry_span(body, ("暗虎精", "an hu jing"), ("做任务", "zuo ren wu"))
     out = list(hdr)
     game_py_fixes = {
         ("陶泥", "bai tao ni"): "tao ni",
@@ -1951,14 +2064,16 @@ def clean_game(lines: list[str], stats: dict) -> list[str]:
         ("船長", "chuan chang"): "chuan zhang",
         ("百夫長", "bai fu chang"): "bai fu zhang",
         ("單手", "shan shou"): "dan shou",
+        **r2.R2_GAME_PY_FIXES,
     }
     delete_words = {
         "虚无飘渺", "震摄", "莣鋽壹苆", "叽叽叽叽叽叽叽叽叽叽", "咩咩咩咩咩咩咩",
         "求伞啊啊啊啊", "装比", "吃藕",
-    }
+    } | r2.R2_GAME_DELETE_WORDS
     reweight = {
         "男神": 400, "维拉": 100, "锈湖": 150, "阿布": 150, "赤练": 50,
         "伍德": 200, "塔克": 150, "莫雷": 80, "春娇": 100, "邦邦": 100,
+        **r2.R2_GAME_REWEIGHT,
     }
     for offset, line in enumerate(body):
         parsed = parse_entry(line)
@@ -1971,6 +2086,9 @@ def clean_game(lines: list[str], stats: dict) -> list[str]:
         if w in delete_words:
             stats["deleted_noise_or_typo"] += 1
             continue
+        if quest_span and quest_span[0] <= offset <= quest_span[1] and r2.is_game_quantifier_fragment(w):
+            stats["deleted_noise_or_typo"] += 1
+            continue
         if (w, py) in game_py_fixes:
             new_py = game_py_fixes[(w, py)]
             if new_py is None:
@@ -1978,12 +2096,33 @@ def clean_game(lines: list[str], stats: dict) -> list[str]:
                 continue
             py = new_py
             stats["fixed_py"] += 1
-        if (d3_span and d3_span[0] <= offset <= d3_span[1]) or (va_span and va_span[0] <= offset <= va_span[1]):
-            sim_w = jp_t2s(w)
-            if sim_w != w:
-                w = sim_w
-                stats["fixed_word_or_trad"] += 1
-        if w in reweight and w_int(wt) > reweight[w]:
+        # Convert Traditional / Japanese Shinjitai globally in game dict
+        had_ji = "姫" in w
+        sim_w = jp_t2s(w)
+        if sim_w != w:
+            w = sim_w
+            stats["fixed_word_or_trad"] += 1
+            if had_ji and "zhen" in py.split():
+                py = replace_syl_at(w, py, "姬", "zhen", "ji")
+                stats["fixed_py"] += 1
+        if w in delete_words:
+            stats["deleted_noise_or_typo"] += 1
+            continue
+        # Systemic 什 shen -> shi for foreign transliterations
+        new_py = r2.fix_non_shenme_shi(w, py, replace_syl_at)
+        if new_py != py:
+            py = new_py
+            stats["fixed_py"] += 1
+        # Systemic 长 ("long") zhang -> chang in equipment/creature names
+        if any(w.startswith(p) for p in r2.R2_GAME_CHANG_WORDS) and "zhang" in py.split():
+            new_py = replace_syl_at(w, py, "长", "zhang", "chang")
+            if new_py != py:
+                py = new_py
+                stats["fixed_py"] += 1
+        if w in r2.R2_GAME_BOOST and w_int(wt) < r2.R2_GAME_BOOST[w]:
+            wt = str(r2.R2_GAME_BOOST[w])
+            stats["reweighted"] += 1
+        elif w in reweight and w_int(wt) > reweight[w]:
             wt = str(reweight[w])
             stats["reweighted"] += 1
         out.append(format_entry(w, py, wt, extra))
@@ -2017,6 +2156,7 @@ def clean_sport(lines: list[str], stats: dict) -> list[str]:
     reweight = {
         "热刺": 200, "罗本": 300, "球友": 60, "维拉": 100, "伍德": 200,
         "塔克": 150, "圈速": 150, "耶伦": 100, "中圈": 150, "球后": 40,
+        **r2.R2_SPORT_REWEIGHT,
     }
     for line in body:
         parsed = parse_entry(line)
@@ -2026,6 +2166,13 @@ def clean_sport(lines: list[str], stats: dict) -> list[str]:
             continue
         w, py, wt, extra = parsed
         py = normalize_lue_nue(py)
+        sim_w = jp_t2s(w)
+        if sim_w != w:
+            w = sim_w
+            stats["fixed_word_or_trad"] += 1
+        if w in r2.R2_SPORT_DELETE_WORDS:
+            stats["deleted_noise_or_typo"] += 1
+            continue
         if w in word_fixes:
             w, py = word_fixes[w]
             stats["fixed_word_or_trad"] += 1
@@ -2034,6 +2181,10 @@ def clean_sport(lines: list[str], stats: dict) -> list[str]:
             if new_py is None:
                 stats["deleted_wrong_py"] += 1
                 continue
+            py = new_py
+            stats["fixed_py"] += 1
+        new_py = r2.fix_non_shenme_shi(w, py, replace_syl_at)
+        if new_py != py:
             py = new_py
             stats["fixed_py"] += 1
         if w in reweight and w_int(wt) > reweight[w]:
@@ -2203,14 +2354,23 @@ def clean_literature(lines: list[str], stats: dict) -> list[str]:
         if w == "甕㼜大瘿":
             w = "瓮㼜大瘿"
             stats["fixed_word_or_trad"] += 1
-        if (w, py) in lit_py_fixes:
+        if (w, py) in r2.R2_LIT_PY_FIXES:
+            py = r2.R2_LIT_PY_FIXES[(w, py)]
+            stats["fixed_py"] += 1
+        elif (w, py) in lit_py_fixes:
             new_py = lit_py_fixes[(w, py)]
             if new_py is None:
                 stats["deleted_wrong_py"] += 1
                 continue
             py = new_py
             stats["fixed_py"] += 1
-        if w == "甄后" and w_int(wt) > 40:
+        if w in r2.R2_LIT_BOOST and w_int(wt) < r2.R2_LIT_BOOST[w]:
+            wt = str(r2.R2_LIT_BOOST[w])
+            stats["reweighted"] += 1
+        elif w in r2.R2_LIT_REWEIGHT and w_int(wt) > r2.R2_LIT_REWEIGHT[w]:
+            wt = str(r2.R2_LIT_REWEIGHT[w])
+            stats["reweighted"] += 1
+        elif w == "甄后" and w_int(wt) > 40:
             wt = "40"
             stats["reweighted"] += 1
         out.append(format_entry(w, py, wt, extra))
@@ -2333,13 +2493,15 @@ def clean_idiom(lines: list[str], stats: dict) -> list[str]:
         ("张说", "zhang shuo"): "zhang yue",
         ("溱洧", "qin wei"): "zhen wei",
     }
+    idiom_py_fixes.update(r2.R2_IDIOM_PY_FIXES)
     delete_words = {
         "对薄公堂", "宽洪大量", "矜矜业业",
         "瑞文戴尔", "军团要塞", "暮色森林", "剑刃风暴", "时光之穴", "扭曲虚空",
         "千针石林", "山岭巨人", "暗冰反射", "混世冥牛", "昏睡药水",
         "冯诺依曼", "面向对象程序设计", "初级临时驾驶执照",
         "臭不要脸", "砖家叫兽", "婊子无情",
-    }
+    } | r2.R2_IDIOM_DELETE_WORDS
+    seen_idiom: set[tuple[str, str]] = set()
     for line in body:
         parsed = parse_entry(line)
         if not parsed:
@@ -2357,6 +2519,9 @@ def clean_idiom(lines: list[str], stats: dict) -> list[str]:
         elif w == "蓴羹鲈脍":
             w = "莼羹鲈脍"
             stats["fixed_word_or_trad"] += 1
+        elif (w, py) == ("吃著不尽", "chi zhu bu jin"):
+            w, py = "吃着不尽", "chi zhuo bu jin"
+            stats["fixed_word_or_trad"] += 1
         if (w, py) in idiom_py_fixes:
             new_py = idiom_py_fixes[(w, py)]
             if new_py is None:
@@ -2364,7 +2529,16 @@ def clean_idiom(lines: list[str], stats: dict) -> list[str]:
                 continue
             py = new_py
             stats["fixed_py"] += 1
+        if w in r2.R2_IDIOM_BOOST and w_int(wt) < r2.R2_IDIOM_BOOST[w]:
+            wt = str(r2.R2_IDIOM_BOOST[w])
+            stats["reweighted"] += 1
+        seen_idiom.add((w, py))
         out.append(format_entry(w, py, wt, extra))
+    for w, py, wt in r2.R2_IDIOM_ADDITIONS:
+        if (w, py) not in seen_idiom:
+            out.append(f"{w}\t{py}\t{wt}")
+            seen_idiom.add((w, py))
+            stats["added"] += 1
     return out
 
 
@@ -2436,7 +2610,8 @@ def clean_history(lines: list[str], stats: dict) -> list[str]:
         ("褚民谊", "zhu min yi"): "chu min yi",
         ("褚人获", "zhu ren huo"): "chu ren huo",
     }
-    delete_words = {"许诸", "张颌", "秃发偄檀", "肯能"}
+    hist_py_fixes.update(r2.R2_HISTORY_PY_FIXES)
+    delete_words = {"许诸", "张颌", "秃发偄檀", "肯能"} | r2.R2_HISTORY_DELETE_WORDS
     word_fixes = {
         "孔亻由": ("孔伷", "kong zhou"),
         "鬱林王": ("郁林王", "yu lin wang"),
@@ -2445,8 +2620,12 @@ def clean_history(lines: list[str], stats: dict) -> list[str]:
         "刘準": ("刘准", "liu zhun"),
         "宋顺帝刘準": ("宋顺帝刘准", "song shun di liu zhun"),
         "邹凌澣": ("邹凌瀚", "zou ling han"),
+        "东治": ("东冶", "dong ye"),
     }
-    reweight = {"糜芳": 100, "暴王": 50, "吴军": 200, "李旦": 150, "刘贺": 150, "朱温": 60, "张恒": 80}
+    reweight = {
+        "糜芳": 100, "暴王": 50, "吴军": 200, "李旦": 150, "刘贺": 150,
+        "朱温": 60, "张恒": 80, "东冶": 30, **r2.R2_HISTORY_REWEIGHT,
+    }
     for line in body:
         parsed = parse_entry(line)
         if not parsed:
@@ -2468,7 +2647,10 @@ def clean_history(lines: list[str], stats: dict) -> list[str]:
                 continue
             py = new_py
             stats["fixed_py"] += 1
-        if w in reweight and w_int(wt) > reweight[w]:
+        if w in r2.R2_HISTORY_BOOST and w_int(wt) < r2.R2_HISTORY_BOOST[w]:
+            wt = str(r2.R2_HISTORY_BOOST[w])
+            stats["reweighted"] += 1
+        elif w in reweight and w_int(wt) > reweight[w]:
             wt = str(reweight[w])
             stats["reweighted"] += 1
         out.append(format_entry(w, py, wt, extra))
@@ -2509,6 +2691,7 @@ def clean_name(lines: list[str], stats: dict) -> list[str]:
         ("于省吾", "yu sheng wu"): "yu xing wu",
         ("博伽茹", "bo ga ru"): "bo jia ru",
         ("佛母", "fu mu"): "fo mu",
+        **r2.R2_NAME_PY_FIXES,
     }
     delete_words = {
         # Typos (real forms exist in base/ext)
@@ -2554,8 +2737,11 @@ def clean_name(lines: list[str], stats: dict) -> list[str]:
         if (w, py) in name_py_fixes:
             py = name_py_fixes[(w, py)]
             stats["fixed_py"] += 1
+        if w in r2.R2_NAME_REWEIGHT and w_int(wt) > r2.R2_NAME_REWEIGHT[w]:
+            wt = str(r2.R2_NAME_REWEIGHT[w])
+            stats["reweighted"] += 1
         # Respect header `# 名字 要降频`: cap weights at 150 so names don't hijack base words
-        if w_int(wt) > 150:
+        elif w_int(wt) > 150:
             wt = "150"
             stats["reweighted"] += 1
         out.append(format_entry(w, py, wt, extra))
@@ -2564,7 +2750,6 @@ def clean_name(lines: list[str], stats: dict) -> list[str]:
 
 def clean_name2(lines: list[str], stats: dict) -> list[str]:
     hdr, body = split_header_body(lines)
-    akb_span = find_entry_span(body, ("阿部瑪利亞", "a bu ma li ya"), ("佐佐木優佳里", "zuo zuo mu you jia li"))
     out = list(hdr)
     name2_py_fixes = {
         ("鲹坂长实", "can ban chang shi"): "shen ban chang shi",
@@ -2599,10 +2784,10 @@ def clean_name2(lines: list[str], stats: dict) -> list[str]:
         ("王栎鑫", "wang yue xin"): "wang li xin",
         ("藏人", "cang ren"): "zang ren",
         ("沙都", "sha dou"): "sha du",
-        ("味噌", "wei ceng"): "wei zeng",
         ("梁翘柏", "liang qiao bai"): "liang qiao bo",
         ("闵玧其", "min men qi"): "min yun qi",
         ("都暻秀", "dou jing xiu"): "du jing xiu",
+        **r2.R2_NAME2_PY_FIXES,
     }
     word_fixes = {
         "阿褔": ("阿福", "a fu"),
@@ -2635,13 +2820,25 @@ def clean_name2(lines: list[str], stats: dict) -> list[str]:
         if w in word_fixes:
             w, py = word_fixes[w]
             stats["fixed_word_or_trad"] += 1
-        if akb_span and akb_span[0] <= offset <= akb_span[1]:
-            sim_w = jp_t2s(w)
-            if sim_w != w:
-                w = sim_w
-                stats["fixed_word_or_trad"] += 1
+        # Systemic Traditional / Shinjitai conversion across name2 (incl. 姫 -> 姬 & zhen -> ji)
+        had_ji = "姫" in w
+        sim_w = jp_t2s(w)
+        if sim_w != w:
+            w = sim_w
+            stats["fixed_word_or_trad"] += 1
+            if had_ji and "zhen" in py.split():
+                py = replace_syl_at(w, py, "姬", "zhen", "ji")
+                stats["fixed_py"] += 1
+        # Systemic 什 shen -> shi for foreign transliterations
+        new_py = r2.fix_non_shenme_shi(w, py, replace_syl_at)
+        if new_py != py:
+            py = new_py
+            stats["fixed_py"] += 1
+        if w in r2.R2_NAME2_REWEIGHT and w_int(wt) > r2.R2_NAME2_REWEIGHT[w]:
+            wt = str(r2.R2_NAME2_REWEIGHT[w])
+            stats["reweighted"] += 1
         # Respect header `# 需要降频`
-        if w_int(wt) > 150:
+        elif w_int(wt) > 150:
             wt = "150"
             stats["reweighted"] += 1
         out.append(format_entry(w, py, wt, extra))
@@ -2714,8 +2911,15 @@ def clean_exthot(lines: list[str], stats: dict) -> list[str]:
                 continue
             py = new_py
             stats["fixed_py"] += 1
-        if w == "预瞄" and w_int(wt) > 120:
-            wt = "120"
+        new_py = r2.fix_non_shenme_shi(w, py, replace_syl_at)
+        if new_py != py:
+            py = new_py
+            stats["fixed_py"] += 1
+        if w in r2.R2_EXTHOT_BOOST and w_int(wt) < r2.R2_EXTHOT_BOOST[w]:
+            wt = str(r2.R2_EXTHOT_BOOST[w])
+            stats["reweighted"] += 1
+        elif w in r2.R2_EXTHOT_REWEIGHT and w_int(wt) > r2.R2_EXTHOT_REWEIGHT[w]:
+            wt = str(r2.R2_EXTHOT_REWEIGHT[w])
             stats["reweighted"] += 1
         out.append(format_entry(w, py, wt, extra))
     return out
@@ -2825,9 +3029,32 @@ def clean_music(lines: list[str], stats: dict) -> list[str]:
     return out
 
 
+def clean_computer(lines: list[str], stats: dict) -> list[str]:
+    hdr, body = split_header_body(lines)
+    out = list(hdr)
+    for line in body:
+        parsed = parse_entry(line)
+        if not parsed:
+            if line.strip().startswith("#"):
+                out.append(line)
+            continue
+        w, py, wt, extra = parsed
+        new_py = normalize_lue_nue(py)
+        if new_py != py:
+            py = new_py
+            stats["fixed_py"] += 1
+        if w == "发版" and w_int(wt) > 35:
+            wt = "35"
+            stats["reweighted"] += 1
+        out.append(format_entry(w, py, wt, extra))
+    return out
+
+
 def clean_composite(lines: list[str], stats: dict) -> list[str]:
     hdr, body = split_header_body(lines)
     tail_span = find_entry_span(body, ("晒伤没", "shai shang mei"), ("挨没挨住", "ai mei ai zhu"), next_word="没晒伤")
+    r2_suffix_span = find_entry_span(body, ("李副校", "li fu xiao"), ("之会源堂", "zhi hui yuan tang"))
+    r2_template_span = find_entry_span(body, ("示之以", "shi zhi yi"), ("晒不伤", "shai bu shang"))
     out = list(hdr)
     comp_py_fixes = {
         ("双马尾", "shuang ma yi"): "shuang ma wei",
@@ -2861,6 +3088,7 @@ def clean_composite(lines: list[str], stats: dict) -> list[str]:
         ("舌苔薄白", "she tai bao bai"): "she tai bo bai",
         ("金属薄板", "jin shu bao ban"): "jin shu bo ban",
         ("流血涂野草", "liu xie tu ye cao"): "liu xue tu ye cao",
+        **r2.R2_COMP_PY_FIXES,
     }
     delete_words = {
         # Classic & grammatical typos
@@ -2875,7 +3103,7 @@ def clean_composite(lines: list[str], stats: dict) -> list[str]:
         "几乎无", "说中国", "一个全新的", "不熟悉的", "出版社出版", "㨃回去",
         "王菲真", "墙安装", "墙涂料", "墙面装", "一下把", "一下放", "一不能",
         "一专业", "一专线", "一专门", "一丝不", "大河田", "少主子", "吉普号", "天眼妹",
-    }
+    } | r2.R2_COMP_DELETE_WORDS
     promo_substrings = (
         "关注我的公众号", "点击下方", "点击右上角", "点个赞", "欢迎私信", "私信问我",
         "加我微信", "评论区留言", "图片来自网络", "图片来源于网络", "转载请注明出处",
@@ -2883,15 +3111,46 @@ def clean_composite(lines: list[str], stats: dict) -> list[str]:
         "后台回复", "本文首发", "点赞收藏", "点赞关注", "一键三连", "私信我",
     )
     rep4_re = re.compile(r"(.)\1{3,}")
+    comp_reweight = {"科技布": 150, **r2.R2_COMP_REWEIGHT}
 
+    # Pre-scan existing 谁 shei weights for idempotent shui-to-shei pairing & scaling
+    existing_pairs: set[tuple[str, str]] = set()
+    shei_wt: dict[str, int] = {}
+    for line in body:
+        p = parse_entry(line)
+        if not p:
+            continue
+        w0, py0, wt0, _ = p
+        py0 = normalize_lue_nue(py0)
+        existing_pairs.add((w0, py0))
+        if "谁" in w0 and "shei" in py0.split():
+            shei_wt[w0] = max(shei_wt.get(w0, 0), w_int(wt0))
+
+    in_dui_block = False
+    shei_additions: list[str] = []
     for offset, line in enumerate(body):
-        if tail_span and tail_span[0] <= offset <= tail_span[1]:
+        stripped = line.strip()
+        if stripped.startswith("##### 㨃"):
+            in_dui_block = True
+            continue
+        if in_dui_block:
+            if stripped.startswith("##### ") and not stripped.startswith("##### 㨃"):
+                in_dui_block = False
+            else:
+                if parse_entry(line):
+                    stats["deleted_noise_or_typo"] += 1
+                continue
+        if (
+            (tail_span and tail_span[0] <= offset <= tail_span[1])
+            or (r2_suffix_span and r2_suffix_span[0] <= offset <= r2_suffix_span[1])
+            or (r2_template_span and r2_template_span[0] <= offset <= r2_template_span[1])
+        ):
             if parse_entry(line):
                 stats["deleted_template_tail"] += 1
             continue
         parsed = parse_entry(line)
         if not parsed:
-            if line.strip().startswith("#"):
+            if stripped.startswith("#"):
                 out.append(line)
             continue
         w, py, wt, extra = parsed
@@ -2929,13 +3188,49 @@ def clean_composite(lines: list[str], stats: dict) -> list[str]:
             if new_py != py:
                 py = new_py
                 stats["fixed_py"] += 1
+        # Fix systemic 干咳 hai -> ke (char-aligned so 咳嗽厉害 / 孩子的咳嗽 are untouched)
+        if "干咳" in w and "hai" in py.split():
+            new_py = replace_syl_at(w, py, "咳", "hai", "ke")
+            if new_py != py:
+                py = new_py
+                stats["fixed_py"] += 1
         if (w, py) in comp_py_fixes:
-            py = comp_py_fixes[(w, py)]
+            new_py = comp_py_fixes[(w, py)]
+            if new_py is None:
+                stats["deleted_wrong_py"] += 1
+                continue
+            py = new_py
             stats["fixed_py"] += 1
-        if w == "科技布" and w_int(wt) > 150:
-            wt = "150"
+        if w in r2.R2_COMP_BOOST and w_int(wt) < r2.R2_COMP_BOOST[w]:
+            wt = str(r2.R2_COMP_BOOST[w])
             stats["reweighted"] += 1
+        elif w in comp_reweight and w_int(wt) > comp_reweight[w]:
+            wt = str(comp_reweight[w])
+            stats["reweighted"] += 1
+        # Systemic 谁 shui -> pair with shei (w >= 10) & idempotently downweight shui
+        if "谁" in w and "shui" in py.split():
+            shei_py = replace_syl_at(w, py, "谁", "shui", "shei")
+            if shei_py != py:
+                old_w = w_int(wt)
+                if (w, shei_py) not in existing_pairs and old_w >= 10:
+                    shei_additions.append(format_entry(w, shei_py, wt, extra))
+                    existing_pairs.add((w, shei_py))
+                    shei_wt[w] = max(shei_wt.get(w, 0), old_w)
+                ref = shei_wt.get(w, 0)
+                if ref > 0:
+                    target = min(max(ref // 6, 1), 40)
+                    if old_w > target:
+                        wt = str(target)
+                        stats["reweighted"] += 1
         out.append(format_entry(w, py, wt, extra))
+
+    if ("轻薄本", "qing bao ben") not in existing_pairs:
+        shei_additions.append("轻薄本\tqing bao ben\t400")
+        existing_pairs.add(("轻薄本", "qing bao ben"))
+    if shei_additions:
+        out.append("# 补充常用口语「谁(shei)」与「轻薄本」读音")
+        out.extend(shei_additions)
+        stats["added"] += len(shei_additions)
     return out
 
 
@@ -3048,6 +3343,7 @@ def clean_en_dicts(manifest: dict) -> None:
         ("RFT", "RFT"): ("RTF", "RTF"),
         ("Rich Text Format", "RFT"): ("Rich Text Format", "RTF"),
         ("Lens Protocal", "LensProtocal"): ("Lens Protocol", "LensProtocol"),
+        **r2.R2_EN_EXT_FIXES,
     }
     ext_delete = {"Italilian", "unfo", "Negro", "heil", "hading", "limon", "Kuromis", "fuckity", "shitwork", "beyatch", "fo"}
     ext_lines = (SRC_ROOT / "en_dicts/en_ext.dict.yaml").read_text(encoding="utf-8").splitlines()
@@ -3057,26 +3353,40 @@ def clean_en_dicts(manifest: dict) -> None:
     ext_fixed = 0
     ext_del = 0
     ext_dedup = 0
+    ext_added = 0
     for line in body:
         p = parse_entry(line)
         if not p:
             ext_out.append(line)
             continue
         w, code, wt, extra = p
-        if w in ext_delete:
+        if w in ext_delete or (w, code) in r2.R2_EN_EXT_DELETE:
             ext_del += 1
             continue
         if (w, code) in ext_fixes:
             w, code = ext_fixes[(w, code)]
             ext_fixed += 1
+        if (w, code) in r2.R2_EN_EXT_REWEIGHT:
+            new_wt = r2.R2_EN_EXT_REWEIGHT[(w, code)]
+            if wt != new_wt:
+                wt = new_wt
+                ext_fixed += 1
         if (w, code) in ext_seen:
             ext_dedup += 1
             continue
         ext_seen.add((w, code))
         ext_out.append(format_entry(w, code, wt, extra))
+    new_en_rows = [(w, code, wt) for (w, code, wt) in r2.R2_EN_EXT_ADDITIONS if (w, code) not in ext_seen]
+    if new_en_rows:
+        ext_out.append("# 补充现代 AI / 开发 / 硬件常用英文词汇")
+        for w, code, wt in new_en_rows:
+            ext_seen.add((w, code))
+            ext_out.append(format_entry(w, code, wt, []))
+            ext_added += 1
     (en_dir / "en_ext.dict.yaml").write_text("\n".join(ext_out) + "\n", encoding="utf-8", newline="\n")
     manifest["files"]["en_dicts/en_ext.dict.yaml"] = {
-        "before": len(ext_lines), "after": len(ext_out), "fixed": ext_fixed, "deleted": ext_del, "deduped": ext_dedup
+        "before": len(ext_lines), "after": len(ext_out), "fixed": ext_fixed,
+        "deleted": ext_del, "deduped": ext_dedup, "added": ext_added,
     }
 
     # 2. en.dict.yaml (deduped against en_ext, preserving valid English word 'nous')
@@ -3119,35 +3429,8 @@ def clean_en_dicts(manifest: dict) -> None:
         "before": len(en_lines), "after": len(en_out), "deleted": en_del, "deduped_against_en_ext": en_dedup
     }
 
-    # 3. cn_en.txt & cn_en_double_pinyin.txt (kept 100% 1:1 synced)
-    cn_en_1 = (SRC_ROOT / "en_dicts/cn_en.txt").read_text(encoding="utf-8").splitlines()
-    cn_en_2 = (SRC_ROOT / "en_dicts/cn_en_double_pinyin.txt").read_text(encoding="utf-8").splitlines()
-    assert len(cn_en_1) == len(cn_en_2), "cn_en line count mismatch"
-    cn_en_delete = {"n遍", "动L", "e仔", "k他命"}
-    cn_en_rename = {"Up主": "UP主", "Cinity厅": "CINITY厅", "Papi酱": "papi酱"}
-    out1, out2 = [], []
-    del_cnt, fix_cnt = 0, 0
-    for l1, l2 in zip(cn_en_1, cn_en_2):
-        if not l1.strip() or l1.strip().startswith("#"):
-            out1.append(l1)
-            out2.append(l2)
-            continue
-        p1 = l1.split("\t")
-        p2 = l2.split("\t")
-        w = p1[0]
-        if w in cn_en_delete:
-            del_cnt += 1
-            continue
-        if w in cn_en_rename:
-            p1[0] = cn_en_rename[w]
-            p2[0] = cn_en_rename[w]
-            fix_cnt += 1
-        out1.append("\t".join(p1))
-        out2.append("\t".join(p2))
-    (en_dir / "cn_en.txt").write_text("\n".join(out1) + "\n", encoding="utf-8", newline="\n")
-    (en_dir / "cn_en_double_pinyin.txt").write_text("\n".join(out2) + "\n", encoding="utf-8", newline="\n")
-    manifest["files"]["en_dicts/cn_en.txt"] = {"before": len(cn_en_1), "after": len(out1), "fixed": fix_cnt, "deleted": del_cnt}
-    manifest["files"]["en_dicts/cn_en_double_pinyin.txt"] = {"before": len(cn_en_2), "after": len(out2), "fixed": fix_cnt, "deleted": del_cnt}
+    # 3. cn_en.txt & all 6 shuangpin cn_en_*.txt tables (kept 100% synced)
+    r2.clean_all_cn_en_files(SRC_ROOT, DST_ROOT, manifest)
 
 
 def clean_opencc_texts(manifest: dict) -> None:
@@ -3277,7 +3560,7 @@ def main() -> None:
         ("cn_dicts_cell/chess.dict.yaml", clean_chess),
         ("cn_dicts_cell/chess2.dict.yaml", clean_chess2),
         ("cn_dicts_cell/music.dict.yaml", clean_music),
-        ("cn_dicts_cell/computer.dict.yaml", clean_generic),
+        ("cn_dicts_cell/computer.dict.yaml", clean_computer),
         ("cn_dicts_cell/media.dict.yaml", clean_generic),
         ("cn_dicts_cell/inputmethod.dict.yaml", clean_inputmethod),
         ("cn_dicts_cell/food.dict.yaml", clean_food),
@@ -3362,14 +3645,20 @@ def main() -> None:
         (DST_ROOT / rel).write_text("\n".join(final_lines) + "\n", encoding="utf-8", newline="\n")
         manifest["files"][rel] = dict(st)
 
-    # Step 3: ensure cn_dicts_cell/luna is disabled in rime_frost.dict.yaml
+    # Step 3: ensure cn_dicts_cell/luna is disabled & modern alphanumeric combos exist in rime_frost.dict.yaml
     rf_lines = (SRC_ROOT / "rime_frost.dict.yaml").read_text(encoding="utf-8").splitlines()
+    rf_existing = {l.strip() for l in rf_lines if l.strip() and not l.strip().startswith("#")}
+    rf_missing = [tok for tok in r2.R2_RIME_FROST_ALPHANUM_ADDITIONS if tok not in rf_existing]
     rf_out = []
+    inserted_alphanum = False
     for l in rf_lines:
         if l.strip() == "- cn_dicts_cell/luna":
             rf_out.append("  # - cn_dicts_cell/luna  # 繁体异体与冗余词条较多，默认关闭")
         else:
             rf_out.append(l)
+            if l.strip() == "M4A1" and rf_missing and not inserted_alphanum:
+                rf_out.extend(rf_missing)
+                inserted_alphanum = True
     (DST_ROOT / "rime_frost.dict.yaml").write_text("\n".join(rf_out) + "\n", encoding="utf-8", newline="\n")
 
     # Step 4: English & OpenCC

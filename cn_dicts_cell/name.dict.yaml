@@ -43,7 +43,7 @@ sort: by_weight
 伊卡尔迪	yi ka er di	140
 伊坂幸太郎	yi ban xing tai lang	119
 伊斯科	yi si ke	150
-妃英理	fei ying li	150
+妃英理	fei ying li	40
 姆巴佩	mu ba pei	150
 姚主席	yao zhu xi	150
 姆希塔良	mu xi ta liang	150
@@ -61,7 +61,7 @@ sort: by_weight
 来答	lai da	150
 唐军	tang jun	141
 迪伦	di lun	110
-白玲	bai ling	123
+白玲	bai ling	30
 郎平	lang ping	104
 米莱	mi lai	101
 韩烁	han shuo	109
@@ -70,8 +70,8 @@ sort: by_weight
 朱婷	zhu ting	96
 秦廷	qin ting	102
 王澍	wang shu	73
-盛瑾	sheng jin	103
-罗夏	luo xia	122
+盛瑾	sheng jin	30
+罗夏	luo xia	40
 魔禁	mo jin	98
 直子	zhi zi	89
 阿泽	a ze	110
@@ -81,7 +81,7 @@ sort: by_weight
 戈恩	ge en	77
 晴子	qing zi	86
 伯格	bo ge	62
-博子	bo zi	86
+博子	bo zi	40
 莱万	lai wan	112
 大超	da chao	89
 慕若	mu ruo	79
@@ -232,7 +232,7 @@ sort: by_weight
 梁欢	liang huan	73
 美琴	mei qin	77
 沙赞	sha zan	68
-唐迟	tang chi	64
+唐迟	tang chi	15
 安藤	an teng	73
 柯布	ke bu	55
 穆帅	mu shuai	65
@@ -251,7 +251,7 @@ sort: by_weight
 信长	xin chang	45
 佐菲	zuo fei	49
 洛瑞	luo rui	60
-叶藏	ye cang	58
+叶藏	ye zang	58
 黄霄云	huang xiao yun	150
 李靓蕾	li jing lei	150
 费艾诺	fei ai nuo	150
@@ -259,12 +259,12 @@ sort: by_weight
 狄承弼	di cheng bi	150
 康石石	kang shi shi	150
 袁小凛	yuan xiao lin	150
-王孝杰	wang xiao jie	150
+王孝杰	wang xiao jie	40
 杨嘉煜	yang jia yu	150
 图恒宇	tu heng yu	150
 李正元	li zheng yuan	150
 郑山傲	zheng shan ao	150
-游一庆	you yi qing	150
+游一庆	you yi qing	30
 秦怀久	qin huai jiu	150
 崔尼蒂	cui ni di	150
 钟秀勇	zhong xiu yong	150
@@ -513,7 +513,7 @@ sort: by_weight
 纳斯尔丁	na si er ding	6
 布尔加宁	bu er jia ning	6
 丰田佐吉	feng tian zuo ji	6
-滨田省吾	bang tian sheng wu	6
+滨田省吾	bin tian sheng wu	6
 真角大古	zhen jiao da gu	7
 蝶野晴美	die ye qing mei	14
 海野隆雄	hai ye long xiong	6
@@ -686,7 +686,7 @@ sort: by_weight
 索末菲	suo mo fei	44
 黄雪涛	huang xue tao	45
 邓尼兹	deng ni zi	44
-村西透	cun xi tou	54
+村西透	cun xi tou	10
 帅嘉谟	shuai jia mo	47
 雷妮亚	lei ni ya	51
 张敬富	zhang jing fu	51

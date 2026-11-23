@@ -596,7 +596,7 @@ use_preset_vocabulary: false
 甘麦红枣粥	gan mai hong zao zhou	0
 甘柠芝麻虾	gan ning zhi ma xia	0
 干烧臭鳜鱼	gan shao chou gui yu	0
-干烧大虾	gan shao da xia	0
+干烧大虾	gan shao da xia	150
 干烧冬笋	gan shao dong sun	2
 干烧荷包鱼	gan shao he bao yu	0
 干烧鸡翅	gan shao ji chi	0
@@ -5151,7 +5151,7 @@ use_preset_vocabulary: false
 玫瑰百果蜜糕	mei gui bai guo mi gao	0
 玫瑰冰雪酥	mei gui bing xue su	0
 玫瑰豆沙月饼	mei gui dou sha yue bing	0
-玫瑰凉糕	mei gui liang gao	0
+玫瑰凉糕	mei gui liang gao	30
 玫瑰魅力	mei gui mei li	0
 玫瑰米凉虾	mei gui mi liang xia	1
 玫瑰猪油松子枣泥麻饼	mei gui zhu you song zi zao ni ma bing	0
@@ -5175,7 +5175,6 @@ use_preset_vocabulary: false
 蜜番茄	mi fan qie	0
 蜜芙蓉	mi fu rong	0
 蜜桂花生糖	mi gui hua sheng tang	0
-弥猴桃	mi hou tao	9
 米花茶	mi hua cha	0
 米椒羊杂	mi jiao yang za	0
 蜜桔罐头	mi ju guan tou	0

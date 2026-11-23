@@ -150,7 +150,6 @@ iPhone 16 Plus	iPhone	3
 iPhone 16 Pro	iPhone	2
 iPhone 16 Pro Max	iPhone	1
 iPhone 17	iPhone	4
-iPhone 17 Plus	iPhone	3
 iPhone 17 Pro	iPhone	2
 iPhone 17 Pro Max	iPhone	1
 iPhone Air	iPhone	1
@@ -180,7 +179,7 @@ macOS Big Sur	macOS	5
 macOS Monterey	macOS	6
 macOS Ventura	macOS	7
 macOS Sonoma	macOS	8
-macOS Tahoe	macOS	9
+macOS Tahoe	macOS	10
 
 Windows	Windows	999
 Windows 95	Windows	1
@@ -295,7 +294,7 @@ Gross Domestic Product per capita	GrossDomesticProductpercapita
 LOL	LOL
 League of Legends	LOL
 League of Legends	LeagueofLegends
-Laugh Out Loudly	LOL
+Laugh Out Loud	LOL
 Laugh Out Loudly	LaughOutLoudly
 SQL Server	SQLServer
 Microsoft SQL Server	SQLServer
@@ -457,9 +456,9 @@ IPv6	IPv6
 Rick and Morty	RickandMorty
 uTools	uTool
 uTools	uTools
-AirPods	AirPods
+AirPods	AirPods	999
 AirPods Pro	AirPodsPro
-AirPods Max	AirPods
+AirPods Max	AirPods	1
 AirPods Max	AirPodsMax
 CallKit	CallKit
 OSS	OSS
@@ -664,7 +663,7 @@ Disk Utility	DiskUtility
 Diumoo	Diumoo
 Dropbox	Dropbox
 Dropzone	Dropzone
-Endnote	Endnote
+EndNote	EndNote
 Entropy	Entropy
 EPUB	EPUB
 Eureka	Eureka
@@ -759,14 +758,14 @@ Manico	Manico
 Maple	Maple
 MarkMyWords	MarkMyWords
 MarsEdit	MarsEdit
-Mathtype	Mathtype
+MathType	MathType
 MIPS	MIPS
 Moke	Moke
 MoneyWiz	MoneyWiz
 Moom	Moom
 MP3	MP3
 MP4	MP4
-MplayerX	MplayerX
+MPlayerX	MPlayerX
 Netflix	Netflix
 Noizio	Noizio
 nvALT	nvALT
@@ -830,7 +829,7 @@ Sublime Text	SublimeText
 TechWeb	TechWeb
 Terminal	Terminal
 TestFlight	TestFlight
-Texshop	Texshop
+TeXShop	TeXShop
 Textastic	Textastic
 TextExpander	TextExpander
 TextWrangler	TextWrangler
@@ -909,7 +908,7 @@ Not Suitable For Work	NotSuitableForWork
 Termius	Termius
 Jinja	Jinja
 NetSetMan	NetSetMan
-Cinity	Cinity
+CINITY	CINITY
 UTC	UTC
 Coordinated Universal Time	UTC
 Coordinated Universal Time	CoordinatedUniversalTime
@@ -972,7 +971,7 @@ Network Attached Storage	NAS
 Network Attached Storage	NetworkAttachedStorage
 CommonMark	CommonMark
 Goldmark	Goldmark
-blackFriday	blackFriday
+Black Friday	BlackFriday
 One UI	OneUI
 Raycast	Raycast
 CloudFront	CloudFront
@@ -1077,7 +1076,7 @@ WebKit	WebKit
 Igalia	Igalia
 WebCore	WebCore
 GNU	GNU
-GNU General Public License	GNU
+GNU's Not Unix	GNU
 GNU General Public License	GNUGeneralPublicLicense
 GPL	GPL
 GNU General Public License	GPL
@@ -1848,7 +1847,7 @@ World War II	WWII
 WWIII	WWIII
 World War III	WWIII
 PL/pgSQL	PL/pgSQL
-Procedural Language / PostGres Structured Query Language	PL/pgSQL
+Procedural Language/PostgreSQL	PL/pgSQL
 IQ	IQ
 Intelligence quotient	IQ
 BTW	BTW
@@ -1959,7 +1958,7 @@ Patreon	Patreon
 Anaconda	Anaconda
 LLaMA	LLaMA
 Large Language Model Meta AI	LLaMA
-R.I.P	R.I.P
+R.I.P.	R.I.P.
 AIGC	AIGC
 AI Generated Content	AIGC
 Presto	Presto
@@ -2040,7 +2039,6 @@ KeyCastr	KeyCastr
 Laugh Tale	LaughTale
 Joy Boy	JoyBoy
 RustRover	RustRover
-bilibili	bilibili
 Terraria	Terraria
 Unihan	Unihan
 DLsite	DLsite
@@ -2100,10 +2098,9 @@ Frundles	Frundles
 Brotato	Brotato
 engineman	engineman
 unhuman	unhuman
-unhumified	unhumified
 unhumanize	unhumanize
 P2P	P2P
-F2A	F2A
+2FA	2FA
 B2B	B2B
 C2C	C2C
 B2C	B2C
@@ -2263,7 +2260,6 @@ Moonshot AI	MoonshotAI
 01.AI	01AI
 01AI	01AI
 StepFun	StepFun
-Stepfun	Stepfun
 SenseTime	SenseTime
 Megvii	Megvii
 ModelBest	ModelBest
@@ -2279,3 +2275,186 @@ Kuaishou	Kuaishou
 DJI	DJI
 Zhihu	Zhihu
 Bilibili	Bilibili
+# 补充现代 AI / 开发 / 硬件常用英文词汇
+Two-Factor Authentication	2FA
+macOS Sequoia	macOS	9
+macOS Sequoia	macOSSequoia
+macOS Tahoe	macOSTahoe
+AirPods Pro	AirPods	2
+iPhone 16e	iPhone16e
+iPhone 17	iPhone17
+iPhone 17 Pro	iPhone17Pro
+iPhone 17 Pro Max	iPhone17ProMax
+iPhone Air	iPhoneAir
+Xbox Series X	XboxSeriesX
+RIP	RIP
+LLM	LLM
+Large Language Model	LLM
+LLMs	LLMs
+VLM	VLM
+Vision Language Model	VLM
+MCP	MCP
+Model Context Protocol	MCP
+NPU	NPU
+Neural Processing Unit	NPU
+TPU	TPU
+Tensor Processing Unit	TPU
+ONNX	ONNX
+RAG	RAG
+Retrieval-Augmented Generation	RAG
+LoRA	LoRA
+RLHF	RLHF
+GRPO	GRPO
+MoE	MoE
+Mixture of Experts	MoE
+SFT	SFT
+DPO	DPO
+CoT	CoT
+Chain of Thought	CoT
+TTS	TTS
+Text-to-Speech	TTS
+ASR	ASR
+Automatic Speech Recognition	ASR
+SOTA	SOTA
+Agentic	Agentic
+Embedding	Embedding
+PyTorch	PyTorch
+TensorFlow	TensorFlow
+CUDA	CUDA
+TensorRT	TensorRT
+ROCm	ROCm
+MLX	MLX
+Ollama	Ollama
+vLLM	vLLM
+GGUF	GGUF
+LM Studio	LMStudio
+ComfyUI	ComfyUI
+Claude Code	ClaudeCode
+DeepSeek-R1	DeepSeek-R1
+DeepSeek-V3	DeepSeek-V3
+GPT-4o	GPT-4o
+GPT-4.1	GPT-4.1
+GPT-5	GPT-5
+Qwen	Qwen
+Kimi	Kimi
+Doubao	Doubao
+Mistral	Mistral
+Llama	Llama
+Cursor	Cursor
+Windsurf	Windsurf
+Cline	Cline
+Aider	Aider
+Trae	Trae
+Manus	Manus
+Dify	Dify
+Coze	Coze
+n8n	n8n
+LangGraph	LangGraph
+OpenRouter	OpenRouter
+ModelScope	ModelScope
+NotebookLM	NotebookLM
+Copilot	Copilot
+Perplexity	Perplexity
+Antigravity	Antigravity
+Docker	Docker
+Podman	Podman
+Rust	Rust
+Rime	Rime
+Weasel	Weasel
+Squirrel	Squirrel
+Hamster	Hamster
+Trime	Trime
+CSV	CSV
+TSV	TSV
+JSONL	JSONL
+Parquet	Parquet
+gRPC	gRPC
+OAuth	OAuth
+JWT	JWT
+SSO	SSO
+MFA	MFA
+CORS	CORS
+CI/CD	CI/CD
+WSL	WSL
+WSL2	WSL2
+Tailscale	Tailscale
+Supabase	Supabase
+FastAPI	FastAPI
+Pydantic	Pydantic
+Vite	Vite
+Svelte	Svelte
+Nuxt	Nuxt
+React	React
+Bun	Bun
+Deno	Deno
+Tauri	Tauri
+CMake	CMake
+Zig	Zig
+NixOS	NixOS
+DuckDB	DuckDB
+ClickHouse	ClickHouse
+Kafka	Kafka
+RabbitMQ	RabbitMQ
+Milvus	Milvus
+Qdrant	Qdrant
+Prisma	Prisma
+Drizzle	Drizzle
+Telegram	Telegram
+Feishu	Feishu
+Obsidian	Obsidian
+Zed	Zed
+Ghostty	Ghostty
+WezTerm	WezTerm
+Alacritty	Alacritty
+Zotero	Zotero
+Overleaf	Overleaf
+Qualcomm	Qualcomm
+MediaTek	MediaTek
+TSMC	TSMC
+ASML	ASML
+RTX	RTX
+DLSS	DLSS
+OLED	OLED
+HDR	HDR
+SoC	SoC
+RISC-V	RISC-V
+visionOS	visionOS
+HyperOS	HyperOS
+MagicOS	MagicOS
+USB4	USB4
+Wi-Fi 6	WiFi6
+Wi-Fi 7	WiFi7
+PS5	PS5
+Switch 2	Switch2
+Redmi	Redmi
+OnePlus	OnePlus
+iQOO	iQOO
+realme	realme
+Bambu	Bambu
+Taobao	Taobao
+Weibo	Weibo
+Xiaohongshu	Xiaohongshu
+RedNote	RedNote
+OKR	OKR
+ROI	ROI
+GMV	GMV
+DAU	DAU
+MAU	MAU
+SOP	SOP
+PRD	PRD
+SKU	SKU
+MBTI	MBTI
+KOL	KOL
+MCN	MCN
+UGC	UGC
+ETF	ETF
+ESG	ESG
+CPI	CPI
+PMI	PMI
+ADAS	ADAS
+NOA	NOA
+FSD	FSD
+LiDAR	LiDAR
+PHEV	PHEV
+BEV	BEV
+EREV	EREV
