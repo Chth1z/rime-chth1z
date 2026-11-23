@@ -10,55 +10,39 @@ sort: by_weight
 ...
 ##### 容错词
 # 一些口语读音
-空落落	kong luo luo	16
 空落落	kong lao lao	16
-空落落的	kong luo luo de	87
 空落落的	kong lao lao de	87
 # 「阿房宫」的注音争议比较大
-阿房宫	e pang gong	180
 阿房宫	a pang gong	180
 阿房宫	e fang gong	180
 阿房宫	a fang gong	180
-阿房宫赋	e pang gong fu	44
 阿房宫赋	a pang gong fu	44
 阿房宫赋	e fang gong fu	44
 阿房宫赋	a fang gong fu	44
 # 「伯伯」方言
-伯伯	bo bo	464
 伯伯	bai bai	464
 # 「斜」的古音
-远上寒山石径斜	yuan shang han shan shi jing xie	23
 远上寒山石径斜	yuan shang han shan shi jing xia	23
 # 「骑」目前统读 qi
-坐骑	zuo qi	942
-坐骑	zuo ji	942
-铁骑	tie qi	287
-铁骑	tie ji	287
-一骑绝尘	yi qi jue chen	654
-一骑绝尘	yi ji jue chen	654
+坐骑	zuo ji	150
+铁骑	tie ji	80
+一骑绝尘	yi ji jue chen	80
 一骑当千	yi qi dang qian	53
 一骑当千	yi ji dang qian	53
-一骑红尘妃子笑	yi qi hong chen fei zi xiao	37
 一骑红尘妃子笑	yi ji hong chen fei zi xiao	37
 走单骑	zou dan qi	0
 走单骑	zou dan ji	0
-千里走单骑	qian li zou dan qi	95
 千里走单骑	qian li zou dan ji	95
 # 「街」的粤语和东北话读音及常见的两种写法
-仆街	pu jie	37
 仆街	pu gai	37
-扑街	pu jie	1188
-扑街	pu gai	1188
-扑街仔	pu jie zai	20
+扑街	pu gai	80
 扑街仔	pu gai zai	20
 仆街仔	pu jie zai	0
 仆街仔	pu gai zai	0
-街溜子	jie liu zi	70
 街溜子	gai liu zi	70
 # 「錤」这个字念 ji，但是台湾媒体都会念成 qi，他的英文名 Ming-Chi Kuo 也是接近 qi
-郭明錤	guo ming ji	31
 郭明錤	guo ming qi	31
-# 「镐 gao hao」的发音，多为韩国人名，不知道 🤷‍♂️，词库里为 gao，这里额外加上 hao 音
+# 这里的「镐」规范读音为 hao，补充 gao 容错读音
 李昌镐	li chang hao	237
 曹世镐	cao shi hao	0
 张镐哲	zhang gao zhe	0
@@ -69,182 +53,6 @@ sort: by_weight
 李陈镐	li chen hao	2
 赵亮镐	zhao liang hao	5
 郑俊镐	zheng jun hao	1
-##### 错音错字提示。与 corrector.lua 配合，上面的是正确的，下面是错误的
-### 错音
-馄饨	hun tun	698
-馄饨	hun dun	698
-主角	zhu jue	23465
-主角	zhu jiao	23465
-角色	jue se	32382
-角色	jiao se	32382
-比萨	bi sa	163
-比萨	pi sa	163
-比萨饼	bi sa bing	23
-比萨饼	pi sa bing	23
-吃比萨	chi bi sa	5
-吃比萨	chi pi sa	5
-说服	shuo fu	5104
-说服	shui fu	5104
-道行	dao heng	275
-道行	dao hang	275
-模样	mu yang	5184
-模样	mo yang	5184
-有模有样	you mu you yang	277
-有模有样	you mo you yang	277
-一模一样	yi mu yi yang	5052
-一模一样	yi mo yi yang	5052
-装模作样	zhuang mu zuo yang	485
-装模作样	zhuang mo zuo yang	485
-人模狗样	ren mu gou yang	146
-人模狗样	ren mo gou yang	146
-模板	mu ban	16735
-模板	mo ban	16735
-阿弥陀佛	e mi tuo fo	371
-阿弥陀佛	a mi tuo fo	371
-南无阿弥陀佛	na mo e mi tuo fo	42
-南无阿弥陀佛	na mo a mi tuo fo	42
-南无阿弥陀佛	nan wu e mi tuo fo	42
-南无阿弥陀佛	nan wu a mi tuo fo	42
-给予	ji yu	11261
-给予	gei yu	11261
-槟榔	bing lang	475
-槟榔	bin lang	475
-张柏芝	zhang bo zhi	680
-张柏芝	zhang bai zhi	680
-藤蔓	teng wan	322
-藤蔓	teng man	322
-弄堂	long tang	126
-弄堂	nong tang	126
-心宽体胖	xin kuan ti pan	36
-心宽体胖	xin kuan ti pang	36
-埋怨	man yuan	1140
-埋怨	mai yuan	1140
-虚与委蛇	xu yu wei yi	93
-虚与委蛇	xu yu wei she	93
-木讷	mu ne	425
-木讷	mu na	425
-独乐乐	du yue le	13
-独乐乐	du le le	13
-众乐乐	zhong yue le	20
-众乐乐	zhong le le	20
-荨麻	qian ma	71
-荨麻	xun ma	71
-荨麻疹	xun ma zhen	198
-荨麻疹	qian ma zhen	198
-模具	mu ju	1935
-模具	mo ju	1935
-草薙	cao ti	88
-草薙	cao zhi	88
-草薙京	cao ti jing	134
-草薙京	cao zhi jing	134
-草薙剑	cao ti jian	17
-草薙剑	cao zhi jian	17
-贾平凹	jia ping wa	238
-贾平凹	jia ping ao	238
-雪佛兰	xue fu lan	373
-雪佛兰	xue fo lan	373
-强劲	qiang jing	1505
-强劲	qiang jin	1505
-胴体	dong ti	80
-胴体	tong ti	80
-力能扛鼎	li neng gang ding	26
-力能扛鼎	li neng kang ding	26
-鸭绿江	ya lu jiang	153
-鸭绿江	ya lv jiang	153
-大腹便便	da fu pian pian	144
-大腹便便	da fu bian bian	144
-卡脖子	qia bo zi	298
-卡脖子	ka bo zi	298
-吱声	zi sheng	116
-吱声	zhi sheng	116
-掺和	chan huo	548
-掺和	chan he	548
-掺和	can huo	548
-掺和	can he	548
-称职	chen zhi	86
-称职	cheng zhi	86
-螺蛳粉	luo si fen	532
-螺蛳粉	luo shi fen	532
-调换	diao huan	592
-调换	tiao huan	592
-太行山	tai hang shan	389
-太行山	tai xing shan	389
-歇斯底里	xie si di li	878
-歇斯底里	jie si di li	878
-暖和	nuan huo	685
-暖和	nuan he	685
-模棱两可	mo leng liang ke	847
-模棱两可	mo ling liang ke	847
-鄱阳湖	po yang hu	1054
-鄱阳湖	pan yang hu	1054
-脖颈	bo geng	480
-脖颈	bo jing	480
-脖颈儿	bo geng er	0
-脖颈儿	bo jing er	0
-结扎	jie za	126
-结扎	jie zha	126
-海参崴	hai shen wai	289
-海参崴	hai shen wei	289
-厚朴	hou po	52
-厚朴	hou pu	52
-大宛马	da yuan ma	9
-大宛马	da wan ma	9
-龇牙	zi ya	60
-龇牙	ci ya	60
-龇着牙	zi zhe ya	14
-龇着牙	ci zhe ya	14
-龇牙咧嘴	zi ya lie zui	166
-龇牙咧嘴	ci ya lie zui	166
-头皮屑	tou pi xie	460
-头皮屑	tou pi xue	460
-六安	lu an	108
-六安	liu an	108
-六安县	lu an xian	4
-六安县	liu an xian	4
-六安市	lu an shi	25
-六安市	liu an shi	25
-六合区	lu he qu	3
-六合区	liu he qu	3
-安徽六安	an hui lu an	10
-安徽六安	an hui liu an	10
-安徽六安市	an hui lu an shi	3
-安徽六安市	an hui liu an shi	3
-安徽省六安市	an hui sheng lu an shi	8
-安徽省六安市	an hui sheng liu an shi	8
-南京六合	nan jing lu he	5
-南京六合	nan jing liu he	5
-南京六合区	nan jing lu he qu	1
-南京六合区	nan jing liu he qu	1
-南京市六合区	nan jing shi lu he qu	2
-南京市六合区	nan jing shi liu he qu	2
-偌大	ruo da	640
-偌大	nuo da	640
-饮鸩止渴	yin zhen zhi ke	348
-饮鸩止渴	yin jiu zhi ke	348
-饮鸩解渴	yin zhen jie ke	0
-饮鸩解渴	yin jiu jie ke	0
-### 错字
-曾经	ceng jing	39396
-曾今	ceng jin	0
-按捺	an na	75
-按耐	an nai	14
-按捺不住	an na bu zhu	295
-按耐不住	an nai bu zhu	206
-别价	bie jie	1
-别介	bie jie	31
-甭价	beng jie	0
-甭介	beng jie	0
-血脉贲张	xue mai ben zhang	0
-血脉偾张	xue mai fen zhang	85
-血脉喷张	xue mai pen zhang	86
-契诃夫	qi he fu	416
-契科夫	qi ke fu	65
-凑合	cou he	1456
-凑活	cou huo	314
-巨惠	ju hui	0
-钜惠	ju hui	15
-摩羯座	mo jie zuo	101
-魔蝎座	mo xie zuo	0
 ##### 叠字
 # 数据来源： https://zh.wikipedia.org/zh-cn/%E4%BA%8C%E5%8F%A0%E5%AD%97 https://zh.wikipedia.org/wiki/%E4%B8%89%E5%8F%A0%E5%AD%97 https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%8F%A0%E5%AD%97
 # 二叠字
@@ -256,7 +64,6 @@ sort: by_weight
 两个口	liang ge kou	0
 两个田	liang ge tian	0
 两个九	liang ge jiu	0
-两个人	liang ge ren	16591
 两个飞	liang ge fei	0
 两个戈	liang ge ge	0
 两个厶	liang ge si	0
@@ -283,8 +90,6 @@ sort: by_weight
 两个曰	liang ge yue	0
 两个尸	liang ge shi	0
 两个户	liang ge hu	2
-两个大	liang ge da	464
-两个八	liang ge ba	11
 两个而	liang ge er	0
 两个羊	liang ge yang	1
 两个吉	liang ge ji	1
@@ -306,7 +111,6 @@ sort: by_weight
 两个風	liang ge feng	0
 两个石	liang ge shi	0
 两个日	liang ge ri	0
-两个月	liang ge yue	6003
 两个目	liang ge mu	3
 两个白	liang ge bai	0
 两个百	liang ge bai	0
@@ -419,7 +223,6 @@ sort: by_weight
 三个秦	san ge qin	4
 三个若	san ge ruo	0
 三个雲	san ge yun	0
-三个人	san ge ren	4171
 三个刀	san ge dao	0
 三个十	san ge shi	1
 三个力	san ge li	0
@@ -521,7 +324,6 @@ sort: by_weight
 三个罒	san ge mu	0
 三个羗	san ge qiang	0
 三个老	san ge lao	0
-三个月	san ge yue	7715
 三个至	san ge zhi	0
 三个興	san ge xing	0
 三个足	san ge zu	4
@@ -552,7 +354,6 @@ sort: by_weight
 三个米	san ge mi	0
 # 四叠字
 四个乂	si ge yi	0
-四个人	si ge ren	2230
 四个厶	si ge si	0
 四个厶	si ge mou	0
 四个又	si ge you	0
@@ -566,7 +367,6 @@ sort: by_weight
 四个火	si ge huo	0
 四个牛	si ge niu	0
 四个魚	si ge yu	0
-四个月	si ge yue	1470
 四个日	si ge ri	0
 四个林	si ge lin	0
 四个水	si ge shui	0
@@ -966,7 +766,7 @@ sort: by_weight
 贝姐	bei jie	0
 贝九	bei jiu	0
 杯体	bei ti	0
-本传	ben chuan	0
+本传	ben zhuan	0
 本调	ben diao	0
 崩三	beng san	0
 比冲	bi chong	0
@@ -1060,7 +860,7 @@ sort: by_weight
 电分	dian fen	0
 店匠	dian jiang	0
 电通	dian tong	0
-点校	dian xiao	0
+点校	dian jiao	0
 电院	dian yuan	0
 丁蟹	ding xie	0
 丁修	ding xiu	0
@@ -1077,7 +877,6 @@ sort: by_weight
 毒唯	du wei	0
 端侧	duan ce	0
 短融	duan rong	0
-二刺	er ci	0
 二发	er fa	0
 二清	er qing	0
 樊登	fan deng	0
@@ -1113,7 +912,7 @@ sort: by_weight
 港科	gang ke	0
 冈伦	gang lun	0
 高代	gao dai	0
-高弹	gao dan	0
+高弹	gao tan	0
 高迪	gao di	0
 高瓴	gao ling	0
 高魔	gao mo	0
@@ -1196,7 +995,7 @@ sort: by_weight
 捷德	jie de	0
 接发	jie fa	0
 截骨	jie gu	0
-颉利	jie li	0
+颉利	xie li	0
 杰迷	jie mi	0
 解算	jie suan	0
 界王	jie wang	0
@@ -1277,7 +1076,7 @@ sort: by_weight
 罗总	luo zong	0
 绿魔	lv mo	0
 绿幕	lv mu	0
-率土	lv tu	0
+率土	shuai tu	0
 略磨	lve mo	0
 马院	ma yuan	0
 马兆	ma zhao	0
@@ -1450,13 +1249,12 @@ sort: by_weight
 太吾	tai wu	0
 泰妍	tai yan	0
 探歌	tan ge	0
-弹速	tan su	0
+弹速	dan su	0
 谈薪	tan xin	0
 探岳	tan yue	0
 汤哥	tang ge	0
 汤神	tang shen	0
 汤屋	tang wu	0
-滔博	tao bo	0
 藤井	teng jing	0
 题感	ti gan	0
 题设	ti she	0
@@ -1614,7 +1412,6 @@ sort: by_weight
 鱼柱	yu zhu	0
 院队	yuan dui	0
 袁华	yuan hua	0
-原贴	yuan tie	0
 月线	yue xian	0
 运化	yun hua	0
 杂味	za wei	0
@@ -1626,7 +1423,7 @@ sort: by_weight
 债法	zhai fa	0
 詹密	zhan mi	0
 詹蜜	zhan mi	0
-爪机	zhao ji	0
+爪机	zhua ji	0
 昭王	zhao wang	0
 折木	zhe mu	0
 浙师	zhe shi	0
@@ -1665,7 +1462,6 @@ sort: by_weight
 总悟	zong wu	0
 纵置	zong zhi	0
 走通	zou tong	0
-租宝	zu bao	0
 组局	zu ju	0
 祖源	zu yuan	0
 钻展	zuan zhan	0
@@ -1904,7 +1700,7 @@ sort: by_weight
 顶校	ding xiao	0
 定薪	ding xin	0
 顶置	ding zhi	0
-丢勒	diu lei	0
+丢勒	diu le	0
 动科	dong ke	0
 董平	dong ping	0
 东迁	dong qian	0
@@ -1971,7 +1767,6 @@ sort: by_weight
 匪气	fei qi	0
 废宅	fei zhai	0
 分锅	fen guo	0
-分裤	fen ku	0
 分奴	fen nu	0
 粉雪	fen xue	0
 粉质	fen zhi	0
@@ -2039,7 +1834,7 @@ sort: by_weight
 管科	guan ke	0
 官修	guan xiu	0
 管综	guan zong	0
-广佛	guang fu	0
+广佛	guang fo	0
 广工	guang gong	0
 光质	guang zhi	0
 贵腐	gui fu	0
@@ -2488,7 +2283,7 @@ sort: by_weight
 全俄	quan e	0
 全友	quan you	0
 全装	quan zhuang	0
-缺觉	que jue	0
+缺觉	que jiao	0
 燃机	ran ji	0
 热统	re tong	0
 忍村	ren cun	0
@@ -2500,7 +2295,6 @@ sort: by_weight
 日债	ri zhai	0
 融梗	rong geng	0
 肉量	rou liang	0
-肉沫	rou mo	0
 肉友	rou you	0
 入菜	ru cai	0
 入题	ru ti	0
@@ -2522,7 +2316,7 @@ sort: by_weight
 三赢	san ying	0
 三轴	san zhou	0
 杀殿	sha dian	0
-杀降	sha jiang	0
+杀降	sha xiang	0
 莎娃	sha wa	0
 闪付	shan fu	0
 商保	shang bao	0
@@ -2576,7 +2370,7 @@ sort: by_weight
 时相	shi xiang	0
 实刑	shi xing	0
 试译	shi yi	0
-豉油	shi you	0
+豉油	chi you	0
 失智	shi zhi	0
 首版	shou ban	0
 收边	shou bian	0
@@ -2594,7 +2388,7 @@ sort: by_weight
 首赞	shou zan	0
 首诊	shou zhen	0
 书币	shu bi	0
-庶长	shu chang	0
+庶长	shu zhang	0
 鼠绘	shu hui	0
 书剑	shu jian	0
 数媒	shu mei	0
@@ -2775,7 +2569,6 @@ sort: by_weight
 信院	xin yuan	0
 新砖	xin zhuan	0
 行波	xing bo	0
-性价	xing jia	0
 星瑞	xing rui	0
 星型	xing xing	0
 星越	xing yue	0
@@ -2804,7 +2597,6 @@ sort: by_weight
 盐价	yan jia	0
 掩膜	yan mo	0
 烟水	yan shui	0
-延用	yan yong	0
 研院	yan yuan	0
 养肤	yang fu	0
 养基	yang ji	0
@@ -3133,7 +2925,6 @@ sort: by_weight
 金银滩	jin yin tan	0
 项氏	xiang shi	0
 装反	zhuang fan	0
-西康	xi kang	0
 # 2026-09-28 新增：知乎热榜热词（影视人物与机构名/国际时事与网络用语/生物与天文术语/科技与饮食用语，来自 zhihu_missing_2026-09-28 分词缺失词）
 吕宗方	lv zong fang	0
 左蓝	zuo lan	0
@@ -3219,7 +3010,7 @@ sort: by_weight
 栾剑	luan jian	0
 陈妤颉	chen yu jie	0
 窟区	ku qu	0
-券门	quan men	0
+券门	xuan men	0
 塔基	ta ji	0
 特窟	te ku	0
 时思寺	shi si si	0
@@ -3282,7 +3073,6 @@ sort: by_weight
 椎牛	zhui niu	0
 罗粉	luo fen	0
 首作	shou zuo	0
-键值	jian zhi	0
 # 2026-10-08 新增：知乎热榜热词（缅北时政人物与地名/美国时政与网络用语/铁路与医疗术语，来自 zhihu_missing_2026-10-08 分词缺失词）
 缅军	mian jun	0
 缅方	mian fang	0
@@ -3350,7 +3140,6 @@ sort: by_weight
 趋严	qu yan	0
 备婚	bei hun	0
 腰旗	yao qi	0
-触式	chu shi	0
 技犯	ji fan	0
 斜襟	xie jin	0
 鬼服	gui fu	0
@@ -3481,7 +3270,6 @@ sort: by_weight
 书桓	shu huan	0
 尔泰	er tai	0
 蒙丹	meng dan	0
-马伊俐	ma yi li	0
 吴祯	wu zhen	0
 施晗	shi han	0
 武网	wu wang	0
@@ -3557,7 +3345,6 @@ sort: by_weight
 鬼本	gui ben	0
 装杯	zhuang bei	0
 零帧	ling zhen	0
-颠佬	dian lao	0
 李柯	li ke	0
 命元	ming yuan	0
 三白妆	san bai zhuang	0
@@ -3615,7 +3402,7 @@ sort: by_weight
 边军	bian jun	0
 闰分	run fen	0
 闰时	run shi	0
-麻爪	ma zhao	0
+麻爪	ma zhua	0
 # 2026-10-19 新增：知乎热榜热词（赛车手与足球球员人名/影视演员与角色及导演绰号/俱乐部与赛事术语/卫星与电子散热术语/搜索互联网黑话/医疗农业与方言日常用语，来自 zhihu_missing_2026-10-19 分词缺失词）
 德比斯	de bi si	0
 沈放	shen fang	0
@@ -3768,7 +3555,7 @@ sort: by_weight
 糙哥	cao ge	0
 补锅	bu guo	0
 贪刀	tan dao	0
-虐女	nue nv	0
+虐女	nve nv	0
 老破大	lao po da	0
 两犯	liang fan	0
 顶人	ding ren	0
@@ -3788,7 +3575,7 @@ sort: by_weight
 调版	tiao ban	0
 皮冻	pi dong	0
 羊腩	yang nan	0
-扒制	ba zhi	0
+扒制	pa zhi	0
 撇净	pie jing	0
 滑散	hua san	0
 现烫	xian tang	0
@@ -3808,7 +3595,7 @@ sort: by_weight
 金爷	jin ye	0
 赖希	lai xi	0
 世贞	shi zhen	0
-王抒	wang shu	0
+王忬	wang yu	0
 葛珍	ge zhen	0
 伯金	bo jin	0
 茹伯特	ru bo te	0
@@ -3857,7 +3644,7 @@ sort: by_weight
 温菜	wen cai	0
 糯口	nuo kou	0
 鲜辣	xian la	0
-甜薄撑	tian bo cheng	0
+甜薄撑	tian bao cheng	0
 鱼获	yu huo	0
 冰阔乐	bing kuo le	0
 血妈	xue ma	0
@@ -3878,7 +3665,7 @@ sort: by_weight
 西太	xi tai	0
 邓浩洪	deng hao hong	0
 长痛	chang tong	0
-鸭脯	ya fu	0
+鸭脯	ya pu	0
 丝麻	si ma	0
 主尊	zhu zun	0
 亲乌	qin wu	0
@@ -4017,7 +3804,7 @@ sort: by_weight
 东润杯	dong run bei	0
 三球	san qiu	0
 诸星弹	zhu xing dan	0
-溝呂木	gou lv mu	0
+沟吕木	gou lv mu	0
 毒敌山	du di shan	0
 玉真观	yu zhen guan	0
 黄眉	huang mei	0
@@ -4130,7 +3917,7 @@ sort: by_weight
 鸿蒙智行	hong meng zhi xing	0
 开谈	kai tan	0
 # 2026-11-04 新增：知乎热榜热词（医学术语「心脏压塞」、团队名「永达智诚」、院校简称「鲁艺」、常用词「多省」「疑因」「预载」，来自 zhihu_missing_2026-11-04 分词缺失词）
-心脏压塞	xin zang ya se	0
+心脏压塞	xin zang ya sai	0
 永达智诚	yong da zhi cheng	0
 鲁艺	lu yi	0
 多省	duo sheng	0
@@ -4484,7 +4271,6 @@ sort: by_weight
 法执	fa zhi	0
 # 网络用语/常用语
 纯卷	chun juan	0
-自醒	zi xing	0
 严抓	yan zhua	0
 生柴	sheng chai	0
 礼规	li gui	0
@@ -4595,3 +4381,7 @@ sort: by_weight
 水盐平衡	shui yan ping heng	0
 犯蠢	fan chun	0
 错选	cuo xuan	0
+# 补充常用口语词
+蚌住	beng zhu	0
+我勒个	wo le ge	0
+软弹	ruan tan	0

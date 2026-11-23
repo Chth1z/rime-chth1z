@@ -27,8 +27,6 @@ sort: by_weight
 白脸将	bai lian jiang	11
 对面笑	dui mian xiao	3
 千里照面	qian li zhao mian	0
-双车挫	shuang che cuo	4
-双車挫	shuang che cuo	0
 重炮	chong pao	211
 重炮杀	chong pao sha	7
 夹车炮	jia che pao	8
@@ -46,9 +44,9 @@ sort: by_weight
 双照将	shuang zhao jiang	1
 三进兵	san jin bing	3
 凤凰三点头	feng huang san dian tou	0
-太监追黄帝	tai jian zhui huang di	0
-送佛归殿	song fu gui dian	3
-双车协士	shuang che xie shi	0
+太监追皇帝	tai jian zhui huang di	0
+送佛归殿	song fo gui dian	3
+双车胁士	shuang ju xie shi	0
 双车夺士	shuang che duo shi	0
 双车夺炮	shuang che duo pao	0
 将不死	jiang bu si	0
@@ -133,7 +131,7 @@ sort: by_weight
 连冲四	lian chong si	1
 连冲三	lian chong san	0
 二十六种开局	er shi liu zhong kai ju	6
-长连禁手	zhang lian jin shou	6
+长连禁手	chang lian jin shou	6
 三三禁	san san jin	0
 三三禁手	san san jin shou	9
 三手交换	san shou jiao huan	35
@@ -147,7 +145,7 @@ sort: by_weight
 游星	you xing	75
 斜指开局	xie zhi kai ju	12
 斜指	xie zhi	14
-长星	zhang xing	21
+长星	chang xing	21
 峡月	xia yue	7
 云月	yun yue	33
 浦月	pu yue	53
@@ -165,3 +163,23 @@ sort: by_weight
 禁着点	jin zhao dian	3
 高目	gao mu	12
 提劫	ti jie	11
+# 象棋「车」标准 ju 读音
+兑车	dui ju	12
+抽车	chou ju	7
+夹车炮	jia ju pao	8
+双车夺士	shuang ju duo shi	0
+双车夺炮	shuang ju duo pao	0
+三车闹士	san ju nao shi	4
+借车使炮	jie ju shi pao	1
+借车使马	jie ju shi ma	1
+车留险地	ju liu xian di	0
+无根车炮	wu gen ju pao	0
+过河车	guo he ju	12
+敢死车	gan si ju	0
+弃车保帅	qi ju bao shuai	34
+弃帅保车	qi shuai bao ju	2
+直车对横车	zhi ju dui heng ju	0
+铁滑车	tie hua ju	13
+王车易位	wang ju yi wei	67
+# 象棋「车」标准 ju 读音
+# 象棋「车」标准 ju 读音

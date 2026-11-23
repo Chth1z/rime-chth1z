@@ -36,7 +36,7 @@ import_tables:
   - cn_dicts_cell/music
   - cn_dicts_cell/computer
   - cn_dicts_cell/composite
-  - cn_dicts_cell/luna
+  # - cn_dicts_cell/luna  # 繁体异体与冗余词条较多，默认关闭
   - cn_dicts_cell/name
 ...
 

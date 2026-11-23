@@ -30,19 +30,18 @@ jobs:
           UPSTREAM_SHA=$(git rev-parse --short upstream/master)
           echo "upstream_sha=${UPSTREAM_SHA}" >> "$GITHUB_OUTPUT"
 
-          # Sync ONLY pure upstream data files — never touch custom lua/, schemas, profiles/, themes/, or workflows
+          # Sync upstream dictionaries & OpenCC text tables — keep local .ocd2 binaries, lua/, schemas, profiles/, themes/, and workflows
           git checkout upstream/master -- \
             cn_dicts/ \
             cn_dicts_cell/ \
             en_dicts/ \
-            opencc/STCharacters.ocd2 \
-            opencc/STPhrases.ocd2 \
-            opencc/TWPhrases.ocd2 \
-            opencc/TWVariants.ocd2 \
             opencc/chinese_english.txt \
             opencc/english_chinese.txt \
             opencc/emoji.txt \
             opencc/others.txt
+
+      - name: Run deterministic dictionary & OpenCC cleaner
+        run: python3 scripts/clean-dicts.py
 
       - name: Verify dictionary & OpenCC integrity
         run: |
@@ -73,6 +72,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add cn_dicts/ cn_dicts_cell/ en_dicts/ opencc/
+          git add cn_dicts/ cn_dicts_cell/ en_dicts/ opencc/ rime_frost.dict.yaml
           git commit -m "chore(dicts): sync upstream rime-frost @ ${{ steps.sync.outputs.upstream_sha }}"
           git push origin HEAD:main

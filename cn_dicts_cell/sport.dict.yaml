@@ -72,7 +72,6 @@ use_preset_vocabulary: true
 单桧	dan gui	2
 单明杰	dan ming jie	0
 弹网	dan wang	7
-单晓娜	dan xiao na	1
 挡球	dang qiu	13
 德佩特里索娃	de pei te li suo wa	0
 荻村伊智朗	di cun yi zhi lang	0
@@ -225,7 +224,6 @@ use_preset_vocabulary: true
 李恩姬	li en ji	0
 李恩实	li en shi	0
 李富荣	li fu rong	1
-李虎	li hu	43
 李惠芬	li hui fen	0
 李佼	li jiao	0
 李洁	li jie	46
@@ -268,7 +266,6 @@ use_preset_vocabulary: true
 梅强	mei qiang	0
 梅什洛维茨	mei shen luo wei ci	0
 木方慎之介	mu fang shen zhi jie	0
-木子	mu zi	119
 娜塔莉娅	na ta li ya	20
 尼塔库	ni ta ku	0
 逆向发球	ni xiang fa qiu	0
@@ -408,7 +405,6 @@ use_preset_vocabulary: true
 许绍发	xu shao fa	0
 许斯	xu si	0
 玄静和	xuan jing he	1
-雅可比	ya ke bi	8
 亚萨卡	ya sa ka	0
 闫安	yan an	2
 闫森	yan sen	1
@@ -463,7 +459,6 @@ use_preset_vocabulary: true
 周斌	zhou bin	48
 周树森	zhou shu sen	0
 周阳	zhou yang	9
-朱芳	zhu fang	2
 朱世爀	zhu shi he	0
 朱文韬	zhu wen tao	0
 左推右攻	zuo tui you gong	2
@@ -641,7 +636,6 @@ use_preset_vocabulary: true
 达席尔瓦	da xi er wa	5
 丹麦米迪兰德	dan mai mi di lan de	0
 丹尼尔叶博亚	dan ni er ye bo ya	0
-稲本潤一	dao ben run yi	0
 德班球场	de ban qiu chang	0
 德尔迪约克	de er di yue ke	1
 德国弗赖堡	de guo fu lai bao	2
@@ -735,7 +729,7 @@ use_preset_vocabulary: true
 亨特拉尔	heng te la er	111
 洪都拉斯队	hong du la si dui	0
 洪映早	hong ying zao	0
-胡安卡斯蒂略	hu an ka si di lue	0
+胡安卡斯蒂略	hu an ka si di lve	0
 呼呼塞拉	hu hu sai la	0
 胡雷斯	hu lei si	0
 胡里奥塞萨尔	hu li ao sai sa er	0
@@ -802,7 +796,6 @@ use_preset_vocabulary: true
 卡佩塔尼奥斯	ka pei ta ni ao si	0
 卡普德维拉	ka pu de wei la	7
 卡托利卡	ka tuo li ka	0
-卡瓦略	ka wa lue	89
 凯塞里斯普	kai sai li si pu	0
 凯文博阿滕	kai wen bo a teng	3
 堪萨斯城奇才	kan sa si cheng qi cai	0
@@ -878,8 +871,7 @@ use_preset_vocabulary: true
 鹿特丹斯巴达	lu te dan si ba da	2
 路易斯奥	lu yi si ao	0
 路易斯苏亚雷斯	lu yi si su ya lei si	3
-略伦特	lue lun te	58
-罗本	luo ben	1284
+罗本	luo ben	300
 罗伯特科伦	luo bo te ke lun	0
 罗伯特维特克	luo bo te wei te ke	0
 洛夫托斯瓦斯维尔德球场	luo fu tuo si wa si wei er de qiu chang	0
@@ -1024,7 +1016,7 @@ use_preset_vocabulary: true
 切塞纳	qie sai na	6
 轻工业省	qing gong ye sheng	0
 全北现代廉基勋	quan bei xian dai lian ji xun	0
-热刺	re ci	2113
+热刺	re ci	200
 日本大分三神	ri ben da fen san shen	0
 日本京都萨桑那	ri ben jing du sa sang na	0
 日本鹿岛鹿角李荣杓	ri ben lu dao lu jiao li rong biao	0
@@ -1122,15 +1114,13 @@ use_preset_vocabulary: true
 威尔逊帕拉西奥斯	wei er xun pa la xi ao si	0
 威根	wei gen	0
 维克多伯纳德斯	wei ke duo bo na de si	0
-维拉	wei la	696
+维拉	wei la	100
 维拉利尔	wei la li er	1
 维罗索	wei luo suo	2
-蔚山现代	wei shan xian dai	9
 蔚山现代赵容亨	wei shan xian dai zhao rong heng	0
 维斯利奇	wei si li qi	0
 韦斯特曼	wei si te man	3
 维斯瓦克拉科夫	wei si wa ke la ke fu	0
-维泽	wei ze	12
 文仁国	wen ren guo	0
 文森佐格雷拉	wen sen zuo ge lei la	0
 温特拉	wen te la	0
@@ -1141,7 +1131,7 @@ use_preset_vocabulary: true
 沃姆	wo mu	17
 沃诺克	wo nuo ke	14
 沃萨	wo sa	0
-伍德	wu de	754
+伍德	wu de	200
 乌德列支	wu de lie zhi	0
 吴范锡	wu fan xi	0
 乌拉圭民族	wu la gui min zu	4
@@ -1286,7 +1276,7 @@ use_preset_vocabulary: true
 加戈	jia ge	21
 加里内维尔	jia li nei wei er	49
 卡鲁	ka lu	89
-卡斯蒂略	ka si di lue	13
+卡斯蒂略	ka si di lve	13
 卡维纳吉	ka wei na ji	3
 坎切尔斯基	kan qie er si ji	9
 坎特普	kan te pu	0
@@ -1326,7 +1316,6 @@ use_preset_vocabulary: true
 祁宏	qi hong	36
 切赫	qie he	190
 若苏艾	ruo su ai	0
-萨哈	sa ha	48
 申思	shen si	29
 施瓦泽	shi wa ze	4
 斯特普尼	si te pu ni	0
@@ -1340,7 +1329,6 @@ use_preset_vocabulary: true
 托蒂	tuo di	255
 瓦伦特	wa lun te	0
 万乔普	wan qiao pu	3
-王栋	wang dong	30
 乌伊法鲁西	wu yi fa lu xi	1
 谢晖	xie hui	77
 谢林汉姆	xie lin han mu	35
@@ -1350,7 +1338,6 @@ use_preset_vocabulary: true
 郑智	zheng zhi	504
 朱挺	zhu ting	6
 按跷	an qiao	1
-案扤	an wu	0
 八狂	ba kuang	0
 八十字	ba shi zi	2
 白净识	bai jing shi	0
@@ -1375,7 +1362,6 @@ use_preset_vocabulary: true
 长功	chang gong	0
 长生窟	chang sheng ku	0
 畅外	chang wai	0
-朝彻	chao che	0
 沉相	chen xiang	0
 赤龙之耕	chi long zhi geng	0
 赤松子导引法	chi song zi dao yin fa	0
@@ -1400,9 +1386,7 @@ use_preset_vocabulary: true
 大道行世	da dao xing shi	0
 大决	da jue	2
 大胎息	da tai xi	0
-打天钟	da tian zhong	0
 带缚	dai fu	0
-道心惟微	dao xin wei wei	10
 导引却病歌诀	dao yin que bing ge jue	0
 叠盘	die pan	0
 定静	ding jing	3
@@ -1468,7 +1452,6 @@ use_preset_vocabulary: true
 混元子	hun yuan zi	1
 祸兮福兮福兮祸兮	huo xi fu xi fu xi huo xi	0
 集附	ji fu	4
-击天磬	ji tian qing	0
 基砖	ji zhuan	0
 俭视俭听	jian shi jian ting	0
 降心	jiang xin	2
@@ -1484,7 +1467,6 @@ use_preset_vocabulary: true
 决牖术	jue you shu	0
 开智功	kai zhi gong	0
 空静	kong jing	1
-叩齿	kou chi	32
 拉气	la qi	0
 老子按摩法	lao zi an mo fa	0
 累童	lei tong	0
@@ -1515,14 +1497,12 @@ use_preset_vocabulary: true
 内守	nei shou	10
 内听	nei ting	0
 念气	nian qi	1
-鸟戏	niao xi	13
 臬栗	nie li	0
 宁先生导引养生法	ning xian sheng dao yin yang sheng fa	0
 培益	pei yi	0
 彭祖导引法	peng zu dao yin fa	0
 偏跏	pian jia	0
 婆罗门法	po luo men fa	0
-歧伯	qi bo	74
 七痴	qi chi	0
 气法	qi fa	6
 气功家	qi gong jia	0
@@ -1530,7 +1510,6 @@ use_preset_vocabulary: true
 气蛊	qi gu	0
 气归元海	qi gui yuan hai	0
 脐呼吸	qi hu xi	0
-气机	qi ji	146
 气术	qi shu	0
 七漱玉泉	qi shu yu quan	0
 佥指	qian zhi	0
@@ -1545,14 +1524,12 @@ use_preset_vocabulary: true
 三部九候	san bu jiu hou	4
 三才避忌	san cai bi ji	0
 三彭	san peng	1
-散气	san qi	9
 三田一贯	san tian yi guan	0
 三心并	san xin bing	0
 三愚	san yu	0
 三元宫	san yuan gong	1
 啬神养和	se shen yang he	0
 缮生术	shan sheng shu	0
-上腭	shang e	70
 摄生六害	she sheng liu hai	0
 蛇行气	she xing qi	0
 蛇甄	she zhen	0
@@ -1621,7 +1598,6 @@ use_preset_vocabulary: true
 王气	wang qi	47
 王昱璇	wang yu xuan	0
 未漏者	wei lou zhe	0
-卫气	wei qi	96
 卫生三戒	wei sheng san jie	0
 唯识	wei shi	21
 未央术	wei yang shu	0
@@ -1656,7 +1632,6 @@ use_preset_vocabulary: true
 修城廓	xiu cheng kuo	0
 修昆仑	xiu kun lun	1
 修天庭	xiu tian ting	0
-虚静	xu jing	16
 嘘吸	xu xi	1
 玄白术	xuan bai zhu	0
 玄鉴导引法	xuan jian dao yin fa	0
@@ -1708,20 +1683,17 @@ use_preset_vocabulary: true
 引阳筋	yin yang jin	0
 引阴	yin yin	0
 营活城廓	ying huo cheng kuo	0
-营气	ying qi	32
 迎气	ying qi	1
 映象	ying xiang	70
 甬莫	yong mo	0
 有形有象	you xing you xiang	2
 语烦侵气	yu fan qin qi	0
-瑜珈	yu jia	156
 元精	yuan jing	4
 元门运气	yuan men yun qi	0
 元泉	yuan quan	1
 猿戏	yuan xi	13
 运动水土	yun dong shui tu	0
 熨目	yun mu	0
-脏真	zang zhen	0
 则比	ze bi	0
 增息	zeng xi	1
 站功	zhan gong	0
@@ -1738,7 +1710,6 @@ use_preset_vocabulary: true
 真人起居法	zhen ren qi ju fa	0
 真胎息	zhen tai xi	0
 真妄相攻	zhen wang xiang gong	0
-真息	zhen xi	0
 真性命	zhen xing ming	0
 真坐	zhen zuo	0
 征诸	zheng zhu	4
@@ -1788,7 +1759,6 @@ use_preset_vocabulary: true
 阿米尔约翰逊	a mi er yue han xun	7
 阿斯索夫特	a si suo fu te	0
 阿斯维尔	a si wei er	0
-阿维	a wei	107
 阿韦利诺空军队	a wei li nuo kong jun dui	0
 阿维斯特瑞	a wei si te rui	0
 阿西劳	a xi lao	0
@@ -2072,7 +2042,6 @@ use_preset_vocabulary: true
 丹博施埃菲尔塔	dan bo shi ai fei er ta	0
 单吃对方防守球员	dan chi dui fang fang shou qiu yuan	0
 丹迪考	dan di kao	0
-丹佛掘金	dan fo jue jin	26
 丹佛掘金队	dan fo jue jin dui	8
 丹加祖里奇	dan jia zu li qi	0
 丹尼尔吉布森	dan ni er ji bu sen	0
@@ -2478,7 +2447,6 @@ use_preset_vocabulary: true
 卡里姆拉什	ka li mu la shi	0
 卡龙	ka long	7
 卡龙巴特勒	ka long ba te le	0
-卡洛	ka luo	242
 卡洛斯阿罗约	ka luo si a luo yue	0
 卡洛斯布泽尔	ka luo si bu ze er	1
 卡洛斯德尔菲诺	ka luo si de er fei nuo	0
@@ -2506,7 +2474,6 @@ use_preset_vocabulary: true
 柯克辛里奇	ke ke xin li qi	1
 克雷格史密斯	ke lei ge shi mi si	0
 科雷萨	ke lei sa	0
-科里	ke li	314
 科里布鲁尔	ke li bu lu er	0
 克利夫兰叛逆者	ke li fu lan pan ni zhe	0
 克利夫兰叛逆者队	ke li fu lan pan ni zhe dui	0
@@ -2515,7 +2482,6 @@ use_preset_vocabulary: true
 科里马盖蒂	ke li ma gai di	1
 科里森	ke li sen	20
 克里斯伯什	ke li si bo shen	0
-克里斯波什	ke li si bo shen	5
 克里斯杜洪	ke li si du hong	0
 克里斯哈弗里斯	ke li si ha fu li si	0
 克里斯卡曼	ke li si ka man	0
@@ -3173,7 +3139,6 @@ use_preset_vocabulary: true
 吴谦	wu qian	7
 武士队	wu shi dui	0
 吴颂伟	wu song wei	0
-吴伟	wu wei	12
 西奥拉特利夫	xi ao la te li fu	0
 希奥利埃	xi ao li ai	0
 西班牙巴伦塞斯托莱昂	xi ban ya ba lun sai si tuo lai ang	0
@@ -3321,10 +3286,6 @@ use_preset_vocabulary: true
 于涛	yu tao	4
 于学林	yu xue lin	0
 约翰索蒙斯	yue han suo meng si	0
-约什	yue shen	103
-约什鲍威尔	yue shen bao wei er	0
-约什布恩	yue shen bu en	0
-约什卡尔迪伦	yue shen ka er di lun	0
 云南奔牛	yun nan ben niu	0
 云南奔牛队	yun nan ben niu dui	0
 云南红河队	yun nan hong he dui	1
@@ -3351,7 +3312,6 @@ use_preset_vocabulary: true
 张伟刚	zhang wei gang	0
 章文琪	zhang wen qi	7
 张晓薇	zhang xiao wei	0
-张翼	zhang yi	94
 张远航	zhang yuan hang	2
 张喆	zhang zhe	2
 张正旺	zhang zheng wang	0
@@ -3495,7 +3455,6 @@ use_preset_vocabulary: true
 穿心肘	chuan xin zhou	0
 川字步	chuan zi bu	0
 摧刚炼柔	cui gang lian rou	0
-单鞭	dan bian	12
 弹抖	dan dou	11
 倒卷肱	dao juan gong	1
 倒撵猴	dao nian hou	7
@@ -3710,7 +3669,6 @@ use_preset_vocabulary: true
 边跟进	bian gen jin	0
 变线扣球	bian xian kou qiu	1
 变向起跳	bian xiang qi tiao	0
-策略	ce lue	30773
 插上二传	cha shang er chuan	0
 场区端线	chang qu duan xian	0
 超手扣球	chao shou kou qiu	1
@@ -4106,7 +4064,6 @@ use_preset_vocabulary: true
 单刀法选	dan dao fa xuan	10
 单刀进枪	dan dao jin qiang	4
 儋珪枪	dan gui qiang	0
-弹腿	dan tui	23
 单与软对练	dan yu ruan dui lian	0
 单与双对练	dan yu shuang dui lian	0
 当阶授	dang jie shou	0
@@ -4146,7 +4103,7 @@ use_preset_vocabulary: true
 工用枪	gong yong qiang	0
 钩镶	gou xiang	5
 钩釨	gou zi	0
-铦矛	gua mao	0
+铦矛	xian mao	0
 关斧	guan fu	0
 冠拳	guan quan	0
 轨迹拳	gui ji quan	0
@@ -4179,7 +4136,6 @@ use_preset_vocabulary: true
 虎形	hu xing	14
 虎形拳	hu xing quan	2
 华拳	hua quan	4
-黄钺	huang yue	67
 浑元	hun yuan	17
 混圆	hun yuan	1
 浑元桩	hun yuan zhuang	0
@@ -4378,7 +4334,6 @@ use_preset_vocabulary: true
 四门拳	si men quan	0
 四平拳	si ping quan	2
 松椟	song du	0
-宋世德	song shi de	0
 宋世荣	song shi rong	1
 搜林斧	sou lin fu	0
 孙福全	sun fu quan	1
@@ -4414,7 +4369,6 @@ use_preset_vocabulary: true
 托婴桩	tuo ying zhuang	0
 外摆莲	wai bai lian	2
 外摆腿	wai bai tui	1
-外三合	wai san he	17
 宛鲁	wan lu	0
 亡兵得兵	wang bing de bing	0
 王斧	wang fu	4
@@ -4435,7 +4389,6 @@ use_preset_vocabulary: true
 吴殳	wu shu	25
 武术长兵	wu shu chang bing	0
 武术短兵	wu shu duan bing	1
-吴晓邦	wu xiao bang	0
 吴修龄	wu xiu ling	1
 武艺网	wu yi wang	0
 无隐录	wu yin lu	1
@@ -4808,7 +4761,6 @@ use_preset_vocabulary: true
 李本森	li ben sen	1
 里查德弗拉姆	li cha de fu la mu	0
 李冈风	li gang feng	0
-李根	li gen	57
 李敬宇	li jing yu	0
 里克巴里	li ke ba li	3
 里克布伦森	li ke bu lun sen	0
@@ -4948,7 +4900,7 @@ use_preset_vocabulary: true
 睢冉	sui ran	13
 孙凤武	sun feng wu	4
 所罗门琼斯	suo luo men qiong si	0
-塔克	ta ke	522
+塔克	ta ke	150
 塔史密斯	ta shi mi si	0
 探花秀	tan hua xiu	15
 汤米史密斯	tang mi shi mi si	0
@@ -5011,7 +4963,6 @@ use_preset_vocabulary: true
 亚旅联盟	ya lv lian meng	0
 亚特兰大鹰	ya te lan da ying	2
 杨文博	yang wen bo	0
-杨玉明	yang yu ming	0
 伊戈达拉	yi ge da la	337
 伊斯特班巴蒂斯塔	yi si te ban ba di si ta	0
 尤杜卡	you du ka	0
@@ -5044,7 +4995,6 @@ use_preset_vocabulary: true
 张术	zhang shu	0
 张永鹏	zhang yong peng	0
 赵南	zhao nan	6
-郑准	zheng zhun	0
 钟诚	zhong cheng	3
 周雪峰	zhou xue feng	0
 周最佳	zhou zui jia	22
@@ -5690,7 +5640,6 @@ use_preset_vocabulary: true
 阿森纳卡基夫	a sen na ka ji fu	0
 阿森纳特瓦特	a sen na te wa te	0
 阿森内	a sen nei	0
-阿什顿	a shen dun	19
 阿士东维拉	a shi dong wei la	0
 阿什哈巴德阿苏达利	a shi ha ba de a su da li	0
 阿什哈巴德科佩达	a shi ha ba de ke pei da	0
@@ -5700,7 +5649,7 @@ use_preset_vocabulary: true
 阿斯特埃斯	a si te ai si	0
 阿斯特拉斯艾沃斯莫	a si te la si ai wo si mo	0
 阿斯特里亚	a si te li ya	0
-阿斯图迪略	a si tu di lue	0
+阿斯图迪略	a si tu di lve	0
 阿苏林	a su lin	9
 阿索埃科托	a suo ai ke tuo	0
 阿特曼	a te man	5
@@ -5860,7 +5809,7 @@ use_preset_vocabulary: true
 埃利维尔顿	ai li wei er dun	0
 埃利亚斯	ai li ya si	7
 埃卢钱斯	ai lu qian si	0
-埃略特	ai lue te	4
+埃略特	ai lve te	4
 艾洛亚竞技	ai luo ya jing ji	0
 埃马卡	ai ma ka	0
 埃马卡安德森	ai ma ka an de sen	0
@@ -6042,7 +5991,6 @@ use_preset_vocabulary: true
 安图内斯	an tu nei si	4
 安托伊内库里尔	an tuo yi nei ku li er	0
 奥巴梅扬	ao ba mei yang	111
-奥巴梅杨	ao ba mei yang	88
 奥贝唐	ao bei tang	0
 奥比米科尔	ao bi mi ke er	0
 奥宾纳	ao bin na	0
@@ -6607,7 +6555,7 @@ use_preset_vocabulary: true
 波恩斯利	bo en si li	0
 博尔比科尼	bo er bi ke ni	0
 波尔蒂尔	bo er di er	0
-波尔蒂略	bo er di lue	1
+波尔蒂略	bo er di lve	1
 波尔蒂芒运动	bo er di mang yun dong	0
 博尔东	bo er dong	1
 波尔多体育	bo er duo ti yu	0
@@ -8565,7 +8513,6 @@ use_preset_vocabulary: true
 竞技足球	jing ji zu qiu	5
 经治国	jing zhi guo	0
 久利	jiu li	16
-久诺	jiu nuo	0
 居里省联	ju li sheng lian	0
 居内什	ju nei shi	1
 鞠文鹏	ju wen peng	0
@@ -8820,7 +8767,7 @@ use_preset_vocabulary: true
 考尔斯加德	kao er si jia de	0
 考夫	kao fu	7
 科埃利奥	ke ai li ao	0
-科埃略	ke ai lue	6
+科埃略	ke ai lve	6
 科比雷罗亚	ke bi lei luo ya	0
 科比利克	ke bi li ke	0
 科比里萨尔	ke bi li sa er	0
@@ -9049,7 +8996,6 @@ use_preset_vocabulary: true
 科斯塔迪诺夫	ke si ta di nuo fu	1
 科斯塔基奇	ke si ta ji qi	0
 科斯坦蒂尼	ke si tan di ni	0
-科苏	ke su	3
 科塔杜尔	ke ta du er	0
 科特赖克足球俱乐部	ke te lai ke zu qiu ju le bu	0
 科特里尔	ke te li er	0
@@ -9417,7 +9363,7 @@ use_preset_vocabulary: true
 里卡多查韦斯	li ka duo cha wei si	0
 里卡多费尔南德斯	li ka duo fei er nan de si	0
 里卡多瓜雷斯马	li ka duo gua lei si ma	0
-里卡多卡瓦略	li ka duo ka wa lue	0
+里卡多卡瓦略	li ka duo ka wa lve	0
 里卡多科拉罗	li ka duo ke la luo	0
 里卡多内维斯	li ka duo nei wei si	0
 里卡多席尔瓦	li ka duo xi er wa	0
@@ -9640,7 +9586,7 @@ use_preset_vocabulary: true
 卢因杜拉	lu yin du la	0
 鲁兹波瑞克	lu zi bo rui ke	0
 栾毅军	luan yi jun	0
-略论特	lue lun te	3
+略论特	lve lun te	3
 伦诺	lun nuo	2
 伦特里亚	lun te li ya	0
 伦辛	lun xin	8
@@ -9687,7 +9633,7 @@ use_preset_vocabulary: true
 罗尔费斯	luo er fei si	1
 罗尔福斯	luo er fu si	0
 洛夫雷	luo fu lei	0
-洛甘城市侵略者	luo gan cheng shi qin lue zhe	0
+洛甘城市侵略者	luo gan cheng shi qin lve zhe	0
 洛格罗尼奥	luo ge luo ni ao	1
 洛赫高尔	luo he gao er	0
 洛黑德尔	luo hei de er	0
@@ -10432,7 +10378,6 @@ use_preset_vocabulary: true
 穆拉特索兹格尔梅兹	mu la te suo zi ge er mei zi	0
 穆拉特托桑	mu la te tuo sang	0
 穆拉托里	mu la tuo li	0
-穆里略	mu li lue	10
 穆隆戈蒂	mu long ge di	0
 穆伦加	mu lun jia	0
 穆纳里	mu na li	3
@@ -10514,7 +10459,7 @@ use_preset_vocabulary: true
 内科南	nei ke nan	0
 内拉组里	nei la zu li	0
 内里格	nei li ge	0
-内里卡斯蒂略	nei li ka si di lue	0
+内里卡斯蒂略	nei li ka si di lve	0
 内梅赫	nei mei he	0
 内梅特	nei mei te	0
 内纳德杰斯特罗维奇	nei na de jie si te luo wei qi	0
@@ -10588,7 +10533,7 @@ use_preset_vocabulary: true
 努诺巴伦特	nu nuo ba lun te	0
 努诺迪奥戈	nu nuo di ao ge	0
 努诺戈麦斯	nu nuo ge mai si	7
-努诺科埃略	nu nuo ke ai lue	0
+努诺科埃略	nu nuo ke ai lve	0
 努诺平托	nu nuo ping tuo	0
 努诺桑托斯	nu nuo sang tuo si	0
 努诺瓦伦特	nu nuo wa lun te	0
@@ -10830,7 +10775,7 @@ use_preset_vocabulary: true
 皮内蒂纳	pi nei di na	0
 皮尼奥尔	pi ni ao er	0
 皮尼拉	pi ni la	0
-皮尼略斯	pi ni lue si	0
+皮尼略斯	pi ni lve si	0
 皮尼罗斯	pi ni luo si	0
 皮诺拉	pi nuo la	0
 皮普利察	pi pu li cha	0
@@ -10839,7 +10784,6 @@ use_preset_vocabulary: true
 皮萨努	pi sa nu	0
 皮萨诺	pi sa nuo	1
 皮森加诺	pi sen jia nuo	0
-皮什切克	pi shen qie ke	36
 皮斯库里奇	pi si ku li qi	0
 皮斯库利奇	pi si ku li qi	0
 皮斯托内	pi si tuo nei	0
@@ -11578,7 +11522,6 @@ use_preset_vocabulary: true
 斯文德森	si wen de sen	0
 斯文克尔斯	si wen ke er si	0
 斯西格纳诺	si xi ge na nuo	0
-松克	song ke	2
 松莱尼格赫安	song lai ni ge he an	0
 宋黎辉	song li hui	3
 宋振瑜	song zhen yu	0
@@ -12096,7 +12039,6 @@ use_preset_vocabulary: true
 文森佐斯西格纳诺	wen sen zuo si xi ge na nuo	0
 稳守反击	wen shou fan ji	21
 翁德尔图拉希	weng de er tu la xi	0
-翁格尔	weng ge er	2
 翁特哈兴	weng te ha xing	1
 沃德戈默斯	wo de ge mo si	0
 沃尔德斯	wo er de si	1
@@ -12246,7 +12188,7 @@ use_preset_vocabulary: true
 希伦布兰德	xi lun bu lan de	0
 西罗德卢卡	xi luo de lu ka	0
 西罗卡普亚诺	xi luo ka pu ya nuo	0
-西蒙埃略特	xi meng ai lue te	0
+西蒙埃略特	xi meng ai lve te	0
 西蒙波尔森	xi meng bo er sen	0
 西蒙戴维斯	xi meng dai wei si	0
 西蒙费里	xi meng fei li	0
@@ -12481,7 +12423,7 @@ use_preset_vocabulary: true
 耶利米亚	ye li mi ya	0
 耶利奇	ye li qi	0
 耶烈万迪纳摩	ye lie wan di na mo	0
-耶伦	ye lun	545
+耶伦	ye lun	100
 耶纳尔通塞尔	ye na er tong sai er	0
 耶纳斯	ye na si	1
 耶佩斯	ye pei si	3
@@ -12867,7 +12809,7 @@ use_preset_vocabulary: true
 中间突破	zhong jian tu po	0
 中路包抄	zhong lu bao chao	16
 中路进攻	zhong lu jin gong	38
-中圈	zhong quan	268
+中圈	zhong quan	150
 中圈开球	zhong quan kai qiu	16
 周何新	zhou he xin	0
 周伟新	zhou wei xin	2
@@ -13078,7 +13020,6 @@ use_preset_vocabulary: true
 马尼库尔赛道	ma ni ku er sai dao	1
 马萨	ma sa	95
 马萨事故	ma sa shi gu	0
-迈凯轮	mai kai lun	168
 麦纳麦国际赛车场	mai na mai guo ji sai che chang	0
 美国车队	mei guo che dui	0
 美国车手	mei guo che shou	2
@@ -13113,7 +13054,7 @@ use_preset_vocabulary: true
 强大离心力	qiang da li xin li	0
 取决权	qu jue quan	0
 全年赛程	quan nian sai cheng	1
-圈速	quan su	489
+圈速	quan su	150
 全天候作战	quan tian hou zuo zhan	3
 全新战车	quan xin zhan che	0
 日本大奖赛	ri ben da jiang sai	3
@@ -13260,9 +13201,8 @@ use_preset_vocabulary: true
 劈吊	pi diao	25
 平高	ping gao	26
 球包	qiu bao	83
-球后	qiu hou	200
 球头	qiu tou	89
-球友	qiu you	819
+球友	qiu you	60
 杀球	sha qiu	485
 试打	shi da	29
 说球	shuo qiu	27

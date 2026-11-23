@@ -553,10 +553,10 @@ sort: by_weight
 操	cao	1627
 艹	cao	1444
 糙	cao	468
-屮	cao	106
+屮	cao	20
 嘈	cao	67
 漕	cao	50
-芔	cao	26
+芔	hui	26
 肏	cao	20
 艚	cao	6
 螬	cao	0
@@ -743,7 +743,7 @@ sort: by_weight
 橙	cheng	1252
 程	cheng	1154
 秤	cheng	452
-盛	cheng	798
+盛	cheng	350
 承	cheng	732
 诚	cheng	474
 丞	cheng	197
@@ -1175,7 +1175,7 @@ sort: by_weight
 德	de	5691
 锝	de	131
 嘚	de	104
-得	dei	31646
+得	dei	3000
 嘚	dei	27
 扽	den	28
 等	deng	396005
@@ -1854,7 +1854,7 @@ sort: by_weight
 格	ge	3985
 割	ge	2805
 隔	ge	1678
-咯	ge	1575
+咯	ge	400
 搁	ge	1328
 戈	ge	433
 葛	ge	429
@@ -2175,7 +2175,7 @@ sort: by_weight
 崡	han	0
 嵅	han	0
 蔊	han	0
-行	hang	5190
+行	hang	1800
 杭	hang	248
 航	hang	257
 夯	hang	55
@@ -2321,7 +2321,7 @@ sort: by_weight
 虎	hu	1943
 乎	hu	2143
 糊	hu	1234
-和	hu	1396
+和	hu	80
 互	hu	990
 呼	hu	1132
 护	hu	872
@@ -2533,7 +2533,7 @@ sort: by_weight
 祸	huo	297
 豁	huo	352
 伙	huo	150
-和	huo	143
+和	huo	350
 惑	huo	118
 镬	huo	100
 藿	huo	47
@@ -2569,7 +2569,7 @@ sort: by_weight
 挤	ji	2461
 计	ji	1785
 剂	ji	1265
-给	ji	1883
+给	ji	250
 寄	ji	1629
 姬	ji	945
 技	ji	1062
@@ -3079,7 +3079,7 @@ sort: by_weight
 橘	ju	251
 车	ju	290
 惧	ju	267
-車	ju	178
+車	ju	30
 矩	ju	146
 钜	ju	151
 鞠	ju	136
@@ -3148,7 +3148,7 @@ sort: by_weight
 桊	juan	0
 绝	jue	2122
 觉	jue	1479
-嚼	jue	496
+嚼	jue	120
 决	jue	359
 撅	jue	352
 倔	jue	231
@@ -3207,7 +3207,7 @@ sort: by_weight
 鲪	jun	0
 䐃	jun	0
 卡	ka	17339
-咯	ka	1575
+咯	ka	120
 咖	ka	1127
 咔	ka	452
 喀	ka	99
@@ -3557,7 +3557,7 @@ sort: by_weight
 泪	lei	1777
 嘞	lei	1010
 垒	lei	586
-勒	lei	687
+勒	lei	200
 蕾	lei	411
 镭	lei	302
 肋	lei	272
@@ -3866,7 +3866,7 @@ sort: by_weight
 飗	liu	1
 碌	liu	2
 鹠	liu	0
-咯	lo	1575
+咯	lo	300
 龙	long	5641
 隆	long	470
 泷	long	314
@@ -3986,7 +3986,7 @@ sort: by_weight
 𬬭	lun	0
 罗	luo	12714
 落	luo	1791
-咯	luo	1575
+咯	luo	80
 洛	luo	845
 裸	luo	750
 啰	luo	379
@@ -4012,7 +4012,7 @@ sort: by_weight
 瘰	luo	6
 猡	luo	5
 蓏	luo	4
-铬	luo	437
+铬	luo	15
 脶	luo	0
 率	lv	8358
 绿	lv	3469
@@ -4267,7 +4267,7 @@ sort: by_weight
 杪	miao	24
 邈	miao	21
 藐	miao	18
-缪	miao	3
+缪	miao	80
 鹋	miao	1
 灭	mie	2453
 咩	mie	859
@@ -4306,7 +4306,7 @@ sort: by_weight
 酩	ming	5
 螟	ming	4
 谬	miu	162
-缪	miu	26
+缪	miu	60
 莫	mo	2851
 磨	mo	2255
 魔	mo	2547
@@ -4314,7 +4314,7 @@ sort: by_weight
 膜	mo	2321
 末	mo	1601
 抹	mo	1218
-麽	mo	1026
+麽	mo	80
 墨	mo	921
 没	mo	790
 摩	mo	626
@@ -4348,7 +4348,7 @@ sort: by_weight
 某	mou	35516
 谋	mou	617
 牟	mou	256
-缪	mou	251
+缪	mou	100
 眸	mou	70
 哞	mou	30
 侔	mou	10
@@ -5259,7 +5259,7 @@ sort: by_weight
 却	que	113483
 缺	que	3990
 确	que	850
-卻	que	595
+卻	que	40
 阙	que	310
 雀	que	180
 瘸	que	124
@@ -5612,8 +5612,8 @@ sort: by_weight
 剩	sheng	1100
 绳	sheng	661
 笙	sheng	275
-昇	sheng	243
-盛	sheng	200
+昇	sheng	80
+盛	sheng	1200
 晟	sheng	142
 牲	sheng	68
 甥	sheng	36
@@ -5977,7 +5977,7 @@ sort: by_weight
 踏	ta	505
 祂	ta	412
 挞	ta	152
-拓	ta	86
+拓	ta	30
 铊	ta	104
 榻	ta	85
 牠	ta	83
@@ -6287,7 +6287,7 @@ sort: by_weight
 推	tui	8761
 腿	tui	8585
 退	tui	4296
-忒	tui	378
+忒	tui	40
 颓	tui	265
 褪	tui	249
 蜕	tui	72
@@ -6792,7 +6792,7 @@ sort: by_weight
 箱	xiang	1373
 乡	xiang	1183
 响	xiang	1636
-降	xiang	1710
+降	xiang	450
 翔	xiang	603
 橡	xiang	394
 巷	xiang	476
@@ -6859,7 +6859,7 @@ sort: by_weight
 写	xie	49088
 些	xie	14940
 鞋	xie	4090
-血	xie	3978
+血	xie	800
 谢	xie	3167
 斜	xie	2004
 蟹	xie	1909
@@ -7288,7 +7288,7 @@ sort: by_weight
 尧	yao	768
 姚	yao	545
 舀	yao	406
-约	yao	454
+约	yao	60
 幺	yao	366
 曜	yao	270
 瑶	yao	272
@@ -7613,7 +7613,7 @@ sort: by_weight
 油	you	7044
 右	you	3835
 游	you	2184
-哟	you	3101
+哟	you	150
 呦	you	2360
 优	you	1604
 友	you	982
@@ -7622,7 +7622,7 @@ sort: by_weight
 鼬	you	845
 犹	you	662
 佑	you	502
-祐	you	394
+祐	you	40
 忧	you	374
 幽	you	333
 釉	you	254
@@ -7662,7 +7662,7 @@ sort: by_weight
 于	yu	61704
 鱼	yu	8468
 宇	yu	351
-於	yu	5917
+於	yu	250
 欲	yu	4102
 语	yu	4066
 雨	yu	3179
@@ -8542,7 +8542,7 @@ sort: by_weight
 佐	zuo	689
 嘬	zuo	247
 昨	zuo	112
-撮	zuo	91
+撮	zuo	15
 唑	zuo	49
 酢	zuo	31
 祚	zuo	25
@@ -8554,3 +8554,49 @@ sort: by_weight
 柞	zuo	9
 笮	zuo	4
 岞	zuo	0
+# 补充标准普通话读音
+芔	hu	1
+屮	che	50
+呇	qi	2
+颤	zhan	50
+暴	pu	30
+汤	shang	20
+町	ting	200
+属	zhu	30
+般	bo	30
+若	re	30
+六	lu	30
+房	pang	20
+谷	yu	20
+蛇	yi	20
+叶	she	20
+嘬	chuai	10
+椎	chui	10
+酢	cu	10
+噱	jue	10
+辗	nian	10
+窨	xun	10
+潦	lao	10
+阏	e	10
+饧	tang	10
+薁	yu	10
+姥	mu	10
+被	pi	10
+射	ye	10
+邪	ye	10
+邪	ya	10
+宛	yuan	10
+遗	wei	10
+氓	meng	10
+掸	shan	10
+嗑	he	10
+孱	can	10
+砉	xu	5
+袷	jia	5
+繇	yao	5
+傀	gui	5
+焘	dao	5
+镦	dui	5
+酂	cuo	5
+隗	kui	5
+車	che	10

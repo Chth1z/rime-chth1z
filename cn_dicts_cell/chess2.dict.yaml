@@ -20,16 +20,13 @@ use_preset_vocabulary: false
 兵六进一	bing liu jin yi	1
 兵六平七	bing liu ping qi	0
 兵六平五	bing liu ping wu	0
-兵七进一	bing qi jin yi	7
 兵七平八	bing qi ping ba	0
 兵七平六	bing qi ping liu	0
-兵三进一	bing san jin yi	6
 兵三平二	bing san ping er	0
 兵三平四	bing san ping si	0
 兵四进一	bing si jin yi	0
 兵四平三	bing si ping san	0
 兵四平五	bing si ping wu	0
-兵五进一	bing wu jin yi	4
 兵五平六	bing wu ping liu	1
 兵五平四	bing wu ping si	0
 兵一进一	bing yi jin yi	0
@@ -373,1312 +370,359 @@ use_preset_vocabulary: false
 后车退四	hou che tui si	0
 后车退五	hou che tui wu	0
 后车退一	hou che tui yi	0
-后車进	hou ju jin	0
-后俥进八	hou ju jin ba	0
-后車进八	hou ju jin ba	0
-后俥进二	hou ju jin er	0
-后車进二	hou ju jin er	0
-后俥进六	hou ju jin liu	0
-后車进六	hou ju jin liu	0
-后俥进七	hou ju jin qi	0
-后車进七	hou ju jin qi	0
-后俥进三	hou ju jin san	0
-后車进三	hou ju jin san	0
-后俥进四	hou ju jin si	0
-后車进四	hou ju jin si	0
-后俥进五	hou ju jin wu	0
-后車进五	hou ju jin wu	0
-后俥进一	hou ju jin yi	0
-后車进一	hou ju jin yi	0
-后車平	hou ju ping	0
-后俥平八	hou ju ping ba	0
-后車平八	hou ju ping ba	0
-后俥平二	hou ju ping er	0
-后車平二	hou ju ping er	0
-后俥平九	hou ju ping jiu	0
-后車平九	hou ju ping jiu	0
-后俥平六	hou ju ping liu	0
-后車平六	hou ju ping liu	0
-后俥平七	hou ju ping qi	0
-后車平七	hou ju ping qi	0
-后俥平三	hou ju ping san	0
-后車平三	hou ju ping san	0
-后俥平四	hou ju ping si	0
-后車平四	hou ju ping si	0
-后俥平五	hou ju ping wu	0
-后車平五	hou ju ping wu	0
-后俥平一	hou ju ping yi	0
-后車平一	hou ju ping yi	0
-后車退	hou ju tui	0
-后俥退八	hou ju tui ba	0
-后車退八	hou ju tui ba	0
-后俥退二	hou ju tui er	0
-后車退二	hou ju tui er	0
-后俥退六	hou ju tui liu	0
-后車退六	hou ju tui liu	0
-后俥退七	hou ju tui qi	0
-后車退七	hou ju tui qi	0
-后俥退三	hou ju tui san	0
-后車退三	hou ju tui san	0
-后俥退四	hou ju tui si	0
-后車退四	hou ju tui si	0
-后俥退五	hou ju tui wu	0
-后車退五	hou ju tui wu	0
-后俥退一	hou ju tui yi	0
-后車退一	hou ju tui yi	0
-后馬进	hou ma jin	0
 后马进	hou ma jin	0
-后傌进八	hou ma jin ba	0
-后馬进八	hou ma jin ba	0
 后马进八	hou ma jin ba	0
-后傌进二	hou ma jin er	0
-后馬进二	hou ma jin er	0
 后马进二	hou ma jin er	0
-后傌进九	hou ma jin jiu	0
-后馬进九	hou ma jin jiu	0
 后马进九	hou ma jin jiu	0
-后傌进六	hou ma jin liu	0
-后馬进六	hou ma jin liu	0
 后马进六	hou ma jin liu	0
-后傌进七	hou ma jin qi	0
-后馬进七	hou ma jin qi	0
 后马进七	hou ma jin qi	0
-后傌进三	hou ma jin san	0
-后馬进三	hou ma jin san	0
 后马进三	hou ma jin san	0
-后傌进四	hou ma jin si	0
-后馬进四	hou ma jin si	0
 后马进四	hou ma jin si	0
-后傌进五	hou ma jin wu	0
-后馬进五	hou ma jin wu	0
 后马进五	hou ma jin wu	0
-后傌进一	hou ma jin yi	0
-后馬进一	hou ma jin yi	0
 后马进一	hou ma jin yi	0
-后馬退	hou ma tui	0
 后马退	hou ma tui	0
-后傌退八	hou ma tui ba	0
-后馬退八	hou ma tui ba	0
 后马退八	hou ma tui ba	0
-后傌退二	hou ma tui er	0
-后馬退二	hou ma tui er	0
 后马退二	hou ma tui er	0
-后傌退九	hou ma tui jiu	0
-后馬退九	hou ma tui jiu	0
 后马退九	hou ma tui jiu	0
-后傌退六	hou ma tui liu	0
-后馬退六	hou ma tui liu	0
 后马退六	hou ma tui liu	0
-后傌退七	hou ma tui qi	0
-后馬退七	hou ma tui qi	0
 后马退七	hou ma tui qi	0
-后傌退三	hou ma tui san	0
-后馬退三	hou ma tui san	0
 后马退三	hou ma tui san	0
-后傌退四	hou ma tui si	0
-后馬退四	hou ma tui si	0
 后马退四	hou ma tui si	0
-后傌退五	hou ma tui wu	0
-后馬退五	hou ma tui wu	0
 后马退五	hou ma tui wu	0
-后傌退一	hou ma tui yi	0
-后馬退一	hou ma tui yi	0
 后马退一	hou ma tui yi	0
 后炮进	hou pao jin	0
-后砲进	hou pao jin	0
 后炮进八	hou pao jin ba	0
-后砲进八	hou pao jin ba	0
 后炮进二	hou pao jin er	0
-后砲进二	hou pao jin er	0
 后炮进九	hou pao jin jiu	0
-后砲进九	hou pao jin jiu	0
 后炮进六	hou pao jin liu	0
-后砲进六	hou pao jin liu	0
 后炮进七	hou pao jin qi	0
-后砲进七	hou pao jin qi	0
 后炮进三	hou pao jin san	0
-后砲进三	hou pao jin san	0
 后炮进四	hou pao jin si	0
-后砲进四	hou pao jin si	0
 后炮进五	hou pao jin wu	0
-后砲进五	hou pao jin wu	0
 后炮进一	hou pao jin yi	0
-后砲进一	hou pao jin yi	0
 后炮平	hou pao ping	0
-后砲平	hou pao ping	0
 后炮平八	hou pao ping ba	0
-后砲平八	hou pao ping ba	0
 后炮平二	hou pao ping er	0
-后砲平二	hou pao ping er	0
 后炮平九	hou pao ping jiu	0
-后砲平九	hou pao ping jiu	0
 后炮平六	hou pao ping liu	0
-后砲平六	hou pao ping liu	0
 后炮平七	hou pao ping qi	0
-后砲平七	hou pao ping qi	0
 后炮平三	hou pao ping san	0
-后砲平三	hou pao ping san	0
 后炮平四	hou pao ping si	0
-后砲平四	hou pao ping si	0
 后炮平五	hou pao ping wu	0
-后砲平五	hou pao ping wu	0
 后炮平一	hou pao ping yi	0
-后砲平一	hou pao ping yi	0
 后炮退	hou pao tui	0
-后砲退	hou pao tui	0
 后炮退八	hou pao tui ba	0
-后砲退八	hou pao tui ba	0
 后炮退二	hou pao tui er	0
-后砲退二	hou pao tui er	0
 后炮退六	hou pao tui liu	0
-后砲退六	hou pao tui liu	0
 后炮退七	hou pao tui qi	0
-后砲退七	hou pao tui qi	0
 后炮退三	hou pao tui san	0
-后砲退三	hou pao tui san	0
 后炮退四	hou pao tui si	0
-后砲退四	hou pao tui si	0
 后炮退五	hou pao tui wu	0
-后砲退五	hou pao tui wu	0
 后炮退一	hou pao tui yi	0
-后砲退一	hou pao tui yi	0
 后卒进	hou zu jin	0
 后卒平	hou zu ping	0
 将进	jiang jin	0
-將进	jiang jin	0
 将平	jiang ping	1
-將平	jiang ping	2
 将退	jiang tui	0
-將退	jiang tui	1
-俥八进八	ju ba jin ba	0
-車八进八	ju ba jin ba	0
-俥八进二	ju ba jin er	0
-車八进二	ju ba jin er	0
-俥八进九	ju ba jin jiu	0
-車八进九	ju ba jin jiu	0
-俥八进六	ju ba jin liu	0
-車八进六	ju ba jin liu	0
-俥八进七	ju ba jin qi	0
-車八进七	ju ba jin qi	0
-俥八进三	ju ba jin san	0
-車八进三	ju ba jin san	0
-俥八进四	ju ba jin si	0
-車八进四	ju ba jin si	0
-俥八进五	ju ba jin wu	0
-車八进五	ju ba jin wu	0
-俥八进一	ju ba jin yi	0
-車八进一	ju ba jin yi	0
-俥八平二	ju ba ping er	0
-車八平二	ju ba ping er	0
-俥八平九	ju ba ping jiu	0
-車八平九	ju ba ping jiu	0
-俥八平六	ju ba ping liu	0
-車八平六	ju ba ping liu	0
-俥八平七	ju ba ping qi	0
-車八平七	ju ba ping qi	0
-俥八平三	ju ba ping san	0
-車八平三	ju ba ping san	0
-俥八平四	ju ba ping si	0
-車八平四	ju ba ping si	0
-俥八平五	ju ba ping wu	0
-車八平五	ju ba ping wu	0
-俥八平一	ju ba ping yi	0
-車八平一	ju ba ping yi	0
-俥八退八	ju ba tui ba	0
-車八退八	ju ba tui ba	0
-俥八退二	ju ba tui er	0
-車八退二	ju ba tui er	0
-俥八退九	ju ba tui jiu	0
-車八退九	ju ba tui jiu	0
-俥八退六	ju ba tui liu	0
-車八退六	ju ba tui liu	0
-俥八退七	ju ba tui qi	0
-車八退七	ju ba tui qi	0
-俥八退三	ju ba tui san	0
-車八退三	ju ba tui san	0
-俥八退四	ju ba tui si	0
-車八退四	ju ba tui si	0
-俥八退五	ju ba tui wu	0
-車八退五	ju ba tui wu	0
-俥八退一	ju ba tui yi	0
-車八退一	ju ba tui yi	0
-俥二进八	ju er jin ba	0
-車二进八	ju er jin ba	0
-俥二进二	ju er jin er	0
-車二进二	ju er jin er	0
-俥二进九	ju er jin jiu	0
-車二进九	ju er jin jiu	0
-俥二进六	ju er jin liu	0
-車二进六	ju er jin liu	0
-俥二进七	ju er jin qi	0
-車二进七	ju er jin qi	0
-俥二进三	ju er jin san	0
-車二进三	ju er jin san	0
-俥二进四	ju er jin si	0
-車二进四	ju er jin si	0
-俥二进五	ju er jin wu	0
-車二进五	ju er jin wu	0
-俥二进一	ju er jin yi	0
-車二进一	ju er jin yi	0
-俥二平八	ju er ping ba	0
-車二平八	ju er ping ba	0
-俥二平九	ju er ping jiu	0
-車二平九	ju er ping jiu	0
-俥二平六	ju er ping liu	0
-車二平六	ju er ping liu	0
-俥二平七	ju er ping qi	0
-車二平七	ju er ping qi	0
-俥二平三	ju er ping san	0
-車二平三	ju er ping san	0
-俥二平四	ju er ping si	0
-車二平四	ju er ping si	0
-俥二平五	ju er ping wu	0
-車二平五	ju er ping wu	0
-俥二平一	ju er ping yi	0
-車二平一	ju er ping yi	0
-俥二退八	ju er tui ba	0
-車二退八	ju er tui ba	0
-俥二退二	ju er tui er	0
-車二退二	ju er tui er	0
-俥二退九	ju er tui jiu	0
-車二退九	ju er tui jiu	0
-俥二退六	ju er tui liu	0
-車二退六	ju er tui liu	0
-俥二退七	ju er tui qi	0
-車二退七	ju er tui qi	0
-俥二退三	ju er tui san	0
-車二退三	ju er tui san	0
-俥二退四	ju er tui si	0
-車二退四	ju er tui si	0
-俥二退五	ju er tui wu	0
-車二退五	ju er tui wu	0
-俥二退一	ju er tui yi	0
-車二退一	ju er tui yi	0
-車进	ju jin	0
-俥九进八	ju jiu jin ba	0
-車九进八	ju jiu jin ba	0
-俥九进二	ju jiu jin er	0
-車九进二	ju jiu jin er	1
-俥九进九	ju jiu jin jiu	0
-車九进九	ju jiu jin jiu	0
-俥九进六	ju jiu jin liu	0
-車九进六	ju jiu jin liu	0
-俥九进七	ju jiu jin qi	0
-車九进七	ju jiu jin qi	0
-俥九进三	ju jiu jin san	0
-車九进三	ju jiu jin san	1
-俥九进四	ju jiu jin si	0
-車九进四	ju jiu jin si	0
-俥九进五	ju jiu jin wu	0
-車九进五	ju jiu jin wu	0
-俥九进一	ju jiu jin yi	0
-車九进一	ju jiu jin yi	1
-俥九平八	ju jiu ping ba	0
-車九平八	ju jiu ping ba	0
-俥九平二	ju jiu ping er	0
-車九平二	ju jiu ping er	0
-俥九平六	ju jiu ping liu	0
-車九平六	ju jiu ping liu	0
-俥九平七	ju jiu ping qi	0
-車九平七	ju jiu ping qi	0
-俥九平三	ju jiu ping san	0
-車九平三	ju jiu ping san	0
-俥九平四	ju jiu ping si	0
-車九平四	ju jiu ping si	0
-俥九平五	ju jiu ping wu	0
-車九平五	ju jiu ping wu	1
-俥九平一	ju jiu ping yi	0
-車九平一	ju jiu ping yi	0
-俥九退八	ju jiu tui ba	0
-車九退八	ju jiu tui ba	0
-俥九退二	ju jiu tui er	0
-車九退二	ju jiu tui er	0
-俥九退九	ju jiu tui jiu	0
-車九退九	ju jiu tui jiu	0
-俥九退六	ju jiu tui liu	0
-車九退六	ju jiu tui liu	0
-俥九退七	ju jiu tui qi	0
-車九退七	ju jiu tui qi	0
-俥九退三	ju jiu tui san	0
-車九退三	ju jiu tui san	0
-俥九退四	ju jiu tui si	0
-車九退四	ju jiu tui si	0
-俥九退五	ju jiu tui wu	0
-車九退五	ju jiu tui wu	0
-俥九退一	ju jiu tui yi	0
-車九退一	ju jiu tui yi	1
-俥六进八	ju liu jin ba	0
-車六进八	ju liu jin ba	0
-俥六进二	ju liu jin er	0
-車六进二	ju liu jin er	0
-俥六进九	ju liu jin jiu	0
-車六进九	ju liu jin jiu	0
-俥六进六	ju liu jin liu	0
-車六进六	ju liu jin liu	0
-俥六进七	ju liu jin qi	0
-車六进七	ju liu jin qi	0
-俥六进三	ju liu jin san	0
-車六进三	ju liu jin san	0
-俥六进四	ju liu jin si	0
-車六进四	ju liu jin si	0
-俥六进五	ju liu jin wu	0
-車六进五	ju liu jin wu	0
-俥六进一	ju liu jin yi	0
-車六进一	ju liu jin yi	0
-俥六平八	ju liu ping ba	0
-車六平八	ju liu ping ba	0
-俥六平二	ju liu ping er	0
-車六平二	ju liu ping er	0
-俥六平九	ju liu ping jiu	0
-車六平九	ju liu ping jiu	0
-俥六平七	ju liu ping qi	0
-車六平七	ju liu ping qi	0
-俥六平三	ju liu ping san	0
-車六平三	ju liu ping san	0
-俥六平四	ju liu ping si	0
-車六平四	ju liu ping si	0
-俥六平五	ju liu ping wu	0
-車六平五	ju liu ping wu	0
-俥六平一	ju liu ping yi	0
-車六平一	ju liu ping yi	0
-俥六退八	ju liu tui ba	0
-車六退八	ju liu tui ba	0
-俥六退二	ju liu tui er	0
-車六退二	ju liu tui er	0
-俥六退九	ju liu tui jiu	0
-車六退九	ju liu tui jiu	0
-俥六退六	ju liu tui liu	0
-車六退六	ju liu tui liu	0
-俥六退七	ju liu tui qi	0
-車六退七	ju liu tui qi	0
-俥六退三	ju liu tui san	0
-車六退三	ju liu tui san	0
-俥六退四	ju liu tui si	0
-車六退四	ju liu tui si	0
-俥六退五	ju liu tui wu	0
-車六退五	ju liu tui wu	0
-俥六退一	ju liu tui yi	0
-車六退一	ju liu tui yi	0
-車平	ju ping	0
-俥七进八	ju qi jin ba	0
-車七进八	ju qi jin ba	0
-俥七进二	ju qi jin er	0
-車七进二	ju qi jin er	0
-俥七进九	ju qi jin jiu	0
-車七进九	ju qi jin jiu	0
-俥七进六	ju qi jin liu	0
-車七进六	ju qi jin liu	0
-俥七进七	ju qi jin qi	0
-車七进七	ju qi jin qi	0
-俥七进三	ju qi jin san	0
-車七进三	ju qi jin san	0
-俥七进四	ju qi jin si	0
-車七进四	ju qi jin si	0
-俥七进五	ju qi jin wu	0
-車七进五	ju qi jin wu	0
-俥七进一	ju qi jin yi	0
-車七进一	ju qi jin yi	0
-俥七平八	ju qi ping ba	0
-車七平八	ju qi ping ba	0
-俥七平二	ju qi ping er	0
-車七平二	ju qi ping er	0
-俥七平九	ju qi ping jiu	0
-車七平九	ju qi ping jiu	0
-俥七平六	ju qi ping liu	0
-車七平六	ju qi ping liu	0
-俥七平三	ju qi ping san	0
-車七平三	ju qi ping san	0
-俥七平四	ju qi ping si	0
-車七平四	ju qi ping si	0
-俥七平五	ju qi ping wu	0
-車七平五	ju qi ping wu	0
-俥七平一	ju qi ping yi	0
-車七平一	ju qi ping yi	0
-俥七退八	ju qi tui ba	0
-車七退八	ju qi tui ba	0
-俥七退二	ju qi tui er	0
-車七退二	ju qi tui er	0
-俥七退九	ju qi tui jiu	0
-車七退九	ju qi tui jiu	0
-俥七退六	ju qi tui liu	0
-車七退六	ju qi tui liu	0
-俥七退七	ju qi tui qi	0
-車七退七	ju qi tui qi	0
-俥七退三	ju qi tui san	0
-車七退三	ju qi tui san	0
-俥七退四	ju qi tui si	0
-車七退四	ju qi tui si	0
-俥七退五	ju qi tui wu	0
-車七退五	ju qi tui wu	0
-俥七退一	ju qi tui yi	0
-車七退一	ju qi tui yi	0
-俥三进八	ju san jin ba	0
-車三进八	ju san jin ba	0
-俥三进二	ju san jin er	0
-車三进二	ju san jin er	0
-俥三进九	ju san jin jiu	0
-車三进九	ju san jin jiu	0
-俥三进六	ju san jin liu	0
-車三进六	ju san jin liu	0
-俥三进七	ju san jin qi	0
-車三进七	ju san jin qi	0
-俥三进三	ju san jin san	0
-車三进三	ju san jin san	0
-俥三进四	ju san jin si	0
-車三进四	ju san jin si	0
-俥三进五	ju san jin wu	0
-車三进五	ju san jin wu	0
-俥三进一	ju san jin yi	0
-車三进一	ju san jin yi	0
-俥三平八	ju san ping ba	0
-車三平八	ju san ping ba	0
-俥三平二	ju san ping er	0
-車三平二	ju san ping er	0
-俥三平九	ju san ping jiu	0
-車三平九	ju san ping jiu	0
-俥三平六	ju san ping liu	0
-車三平六	ju san ping liu	0
-俥三平七	ju san ping qi	0
-車三平七	ju san ping qi	0
-俥三平四	ju san ping si	0
-車三平四	ju san ping si	0
-俥三平五	ju san ping wu	0
-車三平五	ju san ping wu	0
-俥三平一	ju san ping yi	0
-車三平一	ju san ping yi	0
-俥三退八	ju san tui ba	0
-車三退八	ju san tui ba	0
-俥三退二	ju san tui er	0
-車三退二	ju san tui er	0
-俥三退九	ju san tui jiu	0
-車三退九	ju san tui jiu	0
-俥三退六	ju san tui liu	0
-車三退六	ju san tui liu	0
-俥三退七	ju san tui qi	0
-車三退七	ju san tui qi	0
-俥三退三	ju san tui san	0
-車三退三	ju san tui san	0
-俥三退四	ju san tui si	0
-車三退四	ju san tui si	0
-俥三退五	ju san tui wu	0
-車三退五	ju san tui wu	0
-俥三退一	ju san tui yi	0
-車三退一	ju san tui yi	0
-俥四进八	ju si jin ba	0
-車四进八	ju si jin ba	0
-俥四进二	ju si jin er	0
-車四进二	ju si jin er	0
-俥四进九	ju si jin jiu	0
-車四进九	ju si jin jiu	0
-俥四进六	ju si jin liu	0
-車四进六	ju si jin liu	0
-俥四进七	ju si jin qi	0
-車四进七	ju si jin qi	0
-俥四进三	ju si jin san	0
-車四进三	ju si jin san	0
-俥四进四	ju si jin si	0
-車四进四	ju si jin si	0
-俥四进五	ju si jin wu	0
-車四进五	ju si jin wu	0
-俥四进一	ju si jin yi	0
-車四进一	ju si jin yi	0
-俥四平八	ju si ping ba	0
-車四平八	ju si ping ba	0
-俥四平二	ju si ping er	0
-車四平二	ju si ping er	0
-俥四平九	ju si ping jiu	0
-車四平九	ju si ping jiu	0
-俥四平六	ju si ping liu	0
-車四平六	ju si ping liu	0
-俥四平七	ju si ping qi	0
-車四平七	ju si ping qi	0
-俥四平三	ju si ping san	0
-車四平三	ju si ping san	0
-俥四平五	ju si ping wu	0
-車四平五	ju si ping wu	0
-俥四平一	ju si ping yi	0
-車四平一	ju si ping yi	0
-俥四退八	ju si tui ba	0
-車四退八	ju si tui ba	0
-俥四退二	ju si tui er	0
-車四退二	ju si tui er	0
-俥四退九	ju si tui jiu	0
-車四退九	ju si tui jiu	0
-俥四退六	ju si tui liu	0
-車四退六	ju si tui liu	0
-俥四退七	ju si tui qi	0
-車四退七	ju si tui qi	0
-俥四退三	ju si tui san	0
-車四退三	ju si tui san	0
-俥四退四	ju si tui si	0
-車四退四	ju si tui si	0
-俥四退五	ju si tui wu	0
-車四退五	ju si tui wu	0
-俥四退一	ju si tui yi	0
-車四退一	ju si tui yi	0
-車退	ju tui	0
-俥五进八	ju wu jin ba	0
-車五进八	ju wu jin ba	0
-俥五进二	ju wu jin er	0
-車五进二	ju wu jin er	0
-俥五进九	ju wu jin jiu	0
-車五进九	ju wu jin jiu	0
-俥五进六	ju wu jin liu	0
-車五进六	ju wu jin liu	0
-俥五进七	ju wu jin qi	0
-車五进七	ju wu jin qi	0
-俥五进三	ju wu jin san	0
-車五进三	ju wu jin san	0
-俥五进四	ju wu jin si	0
-車五进四	ju wu jin si	0
-俥五进五	ju wu jin wu	0
-車五进五	ju wu jin wu	0
-俥五进一	ju wu jin yi	0
-車五进一	ju wu jin yi	0
-俥五平八	ju wu ping ba	0
-車五平八	ju wu ping ba	0
-俥五平二	ju wu ping er	0
-車五平二	ju wu ping er	0
-俥五平九	ju wu ping jiu	0
-車五平九	ju wu ping jiu	0
-俥五平六	ju wu ping liu	0
-車五平六	ju wu ping liu	0
-俥五平七	ju wu ping qi	0
-車五平七	ju wu ping qi	0
-俥五平三	ju wu ping san	0
-車五平三	ju wu ping san	0
-俥五平四	ju wu ping si	0
-車五平四	ju wu ping si	0
-俥五平一	ju wu ping yi	0
-車五平一	ju wu ping yi	0
-俥五退八	ju wu tui ba	0
-車五退八	ju wu tui ba	0
-俥五退二	ju wu tui er	0
-車五退二	ju wu tui er	0
-俥五退九	ju wu tui jiu	0
-車五退九	ju wu tui jiu	0
-俥五退六	ju wu tui liu	0
-車五退六	ju wu tui liu	0
-俥五退七	ju wu tui qi	0
-車五退七	ju wu tui qi	0
-俥五退三	ju wu tui san	0
-車五退三	ju wu tui san	0
-俥五退四	ju wu tui si	0
-車五退四	ju wu tui si	0
-俥五退五	ju wu tui wu	0
-車五退五	ju wu tui wu	0
-俥五退一	ju wu tui yi	0
-車五退一	ju wu tui yi	0
-俥一进八	ju yi jin ba	0
-車一进八	ju yi jin ba	0
-俥一进二	ju yi jin er	0
-車一进二	ju yi jin er	0
-俥一进九	ju yi jin jiu	0
-車一进九	ju yi jin jiu	0
-俥一进六	ju yi jin liu	0
-車一进六	ju yi jin liu	0
-俥一进七	ju yi jin qi	0
-車一进七	ju yi jin qi	0
-俥一进三	ju yi jin san	0
-車一进三	ju yi jin san	0
-俥一进四	ju yi jin si	0
-車一进四	ju yi jin si	0
-俥一进五	ju yi jin wu	0
-車一进五	ju yi jin wu	0
-俥一进一	ju yi jin yi	0
-車一进一	ju yi jin yi	0
-俥一平八	ju yi ping ba	0
-車一平八	ju yi ping ba	0
-俥一平二	ju yi ping er	0
-車一平二	ju yi ping er	0
-俥一平九	ju yi ping jiu	0
-車一平九	ju yi ping jiu	0
-俥一平六	ju yi ping liu	0
-車一平六	ju yi ping liu	0
-俥一平七	ju yi ping qi	0
-車一平七	ju yi ping qi	0
-俥一平三	ju yi ping san	0
-車一平三	ju yi ping san	0
-俥一平四	ju yi ping si	0
-車一平四	ju yi ping si	0
-俥一平五	ju yi ping wu	0
-車一平五	ju yi ping wu	0
-俥一退八	ju yi tui ba	0
-車一退八	ju yi tui ba	0
-俥一退二	ju yi tui er	0
-車一退二	ju yi tui er	0
-俥一退九	ju yi tui jiu	0
-車一退九	ju yi tui jiu	0
-俥一退六	ju yi tui liu	0
-車一退六	ju yi tui liu	0
-俥一退七	ju yi tui qi	0
-車一退七	ju yi tui qi	0
-俥一退三	ju yi tui san	0
-車一退三	ju yi tui san	0
-俥一退四	ju yi tui si	0
-車一退四	ju yi tui si	0
-俥一退五	ju yi tui wu	0
-車一退五	ju yi tui wu	0
-俥一退一	ju yi tui yi	0
-車一退一	ju yi tui yi	0
-傌八进九	ma ba jin jiu	0
-馬八进九	ma ba jin jiu	0
 马八进九	ma ba jin jiu	3
-傌八进六	ma ba jin liu	0
-馬八进六	ma ba jin liu	0
 马八进六	ma ba jin liu	0
-傌八进七	ma ba jin qi	0
-馬八进七	ma ba jin qi	0
 马八进七	ma ba jin qi	6
-傌八退九	ma ba tui jiu	0
-馬八退九	ma ba tui jiu	0
 马八退九	ma ba tui jiu	0
-傌八退六	ma ba tui liu	0
-馬八退六	ma ba tui liu	0
 马八退六	ma ba tui liu	0
-傌八退七	ma ba tui qi	0
-馬八退七	ma ba tui qi	0
 马八退七	ma ba tui qi	0
-傌二进三	ma er jin san	0
-馬二进三	ma er jin san	0
 马二进三	ma er jin san	12
-傌二进四	ma er jin si	0
-馬二进四	ma er jin si	0
 马二进四	ma er jin si	0
-傌二进一	ma er jin yi	0
-馬二进一	ma er jin yi	0
 马二进一	ma er jin yi	5
-傌二退三	ma er tui san	0
-馬二退三	ma er tui san	0
 马二退三	ma er tui san	2
-傌二退四	ma er tui si	0
-馬二退四	ma er tui si	0
 马二退四	ma er tui si	1
-傌二退一	ma er tui yi	0
-馬二退一	ma er tui yi	0
 马二退一	ma er tui yi	1
-馬进	ma jin	0
 马进	ma jin	9
-傌九进八	ma jiu jin ba	0
-馬九进八	ma jiu jin ba	0
 马九进八	ma jiu jin ba	0
-傌九进七	ma jiu jin qi	0
-馬九进七	ma jiu jin qi	0
 马九进七	ma jiu jin qi	0
-傌九退八	ma jiu tui ba	0
-馬九退八	ma jiu tui ba	0
 马九退八	ma jiu tui ba	0
-傌九退七	ma jiu tui qi	0
-馬九退七	ma jiu tui qi	0
 马九退七	ma jiu tui qi	0
-傌六进八	ma liu jin ba	0
-馬六进八	ma liu jin ba	0
 马六进八	ma liu jin ba	0
-傌六进七	ma liu jin qi	0
-馬六进七	ma liu jin qi	0
 马六进七	ma liu jin qi	0
-傌六进四	ma liu jin si	0
-馬六进四	ma liu jin si	0
 马六进四	ma liu jin si	0
-傌六进五	ma liu jin wu	0
-馬六进五	ma liu jin wu	0
 马六进五	ma liu jin wu	0
-傌六退八	ma liu tui ba	0
-馬六退八	ma liu tui ba	0
 马六退八	ma liu tui ba	0
-傌六退七	ma liu tui qi	0
-馬六退七	ma liu tui qi	0
 马六退七	ma liu tui qi	0
-傌六退四	ma liu tui si	0
-馬六退四	ma liu tui si	0
 马六退四	ma liu tui si	0
-傌六退五	ma liu tui wu	0
-馬六退五	ma liu tui wu	0
 马六退五	ma liu tui wu	1
-傌七进八	ma qi jin ba	0
-馬七进八	ma qi jin ba	0
 马七进八	ma qi jin ba	0
-傌七进九	ma qi jin jiu	0
-馬七进九	ma qi jin jiu	0
 马七进九	ma qi jin jiu	0
-傌七进六	ma qi jin liu	0
-馬七进六	ma qi jin liu	0
 马七进六	ma qi jin liu	0
-傌七进五	ma qi jin wu	0
-馬七进五	ma qi jin wu	0
 马七进五	ma qi jin wu	5
-傌七退八	ma qi tui ba	0
-馬七退八	ma qi tui ba	0
 马七退八	ma qi tui ba	0
-傌七退九	ma qi tui jiu	0
-馬七退九	ma qi tui jiu	0
 马七退九	ma qi tui jiu	0
-傌七退六	ma qi tui liu	0
-馬七退六	ma qi tui liu	0
 马七退六	ma qi tui liu	0
-傌七退五	ma qi tui wu	0
-馬七退五	ma qi tui wu	0
 马七退五	ma qi tui wu	0
-傌三进二	ma san jin er	0
-馬三进二	ma san jin er	0
 马三进二	ma san jin er	2
-傌三进四	ma san jin si	0
-馬三进四	ma san jin si	0
 马三进四	ma san jin si	3
-傌三进五	ma san jin wu	0
-馬三进五	ma san jin wu	0
 马三进五	ma san jin wu	0
-傌三进一	ma san jin yi	0
-馬三进一	ma san jin yi	0
 马三进一	ma san jin yi	3
-傌三退二	ma san tui er	0
-馬三退二	ma san tui er	0
 马三退二	ma san tui er	0
-傌三退四	ma san tui si	0
-馬三退四	ma san tui si	0
 马三退四	ma san tui si	0
-傌三退五	ma san tui wu	0
-馬三退五	ma san tui wu	0
 马三退五	ma san tui wu	0
-傌三退一	ma san tui yi	0
-馬三退一	ma san tui yi	0
 马三退一	ma san tui yi	0
-傌四进二	ma si jin er	0
-馬四进二	ma si jin er	0
 马四进二	ma si jin er	1
-傌四进六	ma si jin liu	0
-馬四进六	ma si jin liu	0
 马四进六	ma si jin liu	0
-傌四进三	ma si jin san	0
-馬四进三	ma si jin san	0
 马四进三	ma si jin san	0
-傌四进五	ma si jin wu	0
-馬四进五	ma si jin wu	0
 马四进五	ma si jin wu	0
-傌四退二	ma si tui er	0
-馬四退二	ma si tui er	0
 马四退二	ma si tui er	1
-傌四退六	ma si tui liu	0
-馬四退六	ma si tui liu	0
 马四退六	ma si tui liu	1
-傌四退三	ma si tui san	0
-馬四退三	ma si tui san	0
 马四退三	ma si tui san	1
-傌四退五	ma si tui wu	0
-馬四退五	ma si tui wu	0
 马四退五	ma si tui wu	0
-馬退	ma tui	0
 马退	ma tui	0
-傌五进六	ma wu jin liu	0
-馬五进六	ma wu jin liu	0
 马五进六	ma wu jin liu	0
-傌五进七	ma wu jin qi	0
-馬五进七	ma wu jin qi	0
 马五进七	ma wu jin qi	0
-傌五进三	ma wu jin san	0
-馬五进三	ma wu jin san	0
 马五进三	ma wu jin san	0
-傌五进四	ma wu jin si	0
-馬五进四	ma wu jin si	0
 马五进四	ma wu jin si	0
-傌五退六	ma wu tui liu	0
-馬五退六	ma wu tui liu	0
 马五退六	ma wu tui liu	0
-傌五退七	ma wu tui qi	0
-馬五退七	ma wu tui qi	0
 马五退七	ma wu tui qi	0
-傌五退三	ma wu tui san	0
-馬五退三	ma wu tui san	0
 马五退三	ma wu tui san	0
-傌五退四	ma wu tui si	0
-馬五退四	ma wu tui si	0
 马五退四	ma wu tui si	0
-傌一进二	ma yi jin er	0
-馬一进二	ma yi jin er	0
 马一进二	ma yi jin er	0
-傌一进三	ma yi jin san	0
-馬一进三	ma yi jin san	0
 马一进三	ma yi jin san	2
-傌一退二	ma yi tui er	0
-馬一退二	ma yi tui er	0
 马一退二	ma yi tui er	0
-傌一退三	ma yi tui san	0
-馬一退三	ma yi tui san	0
 马一退三	ma yi tui san	1
 炮八进八	pao ba jin ba	0
-砲八进八	pao ba jin ba	0
 炮八进二	pao ba jin er	1
-砲八进二	pao ba jin er	0
 炮八进九	pao ba jin jiu	0
-砲八进九	pao ba jin jiu	0
 炮八进六	pao ba jin liu	0
-砲八进六	pao ba jin liu	0
 炮八进七	pao ba jin qi	0
-砲八进七	pao ba jin qi	0
 炮八进三	pao ba jin san	1
-砲八进三	pao ba jin san	0
 炮八进四	pao ba jin si	0
-砲八进四	pao ba jin si	0
 炮八进五	pao ba jin wu	6
-砲八进五	pao ba jin wu	0
 炮八进一	pao ba jin yi	1
-砲八进一	pao ba jin yi	0
 炮八平二	pao ba ping er	1
-砲八平二	pao ba ping er	0
 炮八平九	pao ba ping jiu	0
-砲八平九	pao ba ping jiu	0
 炮八平六	pao ba ping liu	2
-砲八平六	pao ba ping liu	0
 炮八平七	pao ba ping qi	0
-砲八平七	pao ba ping qi	0
 炮八平三	pao ba ping san	2
-砲八平三	pao ba ping san	0
 炮八平四	pao ba ping si	2
-砲八平四	pao ba ping si	0
 炮八平五	pao ba ping wu	12
-砲八平五	pao ba ping wu	0
 炮八平一	pao ba ping yi	0
-砲八平一	pao ba ping yi	0
 炮八退八	pao ba tui ba	0
-砲八退八	pao ba tui ba	0
 炮八退二	pao ba tui er	0
-砲八退二	pao ba tui er	0
 炮八退九	pao ba tui jiu	0
-砲八退九	pao ba tui jiu	0
 炮八退六	pao ba tui liu	0
-砲八退六	pao ba tui liu	0
 炮八退七	pao ba tui qi	0
-砲八退七	pao ba tui qi	0
 炮八退三	pao ba tui san	0
-砲八退三	pao ba tui san	0
 炮八退四	pao ba tui si	0
-砲八退四	pao ba tui si	0
 炮八退五	pao ba tui wu	0
-砲八退五	pao ba tui wu	0
 炮八退一	pao ba tui yi	3
-砲八退一	pao ba tui yi	0
 炮二进八	pao er jin ba	0
-砲二进八	pao er jin ba	0
 炮二进二	pao er jin er	2
-砲二进二	pao er jin er	0
 炮二进九	pao er jin jiu	0
-砲二进九	pao er jin jiu	0
 炮二进六	pao er jin liu	1
-砲二进六	pao er jin liu	0
 炮二进七	pao er jin qi	4
-砲二进七	pao er jin qi	0
 炮二进三	pao er jin san	3
-砲二进三	pao er jin san	0
 炮二进四	pao er jin si	2
-砲二进四	pao er jin si	0
 炮二进五	pao er jin wu	2
-砲二进五	pao er jin wu	0
 炮二进一	pao er jin yi	2
-砲二进一	pao er jin yi	0
 炮二平八	pao er ping ba	0
-砲二平八	pao er ping ba	0
 炮二平九	pao er ping jiu	0
-砲二平九	pao er ping jiu	0
 炮二平六	pao er ping liu	3
-砲二平六	pao er ping liu	0
 炮二平七	pao er ping qi	2
-砲二平七	pao er ping qi	0
 炮二平三	pao er ping san	3
-砲二平三	pao er ping san	0
 炮二平四	pao er ping si	4
-砲二平四	pao er ping si	0
 炮二平五	pao er ping wu	18
-砲二平五	pao er ping wu	0
 炮二平一	pao er ping yi	4
-砲二平一	pao er ping yi	0
 炮二退八	pao er tui ba	0
-砲二退八	pao er tui ba	0
 炮二退二	pao er tui er	0
-砲二退二	pao er tui er	0
 炮二退九	pao er tui jiu	0
-砲二退九	pao er tui jiu	0
 炮二退六	pao er tui liu	0
-砲二退六	pao er tui liu	0
 炮二退七	pao er tui qi	0
-砲二退七	pao er tui qi	0
 炮二退三	pao er tui san	0
-砲二退三	pao er tui san	0
 炮二退四	pao er tui si	0
-砲二退四	pao er tui si	0
 炮二退五	pao er tui wu	0
-砲二退五	pao er tui wu	0
 炮二退一	pao er tui yi	0
-砲二退一	pao er tui yi	0
 炮进	pao jin	3
-砲进	pao jin	0
 炮九进八	pao jiu jin ba	0
-砲九进八	pao jiu jin ba	0
 炮九进二	pao jiu jin er	0
-砲九进二	pao jiu jin er	0
 炮九进九	pao jiu jin jiu	0
-砲九进九	pao jiu jin jiu	0
 炮九进六	pao jiu jin liu	0
-砲九进六	pao jiu jin liu	0
 炮九进七	pao jiu jin qi	0
-砲九进七	pao jiu jin qi	0
 炮九进三	pao jiu jin san	0
-砲九进三	pao jiu jin san	0
 炮九进四	pao jiu jin si	0
-砲九进四	pao jiu jin si	0
 炮九进五	pao jiu jin wu	0
-砲九进五	pao jiu jin wu	0
 炮九进一	pao jiu jin yi	0
-砲九进一	pao jiu jin yi	0
 炮九平八	pao jiu ping ba	0
-砲九平八	pao jiu ping ba	0
 炮九平二	pao jiu ping er	0
-砲九平二	pao jiu ping er	0
 炮九平六	pao jiu ping liu	0
-砲九平六	pao jiu ping liu	0
 炮九平七	pao jiu ping qi	0
-砲九平七	pao jiu ping qi	0
 炮九平三	pao jiu ping san	1
-砲九平三	pao jiu ping san	0
 炮九平四	pao jiu ping si	0
-砲九平四	pao jiu ping si	0
 炮九平五	pao jiu ping wu	0
-砲九平五	pao jiu ping wu	0
 炮九平一	pao jiu ping yi	0
-砲九平一	pao jiu ping yi	0
 炮九退八	pao jiu tui ba	0
-砲九退八	pao jiu tui ba	0
 炮九退二	pao jiu tui er	0
-砲九退二	pao jiu tui er	0
 炮九退九	pao jiu tui jiu	0
-砲九退九	pao jiu tui jiu	0
 炮九退六	pao jiu tui liu	0
-砲九退六	pao jiu tui liu	0
 炮九退七	pao jiu tui qi	0
-砲九退七	pao jiu tui qi	0
 炮九退三	pao jiu tui san	0
-砲九退三	pao jiu tui san	0
 炮九退四	pao jiu tui si	0
-砲九退四	pao jiu tui si	0
 炮九退五	pao jiu tui wu	0
-砲九退五	pao jiu tui wu	0
 炮九退一	pao jiu tui yi	0
-砲九退一	pao jiu tui yi	0
 炮六进八	pao liu jin ba	0
-砲六进八	pao liu jin ba	0
 炮六进二	pao liu jin er	0
-砲六进二	pao liu jin er	0
 炮六进九	pao liu jin jiu	0
-砲六进九	pao liu jin jiu	0
 炮六进六	pao liu jin liu	0
-砲六进六	pao liu jin liu	0
 炮六进七	pao liu jin qi	0
-砲六进七	pao liu jin qi	0
 炮六进三	pao liu jin san	0
-砲六进三	pao liu jin san	0
 炮六进四	pao liu jin si	0
-砲六进四	pao liu jin si	0
 炮六进五	pao liu jin wu	0
-砲六进五	pao liu jin wu	0
 炮六进一	pao liu jin yi	0
-砲六进一	pao liu jin yi	0
 炮六平八	pao liu ping ba	0
-砲六平八	pao liu ping ba	0
 炮六平二	pao liu ping er	0
-砲六平二	pao liu ping er	0
 炮六平九	pao liu ping jiu	0
-砲六平九	pao liu ping jiu	0
 炮六平七	pao liu ping qi	0
-砲六平七	pao liu ping qi	0
 炮六平三	pao liu ping san	0
-砲六平三	pao liu ping san	0
 炮六平四	pao liu ping si	0
-砲六平四	pao liu ping si	0
 炮六平五	pao liu ping wu	0
-砲六平五	pao liu ping wu	0
 炮六平一	pao liu ping yi	0
-砲六平一	pao liu ping yi	0
 炮六退八	pao liu tui ba	0
-砲六退八	pao liu tui ba	0
 炮六退二	pao liu tui er	0
-砲六退二	pao liu tui er	0
 炮六退九	pao liu tui jiu	0
-砲六退九	pao liu tui jiu	0
 炮六退六	pao liu tui liu	0
-砲六退六	pao liu tui liu	0
 炮六退七	pao liu tui qi	0
-砲六退七	pao liu tui qi	0
 炮六退三	pao liu tui san	0
-砲六退三	pao liu tui san	0
 炮六退四	pao liu tui si	0
-砲六退四	pao liu tui si	0
 炮六退五	pao liu tui wu	0
-砲六退五	pao liu tui wu	0
 炮六退一	pao liu tui yi	0
-砲六退一	pao liu tui yi	0
 炮平	pao ping	3
-砲平	pao ping	0
 炮七进八	pao qi jin ba	0
-砲七进八	pao qi jin ba	0
 炮七进二	pao qi jin er	0
-砲七进二	pao qi jin er	0
 炮七进九	pao qi jin jiu	0
-砲七进九	pao qi jin jiu	0
 炮七进六	pao qi jin liu	0
-砲七进六	pao qi jin liu	0
 炮七进七	pao qi jin qi	0
-砲七进七	pao qi jin qi	0
 炮七进三	pao qi jin san	0
-砲七进三	pao qi jin san	0
 炮七进四	pao qi jin si	0
-砲七进四	pao qi jin si	0
 炮七进五	pao qi jin wu	0
-砲七进五	pao qi jin wu	0
 炮七进一	pao qi jin yi	0
-砲七进一	pao qi jin yi	0
 炮七平八	pao qi ping ba	0
-砲七平八	pao qi ping ba	0
 炮七平二	pao qi ping er	0
-砲七平二	pao qi ping er	0
 炮七平九	pao qi ping jiu	0
-砲七平九	pao qi ping jiu	0
 炮七平六	pao qi ping liu	0
-砲七平六	pao qi ping liu	0
 炮七平三	pao qi ping san	0
-砲七平三	pao qi ping san	0
 炮七平四	pao qi ping si	0
-砲七平四	pao qi ping si	0
 炮七平五	pao qi ping wu	1
-砲七平五	pao qi ping wu	0
 炮七平一	pao qi ping yi	0
-砲七平一	pao qi ping yi	0
 炮七退八	pao qi tui ba	0
-砲七退八	pao qi tui ba	0
 炮七退二	pao qi tui er	0
-砲七退二	pao qi tui er	0
 炮七退九	pao qi tui jiu	0
-砲七退九	pao qi tui jiu	0
 炮七退六	pao qi tui liu	0
-砲七退六	pao qi tui liu	0
 炮七退七	pao qi tui qi	0
-砲七退七	pao qi tui qi	0
 炮七退三	pao qi tui san	0
-砲七退三	pao qi tui san	0
 炮七退四	pao qi tui si	0
-砲七退四	pao qi tui si	0
 炮七退五	pao qi tui wu	0
-砲七退五	pao qi tui wu	0
 炮七退一	pao qi tui yi	1
-砲七退一	pao qi tui yi	0
 炮三进八	pao san jin ba	0
-砲三进八	pao san jin ba	0
 炮三进二	pao san jin er	0
-砲三进二	pao san jin er	0
 炮三进九	pao san jin jiu	0
-砲三进九	pao san jin jiu	0
 炮三进六	pao san jin liu	0
-砲三进六	pao san jin liu	0
 炮三进七	pao san jin qi	0
-砲三进七	pao san jin qi	0
 炮三进三	pao san jin san	0
-砲三进三	pao san jin san	0
 炮三进四	pao san jin si	0
-砲三进四	pao san jin si	0
 炮三进五	pao san jin wu	0
-砲三进五	pao san jin wu	0
 炮三进一	pao san jin yi	0
-砲三进一	pao san jin yi	0
 炮三平八	pao san ping ba	0
-砲三平八	pao san ping ba	0
 炮三平二	pao san ping er	0
-砲三平二	pao san ping er	0
 炮三平九	pao san ping jiu	1
-砲三平九	pao san ping jiu	0
 炮三平六	pao san ping liu	0
-砲三平六	pao san ping liu	0
 炮三平七	pao san ping qi	0
-砲三平七	pao san ping qi	0
 炮三平四	pao san ping si	0
-砲三平四	pao san ping si	0
 炮三平五	pao san ping wu	2
-砲三平五	pao san ping wu	0
 炮三平一	pao san ping yi	3
-砲三平一	pao san ping yi	0
 炮三退八	pao san tui ba	0
-砲三退八	pao san tui ba	0
 炮三退二	pao san tui er	0
-砲三退二	pao san tui er	0
 炮三退九	pao san tui jiu	0
-砲三退九	pao san tui jiu	0
 炮三退六	pao san tui liu	0
-砲三退六	pao san tui liu	0
 炮三退七	pao san tui qi	0
-砲三退七	pao san tui qi	0
 炮三退三	pao san tui san	0
-砲三退三	pao san tui san	0
 炮三退四	pao san tui si	0
-砲三退四	pao san tui si	0
 炮三退五	pao san tui wu	0
-砲三退五	pao san tui wu	0
 炮三退一	pao san tui yi	2
-砲三退一	pao san tui yi	0
 炮四进八	pao si jin ba	0
-砲四进八	pao si jin ba	0
 炮四进二	pao si jin er	0
-砲四进二	pao si jin er	0
 炮四进九	pao si jin jiu	0
-砲四进九	pao si jin jiu	0
 炮四进六	pao si jin liu	0
-砲四进六	pao si jin liu	0
 炮四进七	pao si jin qi	0
-砲四进七	pao si jin qi	0
 炮四进三	pao si jin san	0
-砲四进三	pao si jin san	0
 炮四进四	pao si jin si	0
-砲四进四	pao si jin si	0
 炮四进五	pao si jin wu	0
-砲四进五	pao si jin wu	0
 炮四进一	pao si jin yi	0
-砲四进一	pao si jin yi	0
 炮四平八	pao si ping ba	0
-砲四平八	pao si ping ba	0
 炮四平二	pao si ping er	0
-砲四平二	pao si ping er	0
 炮四平九	pao si ping jiu	0
-砲四平九	pao si ping jiu	0
 炮四平六	pao si ping liu	0
-砲四平六	pao si ping liu	0
 炮四平七	pao si ping qi	0
-砲四平七	pao si ping qi	0
 炮四平三	pao si ping san	1
-砲四平三	pao si ping san	0
 炮四平五	pao si ping wu	0
-砲四平五	pao si ping wu	0
 炮四平一	pao si ping yi	0
-砲四平一	pao si ping yi	0
 炮四退八	pao si tui ba	0
-砲四退八	pao si tui ba	0
 炮四退二	pao si tui er	0
-砲四退二	pao si tui er	0
 炮四退九	pao si tui jiu	0
-砲四退九	pao si tui jiu	0
 炮四退六	pao si tui liu	0
-砲四退六	pao si tui liu	0
 炮四退七	pao si tui qi	0
-砲四退七	pao si tui qi	0
 炮四退三	pao si tui san	0
-砲四退三	pao si tui san	0
 炮四退四	pao si tui si	0
-砲四退四	pao si tui si	0
 炮四退五	pao si tui wu	0
-砲四退五	pao si tui wu	0
 炮四退一	pao si tui yi	0
-砲四退一	pao si tui yi	0
 炮退	pao tui	0
-砲退	pao tui	0
 炮五进八	pao wu jin ba	0
-砲五进八	pao wu jin ba	0
 炮五进二	pao wu jin er	0
-砲五进二	pao wu jin er	0
 炮五进九	pao wu jin jiu	0
-砲五进九	pao wu jin jiu	0
 炮五进六	pao wu jin liu	0
-砲五进六	pao wu jin liu	0
 炮五进七	pao wu jin qi	1
-砲五进七	pao wu jin qi	0
 炮五进三	pao wu jin san	0
-砲五进三	pao wu jin san	0
 炮五进四	pao wu jin si	11
-砲五进四	pao wu jin si	0
 炮五进五	pao wu jin wu	0
-砲五进五	pao wu jin wu	0
 炮五进一	pao wu jin yi	0
-砲五进一	pao wu jin yi	0
 炮五平八	pao wu ping ba	0
-砲五平八	pao wu ping ba	0
 炮五平二	pao wu ping er	0
-砲五平二	pao wu ping er	0
 炮五平九	pao wu ping jiu	0
-砲五平九	pao wu ping jiu	0
 炮五平六	pao wu ping liu	0
-砲五平六	pao wu ping liu	0
 炮五平七	pao wu ping qi	0
-砲五平七	pao wu ping qi	0
 炮五平三	pao wu ping san	0
-砲五平三	pao wu ping san	0
 炮五平四	pao wu ping si	1
-砲五平四	pao wu ping si	0
 炮五平一	pao wu ping yi	0
-砲五平一	pao wu ping yi	0
 炮五退八	pao wu tui ba	0
-砲五退八	pao wu tui ba	0
 炮五退二	pao wu tui er	1
-砲五退二	pao wu tui er	0
 炮五退九	pao wu tui jiu	0
-砲五退九	pao wu tui jiu	0
 炮五退六	pao wu tui liu	0
-砲五退六	pao wu tui liu	0
 炮五退七	pao wu tui qi	0
-砲五退七	pao wu tui qi	0
 炮五退三	pao wu tui san	0
-砲五退三	pao wu tui san	0
 炮五退四	pao wu tui si	0
-砲五退四	pao wu tui si	0
 炮五退五	pao wu tui wu	0
-砲五退五	pao wu tui wu	0
 炮五退一	pao wu tui yi	1
-砲五退一	pao wu tui yi	0
 炮一进八	pao yi jin ba	0
-砲一进八	pao yi jin ba	0
 炮一进二	pao yi jin er	0
-砲一进二	pao yi jin er	0
 炮一进九	pao yi jin jiu	0
-砲一进九	pao yi jin jiu	0
 炮一进六	pao yi jin liu	1
-砲一进六	pao yi jin liu	0
 炮一进七	pao yi jin qi	0
-砲一进七	pao yi jin qi	0
 炮一进三	pao yi jin san	0
-砲一进三	pao yi jin san	0
 炮一进四	pao yi jin si	0
-砲一进四	pao yi jin si	0
 炮一进五	pao yi jin wu	0
-砲一进五	pao yi jin wu	0
 炮一进一	pao yi jin yi	0
-砲一进一	pao yi jin yi	0
 炮一平八	pao yi ping ba	0
-砲一平八	pao yi ping ba	0
 炮一平二	pao yi ping er	0
-砲一平二	pao yi ping er	0
 炮一平九	pao yi ping jiu	0
-砲一平九	pao yi ping jiu	0
 炮一平六	pao yi ping liu	1
-砲一平六	pao yi ping liu	0
 炮一平七	pao yi ping qi	0
-砲一平七	pao yi ping qi	0
 炮一平三	pao yi ping san	0
-砲一平三	pao yi ping san	0
 炮一平四	pao yi ping si	0
-砲一平四	pao yi ping si	0
 炮一平五	pao yi ping wu	0
-砲一平五	pao yi ping wu	0
 炮一退八	pao yi tui ba	0
-砲一退八	pao yi tui ba	0
 炮一退二	pao yi tui er	0
-砲一退二	pao yi tui er	0
 炮一退九	pao yi tui jiu	0
-砲一退九	pao yi tui jiu	0
 炮一退六	pao yi tui liu	0
-砲一退六	pao yi tui liu	0
 炮一退七	pao yi tui qi	0
-砲一退七	pao yi tui qi	0
 炮一退三	pao yi tui san	0
-砲一退三	pao yi tui san	0
 炮一退四	pao yi tui si	0
-砲一退四	pao yi tui si	0
 炮一退五	pao yi tui wu	0
-砲一退五	pao yi tui wu	0
 炮一退一	pao yi tui yi	0
-砲一退一	pao yi tui yi	0
 前包进	qian bao jin	0
 前包进八	qian bao jin ba	0
 前包进二	qian bao jin er	0
@@ -1769,175 +813,55 @@ use_preset_vocabulary: false
 前车退四	qian che tui si	0
 前车退五	qian che tui wu	0
 前车退一	qian che tui yi	1
-前車进	qian ju jin	0
-前俥进八	qian ju jin ba	0
-前車进八	qian ju jin ba	0
-前俥进二	qian ju jin er	0
-前車进二	qian ju jin er	0
-前俥进六	qian ju jin liu	0
-前車进六	qian ju jin liu	0
-前俥进七	qian ju jin qi	0
-前車进七	qian ju jin qi	0
-前俥进三	qian ju jin san	0
-前車进三	qian ju jin san	0
-前俥进四	qian ju jin si	0
-前車进四	qian ju jin si	0
-前俥进五	qian ju jin wu	0
-前車进五	qian ju jin wu	0
-前俥进一	qian ju jin yi	0
-前車进一	qian ju jin yi	0
-前車平	qian ju ping	0
-前俥平八	qian ju ping ba	0
-前車平八	qian ju ping ba	0
-前俥平二	qian ju ping er	0
-前車平二	qian ju ping er	0
-前俥平九	qian ju ping jiu	0
-前車平九	qian ju ping jiu	0
-前俥平六	qian ju ping liu	0
-前車平六	qian ju ping liu	0
-前俥平七	qian ju ping qi	0
-前車平七	qian ju ping qi	0
-前俥平三	qian ju ping san	0
-前車平三	qian ju ping san	0
-前俥平四	qian ju ping si	0
-前車平四	qian ju ping si	0
-前俥平五	qian ju ping wu	0
-前車平五	qian ju ping wu	0
-前俥平一	qian ju ping yi	0
-前車平一	qian ju ping yi	0
-前車退	qian ju tui	0
-前俥退八	qian ju tui ba	0
-前車退八	qian ju tui ba	0
-前俥退二	qian ju tui er	0
-前車退二	qian ju tui er	0
-前俥退六	qian ju tui liu	0
-前車退六	qian ju tui liu	0
-前俥退七	qian ju tui qi	0
-前車退七	qian ju tui qi	0
-前俥退三	qian ju tui san	0
-前車退三	qian ju tui san	0
-前俥退四	qian ju tui si	0
-前車退四	qian ju tui si	0
-前俥退五	qian ju tui wu	0
-前車退五	qian ju tui wu	0
-前俥退一	qian ju tui yi	0
-前車退一	qian ju tui yi	0
-前馬进	qian ma jin	0
 前马进	qian ma jin	0
-前傌进八	qian ma jin ba	0
-前馬进八	qian ma jin ba	0
 前马进八	qian ma jin ba	0
-前傌进二	qian ma jin er	0
-前馬进二	qian ma jin er	0
 前马进二	qian ma jin er	0
-前傌进九	qian ma jin jiu	0
-前馬进九	qian ma jin jiu	0
 前马进九	qian ma jin jiu	0
-前傌进六	qian ma jin liu	0
-前馬进六	qian ma jin liu	0
 前马进六	qian ma jin liu	0
-前傌进七	qian ma jin qi	0
-前馬进七	qian ma jin qi	0
 前马进七	qian ma jin qi	0
-前傌进三	qian ma jin san	0
-前馬进三	qian ma jin san	0
 前马进三	qian ma jin san	0
-前傌进四	qian ma jin si	0
-前馬进四	qian ma jin si	0
 前马进四	qian ma jin si	1
-前傌进五	qian ma jin wu	0
-前馬进五	qian ma jin wu	0
 前马进五	qian ma jin wu	0
-前傌进一	qian ma jin yi	0
-前馬进一	qian ma jin yi	0
 前马进一	qian ma jin yi	0
-前馬退	qian ma tui	0
 前马退	qian ma tui	0
-前傌退八	qian ma tui ba	0
-前馬退八	qian ma tui ba	0
 前马退八	qian ma tui ba	0
-前傌退二	qian ma tui er	0
-前馬退二	qian ma tui er	0
 前马退二	qian ma tui er	0
-前傌退九	qian ma tui jiu	0
-前馬退九	qian ma tui jiu	0
 前马退九	qian ma tui jiu	0
-前傌退六	qian ma tui liu	0
-前馬退六	qian ma tui liu	0
 前马退六	qian ma tui liu	0
-前傌退七	qian ma tui qi	0
-前馬退七	qian ma tui qi	0
 前马退七	qian ma tui qi	0
-前傌退三	qian ma tui san	0
-前馬退三	qian ma tui san	0
 前马退三	qian ma tui san	0
-前傌退四	qian ma tui si	0
-前馬退四	qian ma tui si	0
 前马退四	qian ma tui si	0
-前傌退五	qian ma tui wu	0
-前馬退五	qian ma tui wu	0
 前马退五	qian ma tui wu	0
-前傌退一	qian ma tui yi	0
-前馬退一	qian ma tui yi	0
 前马退一	qian ma tui yi	0
 前炮进	qian pao jin	0
-前砲进	qian pao jin	0
 前炮进八	qian pao jin ba	0
-前砲进八	qian pao jin ba	0
 前炮进二	qian pao jin er	0
-前砲进二	qian pao jin er	0
 前炮进六	qian pao jin liu	0
-前砲进六	qian pao jin liu	0
 前炮进七	qian pao jin qi	0
-前砲进七	qian pao jin qi	0
 前炮进三	qian pao jin san	0
-前砲进三	qian pao jin san	0
 前炮进四	qian pao jin si	0
-前砲进四	qian pao jin si	0
 前炮进五	qian pao jin wu	0
-前砲进五	qian pao jin wu	0
 前炮进一	qian pao jin yi	0
-前砲进一	qian pao jin yi	0
 前炮平	qian pao ping	0
-前砲平	qian pao ping	0
 前炮平八	qian pao ping ba	0
-前砲平八	qian pao ping ba	0
 前炮平二	qian pao ping er	0
-前砲平二	qian pao ping er	0
 前炮平九	qian pao ping jiu	0
-前砲平九	qian pao ping jiu	0
 前炮平六	qian pao ping liu	0
-前砲平六	qian pao ping liu	0
 前炮平七	qian pao ping qi	0
-前砲平七	qian pao ping qi	0
 前炮平三	qian pao ping san	0
-前砲平三	qian pao ping san	0
 前炮平四	qian pao ping si	0
-前砲平四	qian pao ping si	0
 前炮平五	qian pao ping wu	1
-前砲平五	qian pao ping wu	0
 前炮平一	qian pao ping yi	0
-前砲平一	qian pao ping yi	0
 前炮退	qian pao tui	0
-前砲退	qian pao tui	0
 前炮退八	qian pao tui ba	0
-前砲退八	qian pao tui ba	0
 前炮退二	qian pao tui er	0
-前砲退二	qian pao tui er	0
 前炮退九	qian pao tui jiu	0
-前砲退九	qian pao tui jiu	0
 前炮退六	qian pao tui liu	0
-前砲退六	qian pao tui liu	0
 前炮退七	qian pao tui qi	0
-前砲退七	qian pao tui qi	0
 前炮退三	qian pao tui san	0
-前砲退三	qian pao tui san	0
 前炮退四	qian pao tui si	0
-前砲退四	qian pao tui si	0
 前炮退五	qian pao tui wu	0
-前砲退五	qian pao tui wu	0
 前炮退一	qian pao tui yi	0
-前砲退一	qian pao tui yi	0
 前卒进	qian zu jin	0
 前卒平	qian zu ping	0
 三兵进一	san bing jin yi	0
@@ -1971,25 +895,14 @@ use_preset_vocabulary: false
 仕五退四	shi wu tui si	0
 士五退四	shi wu tui si	0
 帅六进一	shuai liu jin yi	0
-帥六进一	shuai liu jin yi	0
 帅六平五	shuai liu ping wu	1
-帥六平五	shuai liu ping wu	0
 帅六退一	shuai liu tui yi	0
-帥六退一	shuai liu tui yi	0
 帅四进一	shuai si jin yi	0
-帥四进一	shuai si jin yi	0
 帅四平五	shuai si ping wu	0
-帥四平五	shuai si ping wu	0
 帅四退一	shuai si tui yi	0
-帥四退一	shuai si tui yi	0
-帅五进一	shuai wu jin yi	10
-帥五进一	shuai wu jin yi	0
 帅五平六	shuai wu ping liu	0
-帥五平六	shuai wu ping liu	0
 帅五平四	shuai wu ping si	1
-帥五平四	shuai wu ping si	0
 帅五退一	shuai wu tui yi	1
-帥五退一	shuai wu tui yi	0
 四兵进一	si bing jin yi	0
 四兵平八	si bing ping ba	0
 四兵平二	si bing ping er	0
@@ -2039,8 +952,6 @@ use_preset_vocabulary: false
 按时拨钟	an shi bo zhong	0
 按时加钟	an shi jia zhong	0
 暗捉	an zhuo	1
-拔簧马	ba huang ma	5
-八角马	ba jiao ma	8
 百局象棋谱	bai ju xiang qi pu	1
 白马卧槽	bai ma wo cao	0
 败势	bai shi	19
@@ -2050,9 +961,9 @@ use_preset_vocabulary: false
 北斗棋苑选粹	bei dou qi yuan xuan cui	0
 北京中加	bei jing zhong jia	0
 边马	bian ma	22
-边马对还中炮	bian ma dui hai zhong pao	0
+边马对还中炮	bian ma dui huan zhong pao	0
 兵行线	bing xing xian	0
-卜凤波	bo feng bo	0
+卜凤波	bu feng bo	0
 不变作负	bu bian zuo fu	1
 不变作和	bu bian zuo he	5
 布局骗着与对策	bu ju pian zhao yu dui ce	1
@@ -2060,7 +971,6 @@ use_preset_vocabulary: false
 才溢	cai yi	1
 蔡忠诚	cai zhong cheng	0
 曹岩磊	cao yan lei	6
-侧面虎	ce mian hu	5
 长打	chang da	44
 长兑	chang dui	0
 长跟	chang gen	0
@@ -2091,7 +1001,7 @@ use_preset_vocabulary: false
 单缺仕	dan que shi	0
 单缺相	dan que xiang	1
 单提马	dan ti ma	12
-单霞丽	dan xia li	0
+单霞丽	shan xia li	0
 党斐	dang fei	0
 得子得势	de zi de shi	0
 得子得先各得子	de zi de xian ge de zi	0
@@ -2115,18 +1025,17 @@ use_preset_vocabulary: false
 兑子战术	dui zi zhan shu	6
 多打对多打	duo da dui duo da	0
 二打对二闲	er da dui er xian	0
-二打二还打	er da er hai da	0
+二打二还打	er da er huan da	0
 二打一还打	er da yi huan da	0
 二级棋士	er ji qi shi	2
 二将对二闲	er jiang dui er xian	0
-二将二还将	er jiang er hai jiang	0
+二将二还将	er jiang er huan jiang	0
 二闲对一打一闲	er xian dui yi da yi xian	0
 二捉	er zhuo	1
 二字车	er zi che	0
 反宫马	fan gong ma	15
 反宫马专集	fan gong ma zhuan ji	1
 范思远	fan si yuan	0
-飞相	fei xiang	15
 飞相对金钩炮	fei xiang dui jin gou pao	0
 飞相对起马	fei xiang dui qi ma	0
 飞相对挺卒	fei xiang dui ting zu	0
@@ -2139,21 +1048,18 @@ use_preset_vocabulary: false
 封锁战术	feng suo zhan shu	1
 傅信仁	fu xin ren	0
 高兵	gao bing	0
-葛维浦	ge wei pu	0
 隔一步杀	ge yi bu sha	0
-宫顶线	gong ding xian	5
 固己乱敌	gu ji luan di	0
-古谱	gu pu	34
 拐角马	guai jiao ma	4
 广东东莞长安	guang dong dong guan chang an	0
 龟背炮	gui bei pao	1
 归心马	gui xin ma	1
 过宫敛炮	guo gong lian pao	0
 过宫马	guo gong ma	0
-过宫炮对还中炮	guo gong pao dui hai zhong pao	0
+过宫炮对还中炮	guo gong pao dui huan zhong pao	0
 过肋	guo lei	0
 郭丽萍	guo li ping	2
-还中炮	hai zhong pao	1
+还中炮	huan zhong pao	1
 河北金环钢构	he bei jin huan gang gou	0
 河边无青草不用多嘴牛	he bian wu qing cao bu yong duo zui niu	0
 何刚	he gang	11
@@ -2165,7 +1071,6 @@ use_preset_vocabulary: false
 黑方变着	hei fang bian zhao	0
 黑负	hei fu	3
 黑高右横车	hei gao you heng che	0
-黑进路卒转中炮对屏风马	hei jin lu zu zhuan zhong pao dui ping feng ma	0
 黑进炮压马	hei jin pao ya ma	0
 黑进卒	hei jin zu	0
 黑进卒右炮巡河	hei jin zu you pao xun he	0
@@ -2174,7 +1079,6 @@ use_preset_vocabulary: false
 黑径冲卒	hei jing chong zu	0
 黑龙江大庆市红岗	hei long jiang da qing shi hong gang	0
 黑平右炮亮车	hei ping you pao liang che	0
-黑弃路卒	hei qi lu zu	0
 黑上右士	hei shang you shi	0
 黑上右象	hei shang you xiang	0
 黑上左象	hei shang zuo xiang	0
@@ -2232,15 +1136,12 @@ use_preset_vocabulary: false
 黄政	huang zheng	0
 计时方案	ji shi fang an	2
 吉翔	ji xiang	21
-夹车炮	jia che pao	8
 蒋川	jiang chuan	22
 蒋凤山	jiang feng shan	0
 江湖残局	jiang hu can ju	15
 江南四燕	jiang nan si yan	0
 江苏金陵人酒店	jiang su jin ling ren jiu dian	0
 蒋志梁	jiang zhi liang	1
-借车使炮	jie che shi pao	1
-借炮使马	jie pao shi ma	1
 金波	jin bo	129
 金钩炮	jin gou pao	6
 金钩炮对起马	jin gou pao dui qi ma	0
@@ -2250,11 +1151,8 @@ use_preset_vocabulary: false
 禁止着法	jin zhi zhao fa	1
 精选着法	jing xuan zhao fa	0
 景学义	jing xue yi	0
-橘中秘	ju zhong mi	16
 开滦煤矿股份	kai luan mei kuang gu fen	0
 开通子力	kai tong zi li	0
-空头炮	kong tou pao	8
-落子无悔	lao zi wu hui	68
 肋车	lei che	2
 肋道	lei dao	17
 冷巷炮	leng xiang pao	0
@@ -2262,28 +1160,23 @@ use_preset_vocabulary: false
 李鸿嘉	li hong jia	0
 李家华	li jia hua	0
 立马车	li ma che	0
-李群	li qun	243
 李少庚	li shao geng	1
 李望祥	li wang xiang	0
 敛炮	lian pao	1
 联子配合	lian zi pei he	0
 两鬼拍门	liang gui pai men	0
 廖二平	liao er ping	0
-列炮	lie pao	17
 岭南双龙	ling nan shuang long	0
 流行布局新变探索	liu xing bu ju xin bian tan suo	0
 刘宗泽	liu zong ze	1
 马炮仕相全	ma pao shi xiang quan	0
 马士象全	ma shi xiang quan	5
 马头炮	ma tou pao	0
-梅花谱	mei hua pu	3
 梅花三六	mei hua san liu	0
 梅娜	mei na	0
-闷杀	men sha	34
 苗利明	miao li ming	0
 苗永鹏	miao yong peng	0
 明捉	ming zhuo	0
-摸子走子	mo zi zou zi	1
 谋而后行	mou er hou xing	0
 牟海勤	mou hai qin	0
 谋子战术	mou zi zhan shu	1
@@ -2294,14 +1187,11 @@ use_preset_vocabulary: false
 欧阳琦琳	ou yang qi lin	0
 排局研究	pai ju yan jiu	1
 盘河马探秘	pan he ma tan mi	0
-炮碾丹砂	pao nian dan sha	5
 匹马单刀	pi ma dan dao	0
 七兵	qi bing	7
 七斗星杯象甲联赛	qi dou xing bei xiang jia lian sai	0
 棋规	qi gui	25
 棋规交流	qi gui jiao liu	0
-骑河	qi he	8
-棋理	qi li	99
 棋例裁决	qi li cai jue	0
 棋联大师	qi lian da shi	0
 起马	qi ma	11
@@ -2314,7 +1204,7 @@ use_preset_vocabulary: false
 弃象陷车	qi xiang xian che	0
 棋协大师	qi xie da shi	13
 启新高尔夫杯全国象棋甲级联赛	qi xin gao er fu bei quan guo xiang qi jia ji lian sai	0
-起着	qi zhao	1132
+起着	qi zhao	20
 弃子成和	qi zi cheng he	0
 弃子解困	qi zi jie kun	0
 弃子谋子	qi zi mou zi	0
@@ -2323,13 +1213,11 @@ use_preset_vocabulary: false
 弃子陷子	qi zi xian zi	0
 弃子战术	qi zi zhan shu	1
 七卒	qi zu	0
-千里照面	qian li zhao mian	0
 牵制战术	qian zhi zhan shu	4
 巧连成局	qiao lian cheng ju	0
 屈头屏风马	qu tou ping feng ma	0
 权衡缓急	quan heng huan ji	0
 三兵	san bing	17
-三车闹士	san che nao shi	4
 三级棋士	san ji qi shi	3
 三仙炼丹	san xian lian dan	1
 三卒	san zu	0
@@ -2339,7 +1227,7 @@ use_preset_vocabulary: false
 上海金外滩	shang hai jin wai tan	0
 舍小救大	she xiao jiu da	0
 审局	shen ju	5
-审局度势	shen ju du shi	1
+审局度势	shen ju duo shi	1
 审势	shen shi	4
 神州八骏	shen zhou ba jun	0
 审子	shen zi	0
@@ -2347,7 +1235,6 @@ use_preset_vocabulary: false
 士角炮对起马局	shi jiao pao dui qi ma ju	0
 士角炮对挺卒	shi jiao pao dui ting zu	0
 事林广记	shi lin guang ji	5
-适情雅趣	shi qing ya qu	16
 适情雅趣象棋古谱新编	shi qing ya qu xiang qi gu pu xin bian	0
 实用残局	shi yong can ju	12
 实战中的误区	shi zhan zhong de wu qu	0
@@ -2362,11 +1249,9 @@ use_preset_vocabulary: false
 双车错	shuang che cuo	9
 双将	shuang jiang	5
 双敬酒	shuang jing jiu	0
-双马饮泉	shuang ma yin quan	7
 双炮过河	shuang pao guo he	5
 双弃兵	shuang qi bing	0
-双闲酒杯	shuang xian jiu bei	0
-顺炮	shun pao	40
+双献酒杯	shuang xian jiu bei	0
 顺炮横车对直车	shun pao heng che dui zhi che	3
 顺炮直车边马对缓开车	shun pao zhi che bian ma dui huan kai che	0
 顺炮直车对横车	shun pao zhi che dui heng che	0
@@ -2377,24 +1262,21 @@ use_preset_vocabulary: false
 四车相见	si che xiang jian	1
 丝线牵牛	si xian qian niu	0
 送吃	song chi	0
-算度深远	suan du shen yuan	2
+算度深远	suan duo shen yuan	2
 孙勇征	sun yong zheng	0
 锁喉带箭	suo hou dai jian	0
-太监追皇帝	tai jian zhui huang di	2
-韬略元机	tao lue yuan ji	1
+韬略元机	tao lve yuan ji	1
 特级大师象棋实战布局	te ji da shi xiang qi shi zhan bu ju	0
 特级国际大师	te ji guo ji da shi	0
 提吃	ti chi	0
-天地炮	tian di pao	10
-铁门栓	tie men shuan	15
 贴身车	tie shen che	1
 贴时竞叫	tie shi jing jiao	3
 挺兵	ting bing	7
-挺兵对还中炮	ting bing dui hai zhong pao	0
+挺兵对还中炮	ting bing dui huan zhong pao	0
 挺兵对金钩炮	ting bing dui jin gou pao	0
 挺兵对进马	ting bing dui jin ma	0
 挺兵对起马	ting bing dui qi ma	0
-停着	ting zhao	285
+停着	ting zhao	10
 挺卒	ting zu	3
 同线车	tong xian che	0
 突破战术	tu po zhan shu	0
@@ -2402,13 +1284,11 @@ use_preset_vocabulary: false
 王孔兴	wang kong xing	0
 王跃飞	wang yue fei	0
 稳步缓攻	wen bu huan gong	0
-窝心炮	wo xin pao	2
 五八炮对屏风马	wu ba pao dui ping feng ma	0
 五八炮进三兵对屏风马	wu ba pao jin san bing dui ping feng ma	1
 五八炮进正马对屏风马	wu ba pao jin zheng ma dui ping feng ma	0
 无根子	wu gen zi	0
 武俊强	wu jun qiang	1
-五六炮	wu liu pao	3
 五六炮对反宫马	wu liu pao dui fan gong ma	0
 五七炮对反宫马	wu qi pao dui fan gong ma	0
 五七炮对屏风马	wu qi pao dui ping feng ma	1
@@ -2423,16 +1303,15 @@ use_preset_vocabulary: false
 仙人指路对卒底炮飞左象	xian ren zhi lu dui zu di pao fei zuo xiang	0
 仙人指路对卒底炮上马	xian ren zhi lu dui zu di pao shang ma	0
 先胜	xian sheng	147
-闲着	xian zhao	757
+闲着	xian zhao	20
 象棋残局新论	xiang qi can ju xin lun	2
 象棋棋例与待判局面的裁决	xiang qi qi li yu dai pan ju mian de cai jue	0
 象棋史话	xiang qi shi hua	0
 象棋世家	xiang qi shi jia	0
 象棋十诀	xiang qi shi jue	1
-象棋实战精妙杀法例	xiang qi shi zhan jing miao sha fa li	0
 象棋形势判断	xiang qi xing shi pan duan	0
 象棋业余贰级	xiang qi ye yu er ji	0
-象棋业余陆级	xiang qi ye yu lu ji	0
+象棋业余陆级	xiang qi ye yu liu ji	0
 象棋业余叁级	xiang qi ye yu san ji	0
 象棋业余肆级	xiang qi ye yu si ji	0
 象棋业余伍级	xiang qi ye yu wu ji	0
@@ -2450,7 +1329,6 @@ use_preset_vocabulary: false
 薛文强	xue wen qiang	0
 颜成龙	yan cheng long	0
 言穆江	yan mu jiang	0
-羊肠九曲	yang chang jiu qu	0
 杨德琪	yang de qi	0
 杨官璘	yang guan lin	12
 羊角士	yang jiao shi	1
@@ -2470,7 +1348,7 @@ use_preset_vocabulary: false
 以稳对稳	yi wen dui wen	0
 一着两用	yi zhao liang yong	0
 因敌变化	yin di bian hua	4
-应着	ying zhao	67
+应着	ying zhao	10
 用时制度	yong shi zhi du	2
 有根子	you gen zi	3
 宇兵	yu bing	1
@@ -2479,7 +1357,7 @@ use_preset_vocabulary: false
 渊深海阔	yuan shen hai kuo	1
 原位卒	yuan wei zu	0
 鸳鸯炮	yuan yang pao	2
-运调	yun tiao	3
+运调	yun diao	3
 允许着法	yun xu zhao fa	0
 运子得子	yun zi de zi	0
 运子夺先	yun zi duo xian	0
@@ -2501,9 +1379,7 @@ use_preset_vocabulary: false
 智弈象棋论坛	zhi yi xiang qi lun tan	0
 中宫炮	zhong gong pao	0
 中国甘肃通信移动	zhong guo gan su tong xin yi dong	0
-中国象棋兵法种	zhong guo xiang qi bing fa zhong	0
 中国象棋教科书	zhong guo xiang qi jiao ke shu	0
-中国象棋入门与提高问答	zhong guo xiang qi ru men yu ti gao wen da	0
 中局成杀	zhong ju cheng sha	0
 中局得子	zhong ju de zi	0
 中局夺先	zhong ju duo xian	0
@@ -2523,7 +1399,7 @@ use_preset_vocabulary: false
 中炮对左中炮转列炮	zhong pao dui zuo zhong pao zhuan lie pao	0
 中炮过河车边马对屏风马左马盘河	zhong pao guo he che bian ma dui ping feng ma zuo ma pan he	0
 中炮过河车对屏风马高车保马	zhong pao guo he che dui ping feng ma gao che bao ma	0
-中炮过和车对屏风马横车	zhong pao guo he che dui ping feng ma heng che	0
+中炮过河车对屏风马横车	zhong pao guo he ju dui ping feng ma heng ju	0
 中炮过河车对屏风马平炮兑车	zhong pao guo he che dui ping feng ma ping pao dui che	0
 中炮过河车对屏风马上士象	zhong pao guo he che dui ping feng ma shang shi xiang	0
 中炮过河车对屏风马左马盘河	zhong pao guo he che dui ping feng ma zuo ma pan he	0
@@ -2548,686 +1424,314 @@ use_preset_vocabulary: false
 自来出洞无敌手象棋古谱新编	zi lai chu dong wu di shou xiang qi gu pu xin bian	0
 子力价值	zi li jia zhi	38
 阻碍敌军	zu ai di jun	2
-卒林线	zu lin xian	3
 做杀	zuo sha	0
 左士角炮	zuo shi jiao pao	0
 左文静	zuo wen jing	27
 左中炮	zuo zhong pao	3
 后车进九	hou che jin jiu	0
 后车退九	hou che tui jiu	0
-后砲退九	hou pao tui jiu	0
 前车进九	qian che jin jiu	0
 前车退九	qian che tui jiu	0
-前砲进九	qian pao jin jiu	0
-八平	ba ping	2
-八卒	ba zu	0
-白脸将	bai lian jiang	11
-摆中炮	bai zhong pao	2
-白赚一象	bai zhuan yi xiang	0
-包抄入侵	bao chao ru qin	0
-北京选手	bei jing xuan shou	1
-背士将	bei shi jiang	0
-本轮开始前	ben lun kai shi qian	0
-逼黑	bi hei	3
-逼进红方帅府	bi jin hong fang shuai fu	0
-逼仕	bi shi	0
-避仕	bi shi	0
-必须变着	bi xu bian zhao	0
-变二	bian er	1
-边卒	bian zu	11
-蹩马腿	bie ma tui	14
-兵八	bing ba	0
-兵二	bing er	1
-兵二平四	bing er ping si	0
-兵九	bing jiu	1
-兵九进一卒	bing jiu jin yi zu	0
-并卡肋	bing ka lei	0
-兵六	bing liu	2
-兵破	bing po	1
-兵七	bing qi	0
-兵三	bing san	1
-兵三平五	bing san ping wu	0
-兵四	bing si	14
-兵四进一士	bing si jin yi shi	0
-兵五	bing wu	4
-兵五进一炮	bing wu jin yi pao	0
-兵一	bing yi	1
-兵一进一马	bing yi jin yi ma	0
-并在下一着	bing zai xia yi zhao	0
-兵之危	bing zhi wei	0
-不吃子	bu chi zi	2
-不限步数	bu xian bu shu	0
-不准在同一直线上	bu zhun zai tong yi zhi xian shang	0
-踩掉红马	cai diao hong ma	0
-踩黑边卒	cai hei bian zu	0
-裁判员也	cai pan yuan ye	4
-踩双	cai shuang	2
-残局形势	can ju xing shi	0
-残棋技艺	can qi ji yi	0
-残棋炮归家	can qi pao gui jia	1
-残棋圣手	can qi sheng shou	0
-缠角马	chan jiao ma	0
-车八进	che ba jin	0
-车八平	che ba ping	0
-车八退	che ba tui	0
-车二进	che er jin	0
-车二平	che er ping	0
-车二退	che er tui	0
-车九进	che jiu jin	0
-车九平	che jiu ping	0
-车九退	che jiu tui	0
-车控	che kong	9
-车六进	che liu jin	0
-车六平	che liu ping	0
-车六退	che liu tui	0
-车每一着	che mei yi zhao	0
-撤炮	che pao	0
-车七进	che qi jin	0
-车七平	che qi ping	0
-车七退	che qi tui	0
-车三进	che san jin	0
-车三平	che san ping	0
-车三退	che san tui	0
-车四进	che si jin	0
-车四平	che si ping	0
-车四退	che si tui	0
-车五进	che wu jin	0
-车五平	che wu ping	0
-车五退	che wu tui	0
-车心马角	che xin ma jiao	0
-车一进	che yi jin	0
-车一平	che yi ping	0
-车一退	che yi tui	0
-沉底月	chen di yue	1
-陈寒峰	chen han feng	0
-程吉俊	cheng ji jun	0
-成名局	cheng ming ju	0
-称为铁门栓妙杀	cheng wei tie men shuan miao sha	0
-吃底象	chi di xiang	0
-吃马	chi ma	0
-吃子	chi zi	147
-冲卒	chong zu	1
-抽将	chou jiang	0
-出帅	chu shuai	2
-除帅	chu shuai	0
-出现循环反复	chu xian xun huan fan fu	0
-此局由于	ci ju you yu	0
-此象	ci xiang	1
-此着	ci zhao	3
-从左路	cong zuo lu	0
-错着百例	cuo zhao bai li	0
-打死黑卒	da si hei zu	0
-打死红仕	da si hong shi	0
-打相	da xiang	2
-打象	da xiang	0
-担竿炮	dan gan pao	1
-但黑方也有	dan hei fang ye you	0
-但黑有	dan hei you	0
-单缺相胜	dan que xiang sheng	0
-当田字中心	dang tian zi zhong xin	0
-的规定时	de gui ding shi	0
-得仕	de shi	1
-得子得先各得子	de zi dei xian ge de zi	0
-底炮	di pao	2
-底士	di shi	10
-底线防守	di xian fang shou	10
-叠叠炮	die die pao	0
-董旭彬	dong xu bin	0
-都没有提和	dou mei you ti he	0
-斗炮局	dou pao ju	1
-对兵	dui bing	2
-兑车	dui che	12
-对方得胜	dui fang de sheng	0
-对黑方	dui hei fang	0
-对局时	dui ju shi	0
-兑马	dui ma	1
-对面笑	dui mian xiao	3
-兑炮	dui pao	0
-对屏风马	dui ping feng ma	17
-对子棋	dui zi qi	1
-扼控肋道	e kong lei dao	0
-鄂象	e xiang	0
-遏制黑	e zhi hei	0
-二车	er che	3
-二打一还打	er da yi hai da	0
-而径走	er jing zou	0
-二退	er tui	28
-而占领叉点	er zhan ling cha dian	0
-二卒	er zu	0
-反先	fan xian	9
-方车	fang che	0
-方的攻势	fang de gong shi	2
-方多	fang duo	0
-方可按动	fang ke an dong	0
-方欠行认负	fang qian xing ren fu	0
-方认负	fang ren fu	0
-方胜定	fang sheng ding	1
-方实现了	fang shi xian le	1
-方士象残缺	fang shi xiang can que	0
-方无直	fang wu zhi	0
-方终以	fang zhong yi	0
-飞错了马	fei cuo le ma	0
-飞高象	fei gao xiang	0
-非经对方提和一次	fei jing dui fang ti he yi ci	0
-分为红	fen wei hong	15
-封将门	feng jiang men	0
-封棋着法有误	feng qi zhao fa you wu	0
-封死将门	feng si jiang men	0
-否则红有	fou ze hong you	0
-伏沉	fu chen	1
-伏马	fu ma	4
-伏杀	fu sha	9
-改走将	gai zou jiang	0
-高头兵	gao tou bing	0
-隔步成杀	ge bu cheng sha	0
-各分七种	ge fen qi zhong	0
-格拉拉	ge la la	0
-葛维蒲	ge wei pu	0
-攻窝心马	gong wo xin ma	0
-共有九十个交叉点	gong you jiu shi ge jiao cha dian	0
-挂盘讲解	gua pan jiang jie	0
-寡士怯双车	gua shi qie shuang che	0
-观秤	guan cheng	0
-官和	guan he	0
-广东惠州华轩象棋队	guang dong hui zhou hua xuan xiang qi dui	0
-广东吕钦	guang dong lv qin	0
-广东小将	guang dong xiao jiang	0
-归心炮	gui xin pao	1
-过河车	guo he che	12
-河界	he jie	14
-和十道横线	he shi dao heng xian	0
-河头马	he tou ma	0
-黑必胜	hei bi sheng	20
-黑冲卒无奈	hei chong zu wu nai	0
-黑出将	hei chu jiang	0
-黑方必须	hei fang bi xu	0
-黑方只有	hei fang zhi you	1
-黑两组	hei liang zu	0
-黑马紧贴红马而行	hei ma jin tie hong ma er xing	0
-黑炮	hei pao	56
-黑如	hei ru	2
-黑如改走	hei ru gai zou	0
-黑若	hei ruo	0
-黑胜定	hei sheng ding	0
-黑也	hei ye	0
-黑亦	hei yi	1
-横车	heng che	31
-横走	heng zou	55
-横走都可以	heng zou dou ke yi	0
-红败局已定	hong bai ju yi ding	0
-红兵	hong bing	8
-红此着	hong ci zhao	0
-红炮	hong pao	6
-红棋	hong qi	19
-红棋子	hong qi zi	0
-红如	hong ru	0
-轰卒照将	hong zu zhao jiang	0
-后兵	hou bing	4
-后兵平	hou bing ping	0
-后马	hou ma	1
-后中先	hou zhong xian	2
-后卒进一	hou zu jin yi	0
-后卒平四	hou zu ping si	0
-湖北队主帅	hu bei dui zhu shuai	0
-湖北宏宇队	hu bei hong yu dui	0
-湖北柳大华	hu bei liu da hua	0
-护双卒	hu shuang zu	0
-华轩杯全国象棋甲级联赛	hua xuan bei quan guo xiang qi jia ji lian sai	0
-划有交叉线	hua you jiao cha xian	0
-缓手	huan shou	12
-换双卒	huan shuang zu	0
-回合的残局形势	hui he de can ju xing shi	0
-回合时	hui he shi	0
-回合时的	hui he shi de	1
-惠州华轩杯	hui zhou hua xuan bei	0
-或一横	huo yi heng	1
-或主动送吃	huo zhu dong song chi	0
-或走成和棋为止	huo zou cheng he qi wei zhi	0
-及结局图棋局	ji jie ju tu qi ju	0
-即使黑马	ji shi hei ma	0
-计时钟	ji shi zhong	15
-将帅捕杀	jiang shuai bu sha	0
-交叉组成	jiao cha zu cheng	2
-交流棋艺	jiao liu qi yi	0
-进八	jin ba	17
-紧凑老练	jin cou lao lian	0
-进二	jin er	1
-进九	jin jiu	3
-紧靠一直	jin kao yi zhi	0
-进六	jin liu	6
-进七	jin qi	3
-进七兵	jin qi bing	1
-进三	jin san	2
-进三兵	jin san bing	1
-进四	jin si	8
-进五	jin wu	7
-紧要之着	jin yao zhi zhao	0
-进一	jin yi	3
-进一马	jin yi ma	0
-精警异常	jing jing yi chang	1
-九道直线	jiu dao zhi xian	0
-九炮	jiu pao	4
-就算和棋	jiu suan he qi	1
-就算输棋	jiu suan shu qi	0
-局面属实	ju mian shu shi	0
-具体对阵为	ju ti dui zhen wei	0
-卷下	juan xia	2
-均为拒绝	jun wei ju jue	0
-均在马蹄之下	jun zai ma ti zhi xia	0
-可打死红兵	ke da si hong bing	0
-客队身份	ke dui shen fen	2
-可见黑第	ke jian hei di	0
-可以直进	ke yi zhi jin	0
-控局	kong ju	20
-控局得胜	kong ju de sheng	0
-控局制胜	kong ju zhi sheng	0
-空心炮	kong xin pao	0
-困法	kun fa	0
-拦炮	lan pao	0
-老兵建功	lao bing jian gong	0
-勒车马	le che ma	0
-李智屏	li zhi ping	0
-连环炮	lian huan pao	7
-连战两轮	lian zhan liang lun	0
-两款属于提和	liang kuan shu yu ti he	0
-列手炮	lie shou pao	1
-另一方必须回避	ling yi fang bi xu hui bi	0
-另一方已	ling yi fang yi	0
-六士	liu shi	1
-六十回合规则	liu shi hui he gui ze	0
-路边卒	lu bian zu	0
-路车	lu che	65
-路河头	lu he tou	0
-路炮	lu pao	9
-掠黑	lue hei	0
-掠仕获胜	lue shi huo sheng	0
-掠相	lue xiang	0
-轮到走棋的一方	lun dao zou qi de yi fang	2
-轮走的	lun zou de	0
-落家老练之着	luo jia lao lian zhi zhao	0
-马八	ma ba	9
-马八进七车	ma ba jin qi che	0
-马长捉兵	ma chang zhuo bing	0
-马出路	ma chu lu	1
-马后炮杀	ma hou pao sha	0
-马九	ma jiu	14
-马九进七车	ma jiu jin qi che	0
-马六进五车	ma liu jin wu che	0
-马每着走	ma mei zhao zou	0
-马炮	ma pao	106
-马炮兵	ma pao bing	6
-马炮双兵	ma pao shuang bing	0
-马炮双卒士象	ma pao shuang zu shi xiang	0
-马七	ma qi	9
-马七进五车	ma qi jin wu che	0
-马三进五车	ma san jin wu che	0
-马四进五车	ma si jin wu che	0
-马五	ma wu	15
-马五进六车	ma wu jin liu che	0
-马象牵	ma xiang qian	0
-马亦难逃遁	ma yi nan tao dun	0
-马走日字	ma zou ri zi	0
-马卒	ma zu	0
-每一着	mei yi zhao	0
-每着	mei zhao	0
-每着可以	mei zhao ke yi	0
-每组十六个	mei zu shi liu ge	0
-闷宫	men gong	20
-孟昭忠对	meng zhao zhong dui	0
-瞄打	miao da	2
-妙用马	miao yong ma	0
-妙用炮	miao yong pao	0
-妙用双马	miao yong shuang ma	0
-妙用双炮	miao yong shuang pao	0
-名为献马	ming wei xian ma	0
-末着	mo zhao	0
-谋兵取胜	mou bing qu sheng	0
-那需要大约	na xu yao da yue	0
-男子组桂冠	nan zi zu gui guan	0
-内蒙古选手	nei meng gu xuan shou	0
-逆相局	ni xiang ju	0
-年全国个人赛	nian quan guo ge ren sai	1
-排局	pai ju	113
-判和	pan he	0
-盘全和	pan quan he	0
-炮八	pao ba	0
-炮八进	pao ba jin	0
-炮八平	pao ba ping	0
-炮八退	pao ba tui	0
-炮打隔子	pao da ge zi	0
-炮二	pao er	1
-炮二进	pao er jin	0
-跑二平	pao er ping	1
-炮二退	pao er tui	0
-炮管制	pao guan zhi	0
-炮九	pao jiu	0
-炮九进	pao jiu jin	0
-炮九平	pao jiu ping	0
-炮九退	pao jiu tui	0
-炮六	pao liu	0
-炮六进	pao liu jin	0
-炮六平	pao liu ping	0
-炮六退	pao liu tui	0
-炮七	pao qi	0
-炮七进	pao qi jin	0
-炮七平	pao qi ping	0
-炮七平四将	pao qi ping si jiang	0
-炮七退	pao qi tui	0
-炮三	pao san	13
-炮三进	pao san jin	0
-炮三平	pao san ping	0
-炮三退	pao san tui	0
-炮四	pao si	0
-炮四进	pao si jin	0
-炮四平	pao si ping	0
-炮四退	pao si tui	0
-炮五	pao wu	0
-炮五进	pao wu jin	0
-炮五平	pao wu ping	0
-炮五退	pao wu tui	0
-炮一	pao yi	3
-炮一进	pao yi jin	1
-炮一平	pao yi ping	0
-炮一退	pao yi tui	0
-炮镇中路	pao zhen zhong lu	0
-炮卒	pao zu	1
-偏马局	pian ma ju	0
-平八	ping ba	41
-平二	ping er	4
-平九	ping jiu	3
-平六	ping liu	2
-平炮	ping pao	9
-平炮打扫	ping pao da sao	0
-平七	ping qi	32
-平七马	ping qi ma	0
-平三	ping san	8
-平四	ping si	8
-平五	ping wu	12
-平五卒	ping wu zu	0
-平中炮	ping zhong pao	0
-破仕	po shi	0
-破仕夺关	po shi duo guan	0
-破仕掠相	po shi lue xiang	0
-浦东队	pu dong dui	0
-弃兵争先	qi bing zheng xian	1
-棋例	qi li	10
-七马	qi ma	4
-棋盘中间	qi pan zhong jian	2
-棋谱来源	qi pu lai yuan	0
-弃士打马	qi shi da ma	0
-其它棋子	qi ta qi zi	4
-棋子吃掉	qi zi chi diao	2
-棋子能够	qi zi neng gou	1
-弃卒破仕	qi zu po shi	0
-前兵	qian bing	15
-前兵平	qian bing ping	0
-前马	qian ma	0
-前炮	qian pao	5
-前卒进一	qian zu jin yi	0
-去化解被	qu hua jie bei	1
-去炮	qu pao	0
-取胜较难	qu sheng jiao nan	0
-取胜可能	qu sheng ke neng	0
-去卒	qu zu	0
-全国象棋甲级联赛	quan guo xiang qi jia ji lian sai	0
-全国象棋锦标赛	quan guo xiang qi jin biao sai	0
-全国象棋青年锦标赛	quan guo xiang qi qing nian jin biao sai	0
-然后亮帅助攻	ran hou liang shuai zhu gong	0
-如改走	ru gai zou	0
-如改走兵	ru gai zou bing	0
-如改走车	ru gai zou che	1
-如改走马	ru gai zou ma	0
-如改走炮	ru gai zou pao	0
-如黑	ru hei	3
-如急于走	ru ji yu zou	0
-如一方	ru yi fang	0
-软硬炮	ruan ying pao	0
-赛吉林	sai ji lin	0
-塞相眼	sai xiang yan	0
-三步虎	san bu hu	5
-三进兵	san jin bing	3
-三子归边	san zi gui bian	8
-杀势取胜	sha shi qu sheng	0
-山顶公	shan ding gong	0
-山东选手	shan dong xuan shou	1
-上海浦东花木广洋队	shang hai pu dong hua mu guang yang dui	0
-上仕	shang shi	2
-深厚的功夫	shen hou de gong fu	1
-甚为巧妙	shen wei qiao miao	0
-升将三楼	sheng jiang san lou	0
-胜炮	sheng pao	8
-升炮巡河	sheng pao xun he	1
-胜双	sheng shuang	11
-是残棋	shi can qi	0
-士各两个	shi ge liang ge	0
-士六	shi liu	1
-仕六进五车	shi liu jin wu che	0
-仕六退五车	shi liu tui wu che	0
-仕六退五卒	shi liu tui wu zu	0
-实乃讹诈	shi nai e zha	0
-士四	shi si	1
-仕四进五车	shi si jin wu che	0
-仕四进五将	shi si jin wu jiang	0
-仕四进五炮	shi si jin wu pao	0
-仕四退五车	shi si tui wu che	0
-仕四退五士	shi si tui wu shi	0
-仕四退五卒	shi si tui wu zu	0
-士五	shi wu	4
-仕五进六车	shi wu jin liu che	0
-仕五进六马	shi wu jin liu ma	0
-仕五进六炮	shi wu jin liu pao	0
-仕五进六士	shi wu jin liu shi	0
-仕五进六卒	shi wu jin liu zu	0
-仕五进四炮	shi wu jin si pao	0
-仕五退四车	shi wu tui si che	0
-仕五退四炮	shi wu tui si pao	0
-仕五退四士	shi wu tui si shi	0
-仕相	shi xiang	7
-士象	shi xiang	89
-仕相全	shi xiang quan	0
-实则为亮帅	shi ze wei liang shuai	0
-实战着法是	shi zhan zhao fa shi	0
-帅和将	shuai he jiang	0
-帅六	shuai liu	1
-帅六进一将	shuai liu jin yi jiang	0
-帅六平五车	shuai liu ping wu che	0
-帅六平五将	shuai liu ping wu jiang	0
-帅六平五马	shuai liu ping wu ma	0
-帅六平五炮	shuai liu ping wu pao	0
-帅六平五士	shuai liu ping wu shi	0
-帅六平五象	shuai liu ping wu xiang	0
-帅六平五卒	shuai liu ping wu zu	0
-帅六退一车	shuai liu tui yi che	0
-帅六退一马	shuai liu tui yi ma	0
-帅每一着	shuai mei yi zhao	0
-帅四	shuai si	0
-帅四平五车	shuai si ping wu che	0
-帅四平五马	shuai si ping wu ma	0
-帅四平五炮	shuai si ping wu pao	0
-帅四平五象	shuai si ping wu xiang	0
-帅四平五卒	shuai si ping wu zu	0
-帅五	shuai wu	0
-帅五进一车	shuai wu jin yi che	0
-帅五进一炮	shuai wu jin yi pao	0
-帅五平六车	shuai wu ping liu che	0
-帅五平六将	shuai wu ping liu jiang	0
-帅五平六马	shuai wu ping liu ma	0
-帅五平六炮	shuai wu ping liu pao	0
-帅五平六士	shuai wu ping liu shi	0
-帅五平六象	shuai wu ping liu xiang	0
-帅五平六卒	shuai wu ping liu zu	0
-帅五平四车	shuai wu ping si che	0
-帅五平四马	shuai wu ping si ma	0
-帅五平四炮	shuai wu ping si pao	0
-帅五退一车	shuai wu tui yi che	0
-帅五退一马	shuai wu tui yi ma	0
-帅五退一炮	shuai wu tui yi pao	0
-双兵	shuang bing	14
-双方各走了一着	shuang fang ge zou liao yi zhao	0
-双方均无	shuang fang jun wu	22
-双方轮流各走一着	shuang fang lun liu ge zou yi zhao	1
-双方排阵	shuang fang pai zhen	0
-双方走棋	shuang fang zou qi	1
-双关门	shuang guan men	0
-双炮	shuang pao	86
-双卒	shuang zu	3
-四盘棋	si pan qi	1
-四炮	si pao	9
-四台比赛	si tai bi sai	0
-算准入局	suan zhun ru ju	0
-所走着法	suo zou zhao fa	0
-特森	te sen	12
-提和	ti he	0
-提和次数对等	ti he ci shu dui deng	0
-提和的一方	ti he de yi fang	0
-提议作和	ti yi zuo he	0
-跳吃	tiao chi	0
-贴将	tie jiang	0
-铁门栓妙杀	tie men shuan miao sha	0
-铁门栓妙杀例	tie men shuan miao sha li	0
-铁门栓杀法获胜	tie men shuan sha fa huo sheng	0
-同对方将	tong dui fang jiang	0
-同时己方其它棋子	tong shi ji fang qi ta qi zi	0
-投子认负	tou zi ren fu	13
-退八	tui ba	1
-退二	tui er	8
-退九	tui jiu	0
-退六	tui liu	1
-退马反击	tui ma fan ji	0
-退炮	tui pao	20
-退七	tui qi	1
-退三	tui san	4
-退四	tui si	0
-退五	tui wu	1
-退一	tui yi	10
-未走满	wei zou man	0
-卧槽马杀	wo cao ma sha	2
-五八炮	wu ba pao	3
-无车棋	wu che qi	0
-五进	wu jin	13
-五进四	wu jin si	2
-五九炮	wu jiu pao	0
-五平	wu ping	1
-五七炮对屏风马进七卒	wu qi pao dui ping feng ma jin qi zu	0
-误走	wu zou	9
-五卒	wu zu	7
-献车	xian che	1
-先锋马	xian feng ma	0
-献马妙极	xian ma miao ji	0
-先手逼和	xian shou bi he	0
-先手对阵	xian shou dui zhen	1
-先手求稳健	xian shou qiu wen jian	0
-先手战	xian shou zhan	0
-象甲联赛	xiang jia lian sai	5
-相九	xiang jiu	2
-相七	xiang qi	0
-象棋盘	xiang qi pan	4
-象棋特级大师	xiang qi te ji da shi	7
-相七退九车	xiang qi tui jiu che	0
-相三	xiang san	5
-象头卒	xiang tou zu	0
-相五	xiang wu	2
-相五进三车	xiang wu jin san che	0
-相五退三车	xiang wu tui san che	0
-相五退三炮	xiang wu tui san pao	0
-相走田字	xiang zou tian zi	0
-消除黑方	xiao chu hei fang	1
-胁帅	xie shuai	0
-斜线走一步	xie xian zou yi bu	2
-蟹眼炮	xie yan pao	0
-斜走两步	xie zou liang bu	1
-袖手炮	xiu shou pao	0
-压马	ya ma	11
-掩护小卒	yan hu xiao zu	0
-掩护小卒过河	yan hu xiao zu guo he	0
-杨汉民	yang han min	0
-要去方向	yao qu fang xiang	0
-也非跳不可了	ye fei tiao bu ke le	0
-也可以横走一步	ye ke yi heng zou yi bu	0
-移车	yi che	7
-一方出现	yi fang chu xian	0
-一方的棋子	yi fang de qi zi	3
-一方提和	yi fang ti he	0
-亦红优	yi hong you	0
-以后黑炮	yi hou hei pao	0
-亦可改走	yi ke gai zou	0
-弈完第	yi wan di	0
-以下黑	yi xia hei	0
-已先占据	yi xian zhan ju	0
-一象	yi xiang	10
-一斜	yi xie	24
-意欲大胆穿心	yi yu da dan chuan xin	0
-弈至第	yi zhi di	1
-一至九	yi zhi jiu	1
-一卒	yi zu	32
-应当变着	ying dang bian zhao	0
-应当变着而不变	ying dang bian zhao er bu bian	0
-应对不佳	ying dui bu jia	1
-应改	ying gai	2
-应使双方	ying shi shuang fang	0
-应走着数	ying zou zhao shu	0
-用炮	yong pao	28
-用时太多	yong shi tai duo	0
-用中文数字	yong zhong wen shu zi	3
-有别的棋子挡住	you bie de qi zi dang zhu	1
-由此入局	you ci ru ju	0
-有对方棋子存在	you dui fang qi zi cun zai	0
-有权判为和棋	you quan pan wei he qi	0
-右帅	you shuai	0
-由于黑方	you yu hei fang	1
-由执红棋	you zhi hong qi	1
-约恩	yue en	19
-运马	yun ma	3
-在布局后	zai bu ju hou	0
-再次提和	zai ci ti he	0
-在对局时	zai dui ju shi	2
-再马	zai ma	1
-在没有过	zai mei you guo	0
-再仕	zai shi	7
-则马	ze ma	0
-则马二	ze ma er	0
-则仕	ze shi	12
-则帅	ze shuai	7
-则帅五	ze shuai wu	0
-则相三	ze xiang san	0
-则卒	ze zu	2
-战略思维	zhan lue si wei	94
-战术技巧	zhan shu ji qiao	0
-张学潮	zhang xue chao	1
-着法红先	zhao fa hong xian	0
-着法老练	zhao fa lao lian	0
-赵子仪	zhao zi yi	0
-着改走	zhao gai zou	0
-争夺对手	zheng duo dui shou	1
-直车	zhi che	13
-直横车	zhi heng che	0
-直接对面	zhi jie dui mian	0
-只能在提和后	zhi neng zai ti he hou	0
-制胜妙法	zhi sheng miao fa	0
-直退	zhi tui	4
-只许向前直走一步	zhi xu xiang qian zhi zou yi bu	0
-只许走一步	zhi xu zou yi bu	0
-只有炮吃子	zhi you pao chi zi	1
-制中	zhi zhong	0
-中国象棋冠军	zhong guo xiang qi guan jun	1
-中国象棋锦标赛	zhong guo xiang qi jin biao sai	0
-中国象棋谱库	zhong guo xiang qi pu ku	0
-中国象棋世界锦标赛	zhong guo xiang qi shi jie jin biao sai	0
-中后局	zhong hou ju	1
-中局混战	zhong ju hun zhan	0
-中局阶段	zhong ju jie duan	10
-中路取势	zhong lu qu shi	0
-重炮杀	chong pao sha	7
-主队身份	zhu dui shen fen	0
-转入中局	zhuan ru zhong ju	0
-准备赶走	zhun bei gan zou	0
-准备平中	zhun bei ping zhong	0
-准备镇中	zhun bei zhen zhong	0
-子力位置	zi li wei zhi	14
-自然限着	zi ran xian zhao	5
-走法同车一样	zou fa tong che yi yang	0
-走棋和吃子	zou qi he chi zi	0
-走一着棋时	zou yi zhao qi shi	0
-卒分两翼	zu fen liang yi	0
-组攻	zu gong	0
-卒五个	zu wu ge	0
+# 象棋「车」标准 ju 读音
+车八进八	ju ba jin ba	0
+车八进二	ju ba jin er	0
+车八进九	ju ba jin jiu	0
+车八进六	ju ba jin liu	0
+车八进七	ju ba jin qi	0
+车八进三	ju ba jin san	0
+车八进四	ju ba jin si	0
+车八进五	ju ba jin wu	0
+车八进一	ju ba jin yi	0
+车八平二	ju ba ping er	0
+车八平九	ju ba ping jiu	0
+车八平六	ju ba ping liu	0
+车八平七	ju ba ping qi	0
+车八平三	ju ba ping san	0
+车八平四	ju ba ping si	0
+车八平五	ju ba ping wu	0
+车八平一	ju ba ping yi	0
+车八退八	ju ba tui ba	0
+车八退二	ju ba tui er	0
+车八退九	ju ba tui jiu	0
+车八退六	ju ba tui liu	0
+车八退七	ju ba tui qi	0
+车八退三	ju ba tui san	0
+车八退四	ju ba tui si	0
+车八退五	ju ba tui wu	0
+车八退一	ju ba tui yi	0
+车二进八	ju er jin ba	0
+车二进二	ju er jin er	0
+车二进九	ju er jin jiu	0
+车二进六	ju er jin liu	6
+车二进七	ju er jin qi	0
+车二进三	ju er jin san	0
+车二进四	ju er jin si	0
+车二进五	ju er jin wu	0
+车二进一	ju er jin yi	0
+车二平八	ju er ping ba	0
+车二平九	ju er ping jiu	0
+车二平六	ju er ping liu	0
+车二平七	ju er ping qi	1
+车二平三	ju er ping san	2
+车二平四	ju er ping si	0
+车二平五	ju er ping wu	0
+车二平一	ju er ping yi	0
+车二退八	ju er tui ba	0
+车二退二	ju er tui er	0
+车二退九	ju er tui jiu	0
+车二退六	ju er tui liu	0
+车二退七	ju er tui qi	0
+车二退三	ju er tui san	0
+车二退四	ju er tui si	0
+车二退五	ju er tui wu	0
+车二退一	ju er tui yi	0
+车进	ju jin	11
+车九进八	ju jiu jin ba	0
+车九进二	ju jiu jin er	1
+车九进九	ju jiu jin jiu	0
+车九进六	ju jiu jin liu	0
+车九进七	ju jiu jin qi	0
+车九进三	ju jiu jin san	0
+车九进四	ju jiu jin si	0
+车九进五	ju jiu jin wu	0
+车九进一	ju jiu jin yi	4
+车九平八	ju jiu ping ba	1
+车九平二	ju jiu ping er	1
+车九平六	ju jiu ping liu	6
+车九平七	ju jiu ping qi	0
+车九平三	ju jiu ping san	0
+车九平四	ju jiu ping si	0
+车九平五	ju jiu ping wu	0
+车九平一	ju jiu ping yi	0
+车九退八	ju jiu tui ba	0
+车九退二	ju jiu tui er	0
+车九退九	ju jiu tui jiu	0
+车九退六	ju jiu tui liu	0
+车九退七	ju jiu tui qi	0
+车九退三	ju jiu tui san	0
+车九退四	ju jiu tui si	0
+车九退五	ju jiu tui wu	0
+车九退一	ju jiu tui yi	0
+车六进八	ju liu jin ba	1
+车六进二	ju liu jin er	1
+车六进九	ju liu jin jiu	0
+车六进六	ju liu jin liu	1
+车六进七	ju liu jin qi	6
+车六进三	ju liu jin san	0
+车六进四	ju liu jin si	3
+车六进五	ju liu jin wu	0
+车六进一	ju liu jin yi	0
+车六平八	ju liu ping ba	0
+车六平二	ju liu ping er	0
+车六平九	ju liu ping jiu	0
+车六平七	ju liu ping qi	1
+车六平三	ju liu ping san	1
+车六平四	ju liu ping si	5
+车六平五	ju liu ping wu	1
+车六平一	ju liu ping yi	1
+车六退八	ju liu tui ba	0
+车六退二	ju liu tui er	0
+车六退九	ju liu tui jiu	0
+车六退六	ju liu tui liu	0
+车六退七	ju liu tui qi	0
+车六退三	ju liu tui san	0
+车六退四	ju liu tui si	0
+车六退五	ju liu tui wu	0
+车六退一	ju liu tui yi	0
+车平	ju ping	0
+车七进八	ju qi jin ba	0
+车七进二	ju qi jin er	0
+车七进九	ju qi jin jiu	0
+车七进六	ju qi jin liu	0
+车七进七	ju qi jin qi	0
+车七进三	ju qi jin san	1
+车七进四	ju qi jin si	0
+车七进五	ju qi jin wu	0
+车七进一	ju qi jin yi	0
+车七平八	ju qi ping ba	0
+车七平二	ju qi ping er	0
+车七平九	ju qi ping jiu	0
+车七平六	ju qi ping liu	0
+车七平三	ju qi ping san	0
+车七平四	ju qi ping si	0
+车七平五	ju qi ping wu	0
+车七平一	ju qi ping yi	0
+车七退八	ju qi tui ba	0
+车七退二	ju qi tui er	0
+车七退九	ju qi tui jiu	0
+车七退六	ju qi tui liu	0
+车七退七	ju qi tui qi	0
+车七退三	ju qi tui san	0
+车七退四	ju qi tui si	0
+车七退五	ju qi tui wu	0
+车七退一	ju qi tui yi	1
+车三进八	ju san jin ba	0
+车三进二	ju san jin er	0
+车三进九	ju san jin jiu	0
+车三进六	ju san jin liu	0
+车三进七	ju san jin qi	0
+车三进三	ju san jin san	0
+车三进四	ju san jin si	0
+车三进五	ju san jin wu	0
+车三进一	ju san jin yi	0
+车三平八	ju san ping ba	0
+车三平二	ju san ping er	0
+车三平九	ju san ping jiu	0
+车三平六	ju san ping liu	1
+车三平七	ju san ping qi	0
+车三平四	ju san ping si	0
+车三平五	ju san ping wu	0
+车三平一	ju san ping yi	0
+车三退八	ju san tui ba	0
+车三退二	ju san tui er	1
+车三退九	ju san tui jiu	0
+车三退六	ju san tui liu	0
+车三退七	ju san tui qi	0
+车三退三	ju san tui san	0
+车三退四	ju san tui si	0
+车三退五	ju san tui wu	0
+车三退一	ju san tui yi	0
+车四进八	ju si jin ba	0
+车四进二	ju si jin er	0
+车四进九	ju si jin jiu	0
+车四进六	ju si jin liu	5
+车四进七	ju si jin qi	0
+车四进三	ju si jin san	0
+车四进四	ju si jin si	0
+车四进五	ju si jin wu	0
+车四进一	ju si jin yi	1
+车四平八	ju si ping ba	0
+车四平二	ju si ping er	0
+车四平九	ju si ping jiu	0
+车四平六	ju si ping liu	0
+车四平七	ju si ping qi	0
+车四平三	ju si ping san	0
+车四平五	ju si ping wu	0
+车四平一	ju si ping yi	0
+车四退八	ju si tui ba	0
+车四退二	ju si tui er	1
+车四退九	ju si tui jiu	0
+车四退六	ju si tui liu	0
+车四退七	ju si tui qi	0
+车四退三	ju si tui san	0
+车四退四	ju si tui si	0
+车四退五	ju si tui wu	0
+车四退一	ju si tui yi	0
+车退	ju tui	1
+车五进八	ju wu jin ba	0
+车五进二	ju wu jin er	0
+车五进九	ju wu jin jiu	0
+车五进六	ju wu jin liu	0
+车五进七	ju wu jin qi	1
+车五进三	ju wu jin san	0
+车五进四	ju wu jin si	0
+车五进五	ju wu jin wu	0
+车五进一	ju wu jin yi	0
+车五平八	ju wu ping ba	0
+车五平二	ju wu ping er	0
+车五平九	ju wu ping jiu	0
+车五平六	ju wu ping liu	0
+车五平七	ju wu ping qi	0
+车五平三	ju wu ping san	0
+车五平四	ju wu ping si	1
+车五平一	ju wu ping yi	0
+车五退八	ju wu tui ba	0
+车五退二	ju wu tui er	0
+车五退九	ju wu tui jiu	0
+车五退六	ju wu tui liu	0
+车五退七	ju wu tui qi	0
+车五退三	ju wu tui san	0
+车五退四	ju wu tui si	0
+车五退五	ju wu tui wu	0
+车五退一	ju wu tui yi	0
+车一进八	ju yi jin ba	0
+车一进二	ju yi jin er	4
+车一进九	ju yi jin jiu	0
+车一进六	ju yi jin liu	0
+车一进七	ju yi jin qi	0
+车一进三	ju yi jin san	2
+车一进四	ju yi jin si	0
+车一进五	ju yi jin wu	0
+车一进一	ju yi jin yi	9
+车一平八	ju yi ping ba	0
+车一平二	ju yi ping er	3
+车一平九	ju yi ping jiu	0
+车一平六	ju yi ping liu	7
+车一平七	ju yi ping qi	0
+车一平三	ju yi ping san	1
+车一平四	ju yi ping si	0
+车一平五	ju yi ping wu	0
+车一退八	ju yi tui ba	0
+车一退二	ju yi tui er	0
+车一退九	ju yi tui jiu	0
+车一退六	ju yi tui liu	0
+车一退七	ju yi tui qi	0
+车一退三	ju yi tui san	0
+车一退四	ju yi tui si	0
+车一退五	ju yi tui wu	0
+车一退一	ju yi tui yi	0
+后车进	hou ju jin	0
+后车进八	hou ju jin ba	0
+后车进二	hou ju jin er	0
+后车进六	hou ju jin liu	0
+后车进七	hou ju jin qi	0
+后车进三	hou ju jin san	0
+后车进四	hou ju jin si	0
+后车进五	hou ju jin wu	0
+后车进一	hou ju jin yi	0
+后车平	hou ju ping	0
+后车平八	hou ju ping ba	0
+后车平二	hou ju ping er	0
+后车平九	hou ju ping jiu	0
+后车平六	hou ju ping liu	1
+后车平七	hou ju ping qi	0
+后车平三	hou ju ping san	0
+后车平四	hou ju ping si	1
+后车平五	hou ju ping wu	0
+后车平一	hou ju ping yi	0
+后车退	hou ju tui	0
+后车退八	hou ju tui ba	0
+后车退二	hou ju tui er	0
+后车退六	hou ju tui liu	0
+后车退七	hou ju tui qi	0
+后车退三	hou ju tui san	0
+后车退四	hou ju tui si	0
+后车退五	hou ju tui wu	0
+后车退一	hou ju tui yi	0
+前车进	qian ju jin	0
+前车进八	qian ju jin ba	0
+前车进二	qian ju jin er	0
+前车进六	qian ju jin liu	0
+前车进七	qian ju jin qi	0
+前车进三	qian ju jin san	0
+前车进四	qian ju jin si	0
+前车进五	qian ju jin wu	0
+前车进一	qian ju jin yi	5
+前车平	qian ju ping	0
+前车平八	qian ju ping ba	0
+前车平二	qian ju ping er	0
+前车平九	qian ju ping jiu	0
+前车平六	qian ju ping liu	0
+前车平七	qian ju ping qi	0
+前车平三	qian ju ping san	0
+前车平四	qian ju ping si	0
+前车平五	qian ju ping wu	0
+前车平一	qian ju ping yi	0
+前车退	qian ju tui	0
+前车退八	qian ju tui ba	0
+前车退二	qian ju tui er	0
+前车退六	qian ju tui liu	0
+前车退七	qian ju tui qi	0
+前车退三	qian ju tui san	0
+前车退四	qian ju tui si	0
+前车退五	qian ju tui wu	0
+前车退一	qian ju tui yi	1
+顺炮直车进七兵对缓开车	shun pao zhi ju jin qi bing dui huan kai ju	0
+中炮过河车对屏风马平炮兑车	zhong pao guo he ju dui ping feng ma ping pao dui ju	0
+中炮过河车急进中兵对屏风马平炮兑车	zhong pao guo he ju ji jin zhong bing dui ping feng ma ping pao dui ju	0
+中炮过河车进中兵对屏风马两头蛇	zhong pao guo he ju jin zhong bing dui ping feng ma liang tou she	0
+中炮过河车七路马对屏风马平炮兑车	zhong pao guo he ju qi lu ma dui ping feng ma ping pao dui ju	1
+后车进九	hou ju jin jiu	0
+后车退九	hou ju tui jiu	0
+前车进九	qian ju jin jiu	0
+前车退九	qian ju tui jiu	0

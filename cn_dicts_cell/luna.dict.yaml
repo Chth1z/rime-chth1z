@@ -196,7 +196,7 @@ sort: by_weight
 丢抹	diu mo	0
 中圻	zhong qi	0
 中央警官学校	zhong yang jing guan xue xiao	0
-中山高速公路	zhong shan gao shu gong lu	0
+中山高速公路	zhong shan gao su gong lu	0
 中幡会	zhong fan hui	0
 中心汇率	zhong xin hui lv	0
 中心角	zhong xin jiao	0
@@ -304,7 +304,6 @@ sort: by_weight
 干亲家	gan qing jia	0
 乾象	qian xiang	0
 乾造	qian zao	0
-干逼	gan bi	0
 干量	gan liang	0
 干阿嬭	gan a nai	0
 干霍乱	gan huo luan	0
@@ -342,7 +341,6 @@ sort: by_weight
 了话	liao hua	0
 了语	liao yu	0
 了愿	liao yuan	0
-了鸟	liao diao	0
 事在必行	shi zai bi xing	0
 事急马行田	shi ji ma xing tian	0
 事畜	shi xu	0
@@ -915,7 +913,7 @@ sort: by_weight
 凹版画	ao ban hua	0
 凹状	ao zhuang	0
 出没不定	chu mo bu ding	0
-出火炕	chu huo keng	0
+出火炕	chu huo kang	0
 出笏	chu hu	0
 出红差	chu hong chai	0
 出蛰	chu zhe	0
@@ -1782,7 +1780,6 @@ sort: by_weight
 地着	di zhuo	0
 地祇	di qi	0
 地窄路险	di zhai lu xian	0
-地籁	di lai	0
 地经	di jing	0
 地维	di wei	0
 地老鼠	di lao shu	0
@@ -2008,7 +2005,7 @@ sort: by_weight
 夬夬	guai guai	0
 夭娜	yao nuo	0
 夭疽	yao ju	0
-夭邪	yao xia	0
+夭邪	yao xie	0
 央央戗戗	yang yang qiang qiang	0
 央戗	yang qiang	0
 央浼	yang mei	0
@@ -2219,7 +2216,7 @@ sort: by_weight
 安着	an zhuo	0
 安碓硙	an dui wei	0
 安阇那	an she na	0
-安静自在	an xian zi zai	0
+安静自在	an jing zi zai	0
 宋牼	song keng	0
 宏硕	hong shi	0
 宏硕	hong shuo	0
@@ -2833,7 +2830,7 @@ sort: by_weight
 忒过	te guo	0
 志行	zhi xing	0
 忞忞	min min	0
-忠言奇谋	zhong yan qi mo	0
+忠言奇谋	zhong yan qi mou	0
 忨愒	wan kai	0
 快乐丸	kuai le wan	0
 快乐主义	kuai le zhu yi	0
@@ -2902,7 +2899,7 @@ sort: by_weight
 悄似	qiao si	0
 悄怆	qiao chuang	0
 悦乐	yue le	0
-悉率	xi shuo	0
+悉率	xi shuai	0
 悍戾	han li	0
 悖缪	bei miu	0
 悛容	quan rong	0
@@ -3773,7 +3770,7 @@ sort: by_weight
 擿问	ti wen	0
 擿埴索涂	ti zhi suo tu	0
 攀庭槛	pan ting jian	0
-攀车拒轮	pan che che lun	0
+攀车拒轮	pan che ju lun	0
 攀车拒轮	pan ju ju lun	0
 搀和	chan huo	0
 携挟带	xie jia dai	0
@@ -3793,7 +3790,6 @@ sort: by_weight
 攒蹙	cuan cu	0
 攒露	cuan lou	0
 挛挛	luan luan	0
-挛挛	lvan lvan	0
 摊还	tan huan	0
 攧攧仆仆	dian dian pu pu	0
 攧番	dian fan	0
@@ -3876,7 +3872,7 @@ sort: by_weight
 斫地	zhuo di	0
 斫畬	zhuo she	0
 斫蜋	zhuo lang	0
-斫鲙	zhuo kui	0
+斫鲙	zhuo kuai	0
 斩衰	zhan cui	0
 斩馘	zhan guo	0
 斯堪的那维亚半岛	si kan di na wei ya ban dao	0
@@ -4783,11 +4779,10 @@ sort: by_weight
 沓至	ta zhi	0
 沓杂	ta za	0
 冲模	chong mu	0
-沙嗲	sha die	0
 沙噀	sha xun	0
 沙乌地阿拉伯	sha wu di a la bo	0
 沙乌地阿拉伯王国	sha wu di a la bo wang guo	0
-沙鸡	cha ji	0
+沙鸡	sha ji	0
 沬血	mei xue	0
 沮坏	ju huai	0
 沮挠	ju nao	0
@@ -5105,7 +5100,7 @@ sort: by_weight
 潏潏	jue jue	0
 泼包娄	po bao lou	0
 泼天也似	po tian ye si	0
-潘金莲给武松敬酒	pan jin lian gei wu song jin jiu	0
+潘金莲给武松敬酒	pan jin lian gei wu song jing jiu	0
 潜水炸弹	qian shui zha dan	0
 潟卤	xi lu	0
 潦乱	liao luan	0
@@ -5497,7 +5492,6 @@ sort: by_weight
 玉辂	yu lu	0
 玉铉	yu xuan	0
 王著	wang zhu	0
-王贲	wang ben	0
 王长	wang zhang	0
 玢岩	bin yan	0
 玢璘	bin lin	0
@@ -5814,7 +5808,6 @@ sort: by_weight
 盛饰	sheng shi	0
 盛饰严装	sheng shi yan zhuang	0
 盛鬋	sheng jian	0
-盗跖	dao zhi	0
 盗跖颜渊	dao zhi yan yuan	0
 尽情吐露	jin qing tu lu	0
 盘底朝天	pan di chao tian	0
@@ -5834,7 +5827,6 @@ sort: by_weight
 盲目行事	mang mu xing shi	0
 直宿	zhi su	0
 直捷了当	zhi jie liao dang	0
-直接了当	zhi jie liao dang	0
 直效行销	zhi xiao xing xiao	0
 直节劲气	zhi jie jing qi	0
 直角规	zhi jiao gui	0
@@ -6292,7 +6284,7 @@ sort: by_weight
 纷沓而来	fen ta er lai	0
 纷糅	fen rou	0
 纷葩	fen pa	0
-素女弦	su nv xuan	0
+素女弦	su nv xian	0
 素幡	su fan	0
 素借	su ji	0
 素行	su xing	0
@@ -6310,7 +6302,7 @@ sort: by_weight
 细胞银行	xi bao yin hang	0
 细行	xi xing	0
 绁绊	xie ban	0
-绁袢	xie ban	0
+绁袢	xie pan	0
 终宿主	zhong su zhu	0
 终朝	zhong zhao	0
 终军弃𦈡	zhong jun qi ru	0
@@ -6342,7 +6334,7 @@ sort: by_weight
 绨袍之赐	ti pao zhi si	0
 经传释词	jing zhuan shi ci	0
 经宿不归	jing su bu gui	0
-经济怪兽	jing ji guai chou	0
+经济怪兽	jing ji guai shou	0
 经济成长	jing ji cheng zhang	0
 经济成长率	jing ji cheng zhang lv	0
 经藏	jing zang	0
@@ -6450,7 +6442,7 @@ sort: by_weight
 总丱	zong guan	0
 绩效斐然	ji xiao fei ran	0
 繁嚣	fan xiao	0
-繁塔	bo ta	0
+繁塔	po ta	0
 繁台	po tai	0
 繁露	fan lu	0
 绷扒	beng ba	0
@@ -6517,7 +6509,7 @@ sort: by_weight
 罢马不畏鞭箠	pi ma bu wei bian chui	0
 罗塞提	luo sai ti	0
 罗塞达石碑	luo sai da shi bei	0
-罗夏克墨渍测验	luo xia ke mo ze ce yan	0
+罗夏克墨渍测验	luo xia ke mo zi ce yan	0
 罗帔	luo pei	0
 罗汉柏	luo han bo	0
 羁屑	ji xie	0
@@ -6528,7 +6520,7 @@ sort: by_weight
 羊肚蕈	yang du xun	0
 羊胛熟	yang jia shu	0
 羊陆之交	yang lu zhi jiao	0
-羊须疮	yang xu cang	0
+羊须疮	yang xu chuang	0
 美人命薄	mei ren ming bo	0
 美耐皿	mei nai min	0
 羞靥	xiu ye	0
@@ -6688,7 +6680,6 @@ sort: by_weight
 胚轴	pei zhou	0
 胜键	sheng jian	0
 胠沙思水	qu sha si shui	0
-胠箧	qu qie	0
 胡吹乱诌	hu chui luan zou	0
 胡掳	hu lu	0
 胡掳忙乱	hu lu mang luan	0
@@ -6994,7 +6985,6 @@ sort: by_weight
 落跑	lao pao	0
 叶块繁殖	ye kuai fan zhi	0
 叶面对称	ye mian dui chen	0
-叶面对称	ye mian dui cheng	0
 著作权委员会	zhu zuo quan wei yuan hui	0
 著作自由	zhu zuo zi you	0
 著作邻接权	zhu zuo lin jie quan	0
@@ -7005,7 +6995,7 @@ sort: by_weight
 苇箔	wei bo	0
 苇苕系巢	wei tiao xi chao	0
 葧荠	bo qi	0
-葫芦里卖的甚么药	hu lu li mai de shen men yao	0
+葫芦里卖的甚么药	hu lu li mai de shen me yao	0
 葭莩	jia fu	0
 荤允	xun yun	0
 荤粥	xun yu	0
@@ -7051,7 +7041,6 @@ sort: by_weight
 蕃侯	fan hou	0
 蕃坊	fan fang	0
 蕃娈	fan luan	0
-蕃娈	fan lvan	0
 蕃帽	fan mao	0
 蕃庶	fan shu	0
 蕃庑	fan wu	0
@@ -7590,7 +7579,6 @@ sort: by_weight
 见世报	xian shi bao	0
 见在	xian zai	0
 见在佛	xian zai fo	0
-见弹而求鸮炙	jian dan er qiu xiao zhi	0
 见意	xian yi	0
 见成	xian cheng	0
 见粮	xian liang	0
@@ -7601,7 +7589,6 @@ sort: by_weight
 视朝	shi chao	0
 视觉器	shi jue qi	0
 视觉悬崖	shi jue xuan ya	0
-视觉悬崖	shi jue xuan yai	0
 亲太太	qing tai tai	0
 亲家礼道	qing jia li dao	0
 亲家翁	qing jia weng	0
@@ -8408,7 +8395,7 @@ sort: by_weight
 邋遢本	la ta ben	0
 邋邋	lie lie	0
 逻辑重音	luo ji zhong yin	0
-逻辑闸	luo ji jia	0
+逻辑闸	luo ji zha	0
 逻逤檀	luo sha tan	0
 逻骑	luo ji	0
 邠如	bin ru	0
@@ -8425,7 +8412,7 @@ sort: by_weight
 邱壑	qiu huo	0
 邳县	pei xian	0
 邳邳	pei pei	0
-邾娄	zhu lv	0
+邾娄	zhu lou	0
 郃阳县	ge yang xian	0
 郊禋	jiao yin	0
 郎伯	lang bo	0
@@ -8902,7 +8889,7 @@ sort: by_weight
 阿拉伯劳伦斯	a la bo lao lun si	0
 阿拉伯联合大公国	a la bo lian he da gong guo	0
 阿拉伯胶树	a la bo jiao shu	0
-阿毗昙	a pi tian	0
+阿毗昙	a pi tan	0
 阿私	e si	0
 阿耨多罗	a nou duo luo	0
 阿兰若	a lan re	0
@@ -9015,7 +9002,7 @@ sort: by_weight
 陇西行	long xi xing	0
 雀瞀	que mao	0
 雀鲷	que diao	0
-雁头鸱劳嘴	yan tou zhi lao zui	0
+雁头鸱劳嘴	yan tou chi lao zui	0
 雄长	xiong zhang	0
 雅重	ya zhong	0
 集会游行法	ji hui you xing fa	0
@@ -9107,7 +9094,7 @@ sort: by_weight
 霹雳弦	pi li xian	0
 霹雳行动	pi li xing dong	0
 灵景	ling ying	0
-灵桩	ling chun	0
+灵椿	ling chun	0
 灵液	ling ye	0
 灵头幡	ling tou fan	0
 青海湖盆地	qing hai hu pen di	0
@@ -9393,7 +9380,6 @@ sort: by_weight
 驩洽	huan qia	0
 驩洽	huan xia	0
 骨崖崖	gu ya ya	0
-骨崖崖	gu yai yai	0
 骨殖匣	gu zhi xia	0
 骨肉重逢	gu rou chong feng	0
 骨董行	gu dong hang	0
@@ -9540,7 +9526,7 @@ sort: by_weight
 鹣鹣	jian jian	0
 鷇音	kou yin	0
 鷇食	kou shi	0
-鸥波	o bo	0
+鸥波	ou bo	0
 𫜁冕	bi mian	0
 𫜁衣	bi yi	0
 鹬蚌相持	yu bang xiang chi	0
@@ -9712,7 +9698,6 @@ sort: by_weight
 㑇憋憋	zhou bie bie	0
 㑇扰	zhou rao	0
 㥏墨	tian mo	0
-㨃人	dui ren	0
 㨃他	dui ta	0
 㨃她	dui ta	0
 㨃它	dui ta	0
@@ -11648,7 +11633,6 @@ sort: by_weight
 不邓邓	bu deng deng	0
 不酸不甜	bu suan bu tian	0
 不酸不辣	bu suan bu la	0
-不醒人事	bu xing ren shi	0
 不采声	bu cai sheng	0
 不释	bu shi	0
 不释口	bu shi kou	0
@@ -13165,7 +13149,6 @@ sort: by_weight
 云城区	yun cheng qu	0
 云溪区	yun xi qu	0
 云然	yun ran	0
-互㨃	hu dui	0
 互以	hu yi	0
 互信互谅	hu xin hu liang	0
 互信互重	hu xin hu zhong	0
@@ -13807,7 +13790,6 @@ sort: by_weight
 人称代名词	ren cheng dai ming ci	0
 人窝子	ren wo zi	0
 人穷智短	ren qiong zhi duan	0
-人籁	ren lai	0
 人纪	ren ji	0
 人骂	ren ma	0
 人义水甜	ren yi shui tian	0
@@ -14606,7 +14588,7 @@ sort: by_weight
 似鸟	shi niao	0
 似鸟恐龙	shi niao kong long	0
 伽倻	ga ye	0
-伽利略·伽利雷	jia li lve ga li lei	0
+伽利略·伽利雷	jia li lve jia li lei	0
 伽利略伽利雷	jia li lve ga li lei	0
 伽利略探测器	jia li lve tan ce qi	0
 伽马射线探测器	ga ma she xian tan ce qi	0
@@ -15307,7 +15289,6 @@ sort: by_weight
 侍医	shi yi	0
 侏儒仓鼠	zhu ru cang shu	0
 侏儒观战	zhu ru guan zhan	0
-侏㑩纪	zhu luo ji	0
 侏罗山脉	zhu luo shan mai	0
 侏离	zhu li	0
 侑卮	you zhi	0
@@ -18132,7 +18113,6 @@ sort: by_weight
 八仙桌上摆夜壶	ba xian zhuo shang bai ye hu	0
 八位元	ba wei yuan	0
 八位元个人电脑	ba wei yuan ge ren dian nao	0
-八佾	ba yi	0
 八俊	ba jun	0
 八儒	ba ru	0
 八元	ba yuan	0
@@ -18915,7 +18895,6 @@ sort: by_weight
 冒凉腔	mao liang qiang	0
 冒滥	mao lan	0
 冒渎	mao du	0
-冒然	mao ran	0
 冒烟突火	mao yan tu huo	0
 冒礼	mao li	0
 冒突	mao tu	0
@@ -19315,7 +19294,7 @@ sort: by_weight
 凯法劳尼亚	kai fa lao ni ya	0
 凯特布兰琪	kai te bu lan qi	0
 凯瑟	kai se	0
-凯茜·弗里曼	kai qian fu li man	0
+凯茜·弗里曼	kai xi fu li man	0
 凯茜弗里曼	kai qian fu li man	0
 凯萨琳	kai sa lin	0
 凯萨琳大帝	kai sa lin da di	0
@@ -19984,7 +19963,6 @@ sort: by_weight
 别使	bie shi	0
 别倒	bie dao	0
 别傻	bie sha	0
-别出新裁	bie chu xin cai	0
 别刻	bie ke	0
 别创新格	bie chuang xin ge	0
 别区	bie qu	0
@@ -20366,7 +20344,6 @@ sort: by_weight
 前所未有的	qian suo wei you de	0
 前推后拥	qian tui hou yong	0
 前揭	qian jie	0
-前扑后继	qian pu hou ji	0
 前新系	qian xin xi	0
 前月	qian yue	0
 前期损益	qian qi sun yi	0
@@ -23973,7 +23950,6 @@ sort: by_weight
 右职	you zhi	0
 右肾	you shen	0
 右腿骨	you tui gu	0
-右舵	you duo	0
 右袒	you tan	0
 右辅	you fu	0
 叵信	po xin	0
@@ -25889,7 +25865,6 @@ sort: by_weight
 喂偏食	wei pian shi	0
 喂眼	wei yan	0
 喃喃笃笃	nan nan du du	0
-喃字	nan zi	0
 善了	shan le	0
 善仕不如遇合	shan shi bu ru yu he	0
 善价	shan jia	0
@@ -28976,7 +28951,6 @@ sort: by_weight
 夏庭	xia ting	0
 夏书	xia shu	0
 夏正民	xia zheng min	0
-夏洛特·勃良特	xia luo te bo liang te	0
 夏珪	xia gui	0
 夏腊	xia la	0
 夏至线	xia zhi xian	0
@@ -31238,7 +31212,6 @@ sort: by_weight
 如果会	ru guo hui	0
 如柴	ru chai	0
 如此的	ru ci de	0
-如法泡制	ru fa pao zhi	0
 如海一沤	ru hai yi ou	0
 如火晚霞	ru huo wan xia	0
 如登仙境	ru deng xian jing	0
@@ -31444,7 +31417,6 @@ sort: by_weight
 委外	wei wai	0
 委婉词	wei wan ci	0
 委宛	wei wan	0
-委屈求全	wei qu qiu quan	0
 委推	wei tui	0
 委果	wei guo	0
 委弃	wei qi	0
@@ -33347,7 +33319,6 @@ sort: by_weight
 寒伧相	han chen xiang	0
 寒具	han ju	0
 寒冷的	han leng de	0
-寒喧	han xuan	0
 寒垣	han yuan	0
 寒尘	han chen	0
 寒天饮冷水	han tian yin leng shui	0
@@ -34168,7 +34139,6 @@ sort: by_weight
 小动	xiao dong	0
 小升	xiao sheng	0
 小印	xiao yin	0
-小卷	xiao juan	0
 小原流	xiao yuan liu	0
 小史	xiao shi	0
 小吞噬细胞	xiao tun shi xi bao	0
@@ -34865,7 +34835,6 @@ sort: by_weight
 展转腾挪	zhan zhuan teng nuo	0
 展采	zhan cai	0
 展限	zhan xian	0
-展露头角	zhan lu tou jiao	0
 展颜	zhan yan	0
 展显	zhan xian	0
 展骥	zhan ji	0
@@ -35079,9 +35048,7 @@ sort: by_weight
 峨冠	e guan	0
 峨山彝族自治县	e shan yi zu zi zhi xian	0
 峨峨	e e	0
-峨眉山市	e mei shan shi	0
 峨眉拳	e mei quan	0
-峨眉派	e mei pai	0
 峨然	e ran	0
 峨然矗立	e ran chu li	0
 峨眉乡	e mei xiang	0
@@ -35518,7 +35485,6 @@ sort: by_weight
 左狱	zuo yu	0
 左皮气	zuo pi qi	0
 左箭头键	zuo jian tou jian	0
-左舵	zuo duo	0
 左计	zuo ji	0
 左证	zuo zheng	0
 左述	zuo shu	0
@@ -36134,7 +36100,6 @@ sort: by_weight
 师帅	shi shuai	0
 师师	shi shi	0
 师徒合同	shi tu he tong	0
-师心	shi xin	0
 师旅	shi lv	0
 师旷	shi kuang	0
 师杯	shi bei	0
@@ -36331,7 +36296,6 @@ sort: by_weight
 帏幄	wei wo	0
 帏幔	wei man	0
 帏幕	wei mu	0
-幅射	fu she	0
 幅射线	fu she xian	0
 幌动	huang dong	0
 幎目	mi mu	0
@@ -39691,7 +39655,6 @@ sort: by_weight
 恰不道	qia bu dao	0
 恰克	qia ke	0
 恰则	qia ze	0
-恰如其份	qia ru qi fen	0
 恰正	qia zheng	0
 恰才	qia cai	0
 恰限	qia xian	0
@@ -39970,7 +39933,6 @@ sort: by_weight
 惠政	hui zheng	0
 惠斯特	hui si te	0
 惠斯登电桥	hui si deng dian qiao	0
-惠施	hui shi	0
 惠东	hui dong	0
 惠水县	hui shui xian	0
 惠济	hui ji	0
@@ -40891,7 +40853,6 @@ sort: by_weight
 悬旌	xuan jing	0
 悬望	xuan wang	0
 悬果	xuan guo	0
-悬梁刺骨	xuan liang ci gu	0
 悬棺葬	xuan guan zang	0
 悬榻	xuan ta	0
 悬欠	xuan qian	0
@@ -44557,7 +44518,6 @@ sort: by_weight
 接触性皮肤炎	jie chu xing pi fu yan	0
 接财神	jie cai shen	0
 接路头	jie lu tou	0
-接舆	jie yu	0
 接舆歌凤	jie yu ge feng	0
 接连到	jie lian dao	0
 接连起来	jie lian qi lai	0
@@ -45239,7 +45199,6 @@ sort: by_weight
 搭换	da huan	0
 搭搭拈拈	da da nian nian	0
 搭撒	da sa	0
-搭挡	da dang	0
 搭景	da jing	0
 搭会	da hui	0
 搭桌	da zhuo	0
@@ -46247,7 +46206,6 @@ sort: by_weight
 拦门钟	lan men zhong	0
 拦关	lan guan	0
 拦头一杠子	lan tou yi gang zi	0
-撄宁	ying ning	0
 攘善	rang shan	0
 攘土	rang tu	0
 攘场	rang chang	0
@@ -49548,7 +49506,6 @@ sort: by_weight
 曰云	yue yun	0
 曲匝	qu za	0
 曲周	qu zhou	0
-曲士	qu shi	0
 曲媚取容	qu mei qu rong	0
 曲学	qu xue	0
 曲室	qu shi	0
@@ -53128,7 +53085,6 @@ sort: by_weight
 机密大事	ji mi da shi	0
 机彀	ji gou	0
 机微	ji wei	0
-机心	ji xin	0
 机悟	ji wu	0
 机感	ji gan	0
 机应	ji ying	0
@@ -54515,7 +54471,6 @@ sort: by_weight
 毛腾厮火	mao teng si huo	0
 毛骨森然	mao gu sen ran	0
 毛骨竦然	mao gu song ran	0
-毛骨耸然	mao gu song ran	0
 毫不思量	hao bu si liang	0
 毫不为备	hao bu wei bei	0
 毫不留意	hao bu liu yi	0
@@ -54695,7 +54650,6 @@ sort: by_weight
 气强	qi qiang	0
 气忿	qi fen	0
 气忿忿	qi fen fen	0
-气慨	qi kai	0
 气愤难平	qi fen nan ping	0
 气拍	qi pai	0
 气扬采飞	qi yang cai fei	0
@@ -56020,7 +55974,6 @@ sort: by_weight
 法国喜剧片	fa guo xi ju pian	0
 法国话	fa guo hua	0
 法坐	fa zuo	0
-法执	fa zhi	0
 法堂疏	fa tang shu	0
 法场换子	fa chang huan zi	0
 法尘	fa chen	0
@@ -56694,7 +56647,6 @@ sort: by_weight
 活撮	huo cuo	0
 活支	huo zhi	0
 活支剌	huo zhi la	0
-活断层	huo duan ceng	0
 活会	huo hui	0
 活期帐户	huo qi zhang hu	0
 活期放款	huo qi fang kuan	0
@@ -57605,7 +57557,6 @@ sort: by_weight
 混棍	hun gun	0
 混氧燃料	hun yang ran liao	0
 混水	hun shui	0
-混水摸鱼	hun shui mo yu	0
 混水捞鱼	hun shui lao yu	0
 混汞	hun gong	0
 混汞法	hun gong fa	0
@@ -60066,10 +60017,8 @@ sort: by_weight
 无尾猿	wu wei yuan	0
 无尾目	wu wei mu	0
 无局	wu ju	0
-无己	wu ji	0
 无已	wu yi	0
 无庸	wu yong	0
-无庸置疑	wu yong zhi yi	0
 无庸置辩	wu yong zhi bian	0
 无庸讳言	wu yong hui yan	0
 无庸赘言	wu yong zhui yan	0
@@ -60078,7 +60027,6 @@ sort: by_weight
 无形贸易	wu xing mao yi	0
 无形输出	wu xing shu chu	0
 无形镜	wu xing jing	0
-无待	wu dai	0
 无徒	wu tu	0
 无从交代	wu cong jiao dai	0
 无复孑遗	wu fu jie yi	0
@@ -60137,7 +60085,6 @@ sort: by_weight
 无管腺	wu guan xian	0
 无籍	wu ji	0
 无籽果实	wu zi guo shi	0
-无精打彩	wu jing da cai	0
 无约在身	wu yue zai shen	0
 无纸化作业	wu zhi hua zuo ye	0
 无网格法	wu wang ge fa	0
@@ -60360,7 +60307,6 @@ sort: by_weight
 煤黑子	mei hei zi	0
 煤黑油	mei hei you	0
 焕别	huan bie	0
-焕然冰释	huan ran bing shi	0
 焕焕	huan huan	0
 焕烂	huan lan	0
 焕绮	huan qi	0
@@ -63432,7 +63378,6 @@ sort: by_weight
 留军壁邺	liu jun bi ye	0
 留退步	liu tui bu	0
 留连不舍	liu lian bu she	0
-留连忘返	liu lian wang fan	0
 留连果	liu lian guo	0
 留连论诗	liu lian lun shi	0
 留遗	liu yi	0
@@ -65205,7 +65150,6 @@ sort: by_weight
 尽己	jin ji	0
 尽席	jin xi	0
 尽带	jin dai	0
-尽年	jin nian	0
 尽情欢唱	jin qing huan chang	0
 尽散	jin san	0
 尽日	jin ri	0
@@ -65760,7 +65704,6 @@ sort: by_weight
 真字	zhen zi	0
 真宇	zhen yu	0
 真官	zhen guan	0
-真宰	zhen zai	0
 真实面	zhen shi mian	0
 真工夫	zhen gong fu	0
 真影	zhen ying	0
@@ -67286,7 +67229,6 @@ sort: by_weight
 神冈	shen gang	0
 神冈乡	shen gang xiang	0
 神座	shen zuo	0
-神彩奕奕	shen cai yi yi	0
 神怒天诛	shen nu tian zhu	0
 神怒鬼怨	shen nu gui yuan	0
 神怡心醉	shen yi xin zui	0
@@ -68644,7 +68586,6 @@ sort: by_weight
 立时立刻	li shi li ke	0
 立木	li mu	0
 立杆	li gan	0
-立杆见影	li gan jian ying	0
 立枯病	li ku bing	0
 立枷	li jia	0
 立钦钦	li qin qin	0
@@ -71167,7 +71108,6 @@ sort: by_weight
 维士比	wei shi bi	0
 维多力亚湖	wei duo li ya hu	0
 维多米	wei duo mi	0
-维妙维肖	wei miao wei xiao	0
 维它命	wei ta ming	0
 维几尼亚	wei ji ni ya	0
 维几尼亚州	wei ji ni ya zhou	0
@@ -71445,7 +71385,6 @@ sort: by_weight
 紧身儿	jin shen er	0
 紧身褡	jin shen da	0
 紧迫盯人	jin po ding ren	0
-紧迫钉人	jin po ding ren	0
 紧追权	jin zhui quan	0
 紧邻在	jin lin zai	0
 紧关里	jin guan li	0
@@ -72137,7 +72076,6 @@ sort: by_weight
 坛高粱	tan gao liang	0
 罂子桐	ying zi tong	0
 罐子玉	guan zi yu	0
-罔两	wang liang	0
 罔效	wang xiao	0
 罔极	wang ji	0
 罔顾人道	wang gu ren dao	0
@@ -72249,7 +72187,7 @@ sort: by_weight
 罗亚尔河	luo ya er he	0
 罗亭	luo ting	0
 罗伯特·伯恩斯	luo bo te bo en si	0
-罗伯特·佛洛斯特	luo bo te fu luo si te	0
+罗伯特·佛洛斯特	luo bo te fo luo si te	0
 罗伯特·路易斯·斯蒂文森	luo bo te lu yi si si di wen sen	0
 罗伯特伯恩斯	luo bo te bo en si	0
 罗保铭	luo bao ming	0
@@ -72419,9 +72357,7 @@ sort: by_weight
 美人痨	mei ren lao	0
 美人胎子	mei ren tai zi	0
 美人香草	mei ren xiang cao	0
-美伊	mei yi	0
 美占	mei zhan	0
-美仑美奂	mei lun mei huan	0
 美备	mei bei	0
 美侨	mei qiao	0
 美典	mei dian	0
@@ -75374,7 +75310,6 @@ sort: by_weight
 兴头很大	xing tou hen da	0
 兴风	xing feng	0
 兴腾	xing teng	0
-兴高彩烈	xing gao cai lie	0
 举世知名	ju shi zhi ming	0
 举保	ju bao	0
 举动荆棘	ju dong jing ji	0
@@ -77088,7 +77023,6 @@ sort: by_weight
 落鼻祖	luo bi zu	0
 葄枕	zuo zhen	0
 葅醢	zu hai	0
-葆光	bao guang	0
 葆江	bao jiang	0
 葆真	bao zhen	0
 葆葆	bao bao	0
@@ -78582,7 +78516,6 @@ sort: by_weight
 蜜林檎	mi lin qin	0
 蜜果冰	mi guo bing	0
 蜜橙糕	mi cheng gao	0
-蜜水	mi shui	0
 蜜渍	mi zi	0
 蜜煎	mi jian	0
 蜜筒	mi tong	0
@@ -84040,7 +83973,6 @@ sort: by_weight
 趣味竞赛	qu wei jing sai	0
 趣旨	qu zhi	0
 趦趄嗫嚅	zi ju nie ru	0
-趋之若骛	qu zhi ruo wu	0
 趋使	qu shi	0
 趋冷	qu leng	0
 趋冷气候	qu leng qi hou	0
@@ -88466,7 +88398,6 @@ sort: by_weight
 重跌	zhong die	0
 重轰炸机	zhong hong zha ji	0
 重辣	zhong la	0
-重迭	chong die	0
 重重围住	chong chong wei zhu	0
 重障	zhong zhang	0
 野人族	ye ren zu	0
@@ -89903,7 +89834,6 @@ sort: by_weight
 长汀	chang ting	0
 长江三角洲经济区	chang jiang san jiao zhou jing ji qu	0
 长江后浪催前浪一代新人换旧人	chang jiang hou lang cui qian lang yi dai xin ren huan jiu ren	0
-长沙湾	chang sha wan	0
 长治乡	zhang zhi xiang	0
 长泰	zhang tai	0
 长泰县	zhang tai xian	0
@@ -92560,7 +92490,6 @@ sort: by_weight
 震惶	zhen huang	0
 震愕	zhen e	0
 震栗	zhen li	0
-震憾	zhen han	0
 震惧	zhen ju	0
 震撼作用	zhen han zuo yong	0
 震于	zhen yu	0
@@ -95159,7 +95088,6 @@ sort: by_weight
 冯武	feng wu	0
 冯特	feng te	0
 冯窦伯	feng dou bo	0
-冯诺以曼	feng nuo yi man	0
 冯辽	feng liao	0
 冯驩	feng huan	0
 冯魁	feng kui	0
@@ -95210,7 +95138,6 @@ sort: by_weight
 驻大陆	zhu da lu	0
 驻屯重兵	zhu tun zhong bing	0
 驻形	zhu xing	0
-驻戌	zhu xu	0
 驻气	zhu qi	0
 驻台	zhu tai	0
 驻卫警察	zhu wei jing cha	0
@@ -95259,8 +95186,6 @@ sort: by_weight
 驼贩	tuo fan	0
 驼鸡	tuo ji	0
 驼马	tuo ma	0
-驼鸟	tuo niao	0
-驼鸟政策	tuo niao zheng ce	0
 骈偶文风	pian ou wen feng	0
 骈列	pian lie	0
 骈填	pian tian	0
@@ -95321,7 +95246,6 @@ sort: by_weight
 骑来骑去	qi lai qi qu	0
 骑两头马	qi liang tou ma	0
 骑到头上去	qi dao tou shang qu	0
-骑土	qi tu	0
 骑士教育	qi shi jiao yu	0
 骑士气概	qi shi qi gai	0
 骑士风格	qi shi feng ge	0
@@ -96109,7 +96033,6 @@ sort: by_weight
 鬼花样	gui hua yang	0
 鬼蜮技俩	gui yu ji lia	0
 鬼计	gui ji	0
-鬼计多端	gui ji duo duan	0
 鬼质	gui zhi	0
 鬼车	gui che	0
 鬼酉上车	gui you shang che	0

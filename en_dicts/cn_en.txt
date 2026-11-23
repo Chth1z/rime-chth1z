@@ -22,8 +22,8 @@ AD钙奶	ADgainai
 AD钙奶	adgainai
 UU加速器	UUjiasuqi
 UU加速器	uujiasuqi
-Cinity厅	Cinityting
-Cinity厅	cinityting
+CINITY厅	Cinityting
+CINITY厅	cinityting
 Eul的神圣法杖	Euldeshenshengfazhang
 Eul的神圣法杖	euldeshenshengfazhang
 A杖	Azhang
@@ -125,8 +125,8 @@ Android端	androidduan
 e招贷	ezhaodai
 G胖	Gpang
 G胖	gpang
-Up主	Upzhu
-Up主	upzhu
+UP主	Upzhu
+UP主	upzhu
 BOSS直聘	BOSSzhipin
 BOSS直聘	bosszhipin
 P社	Pshe
@@ -477,8 +477,8 @@ Lite版本	Litebanben
 Lite版本	litebanben
 X教授	Xjiaoshou
 X教授	xjiaoshou
-Papi酱	Papijiang
-Papi酱	papijiang
+papi酱	Papijiang
+papi酱	papijiang
 MAC地址	MACdizhi
 MAC地址	macdizhi
 DNS劫持	DNSjiechi
@@ -912,8 +912,6 @@ O不OK	obuok
 人均GDP	renjungdp
 V8引擎	Vbayinqing
 V8引擎	vbayinqing
-动L	dongL
-动L	dongl
 A咖	Aka
 A咖	aka
 B型超声	Bxingchaosheng
@@ -932,6 +930,3 @@ USB记忆棒	USBjiyibang
 USB记忆棒	usbjiyibang
 V沟	Vgou
 V沟	vgou
-e仔	ezai
-k他命	ktaming
-n遍	nbian

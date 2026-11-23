@@ -264,7 +264,6 @@ Windows 95	Windows95
 Windows 98	Windows98
 Windows Me	WindowsMe
 Windows 2000	Windows2000
-Windows XP	WindowsXP
 Windows Vista	WindowsVista
 Windows 7	Windows7
 Windows 8	Windows8
@@ -628,7 +627,7 @@ Better Zip	BetterZip
 Brackets	Brackets
 BundleHunt	BundleHunt
 Byword	Byword
-Btitish	Btitish
+British	British
 Btrfs	Btrfs
 Caffeine	Caffeine
 Calcbot	Calcbot
@@ -788,7 +787,7 @@ Picatext	Picatext
 PingWest	PingWest
 Pixelmator	Pixelmator
 Play by Play	PlaybyPlay
-PlistEdit	pliPlistEdit
+PlistEdit	PlistEdit
 PopClip	PopClip
 PowerPack	PowerPack
 Privoxy	Privoxy
@@ -929,7 +928,7 @@ iKlear	iKlear
 # Legal High	ligouhai
 Legal High	LegalHigh
 Werkzeug	Werkzeug
-itsdangerours	itsdangerours
+itsdangerous	itsdangerous
 Mimestream	Mimestream
 CRUD	CRUD
 Create Read Update Delete	CRUD
@@ -1428,10 +1427,8 @@ Ant Design	AntDesign
 Disney	Disney
 early access	earlyaccess
 Fedora	Fedora
-hading	hading
 LeetCode	LeetCode
 Helvetica	Helvetica
-limon	limon
 GFW	GFW
 Great Firewall	GFW
 Great Firewall	GreatFirewall
@@ -1444,7 +1441,6 @@ MacVim	MacVim
 VimR	VimR
 LunarVim	LunarVim
 IdeaVim	IdeaVim
-unfo	unfo
 timeshift	timeshift
 ChatGPT	ChatGPT
 OpenAI	OpenAI
@@ -1530,7 +1526,6 @@ Chrome	Chrome
 iOS	iOS
 Linux	Linux
 Ubuntu	Ubuntu
-Windows	Windows
 Microsoft	Microsoft
 Nintendo	Nintendo
 Google	Google
@@ -1539,7 +1534,6 @@ Wii U	WiiU
 Wii	Wii
 Oracle	Oracle
 OriginOS	OriginOS
-iPhone	iPhone
 iPad	iPad
 iPod	iPod
 UI	UI
@@ -1562,7 +1556,6 @@ Latin	Latin
 Mars	Mars
 Marxist	Marxist
 Moslem	Moslem
-Negro	Negro
 Thanksgiving	Thanksgiving
 Venus	Venus
 X-ray	X-ray
@@ -1607,7 +1600,6 @@ Irishman	Irishman
 Israel	Israel
 Israeli	Israeli
 Italian	Italian
-Italilian	Italilian
 Italy	Italy
 Japan	Japan
 Japanese	Japanese
@@ -1617,7 +1609,7 @@ native American	nativeAmerican
 Netherlands	Netherlands
 New Zealand	NewZealand
 New Zealander	NewZealander
-Philppines	Philppines
+Philippines	Philippines
 Poland	Poland
 Pole	Pole
 Polish	Polish
@@ -1728,9 +1720,7 @@ WebDAV	WebDAV
 SwiftUI	SwiftUI
 Astro	Astro
 SigmaOS	SigmaOS
-fuckity	fuckity
 Funtouch OS	FuntouchOS
-fo	fo
 Unix shell	Unixshell
 Z-Library	Z-Library
 Zaraz	Zaraz
@@ -1832,8 +1822,8 @@ NGO	NGO
 Non-Governmental Organization	NGO
 OMG	OMG
 Oh My God	OMG
-RFT	RFT
-Rich Text Format	RFT
+RTF	RTF
+Rich Text Format	RTF
 SVG	SVG
 Scalable Vector Graphics	SVG
 SVN	SVN
@@ -1911,7 +1901,7 @@ Starknet	Starknet
 Optimism	Optimism
 Polygon	Polygon
 NEAR Protocol	NEARProtocol
-Lens Protocal	LensProtocal
+Lens Protocol	LensProtocol
 zkSync	zkSync
 Arweave	Arweave
 Filecoin	Filecoin
@@ -1964,8 +1954,6 @@ sideloading	sideloading
 librime	librime
 JRPG	JRPG
 Japanese Role-Playing Game	JRPG
-Kuromis	Kuromis
-heil	heil
 AmyTelecom	AmyTelecom
 Patreon	Patreon
 Anaconda	Anaconda
@@ -2008,7 +1996,6 @@ Kubernetes	K8s
 Kubernetes	Kubernetes
 Kubeadm	Kubeadm
 Minikube	Minikube
-shitwork	shitwork
 A4	A4
 3D	3D
 Loki	Loki
@@ -2031,7 +2018,6 @@ PotPlayer	PotPlayer
 Code::Blocks	Code::Blocks
 Protocol Buffers	ProtocolBuffers
 protobuf	protobuf
-beyatch	beyatch
 iBus	iBus
 BT	BT
 ProtonMail	ProtonMail

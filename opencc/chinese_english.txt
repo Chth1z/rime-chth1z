@@ -53910,7 +53910,7 @@
 黑	黑 black dark
 黑下来	黑下来 night comes
 黑乎乎	黑乎乎 darkish
-黑人	黑人 Ethiopian Negro negroid blackamoor black unregistered person
+黑人	黑人 black person black unregistered person
 黑人家园	黑人家园 black people homeland
 黑体	黑体 blackbody
 黑光	黑光 black light

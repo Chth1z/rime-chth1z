@@ -22,8 +22,8 @@ AD钙奶	ADglnl
 AD钙奶	adglnl
 UU加速器	UUjwsuqi
 UU加速器	uujwsuqi
-Cinity厅	Cinityty
-Cinity厅	cinityty
+CINITY厅	Cinityty
+CINITY厅	cinityty
 Eul的神圣法杖	Euldeufugfavh
 Eul的神圣法杖	euldeufugfavh
 A杖	Avh
@@ -125,8 +125,8 @@ Android端	androiddr
 e招贷	evkdl
 G胖	Gph
 G胖	gph
-Up主	Upvu
-Up主	upvu
+UP主	Upvu
+UP主	upvu
 BOSS直聘	BOSSvipn
 BOSS直聘	bossvipn
 P社	Pue
@@ -477,8 +477,8 @@ Lite版本	Litebjbf
 Lite版本	litebjbf
 X教授	Xjcub
 X教授	xjcub
-Papi酱	Papijd
-Papi酱	papijd
+papi酱	Papijd
+papi酱	papijd
 MAC地址	MACdivi
 MAC地址	macdivi
 DNS劫持	DNSjxii
@@ -912,8 +912,6 @@ O不OK	obuok
 人均GDP	rfjpgdp
 V8引擎	Vbaynqy
 V8引擎	vbaynqy
-动L	dsL
-动L	dsl
 A咖	Aka
 A咖	aka
 B型超声	Bxyikug
@@ -932,6 +930,3 @@ USB记忆棒	USBjiyibh
 USB记忆棒	usbjiyibh
 V沟	Vgb
 V沟	vgb
-e仔	ezl
-k他命	ktamy
-n遍	nbm
