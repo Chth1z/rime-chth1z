@@ -9,7 +9,7 @@
 | 2026-11-22 | `gaboolic/rime-frost` | Bug | `lua/number_translator.lua:148-151` 缺 `seg:has_tag("number")` 且 `get_string` 没判 `nil` | 本仓库已修 / 待顺手汇总 | — | 已在本仓库修复，待后续有空时决定是否顺手反馈上游 |
 | 2026-11-22 | `gaboolic/rime-frost` | Bug | `lua/reduce_english_filter.lua:99-105` 候选总数不足时 `pending_cands` 未输出会被吞掉（`rime-ice` 已修，白霜未同步） | 本仓库已修 / 待顺手汇总 | — | 本仓库在 `reduce_english_filter.lua` 与 `chth1z_pipeline_filter.lua` 均已修复 |
 | 2026-11-22 | `gaboolic/rime-frost` | 配置 | `translator/grammar_penalty` 是否仍有作用 | 已核实（不提） | — | 已查 `rime.dll`（`librime 1.17.0`）确无该键名，但无实际负面影响，本仓库已删除、不打扰上游 |
-| 2026-11-23 | `iDvel/rime-ice` | Bug | `cn_en_abc.txt`「V怪客」错码 `Vgcke` 及 `opencc/others.txt` 化学式/制表符错误 | 草稿待复核 | [草稿](2026-11-23-rime-ice-cnen-abc-and-opencc-others.md) | 同步影响 `gaboolic/rime-frost@ab64ecf`，本仓库已通过 `rules/` 修复 |
-| 2026-11-23 | `gaboolic/rime-frost` | Bug | 7 份 `cn_dicts_cell` 细胞词库混入约 16.8 万条非领域抓取/广告/电子书前言垃圾块 | 草稿待复核 | [草稿](2026-11-23-rime-frost-cell-dict-scrape-dumps.md) | 基于 `ab64ecf` 逐段核实锚点与行号，本仓库已清除 |
-| 2026-11-23 | `gaboolic/rime-frost` | Bug | 活跃词库 569 条 `lue/nue`、38 处非法音节（含 `base` `均订 junding`）及批量自动注音错误 | 草稿待复核 | [草稿](2026-11-23-rime-frost-dict-pinyin-and-encoding-bugs.md) | 基于 `ab64ecf` 核实，本仓库已修正并通过静态门禁校验 |
-| 2026-11-23 | `gaboolic/rime-frost` | Bug | `opencc/{english_chinese,chinese_english,others}.txt` 批量格式损坏、释义错贴与重复 emoji | 草稿待复核 | [草稿](2026-11-23-rime-frost-opencc-ce-ec-corruptions.md) | 基于 `ab64ecf` 核实，本仓库已修复 |
+| 2026-11-23 | `iDvel/rime-ice` | Bug | `cn_en_{abc,ziguang}.txt`「V怪客」「T.S.艾略特」错码及 `opencc/others.txt` 化学式错误 | 草稿待复核 | [草稿](2026-11-23-rime-ice-cnen-abc-and-opencc-others.md) | 已在干净上游复现；`V怪客` 与 `others.txt` 同步影响 `rime-frost@ab64ecf`，本仓库已修复 |
+| 2026-11-23 | `gaboolic/rime-frost` | Bug | 7 份 `cn_dicts_cell` 细胞词库混入约 16.8 万条非领域抓取/广告/电子书前言垃圾块 | 草稿待复核 | [草稿](2026-11-23-rime-frost-cell-dict-scrape-dumps.md) | 已基于 `ab64ecf` 逐行核实锚点与实机复现，本仓库已清除 |
+| 2026-11-23 | `gaboolic/rime-frost` | Bug | `base` `均订 junding` 双拼不可达、批量自动注音错误及 569 条 `lue/nue` 编码不统一（75 对重复） | 草稿待复核 | [草稿](2026-11-23-rime-frost-dict-pinyin-and-encoding-bugs.md) | 已基于 `ab64ecf` 逐条实机复现并核对 7 套方案拼写代数，本仓库已修正 |
+| 2026-11-23 | `gaboolic/rime-frost` | Bug | `opencc/{english_chinese,chinese_english,others}.txt` 批量格式损坏、释义错贴与重复 emoji | 草稿待复核 | [草稿](2026-11-23-rime-frost-opencc-ce-ec-corruptions.md) | 已基于 `ab64ecf` 开启 `chinese_english`/`emoji` 开关实机复现，本仓库已修复 |
