@@ -537,6 +537,8 @@
     { "name": "fp: r3 免服兵役 fixed (mianfubingyi)", "schema": "rime_frost", "keys": "mianfubingyi", "first_text": "免服兵役" },
     { "name": "fp: r3 谐星 not hijacked by 血腥 (xiexing)", "schema": "rime_frost", "keys": "xiexing", "first_text": "諧星", "no_text_regex": "血腥" },
     { "name": "fp: r3 D-class 氛围 removed from fenfei", "schema": "rime_frost", "keys": "fenfei", "no_text_regex": "氛圍|氛围" },
-    { "name": "fp: r3 agentic lowercase (agentic)", "schema": "rime_frost", "keys": "agentic", "any_text": "agentic" }
+    { "name": "fp: r3 agentic lowercase (agentic)", "schema": "rime_frost", "keys": "agentic", "any_text": "agentic" },
+    { "name": "fp: r3 B-class 角斗士 (jiaodoushi) with hint", "schema": "rime_frost", "keys": "jiaodoushi", "first_text": "角鬥士", "first_comment": "角(jué)斗士" },
+    { "name": "fp: r3 B-class 角力 (jiaoli) below 脚力", "schema": "rime_frost", "keys": "jiaoli", "first_text": "腳力", "any_text_with_comment": { "text": "角力", "comment": "jué lì" } }
   ]
 }
