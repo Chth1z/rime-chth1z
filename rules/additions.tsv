@@ -206,3 +206,40 @@ cn_dicts/others.dict.yaml	蚌住	beng zhu	0	common	R1常用口语补录
 cn_dicts/others.dict.yaml	我勒个	wo le ge	0	common	R1常用口语补录
 cn_dicts/others.dict.yaml	软弹	ruan tan	0	common	R1常用口语补录
 cn_dicts_cell/shulihua.dict.yaml	粘合剂	zhan he ji	35	domain	R1口语容错补录
+cn_dicts/8105.dict.yaml	徵	zheng	10	phonetic	通用规范汉字表附注 + L3历史人名：历史人名保留用字（文徵明、魏徵、崔徵、林熊徵、孙鼎徵、叶德徵、休徵、乐徵）
+cn_dicts/8105.dict.yaml	褚	zhu	10	phonetic	现汉第7版：装填丝绵、口袋义（褚小怀大、褚小杯大）
+cn_dicts/8105.dict.yaml	郄	xi	10	phonetic	现汉第7版 + L2中医药名词：古同“隙”；中医经络穴位（郄穴、郄门、浮郄、阴郄；以郄视文）
+cn_dicts/8105.dict.yaml	楯	dun	10	phonetic	现汉第7版：古同“盾”（鬻矛誉楯、赤楯座、日文姓氏楯冈）
+cn_dicts/8105.dict.yaml	偲	si	10	phonetic	现汉第7版：互相督促勉励（切切偲偲；人名李偲、钱偲）
+cn_dicts/8105.dict.yaml	粢	ci	10	phonetic	现汉第7版：方言词“粢饭”（粢饭糕、粢饭团）
+cn_dicts/8105.dict.yaml	虾	ha	10	phonetic	现汉第7版：复合词“虾蟆”（虾蟆陵、虾蟆故堪浴水）
+cn_dicts/8105.dict.yaml	柁	duo	10	phonetic	现汉第7版：同“舵”（趁风使柁、见风转柁）
+cn_dicts/8105.dict.yaml	埏	yan	10	phonetic	现汉第7版：墓道、地的边际（埏道、九垓八埏）
+cn_dicts/8105.dict.yaml	孖	ma	10	phonetic	现汉第7版 + 全国科技名词委：成对的、双（解剖学上孖肌/下孖肌、深圳地铁孖岭）
+cn_dicts/8105.dict.yaml	掞	shan	10	phonetic	现汉第7版：舒展、发扬（摛文掞藻、掞藻飞声、清代大学士王掞、文掞）
+cn_dicts/8105.dict.yaml	桁	hang	10	phonetic	现汉第7版：古代刑具“桁杨”、衣架、浮桥（桁杨相推）
+cn_dicts/8105.dict.yaml	濩	hu	10	phonetic	现汉第7版：布濩、商代乐舞“大濩”（大濩、渊涓蠖濩）
+cn_dicts/8105.dict.yaml	瑱	zhen	10	phonetic	现汉第7版：古通“镇”，压坐席玉器；历史人名（朱瑱、韦瑱）
+cn_dicts/8105.dict.yaml	莩	piao	10	phonetic	现汉第7版：同“殍”，饿死的人（野有饿莩、饿莩填壑）
+cn_dicts/8105.dict.yaml	珩	hang	10	phonetic	现汉第7版：机械加工术语“珩磨 háng mó”（注：base.dict.yaml:109825 现作 珩磨 heng mo 4，可顺带复核）
+cn_dicts/8105.dict.yaml	且	ju	10	phonetic	现汉第7版：古助词、通“趄”、历史人名（龙且、蔺且）
+cn_dicts/8105.dict.yaml	宕	tan	10	phonetic	现汉第7版 + L2民政地名：甘肃省标准地名“宕昌 / 宕昌县”
+cn_dicts/8105.dict.yaml	惔	dan	10	phonetic	现汉第7版：古通“淡”，恬静淡泊（恬惔虚无、归草黑栀惔竹叶）
+cn_dicts/8105.dict.yaml	括	gua	10	phonetic	现汉第7版：现汉第7版收“挺括 tǐng guā / 搜括”（挺括有型、面料挺括）
+cn_dicts/8105.dict.yaml	擿	zhi	10	phonetic	现汉第7版：搔、投掷、以杖点地（冥行擿埴、擿埴索途）
+cn_dicts/8105.dict.yaml	敦	dui	10	phonetic	现汉第7版：古代青铜食器“玉敦”（朱槃玉敦、朱盘玉敦）
+cn_dicts/8105.dict.yaml	玚	chang	10	phonetic	现汉第7版：古代祭祀用圭“玚圭”，亦见历史人名读音（应玚、李玚）
+cn_dicts/8105.dict.yaml	粥	yu	10	phonetic	现汉第7版：古同“鬻”（卖）；亦见韩愈“群雌粥粥”
+cn_dicts/8105.dict.yaml	从	zong	10	phonetic	现汉第7版：古同“纵”（合从缔交、从横）
+cn_dicts/8105.dict.yaml	喏	re	10	phonetic	现汉第7版：旧时礼节“唱喏 chàng rě”
+cn_dicts/8105.dict.yaml	岂	kai	10	phonetic	现汉第7版：古同“恺/凯”（岂弟君子、岂乐）
+cn_dicts/8105.dict.yaml	派	pa	10	phonetic	现汉第7版：音译词“派司 pā·si”（pass）
+cn_dicts/8105.dict.yaml	溱	zhen	10	phonetic	现汉第7版：古水名“溱水”（溱洧、溱溱）
+cn_dicts/8105.dict.yaml	般	pan	10	phonetic	现汉第7版：古同“盘”（般乐怠敖）、多种（般般）
+cn_dicts/8105.dict.yaml	芥	gai	10	phonetic	现汉第7版：蔬菜名“芥蓝 gài lán / 芥菜”
+cn_dicts/8105.dict.yaml	适	kuo	10	phonetic	现汉第7版：姓氏及历史人名（唐德宗李适、南宫适）
+cn_dicts/8105.dict.yaml	陶	yao	10	phonetic	现汉第7版：上古人物名“皋陶 Gāoyáo”（举皋陶）
+cn_dicts/8105.dict.yaml	鲗	ze	10	phonetic	新华字典第12版 + 现汉第7版：香港地名“鲗鱼涌 Zé yú chōng”规范读音
+cn_dicts/8105.dict.yaml	觜	zui	10	phonetic	现汉第7版：古同“嘴”（现汉第7版收 zī / zuǐ 双音）
+cn_dicts/8105.dict.yaml	嗄	a	10	phonetic	现汉第7版：叹词同“啊”（现汉第7版收 shà / á 双音）
+cn_dicts/8105.dict.yaml	擘	bai	10	phonetic	现汉第7版：同“掰”（现汉第7版收 bò / bāi 双音）

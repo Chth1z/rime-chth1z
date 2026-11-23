@@ -455,8 +455,8 @@ TV版本	tvbjbf
 芒果TV	mhgotv
 V字仇杀队	Vziebvadm
 V字仇杀队	vziebvadm
-V怪客	Vgcke
-V怪客	vgcke
+V怪客	Vgyke
+V怪客	vgyke
 V煞	Vva
 V煞	vva
 Q弹	Qtj
@@ -477,7 +477,6 @@ Lite版本	Litebjbf
 Lite版本	litebjbf
 X教授	Xjzvb
 X教授	xjzvb
-papi酱	Papijt
 papi酱	papijt
 MAC地址	MACdiai
 MAC地址	macdiai

@@ -17,9 +17,9 @@
 | `additions.tsv` | `target_file` `word` `py` `weight` `category` `source` | 补录缺失词条；`category` 限 `A` / `E1` / `modern` / `tech` / `domain` / `brand` / `phonetic` / `common` |
 | `en_additions.tsv` | `word` `code` `weight` `category` | `en_dicts/en_ext.dict.yaml` 现代英文补充词；无权重时 `weight` 留空 |
 | `en_fixes.tsv` | `target_file` `old_word` `old_code` `action` `new_word` `new_code` `weight` `reason` | `en_dicts/{en_ext,en}.dict.yaml` 删除、拼写/大小写修正与权重覆写；`action` 限 `delete` / `replace` / `reweight` |
-| `cn_en_source.tsv` | `action` `word` `prefix_en` `cn_syls` `suffix_en` `emit_lower` `note` | 中英混合单一源，由 `scripts/build_cn_en.py` 统一派生全部 7 份 `en_dicts/cn_en*.txt` |
+| `cn_en_source.tsv` | `action` `word` `prefix_en` `cn_syls` `suffix_en` `emit_lower` `note` | 中英混合单一源，由 `scripts/build_cn_en.py` 统一派生全部 7 份 `en_dicts/cn_en*.txt`；`action` 限 `add` / `replace` / `delete` / `rename` / `case_fix` |
 | `alphanum_additions.txt` | 每行一个词条 | 注入 `rime_frost.dict.yaml` 的字母数字短组合 |
-| `opencc_fixes.tsv` | `target_file` `key` `action` `value` `reason` | `opencc/*.txt` 文本修复；`action` 限 `replace` / `delete` / `add` |
+| `opencc_fixes.tsv` | `target_file` `key` `action` `value` `reason` | `opencc/*.txt` 文本修复；`action` 限 `replace` / `rename`（`new_key|new_value`）/ `delete` / `add` |
 
 ## 常用命令
 

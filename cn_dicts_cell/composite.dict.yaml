@@ -6619,7 +6619,7 @@ sort: by_weight
 一层肉	yi ceng rou	14
 一层膜	yi ceng mo	75
 一层芝士	yi ceng zhi shi	5
-一层薄膜	yi ceng bao mo	31
+一层薄膜	yi ceng bo mo	31
 一层薄雾	yi ceng bo wu	7
 一层蜂蜜	yi ceng feng mi	13
 一层阴影	yi ceng yin ying	12
@@ -18102,7 +18102,7 @@ sort: by_weight
 三分练七分吃	san fen lian qi fen chi	57
 三分能力	san fen neng li	0
 三分薄凉	san fen bao liang	9
-三分薄面	san fen bao mian	13
+三分薄面	san fen bo mian	13
 三分裤	san fen ku	1
 三分赛车	san fen sai che	0
 三分远投	san fen yuan tou	13
@@ -23626,7 +23626,7 @@ sort: by_weight
 你能感受到	ni neng gan shou dao	217
 你能接受吗	ni neng jie shou ma	68
 你要搞清楚	ni yao gao qing chu	152
-你见过哪些	ni jian guo nei xie	56
+你见过哪些	ni jian guo na xie	56
 你造吗	ni zao ma	126
 佩戴口罩	pei dai kou zhao	114
 佩戴者	pei dai zhe	152
@@ -25533,9 +25533,9 @@ sort: by_weight
 哪一本	na yi ben	161
 哪一门	na yi men	137
 哪一项	na yi xiang	218
-哪个品牌好	nei ge pin pai hao	59
+哪个品牌好	na ge pin pai hao	59
 哪个牌子好	na ge pai zi hao	204
-哪些因素影响	nei xie yin su ying xiang	27
+哪些因素影响	na xie yin su ying xiang	27
 哪位大神	na wei da shen	89
 哪儿哪儿	na er na er	157
 哪家店	na jia dian	100
@@ -25599,7 +25599,7 @@ sort: by_weight
 啧啧啧	ze ze ze	580
 啪啪打脸	pa pa da lian	201
 喃喃道	nan nan dao	159
-善于思考	shan yu sai kao	175
+善于思考	shan yu si kao	175
 善于总结	shan yu zong jie	207
 善意提醒	shan yi ti xing	136
 善意第三人	shan yi di san ren	109
@@ -26371,7 +26371,7 @@ sort: by_weight
 存储池	cun chu chi	240
 存在与时间	cun zai yu shi jian	168
 存在即合理	cun zai ji he li	404
-存在哪些问题	cun zai nei xie wen ti	65
+存在哪些问题	cun zai na xie wen ti	65
 存在很多问题	cun zai hen duo wen ti	149
 存在的价值	cun zai de jia zhi	469
 存在的意义	cun zai de yi yi	1461
@@ -32402,7 +32402,7 @@ sort: by_weight
 蒸烤一体	zheng kao yi ti	115
 蒸烤一体机	zheng kao yi ti ji	389
 蒸烤箱	zheng kao xiang	1412
-蒸鱼豉油	zheng yu shi you	105
+蒸鱼豉油	zheng yu chi you	105
 蓝桥杯	lan qiao bei	266
 蓝海市场	lan hai shi chang	187
 蓝牙连接	lan ya lian jie	235
@@ -33526,7 +33526,7 @@ sort: by_weight
 逆时针旋转	ni shi zhen xuan zhuan	143
 逆水寒	ni shui han	518
 逆转裁判	ni zhuan cai pan	581
-选哪个好	xuan nei ge hao	38
+选哪个好	xuan na ge hao	38
 选帝侯	xuan di hou	163
 选拔性考试	xuan ba xing kao shi	203
 选择大于努力	xuan ze da yu nu li	263
@@ -33986,11 +33986,11 @@ sort: by_weight
 需求量很大	xu qiu liang hen da	105
 需要一定时间	xu yao yi ding shi jian	163
 需要一定的时间	xu yao yi ding de shi jian	207
-需要做哪些准备	xu yao zuo nei xie zhun bei	47
+需要做哪些准备	xu yao zuo na xie zhun bei	47
 需要大量的时间	xu yao da liang de shi jian	124
 需要学习的东西	xu yao xue xi de dong xi	101
 需要注意以下几点	xu yao zhu yi yi xia ji dian	108
-需要注意哪些问题	xu yao zhu yi nei xie wen ti	46
+需要注意哪些问题	xu yao zhu yi na xie wen ti	46
 需要注意的事项	xu yao zhu yi de shi xiang	161
 需要注意的点	xu yao zhu yi de dian	197
 需要的小伙伴	xu yao de xiao huo ban	390
@@ -43152,7 +43152,6 @@ sort: by_weight
 茶汤颜色	cha tang yan se	8
 茶溪谷	cha xi gu	4
 茶滋味	cha zi wei	3
-茶熏八爪鱼	cha xun ba zhao yu	0
 茶物语奶茶	cha wu yu nai cha	0
 茶王树	cha wang shu	4
 茶生活	cha sheng huo	0
@@ -45429,8 +45428,8 @@ sort: by_weight
 低饱和	di bao he	76
 低首付	di shou fu	24
 低首付购车	di shou fu gou che	0
-低马尾	di ma yi	10
-低马尾造型	di ma yi zao xing	0
+低马尾	di ma wei	10
+低马尾造型	di ma wei zao xing	0
 低龄化趋势	di ling hua qu shi	15
 低龄学生	di ling xue sheng	4
 低龄孩子	di ling hai zi	14
@@ -46003,7 +46002,7 @@ sort: by_weight
 上呼吸道疾病	shang hu xi dao ji bing	8
 上品寒士	shang pin han shi	1
 上品折扣	shang pin zhe kou	2
-上哪个大学	shang nei ge da xue	19
+上哪个大学	shang na ge da xue	19
 上哪儿去	shang na er qu	50
 上哪所大学	shang na suo da xue	6
 上哪找	shang na zhao	85
@@ -53068,8 +53067,8 @@ sort: by_weight
 不推脱	bu tui tuo	15
 不推诿	bu tui wei	10
 不推辞	bu tui ci	15
-不掺假	bu can jia	17
-不掺杂	bu can za	108
+不掺假	bu chan jia	17
+不掺杂	bu chan za	108
 不提供发票	bu ti gong fa piao	6
 不提供服务	bu ti gong fu wu	18
 不提分手	bu ti fen shou	1
@@ -54993,7 +54992,7 @@ sort: by_weight
 不管喜不喜欢	bu guan xi bu xi huan	13
 不管在任何场合	bu guan zai ren he chang he	1
 不管在任何时候	bu guan zai ren he shi hou	1
-不管在哪个国家	bu guan zai nei ge guo jia	13
+不管在哪个国家	bu guan zai na ge guo jia	13
 不管在哪儿	bu guan zai na er	15
 不管多久	bu guan duo jiu	19
 不管多大	bu guan duo da	61
@@ -55014,7 +55013,7 @@ sort: by_weight
 不管成功与否	bu guan cheng gong yu fou	17
 不管教	bu guan jiao	10
 不管春夏秋冬	bu guan chun xia qiu dong	15
-不管是哪个国家	bu guan shi nei ge guo jia	12
+不管是哪个国家	bu guan shi na ge guo jia	12
 不管是哪里	bu guan shi na li	14
 不管是在家里	bu guan shi zai jia li	5
 不管是外观	bu guan shi wai guan	10
@@ -55058,7 +55057,7 @@ sort: by_weight
 不粘烤盘	bu zhan kao pan	13
 不粘煤	bu zhan mei	1
 不粘牙	bu zhan ya	32
-不粘腻	bu zhan ni	43
+不粘腻	bu nian ni	43
 不粘连	bu zhan lian	10
 不精明	bu jing ming	10
 不精进	bu jing jin	3
@@ -73572,8 +73571,8 @@ sort: by_weight
 乙方责任	yi fang ze ren	2
 乙未日	yi wei ri	1
 乙武洋匡	yi wu yang kuang	1
-乙炔气	yi gui qi	3
-乙炔气体	yi gui qi ti	2
+乙炔气	yi que qi	3
+乙炔气体	yi que qi ti	2
 乙烯产量	yi xi chan liang	1
 乙烯基树脂	yi xi ji shu zhi	1
 乙烯气体	yi xi qi ti	4
@@ -89831,7 +89830,6 @@ sort: by_weight
 代理经销	dai li jing xiao	7
 代理经销商	dai li jing xiao shang	11
 代理网点	dai li wang dian	12
-代理记帐	dai li ji zhang	7
 代理记账业务	dai li ji zhang ye wu	9
 代理记账报税	dai li ji zhang bao shui	6
 代理记账服务	dai li ji zhang fu wu	13
@@ -90001,7 +89999,6 @@ sort: by_weight
 代运营服务	dai yun ying fu wu	41
 代通知金	dai tong zhi jin	12
 代金卡	dai jin ka	2
-代金卷	dai jin juan	14
 代销业务	dai xiao ye wu	4
 代销产品	dai xiao chan pin	9
 代销基金	dai xiao ji jin	31
@@ -94843,7 +94840,7 @@ sort: by_weight
 会有不一样的收获	hui you bu yi yang de shou huo	37
 会有不一样的效果	hui you bu yi yang de xiao guo	20
 会有人买	hui you ren mai	15
-会有哪些表现	hui you nei xie biao xian	9
+会有哪些表现	hui you na xie biao xian	9
 会有头晕	hui you tou yun	10
 会有好事发生	hui you hao shi fa sheng	21
 会有好运	hui you hao yun	14
@@ -99074,7 +99071,7 @@ sort: by_weight
 你吃的食物	ni chi de shi wu	15
 你吃过几种	ni chi guo ji zhong	2
 你吃过吗	ni chi guo ma	8
-你吃过哪些	ni chi guo nei xie	3
+你吃过哪些	ni chi guo na xie	3
 你吃醋	ni chi cu	4
 你同我	ni tong wo	11
 你听我解释啊	ni ting wo jie shi a	1
@@ -99712,7 +99709,7 @@ sort: by_weight
 你最希望	ni zui xi wang	19
 你最想去哪里	ni zui xiang qu na li	3
 你最懂	ni zui dong	5
-你最爱哪个	ni zui ai nei ge	1
+你最爱哪个	ni zui ai na ge	1
 你最爱谁	ni zui ai shui	0
 你有两个选择	ni you liang ge xuan ze	62
 你有你的生活	ni you ni de sheng huo	4
@@ -107565,7 +107562,7 @@ sort: by_weight
 做同样的事	zuo tong yang de shi	78
 做后盾	zuo hou dun	88
 做和事佬	zuo he shi lao	16
-做哪些事	zuo nei xie shi	53
+做哪些事	zuo na xie shi	53
 做唐氏筛查	zuo tang shi shai cha	0
 做啥子	zuo sha zi	14
 做喜欢的事	zuo xi huan de shi	38
@@ -113248,8 +113245,8 @@ sort: by_weight
 免收退票费	mian shou tui piao fei	1
 免收门票	mian shou men piao	2
 免月租	mian yue zu	2
-免服兵役	wen fu bing yi	9
-免服务费	wen fu wu fei	15
+免服兵役	mian fu bing yi	9
+免服务费	mian fu wu fei	15
 免水洗	mian shui xi	6
 免洗喷雾	mian xi pen wu	12
 免洗手消毒剂	mian xi shou xiao du ji	1
@@ -114347,7 +114344,6 @@ sort: by_weight
 入场人数	ru chang ren shu	13
 入场仪式	ru chang yi shi	5
 入场前	ru chang qian	39
-入场卷	ru chang juan	7
 入场抄底	ru chang chao di	8
 入场时机	ru chang shi ji	48
 入场条件	ru chang tiao jian	11
@@ -122117,7 +122113,7 @@ sort: by_weight
 关于彩票	guan yu cai piao	1
 关于彩虹	guan yu cai hong	2
 关于征求	guan yu zheng qiu	6
-关于思念	guan yu sai nian	3
+关于思念	guan yu si nian	3
 关于我司	guan yu wo si	1
 关于我爱你	guan yu wo ai ni	21
 关于房产税	guan yu fang chan shui	1
@@ -131814,7 +131810,7 @@ sort: by_weight
 几分无奈	ji fen wu nai	8
 几分熟	ji fen shu	41
 几分神秘	ji fen shen mi	6
-几分薄面	ji fen bao mian	16
+几分薄面	ji fen bo mian	16
 几分钟之内	ji fen zhong zhi nei	68
 几分钟即可	ji fen zhong ji ke	9
 几分钟就好	ji fen zhong jiu hao	11
@@ -133451,7 +133447,7 @@ sort: by_weight
 出现呼吸困难	chu xian hu xi kun nan	38
 出现呼吸道	chu xian hu xi dao	2
 出现咳嗽症状	chu xian ke sou zheng zhuang	5
-出现哪些症状	chu xian nei xie zheng zhuang	9
+出现哪些症状	chu xian na xie zheng zhuang	9
 出现嗜睡	chu xian shi shui	16
 出现回升	chu xian hui sheng	10
 出现在你面前	chu xian zai ni mian qian	84
@@ -139441,7 +139437,7 @@ sort: by_weight
 到底去不去	dao di qu bu qu	8
 到底去哪里	dao di qu na li	21
 到底咋回事	dao di za hui shi	33
-到底哪个好	dao di nei ge hao	61
+到底哪个好	dao di na ge hao	61
 到底哪家强	dao di na jia qiang	18
 到底哪里好	dao di na li hao	31
 到底啥意思	dao di sha yi si	26
@@ -155405,7 +155401,7 @@ sort: by_weight
 单风扇	dan feng shan	18
 单飞不解散	dan fei bu jie san	11
 单飞后	dan fei hou	91
-单马尾	dan ma yi	38
+单马尾	dan ma wei	38
 单骑救主	dan qi jiu zhu	28
 单骑闯关	dan qi chuang guan	30
 单黄线	dan huang xian	1
@@ -159534,7 +159530,7 @@ sort: by_weight
 厘米级定位	li mi ji ding wei	22
 厘金局	li jin ju	4
 厚丝袜	hou si wa	1
-厚养薄葬	hou yang bao zang	2
+厚养薄葬	hou yang bo zang	2
 厚刘海	hou liu hai	11
 厚厚一层	hou hou yi ceng	91
 厚厚厚	hou hou hou	7
@@ -160708,7 +160704,7 @@ sort: by_weight
 去呼和浩特	qu hu he hao te	4
 去品牌化	qu pin pai hua	5
 去品读	qu pin du	9
-去哪个城市	qu nei ge cheng shi	61
+去哪个城市	qu na ge cheng shi	61
 去哪买	qu na mai	34
 去哪儿买	qu na er mai	19
 去哪儿吃	qu na er chi	23
@@ -161171,7 +161167,7 @@ sort: by_weight
 去过北京	qu guo bei jing	36
 去过医院	qu guo yi yuan	44
 去过哪	qu guo na	9
-去过哪些	qu guo nei xie	7
+去过哪些	qu guo na xie	7
 去过哪里	qu guo na li	5
 去过很多次	qu guo hen duo ci	40
 去过武汉	qu guo wu han	16
@@ -163224,10 +163220,10 @@ sort: by_weight
 双飞人	shuang fei ren	38
 双飞股份	shuang fei gu fen	1
 双饰面板	shuang shi mian ban	12
-双马尾小萝莉	shuang ma yi xiao luo li	1
-双马尾少女	shuang ma yi shao nv	3
-双马尾萝莉	shuang ma yi luo li	5
-双马尾造型	shuang ma yi zao xing	2
+双马尾小萝莉	shuang ma wei xiao luo li	1
+双马尾少女	shuang ma wei shao nv	3
+双马尾萝莉	shuang ma wei luo li	5
+双马尾造型	shuang ma wei zao xing	2
 双马达	shuang ma da	13
 双驱动	shuang qu dong	13
 双骑士	shuang qi shi	4
@@ -172203,7 +172199,7 @@ sort: by_weight
 吃和睡	chi he shui	16
 吃咸菜	chi xian cai	40
 吃咸鸭蛋	chi xian ya dan	5
-吃哪些食物	chi nei xie shi wu	19
+吃哪些食物	chi na xie shi wu	19
 吃唐僧	chi tang seng	8
 吃唐僧肉	chi tang seng rou	17
 吃啥吐啥	chi sha tu sha	10
@@ -177805,7 +177801,7 @@ sort: by_weight
 向后靠	xiang hou kao	24
 向命运低头	xiang ming yun di tou	26
 向命运挑战	xiang ming yun tiao zhan	3
-向哪个方向	xiang nei ge fang xiang	66
+向哪个方向	xiang na ge fang xiang	66
 向善之心	xiang shan zhi xin	7
 向善向上	xiang shan xiang shang	1
 向善向美	xiang shan xiang mei	2
@@ -180736,8 +180732,8 @@ sort: by_weight
 呵斥道	he chi dao	28
 呵气如兰	he qi ru lan	3
 呵气成霜	he qi cheng shuang	1
-呷一口	ga yi kou	7
-呷了一口茶	ga le yi kou cha	4
+呷一口	xia yi kou	7
+呷了一口茶	xia le yi kou cha	4
 呻吟不断	shen yin bu duan	1
 呼万岁	hu wan sui	12
 呼之则	hu zhi ze	2
@@ -186081,7 +186077,7 @@ sort: by_weight
 嗨翻全场	hai fan quan chang	25
 嗨翻天	hai fan tian	25
 嗨起来吧	hai qi lai ba	2
-嗲嗲的声音	die die de sheng yin	7
+嗲嗲的声音	dia dia de sheng yin	7
 嗷嗷乱叫	ao ao luan jiao	23
 嗷嗷哭	ao ao ku	20
 嗷嗷嗷	ao ao ao	95
@@ -186248,7 +186244,6 @@ sort: by_weight
 嘎巴菜	ga ba cai	7
 嘎查村	ga cha cun	1
 嘎洒镇	ga sa zhen	1
-嘎然而止	ga ran er zhi	36
 嘘嘘嘘	xu xu xu	3
 嘘国歌	xu guo ge	1
 嘘声一片	xu sheng yi pian	20
@@ -200292,7 +200287,7 @@ sort: by_weight
 声音响亮	sheng yin xiang liang	22
 声音哑	sheng yin ya	26
 声音商标	sheng yin shang biao	23
-声音嗲	sheng yin die	22
+声音嗲	sheng yin dia	22
 声音嘈杂	sheng yin cao za	22
 声音嘹亮	sheng yin liao liang	5
 声音外放	sheng yin wai fang	12
@@ -213642,7 +213637,7 @@ sort: by_weight
 太老土	tai lao tu	3
 太老套	tai lao tao	16
 太耗时	tai hao shi	17
-太聒噪	tai gua zao	8
+太聒噪	tai guo zao	8
 太肉麻	tai rou ma	11
 太肤浅	tai fu qian	85
 太肥胖	tai fei pang	2
@@ -215017,7 +215012,7 @@ sort: by_weight
 头皮疼	tou pi teng	7
 头皮细胞	tou pi xi bao	2
 头皮针	tou pi zhen	15
-头盆不称	tou pen bu cheng	1
+头盆不称	tou pen bu chen	1
 头盔价格	tou kui jia ge	1
 头盔哥	tou kui ge	2
 头盔式	tou kui shi	4
@@ -217985,7 +217980,7 @@ sort: by_weight
 奶妈们	nai ma men	1
 奶妈奶爸	nai ma nai ba	1
 奶妈职业	nai ma zhi ye	1
-奶嬷嬷	nai ma ma	3
+奶嬷嬷	nai mo mo	3
 奶孩子	nai hai zi	39
 奶昔机	nai xi ji	3
 奶昔白	nai xi bai	1
@@ -219536,7 +219531,6 @@ sort: by_weight
 如何下棋	ru he xia qi	2
 如何与人相处	ru he yu ren xiang chu	15
 如何为人处世	ru he wei ren chu shi	1
-如何为人处事	ru he wei ren chu shi	6
 如何乘车	ru he cheng che	1
 如何买股票	ru he mai gu piao	4
 如何交朋友	ru he jiao peng you	4
@@ -222723,7 +222717,7 @@ sort: by_weight
 嬉闹玩耍	xi nao wan shua	3
 嬴异人	ying yi ren	39
 嬴彻科技	ying che ke ji	3
-嬷嬷们	ma ma men	9
+嬷嬷们	mo mo men	9
 子不孝	zi bu xiao	6
 子不教父之过	zi bu jiao fu zhi guo	7
 子乔和美嘉	zi qiao he mei jia	3
@@ -223560,7 +223554,7 @@ sort: by_weight
 孙姑娘	sun gu niang	2
 孙婷婷	sun ting ting	35
 孙媳妇儿	sun xi fu er	1
-孙嬷嬷	sun ma ma	11
+孙嬷嬷	sun mo mo	11
 孙子上学	sun zi shang xue	6
 孙子出生	sun zi chu sheng	7
 孙子司马炎	sun zi si ma yan	5
@@ -224553,7 +224547,7 @@ sort: by_weight
 学员群	xue yuan qun	13
 学咏春	xue yong chun	13
 学哥学姐们	xue ge xue jie men	4
-学哪个专业	xue nei ge zhuan ye	13
+学哪个专业	xue na ge zhuan ye	13
 学喵叫	xue miao jiao	2
 学园偶像祭	xue yuan ou xiang ji	1
 学园奶爸	xue yuan nai ba	1
@@ -241746,7 +241740,7 @@ sort: by_weight
 小马同学	xiao ma tong xue	7
 小马国	xiao ma guo	88
 小马宋	xiao ma song	47
-小马尾	xiao ma yi	5
+小马尾	xiao ma wei	5
 小马扎	xiao ma zha	61
 小马拉大车	xiao ma la da che	33
 小马甲	xiao ma jia	50
@@ -246444,7 +246438,6 @@ sort: by_weight
 川湘菜	chuan xiang cai	26
 川能动力	chuan neng dong li	14
 川航事件	chuan hang shi jian	2
-川芎各	chuan qiong ge	1
 川菜之魂	chuan cai zhi hun	12
 川菜产业	chuan cai chan ye	2
 川菜厨师	chuan cai chu shi	24
@@ -252813,7 +252806,7 @@ sort: by_weight
 常委会议	chang wei hui yi	4
 常委委员	chang wei wei yuan	2
 常委班子	chang wei ban zi	1
-常嬷嬷	chang ma ma	16
+常嬷嬷	chang mo mo	16
 常宝丰	chang bao feng	2
 常宝华	chang bao hua	7
 常宝堃	chang bao kun	43
@@ -258303,7 +258296,7 @@ sort: by_weight
 应正确	ying zheng que	6
 应治尽治	ying zhi jin zhi	6
 应注意以下几点	ying zhu yi yi xia ji dian	19
-应注意哪些	ying zhu yi nei xie	8
+应注意哪些	ying zhu yi na xie	8
 应注意的事项	ying zhu yi de shi xiang	13
 应注意的问题	ying zhu yi de wen ti	11
 应注意观察	ying zhu yi guan cha	1
@@ -258630,8 +258623,8 @@ sort: by_weight
 应该放假	ying gai fang jia	1
 应该是不错吧	ying gai shi bu cuo ba	1
 应该是不错的	ying gai shi bu cuo de	70
-应该注意哪些	ying gai zhu yi nei xie	31
-应该注意哪些问题	ying gai zhu yi nei xie wen ti	13
+应该注意哪些	ying gai zhu yi na xie	31
+应该注意哪些问题	ying gai zhu yi na xie wen ti	13
 应该注意的问题	ying gai zhu yi de wen ti	21
 应该牢记	ying gai lao ji	9
 应该特别注意	ying gai te bie zhu yi	14
@@ -262828,7 +262821,7 @@ sort: by_weight
 异物入侵	yi wu ru qin	3
 异物入眼	yi wu ru yan	4
 异物刺激	yi wu ci ji	1
-异物卡喉	yi wu ka hou	10
+异物卡喉	yi wu qia hou	10
 异物取出	yi wu qu chu	6
 异物取出术	yi wu qu chu shu	1
 异物插入	yi wu cha ru	3
@@ -269803,7 +269796,7 @@ sort: by_weight
 徐粲金	xu can jin	2
 徐经理	xu jing li	3
 徐经纬	xu jing wei	2
-徐继畬	xu ji she	1
+徐继畬	xu ji yu	1
 徐翔妻子	xu xiang qi zi	2
 徐老先生	xu lao xian sheng	14
 徐老太	xu lao tai	3
@@ -282539,7 +282532,7 @@ sort: by_weight
 懈怠情绪	xie dai qing xu	3
 懈怠者	xie dai zhe	3
 懈怠过	xie dai guo	10
-懒于思考	lan yu sai kao	23
+懒于思考	lan yu si kao	23
 懒人们	lan ren men	20
 懒人做法	lan ren zuo fa	6
 懒人减肥	lan ren jian fei	7
@@ -285328,7 +285321,7 @@ sort: by_weight
 我该怎么办才好	wo gai zen me ban cai hao	2
 我该怎么说	wo gai zen me shuo	24
 我该拿你怎么办	wo gai na ni zen me ban	4
-我该选哪个	wo gai xuan nei ge	1
+我该选哪个	wo gai xuan na ge	1
 我说不出口	wo shuo bu chu kou	19
 我说你听	wo shuo ni ting	7
 我说话直	wo shuo hua zhi	3
@@ -289395,10 +289388,10 @@ sort: by_weight
 才领悟到	cai ling wu dao	30
 扎下根来	zha xia gen lai	16
 扎个丸子头	zha ge wan zi tou	2
-扎个马尾	zha ge ma yi	10
+扎个马尾	za ge ma wei	10
 扎丸子头	zha wan zi tou	16
 扎伊采夫	zha yi cai fu	23
-扎低马尾	zha di ma yi	2
+扎低马尾	za di ma wei	2
 扎克伯克	zha ke bo ke	16
 扎克伯格表示	zha ke bo ge biao shi	9
 扎克利	zha ke li	2
@@ -289407,7 +289400,7 @@ sort: by_weight
 扎克瑞	zha ke rui	11
 扎克里	zha ke li	1
 扎加杜	zha jia du	4
-扎双马尾	zha shuang ma yi	11
+扎双马尾	za shuang ma wei	11
 扎哈罗娃	zha ha luo wa	4
 扎啤机	zha pi ji	10
 扎基寺	zha ji si	2
@@ -289487,17 +289480,17 @@ sort: by_weight
 扎根西部	zha gen xi bu	7
 扎气球	zha qi qiu	5
 扎稳脚跟	zha wen jiao gen	3
-扎腰带	zha yao dai	1
+扎腰带	za yao dai	1
 扎西次仁	zha xi ci ren	2
 扎达土林	zha da tu lin	3
 扎进裤子	zha jin ku zi	18
 扎针灸	zha zhen jiu	19
 扎钉子	zha ding zi	12
 扎钢筋	zha gang jin	10
-扎马尾	zha ma yi	39
-扎马尾辫	zha ma yi bian	7
+扎马尾	za ma wei	39
+扎马尾辫	za ma wei bian	7
 扎马斯	zha ma si	56
-扎高马尾	zha gao ma yi	5
+扎高马尾	za gao ma wei	5
 扎麻花辫	zha ma hua bian	6
 扑下身子	pu xia shen zi	3
 扑倒男神	pu dao nan shen	1
@@ -295553,7 +295546,7 @@ sort: by_weight
 折扣网	zhe kou wang	7
 折扣销售	zhe kou xiao shou	6
 折扣额	zhe kou e	1
-折损过半	she sun guo ban	5
+折损过半	zhe sun guo ban	5
 折断翅膀	zhe duan chi bang	6
 折旧及摊销	zhe jiu ji tan xiao	17
 折旧和摊销	zhe jiu he tan xiao	15
@@ -296556,7 +296549,7 @@ sort: by_weight
 报考录取	bao kao lu qu	40
 报考手续	bao kao shou xu	6
 报考指导	bao kao zhi dao	23
-报考条件有哪些	bao kao tiao jian you nei xie	8
+报考条件有哪些	bao kao tiao jian you na xie	8
 报考注意事项	bao kao zhu yi shi xiang	8
 报考生	bao kao sheng	11
 报考的科目	bao kao de ke mu	31
@@ -305583,7 +305576,7 @@ sort: by_weight
 掷千金	zhi qian jin	4
 掷实心球	zhi shi xin qiu	3
 掷骰子游戏	zhi tou zi you xi	4
-掺一脚	can yi jiao	41
+掺一脚	chan yi jiao	41
 掼蛋比赛	guan dan bi sai	1
 揉出手套膜	rou chu shou tao mo	10
 揉啊揉	rou a rou	11
@@ -305797,7 +305790,7 @@ sort: by_weight
 提供吃住	ti gong chi zhu	3
 提供后勤保障	ti gong hou qin bao zhang	7
 提供咨询服务	ti gong zi xun fu wu	75
-提供哪些服务	ti gong nei xie fu wu	21
+提供哪些服务	ti gong na xie fu wu	21
 提供售前	ti gong shou qian	1
 提供售后服务	ti gong shou hou fu wu	24
 提供图纸	ti gong tu zhi	7
@@ -307542,7 +307535,7 @@ sort: by_weight
 搅拌锅	jiao ban guo	4
 搅拌鸡蛋	jiao ban ji dan	2
 搅浑水	jiao hun shui	68
-搅混水	jiao gun shui	65
+搅混水	jiao hun shui	65
 搅碎机	jiao sui ji	14
 搅风搅雨	jiao feng jiao yu	11
 搏一搏单车变摩托	bo yi bo dan che bian mo tuo	28
@@ -326760,14 +326753,14 @@ sort: by_weight
 无论到哪里	wu lun dao na li	27
 无论去哪	wu lun qu na	20
 无论去哪里	wu lun qu na li	24
-无论哪个国家	wu lun nei ge guo jia	38
-无论哪个季节	wu lun nei ge ji jie	6
+无论哪个国家	wu lun na ge guo jia	38
+无论哪个季节	wu lun na ge ji jie	6
 无论哪种方式	wu lun na zhong fang shi	50
 无论国籍	wu lun guo ji	9
 无论在任何时候	wu lun zai ren he shi hou	9
 无论在何处	wu lun zai he chu	3
 无论在何时	wu lun zai he shi	11
-无论在哪个国家	wu lun zai nei ge guo jia	19
+无论在哪个国家	wu lun zai na ge guo jia	19
 无论在哪儿	wu lun zai na er	20
 无论外观	wu lun wai guan	6
 无论多久	wu lun duo jiu	19
@@ -326790,7 +326783,7 @@ sort: by_weight
 无论我在哪里	wu lun wo zai na li	9
 无论我走到哪里	wu lun wo zou dao na li	6
 无论春夏秋冬	wu lun chun xia qiu dong	25
-无论是哪个国家	wu lun shi nei ge guo jia	18
+无论是哪个国家	wu lun shi na ge guo jia	18
 无论是在家里	wu lun shi zai jia li	6
 无论是好是坏	wu lun shi hao shi huai	18
 无论是男女	wu lun shi nan nv	4
@@ -326839,7 +326832,7 @@ sort: by_weight
 无诚信	wu cheng xin	11
 无话不谈的朋友	wu hua bu tan de peng you	16
 无话可谈	wu hua ke tan	4
-无语凝咽	wu yu ning yan	3
+无语凝咽	wu yu ning ye	3
 无语啦	wu yu la	4
 无语至极	wu yu zhi ji	17
 无语言要求	wu yu yan yao qiu	3
@@ -331280,7 +331273,6 @@ sort: by_weight
 明礼诚信	ming li cheng xin	5
 明细信息	ming xi xin xi	8
 明细分类账	ming xi fen lei zhang	5
-明细帐	ming xi zhang	3
 明细情况	ming xi qing kuang	3
 明细数据	ming xi shu ju	48
 明细查询	ming xi cha xun	8
@@ -338547,7 +338539,7 @@ sort: by_weight
 有可能的夜晚	you ke neng de ye wan	34
 有史以来最大	you shi yi lai zui da	101
 有同样的问题	you tong yang de wen ti	82
-有哪些需要注意的	you nei xie xu yao zhu yi de	20
+有哪些需要注意的	you na xie xu yao zhu yi de	20
 有哭有笑	you ku you xiao	9
 有哲理的话	you zhe li de hua	12
 有啥不一样	you sha bu yi yang	38
@@ -347353,7 +347345,7 @@ sort: by_weight
 果胶含量	guo jiao han liang	4
 果胶物质	guo jiao wu zhi	3
 果胶质	guo jiao zhi	14
-果脯蜜饯	guo pu mi jian	9
+果脯蜜饯	guo fu mi jian	9
 果菜茶	guo cai cha	5
 果蔬产业	guo shu chan ye	1
 果蔬价格	guo shu jia ge	1
@@ -347578,7 +347570,7 @@ sort: by_weight
 枸杞菊花茶	gou qi ju hua cha	25
 枸杞菜	gou qi cai	1
 枸杞适量	gou qi shi liang	3
-柁嘉熹	duo jia xi	2
+柁嘉熹	tuo jia xi	2
 某一事件	mou yi shi jian	34
 某一代	mou yi dai	38
 某一件事	mou yi jian shi	99
@@ -347921,7 +347913,7 @@ sort: by_weight
 柔性管理	rou xing guan li	2
 柔性线路板	rou xing xian lu ban	4
 柔性结构	rou xing jie gou	6
-柔性薄膜	rou xing bao mo	1
+柔性薄膜	rou xing bo mo	1
 柔性连接	rou xing lian jie	15
 柔性防水	rou xing fang shui	7
 柔性面板	rou xing mian ban	6
@@ -348088,7 +348080,7 @@ sort: by_weight
 查勘定损	cha kan ding sun	9
 查卫生	cha wei sheng	22
 查号码	cha hao ma	0
-查嗣庭	cha si ting	3
+查嗣庭	zha si ting	3
 查塔努加	cha ta nu jia	2
 查士丁尼一世	cha shi ding ni yi shi	6
 查处一案	cha chu yi an	1
@@ -348322,7 +348314,6 @@ sort: by_weight
 查路线	cha lu xian	24
 查身份证	cha shen fen zheng	29
 查车辆	cha che liang	5
-查过敏源	cha guo min yuan	9
 查违章	cha wei zhang	3
 查通话记录	cha tong hua ji lu	3
 查遗补漏	cha yi bu lou	19
@@ -348505,7 +348496,7 @@ sort: by_weight
 栀子花香	zhi zi hua xiang	15
 栅栏式	zha lan shi	5
 栅栏边	zha lan bian	3
-栅格化	zha ge hua	65
+栅格化	shan ge hua	65
 标书制作	biao shu zhi zuo	77
 标书装订	biao shu zhuang ding	2
 标了兵了怕了碰了炮了兵了炮	biao le bing le pa le peng le pao le bing le pao	1
@@ -351350,7 +351341,7 @@ sort: by_weight
 梳理羽毛	shu li yu mao	2
 梳理进攻	shu li jin gong	49
 梳背头	shu bei tou	6
-梳马尾	shu ma yi	6
+梳马尾	shu ma wei	6
 梳齿板	shu chi ban	1
 梵克雅宝	fan ke ya bao	39
 梵净山景区	fan jing shan jing qu	3
@@ -364071,8 +364062,8 @@ sort: by_weight
 汉秀剧场	han xiu ju chang	1
 汉纸们	han zhi men	1
 汉缆股份	han lan gu fen	2
-汉能薄膜	han neng bao mo	4
-汉能薄膜发电	han neng bao mo fa dian	10
+汉能薄膜	han neng bo mo	4
+汉能薄膜发电	han neng bo mo fa dian	10
 汉腾汽车	han teng qi che	13
 汉芯一号	han xin yi hao	1
 汉英对照	han ying dui zhao	4
@@ -366768,8 +366759,8 @@ sort: by_weight
 河南淮阳	he nan huai yang	10
 河南温县	he nan wen xian	6
 河南滑县	he nan hua xian	4
-河南漯河	he nan ta he	16
-河南漯河市	he nan ta he shi	2
+河南漯河	he nan luo he	16
+河南漯河市	he nan luo he shi	2
 河南潢川	he nan huang chuan	1
 河南灵宝	he nan ling bao	13
 河南焦作市	he nan jiao zuo shi	2
@@ -379789,7 +379780,7 @@ sort: by_weight
 清热败火	qing re bai huo	1
 清热除烦	qing re chu fan	3
 清爽不油腻	qing shuang bu you ni	66
-清爽不粘腻	qing shuang bu zhan ni	11
+清爽不粘腻	qing shuang bu nian ni	11
 清爽不腻	qing shuang bu ni	15
 清爽不黏腻	qing shuang bu nian ni	5
 清爽乳液	qing shuang ru ye	2
@@ -382556,7 +382547,7 @@ sort: by_weight
 溥仪登基	pu yi deng ji	6
 溥仪皇帝	pu yi huang di	2
 溥仪退位	pu yi tui wei	7
-溥心畬	pu xin she	4
+溥心畬	pu xin yu	4
 溥心畲	pu xin she	1
 溪水中	xi shui zhong	14
 溪水旁	xi shui pang	2
@@ -384512,9 +384503,9 @@ sort: by_weight
 漫画集	man hua ji	8
 漫画风	man hua feng	30
 漫金山	man jin shan	4
-漯河市临颍县	ta he shi lin ying xian	3
-漯河市郾城区	ta he shi yan cheng qu	1
-漯河职业技术学院	ta he zhi ye ji shu xue yuan	2
+漯河市临颍县	luo he shi lin ying xian	3
+漯河市郾城区	luo he shi yan cheng qu	1
+漯河职业技术学院	luo he zhi ye ji shu xue yuan	2
 漱口刷牙	shu kou shua ya	7
 漱玉平民	shu yu ping min	4
 漳州一中	zhang zhou yi zhong	1
@@ -398163,7 +398154,7 @@ sort: by_weight
 王春生	wang chun sheng	2
 王昭君大招	wang zhao jun da zhao	9
 王昭君的大招	wang zhao jun de da zhao	3
-王昱珩	wang yu hang	20
+王昱珩	wang yu heng	20
 王晓云	wang xiao yun	1
 王晓勇	wang xiao yong	1
 王晓芳	wang xiao fang	1
@@ -404901,7 +404892,6 @@ sort: by_weight
 生活必需品价格	sheng huo bi xu pin jia ge	4
 生活必需品供应	sheng huo bi xu pin gong ying	2
 生活必需品市场	sheng huo bi xu pin shi chang	3
-生活必须品	sheng huo bi xu pin	43
 生活忙碌	sheng huo mang lu	16
 生活性服务	sheng huo xing fu wu	1
 生活性服务业	sheng huo xing fu wu ye	13
@@ -414051,7 +414041,7 @@ sort: by_weight
 白色蕾丝	bai se lei si	5
 白色蕾丝裙	bai se lei si qun	2
 白色薄纱	bai se bao sha	1
-白色薄膜	bai se bao mo	2
+白色薄膜	bai se bo mo	2
 白色虚线	bai se xu xian	9
 白色蝴蝶	bai se hu die	2
 白色血液	bai se xue ye	3
@@ -418252,7 +418242,6 @@ sort: by_weight
 相信自己的眼睛	xiang xin zi ji de yan jing	89
 相信自己的能力	xiang xin zi ji de neng li	28
 相信自己的选择	xiang xin zi ji de xuan ze	18
-相信自已	xiang xin zi yi	2
 相信越努力越幸运	xiang xin yue nu li yue xing yun	4
 相信轮回	xiang xin lun hui	6
 相信陌生人	xiang xin mo sheng ren	6
@@ -420584,7 +420573,7 @@ sort: by_weight
 真假孙悟空	zhen jia sun wu kong	2
 真假对比	zhen jia dui bi	8
 真假性	zhen jia xing	18
-真假掺卖	zhen jia can mai	11
+真假掺卖	zhen jia chan mai	11
 真假混卖	zhen jia hun mai	50
 真假猴王	zhen jia hou wang	4
 真假虚实	zhen jia xu shi	10
@@ -423337,7 +423326,6 @@ sort: by_weight
 知己知彼百战不殆	zhi ji zhi bi bai zhan bu dai	56
 知己者死	zhi ji zhe si	3
 知己难寻	zhi ji nan xun	5
-知已知彼	zhi yi zhi bi	4
 知府衙门	zhi fu ya men	4
 知廉耻	zhi lian chi	12
 知心哥哥	zhi xin ge ge	3
@@ -424807,7 +424795,7 @@ sort: by_weight
 矿物宝石	kuang wu bao shi	2
 矿物岩石	kuang wu yan shi	6
 矿物成分	kuang wu cheng fen	32
-矿物掺合料	kuang wu can he liao	2
+矿物掺合料	kuang wu chan he liao	2
 矿物晶体	kuang wu jing ti	14
 矿物机油	kuang wu ji you	2
 矿物标本	kuang wu biao ben	3
@@ -429739,7 +429727,7 @@ sort: by_weight
 福州西湖	fu zhou xi hu	3
 福州西湖公园	fu zhou xi hu gong yuan	1
 福州连江	fu zhou lian jiang	1
-福州马尾	fu zhou ma yi	4
+福州马尾	fu zhou ma wei	4
 福州高新区	fu zhou gao xin qu	5
 福州麻将	fu zhou ma jiang	7
 福州鼓山	fu zhou gu shan	1
@@ -441049,7 +441037,7 @@ sort: by_weight
 简单的陪伴	jian dan de pei ban	3
 简单的食材	jian dan de shi cai	17
 简单的饭菜	jian dan de fan cai	11
-简单的马尾	jian dan de ma yi	1
+简单的马尾	jian dan de ma wei	1
 简单的黑白搭配	jian dan de hei bai da pei	1
 简单相加	jian dan xiang jia	30
 简单真诚	jian dan zhen cheng	3
@@ -441544,7 +441532,7 @@ sort: by_weight
 管东管西	guan dong guan xi	6
 管中管	guan zhong guan	1
 管中闵	guan zhong min	1
-管事嬷嬷	guan shi ma ma	1
+管事嬷嬷	guan shi mo mo	1
 管人事	guan ren shi	19
 管他三七二十一	guan ta san qi er shi yi	14
 管他是谁	guan ta shi shui	1
@@ -442832,13 +442820,13 @@ sort: by_weight
 粘接牢固	zhan jie lao gu	1
 粘接胶	zhan jie jiao	2
 粘杆处	zhan gan chu	10
-粘滞键	zhan zhi jian	1
+粘滞键	nian zhi jian	1
 粘玉米	zhan yu mi	3
 粘米粉	zhan mi fen	42
 粘粘世界	zhan zhan shi jie	10
-粘腻感	zhan ni gan	27
+粘腻感	nian ni gan	27
 粘衣服	zhan yi fu	0
-粘豆包	zhan dou bao	24
+粘豆包	nian dou bao	24
 粘贴分享	zhan tie fen xiang	2
 粘贴复制	zhan tie fu zhi	81
 粘贴式	zhan tie shi	6
@@ -448105,7 +448093,7 @@ sort: by_weight
 纳米膜	na mi mo	1
 纳米芯片	na mi xin pian	9
 纳米药物	na mi yao wu	1
-纳米薄膜	na mi bao mo	1
+纳米薄膜	na mi bo mo	1
 纳米载体	na mi zai ti	4
 纳米酶	na mi mei	16
 纳米金	na mi jin	14
@@ -452272,7 +452260,7 @@ sort: by_weight
 绑腿带	bang tui dai	2
 绑钢筋	bang gang jin	12
 绑鞋带	bang xie dai	25
-绑马尾	bang ma yi	5
+绑马尾	bang ma wei	5
 绒外套	rong wai tao	2
 绒布妈妈	rong bu ma ma	1
 绒布寺	rong bu si	12
@@ -462007,7 +461995,7 @@ sort: by_weight
 翔田千里	xiang tian qian li	1
 翘上天	qiao shang tian	4
 翘兰花指	qiao lan hua zhi	5
-翘嘴鲌	qiao zui ba	3
+翘嘴鲌	qiao zui bo	3
 翘屁股	qiao pi gu	20
 翘曲变形	qiao qu bian xing	12
 翘睫毛	qiao jie mao	9
@@ -463813,7 +463801,7 @@ sort: by_weight
 考古队员	kao gu dui yuan	26
 考司考	kao si kao	46
 考后资格审核	kao hou zi ge shen he	6
-考哪些科目	kao nei xie ke mu	43
+考哪些科目	kao na xie ke mu	43
 考场作弊	kao chang zuo bi	6
 考场作文	kao chang zuo wen	98
 考场入口	kao chang ru kou	2
@@ -464187,7 +464175,7 @@ sort: by_weight
 考试的科目	kao shi de ke mu	101
 考试的范围	kao shi de fan wei	23
 考试相关信息	kao shi xiang guan xin xi	8
-考试科目有哪些	kao shi ke mu you nei xie	5
+考试科目有哪些	kao shi ke mu you na xie	5
 考试第一名	kao shi di yi ming	3
 考试简介	kao shi jian jie	31
 考试管理中心	kao shi guan li zhong xin	12
@@ -466188,7 +466176,7 @@ sort: by_weight
 聚乎更	ju hu geng	1
 聚乙烯护套	ju yi xi hu tao	1
 聚乙烯材料	ju yi xi cai liao	2
-聚乙烯薄膜	ju yi xi bao mo	4
+聚乙烯薄膜	ju yi xi bo mo	4
 聚享游	ju xiang you	1
 聚人心	ju ren xin	4
 聚人才	ju ren cai	1
@@ -466239,7 +466227,7 @@ sort: by_weight
 聚合物电池	ju he wu dian chi	13
 聚合物电芯	ju he wu dian xin	2
 聚合物电解质	ju he wu dian jie zhi	10
-聚合物薄膜	ju he wu bao mo	1
+聚合物薄膜	ju he wu bo mo	1
 聚合物锂电池	ju he wu li dian chi	10
 聚合直播	ju he zhi bo	0
 聚合类	ju he lei	49
@@ -466365,7 +466353,6 @@ sort: by_weight
 聚能量	ju neng liang	2
 聚脂漆	ju zhi qi	1
 聚脂纤维	ju zhi xian wei	4
-聚脂薄膜	ju zhi bao mo	2
 聚苯乙烯泡沫	ju ben yi xi pao mo	7
 聚苯乙烯泡沫塑料	ju ben yi xi pao mo su liao	2
 聚苯乙烯泡沫板	ju ben yi xi pao mo ban	1
@@ -473731,7 +473718,6 @@ sort: by_weight
 自己的身世	zi ji de shen shi	103
 自己的过失	zi ji de guo shi	58
 自己种的菜	zi ji zhong de cai	15
-自已动手	zi yi dong shou	2
 自带中文	zi dai zhong wen	35
 自带人气	zi dai ren qi	4
 自带仙气	zi dai xian qi	10
@@ -484887,22 +484873,21 @@ sort: by_weight
 薄羽绒服	bao yu rong fu	3
 薄肥勤施	bao fei qin shi	12
 薄脆饼	bao cui bing	4
-薄膜包装	bao mo bao zhuang	1
-薄膜型	bao mo xing	4
-薄膜太阳能电池	bao mo tai yang neng dian chi	3
-薄膜式	bao mo shi	2
-薄膜技术	bao mo ji shu	7
-薄膜按键	bao mo an jian	19
-薄膜晶体管	bao mo jing ti guan	6
-薄膜材料	bao mo cai liao	10
-薄膜沉积	bao mo chen ji	5
-薄膜电容	bao mo dian rong	1
-薄膜电容器	bao mo dian rong qi	12
-薄膜电池	bao mo dian chi	2
-薄膜电阻	bao mo dian zu	1
-薄膜衣片	bao mo yi pian	2
-薄膜覆盖	bao mo fu gai	3
-薄膜键盘	bao mo jian pan	81
+薄膜包装	bo mo bao zhuang	1
+薄膜型	bo mo xing	4
+薄膜太阳能电池	bo mo tai yang neng dian chi	3
+薄膜式	bo mo shi	2
+薄膜技术	bo mo ji shu	7
+薄膜按键	bo mo an jian	19
+薄膜晶体管	bo mo jing ti guan	6
+薄膜材料	bo mo cai liao	10
+薄膜沉积	bo mo chen ji	5
+薄膜电容	bo mo dian rong	1
+薄膜电容器	bo mo dian rong qi	12
+薄膜电池	bo mo dian chi	2
+薄膜电阻	bo mo dian zu	1
+薄膜覆盖	bo mo fu gai	3
+薄膜键盘	bo mo jian pan	81
 薄荷健康	bo he jian kang	50
 薄荷口味	bo he kou wei	7
 薄荷味道	bo he wei dao	31
@@ -486096,7 +486081,7 @@ sort: by_weight
 蜜雪冰城奶茶	mi xue bing cheng nai cha	1
 蜜雪冰城总部	mi xue bing cheng zong bu	2
 蜜饯果干	mi jian guo gan	1
-蜜饯果脯	mi jian guo pu	1
+蜜饯果脯	mi jian guo fu	1
 蜡样芽孢杆菌	la yang ya bao gan jun	1
 蜡烛人	la zhu ren	15
 蜡烛包	la zhu bao	1
@@ -492624,7 +492609,7 @@ sort: by_weight
 覆盖范围更广	fu gai fan wei geng guang	20
 覆盖范围最广	fu gai fan wei zui guang	11
 覆盖范围有限	fu gai fan wei you xian	9
-覆盖薄膜	fu gai bao mo	2
+覆盖薄膜	fu gai bo mo	2
 覆盖量	fu gai liang	22
 覆盖面大	fu gai mian da	24
 覆盖面更广	fu gai mian geng guang	42
@@ -496059,7 +496044,6 @@ sort: by_weight
 记大过处分	ji da guo chu fen	10
 记好笔记	ji hao bi ji	46
 记工分	ji gong fen	2
-记帐凭证	ji zhang ping zheng	8
 记录下生活	ji lu xia sheng huo	2
 记录会议	ji lu hui yi	4
 记录体温	ji lu ti wen	1
@@ -498984,7 +498968,7 @@ sort: by_weight
 该死的球	gai si de qiu	14
 该死的甜美	gai si de tian mei	13
 该死的魅力	gai si de mei li	19
-该注意哪些	gai zhu yi nei xie	21
+该注意哪些	gai zhu yi na xie	21
 该流域	gai liu yu	5
 该海域	gai hai yu	11
 该海峡	gai hai xia	3
@@ -500894,7 +500878,6 @@ sort: by_weight
 谁是老板	shui shi lao ban	1
 谁是英雄	shui shi ying xiong	2
 谁是被害者	shui shi bei hai zhe	9
-谁是谁的	shui shi shei de	17
 谁是谁的谁	shui shi shei de shui	1
 谁是赢家	shui shi ying jia	2
 谁是首富	shui shi shou fu	1
@@ -501868,8 +501851,8 @@ sort: by_weight
 豆香味	dou xiang wei	18
 豆香浓郁	dou xiang nong yu	9
 豇豆红	jiang dou hong	2
-豉汁蒸凤爪	shi zhi zheng feng zhao	1
-豉油鸡	shi you ji	21
+豉汁蒸凤爪	chi zhi zheng feng zhao	1
+豉油鸡	chi you ji	21
 豌杂面	wan za mian	7
 豌豆公主	wan dou gong zhu	25
 豌豆凉粉	wan dou liang fen	6
@@ -516411,7 +516394,7 @@ sort: by_weight
 软件和服务	ruan jian he fu wu	61
 软件和游戏	ruan jian he you xi	20
 软件和算法	ruan jian he suan fa	22
-软件哪个好	ruan jian nei ge hao	6
+软件哪个好	ruan jian na ge hao	6
 软件商城	ruan jian shang cheng	27
 软件商店	ruan jian shang dian	82
 软件园二期	ruan jian yuan er qi	2
@@ -523265,7 +523248,6 @@ sort: by_weight
 远离辐射	yuan li fu she	7
 远离过敏	yuan li guo min	1
 远离过敏原	yuan li guo min yuan	7
-远离过敏源	yuan li guo min yuan	19
 远离近视	yuan li jin shi	1
 远离违法犯罪	yuan li wei fa fan zui	3
 远离邪教	yuan li xie jiao	4
@@ -527130,7 +527112,7 @@ sort: by_weight
 透明蓝	tou ming lan	4
 透明蕾丝	tou ming lei si	1
 透明薄纱	tou ming bao sha	2
-透明薄膜	tou ming bao mo	8
+透明薄膜	tou ming bo mo	8
 透明袋	tou ming dai	4
 透明袋子	tou ming dai zi	12
 透明视窗	tou ming shi chuang	5
@@ -531230,7 +531212,7 @@ sort: by_weight
 郑太太	zheng tai tai	1
 郑夫人	zheng fu ren	12
 郑妈妈	zheng ma ma	1
-郑嬷嬷	zheng ma ma	43
+郑嬷嬷	zheng mo mo	43
 郑宝用	zheng bao yong	1
 郑家人	zheng jia ren	2
 郑家彬	zheng jia bin	1
@@ -534150,7 +534132,7 @@ sort: by_weight
 金叉向上	jin cha xiang shang	8
 金叉和死叉	jin cha he si cha	23
 金叉死叉	jin cha si cha	79
-金发双马尾	jin fa shuang ma yi	4
+金发双马尾	jin fa shuang ma wei	4
 金发女孩	jin fa nv hai	17
 金发妹	jin fa mei	18
 金发妹子	jin fa mei zi	12
@@ -534438,7 +534420,7 @@ sort: by_weight
 金属色泽	jin shu se ze	8
 金属芯	jin shu xin	44
 金属薄片	jin shu bao pian	6
-金属薄膜	jin shu bao mo	2
+金属薄膜	jin shu bo mo	2
 金属蚀刻	jin shu shi ke	2
 金属表	jin shu biao	7
 金属表带	jin shu biao dai	43
@@ -535891,7 +535873,7 @@ sort: by_weight
 钙钛矿太阳能电池	gai tai kuang tai yang neng dian chi	24
 钙钛矿材料	gai tai kuang cai liao	17
 钙钛矿电池	gai tai kuang dian chi	6
-钙钛矿薄膜	gai tai kuang bao mo	2
+钙钛矿薄膜	gai tai kuang bo mo	2
 钙铁锌	gai tie xin	5
 钙铁锌硒	gai tie xin xi	8
 钙镁离子	gai mei li zi	50
@@ -539857,7 +539839,7 @@ sort: by_weight
 阖家团聚	he jia tuan ju	2
 阖家安康	he jia an kang	4
 阙文彬	que wen bin	1
-阚先生	han xian sheng	3
+阚先生	kan xian sheng	3
 阜外心血管病医院	fu wai xin xue guan bing yi yuan	4
 阜康钱庄	fu kang qian zhuang	14
 阜成门外大街	fu cheng men wai da jie	2
@@ -543041,7 +543023,7 @@ sort: by_weight
 陈姓女子	chen xing nv zi	1
 陈姓男子	chen xing nan zi	6
 陈姗姗	chen shan shan	1
-陈嬷嬷	chen ma ma	6
+陈嬷嬷	chen mo mo	6
 陈子凡	chen zi fan	1
 陈子坤	chen zi kun	6
 陈子庄	chen zi zhuang	1
@@ -548090,7 +548072,7 @@ sort: by_weight
 需要做的工作	xu yao zuo de gong zuo	71
 需要关注的问题	xu yao guan zhu de wen ti	19
 需要具备的条件	xu yao ju bei de tiao jian	23
-需要准备哪些材料	xu yao zhun bei nei xie cai liao	13
+需要准备哪些材料	xu yao zhun bei na xie cai liao	13
 需要准备的东西	xu yao zhun bei de dong xi	59
 需要准备的材料	xu yao zhun bei de cai liao	76
 需要准备的资料	xu yao zhun bei de zi liao	44
@@ -548107,7 +548089,7 @@ sort: by_weight
 需要及时清理	xu yao ji shi qing li	4
 需要及时补充	xu yao ji shi bu chong	16
 需要周转	xu yao zhou zhuan	7
-需要哪些材料	xu yao nei xie cai liao	31
+需要哪些材料	xu yao na xie cai liao	31
 需要复检	xu yao fu jian	6
 需要多加注意	xu yao duo jia zhu yi	21
 需要多加练习	xu yao duo jia lian xi	44
@@ -548174,8 +548156,8 @@ sort: by_weight
 需要格外小心	xu yao ge wai xiao xin	14
 需要格外注意	xu yao ge wai zhu yi	60
 需要格式化	xu yao ge shi hua	1
-需要注意哪些事项	xu yao zhu yi nei xie shi xiang	11
-需要注意哪些方面	xu yao zhu yi nei xie fang mian	9
+需要注意哪些事项	xu yao zhu yi na xie shi xiang	11
+需要注意哪些方面	xu yao zhu yi na xie fang mian	9
 需要注意的事	xu yao zhu yi de shi	9
 需要注意的细节	xu yao zhu yi de xi jie	68
 需要注意防范	xu yao zhu yi fang fan	5
@@ -554989,7 +554971,7 @@ sort: by_weight
 预防新冠病毒感染	yu fang xin guan bing du gan ran	4
 预防新冠肺炎	yu fang xin guan fei yan	7
 预防方案	yu fang fang an	9
-预防方法有哪些	yu fang fang fa you nei xie	1
+预防方法有哪些	yu fang fang fa you na xie	1
 预防早产	yu fang zao chan	6
 预防早衰	yu fang zao shuai	1
 预防是关键	yu fang shi guan jian	3
@@ -560507,11 +560489,11 @@ sort: by_weight
 马尼拉机场	ma ni la ji chang	5
 马尼拉湾	ma ni la wan	3
 马尼拉草坪	ma ni la cao ping	1
-马尾夹	ma yi jia	1
-马尾神经	ma yi shen jing	53
-马尾神经损伤	ma yi shen jing sun shang	5
-马尾辫子	ma yi bian zi	1
-马尾造型	ma yi zao xing	2
+马尾夹	ma wei jia	1
+马尾神经	ma wei shen jing	53
+马尾神经损伤	ma wei shen jing sun shang	5
+马尾辫子	ma wei bian zi	1
+马尾造型	ma wei zao xing	2
 马屁不穿	ma pi bu chuan	11
 马山镇	ma shan zhen	2
 马岭河大峡谷	ma ling he da xia gu	4
@@ -563078,7 +563060,7 @@ sort: by_weight
 高手高手	gao shou gao shou	1
 高手高手高高手	gao shou gao shou gao gao shou	11
 高手齐聚	gao shou qi ju	3
-高扎马尾	gao zha ma yi	1
+高扎马尾	gao za ma wei	1
 高扩展性	gao kuo zhan xing	15
 高扭力	gao niu li	2
 高扭矩	gao niu ju	44
@@ -565548,8 +565530,8 @@ sort: by_weight
 高风险项目	gao feng xian xiang mu	18
 高风险高回报	gao feng xian gao hui bao	67
 高飞牺牲打	gao fei xi sheng da	2
-高马尾	gao ma yi	28
-高马尾辫	gao ma yi bian	1
+高马尾	gao ma wei	28
+高马尾辫	gao ma wei bian	1
 高高兴兴上班	gao gao xing xing shang ban	3
 高高兴兴回家	gao gao xing xing hui jia	10
 高高吊起	gao gao diao qi	3
@@ -565572,8 +565554,8 @@ sort: by_weight
 高高的山顶	gao gao de shan ding	4
 高高的树上	gao gao de shu shang	3
 高高的门槛	gao gao de men kan	6
-高高的马尾	gao gao de ma yi	4
-高高的马尾辫	gao gao de ma yi bian	1
+高高的马尾	gao gao de ma wei	4
+高高的马尾辫	gao gao de ma wei bian	1
 高高的鼻子	gao gao de bi zi	4
 高高的鼻梁	gao gao de bi liang	4
 高高矮矮	gao gao ai ai	2
@@ -566141,8 +566123,8 @@ sort: by_weight
 鱼内脏	yu nei zang	7
 鱼制品	yu zhi pin	2
 鱼刺卡	yu ci ka	34
-鱼刺卡喉	yu ci ka hou	26
-鱼刺卡喉咙	yu ci ka hou long	14
+鱼刺卡喉	yu ci qia hou	26
+鱼刺卡喉咙	yu ci qia hou long	14
 鱼刺少	yu ci shao	2
 鱼口轻	yu kou qing	1
 鱼吃饵	yu chi er	3
@@ -570488,7 +570470,7 @@ sort: by_weight
 上岗后	shang gang hou	24
 上岗时	shang gang shi	3
 上市公司员工	shang shi gong si yuan gong	4
-上市公司有哪些	shang shi gong si you nei xie	1
+上市公司有哪些	shang shi gong si you na xie	1
 上市公司管理	shang shi gong si guan li	1
 上市公司股票	shang shi gong si gu piao	119
 上市发布	shang shi fa bu	5
@@ -572626,7 +572608,7 @@ sort: by_weight
 优惠券平台	you hui quan ping tai	4
 优惠计划	you hui ji hua	5
 优惠购买	you hui gou mai	16
-优点有哪些	you dian you nei xie	9
+优点有哪些	you dian you na xie	9
 优秀之处	you xiu zhi chu	100
 优秀人士	you xiu ren shi	29
 优秀供应商	you xiu gong ying shang	1
@@ -572989,7 +572971,7 @@ sort: by_weight
 你的记忆力	ni de ji yi li	46
 你的身心	ni de shen xin	42
 你的阅历	ni de yue li	41
-你知道哪些	ni zhi dao nei xie	24
+你知道哪些	ni zhi dao na xie	24
 你知道谁	ni zhi dao shui	2
 你能怎么办	ni neng zen me ban	75
 你能怎么样	ni neng zen me yang	35
@@ -574680,7 +574662,7 @@ sort: by_weight
 到底在哪	dao di zai na	148
 到底多久	dao di duo jiu	8
 到底多大	dao di duo da	45
-到底是哪些	dao di shi nei xie	59
+到底是哪些	dao di shi na xie	59
 到底是怎么样	dao di shi zen me yang	143
 到底是怎样	dao di shi zen yang	411
 到拉萨	dao la sa	87
@@ -583133,8 +583115,8 @@ sort: by_weight
 有书画	you shu hua	1
 有今生	you jin sheng	10
 有何推荐	you he tui jian	6
-有哪些注意事项	you nei xie zhu yi shi xiang	91
-有哪些需要注意	you nei xie xu yao zhu yi	1
+有哪些注意事项	you na xie zhu yi shi xiang	91
+有哪些需要注意	you na xie xu yao zhu yi	1
 有嚼劲	you jiao jin	328
 有处女	you chu nv	3
 有异响	you yi xiang	60
@@ -584199,7 +584181,7 @@ sort: by_weight
 注册香港	zhu ce xiang gang	4
 注射方式	zhu she fang shi	13
 注意两点	zhu yi liang dian	96
-注意事项有哪些	zhu yi shi xiang you nei xie	9
+注意事项有哪些	zhu yi shi xiang you na xie	9
 注意交通	zhu yi jiao tong	1
 注意几点	zhu yi ji dian	55
 注意力训练	zhu yi li xun lian	15
@@ -584392,7 +584374,6 @@ sort: by_weight
 消费产业	xiao fei chan ye	4
 消费医疗	xiao fei yi liao	17
 消费占比	xiao fei zhan bi	32
-消费卷	xiao fei juan	3
 消费合同	xiao fei he tong	13
 消费品公司	xiao fei pin gong si	34
 消费品质	xiao fei pin zhi	2
@@ -585369,7 +585350,7 @@ sort: by_weight
 生活不幸	sheng huo bu xing	7
 生活不满意	sheng huo bu man yi	5
 生活中发生	sheng huo zhong fa sheng	27
-生活中有哪些	sheng huo zhong you nei xie	43
+生活中有哪些	sheng huo zhong you na xie	43
 生活习惯好	sheng huo xi guan hao	5
 生活休闲	sheng huo xiu xian	12
 生活便利	sheng huo bian li	83
@@ -586694,9 +586675,9 @@ sort: by_weight
 稳定预期	wen ding yu qi	19
 稳市场	wen shi chang	4
 稻谷种植	dao gu zhong zhi	1
-究竟哪些	jiu jing nei xie	54
+究竟哪些	jiu jing na xie	54
 究竟怎么样	jiu jing zen me yang	74
-究竟有哪些	jiu jing you nei xie	85
+究竟有哪些	jiu jing you na xie	85
 空中巡航	kong zhong xun hang	1
 空中漂流	kong zhong piao liu	1
 空气健康	kong qi jian kang	5
@@ -590864,7 +590845,7 @@ sort: by_weight
 需要拆除	xu yao chai chu	14
 需要持之以恒	xu yao chi zhi yi heng	57
 需要整改	xu yao zheng gai	12
-需要注意哪些	xu yao zhu yi nei xie	65
+需要注意哪些	xu yao zhu yi na xie	65
 需要独处	xu yao du chu	14
 需要用电	xu yao yong dian	13
 需要的商品	xu yao de shang pin	43
@@ -594543,7 +594524,7 @@ sort: by_weight
 四百多个	si bai duo ge	36
 红红绿绿的	hong hong lv lv de	34
 长征四号	chang zheng si hao	34
-美国食品和药物管理局	mei guo shi pin huo yao wu guan li ju	33
+美国食品和药物管理局	mei guo shi pin he yao wu guan li ju	33
 六百多个	liu bai duo ge	35
 一个三十多岁	yi ge san shi duo sui	37
 北京大学光华管理学院	bei jing da xue guang hua guan li xue yuan	32
@@ -595130,7 +595111,7 @@ sort: by_weight
 显克维支	xian ke wei zhi	6
 沙野轻食	sha ye qing shi	6
 马尔泽布	ma er ze bu	6
-文本校对	wen ben xiao dui	6
+文本校对	wen ben jiao dui	6
 西哀耶斯	xi ai ye si	8
 喀斯喀特	ka si ka te	6
 比格尼斯	bi ge ni si	6
@@ -595352,7 +595333,7 @@ sort: by_weight
 属间杂交	shu jian za jiao	5
 战不十合	zhan bu shi he	5
 方位校正	fang wei jiao zheng	5
-校书叔云	xiao shu shu yun	7
+校书叔云	jiao shu shu yun	7
 格罗纳斯	ge luo na si	5
 永保青春	yong bao qing chun	5
 波导波长	bo dao bo chang	5

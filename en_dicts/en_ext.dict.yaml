@@ -84,7 +84,7 @@ Mon.	Mon.
 Monday	Mon
 Tuesday	Tuesday
 Tue.	Tue.
-Tuesday	Tue.
+Tuesday	Tue
 Wednesday	Wednesday
 Wed.	Wed.
 Wednesday	Wed
@@ -220,11 +220,11 @@ iPhone 11	iPhone11
 iPhone 11 Pro	iPhone11Pro
 iPhone 11 Pro Max	iPhone11ProMax
 iPhone 12	iPhone12
-iPhone 12 Mini	iPhone12Mini
+iPhone 12 mini	iPhone12mini
 iPhone 12 Pro	iPhone12Pro
 iPhone 12 Pro Max	iPhone12ProMax
 iPhone 13	iPhone13
-iPhone 13 Mini	iPhone13Mini
+iPhone 13 mini	iPhone13mini
 iPhone 13 Pro	iPhone13Pro
 iPhone 13 Pro Max	iPhone13ProMax
 iPhone 14	iPhone14
@@ -295,7 +295,7 @@ LOL	LOL
 League of Legends	LOL
 League of Legends	LeagueofLegends
 Laugh Out Loud	LOL
-Laugh Out Loudly	LaughOutLoudly
+Laugh Out Loud	LaughOutLoud
 SQL Server	SQLServer
 Microsoft SQL Server	SQLServer
 Microsoft SQL Server	MicrosoftSQLServer
@@ -450,7 +450,7 @@ NTR	NTR
 Notion	Notion
 Touch Bar	TouchBar
 DOM	DOM
-D.VA	D.VA
+D.Va	D.Va
 IPv4	IPv4
 IPv6	IPv6
 Rick and Morty	RickandMorty
@@ -667,8 +667,8 @@ EndNote	EndNote
 Entropy	Entropy
 EPUB	EPUB
 Eureka	Eureka
-ExFAT	ExFAT
-Extended File Allocation Table	ExFAT
+exFAT	exFAT
+Extended File Allocation Table	exFAT
 Extended File Allocation Table	ExtendedFileAllocationTable
 Fantastical	Fantastical
 F-Droid	F-Droid
@@ -683,10 +683,10 @@ Geekbench	Geekbench
 Gestimer	Gestimer
 GhostNote	GhostNote
 GhostTile	GhostTile
-Gif Brewery	GifBrewery
+GIF Brewery	GIFBrewery
 gists	gists
 GitHub	GitHub
-GoagentX	GoagentX
+GoAgentX	GoAgentX
 Google Play	GooglePlay
 Google Play Music	GooglePlayMusic
 Graffle	Graffle
@@ -797,7 +797,7 @@ Quitter	Quitter
 Quiver	Quiver
 Rdio	Rdio
 Readability	Readability
-Readkit	Readkit
+ReadKit	ReadKit
 Regulex	Regulex
 Remote	Remote
 RescueTime	RescueTime
@@ -936,7 +936,7 @@ CLion	CLion
 Unix-like	Unix-like
 Metal	Metal
 Alembic	Alembic
-imgur	imgur
+Imgur	Imgur
 Stack Overflow	StackOverflow
 PyWebIO	PyWebIO
 Launchpad	Launchpad
@@ -1028,7 +1028,7 @@ YoudaoBot	YoudaoBot
 GitHub Copilot	GitHubCopilot
 GitHub Copilot X	GitHubCopilotX
 GitHub Copilot CLI	GitHubCopilotCLI
-GitHub Copilot chat	GitHubCopilotchat
+GitHub Copilot Chat	GitHubCopilotChat
 iPadOS	iPadOS
 Apple Pencil	ApplePencil
 Reddit	Reddit
@@ -1211,7 +1211,7 @@ Confluence	Confluence
 Skynet	Skynet
 serverless	serverless
 Identifier	Identifier
-NameCheap	NameCheap
+Namecheap	Namecheap
 rime-ice	rime-ice
 rime-frost	rime-frost
 rime-shuangpin-fuzhuma	rime-shuangpin-fuzhuma
@@ -1372,7 +1372,7 @@ EduTools	EduTools
 FIFO	FIFO
 First In, First Out	FIFO
 LIFO	LIFO
-Last In, First out	LIFO
+Last In, First Out	LIFO
 Neat Download Manager	NeatDownloadManager
 Maine	Maine
 Elijah	Elijah
@@ -1408,7 +1408,7 @@ J.R.R. Tolkien	J.R.R.Tolkien
 Impostor Factory	ImpostorFactory
 Vampire Survivors	VampireSurvivors
 AppCleaner	AppCleaner
-IQIYI	IQIYI
+iQIYI	iQIYI
 BuhoCleaner	BuhoCleaner
 Midjourney	Midjourney
 Champion's inequality	Champion'sinequality
@@ -1604,7 +1604,6 @@ Japan	Japan
 Japanese	Japanese
 Korea	Korea
 Korean	Korean
-native American	nativeAmerican
 Netherlands	Netherlands
 New Zealand	NewZealand
 New Zealander	NewZealander
@@ -1646,7 +1645,7 @@ Mrs.	Mrs.
 MitM	MitM
 man-in-the-middle	MitM
 ToDesk	ToDesk
-PreSearch	PreSearch
+Presearch	Presearch
 Odysee	Odysee
 ISBN	ISBN
 International Standard Book Number	ISBN
@@ -1799,7 +1798,7 @@ Fcitx5	Fcitx5
 openSUSE	openSUSE
 FOMO	FOMO
 Fear of Missing Out	FOMO
-bromite	bromite
+Bromite	Bromite
 Laotian	Laotian
 orz	orz
 Scooby-Doo	Scooby-Doo
@@ -1812,7 +1811,7 @@ Fédération Internationale de Football Association	FIFA
 FYI	FYI
 for your information	FYI
 IPO	IPO
-Initial Public Offerings	IPO
+Initial Public Offering	IPO
 MVC	MVC
 Model-View-Controller	MVC
 MVVM	MVVM
@@ -1875,8 +1874,7 @@ WebGPU	WebGPU
 Mailfence	Mailfence
 CodeWhisperer	CodeWhisperer
 Heisenberg	Heisenberg
-espanso	espanso
-okey	okey
+Espanso	Espanso
 okey-dokey	okey-dokey
 CAPTCHA	CAPTCHA
 Coinbase	Coinbase
@@ -2117,7 +2115,7 @@ AdGuard	AdGuard
 Altman	Altman
 Ultraman	Ultraman
 GPTs	GPTs
-sider	sider
+Sider	Sider
 DALL·E	DALL·E
 e.g.	e.g.
 i.e.	i.e.
@@ -2144,7 +2142,7 @@ systemctl	systemctl
 reconfig	reconfig
 sudo	sudo
 flypy	flypy
-traefik	traefik
+Traefik	Traefik
 deepin	deepin
 srv	srv
 usr	usr
@@ -2181,7 +2179,7 @@ Theseus	Theseus
 Laravel	Laravel
 Chiikawa	Chiikawa
 LibreOffice	LibreOffice
-Asics	Asics
+ASICS	ASICS
 Saucony	Saucony
 nvm	nvm
 Node Version Manager	nvm
@@ -2316,8 +2314,8 @@ Text-to-Speech	TTS
 ASR	ASR
 Automatic Speech Recognition	ASR
 SOTA	SOTA
-Agentic	Agentic
-Embedding	Embedding
+agentic	agentic
+embedding	embedding
 PyTorch	PyTorch
 TensorFlow	TensorFlow
 CUDA	CUDA

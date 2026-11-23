@@ -69,7 +69,6 @@ en_dicts/en_ext.dict.yaml	Endnote	Endnote	replace	EndNote	EndNote		R1/R2英文�
 en_dicts/en_ext.dict.yaml	F2A	F2A	replace	2FA	2FA		R1/R2英文拼写与大小写修正
 en_dicts/en_ext.dict.yaml	GNU General Public License	GNU	replace	GNU's Not Unix	GNU		R1/R2英文拼写与大小写修正
 en_dicts/en_ext.dict.yaml	Laugh Out Loudly	LOL	replace	Laugh Out Loud	LOL		R1/R2英文拼写与大小写修正
-en_dicts/en_ext.dict.yaml	LaughOutLoudly	LOL	replace	LaughOutLoud	LOL		R1/R2英文拼写与大小写修正
 en_dicts/en_ext.dict.yaml	Lens Protocal	LensProtocal	replace	Lens Protocol	LensProtocol		R1/R2英文拼写与大小写修正
 en_dicts/en_ext.dict.yaml	Mathtype	Mathtype	replace	MathType	MathType		R1/R2英文拼写与大小写修正
 en_dicts/en_ext.dict.yaml	MplayerX	MplayerX	replace	MPlayerX	MPlayerX		R1/R2英文拼写与大小写修正
@@ -85,3 +84,76 @@ en_dicts/en_ext.dict.yaml	itsdangerours	itsdangerours	replace	itsdangerous	itsda
 en_dicts/en_ext.dict.yaml	AirPods	AirPods	reweight			999	R2英文扩展库权重校准
 en_dicts/en_ext.dict.yaml	AirPods Max	AirPods	reweight			1	R2英文扩展库权重校准
 en_dicts/en_ext.dict.yaml	macOS Tahoe	macOS	reweight			10	R2英文扩展库权重校准
+en_dicts/en_ext.dict.yaml	Tuesday	Tue.	replace	Tuesday	Tue		修复星期缩写编码误带句点
+en_dicts/en_ext.dict.yaml	Laugh Out Loudly	LaughOutLoudly	replace	Laugh Out Loud	LaughOutLoud		修复 LOL 全称拼写(Loudly->Loud)
+en_dicts/en_ext.dict.yaml	iPhone 12 Mini	iPhone12Mini	replace	iPhone 12 mini	iPhone12mini		Apple官方品牌大小写(mini小写)
+en_dicts/en_ext.dict.yaml	iPhone 13 Mini	iPhone13Mini	replace	iPhone 13 mini	iPhone13mini		Apple官方品牌大小写(mini小写)
+en_dicts/en_ext.dict.yaml	D.VA	D.VA	replace	D.Va	D.Va		官方专名大小写(D.Va)
+en_dicts/en_ext.dict.yaml	ExFAT	ExFAT	replace	exFAT	exFAT		官方文件系统大小写(exFAT)
+en_dicts/en_ext.dict.yaml	Extended File Allocation Table	ExFAT	replace	Extended File Allocation Table	exFAT		与exFAT编码大小写对齐
+en_dicts/en_ext.dict.yaml	Gif Brewery	GifBrewery	replace	GIF Brewery	GIFBrewery		缩写词GIF大写规范
+en_dicts/en_ext.dict.yaml	GoagentX	GoagentX	replace	GoAgentX	GoAgentX		官方专名大小写(GoAgentX)
+en_dicts/en_ext.dict.yaml	Readkit	Readkit	replace	ReadKit	ReadKit		官方应用名大小写(ReadKit)
+en_dicts/en_ext.dict.yaml	imgur	imgur	replace	Imgur	Imgur		官方品牌大小写(Imgur)
+en_dicts/en_ext.dict.yaml	GitHub Copilot chat	GitHubCopilotchat	replace	GitHub Copilot Chat	GitHubCopilotChat		官方产品名大小写(Chat大写)
+en_dicts/en_ext.dict.yaml	NameCheap	NameCheap	replace	Namecheap	Namecheap		官方品牌大小写(Namecheap)
+en_dicts/en_ext.dict.yaml	Last In, First out	LIFO	replace	Last In, First Out	LIFO		与FIFO标题大小写对齐(Out大写)
+en_dicts/en_ext.dict.yaml	IQIYI	IQIYI	replace	iQIYI	iQIYI		官方品牌大小写(iQIYI)
+en_dicts/en_ext.dict.yaml	native American	nativeAmerican	delete				大小写错误且遮挡en.dict.yaml中正确的Native American
+en_dicts/en_ext.dict.yaml	PreSearch	PreSearch	replace	Presearch	Presearch		官方品牌大小写(Presearch)
+en_dicts/en_ext.dict.yaml	bromite	bromite	replace	Bromite	Bromite		官方品牌大小写(Bromite)
+en_dicts/en_ext.dict.yaml	Initial Public Offerings	IPO	replace	Initial Public Offering	IPO		与单数缩写IPO匹配
+en_dicts/en_ext.dict.yaml	espanso	espanso	replace	Espanso	Espanso		官方品牌大小写(Espanso)
+en_dicts/en_ext.dict.yaml	okey	okey	delete				拼写错误(正拼okay，保留okey-dokey)
+en_dicts/en_ext.dict.yaml	sider	sider	replace	Sider	Sider		官方AI产品品牌大小写(Sider)
+en_dicts/en_ext.dict.yaml	traefik	traefik	replace	Traefik	Traefik		官方品牌大小写(Traefik)
+en_dicts/en_ext.dict.yaml	Asics	Asics	replace	ASICS	ASICS		官方品牌全大写缩写(ASICS)
+en_dicts/en.dict.yaml	amatuer	*	delete				E2英文拼写错误(amateur)
+en_dicts/en.dict.yaml	beastality	*	delete				E2英文拼写错误(bestiality)
+en_dicts/en.dict.yaml	bufing	*	delete				E2英文拼写错误(buffing)
+en_dicts/en.dict.yaml	docume	*	delete				截断残词(document)
+en_dicts/en.dict.yaml	ing	*	delete				截断词缀垃圾(-ing)
+en_dicts/en.dict.yaml	masterbating	*	delete				E2英文拼写错误(masturbating)
+en_dicts/en.dict.yaml	masterbation	*	delete				E2英文拼写错误(masturbation)
+en_dicts/en.dict.yaml	ment	*	delete				截断词缀垃圾(-ment)
+en_dicts/en.dict.yaml	mishief	*	delete				E2英文拼写错误(mischief)
+en_dicts/en.dict.yaml	postposted	*	delete				phpBB抓取拼接垃圾(PostPosted)
+en_dicts/en.dict.yaml	sbjct	*	delete				BLAST表格截断抓取垃圾(Sbjct:)
+en_dicts/en.dict.yaml	tion	*	delete				截断词缀垃圾(-tion)
+en_dicts/en.dict.yaml	tions	*	delete				截断词缀垃圾(-tions)
+en_dicts/en.dict.yaml	voyuer	*	delete				E2英文拼写错误(voyeur)
+en_dicts/en.dict.yaml	ampland	*	delete				色情网站域名抓取垃圾
+en_dicts/en.dict.yaml	bangbus	*	delete				色情网站域名抓取垃圾
+en_dicts/en.dict.yaml	cumfiesta	*	delete				色情网站域名抓取垃圾
+en_dicts/en.dict.yaml	madthumbs	*	delete				色情网站域名抓取垃圾
+en_dicts/en.dict.yaml	sleazydream	*	delete				色情网站域名抓取垃圾
+en_dicts/en.dict.yaml	thehun	*	delete				色情网站域名抓取垃圾
+en_dicts/en.dict.yaml	thumbzilla	*	delete				色情网站域名抓取垃圾
+en_dicts/en.dict.yaml	voyeurweb	*	delete				色情网站域名抓取垃圾
+en_dicts/en.dict.yaml	sublimedirectory	*	delete				SEO垃圾目录域名
+en_dicts/en.dict.yaml	viewpicture	*	delete				网页URL残片(viewpicture.php)
+en_dicts/en.dict.yaml	didrex	*	delete				网络黑药房垃圾词
+en_dicts/en.dict.yaml	fioricet	*	delete				网络黑药房垃圾词
+en_dicts/en.dict.yaml	meridia	*	delete				网络黑药房退市减肥药垃圾词
+en_dicts/en.dict.yaml	propecia	*	delete				网络黑药房垃圾词
+en_dicts/en.dict.yaml	ultram	*	delete				网络黑药房垃圾词(保留通用名tramadol)
+en_dicts/en.dict.yaml	ladyboys	*	delete				色情抓取词(单数ladyboy已删)
+en_dicts/en.dict.yaml	shemale	*	delete				色情抓取歧视词
+en_dicts/en.dict.yaml	shemales	*	delete				色情抓取歧视词
+en_dicts/en.dict.yaml	clic	*	delete				非英语法/西语抓取词(英文为click)
+en_dicts/en.dict.yaml	delle	*	delete				非英语意语介词抓取垃圾
+en_dicts/en.dict.yaml	deutsche	*	delete				非英语德语抓取垃圾
+en_dicts/en.dict.yaml	erotik	*	delete				非英语德语抓取垃圾
+en_dicts/en.dict.yaml	gratuite	*	delete				非英语法语抓取垃圾
+en_dicts/en.dict.yaml	institut	*	delete				非英语法/德语抓取垃圾(英文为institute)
+en_dicts/en.dict.yaml	nutten	*	delete				非英语德语成人抓取垃圾
+en_dicts/en.dict.yaml	pagina	*	delete				非英语西/意/荷语抓取垃圾
+en_dicts/en.dict.yaml	por	*	delete				非英语西/葡语介词抓取垃圾
+en_dicts/en.dict.yaml	telecharger	*	delete				非英语法语抓取垃圾
+en_dicts/en.dict.yaml	titten	*	delete				非英语德语成人抓取垃圾
+en_dicts/en.dict.yaml	tittens	*	delete				非英语德语成人抓取垃圾
+en_dicts/en.dict.yaml	travesti	*	delete				非英语西/法语成人抓取垃圾
+en_dicts/en.dict.yaml	travestis	*	delete				非英语西/法语成人抓取垃圾
+en_dicts/en.dict.yaml	verzeichnis	*	delete				非英语德语抓取垃圾
+en_dicts/en.dict.yaml	FujiFilm	FujiFilm	replace	Fujifilm	Fujifilm		官方品牌大小写(Fujifilm)
+en_dicts/en.dict.yaml	ZDnet	ZDnet	replace	ZDNet	ZDNet		官方品牌大小写(ZDNet)

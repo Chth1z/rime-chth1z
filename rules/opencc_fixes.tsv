@@ -1,2 +1,21 @@
 # target_file	key	action	value	reason
 # action: replace(替换整行 value) | delete(删除匹配 key 行) | add(不存在 key 时追加 key\tvalue)
+opencc/others.txt	二氧化氢	delete		化学事实错误(H₂O₂为过氧化氢，二氧化氢为HO₂)
+opencc/chinese_english.txt	小孩子	replace	小孩子 child kid tad tike	移除陈旧种族歧视释义(pickaninny)
+opencc/chinese_english.txt	不入虎穴　焉得虎子	delete		含全角空格U+3000不可达键(已有无空格正词)
+opencc/chinese_english.txt	不经一事　不长一智	delete		含全角空格U+3000不可达键(已有无空格正词)
+opencc/chinese_english.txt	摆事实　讲道理	delete		含全角空格U+3000不可达键(已有无空格正词)
+opencc/chinese_english.txt	百尺杆头　更尽一步	delete		含全角空格U+3000且成语双错字(杆->竿,尽->进)
+opencc/chinese_english.txt	百尺杆头，更尽一步	delete		含标点不可达键且成语双错字(杆->竿,尽->进)
+opencc/chinese_english.txt	百尺杆头更尽一步	rename	百尺竿头更进一步|百尺竿头更进一步 make still further progress	修复成语双错字(杆->竿,尽->进)
+opencc/chinese_english.txt	百足之虫　死而不僵	delete		含全角空格U+3000不可达键(已有无空格正词)
+opencc/chinese_english.txt	老骥伏枥　志在千里	delete		含全角空格U+3000不可达键(已有无空格正词)
+opencc/chinese_english.txt	格雷罗内洛罗	rename	格雷罗内格罗|格雷罗内格罗 Guerrero Negro	修复墨西哥地名错字(内洛罗->内格罗)
+opencc/english_chinese.txt	a/c	replace	a/c n.往来账户	清理损坏词典释义并规范简体(帐户->账户)
+opencc/english_chinese.txt	bug	replace	bug n.错误;虫;病菌;缺陷;窃听器;癖好;防盗报警器;双座小汽车;要人 vt.装防盗报警器;装窃听器;激怒 vi.捉臭虫;暴突	清理尾部重复释义(n.错误)
+opencc/english_chinese.txt	electroluminescent	replace	electroluminescent a.电致发光的;场致发光的	修复原始词典^分隔符乱码
+opencc/english_chinese.txt	intercommunicating	replace	intercommunicating a.互通的;内部通信的	修复原始词典^分隔符乱码
+opencc/english_chinese.txt	super-regenerative	replace	super-regenerative a.超再生的	修复原始词典^分隔符乱码与拼错eceiver
+opencc/english_chinese.txt	superregenerative	replace	superregenerative a.超再生的	修复原始词典^分隔符乱码与拼错eceiver
+opencc/english_chinese.txt	bestrid	replace	bestrid vbl.跨骑;跨坐;跨过	修复从bestrewn误复制的释义
+opencc/english_chinese.txt	bestridden	replace	bestridden vbl.跨骑;跨坐;跨过	修复从bestrewn误复制的释义

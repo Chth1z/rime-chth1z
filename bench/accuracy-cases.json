@@ -161,7 +161,7 @@
       "schema": "rime_frost_double_pinyin",
       "keys": "grka",
       "first_text": "關卡",
-      "first_comment": "关(guān)卡(qiǎ)"
+      "first_comment": "guān qiǎ"
     },
     {
       "name": "dp: habit tolerance 哎哟 (aiyb) #1 while yb stays 有",
@@ -174,7 +174,7 @@
       "schema": "rime_frost_double_pinyin",
       "keys": "dulo",
       "first_text": "鍍鉻",
-      "first_comment": "镀铬(gè)"
+      "first_comment": "dù gè"
     },
     {
       "name": "dp: toggle traditionalization=false -> 软件 (no dual)",
@@ -188,7 +188,7 @@
       "name": "dp: corrector 馄饨 (hun dun)",
       "schema": "rime_frost_double_pinyin",
       "keys": "hpdp",
-      "any_text_with_comment": { "text": "餛飩", "comment": "馄(hún)饨(tun)" },
+      "any_text_with_comment": { "text": "餛飩", "comment": "hún tun" },
       "no_raw_pinyin_comment": true
     },
     {
@@ -445,7 +445,7 @@
       "name": "fp: corrector hundun",
       "schema": "rime_frost",
       "keys": "hundun",
-      "any_text_with_comment": { "text": "餛飩", "comment": "馄(hún)饨(tun)" },
+      "any_text_with_comment": { "text": "餛飩", "comment": "hún tun" },
       "no_raw_pinyin_comment": true
     },
     {
@@ -524,6 +524,19 @@
     { "name": "dp: r2 大都 dual da dou (dadb) & da du (dadu)", "schema": "rime_frost_double_pinyin", "keys": "dadu", "any_text": "大都" },
     { "name": "dp: r2 AI大模型 (AIdamoxy)", "schema": "rime_frost_double_pinyin", "keys": "AIdamoxy", "first_text": "AI大模型" },
     { "name": "fp: r2 AI大模型 (AIdamoxing)", "schema": "rime_frost", "keys": "AIdamoxing", "first_text": "AI大模型" },
-    { "name": "fp: r2 LLM (LLM)", "schema": "rime_frost", "keys": "LLM", "first_text": "LLM" }
+    { "name": "fp: r2 LLM (LLM)", "schema": "rime_frost", "keys": "LLM", "first_text": "LLM" },
+    { "name": "fp: r3 张柏芝 dual 24-char Style A", "schema": "rime_frost", "keys": "zhangbaizhi", "any_text_with_comment": { "text": "張柏芝", "comment": "规范 张柏(bǎi)芝 / 习惯 张柏(bó)芝" } },
+    { "name": "fp: r3 说服 dual shuo fu", "schema": "rime_frost", "keys": "shuofu", "any_text_with_comment": { "text": "說服", "comment": "规范 shuō fú / 旧读 shuì fú" } },
+    { "name": "fp: r3 鼻塞 dual bi sai", "schema": "rime_frost", "keys": "bisai", "any_text_with_comment": { "text": "鼻塞", "comment": "习惯 bí sāi / 规范 bí sè" } },
+    { "name": "fp: r3 吐蕃 dual tu bo", "schema": "rime_frost", "keys": "tubo", "any_text_with_comment": { "text": "吐蕃", "comment": "大陆 tǔ bō / 台湾 tǔ fān" } },
+    { "name": "fp: r3 令人咋舌 below 令人咂舌 (lingrenzashe)", "schema": "rime_frost", "keys": "lingrenzashe", "first_text": "令人咂舌", "any_text_with_comment": { "text": "令人咋舌", "comment": "令人咋(zé)舌" } },
+    { "name": "fp: r3 私钥 dual si yue", "schema": "rime_frost", "keys": "siyue", "any_text_with_comment": { "text": "私鑰", "comment": "规范 sī yuè / 习惯 sī yào" } },
+    { "name": "fp: r3 郭明錤 dual guo ming qi", "schema": "rime_frost", "keys": "guomingqi", "any_text_with_comment": { "text": "郭明錤", "comment": "习惯 郭明錤(qí) / 规范 郭明錤(jī)" } },
+    { "name": "fp: r3 善于思考 fixed (shanyusikao)", "schema": "rime_frost", "keys": "shanyusikao", "first_text": "善於思考" },
+    { "name": "fp: r3 河南漯河 fixed (henanluohe)", "schema": "rime_frost", "keys": "henanluohe", "first_text": "河南漯河" },
+    { "name": "fp: r3 免服兵役 fixed (mianfubingyi)", "schema": "rime_frost", "keys": "mianfubingyi", "first_text": "免服兵役" },
+    { "name": "fp: r3 谐星 not hijacked by 血腥 (xiexing)", "schema": "rime_frost", "keys": "xiexing", "first_text": "諧星", "no_text_regex": "血腥" },
+    { "name": "fp: r3 D-class 氛围 removed from fenfei", "schema": "rime_frost", "keys": "fenfei", "no_text_regex": "氛圍|氛围" },
+    { "name": "fp: r3 agentic lowercase (agentic)", "schema": "rime_frost", "keys": "agentic", "any_text": "agentic" }
   ]
 }

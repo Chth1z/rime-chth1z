@@ -51,3 +51,5 @@ add	测bug		ce	bug	false	开发口语混输词
 add	XS码	XS	ma		true	日常尺码混输词
 add	XL码	XL	ma		true	日常尺码混输词
 add	XXL码	XXL	ma		true	日常尺码混输词
+case_fix	papi酱	Papi		papi		同步修复编码大小写前缀
+replace	V怪客	V	guai ke		true	修复cn_en_abc.txt智能ABC编码错误(Vgcke->Vgyke)

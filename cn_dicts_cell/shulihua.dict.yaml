@@ -296,7 +296,6 @@ use_preset_vocabulary: false
 供电子取代基	gong dian zi qu dai ji	0
 光二极管阵列检测器	guang er ji guan zhen lie jian ce qi	0
 光谱分析法	guang pu fen xi fa	2
-合并标准偏差组合标准差	he bing biao zhun pian cha zu he biao zhun cha	0
 红外分光光度法	hong wai fen guang guang du fa	0
 红外吸收光谱法	hong wai xi shou guang pu fa	1
 化学定量分析	hua xue ding liang fen xi	1
@@ -359,7 +358,6 @@ use_preset_vocabulary: false
 伸缩振动	shen suo zhen dong	3
 生色团	sheng se tuan	2
 铈量法	shi liang fa	0
-双电流滴定法双安培滴定法	shuang dian liu di ding fa shuang an pei di ding fa	0
 双指示剂滴定法	shuang zhi shi ji di ding fa	0
 顺序注射分析法	shun xu zhu she fen xi fa	0
 斯托克斯位移	si tuo ke si wei yi	0
@@ -583,8 +581,8 @@ use_preset_vocabulary: false
 达参反应	da shen fan ying	0
 道尔顿分压定律	dao er dun fen ya ding lv	3
 道尔顿原子论	dao er dun yuan zi lun	0
-徳拜	de bai	0
-徳拜休克尔公式	de bai xiu ke er gong shi	0
+德拜	de bai	0
+德拜休克尔公式	de bai xiu ke er gong shi	0
 德布罗意方程	de bu luo yi fang cheng	2
 迪尔斯阿尔德反应	di er si a er de fan ying	0
 法拉第常数	fa la di chang shu	5
@@ -1089,7 +1087,6 @@ use_preset_vocabulary: false
 苯基甲基二氯硅烷	ben ji jia ji er lv gui wan	0
 苯基锂	ben ji li	0
 苯基膦	ben ji lin	0
-苯基膦基二茂氧化记	ben ji lin ji er mao yang hua ji	0
 苯基膦酸二甲酯	ben ji lin suan er jia zhi	0
 苯基磷酸二异丙酯	ben ji lin suan er yi bing zhi	0
 苯基膦酸二乙酯	ben ji lin suan er yi zhi	0
@@ -2353,7 +2350,6 @@ use_preset_vocabulary: false
 对甲苯磷酸	dui jia ben lin suan	0
 对甲苯硫代磺酸钾	dui jia ben liu dai huang suan jia	0
 对甲苯硫酚	dui jia ben liu fen	0
-对甲苯酰吠喃核糖氯	dui jia ben xian fei nan he tang lv	0
 对甲苯亚磺酸	dui jia ben ya huang suan	0
 对甲苯亚磺酸苯酯	dui jia ben ya huang suan ben zhi	0
 对甲苯亚磺酸钠	dui jia ben ya huang suan na	0
@@ -2557,7 +2553,7 @@ use_preset_vocabulary: false
 莪术二酮	e zhu er tong	0
 莪术酮	e zhu tong	0
 莪术烯醇	e zhu xi chun	0
-枙子花乙酸	e zi hua yi suan	0
+栀子花乙酸	zhi zi hua yi suan	0
 噁唑	e zuo	1
 恩贝酸	en bei suan	0
 蒽标准溶液	en biao zhun rong ye	0
@@ -2608,7 +2604,6 @@ use_preset_vocabulary: false
 二苯基甲氧基膦	er ben ji jia yang ji lin	0
 二苯基金	er ben ji jin	0
 二苯基膦	er ben ji lin	0
-二苯基膦丁婉二氯化钯	er ben ji lin ding wan er lv hua ba	0
 二苯基磷酸	er ben ji lin suan	0
 二苯基膦酸酐	er ben ji lin suan gan	0
 二苯基膦酰羟胺	er ben ji lin xian qiang an	0
@@ -2835,7 +2830,6 @@ use_preset_vocabulary: false
 二聚酸	er ju suan	0
 二聚物	er ju wu	4
 二均三甲苯基睐唑	er jun san jia ben ji lai zuo	0
-二均三甲苯基睐唑亚基	er jun san jia ben ji lai zuo ya ji	0
 二糠基二硫	er kang ji er liu	0
 二糠基硫醚	er kang ji liu mi	0
 二藜芦基醚	er li lu ji mi	0
@@ -2864,12 +2858,10 @@ use_preset_vocabulary: false
 二氯苯基钉二聚体	er lv ben ji ding er ju ti	0
 二氯吡啶甲酸金	er lv bi ding jia suan jin	0
 二氯丙烯胺	er lv bing xi an	0
-二氯代双二甲基氨基	er lv dai shuang er jia ji an ji	0
 二氯二氨钯	er lv er an ba	0
 二氯二苯甲烷	er lv er ben jia wan	0
 二氯二环戊基硅烷	er lv er huan wu ji gui wan	0
 二氯二己基硅烷	er lv er ji ji gui wan	0
-二氯二甲基双二苯基	er lv er jia ji shuang er ben ji	0
 二氯二金	er lv er jin	0
 二氯二联苯基膦	er lv er lian ben ji lin	0
 二氯二茂铪	er lv er mao ha	0
@@ -2882,7 +2874,6 @@ use_preset_vocabulary: false
 二氯化二茂钒	er lv hua er mao fan	0
 二氯化记	er lv hua ji	0
 二氯化磷酸苯酯	er lv hua lin suan ben zhi	0
-二氯化戊氨络物氯钉	er lv hua wu an luo wu lv ding	0
 二氯化物醋酸钯	er lv hua wu cu suan ba	0
 二氯甲基丁醚	er lv jia ji ding mi	0
 二氯甲基甲醚	er lv jia ji jia mi	0
@@ -2928,11 +2919,10 @@ use_preset_vocabulary: false
 二嗪磷标准溶液	er qin lin biao zhun rong ye	0
 二氰胺钠	er qing an na	0
 二氢白藜芦醇	er qing bai li lu chun	0
-二氫吡唑酮	er qing bi zuo tong	0
+二氢吡唑酮	er qing bi zuo tong	0
 二氢波斯卡	er qing bo si ka	0
 二氢赤松素单甲醚	er qing chi song su dan jia mi	0
 二氰二胺	er qing er an	0
-二氢二氯代四二叔丁基	er qing er lv dai si er shu ding ji	0
 二氢黄豆苷元	er qing huang dou gan yuan	0
 二氢黄体酮	er qing huang ti tong	0
 二氢黄酮甙	er qing huang tong dai	0
@@ -2963,7 +2953,6 @@ use_preset_vocabulary: false
 二巯基马来腈二钠	er qiu ji ma lai jing er na	0
 二去氢新对叶百部碱	er qu qing xin dui ye bai bu jian	0
 二炔丙胺	er que bing an	0
-二壬二吡啶基自钠盐	er ren er bi ding ji zi na yan	0
 二壬基胺	er ren ji an	0
 二壬基硫醚	er ren ji liu mi	0
 二壬基萘磺酸	er ren ji nai huang suan	0
@@ -3062,7 +3051,6 @@ use_preset_vocabulary: false
 二氧化乙烯基环己烯	er yang hua yi xi ji huan ji xi	0
 二氧甲烷复合物	er yang jia wan fu he wu	0
 二氧磷杂环戊烷	er yang lin za huan wu wan	0
-二氧四甲基乙二胺铠	er yang si jia ji yi er an kai	0
 二乙氨基琼脂糖凝胶	er yi an ji qiong zhi tang ning jiao	0
 二乙氨基三氟化硫	er yi an ji san fu hua liu	0
 二乙氨基乙醇	er yi an ji yi chun	0
@@ -3167,7 +3155,6 @@ use_preset_vocabulary: false
 凡德他尼	fan de ta ni	0
 反丁烯二腈	fan ding xi er jing	0
 反丁烯二酸	fan ding xi er suan	0
-反二氯三苯基膦铂四	fan er lv san ben ji lin bo si	0
 反二氯双三苯基膦铂	fan er lv shuang san ben ji lin bo	0
 钒粉	fan fen	0
 番荔枝素	fan li zhi su	0
@@ -3740,7 +3727,7 @@ use_preset_vocabulary: false
 红杉醇	hong shan chun	0
 红细胞裂解液	hong xi bao lie jie ye	0
 红荧烯	hong ying xi	0
-厚朴酚	hou pu fen	0
+厚朴酚	hou po fen	0
 湖贝甲素	hu bei jia su	0
 虎刺醛	hu ci quan	0
 互隔交链孢霉素	hu ge jiao lian bao mei su	0
@@ -3932,7 +3919,6 @@ use_preset_vocabulary: false
 环戊醇	huan wu chun	0
 环戊二烯基钠	huan wu er xi ji na	0
 环戊二烯基双	huan wu er xi ji shuang	0
-环戊二烯六氟磷酸钉	huan wu er xi liu fu lin suan ding	0
 环戊硅烷	huan wu gui wan	0
 环戊基丙二酸	huan wu ji bing er suan	0
 环戊基丙二酸二甲酯	huan wu ji bing er suan er jia zhi	0
@@ -4114,7 +4100,6 @@ use_preset_vocabulary: false
 己腈	ji jing	0
 吉九里香碱	ji jiu li xiang jian	0
 己硫醚	ji liu mi	0
-基氯啦啶基二氯化钯	ji lv la ding ji er lv hua ba	0
 吉马酮	ji ma tong	0
 记锚定均相催化剂	ji mao ding jun xiang cui hua ji	0
 激酶存储缓冲液	ji mei cun chu huan chong ye	0
@@ -4407,7 +4392,6 @@ use_preset_vocabulary: false
 甲酸丙酯	jia suan bing zhi	0
 甲酸胆固醇酯	jia suan dan gu chun zhi	0
 甲酸丁酯	jia suan ding zhi	0
-甲酸二王基二啦啶基钉	jia suan er wang ji er la ding ji ding	0
 甲酸钙	jia suan gai	0
 甲酸茴香酯	jia suan hui xiang zhi	0
 甲酸钾	jia suan jia	0
@@ -5842,7 +5826,6 @@ use_preset_vocabulary: false
 氯化镨	lv hua pu	0
 氯化溶菌酶晶体	lv hua rong jun mei jing ti	0
 氯化铷	lv hua ru	1
-氯化三联吡啶钉六水	lv hua san lian bi ding ding liu shui	0
 氯化钐	lv hua shan	0
 氯化芍药素	lv hua shao yao su	0
 氯化矢车菊素	lv hua shi che ju su	0
@@ -5914,7 +5897,6 @@ use_preset_vocabulary: false
 氯甲酸正戊酯	lv jia suan zheng wu zhi	0
 氯甲酸正辛酯	lv jia suan zheng xin zhi	0
 氯金酸	lv jin suan	6
-氯经基二甲基苯甲胺	lv jing ji er jia ji ben jia an	0
 氯菊酯标准溶液	lv ju zhi biao zhun rong ye	0
 氯菌酸	lv jun suan	0
 氯菌酸酐	lv jun suan gan	0
@@ -6334,7 +6316,7 @@ use_preset_vocabulary: false
 南藤素	nan teng su	0
 南五味子酸	nan wu wei zi suan	0
 南烛木树脂酚	nan zhu mu shu zhi fen	0
-內吸磷溶液标准物质	nei xi lin rong ye biao zhun wu zhi	0
+内吸磷溶液标准物质	nei xi lin rong ye biao zhun wu zhi	0
 尼艾酚	ni ai fen	0
 尼泊金丁酯钠盐	ni bo jin ding zhi na yan	0
 尼泊金庚酯	ni bo jin geng zhi	0
@@ -6621,7 +6603,7 @@ use_preset_vocabulary: false
 普鲁氯嗪二马来酸盐	pu lu lv qin er ma lai suan yan	0
 普鲁士蓝	pu lu shi lan	34
 普罗雌烯	pu luo ci xi	0
-普羅旁納耳	pu luo pang na er	0
+普罗旁纳耳	pu luo pang na er	0
 葡乳醛酸钙	pu ru quan suan gai	0
 普瑞巴林	pu rui ba lin	8
 葡萄粉	pu tao fen	0
@@ -7169,7 +7151,6 @@ use_preset_vocabulary: false
 三对甲苯基磷酸酯	san dui jia ben ji lin suan zhi	0
 三二亚苄丙二铠	san er ya bian bing er kai	0
 三二亚苄基丙	san er ya bian ji bing	0
-三二亚苄基丙鄄二钯	san er ya bian ji bing juan er ba	0
 三反油酸甘油酯	san fan you suan gan you zhi	0
 伞房花耳草素	san fang hua er cao su	0
 三菲咯啉钉	san fei ge lin ding	0
@@ -7404,7 +7385,6 @@ use_preset_vocabulary: false
 三醛基间苯三酚	san quan ji jian ben san fen	0
 三炔丙基胺	san que bing ji an	0
 三壬基胺	san ren ji an	0
-三三苯基膦二氯化钉	san san ben ji lin er lv hua ding	0
 三山嵛精	san shan yu jing	0
 三胜肽	san sheng tai	6
 三十八烷	san shi ba wan	0
@@ -7597,7 +7577,7 @@ use_preset_vocabulary: false
 砷试剂	shen shi ji	0
 砷甜菜碱标准溶液	shen tian cai jian biao zhun rong ye	0
 圣草次苷	sheng cao ci gan	0
-升對酞酸	sheng dui tai suan	0
+升对酞酸	sheng dui tai suan	0
 胜红蓟素	sheng hong ji su	0
 升麻素	sheng ma su	0
 升麻素苷	sheng ma su gan	0
@@ -7861,7 +7841,6 @@ use_preset_vocabulary: false
 叔丁基锂	shu ding ji li	39
 叔丁基硫醚	shu ding ji liu mi	0
 叔丁基氯化镁	shu ding ji lv hua mei	0
-叔丁基硼酸频呐醇酯	shu ding ji peng suan pin na chun zhi	0
 叔丁基氢醌二乙酯	shu ding ji qing kun er yi zhi	0
 叔丁基缩水甘油醚	shu ding ji suo shui gan you mi	0
 叔丁基亚磺酰胺	shu ding ji ya huang xian an	0
@@ -7909,7 +7888,6 @@ use_preset_vocabulary: false
 双醋酯	shuang cu zhi	0
 双二苯基膦	shuang er ben ji lin	0
 双二苯基膦苯基酺	shuang er ben ji lin ben ji pu	0
-双二苯基磷丙婉记山	shuang er ben ji lin bing wan ji shan	0
 双二苯基膦基	shuang er ben ji lin ji	0
 双二苯基膦联	shuang er ben ji lin lian	0
 双二苯基膦联刺二	shuang er ben ji lin lian ci er	0
@@ -7918,7 +7896,6 @@ use_preset_vocabulary: false
 双二环己热乙烷钯	shuang er huan ji re yi wan ba	0
 双二甲胺基乙基醚	shuang er jia an ji yi ji mi	0
 双二甲基烯丙基	shuang er jia ji xi bing ji	0
-双二甲氧基二亚苄基丙	shuang er jia yang ji er ya bian ji bing	0
 双二叔丁基苯基膦	shuang er shu ding ji ben ji lin	0
 双二叔丁基膦	shuang er shu ding ji lin	0
 双二异丙苯基咪喹	shuang er yi bing ben ji mi kui	0
@@ -7965,9 +7942,7 @@ use_preset_vocabulary: false
 双去甲氧基姜黄素	shuang qu jia yang ji jiang huang su	0
 双去氧基姜黄素	shuang qu yang ji jiang huang su	0
 双三苯基膦钉二	shuang san ben ji lin ding er	0
-双三苯基膦二氯化记	shuang san ben ji lin er lv hua ji	0
 双三苯基膦二氧化钯	shuang san ben ji lin er yang hua ba	0
-双三氟甲烷磺酰基酰	shuang san fu jia wan huang xian ji xian	0
 双三氟甲烷磺酰亚胺	shuang san fu jia wan huang xian ya an	0
 双三氟乙酰胺	shuang san fu yi xian an	0
 双三环己基膦	shuang san huan ji ji lin	0
@@ -7982,7 +7957,6 @@ use_preset_vocabulary: false
 双十一烷基胺	shuang shi yi wan ji an	0
 双水杨酸酯	shuang shui yang suan zhi	0
 双四对氯苯基铁卟啉	shuang si dui lv ben ji tie bu lin	0
-双五甲基环戊二烯钉	shuang wu jia ji huan wu er xi ding	0
 双戊烯	shuang wu xi	0
 双烯雌酚	shuang xi ci fen	0
 双酰草胺同位素	shuang xian cao an tong wei su	0
@@ -8012,7 +7986,7 @@ use_preset_vocabulary: false
 水合乙酰丙酮钐	shui he yi xian bing tong shan	0
 水合茚三酮	shui he yin san tong	0
 水解蚕丝	shui jie can si	3
-水解番茄硷	shui jie fan qie jian	0
+水解番茄碱	shui jie fan qie jian	0
 水解乳蛋白	shui jie ru dan bai	0
 水晶兰苷	shui jing lan gan	0
 水芹烯	shui qin xi	1
@@ -8063,7 +8037,6 @@ use_preset_vocabulary: false
 顺丁烯二酸酐	shun ding xi er suan gan	0
 顺二氯二二乙基硫醚铂	shun er lv er er yi ji liu mi bo	0
 顺二氯双吡啶基铂	shun er lv shuang bi ding ji bo	0
-顺二氯双吡啶基铂二	shun er lv shuang bi ding ji bo er	0
 顺二氯双三苯基膦铂	shun er lv shuang san ben ji lin bo	0
 顺二氯双三乙基膦铂	shun er lv shuang san yi ji lin bo	0
 顺势阿法替尼杂质	shun shi a fa ti ni za zhi	0
@@ -8376,7 +8349,7 @@ use_preset_vocabulary: false
 松油	song you	65
 松油醇	song you chun	0
 松油烯	song you xi	0
-松茋	song zhi	0
+松茋	song di	0
 松酯醇二葡萄糖苷	song zhi chun er pu tao tang gan	0
 苏拉明	su la ming	2
 速灭威标准溶液	su mie wei biao zhun rong ye	0
@@ -8385,7 +8358,6 @@ use_preset_vocabulary: false
 苏木色素苏木精	su mu se su su mu jing	0
 苏尼替尼苹果酸盐	su ni ti ni ping guo suan yan	0
 速溶硅酸钾	su rong gui suan jia	0
-簌酰二氢三三苯基腾	su xian er qing san san ben ji teng	0
 蒜氨酸	suan an suan	12
 蒜黎芦碱	suan li lu jian	0
 酸模素	suan mo su	0
@@ -8518,7 +8490,7 @@ use_preset_vocabulary: false
 碳酰肼	tan xian jing	0
 弹性蛋白酶	tan xing dan bai mei	3
 糖精钠标准溶液	tang jing na biao zhun rong ye	0
-桃柁酚	tao duo fen	1
+桃柁酚	tao tuo fen	1
 桃苷	tao gan	0
 滔罗林	tao luo lin	0
 桃醛	tao quan	0
@@ -9730,7 +9702,6 @@ use_preset_vocabulary: false
 烟酰胺核糖	yan xian an he tang	3
 岩藻黄质	yan zao huang zhi	0
 洋椿苦素	yang chun ku su	0
-洋翠雀鹼	yang cui que jian	0
 洋地黄毒苷	yang di huang du gan	3
 氧钒酞菁	yang fan tai jing	0
 洋红酸	yang hong suan	0
@@ -9742,7 +9713,6 @@ use_preset_vocabulary: false
 氧化铂水化物	yang hua bo shui hua wu	0
 氧化铂一水合物	yang hua bo yi shui he wu	0
 氧化氘	yang hua dao	0
-氧化钉氧化钉四水合物	yang hua ding yang hua ding si shui he wu	0
 氧化铥	yang hua diu	0
 氧化铒	yang hua er	1
 氧化二丁基锡	yang hua er ding ji xi	0
@@ -10263,7 +10233,6 @@ use_preset_vocabulary: false
 乙酸二丁基铵	yi suan er ding ji an	0
 乙酸二记	yi suan er ji	0
 乙酸二甲基苄基原酯	yi suan er jia ji bian ji yuan zhi	0
-乙酸二碳基钌聚合物	yi suan er tan ji liao ju he wu	0
 乙酸二戊基铵	yi suan er wu ji an	0
 乙酸二乙氧基甲酯	yi suan er yi yang ji jia zhi	0
 乙酸钙溶液	yi suan gai rong ye	0
@@ -10291,7 +10260,7 @@ use_preset_vocabulary: false
 乙酸糠硫醇酯	yi suan kang liu chun zhi	0
 乙酸镧水合物	yi suan lan shui he wu	0
 乙酸锂溶液	yi suan li rong ye	0
-乙酸釕	yi suan liao	0
+乙酸钌	yi suan liao	0
 乙酸邻甲苯酯	yi suan lin jia ben zhi	0
 乙酸硫噻唑	yi suan liu sai zuo	0
 乙酸龙舌兰皂苷酯	yi suan long she lan zao gan zhi	0
@@ -11002,7 +10971,7 @@ use_preset_vocabulary: false
 紫苏葶	zi su ting	0
 紫苏烯	zi su xi	0
 紫苏叶油	zi su ye you	0
-紫檀茋	zi tan zhi	0
+紫檀茋	zi tan di	0
 紫云英苷	zi yun ying gan	0
 总氮标准溶液	zong dan biao zhun rong ye	0
 总铬离子标准溶液	zong ge li zi biao zhun rong ye	0
@@ -11033,7 +11002,6 @@ use_preset_vocabulary: false
 佐芬普利钙	zuo fen pu li gai	0
 唑基钯	zuo ji ba	0
 唑喹达三盐酸盐	zuo kui da san yan suan yan	0
-唑来磷酸一水化合物	zuo lai lin suan yi shui hua he wu	0
 唑螨酯	zuo man zhi	0
 唑尼沙胺	zuo ni sha an	3
 左羟丙哌嗪	zuo qiang bing pai qin	0
@@ -11079,7 +11047,7 @@ use_preset_vocabulary: false
 丙烯胺	bing xi an	2
 丙烯醇	bing xi chun	1
 丙烯基缩水甘油醚	bing xi ji suo shui gan you mi	0
-丙烯三氯矽烷	bing xi san lv xi wan	0
+丙烯三氯硅烷	bing xi san lv gui wan	0
 丙烯酸丁酯	bing xi suan ding zhi	7
 丙烯亚胺	bing xi ya an	0
 铂金属	bo jin shu	9
@@ -11111,9 +11079,8 @@ use_preset_vocabulary: false
 二甲胺	er jia an	6
 二甲苯胺	er jia ben an	1
 二甲基丁烷	er jia ji ding wan	0
-二甲基二氯矽烷	er jia ji er lv xi wan	0
 二甲基联胺	er jia ji lian an	0
-二甲氧基二乙氧矽	er jia yang ji er yi yang xi	0
+二甲氧基二乙氧硅	er jia yang ji er yi yang gui	0
 二甲氧甲烷	er jia yang jia wan	0
 二硫二甲烷	er liu er jia wan	0
 二硫松	er liu song	0
@@ -11127,7 +11094,6 @@ use_preset_vocabulary: false
 二氯甲醚	er lv jia mi	0
 二氯联苯胺	er lv lian ben an	0
 二氯松	er lv song	0
-二氯矽烷	er lv xi wan	0
 二氯硝基乙烷	er lv xiao ji yi wan	0
 二氯乙醚	er lv yi mi	0
 二氯乙炔	er lv yi que	1
@@ -11145,10 +11111,9 @@ use_preset_vocabulary: false
 二溴二氯乙基二甲基磷	er xiu er lv yi ji er jia ji lin	0
 二溴乙烷	er xiu yi wan	1
 二氧化环己烯乙烯	er yang hua huan ji xi yi xi	0
-二氧化矽鳞石英	er yang hua xi lin shi ying	0
+二氧化硅鳞石英	er yang hua gui lin shi ying	0
 二氧陆环	er yang lu huan	0
 二乙基氨乙醇	er yi ji an yi chun	0
-二乙基二氯矽烷	er yi ji er lv xi wan	0
 二乙基硫	er yi ji liu	0
 二异氰酸二苯甲烷	er yi qing suan er ben jia wan	0
 二异氰酸甲苯	er yi qing suan jia ben	0
@@ -11193,7 +11158,6 @@ use_preset_vocabulary: false
 甲基丙烯醛	jia ji bing xi quan	1
 甲基丙烯酮	jia ji bing xi tong	0
 甲基第三级丁基醇	jia ji di san ji ding ji chun	0
-甲基二氯矽烷	jia ji er lv xi wan	0
 甲基环己醇	jia ji huan ji chun	0
 甲基环己酮	jia ji huan ji tong	0
 甲基环戊二烯三羰基锰	jia ji huan wu er xi san tang ji meng	0
@@ -11284,7 +11248,6 @@ use_preset_vocabulary: false
 三氯化磷	san lv hua lin	0
 三氯甲苯	san lv jia ben	0
 三氯三氟乙烷	san lv san fu yi wan	0
-三氯矽烷	san lv xi wan	0
 三氯硝甲烷	san lv xiao jia wan	0
 三氯异三聚氰酸	san lv yi san ju qing suan	0
 三硝基苯	san xiao ji ben	0
@@ -11299,7 +11262,7 @@ use_preset_vocabulary: false
 四氟化硫	si fu hua liu	0
 四甲琥珀	si jia hu po	0
 四甲基铅	si jia ji qian	1
-四甲氧矽	si jia yang xi	0
+四甲氧硅	si jia yang gui	0
 四氯	si lv	7
 四氯二氟乙烷	si lv er fu yi wan	0
 四氯乙烷	si lv yi wan	0
@@ -11326,7 +11289,6 @@ use_preset_vocabulary: false
 五氧化二钒熏烟	wu yang hua er fan xun yan	0
 五氧化二钽粉尘	wu yang hua er tan fen chen	0
 硒化氢	xi hua qing	2
-矽酸乙酯	xi suan yi zhi	0
 硝化淀粉	xiao hua dian fen	0
 硝化纤维素	xiao hua xian wei su	7
 硝基丙烷	xiao ji bing wan	0
@@ -11373,7 +11335,6 @@ use_preset_vocabulary: false
 异戊间二烯	yi wu jian er xi	0
 乙戊酮	yi wu tong	0
 乙烯基甲基酮	yi xi ji jia ji tong	0
-乙烯基三氯矽烷	yi xi ji san lv xi wan	0
 乙酰甲基甲醇	yi xian jia ji jia chun	0
 乙烯酮	yi xi tong	1
 异亚丙基丙酮	yi ya bing ji bing tong	0
@@ -11504,7 +11465,6 @@ use_preset_vocabulary: false
 基础混算加法	ji chu hun suan jia fa	0
 基础混算减法	ji chu hun suan jian fa	0
 基础四则混算	ji chu si ze hun suan	0
-几何平均数个数之积的次方根	ji he ping jun shu ge shu zhi ji de ci fang gen	0
 加法交换性质	jia fa jiao huan xing zhi	0
 假分数	jia fen shu	1
 解联立方程	jie lian li fang cheng	1
@@ -11624,9 +11584,9 @@ use_preset_vocabulary: false
 埃尔米特插值多项式	ai er mi te cha zhi duo xiang shi	0
 埃尔米特插值公式	ai er mi te cha zhi gong shi	0
 埃尔米特度量	ai er mi te du liang	0
-埃尔米特对称	ai er mi te dui cheng	0
-埃尔米特对称矩阵	ai er mi te dui cheng ju zhen	0
-埃尔米特对称型	ai er mi te dui cheng xing	0
+埃尔米特对称	ai er mi te dui chen	0
+埃尔米特对称矩阵	ai er mi te dui chen ju zhen	0
+埃尔米特对称型	ai er mi te dui chen xing	0
 埃尔米特多项式	ai er mi te duo xiang shi	0
 埃尔米特二次型	ai er mi te er ci xing	0
 埃尔米特泛函	ai er mi te fan han	0
@@ -11856,7 +11816,7 @@ use_preset_vocabulary: false
 保持定向同构	bao chi ding xiang tong gou	0
 保持定向自同构	bao chi ding xiang zi tong gou	0
 报酬函数	bao chou han shu	0
-保单调差分格式	bao dan tiao cha fen ge shi	0
+保单调差分格式	bao dan diao cha fen ge shi	0
 鲍尔双迭代	bao er shuang die dai	0
 鲍尔双迭代法	bao er shuang die dai fa	0
 保范映射	bao fan ying she	0
@@ -12509,7 +12469,6 @@ use_preset_vocabulary: false
 布拉施克乘积	bu la shi ke cheng ji	0
 布朗片	bu lang pian	0
 布朗桥	bu lang qiao	0
-布劳丰尔不动点定理	bu lao feng er bu dong dian ding li	0
 布劳威尔代数	bu lao wei er dai shu	0
 布劳韦尔群	bu lao wei er qun	0
 不连通集	bu lian tong ji	0
@@ -12940,7 +12899,7 @@ use_preset_vocabulary: false
 初等运算	chu deng yun suan	1
 初等阵	chu deng zhen	0
 初等子结构	chu deng zi jie gou	0
-初等子模型	chu deng zi mu xing	0
+初等子模型	chu deng zi mo xing	0
 出度	chu du	26
 除环	chu huan	13
 初积分	chu ji fen	0
@@ -13740,7 +13699,7 @@ use_preset_vocabulary: false
 点场	dian chang	21
 点传递图	dian chuan di tu	0
 点独立数	dian du li shu	0
-点对称	dian dui cheng	0
+点对称	dian dui chen	0
 典范层	dian fan ceng	0
 典范乘积	dian fan cheng ji	0
 典范除子	dian fan chu zi	1
@@ -14378,7 +14337,7 @@ use_preset_vocabulary: false
 二值测度	er zhi ce du	0
 二值逻辑	er zhi luo ji	0
 二值时间序列	er zhi shi jian xu lie	0
-二重点	er zhong dian	0
+二重点	er chong dian	0
 法贝尔	fa bei er	1
 罚参数	fa can shu	2
 法丛	fa cong	0
@@ -15206,7 +15165,6 @@ use_preset_vocabulary: false
 伽罗瓦对应	ga luo wa dui ying	0
 伽罗瓦方程	ga luo wa fang cheng	0
 伽罗瓦扩张	ga luo wa kuo zhang	1
-伽罗瓦理论	ga luo wa li lun	7
 伽罗瓦论	ga luo wa lun	0
 伽罗瓦群	ga luo wa qun	2
 伽罗瓦上同调	ga luo wa shang tong diao	0
@@ -17281,7 +17239,7 @@ use_preset_vocabulary: false
 可度量化群	ke du liang hua qun	0
 可度量化一致空间	ke du liang hua yi zhi kong jian	0
 可度量性	ke du liang xing	2
-可对称化核	ke dui cheng hua he	0
+可对称化核	ke dui chen hua he	0
 可对角化	ke dui jiao hua	2
 可对角化代数群	ke dui jiao hua dai shu qun	0
 可对角化矩阵	ke dui jiao hua ju zhen	0
@@ -17623,7 +17581,6 @@ use_preset_vocabulary: false
 拉盖尔微分方程	la gai er wei fen fang cheng	0
 拉格朗日鞍点	la ge lang ri an dian	0
 拉格朗日必要条件	la ge lang ri bi yao tiao jian	0
-拉格郎日插值多项式	la ge lang ri cha zhi duo xiang shi	0
 拉格朗日插值公式	la ge lang ri cha zhi gong shi	0
 拉格朗日插置公式	la ge lang ri cha zhi gong shi	0
 拉格朗日乘数	la ge lang ri cheng shu	25
@@ -18720,7 +18677,7 @@ use_preset_vocabulary: false
 粘性	nian xing	350
 粘性系数	nian xing xi shu	4
 粘性消失法	nian xing xiao shi fa	0
-粘着空间	nian zhe kong jian	0
+粘着空间	nian zhuo kong jian	0
 涅米茨算子	nie mi ci suan zi	0
 凝聚层	ning ju ceng	0
 凝聚点	ning ju dian	2
@@ -20582,7 +20539,6 @@ use_preset_vocabulary: false
 斯通空间	si tong kong jian	0
 斯通切赫紧化	si tong qie he jin hua	0
 斯图谟链	si tu mo lian	0
-斯图谟刘维尔特盏问题	si tu mo liu wei er te zhan wen ti	0
 斯托克斯定理	si tuo ke si ding li	10
 斯托克斯方程	si tuo ke si fang cheng	9
 斯托克斯公式	si tuo ke si gong shi	37
@@ -22306,7 +22262,7 @@ use_preset_vocabulary: false
 消元规则	xiao yuan gui ze	0
 消元矩阵	xiao yuan ju zhen	0
 斜埃尔米德矩阵	xie ai er mi de ju zhen	0
-斜称多重线性映射	xie cheng duo zhong xian xing ying she	0
+斜称多重线性映射	xie chen duo chong xian xing ying she	0
 斜称张量	xie cheng zhang liang	0
 斜导算子	xie dao suan zi	0
 斜对称行列式	xie dui chen hang lie shi	0
@@ -23602,7 +23558,7 @@ use_preset_vocabulary: false
 正定特盏问题	zheng ding te zhan wen ti	0
 正定型	zheng ding xing	0
 正定有理函数	zheng ding you li han shu	0
-正对称组	zheng dui cheng zu	0
+正对称组	zheng dui chen zu	0
 整二次型	zheng er ci xing	0
 正二十面体	zheng er shi mian ti	25
 正二十面体群	zheng er shi mian ti qun	0
@@ -24682,7 +24638,7 @@ use_preset_vocabulary: false
 左端点	zuo duan dian	15
 佐恩引理	zuo en yin li	0
 左方不连续性	zuo fang bu lian xu xing	0
-左方可对称化核	zuo fang ke dui cheng hua he	0
+左方可对称化核	zuo fang ke dui chen hua he	0
 左非零因子	zuo fei ling yin zi	0
 左分解	zuo fen jie	0
 左分配律	zuo fen pei lv	0
@@ -25832,7 +25788,6 @@ use_preset_vocabulary: false
 单分子吸附	dan fen zi xi fu	1
 单甘酯	dan gan zhi	0
 单股聚合物	dan gu ju he wu	0
-单光子发射计算机化断层显象	dan guang zi fa she ji suan ji hua duan ceng xian xiang	0
 胆红素试纸	dan hong su shi zhi	0
 氮化钡	dan hua bei	0
 氮化处理	dan hua chu li	71
@@ -27564,7 +27519,7 @@ use_preset_vocabulary: false
 甘氨酸铁	gan an suan tie	0
 甘氨酰白氨酸	gan an xian bai an suan	0
 甘氨酰丙氨酸	gan an xian bing an suan	0
-甘氨酰脯氨酸	gan an xian fu an suan	2
+甘氨酰脯氨酸	gan an xian pu an suan	2
 甘氨酰酪氨酸	gan an xian lao an suan	0
 甘氨酰色氨酸	gan an xian se an suan	0
 甘氨酰苏氨酸	gan an xian su an suan	0
@@ -27722,7 +27677,7 @@ use_preset_vocabulary: false
 铬珠	ge zhu	0
 给电子基团	gei dian zi ji tuan	3
 给电子体	gei dian zi ti	1
-给水调节阀	gei shui tiao jie fa	0
+给水调节阀	ji shui tiao jie fa	0
 茛菪碱	gen dang jian	0
 茛菪碱盐酸盐	gen dang jian yan suan yan	0
 茛菪亭	gen dang ting	0
@@ -28005,7 +27960,7 @@ use_preset_vocabulary: false
 合成配电班	he cheng pei dian ban	0
 合成配电房	he cheng pei dian fang	0
 合成片区	he cheng pian qu	0
-合成气给水预热器	he cheng qi gei shui yu re qi	0
+合成气给水预热器	he cheng qi ji shui yu re qi	0
 合成水冷器	he cheng shui leng qi	0
 合成岩石	he cheng yan shi	0
 合成元素	he cheng yuan su	5
@@ -28206,7 +28161,6 @@ use_preset_vocabulary: false
 黄河制氧	huang he zhi yang	0
 黄糊精	huang hu jing	0
 磺化反应	huang hua fan ying	7
-磺化酞箐钴	huang hua tai jing gu	0
 磺基丙氨酸	huang ji bing an suan	0
 磺基橙	huang ji cheng	0
 磺基水杨酸	huang ji shui yang suan	0
@@ -28581,7 +28535,6 @@ use_preset_vocabulary: false
 甲基溴吡啶	jia ji xiu bi ding	0
 甲基溴化吡啶	jia ji xiu hua bi ding	0
 甲基烟酸	jia ji yan suan	0
-甲基菸酰胺	jia ji yan xian an	0
 甲基异丙基醚	jia ji yi bing ji mi	0
 甲基乙基苯酚	jia ji yi ji ben fen	0
 甲基乙基吡啶	jia ji yi ji bi ding	0
@@ -30802,7 +30755,7 @@ use_preset_vocabulary: false
 羟基蒽醌	qiang ji en kun	0
 羟基二苯胺	qiang ji er ben an	0
 羟基二苯甲酮	qiang ji er ben jia tong	0
-羟基脯氨酸	qiang ji fu an suan	1
+羟基脯氨酸	qiang ji pu an suan	1
 羟基汞苯甲酸	qiang ji gong ben jia suan	0
 羟基硅油	qiang ji gui you	0
 羟基化合物	qiang ji hua he wu	1
@@ -31775,7 +31728,6 @@ use_preset_vocabulary: false
 双硝基苯基脲	shuang xiao ji ben ji niao	0
 双溴联苯	shuang xiu lian ben	0
 双乙酸代邻氨	shuang yi suan dai lin an	0
-双乙酸代隣氨	shuang yi suan dai lin an	0
 双原子分子	shuang yuan zi fen zi	24
 水饱和酚	shui bao he fen	0
 水合阿脲	shui he a niao	0
@@ -32740,7 +32692,6 @@ use_preset_vocabulary: false
 橡胶粘合剂	xiang jiao nian he ji	0
 橡胶配合	xiang jiao pei he	0
 香蕉香精	xiang jiao xiang jing	12
-香茅醇霳	xiang mao chun long	0
 香茅烯	xiang mao xi	0
 香柠檬脑	xiang ning meng nao	0
 相容性试剂	xiang rong xing shi ji	0
@@ -34200,7 +34151,6 @@ use_preset_vocabulary: false
 愈创木奥	yu chuang mu ao	0
 愈创木粉	yu chuang mu fen	0
 预聚合	yu ju he	10
-箊酰胺	yu xian an	0
 预制分子筛	yu zhi fen zi shai	0
 原卟啉二钠盐	yuan bu lin er na yan	0
 远程结构	yuan cheng jie gou	0
@@ -34753,7 +34703,6 @@ use_preset_vocabulary: false
 桔黄	ju huang	12
 聚甲基丙烯酸甲脂	ju jia ji bing xi suan jia zhi	0
 聚甲基丙烯酰亚胺	ju jia ji bing xi xian ya an	0
-聚间苯二甲酸二烯丙脂	ju jian ben er jia suan er xi bing zhi	0
 聚邻苯二甲酸二烯丙酯	ju lin ben er jia suan er xi bing zhi	0
 聚氯丁烯	ju lv ding xi	0
 聚氯硫醚	ju lv liu mi	0
@@ -34996,7 +34945,6 @@ use_preset_vocabulary: false
 一甲基四氟代磷烷	yi jia ji si fu dai lin wan	0
 一硫化二钛	yi liu hua er tai	0
 一硫化二铟	yi liu hua er yin	0
-一硫化四甲基秋蓝姆	yi liu hua si jia ji qiu lan mu	0
 一氯醋酸乙酯	yi lv cu suan yi zhi	0
 一氯代磷酰铵	yi lv dai lin xian an	0
 一氯甲烷	yi lv jia wan	6
@@ -35285,7 +35233,6 @@ use_preset_vocabulary: false
 半胱胺	ban guang an	0
 斑蝥素	ban mao su	0
 半乳糖酸内酯	ban ru tang suan nei zhi	0
-薄膜树脂	bao mo shu zhi	0
 苯并蒽	ben bing en	0
 吡啶甲醛	bi ding jia quan	0
 苄磺隆	bian huang long	0
@@ -35314,7 +35261,6 @@ use_preset_vocabulary: false
 胆甾烯酮	dan zai xi tong	0
 导热油	dao re you	0
 灯黑	deng hei	6
-澄清度标准	deng qing du biao zhun	0
 敌百虫	di bai chong	5
 碲酸钠	di suan na	0
 地衣红	di yi hong	0
@@ -35323,7 +35269,6 @@ use_preset_vocabulary: false
 靛酚	dian fen	0
 丁基卡必醇	ding ji ka bi chun	0
 丁腈	ding jing	1
-镀鈀氧化铝	du ba yang hua lv	0
 对氨基苯砷酸	dui an ji ben shen suan	0
 锇酸	e suan	0
 二氨基嘌呤	er an ji piao ling	3
@@ -35360,7 +35305,6 @@ use_preset_vocabulary: false
 氟铌酸钾	fu ni suan jia	0
 甘露糖酸内酯	gan lu tang suan nei zhi	0
 刚玉粉	gang yu fen	0
-高梁红	gao liang hong	0
 锆砂	gao sha	0
 高香草酸	gao xiang cao suan	0
 镉棒	ge bang	0
@@ -35402,7 +35346,7 @@ use_preset_vocabulary: false
 精脒	jing mi	1
 酒石酸铵	jiu shi suan an	0
 巨豆	ju dou	0
-聚酰胺薄膜	ju xian an bao mo	0
+聚酰胺薄膜	ju xian an bo mo	0
 聚氧乙烯	ju yang yi xi	9
 开乐散	kai le san	0
 蒈烯	kai xi	0
@@ -35475,7 +35419,6 @@ use_preset_vocabulary: false
 农梦特	nong meng te	0
 偶氮胭脂红	ou dan yan zhi hong	0
 耦合剂	ou he ji	31
-帕拉薄膜	pa la bao mo	0
 派洛宁	pai luo ning	0
 硼酸铵	peng suan an	2
 平平加	ping ping jia	0
@@ -35571,7 +35514,6 @@ use_preset_vocabulary: false
 腺苷磷酸	xian gan lin suan	0
 腺苷脱氨酶	xian gan tuo an mei	4
 纤维二糖	xian wei er tang	3
-纤维素薄层板	xian wei su bao ceng ban	0
 小牛血清	xiao niu xue qing	3
 硝酸镝	xiao suan di	0
 硝酸钕	xiao suan nv	1
@@ -35594,7 +35536,6 @@ use_preset_vocabulary: false
 氧化铝同	yang hua lv tong	0
 洋蓟酸	yang ji suan	0
 阳离子树脂	yang li zi shu zhi	1
-氧氯化鋯	yang lv hua gao	0
 羊毛硫氨酸	yang mao liu an suan	0
 药敏纸片	yao min zhi pian	0
 夜蓝	ye lan	1

@@ -188,7 +188,7 @@ def load_cn_en_rules(
             errors.append(f"{source_path.name}:{idx}: expected 7 tab-separated columns, got {len(cols)}")
             continue
         action, word, prefix_en, cn_syls_raw, suffix_en, emit_lower_raw, note = cols
-        if action not in {"delete", "rename", "case_fix", "add"}:
+        if action not in {"delete", "rename", "case_fix", "add", "replace"}:
             errors.append(f"{source_path.name}:{idx}: invalid action '{action}'")
             continue
         if not word:
@@ -202,9 +202,9 @@ def load_cn_en_rules(
         if action == "case_fix" and (not prefix_en or not suffix_en):
             errors.append(f"{source_path.name}:{idx}: case_fix requires old prefix in prefix_en and new prefix in suffix_en")
             continue
-        if action == "add":
+        if action in {"add", "replace"}:
             if not syls:
-                errors.append(f"{source_path.name}:{idx}: add requires cn_syls")
+                errors.append(f"{source_path.name}:{idx}: {action} requires cn_syls")
                 continue
             if emit_lower_raw not in {"true", "false"}:
                 errors.append(f"{source_path.name}:{idx}: emit_lower must be 'true' or 'false', got '{emit_lower_raw}'")
@@ -246,6 +246,7 @@ def apply_cn_en_rules(
 
     deletes = {r.word: r for r in rules if r.action == "delete"}
     renames = {r.word: r for r in rules if r.action == "rename"}
+    replaces = {r.word: r for r in rules if r.action == "replace"}
     case_fixes = [r for r in rules if r.action == "case_fix"]
     additions = [r for r in rules if r.action == "add"]
 
@@ -290,6 +291,17 @@ def apply_cn_en_rules(
                 fix_cnt += 1
                 if rule_hits is not None:
                     rule_hits[r.rule_id] += 1
+            if w in replaces:
+                r = replaces[w]
+                for rep_code in encode_cn_en_codes(r.prefix_en, r.cn_syls, r.suffix_en, r.emit_lower, scheme):
+                    if (w, rep_code) not in seen:
+                        seen.add((w, rep_code))
+                        out_lines.append(f"{w}\t{rep_code}")
+                        if rep_code != code:
+                            fix_cnt += 1
+                if rule_hits is not None:
+                    rule_hits[r.rule_id] += 1
+                continue
             for r in case_fixes:
                 if w == r.word and code.startswith(r.prefix_en):
                     code = r.suffix_en + code[len(r.prefix_en):]

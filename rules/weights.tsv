@@ -131,7 +131,6 @@ cn_dicts/8105.dict.yaml	议	yi	1400	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	识	shi	2000	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	询	xun	220	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	详	xiang	400	R1/R2单字权重校准
-cn_dicts/8105.dict.yaml	車	che	1	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	車	ju	30	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	适	shi	1500	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	逍	xiao	150	R1/R2单字权重校准
@@ -597,7 +596,6 @@ cn_dicts/base.dict.yaml	蝙蝠侠	bian fu xia	1500	R1基础词库权重校准
 cn_dicts/base.dict.yaml	血块	xie kuai	50	R2基础词库权重校准
 cn_dicts/base.dict.yaml	血水	xie shui	100	R2基础词库权重校准
 cn_dicts/base.dict.yaml	血泡	xie pao	15	R2基础词库权重校准
-cn_dicts/base.dict.yaml	血泪	xie lei	70	R2基础词库权重校准
 cn_dicts/base.dict.yaml	血流	xie liu	100	R2基础词库权重校准
 cn_dicts/base.dict.yaml	血的	xie de	100	R2基础词库权重校准
 cn_dicts/base.dict.yaml	血赚	xie zhuan	40	R2基础词库权重校准
@@ -750,8 +748,6 @@ cn_dicts/ext.dict.yaml	手机和	*	<=10	R1/R2扩展词库权重封顶
 cn_dicts/ext.dict.yaml	技术成熟度	ji shu cheng shou du	<=6	R1/R2容错或非主流读音降权
 cn_dicts/ext.dict.yaml	投资须谨慎	tou zi xu jin shen	150	R2核心常用短语提权
 cn_dicts/ext.dict.yaml	担心的是	*	<=25	R1/R2扩展词库权重封顶
-cn_dicts/ext.dict.yaml	拿着微薄的工资	na zhe wei bao de gong zi	<=10	R1/R2容错或非主流读音降权
-cn_dicts/ext.dict.yaml	拿着微薄的薪水	na zhe wei bao de xin shui	<=10	R1/R2容错或非主流读音降权
 cn_dicts/ext.dict.yaml	支持和	*	<=50	R1/R2扩展词库权重封顶
 cn_dicts/ext.dict.yaml	放我出去	*	<=200	R1/R2扩展词库权重封顶
 cn_dicts/ext.dict.yaml	文件和	*	<=20	R1/R2扩展词库权重封顶
@@ -770,7 +766,6 @@ cn_dicts/ext.dict.yaml	此时是	*	<=15	R1/R2扩展词库权重封顶
 cn_dicts/ext.dict.yaml	比谁都	bi shui dou	<=30	R1/R2容错或非主流读音降权
 cn_dicts/ext.dict.yaml	比谁都清楚	bi shui dou qing chu	<=15	R1/R2容错或非主流读音降权
 cn_dicts/ext.dict.yaml	没有谁	mei you shui	<=15	R1/R2容错或非主流读音降权
-cn_dicts/ext.dict.yaml	没有谁对谁错	mei you shui dui shei cuo	<=10	R1/R2容错或非主流读音降权
 cn_dicts/ext.dict.yaml	没谁了	mei shui le	<=20	R1/R2容错或非主流读音降权
 cn_dicts/ext.dict.yaml	游戏了	*	<=100	R1/R2扩展词库权重封顶
 cn_dicts/ext.dict.yaml	熟悉了解	shou xi liao jie	<=6	R1/R2容错或非主流读音降权

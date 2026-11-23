@@ -477,7 +477,6 @@ Lite版本	Litebjbf
 Lite版本	litebjbf
 X教授	Xjcub
 X教授	xjcub
-papi酱	Papijd
 papi酱	papijd
 MAC地址	MACdivi
 MAC地址	macdivi

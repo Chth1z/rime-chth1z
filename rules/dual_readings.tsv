@@ -1,2 +1,9 @@
 # word	py1	w1	note1	py2	w2	note2	target_file	source
 # 说明：A 类双标准词条单点声明；引擎自动确保主词库保留双读音，并在 corrections.dict.yaml 为双方挂注释（主词库已存在读音自动 w=0）
+私钥	si yue	788	规范 sī yuè / 习惯 sī yào	si yao	788	习惯 sī yào / 规范 sī yuè	cn_dicts/base.dict.yaml	现汉第7版/全国科技名词委(L1/L2)
+公钥	gong yue	703	规范 gōng yuè / 习惯 gōng yào	gong yao	703	习惯 gōng yào / 规范 gōng yuè	cn_dicts/base.dict.yaml	现汉第7版/全国科技名词委(L1/L2)
+陈寅恪	chen yin ke	366	规范 陈寅恪(kè) / 旧读 陈寅恪(què)	chen yin que	366	旧读 陈寅恪(què) / 规范 陈寅恪(kè)	cn_dicts/base.dict.yaml	1985审音表/L3人名旧读
+甲壳	jia qiao	94	规范 jiǎ qiào / 常见 jiǎ ké	jia ke	94	常见 jiǎ ké / 规范 jiǎ qiào	cn_dicts/base.dict.yaml	现汉第7版/社会通行习惯(L1/L5)
+凤爪	feng zhao	126	规范 fèng zhǎo / 习惯 fèng zhuǎ	feng zhua	126	习惯 fèng zhuǎ / 规范 fèng zhǎo	cn_dicts/base.dict.yaml	现汉第7版/口语习惯(L1/L5)
+倒模	dao mu	36	规范 dào mú / 习惯 dào mó	dao mo	36	习惯 dào mó / 规范 dào mú	cn_dicts/base.dict.yaml	现汉第7版/行业习惯(L1/L5)
+珩磨	hang mo	4	规范 háng mó / 常见 héng mó	heng mo	4	常见 héng mó / 规范 háng mó	cn_dicts/base.dict.yaml	现汉第7版/机械术语(L1/L2)

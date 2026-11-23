@@ -477,7 +477,6 @@ Lite版本	Litebrbw
 Lite版本	litebrbw
 X教授	Xjbiz
 X教授	xjbiz
-papi酱	Papijg
 papi酱	papijg
 MAC地址	MACdiui
 MAC地址	macdiui

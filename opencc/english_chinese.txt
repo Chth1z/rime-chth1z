@@ -1,6 +1,6 @@
 a	a art.一;字母A
 a.m.	a.m. n.上午
-a/c	a/c n.往来帐户 往来:come-and-go;contact;intercourse n.往来帐户
+a/c	a/c n.往来账户
 aardvark	aardvark n.土猪
 aardwolf	aardwolf n.土狼
 aasvogel	aasvogel n.秃鹰之一种
@@ -3845,8 +3845,8 @@ bestowal	bestowal n.赠与;给与
 bestraddle	bestraddle vt.跨
 bestrew	bestrew vt.撒布;布满
 bestrewn	bestrewn vbl.撒布;布满
-bestrid	bestrid vbl.撒布;布满
-bestridden	bestridden vbl.撒布;布满
+bestrid	bestrid vbl.跨骑;跨坐;跨过
+bestridden	bestridden vbl.跨骑;跨坐;跨过
 bestride	bestride vt.跨骑;跨坐;跨过;控制
 bestrode	bestrode vbl.跨骑;跨坐;跨过
 bet	bet n.打赌;赌注 vt.vi.打赌 vbl.打赌
@@ -4556,7 +4556,7 @@ booklet	booklet n.小册子
 booklore	booklore n.书本知识
 bookmaker	bookmaker n.著作家;编辑者;赌博业者
 bookman	bookman n.学者;文人;书店
-bookmark	bookmark n.书签 n.书签
+bookmark	bookmark n.书签
 bookmarker	bookmarker n.书签
 bookplate	bookplate n.藏书标签
 books	books n.书籍
@@ -4676,7 +4676,7 @@ bounce	bounce n.跳;跳跃;弹力;撞击 vi.反跳;弹跳 vt.使跳回;使撞击
 bouncer	bouncer n.巨大的东西;巨人;跳跃的人;同类中最大者
 bouncing	bouncing a.跳跃的;巨大的;活泼的
 bouncy	bouncy a.快活的;精神饱满的;有弹性的;自大的
-bound	bound n.跃;回跳;范围;边界 a.受约束的;装订的;有义务的;关联的;被束缚的;准备去...的;便秘 的 vi.跳跃;弹起 vt.使跳;限止;邻接 a.装订的
+bound	bound n.跃;回跳;范围;边界 a.受约束的;装订的;有义务的;关联的;被束缚的;准备去...的;便秘的 vi.跳跃;弹起 vt.使跳;限止;邻接 a.装订的
 boundary	boundary n.边界;分界线
 bounden	bounden a.有责任的
 bounder	bounder n.粗鲁的人;暴发户
@@ -4842,7 +4842,7 @@ breadfruit	breadfruit n.面包树;面包树之果实
 breadstuff	breadstuff n.面包原料;面包类
 breadth	breadth n.宽度
 breadwinner	breadwinner n.负担家计的人
-break	break n.休息;中断;破裂处;绝交;破晓;突变 vt.打破;弄破;弄坏;破坏;违反;打断;削弱;放弃 vi.破碎;决裂;破晓;突变;变弱;暂停 n.分隔符 v.中断 n.DOS命令:确定是否检查Ctrl-C;以便决定是否中止正在执行的 DOS命令
+break	break n.休息;中断;破裂处;绝交;破晓;突变 vt.打破;弄破;弄坏;破坏;违反;打断;削弱;放弃 vi.破碎;决裂;破晓;突变;变弱;暂停 n.分隔符 v.中断 n.DOS命令:确定是否检查Ctrl-C;以便决定是否中止正在执行的DOS命令
 breakable	breakable a.会破的;破;易破的 n.易破的东西;易碎的东西
 breakage	breakage n.破坏;破损处;破损量
 breakboard	breakboard n.面包板;试验电路板
@@ -5119,7 +5119,7 @@ buffers	buffers n.[计算机]DOS命令:设置或改变当前联机的子目录
 buffet	buffet n.自助餐;小卖部;碗橱;殴打;冲击 vt.连续打;冲击;搏斗 vi.奋斗
 buffoon	buffoon n.小丑
 buffoonery	buffoonery n.打诨;滑稽
-bug	bug n.错误;虫;病菌;缺陷;窃听器;癖好;防盗报警器;双座小汽车;要人  vt.装防盗报警器;装窃听器;激怒 vi.捉臭虫;暴突 n.错误
+bug	bug n.错误;虫;病菌;缺陷;窃听器;癖好;防盗报警器;双座小汽车;要人 vt.装防盗报警器;装窃听器;激怒 vi.捉臭虫;暴突
 bug-eyed	bug-eyed a.暴眼的;瞪大眼的
 buggy	buggy a.多虫的 n.双轮单座的轻马车;四轮单座的马车
 bughouse	bughouse n.精神病院 a.疯狂的;发狂的
@@ -5505,7 +5505,7 @@ calix	calix n.杯;凹洼;杯状窝
 calk	calk vt.填...以防漏;使不漏水;装尖铁;摹描复制 n.尖铁
 caulker	caulker n.填塞船板隙缝的人或工具
 calker	calker n.填塞船板隙缝的人或工具
-call	call n.呼叫;访问;打电话;号召;召集;要求 vt.呼叫;召集;打电话 vi.叫喊;访问;叫牌 n.DOS命令:从当前运行的批文件中引用第二个批文件;然后返回 到原来的批文件
+call	call n.呼叫;访问;打电话;号召;召集;要求 vt.呼叫;召集;打电话 vi.叫喊;访问;叫牌 n.DOS命令:从当前运行的批文件中引用第二个批文件;然后返回到原来的批文件
 calla	calla n.水芋;荷兰海芋;
 callable	callable a.可召唤的;请求即付的;随时可偿还的
 call-back	call-back n.收回
@@ -6006,7 +6006,7 @@ casualty	casualty n.严重事故;伤亡;受害者
 casuist	casuist n.决疑者;诡辩家
 casuistry	casuistry n.决疑论;决疑法;诡辩
 casus	casus n.案例
-cat	cat n.猫;恶妇 vi.呕吐 n.计算机辅助教育;计算机辅助测试;计算机辅助翻译;计算机辅助 排版
+cat	cat n.猫;恶妇 vi.呕吐 n.计算机辅助教育;计算机辅助测试;计算机辅助翻译;计算机辅助排版
 cat-o'-nine-tails	cat-o'-nine-tails n.九尾鞭
 catabolism	catabolism n.异化作用;分解代谢
 catabolize	catabolize vt.vi.(使)异化;(使)发生分解代谢
@@ -6479,7 +6479,7 @@ chauvinism	chauvinism n.盲目的爱国心;沙文主义
 chauvinistic	chauvinistic a.盲目的爱国心的;沙文主义的
 chew	chew vt.vi.嚼;咀嚼 n.一满口;一口;咀嚼物
 chaw	chaw vt.vi.嚼;咀嚼 n.一满口;一口;咀嚼物
-chcp	chcp n.DOS命令:改变或显示当前的代码页;代码页包含着DOS使用 的指定语言的字符集
+chcp	chcp n.DOS命令:改变或显示当前的代码页;代码页包含着DOS使用的指定语言的字符集
 cheap	cheap a.便宜的;不值钱的;可鄙的 ad.便宜地
 cheap-jack	cheap-jack n.兜售便宜货的叫卖小贩
 cheapen	cheapen vt.vi.减价;跌价
@@ -6663,7 +6663,7 @@ chivalrous	chivalrous a.骑士的;勇敢的
 chivalrously	chivalrously ad.象骑士一样地
 chivalry	chivalry n.骑士精神;骑士制度
 chive	chive n.细香葱
-chkdsk	chkdsk n.DOS命令:分析;确定和有选择地修正硬盘的普通错误;并报告 磁盘的文件状态
+chkdsk	chkdsk n.DOS命令:分析;确定和有选择地修正硬盘的普通错误;并报告磁盘的文件状态
 chloral	chloral n.三氯乙荃;三氯乙二醇
 chloramphenicol	chloramphenicol n.一种抗生素
 chlorate	chlorate n.氯酸盐
@@ -6826,7 +6826,7 @@ cicatricle	cicatricle n.疤点;叶痕;脱离痕
 cicatrisation	cicatrisation n.长痕;愈合
 cicatrization	cicatrization n.长痕;愈合
 cicatrize	cicatrize vt.vi.生成瘢痕;愈合
-cicely	cicely n.没药科植物 NUM NUM
+cicely	cicely n.没药科植物
 cicerone	cicerone n.导游
 ciceroni	ciceroni n.导游
 cics	cics n.用户信息控制系统
@@ -6875,7 +6875,7 @@ circuits	circuits n.电路
 circuity	circuity n.迂曲;迂回;迂阔
 circular	circular a.圆形的;循环的;周围的
 circularity	circularity n.圆;圈状;环状
-circularize	circularize vt.递传单;通知;分发民意测验单;制成传单 NUM NUM
+circularize	circularize vt.递传单;通知;分发民意测验单;制成传单
 circularly	circularly ad.圆地;圆形地;循环地
 circulate	circulate vi.vt.(使)流通;使)循环;(使)传播
 circulated	circulated adj.流通的
@@ -6888,7 +6888,7 @@ circumambience	circumambience n.围绕;环绕;周围
 circumambient	circumambient a.围绕的;周围的
 circumambulate	circumambulate vt.vi.绕行;巡行;婉转打探
 circumbendibus	circumbendibus n.兜圈子的说法;委婉
-circumference	circumference n.圆周;周围;胸围 NUM NUM
+circumference	circumference n.圆周;周围;胸围
 circumferential	circumferential a.圆周的
 circumfluence	circumfluence n.周流;环流;回流
 circumlocution	circumlocution n.婉转曲折的说法
@@ -6934,7 +6934,7 @@ cithara	cithara n.类似竖琴的乐器
 cithern	cithern n.类似吉他的乐器
 citied	citied a.都市的;似都市的;有都市的
 citified	citified a.都市风的;有都市气概的
-citify	citify vt.使都市化 NUM NUM
+citify	citify vt.使都市化
 citing	citing vbl.引用;引证;举例
 citizen	citizen n.市民;公民
 citizenry	citizenry n.市民
@@ -7075,7 +7075,7 @@ cleave	cleave vt.劈开;分开 vi.劈开;分开;粘着;依恋
 cleaver	cleaver n.切肉刀;切割者;突出的崖
 clef	clef n.音部记号
 cleft	cleft n.裂缝;裂口 a.劈开的 vbl.劈开;分开
-clematis	clematis n.铁线莲 NUM NUM
+clematis	clematis n.铁线莲
 clemency	clemency n.仁慈;宽厚;仁厚
 clement	clement a.仁慈的;宽厚的;宽大的
 clench	clench n.牢牢抓住;钉紧;敲弯的钉头 vt.紧握;牢牢地抓住;确定;敲弯 vi.握紧;钉牢
@@ -7083,7 +7083,7 @@ clergy	clergy n.圣职者;牧师;僧侣;神职人员
 clergyman	clergyman n.牧师
 clergywoman	clergywoman n.女牧师;牧师妻
 clerical	clerical n.牧师 a.书记的;事务上的;抄写员的;牧师的
-clerk	clerk n.办事员;行员;书记 vi.当店员 NUM NUM
+clerk	clerk n.办事员;行员;书记 vi.当店员
 clerkly	clerkly a.书记的;书记似的;善写的
 clerkship	clerkship n.书记的职位
 clever	clever a.聪明的;精明的
@@ -7111,7 +7111,7 @@ climatology	climatology n.气候学;风土学
 climatron	climatron n.人工气候室
 climax	climax n.高潮;极点;层进法 vi.vt.(使)达到顶点;(使)达到高潮
 climb	climb vi.vt.攀登;上升;爬 n.攀登;爬升
-climbable	climbable a.爬得上去的 NUM NUM
+climbable	climbable a.爬得上去的
 climber	climber n.登山者
 climbing	climbing a.攀缘而登的;上升的 n.攀登
 clime	clime n.地方;气候;风土
@@ -7168,7 +7168,7 @@ closely	closely ad.接近地
 closemouthed	closemouthed a.寡言的;沉默的;紧嘴的
 closer	closer a.靠近的
 closest	closest a.最靠近的
-closet	closet n.壁橱;小室 a.秘密的;空论的 vt.关入小室 NUM NUM
+closet	closet n.壁橱;小室 a.秘密的;空论的 vt.关入小室
 closing	closing n.结束 a.结束的
 closure	closure n.关闭 vt.使终止
 clot	clot n.凝块;群 vt.vi.(使)凝结;(使)聚集
@@ -7197,7 +7197,7 @@ cloudlet	cloudlet n.微云;朵云;片云
 clouds	clouds n.云
 cloudy	cloudy a.多云的;有愁容的;云的;浑浊的
 clout	clout n.破布 vt.打补钉
-clove	clove n.丁香 vbl.cleave的过去式;劈开 NUM NUM
+clove	clove n.丁香 vbl.cleave的过去式;劈开
 clover	clover n.苜蓿
 cloverleaf	cloverleaf n.四叶苜蓿形的立体道路交叉点
 cloves	cloves n.丁香
@@ -7240,11 +7240,11 @@ coaction	coaction n.合作;强迫
 coadjutor	coadjutor n.助手;副员;副主教
 coadunate	coadunate a.密结的;叶茎连生的
 coagent	coagent n.合作者;共事者;帮手
-coagulant	coagulant n.凝结剂 NUM NUM
+coagulant	coagulant n.凝结剂
 coagulate	coagulate vt.vi.凝结 a.凝结的
-coagulation	coagulation n.凝结;凝结物 NUM NUM
+coagulation	coagulation n.凝结;凝结物
 coagulative	coagulative a.凝结物;凝固物
-coagulum	coagulum n.凝结物;凝固物 NUM NUM
+coagulum	coagulum n.凝结物;凝固物
 coal	coal n.煤;木炭 vt.vi.加煤
 coalbox	coalbox n.煤箱;发黑烟的炸弹
 coaler	coaler n.运煤船;运煤铁路;煤商
@@ -7338,7 +7338,7 @@ coda	coda n.终结句;乐章结尾部;完结部
 codan	codan n.载频控制干扰抑制器
 coddle	coddle vt.娇养;溺爱;煮蛋 n.娇生惯养的人;宝贝子弟;娇养小孩的人
 code	code n.码;密码;法规;法典 vt.把...编码;制成法典 n.代码
-coded	coded pp.编码 NUM NUM
+coded	coded pp.编码
 coder	coder n.编码器
 codes	codes n.码
 codex	codex n.古抄本;法律;规则;药典
@@ -7348,10 +7348,10 @@ codicil	codicil n.遗嘱的附录;附录
 codification	codification n.法典编纂;法律成文化
 codify	codify vt.编成法典;使法律成文化
 coding	coding n.译码
-codling	codling n.未熟的小苹果;幼鳕 NUM NUM
+codling	codling n.未熟的小苹果;幼鳕
 codpiece	codpiece n.男裤前面的褶
-co-editor	co-editor n.共编者 NUM NUM
-coeditor	coeditor n.共编者 NUM NUM
+co-editor	co-editor n.共编者
+coeditor	coeditor n.共编者
 coeducation	coeducation n.男女同校
 coefficient	coefficient n.系数
 coelacanth	coelacanth n.腔棘鱼 a.腔棘鱼类的
@@ -7360,7 +7360,7 @@ coeliac	coeliac a.腹的;下腹的
 coequal	coequal a.同等的;同权的 n.同等;同权
 coequality	coequality n.同等;同权;同地位
 coerce	coerce vt.强制;强迫
-coercible	coercible a.可强迫的;可威压的 NUM NUM
+coercible	coercible a.可强迫的;可威压的
 coercing	coercing vbl.强迫
 coercion	coercion n.强迫;威压;高压政治
 coercive	coercive a.强制的;强压的;强迫的
@@ -7370,7 +7370,7 @@ coevality	coevality n.同时代
 coexist	coexist vi.共存
 coexistence	coexistence n.共存;两立;并立
 coexistent	coexistent a.同时共存的;同时代的
-coextensive	coextensive a.伸及同时间的;扩及同空间的;同延的 NUM NUM
+coextensive	coextensive a.伸及同时间的;扩及同空间的;同延的
 cofactor	cofactor n.余因子
 cofacter	cofacter n.余因子
 coffee	coffee n.咖啡;咖啡色
@@ -7406,7 +7406,7 @@ cohort	cohort n.步兵大队;军队;一群
 coif	coif n.头巾 vt.覆以头巾;戴紧帽
 coign	coign n.突出之角;隅;隅石
 coil	coil n.卷;环绕;骚动 vt.盘绕;卷
-coin	coin n.硬币;金钱;货币 vt.铸造;创造;杜撰 NUM NUM
+coin	coin n.硬币;金钱;货币 vt.铸造;创造;杜撰
 coinage	coinage n.造币
 coincide	coincide vi.一致;符合
 coincidence	coincidence n.巧合;同时发生
@@ -7550,7 +7550,7 @@ columned	columned a.圆柱状的;立有圆柱的
 columnist	columnist n.专栏作家
 colure	colure n.分至圈;分至经线
 com	com n.DOS文件扩展名:可执行程序
-coma	coma n.昏迷;麻木;慧发 NUM NUM
+coma	coma n.昏迷;麻木;慧发
 comatose	comatose a.昏睡的;昏睡状态的
 comb	comb n.头梳;鸡冠 vt.梳头发;梳毛 vi.(浪)涌起
 combat	combat n.争斗;战斗 vi.奋斗;争斗 vt.与...战斗;反对
@@ -7561,7 +7561,7 @@ combination	combination n.组合;合并;联合 n.组合图
 combine	combine vt.vi.(使)联合;(使)结合 n.集团;联合收割机
 combiner	combiner n.组合器
 combing	combing n.梳毛;梳弃的毛;发
-combo	combo n.小型爵士乐团 NUM NUM
+combo	combo n.小型爵士乐团
 combustibility	combustibility n.燃烧性;可燃性
 combustible	combustible a.易燃的;燃烧性的;易动激情的 n.燃质物;可燃物
 combustion	combustion n.燃烧;氧化
@@ -7591,7 +7591,7 @@ comfy	comfy a.=comfortable
 comic	comic n.连环图画;喜剧演员;杂耍滑稽演员 a.滑稽的;有趣的;喜剧的
 comical	comical a.好笑的;滑稽的
 coming	coming n.来临 a.就要来的;将来的
-comity	comity n.友谊;礼让 NUM NUM
+comity	comity n.友谊;礼让
 comma	comma n.逗点;逗号
 command	command n.命令;指挥;控制;部队;司令部 vt.vi.命令;指挥;支配 n.DOS命令:引用辅助命令处理器
 commandant	commandant n.司令官
@@ -7681,7 +7681,7 @@ commutative	commutative a.互相的;交替的;交换的
 commutator	commutator n.换向器;整流器
 commute	commute vt.交换;改换支付方法;减轻 vi.补偿;经常来往
 commuter	commuter n.通勤者;经常往返者
-comp	comp n.DOS命令:测试两个或多个文件;以便确定它们是否相 同
+comp	comp n.DOS命令:测试两个或多个文件;以便确定它们是否相同
 compact	compact a.紧凑的;紧密的;简洁的 vt.使装满;使简洁 vi.变紧密
 compaction	compaction n.压缩;精简;简化;浓缩
 compactly	compactly ad.细密地;简洁地
@@ -7747,7 +7747,7 @@ complementarity	complementarity n.补充;补足
 complementary	complementary a.补充的;补足的
 complementing	complementing n.求补
 complete	complete a.完全的;熟练的;完成的 vt.完成;完工;使圆满
-completed	completed adj.完成 NUM NUM
+completed	completed adj.完成
 completely	completely ad.完全地;十分地;全然
 completeness	completeness n.完全
 completion	completion n.完成
@@ -7757,7 +7757,7 @@ complexion	complexion n.肤色;情况;局面
 complexioned	complexioned a.脸色...的
 complexity	complexity n.复杂;复杂性;复杂的事物
 compliance	compliance n.承诺;顺从;屈从
-compliant	compliant a.顺从的;适应的 NUM NUM
+compliant	compliant a.顺从的;适应的
 complicacy	complicacy n.复杂性
 complicate	complicate vt.弄复杂;使错综;使起纠纷 vi.变复杂
 complicated	complicated a.复杂的
@@ -7861,7 +7861,7 @@ concentric	concentric a.同中心的;集中性的
 concentricity	concentricity n.同中心;集中;集中性
 concept	concept n.观念;概念
 conception	conception n.观念;概念
-conceptive	conceptive a.概念作用的;有思考力的 NUM NUM
+conceptive	conceptive a.概念作用的;有思考力的
 conceptual	conceptual a.概念上的
 conceptualism	conceptualism n.概念论
 conceptually	conceptually ad.概念地
@@ -7895,7 +7895,7 @@ concoction	concoction n.混合;调合;调合物
 concomitant	concomitant a.相伴;伴随的;共存的 n.伴随物
 concord	concord n.一致;和睦;和睦的例子
 concordance	concordance n.调和;一致;用语索引
-concordant	concordant a.和谐的;相调和的;一致的 NUM NUM
+concordant	concordant a.和谐的;相调和的;一致的
 concourse	concourse n.集合;合流;群众
 concrescence	concrescence n.愈合;合生
 concrete	concrete n.水泥;混凝土 a.具体的;实在的;水泥的 vt.vi.(使)凝结;(使)结合
@@ -7910,7 +7910,7 @@ concupiscent	concupiscent a.沉迷色欲的;好色的;贪欲的
 concur	concur vi.意见相同;一致;互助
 concurrence	concurrence n.赞同;意见一致;协力
 concurrent	concurrent n.同时发生的事件 a.同时发生的;一致的
-concuss	concuss vt.震动;恐吓 NUM NUM
+concuss	concuss vt.震动;恐吓
 concussion	concussion n.激动;冲击;震荡
 concussive	concussive a.给与冲击的;震荡性的
 condemn	condemn vt.判刑;责备;处刑;声讨;谴责
@@ -7931,7 +7931,7 @@ condescension	condescension n.谦虚;硬要人家领情的态度
 condign	condign a.相当的;适宜的
 condiment	condiment n.调味品
 condiments	condiments n.香料
-condition	condition n.情况;条件 vt.以...为条件;决定;支配;使适应 NUM NUM
+condition	condition n.情况;条件 vt.以...为条件;决定;支配;使适应
 conditional	conditional a.有条件的;假定的
 conditionality	conditionality n.受限制性;制约性
 conditionally	conditionally ad.有条件地
@@ -7939,7 +7939,7 @@ conditioned	conditioned a.有条件的;习惯于...的
 conditioner	conditioner n.润丝精
 conditioning	conditioning n.调节
 condolatory	condolatory a.吊唁的;慰问的
-condole	condole vi.哀悼;致悼词;慰问;吊唁 NUM NUM
+condole	condole vi.哀悼;致悼词;慰问;吊唁
 condolence	condolence n.哀悼;吊唁
 condom	condom n.避孕套
 condominium	condominium n.共同统治
@@ -8072,7 +8072,7 @@ conicoid	conicoid n.二次曲面
 conics	conics n.圆锥曲线论;锥线论
 conifer	conifer n.松类;针叶树
 coniferous	coniferous a.松类的;结球果的
-conj	conj n.[缩] 连接词
+conj	conj n.[缩]连接词
 conjectural	conjectural a.推测的;好推测的
 conjecture	conjecture n.推测;猜想;揣摩 vt.vi.推测;猜想;揣摩
 conjoin	conjoin vt.vi.(使)结合;(使)连结;(使)联合
@@ -8100,7 +8100,7 @@ connection	connection n.连接;关系;前后关系
 connective	connective a.连接着;连接的 n.连接物;连接词
 connectivity	connectivity n.连接
 connector	connector n.连结者;连结手;连结物 n.连接口
-conner	conner n.Conner硬盘 NUM NUM
+conner	conner n.Conner硬盘
 connexion	connexion n.连接;团体;连贯性客户;亲戚
 conniption	conniption n.歇斯底里
 connivance	connivance n.默许;纵容;假装不见
@@ -8170,7 +8170,7 @@ consolable	consolable a.可安慰的;可藉慰的
 consolation	consolation n.安慰;令人安慰的事物
 consolatory	consolatory a.慰问的;可藉慰的
 console	console vt.安慰;藉慰 n.控制台 v.控制台
-consolidate	consolidate vt.巩固;使联合;统一 vi.巩固 NUM NUM
+consolidate	consolidate vt.巩固;使联合;统一 vi.巩固
 consolidation	consolidation n.巩固;团结;合并;加强
 consoling	consoling a.可安慰的
 consols	consols n.统一公债
@@ -8399,7 +8399,7 @@ conversion	conversion n.转变;改宗;换位 n.转换
 convert	convert n.皈依者;改宗者 vt.使改变信仰;兑换;倒置 vi.皈依 n.转换
 convertibility	convertibility n.可改变性;可变换;可兑换
 convertible	convertible a.可改变的;可交换;同意义的 n.有活动篷的汽车
-convertor	convertor n.变流器 NUM NUM
+convertor	convertor n.变流器
 convex	convex a.中凸的;凸圆的;凸面的 n.凸状;凸面体;凸透镜
 convexity	convexity n.中凸;凸状;凸面
 convexo-concave	convexo-concave a.半凸半凹面的
@@ -8452,7 +8452,7 @@ cooncan	cooncan n.一种牌戏
 coonhound	coonhound n.猎浣熊的猎犬
 coonskin	coonskin n.浣熊的皮
 coop	coop n.小屋;鸡笼;捕鱼笼 vt.关进鸡舍;关进
-cooper	cooper n.制桶工人 vt.vi.制桶 NUM NUM
+cooper	cooper n.制桶工人 vt.vi.制桶
 cooperate	cooperate vi.合作;协力;配合
 cooperation	cooperation n.合作;协力;合作社
 cooperative	cooperative a.合作的;协力的
@@ -8569,7 +8569,7 @@ cornucopia	cornucopia n.聚宝盆
 cornucopian	cornucopian a.丰富的;丰饶的
 corny	corny a.谷类的;带乡下味的;粗野的;有鸡眼的
 corolla	corolla n.花冠
-corollary	corollary n.系;推论;必然的结果 NUM NUM
+corollary	corollary n.系;推论;必然的结果
 coronach	coronach n.葬歌;挽歌
 coronal	coronal n.冠;花冠;冠状物 a.冠的;花冠的;头颅的
 coronary	coronary a.冠的;花冠的;冠状的
@@ -8584,7 +8584,7 @@ corporate	corporate n.组织
 corporation	corporation n.公司;合作;法人团体
 corporative	corporative a.法人的
 corporeal	corporeal a.肉体的;有形的;物质的
-corporeality	corporeality n.有形的;具体性;肉体的存在 NUM NUM
+corporeality	corporeality n.有形的;具体性;肉体的存在
 corporeity	corporeity n.形体的存在;体质;身体
 corps	corps n.军团;队;团;兵种
 corpse	corpse n.尸体
@@ -8671,7 +8671,7 @@ cosmopolis	cosmopolis n.国际都市
 cosmopolitan	cosmopolitan n.四海一家的
 cosmopolitain	cosmopolitain n.四海一家的
 cosmopolitical	cosmopolitical a.世界性政策的
-cosmorama	cosmorama n.世界风俗景物的西洋镜;其照片展览 NUM NUM
+cosmorama	cosmorama n.世界风俗景物的西洋镜;其照片展览
 cosponsor	cosponsor n.共同赞助者
 cosset	cosset n.亲手饲养的小动物;宠儿 vt.宠爱;珍爱;溺爱
 cost	cost n.代价;价值;费用 vi.花费 vt.使失去;值;需要;使花费
@@ -8695,7 +8695,7 @@ cotidal	cotidal a.同潮的
 cotoneaster	cotoneaster n.车轮棠
 cotta	cotta n.短白衣
 cottage	cottage n.小屋;茅舍
-cottier	cottier n.小屋住者;农夫;佃农 NUM NUM
+cottier	cottier n.小屋住者;农夫;佃农
 cotton	cotton n.棉花 vi.和谐;有好感;理解
 cotton-padded	cotton-padded a.填棉絮的
 cottonseed	cottonseed n.棉籽
@@ -8841,7 +8841,7 @@ cowry	cowry n.宝贝;贝壳
 cowshed	cowshed n.牛房;牛舍
 cowskin	cowskin n.牛皮;牛皮鞭
 cowslip	cowslip n.西洋樱草;猿猴草的一种
-coxcomb	coxcomb n.花花公子;好打扮的人;鸡冠花 NUM NUM
+coxcomb	coxcomb n.花花公子;好打扮的人;鸡冠花
 coxcombry	coxcombry n.虚浮;浮夸;爱打扮
 coxswain	coxswain n.艇长;舵手
 coxy	coxy a.骄傲的
@@ -8926,7 +8926,7 @@ crashing	crashing a.绝对的;彻底的;非凡的
 crass	crass a.粗鲁的;愚钝的;粗糙的;非常的
 crassitude	crassitude n.粗大;粗糙;愚钝
 crate	crate n.板条箱;篓子
-crater	crater n.火山口;喷火口;弹坑 NUM NUM
+crater	crater n.火山口;喷火口;弹坑
 crateriform	crateriform a.喷火口状的;漏斗状的;似火山口的
 cravat	cravat n.领带;围巾;三角绷带
 crave	crave vt.vi.渴望;热望;恳求
@@ -8991,8 +8991,8 @@ cremation	cremation n.烧;火葬
 cremator	cremator n.火葬者;焚尸人;焚尸炉
 crematory	crematory n.火葬场;垃圾场 a.火葬的
 crenation	crenation n.圆锯齿状
-crenature	crenature n.圆锯齿 NUM NUM
-crenelet	crenelet n.小枪眼 NUM NUM
+crenature	crenature n.圆锯齿
+crenelet	crenelet n.小枪眼
 creosol	creosol n.木焦油醇
 creosote	creosote n.杂芬油;木馏油;碳酸 vt.用木馏油处理
 crepe	crepe n.绉绸;假胡子
@@ -9029,7 +9029,7 @@ cricket	cricket n.蟋蟀;板球
 cricketer	cricketer n.板球队员;玩板球者
 crier	crier n.喊叫者;哭泣者;传布公告的
 crikey	crikey int.唉呀!
-crime	crime n.犯罪;罪行;罪恶 NUM NUM
+crime	crime n.犯罪;罪行;罪恶
 criminal	criminal n.罪犯;犯人;刑事 a.犯了罪的;罪的;有罪的
 criminality	criminality n.犯罪;有罪;犯罪行为
 criminate	criminate vt.使负罪;定罪;责备
@@ -9186,7 +9186,7 @@ crutch	crutch n.拐杖;支撑;帮助 vt.支撑
 crutched	crutched a.用拐杖支持的;有支柱的;有丁字形柄的
 crux	crux n.十字架形;关键;难题
 cruzeiro	cruzeiro n.巴西的货币单位
-cry	cry n.叫声;哭声;大叫 vi.哭;叫;喊 vt.叫喊;大声说;哭出 NUM NUM
+cry	cry n.叫声;哭声;大叫 vi.哭;叫;喊 vt.叫喊;大声说;哭出
 cry-baby	cry-baby n.爱哭的人;哭诉宝;软弱容易哭的人
 crybaby	crybaby n.爱哭的人;哭诉宝;软弱容易哭的人
 crying	crying a.叫喊的;嚎哭的;显著的
@@ -9242,8 +9242,8 @@ cucurbit	cucurbit n.葫芦
 cud	cud n.反刍的食物
 cudbear	cudbear n.一种苔藓;紫色染料
 cuddle	cuddle n.搂抱;拥抱 vt.抚抱;抱着睡;拥抱 vi.紧贴着身子睡;蜷缩着睡
-cuddy	cuddy n.小船室;船室兼厨房;小房间 NUM NUM
-cudgel	cudgel n.棍棒 vt.用棍棒打 NUM NUM
+cuddy	cuddy n.小船室;船室兼厨房;小房间
+cudgel	cudgel n.棍棒 vt.用棍棒打
 cudweed	cudweed n.鼠麴草
 cue	cue n.开端;线索;开始;长队;发辫 vt.编发辫
 cueist	cueist n.撞球家;玩撞球的人
@@ -9257,7 +9257,7 @@ cull	cull vt.采;摘;拣 n.拣开的东西;被排斥出来的动物
 cullet	cullet n.碎玻璃
 cully	cully n.呆子;傻瓜;伙伴儿
 culm	culm n.草秆;茎;竹茎;灰煤
-culminate	culminate vi.到绝顶;达于极点;达到高潮 vt.使到绝顶;使达到高潮 NUM NUM
+culminate	culminate vi.到绝顶;达于极点;达到高潮 vt.使到绝顶;使达到高潮
 culminating	culminating a.达绝顶的;终极的;最后的
 culmination	culmination n.顶点;极点;最高点
 culpability	culpability n.可责;有罪性;有过失
@@ -9305,7 +9305,7 @@ cupping	cupping n.杯吸法;拔火罐
 cup-like	cup-like a.杯状的;凹的;满是小坑的
 cuppy	cuppy a.杯状的;凹的;满是小坑的
 cupreous	cupreous a.铜的;含铜的;铜色的
-cupric	cupric a.二价铜的 NUM NUM
+cupric	cupric a.二价铜的
 cupriferous	cupriferous a.含铜的
 cuprite	cuprite n.赤铜矿
 cupronickel	cupronickel n.白铜
@@ -9332,7 +9332,7 @@ cure	cure n.治疗;治愈;治疗法;怪人 vt.治疗;治愈;改正;腌制;加工
 cureless	cureless a.医不好的;无法医治的;不能救济的
 curette	curette n.刮匙;耳挖 vt.用刮匙刮
 curfew	curfew n.晚钟;打晚钟时刻;晚钟;宵禁
-curia	curia n.地区元老院;元老院;法庭 NUM NUM
+curia	curia n.地区元老院;元老院;法庭
 curial	curial a.curia的
 curing	curing vbl.治疗
 curio	curio n.古董
@@ -9388,9 +9388,9 @@ curvy	curvy a.弯曲的;曲线美的
 cushat	cushat n.(Scottish)班鸠
 cushion	cushion n.垫子;橡皮软垫 vt.加垫褥;缓冲;掩盖
 cushy	cushy a.容易的;轻松而容易赚钱的
-cusp	cusp n.尖头;尖端;尖头 NUM NUM
+cusp	cusp n.尖头;尖端;尖头
 cuspid	cuspid n.犬齿;牙
-cuspidal	cuspidal a.尖的;尖头的 NUM NUM
+cuspidal	cuspidal a.尖的;尖头的
 cuspidor	cuspidor n.痰盂
 cuss	cuss n.诅咒;坏话;家伙 vt.vi.乱骂;咒骂
 cussword	cussword n.下流的话;咒骂的话
@@ -9406,7 +9406,7 @@ customhouse	customhouse n.海关
 customise	customise 计算机]用户化
 customize	customize 计算机]用户化
 customs	customs n.关税(风俗)
-cut	cut n.切口;割伤;降低;切;割;砍;削;伤口;削减;缩短;删节;近路 a.经切割的;缩减的 vt.切;割;减少;刺痛;开辟;雕刻;削减;删节;缩短;停止;排斥;切 断;关;不理睬;显出 vi.切;割;砍;刺痛;相交;抄近路;剪辑 vbl.cut的过去式和过去分词 v.剪切
+cut	cut n.切口;割伤;降低;切;割;砍;削;伤口;削减;缩短;删节;近路 a.经切割的;缩减的 vt.切;割;减少;刺痛;开辟;雕刻;削减;删节;缩短;停止;排斥;切断;关;不理睬;显出 vi.切;割;砍;刺痛;相交;抄近路;剪辑 vbl.cut的过去式和过去分词 v.剪切
 cutaneous	cutaneous a.皮肤的;侵犯皮肤的
 cutaway	cutaway a.下摆裁成圆角的;把一部分切掉的 n.下摆裁成圆角的常礼服
 cutback	cutback n.重映;减少;剪修新芽
@@ -9578,7 +9578,7 @@ dandelion	dandelion n.蒲公英
 dander	dander n.生气;头皮屑
 dandified	dandified a.打扮得华丽的
 dandify	dandify vt.打扮得时髦
-dandle	dandle vt.抱着逗弄;宠;娇养 NUM NUM
+dandle	dandle vt.抱着逗弄;宠;娇养
 dandruff	dandruff n.头皮屑
 dandy	dandy n.花花公子 a.服装华丽的;极好的
 dandyism	dandyism n.喜好修饰;时髦
@@ -9592,7 +9592,7 @@ dangle	dangle vi.摇晃地悬挂着;追求 vt.使摇晃地悬挂 n.摇晃地悬�
 dangler	dangler n.吊着晃来晃去的东西;耳环;追逐女人的男人
 Daniel	Daniel n.男子名;丹尼尔;丹尼尔书
 Danish	Danish n.丹麦文 a.丹麦的;丹麦人的;丹麦文的
-dank	dank a.透水的;潮湿的 NUM NUM
+dank	dank a.透水的;潮湿的
 danseuse	danseuse n.女芭蕾舞演员
 dantean	dantean n.但丁研究家;但丁崇拜者 a.但丁的
 Danube	Danube n.多瑙河
@@ -9663,7 +9663,7 @@ davy	davy n.David的昵称 n.宣誓书
 daw	daw n.穴鸟
 dawdle	dawdle vi.vt.游手好闲;混日子
 dawdler	dawdler n.游手好闲的人;懒人
-dawn	dawn n.破晓;黎明 vi.破晓 NUM NUM
+dawn	dawn n.破晓;黎明 vi.破晓
 dawning	dawning n.晓;黎明;东
 day	day n.天;日子;白天;工作日
 daybed	daybed n.坐卧两用长椅
@@ -9680,7 +9680,7 @@ daystart	daystart n.一天开始;晨间
 daytime	daytime n.白天;日间
 daze	daze vt.使茫然;发昏;使眼花缭乱 n.迷乱;眼花缭乱
 dazed	dazed a.头昏的;眼花的
-dazzle	dazzle vt.vi.(使)眼花;眩耀 n.耀眼 NUM NUM
+dazzle	dazzle vt.vi.(使)眼花;眩耀 n.耀眼
 dazzled	dazzled adj.眼花撩乱
 dazzling	dazzling a.眼花缭乱的;耀眼的
 dB	dB n.分贝decibel的简写
@@ -9707,7 +9707,7 @@ deadline	deadline n.死线;原稿截止时间;截止期限
 deadliness	deadliness n.致命的
 deadlock	deadlock n.僵局;停顿 vt.vi.(使)停顿;(使)相持不下
 deadly	deadly a.致命的;致死的 ad.非常地;如死一般地
-deadness	deadness n.死;死一样的状态;无生气 NUM NUM
+deadness	deadness n.死;死一样的状态;无生气
 deadpan	deadpan a.无表情的脸
 deadweight	deadweight n.死重;重货
 deadwood	deadwood n.枯枝;朽木;碎屑
@@ -9734,14 +9734,14 @@ death	death n.死亡
 deathbed	deathbed n.临死所卧之床;临终之时
 deathblow	deathblow n.致命的打击
 deathday	deathday n.忌辰
-deathful	deathful a.致命的;象死一样的;该死的 NUM NUM
+deathful	deathful a.致命的;象死一样的;该死的
 deathlike	deathlike a.死了一样的;象死人的
 deathly	deathly a.死一般的 ad.象死一样地
 deathtrap	deathtrap n.危险的地方;死地;危险的建筑物
-deathwatch	deathwatch n.临终看护 NUM NUM
+deathwatch	deathwatch n.临终看护
 Deawoo	Deawoo n.大宇(韩国公司)
 deb	deb n.初上舞台的人;初出社交界的女孩
-debacle	debacle n.崩溃;溃裂 NUM NUM
+debacle	debacle n.崩溃;溃裂
 debar	debar vt.排除;防止;禁止
 debark	debark vt.使登陆;起岸 vi.登陆
 debarkation	debarkation n.登陆;起岸
@@ -9774,7 +9774,7 @@ debugger	debugger n.除错器;调试程序
 debugging	debugging n.调试
 debunching	debunching n.散群作用
 debunk	debunk vt.揭穿;暴露;拆穿假面具
-debut	debut n.初次登场 NUM NUM
+debut	debut n.初次登场
 debutant	debutant n.初次登台的人;初进社交界的人
 dec	dec n.十二月 n.减少 n.美国数字电子公司
 decadal	decadal a.十的
@@ -9905,7 +9905,7 @@ decorticate	decorticate vt.剥皮
 decorum	decorum n.端正;礼貌合宜;礼仪
 decoupage	decoupage n.剪纸装饰
 decoupling	decoupling n.去耦
-decoy	decoy n.圈套;诱骗 vt.诱骗 NUM NUM
+decoy	decoy n.圈套;诱骗 vt.诱骗
 decrease	decrease n.减少;减少之量 vi.vt.减少
 decreasing	decreasing adj.减少的
 decreasingly	decreasingly ad.渐渐减少地;渐减地
@@ -9916,7 +9916,7 @@ decrepitate	decrepitate vi.发出响声地烧烤 vt.烧得发出轻脆声响
 decrepitude	decrepitude n.衰老;老耄;老朽
 decrescent	decrescent a.渐减的;变小;缺下去
 decrial	decrial n.责难;诽谤
-decrier	decrier n.责难的人 NUM NUM
+decrier	decrier n.责难的人
 decry	decry vt.责难;诽谤;诋毁
 decrypt	decrypt v.解密;将密码还原成明文
 decryption	decryption n.解密;译码;解码
@@ -9970,11 +9970,11 @@ defecate	defecate vt.除去污物;澄清;净清 vi.澄清;排便
 defecation	defecation n.澄清;净化;排便
 defect	defect n.缺点
 defection	defection n.背叛;脱党;离会
-defective	defective a.有缺陷的;欠缺的 n.有缺陷的人;不完全变化动词 NUM NUM
+defective	defective a.有缺陷的;欠缺的 n.有缺陷的人;不完全变化动词
 defector	defector n.背叛者;叛离者
 defence	defence n.防卫;防卫设备
 defend	defend vt.防护;辩护;防卫
-defendant	defendant n.被告 NUM NUM
+defendant	defendant n.被告
 defender	defender n.防卫者;拥护者;辩护者
 defenceless	defenceless a.无防备的
 defenseless	defenseless a.无防备的
@@ -10127,7 +10127,7 @@ delivery	delivery n.递送;交付;分娩;交货;引渡
 dell	dell n.小谷;小溪谷
 delocalise	delocalise vt.使离开原位
 delocalize	delocalize vt.使离开原位
-deloldos	deloldos n.DOS命令:在安装了DOS新版本后;删除旧版本的DOS文 件
+deloldos	deloldos n.DOS命令:在安装了DOS新版本后;删除旧版本的DOS文件
 delouse	delouse vt.驱除虱子
 delphinium	delphinium n.飞燕草
 delta	delta n.三角州;希腊字母的第四个字
@@ -10372,7 +10372,7 @@ deprivation	deprivation n.剥夺;剥夺官职;免职
 deprive	deprive vt.剥夺;使丧失
 dept	dept n.部门
 depth	depth n.深度;深处;深奥
-deputation	deputation n.代理任命;代表;代表团 NUM NUM
+deputation	deputation n.代理任命;代表;代表团
 depute	depute vt.指定代理人;委以代理人;委任
 deputise	deputise vt.指定为代理 vi.代理;担任代表
 deputize	deputize vt.指定为代理 vi.代理;担任代表
@@ -10512,37 +10512,37 @@ detached	detached a.超然的;分离的
 detachment	detachment n.分离;分遣;分遣队
 detail	detail n.细节;详情 vt.详述;选派 vi.画详图 n.详细数据
 detailed	detailed a.详细的;逐条的
-details	details n.详细资料 NUM NUM
-detain	detain vt.扣留;扣押;阻止 NUM NUM
+details	details n.详细资料
+detain	detain vt.扣留;扣押;阻止
 detainee	detainee n.被拘留者;未判决囚犯
-detainer	detainer n.挽留者;非法留置;继续监禁令 NUM NUM
-detect	detect vt.发现;察觉;探测 NUM NUM
+detainer	detainer n.挽留者;非法留置;继续监禁令
+detect	detect vt.发现;察觉;探测
 detectaphone	detectaphone n.窃听器;侦探用电话机
 detection	detection n.发现;看穿;探知
 detective	detective n.侦探 a.侦探的
 detector	detector n.发现者;检出器;检电器
-detent	detent n.爪;掣子;扳手 NUM NUM
+detent	detent n.爪;掣子;扳手
 detention	detention n.挽留;延迟;拘留
 deter	deter vt.制止;使断念;威慑
 deterge	deterge vt.使清洁
 detergent	detergent n.清洁剂
-deteriorate	deteriorate vt.vi.(使)恶化 NUM NUM
+deteriorate	deteriorate vt.vi.(使)恶化
 deterioration	deterioration n.恶化;降低;退化
-determent	determent n.制止 NUM NUM
+determent	determent n.制止
 determinable	determinable a.可决定的
-determinant	determinant n.判定 NUM NUM
-determinate	determinate a.确定的;一定的;决定的 NUM NUM
+determinant	determinant n.判定
+determinate	determinate a.确定的;一定的;决定的
 determination	determination n.决心;果断
 determinative	determinative a.决定的;限定的 n.决定的事物;限定词
-determine	determine vt.vi.决定;决心 NUM NUM
-determined	determined a.坚决的;决定了的 NUM NUM
-determining	determining vbl.决定 NUM NUM
+determine	determine vt.vi.决定;决心
+determined	determined a.坚决的;决定了的
+determining	determining vbl.决定
 determinism	determinism n.决定论
 deterministic	deterministic a.决定论的;命运注定论;宿命论
 deterrence	deterrence n.挽留的事物;妨碍物
 deterrent	deterrent a.制止;防止;挽留 n.挽留的事物;妨碍物
 detest	detest vt.厌恶;憎恨
-detestable	detestable a.嫌恶的;可憎的;可厌恶的 NUM NUM
+detestable	detestable a.嫌恶的;可憎的;可厌恶的
 detestation	detestation n.憎恶;嫌恶;厌恶的人
 dethrone	dethrone vt.废黜;废位赶出
 detinue	detinue n.非法占有
@@ -10626,7 +10626,7 @@ dextran	dextran n.右旋糖苷
 dextrorotatory	dextrorotatory n.右旋性的
 dextrose	dextrose n.葡萄糖;右旋糖
 dfm	dfm n.DELPHI的界面格式文件
-dharma	dharma n.习惯;戒条;法 NUM NUM
+dharma	dharma n.习惯;戒条;法
 dhcp	dhcp n.动态宿主配置协议
 dhole	dhole n.凶猛的野犬
 dhoti	dhoti n.腰布
@@ -10683,26 +10683,26 @@ diaphoretic	diaphoretic a.促进发汗的 n.发汗剂
 diaphragm	diaphragm n.横隔膜;控光装置
 diaphragmatic	diaphragmatic a.横隔膜的;隔膜的
 diarchy	diarchy n.两头政治
-diarist	diarist n.记日记的人;负日记专责的人;日记作者 NUM NUM
-diary	diary n.日记 NUM NUM
+diarist	diarist n.记日记的人;负日记专责的人;日记作者
+diary	diary n.日记
 diaspora	diaspora n.犹太人的离散;离散的犹太人
 diastase	diastase n.淀粉酵素;淀粉糖化酵素
 diastole	diastole n.心脏舒张;心脏舒张期;延长音节
 diastolic	diastolic a.心脏舒张的
-diastrophism	diastrophism n.地壳变动;地壳变形 NUM NUM
+diastrophism	diastrophism n.地壳变动;地壳变形
 diathermic	diathermic a.电疗法的;透热性的
 diathermy	diathermy n.电疗
-diatom	diatom n.矽藻类 NUM NUM
+diatom	diatom n.矽藻类
 diatomic	diatomic a.二原子的;二价的;二氢氧基的
-diatomite	diatomite n.硅藻土 NUM NUM
+diatomite	diatomite n.硅藻土
 diatonic	diatonic a.全音阶的
 diatribe	diatribe n.恶骂;诽谤
 diazine	diazine n.磺安剂
-diazo	diazo a.二氮化合物的 NUM NUM
+diazo	diazo a.二氮化合物的
 dib	dib vi.将饵在水面轻轻地上下拉动
 dibasic	dibasic a.二盐基的
 dibble	dibble n.挖洞器 vt.vi.挖洞;使用挖洞器播种
-dice	dice n.骰子 vt.切成方块 vi.掷骰子 NUM NUM
+dice	dice n.骰子 vt.切成方块 vi.掷骰子
 dicer	dicer n.玩掷骰子游戏的人;帽子;小礼帽
 dicey	dicey a.不确定的;认命的;冒险性的
 dichotomous	dichotomous a.分成两个的;叉状分枝的
@@ -11423,7 +11423,7 @@ doer	doer n.行为者;实干家
 does	does v.做;有用;工作;conj.是;做;要
 doeskin	doeskin n.母鹿皮
 doesnot	doesnot conj.不;没有
-doff	doff vt.脱;丢弃;废除 NUM NUM
+doff	doff vt.脱;丢弃;废除
 dog	dog n.狗;坏蛋 vt.跟踪;尾随
 dogate	dogate n.共和制总督的职
 dogbane	dogbane n.毒狗草
@@ -11497,7 +11497,7 @@ don	don n.君;先生;阁下 vt.穿上
 don't	don't aux.不
 dona	dona n.夫人
 Donald	Donald n.男子名
-donate	donate vt.vi.捐赠 NUM NUM
+donate	donate vt.vi.捐赠
 donation	donation n.捐赠物;捐款;捐赠
 donative	donative a.赠与的;捐赠的 n.捐赠物;捐款
 donator	donator n.捐赠人
@@ -11567,7 +11567,7 @@ dotted	dotted a.有点的;星罗棋布的
 dotty	dotty a.多点的;精神不定的;薄弱的
 double	double n.两倍 a.两倍的;双重的 vt.使加倍 vi.加倍;快步走;加倍努力 n.双精度型
 doubled	doubled v.vbl.两倍;快步走;加倍努力
-doubleguard	doubleguard n.磁盘倍容工具DRVSPACE的参数;允许或禁止倍容安全 检测
+doubleguard	doubleguard n.磁盘倍容工具DRVSPACE的参数;允许或禁止倍容安全检测
 doubles	doubles n.双打
 doublethink	doublethink n.双重思考
 doubloon	doubloon n.从前的西班牙金币的名称
@@ -11678,7 +11678,7 @@ drat	drat vt.诅咒;咒骂
 draught	draught n.气流;草稿;汇票;通风;拉;牵引 vt.起草;征兵;选派
 draughts	draughts n.跳棋
 drauhghts	drauhghts n.跳棋
-draw	draw vi.拉;拖;拔剑 vt.拖拉;挨近;领取;打成平局;引来;抽签决定;画;描写;制订 ;草拟;吸引 n.拉;拖;拔出;抽签;平局 v.翻牌;绘图
+draw	draw vi.拉;拖;拔剑 vt.拖拉;挨近;领取;打成平局;引来;抽签决定;画;描写;制订;草拟;吸引 n.拉;拖;拔出;抽签;平局 v.翻牌;绘图
 drawback	drawback n.不利点;退税
 drawbar	drawbar n.列车间的挂钩;牵引车的挂钩
 drawber	drawber n.斜挂在肩上的皮带
@@ -11692,35 +11692,35 @@ drawn	drawn vbl.拉;拖曳 a.拔出的
 drawstring	drawstring n.带;细绳
 dray	dray n.运货马车;撬的一种 vi.以运货马车运 vt.用马车运载
 drayage	drayage n.运货马车运送
-drayman	drayman n.运货马车车夫 NUM NUM
+drayman	drayman n.运货马车车夫
 dread	dread n.恐惧;可怕的人;可怕的事 a.可怕的;可怖的 vt.vi.恐惧;害怕
 dreadful	dreadful a.可怕的
 dream	dream n.梦;空想;愿望 vt.vi.做梦;想象;梦想
-dreamer	dreamer n.做梦的人;梦想者 NUM NUM
+dreamer	dreamer n.做梦的人;梦想者
 dreamily	dreamily ad.爱梦想地;梦似地;朦胧地
 dreamland	dreamland n.梦境;梦乡;睡觉
 dreamless	dreamless a.无梦的;不做梦的
-dreamt	dreamt vbl.梦见;做梦 NUM NUM
+dreamt	dreamt vbl.梦见;做梦
 dreamy	dreamy a.空幻的;梦想的
 drearily	drearily ad.沉寂地;可怕地;厌倦地
 dreariness	dreariness n.沉寂;凄凉;可怕
-dreary	dreary a.沉闷的 NUM NUM
-dredge	dredge n.挖泥机;爬网 vt.用挖泥机疏浚;撒粉 NUM NUM
+dreary	dreary a.沉闷的
+dredge	dredge n.挖泥机;爬网 vt.用挖泥机疏浚;撒粉
 dredger	dredger n.疏浚机;挖泥船;采捞船
-dreg	dreg n.渣滓;沉淀物;糟粕 NUM NUM
-dreggy	dreggy a.有渣滓的;污浊的 NUM NUM
-drench	drench vt.使湿透;使充满 n.雨淋;弄湿 NUM NUM
+dreg	dreg n.渣滓;沉淀物;糟粕
+dreggy	dreggy a.有渣滓的;污浊的
+drench	drench vt.使湿透;使充满 n.雨淋;弄湿
 drencher	drencher n.大雨;倾盆大雨;灌药器
-drenching	drenching n.湿透 NUM NUM
+drenching	drenching n.湿透
 dress	dress n.服装;覆盖物 vi.穿着 vt.给...穿衣;整理
 dressage	dressage n.训练马匹技术
 dresser	dresser n.化妆台;化装师;碗柜
-dressing	dressing n.调味品;穿衣;化妆 NUM NUM
-dressmaker	dressmaker n.裁缝 NUM NUM
+dressing	dressing n.调味品;穿衣;化妆
+dressmaker	dressmaker n.裁缝
 dressmaking	dressmaking n.女装裁缝
 dressy	dressy a.衣着考究的
 drew	drew vbl.拉;拖曳
-drib	drib n.一滴;少量 vi.点滴地落下 NUM NUM
+drib	drib n.一滴;少量 vi.点滴地落下
 dribble	dribble vi.流口水;滴下 vt.使滴下;运球 n.点滴;口水;少量
 dried	dried adj.乾的
 drier	drier n.干燥机;干燥剂
@@ -11883,7 +11883,7 @@ dumping	dumping n.倾销
 dumpish	dumpish adj.愚笨的
 dumpling	dumpling n.面团布丁;团
 dumpy	dumpy a.矮胖的;粗短的 n.矮脚鸡;短雨伞;矮沙发
-dun	dun n.催促者;讨债者;催罗 vi.vt.催讨 a.暗褐色的;微暗的 NUM NUM
+dun	dun n.催促者;讨债者;催罗 vi.vt.催讨 a.暗褐色的;微暗的
 dunce	dunce n.劣学生;傻瓜
 dunderhead	dunderhead n.笨蛋
 dune	dune n.沙丘
@@ -11897,7 +11897,7 @@ duniwassal	duniwassal n.二流乡绅
 Dunkirk	Dunkirk n.敦克尔克 vi.狼狈地撤退
 dunlin	dunlin n.一种鸟
 duo	duo n.二重唱
-duodecimal	duodecimal a.十二为单位的;十二分算的;十二进位的 n.十二分算;十二进位;十二分之一 NUM NUM
+duodecimal	duodecimal a.十二为单位的;十二分算的;十二进位的 n.十二分算;十二进位;十二分之一
 duodecimo	duodecimo n.十二开;十二开的书 a.十二开的
 duodenal	duodenal a.十二指肠的
 duodenum	duodenum n.十二指肠
@@ -11994,7 +11994,7 @@ eager	eager a.热心的;渴望的;热望的
 eagerness	eagerness nis:n.网络信息服务(NetworkInformationServices) n.热心
 eagle	eagle n.鹰;鹰状标饰
 eaglet	eaglet n.小鹰
-ear	ear n.耳朵;倾听;听觉;麦穗 vi.抽穗 NUM
+ear	ear n.耳朵;倾听;听觉;麦穗 vi.抽穗
 ear-minded	ear-minded a.听觉型的
 earache	earache n.耳朵痛
 eardrop	eardrop n.耳环;耳坠
@@ -12016,7 +12016,7 @@ earmuff	earmuff n.御寒耳罩
 earn	earn vt.赚得;获得;博得
 earned	earned a.挣得的
 earner	earner n.工资所得者
-earnest	earnest n.定金;诚挚;认真 a.认真的;热心的;重要的 NUM
+earnest	earnest n.定金;诚挚;认真 a.认真的;热心的;重要的
 earning	earning n.所赚的钱;所得;收入
 earnings	earnings n.所得;收入
 earom	earom n.电可改只读存储器
@@ -12041,13 +12041,13 @@ earthquakes	earthquakes n.地震
 earth-shaking	earth-shaking a.震撼全球的;极为重大的
 earthshaking	earthshaking a.震撼全球的;极为重大的
 earthward	earthward a.向地的
-earthworm	earthworm n.蚯蚓 NUM
+earthworm	earthworm n.蚯蚓
 earthy	earthy a.土的;土质的;土味的
 earwax	earwax n.耳垢
 earwig	earwig n.偷听者 vt.暗中骚扰
 earworm	earworm n.一种有害幼虫
 ease	ease n.安乐;安逸;悠闲 vt.使安乐;使安心;减轻;放松 vi.减轻;放松;灵活地移动
-eased	eased adj.放松的 NUM
+eased	eased adj.放松的
 easeful	easeful a.舒适的;安逸的;舒适的
 easel	easel n.画架;黑板架
 easement	easement n.缓和;减轻;方便附属建筑物
@@ -12138,7 +12138,7 @@ eczema	eczema n.湿疹
 edaphic	edaphic a.土壤的
 Edda	Edda n.冰洲诗集
 eddy	eddy n.逆流;漩涡 vt.vi.(使)起漩涡
-edelweiss	edelweiss n.火绒草 NUM
+edelweiss	edelweiss n.火绒草
 Eden	Eden n.伊甸园;乐园
 edentate	edentate a.无齿的;贫齿类的 n.贫齿类动物
 edge	edge n.边缘;尖锐;刀刃;优势 vt.使锐利;挤进;镶边;开刃 vi.缓缓移动
@@ -12174,7 +12174,7 @@ educational	educational a.教育的;教育性的
 educationally	educationally ad.教育的;教育上的;有关教育的
 educative	educative a.教育的;教育上的;教育性的
 educator	educator n.教育家
-educe	educe vt.引出;唤起;使显出 NUM
+educe	educe vt.引出;唤起;使显出
 educt	educt n.抽出物;游离物;推论
 eduction	eduction n.引出;取出;排出
 Edward	Edward n.爱德华
@@ -12191,7 +12191,7 @@ effect	effect n.结果;影响;效果;印象 vt.招致;引起;完成 v.效果
 effective	effective a.有效的;有力的;实际的 n.有生力量
 effectively	effectively ad.有效地;有力地;实际上
 effectiveness	effectiveness n.效力
-effector	effector n.操纵装置;效应器;格式控制字符 NUM
+effector	effector n.操纵装置;效应器;格式控制字符
 effectual	effectual a.有效果的;会应验的;有效的
 effectuate	effectuate vt.招致;实行;完成
 effectuation	effectuation n.招致;实行;完成
@@ -12220,7 +12220,7 @@ effort	effort n.努力;成就
 effortless	effortless a.容易的;不费力气的
 effortlessly	effortlessly adv.顺水
 effrontery	effrontery n.厚颜无耻
-effulgence	effulgence n.光辉;灿烂 NUM
+effulgence	effulgence n.光辉;灿烂
 effulgent	effulgent a.光辉灿烂的
 effuse	effuse vt.vi.涌出;流出;泻出
 effusion	effusion n.流出物;泻出
@@ -12231,14 +12231,14 @@ egalitarian	egalitarian a.平等主义的 n.平等主义
 egast	egast vt.排泄
 egg	egg n.蛋;卵 vt.挑唆;煽动;调蛋黄
 eggbeater	eggbeater n.打蛋器
-eggcup	eggcup n.蛋杯 NUM
+eggcup	eggcup n.蛋杯
 egged	egged v.vbl.挑唆;煽动
-egghead	egghead n.有知识的人;受过高等教育的人;理论家 NUM
+egghead	egghead n.有知识的人;受过高等教育的人;理论家
 eggplant	eggplant n.茄子
 eggshell	eggshell n.蛋壳
 eglantine	eglantine n.野蔷薇之一种
 ego	ego n.自我
-egocentric	egocentric a.自我中心的;利己主义的 n.利己主义者 NUM
+egocentric	egocentric a.自我中心的;利己主义的 n.利己主义者
 egoism	egoism n.自我主义;利己主义
 egoist	egoist n.自我主义者
 egoistic	egoistic a.自我中心的;自私自利的
@@ -12251,7 +12251,7 @@ egotistic	egotistic a.自我本位的;任性的
 egotistical	egotistical a.自我本位的;任性的
 egregious	egregious a.恶名昭彰的;过分的;惊人的
 egress	egress n.出口;外出 vi.外出
-egret	egret n.白鹭 NUM
+egret	egret n.白鹭
 Egypt	Egypt n.埃及
 Egyptian	Egyptian n.埃及人 a.埃及的;埃及人的
 eicon	eicon n.加拿大网络软件公司
@@ -12266,7 +12266,7 @@ eighteenth	eighteenth a.第十八的;第十八;第十八日
 eighth	eighth a.第八的;八分之一的 n.第八;八分之一;八日
 eighthly	eighthly ad.第八地;第八号地
 eightieth	eightieth a.第八十的;第八十;八十分之一的
-eighty	eighty a.八十的;八十个的 n.八十;八十岁;八十个 NUM
+eighty	eighty a.八十的;八十个的 n.八十;八十岁;八十个
 Einstein	Einstein n.爱因斯坦
 einsteinium	einsteinium n.锿
 eirenicon	eirenicon n.和平提议
@@ -12294,7 +12294,7 @@ elapse	elapse vi.逝去;过去 n.逝去;过去
 elapsed	elapsed v.vbl.过去;逝去
 elastic	elastic n.松紧带;橡皮筋 a.有弹性的;能伸缩的;可通融的
 elasticity	elasticity n.弹力;弹性
-elastin	elastin n.弹力素 NUM
+elastin	elastin n.弹力素
 elate	elate vt.使兴高采烈的;使得意
 elated	elated a.兴高采烈的
 elater	elater n.弹丝;弹虫
@@ -12309,7 +12309,7 @@ elderberry	elderberry n.接骨木之果实;接骨木
 elderly	elderly a.过了中年的;稍老的
 elders	elders n.尊长
 eldritch	eldritch a.可怕的;可畏的
-elect	elect n.当选人;被选的人;上帝的选民 a.被选的;选出的 vt.选举;选择 vi.作选择 NUM
+elect	elect n.当选人;被选的人;上帝的选民 a.被选的;选出的 vt.选举;选择 vi.作选择
 electable	electable a.有候选资格的
 election	election n.选举;当选;选择权
 electioneer	electioneer vi.从事选举活动 n.从事选举活动
@@ -12340,7 +12340,7 @@ electroencephalograph	electroencephalograph n.电脑波测量图
 electrogram	electrogram n.电记录图
 electrolier	electrolier n.电灯架
 electroluminescence	electroluminescence n.电场发光;阴极耦合放大器
-electroluminescent	electroluminescent display^n.电场发光显示器 lamp^n.电场发光板 panel^n.电场发光板
+electroluminescent	electroluminescent a.电致发光的;场致发光的
 electrolysis	electrolysis n.电分解;电解;以电针除痣
 electrolyte	electrolyte n.电解物;电解质;电解液
 electrolytic	electrolytic a.电解的;由电解产生的
@@ -12373,7 +12373,7 @@ electuary	electuary n.干药糖剂
 eleemosynary	eleemosynary a.施舍的;慈善的;接受接济的
 elegance	elegance n.高雅;典雅;优雅
 elegant	elegant a.优雅的;端庄的;高雅的
-elegiac	elegiac n.哀歌;挽歌 a.哀歌体的;挽歌的 NUM
+elegiac	elegiac n.哀歌;挽歌 a.哀歌体的;挽歌的
 elegist	elegist n.挽歌作者
 elegise	elegise vt.作挽歌祭引;写成象挽歌一样 vi.作哀歌
 elegize	elegize vt.作挽歌祭引;写成象挽歌一样 vi.作哀歌
@@ -12382,11 +12382,11 @@ element	element n.元件;元素;要素
 elemental	elemental a.元素的;基本的
 elementary	elementary a.初步的;基本的
 elements	elements n.原理;基础
-elephant	elephant n.象 NUM
+elephant	elephant n.象
 elephantiasis	elephantiasis n.象皮病
 elephantine	elephantine a.象的;巨大的;粗笨的
 elevate	elevate vt.举起;提拔;鼓舞
-elevated	elevated a.提高的 NUM
+elevated	elevated a.提高的
 elevator	elevator n.电梯;升降机
 eleven	eleven a.十一
 eleventh	eleventh a.第十一
@@ -12397,12 +12397,12 @@ elfish	elfish a.如小精灵的;好恶作剧的;小妖精的
 elflock	elflock n.纠结的头发;卷发
 elicit	elicit vt.引出;抽出;引起
 elicitation	elicitation n.引出;诱出;抽出
-elide	elide vt.省略;省略发音;取消 NUM
+elide	elide vt.省略;省略发音;取消
 eligibility	eligibility n.适任;合格
 eligible	eligible a.可以选的;具有被选举资格的;合格的 n.有资格者;合格者;适任者
 eligibly	eligibly ad.可被选地;合宜地;适当地
 Elijah	Elijah n.以利亚
-eliminable	eliminable a.可消除的;可排除的;可消去的 NUM
+eliminable	eliminable a.可消除的;可排除的;可消去的
 eliminate	eliminate vt.除去;排除;剔除;消除
 elimination	elimination n.除去;消除;消灭
 eliminator	eliminator n.消去器
@@ -12427,7 +12427,7 @@ elliptical	elliptical a.椭圆的
 elliptically	elliptically ad.椭圆形地;省略地
 elm	elm n.榆树
 elocution	elocution n.雄辩术;演说法
-elocutionist	elocutionist n.雄辩家;演说家 NUM
+elocutionist	elocutionist n.雄辩家;演说家
 Elohim	Elohim n.神
 elongate	elongate vt.vi.延长;(使)伸延 a.伸长的
 elongation	elongation n.伸长;延长;伸张度
@@ -12465,7 +12465,7 @@ emasculation	emasculation n.阉割;去势;柔弱
 embalm	embalm vt.以药物防腐;铭记于心;使不朽
 embank	embank vt.以堤围绕;筑堤围堵;以堤防堵挡
 embankment	embankment n.堤防;筑堤
-embargo	embargo n.封港令;禁运 vt.禁止出入港口;禁运 NUM
+embargo	embargo n.封港令;禁运 vt.禁止出入港口;禁运
 embark	embark vi.乘船;着手;从事;上飞机 vt.使上船;使上飞机;使从事
 embarkation	embarkation n.乘船;搭机;开船
 embarrass	embarrass vt.使困窘;使局促不安;阻碍
@@ -12485,7 +12485,7 @@ embers	embers n.馀烬
 embezzle	embezzle vt.盗用;挪用
 embezzlement	embezzlement n.盗用;挪用;侵占
 embezzler	embezzler n.盗用公款者;侵占公款犯
-embitter	embitter vt.使受苦;使难受;使怨恨;加苦味于 NUM
+embitter	embitter vt.使受苦;使难受;使怨恨;加苦味于
 emblazon	emblazon vt.用纹章装饰;盛饰;颂扬
 emblem	emblem n.象征;徽章 vt.用象征表示
 emblematical	emblematical a.象征的
@@ -12499,7 +12499,7 @@ embolus	embolus n.栓子;栓塞物
 embosom	embosom vt.围绕;环绕;珍爱
 emboss	emboss vt.饰以浮雕花纹;加以浮饰;装饰
 embossing	embossing n.凹凸印刷
-embossment	embossment n.浮雕工作;浮雕;浮凸装饰 NUM
+embossment	embossment n.浮雕工作;浮雕;浮凸装饰
 embrace	embrace n.拥抱 vt.拥抱;互相拥抱;包含;收买 vi.拥抱
 embracery	embracery n.笼络陪审员等
 embrasure	embrasure n.枪眼;炮眼
@@ -12545,7 +12545,7 @@ emit	emit vt.发出;放射;吐露;散发;发行
 emittance	emittance n.由能源所幅射的每单位面积功率
 emitter	emitter n.射极;射极(接头电晶体)
 emmet	emmet n.蚂蚁
-emmy	emmy n.艾美奖 NUM
+emmy	emmy n.艾美奖
 emollient	emollient a.使柔软的 n.软化剂;缓和剂
 emolument	emolument n.薪水;报酬
 emote	emote vi.夸张地作为;表现感情
@@ -12602,7 +12602,7 @@ emulative	emulative a.竞争性的;不服输的;好胜的
 emulator	emulator n.竞争者
 emulous	emulous a.竞争性的;富于竞争的;求声名的;好仿效的
 emulsification	emulsification n.乳化;乳剂化;乳化作用
-emulsify	emulsify vt.使成乳化 NUM
+emulsify	emulsify vt.使成乳化
 emulsion	emulsion n.乳状液;乳剂
 emulsive	emulsive a.乳剂质的;可榨出油来的;会流出乳状液的
 en	en n.N字;半方 prep.在;在...中
@@ -12616,7 +12616,7 @@ enamelware	enamelware n.搪瓷器
 enamour	enamour vt.迷住;使迷恋
 enamor	enamor vt.迷住;使迷恋
 enantiomorph	enantiomorph n.对映结构体
-enarthrosis	enarthrosis n.杵臼关节;全冻关节;球窝关节 NUM
+enarthrosis	enarthrosis n.杵臼关节;全冻关节;球窝关节
 encage	encage vt.关在笼中;禁闭;把...关起来
 encamp	encamp vi.扎营;露营 vt.使宿营
 encampment	encampment n.露营;宿营
@@ -12624,7 +12624,7 @@ encapsulate	encapsulate vt.装入胶囊;封进内部;压缩 vi.形成胶囊
 encapsulation	encapsulation 封装
 encase	encase vt.装入;包住
 encash	encash vt.付现;兑现
-encephalitis	encephalitis n.脑炎 NUM
+encephalitis	encephalitis n.脑炎
 encephalogram	encephalogram n.大脑摄影图
 encephalograph	encephalograph n.大脑X光照片
 encephalography	encephalography n.大脑摄影法
@@ -12648,13 +12648,13 @@ enclose	enclose vt.围绕;放入封套;装入
 enclosed	enclosed a.被附上的
 enclosure	enclosure n.附件;围墙;围绕
 encode	encode vt.改为密码
-encoder	encoder n.译码器 NUM
+encoder	encoder n.译码器
 encomiast	encomiast n.宣读或写作颂辞之人;赞美者;阿谀者
 encomiastic	encomiastic a.赞颂的;阿谀的
 encomium	encomium n.赞辞;称赞;赞美
 encore	encore n.再演唱的要求;经要求而再唱 int.再演唱一次! vt.要求再演或唱
 encounter	encounter n.相会;相遇;遭遇 vt.遇见;邂逅;会战 vi.偶然相遇
-encourage	encourage vt.鼓励;支持;激励 NUM
+encourage	encourage vt.鼓励;支持;激励
 encouragement	encouragement n.鼓励;激励;奖励
 encouraging	encouraging a.奖励的;可奖励的
 encrimson	encrimson vt.使成鲜红色
@@ -12706,7 +12706,7 @@ endoskeleton	endoskeleton n.内骨骼
 endothelium	endothelium n.内皮细胞层;内覆组织
 endow	endow vt.捐赠;捐助;赋予
 endowment	endowment n.捐助;天赋;才能
-endpaper	endpaper n.书籍卷首及卷尾之空页 NUM
+endpaper	endpaper n.书籍卷首及卷尾之空页
 endue	endue vt.授予;赋予;穿上
 endurable	endurable a.可忍受的;能忍耐的
 endurance	endurance n.忍耐;忍耐力;耐性
@@ -12735,7 +12735,7 @@ enframe	enframe vt.配上框子;装在框内
 enfranchise	enfranchise vt.给予自治权;给予选举权;解放
 engage	engage vi.答应;从事;交战 vt.使忙碌;雇佣;预定;使从事于;使参加
 engaged	engaged a.忙碌的;使用中的
-engagement	engagement n.诺言;约会;婚约;交战 NUM
+engagement	engagement n.诺言;约会;婚约;交战
 engaging	engaging a.动人的;迷人的;有魅力的
 engender	engender vt.产生;引起 vi.发生;形成
 engine	engine n.引擎;发动机;机车;机械 vt.安装发动机于
@@ -12748,7 +12748,7 @@ English	English n.英语 a.英文的;英国人的
 Englishman	Englishman n.英国人
 Englishmen	Englishmen n.英国人
 Englishness	Englishness n.英国风格;英国人作风
-Englishwoman	Englishwoman n.英国女人;英格兰妇女 NUM
+Englishwoman	Englishwoman n.英国女人;英格兰妇女
 engorge	engorge vi.大吃;充血;贪吃 vt.大吃;狼吞虎咽;使充血
 engraft	engraft vt.使牢记;灌输;嫁接
 engrail	engrail vt.使成锯齿状
@@ -12760,7 +12760,7 @@ engross	engross vt.用大字体书写;独占;使全神贯注
 engulf	engulf vt.卷入;吸进;投入深渊;吞没;使全神贯注
 enhance	enhance vt.提高;加强;增加
 enhanced	enhanced adj.增强的
-enhancement	enhancement 增强 NUM
+enhancement	enhancement 增强
 enigma	enigma n.谜;不可思议的东西
 enigmatic	enigmatic a.阴阳怪气的;谜一般的;高深莫测的
 enigmatical	enigmatical a.难解的;谜一般的;不可思议的
@@ -12773,7 +12773,7 @@ enjoyment	enjoyment n.享乐;快乐;享受
 enkindle	enkindle vt.点燃;使燃烧
 enlace	enlace vt.捆扎;缠绕
 enlarge	enlarge vt.扩大;增大 vi.扩大;详述
-enlarger	enlarger n.放大机;扩大者;增补者 NUM
+enlarger	enlarger n.放大机;扩大者;增补者
 enlarging	enlarging vbl.扩大
 enlighten	enlighten vt.授予...知识;启发;启蒙;开导;教导
 enlightened	enlightened a.被启发的;进步的;文明的
@@ -12815,13 +12815,13 @@ ensemble	ensemble n.全体;合唱曲;女人的全套服装
 enshrine	enshrine vt.入庙祀奉;铭记
 enshroud	enshroud vt.掩盖;隐蔽
 ensign	ensign n.国旗;海军少尉;掌旗官;徽章
-ensilage	ensilage n.未干秣草之保藏;保藏于地窖中的未干秣草 vt.保藏于地窖 NUM
+ensilage	ensilage n.未干秣草之保藏;保藏于地窖中的未干秣草 vt.保藏于地窖
 ensile	ensile vt.保藏于保藏室
 ensky	ensky vt.(使)耸入天空
 enslave	enslave vt.奴役;束缚;沉溺;征服
 enslaver	enslaver n.奴役人者;迷惑男人的女人;荡妇
 ensnare	ensnare vt.以陷阱捕捉;诱入圈套;诱捕
-ensnarl	ensnarl vt.使缠绕 NUM
+ensnarl	ensnarl vt.使缠绕
 ensoul	ensoul vt.赋予灵魂
 ensphere	ensphere vt.使成球形;包围
 ensue	ensue vi.跟着发生;继起 vt.追求
@@ -12928,7 +12928,7 @@ eparch	eparch n.州长;郡长;首都大主教
 eparchy	eparchy n.州;郡;大主教管区
 epaulet	epaulet n.肩章
 epenthesis	epenthesis n.插字;插音
-ephedrine	ephedrine n.麻黄素 NUM
+ephedrine	ephedrine n.麻黄素
 ephemera	ephemera n.生命极短促之物;蜉蝣
 ephemeral	ephemeral a.朝生暮死;短命;短暂的
 Ephesians	Ephesians n.埃非所书
@@ -12992,7 +12992,7 @@ epoxy	epoxy n.环氧基树脂
 epsilon	epsilon n.希腊语字母之第五字
 Epsom	Epsom n.英国Surrey州的市镇;Epsom赛马
 epurate	epurate vt.提炼
-equability	equability n.平静;无变动 NUM
+equability	equability n.平静;无变动
 equable	equable a.平静的;变动小的
 equably	equably ad.均等地;均一地;均匀地
 equal	equal n.对手;匹敌;同辈 a.相等的;平等的;胜任的;合适的;平静的;不相上下的 vt.等于;比得上
@@ -13054,14 +13054,14 @@ Erastus	Erastus n.伊拉斯塔斯
 erasure	erasure n.擦除;抹掉
 erbium	erbium n.耳
 erebus	erebus n.阳间与阴间当中的黑暗界
-erect	erect a.直立的;竖立的;笔直的 vt.使竖立;使直立;树立;建立 vi.勃起 NUM
+erect	erect a.直立的;竖立的;笔直的 vt.使竖立;使直立;树立;建立 vi.勃起
 erectile	erectile a.可使直立的;勃起的
 erection	erection n.直立;竖起;建筑物
 erectus	erectus adj.直立的
 eremite	eremite n.遁世修行的人;隐士
 eremitic	eremitic a.隐士的;隐士般的
 erewhile	erewhile ad.片刻前;以前
-ergonomic	ergonomic adj.人体工学 NUM
+ergonomic	ergonomic adj.人体工学
 ergonomics	ergonomics n.工作学;生物工程学
 ergot	ergot n.麦角症;麦角
 ergotism	ergotism n.麦角中毒
@@ -13090,8 +13090,8 @@ erratic	erratic n.古怪的人;漂泊无定的人 a.不稳定的;奇怪的
 erratically	erratically ad.不规律地;不定地
 erratum	erratum n.写错;排错;错字勘误表;错误
 erring	erring a.做错事的
-erroneous	erroneous a.错误的;不正确的 NUM
-error	error n.错误;过失;失误;误差 n.错误 NUM
+erroneous	erroneous a.错误的;不正确的
+error	error n.错误;过失;失误;误差 n.错误
 errorlevel	errorlevel n.批处理命令;检测程序返回值
 erst	erst ad.以前;往昔的
 erstwhile	erstwhile ad.以前;往昔地 a.以前的;往昔的
@@ -13132,8 +13132,8 @@ escort	escort n.护送者;护卫者;护航舰 vt.护卫;护送
 escritoire	escritoire n.有抽屉的写字桌
 escrow	escrow n.附带条件委付盖印的契约
 escudo	escudo n.葡萄牙的货币单位;其货币
-esculent	esculent a.可食用的 n.可食用物 NUM
-eskimo	eskimo n.爱斯基摩人 NUM
+esculent	esculent a.可食用的 n.可食用物
+eskimo	eskimo n.爱斯基摩人
 oesophagus	oesophagus n.食道
 esophagus	esophagus n.食道
 esoteric	esoteric a.秘教的;奥秘的;秘传的
@@ -13178,7 +13178,7 @@ Estonian	Estonian a.爱沙尼亚的 n.爱沙尼亚人;爱沙尼亚语
 estop	estop vt.禁止翻供;禁止反言;禁止
 estoppel	estoppel n.禁止反言;禁止;防止
 estrade	estrade n.台子;讲坛
-estrange	estrange vt.使疏远;离间;使离开 NUM
+estrange	estrange vt.使疏远;离间;使离开
 estrangement	estrangement n.疏远
 estray	estray n.迷失的人;迷失的家畜
 estreat	estreat n.审判记录之抄本 vt.摘抄
@@ -13306,7 +13306,7 @@ evaporation	evaporation n.蒸发;脱水;干燥
 evasion	evasion n.逃避;藉口
 evasive	evasive a.逃避的;回避的;托辞的
 eve	eve n.前夕;前日
-even	even a.平坦的;偶数的;相等的;均匀的;连贯的;均等的;公平的;平均的; 平静的;恰好的 vt.使平坦;使相等; vi.变平;相等 ad.甚至;恰好;正当 n.偶数;偶校验
+even	even a.平坦的;偶数的;相等的;均匀的;连贯的;均等的;公平的;平均的;平静的;恰好的 vt.使平坦;使相等; vi.变平;相等 ad.甚至;恰好;正当 n.偶数;偶校验
 even-tempered	even-tempered a.镇定的;冷静的
 evenfall	evenfall n.傍晚;黄昏
 even-handed	even-handed a.公平的;公平无私的
@@ -13326,7 +13326,7 @@ eventuate	eventuate vi.结果为;终于发生;发生
 ever	ever ad.曾经;究竟;永远
 everblooming	everblooming a.四季开花的
 Everest	Everest n.珠穆朗玛峰
-everglade	everglade n.湿地;沼泽地 NUM
+everglade	everglade n.湿地;沼泽地
 evergreen	evergreen n.常绿树;常绿植物 a.常绿的
 everlasting	everlasting a.永恒的;持久的;无止境的
 evermore	evermore ad.永远;经常;从此以后
@@ -13347,7 +13347,7 @@ evident	evident a.显然的;明显的
 evidential	evidential a.证据的;可作证据的;基于证据的
 evidently	evidently ad.明显地;显著地;必以为是
 evil	evil n.邪恶;不幸;罪恶 a.邪恶的;不幸的;有害的;诽谤的
-evildoer	evildoer n.为恶者;做坏事的人 NUM
+evildoer	evildoer n.为恶者;做坏事的人
 evildoing	evildoing n.恶行;坏事
 evilly	evilly ad.邪恶地
 evilness	evilness n.恶的;邪恶的;有害的
@@ -13377,7 +13377,7 @@ exactable	exactable a.可强求的
 exacted	exacted pp.索求
 exacting	exacting a.苛求的;吃力的
 exaction	exaction n.勒索;苛求
-exactitude	exactitude n.正确;精密;精确;规规矩矩;严格 NUM
+exactitude	exactitude n.正确;精密;精确;规规矩矩;严格
 exactness	exactness n.正确;精确
 exactor	exactor n.勒索者;强要者;捐税征收官
 exaggerate	exaggerate vt.vi.夸大;夸张
@@ -13406,7 +13406,7 @@ exasperation	exasperation n.恼怒
 excavate	excavate vt.vi.挖;挖开;凿通
 excavation	excavation n.挖掘;发掘;挖掘的洞
 excavator	excavator n.开凿者;打洞机;开凿机
-exceed	exceed vt.超过;超越;胜过 vi.超过其他 NUM
+exceed	exceed vt.超过;超越;胜过 vi.超过其他
 exceeding	exceeding a.非常的;极度的;过度的
 excel	excel vt.胜过;优于;擅长 vi.胜过其他
 excelled	excelled v.vbl.胜过;优于;超过
@@ -13425,7 +13425,7 @@ excessive	excessive a.过度的;格外的;极端的
 exchange	exchange n.交换;汇兑;交易所 vt.vi.交换;交易;兑换
 exchangeable	exchangeable a.可交换的;可兑换的;可替换的
 exchanger	exchanger n.交换器
-exchequer	exchequer n.国库;财源;财政部 NUM
+exchequer	exchequer n.国库;财源;财政部
 excide	excide vt.切开
 excisable	excisable a.可抽税的;可割取的
 excise	excise n.货物税;国产税 vt.切除
@@ -13527,7 +13527,7 @@ exhortation	exhortation n.劝告;训词;讲道词
 exhumation	exhumation n.发掘;尸体发掘
 exhume	exhume vt.掘出;发掘
 exigence	exigence n.紧急;急迫;苛求;紧急事件
-exigency	exigency n.紧急;急迫;苛求;紧急事件 NUM
+exigency	exigency n.紧急;急迫;苛求;紧急事件
 exigent	exigent a.紧急的;迫切的;苛求的
 exigible	exigible a.可要求的
 exiguity	exiguity n.些须;微小
@@ -13539,7 +13539,7 @@ existence	existence n.存在;生存
 existent	existent a.存在的;生存的;现存的
 existential	existential a.有关存在的
 existing	existing adj.存在的
-exit	exit n.出口;退场;离去;去世 vi.退出;脱离;去世 v.退出 n.DOS命令:如果存在这个命令;则它可从辅助处理器返回到主 处理器
+exit	exit n.出口;退场;离去;去世 vi.退出;脱离;去世 v.退出 n.DOS命令:如果存在这个命令;则它可从辅助处理器返回到主处理器
 exlibris	exlibris n.藏书标签
 exobiology	exobiology n.外空生物学
 exocrine	exocrine a.外分泌的
@@ -13554,7 +13554,7 @@ exorable	exorable a.可说服的
 exorbitant	exorbitant a.过度的;过高的;过分的
 exorcise	exorcise vt.驱邪;除怪
 exordial	exordial a.绪言的;绪论的
-exordium	exordium n.绪言;绪论 NUM
+exordium	exordium n.绪言;绪论
 exoteric	exoteric a.一般人所能理解的;开放的;公开的 n.公开的教义
 exothermic	exothermic a.发热的;放出热量的
 exotic	exotic a.异国的;外来的 n.外来物;舶来品
@@ -13760,7 +13760,7 @@ eyeball	eyeball n.眼球
 eyebank	eyebank n.角膜银行
 eyebolt	eyebolt n.单眼螺栓
 eyebrow	eyebrow n.眉毛
-eyebrows	eyebrows n.眉头 NUM
+eyebrows	eyebrows n.眉头
 eyed	eyed a.有眼的
 eyedropper	eyedropper n.点眼药器
 eyeful	eyeful n.满眼;满眶;一瞥见及之量
@@ -13832,7 +13832,7 @@ factorage	factorage n.手续费
 factorial	factorial a.代理店的;阶乘的 n.阶乘
 factory	factory n.工厂;代理店
 factotum	factotum n.杂役;打杂的人
-factual	factual a.事实的;实际的 NUM
+factual	factual a.事实的;实际的
 factualism	factualism n.尊重事实
 factum	factum n.自己的行为;呈文
 facula	facula n.光斑
@@ -13890,7 +13890,7 @@ falconer	falconer n.以鹰狩猎者;放鹰者;养鹰者
 falconet	falconet n.小鹰;旧式小炮
 falconry	falconry n.放鹰捕猎;养鹰术
 falcons	falcons n.婴犬
-fall	fall n.秋天;落下;瀑布;采伐量;下降;落差;降低;堕落 vi.倒下;落下;来临;失守;阵亡;下跌;减弱;倾斜;退落;陷落;垮台;轮到 ;变成;降低 a.秋天的
+fall	fall n.秋天;落下;瀑布;采伐量;下降;落差;降低;堕落 vi.倒下;落下;来临;失守;阵亡;下跌;减弱;倾斜;退落;陷落;垮台;轮到;变成;降低 a.秋天的
 fallacious	fallacious a.使人误解的;谬误的;不合理的
 fallacy	fallacy n.错误的观念或信念;谬见;谬论
 fall-back	fall-back n.可依靠的东西;退却
@@ -13908,7 +13908,7 @@ falsehood	falsehood n.谎言;虚假
 falsely	falsely ad.虚伪地;错误地;不实地
 falseness	falseness n.虚伪;不正确;不忠实
 falsetto	falsetto n.假音;假声歌手
-falsework	falsework n.脚手架 NUM
+falsework	falsework n.脚手架
 falsification	falsification n.变造;伪造;歪曲
 falsifier	falsifier n.伪造者;撒谎的人;伪证的人
 falsify	falsify vt.伪造;歪曲 vi.说谎
@@ -13940,7 +13940,7 @@ fanaticism	fanaticism n.狂热;盲信
 fancied	fancied a.空想的;虚构的
 fancier	fancier n.爱好者
 fanciful	fanciful a.奇怪的;稀奇的;想像的
-fancy	fancy n.想象力;幻想;喜好 a.想象的;精美的;新奇的;奇特的;高价的;特级的 vt.想象;设想;相信;喜爱 vi.想象;幻想 NUM
+fancy	fancy n.想象力;幻想;喜好 a.想象的;精美的;新奇的;奇特的;高价的;特级的 vt.想象;设想;相信;喜爱 vi.想象;幻想
 fancywork	fancywork n.刺绣;钩针织品
 fandango	fandango n.胡闹;一种西班牙舞
 fane	fane n.寺院;神庙
@@ -13961,7 +13961,7 @@ fantasticality	fantasticality n.空想性质;变化无常;奇异
 fantasticato	fantasticato vt.空想;使变得怪谬
 fantasy	fantasy n.幻想;白日梦
 fantod	fantod n.烦燥
-fanwise	fanwise ad.成扇地;如扇形地 NUM
+fanwise	fanwise ad.成扇地;如扇形地
 faq	faq 最常问的问题
 far	far a.远的;久远的;遥远的 ad.甚远地;很;很晚地
 farad	farad n.法拉
@@ -13974,7 +13974,7 @@ fare	fare n.费用;旅客;食物 vi.进展;进步;经营;过活
 farewell	farewell n.辞别;再见;再会 int.再会
 far-famed	far-famed a.驰名的;威名远播的
 farfamed	farfamed a.驰名的;威名远播的
-farfetched	farfetched a.牵强的;不自然的;乱七八糟的 NUM
+farfetched	farfetched a.牵强的;不自然的;乱七八糟的
 farina	farina n.谷粉;粉末;淀粉
 farinaceous	farinaceous a.谷粉制的;粉状的;含淀粉的
 farm	farm n.农场;农田 vt.耕种 vi.种田
@@ -14060,7 +14060,7 @@ fattiness	fattiness n.脂肪;脂肪质;脂肪多
 fattish	fattish a.略胖的;颇肥的
 fatty	fatty a.脂肪的;含脂肪的;脂肪状的
 fatuity	fatuity n.愚钝;昏庸;愚蠢的言行
-fatuous	fatuous a.发呆的;愚笨的;自满的 NUM
+fatuous	fatuous a.发呆的;愚笨的;自满的
 faucal	faucal a.咽门的
 faucet	faucet n.龙头;旋塞
 faugh	faugh int.呸
@@ -14102,7 +14102,7 @@ fdos	fdos n.软磁盘操作系统
 fealty	fealty n.忠诚;忠贞;忠实
 fear	fear n.恐怖;害怕;担心 vi.vt.害怕;恐惧;敬畏
 fearful	fearful a.恐怕;可怕的;严重的
-fearfully	fearfully ad.颇;极;非常地 NUM
+fearfully	fearfully ad.颇;极;非常地
 fearfulness	fearfulness n.可怕;厉害
 fearless	fearless a.大胆的;勇敢的;无畏的
 fearsome	fearsome a.吓人的;可怕的;害怕的
@@ -14194,8 +14194,8 @@ femineity	femineity n.女人风度
 feminine	feminine a.女性的;阴性的;柔弱的
 feminism	feminism n.女权主义;男女平等主义;女权扩张论
 feminist	feminist n.男女平等主义者;女权扩张论者 a.男女平等主义的;女权扩张论的
-feminise	feminise vi.女性化 vt.具有女性风度;使女性化 NUM
-feminize	feminize vi.女性化 vt.具有女性风度;使女性化 NUM
+feminise	feminise vi.女性化 vt.具有女性风度;使女性化
+feminize	feminize vi.女性化 vt.具有女性风度;使女性化
 femitrons	femitrons n.场射管
 femoral	femoral a.大腿骨的;大腿的
 femur	femur n.大腿骨;腿节
@@ -14368,11 +14368,11 @@ fifty	fifty a.五十;50
 fig	fig n.无花果;无价值的东西;少许;服装 vt.打扮;使马跑快
 figeater	figeater n.无花果虫
 fight	fight n.打架;战斗;斗志 vt.vi.对抗;打架
-fighter	fighter n.斗士;战士;好战者 NUM
+fighter	fighter n.斗士;战士;好战者
 fighting	fighting vbl.对抗;打架
 figment	figment n.虚构的事
 figuline	figuline a.陶制的 n.陶器;陶土
-figuration	figuration n.定形;成形 NUM
+figuration	figuration n.定形;成形
 figurative	figurative a.比喻的;形容多的;修饰丰富的
 figure	figure n.图形;数字;形状 vt.描绘;表示;演算;认为 vi.出现;估计;出名
 figurehead	figurehead n.装饰船头的人像;破浪神;傀儡领袖
@@ -14395,7 +14395,7 @@ filial	filial a.子女的;当做子女的;孝顺的
 filiation	filiation n.父子关系;分支;起源
 filibuster	filibuster n.掠夺兵;暴兵;海盗 vi.掠夺 vt.阻碍议案通过
 filicide	filicide n.杀子女者;杀子女
-Filipino	Filipino n.菲律宾人 NUM
+Filipino	Filipino n.菲律宾人
 fill	fill vt.装满;填充;弥漫;供给;满足;供应 vi.充满 n.满足;装满;充分;填方 v.填充
 filler	filler n.补白;装填物
 fillet	fillet n.头带;带子 vt.用带缚
@@ -14408,7 +14408,7 @@ film	film n.软片;薄膜;影片;电影 vt.覆以薄膜;拍摄 vi.生薄膜;拍�
 film-making	film-making n.电影制作
 filmdom	filmdom n.电影界
 filmgoer	filmgoer n.影迷;常看电影的人
-filmic	filmic a.电影的 NUM
+filmic	filmic a.电影的
 filmstrip	filmstrip n.幻灯影片
 filmy	filmy a.薄膜的;象软片的;薄的;朦胧的
 filter	filter n.滤波器;过滤器;滤光器 vt.过滤;渗透;走漏 vi.滤过;渗入 n.过滤器;筛选
@@ -14449,7 +14449,7 @@ finery	finery n.装饰;服饰;鲜艳服装;精炼炉
 fines	fines n.罚金
 fine-spun	fine-spun a.细纺的;纤细的;过分精密的
 finespun	finespun a.细纺的;纤细的;过分精密的
-finesse	finesse n.精密技巧;灵巧;策略 vt.vi.用计谋处理;出小牌 NUM
+finesse	finesse n.精密技巧;灵巧;策略 vt.vi.用计谋处理;出小牌
 finest	finest a.好的;出色的
 finger	finger n.手指;指状物;指针 vt.vi.用手指拨弄;伸出
 finger-mark	finger-mark n.指痕
@@ -14560,7 +14560,7 @@ fistic	fistic a.拳击的
 fistula	fistula n.管;瘘管
 fit	fit n.适宜;合身;发作;痉挛 a.适宜的;对的;准备好的 vt.适合;安装;使合身;使适应;使合格 vi.适合;符合;合身
 fitch	fitch n.臭猫;臭猫皮;臭猫毛
-fitful	fitful a.断断续续的;一阵阵的;间歇的 NUM
+fitful	fitful a.断断续续的;一阵阵的;间歇的
 fitly	fitly ad.适当地;整齐地;恰好地
 fitment	fitment n.家具;装修
 fitter	fitter a.适当的;胜任的
@@ -14637,7 +14637,7 @@ flamy	flamy a.火焰似的;熊熊的
 flange	flange n.边缘;轮缘;凸缘;法兰 vt.装凸缘
 flanged	flanged adj.凸缘的
 flank	flank n.侧面;侧腹;胁;腰窝肉 vt.攻击侧面;面临着;守侧面 vi.侧面与...相接
-flanker	flanker n.侧面部队;侧冲;侧面堡垒 NUM
+flanker	flanker n.侧面部队;侧冲;侧面堡垒
 flannel	flannel n.法兰绒;法兰绒衣服
 flannelly	flannelly a.法兰绒似的
 flap	flap n.拍打;拍打声;副翼 vt.vi.拍打;鼓翼而飞;飘动
@@ -14657,10 +14657,10 @@ flashover	flashover n.闪络
 flashtube	flashtube n.闪光管
 flashy	flashy a.闪光的;一瞬间的;浮华的
 flask	flask n.细颈瓶;烧瓶;小水瓶
-flat	flat a.平坦的;单调的;倒下的;无力的;浅的;萧条的;干脆的;无聊的 ad.平直地;断然地 n.平面;平地;一层;公寓 vt.vi.(使)变平 NUM
+flat	flat a.平坦的;单调的;倒下的;无力的;浅的;萧条的;干脆的;无聊的 ad.平直地;断然地 n.平面;平地;一层;公寓 vt.vi.(使)变平
 flatbed	flatbed adj.平台型
 flatboat	flatboat n.平底船
-flatcar	flatcar n.无盖货车;平台货车 NUM
+flatcar	flatcar n.无盖货车;平台货车
 flatfish	flatfish n.比目鱼
 flatfoot	flatfoot n.扁平足;警察
 flathead	flathead n.美国印第安部族
@@ -14717,7 +14717,7 @@ fleet	fleet n.舰队;港湾;小河;队 a.快速的;敏捷的;浅的 ad.浅 vi.�
 fleet-footed	fleet-footed a.走路快的
 fleetly	fleetly ad.迅速地;快速地
 fleetness	fleetness n.快速;无常
-Fleming	Fleming n.法兰德斯人;说法兰德斯语的比利时人 NUM
+Fleming	Fleming n.法兰德斯人;说法兰德斯语的比利时人
 flench	flench vt.割取油脂
 flesh	flesh n.肉;肉欲;肉体;人性;亲属;人类;众生;人体 vt.以肉喂;使肥;赋以血肉 vi.长胖
 flesher	flesher n.屠夫
@@ -14803,7 +14803,7 @@ floorer	floorer n.铺地板者;打倒;打败;难题
 flooring	flooring n.地板;地板材料;铺地板
 floorman	floorman n.门警
 floorwalker	floorwalker n.巡视员
-floozy	floozy n.荡妇 NUM
+floozy	floozy n.荡妇
 flop	flop n.砰然落下;拍击声;失败 vi.笨重的摔;猛落 vt.笨拙地抛下 ad.噗通
 flopover	flopover n.画面上下动摇的故障
 flopper	flopper n.雏水鸭;为图领取保证金而捏造事故的人
@@ -14914,12 +14914,12 @@ flytrap	flytrap n.捕蝇器;捕蝇草
 flyway	flyway n.候鸟迁徙所经的路径
 flyweight	flyweight n.轻量级的选手
 flywheel	flywheel n.调速轮
-fmt	fmt 文件格式 NUM
+fmt	fmt 文件格式
 foal	foal n.驹 vt.vi.生仔
 foam	foam n.泡沫;水沫;泡沫材料 vi.起泡沫;吐白沫 vt.使起泡沫
 foamily	foamily ad.起泡沫地
 foamy	foamy a.全是泡沫的;起泡沫的;泡沫的
-fob	fob n.表袋;短表链 vt.骗人;混骗 NUM
+fob	fob n.表袋;短表链 vt.骗人;混骗
 focal	focal a.焦点的;在焦点上的
 focalization	focalization n.集中焦点
 focalise	focalise vt.使集中在焦点上;使集中在一点上 vi.聚焦
@@ -15010,9 +15010,9 @@ footing	footing n.立足点;立场;关系
 footless	footless a.无足的;无基础的;笨拙的
 footlight	footlight n.脚灯
 footlocker	footlocker n.军人用小型提箱
-footloose	footloose a.自由自在的;能做所要做的;不受束缚的 NUM
+footloose	footloose a.自由自在的;能做所要做的;不受束缚的
 footman	footman n.马夫;马丁;仆役
-footmark	footmark n.足迹 NUM
+footmark	footmark n.足迹
 footnote	footnote n.脚注
 footpad	footpad n.拦路贼
 footpath	footpath n.步道;人行道;小路
@@ -15026,10 +15026,10 @@ footsore	footsore a.伤了脚的
 footstep	footstep n.脚步;脚步声;足迹
 footsteps	footsteps n.脚步
 footstool	footstool n.脚台
-footway	footway n.小路;人行道 NUM
+footway	footway n.小路;人行道
 footwork	footwork n.脚的动作;脚力;现场采访活动
 footy	footy a.无足轻重的;褴褛的
-foozle	foozle vi.vt.笨拙地做;打得不好 n.笨拙的行为;笨拙的一击;笨拙的人 NUM
+foozle	foozle vi.vt.笨拙地做;打得不好 n.笨拙的行为;笨拙的一击;笨拙的人
 fop	fop n.过分讲究衣饰或举动的人;花花公子
 fopling	fopling n.矫饰者
 foppery	foppery n.打扮;矫饰;纨绔习气
@@ -15064,20 +15064,20 @@ fore-topsail	fore-topsail n.前桅中桅的帆
 forearm	forearm n.前臂 vt.预先武装;准备
 forebear	forebear n.祖先;祖宗
 forebode	forebode vt.vi.预示;预兆;预感
-foreboding	foreboding n.预感;先兆;预兆 NUM
+foreboding	foreboding n.预感;先兆;预兆
 forebrain	forebrain n.前脑
 forecabin	forecabin n.船首室
 forecastle	forecastle n.前甲板;前甲板下面的水手舱;船头的船楼
-foreclose	foreclose vt.阻止;排除;预先处理;取消抵押品赎回权 vi.取消抵押品赎回权 NUM
-forecourt	forecourt n.前院 NUM
-foredoom	foredoom vt.预定命运;注定 n.预定的命运 NUM
+foreclose	foreclose vt.阻止;排除;预先处理;取消抵押品赎回权 vi.取消抵押品赎回权
+forecourt	forecourt n.前院
+foredoom	foredoom vt.预定命运;注定 n.预定的命运
 forefather	forefather n.祖先
 forefathers	forefathers n.祖先;先人
 forefinger	forefinger n.食指
 forefoot	forefoot n.前脚;龙骨的前端部
 forefront	forefront n.最前部;最前线
 foregift	foregift n.押租;押金
-forego	forego vt.放弃;在...之前;居先 NUM
+forego	forego vt.放弃;在...之前;居先
 foregoing	foregoing a.前面的;先前的;前述的
 foregone	foregone a.先前的;过去的;已知的 vbl.先走;居先
 foreground	foreground n.前景;最显著的位置 n.前景;前台 n.前台
@@ -15179,8 +15179,8 @@ formalization	formalization n.形式化;仪礼化
 formalise	formalise vt.使正式;使整形;形式化 vi.拘泥形式
 formalize	formalize vt.使正式;使整形;形式化 vi.拘泥形式
 formally	formally ad.正式地;拘泥礼仪;形式上
-formant	formant n.话音素 NUM
-format	format n.开本;版式;形式 n.格式 v.格式化 n.DOS命令:格式化(磁盘);用于空盘或使用过的磁盘建立新空盘 来存储数据
+formant	formant n.话音素
+format	format n.开本;版式;形式 n.格式 v.格式化 n.DOS命令:格式化(磁盘);用于空盘或使用过的磁盘建立新空盘来存储数据
 formation	formation n.构造;编队;形成
 formative	formative a.形成的;造型的;形成的 n.造字要素
 formats	formats n.格式
@@ -15216,8 +15216,8 @@ forsooth	forsooth ad.实在;的确;真的
 forspent	forspent a.疲倦极了的
 forswear	forswear vt.发誓抛弃;发誓否定 vi.作伪证
 forsworn	forsworn a.不守誓的;伪誓的 vbl.发誓否定
-forsythia	forsythia n.连翘属植物 NUM
-fort	fort n.堡垒;易货站;要塞 vt.设要塞保卫 vi.设要塞 NUM
+forsythia	forsythia n.连翘属植物
+fort	fort n.堡垒;易货站;要塞 vt.设要塞保卫 vi.设要塞
 forth	forth ad.往前;向外
 forthcoming	forthcoming a.即将来临的 n.来临
 forthright	forthright ad.直接地;马上;立即 a.直接的;直率的;坦白的;豪爽的 n.直路
@@ -15254,10 +15254,10 @@ fossilise	fossilise vt.使成化石;使陈腐 vi.变成化石;变陈腐;固定�
 fossilize	fossilize vt.使成化石;使陈腐 vi.变成化石;变陈腐;固定化
 foster	foster a.收养的;养育的 vt.养育;抚育;培养;鼓励;抱(希望)
 foster-mother	foster-mother n.保育器;育雏器 vt.收养
-fosterage	fosterage n.养育;寄养;养子环境 NUM
+fosterage	fosterage n.养育;寄养;养子环境
 fought	fought vbl.fight的过去式和过去分词
 foul	foul a.污秽的;邪恶的;恶臭的;肮脏的;恶劣的;淤塞的 vt.弄脏;妨害;污蔑;犯规;淤塞 vi.腐烂;犯规;缠结 ad.违反规则地;不正当地 n.犯规;缠绕
-foulard	foulard n.一种薄软的绸;用该布制的手帕 NUM
+foulard	foulard n.一种薄软的绸;用该布制的手帕
 foully	foully ad.肮脏的;泥泞的;纠缠的
 found	found vbl.find的过去式和过去分词 vt.建立;创立;铸造
 foundation	foundation n.基础;根据;建立
@@ -15288,7 +15288,7 @@ fox	fox n.狐狸;狡猾的人 vi.奸狡地行动;变酸 vt.使变酸;使生黄�
 foxed	foxed a.变了色的;有褐斑的;变酸了的
 foxglove	foxglove n.指顶花
 foxhole	foxhole n.散兵坑
-foxhound	foxhound n.猎狐用猎狗 NUM
+foxhound	foxhound n.猎狐用猎狗
 foxiness	foxiness n.似狐性;狡猾;有褐斑
 FoxPro	FoxPro n.微软公司最新数据库管理系统
 foxtail	foxtail n.狐尾;狐尾草
@@ -15356,7 +15356,7 @@ fraxinella	fraxinella n.白藓的一种
 fray	fray n.磨损;打架;争论 vt.使磨损 vi.被磨损
 frazzle	frazzle vt.vi.(使)磨损;(使)磨破;(使)破烂 n.磨破;破烂;疲惫状态
 freak	freak n.畸形人;畸形物;反复无常 a.奇异的;反常的
-freak-out	freak-out n.麻药的服用;吸毒;嬉皮化 NUM
+freak-out	freak-out n.麻药的服用;吸毒;嬉皮化
 freakish	freakish a.朝三暮四的;见异思迁的;珍奇的;畸形的
 freckle	freckle n.雀斑;斑点
 freckly	freckly a.多雀斑的
@@ -15369,7 +15369,7 @@ freeboot	freeboot vi.做海盗
 freebooter	freebooter n.海盗
 freeborn	freeborn a.生而自由的;自由民的;适合于自由民的
 freedman	freedman n.自由民;被解放的奴隶
-freedom	freedom n.自由;坦率;特权 NUM
+freedom	freedom n.自由;坦率;特权
 freedwoman	freedwoman n.自由妇女
 freehand	freehand a.徒手画的 n.徒手画
 freehold	freehold n.自由保有;不动产;自由保有官职
@@ -15532,7 +15532,7 @@ fruition	fruition n.结果实;成就;实现
 fruitless	fruitless a.不结果的;不长果实的;无子的
 fruits	fruits n.水果
 fruity	fruity a.水果的;有水果香味的;圆润的
-frump	frump n.守旧者;邋遢的女人 NUM
+frump	frump n.守旧者;邋遢的女人
 frumpish	frumpish a.心地不良的;不见世面的;衣着寒酸过时的
 frustrate	frustrate vt.挫败;击败;破坏 a.无益的;挫败的;挫折的
 frustrated	frustrated adj.坎坷
@@ -15681,7 +15681,7 @@ g.m.	g.m. n.通用汽车
 gab	gab n.饶舌;爱说话;多嘴 vi.空谈;瞎扯;唠叨
 gabardine	gabardine n.一种斜纹防水布料;华达呢;一种宽松的长袍
 gabber	gabber n.唠叨的人
-gabble	gabble vi.七嘴八嘴地说;喋喋不休地说 vt.急促地说 n.急促讲出而叫人听不清说的话 NUM
+gabble	gabble vi.七嘴八嘴地说;喋喋不休地说 vt.急促地说 n.急促讲出而叫人听不清说的话
 gabby	gabby a.饶舌的
 gabfest	gabfest n.冗长的谈话
 gable	gable n.山形墙;人字板
@@ -15805,7 +15805,7 @@ gamy	gamy a.猎物多的;猎鸟的;味道强的;勇敢的
 gander	gander n.雄鹅;笨人;呆子
 Gandhi	Gandhi n.甘地
 ganef	ganef n.小偷;宵小
-gang	gang n.队;群;帮 vi.成群结队;联合在一起 vt.使分成班组 NUM
+gang	gang n.队;群;帮 vi.成群结队;联合在一起 vt.使分成班组
 ganger	ganger n.工头;领班;班主
 gangling	gangling a.瘦长的
 ganglion	ganglion n.神经节;神经中枢;腱鞘瘤
@@ -15925,7 +15925,7 @@ gawk	gawk n.笨人;呆子;笨拙的人 vi.痴呆着看
 gawkish	gawkish a.鲁钝的;笨拙的;痴呆的
 gay	gay a.欢迎的;放荡的;快乐的
 gayer	gayer a.快乐的;华美的
-gayest	gayest a.快乐的;华美的 NUM
+gayest	gayest a.快乐的;华美的
 gaze	gaze n.注视;凝视 vi.注视;凝视
 gazebo	gazebo n.眺望台;露台
 gazelle	gazelle n.瞪羚
@@ -15952,7 +15952,7 @@ gel-like	gel-like adj.胶样的
 gelatinise	gelatinise vt.vi.(使)成胶状;涂胶
 gelatinize	gelatinize vt.vi.(使)成胶状;涂胶
 gelatinous	gelatinous a.凝胶状的
-gelation	gelation n.冻结;凝胶化 NUM
+gelation	gelation n.冻结;凝胶化
 geld	geld n.税;贡赋;支付款 vt.去势;阉割;剥夺
 gelid	gelid a.冰似的;冷的;极寒的
 gelignite	gelignite n.一种含硝化甘油的炸药
@@ -16051,7 +16051,7 @@ geography	geography n.地理学;地理
 geological	geological a.地质学的;地质的
 geologist	geologist n.地质学者
 geology	geology n.地质学;地质概况
-geomagnetic	geomagnetic a.地磁的 NUM
+geomagnetic	geomagnetic a.地磁的
 geomagnetism	geomagnetism n.地磁;地磁学
 geomancy	geomancy n.泥土占卜
 geomantic	geomantic a.风水的
@@ -16105,11 +16105,11 @@ gerund	gerund n.动名词
 gesso	gesso n.石膏;石膏粉
 gest	gest n.故事诗;故事;武功
 gestation	gestation n.妊娠;妊娠期;孕育;酝酿
-gesticulate	gesticulate vi.vt.用手势谈话;做姿势表达 NUM
+gesticulate	gesticulate vi.vt.用手势谈话;做姿势表达
 gesticulation	gesticulation n.姿势;手势;做姿势传达
 gesture	gesture n.手势;姿态 vi.作手势;作姿态
-get	get vt.得到;获得;变成;使得;收获;接通;抓住;染上 vi.到达;成为;变得 n.生殖;幼兽 NUM
-get-up	get-up n.装订;打扮;精力 NUM
+get	get vt.得到;获得;变成;使得;收获;接通;抓住;染上 vi.到达;成为;变得 n.生殖;幼兽
+get-up	get-up n.装订;打扮;精力
 gettable	gettable a.可到达的;可接近的;可获得的
 getatable	getatable a.可到达的;可接近的;可获得的
 gethsemane	gethsemane n.客西马尼
@@ -16139,7 +16139,7 @@ giant	giant n.巨人;大力士;巨大的怪物 a.庞大的;巨大的
 giantess	giantess n.女巨人
 giantism	giantism n.巨大症
 giaour	giaour n.异端;无信仰者
-gib	gib n.凹字形楔;雄猫 NUM
+gib	gib n.凹字形楔;雄猫
 gibberish	gibberish n.快速而不清说的言语;乱语
 gibbet	gibbet n.枭首台;绞首台;绞刑 vt.枭首示众;当众侮辱或嘲弄;处绞刑
 gibbon	gibbon n.长臂猿
@@ -16270,11 +16270,11 @@ glean	glean vt.vi.拾落穗;收集
 gleaning	gleaning n.拾落穗;落穗;拾遗
 glebe	glebe n.土;土地;旱田
 glee	glee n.欢乐;高兴
-gleeful	gleeful a.愉快的 NUM
+gleeful	gleeful a.愉快的
 gleefully	gleefully adv.愉快地
 gleeman	gleeman n.吟游诗人
 gleet	gleet n.慢性尿道炎
-glen	glen n.峡谷;幽谷 NUM
+glen	glen n.峡谷;幽谷
 glengarry	glengarry n.苏格兰高地人戴用的无檐帽子
 glenoid	glenoid a.浅窝的;关节窝的
 glib	glib a.能说善道的
@@ -16284,7 +16284,7 @@ glide	glide n.滑动;滑过;流水 vi.滑动;滑翔;溜走 vt.使滑动
 glider	glider n.滑行者;滑翔机;吊椅
 gliding	gliding a.流畅的;滑顺的;滑行的
 glim	glim n.灯火;蜡烛;灯笼;些许
-glimmer	glimmer n.一丝光线;微光 vi.发微光 NUM
+glimmer	glimmer n.一丝光线;微光 vi.发微光
 glimmering	glimmering ing.闪烁
 glimpse	glimpse n.一瞥;一闪 vi.投以一瞥;闪烁不定 vt.瞥见
 glint	glint n.闪烁 vi.闪耀;闪闪发光;反射 vt.使发光;使闪光
@@ -16364,7 +16364,7 @@ glyptics	glyptics n.宝石雕刻术
 gm	gm n.公克
 gnarl	gnarl n.节;瘤 vi.生节;咆哮 vt.使有节;扭
 gnash	gnash vt.vi.咬牙切齿 n.咬
-gnat	gnat n.小昆虫;小烦扰 NUM
+gnat	gnat n.小昆虫;小烦扰
 gnathic	gnathic a.颚的
 gnaw	gnaw vt.vi.咬;啃;消耗;折磨;侵蚀
 gnawer	gnawer n.咬的人;腐食物;臼齿动物
@@ -16376,7 +16376,7 @@ gnomic	gnomic a.格言的;含格言的
 gnomish	gnomish a.侏儒的
 Gnosticism	Gnosticism n.诺斯替教
 gnu	gnu n.角马
-go	go vi.去;走;达到;运转;诉诸;查阅;消失;结束;放弃;花费;成为;处于;流 传;趋于;打算; vt.以...打赌;忍受;出产 n.去;进行
+go	go vi.去;走;达到;运转;诉诸;查阅;消失;结束;放弃;花费;成为;处于;流传;趋于;打算; vt.以...打赌;忍受;出产 n.去;进行
 goad	goad n.刺棒;激励物;刺激物 vt.用刺棒驱赶;激励;刺激;唆使;煽动
 goal	goal n.目标;终点;得分;球门;守门员 vi.得分
 goalkeeper	goalkeeper n.守门员
@@ -16407,12 +16407,12 @@ godliness	godliness n.虔诚;敬神;信仰
 godly	godly a.敬神的;虔诚的;神的
 godmother	godmother n.教母;名义上母亲
 godown	godown n.仓库
-godparent	godparent n.名义双亲;教父或教母 NUM
+godparent	godparent n.名义双亲;教父或教母
 godship	godship n.神性;神格
-godson	godson n.教子 NUM
+godson	godson n.教子
 Godspeed	Godspeed n.成功的祝福
 godwit	godwit n.黑尾豫
-goer	goer n.行人;动态物 NUM
+goer	goer n.行人;动态物
 Goethe	Goethe n.歌德
 goffer	goffer n.压皱褶的;皱褶;皱纹 vt.作皱褶;使皱起
 goggle	goggle n.眼睛睁视;护目镜 a.睁眼的;瞪眼的 vi.瞪眼看;眼珠转动; vt.使瞪眼
@@ -16568,8 +16568,8 @@ graduator	graduator n.分度器;分度之人
 gradus	gradus n.韵律;辞典;练习曲集
 graffito	graffito n.乱画;粗糙雕刻
 graft	graft n.接枝;贪污;嫁接 vt.vi.嫁接;移植;接枝;贪污
-graftable	graftable n.DOS命令:将应用程序可能使用的扩展字符集装入内存;以便得 到彩色图形适配器的特性参
-graftabl	graftabl n.DOS命令:将应用程序可能使用的扩展字符集装入内存;以便得 到彩色图形适配器的特性参
+graftable	graftable n.DOS命令:将应用程序可能使用的扩展字符集装入内存;以便得到彩色图形适配器的特性参
+graftabl	graftabl n.DOS命令:将应用程序可能使用的扩展字符集装入内存;以便得到彩色图形适配器的特性参
 grafter	grafter n.嫁接的人;收贿者;贪污者
 graham	graham a.用末精制之面粉的;全麦的
 grail	grail n.杯;大盘;圣杯
@@ -16920,12 +16920,12 @@ guardsman	guardsman n.卫兵;近卫兵;州辖预备役部队的人员
 Guatemala	Guatemala n.瓜地马拉
 gubernatorial	gubernatorial a.统治者的
 guck	guck n.粘糊糊的东西
-gudgeon	gudgeon n.白杨鱼;诱饵;易骗的人 NUM
+gudgeon	gudgeon n.白杨鱼;诱饵;易骗的人
 guerdon	guerdon n.报酬;奖赏 vt.给以报酬;奖赏
 guerrilla	guerrilla n.游击队
 guess	guess n.猜测;臆测 vt.vi.猜测;臆测
 guesswork	guesswork n.臆测;猜测;凭猜测所作之工作
-guest	guest n.客人;来宾;旅客 NUM
+guest	guest n.客人;来宾;旅客
 guff	guff n.胡说;废话
 guffaw	guffaw vi.vt.哄笑;狂笑 n.哄笑;狂笑
 gui	gui n.图形用户界面
@@ -16989,22 +16989,22 @@ gunlock	gunlock n.板机
 gunman	gunman n.枪手;持枪的歹徒;制造枪械者
 gunmen	gunmen n.枪手;持枪的歹徒;制造枪械者
 gunmetal	gunmetal n.炮铜;青铜;炮铜色
-gunned	gunned pp.枪击 NUM
-gunner	gunner n.炮手;炮长;带枪猎人 NUM
-gunnery	gunnery n.炮术;射击;炮击 NUM
-gunning	gunning n.射击;射击法;枪猎 NUM
-gunny	gunny n.粗麻布;麻布袋 NUM
+gunned	gunned pp.枪击
+gunner	gunner n.炮手;炮长;带枪猎人
+gunnery	gunnery n.炮术;射击;炮击
+gunning	gunning n.射击;射击法;枪猎
+gunny	gunny n.粗麻布;麻布袋
 gunpowder	gunpowder n.火药
 gunrunner	gunrunner n.军火走私者
-gunrunning	gunrunning n.军火走私 NUM
+gunrunning	gunrunning n.军火走私
 gunship	gunship n.武装直升机
-gunshot	gunshot n.射击;炮击;射程 a.射击的 NUM
+gunshot	gunshot n.射击;炮击;射程 a.射击的
 gunsmith	gunsmith n.制造或修理枪的工人
-gunstock	gunstock n.枪托 NUM
+gunstock	gunstock n.枪托
 guppy	guppy n.古比
 gurgle	gurgle n.汩汩声 vi.作汩汩声
-Gurkha	Gurkha n.廓尔喀族 NUM
-guru	guru n.印度教的导师 NUM
+Gurkha	Gurkha n.廓尔喀族
+guru	guru n.印度教的导师
 gush	gush n.涌出;滔滔不绝的讲话 vi.vt.涌出;迸出;滔滔不绝的讲话
 gushing	gushing a.迸出的;涌出的
 gust	gust n.突然一阵;风味
@@ -17073,7 +17073,7 @@ habitude	habitude n.体质;性质;气质;习俗;习惯
 habitus	habitus n.习惯;体质
 hack	hack n.劈;砍;砍痕;出租车;干咳;饲草架;晒架;鹤嘴锄 vt.劈;砍;出租;用旧 vi.劈;砍;干咳;驾驶出租车 a.出租的
 hackamore	hackamore n.驯马用的一种笼头
-hackberry	hackberry n.朴树的一种;朴树果;朴树材 NUM
+hackberry	hackberry n.朴树的一种;朴树果;朴树材
 hackle	hackle vt.梳理;乱砍 n.锯齿形;针排;颈上的羽毛
 hackman	hackman n.马夫;司机
 hackney	hackney n.乘用马;出租马车;操贱役的人 vt.出租;酷使;再三用之使变旧 a.出租的;陈腐的
@@ -17082,7 +17082,7 @@ hacksaw	hacksaw n.可锯金属的弓形锯;钢锯
 had	had vbl.have的过去式和过去分词 conj.有
 haddock	haddock n.鳕的一种
 hades	hades n.冥府;阎王;地狱
-hadorwould	hadorwould conj.有;将 NUM
+hadorwould	hadorwould conj.有;将
 haematic	haematic a.血的 n.作用于血的药物
 haemostasis	haemostasis n.瘀血
 haeremai	haeremai int.表示欢迎之辞
@@ -17128,7 +17128,7 @@ hairtail	hairtail n.带鱼
 hairy	hairy a.多毛的;毛状的;长毛的
 Haiti	Haiti n.海地
 Haitian	Haitian a.海地的 n.海地人;海地语
-haka	haka n.Maoli族的战舞 NUM
+haka	haka n.Maoli族的战舞
 hake	hake n.鳕鱼类
 hal	hal n.Henry的昵称
 halation	halation n.照相底片上显现的光轮状晕;晕光;白色模糊影像
@@ -17279,7 +17279,7 @@ harbour	harbour n.港;避难所 vt.庇护;隐藏;藏匿 vi.入港停泊;躲藏
 harbor	harbor n.港;避难所 vt.庇护;隐藏;藏匿 vi.入港停泊;躲藏
 harbouring	harbouring ing.怀著
 harboring	harboring ing.怀著
-hard	hard a.难的;艰苦的;坚硬的;硬的;坚固的;猛烈的;艰难的;结实的;困难 的;确实的 ad.努力地;辛苦地;坚硬地;接近地;猛烈地;牢固地
+hard	hard a.难的;艰苦的;坚硬的;硬的;坚固的;猛烈的;艰难的;结实的;困难的;确实的 ad.努力地;辛苦地;坚硬地;接近地;猛烈地;牢固地
 hardback	hardback a.硬皮的 n.硬皮
 hardball	hardball n.强硬态度
 hardboard	hardboard n.硬纸板
@@ -17498,7 +17498,7 @@ hear	hear vt.听到;听说;听见;审理 vi.听见;听
 heard	heard vbl.hear的过去式和过去分词
 hearer	hearer n.听者;听众
 hearing	hearing n.听;听觉;听讼
-hearken	hearken vi.倾听 NUM
+hearken	hearken vi.倾听
 hearsay	hearsay n.风闻;传闻 a.传闻的
 hearse	hearse n.灵车
 heart	heart n.心;心脏;中心;内心;感情;精神;心情;宝贝儿 vt.把...放在中心
@@ -17509,71 +17509,71 @@ heart-breaking	heart-breaking a.悲伤或失望到难忍程度的;讨厌的;无�
 heartbreaking	heartbreaking a.悲伤或失望到难忍程度的;讨厌的;无聊的
 heartbroken	heartbroken a.悲伤的
 heartburn	heartburn n.心痛;妒忌
-heartburning	heartburning n.不平;不满;强烈的妒忌或反感 NUM
+heartburning	heartburning n.不平;不满;强烈的妒忌或反感
 hearten	hearten vt.鼓起勇气;激励 vi.振奋
 heartfelt	heartfelt a.衷心的;真心真意的
 hearth	hearth n.炉床;灶台;炉边
 hearthrug	hearthrug n.炉前的地毯
 hearthside	hearthside n.炉边;家庭
 hearthstone	hearthstone n.炉底石;砌炉的石块;家庭
-heartily	heartily ad.衷心地;真实地;热心地 NUM
+heartily	heartily ad.衷心地;真实地;热心地
 heartiness	heartiness n.诚实;热心
 heartland	heartland n.心脏地区;中心地带
-heartless	heartless a.无情的;无勇气的 NUM
+heartless	heartless a.无情的;无勇气的
 heartrending	heartrending a.令人心碎的;悲惨的;伤心的
 heartsick	heartsick a.悲痛的;苦恼的
 heartsore	heartsore a.悲痛的;苦恼的
-heartstring	heartstring n.心弦 NUM
+heartstring	heartstring n.心弦
 heartstrings	heartstrings n.心弦
 heartwood	heartwood n.赤木质;心材
-hearty	hearty a.诚恳的;热烈的;旺盛的 NUM
+hearty	hearty a.诚恳的;热烈的;旺盛的
 heat	heat n.热;热度;高潮 vi.加热;激昂;发热 vt.把...加热;使激动
 heated	heated a.热的;激昂的;兴奋的
-heater	heater n.加热器;火炉;加热之人 NUM
+heater	heater n.加热器;火炉;加热之人
 heath	heath n.石南;石南树丛
 heathen	heathen n.异教徒;野蛮人;粗野的人 a.异教的;野蛮的
 heathendom	heathendom n.异教;异端;异教国
 heathenish	heathenish a.异教的;异教徒的;非基督教的
-heathenism	heathenism n.异教;异教教义;偶像崇拜 NUM
+heathenism	heathenism n.异教;异教教义;偶像崇拜
 heathenise	heathenise vi.做异教徒; vt.使成异教徒
 heathenize	heathenize vi.做异教徒; vt.使成异教徒
-heather	heather n.石南花 a.似石南的;杂色的 NUM
-heathy	heathy a.石南的;石南似的;石南丛生的 NUM
-heatstroke	heatstroke n.中暑 NUM
-heave	heave n.举;抛;起伏;鼓起 vt.用力举起;使胀起;使鼓起 vi.抛出;起伏;喘息;凸起 NUM
+heather	heather n.石南花 a.似石南的;杂色的
+heathy	heathy a.石南的;石南似的;石南丛生的
+heatstroke	heatstroke n.中暑
+heave	heave n.举;抛;起伏;鼓起 vt.用力举起;使胀起;使鼓起 vi.抛出;起伏;喘息;凸起
 heaven	heaven n.天堂;上帝;天空
 heaven-sent	heaven-sent a.天赋的;天赐的
 heavenly	heavenly a.天上的;神圣的;天国似的
 heavens	heavens n.天空
 heavenward	heavenward ad.朝向天空地;朝向天国地 a.朝向天空的;朝向天国的
-heaver	heaver n.举起者;挑夫;举起物件之装置 NUM
+heaver	heaver n.举起者;挑夫;举起物件之装置
 heavier	heavier a.沉重的;巨大的
 heaviest	heaviest a.重的;巨大的
 heavily	heavily ad.很重地;沉重地;沉闷地
 heavy	heavy a.重的;巨大的;沉重的;笨重的;阴沉的 ad.沉重地 n.重物;严肃角色
 heavy-hearted	heavy-hearted a.心情沉重的
 heavy-laden	heavy-laden a.负担沉重的;心情沉重的
-heavyset	heavyset a.体格魁伟的 NUM
+heavyset	heavyset a.体格魁伟的
 hebdomad	hebdomad n.七天;一周
 Hebraic	Hebraic a.希伯来人的;希伯来语的;希伯来文化的
 Hebraist	Hebraist n.希伯来语学者;希伯来思想的人;犹太教信徒
-Hebraise	Hebraise vt.使成希伯来语;使成希伯来式 vi.希伯来化;说希伯来话;希伯来语式地说 NUM
-hebraize	hebraize vt.使成希伯来语;使成希伯来式 vi.希伯来化;说希伯来话;希伯来语式地说 NUM
+Hebraise	Hebraise vt.使成希伯来语;使成希伯来式 vi.希伯来化;说希伯来话;希伯来语式地说
+hebraize	hebraize vt.使成希伯来语;使成希伯来式 vi.希伯来化;说希伯来话;希伯来语式地说
 Hebrew	Hebrew n.希伯来人;希伯来语;犹太人 a.希伯来人的;希伯来语的
-heckle	heckle vt.以麻梳梳理;激烈质问;诘问;集中质问 n.针排 NUM
-heckler	heckler n.激烈质问者 NUM
+heckle	heckle vt.以麻梳梳理;激烈质问;诘问;集中质问 n.针排
+heckler	heckler n.激烈质问者
 hectare	hectare n.公顷
-hectic	hectic a.脸上发红;发热的;消耗热的;肺病的 n.脸红;消耗热患者 NUM
-hector	hector n.格克脱 NUM
-hecto	hecto n.格克脱 NUM
-hectogram	hectogram n.一百公克 NUM
-hectograph	hectograph n.胶版印刷;胶版 vt.胶版印刷 NUM
+hectic	hectic a.脸上发红;发热的;消耗热的;肺病的 n.脸红;消耗热患者
+hector	hector n.格克脱
+hecto	hecto n.格克脱
+hectogram	hectogram n.一百公克
+hectograph	hectograph n.胶版印刷;胶版 vt.胶版印刷
 Hecuba	Hecuba n.Priam之妻
 hedge	hedge n.树篱;障碍;套头交易 vt.用树篱围;妨碍;两面下注以免...的风险 vi.筑树篱;躲闪;两面下注以防损失 a.树篱的;偷偷摸摸的
 hedgehog	hedgehog n.豪猪;刺猬;难交朋友的人;防卫森严的阵地
 hedgehop	hedgehop vi.超低空飞行;话题变来变去
 hedgerow	hedgerow n.灌木篱墙
-hedonic	hedonic a.快乐的;快乐论的 n.快乐论 NUM
+hedonic	hedonic a.快乐的;快乐论的 n.快乐论
 hedonism	hedonism n.快乐论;快乐主义
 hedonist	hedonist n.快乐主义者;享乐主义者
 hedonistic	hedonistic a.快乐主义者的;快乐论的;快乐主义的
@@ -17584,19 +17584,19 @@ heedless	heedless a.不注意的;不留心的;不谨慎的
 heehaw	heehaw n.vi.驴叫;狂笑;傻笑
 heel	heel n.脚后跟;踵;后部;倾侧 vt.尾随;装以鞋跟;倾侧;追赶 vi.紧随;用脚后跟传球
 heelball	heelball n.鞋油的一种
-heeled	heeled a.有后跟的;带着钱的;带手枪的 NUM
-heeler	heeler n.制做鞋跟的工人;手下;一帮捧场的人 NUM
+heeled	heeled a.有后跟的;带着钱的;带手枪的
+heeler	heeler n.制做鞋跟的工人;手下;一帮捧场的人
 heeling	heeling n.倾斜
 heelpiece	heelpiece n.鞋后跟
-heft	heft n.重量;分量;重要性 vt.举起试重量;举起 vi.重达 NUM
+heft	heft n.重量;分量;重要性 vt.举起试重量;举起 vi.重达
 hefty	hefty a.重的;肌肉发达的
 Hegelian	Hegelian a.黑格尔的 n.黑格尔派哲学家
 hegemonic	hegemonic a.支配的;霸权的
-hegemony	hegemony n.霸权;领导权;支配权;盟主权 NUM
+hegemony	hegemony n.霸权;领导权;支配权;盟主权
 hegira	hegira n.逃亡
 heifer	heifer n.小母牛
 heigh	heigh int.(唤起注意;壮胆;表示惊讶)嗨!
-height	height n.高度;海拔;高地;顶点 NUM
+height	height n.高度;海拔;高地;顶点
 heighten	heighten vt.增高;提高;加强 vi.变大
 heinous	heinous a.可憎的;极恶的
 heir	heir n.继承人;嗣子;后嗣
@@ -17843,7 +17843,7 @@ hierarchy	hierarchy n.阶级组织;教士政治;僧侣政治
 hieratic	hieratic a.僧侣的;僧侣用的
 hieroglyph	hieroglyph n.象形文字;图画文字;秘密文字
 hierophant	hierophant n.导师;解说者;圣职者
-high	high n.高度;高处 a.高的;高级的;主要的;高尚的;高原的;高音的;昂贵的;傲慢的;重 大的 ad.高度地;奢侈地
+high	high n.高度;高处 a.高的;高级的;主要的;高尚的;高原的;高音的;昂贵的;傲慢的;重大的 ad.高度地;奢侈地
 high-toned	high-toned a.调子高的;高洁的;高尚的
 high-up	high-up n.社会地位高的人;要人
 highborn	highborn a.出身名门的
@@ -17916,7 +17916,7 @@ Hispanic	Hispanic a.西班牙的
 hispid	hispid a.有硬毛的;多刚毛的
 hiss	hiss n.嘘声;嘶嘶声 vi.发出嘘声;发嘶嘶声 vt.发嘶嘶声表示
 hist	hist int.(唤人注意;禁止作声等场合用的字)嘘!
-histamine	histamine n.组胺 NUM
+histamine	histamine n.组胺
 histogram	histogram n.柱状图
 histology	histology n.组织学
 historian	historian n.历史学家;史家
@@ -17959,13 +17959,13 @@ hobnail	hobnail n.鞋钉;穿上钉鞋的人;乡下佬
 hobnob	hobnob vi.共饮;交谈 n.共饮;交谈
 hobo	hobo n.无业游民;流浪汉;流动人口 vi.过流浪生涯
 hock	hock n.踝关节;德国产白葡萄酒;服刑所 vt.割断踝腱使成残废;典当
-hockey	hockey n.曲棍球 NUM
+hockey	hockey n.曲棍球
 hocus	hocus vt.欺骗;麻醉
 hod	hod n.木制容器;煤斗;装木炭容器
 hodden	hodden n.无花纹的粗织呢绒
 hodgepodge	hodgepodge n.混煮;杂菜;混淆
 hoe	hoe n.锄头 vt.vi.用锄耕地;锄
-hoecake	hoecake n.玉米饼 NUM
+hoecake	hoecake n.玉米饼
 hoedown	hoedown n.活泼的土风舞;其舞会
 hog	hog n.猪;贪婪者;象猪般的人 vt.vi.(使)拱起
 hog-wild	hog-wild a.混乱的;狂乱的
@@ -18046,7 +18046,7 @@ homestead	homestead n.家园;田产
 hometown	hometown n.自已出生的市镇;住惯的市镇;家乡
 homeward	homeward a.在归途上的;向家的 ad.在归途上;向家地
 homework	homework n.家庭作业;副业
-homey	homey a.家庭似的;自在的;舒适的 NUM
+homey	homey a.家庭似的;自在的;舒适的
 homicidal	homicidal a.杀人的
 homicide	homicide n.杀人;杀人者
 homiletic	homiletic a.说教术的;说教的;教训的
@@ -18054,28 +18054,28 @@ homiletics	homiletics n.说教术
 homily	homily n.说教;训诫
 homing	homing n.归巢;回家 a.归巢的;回家的
 hominid	hominid n.原始人类
-hominy	hominy n.玉米粥 NUM
+hominy	hominy n.玉米粥
 homocentric	homocentric a.具同一中心的;同心的
 homogamous	homogamous a.同子生殖;雌雄同熟
 homogeneity	homogeneity n.同种;同质;同次性
 homogeneous	homogeneous a.同种的;同质的;均质的
-homogenesis	homogenesis n.纯一发生 NUM
-homogenise	homogenise vi.均质化 vt.使均匀 NUM
-homogenize	homogenize vi.均质化 vt.使均匀 NUM
-homograph	homograph n.同形异义字 NUM
+homogenesis	homogenesis n.纯一发生
+homogenise	homogenise vi.均质化 vt.使均匀
+homogenize	homogenize vi.均质化 vt.使均匀
+homograph	homograph n.同形异义字
 homolog	homolog n.相当或相同的事物;相同器官;同族体
-homologous	homologous a.相应的;对应的;一致的 NUM
+homologous	homologous a.相应的;对应的;一致的
 homology	homology n.相同;异体同形;同族关系
-homonym	homonym n.同音异义字;同名异物 NUM
+homonym	homonym n.同音异义字;同名异物
 homonymic	homonymic a.同音异义字的;同名的
-homonymous	homonymous a.同音异义的;同名的;双关的 NUM
-homophony	homophony n.同音异义;同音;同音歌唱 NUM
-homosexual	homosexual a.同性恋的 n.同性恋 NUM
+homonymous	homonymous a.同音异义的;同名的;双关的
+homophony	homophony n.同音异义;同音;同音歌唱
+homosexual	homosexual a.同性恋的 n.同性恋
 homosexuality	homosexuality n.同性恋
 homozygote	homozygote n.同质接合体;均质接合体
 homunculus	homunculus n.侏儒
 hon	hon n.爱人
-honcho	honcho n.老板 NUM
+honcho	honcho n.老板
 Honduras	Honduras n.洪都拉斯
 hone	hone n.磨刀石;抱怨;想念 vt.用磨刀石磨
 honest	honest a.诚实的;坦直的;可靠的
@@ -18309,7 +18309,7 @@ hoyden	hoyden n.野丫头;淘气姑娘 a.淘气的;顽皮的;吵闹的
 hoydenish	hoydenish a.淘气的
 hoyle	hoyle n.纸牌游戏法
 hp	hp n.惠普公司 n.H-马力的简写
-hpp	hpp n.BorlandC++语言的头文件 NUM
+hpp	hpp n.BorlandC++语言的头文件
 html	html 超级文本宏语言(HyperTextMarkupLanguage)
 http	http 超级文本传输协议(HyperTextTransferProtocol)
 Hualien	Hualien n.花莲
@@ -18328,7 +18328,7 @@ huff	huff vt.吹胀;提高价格;激怒;发怒 vi.吹气;恫吓;发怒 n.发怒
 huffish	huffish a.发怒的;傲慢的
 huffy	huffy a.发怒的
 hug	hug n.紧抱;拥抱 vt.紧抱;坚持;使沾沾自喜
-huge	huge a.极大的;巨大的;无限的 NUM
+huge	huge a.极大的;巨大的;无限的
 hugely	hugely ad.巨大地;非常地
 hugeness	hugeness n.巨大;庞大;广大
 huggee	huggee n.被拥抱者
@@ -18341,7 +18341,7 @@ hulk	hulk n.笨重的船;废船
 hulking	hulking a.笨重的;粗陋的
 hull	hull n.壳;皮;船体 vt.去壳
 hullabaloo	hullabaloo n.喧嚣;喧哗;吵闹
-hum	hum n.嗡嗡声;哼声;杂声 vi.发低哼声; vt.闭口哼歌;嗡嗡叫 int.哼;嗯 NUM
+hum	hum n.嗡嗡声;哼声;杂声 vi.发低哼声; vt.闭口哼歌;嗡嗡叫 int.哼;嗯
 human	human n.人;人类 a.人类的;人性的;有同情心的
 humane	humane a.有人情的;人道的;仁慈的
 humanism	humanism n.人性;人文主义;人道
@@ -18390,11 +18390,11 @@ humpback	humpback n.驼背;座头鲸;小鲑鱼
 humpbacked	humpbacked a.驼背的
 humped	humped a.有肉峰的;有瘤的
 humper	humper n.保险杆
-humph	humph int.哼 vi.发哼声 NUM
+humph	humph int.哼 vi.发哼声
 humpy	humpy a.多隆肉的
 humus	humus n.腐殖质
 hun	hun n.匈奴;破坏者;野蛮人
-hunch	hunch n.肉峰;预感;大块 vt.弯腰驼背;弓起背部;耸肩 vi.向前移动;隆起 NUM
+hunch	hunch n.肉峰;预感;大块 vt.弯腰驼背;弓起背部;耸肩 vi.向前移动;隆起
 hunchback	hunchback n.驼背
 hunchbacked	hunchbacked a.驼背的
 hundred	hundred n.百;百个东西 num.百;百个 a.许多的
@@ -18642,7 +18642,7 @@ idealway	idealway n.郎道公司;郎道词典
 ideate	ideate vi.形成概念;想象 vt.对...形成概念
 indemnify	indemnify v.赔长
 idemnify	idemnify v.赔长
-identical	identical a.同一的;恒等的;完全相同的 NUM
+identical	identical a.同一的;恒等的;完全相同的
 identifiable	identifiable a.可以确认的
 identification	identification n.视为同一;证明同一;确认
 identified	identified pp.识别
@@ -19970,7 +19970,7 @@ interclass	interclass n.班际
 intercollegiate	intercollegiate a.大学间的;大学间联合的;大学间对抗的
 intercolumnar	intercolumnar a.柱间的
 intercommunicate	intercommunicate vi.互相交往;互相联络;交际
-intercommunicating	intercommunicating system^n.互通系统 telephoneset^n.互通电路机
+intercommunicating	intercommunicating a.互通的;内部通信的
 intercommunion	intercommunion n.亲密交往;互相来往;交流;各教派间举行的圣餐
 intercommunity	intercommunity n.共同性;共有
 interconnect	interconnect vt.使互相连接
@@ -20644,9 +20644,9 @@ Jewish	Jewish a.犹太人的;犹太族的
 jib	jib n.船首三角帆;铁臂 vi.移转;踌躇不前;停止不动
 jibber	jibber n.后退的马;踌躇不前的人
 jibe	jibe vi.嘲笑;一致 vt.嘲笑 n.嘲笑
-jiff	jiff n.瞬间 NUM
+jiff	jiff n.瞬间
 jig	jig n.快步舞;快步舞曲;带锤子的钓钩;夹具 vt.vi.乱跳;加工用钩钓鱼;选筛
-jigger	jigger n.跳汰机;小玩意 NUM
+jigger	jigger n.跳汰机;小玩意
 jiggered	jiggered a.'damned'等的委婉代用语
 jiggle	jiggle vt.vi.(使)轻摇;(使)微动 n.轻摇;微动
 jigsaw	jigsaw n.竖锯 vt.用竖锯锯
@@ -20777,17 +20777,17 @@ juggernaut	juggernaut n.Krishna神像
 juggins	juggins n.傻瓜
 juggle	juggle vi.玩戏法;行骗;篡改 vt.耍弄;歪曲;篡改 n.玩戏法;魔术;欺骗
 juggler	juggler n.变戏法者;行骗者
-jugglery	jugglery n.戏法;奇术;诈欺 NUM
+jugglery	jugglery n.戏法;奇术;诈欺
 jugular	jugular a.咽喉的;颈部的;颈静脉的 n.颈静脉
-jugulate	jugulate vt.刎颈自尽;扼杀;用严厉疗法阻止 NUM
-juice	juice n.汁;活力;体液 vt.挤出汁来;加汁 NUM
-juicer	juicer n.果汁器;照明技师 NUM
+jugulate	jugulate vt.刎颈自尽;扼杀;用严厉疗法阻止
+juice	juice n.汁;活力;体液 vt.挤出汁来;加汁
+juicer	juicer n.果汁器;照明技师
 juicily	juicily ad.多汁地
-juicy	juicy a.多汁液的;生动的;多水分的 NUM
+juicy	juicy a.多汁液的;生动的;多水分的
 juju	juju n.物神;符咒
-jujube	jujube n.枣树;枣子;枣子糖 NUM
+jujube	jujube n.枣树;枣子;枣子糖
 juke	juke vt.用假动作诱使
-jukebox	jukebox n.自动唱片点唱机 NUM
+jukebox	jukebox n.自动唱片点唱机
 jul	jul n.七月
 Julian	Julian a.JuliusCaesar的
 Juliet	Juliet n.朱丽叶
@@ -20878,18 +20878,18 @@ kangaroo-paw	kangaroo-paw n.类似蓑衣草之花草
 Kansan	Kansan a.堪萨斯州的 n.堪萨斯州
 Kansas	Kansas n.堪萨斯州
 Kantian	Kantian a.康德的;康德哲学的 n.康德学派的人
-kaon	kaon n.K中间子 NUM
+kaon	kaon n.K中间子
 kapok	kapok n.木棉花;木丝棉
-kappa	kappa n.希腊文字母第10字 NUM
-Karakorum	Karakorum n.古代蒙古帝国旧都遗迹 NUM
-karat	karat n.克拉 NUM
-karate	karate n.空手道 NUM
+kappa	kappa n.希腊文字母第10字
+Karakorum	Karakorum n.古代蒙古帝国旧都遗迹
+karat	karat n.克拉
+karate	karate n.空手道
 karst	karst n.石灰岩地区常见的地形
-kart	kart n.小型赛车 NUM
-Kasbah	Kasbah n.城;土民区 NUM
-katabatic	katabatic a.下降的 NUM
-Kate	Kate n.Catherine的昵称 NUM
-kathion	kathion n.阴向离子 NUM
+kart	kart n.小型赛车
+Kasbah	Kasbah n.城;土民区
+katabatic	katabatic a.下降的
+Kate	Kate n.Catherine的昵称
+kathion	kathion n.阴向离子
 katydid	katydid n.纺织娘
 kay	kay n.K字
 kayak	kayak n.爱斯基摩人用的皮船;皮船
@@ -21777,17 +21777,17 @@ lethean	lethean a.遗忘河的;使人遗忘过去的
 lett	lett n.列特人;列特语
 letter	letter n.信;字母;证书;字;文字;学问;出租人 vt.写字母于;将...刻于字母;加上标题 vi.写印刷体字
 lettered	lettered a.精通文学的;有学问的;有教育的
-letterhead	letterhead n.信笺上方的印刷文句;该信笺 NUM NUM
+letterhead	letterhead n.信笺上方的印刷文句;该信笺
 lettering	lettering n.写字;印字;刻字
 letterpress	letterpress n.印刷字句;本文;书信复印器
 letters	letters n.信件(字母)
 lettish	lettish a.Lett人的;Lett语的 n.Lett语
 lettuce	lettuce n.莴苣;生菜;苦菜类;纸币
-letup	letup n.停止;中止;放松 NUM NUM
-leu	leu n.罗马尼亚的货币单位;其银币 NUM NUM
+letup	letup n.停止;中止;放松
+leu	leu n.罗马尼亚的货币单位;其银币
 leucocyte	leucocyte n.白血球
 leukaemia	leukaemia n.白血病
-leukocyte	leukocyte n.白血球 NUM NUM
+leukocyte	leukocyte n.白血球
 Levant	Levant vi.逃匿
 Levantine	Levantine a.地中海东部的;地中海东部人的 n.地中海东部人
 levee	levee n.早朝;大堤 vt.为...筑堤
@@ -21872,14 +21872,14 @@ lich-gate	lich-gate n.有钉盖的墓
 lichen	lichen n.青苔;地衣;苔藓
 lichenous	lichenous a.青苔的
 lick	lick n.舔;少许;打 vt.舔;卷过;鞭打 vi.轻轻拍打
-lickerish	lickerish a.讲究吃的;渴望的;好色的 NUM NUM
-licking	licking n.舔;一舔;鞭打 ad.猛烈地 NUM NUM
-lickspittle	lickspittle n.奉承者 NUM NUM
+lickerish	lickerish a.讲究吃的;渴望的;好色的
+licking	licking n.舔;一舔;鞭打 ad.猛烈地
+lickspittle	lickspittle n.奉承者
 liquorice	liquorice n.甘草;由甘草根熬成的精
 licorice	licorice n.甘草;由甘草根熬成的精
 lictor	lictor n.执束杆侍从执政官惩罚人的官吏
 lid	lid n.盖子;限制;眼睑 vt.给...盖盖子
-lidar	lidar n.激光雷达 NUM NUM
+lidar	lidar n.激光雷达
 lidless	lidless a.无盖的;无眼脸的;看得见的
 lie	lie n.谎言;假象;位置 vi.躺着;说谎;位于;展现;存在;停泊 vt.谎骗
 lie-in	lie-in n.懒觉;躺卧示威
@@ -21893,7 +21893,7 @@ lies	lies n.谎言;v.躺卧;说谎
 lieu	lieu n.场所
 lieutenancy	lieutenancy n.中尉之职;任期
 lieutenant	lieutenant n.中尉;助理人员;副官
-life	life n.生活;生命;人生;世事;活体模型;生物;寿命;一生;生命力 ;灵魂;无期徒刑
+life	life n.生活;生命;人生;世事;活体模型;生物;寿命;一生;生命力;灵魂;无期徒刑
 lifeblood	lifeblood n.鲜血;血;生机的根源
 lifecycle	lifecycle n.生命周期;生命循环;生活过程
 lifeguard	lifeguard n.卫兵;禁卫军;救生员
@@ -21918,7 +21918,7 @@ ligate	ligate vt.结扎;绑
 ligation	ligation n.结扎;绑
 ligature	ligature n.绳;索;缚带 vt.缚;捆;结扎
 liger	liger n.雄狮与雌虎的交配种
-light	light n.光;光亮;灯;日光;发光体;光源;明星;火花;眼光 a.轻的;少量的;轻微的;轻快的;轻浮的;明亮的;淡色的;容 易的 vt.点燃;照亮 vi.点着;变亮;突降;偶然碰到 ad.轻地
+light	light n.光;光亮;灯;日光;发光体;光源;明星;火花;眼光 a.轻的;少量的;轻微的;轻快的;轻浮的;明亮的;淡色的;容易的 vt.点燃;照亮 vi.点着;变亮;突降;偶然碰到 ad.轻地
 lighted	lighted pp.点燃
 lighten	lighten vt.照亮;点亮;减轻;使轻松;闪出 vi.发亮;打闪;变轻
 lighter	lighter n.点火者;点灯工人;打火机;驳船 vt.以驳船搬运
@@ -22000,7 +22000,7 @@ linchpin	linchpin n.制轮楔;车辖;关键
 Lincoln	Lincoln n.林肯
 Lincolnshire	Lincolnshire n.林肯郡
 linden	linden n.菩提树
-line	line n.列;线;绳;电线;线路;路线;航线;作业线;界线;战线;外形;排 ;家系;诗句 vt.排成一行;顺...排列;划线于;加衬里;使有线条;使起皱纹  vi.排队 n.线条
+line	line n.列;线;绳;电线;线路;路线;航线;作业线;界线;战线;外形;排;家系;诗句 vt.排成一行;顺...排列;划线于;加衬里;使有线条;使起皱纹 vi.排队 n.线条
 line-up	line-up n.阵容
 lineage	lineage n.血统
 lineal	lineal a.直系的;正统的;嫡出的
@@ -22181,7 +22181,7 @@ loafer	loafer n.游手好闲的人;懒人;拖鞋
 loam	loam n.肥土 vt.用肥土填
 loamy	loamy a.肥沃的
 loan	loan n.贷款;借出;债权人 vt.vi.借;供应货款;借给
-loath	loath a.不情愿的;勉强的 NUM NUM
+loath	loath a.不情愿的;勉强的
 loathe	loathe vt.厌恶;憎恶
 loathing	loathing n.非常讨厌;嫌恶;极不情愿
 loathsome	loathsome a.讨厌的;可恶的;令人呕吐的
@@ -22351,7 +22351,7 @@ lorn	lorn a.被弃的;孤独的;荒凉的
 lorry	lorry n.卡车;铁路货车
 lory	lory n.一种鹦鹉
 losable	losable a.易失的
-lose	lose vt.遗失;损失;丢失;使失去;错过;浪费;迷失;使迷路;输去;使 沉溺于 vi.受损失;失败
+lose	lose vt.遗失;损失;丢失;使失去;错过;浪费;迷失;使迷路;输去;使沉溺于 vi.受损失;失败
 loser	loser n.失败者;遗失者;损失物
 losing	losing a.损失的;输的 n.失败;损失
 loss	loss n.损失;遗失;失败;输;错过;伤亡
@@ -22590,7 +22590,7 @@ macaw	macaw n.金刚鹦鹉;美国棕榈
 mace	mace n.钉头锤;权标;权杖;执权标者
 Macedonian	Macedonian a.马其顿的 n.马其顿人
 macerate	macerate vi.浸软;消瘦 vt.把...浸软;使消瘦
-machete	machete n.弯刀 NUM NUM
+machete	machete n.弯刀
 Machiavellian	Machiavellian a.马基雅弗利的;权谋术的 n.权谋政治家
 machicolate	machicolate vt.开牒眼(枪眼)
 machinable	machinable a.可机加工的
@@ -23031,7 +23031,7 @@ mark	mark n.印，記號，符號，標記vt.加記號于，加符號于，作�
 markdown	markdown n.标低价
 marked	marked a.有记号的;显著的;醒目的
 markedly	markedly ad.显著地;醒目地;明显地
-marker	marker n.作记号的人;记分员;书签;纪念碑;里程碑;标识物;指示物  n.标记
+marker	marker n.作记号的人;记分员;书签;纪念碑;里程碑;标识物;指示物 n.标记
 market	market n.市场;交易;集市;推销地区;行情;市面;销路 vt.在市场上交易;使上市;销售 vi.在市场上买卖
 marketability	marketability n.可销售;市场性
 marketable	marketable a.可销售的;销路好的;市场的
@@ -23272,7 +23272,7 @@ meals	meals n.餐食
 mealtime	mealtime n.进餐时间
 mealworm	mealworm n.生于谷类;面粉中的甲虫之幼虫
 mealy	mealy a.粉状的
-mean	mean a.低劣的;卑贱的;卑鄙的;麻烦的;简陋的;吝啬的;惭愧的; 不舒服的;平均的;中间的 vt.意谓;想要;意欲;预定 vi.用意;有意义 n.平均数;中间;中庸
+mean	mean a.低劣的;卑贱的;卑鄙的;麻烦的;简陋的;吝啬的;惭愧的;不舒服的;平均的;中间的 vt.意谓;想要;意欲;预定 vi.用意;有意义 n.平均数;中间;中庸
 meander	meander n.河流的曲折;漫步;迂回旅行 vi.缓慢而弯曲地流动;漫谈 vt.使蜿蜒曲折
 meandering	meandering n.曲径;漫步;瞎谈 a.曲折的;漫步的;聊天的
 meaning	meaning n.意味
@@ -23291,7 +23291,7 @@ measles	measles n.麻疹;风疹;包虫病;痧子
 measly	measly a.患麻疹的
 measurable	measurable a.可测量的;适度的;恰当的
 measurably	measurably ad.可以测定的程度;适度地;可目视地
-measure	measure n.尺寸;量度器;量度标准;测量;量具;标准;程度;范围;限度 ;分寸;措施;方法 vt.测量;测度;估量;权衡;调节;分派 vi.量
+measure	measure n.尺寸;量度器;量度标准;测量;量具;标准;程度;范围;限度;分寸;措施;方法 vt.测量;测度;估量;权衡;调节;分派 vi.量
 measured	measured a.量过的;慎重的;基于标准的
 measureless	measureless a.无限的;不可量的
 measurement	measurement n.尺寸 n.度量;度量单位
@@ -24185,7 +24185,7 @@ mockingbird	mockingbird n.模仿鸟
 mockingly	mockingly ad.愚弄地;取笑地
 modal	modal a.形式的;样式的;形态上的 a.模态的
 modality	modality n.样式;形式;形态
-mode	mode n.模态;模式;样式;风气;时尚 n.方式 n.DOS命令:完成有关在处理器和屏幕;打印机和键盘之间 传递数据的各种功能
+mode	mode n.模态;模式;样式;风气;时尚 n.方式 n.DOS命令:完成有关在处理器和屏幕;打印机和键盘之间传递数据的各种功能
 model	model n.模型;模范;模特儿 a.模范的;作模型用的 vi.做模型;做模特儿 vt.使模仿;塑造
 modeled	modeled pp.形成模式
 modeless	modeless a.非模态的
@@ -25021,7 +25021,7 @@ natter	natter vi.絮叨不休;唠叨;瞎扯
 nattily	nattily ad.整洁地;帅地
 nattiness	nattiness n.整洁;帅
 natty	natty a.整洁的;帅的;清楚的;敏捷的
-natural	natural n.天生的白痴 a.自然的;自然界的;本能的;天然的;天生的;物质的;正常的 ;蒙昧的;自然数的;本位的
+natural	natural n.天生的白痴 a.自然的;自然界的;本能的;天然的;天生的;物质的;正常的;蒙昧的;自然数的;本位的
 naturalism	naturalism n.自然主义;本能行动
 naturalist	naturalist n.自然主义者;博物学者
 naturalistic	naturalistic a.自然的;自然主义的;博物学的
@@ -25308,7 +25308,7 @@ nibel	nibel n.诽谤
 niblick	niblick n.铁头球杆之一种
 nibs	nibs n.上司;大人物
 nic	nic NetworkInformationCenter网络信息中心
-nice	nice a.美好的;和蔼的;正派的;体贴的;精密的;细微的;挑剔的; 拘泥的
+nice	nice a.美好的;和蔼的;正派的;体贴的;精密的;细微的;挑剔的;拘泥的
 nicely	nicely ad.漂亮地;爽快地;恰好地
 nicene	nicene a.小亚细亚旧都尼西亚的
 nicer	nicer a.良好的;ad.良好的
@@ -25400,7 +25400,7 @@ nitty	nitty a.多虱卵的
 nitwit	nitwit n.笨人;傻子
 nix	nix n.无;皆无;水中精灵 int.停!;不要!;不行! vt.禁止;拒绝
 nizam	nizam n.印度Hyderabad君主的称号;土耳其兵
-nlsfunc	nlsfunc n.DOS命令:装入国家信息支持功能;以在RAM中切换国际 字符集表
+nlsfunc	nlsfunc n.DOS命令:装入国家信息支持功能;以在RAM中切换国际字符集表
 no	no n.不;拒绝;否决票 a.没有;不是;绝非 ad.不
 noah	noah n.诺亚
 nob	nob n.头;和所翻牌同花的Jack;大人物 vt.打头
@@ -25997,7 +25997,7 @@ ochre	ochre n.赭石;赭色 vt.涂赭色于
 octad	octad n.八个一组;八价元素
 octagon	octagon n.八边形;八角形;八角堂
 octagonal	octagonal a.八边形的;八角形的
-octal	octal a.八进制的 a.八进制的
+octal	octal a.八进制的
 octan	octan a.每隔八日发一次的 n.八日热
 octane	octane n.辛烷
 octant	octant n.八分圆;八分仪;离角45度的位置
@@ -27307,7 +27307,7 @@ paschal	paschal a.逾越节的;复活节的
 pasha	pasha n.巴夏
 pasqueflower	pasqueflower n.白头翁花之一种
 pasquinade	pasquinade n.讽刺诗;讽刺 vt.讽刺
-pass	pass n.经过;要隘;途径;通行;护照;及格 vt.经过;越过;通过;批准;度过;传递;使移过;忽略 vi.经过;变化;流通;及格;宣判;终止;消逝;被忽略;不叫牌;传 递
+pass	pass n.经过;要隘;途径;通行;护照;及格 vt.经过;越过;通过;批准;度过;传递;使移过;忽略 vi.经过;变化;流通;及格;宣判;终止;消逝;被忽略;不叫牌;传递
 passable	passable a.可通行的;可渡过的;尚可的
 passage	passage n.通道;通过;移居;航行;一段 vi.通过;经过;航行 vt.vi.(使)马以斜横步前进
 passant	passant a.向前直走姿势的
@@ -27427,7 +27427,7 @@ patronizing	patronizing a.俨然以恩人态度的;要人领情的
 patronymic	patronymic a.取自教父名的 n.源于父名的姓或名字
 patsy	patsy n.容易受骗的人;懦夫
 patten	patten n.一种西洋套鞋;木鞋
-patter	patter n.急速拍打声;轻快脚步声;行话;快板;饶舌 vi.急速地说;滴答地响;发出急速轻拍声;祷告;念经;念顺口 溜 vt.使发嗒嗒声;喋喋不休地说
+patter	patter n.急速拍打声;轻快脚步声;行话;快板;饶舌 vi.急速地说;滴答地响;发出急速轻拍声;祷告;念经;念顺口溜 vt.使发嗒嗒声;喋喋不休地说
 pattern	pattern n.模范;典型;式样;样品;图案;格调 vt.模仿;仿造;以图案装饰 vi.形成图案 n.模式;图案
 patty	patty n.Mathilda;Matilda;Martha的昵称;小馅饼
 pattypan	pattypan n.面饼锅
@@ -27441,7 +27441,7 @@ pauper	pauper n.贫民;被救济者;穷人
 pauperization	pauperization n.使成为受救济贫民;贫穷化
 pauperise	pauperise vt.使成贫穷;使成为受救济者
 pauperize	pauperize vt.使成贫穷;使成为受救济者
-pause	pause n.中止;停顿;踌躇;休止符 vi.暂停;中止;停顿;踌躇 n.暂停 n.DOS命令:暂停批文件处理;在继续处理之前等待按任一 键
+pause	pause n.中止;停顿;踌躇;休止符 vi.暂停;中止;停顿;踌躇 n.暂停 n.DOS命令:暂停批文件处理;在继续处理之前等待按任一键
 pave	pave vt.铺设;安排;为...铺路
 pavement	pavement n.人行道;公路
 pavid	pavid a.害怕的;胆小的
@@ -28540,7 +28540,7 @@ platypodia	platypodia n.扁平足
 plaudit	plaudit n.拍手喝采;称赞;赞美
 plausibility	plausibility n.似有道理;善装门面;善辩
 plausible	plausible a.似真实的;似合理的;说得煞有其事的;巧嘴的
-play	play n.游戏;游玩;运动;赌博;跳动;表演;剧本;活动范围 vi.vt.玩;游戏;假装;开玩笑;进行比赛;演奏;参加;演戏;(使)跳 动 v.播放
+play	play n.游戏;游玩;运动;赌博;跳动;表演;剧本;活动范围 vi.vt.玩;游戏;假装;开玩笑;进行比赛;演奏;参加;演戏;(使)跳动 v.播放
 playa	playa n.沙漠中的盆地;海边休养地
 playable	playable a.可演奏的
 playact	playact vi.出场演戏;装扮 vt.演出;表演
@@ -28714,7 +28714,7 @@ poi	poi n.山芋食物
 poignancy	poignancy n.强烈;刻薄;辛辣
 poignant	poignant a.严厉的;尖锐的;剧烈的
 poinsettia	poinsettia n.猩猩木
-point	point n.点;小数点;标点;地点;一点;要点;细目;特点;尖端;分数;得 分;穴位 vt.弄尖;强调;指出;加标点于;瞄准;嵌填 vi.指;指向;表明
+point	point n.点;小数点;标点;地点;一点;要点;细目;特点;尖端;分数;得分;穴位 vt.弄尖;强调;指出;加标点于;瞄准;嵌填 vi.指;指向;表明
 pointed	pointed a.尖的;锐利的;率直的;显然的
 pointer	pointer n.指示物;教鞭;暗示 n.指针
 pointillism	pointillism n.点画法
@@ -28904,7 +28904,7 @@ poolroom	poolroom n.台球场;公开赌博;公开赌博场
 pools	pools n.池沼
 poop	poop n.舵楼;船尾;消息;啪啪声 vt.使疲倦;使船尾受击;使发啪啪声 vi.疲乏;发啪啪声
 pooped	pooped adj.疲倦了
-poor	poor a.贫穷的;贫乏的;不幸的;可怜的;拙劣的;卑鄙的;乏味的; 无聊的
+poor	poor a.贫穷的;贫乏的;不幸的;可怜的;拙劣的;卑鄙的;乏味的;无聊的
 poor-spirited	poor-spirited a.无气力的;懦弱的;怯懦的
 poorhouse	poorhouse n.救济院
 poorish	poorish a.不大好的
@@ -29430,7 +29430,7 @@ presidential	presidential a.总统的;首长的;总统选举的;统辖的;支配
 presider	presider n.主席;主持者
 presiding	presiding a.主持会议的;主持的;首席的
 presidium	presidium n.主席团
-press	press n.压;揿;按;拥挤;印刷机;压力;杂志报纸;紧握;新闻报道;强 迫征募 vt.压;压榨;压缩;紧抱;逼迫;推进;强迫征募;催逼 vi.压;重压;逼迫;拥挤;挤向前;受压;强迫征募
+press	press n.压;揿;按;拥挤;印刷机;压力;杂志报纸;紧握;新闻报道;强迫征募 vt.压;压榨;压缩;紧抱;逼迫;推进;强迫征募;催逼 vi.压;重压;逼迫;拥挤;挤向前;受压;强迫征募
 presser	presser n.压榨技工;压榨机
 pressing	pressing a.紧迫的;紧急的;切实的 n.压;榨;冲压;唱片
 pressman	pressman n.印刷工;印刷厂经营者;新闻记者
@@ -29553,7 +29553,7 @@ principal	principal n.校长;首长;本金;主犯;资本;委托人 a.主要的;�
 principally	principally ad.主要地
 principle	principle n.原则;原理;主义
 prink	prink vt.vi.化妆;打扮
-print	print n.版;印刷物;印迹;痕迹;印刷业;印刷字体;图片;照片;印花 布;印章;印模 vt.vi.印刷;出版;印于;用印刷体写 n.DOS命令:设置一部分RAM用于一系列文件的后台打印 ;同时DOS继续工作
+print	print n.版;印刷物;印迹;痕迹;印刷业;印刷字体;图片;照片;印花布;印章;印模 vt.vi.印刷;出版;印于;用印刷体写 n.DOS命令:设置一部分RAM用于一系列文件的后台打印;同时DOS继续工作
 printable	printable a.可印刷的;有出版价值的;可印晒的
 printed	printed a.印刷的;印好的;印花样的
 printer	printer n.印刷工;打印机 n.打印机
@@ -29779,7 +29779,7 @@ promoted	promoted n.升迁
 promoter	promoter n.促进者;助长者
 promotion	promotion n.晋级;筹办;增进
 promotional	promotional a.增进的;奖励的
-prompt	prompt n.提示;提醒;提白;付款期限 a.迅速的;敏捷的;立刻的;提白员的 vt.激励;鼓动;提示 ad.准时地 n.提示 n.DOS命令:改变DOS系统提示符的形式;将ESC键代码送 到ANSY.SYS文件
+prompt	prompt n.提示;提醒;提白;付款期限 a.迅速的;敏捷的;立刻的;提白员的 vt.激励;鼓动;提示 ad.准时地 n.提示 n.DOS命令:改变DOS系统提示符的形式;将ESC键代码送到ANSY.SYS文件
 promptbook	promptbook n.提词者所用剧本
 prompted	prompted pp.提示
 prompter	prompter n.提示台词者;激励者;唤起者
@@ -30225,7 +30225,7 @@ purchaser	purchaser n.买方;购买者
 purchases	purchases v.购买
 purchasing	purchasing vbl.购买;获得
 purdah	purdah n.窗帘;帷幕;妇人避人耳目不出的风俗
-pure	pure a.纯的;纯粹的;纯净的;无垢的;纯洁的;清白的;完美的;无 瑕的;完全的;抽象的
+pure	pure a.纯的;纯粹的;纯净的;无垢的;纯洁的;清白的;完美的;无瑕的;完全的;抽象的
 purebred	purebred a.纯种的 n.纯种的动物
 purely	purely ad.纯粹地;清洁地;贞洁地
 pureness	pureness n.清洁;纯净;纯粹
@@ -30294,7 +30294,7 @@ pussyfoot	pussyfoot vi.偷偷走路;消极行事;不表态 n.骑墙者;禁酒
 pustular	pustular a.脓疱的;有小脓疱的
 pustulation	pustulation n.生脓疱
 pustule	pustule n.脓疱
-put	put vt.放;摆;安置;移动;使穿进;发射;投掷;使处于;写上;提出;表 达;翻译;使从事;使受 vi.出发;航行;发芽;击高尔夫球 n.掷;卖方的选择;轻轻一击(入洞);笨蛋;怪人 a.固定不动的 vbl.put的过去式和过去分词
+put	put vt.放;摆;安置;移动;使穿进;发射;投掷;使处于;写上;提出;表达;翻译;使从事;使受 vi.出发;航行;发芽;击高尔夫球 n.掷;卖方的选择;轻轻一击(入洞);笨蛋;怪人 a.固定不动的 vbl.put的过去式和过去分词
 putative	putative a.想象的;推定的;传说的;被公认的
 pute	pute a.单纯的
 putrefaction	putrefaction n.腐败;腐败物
@@ -30499,7 +30499,7 @@ quiddity	quiddity n.本质;实质;诡辩;怪癖;遁辞
 quidnunc	quidnunc n.喜欢探听的人;爱说长道短的人
 quiescence	quiescence n.静止;不活动;寂静
 quiescent	quiescent a.静止的;不活动的;寂静的
-quiet	quiet n.安静;闲适;平静 a.安静的;静止的;宁静的;寂静的;朴素的;从容的;僻静的; 暗中的 vi.平静下来 vt.使平静;使平息;使安心;安慰
+quiet	quiet n.安静;闲适;平静 a.安静的;静止的;宁静的;寂静的;朴素的;从容的;僻静的;暗中的 vi.平静下来 vt.使平静;使平息;使安心;安慰
 quieter	quieter adj.更安静的
 quieting	quieting n.静寂
 quietism	quietism n.寂静主义;精神的平静
@@ -30595,7 +30595,7 @@ raciness	raciness n.痛快;爽快;风味好
 racing	racing n.赛马的嗜好;赛车的嗜好;赛马;赛车;空转
 racism	racism n.种族主义;人种偏见
 racist	racist n.种族主义者
-rack	rack n.架;行李架;饲草架;搁物架;拷问台;痛苦;破坏;齿条;行云; 小步跑;烧酒 vt.放在架上;在架上制作;折磨;使痛苦;压榨;榨取;扭伤;加 以拷问 vi.在饲草架装满干草;变形;倾斜;(云)随风飘;(马)小步跑
+rack	rack n.架;行李架;饲草架;搁物架;拷问台;痛苦;破坏;齿条;行云;小步跑;烧酒 vt.放在架上;在架上制作;折磨;使痛苦;压榨;榨取;扭伤;加以拷问 vi.在饲草架装满干草;变形;倾斜;(云)随风飘;(马)小步跑
 racket	racket n.球拍;喧闹;杂乱无章 vi.喧闹 vt.用球拍打
 racketeer	racketeer n.敲诈者;获取不正当钱财的人 vt.vi.诈骗钱财
 rackety	rackety a.喧扰的;喧闹的;喜欢吵闹的
@@ -30706,7 +30706,7 @@ rainstorm	rainstorm n.暴风雨
 rainwater	rainwater n.雨水
 rainwear	rainwear n.防水衣;雨衣
 rainy	rainy a.下雨的;多雨的
-raise	raise n.上升;高地;增高;提出 vt.升起;举起;唤起;提高;使出现;使复活;提出;筹集;解除;饲 养
+raise	raise n.上升;高地;增高;提出 vt.升起;举起;唤起;提高;使出现;使复活;提出;筹集;解除;饲养
 raised	raised a.凸起的;浮雕的;发酵的
 raiser	raiser n.提高者;饲养者;栽培者
 raises	raises n.举起;加薪;增加;v.举起;建造;扬起饲养
@@ -30879,7 +30879,7 @@ ravine	ravine n.峡谷;山峡;溪谷
 raving	raving a.胡说的;疯狂的;狂暴的 n.胡说;怒吼
 ravish	ravish vt.强夺;从人间夺走;使出神;强奸
 ravishing	ravishing a.引人入胜的
-raw	raw n.生肉;擦伤处;身上的痛处 a.生的;未加工的;生疏的;不成熟的;阴冷的;刺痛的;擦掉皮 的 vt.擦伤
+raw	raw n.生肉;擦伤处;身上的痛处 a.生的;未加工的;生疏的;不成熟的;阴冷的;刺痛的;擦掉皮的 vt.擦伤
 rawboned	rawboned a.瘦削的;骨瘦如柴的
 rawhead	rawhead n.妖怪
 rawhide	rawhide n.生皮;生皮鞭 vt.用生皮鞭抽打 a.生牛皮的
@@ -30891,7 +30891,7 @@ rayon	rayon n.人造丝
 raysistor	raysistor n.光控变阻器
 raze	raze vt.毁灭;刮去;把...夷为平地;消除;抹去;破坏
 razor	razor n.剃刀 vt.剃
-razorback	razorback n.狭尖的背脊;剃刀鲸;剃刀的锋口;鲜明的分界线;紧急关 头
+razorback	razorback n.狭尖的背脊;剃刀鲸;剃刀的锋口;鲜明的分界线;紧急关头
 razorbill	razorbill n.海雀类;一种尖嘴鸟
 razz	razz n.砸舌声 vt.非难;冷笑;嘲弄
 razzmatazz	razzmatazz n.活泼;兴奋;反话;华丽堂皇
@@ -31430,7 +31430,7 @@ regressive	regressive a.后退的;逆行的;退化的;回归的
 regret	regret n.遗憾;后悔;悔恨;抱歉;歉意 vt.为...感到遗憾;后悔;惋惜;懊悔;抱歉;哀悼 vi.感到抱歉
 regretful	regretful a.惋惜的;遗憾的;哀惜的
 regrettable	regrettable a.可叹的;可惜的;抱歉的
-regular	regular a.规则的;常例的;有秩序的;整齐的;有系统的;等边的;定期 的;经常的;正式的; n.正规军;正式队员 ad.经常地 n.正常体
+regular	regular a.规则的;常例的;有秩序的;整齐的;有系统的;等边的;定期的;经常的;正式的; n.正规军;正式队员 ad.经常地 n.正常体
 regularity	regularity n.有规则;匀整;正规;经常;调和
 regularization	regularization n.规则化;调整
 regularise	regularise vt.使有规则;使有秩序;调整
@@ -31537,7 +31537,7 @@ relic	relic n.神圣的遗物;遗迹;纪念物;遗风;残片
 relict	relict n.未亡人;寡妇;残余物;残余
 relief	relief n.减轻;解除;救济;安慰;调剂;浮雕;换班;地势的起伏
 relier	relier n.信赖者;依赖者
-relieve	relieve vt.减轻;救济;解除;使免除;换...的班;调剂;使不单调;衬托;使 显著 vi.救济;换防;成浮雕
+relieve	relieve vt.减轻;救济;解除;使免除;换...的班;调剂;使不单调;衬托;使显著 vi.救济;换防;成浮雕
 relieved	relieved adj.宽心的
 reliever	reliever n.解除痛苦的人;接替者;救济者
 relievo	relievo n.浮雕
@@ -31599,7 +31599,7 @@ reminiscent	reminiscent a.回忆的;怀旧的 n.回忆者;回忆录作者
 remiss	remiss a.怠慢的;不小心的;迟缓的;疏忽的
 remission	remission n.宽恕;豁免;免罪;缓和;减轻
 remissive	remissive a.宽恕的;减轻的
-remit	remit vt.宽恕;赦免;免除;汇出;缓和;减轻;提交;使复职;推迟;传送  vi.缓和;汇款 n.移交的事物
+remit	remit vt.宽恕;赦免;免除;汇出;缓和;减轻;提交;使复职;推迟;传送 vi.缓和;汇款 n.移交的事物
 remittal	remittal n.赦免;免除;减轻
 remittance	remittance n.汇款
 remittee	remittee n.汇款领取人
@@ -31642,7 +31642,7 @@ renascent	renascent a.再生的;复活的
 reencounter	reencounter n.冲突;决斗;论战 vt.vi.交战;冲突;邂逅
 rencounter	rencounter n.冲突;决斗;论战 vt.vi.交战;冲突;邂逅
 rend	rend vt.分裂;劈开;强夺;撕碎;响彻 vi.撕开;裂开
-render	render vt.报答;归还;汇报;提出;放弃;反映;表示;表达;表演;致使;执 行;实施 vi.给予补偿 n.交纳;粉刷;打底
+render	render vt.报答;归还;汇报;提出;放弃;反映;表示;表达;表演;致使;执行;实施 vi.给予补偿 n.交纳;粉刷;打底
 rendering	rendering n.翻译;表现;描写;表演;打底;粉刷;透视图;复制图
 rendezvous	rendezvous n.约会;约定的会晤;集会地点 vt.vi.集合;集结;在约定场所会面
 rendition	rendition n.翻译;描写;施舍;表演
@@ -31650,8 +31650,8 @@ renegade	renegade n.背教者;变节者;脱党者 a.背弃的;脱离的;叛徒�
 renege	renege vi.违例出牌;食言;毁约 vt.否认;放弃;拒绝 n.出牌违例
 renegotiate	renegotiate vt.重新谈判
 renegue	renegue vi.违例出牌;食言;毁约 vt.否认;放弃;拒绝 n.出牌违例
-renew	renew vt.使更新;复始;使恢复;复兴;修补;补充;继续;重复;重申;续 借 vi.更新;重新开始
-renewal	renewal n.更新;革新;复兴;复始;恢复;修补;补充;继续;重复;重申;续 借
+renew	renew vt.使更新;复始;使恢复;复兴;修补;补充;继续;重复;重申;续借 vi.更新;重新开始
+renewal	renewal n.更新;革新;复兴;复始;恢复;修补;补充;继续;重复;重申;续借
 renewedly	renewedly ad.重新;再度
 reniform	reniform a.肾脏形的
 rennin	rennin n.高血压蛋白原酶
@@ -31730,7 +31730,7 @@ repetitious	repetitious a.多次反复的;重复的;反复性的
 repetitive	repetitive a.重复的;反复性的
 rephrase	rephrase vt.改述;改撰
 repine	repine vi.抱怨;发牢骚;鸣不平;向往
-replace	replace vt.代替;替换;放回;使恢复;归还 v.替换 n.DOS命令:用源目录中的同名文件取代目标目录中的文 件来更新文件;或将源目录中的文件
+replace	replace vt.代替;替换;放回;使恢复;归还 v.替换 n.DOS命令:用源目录中的同名文件取代目标目录中的文件来更新文件;或将源目录中的文件
 replaceable	replaceable a.可替换的;可代替的;可放在原处的
 replacement	replacement n.交换;更换;代替者
 replacements	replacements n.补充
@@ -31763,7 +31763,7 @@ repot	repot vt.移植
 reprehend	reprehend vt.申斥;谴责;非难
 reprehensible	reprehensible a.应斥责的;应该谴责的
 reprehension	reprehension n.非难;指责
-represent	represent vt.表现;表示;描绘;讲述;声称;代表;象征;扮演;回忆;再赠送 ;再上演 vi.提出异议
+represent	represent vt.表现;表示;描绘;讲述;声称;代表;象征;扮演;回忆;再赠送;再上演 vi.提出异议
 representation	representation adj.表示的
 representati	representati adj.表示的
 representational	representational a.表现的
@@ -31857,7 +31857,7 @@ resent	resent vt.愤恨;憎恶;怨恨
 resentment	resentment n.怨恨;愤恨
 reserpine	reserpine n.利血平
 reservation	reservation n.保留;预定;保留品;保留地
-reserve	reserve n.预备品;贮存;预备舍;后备军;保留地;保留;沉默;节制;秘 密;储备金 vt.保留;保存;预订;延期;推迟
+reserve	reserve n.预备品;贮存;预备舍;后备军;保留地;保留;沉默;节制;秘密;储备金 vt.保留;保存;预订;延期;推迟
 reserves	reserves n.储量
 reservist	reservist n.后备军人;在乡军人
 reservoir	reservoir n.贮水池;贮藏处;贮备;水库 vt.储藏
@@ -31945,7 +31945,7 @@ responsibility	responsibility n.责任;职责;负担;响应度;可靠性
 responsible	responsible a.有责任的;负责的;责任重大的;可靠的
 responsibly	responsibly adv.相对地
 responsive	responsive a.回答的;应答的;易感应的
-rest	rest n.休息;睡眠;安息;稍息;安静;静止;支架;休息处;其余者;剩 余部分 vi.休息;睡;长眠;安心;静止;停止;安置;依赖;依旧 vt.使休息;使支撑;把...寄托于
+rest	rest n.休息;睡眠;安息;稍息;安静;静止;支架;休息处;其余者;剩余部分 vi.休息;睡;长眠;安心;静止;停止;安置;依赖;依旧 vt.使休息;使支撑;把...寄托于
 restart	restart vt.vi.重新开始 v.重新启动
 restate	restate vt.重新叙述;重申
 restatement	restatement n.再声明;重述
@@ -32285,7 +32285,7 @@ rig	rig n.装备;帆具;服装 vt.装配;装扮;垄断;操纵
 rig-out	rig-out n.准备;衣服
 rigadoon	rigadoon n.从前流行的一种活泼双人舞;其舞曲
 rigging	rigging n.索具;绳索;装备
-right	right n.权利;右边;正义;真相;右派;公正 a.正确的;对的;恰当的;正常的;正直的;真正的;正面的;右 方的 ad.正确地;顺利;一直;直接;向右 vt.扶直;整理;纠正;伸冤;使昭雪 vi.恢复平稳 n.右
+right	right n.权利;右边;正义;真相;右派;公正 a.正确的;对的;恰当的;正常的;正直的;真正的;正面的;右方的 ad.正确地;顺利;一直;直接;向右 vt.扶直;整理;纠正;伸冤;使昭雪 vi.恢复平稳 n.右
 righteous	righteous a.公正的;正义的;正直的
 righteousness	righteousness n.正义;公正;正直
 rightful	rightful a.合法的;正直的;当然的
@@ -32313,7 +32313,7 @@ rimose	rimose a.裂缝的
 rimrock	rimrock n.悬崖
 rimy	rimy a.被霜覆盖的
 rind	rind n.树皮;壳;外表 vt.削皮;剥壳
-ring	ring n.环;环形物;环状;拳击场;戒指;竞赛;集团;铃声;钟声;打电 话;声调 vt.包围;套住;按铃;敲钟 vi.成环形;响;鸣;按铃;敲钟;回响
+ring	ring n.环;环形物;环状;拳击场;戒指;竞赛;集团;铃声;钟声;打电话;声调 vt.包围;套住;按铃;敲钟 vi.成环形;响;鸣;按铃;敲钟;回响
 ringbolt	ringbolt n.环端螺钉
 ringdove	ringdove n.鸽子之一种;班鸠
 ringed	ringed a.有环的;环状的;戴戒指的
@@ -32351,7 +32351,7 @@ riprap	riprap n.乱石;碎石;堆成的石基 vt.用乱石筑基
 ripsaw	ripsaw n.粗齿锯
 ripsnorting	ripsnorting a.了不起的;大不了的
 riptide	riptide n.洪涛;急流;激流
-rise	rise n.上升;增加;上涨;高地;小山;升高;出现;发生 vi.升起;起身;起立;上升;上涨;增长;高耸;起义;浮现;发源;休 会;复活 vt.使飞起
+rise	rise n.上升;增加;上涨;高地;小山;升高;出现;发生 vi.升起;起身;起立;上升;上涨;增长;高耸;起义;浮现;发源;休会;复活 vt.使飞起
 risen	risen vbl.rise的过去分词 a.升起的;复活的
 riser	riser n.起床者;叛徒;起义者;竖板
 risibility	risibility n.爱笑的性质;爱笑的癖性;对笑的感受性
@@ -32563,7 +32563,7 @@ rotundity	rotundity n.球状;圆形;圆形物
 roué	roué n.放荡者;享乐者
 roue	roue n.放荡者;享乐者
 rouge	rouge n.口红;胭脂 vt.vi.擦口红
-rough	rough n.粗糙的东西;毛坯;未加工品;梗概;草图;暴徒;艰难 a.粗糙的;粗暴的;蓬乱的;草率的;大致的;简陋的;暴风雨的 ;艰难的 vt.使粗糙;使不平;使蓬乱;粗制;草拟;粗暴对待;殴打 vi.变粗糙 ad.粗糙地;粗暴地
+rough	rough n.粗糙的东西;毛坯;未加工品;梗概;草图;暴徒;艰难 a.粗糙的;粗暴的;蓬乱的;草率的;大致的;简陋的;暴风雨的;艰难的 vt.使粗糙;使不平;使蓬乱;粗制;草拟;粗暴对待;殴打 vi.变粗糙 ad.粗糙地;粗暴地
 roughage	roughage n.粗饲料;粗粮
 roughcast	roughcast vt.涂粗灰泥于;拟订...大纲 n.粗灰泥;毛坯 a.涂粗灰泥的;草草做成的
 roughdry	roughdry vt.晾干而不烫平
@@ -32681,7 +32681,7 @@ ruin	ruin n.毁灭;推翻;废墟 vi.毁灭;衰败;破坏;破产;堕落 vt.使毁
 ruined	ruined a.毁灭的;灭亡的;荒废的
 ruinous	ruinous a.破坏性的;招致毁灭的;零落的
 ruins	ruins n.废墟
-rule	rule n.规则;惯例;统治;控制;支配;规律;准则;标准;章程;破折号  vt.规定;统治;管理;控制;支配;裁决 vi.统治;管辖;裁定 n.规则;水线
+rule	rule n.规则;惯例;统治;控制;支配;规律;准则;标准;章程;破折号 vt.规定;统治;管理;控制;支配;裁决 vi.统治;管辖;裁定 n.规则;水线
 ruleless	ruleless a.无规则的;无规律的;不受支配的
 ruler	ruler n.统治者;管理者;尺;直尺 n.标尺
 ruling	ruling n.判决;裁定;统治 a.统治的;支配的;流行的
@@ -34015,7 +34015,7 @@ sexualise	sexualise vt.使有性别;使有性特征
 sexualize	sexualize vt.使有性别;使有性特征
 sexy	sexy a.有性感的;色情的
 Seychelles	Seychelles pla.塞舌尔
-sgml	sgml 标准的通用的宏语言(Standardized;GeneralizedMarkupLangua ge)
+sgml	sgml 标准的通用的宏语言(Standardized;GeneralizedMarkupLanguage)
 shabbily	shabbily ad.衣衫褴褛地;不体面地;卑鄙地
 shabbiness	shabbiness n.衣衫褴褛的样子;不体面;卑鄙
 shabby	shabby a.衣衫褴褛的;不体面的;破旧的;吝啬的;卑鄙的
@@ -34098,7 +34098,7 @@ sharer	sharer n.分配者;共同收受者;参与分配或分红者
 shareware	shareware n.共享软件
 sharing	sharing n.分享
 shark	shark n.鲨鱼;骗子 vt.vi.敲诈
-sharp	sharp n.高调;内行;利刃;骗子 a.锐利的;锋利的;明显的;急转的;敏锐的;急剧的;尖刻的;严厉的;强烈 的;刺耳的;敏捷的; ad.整;锐利地;急速地 n.夏普(声宝)电器
+sharp	sharp n.高调;内行;利刃;骗子 a.锐利的;锋利的;明显的;急转的;敏锐的;急剧的;尖刻的;严厉的;强烈的;刺耳的;敏捷的; ad.整;锐利地;急速地 n.夏普(声宝)电器
 sharpen	sharpen vt.使尖锐;使敏捷;加重;使剧烈 vi.尖锐化;变锋利
 sharpened	sharpened adj.尖锐的
 sharpener	sharpener n.研磨者;削的人;研磨工具
@@ -34166,7 +34166,7 @@ shewbread	shewbread n.供神用面包
 shield	shield n.盾;防卫物 vt.保护;遮蔽;庇护;挡开;避开 vi.起保护作用
 shield-hand	shield-hand n.左手
 shielding	shielding n.屏隔
-shift	shift n.变化;移动;轮班;手段;办法 vt.替换;转移;改变;移转;推卸;变速 vi.转换;移动;转变;推托;变速 n.移位 n.DOS命令:将命令行参数向左移动一个位置;因而允许你在命令行中 包括多于9个参数
+shift	shift n.变化;移动;轮班;手段;办法 vt.替换;转移;改变;移转;推卸;变速 vi.转换;移动;转变;推托;变速 n.移位 n.DOS命令:将命令行参数向左移动一个位置;因而允许你在命令行中包括多于9个参数
 shifting	shifting n.移位;移位操作
 shiftless	shiftless a.无计谋的;偷懒的;不中用的;无能的
 shifty	shifty a.变化的
@@ -34250,7 +34250,7 @@ shogunate	shogunate n.将军职位;将军政治;幕府时代
 shoo	shoo int.赶走鸟等时所发声音 vt.vi.发出嘘声赶
 shoofly	shoofly n.摇动木马;派饼的一种
 shook	shook vbl.shake的过去式
-shoot	shoot n.射击;芽;发射;发芽;急流;摄影;推力;一道光线 vt.射击;射中;损毁;拍摄;伸出;投射;挥出;伸出;飞速行进;挥霍;用完;使 爆炸;给...注射 vi.射出;射击;发出;拍电影;射门;发芽
+shoot	shoot n.射击;芽;发射;发芽;急流;摄影;推力;一道光线 vt.射击;射中;损毁;拍摄;伸出;投射;挥出;伸出;飞速行进;挥霍;用完;使爆炸;给...注射 vi.射出;射击;发出;拍电影;射门;发芽
 shooter	shooter n.射手;狩猎者;枪炮
 shooting	shooting n.发射;猎场;射击
 shoots	shoots n.嫩枝
@@ -34926,7 +34926,7 @@ smallish	smallish a.有点小的;短小的
 smallness	smallness n.小;贫乏;小气
 smallpox	smallpox n.天花
 smarmy	smarmy a.令人厌烦的;爱说奉承话的
-smart	smart a.聪明的;漂亮的;刺痛的;剧烈的;厉害的;敏捷的;巧妙的;伶俐的;潇洒 的 n.刺痛;痛苦 vi.刺痛
+smart	smart a.聪明的;漂亮的;刺痛的;剧烈的;厉害的;敏捷的;巧妙的;伶俐的;潇洒的 n.刺痛;痛苦 vi.刺痛
 smarten	smarten vt.使潇洒;使整洁 vi.变潇洒;变强烈
 smartly	smartly ad.潇洒地;火辣辣地;刺痛地
 smartness	smartness n.现代风格;敏捷;机灵
@@ -34971,7 +34971,7 @@ smoky	smoky a.冒烟的;似烟的;熏脏的;呛人的
 smoulder	smoulder vi.闷烧;郁积 n.闷烧
 smolder	smolder vi.闷烧;郁积 n.闷烧
 smooch	smooch n.接吻;污迹 vi.接吻 vt.弄脏
-smooth	smooth a.平滑的;平坦的;平稳的;流畅的;和蔼的;安祥的;圆滑的;调匀的;无毛 的 vt.使光滑;烫平;使优雅;消除 vi.变平滑;变平静 n.一块平地;平滑部分
+smooth	smooth a.平滑的;平坦的;平稳的;流畅的;和蔼的;安祥的;圆滑的;调匀的;无毛的 vt.使光滑;烫平;使优雅;消除 vi.变平滑;变平静 n.一块平地;平滑部分
 smoothbore	smoothbore n.无膛线枪;无膛线炮
 smoother	smoother n.弄平的人;路面整平机;修光工具
 smoothing	smoothing adj.平滑的
@@ -35336,7 +35336,7 @@ sorrow	sorrow n.悲伤;哀惜;不幸 vi.悲伤;懊悔;遗憾
 sorrow-stricken	sorrow-stricken a.悲痛的;哀伤的
 sorrowful	sorrowful a.悲伤的
 sorry	sorry a.难过的;悲哀的;遗憾的
-sort	sort n.种类;样子;态度 vt.分类;排序;挑选 vi.交往 v.排序 n.DOS命令:在字符型文件中进行数据排序;或者将DOS命令的输出 进行排序
+sort	sort n.种类;样子;态度 vt.分类;排序;挑选 vi.交往 v.排序 n.DOS命令:在字符型文件中进行数据排序;或者将DOS命令的输出进行排序
 sortable	sortable a.可分类的
 sorter	sorter n.从事分类的人;把东西分类拣选的人
 sortie	sortie n.出击;突围
@@ -35764,7 +35764,7 @@ sprayer	sprayer n.喷出水沫的人;喷雾;喷雾器
 spread	spread n.传播;散布;伸展 a.扩延的;伸展的 vt.展开;铺开;传播;推广;伸出;涂;敷;使延长;延伸 vi.展开;扩大;传开
 spread-sheet	spread-sheet n.试算表
 spreadhead	spreadhead n.大标题
-spreadsheet	spreadsheet n.电子制表软件;电子数据表 n.电子制表软件;电子数据表
+spreadsheet	spreadsheet n.电子制表软件;电子数据表
 spree	spree n.戏耍;喧闹;宴会;狂饮 vi.狂欢;狂饮
 sprig	sprig n.小树枝;图钉 vt.用小树枝装饰;用钉子钉上;使蔓生
 spriggy	spriggy a.小树枝多的;嫩枝多的
@@ -36438,7 +36438,7 @@ stride	stride n.大步;一跨步;进步 vi.vt.迈大步走;跨过;跨
 strident	strident a.刺耳的;吱吱尖叫的;尖锐的
 strife	strife n.争吵;竞争;冲突
 strigil	strigil n.搔肤器
-strike	strike n.罢工;打击;殴打 vt.打;撞击;冲击;侵袭;取消;结算;打动;罢工;刺透;使生根;到达;遇见;发 现;划燃 vi.打;打击;抓;罢工;搏动;触礁;敲;响;穿透;打动
+strike	strike n.罢工;打击;殴打 vt.打;撞击;冲击;侵袭;取消;结算;打动;罢工;刺透;使生根;到达;遇见;发现;划燃 vi.打;打击;抓;罢工;搏动;触礁;敲;响;穿透;打动
 strike-breaker	strike-breaker n.破坏罢工
 strikebreaker	strikebreaker n.破坏罢工
 strikebreaking	strikebreaking n.破坏罢工
@@ -36597,7 +36597,7 @@ subdean	subdean n.副助理监督;副助理主教
 subdecanal	subdecanal a.副助祭
 subdiaconate	subdiaconate n.副助祭之职位
 subdir	subdir n.子目录
-subdirectory	subdirectory n.子目录 n.子目录
+subdirectory	subdirectory n.子目录
 subdivisible	subdivisible a.可以再分的;可以细别的
 subdivision	subdivision n.细分;一部
 subdominant	subdominant n.次属音 a.占第二位优势的
@@ -36669,10 +36669,10 @@ subplot	subplot n.陪衬情节;次要情节
 subpoena	subpoena n.传票 vt.传审;唤审
 subprefect	subprefect n.副县长;郡长;代理警察局长
 subprior	subprior n.修道院副院长
-subprogram	subprogram n.子程序;辅程序 n.子程序;辅程序
+subprogram	subprogram n.子程序;辅程序
 subregion	subregion n.亚区
 subrogation	subrogation n.代位;代位偿清;更替
-subroutine	subroutine n.子程序 n.子[例行] 程序
+subroutine	subroutine n.子程序 n.子[例行]程序
 subscibe	subscibe n.订阅
 subscribe	subscribe vt.捐献;签署 vi.赞成;同意;捐款;预订;认购
 subscriber	subscriber n.签署者;捐献者;订户
@@ -36966,8 +36966,8 @@ superphosphate	superphosphate n.过磷酸盐;过磷酸石灰
 superpose	superpose vt.放在上面;重叠
 superposition	superposition n.重叠;叠合;重合
 superpower	superpower n.超级强权
-super-regenerative	super-regenerative eceiver^n.超再生
-superregenerative	superregenerative eceiver^n.超再生
+super-regenerative	super-regenerative a.超再生的
+superregenerative	superregenerative a.超再生的
 supersaturate	supersaturate vt.使过度饱和
 supersaturation	supersaturation n.过度饱和
 superscript	superscript a.写在上面的 n.字角文字 n.上标
@@ -37231,7 +37231,7 @@ switch-hitter	switch-hitter n.左右两边都能打的选手
 switchback	switchback n.在Z形路轨向原来的方向返驶;改变角度
 switchboard	switchboard n.配电盘;接线总机
 switched	switched adj.转换的
-switches	switches n.DOS命令:允许从101键的键盘向后兼容;及将WINA20.386文件移 出根目录
+switches	switches n.DOS命令:允许从101键的键盘向后兼容;及将WINA20.386文件移出根目录
 switching	switching n.转接;交换;转换;开关
 switchman	switchman n.转辙员
 switchyard	switchyard n.调车场
@@ -37371,7 +37371,7 @@ systolic	systolic a.心脏收缩的
 syzygy	syzygy n.会合;朔望
 t	t n.字母t
 ta	ta n.终端介面
-tab	tab n.制表[键];标号;调整片;小报;短小突出部;监督;记录;帐单 n.标签;制表符;TAB键 n.制表[键] ;标号;卡片设备
+tab	tab n.制表[键];标号;调整片;小报;短小突出部;监督;记录;帐单 n.标签;制表符;TAB键 n.制表[键];标号;卡片设备
 tabard	tabard n.纹章战袍;传令所穿衣服;一种粗大衣
 tabasco	tabasco n.塔巴斯哥辣酱油
 tabby	tabby n.平纹;斑猫 vt.使起波纹 a.平纹组织的;起波纹的
@@ -37428,7 +37428,7 @@ tael	tael n.两
 taenia	taenia n.装饰头部的带;带;绳
 taffrail	taffrail n.船尾上部;船尾栏杆
 taffy	taffy n.Wales人;太妃糖;阿谀
-tag	tag n.标签;附属物;名称;碎片;结束语;口头禅;陈词滥调;附加语;浑名;残片 ;标记;标记 vt.附以签条;尾随;添饰;起浑名;连接 vi.紧紧跟随 n.标记 n.标记;标记符
+tag	tag n.标签;附属物;名称;碎片;结束语;口头禅;陈词滥调;附加语;浑名;残片;标记;标记 vt.附以签条;尾随;添饰;起浑名;连接 vi.紧紧跟随 n.标记 n.标记;标记符
 tagalong	tagalong n.追随学样者
 tagboard	tagboard n.标签纸
 tagger	tagger n.垂下物;尾随者;薄铁片;附加物
@@ -37451,7 +37451,7 @@ taint	taint n.污点;耻辱;感染 vt.污染;使腐败;沾染;腐蚀
 Taipei	Taipei n.台北
 Taiwan	Taiwan n.台湾
 Taiwanese	Taiwanese a.台湾的;台湾人的 n.台湾人
-take	take vt.拿;取;抓;带领;获得;就座;接受;吃;喝;吸收;采取;乘;需要;花费;产生;对 待 vi.拿;取;起作用;变得 n.拿;取;收成
+take	take vt.拿;取;抓;带领;获得;就座;接受;吃;喝;吸收;采取;乘;需要;花费;产生;对待 vi.拿;取;起作用;变得 n.拿;取;收成
 takedown	takedown n.拆抑
 taken	taken vbl.take的过去分词
 take-off	take-off n.起飞
@@ -37560,7 +37560,7 @@ tanyard	tanyard n.硝皮厂;制革厂
 Tanzania	Tanzania n.坦桑尼亚
 Tao	Tao n.道
 Taoism	Taoism n.道教
-tap	tap n.轻打;水龙头 vt.轻打;轻敲;敲打出;选择;装上嘴子;使流出;开发;召集;分接;攻螺纹于 ;要求 vi.轻叩;轻拍;轻声走
+tap	tap n.轻打;水龙头 vt.轻打;轻敲;敲打出;选择;装上嘴子;使流出;开发;召集;分接;攻螺纹于;要求 vi.轻叩;轻拍;轻声走
 tape	tape n.录音带;磁带;带子;窄带;卷尺 vt.以带子绑起;测量;录音
 taped	taped adj.录音的
 tapeline	tapeline n.卷尺
@@ -37858,7 +37858,7 @@ tench	tench n.鲤鱼类淡水鱼
 tend	tend vi.有某种的倾向;易于;招待;注意 vt.照料;护理
 tendency	tendency n.趋向;倾向
 tendentious	tendentious a.有支持某种立场的;有倾向的;宣传性的
-tender	tender a.嫩的;柔软的;脆弱的;温柔的;亲切的;未成熟的;微妙的;棘手的;担心 的 vt.vi.(使)变柔软;(使)变脆弱 vt.提出;提供;清偿 vi.投标 n.看门人;看管人;供应船;小船;提出;偿付;投标
+tender	tender a.嫩的;柔软的;脆弱的;温柔的;亲切的;未成熟的;微妙的;棘手的;担心的 vt.vi.(使)变柔软;(使)变脆弱 vt.提出;提供;清偿 vi.投标 n.看门人;看管人;供应船;小船;提出;偿付;投标
 tenderer	tenderer n.投标者
 tenderfoot	tenderfoot n.新手;生手;无经验者
 tender-hearted	tender-hearted a.心地温和的;温厚的
@@ -37920,7 +37920,7 @@ terbium	terbium n.稀土族元素;符号Tb;原子序65
 tercel	tercel n.雄鹰
 tercet	tercet n.三行联句;三连音;三拍子
 tergum	tergum n.背叛
-term	term n.术语;名词;期限;学期;任期;限期;开庭期;条件;条款;价钱;关系;地位; 项;界石 vt.称;呼
+term	term n.术语;名词;期限;学期;任期;限期;开庭期;条件;条款;价钱;关系;地位;项;界石 vt.称;呼
 termagancy	termagancy n.嘴碎;泼悍;暴躁
 termer	termer n.服刑者
 terminability	terminability n.有期限;可终止
@@ -38150,7 +38150,7 @@ thew	thew n.肌(肉);体力;活力
 thewy	thewy a.肌肉发达的;有力的
 they	they pron.他们;它们
 they're	they're n.他们是
-thick	thick a.厚的;粗壮的;浓的;密集的;密的;迟钝的;浑浊的;多雾的;过分的;口齿 不清的 ad.厚地;密地;丰富地 n.最浓处;最厚处;最密集处
+thick	thick a.厚的;粗壮的;浓的;密集的;密的;迟钝的;浑浊的;多雾的;过分的;口齿不清的 ad.厚地;密地;丰富地 n.最浓处;最厚处;最密集处
 thicken	thicken vi.变浓;变厚;变得模糊;变为复杂 vt.使变厚;加强;使模糊
 thickening	thickening n.使厚;变厚;厚的部分
 thicket	thicket n.繁茂处;丛林;草丛
@@ -39497,7 +39497,7 @@ twins	twins n.双胞踏
 twip	twip n.缇
 twirl	twirl vt.(使)快速转动;捻弄 n.转动;万能钥匙;旋转的东西
 twirler	twirler n.指挥女郎
-twist	twist n.一扭;扭曲;曲折;歪曲;螺旋状;手法 vt.拧;扭曲;捻;编织;使扭转;缠绕;盘绕;歪曲;使转动;使苦恼;使混乱;使 旋转 vi.扭弯;扭曲;缠绕;扭动;呈螺旋形
+twist	twist n.一扭;扭曲;曲折;歪曲;螺旋状;手法 vt.拧;扭曲;捻;编织;使扭转;缠绕;盘绕;歪曲;使转动;使苦恼;使混乱;使旋转 vi.扭弯;扭曲;缠绕;扭动;呈螺旋形
 twisted	twisted adj.扭曲的
 twister	twister n.缠绕者;缠绕机;歪曲事实的人
 twit	twit vt.责难;愚弄;嘲笑 n.谴责;责骂;嘲笑
@@ -40385,7 +40385,7 @@ unshackle	unshackle vt.除去锁;释放;使获自由
 unshaken	unshaken a.坚决的;不动摇的;泰然自若的
 unshapely	unshapely a.不好看的;样子不好的;丑怪的
 unsheathe	unsheathe vt.抽出鞘;拔出
-unshelled	unshelled adj.无壳的 NUM NUM
+unshelled	unshelled adj.无壳的
 unship	unship vt.从船上卸;使下船;解下 vi.被卸下
 unshod	unshod a.未穿靴的;赤脚的;未钉铁蹄的
 unsight	unsight a.不检查的;未见过的
@@ -40537,7 +40537,7 @@ uplifted	uplifted a.举起的;上升的
 upload	upload n.(从BBS)上装;上载
 upmost	upmost a.最高的;最上的
 upon	upon prep.在...之上;迫近;紧接着
-upper	upper a.上面的;较高的;上级的;上院的;穿在外面的;北部的;地表 的;后期的 n.鞋帮;绑腿;上齿
+upper	upper a.上面的;较高的;上级的;上院的;穿在外面的;北部的;地表的;后期的 n.鞋帮;绑腿;上齿
 uppercase	uppercase a.大写字母的 vt.用大写字母写;以大写字母印刷
 uppercut	uppercut n.上击 vt.vi.上击
 uppermost	uppermost a.最上的;最高的;最上面的 ad.在最上;最初;首先
@@ -40787,7 +40787,7 @@ variorum	variorum a.有诸家注解的;集注的 n.集注本
 various	various a.不同的;各种的;多方面的;许多的;个别的;杂色的
 varistor	varistor n.变阻体
 varlet	varlet n.恶棍
-varmint	varmint n.流氓;恶棍 NUM NUM
+varmint	varmint n.流氓;恶棍
 varnish	varnish n.油漆;清漆;掩饰;光泽面 vt.粉饰;涂油漆于;装饰;使有光泽
 vary	vary vt.改变;使多样化 vi.变化;不同;违反
 vascular	vascular a.脉管的;有脉管的;血管的
@@ -41006,7 +41006,7 @@ vestibular	vestibular a.门厅的;门口走廊的;前庭的
 vestibule	vestibule n.前庭;门廊;前厅; vt.为...设门廊
 vestige	vestige n.遗迹;痕迹;残余;丝毫;退化的器官
 vestiges	vestiges n.陈迹
-vestigial	vestigial a.痕迹的;遗迹的;退化的 NUM NUM
+vestigial	vestigial a.痕迹的;遗迹的;退化的
 vestment	vestment n.衣服;衣裳;礼服;法衣;祭坛布
 vestry	vestry n.法衣室;祭具室;教堂附属室
 vestryman	vestryman n.教区代表;教区委员
@@ -41176,7 +41176,7 @@ virtuosity	virtuosity n.美术兴趣;爱好古董;鉴定眼光
 virtuoso	virtuoso n.艺术品鉴赏家
 virtuous	virtuous a.有品德的;善良的;贞洁的;有效力的
 virulence	virulence n.有毒;毒性;恶意
-virulent	virulent a.剧毒的;致命的;刻毒的;恶毒的;恶性的;有病毒的;充满敌 意的
+virulent	virulent a.剧毒的;致命的;刻毒的;恶毒的;恶性的;有病毒的;充满敌意的
 virus	virus n.病毒;滤过性微生物;毒害;恶毒
 virustatic	virustatic a.阻止病毒生长的
 visa	visa n.签证 vt.签准
@@ -41203,7 +41203,7 @@ visitation	visitation n.访问;探望;正式的视察
 visitatorial	visitatorial a.访问的;巡视的;巡察的
 visited	visited v.拜访;访问;vbl.拜访;访问
 visiting	visiting n.拜访;访问
-visitor	visitor n.访客 NUM NUM
+visitor	visitor n.访客
 visitors	visitors n.游客
 visor	visor n.面颊;帽舌;盔甲
 vista	vista n.街景;展望;回想
@@ -41294,7 +41294,7 @@ voiceless	voiceless a.无声的
 voiceprint	voiceprint n.声波纹
 void	void n.空虚;空间;真空;空隙;空虚感 a.空的;无人的;空闲的;没有的;无用的;无效的
 voidable	voidable a.可使无效的;得撤销的
-voidance	voidance n.成空;搬空;排泄;取消;废除;出缺 NUM NUM
+voidance	voidance n.成空;搬空;排泄;取消;废除;出缺
 voile	voile n.薄纱;纱
 vol	vol n.DOS命令:显示磁盘卷标
 Volant	Volant a.会飞的;能飞翔的;迅速的;展翅的
@@ -41327,7 +41327,7 @@ volubility	volubility n.饶舌;好说话;爱说话
 voluble	voluble a.流利的;健谈的;易旋转的;缠绕的
 volume	volume n.体积;大小;册;卷;容量;大量;许多;份量;音量 vi.成团卷起 vt.收集成卷 a.大量的
 volumetric	volumetric a.测定体积的
-voluminous	voluminous a.卷数多的;大部分的;著书多的;长篇的;庞大的;很多的;丰 满的;盘绕的
+voluminous	voluminous a.卷数多的;大部分的;著书多的;长篇的;庞大的;很多的;丰满的;盘绕的
 voluntarily	voluntarily ad.自动地;以自由意志
 voluntary	voluntary a.自动的;自愿的;故意的;志愿的;非官办的;自发的 n.即兴演奏;志愿者
 voluntarism	voluntarism n.随意乐捐制度;自由志愿军制度
@@ -41495,7 +41495,7 @@ warily	warily ad.留心地;小心地
 wariness	wariness n.注意;小心
 warlike	warlike a.战争的;好战的;尚武的;军事的
 warlord	warlord n.军阀;督军
-warm	warm a.暖和的;暖的;温暖的;热烈的;兴奋的;激烈的;多情的;色 情的 vt.使温暖;弄热;使兴奋;使热烈; vi.变暖和;变温暖;激动;同情;爱好 n.暖;保暖物
+warm	warm a.暖和的;暖的;温暖的;热烈的;兴奋的;激烈的;多情的;色情的 vt.使温暖;弄热;使兴奋;使热烈; vi.变暖和;变温暖;激动;同情;爱好 n.暖;保暖物
 warm-up	warm-up n.准备动作;热身;预热
 warmer	warmer n.使热的人;温热装置
 warm-hearted	warm-hearted a.热心肠的;温情的;亲切的
@@ -41549,7 +41549,7 @@ waspy	waspy a.似黄蜂的
 wassail	wassail vi.痛饮 vt.为...干杯 n.酒宴
 wastage	wastage n.消耗量;废物
 waste	waste n.废物;浪费;损耗;消耗;荒地;垃圾;地面风化物 a.废弃的;荒芜的;多余的 vt.浪费;消耗;使荒芜 vi.浪费;消耗;消瘦
-wastebasket	wastebasket n.废纸篓 n.废纸篓
+wastebasket	wastebasket n.废纸篓
 wasted	wasted pp.浪费
 wasteful	wasteful a.浪费的;不经济的
 wasteland	wasteland n.荒地;未开垦地
@@ -41621,7 +41621,7 @@ waxing	waxing vbl.上腊
 waxwing	waxwing n.连雀
 waxwork	waxwork n.蜡像
 waxy	waxy a.象蜡的;蜡色的;苍白的;生气的;柔软的;光滑的
-way	way n.路;路线;路途;方法;道路;方向;情形;规模;习惯;行业;方面  ad.非常
+way	way n.路;路线;路途;方法;道路;方向;情形;规模;习惯;行业;方面 ad.非常
 waybill	waybill n.乘客名单;运货单
 wayfarer	wayfarer n.旅客
 wayfaring	wayfaring a.旅行的 n.徒步旅行
@@ -41652,7 +41652,7 @@ weanling	weanling n.断了奶的婴儿 a.刚断奶的
 weapon	weapon n.武器;兵器 vt.武装
 weaponry	weaponry n.武器;军备;武器制造学
 weapons	weapons n.武器
-wear	wear n.穿着;戴;使用;耗损;服装;耐久性 vt.穿着;戴;呈现;磨损;磨成;耗损;使疲乏;消磨;把船的尾部 转向风 vi.磨损;变旧;耐久;渐变;渐渐消失;尾部转向风
+wear	wear n.穿着;戴;使用;耗损;服装;耐久性 vt.穿着;戴;呈现;磨损;磨成;耗损;使疲乏;消磨;把船的尾部转向风 vi.磨损;变旧;耐久;渐变;渐渐消失;尾部转向风
 wearable	wearable a.可穿用的 n.衣服
 wearer	wearer n.穿用者
 wearily	wearily ad.疲倦地;厌倦地;无聊地
@@ -41905,7 +41905,7 @@ wholeheartedly	wholeheartedly adv.尽力
 wholeness	wholeness n.全体;一切;完全
 wholesale	wholesale n.批发 a.批发的;大规模的;全部的 ad.大规模;照批发方式 vi.经营批发业;批发 vt.批发
 wholesaler	wholesaler n.批发商
-wholesome	wholesome a.有益健康的;合乎卫生的;健全的;有益的;有生气的;审慎 的
+wholesome	wholesome a.有益健康的;合乎卫生的;健全的;有益的;有生气的;审慎的
 wholly	wholly ad.整个;统统;全部
 whom	whom pron.谁
 whomp	whomp n.撞击声 vi.发撞击声 vt.重击
@@ -41961,7 +41961,7 @@ wight	wight n.人类;人
 wigwag	wigwag vt.vi.摇摆;挥;摇;发信号 n.旗子信号;手光信号
 wigwam	wigwam n.帐蓬;小屋
 wilco	wilco int.照办!
-wild	wild n.荒野;荒地 a.野性的;荒野的;野蛮的;野生的;失控的;任性的;杂乱的; 轻率的;狂热的;疯狂的 ad.狂暴地;失控地
+wild	wild n.荒野;荒地 a.野性的;荒野的;野蛮的;野生的;失控的;任性的;杂乱的;轻率的;狂热的;疯狂的 ad.狂暴地;失控地
 wild-eyed	wild-eyed a.眼球充血的
 wildcard	wildcard n.通配符
 wildcat	wildcat n.野猫;莽撞的人 a.鲁莽的;不可靠的 vi.盲目开掘油井;从事非法商业活动
@@ -41997,7 +41997,7 @@ wincey	wincey n.棉绒
 winch	winch n.绞盘;曲柄;绞车 vt.用绞盘绞起
 Wisconsin	Wisconsin n.威斯康辛
 winconsin	winconsin n.威斯康辛
-wind	wind n.风;气息;气味;呼吸;胸口;风声;趋势;空谈;卷绕;绞车;弯曲  vt.使通风;嗅出;使喘气;吹号角;上发条;缠绕;包;绞起;吊起 ;使弯曲;使迂回 vi.嗅出猎物;吹响号角;卷曲;蜿蜒;迂回;缠绕
+wind	wind n.风;气息;气味;呼吸;胸口;风声;趋势;空谈;卷绕;绞车;弯曲 vt.使通风;嗅出;使喘气;吹号角;上发条;缠绕;包;绞起;吊起;使弯曲;使迂回 vi.嗅出猎物;吹响号角;卷曲;蜿蜒;迂回;缠绕
 wind-egg	wind-egg n.无精卵
 windage	windage n.游隙;偏差;风力修正量
 windbag	windbag n.风囊;饶舌之人;好说话的人
@@ -42073,7 +42073,7 @@ wiring	wiring n.配线
 wiry	wiry a.金属线制的;铁丝似的;瘦长结实的
 wis	wis v.知道
 wisdom	wisdom n.智慧;明智的行为;学识;名言;贤人
-wise	wise a.明智的;慎虑的;聪明的;贤明的;博学的;明白的;狡猾的; 机灵的 vi.知道 vt.告诉;劝导 n.方法;方式
+wise	wise a.明智的;慎虑的;聪明的;贤明的;博学的;明白的;狡猾的;机灵的 vi.知道 vt.告诉;劝导 n.方法;方式
 wiseacre	wiseacre n.自以为聪明者;自以为懂事的人
 wisecrack	wisecrack n.俏皮话
 wisely	wisely ad.聪明地;精明地
@@ -42243,7 +42243,7 @@ workstation	workstation n.工作站
 worktable	worktable n.工作台;缝纫桌
 workweek	workweek n.一星期工作时间
 workwoman	workwoman n.劳动妇女;女工;妇女工艺家
-world	world n.世界;地球;宇宙;万物;世人;人间;领域;世事;世故;社会生 活;大量
+world	world n.世界;地球;宇宙;万物;世人;人间;领域;世事;世故;社会生活;大量
 world-beater	world-beater n.举世无比的人;出人头地者
 worldbeater	worldbeater n.举世无比的人;出人头地者
 worldliness	worldliness n.俗心;俗气

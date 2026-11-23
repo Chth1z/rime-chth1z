@@ -1,6 +1,6 @@
-----------格式为：输入内容<Tab>响应内容1<Space>响应内容2……	----------格式为：输入内容<Tab>响应内容1<Space>响应内容2…… 
-----------假装这是注释。不能有重复的行（包括开头），所以注释也不能重复。	----------假装这是注释。不能有重复的行（包括开头），所以注释也不能重复。 
-----------月份星期	----------月份星期 
+----------格式为：输入内容<Tab>响应内容1<Space>响应内容2……	----------格式为：输入内容<Tab>响应内容1<Space>响应内容2……
+----------假装这是注释。不能有重复的行（包括开头），所以注释也不能重复。	----------假装这是注释。不能有重复的行（包括开头），所以注释也不能重复。
+----------月份星期	----------月份星期
 Ｔ恤	Ｔ恤 T shirt
 一	一 one single a an
 一一	一一 one by one
@@ -960,7 +960,6 @@
 不光	不光 not the only one not only
 不克	不克 cannot not be able to unable to
 不免	不免 unavoidable
-不入虎穴　焉得虎子	不入虎穴　焉得虎子 nothing venture, nothing to gain how can you catch tiger cubs without entering the tiger's lair
 不入虎穴，焉得虎子	不入虎穴，焉得虎子 nothing venture, nothing to gain how can you catch tiger cubs without entering the tiger's lair
 不入虎穴焉得虎子	不入虎穴焉得虎子 nothing venture, nothing to gain how can you catch tiger cubs without entering the tiger's lair
 不公	不公 unjust unfair
@@ -1303,7 +1302,6 @@
 不管他	不管他 do not pay attention to him forget it regardless of
 不约而同	不约而同 take the same action without prior consultation take the same view without prior consultation happen to coincide
 不经一事	不经一事 wisdom comes from experience you can't gain knowledge without practice
-不经一事　不长一智	不经一事　不长一智 wisdom comes from experience you can't gain knowledge without practice
 不经一事，不长一智	不经一事，不长一智 wisdom comes from experience you can't gain knowledge without practice
 不经一事不长一智	不经一事不长一智 wisdom comes from experience you can't gain knowledge without practice
 不经之谈	不经之谈 absurd statement cock-and-bull story
@@ -18104,7 +18102,7 @@
 小学生	小学生 elementary student
 小孩	小孩 child
 小孩儿	小孩儿 child
-小孩子	小孩子 child kid pickaninny tad tike
+小孩子	小孩子 child kid tad tike
 小宁	小宁 Xiao Ning
 小宋	小宋 Xiao Song
 小宝	小宝 Xiao Bao
@@ -24818,7 +24816,6 @@
 摅	摅 set forth spread
 摆	摆 hem at the bottom of garment pendulum place display swing oscillate show move exhibit
 摆事实	摆事实 present the facts
-摆事实　讲道理	摆事实　讲道理 present the facts and reason things out
 摆事实，讲道理	摆事实，讲道理 present the facts and reason things out
 摆事实讲道理	摆事实讲道理 present the facts and reason things out
 摆动	摆动 swing sway
@@ -28917,7 +28914,7 @@
 格里利	格里利 Greeley
 格里菲斯	格里菲斯 Griffith
 格陵兰	格陵兰 Greenland
-格雷罗内洛罗	格雷罗内洛罗 Guerrero Negro
+格雷罗内格罗	格雷罗内格罗 Guerrero Negro
 格鲁吉亚	格鲁吉亚 Georgia
 栽	栽 force stick in plant
 栽培	栽培 grow cultivate
@@ -36294,9 +36291,7 @@
 百孔千疮	百孔千疮 riddled with gaping wounds afflicted with all ills
 百官	百官 hundred officials
 百家争鸣	百家争鸣 hundred schools of thought contend
-百尺杆头　更尽一步	百尺杆头　更尽一步 make still further progress
-百尺杆头，更尽一步	百尺杆头，更尽一步 make still further progress
-百尺杆头更尽一步	百尺杆头更尽一步 make still further progress
+百尺竿头更进一步	百尺竿头更进一步 make still further progress
 百尺竿头	百尺竿头 make further progress
 百川归海	百川归海 all things tends in one direction
 百年	百年 a hundred years a century lifetime
@@ -36336,7 +36331,6 @@
 百货商场	百货商场 general merchandise market
 百货商店	百货商店 department store
 百货店	百货店 department store
-百足之虫　死而不僵	百足之虫　死而不僵 a centipede dies but never falls down old institutions die hard
 百足之虫，死而不僵	百足之虫，死而不僵 a centipede dies but never falls down old institutions die hard
 百足之虫死而不僵	百足之虫死而不僵 a centipede dies but never falls down old institutions die hard
 百里	百里 hundred li hundred miles
@@ -41324,7 +41318,6 @@
 老金	老金 Lao Jin
 老长	老长 very long
 老骥伏枥	老骥伏枥 old people may still cherish high aspirations
-老骥伏枥　志在千里	老骥伏枥　志在千里 old people may still cherish high aspirations an old steed in the stable still aspires to gallop 1000 li
 老骥伏枥，志在千里	老骥伏枥，志在千里 old people may still cherish high aspirations an old steed in the stable still aspires to gallop 1000 li
 老骥伏枥志在千里	老骥伏枥志在千里 old people may still cherish high aspirations an old steed in the stable still aspires to gallop 1000 li
 老高	老高 Lao Gao

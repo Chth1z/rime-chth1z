@@ -67,7 +67,7 @@ _TRAD_JP_BASE_MAP: dict[str, str] = {
     "鈴": "铃", "鈹": "铍", "鉀": "钾", "鉈": "铊", "鉑": "铂", "鉛": "铅", "鉤": "钩", "鉭": "钽",
     "鉻": "铬", "銀": "银", "銅": "铜", "銜": "衔", "銠": "铑", "銨": "铵", "銫": "铯", "銬": "铐",
     "銻": "锑", "鋁": "铝", "鋅": "锌", "鋇": "钡", "鋨": "锇", "鋰": "锂", "鋳": "铸", "鋼": "钢",
-    "錘": "锤", "錦": "锦", "錫": "锡", "錳": "锰", "鍊": "链", "鍺": "锗", "鎂": "镁", "鎖": "锁",
+    "錘": "锤", "錦": "锦", "錫": "锡", "錳": "锰", "鍺": "锗", "鎂": "镁", "鎖": "锁",
     "鎘": "镉", "鎚": "锤", "鎢": "钨", "鎧": "铠", "鎮": "镇", "鎳": "镍", "鐐": "镣", "鐘": "钟",
     "鐮": "镰", "鐵": "铁", "鑄": "铸", "鑰": "钥", "鑼": "锣", "鑽": "钻", "長": "长", "門": "门",
     "間": "间", "関": "关", "陸": "陆", "陽": "阳", "隸": "隶", "雙": "双", "難": "难", "雲": "云",
@@ -76,7 +76,7 @@ _TRAD_JP_BASE_MAP: dict[str, str] = {
     "飛": "飞", "飯": "饭", "飾": "饰", "餘": "余", "館": "馆", "馬": "马", "馭": "驭", "駒": "驹",
     "騎": "骑", "驕": "骄", "髏": "髅", "髙": "高", "髮": "发", "鬥": "斗", "魚": "鱼", "鯨": "鲸",
     "鰂": "鲗", "鱗": "鳞", "鴉": "鸦", "鷹": "鹰", "鹼": "碱", "鹽": "盐", "麗": "丽", "麥": "麦",
-    "黃": "黄", "黒": "黑", "點": "点", "齋": "斋", "齒": "齿", "龍": "龙", "醯": "酰",
+    "黃": "黄", "黒": "黑", "點": "点", "齋": "斋", "齒": "齿", "龍": "龙",
 }
 
 _TRAD_JP_EXTRA_MAP: dict[str, str] = {
@@ -153,7 +153,7 @@ _TRAD_JP_EXTRA_MAP: dict[str, str] = {
     "運": "运", "過": "过", "達": "达", "適": "适", "選": "选", "遺": "遗",
     "還": "还", "邁": "迈", "邊": "边", "邏": "逻", "郵": "邮", "鄉": "乡",
     "鄭": "郑", "鄰": "邻", "醫": "医", "醬": "酱", "釀": "酿", "釋": "释",
-    "釐": "厘", "針": "针", "釣": "钓", "鈣": "钙", "鈍": "钝", "鈔": "钞",
+    "針": "针", "釣": "钓", "鈣": "钙", "鈍": "钝", "鈔": "钞",
     "鐘": "钟", "鋼": "钢", "錢": "钱", "錦": "锦", "錫": "锡", "錯": "错",
     "鍋": "锅", "鍵": "键", "鍛": "锻", "鎖": "锁", "鎮": "镇", "鏡": "镜",
     "鐵": "铁", "鑒": "鉴", "鑽": "钻", "閃": "闪", "閉": "闭", "問": "问",
@@ -174,11 +174,11 @@ _TRAD_JP_EXTRA_MAP: dict[str, str] = {
     "鵝": "鹅", "鷹": "鹰", "鹼": "碱", "鹽": "盐", "麗": "丽", "麥": "麦",
     "麵": "面", "麼": "么", "黃": "黄", "黨": "党", "齡": "龄", "乗": "乘",
     "児": "儿", "団": "团", "図": "图", "売": "卖", "変": "变", "実": "实",
-    "専": "专", "対": "对", "戦": "战", "払": "拂", "抜": "拔", "択": "择",
+    "専": "专", "対": "对", "戦": "战", "抜": "拔", "択": "择",
     "拠": "据", "挙": "举", "気": "气", "沢": "泽", "済": "济", "満": "满",
     "焼": "烧", "獣": "兽", "発": "发", "県": "县", "穏": "稳", "経": "经",
     "絵": "绘", "続": "续", "総": "总", "縁": "缘", "縄": "绳", "縦": "纵",
-    "繊": "纤", "聴": "听", "脳": "脑", "臓": "脏", "芸": "艺", "薬": "药",
+    "繊": "纤", "聴": "听", "脳": "脑", "臓": "脏", "薬": "药",
     "処": "处", "蛍": "萤", "覚": "觉", "観": "观", "訳": "译", "証": "证",
     "読": "读", "譲": "让", "豊": "丰", "賛": "赞", "転": "转", "軽": "轻",
     "辺": "边", "遅": "迟", "鉱": "矿", "銭": "钱", "録": "录", "関": "关",
@@ -187,7 +187,9 @@ _TRAD_JP_EXTRA_MAP: dict[str, str] = {
     "黙": "默", "歯": "齿", "齢": "龄", "亀": "龟",
 }
 
-TRAD_JP_TO_SIMP = str.maketrans({**_TRAD_JP_EXTRA_MAP, **_TRAD_JP_BASE_MAP})
+_TRAD_JP_COMBINED = {**_TRAD_JP_EXTRA_MAP, **_TRAD_JP_BASE_MAP}
+TRAD_JP_TO_SIMP = str.maketrans(_TRAD_JP_COMBINED)
+SHULIHUA_TW_T2S = str.maketrans({**_TRAD_JP_COMBINED, "醯": "酰"})
 
 
 class _SimpleConverter:
@@ -757,7 +759,7 @@ def clean_shulihua(lines: list[str], stats: dict) -> list[str]:
         w, py, wt, extra = parsed
         py = normalize_lue_nue(py)
         if tw_span and tw_span[0] <= offset <= tw_span[1]:
-            sim_w = CC_T2S.convert(w)
+            sim_w = w.translate(SHULIHUA_TW_T2S)
             if sim_w != w:
                 w = sim_w
                 stats["fixed_word_or_trad"] += 1
@@ -771,7 +773,23 @@ def clean_shulihua(lines: list[str], stats: dict) -> list[str]:
 
 def clean_medication(lines: list[str], stats: dict) -> list[str]:
     hdr, body = split_header_body(lines)
-    ad_span = find_entry_span(body, ("百香", "bai xiang"), ("左旋维生素", "zuo xuan wei sheng su"), next_word="百香御")
+    spam_span_specs = (
+        (("百香", "bai xiang"), ("左旋维生素", "zuo xuan wei sheng su"), "百香御"),
+        (("参荷舒妍清茵宁", "can he shu yan qing yin ning"), ("滋阳御元贴", "zi yang yu yuan tie"), "焕体妙姿纤秀膏"),
+        (("百克舒", "bai ke shu"), ("石上甘抑菌膏", "shi shang gan yi jun gao"), "健华牛敏康"),
+        (("安舒清结", "an shu qing jie"), ("安舒清结怡乳贴", "an shu qing jie yi ru tie"), "安舒清结怡"),
+        (("黄塔金方痔乐舒", "huang ta jin fang zhi le shu"), ("亿康痔乐舒", "yi kang zhi le shu"), "靖纹清创去痕膏"),
+        (("桂苓十香", "gui ling shi xiang"), ("亿康桂苓十香散湿贴", "yi kang gui ling shi xiang san shi tie"), "桂苓十香散湿"),
+        (("创薇修痕平纹霜", "chuang wei xiu hen ping wen shuang"), ("意中颜薏仁丸", "yi zhong yan yi ren wan"), "欢颜子益膏"),
+        (("佰草固元龟舒康", "bai cao gu yuan gui shu kang"), ("竹参薏根康", "zhu can yi gen kang"), "白叶草蔓姿纤美膏"),
+        (("非遗黄塔明时通筋骨膏", "fei yi huang ta ming shi tong jin gu gao"), ("亿康时通筋骨膏", "yi kang shi tong jin gu gao"), "黄塔明时通筋骨膏"),
+        (("九妙丰姿莹润膏", "jiu miao feng zi ying run gao"), ("亿康青罗夏清露", "yi kang qing luo xia qing lu"), "九妙丰姿莹润饮"),
+        (("白叶轻脂妙姿贴", "bai ye qing zhi miao zi tie"), ("万养堂九味舒宁怡梦膏", "wan yang tang jiu wei shu ning yi meng gao"), "冰莹玉润乳"),
+    )
+    spam_spans = [
+        sp for s_key, e_key, nxt in spam_span_specs
+        if (sp := find_entry_span(body, s_key, e_key, next_word=nxt)) is not None
+    ]
     out = list(hdr)
 
     has_xue: set[str] = set()
@@ -781,7 +799,7 @@ def clean_medication(lines: list[str], stats: dict) -> list[str]:
             has_xue.add(p[0])
 
     for offset, line in enumerate(body):
-        if ad_span and ad_span[0] <= offset <= ad_span[1]:
+        if any(lo <= offset <= hi for lo, hi in spam_spans):
             if parse_entry(line):
                 stats["deleted_cosmetics_or_ad_dump"] += 1
             continue
@@ -823,12 +841,32 @@ def clean_game(lines: list[str], stats: dict) -> list[str]:
             stats["deleted_noise_or_typo"] += 1
             continue
         had_ji = "姫" in w
+        had_feng = "豊" in w
         sim_w = jp_t2s(w)
         if sim_w != w:
             w = sim_w
             stats["fixed_word_or_trad"] += 1
             if had_ji and "zhen" in py.split():
                 py = replace_syl_at(w, py, "姬", "zhen", "ji")
+                stats["fixed_py"] += 1
+            if had_feng and "li" in py.split():
+                py = replace_syl_at(w, py, "丰", "li", "feng")
+                stats["fixed_py"] += 1
+        if "角斗士" in w and "jiao" in py.split():
+            new_py = replace_syl_at(
+                w, py, "角", "jiao", "jue",
+                cond=lambda wd, sy, i: wd[i : i + 3] == "角斗士",
+            )
+            if new_py != py:
+                py = new_py
+                stats["fixed_py"] += 1
+        if "角斗士的长刺" in w and "zhang" in py.split():
+            new_py = replace_syl_at(
+                w, py, "长", "zhang", "chang",
+                cond=lambda wd, sy, i: i + 1 < len(wd) and wd[i + 1] == "刺",
+            )
+            if new_py != py:
+                py = new_py
                 stats["fixed_py"] += 1
         if any(w.startswith(p) for p in GAME_CHANG_PREFIXES) and "zhang" in py.split():
             new_py = replace_syl_at(w, py, "长", "zhang", "chang")
@@ -917,12 +955,16 @@ def clean_name2(lines: list[str], stats: dict) -> list[str]:
                 py = new_py
                 stats["fixed_py"] += 1
         had_ji = "姫" in w
+        had_feng = "豊" in w
         sim_w = jp_t2s(w)
         if sim_w != w:
             w = sim_w
             stats["fixed_word_or_trad"] += 1
             if had_ji and "zhen" in py.split():
                 py = replace_syl_at(w, py, "姬", "zhen", "ji")
+                stats["fixed_py"] += 1
+            if had_feng and "li" in py.split():
+                py = replace_syl_at(w, py, "丰", "li", "feng")
                 stats["fixed_py"] += 1
         if w_int(wt) > 150:
             wt = "150"
@@ -1076,6 +1118,19 @@ def clean_composite(lines: list[str], stats: dict) -> list[str]:
             if new_py != py:
                 py = new_py
                 stats["fixed_py"] += 1
+        if "哪" in w and "nei" in py.split():
+            new_py = replace_syl_at(w, py, "哪", "nei", "na")
+            if new_py != py:
+                py = new_py
+                stats["fixed_py"] += 1
+        if "马尾" in w and "yi" in py.split():
+            new_py = replace_syl_at(
+                w, py, "尾", "yi", "wei",
+                cond=lambda wd, sy, i: i > 0 and wd[i - 1] == "马",
+            )
+            if new_py != py:
+                py = new_py
+                stats["fixed_py"] += 1
         if "谁" in w and "shui" in py.split():
             shei_py = replace_syl_at(w, py, "谁", "shui", "shei")
             if shei_py != py:
@@ -1180,8 +1235,6 @@ def clean_opencc_texts(manifest: dict, ruleset: dict_rules.RuleSet, rule_hits: d
             line = "未步奈奈\t未步奈奈 未歩なな"
         elif line == "tab\ttab ⇥ \t":
             line = "tab\ttab ⇥"
-        elif line == "两个竟\t两个竟 竸":
-            line = "两个竞\t两个竞 竸"
         elif line == "亚硫酸钠\t亚硫酸钠 NaSO₃":
             line = "亚硫酸钠\t亚硫酸钠 Na₂SO₃"
         elif line == "蓝矾\t蓝矾 CuSO₄·₅H₂O":
@@ -1191,7 +1244,17 @@ def clean_opencc_texts(manifest: dict, ruleset: dict_rules.RuleSet, rule_hits: d
         elif line.startswith("V动物\t"):
             k, v = line.split("\t", 1)
             toks = v.split()
-            dedup_toks = list(dict.fromkeys(toks))
+            vs16_bases = {t.replace("\ufe0f", "") for t in toks if "\ufe0f" in t}
+            dedup_toks: list[str] = []
+            seen_base: set[str] = set()
+            for t in toks:
+                base = t.replace("\ufe0f", "")
+                if "\ufe0f" not in t and base in vs16_bases:
+                    continue
+                if base in seen_base:
+                    continue
+                seen_base.add(base)
+                dedup_toks.append(t)
             line = f"{k}\t{' '.join(dedup_toks)}"
         elif line == "克西\t克西 ξ Ξ":
             line = "克西\t克西 xi ξ Ξ"
@@ -1221,8 +1284,11 @@ def clean_opencc_texts(manifest: dict, ruleset: dict_rules.RuleSet, rule_hits: d
         ce_out = []
         ce_fixed = 0
         for line in ce_lines:
+            orig = line
+            line = line.rstrip(" ")
             if line == "黑人\t黑人 Ethiopian Negro negroid blackamoor black unregistered\u00a0person":
                 line = "黑人\t黑人 black\u00a0person black unregistered\u00a0person"
+            if line != orig:
                 ce_fixed += 1
             ce_out.append(line)
         ce_out, ce_ov = dict_rules.apply_opencc_overlay("opencc/chinese_english.txt", ce_out, ruleset, rule_hits)
@@ -1236,15 +1302,35 @@ def clean_opencc_texts(manifest: dict, ruleset: dict_rules.RuleSet, rule_hits: d
         ec_lines = ec_path.read_text(encoding="utf-8").splitlines()
         ec_out = []
         ec_del = 0
+        ec_norm = 0
+        pos_re = re.compile(r"^[a-zA-Z]{1,6}(?:\.[a-zA-Z]{1,6})*\.")
         for line in ec_lines:
-            if "\t" in line and " " in line.split("\t", 1)[0]:
+            if "\t" not in line:
+                ec_out.append(line)
+                continue
+            k, v = line.split("\t", 1)
+            if " " in k:
                 ec_del += 1
                 continue
-            ec_out.append(line)
+            v2 = re.sub(r"(?:\s+NUM)+$", "", v)
+            v2 = re.sub(r" {2,}", " ", v2).replace(" ;", ";")
+            toks = v2.split(" ")
+            merged = toks[:1]
+            for t in toks[1:]:
+                if len(merged) >= 2 and not pos_re.match(t):
+                    merged[-1] += t
+                else:
+                    merged.append(t)
+            deduped = list(dict.fromkeys(merged))
+            new_line = f"{k}\t{' '.join(deduped)}"
+            if new_line != line:
+                ec_norm += 1
+            ec_out.append(new_line)
         ec_out, ec_ov = dict_rules.apply_opencc_overlay("opencc/english_chinese.txt", ec_out, ruleset, rule_hits)
         (occ_dir / "english_chinese.txt").write_text("\n".join(ec_out) + "\n", encoding="utf-8", newline="\n")
         manifest["files"]["opencc/english_chinese.txt"] = {
-            "before": len(ec_lines), "after": len(ec_out), "deleted": ec_del, "overlay_fixed": ec_ov,
+            "before": len(ec_lines), "after": len(ec_out), "deleted": ec_del,
+            "normalized": ec_norm, "overlay_fixed": ec_ov,
         }
 
     # 4. opencc/emoji.txt

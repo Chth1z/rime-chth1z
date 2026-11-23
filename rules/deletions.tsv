@@ -469,7 +469,6 @@ cn_dicts_cell/chess2.dict.yaml	中国象棋兵法种	*	R1清理象棋错词
 cn_dicts_cell/chess2.dict.yaml	象棋实战精妙杀法例	*	R1清理象棋错词
 cn_dicts_cell/chess2.dict.yaml	黑弃路卒	*	R1清理象棋错词
 cn_dicts_cell/chess2.dict.yaml	黑进路卒转中炮对屏风马	*	R1清理象棋错词
-cn_dicts_cell/composite.dict.yaml	㨃回去	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	一上悠亚	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	一下把	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	一下放	*	R1/R2清理综合词库错字或噪声
@@ -479,12 +478,10 @@ cn_dicts_cell/composite.dict.yaml	一专线	*	R1/R2清理综合词库错字或�
 cn_dicts_cell/composite.dict.yaml	一专门	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	一丝不	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	一个全新的	*	R1/R2清理综合词库错字或噪声
-cn_dicts_cell/composite.dict.yaml	一古脑	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	一夜爆富	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	一定一定一定	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	一杯子	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	一泄千里	*	R1/R2清理综合词库错字或噪声
-cn_dicts_cell/composite.dict.yaml	一相情愿	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	一秒中	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	一秒种	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	一股作气	*	R1/R2清理综合词库错字或噪声
@@ -504,7 +501,6 @@ cn_dicts_cell/composite.dict.yaml	于是呼	*	R1/R2清理综合词库错字或�
 cn_dicts_cell/composite.dict.yaml	云淡风清	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	仗义直言	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	众不同	*	R1/R2清理综合词库错字或噪声
-cn_dicts_cell/composite.dict.yaml	余万	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	佛洛伦萨	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	侥幸心里	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	信基金	*	R1/R2清理综合词库错字或噪声
@@ -540,7 +536,6 @@ cn_dicts_cell/composite.dict.yaml	天方夜谈	*	R1/R2清理综合词库错字�
 cn_dicts_cell/composite.dict.yaml	天眼妹	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	天赋异秉	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	天马星空	*	R1/R2清理综合词库错字或噪声
-cn_dicts_cell/composite.dict.yaml	好高务远	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	如火如茶	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	妖蛾子	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	季候赛	*	R1/R2清理综合词库错字或噪声
@@ -733,7 +728,6 @@ cn_dicts_cell/game.dict.yaml	卡卡希	*	R1/R2清理游戏噪声词
 cn_dicts_cell/game.dict.yaml	司巴达	*	R1/R2清理游戏噪声词
 cn_dicts_cell/game.dict.yaml	叽叽叽叽叽叽叽叽叽叽	*	R1/R2清理游戏噪声词
 cn_dicts_cell/game.dict.yaml	吃藕	*	R1/R2清理游戏噪声词
-cn_dicts_cell/game.dict.yaml	名选手	*	R1/R2清理游戏噪声词
 cn_dicts_cell/game.dict.yaml	吐蕃	tu fan	R1/R2游戏词库读音修正
 cn_dicts_cell/game.dict.yaml	咩咩咩咩咩咩咩	*	R1/R2清理游戏噪声词
 cn_dicts_cell/game.dict.yaml	大侠你缺腿部挂件吗	*	R1/R2清理游戏噪声词
@@ -990,11 +984,6 @@ cn_dicts_cell/medication.dict.yaml	切开法重睑成形术	qie kai fa zhong jia
 cn_dicts_cell/medication.dict.yaml	创可帖	*	R1/R2清理医药噪声词
 cn_dicts_cell/medication.dict.yaml	前列仙	*	R1/R2清理医药噪声词
 cn_dicts_cell/medication.dict.yaml	厥阴俞穴	jue yin yu xue	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	参苓白术口服液	can ling bai zhu kou fu ye	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	参苓白术扁豆陈	can ling bai zhu bian dou chen	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	参苓白术片	can ling bai zhu pian	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	参苓白术胶囊	can ling bai zhu jiao nang	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	参苓白术颗粒	can ling bai zhu ke li	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	受调分泌	shou diao fen mi	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	埋线法重睑成形术	mai xian fa zhong jian cheng xing shu	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	墨元参	mo yuan can	R1清理医药重复错音行
@@ -1207,3 +1196,1056 @@ cn_dicts_cell/sport.dict.yaml	约什鲍威尔	yue shen bao wei er	R1体育词库
 cn_dicts_cell/sport.dict.yaml	维多里亚	*	R2清理体育错词
 cn_dicts_cell/sport.dict.yaml	维尼斯	*	R2清理体育错词
 cn_dicts_cell/sport.dict.yaml	驾驶仓	*	R2清理体育错词
+cn_dicts_cell/name2.dict.yaml	安芸国虎	an yun guo hu	日文新字体“安芸国虎”(Aki Kunitora)，同文件已有简体正音“安艺国虎 an yi guo hu”
+cn_dicts_cell/literature.dict.yaml	而徵一国者	er zheng yi guo zhe	繁体“徵”重复项，同文件已有简体“而征一国者 er zheng yi guo zhe 70”
+cn_dicts_cell/idiom.dict.yaml	酒食徵逐	jiu shi zheng zhu	繁体“徵”重复项，ext.dict.yaml 已有简体“酒食征逐 1”
+cn_dicts_cell/idiom.dict.yaml	遣将徵兵	qian jiang zheng bing	繁体“徵”重复项，idiom.dict.yaml 已有简体“遣将征兵”
+cn_dicts_cell/idiom.dict.yaml	选妓徵歌	xuan ji zheng ge	繁体“徵”重复项，idiom.dict.yaml 已有简体“选妓征歌”
+cn_dicts_cell/idiom.dict.yaml	选色徵歌	xuan se zheng ge	繁体“徵”重复项，idiom.dict.yaml 已有简体“选色征歌”
+cn_dicts_cell/idiom.dict.yaml	选舞徵歌	xuan wu zheng ge	繁体“徵”重复项，idiom.dict.yaml 已有简体“选舞征歌”
+cn_dicts_cell/shulihua.dict.yaml	磺化酞箐钴	huang hua tai jing gu	E2错别字（正字为“磺化酞菁钴”，同库其余15条均作“酞菁 tai jing”）
+cn_dicts_cell/medication.dict.yaml	石胡莩	shi hu piao	E2错别字（正字为菊科中药“石胡荽 shí hú suī”/鹅不食草）
+cn_dicts_cell/medication.dict.yaml	嗄日迪五味丸	a ri di wu wei wan	OCR错别字，同库 L37049 已有正词“嘎日迪五味丸 ga ri di wu wei wan”
+cn_dicts_cell/medication.dict.yaml	胲下淋巴结	gai xia lin ba jie	E2错别字，同库 L72870 已有正词“颏下淋巴结 ke xia lin ba jie”
+cn_dicts_cell/medication.dict.yaml	胲下淋巴结肿大	gai xia lin ba jie zhong da	E2错别字（正词为“颏下淋巴结肿大”）
+cn_dicts_cell/game.dict.yaml	魏征徵	wei zheng zheng	游戏语料抓取乱码/重字（魏征+徵；base 已有魏征）
+cn_dicts_cell/game.dict.yaml	阮徵	ruan zheng	繁体重复项，同文件 L107879 紧邻处已有“阮征 ruan zheng 0”
+cn_dicts_cell/game.dict.yaml	叚装	jia zhuang	游戏时装词表异体错字（base 已有“假装 jia zhuang 3987”）
+cn_dicts_cell/composite.dict.yaml	川芎各	chuan qiong ge	药方截断碎片兼错音(川芎应读chuān xiōng)
+cn_dicts/base.dict.yaml	元気森林	yuan qi sen lin	Trad/JP/variant: 気->气; simplified already in base.dict.yaml
+cn_dicts/ext.dict.yaml	黄霄雲	huang xiao yun	Trad/JP/variant: 雲->云; simplified already in name.dict.yaml (note: singer's stage name uses 雲)
+cn_dicts_cell/food.dict.yaml	人蔘鸡	ren shen ji	Trad/JP/variant: 蔘->参; simplified already in base.dict.yaml
+cn_dicts_cell/food.dict.yaml	鸳鸯鱖鱼	yuan yang jue yu	Trad 鱖->鳜 + wrong py jue->gui; exact (鸳鸯鳜鱼, yuan yang gui yu) already in food.dict.yaml
+cn_dicts_cell/food.dict.yaml	扯麺	che mian	Trad/JP/variant: 麺->面; simplified already in base.dict.yaml
+cn_dicts_cell/food.dict.yaml	红萬寿	hong wan shou	Trad/JP/variant: 萬->万; simplified already in food.dict.yaml
+cn_dicts_cell/food.dict.yaml	浆水麺	jiang shui mian	Trad/JP/variant: 麺->面; simplified already in base.dict.yaml
+cn_dicts_cell/food.dict.yaml	裤带麺	ku dai mian	Trad/JP/variant: 麺->面; simplified already in composite.dict.yaml
+cn_dicts_cell/food.dict.yaml	岐山臊子麺	qi shan sao zi mian	Trad/JP/variant: 麺->面; simplified already in base.dict.yaml
+cn_dicts_cell/food.dict.yaml	油泼麺	you po mian	Trad/JP/variant: 麺->面; simplified already in ext.dict.yaml
+cn_dicts_cell/game.dict.yaml	栤蕶	bing ling	Mars-text/corrupted spelling of 冰凌
+cn_dicts_cell/game.dict.yaml	传说吥败	chuan shuo bu bai	Mars-text 吥 for 不 (传说不败)
+cn_dicts_cell/game.dict.yaml	部落孤儿的眮	bu luo gu er de tong	Corrupted WoW item (眮 OCR/encoding error for 哨)
+cn_dicts_cell/game.dict.yaml	黄金蔘	huang jin shen	Trad/JP/variant: 蔘->参; simplified already in game.dict.yaml
+cn_dicts_cell/game.dict.yaml	弻马温	bi ma wen	E2 typo 弻 for 弼 (弼马温 exists in base)
+cn_dicts_cell/game.dict.yaml	膐季子白盘	lv ji zi bai pan	E2 OCR typo 膐 for 虢 (虢季子白盘 exists in game)
+cn_dicts_cell/game.dict.yaml	錐子录	zhui zi lu	Trad/JP/variant: 錐->锥; simplified already in game.dict.yaml
+cn_dicts_cell/game.dict.yaml	娉婷嬝娜	ping ting niao na	Trad 嬝->袅 + py na->nuo; exact (娉婷袅娜, ping ting niao nuo) already in ext.dict.yaml
+cn_dicts_cell/game.dict.yaml	爱情塰网游社团	ai qing hai wang you she tuan	Early-2000s mars-text clan name (塰 for 海)
+cn_dicts_cell/game.dict.yaml	乀国际贵族	fu guo ji gui zu	Mars-text clan name with stroke glyph 乀
+cn_dicts_cell/game.dict.yaml	鬼儛家族	gui wu jia zu	Mars-text clan name (儛 for 舞)
+cn_dicts_cell/game.dict.yaml	臫己	jiao ji	Mars-text for 自己 with wrong py jiao ji
+cn_dicts_cell/game.dict.yaml	蒾綪舞灬	mi qian wu biao	Mars-text clan name (迷情舞灬)
+cn_dicts_cell/game.dict.yaml	榀菋家族	pin wei jia zu	Mars-text clan name (品味家族)
+cn_dicts_cell/game.dict.yaml	軚无窷社团	tai wu liao she tuan	Mars-text clan name (太无聊社团)
+cn_dicts_cell/game.dict.yaml	甛蜜	tian mi	Mars-text/variant 甛 for 甜蜜
+cn_dicts_cell/game.dict.yaml	儛动精灵	wu dong jing ling	Mars-text clan/name (儛 for 舞)
+cn_dicts_cell/game.dict.yaml	儛间道	wu jian dao	Mars-text clan/name (儛 for 舞)
+cn_dicts_cell/game.dict.yaml	綉灬网游社团	xiu biao wang you she tuan	Mars-text clan name (Trad 綉 + 灬)
+cn_dicts_cell/game.dict.yaml	铁贔仙盾	tie bi xian dun	Trad/JP/variant: 贔->赑; simplified already in game.dict.yaml
+cn_dicts_cell/game.dict.yaml	貳阶	er jie	Trad/JP/variant: 貳->二; simplified already in base.dict.yaml
+cn_dicts_cell/game.dict.yaml	躡空鞋	nie kong xie	Trad/JP/variant: 躡->蹑; simplified already in game.dict.yaml
+cn_dicts_cell/game.dict.yaml	天鸞帽	tian luan mao	Trad/JP/variant: 鸞->鸾; simplified already in game.dict.yaml
+cn_dicts_cell/game.dict.yaml	茵蔯	yin chen	Trad/JP/variant: 蔯->陈; simplified already in base.dict.yaml
+cn_dicts_cell/game.dict.yaml	钚瀎暷说	bu mo chuan shuo	Mars-text for 不灭传说 with wrong py bu mo
+cn_dicts_cell/game.dict.yaml	蘰踄繧鍴	man bu yun duan	Mars-text for 漫步云端
+cn_dicts_cell/game.dict.yaml	弎千耗子	san qian hao zi	Mars-text/clan name (弎 for 三)
+cn_dicts_cell/game.dict.yaml	逍滛劔	xiao yin jian	Mars-text/vulgar variant (滛劔 for 淫剑)
+cn_dicts_cell/game.dict.yaml	姬別情	ji bie qing	Trad/JP/variant: 別->别; simplified already in game.dict.yaml
+cn_dicts_cell/game.dict.yaml	情緣	qing yuan	Trad/JP/variant: 緣->缘; simplified already in base.dict.yaml
+cn_dicts_cell/game.dict.yaml	曲氺	qu shui	Mars-text/radical 氺 for 曲水
+cn_dicts_cell/game.dict.yaml	尐风恋嗨	ji feng lian hai	Mars-text player name (尐 for 小, wrong py ji)
+cn_dicts_cell/game.dict.yaml	恋风尐嗨	lian feng ji hai	Mars-text player name (尐 for 小, wrong py ji)
+cn_dicts_cell/game.dict.yaml	緈諨约顁	xing fu yue ding	Mars-text for 幸福约定
+cn_dicts_cell/game.dict.yaml	夫馀	fu yu	Trad/JP/variant: 馀->余; simplified already in history.dict.yaml
+cn_dicts_cell/game.dict.yaml	燐火	lin huo	Trad/JP/variant: 燐->磷; simplified already in base.dict.yaml
+cn_dicts_cell/game.dict.yaml	屍鬼	shi gui	Trad/JP/variant: 屍->尸; simplified already in base.dict.yaml
+cn_dicts_cell/game.dict.yaml	食屍鬼	shi shi gui	Trad/JP/variant: 屍->尸; simplified already in ext.dict.yaml
+cn_dicts_cell/history.dict.yaml	段隨	duan sui	Trad/JP/variant: 隨->随; simplified already in history.dict.yaml
+cn_dicts_cell/history.dict.yaml	刘莊	liu zhuang	Trad/JP/variant: 莊->庄; simplified already in base.dict.yaml
+cn_dicts_cell/history.dict.yaml	萧莊	xiao zhuang	Trad/JP/variant: 莊->庄; simplified already in base.dict.yaml
+cn_dicts_cell/history.dict.yaml	顒琰	yong yan	Trad/JP/variant: 顒->颙; simplified already in base.dict.yaml
+cn_dicts_cell/history.dict.yaml	莊宗	zhuang zong	Trad/JP/variant: 莊->庄; simplified already in base.dict.yaml
+cn_dicts_cell/history.dict.yaml	衤曳衤散	yi ye yi san	Broken split-char for 曳撒 (曳撒 exists in history)
+cn_dicts_cell/history.dict.yaml	郭図	guo tu	Trad/JP/variant: 図->图; simplified already in history.dict.yaml
+cn_dicts_cell/history.dict.yaml	阚沢	kan ze	Trad/JP/variant: 沢->泽; simplified already in history.dict.yaml
+cn_dicts_cell/history.dict.yaml	楽林	le lin	Corrupted Koei JP Shinjitai entry (楽 for 乐; likely corrupted 乐綝)
+cn_dicts_cell/history.dict.yaml	淩县	ling xian	Variant/typo 淩县 for 陵县; exact (陵县, ling xian) already in base.dict.yaml
+cn_dicts_cell/history.dict.yaml	母丘倹	mu qiu jian	JP Shinjitai 倹 + typo 母 for 毌 (毌丘俭 exists in composite)
+cn_dicts_cell/history.dict.yaml	唐王朱聿钅粤	tang wang zhu yu jin yue	Broken split-char 钅粤 for 𨱇
+cn_dicts_cell/history.dict.yaml	王経	wang jing	Trad/JP/variant: 経->经; simplified already in base.dict.yaml
+cn_dicts_cell/history.dict.yaml	王燿	wang yao	Trad/JP/variant: 燿->耀; simplified already in name2.dict.yaml
+cn_dicts_cell/history.dict.yaml	夏侯覇	xia hou ba	Trad/JP/variant: 覇->霸; simplified already in base.dict.yaml
+cn_dicts_cell/history.dict.yaml	夏侯徳	xia hou de	Trad/JP/variant: 徳->德; simplified already in history.dict.yaml
+cn_dicts_cell/history.dict.yaml	夏侯恵	xia hou hui	Trad/JP/variant: 恵->惠; simplified already in base.dict.yaml
+cn_dicts_cell/history.dict.yaml	祥驎	xiang lin	Trad/JP/variant: 驎->麟; simplified already in base.dict.yaml
+cn_dicts_cell/history.dict.yaml	刑道栄	xing dao rong	JP Shinjitai 栄 + typo 刑 for 邢 (邢道荣 exists in ext)
+cn_dicts_cell/history.dict.yaml	叶元堦	ye yuan jie	Trad/JP/variant: 堦->阶; simplified already in history.dict.yaml
+cn_dicts_cell/history.dict.yaml	尹黙	yin mo	Trad/JP/variant: 黙->默; simplified already in history.dict.yaml
+cn_dicts_cell/history.dict.yaml	踰辉	yu hui	Trad/JP/variant: 踰->逾; simplified already in history.dict.yaml
+cn_dicts_cell/history.dict.yaml	袁煕	yuan xi	Trad/JP/variant: 煕->熙; simplified already in history.dict.yaml
+cn_dicts_cell/history.dict.yaml	朱聿钅粤	zhu yu jin yue	Broken split-char 钅粤 for 𨱇
+cn_dicts_cell/idiom.dict.yaml	悲歌忼慨	bei ge kang kai	Trad/JP/variant: 忼->慷; simplified already in base.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	差若豪氂缪以千里	cha ruo hao mao miu yi qian li	Obsolete variant 氂 (差若毫厘谬以千里 exists in idiom)
+cn_dicts_cell/idiom.dict.yaml	差之毫氂失之千里	cha zhi hao mao shi zhi qian li	Obsolete variant 氂 (差之毫厘失之千里 exists in ext)
+cn_dicts_cell/idiom.dict.yaml	朝懽暮乐	chao guan mu le	Trad 懽->欢 + py chao/guan->zhao/huan; exact (朝欢暮乐, zhao huan mu le) already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	尘垢粃糠	chen gou bi kang	Trad/JP/variant: 粃->秕; simplified already in ext.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	传风搧火	chuan feng shan huo	Trad/JP/variant: 搧->扇; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	丹书铁劵	dan shu tie juan	Typo 劵(juan) for 券(quan) (丹书铁券 exists in base)
+cn_dicts_cell/idiom.dict.yaml	动中窽要	dong zhong kuan yao	Obsolete variant 窽 for 窾 (动中窾要 exists in idiom)
+cn_dicts_cell/idiom.dict.yaml	燔书阬儒	fan shu gang ru	Obsolete variant 阬->坑 + py gang->keng; exact (燔书坑儒, fan shu keng ru) already in base.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	凤靡鸾阠	feng mi luan xin	OCR typo 阠 for 吪 (凤靡鸾吪 exists in idiom)
+cn_dicts_cell/idiom.dict.yaml	膏梁纨袴	gao liang wan ku	E2错字(梁->粱)兼异体字(袴->绔)，同文件已有正词膏粱纨绔
+cn_dicts_cell/idiom.dict.yaml	观者麕集	guan zhe qun ji	Trad/JP/variant: 麕->麇; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	海巿蜃楼	hai fu shen lou	OCR typo 巿(fu) for 市(shi) (海市蜃楼 exists in base)
+cn_dicts_cell/idiom.dict.yaml	毫无所崑	hao wu suo kun	OCR corruption/garbage idiom
+cn_dicts_cell/idiom.dict.yaml	坏裳为袴	huai shang wei ku	Obsolete variant 袴->裤; exact (坏裳为裤, huai shang wei ku) already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	饥飡渴饮	ji can ke yin	Trad/JP/variant: 飡->餐; simplified already in base.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	蹐地跼天	ji di ju tian	Obsolete variant 跼 for 局 (蹐地局天 exists in idiom)
+cn_dicts_cell/idiom.dict.yaml	挢抂过正	jiao kuang guo zheng	Obsolete variant 挢抂 (矫枉过正 exists in base)
+cn_dicts_cell/idiom.dict.yaml	解衣磅礡	jie yi bang bo	Variant 礡->礴 + py bang->pang; exact (解衣磅礴, jie yi pang bo) already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	尽人豰中	jin ren bo zhong	Typo 人豰 for 入彀 (尽入彀中 exists in ext)
+cn_dicts_cell/idiom.dict.yaml	锦衣纨袴	jin yi wan ku	Obsolete variant 袴->绔; exact (锦衣纨绔, jin yi wan ku) already in base.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	口腹之慾	kou fu zhi yu	Trad/JP/variant: 慾->欲; simplified already in base.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	连昬接晨	lian hun jie chen	Trad/JP/variant: 昬->昏; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	马革里屍	ma ge li shi	Typo 里 for 裹 + Trad 屍 (马革裹尸 exists in base)
+cn_dicts_cell/idiom.dict.yaml	门庭若巿	men ting ruo fu	OCR typo 巿(fu) for 市(shi) (门庭若市 exists in base)
+cn_dicts_cell/idiom.dict.yaml	名靰利鞚	ming wu li kong	OCR typo 靰 for 鞿 (名鞿利鞚 exists in idiom)
+cn_dicts_cell/idiom.dict.yaml	嫋嫋娜娜	niao niao na na	Trad 嫋->袅 + py na->nuo; exact (袅袅娜娜, niao niao nuo nuo) already in base.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	攀龙讬凤	pan long tuo feng	Non-8105 variant 讬->托; exact (攀龙托凤, pan long tuo feng) already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	破巢馀卵	po chao yu luan	Trad/JP/variant: 馀->余; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	清浑皁白	qing hun zao bai	Trad/JP/variant: 皁->皂; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	轻傜薄赋	qing yao bao fu	Obsolete variant 傜 + wrong py bao (轻徭薄赋 qing yao bo fu exists in ext)
+cn_dicts_cell/idiom.dict.yaml	如操左劵	ru cao zuo juan	Typo 劵(juan) for 券(quan) (如操左券 exists in idiom)
+cn_dicts_cell/idiom.dict.yaml	如持左劵	ru chi zuo juan	Typo 劵(juan) for 券(quan) (如持左券 exists in idiom)
+cn_dicts_cell/idiom.dict.yaml	瘙豜禡厂	sao jian ma chang	Mojibake/garbage string
+cn_dicts_cell/idiom.dict.yaml	蛇蠍美人	she xie mei ren	Trad/JP/variant: 蠍->蝎; simplified already in base.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	蜃楼海巿	shen lou hai fu	OCR typo 巿(fu) for 市(shi) (蜃楼海市 exists in idiom)
+cn_dicts_cell/idiom.dict.yaml	尸禄素飡	shi lu su can	Trad/JP/variant: 飡->餐; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	食慾不振	shi yu bu zhen	Trad/JP/variant: 慾->欲; simplified already in base.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	贪夫狥财	tan fu xun cai	Trad/JP/variant: 狥->徇; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	婷婷嫋嫋	ting ting niao niao	Trad/JP/variant: 嫋->袅; simplified already in base.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	徒讬空言	tu tuo kong yan	Non-8105 variant 讬->托; exact (徒托空言, tu tuo kong yan) already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	胁肩絫足	xie jian lei zu	Obsolete variant 絫 for 累 (胁肩累足 exists in idiom)
+cn_dicts_cell/idiom.dict.yaml	蠍蠍螫螫	xie xie shi shi	Trad 蠍->蝎 + py shi->zhe; exact (蝎蝎螫螫, xie xie zhe zhe) already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	行嶮侥幸	xing xian jiao xing	Trad/JP/variant: 嶮->险; simplified already in ext.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	宿水飡风	xiu shui can feng	Trad/JP/variant: 飡->餐; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	揠苖助长	ya di zhu zhang	OCR typo 苖(di) for 苗(miao) (揠苗助长 exists in base)
+cn_dicts_cell/idiom.dict.yaml	一笔抹摋	yi bi mo sa	Obsolete variant 摋(sa) for 杀(sha) (一笔抹杀 exists in base)
+cn_dicts_cell/idiom.dict.yaml	遗德馀烈	yi de yu lie	Trad/JP/variant: 馀->余; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	遗恩馀烈	yi en yu lie	Trad/JP/variant: 馀->余; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	遗芬馀荣	yi fen yu rong	Trad/JP/variant: 馀->余; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	遗风馀教	yi feng yu jiao	Trad/JP/variant: 馀->余; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	遗风馀烈	yi feng yu lie	Trad/JP/variant: 馀->余; simplified already in ext.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	遗风馀思	yi feng yu si	Trad/JP/variant: 馀->余; simplified already in base.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	遗风馀俗	yi feng yu su	Trad/JP/variant: 馀->余; simplified already in base.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	遗风馀象	yi feng yu xiang	Trad/JP/variant: 馀->余; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	遗风馀韵	yi feng yu yun	Trad/JP/variant: 馀->余; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	遗风馀泽	yi feng yu ze	Trad/JP/variant: 馀->余; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	一褱而论	yi huai er lun	OCR corruption 褱 for 概 (一概而论 exists in base)
+cn_dicts_cell/idiom.dict.yaml	遗惠馀泽	yi hui yu ze	Trad/JP/variant: 馀->余; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	遗孽馀烈	yi nie yu lie	Trad/JP/variant: 馀->余; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	遗声馀价	yi sheng yu jia	Trad/JP/variant: 馀->余; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	遗休馀烈	yi xiu yu lie	Trad/JP/variant: 馀->余; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	遗训馀风	yi xun yu feng	Trad/JP/variant: 馀->余; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	以锥飡壸	yi zhui can kun	Obsolete variant 飡 + 壸 (以锥餐壶 exists in base)
+cn_dicts_cell/idiom.dict.yaml	踰墙相从	yu qiang xiang cong	Trad/JP/variant: 踰->逾; simplified already in literature.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	鱼水相懽	yu shui xiang guan	Trad 懽->欢 + py guan->huan; exact (鱼水相欢, yu shui xiang huan) already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	载懽载笑	zai guan zai xiao	Trad 懽->欢 + py guan->huan; exact (载欢载笑, zai huan zai xiao) already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	朝乾夕愓	zhao qian xi dang	Obsolete variant 愓(dang) for 惕(ti) (朝乾夕惕 exists in base)
+cn_dicts_cell/idiom.dict.yaml	招摇过巿	zhao yao guo fu	OCR typo 巿(fu) for 市(shi) (招摇过市 exists in base)
+cn_dicts_cell/idiom.dict.yaml	振聋发瞶	zhen long fa gui	Variant 瞶->聩 + py gui->kui; exact (振聋发聩, zhen long fa kui) already in base.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	指皁为白	zhi zao wei bai	Trad/JP/variant: 皁->皂; simplified already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	重足一蹟	zhong zu yi ji	Trad 蹟 + wrong py zhong (重足一迹 chong zu yi ji exists in idiom)
+cn_dicts_cell/idiom.dict.yaml	珠落玊盘	zhu luo su pan	OCR typo 玊(su) for 玉(yu) (珠落玉盘 exists in ext)
+cn_dicts_cell/idiom.dict.yaml	追懽卖笑	zhui guan mai xiao	Trad 懽->欢 + py guan->huan; exact (追欢卖笑, zhui huan mai xiao) already in idiom.dict.yaml
+cn_dicts_cell/idiom.dict.yaml	钻隙踰墙	zuan xi yu qiang	Trad/JP/variant: 踰->逾; simplified already in ext.dict.yaml
+cn_dicts_cell/literature.dict.yaml	二十馀年如一梦	er shi yu nian ru yi meng	Trad/JP/variant: 馀->余; simplified already in base.dict.yaml
+cn_dicts_cell/literature.dict.yaml	未肯收尽馀寒	wei ken shou jin yu han	Trad/JP/variant: 馀->余; simplified already in literature.dict.yaml
+cn_dicts_cell/literature.dict.yaml	一襟馀恨宫魂断	yi jin yu hen gong hun duan	Trad/JP/variant: 馀->余; simplified already in literature.dict.yaml
+cn_dicts_cell/literature.dict.yaml	才可容颜十五馀	cai ke rong yan shi wu yu	Trad/JP/variant: 馀->余; simplified already in ext.dict.yaml
+cn_dicts_cell/literature.dict.yaml	今日得宽馀	jin ri de kuan yu	Trad/JP/variant: 馀->余; simplified already in base.dict.yaml
+cn_dicts_cell/literature.dict.yaml	梁父吟成恨有馀	liang fu yin cheng hen you yu	Trad/JP/variant: 馀->余; simplified already in base.dict.yaml
+cn_dicts_cell/literature.dict.yaml	惟馀莽莽	wei yu mang mang	Trad/JP/variant: 馀->余; simplified already in composite.dict.yaml
+cn_dicts_cell/literature.dict.yaml	郑馀庆	zheng yu qing	Trad/JP/variant: 馀->余; simplified already in literature.dict.yaml
+cn_dicts_cell/literature.dict.yaml	终南望馀雪	zhong nan wang yu xue	Trad/JP/variant: 馀->余; simplified already in base.dict.yaml
+cn_dicts_cell/literature.dict.yaml	朱庆馀	zhu qing yu	Trad/JP/variant: 馀->余; simplified already in ext.dict.yaml
+cn_dicts_cell/literature.dict.yaml	行有馀力	xing you yu li	Trad/JP/variant: 馀->余; simplified already in base.dict.yaml
+cn_dicts_cell/literature.dict.yaml	此地空馀黄鹤楼	ci di kong yu huang he lou	Trad/JP/variant: 馀->余; simplified already in base.dict.yaml
+cn_dicts_cell/literature.dict.yaml	而後可以有为	er hou ke yi you wei	Trad/JP/variant: 後->后; simplified already in base.dict.yaml
+cn_dicts_cell/literature.dict.yaml	俛首系颈	fu shou xi jing	Obsolete variant 俛 for 俯 (俯首系颈 exists in idiom)
+cn_dicts_cell/literature.dict.yaml	何如薄倖锦衣郎	he ru bo xing jin yi lang	Trad/JP/variant: 倖->幸; simplified already in literature.dict.yaml
+cn_dicts_cell/literature.dict.yaml	或百步而後止	huo bai bu er hou zhi	Trad/JP/variant: 後->后; simplified already in base.dict.yaml
+cn_dicts_cell/literature.dict.yaml	或五十步而後止	huo wu shi bu er hou zhi	Trad/JP/variant: 後->后; simplified already in base.dict.yaml
+cn_dicts_cell/literature.dict.yaml	江海寄馀生	jiang hai ji yu sheng	Trad/JP/variant: 馀->余; simplified already in base.dict.yaml
+cn_dicts_cell/literature.dict.yaml	沛公不胜桮杓	pei gong bu sheng bei shao	Obsolete variant 桮 for 杯 (沛公不胜杯杓 exists in base)
+cn_dicts_cell/literature.dict.yaml	契阔谈嚥	qi kuo tan yan	Trad/JP/variant: 嚥->宴; simplified already in literature.dict.yaml
+cn_dicts_cell/literature.dict.yaml	然後察之	ran hou cha zhi	Trad/JP/variant: 後->后; simplified already in literature.dict.yaml
+cn_dicts_cell/literature.dict.yaml	然後从而刑之	ran hou cong er xing zhi	Trad/JP/variant: 後->后; simplified already in base.dict.yaml
+cn_dicts_cell/literature.dict.yaml	然後请问	ran hou qing wen	Trad/JP/variant: 後->后; simplified already in literature.dict.yaml
+cn_dicts_cell/literature.dict.yaml	然後驱而之善	ran hou qu er zhi shan	Trad/JP/variant: 後->后; simplified already in literature.dict.yaml
+cn_dicts_cell/literature.dict.yaml	然後杀之	ran hou sha zhi	Trad/JP/variant: 後->后; simplified already in literature.dict.yaml
+cn_dicts_cell/literature.dict.yaml	然後行事	ran hou xing shi	Trad/JP/variant: 後->后; simplified already in literature.dict.yaml
+cn_dicts_cell/literature.dict.yaml	然後知长短	ran hou zhi chang duan	Trad/JP/variant: 後->后; simplified already in base.dict.yaml
+cn_dicts_cell/literature.dict.yaml	然後知轻重	ran hou zhi qing zhong	Trad/JP/variant: 後->后; simplified already in base.dict.yaml
+cn_dicts_cell/literature.dict.yaml	是其尘垢粃糠	shi qi chen gou bi kang	Trad/JP/variant: 粃->秕; simplified already in literature.dict.yaml
+cn_dicts_cell/literature.dict.yaml	无後为大	wu hou wei da	Trad/JP/variant: 後->后; simplified already in base.dict.yaml
+cn_dicts_cell/literature.dict.yaml	先圣後圣	xian sheng hou sheng	Trad/JP/variant: 後->后; simplified already in literature.dict.yaml
+cn_dicts_cell/literature.dict.yaml	贤者而後乐此	xian zhe er hou le ci	Trad/JP/variant: 後->后; simplified already in literature.dict.yaml
+cn_dicts_cell/literature.dict.yaml	余音嫋嫋	yu yin niao niao	Trad/JP/variant: 嫋->袅; simplified already in base.dict.yaml
+cn_dicts_cell/literature.dict.yaml	棗赐之卮酒	zao ci zhi zhi jiu	Corrupted 《鸿门宴》 fragment with stray Trad 棗
+cn_dicts_cell/literature.dict.yaml	棗亚父者	zao ya fu zhe	Corrupted 《鸿门宴》 fragment with stray Trad 棗
+cn_dicts_cell/literature.dict.yaml	荳官	dou guan	Trad/JP/variant: 荳->豆; simplified already in literature.dict.yaml
+cn_dicts_cell/medication.dict.yaml	柴苓朮草加姜薄	chai ling shu cao jia jiang bo	Trad/JP/variant: 朮->术; simplified already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	咄嗟嗚呼	duo jie wu hu	Classical Traditional 《伤寒论序》 dump (咄嗟呜呼 exists in medication)
+cn_dicts_cell/medication.dict.yaml	反之則是含靈鉅賊	fan zhi ze shi han ling ju zei	Classical Traditional 《大医精诚》 dump block (則靈鉅賊)
+cn_dicts_cell/medication.dict.yaml	甘桔陈苓朮朴具	gan ju chen ling shu pu ju	Trad/JP/variant: 朮->术; simplified already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	賫百年之寿命	ji bai nian zhi shou ming	Classical Traditional 《伤寒论序》 dump (賫 for 赍)
+cn_dicts_cell/medication.dict.yaml	飢渴疲勞	ji ke pi lao	Classical Traditional 《大医精诚》 dump (饥渴疲劳 exists in medication)
+cn_dicts_cell/medication.dict.yaml	苓芍朮附加生姜	ling shao shu fu jia sheng jiang	Trad/JP/variant: 朮->术; simplified already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	明堂闕庭尽不见察	ming tang que ting jin bu jian cha	Classical Traditional 《伤寒论序》 dump (明堂阙庭尽不见察 exists in medication)
+cn_dicts_cell/medication.dict.yaml	無作工夫行跡之心	mo zuo gong fu xing ji zhi xin	Classical Traditional 《大医精诚》 dump (無跡 + wrong py mo + typo 行 for 形)
+cn_dicts_cell/medication.dict.yaml	人参甘草朮干姜	ren shen gan cao shu gan jiang	Trad/JP/variant: 朮->术; simplified already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	如此可做蒼生大醫	ru ci ke zuo cang sheng da yi	Classical Traditional 《大医精诚》 dump (蒼醫 + typo 做 for 为)
+cn_dicts_cell/medication.dict.yaml	朮芍防风共成剂	shu shao fang feng gong cheng ji	Trad/JP/variant: 朮->术; simplified already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	胎臚药录	tai lu yao lu	Trad/JP/variant: 臚->胪; simplified already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	土黨參	tu dang can	Trad 黨參->党参 + wrong py can->shen; exact (土党参, tu dang shen) already in ext.dict.yaml
+cn_dicts_cell/medication.dict.yaml	豨薟	xi lian	Trad 薟->莶 + wrong py lian->xian; exact (豨莶, xi xian) already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	偱经传	xun jing zhuan	OCR typo 偱 for 循 in classical TCM dump
+cn_dicts_cell/medication.dict.yaml	野顛茄	ye dian qie	Trad/JP/variant: 顛->颠; simplified already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	阴阳大論	yin yang da lun	Trad/JP/variant: 論->论; simplified already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	晝夜寒暑	zhou ye han shu	Trad/JP/variant: 晝->昼; simplified already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	苯茐醇	ben cong chun	OCR typo 茐(cong) for 乙(yi) (苯乙醇 exists in base)
+cn_dicts_cell/medication.dict.yaml	当归红栆颗粒	dang gui hong zao ke li	OCR typo 栆 for 枣 (当归红枣颗粒 exists in medication)
+cn_dicts_cell/medication.dict.yaml	鸐式唐松草碱	di shi tang song cao jian	OCR corruption (鸐式 for 鹤氏/唐松草碱)
+cn_dicts_cell/medication.dict.yaml	番木虌次碱	fan mu bie ci jian	Trad/JP/variant: 虌->鳖; simplified already in shulihua.dict.yaml
+cn_dicts_cell/medication.dict.yaml	番木虌碱	fan mu bie jian	Trad/JP/variant: 虌->鳖; simplified already in shulihua.dict.yaml
+cn_dicts_cell/medication.dict.yaml	枸櫞酸托瑞米芬	gou yuan suan tuo rui mi fen	Trad 櫞->橼 + py gou->ju; exact (枸橼酸托瑞米芬, ju yuan suan tuo rui mi fen) already in shulihua.dict.yaml
+cn_dicts_cell/medication.dict.yaml	桂附地黃胶囊	gui fu di huang jiao nang	Trad/JP/variant: 黃->黄; simplified already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	肌酸酑酶	ji suan yu mei	OCR typo 酑(yu) for 激(ji) (肌酸激酶 exists in base)
+cn_dicts_cell/medication.dict.yaml	联磺甲氧芐啶片	lian huang jia yang hu ding pian	OCR typo 芐(hu) for 苄(bian) (联磺甲氧苄啶片 exists in medication)
+cn_dicts_cell/medication.dict.yaml	芦芛胶囊	lu wei jiao nang	OCR typo 芛(wei) for 笋(sun) (芦笋胶囊 exists in medication)
+cn_dicts_cell/medication.dict.yaml	豯红通络口服液	xi hong tong luo kou fu ye	OCR typo 豯 for 豨 (豨红通络口服液 exists in medication)
+cn_dicts_cell/medication.dict.yaml	貕莶风湿丸	xi xian feng shi wan	OCR typo 貕 for 豨 (豨莶风湿丸 exists in medication)
+cn_dicts_cell/medication.dict.yaml	豯莶通栓丸	xi xian tong shuan wan	OCR typo 豯 for 豨 (豨莶通栓丸 exists in medication)
+cn_dicts_cell/medication.dict.yaml	心安胶嚢	xin an jiao nang	Trad/JP/variant: 嚢->囊; simplified already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	醒脑再造胶嚢	xing nao zai zao jiao nang	Trad/JP/variant: 嚢->囊; simplified already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	脙尿	xiu niao	OCR corruption/garbage medical entry
+cn_dicts_cell/medication.dict.yaml	亚叶酸鈣注射液	ya ye suan gai zhu she ye	Trad/JP/variant: 鈣->钙; simplified already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	摺叠结构	zhe die jie gou	Trad/JP/variant: 摺->折; simplified already in composite.dict.yaml
+cn_dicts_cell/medication.dict.yaml	止痛化癥胶嚢	zhi tong hua zheng jiao nang	Trad/JP/variant: 嚢->囊; simplified already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	甲氧基玫瑰树硷	jia yang ji mei gui shu jian	Trad/JP/variant: 硷->碱; simplified already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	聚乙絺醉	ju yi chi zui	OCR corruption 絺醉 for 烯醇 (聚乙烯醇 exists in base)
+cn_dicts_cell/medication.dict.yaml	硵亚明冲洗	lu ya ming chong xi	OCR typo 硵(lu) for 氯(lv) (氯亚明冲洗 exists in medication)
+cn_dicts_cell/medication.dict.yaml	毛果云香硷	mao guo yun xiang jian	Deprecated variant 硷->碱 + typo 云->芸; exact (毛果芸香碱, mao guo yun xiang jian) already in base.dict.yaml
+cn_dicts_cell/medication.dict.yaml	罂粟硷	ying su jian	Trad/JP/variant: 硷->碱; simplified already in ext.dict.yaml
+cn_dicts_cell/medication.dict.yaml	止痛化症胶嚢	zhi tong hua zheng jiao nang	Trad/JP/variant: 嚢->囊; simplified already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	目皰疮	mu pao chuang	Trad/JP/variant: 皰->疱; simplified already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	外眥	wai zi	Trad/JP/variant: 眥->眦; simplified already in medication.dict.yaml
+cn_dicts_cell/medication.dict.yaml	胸中痞鞕	xiong zhong pi bian	Obsolete variant 鞕(bian)->硬(ying); exact (胸中痞硬, xiong zhong pi ying) already in medication.dict.yaml
+cn_dicts_cell/name2.dict.yaml	蒲生乡舎	pu sheng xiang she	Trad/JP/variant: 舎->舍; simplified already in name2.dict.yaml
+cn_dicts_cell/name2.dict.yaml	首尔特別市	shou er te bie shi	Trad/JP/variant: 別->别; simplified already in ext.dict.yaml
+cn_dicts_cell/name2.dict.yaml	大友义鑑	da you yi jian	Trad/JP/variant: 鑑->鉴; simplified already in name2.dict.yaml
+cn_dicts_cell/name2.dict.yaml	毘沙门天	pi sha men tian	Trad/JP/variant: 毘->毗; simplified already in composite.dict.yaml
+cn_dicts_cell/name2.dict.yaml	平手汎秀	ping shou fa xiu	Variant 汎->泛 + py fa->fan; exact (平手泛秀, ping shou fan xiu) already in name2.dict.yaml
+cn_dicts_cell/name2.dict.yaml	大红莲氷轮丸	da hong lian bing lun wan	Trad/JP/variant: 氷->冰; simplified already in name2.dict.yaml
+cn_dicts_cell/name2.dict.yaml	久保帯人	jiu bao dai ren	Trad/JP/variant: 帯->带; simplified already in base.dict.yaml
+cn_dicts_cell/name2.dict.yaml	神鎗	shen qiang	Trad/JP/variant: 鎗->枪; simplified already in base.dict.yaml
+cn_dicts_cell/name2.dict.yaml	探査回路	tan zha hui lu	JP Shinjitai 査->查 + py zha->cha; exact (探查回路, tan cha hui lu) already in name2.dict.yaml
+cn_dicts_cell/name2.dict.yaml	小樁	xiao zhuang	Trad/JP/variant: 樁->桩; simplified already in name2.dict.yaml
+cn_dicts_cell/name2.dict.yaml	宇田川稜	yu tian chuan ling	Trad/JP 稜->棱 + py ling->leng; exact (宇田川棱, yu tian chuan leng) already in name2.dict.yaml
+cn_dicts_cell/name2.dict.yaml	呪眼僧伽	zhou yan seng ga	Trad/JP/variant: 呪->咒; simplified already in name2.dict.yaml
+cn_dicts_cell/name2.dict.yaml	荒巻真木造	huang juan zhen mu zao	Trad/JP/variant: 巻->卷; simplified already in name2.dict.yaml
+cn_dicts_cell/name2.dict.yaml	砕蜂	sui feng	Trad/JP/variant: 砕->碎; simplified already in name2.dict.yaml
+cn_dicts_cell/name2.dict.yaml	円乘寺辰房	yuan cheng si chen fang	Trad/JP/variant: 円->圆; simplified already in name2.dict.yaml
+cn_dicts_cell/place.dict.yaml	石硤尾	shi xia wei	Trad/JP/variant: 硤->硖; simplified already in base.dict.yaml
+cn_dicts_cell/shulihua.dict.yaml	洋翠雀鹼	yang cui que jian	Trad/JP/variant: 鹼->碱; simplified already in medication.dict.yaml
+cn_dicts_cell/shulihua.dict.yaml	二甲基二氯矽烷	er jia ji er lv xi wan	TW chemistry 矽(xi)->CN IUPAC 硅(gui); exact (二甲基二氯硅烷, er jia ji er lv gui wan) already in shulihua.dict.yaml
+cn_dicts_cell/shulihua.dict.yaml	二氯矽烷	er lv xi wan	TW chemistry 矽(xi)->CN IUPAC 硅(gui); exact (二氯硅烷, er lv gui wan) already in shulihua.dict.yaml
+cn_dicts_cell/shulihua.dict.yaml	二乙基二氯矽烷	er yi ji er lv xi wan	TW chemistry 矽(xi)->CN IUPAC 硅(gui); exact (二乙基二氯硅烷, er yi ji er lv gui wan) already in shulihua.dict.yaml
+cn_dicts_cell/shulihua.dict.yaml	甲基二氯矽烷	jia ji er lv xi wan	TW chemistry 矽(xi)->CN IUPAC 硅(gui); exact (甲基二氯硅烷, jia ji er lv gui wan) already in shulihua.dict.yaml
+cn_dicts_cell/shulihua.dict.yaml	三氯矽烷	san lv xi wan	TW chemistry 矽(xi)->CN IUPAC 硅(gui); exact (三氯硅烷, san lv gui wan) already in shulihua.dict.yaml
+cn_dicts_cell/shulihua.dict.yaml	矽酸乙酯	xi suan yi zhi	TW chemistry 矽(xi)->CN IUPAC 硅(gui); exact (硅酸乙酯, gui suan yi zhi) already in shulihua.dict.yaml
+cn_dicts_cell/shulihua.dict.yaml	乙烯基三氯矽烷	yi xi ji san lv xi wan	TW chemistry 矽(xi)->CN IUPAC 硅(gui); exact (乙烯基三氯硅烷, yi xi ji san lv gui wan) already in shulihua.dict.yaml
+cn_dicts_cell/shulihua.dict.yaml	甲基菸酰胺	jia ji yan xian an	Trad/JP/variant: 菸->烟; simplified already in medication.dict.yaml
+cn_dicts_cell/shulihua.dict.yaml	双乙酸代隣氨	shuang yi suan dai lin an	Trad/JP/variant: 隣->邻; simplified already in shulihua.dict.yaml
+cn_dicts_cell/shulihua.dict.yaml	香茅醇霳	xiang mao chun long	OCR corruption/garbage suffix 霳
+cn_dicts_cell/shulihua.dict.yaml	箊酰胺	yu xian an	OCR typo 箊(yu) for 烟/菸 (烟酰胺 exists in base)
+cn_dicts_cell/shulihua.dict.yaml	镀鈀氧化铝	du ba yang hua lv	Trad/JP/variant: 鈀->钯; simplified already in shulihua.dict.yaml
+cn_dicts_cell/shulihua.dict.yaml	氧氯化鋯	yang lv hua gao	Trad/JP/variant: 鋯->锆; simplified already in shulihua.dict.yaml
+cn_dicts_cell/sport.dict.yaml	摺叠	zhe die	Trad/JP/variant: 摺->折; simplified already in base.dict.yaml
+cn_dicts/base.dict.yaml	调景岭	diao jing ling	港铁站名“调景岭”规范读 tiáo jǐng lǐng，clean-dicts.py L1321 已修 place 漏修 base（注：place 权重为 0，亦可 phonetics_fix base）（港铁普通话标准/民政地名(L2)）
+cn_dicts/base.dict.yaml	石厦	shi sha	深圳地铁 3/7 号线“石厦”官方标准读 shí xià，clean-dicts.py L1339 已修 place(w=6) 漏删 base（深圳地铁官方播报/民政地名(L2)）
+cn_dicts/base.dict.yaml	大差市	da cha shi	西安地铁“大差市”官方标准读 dà chāi shì，clean-dicts.py L1325 已修 place(w=1) 漏删 base（西安地铁官方播报/民政地名(L2)）
+cn_dicts_cell/history.dict.yaml	句章	ju zhang	古县名“句章”（今宁波）规范读 gōu zhāng，clean-dicts.py L1563 已修 geography(w=10) 漏修 history（辞海/中国古今地名大词典(L2/L3)）
+cn_dicts_cell/history.dict.yaml	冤句	yuan ju	古县名“冤句”（今菏泽）规范读 yuān qú，clean-dicts.py L1569 已修 geography(w=2) 漏修 history（辞海/中国古今地名大词典(L2/L3)）
+cn_dicts_cell/history.dict.yaml	阳夏	yang xia	古县名“阳夏”（今太康）规范读 yáng jiǎ，clean-dicts.py L1568 已修 geography(w=7) 漏修 history（辞海/中国古今地名大词典(L2/L3)）
+cn_dicts_cell/history.dict.yaml	朱提	zhu ti	汉古郡县名“朱提”（朱提银）规范读 shū shí，clean-dicts.py L1570 已修 geography(w=11) 漏修 history（辞海/中国古今地名大词典(L2/L3)）
+cn_dicts_cell/history.dict.yaml	沙羡	sha xian	汉晋古县名“沙羡”规范读 shā yí，clean-dicts.py L1565 已修 geography(w=0) 漏修 history（辞海/中国古今地名大词典(L2/L3)）
+cn_dicts/base.dict.yaml	朱由校	zhu you xiao	明熹宗“朱由校”规范读 zhū yóu jiào（《明史·礼志五》天启避讳改“较”为证，与弟朱由检合称校检）；history 已有 zhu you jiao(w=42)（辞海/明史·礼志五(L3)）
+cn_dicts_cell/history.dict.yaml	李适	li shi	唐德宗“李适”规范读 lǐ kuò（《现汉》7版“适 kuò”条明确举“李适”为例）；同文件已有 li kuo(w=18)（现汉第7版/辞海(L1/L3)）
+cn_dicts_cell/history.dict.yaml	李拀	li chu	E2 错字（唐哀帝“李柷”OCR 误作“李拀”），同文件 L9843 已有正词“李柷 li zhu 4”（正史人名规范(L3)）
+cn_dicts_cell/history.dict.yaml	李拀	li zhu	E2 错字（唐哀帝“李柷”OCR 误作“李拀”），同文件 L9843 已有正词“李柷 li zhu 4”（正史人名规范(L3)）
+cn_dicts_cell/history.dict.yaml	姬贾	ji gu	古代姬姓贾氏/国名“贾”读 jiǎ 不读 gǔ；同文件已有 ji jia（现汉第7版/左传(L1/L3)）
+cn_dicts_cell/name2.dict.yaml	金色疋杀地藏	jin se pi sha di cang	佛教专名及《死神》斩魄刀名“地藏”仅读 dì zàng，无 di cang 读法；同文件已有 jin se pi sha di zang（现汉第7版/佛教专名(L1/L3)）
+cn_dicts_cell/game.dict.yaml	长杓座	chang biao zuo	《原神》香菱命之座（Trulla，长柄汤勺），“杓”表勺子读 sháo（biāo 仅指北斗斗杓）；同文件已有 chang shao zuo（现汉第7版/原神官方设定(L1/L3)）
+cn_dicts_cell/idiom.dict.yaml	伽什废墟	jia shen fei xu	游戏地名误混入 idiom 且音译字“什”误注 shen（“什”仅“什么”读 shén，译名读 shí）；game 已有 jia shi fei xu（现汉第7版(L1)）
+cn_dicts_cell/name2.dict.yaml	后柏原天皇	hou bo yuan tian huang	日本天皇名“柏原”取柏树义，规范读 bǎi（bó 仅用于柏林等）；同文件已有 hou bai yuan tian huang（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	柏安妮	bo an ni	姓氏“柏”规范读 bǎi；name2 已有 bai an ni（现汉第7版(L1)）
+cn_dicts_cell/game.dict.yaml	达伽马	da jia ma	航海家 Vasco da Gama 规范读 dá gā mǎ；ext 已有 da ga ma(w=35)（现汉第7版/新华社译名规范(L1/L2)）
+cn_dicts/base.dict.yaml	奥米伽	ao mi jia	希腊字母 Omega（Ω）规范读 ào mǐ gā；同文件已有 ao mi ga（现汉第7版/全国科技名词委(L1/L2)）
+cn_dicts_cell/shulihua.dict.yaml	伽罗瓦理论	ga luo wa li lun	法国数学家 Galois，《数学名词》及《现汉》7版固定读 jiā luó wǎ；ext 已有 jia luo wa li lun（现汉第7版/全国科技名词委《数学名词》(L1/L2)）
+cn_dicts/base.dict.yaml	数罟不入洿池	shu gu bu ru wu chi	《孟子》“数罟”意为细密鱼网，规范读 cù gǔ；clean-dicts.py L2274/L2440 已修 literature 漏删 base（现汉第7版/统编高中语文教材(L1/L3)）
+cn_dicts_cell/literature.dict.yaml	溱洧	qin wei	《诗经·郑风·溱洧》河南古水名规范读 zhēn wěi；clean-dicts.py L2510 已修 idiom 漏修 literature（现汉第7版/辞海(L1/L3)）
+cn_dicts_cell/literature.dict.yaml	古者谓是帝之县解	gu zhe wei shi di zhi xian jie	《庄子·养生主》“县”通“悬”，规范读 xuán jiě；同文件已有 xuan jie(w=70)（辞海/传统训诂(L3)）
+cn_dicts_cell/literature.dict.yaml	罔两问景曰	wang liang wen jing yue	《庄子·齐物论》“景”为“影”古字，规范读 yǐng；同文件已有 ying yue(w=70)（辞海/传统训诂(L3)）
+cn_dicts/base.dict.yaml	日居月诸	ri ju yue zhu	《诗经》成语“居”作语助词规范读 jī；literature 已有 ri ji yue zhu(w=14)（现汉第7版/汉语大词典(L1/L3)）
+cn_dicts/ext.dict.yaml	见素抱朴	jian su bao pu	《道德经》成语“见”通“现”，规范读 xiàn sù bào pǔ；literature 已有 xian su bao pu(w=12)（现汉第7版/汉语大词典(L1/L3)）
+cn_dicts/base.dict.yaml	风吹草低见牛羊	feng chui cao di jian niu yang	《敕勒歌》“见”通“现”，规范读 xiàn niú yáng；同文件已有 xian niu yang（如需容错应入 corrections）（现汉第7版/统编小学语文教材(L1/L3)）
+cn_dicts/base.dict.yaml	见牛羊	jian niu yang	同上，“见”通“现”读 xiàn；同文件已有 xian niu yang（现汉第7版/统编小学语文教材(L1/L3)）
+cn_dicts_cell/idiom.dict.yaml	长绳系日	chang sheng ji ri	书面成语“系”表拴缚规范读 xì（同“解铃还须系(xì)铃人”）；ext 已有 chang sheng xi ri（现汉第7版/汉语大词典(L1)）
+cn_dicts_cell/literature.dict.yaml	范增说项羽曰	fan zeng shuo xiang yu yue	《鸿门宴》“说”意为劝说/游说，教材规范读 shuì；base 已有 fan zeng shui xiang yu yue（现汉第7版/统编高中语文教材(L1/L3)）
+cn_dicts/base.dict.yaml	千乘万骑	qian sheng wan ji	1985 审音表已统读“骑”为 qí，主词库 base 不保留旧读 ji；同文件已有 qian sheng wan qi（1985普通话异读词审音表/现汉第7版(L1)）
+cn_dicts_cell/idiom.dict.yaml	单人独骑	dan ren du ji	1985 审音表已统读“骑”为 qí，idiom 不保留旧读 ji；composite 已有 dan ren du qi（1985普通话异读词审音表/现汉第7版(L1)）
+cn_dicts/base.dict.yaml	卑劣地	bei lie di	副词结构助词“地”仅读轻声 de（同 clean-dicts.py L224-229 已修词）；同文件已有 bei lie de（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	准准地	zhun zhun di	副词结构助词“地”仅读轻声 de；同文件已有 zhun zhun de（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	干练地	gan lian di	副词结构助词“地”仅读轻声 de；同文件已有 gan lian de（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	能咋的	neng za di	“咋的”规范读 zǎ de（clean-dicts.py L194/L254 已删 base 的“咋的 za di”并修“不咋的”）；同文件已有 neng za de（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	咋的啊	za di a	同上，“咋的”仅读 zǎ de；同文件已有 za de a（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	咋的啦	za di la	同上，“咋的”仅读 zǎ de；同文件已有 za de la（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	瞅你咋的	chou ni za di	同上，“咋的”仅读 zǎ de；同文件已有 chou ni za de（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	新关卡	xin guan ka	“关卡”规范读 guān qiǎ（clean-dicts.py L268 已删 base 的“关卡 guan ka”并移入 corrections）；同文件已有 xin guan qia（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	皮肤磨削术	pi fu mo xiao shu	医学/工程复音词“磨削”规范读 mó xuē（clean-dicts.py L231 已修“削骨 -> xue gu”）；medication 已有 pi fu mo xue shu（现汉第7版/全国科技名词委(L1/L2)）
+cn_dicts/base.dict.yaml	杉篙	shan gao	1985 审音表与《现汉》7版规定“杉木/杉篙”读 shā（shā gāo）；同文件已有 sha gao（1985普通话异读词审音表/现汉第7版(L1)）
+cn_dicts/base.dict.yaml	靓妆	liang zhuang	《现汉》7版“靓妆”规范读 jìng zhuāng（liàng 仅用于粤方言“靓女”等）；同文件已有 jing zhuang（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	胳肢窝	ge zhi wo	《现汉》7版“胳肢窝”规范读 gā zhi wō（R2 亦专为此补录 8105“胳 ga”）；同文件已有 ga zhi wo（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	卡盘	ka pan	车床夹紧装置“卡盘”规范读 qiǎ pán；同文件已有 qia pan（现汉第7版/全国科技名词委(L1/L2)）
+cn_dicts_cell/medication.dict.yaml	重身	zhong shen	《素问》中医术语“重身”（身中有身、怀孕）规范读 chóng shēn；base 已有 chong shen（现汉第7版/中医药学名词(L1/L2)）
+cn_dicts_cell/shulihua.dict.yaml	澄清度标准	deng qing du biao zhun	《中国药典》及分析化学“澄清度”（清澈度）规范读 chéng qīng dù；同文件已有 cheng qing du biao zhun（现汉第7版/中国药典(L1/L2)）
+cn_dicts/base.dict.yaml	喔哟	wo yo	《现汉》7版叹词“喔哟”规范读 ō yō（wō 仅用于“喔喔”鸡鸣，R2 L352 已修 wo you -> o yo）；同文件已有 o yo（现汉第7版(L1)）
+cn_dicts/others.dict.yaml	我勒个	wo lei ge	口语“我勒个”（源自“我勒个去”）读 wǒ lè ge，clean-dicts.py L1005 已补 wo le ge 漏删旧 wo lei ge（现汉第7版(L1)）
+cn_dicts_cell/composite.dict.yaml	谁是谁的	shui shi shei de	同词内“谁”前 shui 后 shei 混合残缺克隆（同 clean-dicts.py L199 已修“谁谁 shei shui”）；可删或改全 shui（拼音一致性规范）
+cn_dicts/ext.dict.yaml	没有谁对谁错	mei you shui dui shei cuo	同词内“谁”前 shui 后 shei 混合残缺克隆（注：clean_r2_rules.py L1128 有旧降权条目需联动）；可删或改全 shui（拼音一致性规范）
+cn_dicts/ext.dict.yaml	谁也说服不了谁	shui ye shuo fu bu liao shei	同词内“谁”前 shui 后 shei 混合残缺克隆；可删或改全 shui（拼音一致性规范）
+cn_dicts/ext.dict.yaml	谁都不服谁	shui dou bu fu shei	同词内“谁”前 shui 后 shei 混合残缺克隆；可删或改全 shui（拼音一致性规范）
+cn_dicts/ext.dict.yaml	谁轻谁重	shui qing shei zhong	同词内“谁”前 shui 后 shei 混合残缺克隆；可删或改全 shui（拼音一致性规范）
+cn_dicts/ext.dict.yaml	没有谁离不开谁	mei you shui li bu kai shei	同词内“谁”前 shui 后 shei 混合残缺克隆；可删或改全 shui（拼音一致性规范）
+cn_dicts/ext.dict.yaml	霸气外露	ba qi wai lou	“外露”规范读 wài lù（clean-dicts.py L264 已删 base 的“外露 wai lou”）；同文件已有 ba qi wai lu（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	微露	wei lou	书面词“微露”仅读 wēi lù；同文件已有 wei lu（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	半露	ban lou	书面词“半露”仅读 bàn lù；同文件已有 ban lu（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	露脐装	lou qi zhuang	《现汉》7版“露脐”规范读 lù qí；同文件已有 lu qi zhuang（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	露齿笑	lou chi xiao	“露齿”规范读 lù chǐ；同文件已有 lu chi xiao（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	笑不露齿	xiao bu lou chi	成语“笑不露齿”规范读 xiào bù lù chǐ；同文件已有 xiao bu lu chi（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	露齿而笑	lou chi er xiao	成语“露齿而笑”规范读 lù chǐ ér xiào；同文件已有 lu chi er xiao（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	露头角	lou tou jiao	成语“（崭）露头角”规范读 lù tóu jiǎo；idiom 已有 lu tou jiao（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	秘而不露	mi er bu lou	成语“秘而不露”规范读 mì ér bù lù；idiom 已有 mi er bu lu（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	突然露出	tu ran lou chu	“露出”规范读 lù chū（R2 L383 已删 base 的“露出 lou chu”）；同文件已有 tu ran lu chu（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	露出了狐狸尾巴	lou chu le hu li wei ba	“露出”规范读 lù chū；idiom 已有 lu chu le hu li wei ba（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	露丑	lu chou	《现汉》7版“露丑”规范读 lòu chǒu；同文件已有 lou chou（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	出乖露丑	chu guai lu chou	《现汉》7版成语“出乖露丑”规范读 chū guāi lòu chǒu；idiom 已有 chu guai lou chou（现汉第7版(L1)）
+cn_dicts_cell/idiom.dict.yaml	出头露面	chu tou lu mian	《现汉》7版“出头露面”规范读 chū tóu lòu miàn（同 corrections L233“露面”）；base 已有 chu tou lou mian（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	穿着单薄	chuan zhe dan bao	“单薄”规范读 dān bó（clean-dicts.py L260 已删 base 的“单薄 dan bao”）；同文件已有 chuan zhe dan bo（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	衣着单薄	yi zhuo dan bao	“单薄”规范读 dān bó；同文件已有 yi zhuo dan bo（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	穿得单薄	chuan de dan bao	“单薄”规范读 dān bó；同文件已有 chuan de dan bo（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	质地轻薄	zhi di qing bao	“轻薄”规范读 qīng bó（clean-dicts.py L261 已删 base 的“轻薄 qing bao”）；同文件已有 zhi di qing bo（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	轻薄程度	qing bao cheng du	“轻薄”规范读 qīng bó；同文件已有 qing bo cheng du（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	轻薄度	qing bao du	“轻薄”规范读 qīng bó；同文件已有 qing bo du（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	薄膜厚度	bao mo hou du	“薄膜”规范读 bó mó（corrections L172 已纠“薄膜 bao mo -> bó”）；同文件已有 bo mo hou du（现汉第7版/全国科技名词委(L1/L2)）
+cn_dicts_cell/medication.dict.yaml	无菌薄膜手套	wu jun bao mo shou tao	“薄膜”规范读 bó mó；同文件已有 wu jun bo mo shou tao（现汉第7版/全国科技名词委(L1/L2)）
+cn_dicts_cell/medication.dict.yaml	唾液薄膜	tuo ye bao mo	“薄膜”规范读 bó mó；同文件已有 tuo ye bo mo（现汉第7版/全国科技名词委(L1/L2)）
+cn_dicts_cell/medication.dict.yaml	薄膜手套	bao mo shou tao	“薄膜”规范读 bó mó；同文件已有 bo mo shou tao（现汉第7版/全国科技名词委(L1/L2)）
+cn_dicts_cell/composite.dict.yaml	薄膜衣片	bao mo yi pian	“薄膜”规范读 bó mó；medication 已有 bo mo yi pian（现汉第7版/中国药典(L1/L2)）
+cn_dicts_cell/medication.dict.yaml	一次性使用医用粘贴薄膜手术巾	yi ci xing shi yong yi yong zhan tie bao mo shou shu jin	“薄膜”规范读 bó mó；同文件已有 bo mo 正音行（现汉第7版/全国科技名词委(L1/L2)）
+cn_dicts_cell/shulihua.dict.yaml	帕拉薄膜	pa la bao mo	“薄膜”规范读 bó mó；同文件已有 pa la bo mo（现汉第7版/全国科技名词委(L1/L2)）
+cn_dicts_cell/game.dict.yaml	维希度斯薄膜	wei xi du si bao mo	“薄膜”规范读 bó mó；同文件已有 wei xi du si bo mo（现汉第7版(L1)）
+cn_dicts_cell/medication.dict.yaml	脑外科袋式手术粘贴薄膜	nao wai ke dai shi shou shu zhan tie bao mo	“薄膜”规范读 bó mó；同文件已有 bo mo 正音行（现汉第7版/全国科技名词委(L1/L2)）
+cn_dicts_cell/shulihua.dict.yaml	薄膜树脂	bao mo shu zhi	“薄膜”规范读 bó mó；同文件已有 bo mo shu zhi（现汉第7版/全国科技名词委(L1/L2)）
+cn_dicts_cell/shulihua.dict.yaml	纤维素薄层板	xian wei su bao ceng ban	化学术语“薄层”（薄层色谱/薄层板）规范读 bó céng；同文件已有 xian wei su bo ceng ban（现汉第7版/全国科技名词委(L1/L2)）
+cn_dicts/ext.dict.yaml	厚度薄	hou du bo	单用表具体厚度小仅读 báo，绝无 bó 读法；同文件已有 hou du bao（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	厚度较薄	hou du jiao bo	表具体厚度小“较薄”仅读 jiào báo；同文件已有 hou du jiao bao（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	薄得像	bo de xiang	口语谓语“薄得像”仅读 báo de xiàng；同文件已有 bao de xiang（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	薄得几乎	bo de ji hu	口语谓语“薄得几乎”仅读 báo de jī hū；同文件已有 bao de ji hu（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	日系车皮薄	ri xi che pi bo	“皮薄”仅读 pí báo；同文件已有 ri xi che pi bao（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	薄厚程度	bo hou cheng du	《现汉》7版“薄厚”仅读 báo hòu；同文件已有 bao hou cheng du（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	印度尼西亚爪哇	yin du ni xi ya zhua wa	地名“爪哇”规范读 zhǎo wā（clean-dicts.py L258 已删 base 的“爪哇 zhua wa”）；同文件已有 zhao wa（现汉第7版/民政地名(L1/L2)）
+cn_dicts/ext.dict.yaml	东爪哇省	dong zhua wa sheng	地名“爪哇”规范读 zhǎo wā；同文件已有 dong zhao wa sheng（现汉第7版/民政地名(L1/L2)）
+cn_dicts_cell/composite.dict.yaml	茶熏八爪鱼	cha xun ba zhao yu	“八爪鱼”规范读 bā zhuǎ yú（clean-dicts.py L578 已修“八爪鱼 ba zhao yu -> ba zhua yu”）；food 已有 ba zhua yu（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	这么着	zhe me zhe	《现汉》7版“这么着”规范读 zhè me zhāo（R2 L393 已删 base 的“怎么着 zen me zhe”）；同文件已有 zhe me zhao（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	这么着吧	zhe me zhe ba	同上，“这么着”规范读 zhè me zhāo；同文件已有 zhe me zhao ba（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	先这么着	xian zhe me zhe	同上，“这么着”规范读 zhè me zhāo；同文件已有 xian zhe me zhao（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	怎么着吧	zen me zhe ba	同上，“怎么着”规范读 zěn me zhāo；同文件已有 zen me zhao ba（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	怎么着都行	zen me zhe dou xing	同上，“怎么着”规范读 zěn me zhāo；同文件已有 zen me zhao dou xing（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	剥花生	bo hua sheng	口语单用具体动作“剥花生”仅读 bāo huā sheng，绝无 bō 读法；同文件已有 bao hua sheng（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	剥得	bo de	口语动补“剥得”仅读 bāo de；同文件已有 bao de（现汉第7版(L1)）
+cn_dicts/ext.dict.yaml	剥得精光	bo de jing guang	口语“剥得精光”仅读 bāo de jīng guāng；同文件已有 bao de jing guang（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	细嚼	xi jue	《现汉》7版“细嚼慢咽”仅读 xì jiáo（同 R2 L364-368 删“嚼碎/嚼烂”的 jue）；同文件已有 xi jiao（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	嚼蜡	jue la	《现汉》7版“味同嚼蜡”仅读 jiáo là；同文件已有 jiao la（现汉第7版(L1)）
+cn_dicts/base.dict.yaml	没见着	mei jian zhe	动补“没见着”表示没见到，规范读 méi jiàn zháo（同库已有规范读音 mei jian zhao）
+cn_dicts/base.dict.yaml	没碰着	mei peng zhe	动补“没碰着”表示没触及，规范读 méi pèng zháo（同库已有规范读音 mei peng zhao）
+cn_dicts/ext.dict.yaml	找着了	zhao zhe le	动补“找着了”表示找到了，规范读 zhǎo zháo le（同库已有规范读音 zhao zhao le）
+cn_dicts_cell/idiom.dict.yaml	恶迹昭着	e ji zhao zhe	E2港台“著->着”误转重复项(同文件紧邻已有正词昭著)
+cn_dicts_cell/idiom.dict.yaml	劣迹昭着	lie ji zhao zhe	E2港台“著->着”误转重复项(同文件紧邻已有正词昭著)
+cn_dicts_cell/idiom.dict.yaml	彰明昭着	zhang ming zhao zhe	E2港台“著->着”误转重复项(同文件紧邻已有正词昭著)
+cn_dicts_cell/composite.dict.yaml	聚脂薄膜	ju zhi bao mo	E2错字(脂->酯)兼错音(薄->bo)，ext已有正词聚酯薄膜
+cn_dicts/base.dict.yaml	热血	re xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血管	xie guan	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血糖	xie tang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血统	xie tong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血腥	xie xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血压	xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血液	xie ye	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	心血	xin xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	鲜血	xian xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	瘀血	yu xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	活血	huo xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血案	xie an	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血书	xie shu	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血脉	xie mai	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血亲	xie qin	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	气血	qi xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血海	xie hai	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血肉	xie rou	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	输血	shu xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	溶血	rong xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	铁血	tie xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	献血	xian xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	贫血	pin xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	止血	zhi xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血清	xie qing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	混血	hun xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血浆	xie jiang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血缘	xie yuan	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	冷血	leng xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	养血	yang xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	充血	chong xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血型	xie xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血本	xie ben	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血债	xie zhai	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血泪	xie lei	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血栓	xie shuan	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血性	xie xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血战	xie zhan	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	补血	bu xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血仇	xie chou	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血脂	xie zhi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血气	xie qi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血洗	xie xi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血癌	xie ai	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	碧血	bi xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	凉血	liang xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	凝血	ning xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	淤血	yu xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	缺血	que xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	血汗	xie han	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	败血	bai xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血缘关系	xie yuan guan xi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	地中海贫血	di zhong hai pin xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	热血高校	re xie gao xiao	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血管堵塞	xie guan du se	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降低餐后血糖	jiang di can hou xie tang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血压降低	xie ya jiang di	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	还我血汗钱	huan wo xie han qian	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	严重贫血	yan zhong pin xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血肉模糊	xie rou mo hu	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血腥程度	xie xing cheng du	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	调节血压	tiao jie xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血管系统	xie guan xi tong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血脉传承	xie mai chuan cheng	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	直系血亲	zhi xi xie qin	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降血糖	jiang xie tang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	凝血系统	ning xie xi tong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	重度贫血	zhong du pin xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	堵塞血管	du se xie guan	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	旁系血亲	pang xi xie qin	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	热血系列	re xie xi lie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血糖下降	xie tang xia jiang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血栓栓塞	xie shuan shuan se	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	气血的运行	qi xie de yun xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	调节血脂	tiao jie xie zhi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血液系统疾病	xie ye xi tong ji bing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	中度贫血	zhong du pin xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	怀着一腔热血	huai zhe yi qiang re xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血管栓塞	xie guan shuan se	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	长期高血糖	chang qi gao xie tang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	看得热血沸腾	kan de re xie fei teng	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血糖降低	xie tang jiang di	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	轻度贫血	qing du pin xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血糖调节	xie tang tiao jie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血液运行	xie ye yun xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	严重出血	yan zhong chu xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	包扎止血	bao za zhi xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	恶性贫血	e xing pin xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血液浓度	xie ye nong du	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降低血糖	jiang di xie tang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降低心血管疾病	jiang di xin xie guan ji bing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	热血传奇	re xie chuan qi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	调理气血	tiao li qi xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	心血管系统	xin xie guan xi tong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降血糖药	jiang xie tang yao	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降血脂	jiang xie zhi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	气血运行不畅	qi xie yun xing bu chang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	缺血性脑卒中	que xie xing nao cu zhong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血液酒精浓度	xie ye jiu jing nong du	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	心率和血压	xin lv he xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	长期高血压	chang qi gao xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	毫无血缘关系	hao wu xie yuan guan xi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降血压	jiang xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血管的弹性	xie guan de tan xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血管弹性	xie guan tan xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血栓脱落	xie shuan tuo luo	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	行气活血	xing qi huo xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降低血清	jiang di xie qing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降低血糖水平	jiang di xie tang shui ping	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	气血运行	qi xie yun xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	缺血性卒中	que xie xing cu zhong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血管阻塞	xie guan zu se	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	心血管系统疾病	xin xie guan xi tong ji bing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	亏得血本无归	kui de xie ben wu gui	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	气血旺盛	qi xie wang sheng	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	热血传奇怀旧版	re xie chuan qi huai jiu ban	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血管内皮生长因子	xie guan nei pi sheng zhang yin zi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血糖浓度	xie tang nong du	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血红蛋白浓度	xie hong dan bai nong du	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血压下降	xie ya xia jiang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	得了高血压	de le gao xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降低血清胆固醇	jiang di xie qing dan gu chun	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	静脉血栓栓塞	jing mai xie shuan shuan se	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	三代以内旁系血亲	san dai yi nei pang xi xie qin	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	调和气血	tiao he qi xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血小板降低	xie xiao ban jiang di	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血液传播	xie ye chuan bo	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血缘联系	xie yuan lian xi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	地中海贫血症	di zhong hai pin xie zheng	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	高血压患病率	gao xie ya huan bing lv	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降低血压	jiang di xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	具有降血压	ju you jiang xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血脉觉醒	xie mai jue xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血液系统	xie ye xi tong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	心率血压	xin lv xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降低高血压	jiang di gao xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	流行性出血热	liu xing xing chu xie re	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	铁血队长	tie xie dui zhang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血型系统	xie xing xi tong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	非血缘关系	fei xie yuan guan xi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	花了不少心血	hua le bu shao xin xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	调血脂	tiao xie zhi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血管闭塞	xie guan bi se	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血亲关系	xie qin guan xi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	直系血脉	zhi xi xie mai	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降低血脂	jiang di xie zhi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	可以降低血糖	ke yi jiang di xie tang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	气血失调	qi xie shi tiao	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	调节血糖	tiao jie xie tang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	调节血液	tiao jie xie ye	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	无血缘关系	wu xie yuan guan xi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血脉联系	xie mai lian xi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血气旺盛	xie qi wang sheng	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血压心率	xie ya xin lv	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血液黏稠度	xie ye nian chou du	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血液系统恶性肿瘤	xie ye xi tong e xing zhong liu	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血液循环系统	xie ye xun huan xi tong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血债血还	xie zhai xie huan	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	心脑血管系统	xin nao xie guan xi tong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	严重的贫血	yan zhong de pin xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	造血系统	zao xie xi tong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	促进气血运行	cu jin qi xie yun xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	地奥心血康	di ao xin xie kang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	恶性血液病	e xing xie ye bing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	辅助降血糖	fu zhu jiang xie tang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降低血液中胆固醇	jiang di xie ye zhong dan gu chun	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降低心脑血管疾病	jiang di xin nao xie guan ji bing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	具有降血脂	ju you jiang xie zhi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	凭着一腔热血	ping zhe yi qiang re xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	调节气血	tiao jie qi xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血浆蛋白结合率	xie jiang dan bai jie he lv	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血脉关系	xie mai guan xi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血腥地狱	xie xing di yu	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血液传染	xie ye chuan ran	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	严重低血糖	yan zhong di xie tang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	直系血亲关系	zhi xi xie qin guan xi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	止血包扎	zhi xie bao za	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	补血调经	bu xie tiao jing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	出血性脑卒中	chu xie xing nao cu zhong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	德系血统	de xi xie tong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	活血调经	huo xie tiao jing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降低血液胆固醇	jiang di xie ye dan gu chun	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降低血液黏度	jiang di xie ye nian du	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降血脂药物	jiang xie zhi yao wu	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	具有降血糖	ju you jiang xie tang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	可以降血压	ke yi jiang xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	没个十年脑血栓	mei ge shi nian nao xie shuan	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	贫血严重	pin xie yan zhong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	热血传奇手游	re xie chuan qi shou you	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	输血传播	shu xie chuan bo	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	调气血	tiao qi xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	系统性血管炎	xi tong xing xie guan yan	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血管壁弹性	xie guan bi tan xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血管重建	xie guan chong jian	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血肉联系	xie rou lian xi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血压调节	xie ya tiao jie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血液流动速度	xie ye liu dong su du	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	严重的高血压	yan zhong de gao xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	直系血缘关系	zhi xi xie yuan guan xi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	吃什么补血	chi shen me bu xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	阿胶补血	e jiao bu xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	混血模特	hun xie mo te	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	活血行气	huo xie xing qi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	加重高血压	jia zhong gao xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降血脂药	jiang xie zhi yao	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	能降血糖	neng jiang xie tang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	能降血压	neng jiang xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	调养气血	tiao yang qi xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血性恶露	xie xing e lu	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	增强血管弹性	zeng qiang xie guan tan xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	参加无偿献血	can jia wu chang xian xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	出血性膀胱炎	chu xie xing pang guang yan	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	传承血脉	chuan cheng xie mai	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	地奥心血康胶囊	di ao xin xie kang jiao nang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	高血压的发病率	gao xie ya de fa bing lv	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	急性缺血性卒中	ji xing que xie xing cu zhong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降低高血脂	jiang di gao xie zhi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降低血液黏稠度	jiang di xie ye nian chou du	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	可以降低血压	ke yi jiang di xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	没十年脑血栓	mei shi nian nao xie shuan	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	能降低血压	neng jiang di xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	气血不调	qi xie bu tiao	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	热血传说	re xie chuan shuo	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	热血的传奇	re xie de chuan qi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	省血液中心	sheng xie ye zhong xin	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血肉长城	xie rou chang cheng	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血肉狼藉	xie rou lang ji	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血栓闭塞性脉管炎	xie shuan bi se xing mai guan yan	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血液制品行业	xie ye zhi pin hang ye	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	严重高血压	yan zhong gao xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	运行气血	yun xing qi xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	保持血管弹性	bao chi xie guan tan xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	参加献血	can jia xian xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	辅助降血脂	fu zhu jiang xie zhi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	急性缺血性脑卒中	ji xing que xie xing nao cu zhong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降低血脂和胆固醇	jiang di xie zhi he dan gu chun	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降血压的功效	jiang xie ya de gong xiao	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	静脉血栓栓塞症	jing mai xie shuan shuan se zheng	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	可以降低血脂	ke yi jiang di xie zhi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	贫血吃什么	pin xie chi shen me	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	热血传奇游戏	re xie chuan qi you xi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血压骤降	xie ya zhou jiang	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血液的黏稠度	xie ye de nian chou du	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血液黏度	xie ye nian du	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血战长空	xie zhan chang kong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	养血调经	yang xie tiao jing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	一腔热血勤珍重	yi qiang re xie qin zhen zhong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	增加血管弹性	zeng jia xie guan tan xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	保护心血管系统	bao hu xin xie guan xi tong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	肠降血糖素	chang jiang xie tang su	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	出血性卒中	chu xie xing cu zhong	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	辅助降血压	fu zhu jiang xie ya	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	恢复血管弹性	hui fu xie guan tan xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	积极参与无偿献血	ji ji can yu wu chang xian xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降低血压的功效	jiang di xie ya de gong xiao	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降低血压和胆固醇	jiang di xie ya he dan gu chun	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降血糖药物	jiang xie tang yao wu	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	降血压药物	jiang xie ya yao wu	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	没血性	mei xie xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	能降血脂	neng jiang xie zhi	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	热血传奇手机版	re xie chuan qi shou ji ban	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	热血同行	re xie tong xing	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	调节血管	tiao jie xie guan	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	调经活血	tiao jing huo xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血清流行病学	xie qing liu xing bing xue	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	血液循环速度	xie ye xun huan su du	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	印度血清研究所	yin du xie qing yan jiu suo	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/ext.dict.yaml	重型地中海贫血	zhong xing di zhong hai pin xie	书面/医学复音词中「血」规范读 xuè（非口语 xiě）（删除同音抢码克隆，主表已有规范 xue 词条）
+cn_dicts/base.dict.yaml	他们自已	ta men zi yi	E2错字（正字：他们自己）
+cn_dicts/base.dict.yaml	严于律已	yan yu lv yi	E2错字（正字：严于律己）
+cn_dicts/base.dict.yaml	杯盘狼籍	bei pan lang ji	E2错字（正字：杯盘狼藉，base已有正词w=22）
+cn_dicts/base.dict.yaml	我们自已	wo men zi yi	E2错字（正字：我们自己）
+cn_dicts/base.dict.yaml	受的了	shou de le	E2错字兼错音（正词：受得了 shou de liao，base已有正词w=523）
+cn_dicts/ext.dict.yaml	不加思索	bu jia si suo	E2错字（正字：不假思索，base已有正词w=319）
+cn_dicts/ext.dict.yaml	惹事生非	re shi sheng fei	E2错字（正字：惹是生非，base已有正词w=93）
+cn_dicts/ext.dict.yaml	服服贴贴	fu fu tie tie	E2非规范异形词（正字：服服帖帖，base已有正词w=145，《第一批异形词整理表》规范作服帖）
+cn_dicts/ext.dict.yaml	妥妥贴贴	tuo tuo tie tie	E2非规范异形词（正字：妥妥帖帖，base已有正词w=18，《第一批异形词整理表》规范作妥帖）
+cn_dicts/ext.dict.yaml	身不由已	shen bu you yi	E2错字（正字：身不由己）
+cn_dicts/ext.dict.yaml	渡假村	du jia cun	E2错字（正字：度假村，base已有正词，现汉7规范作度假）
+cn_dicts/ext.dict.yaml	声名狼籍	sheng ming lang ji	E2错字（正字：声名狼藉，base已有正词w=143）
+cn_dicts/ext.dict.yaml	日记帐	ri ji zhang	E2错字（正字：日记账，base已有正词，现汉7规范作账）
+cn_dicts/ext.dict.yaml	你自已看看	ni zi yi kan kan	E2错字（正字：你自己看看）
+cn_dicts/ext.dict.yaml	算的了什么	suan de le shen me	E2错字兼错音（正词：算得了什么 suan de liao shen me，base已有正词w=64）
+cn_dicts/ext.dict.yaml	睡的香	shui de xiang	E2错字（正词：睡得香，base已有正词w=70）
+cn_dicts_cell/composite.dict.yaml	生活必须品	sheng huo bi xu pin	E2错字（正字：生活必需品，base已有正词）
+cn_dicts_cell/composite.dict.yaml	远离过敏源	yuan li guo min yuan	E2错字（正字：远离过敏原，同文件已有正词）
+cn_dicts_cell/composite.dict.yaml	查过敏源	cha guo min yuan	E2错字（正字：查过敏原）
+cn_dicts_cell/composite.dict.yaml	记帐凭证	ji zhang ping zheng	E2错字（正字：记账凭证，base已有正词）
+cn_dicts_cell/composite.dict.yaml	代理记帐	dai li ji zhang	E2错字（正字：代理记账，base已有正词）
+cn_dicts_cell/composite.dict.yaml	如何为人处事	ru he wei ren chu shi	E2错字（正字：如何为人处世，同文件已有正词）
+cn_dicts_cell/composite.dict.yaml	知已知彼	zhi yi zhi bi	E2错字（正字：知己知彼）
+cn_dicts_cell/composite.dict.yaml	明细帐	ming xi zhang	E2错字（正字：明细账，base已有正词）
+cn_dicts_cell/composite.dict.yaml	相信自已	xiang xin zi yi	E2错字（正字：相信自己）
+cn_dicts_cell/composite.dict.yaml	自已动手	zi yi dong shou	E2错字（正字：自己动手）
+cn_dicts_cell/food.dict.yaml	高梁粟	gao liang su	E2错字（正字：高粱粟，农作物正字为粱）
+cn_dicts_cell/game.dict.yaml	帐号安全	zhang hao an quan	E2错字（正字：账号安全，现汉7规范作账）
+cn_dicts_cell/game.dict.yaml	内测帐号	nei ce zhang hao	E2错字（正字：内测账号，现汉7规范作账）
+cn_dicts_cell/game.dict.yaml	录象播放器	lu xiang bo fang qi	E2错字（正字：录像播放器，现汉7规范作录像）
+cn_dicts_cell/game.dict.yaml	晚宴请贴	wan yan qing tie	E2错字（正字：晚宴请帖，现汉7规范作请帖）
+cn_dicts_cell/game.dict.yaml	封停帐号	feng ting zhang hao	E2错字（正字：封停账号，现汉7规范作账）
+cn_dicts_cell/game.dict.yaml	游戏录象	you xi lu xiang	E2错字（正字：游戏录像，现汉7规范作录像）
+cn_dicts_cell/game.dict.yaml	录象功能	lu xiang gong neng	E2错字（正字：录像功能，现汉7规范作录像）
+cn_dicts_cell/geography.dict.yaml	浮雕影象地图	fu diao ying xiang di tu	E2错字（正字：浮雕影像地图，国标GB/T 14950与现汉7规范作影像）
+cn_dicts_cell/geography.dict.yaml	卫星影象	wei xing ying xiang	E2错字（正字：卫星影像）
+cn_dicts_cell/geography.dict.yaml	影象地图	ying xiang di tu	E2错字（正字：影像地图）
+cn_dicts_cell/geography.dict.yaml	影象分辨率	ying xiang fen bian lv	E2错字（正字：影像分辨率）
+cn_dicts_cell/geography.dict.yaml	影象灰度	ying xiang hui du	E2错字（正字：影像灰度）
+cn_dicts_cell/geography.dict.yaml	影象判读	ying xiang pan du	E2错字（正字：影像判读）
+cn_dicts_cell/geography.dict.yaml	影象质量	ying xiang zhi liang	E2错字（正字：影像质量）
+cn_dicts_cell/geography.dict.yaml	正射影象地图	zheng she ying xiang di tu	E2错字（正字：正射影像地图）
+cn_dicts_cell/idiom.dict.yaml	入伏的高梁	ru fu de gao liang	E2错字（正字：入伏的高粱，歇后语指农作物高粱）
+cn_dicts_cell/medication.dict.yaml	高梁泡叶	gao liang pao ye	E2错字（正名：高粱泡叶，蔷薇科中药植物高粱泡）
+cn_dicts_cell/medication.dict.yaml	影象增强显微术	ying xiang zeng qiang xian wei shu	E2错字（正字：影像增强显微术）
+cn_dicts_cell/medication.dict.yaml	录象一体机	lu xiang yi ti ji	E2错字（正字：录像一体机，同文件已有正词）
+cn_dicts_cell/medication.dict.yaml	贲门松驰	ben men song chi	E2错字（正字：贲门松弛，弓字旁弛）
+cn_dicts_cell/medication.dict.yaml	肛门括约肌松驰	gang men kuo yue ji song chi	E2错字（正字：肛门括约肌松弛）
+cn_dicts_cell/medication.dict.yaml	骨骼肌松驰剂	gu ge ji song chi ji	E2错字（正字：骨骼肌松弛剂）
+cn_dicts_cell/medication.dict.yaml	骨热影象图	gu re ying xiang tu	E2错字（正字：骨热影像图）
+cn_dicts_cell/medication.dict.yaml	肌热影象图	ji re ying xiang tu	E2错字（正字：肌热影像图）
+cn_dicts_cell/medication.dict.yaml	睑皮肤松驰	jian pi fu song chi	E2错字（正字：睑皮肤松弛）
+cn_dicts_cell/medication.dict.yaml	结膜松驰	jie mo song chi	E2错字（正字：结膜松弛）
+cn_dicts_cell/medication.dict.yaml	脑热影象图	nao re ying xiang tu	E2错字（正字：脑热影像图）
+cn_dicts_cell/medication.dict.yaml	乳房热影象图	ru fang re ying xiang tu	E2错字（正字：乳房热影像图）
+cn_dicts_cell/medication.dict.yaml	松驰治疗	song chi zhi liao	E2错字（正字：松弛治疗）
+cn_dicts_cell/medication.dict.yaml	小长山东发渡假村	xiao chang shan dong fa du jia cun	E2错字（渡假村->度假村）且旅游地名垃圾混入医疗词库
+cn_dicts_cell/medication.dict.yaml	新生儿贲门松驰	xin sheng er ben men song chi	E2错字（正字：新生儿贲门松弛）
+cn_dicts_cell/medication.dict.yaml	血管热影象图	xue guan re ying xiang tu	E2错字（正字：血管热影像图）
+cn_dicts_cell/medication.dict.yaml	眼热影象图	yan re ying xiang tu	E2错字（正字：眼热影像图）
+cn_dicts_cell/shulihua.dict.yaml	高梁红	gao liang hong	E2错字（正字：高粱红，植物色素/农作物高粱）
+cn_dicts/base.dict.yaml	鹅鹅鹅鹅鹅	e e e e e	无意义叠字刷屏（5连叠，w=2）
+cn_dicts/base.dict.yaml	鹅鹅鹅鹅鹅鹅	e e e e e e	无意义叠字刷屏（6连叠，w=3）
+cn_dicts/base.dict.yaml	发发发发发	fa fa fa fa fa	无意义叠字刷屏（5连叠，w=1）
+cn_dicts/base.dict.yaml	发发发发发发	fa fa fa fa fa fa	无意义叠字刷屏（6连叠，w=1）
+cn_dicts/base.dict.yaml	黑黑黑黑	hei hei hei hei	无意义叠字刷屏（w=5）
+cn_dicts/base.dict.yaml	火火火火	huo huo huo huo	无意义叠字刷屏（w=9）
+cn_dicts/base.dict.yaml	热热热热热	re re re re re	无意义叠字刷屏（5连叠，w=3）
+cn_dicts/base.dict.yaml	吸吸吸吸	xi xi xi xi	无意义叠字刷屏（w=4）
+cn_dicts/ext.dict.yaml	啊呜呜呜呜呜呜呜	a wu wu wu wu wu wu wu	超长无意义叠字刷屏（8字）
+cn_dicts/ext.dict.yaml	啊呜呜呜呜呜呜呜呜	a wu wu wu wu wu wu wu wu	超长无意义叠字刷屏（9字）
+cn_dicts/ext.dict.yaml	啊呜呜呜呜呜呜呜呜呜呜呜	a wu wu wu wu wu wu wu wu wu wu wu	超长无意义叠字刷屏（12字）
+cn_dicts/ext.dict.yaml	爱爱爱爱	ai ai ai ai	无意义叠字刷屏（w=5）
+cn_dicts/ext.dict.yaml	顶顶顶顶	ding ding ding ding	论坛顶帖叠字刷屏（w=2）
+cn_dicts/ext.dict.yaml	二二二二	er er er er	数字重复垃圾词（同类“一一一一”已于R2清除）
+cn_dicts/ext.dict.yaml	烦烦烦烦	fan fan fan fan	无意义叠字刷屏（w=1）
+cn_dicts/ext.dict.yaml	干干干干	gan gan gan gan	无意义叠字刷屏（w=5）
+cn_dicts/ext.dict.yaml	急急急急急	ji ji ji ji ji	无意义叠字刷屏（5连叠，w=1）
+cn_dicts/ext.dict.yaml	九九九九	jiu jiu jiu jiu	数字重复垃圾词（同类“一一一一”已于R2清除）
+cn_dicts/ext.dict.yaml	啦啦啦啦啦啦啦啦	la la la la la la la la	超长无意义叠字刷屏（8连叠）
+cn_dicts/ext.dict.yaml	啦啦啦啦啦啦啦啦啦	la la la la la la la la la	超长无意义叠字刷屏（9连叠）
+cn_dicts/ext.dict.yaml	啦啦啦啦啦啦啦啦啦啦	la la la la la la la la la la	超长无意义叠字刷屏（10连叠）
+cn_dicts/ext.dict.yaml	七七七七	qi qi qi qi	数字重复垃圾词（同类“一一一一”已于R2清除）
+cn_dicts/ext.dict.yaml	热热热热	re re re re	无意义叠字刷屏（w=2）
+cn_dicts/ext.dict.yaml	三三三三	san san san san	数字重复垃圾词（同类“一一一一”已于R2清除）
+cn_dicts/ext.dict.yaml	水水水水	shui shui shui shui	论坛水帖叠字刷屏（w=7）
+cn_dicts/ext.dict.yaml	雨雨雨雨	yu yu yu yu	无意义叠字刷屏（w=1）
+cn_dicts_cell/literature.dict.yaml	历历历历开元事	li li li li kai yuan shi	抓取拼接错误（杜甫《历历》诗题与首句“历历开元事”重复拼接）
+cn_dicts_cell/game.dict.yaml	哈哈哈哈哈哈哈哈哈哈哈我没疯	ha ha ha ha ha ha ha ha ha ha ha wo mei feng	超长无意义叠字刷屏（11连哈+情绪句）
+cn_dicts/base.dict.yaml	传播淫秽电子信息刑事案件具体应用法律	chuan bo yin hui dian zi xin xi xing shi an jian ju ti ying yong fa lv	司法解释名称残缺截断（缺失“若干问题的解释”，w=2）
+cn_dicts_cell/food.dict.yaml	黑森林蛋糕为爱吃狂	hei sen lin dan gao wei ai chi kuang	美食文章标题/广告语抓取垃圾
+cn_dicts_cell/food.dict.yaml	不饱和脂肪酸单甘脂	bu bao he zhi fang suan dan gan zhi	E2错字（正名：不饱和脂肪酸单甘酯，酯非脂）
+cn_dicts_cell/food.dict.yaml	美国奥丽蓝梅淡糖浆罐头	mei guo ao li lan mei dan tang jiang guan tou	E2错字（蓝梅->蓝莓）且杂牌商品标题抓取
+cn_dicts_cell/food.dict.yaml	台湾老船长蕃茄汁大沙丁鱼	tai wan lao chuan zhang fan qie zhi da sha ding yu	非规范用字（蕃茄->番茄）且商品标题抓取
+cn_dicts_cell/idiom.dict.yaml	北山伐木场中间的箱子	bei shan fa mu chang zhong jian de xiang zi	魔兽世界任务物件名误入成语词库
+cn_dicts_cell/idiom.dict.yaml	福无双至乡祸不单行	fu wu shuang zhi xiang huo bu dan xing	抓取/OCR错乱夹杂多余字“乡”（正词：福无双至祸不单行）
+cn_dicts_cell/idiom.dict.yaml	光明不会告诉你的事情	guang ming bu hui gao su ni de shi qing	魔兽世界牧师任务书名误入成语词库
+cn_dicts_cell/idiom.dict.yaml	喝酒不吃菜必定醉的快	he jiu bu chi cai bi ding zui de kuai	E2语法错字（醉的快->醉得快）
+cn_dicts_cell/idiom.dict.yaml	农村上网贵进来请准备	nong cun shang wang gui jin lai qing zhun bei	早期论坛标题党垃圾误入成语词库
+cn_dicts_cell/idiom.dict.yaml	三分不象人七分倒象鬼	san fen bu xiang ren qi fen dao xiang gui	E2错字（不象/倒象->不像/倒像）
+cn_dicts_cell/idiom.dict.yaml	水炎不相容掷地有声	shui yan bu xiang rong zhi di you sheng	OCR错字（水火->水炎）且与下条成语“掷地有声”粘连拼接
+cn_dicts_cell/idiom.dict.yaml	一九三六年春在太原	yi jiu san liu nian chun zai tai yuan	文献落款日期残段误入成语词库
+cn_dicts_cell/idiom.dict.yaml	一口吸尽西江水一壁	yi kou xi jin xi jiang shui yi bi	词典抓取越界拼接（“一口吸尽西江水”粘连下条词头“一壁”）
+cn_dicts_cell/idiom.dict.yaml	不记前仇俏媳妇戴凤冠	bu ji qian chou qiao xi fu dai feng guan	两条歇后语错位粘连（上条谜底“不记前仇”+下条谜面“俏媳妇戴凤冠”）
+cn_dicts_cell/idiom.dict.yaml	打灯笼走亲戚一明去明来	da deng long zou qin qi yi ming qu ming lai	歇后语破折号“——”被OCR讹为“一”
+cn_dicts_cell/idiom.dict.yaml	点燃的蜡烛一长命不了	dian ran de la zhu yi zhang ming bu liao	歇后语破折号“——”被OCR讹为“一”且“长”误注zhang
+cn_dicts_cell/idiom.dict.yaml	露了蹄半山崖的观音	lu le ti ban shan ya de guan yin	两条歇后语错位粘连（上条谜底“露了蹄”+下条谜面“半山崖的观音”）
+cn_dicts_cell/idiom.dict.yaml	玉皇大帝拜财神一有钱大三辈	yu huang da di bai cai shen yi you qian da san bei	歇后语破折号“——”被OCR讹为“一”
+cn_dicts_cell/idiom.dict.yaml	圆珠笔蘸墨水一多事	yuan zhu bi zhan mo shui yi duo shi	歇后语破折号“——”被OCR讹为“一”
+cn_dicts_cell/idiom.dict.yaml	宰个鸽鸽也要请屠夫提刀	zai ge ge ge ye yao qing tu fu ti dao	OCR/录入叠字错讹（鸽鸽->鸽子）
+cn_dicts_cell/idiom.dict.yaml	身体力行亲身经验努力实行	shen ti li xing qin shen jing yan nu li shi xing	词典词头与释义粘连（“身体力行”+释义“亲身经验，努力实行”）
+cn_dicts_cell/industry_product.dict.yaml	不锈钢线材不锈钢圆钢	bu xiu gang xian cai bu xiu gang yuan gang	B2B类目分隔符丢失导致两词直接拼接
+cn_dicts_cell/name2.dict.yaml	爱川罗武原七番队队长	ai chuan luo wu yuan qi fan dui dui zhang	百科表格人名与职务列无分隔拼接
+cn_dicts_cell/name2.dict.yaml	久南白原九番队副队长	jiu nan bai yuan jiu fan dui fu dui zhang	百科表格人名与职务列无分隔拼接
+cn_dicts_cell/name2.dict.yaml	六车拳西原九番队队长	liu che quan xi yuan jiu fan dui dui zhang	百科表格人名与职务列无分隔拼接
+cn_dicts_cell/name2.dict.yaml	妮莉艾露杜欧德凡修克	ni li ai lu du ou de fan xiu ke	译名颠倒错写（同文件紧邻正词“妮莉艾露杜欧德修凡克”）
+cn_dicts_cell/name2.dict.yaml	平子真子原五番队队长	ping zi zhen zi yuan wu fan dui dui zhang	百科表格人名与职务列无分隔拼接
+cn_dicts_cell/name2.dict.yaml	矢胴丸莉莎原八番队副队长	shi dong wan li sha yuan ba fan dui fu dui zhang	百科表格人名与职务列无分隔拼接
+cn_dicts_cell/name2.dict.yaml	有昭田钵玄鬼道众副鬼道师	you zhao tian bo xuan gui dao zhong fu gui dao shi	百科表格人名与职务列无分隔拼接
+cn_dicts_cell/name2.dict.yaml	猿柿日世里原十二番队副队长	yuan shi ri shi li yuan shi er fan dui fu dui zhang	百科表格人名与职务列无分隔拼接
+cn_dicts_cell/name2.dict.yaml	圣加弗雷多的个伟业	sheng jia fu lei duo de ge wei ye	去数字残缺垃圾（丢失数字“N个伟业”）
+cn_dicts_cell/name2.dict.yaml	突破所有关门讨伐最深处的敌人	tu po suo you guan men tao fa zui shen chu de di ren	游戏任务目标说明整句误入人名库
+cn_dicts_cell/name2.dict.yaml	伊甸零式希望乐园共鸣之	yi dian ling shi xi wang le yuan gong ming zhi	尾部截断残缺（缺失末字“章”，对比下条“觉醒之章”）
+cn_dicts_cell/name2.dict.yaml	植物成长剂型浓缩液	zhi wu cheng zhang ji xing nong suo ye	去数字残缺垃圾（原FF14道具名“植物成长剂4型浓缩液”丢失数字4）
+cn_dicts_cell/name2.dict.yaml	制止三方混战的巨人族守住遗物	zhi zhi san fang hun zhan de ju ren zu shou zhu yi wu	游戏任务目标说明整句误入人名库
+cn_dicts_cell/name2.dict.yaml	注意无敌的眷属讨伐大型妖异	zhu yi wu di de juan shu tao fa da xing yao yi	游戏任务目标说明整句误入人名库
+cn_dicts_cell/shulihua.dict.yaml	合并标准偏差组合标准差	he bing biao zhun pian cha zu he biao zhun cha	同义词条分隔符丢失拼接（合并标准偏差/组合标准差）
+cn_dicts_cell/shulihua.dict.yaml	双电流滴定法双安培滴定法	shuang dian liu di ding fa shuang an pei di ding fa	同义词条分隔符丢失拼接（双电流滴定法/双安培滴定法）
+cn_dicts_cell/shulihua.dict.yaml	苯基膦基二茂氧化记	ben ji lin ji er mao yang hua ji	化学目录严重OCR错乱（钯->记，且脱漏二茂铁）
+cn_dicts_cell/shulihua.dict.yaml	对甲苯酰吠喃核糖氯	dui jia ben xian fei nan he tang lv	化学目录OCR错字（呋喃->吠喃）
+cn_dicts_cell/shulihua.dict.yaml	二苯基膦丁婉二氯化钯	er ben ji lin ding wan er lv hua ba	化学目录OCR错字（丁烷->丁婉）
+cn_dicts_cell/shulihua.dict.yaml	二均三甲苯基睐唑亚基	er jun san jia ben ji lai zuo ya ji	化学目录OCR错字（咪唑->睐唑）
+cn_dicts_cell/shulihua.dict.yaml	二氯代双二甲基氨基	er lv dai shuang er jia ji an ji	化学名去括号/尾部截断残片（无母体名）
+cn_dicts_cell/shulihua.dict.yaml	二氯二甲基双二苯基	er lv er jia ji shuang er ben ji	化学名去括号/尾部截断残片（无母体名）
+cn_dicts_cell/shulihua.dict.yaml	二氯化戊氨络物氯钉	er lv hua wu an luo wu lv ding	化学目录OCR错字（钌->钉）
+cn_dicts_cell/shulihua.dict.yaml	二氢二氯代四二叔丁基	er qing er lv dai si er shu ding ji	化学名去括号/尾部截断残片（无母体名）
+cn_dicts_cell/shulihua.dict.yaml	二壬二吡啶基自钠盐	er ren er bi ding ji zi na yan	化学目录OCR错乱（“自钠盐”乱码）
+cn_dicts_cell/shulihua.dict.yaml	二氧四甲基乙二胺铠	er yang si jia ji yi er an kai	化学目录OCR错字（锇/钌->铠）
+cn_dicts_cell/shulihua.dict.yaml	反二氯三苯基膦铂四	fan er lv san ben ji lin bo si	化学目录OCR错乱（价态残缺且夹杂错误数字“四”）
+cn_dicts_cell/shulihua.dict.yaml	环戊二烯六氟磷酸钉	huan wu er xi liu fu lin suan ding	化学目录OCR错字（钌->钉）
+cn_dicts_cell/shulihua.dict.yaml	基氯啦啶基二氯化钯	ji lv la ding ji er lv hua ba	化学目录首部截断+OCR错字（吡啶->啦啶）
+cn_dicts_cell/shulihua.dict.yaml	甲酸二王基二啦啶基钉	jia suan er wang ji er la ding ji ding	化学目录三重OCR错字（壬基->王基、吡啶->啦啶、钌->钉）
+cn_dicts_cell/shulihua.dict.yaml	氯化三联吡啶钉六水	lv hua san lian bi ding ding liu shui	化学目录OCR错字（钌->钉）
+cn_dicts_cell/shulihua.dict.yaml	氯经基二甲基苯甲胺	lv jing ji er jia ji ben jia an	化学目录OCR错字（羟基/烃基->经基，下有正词氯烃基二甲基苯甲胺）
+cn_dicts_cell/shulihua.dict.yaml	三二亚苄基丙鄄二钯	san er ya bian ji bing juan er ba	化学目录OCR错字（丙酮->丙鄄）
+cn_dicts_cell/shulihua.dict.yaml	三三苯基膦二氯化钉	san san ben ji lin er lv hua ding	化学目录OCR错字（钌->钉）
+cn_dicts_cell/shulihua.dict.yaml	叔丁基硼酸频呐醇酯	shu ding ji peng suan pin na chun zhi	化学名错字（频哪醇->频呐醇，同文件其余均作频哪醇酯）
+cn_dicts_cell/shulihua.dict.yaml	双二苯基磷丙婉记山	shuang er ben ji lin bing wan ji shan	化学目录严重OCR乱码（丙烷->丙婉、钯->记、末尾残字山）
+cn_dicts_cell/shulihua.dict.yaml	双二甲氧基二亚苄基丙	shuang er jia yang ji er ya bian ji bing	化学名尾部截断残缺（丙[酮]）
+cn_dicts_cell/shulihua.dict.yaml	双三苯基膦二氯化记	shuang san ben ji lin er lv hua ji	化学目录OCR错字（钯->记）
+cn_dicts_cell/shulihua.dict.yaml	双三氟甲烷磺酰基酰	shuang san fu jia wan huang xian ji xian	化学名尾部截断残缺（对比下条“双三氟甲烷磺酰亚胺”）
+cn_dicts_cell/shulihua.dict.yaml	双五甲基环戊二烯钉	shuang wu jia ji huan wu er xi ding	化学目录OCR错字（钌->钉）
+cn_dicts_cell/shulihua.dict.yaml	顺二氯双吡啶基铂二	shun er lv shuang bi ding ji bo er	化学名去括号残留价态汉字“二”
+cn_dicts_cell/shulihua.dict.yaml	簌酰二氢三三苯基腾	su xian er qing san san ben ji teng	化学目录严重OCR错字（羰基->簌酰、膦->腾）
+cn_dicts_cell/shulihua.dict.yaml	氧化钉氧化钉四水合物	yang hua ding yang hua ding si shui he wu	化学目录OCR错字（钌->钉）且重复拼接
+cn_dicts_cell/shulihua.dict.yaml	乙酸二碳基钌聚合物	yi suan er tan ji liao ju he wu	化学目录错字（二羰基->二碳基）
+cn_dicts_cell/shulihua.dict.yaml	唑来磷酸一水化合物	zuo lai lin suan yi shui hua he wu	E2错字（正名：唑来膦酸，双膦酸盐非磷酸）
+cn_dicts_cell/shulihua.dict.yaml	几何平均数个数之积的次方根	ji he ping jun shu ge shu zhi ji de ci fang gen	词条与释义拼接且丢失字母n（几何平均数：[n]个数之积的[n]次方根）
+cn_dicts_cell/shulihua.dict.yaml	布劳丰尔不动点定理	bu lao feng er bu dong dian ding li	OCR错字（正名：布劳威尔不动点定理）
+cn_dicts_cell/shulihua.dict.yaml	拉格郎日插值多项式	la ge lang ri cha zhi duo xiang shi	E2错字（正名：拉格朗日插值多项式）
+cn_dicts_cell/shulihua.dict.yaml	斯图谟刘维尔特盏问题	si tu mo liu wei er te zhan wen ti	OCR错字（正名：斯图谟-刘维尔特征问题）
+cn_dicts_cell/shulihua.dict.yaml	单光子发射计算机化断层显象	dan guang zi fa she ji suan ji hua duan ceng xian xiang	E2错字（正名：单光子发射计算机化断层显像）
+cn_dicts_cell/shulihua.dict.yaml	聚间苯二甲酸二烯丙脂	ju jian ben er jia suan er xi bing zhi	E2错字（正名：聚间苯二甲酸二烯丙酯，对比下条“二烯丙酯”）
+cn_dicts_cell/shulihua.dict.yaml	一硫化四甲基秋蓝姆	yi liu hua si jia ji qiu lan mu	E2错字（正名：一硫化四甲基秋兰姆，同文件已有正词）
+cn_dicts_cell/sport.dict.yaml	日本鹿岛鹿角李荣杓	ri ben lu dao lu jiao li rong biao	2010世界杯韩国队名单错位拼接（上名球员俱乐部+下名球员“李荣杓”）
+cn_dicts_cell/sport.dict.yaml	底线球场两端的边界线	di xian qiu chang liang duan de bian jie xian	篮球术语词表抓取错误（词头“底线”+释义拼接）
+cn_dicts_cell/sport.dict.yaml	二十四秒内必须投篮	er shi si miao nei bi xu tou lan	篮球术语词表整句释义垃圾
+cn_dicts_cell/sport.dict.yaml	防守方干扰投篮得分	fang shou fang gan rao tou lan de fen	篮球术语词表整句释义垃圾
+cn_dicts_cell/sport.dict.yaml	华盛顿华盛顿国会队	hua sheng dun hua sheng dun guo hui dui	表格城市列与队名列重复拼接（华盛顿+华盛顿国会队）
+cn_dicts_cell/sport.dict.yaml	进攻队员冲撞具有合理防守位置且没有移动的防守队员的犯规	jin gong dui yuan chong zhuang ju you he li fang shou wei zhi qie mei you yi dong de fang shou dui yuan de fan gui	篮球术语词表整句释义垃圾（26字）
+cn_dicts_cell/sport.dict.yaml	进攻方持球球员背对篮框单吃对方防守球员	jin gong fang chi qiu qiu yuan bei dui lan kuang dan chi dui fang fang shou qiu yuan	篮球术语词表整句释义垃圾（19字）
+cn_dicts_cell/sport.dict.yaml	进攻方持球球员的传切战术	jin gong fang chi qiu qiu yuan de chuan qie zhan shu	篮球术语词表整句释义垃圾
+cn_dicts_cell/sport.dict.yaml	进攻方干扰投篮得分	jin gong fang gan rao tou lan de fen	篮球术语词表整句释义垃圾
+cn_dicts_cell/sport.dict.yaml	进攻方十秒钟内未带球过中场	jin gong fang shi miao zhong nei wei dai qiu guo zhong chang	篮球术语词表整句释义垃圾
+cn_dicts_cell/sport.dict.yaml	进攻方以运球方式消耗掉比赛所剩下时间	jin gong fang yi yun qiu fang shi xiao hao diao bi sai suo sheng xia shi jian	篮球术语词表整句释义垃圾（18字）
+cn_dicts_cell/sport.dict.yaml	进攻方以运球或传球方式消耗掉比赛所剩下时间	jin gong fang yi yun qiu huo chuan qiu fang shi xiao hao diao bi sai suo sheng xia shi jian	篮球术语词表整句释义垃圾（21字）
+cn_dicts_cell/sport.dict.yaml	进攻方做掩护球员的挡切战术	jin gong fang zuo yan hu qiu yuan de dang qie zhan shu	篮球术语词表整句释义垃圾
+cn_dicts_cell/sport.dict.yaml	禁区内篮框下的小圆圈区域	jin qu nei lan kuang xia de xiao yuan quan qu yu	篮球术语词表整句释义垃圾
+cn_dicts_cell/sport.dict.yaml	靠近禁区顶端之三分线附近	kao jin jin qu ding duan zhi san fen xian fu jin	篮球术语词表整句释义垃圾
+cn_dicts_cell/sport.dict.yaml	两项技术统计指标达两位数	liang xiang ji shu tong ji zhi biao da liang wei shu	篮球术语词表整句释义垃圾
+cn_dicts_cell/sport.dict.yaml	领到一张准毕业证书	ling dao yi zhang zhun bi ye zheng shu	篮球术语词表整句释义垃圾（5次犯规释义）
+cn_dicts_cell/sport.dict.yaml	每个联盟下属两个赛区	mei ge lian meng xia shu liang ge sai qu	篮球术语词表整句释义垃圾
+cn_dicts_cell/sport.dict.yaml	生死时刻投入一球可决定胜负的决定性时刻	sheng si shi ke tou ru yi qiu ke jue ding sheng fu de jue ding xing shi ke	篮球术语词表整句释义垃圾（词头“生死时刻”+释义拼接）
+cn_dicts_cell/sport.dict.yaml	双方均无持球权时的犯规	shuang fang jun wu chi qiu quan shi de fan gui	篮球术语词表整句释义垃圾
+cn_dicts_cell/sport.dict.yaml	投进两分球后因被犯规再罚进一分	tou jin liang fen qiu hou yin bei fan gui zai fa jin yi fen	篮球术语词表整句释义垃圾
+cn_dicts_cell/sport.dict.yaml	投进三分球后因被犯规再罚进一分	tou jin san fen qiu hou yin bei fan gui zai fa jin yi fen	篮球术语词表整句释义垃圾
+cn_dicts_cell/sport.dict.yaml	违反二十四秒内必须投篮	wei fan er shi si miao nei bi xu tou lan	篮球术语词表整句释义垃圾
+cn_dicts_cell/sport.dict.yaml	以手掌推挡对方进攻球员的犯规动作	yi shou zhang tui dang dui fang jin gong qiu yuan de fan gui dong zuo	篮球术语词表整句释义垃圾
+cn_dicts_cell/sport.dict.yaml	用两位防守球员包夹进攻球员	yong liang wei fang shou qiu yuan bao jia jin gong qiu yuan	篮球术语词表整句释义垃圾
+cn_dicts_cell/sport.dict.yaml	用三位防守球员包夹进攻球员	yong san wei fang shou qiu yuan bao jia jin gong qiu yuan	篮球术语词表整句释义垃圾
+cn_dicts_cell/sport.dict.yaml	与裁判讨论规则和判罚	yu cai pan tao lun gui ze he pan fa	篮球术语词表整句释义垃圾
+cn_dicts_cell/sport.dict.yaml	高位格档接侧步直拳	gao wei ge dang jie ce bu zhi quan	E2错字（格档->格挡）
+cn_dicts_cell/sport.dict.yaml	中段手刀外展格档对拆	zhong duan shou dao wai zhan ge dang dui chai	E2错字（格档->格挡）
+cn_dicts_cell/sport.dict.yaml	弗郎西斯科莫德斯托	fu lang xi si ke mo de si tuo	人名译写错字（弗郎西斯科->弗朗西斯科）
+cn_dicts_cell/sport.dict.yaml	巴林英特拉格斯赛道	ba lin ying te la ge si sai dao	事实错误/错字（英特拉格斯赛道在巴西圣保罗，非巴林）
+cn_dicts_cell/medication.dict.yaml	去胸腺并经照射的无	qu xiong xian bing jing zhao she de wu	L13369: Truncated medical term ending in 的无
+cn_dicts_cell/medication.dict.yaml	正韩别直参精美纸盒装	zheng han bie zhi can jing mei zhi he zhuang	L22500: E-commerce gift-box packaging ad text
+cn_dicts_cell/medication.dict.yaml	半侧下颌骨踽环模型	ban ce xia he gu ju huan mo xing	L23750: OCR typo 踽环 for 龋坏
+cn_dicts_cell/medication.dict.yaml	带有推送系统的支架支架和静脉支架	dai you tui song xi tong de zhi jia zhi jia he jing mai zhi jia	L23945: Garbled/Latin-stripped duplicate 支架支架
+cn_dicts_cell/medication.dict.yaml	高压球囊扩张导管球囊扩张导管	gao ya qiu nang kuo zhang dao guan qiu nang kuo zhang dao guan	L24221: Corrupted duplicate concatenation 球囊扩张导管x2
+cn_dicts_cell/medication.dict.yaml	毫米螺钉	hao mi luo ding	L24422: Digit-stripped catalog fragment (e.g. 4.5毫米螺钉)
+cn_dicts_cell/medication.dict.yaml	毫米消融导管	hao mi xiao rong dao guan	L24423: Digit-stripped catalog fragment (e.g. 4毫米消融导管)
+cn_dicts_cell/medication.dict.yaml	进口骨水泥特殊型号克	jin kou gu shui ni te shu xing hao ke	L24657: Digit-stripped catalog spec ending in 克
+cn_dicts_cell/medication.dict.yaml	颈椎前路薄型板厚度小于	jing zhui qian lu bao xing ban hou du xiao yu	L24745: Digit-stripped truncated catalog spec ending in 厚度小于
+cn_dicts_cell/medication.dict.yaml	颈椎前路薄型辅助锁定板厚度小于	jing zhui qian lu bao xing fu zhu suo ding ban hou du xiao yu	L24746: Digit-stripped truncated catalog spec ending in 厚度小于
+cn_dicts_cell/medication.dict.yaml	颈椎前路薄型自动锁定板厚度小于	jing zhui qian lu bao xing zi dong suo ding ban hou du xiao yu	L24747: Digit-stripped truncated catalog spec ending in 厚度小于
+cn_dicts_cell/medication.dict.yaml	型低粘骨水泥注入器	xing di zhan gu shui ni zhu ru qi	L25917: Prefix digit/letter-stripped fragment starting with 型
+cn_dicts_cell/medication.dict.yaml	胸腰椎前路固定棒直径以上含	xiong yao zhui qian lu gu ding bang zhi jing yi shang han	L26026: Digit-stripped truncated catalog spec ending in 直径以上含
+cn_dicts_cell/medication.dict.yaml	胸腰椎前路固定棒直径以下	xiong yao zhui qian lu gu ding bang zhi jing yi xia	L26027: Digit-stripped catalog spec missing diameter value
+cn_dicts_cell/medication.dict.yaml	选择性巧克培养基	xuan ze xing qiao ke pei yang ji	L26045: Missing char typo 巧克 for 巧克力
+cn_dicts_cell/medication.dict.yaml	血透用双腔留置导管长期全套包括导引钢丝穿刺针遂道针扩针等	xue tou yong shuang qiang liu zhi dao guan chang qi quan tao bao kuo dao yin gang si chuan ci zhen sui dao zhen kuo zhen deng	L26098: 28-char procurement catalog packing list + typo 遂道 for 隧道
+cn_dicts_cell/medication.dict.yaml	血透用双腔留置导管临时全套包括导引钢丝穿刺针扩针等	xue tou yong shuang qiang liu zhi dao guan lin shi quan tao bao kuo dao yin gang si chuan ci zhen kuo zhen deng	L26100: 25-char procurement catalog packing list ending in 等
+cn_dicts_cell/medication.dict.yaml	悦妍凝玉膏	yue yan ning yu gao	L26988: Micro-business cosmetics spam tail right after Spam Span 4
+cn_dicts_cell/medication.dict.yaml	公式过滤时液体的流动	gong shi guo lv shi ye ti de liu dong	L37855: Latin/author-stripped textbook heading (Poiseuille/Darcy 公式)
+cn_dicts_cell/medication.dict.yaml	益康唑曲安奈德曲安奈德益康唑	yi kang zuo qu an nai de qu an nai de yi kang zuo	L61493: Corrupted synonym-concatenated duplicate (AB+BA)
+cn_dicts_cell/medication.dict.yaml	氨基己糖苷酶和缺乏症	an ji ji tang gan mei he que fa zheng	L76513: Latin-stripped broken term (氨基己糖苷酶A和B缺乏症)
+cn_dicts_cell/medication.dict.yaml	肠回转不良矫治术术	chang hui zhuan bu liang jiao zhi shu shu	L80112: Corrupted doubled suffix 术术
+cn_dicts_cell/medication.dict.yaml	二叔了基甲氧基苯酚	er shu le ji jia yang ji ben fen	L84731: OCR typo 了基 for 丁基 (二叔丁基甲氧基苯酚)
+cn_dicts_cell/medication.dict.yaml	分为和受体两种亚型	fen wei he shou ti liang zhong ya xing	L86055: Greek/Latin-stripped broken sentence (分为α和β受体两种亚型)
+cn_dicts_cell/medication.dict.yaml	复方硫磺洗剂号市皮	fu fang liu huang xi ji hao shi pi	L86456: Digit-stripped hospital formula (洗剂1号)
+cn_dicts_cell/medication.dict.yaml	后尿道包括	hou niao dao bao kuo	L90808: Truncated ICD-10 heading ending in 包括
+cn_dicts_cell/medication.dict.yaml	环或环以上杂环化合物	huan huo huan yi shang za huan hua he wu	L91399: Digit-stripped chemical class (3环或3环以上)
+cn_dicts_cell/medication.dict.yaml	及牛胎血清和马血清	ji niu tai xue qing he ma xue qing	L92328: Truncated clause starting with 及
+cn_dicts_cell/medication.dict.yaml	甲氧基羟基扁桃酸酸	jia yang ji qiang ji bian tao suan suan	L93753: Corrupted doubled suffix 酸酸
+cn_dicts_cell/medication.dict.yaml	氯环氧丙烷氯环氧丙烷	lv huan yang bing wan lv huan yang bing wan	L100516: Exact X+X duplicate concatenation
+cn_dicts_cell/medication.dict.yaml	毛发号搽剂厦门市一	mao fa hao cha ji xia men shi yi	L101067: Digit-stripped hospital formula (毛发1号搽剂)
+cn_dicts_cell/medication.dict.yaml	粘膜溃疡脂南平市皮	nian mo kui yang zhi nan ping shi pi	L102492: Garbled typo 脂 for 散/膏 + truncated 市皮
+cn_dicts_cell/medication.dict.yaml	粘膜溃疡脂乳膏市皮	nian mo kui yang zhi ru gao shi pi	L102493: Garbled typo 脂乳膏 + truncated 市皮
+cn_dicts_cell/medication.dict.yaml	乳膏基质号龙岩市一	ru gao ji zhi hao long yan shi yi	L106063: Digit-stripped hospital formula (基质1号)
+cn_dicts_cell/medication.dict.yaml	未成熟儿孕期小于整周	wei cheng shu er yun qi xiao yu zheng zhou	L110783: Digit-stripped ICD-10 term (小于28/37整周)
+cn_dicts_cell/medication.dict.yaml	型大疱性表皮松解症	xing da pao xing biao pi song jie zheng	L113506: Prefix Roman-numeral-stripped term starting with 型
+cn_dicts_cell/medication.dict.yaml	胰腺囊肿胃引流术术	yi xian nang zhong wei yin liu shu shu	L116256: Corrupted doubled suffix 术术
+cn_dicts_cell/medication.dict.yaml	综合症无青光眼亚型	zong he zheng wu qing guang yan ya xing	L120033: Prefix Latin-stripped syndrome name starting with 综合症
+cn_dicts_cell/medication.dict.yaml	尿绒毛膜促性肥腺液素	niao rong mao mo cu xing fei xian ye su	L126379: Garbled typo for 尿绒毛膜促性腺激素
+cn_dicts_cell/game.dict.yaml	般若波罗密多心经释门经典	bo re bo luo mi duo xin jing shi men jing dian	L2429: HTML table-scrape BookTitle+SetDesc (+ typo 密 for 蜜)
+cn_dicts_cell/game.dict.yaml	采莲曲青莲居士李太白的诗稿	cai lian qu qing lian ju shi li tai bai de shi gao	L2448: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	出塞万花谷文人编篡的诗歌辑录	chu sai wan hua gu wen ren bian cuan de shi ge ji lu	L2487: HTML table-scrape BookTitle+SetDesc (+ typo 编篡)
+cn_dicts_cell/game.dict.yaml	大藏经释门经典	da zang jing shi men jing dian	L2570: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	第六章夜渡凡尘蓝不能抄录	di liu zhang ye du fan chen lan bu neng chao lu	L2594: HTML table-scrape BookTitle+Color(蓝)+Tooltip(不能抄录)
+cn_dicts_cell/game.dict.yaml	第七章削发更衣蓝不能抄录	di qi zhang xue fa geng yi lan bu neng chao lu	L2597: HTML table-scrape BookTitle+Color(蓝)+Tooltip(不能抄录)
+cn_dicts_cell/game.dict.yaml	第五章夜别妻儿绿不能抄录	di wu zhang ye bie qi er lv bu neng chao lu	L2607: HTML table-scrape BookTitle+Color(绿)+Tooltip(不能抄录)
+cn_dicts_cell/game.dict.yaml	洞山开悟诗绿悟禅论理心如云水	dong shan kai wu shi lv wu chan lun li xin ru yun shui	L2650: HTML table-scrape BookTitle+Color(绿)+SetDesc
+cn_dicts_cell/game.dict.yaml	毒药佛门中的趣事	du yao fo men zhong de qu shi	L2669: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	对酒行青莲居士李太白的诗稿	dui jiu xing qing lian ju shi li tai bai de shi gao	L2676: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	父转狗身上篇释门中的奇闻趣事	fu zhuan gou shen shang pian shi men zhong de qi wen qu shi	L2737: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	羔羊选于诗经千古留名	gao yang xuan yu shi jing qian gu liu ming	L2743: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	孤掌之声释门中的奇闻趣事	gu zhang zhi sheng shi men zhong de qi wen qu shi	L2758: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	关雎选于诗经千古留名	guan ju xuan yu shi jing qian gu liu ming	L2760: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	化缘绿佛门中的趣事	hua yuan lv fo men zhong de qu shi	L2834: HTML table-scrape BookTitle+Color(绿)+SetDesc
+cn_dicts_cell/game.dict.yaml	击鼓选于诗经千古留名	ji gu xuan yu shi jing qian gu liu ming	L2871: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	剑部第二章记载历代宝剑之书	jian bu di er zhang ji zai li dai bao jian zhi shu	L2907: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	剑部第六章记载历代宝剑之书绿	jian bu di liu zhang ji zai li dai bao jian zhi shu lv	L2908: HTML table-scrape BookTitle+SetDesc+Color(绿)
+cn_dicts_cell/game.dict.yaml	剑部第七章记载历代宝剑之书	jian bu di qi zhang ji zai li dai bao jian zhi shu	L2909: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	剑部第三章记载历代宝剑之书	jian bu di san zhang ji zai li dai bao jian zhi shu	L2910: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	剑部第四章记载历代宝剑之书	jian bu di si zhang ji zai li dai bao jian zhi shu	L2911: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	剑部第五章记载历代宝剑之书	jian bu di wu zhang ji zai li dai bao jian zhi shu	L2912: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	剑部第一章记载历代宝剑之书绿	jian bu di yi zhang ji zai li dai bao jian zhi shu lv	L2913: HTML table-scrape BookTitle+SetDesc+Color(绿)
+cn_dicts_cell/game.dict.yaml	见性偈悟禅论理心如云水	jian xing ji wu chan lun li xin ru yun shui	L2928: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	卷耳选于诗经千古留名	juan er xuan yu shi jing qian gu liu ming	L2997: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	君马黄青莲居士李太白的诗稿	jun ma huang qing lian ju shi li tai bai de shi gao	L3002: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	君子阴阳选于诗经千古留名绿	jun zi yin yang xuan yu shi jing qian gu liu ming lv	L3004: HTML table-scrape BookTitle+SetDesc+Color(绿)
+cn_dicts_cell/game.dict.yaml	君子于役选于诗经千古留名	jun zi yu yi xuan yu shi jing qian gu liu ming	L3005: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	开窍释门中的奇闻趣事	kai qiao shi men zhong de qi wen qu shi	L3008: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	空城雀青莲居士李太白的诗稿	kong cheng que qing lian ju shi li tai bai de shi gao	L3014: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	廓然无圣释门中的奇闻趣事	kuo ran wu sheng shi men zhong de qi wen qu shi	L3023: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	绿衣选于诗经千古留名绿	lv yi xuan yu shi jing qian gu liu ming lv	L3166: HTML table-scrape BookTitle+SetDesc+Color(绿)
+cn_dicts_cell/game.dict.yaml	鸣雁行青莲居士李太白的诗稿	ming yan xing qing lian ju shi li tai bai de shi gao	L3195: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	女子出定释门中的奇闻趣事	nv zi chu ding shi men zhong de qi wen qu shi	L3243: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	皮肉骨髓释门中的奇闻趣事	pi rou gu sui shi men zhong de qi wen qu shi	L3256: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	破戒绿佛门中的趣事	po jie lv fo men zhong de qu shi	L3265: HTML table-scrape BookTitle+Color(绿)+SetDesc
+cn_dicts_cell/game.dict.yaml	枪部第八章记载历代神枪之书蓝	qiang bu di ba zhang ji zai li dai shen qiang zhi shu lan	L3312: HTML table-scrape BookTitle+SetDesc+Color(蓝)
+cn_dicts_cell/game.dict.yaml	枪部第二章记载历代神枪之书	qiang bu di er zhang ji zai li dai shen qiang zhi shu	L3313: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	枪部第六章记载历代神枪之书	qiang bu di liu zhang ji zai li dai shen qiang zhi shu	L3314: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	枪部第七章记载历代神枪之书绿	qiang bu di qi zhang ji zai li dai shen qiang zhi shu lv	L3315: HTML table-scrape BookTitle+SetDesc+Color(绿)
+cn_dicts_cell/game.dict.yaml	枪部第三章记载历代神枪之书绿	qiang bu di san zhang ji zai li dai shen qiang zhi shu lv	L3316: HTML table-scrape BookTitle+SetDesc+Color(绿)
+cn_dicts_cell/game.dict.yaml	枪部第四章记载历代神枪之书绿	qiang bu di si zhang ji zai li dai shen qiang zhi shu lv	L3317: HTML table-scrape BookTitle+SetDesc+Color(绿)
+cn_dicts_cell/game.dict.yaml	枪部第五章记载历代神枪之书绿	qiang bu di wu zhang ji zai li dai shen qiang zhi shu lv	L3318: HTML table-scrape BookTitle+SetDesc+Color(绿)
+cn_dicts_cell/game.dict.yaml	枪部第一章记载历代神枪之书	qiang bu di yi zhang ji zai li dai shen qiang zhi shu	L3319: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	劝农万花谷文人编篡的诗歌辑录	quan nong wan hua gu wen ren bian cuan de shi ge ji lu	L3363: HTML table-scrape BookTitle+SetDesc (+ typo 编篡)
+cn_dicts_cell/game.dict.yaml	鹊巢选于诗经千古留名	que chao xuan yu shi jing qian gu liu ming	L3364: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	塞上曲青莲居士李太白的诗稿	sai shang qu qing lian ju shi li tai bai de shi gao	L3384: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	上之回青莲居士李太白的诗稿	shang zhi hui qing lian ju shi li tai bai de shi gao	L3429: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	少林书第三章绿少林寺之历史	shao lin shu di san zhang lv shao lin si zhi li shi	L3437: HTML table-scrape BookTitle+Color(绿)+SetDesc
+cn_dicts_cell/game.dict.yaml	蛇身受苦上篇释门中的奇闻趣事	she shen shou ku shang pian shi men zhong de qi wen qu shi	L3447: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	神匠技艺之八介绍巧匠技艺之作	shen jiang ji yi zhi ba jie shao qiao jiang ji yi zhi zuo	L3466: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	神匠技艺之六介绍巧匠技艺之作	shen jiang ji yi zhi liu jie shao qiao jiang ji yi zhi zuo	L3467: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	神匠技艺之七介绍巧匠技艺之作	shen jiang ji yi zhi qi jie shao qiao jiang ji yi zhi zuo	L3468: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	神匠技艺之五介绍巧匠技艺之作	shen jiang ji yi zhi wu jie shao qiao jiang ji yi zhi zuo	L3469: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	神匠技艺之一介绍巧匠技艺之作	shen jiang ji yi zhi yi jie shao qiao jiang ji yi zhi zuo	L3471: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	式微选于诗经千古留名	shi wei xuan yu shi jing qian gu liu ming	L3511: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	蜀鄙之憎佛门中的趣事	shu bi zhi zeng fo men zhong de qu shi	L3530: HTML table-scrape BookTitle+SetDesc (+ typo 憎 for 僧)
+cn_dicts_cell/game.dict.yaml	叔于田选于诗经千古留名	shu yu tian xuan yu shi jing qian gu liu ming	L3538: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	桃夭选于诗经千古留名	tao yao xuan yu shi jing qian gu liu ming	L3630: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	兔置选于诗经千古留名	tu zhi xuan yu shi jing qian gu liu ming	L3703: HTML table-scrape BookTitle+SetDesc (+ typo 置 for 罝)
+cn_dicts_cell/game.dict.yaml	万花茶典下篇万花谷造茶秘术	wan hua cha dian xia pian wan hua gu zao cha mi shu	L3711: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	乌栖曲青莲居士李太白的诗稿	wu qi qu qing lian ju shi li tai bai de shi gao	L3758: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	悟性如光绿释门中的奇闻趣事	wu xing ru guang lv shi men zhong de qi wen qu shi	L3764: HTML table-scrape BookTitle+Color(绿)+SetDesc
+cn_dicts_cell/game.dict.yaml	乌夜啼青莲居士李太白的诗稿	wu ye ti qing lian ju shi li tai bai de shi gao	L3766: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	行露选于诗经千古留名绿	xing lu xuan yu shi jing qian gu liu ming lv	L3829: HTML table-scrape BookTitle+SetDesc+Color(绿)
+cn_dicts_cell/game.dict.yaml	杨叛儿青莲居士李太白的诗稿	yang pan er qing lian ju shi li tai bai de shi gao	L3873: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	有女同车选于诗经千古留名	you nv tong che xuan yu shi jing qian gu liu ming	L3958: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	渔家傲上悟禅论理心如云水	yu jia ao shang wu chan lun li xin ru yun shui	L3963: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	渔家傲下悟禅论理心如云水	yu jia ao xia wu chan lun li xin ru yun shui	L3965: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	杂曲万花谷文人编篡的诗歌辑录	za qu wan hua gu wen ren bian cuan de shi ge ji lu	L4037: HTML table-scrape BookTitle+SetDesc (+ typo 编篡)
+cn_dicts_cell/game.dict.yaml	指与月释门中的奇闻趣事	zhi yu yue shi men zhong de qi wen qu shi	L4067: HTML table-scrape BookTitle+SetDesc
+cn_dicts_cell/game.dict.yaml	终风选于诗经千古留名绿	zhong feng xuan yu shi jing qian gu liu ming lv	L4070: HTML table-scrape BookTitle+SetDesc+Color(绿)
+cn_dicts_cell/game.dict.yaml	魔兽词库	mo shou ci ku	L42699: Sogou cell-dict metadata noise
+cn_dicts_cell/game.dict.yaml	搜狗标准大词库	sou gou biao zhun da ci ku	L51062: Sogou cell-dict metadata noise
+cn_dicts_cell/game.dict.yaml	古罗岛盘查脚本需求任务	gu luo dao pan cha jiao ben xu qiu ren wu	L76698: Internal dev/debug quest script label
+cn_dicts_cell/game.dict.yaml	愚人节整人软件大集合	yu ren jie zheng ren ruan jian da ji he	L97272: Non-game web download spam title
+cn_dicts_cell/game.dict.yaml	英雄母亲夜店工作者	ying xiong mu qin ye dian gong zuo zhe	L118842: Non-game vulgar troll entry injected into Hearthstone block
+cn_dicts_cell/game.dict.yaml	问道北京古都游戏键刘群	wen dao bei jing gu du you xi jian liu qun	L121279: QQ-group spam + typo 键刘群 for 交流群
+cn_dicts_cell/game.dict.yaml	问道北京古都游戏交流群	wen dao bei jing gu du you xi jiao liu qun	L121280: QQ-group spam
+cn_dicts_cell/game.dict.yaml	补充生命值点	bu chong sheng ming zhi dian	L129748: Digit-stripped item tooltip (补充生命值N点) in quest_span
+cn_dicts_cell/game.dict.yaml	切换到技能书掉落表	qie huan dao ji neng shu diao luo biao	L130747: Scraped web wiki button UI text in quest_span
+cn_dicts_cell/game.dict.yaml	外挂死全家	wai gua si quan jia	L134267: Abusive profanity
+cn_dicts_cell/game.dict.yaml	不要叫我宝贝叫我牛批	bu yao jiao wo bao bei jiao wo niu pi	L138918: Vulgar player chat spam
+cn_dicts_cell/game.dict.yaml	苍井空的苍苍井空的云	cang jing kong de cang cang jing kong de yun	L138955: Vulgar player chat meme
+cn_dicts_cell/game.dict.yaml	奸淫掳掠他肯定都不敢	jian yin lu lve ta ken ding dou bu gan	L140465: Random vulgar chat sentence
+cn_dicts_cell/game.dict.yaml	你拍一我拍一中立笑看两傻逼	ni pai yi wo pai yi zhong li xiao kan liang sha bi	L141520: Vulgar profanity chat meme
+cn_dicts_cell/game.dict.yaml	齐心协力只因为一个大狗比	qi xin xie li zhi yin wei yi ge da gou bi	L141671: Vulgar profanity chat meme
+cn_dicts_cell/game.dict.yaml	少林不收女弟子人妖也不	shao lin bu shou nv di zi ren yao ye bu	L142045: Truncated chat sentence ending in 也不
+cn_dicts_cell/game.dict.yaml	是不是能打出的都是有的	shi bu shi neng da chu de dou shi you de	L142147: Digit/Latin-stripped broken chat sentence
+cn_dicts_cell/game.dict.yaml	心太累一等不到加强	xin tai lei yi deng bu dao jia qiang	L143177: Broken/truncated chat sentence
+cn_dicts_cell/literature.dict.yaml	日暮乡关何处是烟波江上使上愁	ri mu xiang guan he chu shi yan bo jiang shang shi shang chou	L83: Poem typo 使上愁 for 使人愁 (Cui Hao)
+cn_dicts_cell/literature.dict.yaml	月下飞开镜云生结海楼	yue xia fei kai jing yun sheng jie hai lou	L115: Poem typo 飞开镜 for 飞天镜 (Li Bai)
+cn_dicts_cell/literature.dict.yaml	隔烟催漏金叫咽	ge yan cui lou jin jiao yan	L1468: OCR typo 金叫咽 for 金虬咽 (Song Ci)
+cn_dicts_cell/literature.dict.yaml	孤馆热杖缒辏风露渐变	gu guan re zhang zhui cou feng lu jian bian	L1568: GBK mojibake garbage (热杖缒辏) in Song Ci line
+cn_dicts_cell/literature.dict.yaml	日高慵起账托春醒未醒	ri gao yong qi zhang tuo chun xing wei xing	L3849: OCR corruption 账托 in Song Ci line
+cn_dicts_cell/literature.dict.yaml	忆得盈盈拾发言翠侣	yi de ying ying shi fa yan cui lv	L5534: Corrupted spurious insertion 发言 inside 拾翠侣
+cn_dicts_cell/literature.dict.yaml	电子版说明	dian zi ban shuo ming	L8357: Ebook editorial preface header
+cn_dicts_cell/literature.dict.yaml	中华民族的	zhong hua min zu de	L19847: Truncated modern ebook-preface fragment
+cn_dicts_cell/literature.dict.yaml	言不可不慎也夫子之不可及	yan bu ke bu shen ye fu zi zhi bu ke ji	L21474: Cross-sentence smash + truncated mid-clause (Lunyu)
+cn_dicts_cell/literature.dict.yaml	帛书本及	bo shu ben ji	L22191: Truncated ebook-preface fragment
+cn_dicts_cell/literature.dict.yaml	参看湖南长沙马王堆汉墓出土	can kan hu nan chang sha ma wang dui han mu chu tu	L22602: Modern ebook-preface editorial note
+cn_dicts_cell/literature.dict.yaml	打字输入而成	da zi shu ru er cheng	L23178: Modern ebook-preface note (打字输入而成)
+cn_dicts_cell/literature.dict.yaml	但论及能总括中华民族的基	dan lun ji neng zong kuo zhong hua min zu de ji	L23208: Truncated modern ebook-preface fragment ending in 基
+cn_dicts_cell/literature.dict.yaml	当首数老子的	dang shou shu lao zi de	L23235: Truncated modern ebook-preface fragment ending in 的
+cn_dicts_cell/literature.dict.yaml	的版本以及诸多的注	de ban ben yi ji zhu duo de zhu	L23292: Truncated modern ebook-preface fragment (的...注)
+cn_dicts_cell/literature.dict.yaml	的帛书本及傅奕本等古本	de bo shu ben ji fu yi ben deng gu ben	L23294: Leading-的 modern ebook-preface fragment
+cn_dicts_cell/literature.dict.yaml	的五千文字	de wu qian wen zi	L23318: Leading-的 modern ebook-preface fragment
+cn_dicts_cell/literature.dict.yaml	凡国标码表中	fan guo biao ma biao zhong	L24009: Ebook GB2312 encoding note fragment
+cn_dicts_cell/literature.dict.yaml	凡国标码表中无对应的少数汉字	fan guo biao ma biao zhong wu dui ying de shao shu han zi	L24010: Ebook GB2312 encoding note
+cn_dicts_cell/literature.dict.yaml	繁体谗换山旁岩不可攀	fan ti chan huan shan pang yan bu ke pan	L24027: GB2312 rare-char composition hack (巉=繁体谗换山旁 + 岩不可攀)
+cn_dicts_cell/literature.dict.yaml	方法论的宏大框架	fang fa lun de hong da kuang jia	L24050: Modern ebook-preface fragment
+cn_dicts_cell/literature.dict.yaml	符号代之	fu hao dai zhi	L24295: Ebook GB2312 encoding note fragment
+cn_dicts_cell/literature.dict.yaml	根据历代校诂学者可取的见解	gen ju li dai xiao gu xue zhe ke qu de jian jie	L24642: Modern ebook-preface editorial note
+cn_dicts_cell/literature.dict.yaml	鼓应校定文原是	gu ying xiao ding wen yuan shi	L24941: Truncated ebook footnote ([陈]鼓应校定文原是...)
+cn_dicts_cell/literature.dict.yaml	及傅奕本等	ji fu yi ben deng	L25517: Truncated ebook-preface fragment
+cn_dicts_cell/literature.dict.yaml	洁优美的五千文字	jie you mei de wu qian wen zi	L25837: Truncated ebook-preface fragment ([简]洁优美的五千文字)
+cn_dicts_cell/literature.dict.yaml	可取的见解	ke qu de jian jie	L26320: Modern ebook-preface fragment
+cn_dicts_cell/literature.dict.yaml	零零散散打字输入而	ling ling san san da zi shu ru er	L26657: Truncated modern ebook-preface fragment ending in 而
+cn_dicts_cell/literature.dict.yaml	流传下来的遗产	liu chuan xia lai de yi chan	L26667: Modern ebook-preface fragment
+cn_dicts_cell/literature.dict.yaml	莫以真人之言謦吾君之侧乎	mo yi zhen ren zhi yan qing wu jun zhi ce hu	L27010: Missing non-GB2312 char 欬 (Zhuangzi 謦欬吾君之侧乎)
+cn_dicts_cell/literature.dict.yaml	年文明流传下来的遗产	nian wen ming liu chuan xia lai de yi chan	L27167: Digit-stripped modern ebook-preface fragment (5000年文明...)
+cn_dicts_cell/literature.dict.yaml	飘逸的宇宙观	piao yi de yu zhou guan	L27289: Modern ebook-preface fragment
+cn_dicts_cell/literature.dict.yaml	其精炼的	qi jing lian de	L27437: Truncated modern ebook-preface fragment ending in 的
+cn_dicts_cell/literature.dict.yaml	其精炼的九九八十一章	qi jing lian de jiu jiu ba shi yi zhang	L27438: Modern ebook-preface fragment
+cn_dicts_cell/literature.dict.yaml	上下几千年文明	shang xia ji qian nian wen ming	L28747: Modern ebook-preface fragment
+cn_dicts_cell/literature.dict.yaml	少数汉字	shao shu han zi	L28766: Ebook GB2312 encoding note fragment
+cn_dicts_cell/literature.dict.yaml	所附校定文	suo fu xiao ding wen	L29878: Ebook editorial footnote fragment
+cn_dicts_cell/literature.dict.yaml	为我们闲时阅读过程中	wei wo men xian shi yue du guo cheng zhong	L30516: Modern ebook-preface fragment
+cn_dicts_cell/literature.dict.yaml	闲时阅读过程中	xian shi yue du guo cheng zhong	L31488: Modern ebook-preface fragment
+cn_dicts_cell/literature.dict.yaml	校诂学者	xiao gu xue zhe	L31586: Modern ebook-preface fragment
+cn_dicts_cell/literature.dict.yaml	逍遥游先秦庄子	xiao yao you xian qin zhuang zi	L31628: Scraped Title+Dynasty+Author header concatenation
+cn_dicts_cell/literature.dict.yaml	也被越来越多的西方学者所推崇	ye bei yue lai yue duo de xi fang xue zhe suo tui chong	L32015: Modern ebook-preface sentence
+cn_dicts_cell/literature.dict.yaml	以及诸多的注	yi ji zhu duo de zhu	L32166: Truncated modern ebook-preface fragment ending in 注
+cn_dicts_cell/literature.dict.yaml	依王弼本为蓝本	yi wang bi ben wei lan ben	L32348: Modern ebook-preface editorial note
+cn_dicts_cell/literature.dict.yaml	右繁体字	you fan ti zi	L32685: GB2312 rare-char composition hack fragment
+cn_dicts_cell/literature.dict.yaml	又况乎昆弟亲戚之謦	you kuang hu kun di qin qi zhi qing	L32747: Truncated at missing non-GB2312 char 欬 (Zhuangzi 謦欬其侧者乎)
+cn_dicts_cell/literature.dict.yaml	中华民族上下几千	zhong hua min zu shang xia ji qian	L34020: Truncated modern ebook-preface fragment ending in 几千
+cn_dicts_cell/literature.dict.yaml	铸成三位一体的	zhu cheng san wei yi ti de	L34144: Truncated modern ebook-preface fragment ending in 的
+cn_dicts_cell/literature.dict.yaml	庄子内篇大宗师第六知天之所为	zhuang zi nei pian da zong shi di liu zhi tian zhi suo wei	L34201: Ebook chapter header smashed into opening sentence
+cn_dicts_cell/literature.dict.yaml	庄子内篇人间世第四颜回见仲尼	zhuang zi nei pian ren jian shi di si yan hui jian zhong ni	L34202: Ebook chapter header smashed into opening sentence
+cn_dicts_cell/literature.dict.yaml	庄子内篇逍遥游第一北冥有鱼	zhuang zi nei pian xiao yao you di yi bei ming you yu	L34203: Ebook chapter header smashed into opening sentence
+cn_dicts_cell/literature.dict.yaml	庄子内篇养生主第三吾生也有涯	zhuang zi nei pian yang sheng zhu di san wu sheng ye you ya	L34204: Ebook chapter header smashed into opening sentence
+cn_dicts_cell/literature.dict.yaml	庄子外篇达生第十九达生之情者	zhuang zi wai pian da sheng di shi jiu da sheng zhi qing zhe	L34205: Ebook chapter header smashed into opening sentence
+cn_dicts_cell/literature.dict.yaml	庄子外篇刻意第十五刻意尚行	zhuang zi wai pian ke yi di shi wu ke yi shang xing	L34206: Ebook chapter header smashed into opening sentence
+cn_dicts_cell/literature.dict.yaml	庄子外篇马蹄第九马	zhuang zi wai pian ma ti di jiu ma	L34207: Ebook chapter header smashed & truncated mid-sentence
+cn_dicts_cell/literature.dict.yaml	庄子外篇箧第十将为	zhuang zi wai pian qie di shi jiang wei	L34208: Chapter header missing non-GB2312 char 胠 (胠箧) + smashed & truncated
+cn_dicts_cell/literature.dict.yaml	庄子外篇秋水第十七秋水时至	zhuang zi wai pian qiu shui di shi qi qiu shui shi zhi	L34209: Ebook chapter header smashed into opening sentence
+cn_dicts_cell/literature.dict.yaml	庄子外篇缮性第十六缮性于俗学	zhuang zi wai pian shan xing di shi liu shan xing yu su xue	L34210: Ebook chapter header smashed into opening sentence
+cn_dicts_cell/literature.dict.yaml	庄子外篇天地第十二天地虽大	zhuang zi wai pian tian di di shi er tian di sui da	L34211: Ebook chapter header smashed into opening sentence
+cn_dicts_cell/literature.dict.yaml	庄子外篇在宥第十一闻在宥天下	zhuang zi wai pian zai you di shi yi wen zai you tian xia	L34213: Ebook chapter header smashed into opening sentence
+cn_dicts_cell/literature.dict.yaml	庄子杂篇寓言第二十七寓言十九	zhuang zi za pian yu yan di er shi qi yu yan shi jiu	L34218: Ebook chapter header smashed into opening sentence
+cn_dicts_cell/literature.dict.yaml	字的右上加	zi de you shang jia	L34257: GB2312 rare-char composition hack fragment
+cn_dicts_cell/literature.dict.yaml	作则万窍怒	zuo ze wan qiao nu	L34513: Truncated at missing non-GB2312 char 呺 (Zhuangzi 作则万窍怒呺)
+cn_dicts_cell/idiom.dict.yaml	含宫咀征	han gong ju zheng	五音成语“含宫咀徵”误简为征兼错音(同文件已有正词含宫咀徵)
+cn_dicts/ext.dict.yaml	碳钎维	tan qian wei	E2错字(正词：碳纤维)
+cn_dicts_cell/composite.dict.yaml	嘎然而止	ga ran er zhi	E2错字(正词：戛然而止，corrections已有纠偏)
+cn_dicts_cell/composite.dict.yaml	消费卷	xiao fei juan	E2错字(正词：消费券，corrections已有纠偏)
+cn_dicts_cell/composite.dict.yaml	代金卷	dai jin juan	E2错字(正词：代金券，corrections已有纠偏)
+cn_dicts_cell/composite.dict.yaml	入场卷	ru chang juan	E2错字(正词：入场券，corrections已有纠偏)
+cn_dicts_cell/game.dict.yaml	点卷	dian juan	E2错字(正词：点券，corrections已有纠偏)
+cn_dicts_cell/game.dict.yaml	柏咚乄	*	Mars-text/noise with Japanese shime 乄

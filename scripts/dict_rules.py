@@ -71,7 +71,7 @@ CORRECTION_CATEGORIES: set[str] = {"A", "B", "C", "E1"}
 ADDITION_CATEGORIES: set[str] = {"A", "E1", "modern", "tech", "domain", "brand", "phonetic", "common"}
 EN_CATEGORIES: set[str] = {"hardware", "ai", "dev", "consumer"}
 EN_FIX_ACTIONS: set[str] = {"delete", "replace", "reweight"}
-OPENCC_ACTIONS: set[str] = {"replace", "delete", "add"}
+OPENCC_ACTIONS: set[str] = {"replace", "delete", "add", "rename"}
 COMMENT_HARD_MAX_LEN = 40
 COMMENT_WARN_MAX_LEN = 32
 E1_MAX_WEIGHT = 30
@@ -636,8 +636,11 @@ def load_ruleset(rules_dir: pathlib.Path, valid_syls: set[str] | None = None) ->
         if not key or not reason:
             rs.errors.append(f"opencc_fixes.tsv:{idx}: key and reason are required")
             continue
-        if action in {"replace", "add"} and not value:
+        if action in {"replace", "add", "rename"} and not value:
             rs.errors.append(f"opencc_fixes.tsv:{idx}: action '{action}' requires non-empty value")
+            continue
+        if action == "rename" and "|" not in value:
+            rs.errors.append(f"opencc_fixes.tsv:{idx}: action 'rename' requires 'new_key|new_value' in value column")
             continue
         ok = (target, key)
         if ok in occ_seen:
@@ -1027,6 +1030,15 @@ def apply_opencc_overlay(
             if new_line != line:
                 changed += 1
             seen_keys.add(k)
+            out.append(new_line)
+            continue
+        if r.action == "rename":
+            hits[r.rule_id] += 1
+            new_k, new_v = r.value.split("|", 1)
+            new_line = f"{new_k}\t{new_v}"
+            if new_line != line:
+                changed += 1
+            seen_keys.add(new_k)
             out.append(new_line)
             continue
         seen_keys.add(k)

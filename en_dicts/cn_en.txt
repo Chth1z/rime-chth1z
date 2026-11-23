@@ -477,7 +477,6 @@ Lite版本	Litebanben
 Lite版本	litebanben
 X教授	Xjiaoshou
 X教授	xjiaoshou
-papi酱	Papijiang
 papi酱	papijiang
 MAC地址	MACdizhi
 MAC地址	macdizhi

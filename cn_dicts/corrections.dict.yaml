@@ -17,7 +17,7 @@ columns:
 ...
 ##### 错音
 纨绔子弟	zhi kua zi di	50	纨(wán)绔(kù)子弟
-馄饨	hun dun	300	馄(hún)饨(tun)
+馄饨	hun dun	300	hún tun
 主角	zhu jiao	450	zhǔ jué
 角色	jiao se	180	jué sè
 说服	shui fu	200	旧读 shuì fú / 规范 shuō fú
@@ -27,11 +27,11 @@ columns:
 一模一样	yi mo yi yang	200	yī mú yī yàng
 装模作样	zhuang mo zuo yang	100	zhuāng mú zuò yàng
 人模狗样	ren mo gou yang	100	rén mú gǒu yàng
-阿弥陀佛	a mi tuo fo	100	ē mí tuó fó
+阿弥陀佛	a mi tuo fo	100	习惯 阿(ā)弥陀佛 / 规范 阿(ē)弥陀佛
 南无阿弥陀佛	na mo a mi tuo fo	50	nā mó ē mí tuó fó
 南无阿弥陀佛	nan wu a mi tuo fo	50	nā mó ē mí tuó fó
 南无阿弥陀佛	nan wu e mi tuo fo	50	nā mó ē mí tuó fó
-槟榔	bin lang	150	bīng láng
+槟榔	bin lang	150	台湾 bīn láng / 大陆 bīng láng
 弄堂	nong tang	120	lòng táng
 心宽体胖	xin kuan ti pang	100	xīn kuān tǐ pán
 埋怨	mai yuan	150	mán yuàn
@@ -40,7 +40,7 @@ columns:
 独乐乐	du le le	50	dú yuè lè
 众乐乐	zhong le le	50	zhòng yuè lè
 荨麻	xun ma	30	审音拟 xún má / 现汉 qián má
-荨麻疹	qian ma zhen	80	异读 qián má zhěn / 规范 xún má zhěn
+荨麻疹	qian ma zhen	80	习惯 qián má zhěn / 规范 xún má zhěn
 模具	mo ju	50	mú jù
 草薙	cao zhi	50	cǎo tì
 草薙京	cao zhi jing	80	cǎo tì jīng
@@ -77,18 +77,18 @@ columns:
 龇牙	ci ya	50	zī yá
 龇着牙	ci zhe ya	50	zī zhe yá
 龇牙咧嘴	ci ya lie zui	80	zī yá liě zuǐ
-偌大	nuo da	100	偌(ruò)大
+偌大	nuo da	100	ruò dà
 饮鸩解渴	yin jiu jie ke	50	饮鸩(zhèn)解渴
 宫商角徵羽	gong shang jiao zhi yu	50	宫商角(jué)徵羽
 氙气灯	shan qi deng	80	氙(xiān)气灯
 氙气大灯	shan qi da deng	50	氙(xiān)气大灯
 氙气手电筒	shan qi shou dian tong	0	氙(xiān)气手电筒
-粘贴	nian tie	150	粘(zhān)贴
+粘贴	nian tie	150	zhān tiē
 高句丽	gao ju li	80	高句(gōu)丽
 缩砂密	suo sha mi	50	缩(sù)砂密
 榅桲	wen bo	50	wēn po
 荸荠	bi ji	50	bí qi
-柔荑	rou yi	50	柔荑(tí)
+柔荑	rou yi	50	róu tí
 柔荑花序	rou yi hua xu	0	柔荑(tí)花序
 手如柔荑	shou ru rou yi	0	手如柔荑(tí)
 温庭筠	wen ting jun	50	温庭筠(yún)
@@ -107,214 +107,202 @@ columns:
 罄竹难书	xin zhu nan shu	80	馨(罄qìng)竹难书
 饮鸩止渴	yin jiu zhi ke	100	饮鸠(鸩zhèn)止渴
 模板	mo ban	40	习惯 mó bǎn / 规范 mú bǎn
-胡茬	hu zha	80	胡渣(茬cha)
-咖喱	ka li	120	咖(gā)喱(lí)
-搅和	jiao he	100	搅(jiǎo)和(huo)
+胡茬	hu zha	80	胡渣(茬chá)
+咖喱	ka li	120	gā lí
+搅和	jiao he	100	jiǎo huo
 神祇	shen zhi	50	神祗(祇qí)
-黏腻	zhan ni	40	粘(黏nian)腻
-黏膜	zhan mo	15	粘(黏nian)膜
-黏人	zhan ren	15	粘(黏nian)人
-胃黏膜	wei zhan mo	80	胃粘(黏nian)膜
-鼻黏膜	bi zhan mo	80	鼻粘(黏nian)膜
-烘焙	hong pei	150	烘培(焙bei)
-仿佛	pang fo	0	仿(fǎng)佛(fú)
-钮祜禄	niu gu lu	50	钮钴(祜hu)禄
-钮祜禄氏	niu gu lu shi	50	钮钴(祜hu)禄氏
-血脉偾张	xue mai ben zhang	80	亦作血脉贲张 / 规范偾(fèn)张
-黏合	zhan he	50	粘(黏nian)合
-一刹那	yi sha na	100	一霎(刹cha)那
-堂吉诃德	tang ji ke de	80	堂吉柯(诃he)德
-叱咤风云	chi cha feng yun	100	叱诧(咤zha)风云
-黏性流体	zhan xing liu ti	0	粘(黏nian)性流体
-黏附分子	zhan fu fen zi	0	粘(黏nian)附分子
-黏黏糊糊	zhan zhan hu hu	80	粘(黏nian)粘(黏nian)糊糊
-黏膜免疫	zhan mo mian yi	0	粘(黏nian)膜免疫
-表观黏度	biao guan zhan du	0	表观粘(黏nian)度
-刹那间	sha na jian	100	霎(刹cha)那间
-黏性力	zhan xing li	0	粘(黏nian)性力
-刹那	sha na	100	霎(刹cha)那
-螺蛳粉	luo shi fen	150	螺狮(蛳si)粉
-黏合力	zhan he li	0	粘(黏nian)合力
-高黏度	gao zhan du	0	高粘(黏nian)度
+黏腻	zhan ni	40	粘(黏nián)腻
+黏膜	zhan mo	15	粘(黏nián)膜
+黏人	zhan ren	15	粘(黏nián)人
+胃黏膜	wei zhan mo	80	胃粘(黏nián)膜
+鼻黏膜	bi zhan mo	80	鼻粘(黏nián)膜
+烘焙	hong pei	150	烘培(焙bèi)
+仿佛	pang fo	0	fǎng fú
+钮祜禄	niu gu lu	50	钮钴(祜hù)禄
+钮祜禄氏	niu gu lu shi	50	钮钴(祜hù)禄氏
+血脉偾张	xue mai ben zhang	80	常见 血脉贲(bēn)张 / 规范 血脉偾(fèn)张
+黏合	zhan he	50	粘(黏nián)合
+一刹那	yi sha na	100	一霎(刹chà)那
+堂吉诃德	tang ji ke de	80	堂吉柯(诃hē)德
+叱咤风云	chi cha feng yun	100	叱诧(咤zhà)风云
+黏性流体	zhan xing liu ti	0	粘(黏nián)性流体
+黏附分子	zhan fu fen zi	0	粘(黏nián)附分子
+黏黏糊糊	zhan zhan hu hu	80	粘(黏nián)粘(黏nián)糊糊
+黏膜免疫	zhan mo mian yi	0	粘(黏nián)膜免疫
+表观黏度	biao guan zhan du	0	表观粘(黏nián)度
+刹那间	sha na jian	100	霎(刹chà)那间
+黏性力	zhan xing li	0	粘(黏nián)性力
+刹那	sha na	100	霎(刹chà)那
+螺蛳粉	luo shi fen	150	螺狮(蛳sī)粉
+黏合力	zhan he li	0	粘(黏nián)合力
+高黏度	gao zhan du	0	高粘(黏nián)度
 按捺	an nai	100	按耐(捺nà)
 按捺不住	an nai bu zhu	150	按耐(捺nà)不住
-血脉偾张	xue mai pen zhang	100	误作喷张 / 规范血脉偾(fèn)张
+血脉偾张	xue mai pen zhang	100	血脉喷(偾fèn)张
 摩羯座	mo xie zuo	100	魔蝎(摩羯jié)座
 # 常用易错音、争议读音与习惯读音提示
-仿佛	fang fo	150	仿(fǎng)佛(fú)
-仿佛	pang fu	0	仿(fǎng)佛(fú)
+仿佛	fang fo	150	fǎng fú
+仿佛	pang fu	0	fǎng fú
 纨绔子弟	wan kua zi di	100	纨(wán)绔(kù)子弟
-比萨	pi sa	180	音译比(bǐ)萨(sà) / 披萨
-给予	gei yu	200	给(jǐ)予(yǔ)
-张柏芝	zhang bai zhi	0	规范 zhāng bǎi zhī / 习惯 zhāng bó zhī
-藤蔓	teng man	150	藤蔓(wàn)
-吱声	zhi sheng	300	吱(zī)声
-调换	tiao huan	100	调(diào)换
-六安	liu an	120	六(lù)安
+比萨	pi sa	180	常见 披萨 pī sà / 规范 比萨 bǐ sà
+给予	gei yu	200	jǐ yǔ
+张柏芝	zhang bai zhi	0	规范 张柏(bǎi)芝 / 习惯 张柏(bó)芝
+藤蔓	teng man	150	téng wàn
+吱声	zhi sheng	300	zī shēng
+调换	tiao huan	100	diào huàn
+六安	liu an	120	lù ān
 六合区	liu he qu	50	六(lù)合区
 南京六合	nan jing liu he	50	南京六(lù)合
-关卡	guan ka	150	关(guān)卡(qiǎ)
-供给	gong gei	200	供(gōng)给(jǐ)
-补给	bu gei	250	补(bǔ)给(jǐ)
-抹布	mo bu	200	抹(mā)布
-游说	you shuo	400	游(yóu)说(shuì)
-下调	xia diao	35	下调(tiáo)
-单薄	dan bao	400	单薄(bó)
-轻薄	qing bao	400	轻薄(bó)
-躯壳	qu ke	60	躯壳(qiào)
-裸露	luo lou	150	裸露(lù)
-外露	wai lou	60	外露(lù)
+关卡	guan ka	150	guān qiǎ
+供给	gong gei	200	gōng jǐ
+补给	bu gei	250	bǔ jǐ
+抹布	mo bu	200	mā bù
+游说	you shuo	400	yóu shuì
+下调	xia diao	35	xià tiáo
+单薄	dan bao	400	dān bó
+轻薄	qing bao	400	qīng bó
+躯壳	qu ke	60	qū qiào
+裸露	luo lou	150	luǒ lù
+外露	wai lou	60	wài lù
 深藏不露	shen cang bu lou	100	深藏不露(lù)
-魔爪	mo zhua	150	魔爪(zhǎo)
-爪哇	zhua wa	100	爪(zhǎo)哇
-脉脉	mai mai	300	脉(mò)脉
-扛鼎	kang ding	50	扛(gāng)鼎
-薄膜	bao mo	80	薄(bó)膜
-刘禅	liu chan	200	刘禅(shàn)
-吐蕃	tu fan	50	吐蕃(bō)
+魔爪	mo zhua	150	mó zhǎo
+爪哇	zhua wa	100	zhǎo wā
+脉脉	mai mai	300	mò mò
+扛鼎	kang ding	50	gāng dǐng
+薄膜	bao mo	80	bó mó
+刘禅	liu chan	200	liú shàn
+吐蕃	tu fan	50	台湾 tǔ fān / 大陆 tǔ bō
 泊松分布	po song fen bu	50	泊(bó)松分布
 便宜坊	pian yi fang	50	便(biàn)宜坊
-镀铬	du luo	50	镀铬(gè)
-凑合	cou huo	150	凑合(he)
+镀铬	du luo	50	dù gè
+凑合	cou huo	150	còu he
 契诃夫	qi ke fu	100	契科(诃hē)夫
 味噌	wei ceng	0	规范 wèi cēng / 习惯 wèi zēng
 味噌	wei zeng	0	习惯 wèi zēng / 规范 wèi cēng
 雪佛兰	xue fu lan	150	旧读 xuě fú lán / 规范 xuě fó lán
-张柏芝	zhang bo zhi	0	习惯 zhāng bó zhī / 规范 zhāng bǎi zhī
+张柏芝	zhang bo zhi	0	习惯 张柏(bó)芝 / 规范 张柏(bǎi)芝
 密钥	mi yue	0	规范 mì yuè / 习惯 mì yào
 密钥	mi yao	350	习惯 mì yào / 规范 mì yuè
 模板	mu ban	0	规范 mú bǎn / 习惯 mó bǎn
 荨麻	qian ma	0	现汉 qián má / 审音拟 xún má
-荨麻疹	xun ma zhen	0	规范 xún má zhěn / 异读 qián má zhěn
-血脉偾张	xue mai fen zhang	0	规范血脉偾(fèn)张 / 亦作贲(bēn)张
+荨麻疹	xun ma zhen	0	规范 xún má zhěn / 习惯 qián má zhěn
+血脉偾张	xue mai fen zhang	0	规范 血脉偾(fèn)张 / 常见 血脉贲(bēn)张
 呆板	ai ban	30	旧读 ái bǎn / 规范 dāi bǎn
-鼻塞	bi sai	250	口语 bí sāi / 规范 bí sè
-爪牙	zhua ya	100	爪(zhǎo)牙
-露出	lou chu	150	露(lù)出
+鼻塞	bi sai	250	习惯 bí sāi / 规范 bí sè
+爪牙	zhua ya	100	zhǎo yá
+露出	lou chu	150	lù chū
 露出了	lou chu le	100	露(lù)出了
-成熟	cheng shou	150	成(chéng)熟(shú)
-不熟	bu shou	120	不熟(shú)
-熟练	shou lian	100	熟(shú)练
-熟了	shou le	100	熟(shú)了
-相熟	xiang shou	15	相熟(shú)
-流血	liu xie	80	流血(xuè)
-血渍	xie zi	30	血(xuè)渍
-衣裳	yi chang	50	衣裳(shang)
+成熟	cheng shou	150	chéng shú
+不熟	bu shou	120	bù shú
+熟练	shou lian	100	shú liàn
+熟了	shou le	100	shú le
+相熟	xiang shou	15	xiāng shú
+流血	liu xie	80	习惯 liú xiě / 规范 liú xuè
+血渍	xie zi	30	xuè zì
+衣裳	yi chang	50	yī shang
 怎么着	zen me zhe	120	怎么着(zhāo)
-盖聂	gai nie	150	盖(Gě)聂
-黄柏	huang bai	40	黄柏(bò)
-填塞	tian sai	25	填塞(sè)
+盖聂	gai nie	150	gě niè
+黄柏	huang bai	40	huáng bò
+填塞	tian sai	25	tián sè
 削铁如泥	xiao tie ru ni	80	削(xuē)铁如泥
-宝幢	bao zhuang	15	宝幢(chuáng)
-范雎	fan sui	40	范雎(jū) / 误作范睢
+宝幢	bao zhuang	15	习惯 bǎo zhuàng / 规范 bǎo chuáng
+范雎	fan sui	40	范睢(雎jū)
 大迦叶	da jia ye	50	大迦叶(shè)
 泡椒凤爪	pao jiao feng zhua	80	泡椒凤爪(zhǎo)
 山椒凤爪	shan jiao feng zhua	80	山椒凤爪(zhǎo)
-壳层	ke ceng	30	壳(qiào)层
+壳层	ke ceng	30	qiào céng
 流鼻血	liu bi xie	100	流鼻血(xuè)
 呷哺呷哺	ga bu ga bu	80	呷(xiā)哺呷哺
 花剌子模	hua ci zi mo	80	花剌(là)子模
 自始至终	zhi shi zhi zhong	80	至(自zì)始至终
 无时无刻	wu shi bu ke	80	无时不(无wú)刻
-债券	zhai juan	150	债(zhài)券(quàn)
-证券	zheng juan	30	证(zhèng)券(quàn)
-券商	juan shang	80	券(quàn)商
+债券	zhai juan	150	zhài quàn
+证券	zheng juan	30	zhèng quàn
+券商	juan shang	80	quàn shāng
 消费券	xiao fei juan	100	消费券(quàn)
 代金券	dai jin juan	100	代金券(quàn)
 入场券	ru chang juan	100	入场券(quàn)
-点券	dian juan	80	点券(quàn)
-氛围	fen fei	120	氛(fēn)围(wéi)
-暴露	bao lou	150	暴(bào)露(lù)
-透露	tou lou	150	透(tòu)露(lù)
-披露	pi lou	150	披(pī)露(lù)
-揭露	jie lou	100	揭(jiē)露(lù)
-显露	xian lou	80	显(xiǎn)露(lù)
-露骨	lou gu	80	露(lù)骨(gǔ)
-露面	lu mian	150	露(lòu)面(miàn)
-配角	pei jiao	150	配(pèi)角(jué)
-男主角	nan zhu jiao	150	男主(zhǔ)角(jué)
-女主角	nv zhu jiao	150	女主(zhǔ)角(jué)
-角逐	jiao zhu	150	角(jué)逐(zhú)
-标的	biao de	100	标的(dì)
-解剖	jie pao	150	解(jiě)剖(pōu)
-剖析	pao xi	150	剖(pōu)析(xī)
-剖腹产	pao fu chan	100	剖(pōu)腹产
-混淆	hun yao	150	混(hùn)淆(xiáo)
-混淆视听	hun yao shi ting	100	混(hùn)淆(xiáo)视听
-混淆是非	hun yao shi fei	50	混(hùn)淆(xiáo)是非
-对称	dui cheng	100	对(duì)称(chèn)
-匀称	yun cheng	100	匀(yún)称(chèn)
+点券	dian juan	80	diǎn quàn
+暴露	bao lou	150	bào lù
+透露	tou lou	150	tòu lù
+披露	pi lou	150	pī lù
+揭露	jie lou	100	jiē lù
+显露	xian lou	80	xiǎn lù
+露骨	lou gu	80	lù gǔ
+露面	lu mian	150	lòu miàn
+配角	pei jiao	150	pèi jué
+男主角	nan zhu jiao	150	男主角(jué)
+女主角	nv zhu jiao	150	女主角(jué)
+角逐	jiao zhu	150	jué zhú
+标的	biao de	100	biāo dì
+剖腹产	pao fu chan	100	刨(剖pōu)腹产
+混淆	hun yao	150	台湾 hùn yáo / 大陆 hùn xiáo
+混淆视听	hun yao shi ting	100	混淆(xiáo)视听
+混淆是非	hun yao shi fei	50	混淆(xiáo)是非
+对称	dui cheng	100	duì chèn
+匀称	yun cheng	100	yún chèn
 不称职	bu cheng zhi	100	不称(chèn)职
 称心如意	cheng xin ru yi	100	称(chèn)心如意
-薄弱	bao ruo	150	薄(bó)弱(ruò)
-刻薄	ke bao	100	刻(kè)薄(bó)
-浅薄	qian bao	200	浅(qiǎn)薄(bó)
-薄荷	bao he	200	薄(bò)荷(he)
-削弱	xiao ruo	150	削(xuē)弱(ruò)
-剥削	bo xiao	150	剥(bō)削(xuē)
-削减	xiao jian	200	削(xuē)减(jiǎn)
-剥夺	bao duo	150	剥(bō)夺(duó)
-塑料	suo liao	150	塑(sù)料(liào)
-追溯	zhui shuo	100	追(zhuī)溯(sù)
-酵母	xiao mu	80	酵(jiào)母(mǔ)
-湖泊	hu bo	150	湖(hú)泊(pō)
-血泊	xue bo	100	血(xuè)泊(pō)
-漂泊	piao po	15	漂(piāo)泊(bó)
-停泊	ting po	80	停(tíng)泊(bó)
-光纤	guang qian	150	光(guāng)纤(xiān)
-纤维	qian wei	200	纤(xiān)维(wéi)
+薄弱	bao ruo	150	bó ruò
+刻薄	ke bao	100	kè bó
+浅薄	qian bao	200	qiǎn bó
+薄荷	bao he	200	bò he
+削弱	xiao ruo	150	xuē ruò
+剥削	bo xiao	150	bō xuē
+削减	xiao jian	200	xuē jiǎn
+剥夺	bao duo	150	bō duó
+酵母	xiao mu	80	jiào mǔ
+湖泊	hu bo	150	hú pō
+血泊	xue bo	100	xuè pō
+漂泊	piao po	15	piāo bó
+停泊	ting po	80	tíng bó
+光纤	guang qian	150	guāng xiān
+纤维	qian wei	200	xiān wéi
 膳食纤维	shan shi qian wei	100	膳食纤(xiān)维
 碳纤维	tan qian wei	100	碳纤(xiān)维
-校准	xiao zhun	150	校(jiào)准(zhǔn)
-校正	xiao zheng	100	校(jiào)正(zhèng)
-校验	xiao yan	200	校(jiào)验(yàn)
-校对	xiao dui	200	校(jiào)对(duì)
-着迷	zhe mi	100	着(zháo)迷(mí)
-着陆	zhe lu	100	着(zhuó)陆(lù)
-着落	zhe luo	80	着(zhuó)落(luò)
-卡壳	ka ke	100	卡(qiǎ)壳(ké)
-地壳	di ke	150	地(dì)壳(qiào)
-提防	ti fang	100	提(dī)防(fang)
-决堤	jue ti	80	决(jué)堤(dī)
-堤坝	ti ba	150	堤(dī)坝(bà)
+校准	xiao zhun	150	jiào zhǔn
+校正	xiao zheng	100	jiào zhèng
+校验	xiao yan	200	jiào yàn
+校对	xiao dui	200	jiào duì
+着迷	zhe mi	100	zháo mí
+着陆	zhe lu	100	zhuó lù
+着落	zhe luo	80	zhuó luò
+卡壳	ka ke	100	qiǎ ké
+地壳	di ke	150	dì qiào
+提防	ti fang	100	dī fang
+决堤	jue ti	80	jué dī
+堤坝	ti ba	150	dī bà
 自给自足	zi gei zi zu	100	自给(jǐ)自足
-供给侧	gong gei ce	100	供(gōng)给(jǐ)侧
-给养	gei yang	80	给(jǐ)养(yǎng)
-自给	zi gei	80	自给(jǐ)
-酗酒	xiong jiu	100	酗(xù)酒(jiǔ)
-分娩	fen wan	100	分(fēn)娩(miǎn)
-妊娠	ren chen	100	妊(rèn)娠(shēn)
-濒临	pin lin	100	濒(bīn)临(lín)
-媲美	bi mei	60	媲(pì)美(měi)
-庇护	pi hu	100	庇(bì)护(hù)
-包庇	bao pi	120	包(bāo)庇(bì)
-麻痹	ma pi	200	麻(má)痹(bì)
-粗犷	cu kuang	100	粗(cū)犷(guǎng)
-炽热	zhi re	150	炽(chì)热(rè)
+供给侧	gong gei ce	100	供给(jǐ)侧
+给养	gei yang	80	jǐ yǎng
+自给	zi gei	80	zì jǐ
+分娩	fen wan	100	fēn miǎn
+妊娠	ren chen	100	rèn shēn
+粗犷	cu kuang	100	cū guǎng
+炽热	zhi re	150	chì rè
 白炽灯	bai zhi deng	100	白炽(chì)灯
 迫击炮	po ji pao	100	迫(pǎi)击炮
-斡旋	gan xuan	100	斡(wò)旋(xuán)
-泥淖	ni zhuo	80	泥(ní)淖(nào)
-龟裂	gui lie	100	龟(jūn)裂(liè)
-咋舌	zha she	80	咋(zé)舌(shé)
-咋舌	za she	40	咋(zé)舌(shé)
-令人咋舌	ling ren za she	100	令人咋(zé)舌
-熨帖	yun tie	40	熨(yù)帖(tiē)
-挣扎	zheng za	100	挣(zhēng)扎(zhá)
-捆扎	kun zha	50	捆(kǔn)扎(zā)
-厌恶	yan e	100	厌(yàn)恶(wù)
-可恶	ke e	100	可(kě)恶(wù)
-反省	fan sheng	150	反(fǎn)省(xǐng)
-畸形	qi xing	150	畸(jī)形(xíng)
-咀嚼	ju jiao	200	咀(jǔ)嚼(jué)
-禅让	chan rang	100	禅(shàn)让(ràng)
-东莞	dong wan	15	东(Dōng)莞(guǎn)
+斡旋	gan xuan	100	wò xuán
+泥淖	ni zhuo	80	ní nào
+龟裂	gui lie	100	jūn liè
+咋舌	zha she	80	zé shé
+咋舌	za she	40	zé shé
+令人咋舌	ling ren za she	70	令人咋(zé)舌
+熨帖	yun tie	40	yù tiē
+挣扎	zheng za	100	zhēng zhá
+捆扎	kun zha	50	kǔn zā
+厌恶	yan e	100	yàn wù
+可恶	ke e	100	kě wù
+反省	fan sheng	150	fǎn xǐng
+咀嚼	ju jiao	200	jǔ jué
+禅让	chan rang	100	shàn ràng
+东莞	dong wan	15	dōng guǎn
 吐谷浑	tu gu hun	80	吐谷(yù)浑
-亳州	hao zhou	80	亳(Bó)州
-秘鲁	mi lu	200	秘(Bì)鲁(lǔ)
-蚌埠	bang bu	15	蚌(Bèng)埠(bù)
-荥阳	rong yang	80	荥(Xíng)阳
-冒顿单于	mao dun dan yu	80	冒(Mò)顿(dú)单(Chán)于
+亳州	hao zhou	80	bó zhōu
+秘鲁	mi lu	200	bì lǔ
+蚌埠	bang bu	15	bèng bù
+荥阳	rong yang	80	xíng yáng
+冒顿单于	mao dun dan yu	80	冒(mò)顿(dú)单(chán)于
 参差不齐	can ci bu qi	100	参(cēn)差(cī)不齐
 参差不齐	can cha bu qi	100	参(cēn)差(cī)不齐
 绰绰有余	chao chao you yu	80	绰(chuò)绰有余
@@ -342,7 +330,6 @@ columns:
 发人深省	fa ren shen sheng	80	发人深省(xǐng)
 相形见绌	xiang xing jian zhuo	100	相形见绌(chù)
 相形见绌	xiang xing jian qu	50	相形见绌(chù)
-毛遂自荐	mao shui zi jian	80	毛遂(suì)自荐
 审时度势	shen shi du shi	80	审时度(duó)势
 刚愎自用	gang fu zi yong	100	刚愎(bì)自用
 不着边际	bu zhe bian ji	80	不着(zhuó)边际
@@ -379,7 +366,6 @@ columns:
 奴颜婢膝	nu yan bi qi	80	奴颜婢(bì)膝(xī)
 奴颜婢膝	nu yan bei xi	50	奴颜婢(bì)膝(xī)
 恪尽职守	ge jin zhi shou	80	恪(kè)尽职守
-破绽百出	po ding bai chu	50	破绽(zhàn)百出
 拾级而上	shi ji er shang	80	拾(shè)级而上
 一叶扁舟	yi ye bian zhou	80	一叶扁(piān)舟
 宫商角徵羽	gong shang jiao zheng yu	50	宫商角(jué)徵(zhǐ)羽
@@ -393,3 +379,41 @@ columns:
 怙恶不悛	gu e bu quan	50	怙(hù)恶不悛(quān)
 怙恶不悛	gu e bu jun	50	怙(hù)恶不悛(quān)
 怙恶不悛	hu e bu jun	50	怙(hù)恶不悛(quān)
+说服	shuo fu	0	规范 shuō fú / 旧读 shuì fú
+呆板	dai ban	0	规范 dāi bǎn / 旧读 ái bǎn
+鼻塞	bi se	0	规范 bí sè / 习惯 bí sāi
+宝幢	bao chuang	0	规范 bǎo chuáng / 习惯 bǎo zhuàng
+比萨	bi sa	0	规范 比萨 bǐ sà / 常见 披萨 pī sà
+吐蕃	tu bo	0	大陆 tǔ bō / 台湾 tǔ fān
+槟榔	bing lang	0	大陆 bīng láng / 台湾 bīn láng
+混淆	hun xiao	0	大陆 hùn xiáo / 台湾 hùn yáo
+流血	liu xue	0	规范 liú xuè / 习惯 liú xiě
+阿弥陀佛	e mi tuo fo	0	规范 阿(ē)弥陀佛 / 习惯 阿(ā)弥陀佛
+阿房宫	e pang gong	0	规范 阿(ē)房(páng)宫 / 常见 ā fáng
+阿房宫	a fang gong	0	常见 阿(ā)房(fáng)宫 / 规范 ē páng
+阿房宫	a pang gong	0	常见 阿(ā)房(páng)宫 / 规范 ē páng
+阿房宫	e fang gong	0	常见 阿(ē)房(fáng)宫 / 规范 ē páng
+甲壳虫	jia qiao chong	0	规范 甲壳(qiào)虫 / 常见 甲壳(ké)虫
+甲壳虫	jia ke chong	0	常见 甲壳(ké)虫 / 规范 甲壳(qiào)虫
+芥蓝	jie lan	0	规范 jiè lán / 旧读 gài lán
+芥蓝	gai lan	0	旧读 gài lán / 规范 jiè lán
+郭明錤	guo ming ji	0	规范 郭明錤(jī) / 习惯 郭明錤(qí)
+郭明錤	guo ming qi	0	习惯 郭明錤(qí) / 规范 郭明錤(jī)
+周柏豪	zhou bai hao	0	规范 周柏(bǎi)豪 / 习惯 周柏(bó)豪
+周柏豪	zhou bo hao	0	习惯 周柏(bó)豪 / 规范 周柏(bǎi)豪
+鲗鱼涌	ze yu chong	0	规范 鲗(zé)鱼涌 / 旧读 鲗(zéi)鱼涌
+鲗鱼涌	zei yu chong	0	旧读 鲗(zéi)鱼涌 / 规范 鲗(zé)鱼涌
+私钥	si yue	0	规范 sī yuè / 习惯 sī yào
+私钥	si yao	0	习惯 sī yào / 规范 sī yuè
+公钥	gong yue	0	规范 gōng yuè / 习惯 gōng yào
+公钥	gong yao	0	习惯 gōng yào / 规范 gōng yuè
+陈寅恪	chen yin ke	0	规范 陈寅恪(kè) / 旧读 陈寅恪(què)
+陈寅恪	chen yin que	0	旧读 陈寅恪(què) / 规范 陈寅恪(kè)
+甲壳	jia qiao	0	规范 jiǎ qiào / 常见 jiǎ ké
+甲壳	jia ke	0	常见 jiǎ ké / 规范 jiǎ qiào
+凤爪	feng zhao	0	规范 fèng zhǎo / 习惯 fèng zhuǎ
+凤爪	feng zhua	0	习惯 fèng zhuǎ / 规范 fèng zhǎo
+倒模	dao mu	0	规范 dào mú / 习惯 dào mó
+倒模	dao mo	0	习惯 dào mó / 规范 dào mú
+珩磨	hang mo	0	规范 háng mó / 常见 héng mó
+珩磨	heng mo	0	常见 héng mó / 规范 háng mó

@@ -10,7 +10,7 @@ sort: by_weight
 use_preset_vocabulary: false
 ...
 版材	ban cai	4
-包装薄膜	bao zhuang bao mo	2
+包装薄膜	bao zhuang bo mo	2
 包装防伪	bao zhuang fang wei	0
 包装印刷加工	bao zhuang yin shua jia gong	0
 标识防伪	biao zhi fang wei	0
@@ -23,15 +23,15 @@ use_preset_vocabulary: false
 镀锡板卷马口铁	du xi ban juan ma kou tie	0
 防伪技术产品	fang wei ji shu chan pin	0
 纺织及皮革类印刷	fang zhi ji pi ge lei yin shua	0
-分离薄膜	fen li bao mo	0
+分离薄膜	fen li bo mo	0
 复合类印刷	fu he lei yin shua	0
 覆膜机	fu mo ji	0
-功能薄膜	gong neng bao mo	1
+功能薄膜	gong neng bo mo	1
 挂历印刷	gua li yin shua	0
 刮墨刀	gua mo dao	0
 瓜米石	gua mi shi	0
 海报印刷	hai bao yin shua	6
-降解薄膜	jiang jie bao mo	0
+降解薄膜	jiang jie bo mo	0
 胶辊	jiao gun	1
 搅墨棒	jiao mo bang	0
 胶印机	jiao yin ji	1
@@ -39,7 +39,7 @@ use_preset_vocabulary: false
 开槽机	kai cao ji	0
 名片印刷	ming pian yin shua	0
 模切机	mo qie ji	0
-农用薄膜	nong yong bao mo	1
+农用薄膜	nong yong bo mo	1
 票据印刷	piao ju yin shua	0
 柔印机	rou yin ji	0
 晒版机	shai ban ji	0
@@ -86,7 +86,7 @@ use_preset_vocabulary: false
 纸类印刷	zhi lei yin shua	2
 竹木类印刷	zhu mu lei yin shua	0
 字典纸	zi dian zhi	1
-薄膜拉丝机	bao mo la si ji	0
+薄膜拉丝机	bo mo la si ji	0
 标胶	biao jiao	3
 吹膜机	chui mo ji	0
 吹塑加工	chui su jia gong	0
@@ -157,7 +157,6 @@ use_preset_vocabulary: false
 不锈钢板卷	bu xiu gang ban juan	0
 不锈钢棒材	bu xiu gang bang cai	0
 不锈钢坯	bu xiu gang pi	1
-不锈钢线材不锈钢圆钢	bu xiu gang xian cai bu xiu gang yuan gang	0
 彩涂板卷	cai tu ban juan	0
 齿轮钢	chi lun gang	0
 磁选设备	ci xuan she bei	0

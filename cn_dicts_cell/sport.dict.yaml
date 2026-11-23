@@ -185,7 +185,7 @@ use_preset_vocabulary: true
 近台	jin tai	15
 近台打法	jin tai da fa	0
 近台防守	jin tai fang shou	0
-金廷勳	jin ting xun	0
+金廷勋	jin ting xun	0
 金泽咲希	jin ze xiao xi	0
 金贞弦	jin zhen xian	0
 金仲	jin zhong	6
@@ -444,7 +444,7 @@ use_preset_vocabulary: true
 张洋	zhang yang	7
 张钰	zhang yu	3
 赵彦来	zhao yan lai	0
-赵志燻	zhao zhi xun	0
+赵志熏	zhao zhi xun	0
 郑长弓	zheng chang gong	1
 正胶	zheng jiao	3
 郑敏之	zheng min zhi	0
@@ -1019,7 +1019,6 @@ use_preset_vocabulary: true
 热刺	re ci	200
 日本大分三神	ri ben da fen san shen	0
 日本京都萨桑那	ri ben jing du sa sang na	0
-日本鹿岛鹿角李荣杓	ri ben lu dao lu jiao li rong biao	0
 日本磐田喜悦	ri ben pan tian xi yue	1
 日基奇	ri ji qi	4
 若苏埃	ruo su ai	0
@@ -2114,7 +2113,6 @@ use_preset_vocabulary: true
 迪文	di wen	16
 迪文布朗	di wen bu lang	0
 迪文乔治	di wen qiao zhi	0
-底线球场两端的边界线	di xian qiu chang liang duan de bian jie xian	0
 底线区域	di xian qu yu	1
 迪肖恩	di xiao en	0
 迪肖恩史蒂文森	di xiao en shi di wen sen	0
@@ -2153,7 +2151,6 @@ use_preset_vocabulary: true
 恶性犯规	e xing fan gui	4
 二号位置球员	er hao wei zhi qiu yuan	0
 二十秒钟的暂停	er shi miao zhong de zan ting	0
-二十四秒内必须投篮	er shi si miao nei bi xu tou lan	0
 法布瑞斯尔	fa bu rui si er	0
 法布瑞斯尔奥博托	fa bu rui si er ao bo tuo	0
 法尔顿	fa er dun	1
@@ -2191,7 +2188,6 @@ use_preset_vocabulary: true
 范兆宇	fan zhao yu	0
 房辉	fang hui	0
 防守犯规	fang shou fan gui	48
-防守方干扰投篮得分	fang shou fang gan rao tou lan de fen	0
 防守技术	fang shou ji shu	0
 防守篮板	fang shou lan ban	77
 防守篮板球	fang shou lan ban qiu	2
@@ -2312,7 +2308,6 @@ use_preset_vocabulary: true
 华盛顿国会	hua sheng dun guo hui	1
 华盛顿国会队	hua sheng dun guo hui dui	0
 华盛顿华盛顿国会	hua sheng dun hua sheng dun guo hui	0
-华盛顿华盛顿国会队	hua sheng dun hua sheng dun guo hui dui	0
 换手运球	huan shou yun qiu	5
 黄金队	huang jin dui	8
 汇中	hui zhong	1
@@ -2413,18 +2408,9 @@ use_preset_vocabulary: true
 杰姆森	jie mu sen	0
 杰瑞特	jie rui te	5
 杰瑞特杰克	jie rui te jie ke	0
-进攻队员冲撞具有合理防守位置且没有移动的防守队员的犯规	jin gong dui yuan chong zhuang ju you he li fang shou wei zhi qie mei you yi dong de fang shou dui yuan de fan gui	0
-进攻方持球球员背对篮框单吃对方防守球员	jin gong fang chi qiu qiu yuan bei dui lan kuang dan chi dui fang fang shou qiu yuan	0
-进攻方持球球员的传切战术	jin gong fang chi qiu qiu yuan de chuan qie zhan shu	0
-进攻方干扰投篮得分	jin gong fang gan rao tou lan de fen	0
-进攻方十秒钟内未带球过中场	jin gong fang shi miao zhong nei wei dai qiu guo zhong chang	0
-进攻方以运球方式消耗掉比赛所剩下时间	jin gong fang yi yun qiu fang shi xiao hao diao bi sai suo sheng xia shi jian	0
-进攻方以运球或传球方式消耗掉比赛所剩下时间	jin gong fang yi yun qiu huo chuan qiu fang shi xiao hao diao bi sai suo sheng xia shi jian	0
-进攻方做掩护球员的挡切战术	jin gong fang zuo yan hu qiu yuan de dang qie zhan shu	0
 进攻球员	jin gong qiu yuan	0
 进攻违例	jin gong wei li	1
 金立鹏	jin li peng	1
-禁区内篮框下的小圆圈区域	jin qu nei lan kuang xia de xiao yuan quan qu yu	0
 金隅	jin yu	16
 金隅队	jin yu dui	1
 金州勇士	jin zhou yong shi	122
@@ -2463,7 +2449,6 @@ use_preset_vocabulary: true
 康利	kang li	30
 考比	kao bi	1
 考比卡尔	kao bi ka er	0
-靠近禁区顶端之三分线附近	kao jin jin qu ding duan zhi san fen xian fu jin	0
 考那斯萨尔吉利斯	kao na si sa er ji li si	0
 科尔克	ke er ke	1
 科尔克斯耐德	ke er ke si nai de	0
@@ -2611,7 +2596,6 @@ use_preset_vocabulary: true
 连续不胜记录	lian xu bu sheng ji lu	0
 两不沾	liang bu zhan	13
 梁伟	liang wei	27
-两项技术统计指标达两位数	liang xiang ji shu tong ji zhi biao da liang wei shu	0
 辽宁猎人	liao ning lie ren	0
 辽宁猎人队	liao ning lie ren dui	0
 辽宁盼盼	liao ning pan pan	0
@@ -2622,7 +2606,6 @@ use_preset_vocabulary: true
 林德罗巴博萨	lin de luo ba bo sa	0
 林赛	lin sai	17
 林赛亨特	lin sai heng te	0
-领到一张准毕业证书	ling dao yi zhang zhun bi ye zheng shu	0
 领先球队	ling xian qiu dui	1
 柳别尔齐胜利者	liu bie er qi sheng li zhe	0
 刘钢	liu gang	12
@@ -2746,7 +2729,6 @@ use_preset_vocabulary: true
 曼雷沙	man lei sha	0
 梅尔文埃里	mei er wen ai li	0
 梅尔文埃利	mei er wen ai li	0
-每个联盟下属两个赛区	mei ge lian meng xia shu liang ge sai qu	0
 玫瑰花园球馆	mei gui hua yuan qiu guan	0
 美国大陆篮球协会	mei guo da lu lan qiu xie hui	0
 美国大学生运动协会	mei guo da xue sheng yun dong xie hui	1
@@ -2966,7 +2948,6 @@ use_preset_vocabulary: true
 胜场场数	sheng chang chang shu	0
 圣路易斯轰炸机	sheng lu yi si hong zha ji	0
 圣路易斯轰炸机队	sheng lu yi si hong zha ji dui	0
-生死时刻投入一球可决定胜负的决定性时刻	sheng si shi ke tou ru yi qiu ke jue ding sheng fu de jue ding xing shi ke	0
 施冰兵	shi bing bing	0
 史蒂芬布雷克	shi di fen bu lei ke	0
 史蒂夫弗朗西斯	shi di fu fu lang xi si	0
@@ -2981,7 +2962,6 @@ use_preset_vocabulary: true
 受球队约束	shou qiu dui yue shu	0
 手指拨球	shou zhi bo qiu	16
 双方均持球不放	shuang fang jun chi qiu bu fang	0
-双方均无持球权时的犯规	shuang fang jun wu chi qiu quan shi de fan gui	0
 双方争夺篮板球	shuang fang zheng duo lan ban qiu	0
 双鹿电池	shuang lu dian chi	7
 双鹿电池队	shuang lu dian chi dui	0
@@ -3071,8 +3051,6 @@ use_preset_vocabulary: true
 汀斯利	ting si li	13
 停止出赛	ting zhi chu sai	0
 通钢队	tong gang dui	0
-投进两分球后因被犯规再罚进一分	tou jin liang fen qiu hou yin bei fan gui zai fa jin yi fen	0
-投进三分球后因被犯规再罚进一分	tou jin san fen qiu hou yin bei fan gui zai fa jin yi fen	0
 投篮命中	tou lan ming zhong	28
 投篮外空心球	tou lan wai kong xin qiu	0
 投球命中	tou qiu ming zhong	0
@@ -3107,7 +3085,6 @@ use_preset_vocabulary: true
 维尔克斯	wei er ke si	2
 维尔士	wei er shi	0
 威尔逊钱德勒	wei er xun qian de le	0
-违反二十四秒内必须投篮	wei fan er shi si miao nei bi xu tou lan	0
 维克顿	wei ke dun	0
 维克顿瓦夫	wei ke dun wa fu	0
 维克多卡亚帕	wei ke duo ka ya pa	0
@@ -3261,7 +3238,6 @@ use_preset_vocabulary: true
 以色列哈普尔加里勒昂	yi se lie ha pu er jia li le ang	0
 以色列特拉维夫马卡比	yi se lie te la wei fu ma ka bi	0
 以色列耶路撒冷哈勃尔	yi se lie ye lu sa leng ha bo er	0
-以手掌推挡对方进攻球员的犯规动作	yi shou zhang tui dang dui fang jin gong qiu yuan de fan gui dong zuo	0
 伊斯坦布尔埃菲斯	yi si tan bu er ai fei si	0
 伊坦	yi tan	2
 伊坦托马斯	yi tan tuo ma si	0
@@ -3269,13 +3245,10 @@ use_preset_vocabulary: true
 尹逵	yin kui	0
 因劳资	yin lao zi	0
 殷志勇	yin zhi yong	1
-用两位防守球员包夹进攻球员	yong liang wei fang shou qiu yuan bao jia jin gong qiu yuan	0
-用三位防守球员包夹进攻球员	yong san wei fang shou qiu yuan bao jia jin gong qiu yuan	0
 尤德里	you de li	0
 右底线	you di xian	2
 犹他爵士队	you ta jue shi dui	14
 尤文图特	you wen tu te	0
-与裁判讨论规则和判罚	yu cai pan tao lun gui ze he pan fa	0
 于超	yu chao	0
 遇俊锴	yu jun kai	3
 于梁	yu liang	13
@@ -3303,7 +3276,7 @@ use_preset_vocabulary: true
 张成	zhang cheng	110
 张大宇	zhang da yu	1
 张灏	zhang hao	4
-张劲松	zhang jin song	27
+张劲松	zhang jing song	27
 张坤	zhang kun	1011
 张天宝	zhang tian bao	0
 张伟刚	zhang wei gang	0
@@ -3832,7 +3805,6 @@ use_preset_vocabulary: true
 反面技法	fan mian ji fa	0
 反手俯卧撑	fan shou fu wo cheng	0
 俯卧撑击掌	fu wo cheng ji zhang	0
-高位格档接侧步直拳	gao wei ge dang jie ce bu zhi quan	0
 高位横踢	gao wei heng ti	0
 挂踢	gua ti	1
 贯手	guan shou	2
@@ -3982,7 +3954,6 @@ use_preset_vocabulary: true
 智道馆	zhi dao guan	0
 直拳击靶	zhi quan ji ba	0
 指卧撑	zhi wo cheng	10
-中段手刀外展格档对拆	zhong duan shou dao wai zhan ge dang dui chai	0
 中国跆拳道协会	zhong guo tai quan dao xie hui	1
 转身步	zhuan shen bu	1
 转身侧踢	zhuan shen ce ti	0
@@ -4409,7 +4380,7 @@ use_preset_vocabulary: true
 玄钺	xuan yue	17
 旋子转体	xuan zi zhuan ti	3
 雪峰尖	xue feng jian	0
-蟫隐庐	xun yin lu	0
+蟫隐庐	yin yin lu	0
 压肩	ya jian	27
 鸭形拳	ya xing quan	0
 雁行拳	yan hang quan	0
@@ -4468,7 +4439,6 @@ use_preset_vocabulary: true
 张兆东	zhang zhao dong	3
 赵道新	zhao dao xin	8
 朝阳剑	zhao yang jian	0
-摺叠	zhe die	2
 阵纪	zhen ji	2
 震脚	zhen jiao	15
 正蹬腿	zheng deng tui	7
@@ -7434,7 +7404,7 @@ use_preset_vocabulary: true
 法内鲁德	fa nei lu de	0
 法切蒂	fa qie di	34
 法提赫埃吉迪克	fa ti he ai ji di ke	0
-法提赫塞尔坎库尔图卢思	fa ti he se er kan ku er tu lu si	0
+法提赫塞尔坎库尔图卢思	fa ti he sai er kan ku er tu lu si	0
 法提赫塞兰	fa ti he se lan	0
 法提赫伊根	fa ti he yi gen	0
 法瓦利	fa wa li	5
@@ -7711,7 +7681,6 @@ use_preset_vocabulary: true
 弗朗西斯科科扎	fu lang xi si ke ke zha	0
 弗朗西斯科罗迪	fu lang xi si ke luo di	0
 弗朗西斯科梅里达	fu lang xi si ke mei li da	0
-弗郎西斯科莫德斯托	fu lang xi si ke mo de si tuo	0
 弗朗西斯科帕拉维西尼	fu lang xi si ke pa la wei xi ni	0
 弗朗西斯科帕文	fu lang xi si ke pa wen	0
 弗朗西斯科皮萨诺	fu lang xi si ke pi sa nuo	0
@@ -12873,7 +12842,6 @@ use_preset_vocabulary: true
 澳大利亚车手	ao da li ya che shou	0
 澳大利亚大奖赛	ao da li ya da jiang sai	2
 巴多尔	ba duo er	0
-巴林英特拉格斯赛道	ba lin ying te la ge si sai dao	0
 巴西车手	ba xi che shou	0
 巴西大奖赛	ba xi da jiang sai	1
 棒棒糖人	bang bang tang ren	4

@@ -658,9 +658,7 @@ def main() -> None:
     if diff_stats is not None:
         print(f"Diff budget:  {diff_stats['summary']} (needs_review={diff_stats['needs_review']})")
     if collision_report is not None:
-        print(f"Collisions:   {len(collision_report)} rule entries audited")
-        for item in collision_report:
-            print(f"  {item['source']} -> top5={item['top5_active']}")
+        print(f"Collisions:   {len(collision_report)} rule entries audited (see --json for full table)")
     if warnings:
         print("\n=== WARNINGS ===")
         for w in warnings:

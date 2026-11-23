@@ -13,7 +13,6 @@ iPhone 17 Pro Max	iPhone17ProMax		hardware
 iPhone Air	iPhoneAir		hardware
 Xbox Series X	XboxSeriesX		hardware
 RIP	RIP		consumer
-# 2024-2026 AI / LLM / Agent ecosystem
 LLM	LLM		ai
 Large Language Model	LLM		ai
 LLMs	LLMs		ai
@@ -42,8 +41,8 @@ Text-to-Speech	TTS		ai
 ASR	ASR		ai
 Automatic Speech Recognition	ASR		ai
 SOTA	SOTA		ai
-Agentic	Agentic		ai
-Embedding	Embedding		ai
+agentic	agentic		ai
+embedding	embedding		ai
 PyTorch	PyTorch		ai
 TensorFlow	TensorFlow		ai
 CUDA	CUDA		ai
@@ -82,7 +81,6 @@ NotebookLM	NotebookLM		ai
 Copilot	Copilot		ai
 Perplexity	Perplexity		ai
 Antigravity	Antigravity		ai
-# Dev / Infra / Rime / Data formats
 Docker	Docker		dev
 Podman	Podman		dev
 Rust	Rust		dev
@@ -135,7 +133,6 @@ WezTerm	WezTerm		dev
 Alacritty	Alacritty		dev
 Zotero	Zotero		dev
 Overleaf	Overleaf		dev
-# Semiconductor / Hardware / OS / Workplace / Consumer
 Qualcomm	Qualcomm		hardware
 MediaTek	MediaTek		hardware
 TSMC	TSMC		hardware
