@@ -11090,7 +11090,7 @@ use_preset_vocabulary: false
 得恩地	de en di	0
 第三丁醇	di san ding chun	0
 碘化甲烷	dian hua jia wan	0
-叠氮化鈉	die dan hua na	0
+叠氮化钠	die dan hua na	5
 叠氮化铅	die dan hua qian	3
 丁硫醇	ding liu chun	0
 毒杀芬	du sha fen	2
@@ -11162,8 +11162,8 @@ use_preset_vocabulary: false
 氟化氧	fu hua yang	1
 福瑞松	fu rui song	0
 氟三氯甲烷	fu san lv jia wan	0
-氟乙酸鈉	fu yi suan na	0
-铬酸鈉	ge suan na	0
+氟乙酸钠	fu yi suan na	2
+铬酸钠	ge suan na	0
 红磷非晶型	hong lin fei jing xing	0
 谷速松	gu su song	0
 过氯甲基硫醇	guo lv jia ji liu chun	0
@@ -11171,15 +11171,14 @@ use_preset_vocabulary: false
 过氯酸氟	guo lv suan fu	0
 过氯酸钾	guo lv suan jia	0
 过氯酸镁	guo lv suan mei	0
-过氯酸鈉	guo lv suan na	0
+过氯酸钠	guo lv suan na	0
 过锰酸铵	guo meng suan an	0
 过锰酸钾	guo meng suan jia	0
-过锰酸鈉	guo meng suan na	0
+过锰酸钠	guo meng suan na	0
 过氧苯酰	guo yang ben xian	0
 过氧化丁酮	guo yang hua ding tong	0
 过氧化二苯甲酰	guo yang hua er ben jia xian	0
 过氧化钾	guo yang hua jia	1
-过氧化鈉	guo yang hua na	0
 环六亚甲基胺	huan liu ya jia ji an	0
 环六亚甲基四胺	huan liu ya jia ji si an	0
 环氧丙醇	huan yang bing chun	0
@@ -11209,7 +11208,7 @@ use_preset_vocabulary: false
 甲氧苯酚	jia yang ben fen	0
 甲乙醚	jia yi mi	0
 间甲苯酚	jian jia ben fen	0
-焦磷酸四鈉	jiao lin suan si na	0
+焦磷酸四钠	jiao lin suan si na	7
 聚乙醛	ju yi quan	0
 乐乃松	le nai song	0
 冷冻氦气	leng dong hai qi	0
@@ -11246,7 +11245,6 @@ use_preset_vocabulary: false
 氯甲酸丙酯	lv jia suan bing zhi	0
 氯甲酸甲酯	lv jia suan jia zhi	0
 氯酸铵	lv suan an	0
-氯酸鈉	lv suan na	0
 氯五氟乙烷	lv wu fu yi wan	0
 氯硝基丙烷	lv xiao ji bing wan	0
 氯亚硫酰	lv ya liu xian	0
@@ -11260,15 +11258,13 @@ use_preset_vocabulary: false
 喃甲醇	nan jia chun	0
 喃甲醛	nan jia quan	0
 氰胺化钙	qing an hua gai	0
-氢化铝鈉	qing hua lv na	0
-氰化鈉	qing hua na	0
+氢化铝钠	qing hua lv na	0
 氢化硼锂	qing hua peng li	0
 氢化锑	qing hua ti	0
-氰化铜鈉	qing hua tong na	0
+氰化铜钠	qing hua tong na	0
 氰基丙烯酸甲酯	qing ji bing xi suan jia zhi	1
 氢昆	qing kun	0
-氢硫化鈉	qing liu hua na	0
-氢氧化鈉	qing yang hua na	0
+氢硫化钠	qing liu hua na	0
 氢氧化铍	qing yang hua pi	2
 壬烷	ren wan	1
 乳酸正丁酯	ru suan zheng ding zhi	0
@@ -11341,7 +11337,6 @@ use_preset_vocabulary: false
 硝酸丙酯	xiao suan bing zhi	0
 硝酸镉	xiao suan ge	0
 硝酸铝	xiao suan lv	0
-硝酸鈉	xiao suan na	0
 硝酸镍	xiao suan nie	0
 硝酸铊	xiao suan ta	0
 硝酸亚汞	xiao suan ya gong	0
@@ -11349,10 +11344,7 @@ use_preset_vocabulary: false
 硝乙烷	xiao yi wan	0
 新戊烷	xin wu wan	6
 溴化甲烷	xiu hua jia wan	0
-溴酸鈉	xiu suan na	0
 溴乙烯	xiu yi xi	0
-亚氯酸鈉	ya lv suan na	0
-亚硝酸鈉	ya xiao suan na	0
 氧化氯二苯	yang hua lv er ben	0
 氧化锡	yang hua xi	0
 氧化亚汞	yang hua ya gong	0
@@ -26098,7 +26090,6 @@ use_preset_vocabulary: false
 叠氮化	die dan hua	0
 迭氮化钡	die dan hua bei	0
 迭氮化钠	die dan hua na	0
-叠氮化钠	die dan hua na	5
 迭氮化氢	die dan hua qing	0
 叠氮化氢	die dan hua qing	0
 叠氮化银	die dan hua yin	0
@@ -27545,7 +27536,6 @@ use_preset_vocabulary: false
 富液	fu ye	5
 富液闪蒸槽	fu ye shan zheng cao	0
 氟乙醇	fu yi chun	0
-氟乙酸钠	fu yi suan na	2
 氟吲哚	fu yin duo	0
 辅增塑剂	fu zeng su ji	0
 浮子流量计	fu zi liu liang ji	0
@@ -27713,7 +27703,6 @@ use_preset_vocabulary: false
 铬酸锂	ge suan li	0
 铬酸镁	ge suan mei	0
 铬酸锰	ge suan meng	0
-铬酸钠	ge suan na	0
 铬酸尿苷	ge suan niao gan	0
 铬酸铍	ge suan pi	0
 铬酸叔丁酯	ge suan shu ding zhi	0
@@ -27930,14 +27919,12 @@ use_preset_vocabulary: false
 过氯甲硫醇	guo lv jia liu chun	0
 过滤瓶	guo lv ping	0
 过氯酸	guo lv suan	0
-过氯酸钠	guo lv suan na	0
 过氯酸铅	guo lv suan qian	0
 过滤提升泵	guo lv ti sheng beng	0
 过氯乙烯树脂	guo lv yi xi shu zhi	0
 过滤装置	guo lv zhuang zhi	25
 过锰酸钡	guo meng suan bei	0
 过锰酸钙	guo meng suan gai	0
-过锰酸钠	guo meng suan na	0
 过锰酸锌	guo meng suan xin	0
 过硼酸	guo peng suan	0
 过硼酸钡	guo peng suan bei	0
@@ -28896,7 +28883,6 @@ use_preset_vocabulary: false
 交换能	jiao huan neng	0
 交联密度	jiao lian mi du	0
 焦磷酸锰	jiao lin suan meng	0
-焦磷酸四钠	jiao lin suan si na	7
 焦磷酸钛	jiao lin suan tai	0
 焦磷酸铁	jiao lin suan tie	0
 焦磷酸铁钠	jiao lin suan tie na	0
@@ -30955,7 +30941,6 @@ use_preset_vocabulary: false
 氢化喹诺酮	qing hua kui nuo tong	0
 氢化硫	qing hua liu	0
 氰化氯	qing hua lv	0
-氢化铝钠	qing hua lv na	0
 氰化镁	qing hua mei	1
 氰化镍	qing hua nie	0
 氰化镍钾	qing hua nie jia	0
@@ -30965,7 +30950,6 @@ use_preset_vocabulary: false
 氰化铈	qing hua shi	0
 氢化碳	qing hua tan	0
 氰化铜	qing hua tong	0
-氰化铜钠	qing hua tong na	0
 氰化溴	qing hua xiu	0
 氰化亚钴	qing hua ya gu	0
 氰化亚金钾	qing hua ya jin jia	0

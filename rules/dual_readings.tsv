@@ -1,0 +1,2 @@
+# word	py1	w1	note1	py2	w2	note2	target_file	source
+# 说明：A 类双标准词条单点声明；引擎自动确保主词库保留双读音，并在 corrections.dict.yaml 为双方挂注释（主词库已存在读音自动 w=0）

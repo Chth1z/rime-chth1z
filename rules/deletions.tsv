@@ -1,0 +1,4 @@
+# target_file	word	py	reason
+# 说明：py 填具体拼音或 *（匹配该词在目标文件中的所有读音）；.gram 高频粘连项禁止在此硬删
+cn_dicts_cell/composite.dict.yaml	巴黎圣日尔曼	*	错字（正字：巴黎圣日耳曼），防止从 ext 删除后由 composite 复活
+cn_dicts_cell/composite.dict.yaml	驾驶仓	*	错字（正字：驾驶舱），防止从 ext 删除后由 composite 复活

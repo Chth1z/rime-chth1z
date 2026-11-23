@@ -1,0 +1,3 @@
+# word	wrong_py	weight	comment	category	source
+# category: A(双标准注释) | B(个人多音习惯) | C(冷僻/专名/地名/成语) | E1(高频习惯错写，weight<=30)
+张柏芝	zhang bo zhi	0	习惯 zhāng bó zhī / 规范 zhāng bǎi zhī	A	base.dict.yaml 已存在 zhang bo zhi 680，注释行取 w=0 避免权重叠加

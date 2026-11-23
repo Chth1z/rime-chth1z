@@ -1,0 +1,53 @@
+# action	word	prefix_en	cn_syls	suffix_en	emit_lower	note
+# action:
+#   delete   -> word 为待删词，其余字段留空
+#   rename   -> word 为旧词，prefix_en 为新词
+#   case_fix -> word 为目标词，prefix_en 为旧编码前缀，suffix_en 为新编码前缀
+#   add      -> word + prefix_en + cn_syls(空格分隔全拼) + suffix_en + emit_lower(true/false)，自动派生全部 7 种拼音布局
+delete	n遍					垃圾低质混输词
+delete	动L					垃圾低质混输词
+delete	e仔					垃圾低质混输词
+delete	k他命					不规范/敏感词
+rename	Up主	UP主				统一大写品牌规范
+rename	Cinity厅	CINITY厅				统一大写品牌规范
+rename	Papi酱	papi酱				统一官方小写风格
+case_fix	UP主	Up		UP		同步修复编码大小写前缀
+case_fix	CINITY厅	Cinity		CINITY		同步修复编码大小写前缀
+add	AI大模型	AI	da mo xing		true	现代 AI 混输词
+add	AI助手	AI	zhu shou		true	现代 AI 混输词
+add	AI编程	AI	bian cheng		true	现代 AI 混输词
+add	AI绘画	AI	hui hua		true	现代 AI 混输词
+add	AI写作	AI	xie zuo		true	现代 AI 混输词
+add	AI搜索	AI	sou suo		true	现代 AI 混输词
+add	AI生成	AI	sheng cheng		true	现代 AI 混输词
+add	AI工具	AI	gong ju		true	现代 AI 混输词
+add	AI视频	AI	shi pin		true	现代 AI 混输词
+add	AI芯片	AI	xin pian		true	现代 AI 混输词
+add	AI手机	AI	shou ji		true	现代 AI 混输词
+add	AI时代	AI	shi dai		true	现代 AI 混输词
+add	Alt键	Alt	jian		true	常用快捷键词
+add	Win键	Win	jian		true	常用快捷键词
+add	API接口	API	jie kou		true	现代开发混输词
+add	API密钥	API	mi yue		true	现代开发混输词（规范音）
+add	API密钥	API	mi yao		true	现代开发混输词（习惯音）
+add	GPU算力	GPU	suan li		true	现代硬件混输词
+add	CPU占用	CPU	zhan yong		true	现代硬件混输词
+add	MCP协议	MCP	xie yi		true	现代 AI 协议词
+add	Token数	Token	shu		true	现代 AI 术语词
+add	RAG检索	RAG	jian suo		true	现代 AI 术语词
+add	PDF文件	PDF	wen jian		true	现代办公混输词
+add	PPT模板	PPT	mu ban		true	现代办公混输词（规范音）
+add	PPT模板	PPT	mo ban		true	现代办公混输词（习惯音）
+add	Word文档	Word	wen dang		true	现代办公混输词
+add	Excel表格	Excel	biao ge		true	现代办公混输词
+add	Git仓库	Git	cang ku		true	现代开发混输词
+add	GitHub仓库	GitHub	cang ku		true	现代开发混输词
+add	Docker容器	Docker	rong qi		true	现代开发混输词
+add	Python脚本	Python	jiao ben		true	现代开发混输词
+add	VSCode插件	VSCode	cha jian		true	现代开发混输词
+add	Wi-Fi信号	WiFi	xin hao		true	现代日常混输词
+add	修bug		xiu	bug	false	开发口语混输词
+add	测bug		ce	bug	false	开发口语混输词
+add	XS码	XS	ma		true	日常尺码混输词
+add	XL码	XL	ma		true	日常尺码混输词
+add	XXL码	XXL	ma		true	日常尺码混输词

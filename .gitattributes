@@ -1,0 +1,27 @@
+# Normalize line endings across Windows/Linux contributors and CI
+* text=auto
+
+# Dictionaries, rules, scripts, configs, and docs strictly use LF
+*.dict.yaml text eol=lf
+*.yaml      text eol=lf
+*.yml       text eol=lf
+*.txt       text eol=lf
+*.tsv       text eol=lf
+*.py        text eol=lf
+*.lua       text eol=lf
+*.json      text eol=lf
+*.md        text eol=lf
+*.sh        text eol=lf
+
+# PowerShell scripts use CRLF for native Windows compatibility
+*.ps1       text eol=crlf
+
+# Binary Rime / OpenCC / ONNX / media assets
+*.ocd2      binary
+*.bin       binary
+*.gram      binary
+*.onnx      binary
+*.dll       binary
+*.png       binary
+*.jpg       binary
+*.ico       binary

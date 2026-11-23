@@ -5107,6 +5107,7 @@ use_preset_vocabulary: false
 杆形卡环	gan xing ka huan	0
 干性糠疹	gan xing kang zhen	0
 肝血不足风中脉络证	gan xue bu zu feng zhong mai luo zheng	0
+肝血不足外感风邪证	gan xue bu zu wai gan feng xie zheng	0
 肝血不足证	gan xue bu zu zheng	0
 肝血亏虚证	gan xue kui xu zheng	0
 干血内结证	gan xue nei jie zheng	0
@@ -12806,6 +12807,7 @@ use_preset_vocabulary: false
 气血俱衰	qi xue ju shuai	0
 气血亏虚毒滞难化证	qi xue kui xu du zhi nan hua zheng	0
 气血亏虚服之康	qi xue kui xu fu zhi kang	0
+气血亏虚邪毒久困证	qi xue kui xu xie du jiu kun zheng	0
 气血亏虚证	qi xue kui xu zheng	0
 气血两燔	qi xue liang fan	0
 气血两燔证	qi xue liang fan zheng	0
@@ -13552,6 +13554,7 @@ use_preset_vocabulary: false
 热带念珠菌	re dai nian zhu jun	0
 热毒闭肺证	re du bi fei zheng	0
 热毒炽盛热传心包证	re du chi sheng re chuan xin bao zheng	0
+热毒炽盛邪入营血证	re du chi sheng xie ru ying xue zheng	0
 热毒炽盛证	re du chi sheng zheng	0
 热毒冲心证	re du chong xin zheng	0
 热毒传肺证	re du chuan fei zheng	0
@@ -18964,6 +18967,7 @@ use_preset_vocabulary: false
 邪窜经络证	xie cuan jing luo zheng	0
 谢德胸廓成形术	xie de xiong kuo cheng xing shu	0
 邪毒传里肺胃热盛证	xie du chuan li fei wei re sheng zheng	0
+邪毒久留气滞血瘀证	xie du jiu liu qi zhi xue yu zheng	0
 邪毒久留证	xie du jiu liu zheng	0
 邪毒内扰证	xie du nei rao zheng	0
 邪毒内陷心肝证	xie du nei xian xin gan zheng	0
@@ -18973,6 +18977,7 @@ use_preset_vocabulary: false
 邪毒引睾窜腹证	xie du yin gao cuan fu zheng	0
 邪毒壅塞证	xie du yong se zheng	0
 邪毒在表证	xie du zai biao zheng	0
+邪毒滞留气血瘀阻证	xie du zhi liu qi xue yu zu zheng	0
 邪遏卫气证	xie e wei qi zheng	0
 邪犯肺胃证	xie fan fei wei zheng	0
 邪犯肝脾证	xie fan gan pi zheng	0
@@ -19023,7 +19028,9 @@ use_preset_vocabulary: false
 邪入气营证	xie ru qi ying zheng	0
 邪入少阳证	xie ru shao yang zheng	0
 邪入卫气证	xie ru wei qi zheng	0
+邪入血分证	xie ru xue fen zheng	0
 邪入营分证	xie ru ying fen zheng	0
+邪入营血证	xie ru ying xue zheng	0
 血塞通软胶囊	xue sai tong ruan jiao nang	0
 邪盛正衰	xie sheng zheng shuai	0
 协调的异种移植	xie tiao de yi zhong yi zhi	0
@@ -19035,6 +19042,7 @@ use_preset_vocabulary: false
 邪袭肺卫证	xie xi fei wei zheng	0
 斜纤维	xie xian wei	0
 邪陷心包证	xie xian xin bao zheng	0
+邪陷心肝血热动风证	xie xian xin gan xue re dong feng zheng	0
 邪陷心肝证	xie xian xin gan zheng	0
 邪陷正脱证	xie xian zheng tuo zheng	0
 泄泻病	xie xie bing	1
@@ -19056,7 +19064,9 @@ use_preset_vocabulary: false
 邪在气营证	xie zai qi ying zheng	0
 邪在少阳证	xie zai shao yang zheng	0
 邪在卫气证	xie zai wei qi zheng	0
+邪在血分证	xie zai xue fen zheng	0
 邪在营分证	xie zai ying fen zheng	0
+邪在营血证	xie zai ying xue zheng	0
 邪正相搏	xie zheng xiang bo	0
 泄殖腔畸形	xie zhi qiang ji xing	0
 斜轴牙	xie zhou ya	0
@@ -19883,6 +19893,7 @@ use_preset_vocabulary: false
 血容量不足	xue rong liang bu zu	9
 血色素沉积症	xue se su chen ji zheng	0
 血色素沉着病	xue se su chen zhuo bing	1
+血升胃热火邪干	xue sheng wei re huo xie gan	0
 薛氏位	xue shi wei	0
 薛氏医案	xue shi yi an	0
 血栓闭塞性动脉炎	xue shuan bi se xing dong mai yan	0
@@ -19925,6 +19936,8 @@ use_preset_vocabulary: false
 血小板衍生生长因子	xue xiao ban yan sheng sheng zhang yin zi	0
 血小板源生长因子	xue xiao ban yuan sheng zhang yin zi	0
 血小板源性生长因子	xue xiao ban yuan xing sheng zhang yin zi	2
+血蝎	xue xie	0
+血泄	xue xie	0
 血性精液	xue xing jing ye	0
 血型抗原	xue xing kang yuan	11
 血型糖蛋白	xue xing tang dan bai	4
@@ -23765,6 +23778,7 @@ use_preset_vocabulary: false
 扁桃体钢丝	bian tao ti gang si	0
 扁桃注射器	bian tao zhu she qi	0
 便携式投影仪	bian xie shi tou ying yi	3
+便携式血气分析仪测试卡	bian xie shi xue qi fen xi yi ce shi ka	0
 变异株检测	bian yi zhu jian ce	0
 标本柜	biao ben gui	0
 标测导管	biao ce dao guan	0
@@ -88250,6 +88264,7 @@ use_preset_vocabulary: false
 高香草酰高香草基胺	gao xiang cao xian gao xiang cao ji an	0
 高效液相色普法	gao xiao ye xiang se pu fa	0
 高效液相色谱法	gao xiao ye xiang se pu fa	5
+高缬氨酸血症	gao xie an suan xue zheng	0
 高歇氏病	gao xie shi bing	0
 高信号	gao xin hao	0
 高性能射线观察镜	gao xing neng she xian guan cha jing	0
@@ -92717,6 +92732,7 @@ use_preset_vocabulary: false
 急性甲状腺炎	ji xing jia zhuang xian yan	2
 急性肩淋巴结炎	ji xing jian lin ba jie yan	0
 急性间歇性卟啉症	ji xing jian xie xing bu lin zheng	2
+急性间歇性肝血卟啉病	ji xing jian xie xing gan xue bu lin bing	0
 急性间质性胰腺炎	ji xing jian zhi xing yi xian yan	0
 急性浆液性中耳炎	ji xing jiang ye xing zhong er yan	0
 急性结膜炎期	ji xing jie mo yan qi	0
@@ -94284,6 +94300,8 @@ use_preset_vocabulary: false
 间歇性节律性活动	jian xie xing jie lv xing huo dong	0
 间歇性突眼	jian xie xing tu yan	0
 间歇性外斜视	jian xie xing wai xie shi	0
+间歇性血红蛋白尿	jian xie xing xue hong dan bai niao	0
+间歇性血尿	jian xie xing xue niao	1
 间歇性眼球突出症	jian xie xing yan qiu tu chu zheng	0
 健心颗粒二	jian xin ke li er	0
 健心糖衣片	jian xin tang yi pian	0
@@ -105922,6 +105940,7 @@ use_preset_vocabulary: false
 容许剂量	rong xu ji liang	0
 溶血法	rong xue fa	0
 溶血尿毒症性综合症	rong xue niao du zheng xing zong he zheng	0
+溶血性机械性贫血	rong xue xing ji xie xing pin xue	0
 溶血性贫血	rong xue xing pin xue	35
 溶血作用	rong xue zuo yong	0
 溶液培养	rong ye pei yang	0
@@ -112890,6 +112909,7 @@ use_preset_vocabulary: false
 协调异常	xie tiao yi chang	0
 协同癌形成	xie tong ai xing cheng	0
 协同刺激分子	xie tong ci ji fen zi	0
+胁痛咯血	xie tong ka xue	0
 谢通门	xie tong men	0
 协同生长	xie tong sheng zhang	0
 协同性坏死性蜂窝织炎	xie tong xing huai si xing feng wo zhi yan	0
@@ -114276,6 +114296,7 @@ use_preset_vocabulary: false
 血型不合	xue xing bu he	29
 血型单特异性抗体鉴定	xue xing dan te yi xing kang ti jian ding	0
 血性腹水	xue xing fu shui	1
+血性腹泻	xue xing fu xie	5
 血型抗体效价测定	xue xing kang ti xiao jia ce ding	0
 血胸伴胸腔开放性伤口	xue xiong ban xiong qiang kai fang xing shang kou	0
 血胸清除术	xue xiong qing chu shu	0
@@ -116272,6 +116293,7 @@ use_preset_vocabulary: false
 益香当红	yi xiang dang hong	0
 一小时尿沉渣计数	yi xiao shi niao chen zha ji shu	0
 一小时尿细胞排泄率	yi xiao shi niao xi bao pai xie lv	0
+异缬氨酸血症	yi xie an suan xue zheng	0
 益心巴迪然吉布亚	yi xin ba di ran ji bu ya	0
 伊辛保	yi xin bao	0
 薏辛除湿止痛	yi xin chu shi zhi tong	0

@@ -1,0 +1,188 @@
+# word	code	weight	category
+# category: hardware | ai | dev | consumer
+# Hardware / OS completion
+Two-Factor Authentication	2FA		hardware
+macOS Sequoia	macOS	9	hardware
+macOS Sequoia	macOSSequoia		hardware
+macOS Tahoe	macOSTahoe		hardware
+AirPods Pro	AirPods	2	hardware
+iPhone 16e	iPhone16e		hardware
+iPhone 17	iPhone17		hardware
+iPhone 17 Pro	iPhone17Pro		hardware
+iPhone 17 Pro Max	iPhone17ProMax		hardware
+iPhone Air	iPhoneAir		hardware
+Xbox Series X	XboxSeriesX		hardware
+RIP	RIP		consumer
+# 2024-2026 AI / LLM / Agent ecosystem
+LLM	LLM		ai
+Large Language Model	LLM		ai
+LLMs	LLMs		ai
+VLM	VLM		ai
+Vision Language Model	VLM		ai
+MCP	MCP		ai
+Model Context Protocol	MCP		ai
+NPU	NPU		ai
+Neural Processing Unit	NPU		ai
+TPU	TPU		ai
+Tensor Processing Unit	TPU		ai
+ONNX	ONNX		ai
+RAG	RAG		ai
+Retrieval-Augmented Generation	RAG		ai
+LoRA	LoRA		ai
+RLHF	RLHF		ai
+GRPO	GRPO		ai
+MoE	MoE		ai
+Mixture of Experts	MoE		ai
+SFT	SFT		ai
+DPO	DPO		ai
+CoT	CoT		ai
+Chain of Thought	CoT		ai
+TTS	TTS		ai
+Text-to-Speech	TTS		ai
+ASR	ASR		ai
+Automatic Speech Recognition	ASR		ai
+SOTA	SOTA		ai
+Agentic	Agentic		ai
+Embedding	Embedding		ai
+PyTorch	PyTorch		ai
+TensorFlow	TensorFlow		ai
+CUDA	CUDA		ai
+TensorRT	TensorRT		ai
+ROCm	ROCm		ai
+MLX	MLX		ai
+Ollama	Ollama		ai
+vLLM	vLLM		ai
+GGUF	GGUF		ai
+LM Studio	LMStudio		ai
+ComfyUI	ComfyUI		ai
+Claude Code	ClaudeCode		ai
+DeepSeek-R1	DeepSeek-R1		ai
+DeepSeek-V3	DeepSeek-V3		ai
+GPT-4o	GPT-4o		ai
+GPT-4.1	GPT-4.1		ai
+GPT-5	GPT-5		ai
+Qwen	Qwen		ai
+Kimi	Kimi		ai
+Doubao	Doubao		ai
+Mistral	Mistral		ai
+Llama	Llama		ai
+Cursor	Cursor		ai
+Windsurf	Windsurf		ai
+Cline	Cline		ai
+Aider	Aider		ai
+Trae	Trae		ai
+Manus	Manus		ai
+Dify	Dify		ai
+Coze	Coze		ai
+n8n	n8n		ai
+LangGraph	LangGraph		ai
+OpenRouter	OpenRouter		ai
+ModelScope	ModelScope		ai
+NotebookLM	NotebookLM		ai
+Copilot	Copilot		ai
+Perplexity	Perplexity		ai
+Antigravity	Antigravity		ai
+# Dev / Infra / Rime / Data formats
+Docker	Docker		dev
+Podman	Podman		dev
+Rust	Rust		dev
+Rime	Rime		dev
+Weasel	Weasel		dev
+Squirrel	Squirrel		dev
+Hamster	Hamster		dev
+Trime	Trime		dev
+CSV	CSV		dev
+TSV	TSV		dev
+JSONL	JSONL		dev
+Parquet	Parquet		dev
+gRPC	gRPC		dev
+OAuth	OAuth		dev
+JWT	JWT		dev
+SSO	SSO		dev
+MFA	MFA		dev
+CORS	CORS		dev
+CI/CD	CI/CD		dev
+WSL	WSL		dev
+WSL2	WSL2		dev
+Tailscale	Tailscale		dev
+Supabase	Supabase		dev
+FastAPI	FastAPI		dev
+Pydantic	Pydantic		dev
+Vite	Vite		dev
+Svelte	Svelte		dev
+Nuxt	Nuxt		dev
+React	React		dev
+Bun	Bun		dev
+Deno	Deno		dev
+Tauri	Tauri		dev
+CMake	CMake		dev
+Zig	Zig		dev
+NixOS	NixOS		dev
+DuckDB	DuckDB		dev
+ClickHouse	ClickHouse		dev
+Kafka	Kafka		dev
+RabbitMQ	RabbitMQ		dev
+Milvus	Milvus		dev
+Qdrant	Qdrant		dev
+Prisma	Prisma		dev
+Drizzle	Drizzle		dev
+Telegram	Telegram		dev
+Feishu	Feishu		dev
+Obsidian	Obsidian		dev
+Zed	Zed		dev
+Ghostty	Ghostty		dev
+WezTerm	WezTerm		dev
+Alacritty	Alacritty		dev
+Zotero	Zotero		dev
+Overleaf	Overleaf		dev
+# Semiconductor / Hardware / OS / Workplace / Consumer
+Qualcomm	Qualcomm		hardware
+MediaTek	MediaTek		hardware
+TSMC	TSMC		hardware
+ASML	ASML		hardware
+RTX	RTX		hardware
+DLSS	DLSS		hardware
+OLED	OLED		hardware
+HDR	HDR		hardware
+SoC	SoC		hardware
+RISC-V	RISC-V		hardware
+visionOS	visionOS		hardware
+HyperOS	HyperOS		hardware
+MagicOS	MagicOS		hardware
+USB4	USB4		hardware
+Wi-Fi 6	WiFi6		hardware
+Wi-Fi 7	WiFi7		hardware
+PS5	PS5		hardware
+Switch 2	Switch2		hardware
+Redmi	Redmi		consumer
+OnePlus	OnePlus		consumer
+iQOO	iQOO		consumer
+realme	realme		consumer
+Bambu	Bambu		consumer
+Taobao	Taobao		consumer
+Weibo	Weibo		consumer
+Xiaohongshu	Xiaohongshu		consumer
+RedNote	RedNote		consumer
+OKR	OKR		consumer
+ROI	ROI		consumer
+GMV	GMV		consumer
+DAU	DAU		consumer
+MAU	MAU		consumer
+SOP	SOP		consumer
+PRD	PRD		consumer
+SKU	SKU		consumer
+MBTI	MBTI		consumer
+KOL	KOL		consumer
+MCN	MCN		consumer
+UGC	UGC		consumer
+ETF	ETF		consumer
+ESG	ESG		consumer
+CPI	CPI		consumer
+PMI	PMI		consumer
+ADAS	ADAS		hardware
+NOA	NOA		hardware
+FSD	FSD		hardware
+LiDAR	LiDAR		hardware
+PHEV	PHEV		hardware
+BEV	BEV		hardware
+EREV	EREV		hardware

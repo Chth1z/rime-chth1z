@@ -79,5 +79,5 @@
 
 - **看实测数据**：改完性能或配置都用 `bench/bench-rime.ps1` 和回归测试验证，不凭感觉下结论。
 - **文档保持朴素**：README 和仓库里的文档写清楚事实和用法就行，不堆虚词。
-- **词库清洗走脚本**：上游词库同步后由 `scripts/clean-dicts.py`（幂等且按内容锚点定位）统一清洗、去重与权重校准；新增词库修复规则统一沉淀进该脚本，避免下次同步被上游覆写。
+- **词库清洗与治理走规范**：词库收词、审音、纠错分类、权重标尺与上线门禁统一遵循 [`docs/DICTIONARY_SPEC.md`](docs/DICTIONARY_SPEC.md)；新增词库覆写统一写入声明式规则目录 `rules/`（中英混输通过 `rules/cn_en_source.tsv` ＋ `scripts/build_cn_en.py` 派生 7 份布局文件），由 `scripts/clean-dicts.py` 幂等应用、`scripts/dict_lint.py` 校验，避免下次上游同步被覆写。
 - **提上游 Issue 从严**：遵守 [`docs/upstream-issues/GUIDELINE.md`](docs/upstream-issues/GUIDELINE.md)，只提实测复现、有实际影响的真 Bug，不提视角或习惯分歧带来的伪问题。

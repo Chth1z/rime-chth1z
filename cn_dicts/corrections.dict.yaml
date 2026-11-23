@@ -140,7 +140,7 @@ columns:
 按捺不住	an nai bu zhu	150	按耐(捺nà)不住
 血脉偾张	xue mai pen zhang	100	误作喷张 / 规范血脉偾(fèn)张
 摩羯座	mo xie zuo	100	魔蝎(摩羯jié)座
-# 常用易错音与习惯读音提示
+# 常用易错音、争议读音与习惯读音提示
 仿佛	fang fo	150	仿(fǎng)佛(fú)
 仿佛	pang fu	0	仿(fǎng)佛(fú)
 纨绔子弟	wan kua zi di	100	纨(wán)绔(kù)子弟
@@ -177,11 +177,10 @@ columns:
 镀铬	du luo	50	镀铬(gè)
 凑合	cou huo	150	凑合(he)
 契诃夫	qi ke fu	100	契科(诃hē)夫
-# 常用易错音、争议读音与习惯读音提示
 味噌	wei ceng	0	规范 wèi cēng / 习惯 wèi zēng
 味噌	wei zeng	0	习惯 wèi zēng / 规范 wèi cēng
 雪佛兰	xue fu lan	150	旧读 xuě fú lán / 规范 xuě fó lán
-张柏芝	zhang bo zhi	80	习惯 zhāng bó zhī / 规范 zhāng bǎi zhī
+张柏芝	zhang bo zhi	0	习惯 zhāng bó zhī / 规范 zhāng bǎi zhī
 密钥	mi yue	0	规范 mì yuè / 习惯 mì yào
 密钥	mi yao	350	习惯 mì yào / 规范 mì yuè
 模板	mu ban	0	规范 mú bǎn / 习惯 mó bǎn

@@ -31,6 +31,12 @@ try {
         if ($LASTEXITCODE -ne 0) { throw "clean-dicts.py failed" }
     }
 
+    $linter = Join-Path $repoRoot "scripts\dict_lint.py"
+    if (Test-Path $linter) {
+        python $linter --strict --idempotent --diff-budget
+        if ($LASTEXITCODE -ne 0) { throw "dict_lint.py failed" }
+    }
+
     $status = git status --short
     if (-not $status) {
         Write-Output "Dictionaries already match cleaned upstream/master @ $sha."

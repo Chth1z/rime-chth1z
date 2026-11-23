@@ -14,7 +14,9 @@ import pathlib
 import re
 from collections import Counter
 
+import build_cn_en
 import clean_r2_rules as r2
+import dict_rules
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC_ROOT = REPO_ROOT
@@ -882,8 +884,8 @@ def clean_ext(lines: list[str], stats: dict) -> list[str]:
         elif (w, py) in ext_pair_rw and w_int(wt) > ext_pair_rw[(w, py)]:
             wt = str(ext_pair_rw[(w, py)])
             stats["reweighted"] += 1
-        # Downweight medical xie clones in ext (idempotent: threshold > 50)
-        if "血" in w and "xie" in py.split() and w_int(wt) > 50:
+        # Downweight medical xie clones in ext (idempotent: threshold > 50, char-aligned check)
+        if "血" in w and any(ch == "血" and sy == "xie" for ch, sy in zip(w, py.split())) and w_int(wt) > 50:
             wt = str(min(w_int(wt) // 8, 50))
             stats["reweighted"] += 1
         if w in ext_reweight and w_int(wt) > ext_reweight[w]:
@@ -1919,11 +1921,11 @@ def clean_medication(lines: list[str], stats: dict) -> list[str]:
     med_py_fixes.update(r2.R2_MED_PY_FIXES)
     delete_words = {"海尔洗衣机", "海咯因检测试剂", "种氨基酸", "牛羊等", "尅伐", "派蒙"} | r2.R2_MED_DELETE_WORDS
 
-    # Pre-scan which medical words already have an 'xue' version so we can drop redundant 'xie' clones
+    # Pre-scan which medical words already have a char-aligned 血=xue version so we can drop redundant 血=xie clones
     has_xue = set()
     for line in body:
         p = parse_entry(line)
-        if p and "血" in p[0] and "xue" in p[1].split():
+        if p and "血" in p[0] and any(ch == "血" and sy == "xue" for ch, sy in zip(p[0], p[1].split())):
             has_xue.add(p[0])
 
     for offset, line in enumerate(body):
@@ -1958,8 +1960,8 @@ def clean_medication(lines: list[str], stats: dict) -> list[str]:
                 continue
             py = new_py
             stats["fixed_py"] += 1
-        # Unify xie -> xue inside medical dict (delete xie dup if xue exists, else fix)
-        if "血" in w and "xie" in py.split():
+        # Unify char-aligned 血=xie -> xue inside medical dict (delete xie dup if xue exists, else fix)
+        if "血" in w and any(ch == "血" and sy == "xie" for ch, sy in zip(w, py.split())):
             if w in has_xue:
                 stats["deleted_xie_dup"] += 1
                 continue
@@ -1968,6 +1970,13 @@ def clean_medication(lines: list[str], stats: dict) -> list[str]:
                 if new_py != py:
                     py = new_py
                     stats["fixed_py"] += 1
+                    if (w, py) in med_py_fixes:
+                        new_py2 = med_py_fixes[(w, py)]
+                        if new_py2 is None:
+                            stats["deleted_wrong_py"] += 1
+                            continue
+                        py = new_py2
+                        stats["fixed_py"] += 1
         if w in r2.R2_MED_BOOST and w_int(wt) < r2.R2_MED_BOOST[w]:
             wt = str(r2.R2_MED_BOOST[w])
             stats["reweighted"] += 1
@@ -2104,6 +2113,13 @@ def clean_game(lines: list[str], stats: dict) -> list[str]:
             stats["fixed_word_or_trad"] += 1
             if had_ji and "zhen" in py.split():
                 py = replace_syl_at(w, py, "姬", "zhen", "ji")
+                stats["fixed_py"] += 1
+            if (w, py) in game_py_fixes:
+                new_py = game_py_fixes[(w, py)]
+                if new_py is None:
+                    stats["deleted_wrong_py"] += 1
+                    continue
+                py = new_py
                 stats["fixed_py"] += 1
         if w in delete_words:
             stats["deleted_noise_or_typo"] += 1
@@ -3327,7 +3343,7 @@ def clean_generic(lines: list[str], stats: dict) -> list[str]:
 # English & OpenCC cleaners
 # ---------------------------------------------------------------------------
 
-def clean_en_dicts(manifest: dict) -> None:
+def clean_en_dicts(manifest: dict, ruleset: dict_rules.RuleSet, rule_hits: dict[str, int]) -> None:
     en_dir = DST_ROOT / "en_dicts"
     en_dir.mkdir(parents=True, exist_ok=True)
 
@@ -3376,12 +3392,18 @@ def clean_en_dicts(manifest: dict) -> None:
             continue
         ext_seen.add((w, code))
         ext_out.append(format_entry(w, code, wt, extra))
-    new_en_rows = [(w, code, wt) for (w, code, wt) in r2.R2_EN_EXT_ADDITIONS if (w, code) not in ext_seen]
+    new_en_rows = []
+    for er in ruleset.en_additions:
+        if (er.word, er.code) in ext_seen:
+            rule_hits[er.rule_id] += 1
+        else:
+            new_en_rows.append(er)
     if new_en_rows:
         ext_out.append("# 补充现代 AI / 开发 / 硬件常用英文词汇")
-        for w, code, wt in new_en_rows:
-            ext_seen.add((w, code))
-            ext_out.append(format_entry(w, code, wt, []))
+        for er in new_en_rows:
+            ext_seen.add((er.word, er.code))
+            ext_out.append(format_entry(er.word, er.code, er.weight, []))
+            rule_hits[er.rule_id] += 1
             ext_added += 1
     (en_dir / "en_ext.dict.yaml").write_text("\n".join(ext_out) + "\n", encoding="utf-8", newline="\n")
     manifest["files"]["en_dicts/en_ext.dict.yaml"] = {
@@ -3429,11 +3451,17 @@ def clean_en_dicts(manifest: dict) -> None:
         "before": len(en_lines), "after": len(en_out), "deleted": en_del, "deduped_against_en_ext": en_dedup
     }
 
-    # 3. cn_en.txt & all 6 shuangpin cn_en_*.txt tables (kept 100% synced)
-    r2.clean_all_cn_en_files(SRC_ROOT, DST_ROOT, manifest)
+    # 3. cn_en.txt & all 6 shuangpin cn_en_*.txt tables (driven from rules/cn_en_source.tsv)
+    build_cn_en.apply_cn_en_rules(
+        SRC_ROOT,
+        DST_ROOT,
+        ruleset.rules_dir / "cn_en_source.tsv",
+        manifest=manifest,
+        rule_hits=rule_hits,
+    )
 
 
-def clean_opencc_texts(manifest: dict) -> None:
+def clean_opencc_texts(manifest: dict, ruleset: dict_rules.RuleSet, rule_hits: dict[str, int]) -> None:
     occ_dir = DST_ROOT / "opencc"
     occ_dir.mkdir(parents=True, exist_ok=True)
 
@@ -3489,6 +3517,8 @@ def clean_opencc_texts(manifest: dict) -> None:
         if line != orig:
             fixes += 1
         out.append(line)
+    out, ov_fixes = dict_rules.apply_opencc_overlay("opencc/others.txt", out, ruleset, rule_hits)
+    fixes += ov_fixes
     (occ_dir / "others.txt").write_text("\n".join(out) + "\n", encoding="utf-8", newline="\n")
     manifest["files"]["opencc/others.txt"] = {"before": len(src_lines), "after": len(out), "fixed": fixes}
 
@@ -3503,6 +3533,8 @@ def clean_opencc_texts(manifest: dict) -> None:
                 line = "黑人\t黑人 black\u00a0person black unregistered\u00a0person"
                 ce_fixed += 1
             ce_out.append(line)
+        ce_out, ce_ov = dict_rules.apply_opencc_overlay("opencc/chinese_english.txt", ce_out, ruleset, rule_hits)
+        ce_fixed += ce_ov
         (occ_dir / "chinese_english.txt").write_text("\n".join(ce_out) + "\n", encoding="utf-8", newline="\n")
         manifest["files"]["opencc/chinese_english.txt"] = {"before": len(ce_lines), "after": len(ce_out), "fixed": ce_fixed}
 
@@ -3517,28 +3549,73 @@ def clean_opencc_texts(manifest: dict) -> None:
                 ec_del += 1
                 continue
             ec_out.append(line)
+        ec_out, ec_ov = dict_rules.apply_opencc_overlay("opencc/english_chinese.txt", ec_out, ruleset, rule_hits)
         (occ_dir / "english_chinese.txt").write_text("\n".join(ec_out) + "\n", encoding="utf-8", newline="\n")
-        manifest["files"]["opencc/english_chinese.txt"] = {"before": len(ec_lines), "after": len(ec_out), "deleted": ec_del}
+        manifest["files"]["opencc/english_chinese.txt"] = {
+            "before": len(ec_lines), "after": len(ec_out), "deleted": ec_del, "overlay_fixed": ec_ov,
+        }
+
+    # 4. opencc/emoji.txt (pass-through + optional rules/opencc_fixes.tsv overlay)
+    em_path = SRC_ROOT / "opencc/emoji.txt"
+    if em_path.exists():
+        em_lines = em_path.read_text(encoding="utf-8").splitlines()
+        em_out, em_ov = dict_rules.apply_opencc_overlay("opencc/emoji.txt", em_lines, ruleset, rule_hits)
+        (occ_dir / "emoji.txt").write_text("\n".join(em_out) + "\n", encoding="utf-8", newline="\n")
+        manifest["files"]["opencc/emoji.txt"] = {"before": len(em_lines), "after": len(em_out), "overlay_fixed": em_ov}
 
 
 # ---------------------------------------------------------------------------
 # Main pipeline + global cross-file deduplication + invariant verification
 # ---------------------------------------------------------------------------
 
+def _dedup_within_file(lines: list[str], st: Counter) -> list[str]:
+    hdr, body = split_header_body(lines)
+    best_wt: dict[tuple[str, str], int] = {}
+    for l in body:
+        p = parse_entry(l)
+        if p:
+            k = (p[0], p[1])
+            v = w_int(p[2])
+            if k not in best_wt or v > best_wt[k]:
+                best_wt[k] = v
+    dedup_body = []
+    emitted = set()
+    for l in body:
+        p = parse_entry(l)
+        if not p:
+            dedup_body.append(l)
+            continue
+        k = (p[0], p[1])
+        if k in emitted:
+            st["dedup_within_file"] += 1
+            continue
+        emitted.add(k)
+        wt_str = str(best_wt[k]) if p[2] != "" else ""
+        dedup_body.append(format_entry(p[0], p[1], wt_str, p[3]))
+    return hdr + dedup_body
+
+
 def main() -> None:
     global SRC_ROOT, DST_ROOT
     ap = argparse.ArgumentParser(description="Clean and deduplicate rime-chth1z dictionaries in place.")
     ap.add_argument("--src-dir", type=pathlib.Path, default=REPO_ROOT)
     ap.add_argument("--out-dir", type=pathlib.Path, default=None, help="Defaults to --src-dir (in-place)")
+    ap.add_argument("--rules-dir", type=pathlib.Path, default=REPO_ROOT / "rules", help="Declarative rules/ directory")
     ap.add_argument("--manifest", type=pathlib.Path, default=None, help="Optional path to write JSON summary")
     args = ap.parse_args()
 
     SRC_ROOT = args.src_dir.resolve()
     DST_ROOT = (args.out_dir or args.src_dir).resolve()
+    rules_dir = args.rules_dir.resolve()
     (DST_ROOT / "cn_dicts").mkdir(parents=True, exist_ok=True)
     (DST_ROOT / "cn_dicts_cell").mkdir(parents=True, exist_ok=True)
 
-    manifest: dict = {"files": {}, "summary": {}}
+    ruleset = dict_rules.load_ruleset(rules_dir)
+    if ruleset.errors:
+        raise SystemExit("Declarative rules validation failed:\n  " + "\n  ".join(ruleset.errors))
+    rule_hits: dict[str, int] = {rid: 0 for rid in ruleset.all_rule_ids()}
+
+    manifest: dict = {"files": {}, "rules": {}, "summary": {}}
 
     # Ordered by global deduplication precedence
     cn_plan = [
@@ -3572,7 +3649,7 @@ def main() -> None:
         ("cn_dicts_cell/luna.dict.yaml", clean_luna),
     ]
 
-    # Step 1: per-file cleaning + within-file deduplication (keep highest weight)
+    # Step 1: per-file cleaning + declarative rules/ overlay + within-file deduplication
     cleaned_files: dict[str, list[str]] = {}
     file_stats: dict[str, Counter] = {}
     before_entries_total = 0
@@ -3583,33 +3660,26 @@ def main() -> None:
         st: Counter = Counter()
         st["before_entries"] = before_entries
         out_lines = cleaner(raw_lines, st)
+        if rel != "cn_dicts/corrections.dict.yaml":
+            out_lines = dict_rules.apply_cn_overlay(rel, out_lines, ruleset, rule_hits, st)
+        cleaned_files[rel] = _dedup_within_file(out_lines, st)
+        file_stats[rel] = st
 
-        # Within-file dedup (keep max weight for exact (word, py))
-        hdr, body = split_header_body(out_lines)
-        best_wt: dict[tuple[str, str], int] = {}
+    # Step 1.5: apply corrections/dual_readings declarative overlay with full knowledge of active CN keys
+    active_keys: set[tuple[str, str]] = set()
+    for rel, _ in cn_plan:
+        if rel in ("cn_dicts/corrections.dict.yaml", "cn_dicts_cell/luna.dict.yaml"):
+            continue
+        _, body = split_header_body(cleaned_files[rel])
         for l in body:
             p = parse_entry(l)
             if p:
-                k = (p[0], p[1])
-                v = w_int(p[2])
-                if k not in best_wt or v > best_wt[k]:
-                    best_wt[k] = v
-        dedup_body = []
-        emitted = set()
-        for l in body:
-            p = parse_entry(l)
-            if not p:
-                dedup_body.append(l)
-                continue
-            k = (p[0], p[1])
-            if k in emitted:
-                st["dedup_within_file"] += 1
-                continue
-            emitted.add(k)
-            wt_str = str(best_wt[k]) if p[2] != "" else ""
-            dedup_body.append(format_entry(p[0], p[1], wt_str, p[3]))
-        cleaned_files[rel] = hdr + dedup_body
-        file_stats[rel] = st
+                active_keys.add((p[0], p[1]))
+    corr_rel = "cn_dicts/corrections.dict.yaml"
+    corr_updated = dict_rules.apply_corrections_overlay(
+        cleaned_files[corr_rel], ruleset, active_keys, rule_hits, file_stats[corr_rel]
+    )
+    cleaned_files[corr_rel] = _dedup_within_file(corr_updated, file_stats[corr_rel])
 
     # Step 2: global cross-file deduplication (excluding corrections.dict.yaml from polluting global_seen,
     # and excluding luna.dict.yaml from global_seen since luna is disabled in backup rime_frost.dict.yaml)
@@ -3648,7 +3718,11 @@ def main() -> None:
     # Step 3: ensure cn_dicts_cell/luna is disabled & modern alphanumeric combos exist in rime_frost.dict.yaml
     rf_lines = (SRC_ROOT / "rime_frost.dict.yaml").read_text(encoding="utf-8").splitlines()
     rf_existing = {l.strip() for l in rf_lines if l.strip() and not l.strip().startswith("#")}
-    rf_missing = [tok for tok in r2.R2_RIME_FROST_ALPHANUM_ADDITIONS if tok not in rf_existing]
+    rf_missing = []
+    for tok in ruleset.alphanum_additions:
+        rule_hits[f"alphanum_additions.txt:{tok}"] += 1
+        if tok not in rf_existing:
+            rf_missing.append(tok)
     rf_out = []
     inserted_alphanum = False
     for l in rf_lines:
@@ -3662,8 +3736,9 @@ def main() -> None:
     (DST_ROOT / "rime_frost.dict.yaml").write_text("\n".join(rf_out) + "\n", encoding="utf-8", newline="\n")
 
     # Step 4: English & OpenCC
-    clean_en_dicts(manifest)
-    clean_opencc_texts(manifest)
+    clean_en_dicts(manifest, ruleset, rule_hits)
+    clean_opencc_texts(manifest, ruleset, rule_hits)
+    manifest["rules"] = dict_rules.summarize_rule_hits(ruleset, rule_hits)
 
     # Step 5: Post-cleanup invariant verification across ALL 27 CN dicts in DST_ROOT
     valid_syls = set()

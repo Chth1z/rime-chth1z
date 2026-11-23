@@ -1,0 +1,5 @@
+# target_file	word	old_py	new_py	reason	source
+# 示例：cn_dicts/base.dict.yaml	某个词	old py	new py	规范读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	召南	zhao nan	shao nan	周代召公封地规范读 shào nán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	召忽死之	zhao hu si zhi	shao hu si zhi	春秋人物召忽规范读 shào hū	现汉第7版
+cn_dicts_cell/name2.dict.yaml	丰田早姬	li tian zao ji	feng tian zao ji	日本姓氏豊田简体“丰”规范读 fēng（非 lǐ）	现汉第7版

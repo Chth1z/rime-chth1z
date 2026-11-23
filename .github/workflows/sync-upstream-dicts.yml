@@ -8,6 +8,8 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
+  issues: write
 
 concurrency:
   group: sync-upstream-dicts
@@ -30,7 +32,7 @@ jobs:
           UPSTREAM_SHA=$(git rev-parse --short upstream/master)
           echo "upstream_sha=${UPSTREAM_SHA}" >> "$GITHUB_OUTPUT"
 
-          # Sync upstream dictionaries & OpenCC text tables — keep local .ocd2 binaries, lua/, schemas, profiles/, themes/, and workflows
+          # Sync upstream dictionaries & OpenCC text tables — keep local .ocd2 binaries, lua/, schemas, profiles/, themes/, rules/, and workflows
           git checkout upstream/master -- \
             cn_dicts/ \
             cn_dicts_cell/ \
@@ -41,35 +43,104 @@ jobs:
             opencc/others.txt
 
       - name: Run deterministic dictionary & OpenCC cleaner
-        run: python3 scripts/clean-dicts.py
+        run: python3 scripts/clean-dicts.py --manifest /tmp/clean-manifest.json
 
-      - name: Verify dictionary & OpenCC integrity
+      - name: Run strict dictionary lint, idempotency, and diff-budget gate
+        id: lint
+        continue-on-error: true
         run: |
-          python3 - <<'PY'
+          python3 scripts/dict_lint.py \
+            --strict \
+            --idempotent \
+            --diff-budget \
+            --max-active-delta 5000 \
+            --max-corrections-delta 50 \
+            --max-cn-en-delta 200 \
+            --github-output "$GITHUB_OUTPUT" \
+            --json /tmp/lint-report.json
+
+      - name: Open issue and halt if dictionary lint failed
+        if: steps.lint.outcome != 'success' || steps.lint.outputs.lint_ok != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY' > /tmp/lint-issue.md
           import json, pathlib
-          root = pathlib.Path('.')
-          required_dicts = [
-              'cn_dicts/8105.dict.yaml',
-              'cn_dicts/base.dict.yaml',
-              'cn_dicts/ext.dict.yaml',
-              'cn_dicts/corrections.dict.yaml',
-              'en_dicts/en.dict.yaml',
-              'en_dicts/en_ext.dict.yaml',
-          ]
-          for rel in required_dicts:
-              p = root / rel
-              assert p.exists() and p.stat().st_size > 100, f"Invalid dict: {rel}"
-          for jf in (root / 'opencc').glob('*.json'):
-              json.loads(jf.read_text(encoding='utf-8'))
-          print("Integrity check PASSED.")
+          p = pathlib.Path("/tmp/lint-report.json")
+          print("## 上游词库同步被静态门禁拦截\n")
+          print("自动同步 `gaboolic/rime-frost` 后 `scripts/dict_lint.py` 校验未通过，已阻断推送至 `main`。\n")
+          if p.exists():
+              r = json.loads(p.read_text(encoding="utf-8"))
+              print(f"- 错误数：`{r.get('error_count', 0)}`")
+              print(f"- 告警数：`{r.get('warning_count', 0)}`\n")
+              if r.get("errors"):
+                  print("### 错误明细\n")
+                  for err in r["errors"][:30]:
+                      print(f"- `{err}`")
+          else:
+              print("未生成 `/tmp/lint-report.json`，请查看本次 GitHub Actions 日志。")
+          PY
+          gh issue create \
+            --title "[CI] 上游词库同步门禁失败 (@ ${{ steps.sync.outputs.upstream_sha }})" \
+            --body-file /tmp/lint-issue.md || true
+          exit 1
+
+      - name: Check whether dictionary files changed
+        id: diff
+        run: |
+          if [ -z "$(git status --porcelain -- cn_dicts/ cn_dicts_cell/ en_dicts/ opencc/ rime_frost.dict.yaml)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Dictionaries already up to date."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git status --short -- cn_dicts/ cn_dicts_cell/ en_dicts/ opencc/ rime_frost.dict.yaml
+          fi
+
+      - name: Circuit breaker — open PR when change exceeds auto-merge budget
+        if: steps.diff.outputs.changed == 'true' && steps.lint.outputs.needs_review == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          UPSTREAM_SHA: ${{ steps.sync.outputs.upstream_sha }}
+          DIFF_SUMMARY: ${{ steps.lint.outputs.diff_summary }}
+          REVIEW_REASONS: ${{ steps.lint.outputs.review_reasons }}
+        run: |
+          BRANCH="chore/dict-sync-${{ steps.sync.outputs.upstream_sha }}"
+          git checkout -B "$BRANCH"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cn_dicts/ cn_dicts_cell/ en_dicts/ opencc/ rime_frost.dict.yaml
+          git commit -m "chore(dicts): sync upstream rime-frost @ ${{ steps.sync.outputs.upstream_sha }} (review required)"
+          git push --force origin "HEAD:${BRANCH}"
+
+          python3 - <<'PY' > /tmp/pr-body.md
+          import json, os, pathlib
+          print("## 上游词库同步触发大变动熔断（需人工复核）\n")
+          print(f"- 上游提交：`gaboolic/rime-frost @ {os.environ.get('UPSTREAM_SHA', '')}`")
+          print(f"- 变动摘要：`{os.environ.get('DIFF_SUMMARY', '')}`")
+          print(f"- 触发原因：`{os.environ.get('REVIEW_REASONS', '')}`\n")
+          mp = pathlib.Path("/tmp/clean-manifest.json")
+          if mp.exists():
+              m = json.loads(mp.read_text(encoding="utf-8"))
+              rules = m.get("rules", {})
+              if rules:
+                  print(f"- 声明式规则命中：`{rules.get('matched_rules', 0)}/{rules.get('total_rules', 0)}`（零命中：`{rules.get('zero_hit_count', 0)}`）\n")
+          print("请复核变动并在本机跑完 `bench/accuracy-test.ps1` 与盲测验收后再合入 `main`。")
           PY
 
-      - name: Commit and push if dictionaries changed
-        run: |
-          if [ -z "$(git status --porcelain)" ]; then
-            echo "Dictionaries already up to date."
-            exit 0
+          if ! gh pr create \
+            --base main \
+            --head "$BRANCH" \
+            --title "chore(dicts): sync upstream rime-frost @ ${{ steps.sync.outputs.upstream_sha }} (review required)" \
+            --body-file /tmp/pr-body.md; then
+            echo "PR creation unavailable (check repo workflow PR permission); opening fallback issue."
+            gh issue create \
+              --title "[CI] 上游词库同步触发大变动熔断 (@ ${{ steps.sync.outputs.upstream_sha }})" \
+              --body-file /tmp/pr-body.md || true
           fi
+
+      - name: Commit and push directly to main when within safe diff budget
+        if: steps.diff.outputs.changed == 'true' && steps.lint.outputs.needs_review != 'true'
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add cn_dicts/ cn_dicts_cell/ en_dicts/ opencc/ rime_frost.dict.yaml
