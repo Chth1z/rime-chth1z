@@ -1,3 +1,362 @@
 # word	wrong_py	weight	comment	category	source
-# category: A(双标准注释) | B(个人多音习惯) | C(冷僻/专名/地名/成语) | E1(高频习惯错写，weight<=30)
+# 纠错与双读音注释覆写（category 限 A / B / C / E1；活跃表重叠项 w=0）
+纨绔子弟	zhi kua zi di	50	纨(wán)绔(kù)子弟	C	R1/R2纠错权重与注释校准
+馄饨	hun dun	300	馄(hún)饨(tun)	B	R1/R2纠错权重与注释校准
+主角	zhu jiao	450	zhǔ jué	B	R1/R2纠错权重与注释校准
+角色	jiao se	180	jué sè	B	R1/R2纠错权重与注释校准
+说服	shui fu	200	旧读 shuì fú / 规范 shuō fú	A	R1/R2纠错权重与注释校准
+道行	dao hang	200	dào heng	B	R1/R2纠错权重与注释校准
+模样	mo yang	200	mú yàng	B	R1/R2纠错权重与注释校准
+有模有样	you mo you yang	100	yǒu mú yǒu yàng	C	R1/R2纠错权重与注释校准
+一模一样	yi mo yi yang	200	yī mú yī yàng	C	R1/R2纠错权重与注释校准
+装模作样	zhuang mo zuo yang	100	zhuāng mú zuò yàng	C	R1/R2纠错权重与注释校准
+人模狗样	ren mo gou yang	100	rén mú gǒu yàng	C	R1/R2纠错权重与注释校准
+阿弥陀佛	a mi tuo fo	100	ē mí tuó fó	C	R1/R2纠错权重与注释校准
+南无阿弥陀佛	na mo a mi tuo fo	50	nā mó ē mí tuó fó	C	R1/R2纠错权重与注释校准
+南无阿弥陀佛	nan wu a mi tuo fo	50	nā mó ē mí tuó fó	C	R1/R2纠错权重与注释校准
+南无阿弥陀佛	nan wu e mi tuo fo	50	nā mó ē mí tuó fó	C	R1/R2纠错权重与注释校准
+槟榔	bin lang	150	bīng láng	B	R1/R2纠错权重与注释校准
+弄堂	nong tang	120	lòng táng	B	R1/R2纠错权重与注释校准
+心宽体胖	xin kuan ti pang	100	xīn kuān tǐ pán	C	R1/R2纠错权重与注释校准
+埋怨	mai yuan	150	mán yuàn	B	R1/R2纠错权重与注释校准
+虚与委蛇	xu yu wei she	100	xū yǔ wēi yí	C	R1/R2纠错权重与注释校准
+木讷	mu na	100	mù nè	B	R1/R2纠错权重与注释校准
+独乐乐	du le le	50	dú yuè lè	B	R1/R2纠错权重与注释校准
+众乐乐	zhong le le	50	zhòng yuè lè	B	R1/R2纠错权重与注释校准
+荨麻	xun ma	30	审音拟 xún má / 现汉 qián má	A	R1/R2纠错权重与注释校准
+荨麻疹	qian ma zhen	80	异读 qián má zhěn / 规范 xún má zhěn	A	R1/R2纠错权重与注释校准
+模具	mo ju	50	mú jù	B	R1/R2纠错权重与注释校准
+草薙	cao zhi	50	cǎo tì	C	R1/R2纠错权重与注释校准
+草薙京	cao zhi jing	80	cǎo tì jīng	C	R1/R2纠错权重与注释校准
+草薙剑	cao zhi jian	50	cǎo tì jiàn	C	R1/R2纠错权重与注释校准
+贾平凹	jia ping ao	100	jiǎ píng wā	C	R1/R2纠错权重与注释校准
+雪佛兰	xue fo lan	0	规范 xuě fó lán / 旧读 xuě fú lán	A	R1/R2纠错词条补录
+强劲	qiang jin	150	qiáng jìng	B	R1/R2纠错权重与注释校准
+胴体	tong ti	200	dòng tǐ	B	R1/R2纠错权重与注释校准
+力能扛鼎	li neng kang ding	50	lì néng gāng dǐng	C	R1/R2纠错权重与注释校准
+鸭绿江	ya lv jiang	100	yā lù jiāng	C	R1/R2纠错权重与注释校准
+大腹便便	da fu bian bian	100	dà fù pián pián	C	R1/R2纠错权重与注释校准
+卡脖子	ka bo zi	150	qiǎ bó zi	B	R1/R2纠错权重与注释校准
+掺和	chan he	150	chān huo	B	R1/R2纠错权重与注释校准
+称职	cheng zhi	180	chèn zhí	B	R1/R2纠错权重与注释校准
+太行山	tai xing shan	100	tài háng shān	B	R1/R2纠错权重与注释校准
+发酵	fa xiao	250	fā jiào	B	R1/R2纠错权重与注释校准
+酵母菌	xiao mu jun	80	jiào mǔ jūn	B	R1/R2纠错权重与注释校准
+殷红	yin hong	15	yān hóng	B	R1/R2纠错权重与注释校准
+暖和	nuan he	150	nuǎn huo	B	R1/R2纠错权重与注释校准
+模棱两可	mo ling liang ke	100	mó léng liǎng kě	C	R1/R2纠错权重与注释校准
+鄱阳湖	pan yang hu	100	pó yáng hú	C	R1/R2纠错权重与注释校准
+脖颈	bo jing	100	bó gěng	B	R1/R2纠错权重与注释校准
+脖颈儿	bo jing er	50	bó gěng er	B	R1/R2纠错权重与注释校准
+牛皮癣	niu pi xian	50	niú pí xuǎn	B	R1/R2纠错权重与注释校准
+花斑癣	hua ban xian	50	huā bān xuǎn	B	R1/R2纠错权重与注释校准
+脚癣	jiao xian	50	jiǎo xuǎn	B	R1/R2纠错权重与注释校准
+结扎	jie zha	100	jié zā	B	R1/R2纠错权重与注释校准
+海参崴	hai shen wei	100	hǎi shēn wǎi	B	R1/R2纠错权重与注释校准
+厚朴	hou pu	50	hòu pò	B	R1/R2纠错权重与注释校准
+大宛马	da wan ma	50	dà yuān mǎ	B	R1/R2纠错权重与注释校准
+龇牙	ci ya	50	zī yá	B	R1/R2纠错权重与注释校准
+龇着牙	ci zhe ya	50	zī zhe yá	B	R1/R2纠错权重与注释校准
+龇牙咧嘴	ci ya lie zui	80	zī yá liě zuǐ	C	R1/R2纠错权重与注释校准
+偌大	nuo da	100	偌(ruò)大	B	R1/R2纠错权重与注释校准
+饮鸩解渴	yin jiu jie ke	50	饮鸩(zhèn)解渴	C	R1/R2纠错权重与注释校准
+宫商角徵羽	gong shang jiao zhi yu	50	宫商角(jué)徵羽	C	R1/R2纠错权重与注释校准
+氙气灯	shan qi deng	80	氙(xiān)气灯	B	R1/R2纠错权重与注释校准
+氙气大灯	shan qi da deng	50	氙(xiān)气大灯	C	R1/R2纠错权重与注释校准
+粘贴	nian tie	150	粘(zhān)贴	B	R1/R2纠错权重与注释校准
+高句丽	gao ju li	80	高句(gōu)丽	C	R1/R2纠错权重与注释校准
+缩砂密	suo sha mi	50	缩(sù)砂密	B	R1/R2纠错权重与注释校准
+榅桲	wen bo	50	wēn po	B	R1/R2纠错权重与注释校准
+荸荠	bi ji	50	bí qi	B	R1/R2纠错权重与注释校准
+柔荑	rou yi	50	柔荑(tí)	B	R1/R2纠错权重与注释校准
+温庭筠	wen ting jun	50	温庭筠(yún)	B	R1/R2纠错权重与注释校准
+三昧真火	san wei zhen huo	80	三昧(mèi)真火	C	R1/R2纠错权重与注释校准
+青𬞟之末	qing ping zhi mo	50	青𬞟(pín)之末	C	R1/R2纠错权重与注释校准
+优惠券	you hui juan	200	优惠券(quàn)	B	R1/R2纠错权重与注释校准
+拱券	gong quan	50	gǒng xuàn	B	R1/R2纠错权重与注释校准
+脑卒中	nao zu zhong	80	nǎo cù zhòng	C	R1/R2纠错权重与注释校准
+潟湖	xie hu	50	xì hú	C	R1/R2纠错权重与注释校准
+果脯	guo pu	50	guǒ fǔ	B	R1/R2纠错权重与注释校准
+肉脯	rou pu	50	ròu fǔ	B	R1/R2纠错权重与注释校准
+白𬶨豚	bai qi tun	50	bái jì tún	B	R1/R2纠错权重与注释校准
+罄竹难书	xin zhu nan shu	80	馨(罄qìng)竹难书	C	R1/R2纠错权重与注释校准
+饮鸩止渴	yin jiu zhi ke	100	饮鸠(鸩zhèn)止渴	C	R1/R2纠错权重与注释校准
+模板	mo ban	40	习惯 mó bǎn / 规范 mú bǎn	A	R1/R2纠错权重与注释校准
+胡茬	hu zha	80	胡渣(茬cha)	B	R1/R2纠错权重与注释校准
+咖喱	ka li	120	咖(gā)喱(lí)	B	R1/R2纠错权重与注释校准
+搅和	jiao he	100	搅(jiǎo)和(huo)	B	R1/R2纠错权重与注释校准
+神祇	shen zhi	50	神祗(祇qí)	B	R1/R2纠错权重与注释校准
+黏腻	zhan ni	40	粘(黏nian)腻	B	R1/R2纠错权重与注释校准
+黏膜	zhan mo	15	粘(黏nian)膜	B	R1/R2纠错权重与注释校准
+黏人	zhan ren	15	粘(黏nian)人	B	R1/R2纠错权重与注释校准
+胃黏膜	wei zhan mo	80	胃粘(黏nian)膜	B	R1/R2纠错权重与注释校准
+鼻黏膜	bi zhan mo	80	鼻粘(黏nian)膜	B	R1/R2纠错权重与注释校准
+烘焙	hong pei	150	烘培(焙bei)	B	R1/R2纠错权重与注释校准
+仿佛	pang fo	0	仿(fǎng)佛(fú)	B	R1/R2纠错权重与注释校准
+钮祜禄	niu gu lu	50	钮钴(祜hu)禄	B	R1/R2纠错权重与注释校准
+钮祜禄氏	niu gu lu shi	50	钮钴(祜hu)禄氏	C	R1/R2纠错权重与注释校准
+血脉偾张	xue mai ben zhang	80	亦作血脉贲张 / 规范偾(fèn)张	A	R1/R2纠错权重与注释校准
+黏合	zhan he	50	粘(黏nian)合	B	R1/R2纠错权重与注释校准
+一刹那	yi sha na	100	一霎(刹cha)那	B	R1/R2纠错权重与注释校准
+堂吉诃德	tang ji ke de	80	堂吉柯(诃he)德	C	R1/R2纠错权重与注释校准
+叱咤风云	chi cha feng yun	100	叱诧(咤zha)风云	C	R1/R2纠错权重与注释校准
+黏黏糊糊	zhan zhan hu hu	80	粘(黏nian)粘(黏nian)糊糊	C	R1/R2纠错权重与注释校准
+刹那间	sha na jian	100	霎(刹cha)那间	B	R1/R2纠错权重与注释校准
+刹那	sha na	100	霎(刹cha)那	B	R1/R2纠错权重与注释校准
+螺蛳粉	luo shi fen	150	螺狮(蛳si)粉	B	R1/R2纠错权重与注释校准
+按捺	an nai	100	按耐(捺nà)	B	R1/R2纠错权重与注释校准
+按捺不住	an nai bu zhu	150	按耐(捺nà)不住	C	R1/R2纠错权重与注释校准
+血脉偾张	xue mai pen zhang	100	误作喷张 / 规范血脉偾(fèn)张	A	R1/R2纠错权重与注释校准
+摩羯座	mo xie zuo	100	魔蝎(摩羯jié)座	B	R1/R2纠错权重与注释校准
+仿佛	fang fo	150	仿(fǎng)佛(fú)	B	R1/R2纠错词条补录
+仿佛	pang fu	0	仿(fǎng)佛(fú)	B	R1/R2纠错词条补录
+纨绔子弟	wan kua zi di	100	纨(wán)绔(kù)子弟	C	R1/R2纠错词条补录
+比萨	pi sa	180	音译比(bǐ)萨(sà) / 披萨	A	R1/R2纠错词条补录
+给予	gei yu	200	给(jǐ)予(yǔ)	B	R1/R2纠错词条补录
+张柏芝	zhang bai zhi	0	规范 zhāng bǎi zhī / 习惯 zhāng bó zhī	A	R1/R2纠错词条补录
+藤蔓	teng man	150	藤蔓(wàn)	B	R1/R2纠错词条补录
+吱声	zhi sheng	300	吱(zī)声	B	R1/R2纠错词条补录
+调换	tiao huan	100	调(diào)换	B	R1/R2纠错词条补录
+六安	liu an	120	六(lù)安	B	R1/R2纠错词条补录
+六合区	liu he qu	50	六(lù)合区	B	R1/R2纠错词条补录
+南京六合	nan jing liu he	50	南京六(lù)合	C	R1/R2纠错词条补录
+关卡	guan ka	150	关(guān)卡(qiǎ)	B	R1/R2纠错词条补录
+供给	gong gei	200	供(gōng)给(jǐ)	B	R1/R2纠错词条补录
+补给	bu gei	250	补(bǔ)给(jǐ)	B	R1/R2纠错词条补录
+抹布	mo bu	200	抹(mā)布	B	R1/R2纠错词条补录
+游说	you shuo	400	游(yóu)说(shuì)	B	R1/R2纠错词条补录
+下调	xia diao	35	下调(tiáo)	B	R1/R2纠错词条补录
+单薄	dan bao	400	单薄(bó)	B	R1/R2纠错词条补录
+轻薄	qing bao	400	轻薄(bó)	B	R1/R2纠错词条补录
+躯壳	qu ke	60	躯壳(qiào)	B	R1/R2纠错词条补录
+裸露	luo lou	150	裸露(lù)	B	R1/R2纠错词条补录
+外露	wai lou	60	外露(lù)	B	R1/R2纠错词条补录
+深藏不露	shen cang bu lou	100	深藏不露(lù)	C	R1/R2纠错词条补录
+魔爪	mo zhua	150	魔爪(zhǎo)	B	R1/R2纠错词条补录
+爪哇	zhua wa	100	爪(zhǎo)哇	B	R1/R2纠错词条补录
+脉脉	mai mai	300	脉(mò)脉	B	R1/R2纠错词条补录
+扛鼎	kang ding	50	扛(gāng)鼎	B	R1/R2纠错词条补录
+薄膜	bao mo	80	薄(bó)膜	B	R1/R2纠错词条补录
+刘禅	liu chan	200	刘禅(shàn)	B	R1/R2纠错词条补录
+吐蕃	tu fan	50	吐蕃(bō)	B	R1/R2纠错词条补录
+泊松分布	po song fen bu	50	泊(bó)松分布	C	R1/R2纠错词条补录
+便宜坊	pian yi fang	50	便(biàn)宜坊	B	R1/R2纠错词条补录
+镀铬	du luo	50	镀铬(gè)	C	R1/R2纠错词条补录
+凑合	cou huo	150	凑合(he)	B	R1/R2纠错词条补录
+契诃夫	qi ke fu	100	契科(诃hē)夫	B	R1/R2纠错词条补录
+味噌	wei ceng	0	规范 wèi cēng / 习惯 wèi zēng	A	R1/R2纠错词条补录
+味噌	wei zeng	0	习惯 wèi zēng / 规范 wèi cēng	A	R1/R2纠错词条补录
+雪佛兰	xue fu lan	150	旧读 xuě fú lán / 规范 xuě fó lán	A	R1/R2纠错词条补录
 张柏芝	zhang bo zhi	0	习惯 zhāng bó zhī / 规范 zhāng bǎi zhī	A	base.dict.yaml 已存在 zhang bo zhi 680，注释行取 w=0 避免权重叠加
+密钥	mi yue	0	规范 mì yuè / 习惯 mì yào	A	R1/R2纠错词条补录
+密钥	mi yao	350	习惯 mì yào / 规范 mì yuè	A	R1/R2纠错词条补录
+模板	mu ban	0	规范 mú bǎn / 习惯 mó bǎn	A	R1/R2纠错词条补录
+荨麻	qian ma	0	现汉 qián má / 审音拟 xún má	A	R1/R2纠错词条补录
+荨麻疹	xun ma zhen	0	规范 xún má zhěn / 异读 qián má zhěn	A	R1/R2纠错词条补录
+血脉偾张	xue mai fen zhang	0	规范血脉偾(fèn)张 / 亦作贲(bēn)张	A	R1/R2纠错词条补录
+呆板	ai ban	30	旧读 ái bǎn / 规范 dāi bǎn	A	R1/R2纠错词条补录
+鼻塞	bi sai	250	口语 bí sāi / 规范 bí sè	A	R1/R2纠错词条补录
+爪牙	zhua ya	100	爪(zhǎo)牙	B	R1/R2纠错词条补录
+露出	lou chu	150	露(lù)出	B	R1/R2纠错词条补录
+露出了	lou chu le	100	露(lù)出了	B	R1/R2纠错词条补录
+成熟	cheng shou	150	成(chéng)熟(shú)	B	R1/R2纠错词条补录
+不熟	bu shou	120	不熟(shú)	B	R1/R2纠错词条补录
+熟练	shou lian	100	熟(shú)练	B	R1/R2纠错词条补录
+熟了	shou le	100	熟(shú)了	B	R1/R2纠错词条补录
+相熟	xiang shou	15	相熟(shú)	B	R1/R2纠错词条补录
+流血	liu xie	80	流血(xuè)	B	R1/R2纠错词条补录
+血渍	xie zi	30	血(xuè)渍	B	R1/R2纠错词条补录
+衣裳	yi chang	50	衣裳(shang)	B	R1/R2纠错词条补录
+怎么着	zen me zhe	120	怎么着(zhāo)	B	R1/R2纠错词条补录
+盖聂	gai nie	150	盖(Gě)聂	B	R1/R2纠错词条补录
+黄柏	huang bai	40	黄柏(bò)	B	R1/R2纠错词条补录
+填塞	tian sai	25	填塞(sè)	B	R1/R2纠错词条补录
+削铁如泥	xiao tie ru ni	80	削(xuē)铁如泥	C	R1/R2纠错词条补录
+宝幢	bao zhuang	15	宝幢(chuáng)	B	R1/R2纠错词条补录
+范雎	fan sui	40	范雎(jū) / 误作范睢	B	R1/R2纠错词条补录
+大迦叶	da jia ye	50	大迦叶(shè)	B	R1/R2纠错词条补录
+泡椒凤爪	pao jiao feng zhua	80	泡椒凤爪(zhǎo)	C	R1/R2纠错词条补录
+山椒凤爪	shan jiao feng zhua	80	山椒凤爪(zhǎo)	C	R1/R2纠错词条补录
+壳层	ke ceng	30	壳(qiào)层	B	R1/R2纠错词条补录
+流鼻血	liu bi xie	100	流鼻血(xuè)	B	R1/R2纠错词条补录
+呷哺呷哺	ga bu ga bu	80	呷(xiā)哺呷哺	C	R1/R2纠错词条补录
+花剌子模	hua ci zi mo	80	花剌(là)子模	C	R1/R2纠错词条补录
+自始至终	zhi shi zhi zhong	80	至(自zì)始至终	C	R1/R2纠错词条补录
+无时无刻	wu shi bu ke	80	无时不(无wú)刻	C	R1/R2纠错词条补录
+债券	zhai juan	150	债(zhài)券(quàn)	B	R1/R2纠错词条补录
+证券	zheng juan	30	证(zhèng)券(quàn)	B	R1/R2纠错词条补录
+券商	juan shang	80	券(quàn)商	B	R1/R2纠错词条补录
+消费券	xiao fei juan	100	消费券(quàn)	B	R1/R2纠错词条补录
+代金券	dai jin juan	100	代金券(quàn)	B	R1/R2纠错词条补录
+入场券	ru chang juan	100	入场券(quàn)	B	R1/R2纠错词条补录
+点券	dian juan	80	点券(quàn)	B	R1/R2纠错词条补录
+氛围	fen fei	120	氛(fēn)围(wéi)	B	R1/R2纠错词条补录
+暴露	bao lou	150	暴(bào)露(lù)	B	R1/R2纠错词条补录
+透露	tou lou	150	透(tòu)露(lù)	B	R1/R2纠错词条补录
+披露	pi lou	150	披(pī)露(lù)	B	R1/R2纠错词条补录
+揭露	jie lou	100	揭(jiē)露(lù)	B	R1/R2纠错词条补录
+显露	xian lou	80	显(xiǎn)露(lù)	B	R1/R2纠错词条补录
+露骨	lou gu	80	露(lù)骨(gǔ)	B	R1/R2纠错词条补录
+露面	lu mian	150	露(lòu)面(miàn)	B	R1/R2纠错词条补录
+配角	pei jiao	150	配(pèi)角(jué)	B	R1/R2纠错词条补录
+男主角	nan zhu jiao	150	男主(zhǔ)角(jué)	B	R1/R2纠错词条补录
+女主角	nv zhu jiao	150	女主(zhǔ)角(jué)	B	R1/R2纠错词条补录
+角逐	jiao zhu	150	角(jué)逐(zhú)	B	R1/R2纠错词条补录
+标的	biao de	100	标的(dì)	B	R1/R2纠错词条补录
+解剖	jie pao	150	解(jiě)剖(pōu)	B	R1/R2纠错词条补录
+剖析	pao xi	150	剖(pōu)析(xī)	B	R1/R2纠错词条补录
+剖腹产	pao fu chan	100	剖(pōu)腹产	B	R1/R2纠错词条补录
+混淆	hun yao	150	混(hùn)淆(xiáo)	B	R1/R2纠错词条补录
+混淆视听	hun yao shi ting	100	混(hùn)淆(xiáo)视听	C	R1/R2纠错词条补录
+混淆是非	hun yao shi fei	50	混(hùn)淆(xiáo)是非	C	R1/R2纠错词条补录
+对称	dui cheng	100	对(duì)称(chèn)	B	R1/R2纠错词条补录
+匀称	yun cheng	100	匀(yún)称(chèn)	B	R1/R2纠错词条补录
+不称职	bu cheng zhi	100	不称(chèn)职	B	R1/R2纠错词条补录
+称心如意	cheng xin ru yi	100	称(chèn)心如意	C	R1/R2纠错词条补录
+薄弱	bao ruo	150	薄(bó)弱(ruò)	B	R1/R2纠错词条补录
+刻薄	ke bao	100	刻(kè)薄(bó)	B	R1/R2纠错词条补录
+浅薄	qian bao	200	浅(qiǎn)薄(bó)	B	R1/R2纠错词条补录
+薄荷	bao he	200	薄(bò)荷(he)	B	R1/R2纠错词条补录
+削弱	xiao ruo	150	削(xuē)弱(ruò)	B	R1/R2纠错词条补录
+剥削	bo xiao	150	剥(bō)削(xuē)	B	R1/R2纠错词条补录
+削减	xiao jian	200	削(xuē)减(jiǎn)	B	R1/R2纠错词条补录
+剥夺	bao duo	150	剥(bō)夺(duó)	B	R1/R2纠错词条补录
+塑料	suo liao	150	塑(sù)料(liào)	B	R1/R2纠错词条补录
+追溯	zhui shuo	100	追(zhuī)溯(sù)	B	R1/R2纠错词条补录
+酵母	xiao mu	80	酵(jiào)母(mǔ)	B	R1/R2纠错词条补录
+湖泊	hu bo	150	湖(hú)泊(pō)	B	R1/R2纠错词条补录
+血泊	xue bo	100	血(xuè)泊(pō)	B	R1/R2纠错词条补录
+漂泊	piao po	15	漂(piāo)泊(bó)	B	R1/R2纠错词条补录
+停泊	ting po	80	停(tíng)泊(bó)	B	R1/R2纠错词条补录
+光纤	guang qian	150	光(guāng)纤(xiān)	B	R1/R2纠错词条补录
+纤维	qian wei	200	纤(xiān)维(wéi)	B	R1/R2纠错词条补录
+膳食纤维	shan shi qian wei	100	膳食纤(xiān)维	C	R1/R2纠错词条补录
+碳纤维	tan qian wei	100	碳纤(xiān)维	B	R1/R2纠错词条补录
+校准	xiao zhun	150	校(jiào)准(zhǔn)	B	R1/R2纠错词条补录
+校正	xiao zheng	100	校(jiào)正(zhèng)	B	R1/R2纠错词条补录
+校验	xiao yan	200	校(jiào)验(yàn)	B	R1/R2纠错词条补录
+校对	xiao dui	200	校(jiào)对(duì)	B	R1/R2纠错词条补录
+着迷	zhe mi	100	着(zháo)迷(mí)	B	R1/R2纠错词条补录
+着陆	zhe lu	100	着(zhuó)陆(lù)	B	R1/R2纠错词条补录
+着落	zhe luo	80	着(zhuó)落(luò)	B	R1/R2纠错词条补录
+卡壳	ka ke	100	卡(qiǎ)壳(ké)	B	R1/R2纠错词条补录
+地壳	di ke	150	地(dì)壳(qiào)	B	R1/R2纠错词条补录
+提防	ti fang	100	提(dī)防(fang)	B	R1/R2纠错词条补录
+决堤	jue ti	80	决(jué)堤(dī)	B	R1/R2纠错词条补录
+堤坝	ti ba	150	堤(dī)坝(bà)	B	R1/R2纠错词条补录
+自给自足	zi gei zi zu	100	自给(jǐ)自足	C	R1/R2纠错词条补录
+供给侧	gong gei ce	100	供(gōng)给(jǐ)侧	B	R1/R2纠错词条补录
+给养	gei yang	80	给(jǐ)养(yǎng)	B	R1/R2纠错词条补录
+自给	zi gei	80	自给(jǐ)	B	R1/R2纠错词条补录
+酗酒	xiong jiu	100	酗(xù)酒(jiǔ)	B	R1/R2纠错词条补录
+分娩	fen wan	100	分(fēn)娩(miǎn)	B	R1/R2纠错词条补录
+妊娠	ren chen	100	妊(rèn)娠(shēn)	B	R1/R2纠错词条补录
+濒临	pin lin	100	濒(bīn)临(lín)	B	R1/R2纠错词条补录
+媲美	bi mei	60	媲(pì)美(měi)	B	R1/R2纠错词条补录
+庇护	pi hu	100	庇(bì)护(hù)	B	R1/R2纠错词条补录
+包庇	bao pi	120	包(bāo)庇(bì)	B	R1/R2纠错词条补录
+麻痹	ma pi	200	麻(má)痹(bì)	B	R1/R2纠错词条补录
+粗犷	cu kuang	100	粗(cū)犷(guǎng)	B	R1/R2纠错词条补录
+炽热	zhi re	150	炽(chì)热(rè)	B	R1/R2纠错词条补录
+白炽灯	bai zhi deng	100	白炽(chì)灯	B	R1/R2纠错词条补录
+迫击炮	po ji pao	100	迫(pǎi)击炮	B	R1/R2纠错词条补录
+斡旋	gan xuan	100	斡(wò)旋(xuán)	B	R1/R2纠错词条补录
+泥淖	ni zhuo	80	泥(ní)淖(nào)	B	R1/R2纠错词条补录
+龟裂	gui lie	100	龟(jūn)裂(liè)	B	R1/R2纠错词条补录
+咋舌	zha she	80	咋(zé)舌(shé)	B	R1/R2纠错词条补录
+咋舌	za she	40	咋(zé)舌(shé)	B	R1/R2纠错词条补录
+令人咋舌	ling ren za she	100	令人咋(zé)舌	C	R1/R2纠错词条补录
+熨帖	yun tie	40	熨(yù)帖(tiē)	B	R1/R2纠错词条补录
+挣扎	zheng za	100	挣(zhēng)扎(zhá)	B	R1/R2纠错词条补录
+捆扎	kun zha	50	捆(kǔn)扎(zā)	B	R1/R2纠错词条补录
+厌恶	yan e	100	厌(yàn)恶(wù)	B	R1/R2纠错词条补录
+可恶	ke e	100	可(kě)恶(wù)	B	R1/R2纠错词条补录
+反省	fan sheng	150	反(fǎn)省(xǐng)	B	R1/R2纠错词条补录
+畸形	qi xing	150	畸(jī)形(xíng)	B	R1/R2纠错词条补录
+咀嚼	ju jiao	200	咀(jǔ)嚼(jué)	B	R1/R2纠错词条补录
+禅让	chan rang	100	禅(shàn)让(ràng)	B	R1/R2纠错词条补录
+东莞	dong wan	15	东(Dōng)莞(guǎn)	C	R1/R2纠错词条补录
+吐谷浑	tu gu hun	80	吐谷(yù)浑	B	R1/R2纠错词条补录
+亳州	hao zhou	80	亳(Bó)州	C	R1/R2纠错词条补录
+秘鲁	mi lu	200	秘(Bì)鲁(lǔ)	B	R1/R2纠错词条补录
+蚌埠	bang bu	15	蚌(Bèng)埠(bù)	C	R1/R2纠错词条补录
+荥阳	rong yang	80	荥(Xíng)阳	C	R1/R2纠错词条补录
+冒顿单于	mao dun dan yu	80	冒(Mò)顿(dú)单(Chán)于	C	R1/R2纠错词条补录
+参差不齐	can ci bu qi	100	参(cēn)差(cī)不齐	C	R1/R2纠错词条补录
+参差不齐	can cha bu qi	100	参(cēn)差(cī)不齐	C	R1/R2纠错词条补录
+绰绰有余	chao chao you yu	80	绰(chuò)绰有余	C	R1/R2纠错词条补录
+戛然而止	ga ran er zhi	100	戛(jiá)然而止	C	R1/R2纠错词条补录
+一蹴而就	yi jiu er jiu	100	一蹴(cù)而就	C	R1/R2纠错词条补录
+良莠不齐	liang xiu bu qi	100	良莠(yǒu)不齐	C	R1/R2纠错词条补录
+如火如荼	ru huo ru cha	80	如火如荼(tú)	C	R1/R2纠错词条补录
+言简意赅	yan jian yi hai	80	言简意赅(gāi)	C	R1/R2纠错词条补录
+深恶痛绝	shen e tong jue	100	深恶(wù)痛绝	C	R1/R2纠错词条补录
+未雨绸缪	wei yu chou miao	100	未雨绸缪(móu)	C	R1/R2纠错词条补录
+面面相觑	mian mian xiang xu	80	面面相觑(qù)	C	R1/R2纠错词条补录
+抽丝剥茧	chou si bao jian	80	抽丝剥(bō)茧	C	R1/R2纠错词条补录
+自怨自艾	zi yuan zi ai	100	自怨自艾(yì)	C	R1/R2纠错词条补录
+如履薄冰	ru lv bao bing	80	如履薄(bó)冰	C	R1/R2纠错词条补录
+鬼使神差	gui shi shen cha	100	鬼使神差(chāi)	C	R1/R2纠错词条补录
+妄自菲薄	wang zi fei bao	80	妄自菲薄(bó)	C	R1/R2纠错词条补录
+恬不知耻	gua bu zhi chi	80	恬(tián)不知耻	C	R1/R2纠错词条补录
+像模像样	xiang mo xiang yang	80	像模(mú)像样	C	R1/R2纠错词条补录
+杞人忧天	ji ren you tian	80	杞(qǐ)人忧天	C	R1/R2纠错词条补录
+高屋建瓴	gao wu jian lin	80	高屋建瓴(líng)	C	R1/R2纠错词条补录
+按图索骥	an tu suo yi	80	按图索骥(jì)	C	R1/R2纠错词条补录
+锲而不舍	qi er bu she	100	锲(qiè)而不舍	C	R1/R2纠错词条补录
+病入膏肓	bing ru gao mang	100	病入膏肓(huāng)	C	R1/R2纠错词条补录
+振聋发聩	zhen long fa gui	80	振聋发聩(kuì)	C	R1/R2纠错词条补录
+发人深省	fa ren shen sheng	80	发人深省(xǐng)	C	R1/R2纠错词条补录
+相形见绌	xiang xing jian zhuo	100	相形见绌(chù)	C	R1/R2纠错词条补录
+相形见绌	xiang xing jian qu	50	相形见绌(chù)	C	R1/R2纠错词条补录
+毛遂自荐	mao shui zi jian	80	毛遂(suì)自荐	C	R1/R2纠错词条补录
+审时度势	shen shi du shi	80	审时度(duó)势	C	R1/R2纠错词条补录
+刚愎自用	gang fu zi yong	100	刚愎(bì)自用	C	R1/R2纠错词条补录
+不着边际	bu zhe bian ji	80	不着(zhuó)边际	C	R1/R2纠错词条补录
+不着痕迹	bu zhe hen ji	80	不着(zhuó)痕迹	C	R1/R2纠错词条补录
+阿谀奉承	a yu feng cheng	80	阿(ē)谀奉承	C	R1/R2纠错词条补录
+不省人事	bu sheng ren shi	80	不省(xǐng)人事	C	R1/R2纠错词条补录
+同仇敌忾	tong chou di qi	100	同仇敌忾(kài)	C	R1/R2纠错词条补录
+同仇敌忾	tong chou di gai	50	同仇敌忾(kài)	C	R1/R2纠错词条补录
+觥筹交错	guang chou jiao cuo	80	觥(gōng)筹交错	C	R1/R2纠错词条补录
+纵横捭阖	zong heng bi he	80	纵横捭(bǎi)阖	C	R1/R2纠错词条补录
+纵横捭阖	zong heng bei he	50	纵横捭(bǎi)阖	C	R1/R2纠错词条补录
+胜券在握	sheng juan zai wo	100	胜券(quàn)在握	C	R1/R2纠错词条补录
+声名狼藉	sheng ming lang jie	80	声名狼藉(jí)	C	R1/R2纠错词条补录
+杯盘狼藉	bei pan lang jie	50	杯盘狼藉(jí)	C	R1/R2纠错词条补录
+草菅人命	cao guan ren ming	100	草菅(jiān)人命	C	R1/R2纠错词条补录
+含情脉脉	han qing mai mai	80	含情脉(mò)脉	C	R1/R2纠错词条补录
+温情脉脉	wen qing mai mai	80	温情脉(mò)脉	C	R1/R2纠错词条补录
+越俎代庖	yue zu dai bao	100	越俎代庖(páo)	C	R1/R2纠错词条补录
+身陷囹圄	shen xian ling wu	80	身陷囹圄(yǔ)	C	R1/R2纠错词条补录
+刚正不阿	gang zheng bu a	80	刚正不阿(ē)	C	R1/R2纠错词条补录
+一丘之貉	yi qiu zhi luo	80	一丘之貉(hé)	C	R1/R2纠错词条补录
+一丘之貉	yi qiu zhi hao	80	一丘之貉(hé)	C	R1/R2纠错词条补录
+莘莘学子	xin xin xue zi	100	莘(shēn)莘学子	C	R1/R2纠错词条补录
+断壁残垣	duan bi can heng	80	断壁残垣(yuán)	C	R1/R2纠错词条补录
+鳞次栉比	lin ci jie bi	100	鳞次栉(zhì)比	C	R1/R2纠错词条补录
+图穷匕见	tu qiong bi jian	100	图穷匕见(xiàn)	C	R1/R2纠错词条补录
+浑身解数	hun shen jie shu	80	浑身解(xiè)数	C	R1/R2纠错词条补录
+金蝉脱壳	jin chan tuo ke	80	金蝉脱壳(qiào)	C	R1/R2纠错词条补录
+呱呱坠地	gua gua zhui di	80	呱(gū)呱坠地	C	R1/R2纠错词条补录
+否极泰来	fou ji tai lai	80	否(pǐ)极泰来	C	R1/R2纠错词条补录
+垂涎三尺	chui yan san chi	80	垂涎(xián)三尺	C	R1/R2纠错词条补录
+垂涎欲滴	chui yan yu di	80	垂涎(xián)欲滴	C	R1/R2纠错词条补录
+羽扇纶巾	yu shan lun jin	80	羽扇纶(guān)巾	C	R1/R2纠错词条补录
+奴颜婢膝	nu yan bi qi	80	奴颜婢(bì)膝(xī)	C	R1/R2纠错词条补录
+奴颜婢膝	nu yan bei xi	50	奴颜婢(bì)膝(xī)	C	R1/R2纠错词条补录
+恪尽职守	ge jin zhi shou	80	恪(kè)尽职守	C	R1/R2纠错词条补录
+破绽百出	po ding bai chu	50	破绽(zhàn)百出	C	R1/R2纠错词条补录
+拾级而上	shi ji er shang	80	拾(shè)级而上	C	R1/R2纠错词条补录
+一叶扁舟	yi ye bian zhou	80	一叶扁(piān)舟	C	R1/R2纠错词条补录
+宫商角徵羽	gong shang jiao zheng yu	50	宫商角(jué)徵(zhǐ)羽	C	R1/R2纠错词条补录
+宫商角徵羽	gong shang jue zheng yu	50	宫商角(jué)徵(zhǐ)羽	C	R1/R2纠错词条补录
+一曝十寒	yi bao shi han	80	一曝(pù)十寒	C	R1/R2纠错词条补录
+稗官野史	bi guan ye shi	50	稗(bài)官野史	C	R1/R2纠错词条补录
+稗官野史	bei guan ye shi	50	稗(bài)官野史	C	R1/R2纠错词条补录
+数见不鲜	shu jian bu xian	80	数(shuò)见不鲜	C	R1/R2纠错词条补录
+舐犊情深	di du qing shen	50	舐(shì)犊情深	C	R1/R2纠错词条补录
+舐犊情深	tian du qing shen	50	舐(shì)犊情深	C	R1/R2纠错词条补录
+怙恶不悛	gu e bu quan	50	怙(hù)恶不悛(quān)	C	R1/R2纠错词条补录
+怙恶不悛	gu e bu jun	50	怙(hù)恶不悛(quān)	C	R1/R2纠错词条补录
+怙恶不悛	hu e bu jun	50	怙(hù)恶不悛(quān)	C	R1/R2纠错词条补录

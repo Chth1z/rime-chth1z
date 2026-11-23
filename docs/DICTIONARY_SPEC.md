@@ -140,12 +140,14 @@
 rules/
   README.md                 # 规则表字段说明与示例
   phonetics_fix.tsv         # 读音修正：target_file | word | old_py | new_py | reason | source
+  word_fixes.tsv            # 词形修正：target_file | old_word | old_py | new_word | new_py | reason | source
   dual_readings.tsv         # 双读音双注释：word | py1 | w1 | note1 | py2 | w2 | note2 | target_file | source
   corrections.tsv           # 错音/错字纠错：word | wrong_py | weight | comment | category | source
-  weights.tsv               # 权重覆盖：target_file | word | py | weight | reason
+  weights.tsv               # 权重覆盖：target_file | word | py | weight(N/<=N/>=N) | reason
   deletions.tsv             # 精确删除：target_file | word | py | reason
   additions.tsv             # 补录词条：target_file | word | py | weight | category | source
   en_additions.tsv          # 英文补充（en_ext）：word | code | weight | category
+  en_fixes.tsv              # 英文修正/删除/调权：target_file | old_word | old_code | action | new_word | new_code | weight | reason
   cn_en_source.tsv          # 中英混合单一源（驱动 7 份 cn_en*.txt）：action | word | prefix_en | cn_syls | suffix_en | emit_lower | note
   alphanum_additions.txt    # 字母数字补充（rime_frost.dict.yaml）
   opencc_fixes.tsv          # OpenCC 文本修复：target_file | key | action | value | reason

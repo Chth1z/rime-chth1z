@@ -1,2 +1,208 @@
 # target_file	word	py	weight	category	source
-# category: A | E1 | modern | tech | domain | brand
+# 词条补录规则（category 限 A / E1 / modern / tech / domain / brand / phonetic / common）
+cn_dicts/8105.dict.yaml	芔	hu	1	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	屮	che	50	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	呇	qi	2	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	颤	zhan	50	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	暴	pu	30	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	汤	shang	20	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	町	ting	200	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	属	zhu	30	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	般	bo	30	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	若	re	30	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	六	lu	30	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	房	pang	20	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	谷	yu	20	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	蛇	yi	20	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	叶	she	20	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	嘬	chuai	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	椎	chui	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	酢	cu	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	噱	jue	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	辗	nian	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	窨	xun	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	潦	lao	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	阏	e	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	饧	tang	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	薁	yu	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	姥	mu	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	被	pi	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	射	ye	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	邪	ye	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	邪	ya	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	宛	yuan	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	遗	wei	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	氓	meng	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	掸	shan	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	嗑	he	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	孱	can	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	砉	xu	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	袷	jia	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	繇	yao	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	傀	gui	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	焘	dao	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	镦	dui	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	酂	cuo	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	隗	kui	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	車	che	1	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	磏	lian	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	说	yue	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	著	zhuo	30	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	将	qiang	20	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	咱	za	20	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	匮	gui	15	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	冒	mo	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	顿	du	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	胳	ga	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	红	gong	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	乐	lao	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	乐	yao	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	挼	ruo	15	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	杓	shao	15	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	唛	ma	20	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	蓂	ming	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	圌	chuan	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	芘	pi	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	俞	shu	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	转	zhuai	10	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	食	yi	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	其	ji	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	钭	tou	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	铤	ding	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	坻	chi	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	廆	gui	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	丁	zheng	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	衰	cui	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	溺	niao	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	拂	bi	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	呗	bai	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	於	wu	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	栖	xi	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	浅	jian	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	泄	yi	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	侗	tong	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	嗒	ta	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	嘲	zhao	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	荼	shu	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	忪	zhong	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	剿	chao	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	铣	xian	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	腊	xi	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	肋	le	5	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	溚	ta	5	phonetic	现汉第7版
+cn_dicts/base.dict.yaml	是的	shi de	35000	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	丈育	zhang yu	300	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	经验帖	jing yan tie	1700	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	大都	da du	400	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	狗血	gou xue	1141	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	鸡血	ji xue	550	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	人行	ren hang	450	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	自己还	zi ji huan	150	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	阵型	zhen xing	800	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	档位	dang wei	1200	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	回调	hui tiao	800	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	多晚	duo wan	800	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	男神	nan shen	1000	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	鱼竿	yu gan	250	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	西郊	xi jiao	200	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	调出	tiao chu	200	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	机长	ji chang	120	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	调调	tiao tiao	120	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	味噌	wei ceng	64	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	味噌	wei zeng	64	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	对她们	dui ta men	500	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	那些是	na xie shi	800	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	她真的	ta zhen de	700	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	帮助她	bang zhu ta	400	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	激动的	ji dong de	800	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	持续的	chi xu de	650	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	更早的	geng zao de	200	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	委屈的	wei qu de	220	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	准确的	zhun que de	1500	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	单纯的	dan chun de	1200	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	不可避免的	bu ke bi mian de	1100	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	无意识地	wu yi shi de	700	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	下意识的	xia yi shi de	700	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	白𬶨豚	bai ji tun	50	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	脖颈儿	bo geng er	50	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	缩砂密	su sha mi	20	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	青𬞟之末	qing pin zhi mo	30	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	起于青𬞟之末	qi yu qing pin zhi mo	20	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	风起于青𬞟之末	feng qi yu qing pin zhi mo	20	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	氙气手电筒	xian qi shou dian tong	10	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	黏性流体	nian xing liu ti	10	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	黏附分子	nian fu fen zi	10	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	表观黏度	biao guan nian du	10	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	黏合力	nian he li	20	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	大白天的	da bai tian de	250	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	大半夜的	da ban ye de	250	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	大当家的	da dang jia de	250	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	小老百姓	xiao lao bai xing	300	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	少部分人	shao bu fen ren	300	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	合家团聚	he jia tuan ju	400	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	局部阵雨	ju bu zhen yu	300	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	很快就到	hen kuai jiu dao	200	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	好好考虑	hao hao kao lv	200	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	就差一点	jiu cha yi dian	200	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	公示稿	gong shi gao	200	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	小知识点	xiao zhi shi dian	200	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	含金量高	han jin liang gao	200	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	各位贵宾	ge wei gui bin	200	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	共铸辉煌	gong zhu hui huang	200	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	大肠发圈	da chang fa quan	150	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	小电动车	xiao dian dong che	150	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	惹下大祸	re xia da huo	150	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	寻宠启事	xun chong qi shi	150	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	各展风采	ge zhan feng cai	150	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	好朋友们	hao peng you men	150	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	肉末蒸蛋	rou mo zheng dan	200	common	R1/R2基础词补录
+cn_dicts/base.dict.yaml	山椒凤爪	shan jiao feng zhao	200	common	R1/R2基础词补录
+cn_dicts/ext.dict.yaml	谁又能	shei you neng	415	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	不管是谁	bu guan shi shei	298	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	给他看	gei ta kan	500	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	他为什么	ta wei shen me	500	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	他让我	ta rang wo	500	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	叠翠流金	die cui liu jin	150	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	弱质女流	ruo zhi nv liu	150	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	叠拼别墅	die pin bie shu	120	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	妨害作证	fang hai zuo zheng	80	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	受托加工	shou tuo jia gong	80	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	喜讯不断	xi xun bu duan	100	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	大漠胡杨	da mo hu yang	80	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	叙事医学	xu shi yi xue	80	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	吹塑成型	chui su cheng xing	80	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	大咖助阵	da ka zhu zhen	100	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	四肢末梢	si zhi mo shao	100	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	岸绿景美	an lv jing mei	100	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	同台争艳	tong tai zheng yan	80	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	惹人爱怜	re ren ai lian	150	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	吞金自尽	tun jin zi jin	100	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	好生面熟	hao sheng mian shu	100	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	合则约见	he ze yue jian	100	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	小幅收跌	xiao fu shou die	150	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	四肢发软	si zhi fa ruan	120	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	奇珍异果	qi zhen yi guo	100	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	客货分离	ke huo fen li	100	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	岁月留痕	sui yue liu hen	120	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	娇羞可人	jiao xiu ke ren	100	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	口头挂失	kou tou gua shi	120	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	回稳向好	hui wen xiang hao	150	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	四尺竖幅	si chi shu fu	60	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	埋弧焊接	mai hu han jie	60	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	奸佞之臣	jian ning zhi chen	100	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	奋楫者先	fen ji zhe xian	100	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	喝雄黄酒	he xiong huang jiu	80	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	喜迁新址	xi qian xin zhi	120	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	建构筑物	jian gou zhu wu	100	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	吃腊八粥	chi la ba zhou	100	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	因贫辍学	yin pin chuo xue	100	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	非法采砂	fei fa cai sha	120	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	囊胚移植	nang pei yi zhi	100	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	幼托机构	you tuo ji gou	120	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	干法脱硫	gan fa tuo liu	60	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	史宾格犬	shi bin ge quan	60	common	R2扩展词补录
+cn_dicts/ext.dict.yaml	年平均值	nian ping jun zhi	120	common	R2扩展词补录
+cn_dicts/others.dict.yaml	蚌住	beng zhu	0	common	R1常用口语补录
+cn_dicts/others.dict.yaml	我勒个	wo le ge	0	common	R1常用口语补录
+cn_dicts/others.dict.yaml	软弹	ruan tan	0	common	R1常用口语补录
+cn_dicts_cell/shulihua.dict.yaml	粘合剂	zhan he ji	35	domain	R1口语容错补录

@@ -1,4 +1,1209 @@
 # target_file	word	py	reason
-# 说明：py 填具体拼音或 *（匹配该词在目标文件中的所有读音）；.gram 高频粘连项禁止在此硬删
+# 精确删除规则（py=* 匹配目标文件中该词全部读音；严禁硬删 .gram 粘连短语）
+cn_dicts/8105.dict.yaml	薁	ao	R2清理8105错音
+cn_dicts/base.dict.yaml	一笔勾消	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	万到	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	上窜下跳	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	下了肚	xia liao du	R2基础词库读音修正
+cn_dicts/base.dict.yaml	下调	xia diao	R1基础词库读音修正
+cn_dicts/base.dict.yaml	下调到	xia diao dao	R1基础词库读音修正
+cn_dicts/base.dict.yaml	不嚼	bu jue	R2基础词库读音修正
+cn_dicts/base.dict.yaml	不完	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	不得	bu dei	R1基础词库读音修正
+cn_dicts/base.dict.yaml	不得了	bu de le	R1基础词库读音修正
+cn_dicts/base.dict.yaml	不熟	bu shou	R2基础词库读音修正
+cn_dicts/base.dict.yaml	东奥会	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	个月	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	举办地	ju ban de	R1基础词库读音修正
+cn_dicts/base.dict.yaml	也得到	ye dei dao	R1基础词库读音修正
+cn_dicts/base.dict.yaml	书声朗朗	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	了一阵	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	了下	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	了不起	le bu qi	R1基础词库读音修正
+cn_dicts/base.dict.yaml	了个	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	了么	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	了些	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	了什么	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	了他	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	了吧唧	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	了呀	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	了呗	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	了呢	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	了哦	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	了她	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	了我	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	了才	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	了点	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	了点儿	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	五藏	wu cang	R2基础词库读音修正
+cn_dicts/base.dict.yaml	亦得	yi dei	R2基础词库读音修正
+cn_dicts/base.dict.yaml	亦或	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	亦或是	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	们的	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	你得到	ni dei dao	R1基础词库读音修正
+cn_dicts/base.dict.yaml	供给	gong gei	R1基础词库读音修正
+cn_dicts/base.dict.yaml	充电装	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	关卡	guan ka	R1基础词库读音修正
+cn_dicts/base.dict.yaml	刺激素	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	包涵着	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	化学价	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	单薄	dan bao	R1基础词库读音修正
+cn_dicts/base.dict.yaml	博奕论	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	卡脖子	ka bo zi	R1基础词库读音修正
+cn_dicts/base.dict.yaml	即早	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	变的	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	可得到	ke dei dao	R1基础词库读音修正
+cn_dicts/base.dict.yaml	号位	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	名符其实	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	咋的	za di	R1基础词库读音修正
+cn_dicts/base.dict.yaml	咖啡市	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	哥尔摩	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	嚼劲	jue jin	R2基础词库读音修正
+cn_dicts/base.dict.yaml	嚼嚼	jue jue	R2基础词库读音修正
+cn_dicts/base.dict.yaml	嚼烂	jue lan	R2基础词库读音修正
+cn_dicts/base.dict.yaml	嚼碎	jue sui	R2基础词库读音修正
+cn_dicts/base.dict.yaml	图像传输	tu xiang zhuan shu	R1基础词库读音修正
+cn_dicts/base.dict.yaml	坐无虚席	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	埃雅仁	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	声明周期	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	外露	wai lou	R1基础词库读音修正
+cn_dicts/base.dict.yaml	大前题	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	大贾	da jia	R2基础词库读音修正
+cn_dicts/base.dict.yaml	大都会	da dou hui	R1基础词库读音修正
+cn_dicts/base.dict.yaml	太象了	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	奥金莱	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	完型	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	密钥	mi yao	R2基础词库读音修正
+cn_dicts/base.dict.yaml	对证下药	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	寻问	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	就得到	jiu dei dao	R1基础词库读音修正
+cn_dicts/base.dict.yaml	岁时	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	已来	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	库兹涅	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	很拉跨	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	得于	dei yu	R1基础词库读音修正
+cn_dicts/base.dict.yaml	得到	dei dao	R1基础词库读音修正
+cn_dicts/base.dict.yaml	得好	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	得就	dei jiu	R1基础词库读音修正
+cn_dicts/base.dict.yaml	得非常	dei fei chang	R1基础词库读音修正
+cn_dicts/base.dict.yaml	心金魂	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	怎么着	zen me zhe	R2基础词库读音修正
+cn_dicts/base.dict.yaml	怎的	zen di	R1基础词库读音修正
+cn_dicts/base.dict.yaml	总得来说	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	懂得都懂	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	成熟	cheng shou	R2基础词库读音修正
+cn_dicts/base.dict.yaml	我得到	wo dei dao	R1基础词库读音修正
+cn_dicts/base.dict.yaml	扛鼎	kang ding	R1基础词库读音修正
+cn_dicts/base.dict.yaml	找的到	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	抹布	mo bu	R1基础词库读音修正
+cn_dicts/base.dict.yaml	拓扑排序	ta pu pai xu	R1基础词库读音修正
+cn_dicts/base.dict.yaml	捉衿见肘	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	斯基	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	无招胜	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	既又	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	日至	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	日起	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	星人	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	是我太	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	有涨有落	you zhang you lao	R2基础词库读音修正
+cn_dicts/base.dict.yaml	有点象	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	检查官	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	正儿巴经	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	毛人风	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	泊松分布	po song fen bu	R1基础词库读音修正
+cn_dicts/base.dict.yaml	流血	liu xie	R2基础词库读音修正
+cn_dicts/base.dict.yaml	消弥	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	深藏不露	shen cang bu lou	R1基础词库读音修正
+cn_dicts/base.dict.yaml	渐渐的	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	游说	you shuo	R1基础词库读音修正
+cn_dicts/base.dict.yaml	熟了	shou le	R2基础词库读音修正
+cn_dicts/base.dict.yaml	熟女	shou nv	R2基础词库读音修正
+cn_dicts/base.dict.yaml	熟知	shou zhi	R2基础词库读音修正
+cn_dicts/base.dict.yaml	熟石灰	shou shi hui	R2基础词库读音修正
+cn_dicts/base.dict.yaml	熟石膏	shou shi gao	R2基础词库读音修正
+cn_dicts/base.dict.yaml	熟练	shou lian	R2基础词库读音修正
+cn_dicts/base.dict.yaml	熟记	shou ji	R2基础词库读音修正
+cn_dicts/base.dict.yaml	爪哇	zhua wa	R1基础词库读音修正
+cn_dicts/base.dict.yaml	爱猷识	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	瑟兰督	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	用的到	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	的人时	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	相当然	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	相熟	xiang shou	R2基础词库读音修正
+cn_dicts/base.dict.yaml	真知卓见	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	礼服呢	li fu ne	R1基础词库读音修正
+cn_dicts/base.dict.yaml	福薄	fu bao	R2基础词库读音修正
+cn_dicts/base.dict.yaml	稔熟	ren shou	R2基础词库读音修正
+cn_dicts/base.dict.yaml	等都	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	精典	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	级片	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	级车	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	给予	gei yu	R1基础词库读音修正
+cn_dicts/base.dict.yaml	维流形	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	维生物	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	罢了	ba liao	R1基础词库读音修正
+cn_dicts/base.dict.yaml	美的	mei di	R1基础词库读音修正
+cn_dicts/base.dict.yaml	脉脉	mai mai	R1基础词库读音修正
+cn_dicts/base.dict.yaml	般地	ban di	R1基础词库读音修正
+cn_dicts/base.dict.yaml	般的	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	船小好	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	莫明其妙	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	薄款	bo kuan	R2基础词库读音修正
+cn_dicts/base.dict.yaml	薄煎饼	bo jian bing	R2基础词库读音修正
+cn_dicts/base.dict.yaml	薄脆	bo cui	R2基础词库读音修正
+cn_dicts/base.dict.yaml	薄饼	bo bing	R2基础词库读音修正
+cn_dicts/base.dict.yaml	藤蔓	teng man	R1基础词库读音修正
+cn_dicts/base.dict.yaml	螳臂挡车	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	血渍	xie zi	R2基础词库读音修正
+cn_dicts/base.dict.yaml	衣裳	yi chang	R2基础词库读音修正
+cn_dicts/base.dict.yaml	补给我	bu ji wo	R2基础词库读音修正
+cn_dicts/base.dict.yaml	装模做样	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	裸露	luo lou	R1基础词库读音修正
+cn_dicts/base.dict.yaml	解铃还须系铃人	jie ling hai xu xi ling ren	R1基础词库读音修正
+cn_dicts/base.dict.yaml	讲诉	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	调不通	diao bu tong	R2基础词库读音修正
+cn_dicts/base.dict.yaml	调优	diao you	R2基础词库读音修正
+cn_dicts/base.dict.yaml	调通	diao tong	R2基础词库读音修正
+cn_dicts/base.dict.yaml	跑的快	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	躯壳	qu ke	R1基础词库读音修正
+cn_dicts/base.dict.yaml	轰堂大笑	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	轻薄	qing bao	R1基础词库读音修正
+cn_dicts/base.dict.yaml	过敏源	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	还不起	hai bu qi	R1基础词库读音修正
+cn_dicts/base.dict.yaml	还得了	hai de le	R1基础词库读音修正
+cn_dicts/base.dict.yaml	还贷了	hai dai le	R2基础词库读音修正
+cn_dicts/base.dict.yaml	道不是	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	那怕	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	那怕是	*	R2清理错字或噪声词
+cn_dicts/base.dict.yaml	锐不可挡	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	间通信	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	陪你到	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	震聋发聩	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	露出	lou chu	R2基础词库读音修正
+cn_dicts/base.dict.yaml	露出了	lou chu le	R2基础词库读音修正
+cn_dicts/base.dict.yaml	青玉案	qing yu wan	R1基础词库读音修正
+cn_dicts/base.dict.yaml	青玉案元夕	qing yu wan yuan xi	R1基础词库读音修正
+cn_dicts/base.dict.yaml	魔爪	mo zhua	R1基础词库读音修正
+cn_dicts/base.dict.yaml	麦克劳	*	R1清理错字或噪声词
+cn_dicts/base.dict.yaml	龙勃罗	*	R1清理错字或噪声词
+cn_dicts/corrections.dict.yaml	㹴犬	geng quan	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	不胜感激	bu shen gan ji	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	两个	lia ge	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	丰臣秀吉	feng cheng xiu ji	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	乐此不疲	le ci bu bi	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	亚历山大	a li shan da	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	亚里士多德	li shi duo de	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	伯恩斯坦	bo en shi tan	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	哺乳	pu ru	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	头皮屑	tou pi xue	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	奥伯伦	ao bai lun	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	崩溃	ben kui	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	布伦塔诺	bu lun tan nuo	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	应该	yin gai	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	感慨	gan gai	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	损人利己	sun ren li yi	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	掺和	can he	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	掺和	can huo	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	施瓦辛格	shi wa xing ge	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	施瓦辛格	si wa xin ge	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	曾经	ceng jin	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	柯伊伯带	ke yi bai dai	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	歇斯底里	jie si di li	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	源远流长	yuan yuan liu zhang	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	烦不胜烦	fan bu shen fan	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	玛格丽特	ma jia lei te	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	胆战心惊	dan chan xin jing	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	自上而下	zhi shang er xia	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	艾宾浩斯	ai bin hao sen	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	血脉贲张	xue mai pen zhang	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	角斗士	jiao dou shi	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	迫不得已	po bu de ji	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	那个	nei ge	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	阈值	fa zhi	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	防不胜防	fang bu shen fang	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	非常	hui chang	R1/R2清理低文化误读或错误纠错项
+cn_dicts/ext.dict.yaml	一一一一	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	一个大	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	一个好	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	一日之长	yi ri zhi chang	R2扩展词库读音修正
+cn_dicts/ext.dict.yaml	万以上	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	万出头	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	万左右	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	万美金	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	万英镑	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	三杯五杯下了肚	san bei wu bei xia liao du	R2扩展词库读音修正
+cn_dicts/ext.dict.yaml	三角型	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	上可以	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	下得了	xia de le	R2扩展词库读音修正
+cn_dicts/ext.dict.yaml	不得回来	bu dei hui lai	R2扩展词库读音修正
+cn_dicts/ext.dict.yaml	不记前嫌	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	不长眼	bu chang yan	R1扩展词库读音修正
+cn_dicts/ext.dict.yaml	不长眼睛	bu chang yan jing	R1扩展词库读音修正
+cn_dicts/ext.dict.yaml	专门为	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	世界上最	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	个多月	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	中使用	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	为一个	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	为人处事	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	也不得	ye bu dei	R1扩展词库读音修正
+cn_dicts/ext.dict.yaml	些什么	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	亿左右	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	亿日元	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	亿美金	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	什么德	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	仔㨃	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	令人血脉贲张	ling ren xie mai ben zhang	R2扩展词库读音修正
+cn_dicts/ext.dict.yaml	以我的	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	以此为	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	件好事	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	伊利莎白	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	伊莉莎白	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	优惠卷	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	体脂称	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	侯选人	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	俗话说的好	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	做地铁	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	停止不前	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	元以上	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	元以下	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	元左右	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	全神灌注	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	关连性	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	具像化	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	内完成	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	分左右	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	化装品	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	北京华	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	印地安人	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	及以上	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	及时行	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	反应出	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	反映过来	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	变得更	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	只是为	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	可以不	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	史上最	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	名信片	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	名列前矛	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	名学生	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	后才能	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	哈哈哈哈哈哈哈哈	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	哪么多	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	哪时候	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	唯㨃	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	啊啊啊啊啊啊	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	嚼得动	jue de dong	R2扩展词库读音修正
+cn_dicts/ext.dict.yaml	回答到	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	图书管	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	土尔其	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	在这一	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	块左右	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	块钱左右	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	型糖尿病	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	增殖税	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	墨守陈规	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	多分钟	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	大可一	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	大排挡	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	大眼瞪	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	孰能生巧	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	宁缺勿滥	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	完型填空	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	实地考查	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	家企业	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	对薄公堂	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	岁以上	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	岁以下	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	岁左右	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	岁生日	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	岁的时候	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	岁高龄	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	巴非特	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	常熟农商行	chang shou nong shang hang	R2扩展词库读音修正
+cn_dicts/ext.dict.yaml	常熟银行	chang shou yin hang	R2扩展词库读音修正
+cn_dicts/ext.dict.yaml	年以来	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	康乃尔	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	得不得	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	得不行	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	得很好	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	必须品	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	快销品	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	思考和	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	我和我	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	战㨃	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	所学校	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	所高校	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	才是最	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	打工崽	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	拿的出手	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	指手划脚	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	按步就班	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	摩拖车	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	支球队	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	新型冠状病毒感染的	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	方式和	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	方法来	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	无时不刻	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	日尔曼	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	是好事坏	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	显视器	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	最最最	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	最牛逼的	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	月中旬	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	月以来	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	杀一警百	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	杀鸡警猴	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	条㨃	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	梦都大街	meng dou da jie	R2扩展词库读音修正
+cn_dicts/ext.dict.yaml	横隔膜	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	水㨃	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	法拉力	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	活性碳	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	流水帐	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	消声匿迹	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	清楚的记得	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	然并卵	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	照像机	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	照像馆	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	熟地黄	shou di huang	R2扩展词库读音修正
+cn_dicts/ext.dict.yaml	熟女系	shou nv xi	R2扩展词库读音修正
+cn_dicts/ext.dict.yaml	特例独行	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	率高达	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	王佳欣	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	现在在	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	生㨃	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	画分为	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	疯疯颠颠	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	病发症	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	看的出来	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	眼睁睁的	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	种方法	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	称之谓	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	第一七	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	篇文章	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	米以上	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	类产品	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	级以上	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	纪录下来	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	老生长谈	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	联通新	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	联锁店	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	胺基酸	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	自已的	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	自已还	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	至始至终	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	苦笑不得	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	草地早熟禾	cao di zao shou he	R2扩展词库读音修正
+cn_dicts/ext.dict.yaml	莫札特	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	虎谋皮	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	融汇贯通	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	螺旋浆	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	血脉贲张	xie mai ben zhang	R2扩展词库读音修正
+cn_dicts/ext.dict.yaml	要求和	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	讨得了好	tao de le hao	R2扩展词库读音修正
+cn_dicts/ext.dict.yaml	词㨃	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	象徵性	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	贺尔蒙	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	走头无路	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	超㨃	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	转载请联系作者	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	过得了	guo de le	R2扩展词库读音修正
+cn_dicts/ext.dict.yaml	还贷款	hai dai kuan	R1扩展词库读音修正
+cn_dicts/ext.dict.yaml	邱吉尔	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	都是耍流氓	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	里查德	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	里没有	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	里的人	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	重中之中	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	金榜提名	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	针㨃	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	门课程	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	问为什么	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	阿尔巴尼	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	阿斯匹林	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	隐形眼睛	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	音乐为什么	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	音乐届	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	香奈尔	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	马塞克	*	R2清理错字或噪声词
+cn_dicts/ext.dict.yaml	魏国大	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	鸣人刚	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	鸣人当	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	鹿晗发	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	黑斯廷	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	黑耀石	*	R1清理错字或噪声词
+cn_dicts/ext.dict.yaml	齐恒公	*	R1清理错字或噪声词
+cn_dicts/others.dict.yaml	两个曰	*	R1清理错字或碎片
+cn_dicts/others.dict.yaml	二刺	*	R1清理错字或碎片
+cn_dicts/others.dict.yaml	分裤	*	R1清理错字或碎片
+cn_dicts/others.dict.yaml	原贴	*	R1清理错字或碎片
+cn_dicts/others.dict.yaml	延用	*	R1清理错字或碎片
+cn_dicts/others.dict.yaml	性价	*	R1清理错字或碎片
+cn_dicts/others.dict.yaml	滔博	*	R1清理错字或碎片
+cn_dicts/others.dict.yaml	爪牙	zhua ya	R1清理迁移至纠错表条目
+cn_dicts/others.dict.yaml	租宝	*	R1清理错字或碎片
+cn_dicts/others.dict.yaml	肉沫	*	R1清理错字或碎片
+cn_dicts/others.dict.yaml	自醒	*	R1清理错字或碎片
+cn_dicts/others.dict.yaml	触式	*	R1清理错字或碎片
+cn_dicts/others.dict.yaml	颠佬	*	R1清理错字或碎片
+cn_dicts_cell/animal.dict.yaml	中国冠毛犬犬	*	R1清理动物噪声词
+cn_dicts_cell/animal.dict.yaml	八哥犬	*	R1清理动物噪声词
+cn_dicts_cell/animal.dict.yaml	小雪娜瑞犬	*	R1清理动物噪声词
+cn_dicts_cell/animal.dict.yaml	惠比犬特	*	R1清理动物噪声词
+cn_dicts_cell/animal.dict.yaml	拉不拉多	*	R1清理动物噪声词
+cn_dicts_cell/animal.dict.yaml	日本仲	*	R1清理动物噪声词
+cn_dicts_cell/animal.dict.yaml	榺凤蝶	*	R1清理动物噪声词
+cn_dicts_cell/animal.dict.yaml	短毛正常毛质阿拉斯加	*	R1清理动物噪声词
+cn_dicts_cell/animal.dict.yaml	秦得圣赫伯特犬	*	R1清理动物噪声词
+cn_dicts_cell/animal.dict.yaml	西伯利亚雪撬犬	*	R1清理动物噪声词
+cn_dicts_cell/animal.dict.yaml	路路	*	R1清理动物噪声词
+cn_dicts_cell/animal.dict.yaml	迷你雪娜瑞犬	*	R1清理动物噪声词
+cn_dicts_cell/animal.dict.yaml	迷你雪那瑞	*	R1清理动物噪声词
+cn_dicts_cell/animal.dict.yaml	阿拉斯加雪撬犬	*	R1清理动物噪声词
+cn_dicts_cell/animal.dict.yaml	马耳济斯犬	*	R1清理动物噪声词
+cn_dicts_cell/animal.dict.yaml	黄寻猎犬	*	R1清理动物噪声词
+cn_dicts_cell/chess.dict.yaml	双車挫	*	R1清理象棋错词
+cn_dicts_cell/chess.dict.yaml	双车挫	*	R1清理象棋错词
+cn_dicts_cell/chess2.dict.yaml	中国象棋入门与提高问答	*	R1清理象棋错词
+cn_dicts_cell/chess2.dict.yaml	中国象棋兵法种	*	R1清理象棋错词
+cn_dicts_cell/chess2.dict.yaml	象棋实战精妙杀法例	*	R1清理象棋错词
+cn_dicts_cell/chess2.dict.yaml	黑弃路卒	*	R1清理象棋错词
+cn_dicts_cell/chess2.dict.yaml	黑进路卒转中炮对屏风马	*	R1清理象棋错词
+cn_dicts_cell/composite.dict.yaml	㨃回去	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一上悠亚	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一下把	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一下放	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一不能	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一专业	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一专线	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一专门	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一丝不	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一个全新的	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一古脑	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一夜爆富	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一定一定一定	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一杯子	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一泄千里	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一相情愿	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一秒中	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一秒种	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一股作气	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	一被子	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	三分种	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	不变型	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	不可思意	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	不屈不饶	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	不熟悉的	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	不良反映	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	不论你是	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	专业的人做	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	专业的就业	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	中规中距	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	举个栗子	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	于是呼	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	云淡风清	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	仗义直言	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	众不同	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	余万	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	佛洛伦萨	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	侥幸心里	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	信基金	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	全天侯	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	再所难免	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	几乎无	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	凭心而论	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	出版社出版	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	到目前位置	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	医生说	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	卧槽卧槽	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	双向情感障碍	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	发扬广大	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	变换莫测	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	另一伴	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	司马一	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	吉普号	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	同事说	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	同学说	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	后背箱	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	告诉公路	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	四两拨千金	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	因人而宜	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	因人而已	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	国家税务总局关于	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	塞尔号	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	墙安装	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	墙涂料	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	墙裂推荐	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	墙面装	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	大河田	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	天方夜谈	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	天眼妹	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	天赋异秉	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	天马星空	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	好高务远	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	如火如茶	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	妖蛾子	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	季候赛	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	孰不知	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	实践是检验真理	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	小贴示	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	少主子	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	巴黎圣日尔曼	*	错字（正字：巴黎圣日耳曼），防止从 ext 删除后由 composite 复活
+cn_dicts_cell/composite.dict.yaml	带入感	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	年级轻轻	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	应收帐款	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	强制性脊柱炎	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	微震天	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	心机婊	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	惊奇的发现	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	惊讶的发现	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	感同深受	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	我们说	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	我爸说	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	把钱挣	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	护法素	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	报团取暖	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	教课书	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	斯科达	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	日尔曼人	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	普罗米休斯	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	暴发力	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	最底价	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	最高人民法院关于	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	有多牛逼	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	朱八戒	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	标致性	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	此消彼涨	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	武艺一	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	气侯变化	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	汗流夹背	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	沉默成本	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	涛涛不绝	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	深蓝君	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	清楚的知道	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	溶为一体	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	灰飞湮灭	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	爆发户	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	牛皮藓	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	牛逼哄哄	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	特别特别特别	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	王菲真	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	痛苦流涕	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	白肤美	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	相形见拙	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	相辅相承	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	真特么	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	空气炸	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	第三界	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	第二界	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	算的上是	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	约季奇	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	美丽坚	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	老板说	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	职业药师	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	能拿的出手	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	脑洞打开	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	艾德华	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	说中国	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	请关注微信公众号	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	谁特么	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	质的飞越	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	转载请	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	通俗的讲	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	逼格高	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	金钢狼	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	铺面而来	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	链锁反应	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	雪中送碳	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	顺利成章	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/composite.dict.yaml	领导说	*	R1/R2清理综合词库错字或噪声
 cn_dicts_cell/composite.dict.yaml	驾驶仓	*	错字（正字：驾驶舱），防止从 ext 删除后由 composite 复活
+cn_dicts_cell/composite.dict.yaml	高大尚	*	R1/R2清理综合词库错字或噪声
+cn_dicts_cell/exthot.dict.yaml	一但	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	一摸一样的	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	七夜雪预约	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	七月啦	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	三砖移步挑战	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	下的大吗	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	下的太大了	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	中餐厅杀青	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	为什么不虐泉	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	乌克兰契约	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	云边有个	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	云边的	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	人鱼已杀青	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	什金	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	依托答辩	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	俩个月	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	俩件	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	其妙的	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	到的早	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	劳资蜀道山	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	勾石	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	单依纯	dan yi chun	R1热词读音修正
+cn_dicts_cell/exthot.dict.yaml	博纳财报	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	卡摸	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	卧草	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	厚礼蟹	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	原神火神首曝	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	原神纳塔全员	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	原神肯德基	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	吊五	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	同协	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	名字快闪挑战	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	周深新歌缝合	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	周深起名天才	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	夏日整活日记	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	大于五个字	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	大差不大	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	如果我	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	对不己	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	帮我助力一下	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	度年华	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	张凌赫赵今麦	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	弹反	dan fan	R1热词读音修正
+cn_dicts_cell/exthot.dict.yaml	抓娃娃点映	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	挑战做神仙鱼	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	掉称	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	无名毛利率	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	有个小卖部	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	李梦承认恋情	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	杭盖替身	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	林俊杰原唱	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	查的严	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	榴莲的	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	欢迎普京	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	歌手出场顺序	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	歌手直播	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	歌手突围赛	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	武磊两射两传	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	汪苏泷唱氧气	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	沟槽的	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	河北彩花	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	泰国丸美	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	炉岩碳	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	热的很	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	热的我	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	牛魔的	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	玩的开心	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	现眼包	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	登记的	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	相信波音	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	相柳黑衣银发	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	省力版爬泰山	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	真的会写	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	童话镇慢动作	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	紫狗	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	累的很	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	网剧错位	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	网暴死	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	考的高	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	肯德基原神联动	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	若月亮	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	蓝盈莹演技	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	褪色者	tui shai zhe	R1热词读音修正
+cn_dicts_cell/exthot.dict.yaml	解班	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	贵女杀青	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	起来的早	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	近的很	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	迪丽热巴活动	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	邓为提灯剧照	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	那英天后回归	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	那英第一	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	金九含金量	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	金九封面预告	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	链接地	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	错位开播	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	长相思断更	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	阿黛尔采访	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	陈泽抽奖	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	降的	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	雌小鬼	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	霸王茶姬口令	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	香缇莫唱错词	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	鸡哔你	*	R1清理热词噪声
+cn_dicts_cell/exthot.dict.yaml	黄宣秒了	*	R1清理热词噪声
+cn_dicts_cell/food.dict.yaml	弥猴桃	*	R1清理错别字
+cn_dicts_cell/game.dict.yaml	传说中的勋章	chuan shuo zhong di xun zhang	R1/R2游戏词库读音修正
+cn_dicts_cell/game.dict.yaml	但求一睡王遗风	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	元大头	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	具无霸	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	十夫长的标记	shi fu chang de biao ji	R1/R2游戏词库读音修正
+cn_dicts_cell/game.dict.yaml	卡卡希	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	司巴达	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	叽叽叽叽叽叽叽叽叽叽	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	吃藕	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	名选手	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	吐蕃	tu fan	R1/R2游戏词库读音修正
+cn_dicts_cell/game.dict.yaml	咩咩咩咩咩咩咩	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	大侠你缺腿部挂件吗	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	大便来	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	大战来帅比不帅不要来	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	大湿	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	大还丹	da hai dan	R1/R2游戏词库读音修正
+cn_dicts_cell/game.dict.yaml	安弹	an tan	R1/R2游戏词库读音修正
+cn_dicts_cell/game.dict.yaml	对酒行	dui jiu hang	R1/R2游戏词库读音修正
+cn_dicts_cell/game.dict.yaml	巴天虎	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	幼儿源	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	张无计	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	我单	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	拆弹装备	chai tan zhuang bei	R1/R2游戏词库读音修正
+cn_dicts_cell/game.dict.yaml	摄相头	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	智尊宝	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	暗之	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	月神圣地密室	yue shen sheng de mi shi	R1/R2游戏词库读音修正
+cn_dicts_cell/game.dict.yaml	月神圣地废墟	yue shen sheng de fei xu	R1/R2游戏词库读音修正
+cn_dicts_cell/game.dict.yaml	李宵龙	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	李小遥	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	求伞啊啊啊啊	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	琴始皇	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	甘道孚	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	皇帝内经	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	破破弹片	po po tan pian	R1/R2游戏词库读音修正
+cn_dicts_cell/game.dict.yaml	纪不得	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	练金术士	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	胆小的哥布林	dan xiao di ge bu lin	R1/R2游戏词库读音修正
+cn_dicts_cell/game.dict.yaml	脚部	jue bu	R1/R2游戏词库读音修正
+cn_dicts_cell/game.dict.yaml	莣鋽壹苆	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	虚无飘渺	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	装比	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	试作澹月	shi zuo tan yue	R1/R2游戏词库读音修正
+cn_dicts_cell/game.dict.yaml	谢长	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	还圣奥迹	hai sheng ao ji	R1/R2游戏词库读音修正
+cn_dicts_cell/game.dict.yaml	迷云重重	mi yun zhong zhong	R1/R2游戏词库读音修正
+cn_dicts_cell/game.dict.yaml	道可道非常道浩气都是大傻帽	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	道长你的肾	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	铜湘玉	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	震摄	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	高根鞋	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	魏小宝	*	R1/R2清理游戏噪声词
+cn_dicts_cell/game.dict.yaml	黄小明	*	R1/R2清理游戏噪声词
+cn_dicts_cell/geography.dict.yaml	两座老城	*	R1清理地理噪声词
+cn_dicts_cell/geography.dict.yaml	佩乔尔斯克院	*	R1清理地理噪声词
+cn_dicts_cell/geography.dict.yaml	勘察加火	*	R1清理地理噪声词
+cn_dicts_cell/geography.dict.yaml	叙利至沙洛呐	*	R1清理地理噪声词
+cn_dicts_cell/geography.dict.yaml	地学知识介绍牌	*	R1清理地理噪声词
+cn_dicts_cell/geography.dict.yaml	地形要素划分标准及分值表	*	R1清理地理噪声词
+cn_dicts_cell/geography.dict.yaml	大陆车阀说	*	R1清理地理噪声词
+cn_dicts_cell/geography.dict.yaml	形谷	*	R1清理地理噪声词
+cn_dicts_cell/geography.dict.yaml	有方廷斯	*	R1清理地理噪声词
+cn_dicts_cell/geography.dict.yaml	霍拉圣巴拉巴	*	R1清理地理噪声词
+cn_dicts_cell/history.dict.yaml	奕詝	yi nuo	R1/R2历史词库读音修正
+cn_dicts_cell/history.dict.yaml	姬缗	ji mian	R1/R2历史词库读音修正
+cn_dicts_cell/history.dict.yaml	姬辟方	ji bi fang	R1/R2历史词库读音修正
+cn_dicts_cell/history.dict.yaml	宋辟公	song pi gong	R1/R2历史词库读音修正
+cn_dicts_cell/history.dict.yaml	张爱龄	*	R1/R2清理历史错词
+cn_dicts_cell/history.dict.yaml	张玄靓	zhang xuan liang	R1/R2历史词库读音修正
+cn_dicts_cell/history.dict.yaml	张重华	zhang zhong hua	R1/R2历史词库读音修正
+cn_dicts_cell/history.dict.yaml	张颌	*	R1/R2清理历史错词
+cn_dicts_cell/history.dict.yaml	忽必列	*	R1/R2清理历史错词
+cn_dicts_cell/history.dict.yaml	田辟彊	tian bi jiang	R1/R2历史词库读音修正
+cn_dicts_cell/history.dict.yaml	秃发偄檀	*	R1/R2清理历史错词
+cn_dicts_cell/history.dict.yaml	肯能	*	R1/R2清理历史错词
+cn_dicts_cell/history.dict.yaml	胤禵	yin zhi	R1/R2历史词库读音修正
+cn_dicts_cell/history.dict.yaml	范睢	*	R1/R2清理历史错词
+cn_dicts_cell/history.dict.yaml	许诸	*	R1/R2清理历史错词
+cn_dicts_cell/history.dict.yaml	通证	*	R1/R2清理历史错词
+cn_dicts_cell/history.dict.yaml	重华	zhong hua	R1/R2历史词库读音修正
+cn_dicts_cell/history.dict.yaml	鞑掳	*	R1/R2清理历史错词
+cn_dicts_cell/idiom.dict.yaml	以吾一日长乎尔	yi wu yi ri chang hu er	R1/R2成语读音修正
+cn_dicts_cell/idiom.dict.yaml	以吾从大夫之后	yi wu cong dai fu zhi hou	R1/R2成语读音修正
+cn_dicts_cell/idiom.dict.yaml	军团要塞	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	冯诺依曼	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	初级临时驾驶执照	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	剑刃风暴	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	千针石林	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	各色名样	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	大动公惯	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	大脑冻结	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	大败亏轮	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	婊子无情	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	宽洪大量	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	对薄公堂	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	山岭巨人	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	布衣碎片	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	归根结蒂	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	恒寂之印	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	扭曲虚空	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	摸出来的	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	时光之穴	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	昏睡药水	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	暗冰反射	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	暮色森林	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	混世冥牛	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	瑞文戴尔	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	矜矜业业	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	砖家叫兽	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	自大夫出	zi dai fu chu	R1/R2成语读音修正
+cn_dicts_cell/idiom.dict.yaml	臭不要脸	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/idiom.dict.yaml	面向对象程序设计	*	R1/R2清理成语错词或噪声
+cn_dicts_cell/industry_product.dict.yaml	乔丹篮球鞋	*	R1清理工业品噪声词
+cn_dicts_cell/industry_product.dict.yaml	乾祥	*	R1清理工业品噪声词
+cn_dicts_cell/industry_product.dict.yaml	乾祥服饰	*	R1清理工业品噪声词
+cn_dicts_cell/industry_product.dict.yaml	乾祥服饰旗舰店	*	R1清理工业品噪声词
+cn_dicts_cell/industry_product.dict.yaml	博缘轩貔貅	*	R1清理工业品噪声词
+cn_dicts_cell/industry_product.dict.yaml	型扳手	*	R1清理工业品噪声词
+cn_dicts_cell/industry_product.dict.yaml	型荧光灯管	*	R1清理工业品噪声词
+cn_dicts_cell/industry_product.dict.yaml	塑料桶罐	*	R1清理工业品噪声词
+cn_dicts_cell/industry_product.dict.yaml	墨盒水	*	R1清理工业品噪声词
+cn_dicts_cell/industry_product.dict.yaml	多款供选	*	R1清理工业品噪声词
+cn_dicts_cell/industry_product.dict.yaml	家用竹	*	R1清理工业品噪声词
+cn_dicts_cell/industry_product.dict.yaml	永奇昱祥	*	R1清理工业品噪声词
+cn_dicts_cell/industry_product.dict.yaml	炎焱妖	*	R1清理工业品噪声词
+cn_dicts_cell/industry_product.dict.yaml	炎焱妖服饰	*	R1清理工业品噪声词
+cn_dicts_cell/industry_product.dict.yaml	烙铁咀	*	R1清理工业品噪声词
+cn_dicts_cell/industry_product.dict.yaml	烟灰缸袋	*	R1清理工业品噪声词
+cn_dicts_cell/industry_product.dict.yaml	纸桶罐	*	R1清理工业品噪声词
+cn_dicts_cell/industry_product.dict.yaml	裳尚芊	*	R1清理工业品噪声词
+cn_dicts_cell/inputmethod.dict.yaml	五笔输入法作者是王永民	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	亾师	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	介介	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	光華	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	冰雪拼音作者蓝落萧	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	墨奇音形的作者是伽布里克	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	声笔输入法作者戴石麟	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	天码输入法的作者是宋天	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	宇浩输入法作者是朱宇浩	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	小鹤音形作者是何海峰	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	星陳	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	汉心码作者晡时之光	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	爱师	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	爱次漏的小栏还	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	王旁青头戋五一土士二干十寸雨一二还有革字底大犬三羊古石厂木丁西工戈草头右框七	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	白霜拼音的作者是伽布里克	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	苗师	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	蒻师	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	蔃师	*	R1清理输入法噪声词
+cn_dicts_cell/inputmethod.dict.yaml	鲸师	*	R1清理输入法噪声词
+cn_dicts_cell/literature.dict.yaml	不薄今人爱古人	bu bao jin ren ai gu ren	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	且有大觉而后知此其大梦也	qie you da jiao er hou zhi ci qi da meng ye	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	予恶乎知说生之非惑邪	yu e hu zhi shuo sheng zhi fei huo xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	以吾一日长乎尔	yi wu yi ri chang hu er	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	以吾从大夫之后	yi wu cong dai fu zhi hou	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	其俱非也邪	qi ju fei ye xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	其或非也邪	qi huo fei ye xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	其未尝有言邪	qi wei chang you yan xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	其正色邪	qi zheng se xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	其远而无所至极邪	qi yuan er wu suo zhi ji xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	前者唱于而随者唱喁	qian zhe chang yu er sui zhe chang yu	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	可不哀邪	ke bu ai xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	吾所待又有待而然者邪	wu suo dai you you dai er ran zhe xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	吾有待而然者邪	wu you dai er ran zhe xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	哀乐不能入也	ai yue bu neng ru ye	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	回㨃	*	R1清理古诗文噪声词
+cn_dicts_cell/literature.dict.yaml	子知子之所不知邪	zi zhi zi zhi suo bu zhi xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	庸讵知吾所谓不知之非知邪	yong ju zhi wu suo wei bu zhi zhi fei zhi xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	庸讵知吾所谓知之非不知邪	yong ju zhi wu suo wei zhi zhi fei bu zhi xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	彼且恶乎待哉	bi qie e hu dai zai	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	怒者其谁邪	nu zhe qi shui xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	我们这里	*	R1清理古诗文噪声词
+cn_dicts_cell/literature.dict.yaml	我果非也邪	wo guo fei ye xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	文之以礼乐	wen zhi yi li le	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	斥鴳笑之曰	chi e xiao zhi yue	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	明朝驿使发	ming chao yi shi fa	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	春情只到梨花薄	chun qing zhi dao li hua bao	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	是之谓两行	shi zhi wei liang hang	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	朙月	*	R1清理古诗文噪声词
+cn_dicts_cell/literature.dict.yaml	朝三而暮四	chao san er mu si	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	未数数然也	wei shu shu ran ye	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	未见颜色而言谓之瞽	wei jian yan shai er yan wei zhi gu	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	果有言邪	guo you yan xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	汉文有道恩犹薄	han wen you dao en you bao	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	淖约若处子	nao yue ruo chu zi	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	然则朝四而暮三	ran ze chao si er mu san	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	然则物无知邪	ran ze wu wu zhi xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	狐裘不暖锦衾薄	hu qiu bu nuan jin qin bao	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	狐貉之厚以居	hu hao zhi hou yi ju	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	而待彼也邪	er dai bi ye xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	而曾二虫之无知	er ceng er chong zhi wu zhi	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	而果非也邪	er guo fei ye xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	自大夫出	zi dai fu chu	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	裨谌草创之	bi shen cao chuang zhi	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	言恶乎存而不可	yan e hu cun er bu ke	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	言恶乎隐而有是非	yan e hu yin er you shi fei	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	躬自厚而薄责于人	gong zi hou er bao ze yu ren	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	道恶乎往而不存	dao e hu wang er bu cun	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	道恶乎隐而有真伪	dao e hu yin er you zhen wei	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	青山朝别暮还见	qing shan chao bie mu hai jian	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	非夫子之友邪	fei fu zi zhi you xie	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	鞦韆	*	R1清理古诗文噪声词
+cn_dicts_cell/literature.dict.yaml	风之有庳	feng zhi you bei	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	鲁人为长府	lu ren wei zhang fu	R1古诗文读音修正
+cn_dicts_cell/literature.dict.yaml	𤭢了	*	R1清理古诗文噪声词
+cn_dicts_cell/luna.dict.yaml	不醒人事	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	了鸟	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	侏㑩纪	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	兴高彩烈	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	冒然	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	冯诺以曼	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	别出新裁	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	前扑后继	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	叶面对称	ye mian dui cheng	R1停用库读音修正
+cn_dicts_cell/luna.dict.yaml	夏洛特·勃良特	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	如法泡制	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	委屈求全	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	寒喧	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	展露头角	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	幅射	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	干逼	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	恰如其份	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	悬梁刺骨	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	搭挡	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	无庸置疑	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	无精打彩	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	毛骨耸然	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	气慨	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	混水摸鱼	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	焕然冰释	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	留连忘返	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	直接了当	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	神彩奕奕	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	立杆见影	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	维妙维肖	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	美仑美奂	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	趋之若骛	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	重迭	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	震憾	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	驻戌	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	驼鸟	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	驼鸟政策	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	骑土	*	R1清理停用库噪声词
+cn_dicts_cell/luna.dict.yaml	鬼计多端	*	R1清理停用库噪声词
+cn_dicts_cell/medication.dict.yaml	一次性使用导光鼻塞	yi ci xing shi yong dao guang bi se	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	一次性使用输氧管输出管加鼻塞	yi ci xing shi yong shu yang guan shu chu guan jia bi se	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	三焦俞穴	san jiao yu xue	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	下极俞	xia ji yu	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	中以保身长全	zhong yi bao shen zhang quan	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	中膂俞	zhong lv yu	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	丹参保心茶	dan can bao xin cha	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	人体对称美	ren ti dui cheng mei	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	人参保肺	ren can bao fei	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	人参保肺丸	ren can bao fei wan	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	人禀五常以有五藏	ren bing wu chang yi you wu cang	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	人造石面地柜	ren zao shi mian de gui	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	以有五藏	yi you wu cang	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	伤风鼻塞病	shang feng bi sai bing	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	全须生晒参	quan xu sheng shai can	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	关元俞穴	guan yuan yu xue	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	冷荨麻疹	leng qian ma zhen	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	切开法重睑成形术	qie kai fa zhong jian cheng xing shu	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	创可帖	*	R1/R2清理医药噪声词
+cn_dicts_cell/medication.dict.yaml	前列仙	*	R1/R2清理医药噪声词
+cn_dicts_cell/medication.dict.yaml	厥阴俞穴	jue yin yu xue	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	参苓白术口服液	can ling bai zhu kou fu ye	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	参苓白术扁豆陈	can ling bai zhu bian dou chen	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	参苓白术片	can ling bai zhu pian	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	参苓白术胶囊	can ling bai zhu jiao nang	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	参苓白术颗粒	can ling bai zhu ke li	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	受调分泌	shou diao fen mi	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	埋线法重睑成形术	mai xian fa zhong jian cheng xing shu	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	墨元参	mo yuan can	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	天行赤眼暴翳病	tian hang chi yan bao yi bing	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	天行赤眼病	tian hang chi yan bing	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	姜汤调服止嗽频	jiang tang diao fu zhi sou pin	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	实者枳壳易人参	shi zhe zhi ke yi ren can	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	尅伐	*	R1/R2清理医药噪声词
+cn_dicts_cell/medication.dict.yaml	巨阙俞	ju que yu	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	干姜甘草与人参	gan jiang gan cao yu ren can	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	心俞穴	xin yu xue	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	悸眩瞤惕急煎尝	ji xuan shun ti ji jian chang	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	术附汤	shu fu tang	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	枣汤调服益脾神	zao tang diao fu yi pi shen	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	枳术丸	zhi shu wan	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	枳术汤	zhi shu tang	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	栓塞材料	shuan sai cai liao	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	楤木胃痛	cong mu wei tong	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	楤木胃痛颗粒	cong mu wei tong ke li	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	气海俞穴	qi hai yu xue	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	氨来呫诺	an lai che nuo	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	氨来呫诺糊剂	an lai che nuo hu ji	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	泔茅术	gan mao shu	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	注射用还原型谷胱甘肽	zhu she yong hai yuan xing gu guang gan tai	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	派蒙	*	R1/R2清理医药噪声词
+cn_dicts_cell/medication.dict.yaml	海咯因检测试剂	*	R1/R2清理医药噪声词
+cn_dicts_cell/medication.dict.yaml	海尔洗衣机	*	R1/R2清理医药噪声词
+cn_dicts_cell/medication.dict.yaml	牛羊等	*	R1/R2清理医药噪声词
+cn_dicts_cell/medication.dict.yaml	猫人参	mao ren can	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	生脉麦味与人参	sheng mai mai wei yu ren can	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	痔疮栓塞	zhi chuang shuan sai	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	白内障针拨套出术	bai nei zhang zhen bo tao chu zhu	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	白沙糖	*	R1/R2清理医药噪声词
+cn_dicts_cell/medication.dict.yaml	白环俞穴	bai huan yu xue	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	眼用粘弹剂	yan yong zhan dan ji	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	督俞穴	du yu xue	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	石荠苧	shi ji zhu	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	神藏穴	shen zang xue	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	种氨基酸	*	R1/R2清理医药噪声词
+cn_dicts_cell/medication.dict.yaml	窗头柜	*	R1/R2清理医药噪声词
+cn_dicts_cell/medication.dict.yaml	经络府俞	jing luo fu yu	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	缝扎法重睑成形术	feng zha fa zhong jian cheng xing shu	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	肋间神经	le jian shen jing	R1/R2医药词库读音修正
+cn_dicts_cell/medication.dict.yaml	肠系膜栓塞	chang xi mo shuan sai	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	股薄肌	gu bao ji	R1/R2医药词库读音修正
+cn_dicts_cell/medication.dict.yaml	肢体栓塞	zhi ti shuan sai	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	肩中俞穴	jian zhong yu xue	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	肩外俞穴	jian wai yu xue	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	肾动脉栓塞	shen dong mai shuan sai	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	肾动脉栓塞术	shen dong mai shuan sai shu	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	胃脘下俞	wei wan xia yu	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	胆俞穴	dan yu xue	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	胎萎不长病	tai wei bu chang bing	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	胫前着色斑	jing qian zhe se ban	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	脊髓型颈椎病	ji sui xing jing chui bing	R1/R2医药词库读音修正
+cn_dicts_cell/medication.dict.yaml	腰俞穴	yao yu xue	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	荨麻疹	qian ma zhen	R1/R2医药词库读音修正
+cn_dicts_cell/medication.dict.yaml	薄厥病	bao jue bing	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	薄膜	bao mo	R1/R2医药词库读音修正
+cn_dicts_cell/medication.dict.yaml	血块栓塞	xue kuai shuan sai	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	賫百年之寿命	lai bai nian zhi shou ming	R1/R2医药词库读音修正
+cn_dicts_cell/medication.dict.yaml	还原型谷胱甘肽注射液	hai yuan xing gu guang gan tai zhu she ye	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	还原型谷胱甘肽滴眼液	hai yuan xing gu guang gan tai di yan ye	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	还原型谷胱甘肽片	hai yuan xing gu guang gan tai pian	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	还原型谷胱甘肽钠	hai yuan xing gu guang gan tai na	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	陈香露白露胶囊	chen xiang lou bai lu jiao nang	R1/R2医药词库读音修正
+cn_dicts_cell/medication.dict.yaml	颜色三角	yan shai san jiao	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	颜色宽容度	yan shai kuan rong du	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	颜色恒常性	yan shai heng chang xing	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	颜色方程	yan shai fang cheng	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	高风雀目病	gao feng qiao mu bing	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	鸢都寒痹液	yuan dou han bi ye	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	鸢都寒痹药酒料	yuan dou han bi yao jiu liao	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	鸢都感冒颗粒	yuan dou gan mao ke li	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	鹘眼凝睛病	gu yan ning jing bing	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	麻黄加术汤	ma huang jia shu tang	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	鼻塞病	bi sai bing	R1清理医药重复错音行
+cn_dicts_cell/music.dict.yaml	复调音乐	fu tiao yin le	R1清理重复错音（ext已有正音）
+cn_dicts_cell/name.dict.yaml	二看	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	什维利	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	伊斯玛	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	伊纳里	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	伦斯基	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	依克多	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	元起	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	克特西	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	克里普	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	切夫斯基	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	利亚诺	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	卡尔达	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	叶尔莫洛	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	同同家	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	基里	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	堀口悠	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	墓主	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	奥巴	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	孔明曰	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	季伯	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	季伯初	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	季伯常	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	季伯英	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	季伯达	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	季伯长	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	季耶夫	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	安哲罗	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	实车	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	小林多喜	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	尼乌斯	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	帕夫利	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	带教	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	席慕容	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	弗洛依	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	德米特	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	成濑巳喜	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	打本	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	拉斯	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	斯坎德	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	斯塔夫	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	斯巴赫	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	斯托夫	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	斯菲尔德	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	施可汗	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	施托克	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	施特拉	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	施莱歇	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	普罗霍洛	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	杜布切	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	柯尔莫	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	格尔利	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	格雷茨	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	梁直导	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	梅丽桑	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	欧阳峰	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	歌德巴赫	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	武帝纪	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	没地去	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	洛丝罗	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	浩司案	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	炖菜	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	狄俄涅索斯	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	狄奥尼	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	王弼注	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	王霸之	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	瓦尔拉	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	田冈茂	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	登美彦	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	短短的	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	石乐志	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	维尼亚夫	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	缪尔塞思	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	罗斯塔	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	花材	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	花活	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	莫里亚	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	莫霍利	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	萨拉曼	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	萨拉班	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	西莫夫	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	赛尔达	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	赫梅尔尼	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	那托列	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	里亚诺	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	铁木辛	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	闵可夫	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	阿尔伯	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	阿尔帕	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	阿尔玛格	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	阿布辛	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	阿格里	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	阿波利奈	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	阿赫梅	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	霍亨斯	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	霍亨索	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	霍扬斯克镇	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	马嘎尔尼	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	马斯塔	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	骨相	*	R1清理人名错词或噪声
+cn_dicts_cell/name.dict.yaml	鲇川哲	*	R1清理人名错词或噪声
+cn_dicts_cell/name2.dict.yaml	曾根昌世	ceng gen chang shi	R1/R2人名2读音修正
+cn_dicts_cell/name2.dict.yaml	本多重次	ben duo chong ci	R1/R2人名2读音修正
+cn_dicts_cell/name2.dict.yaml	瀞灵壁	cheng ling bi	R1/R2人名2读音修正
+cn_dicts_cell/name2.dict.yaml	神保长住	shen bao zhang zhu	R1/R2人名2读音修正
+cn_dicts_cell/name2.dict.yaml	神保长城	shen bao zhang cheng	R1/R2人名2读音修正
+cn_dicts_cell/name2.dict.yaml	神鎗	shen cheng	R1/R2人名2读音修正
+cn_dicts_cell/place.dict.yaml	许浩城	*	R2清理噪声地名
+cn_dicts_cell/shulihua.dict.yaml	单丁基氧化锡	shan ding ji yang hua xi	R1/R2数理化读音修正
+cn_dicts_cell/shulihua.dict.yaml	参预者	*	R1/R2清理数理化噪声词
+cn_dicts_cell/shulihua.dict.yaml	同担	*	R1/R2清理数理化噪声词
+cn_dicts_cell/shulihua.dict.yaml	和厚朴酚	he hou pu fen	R1/R2数理化读音修正
+cn_dicts_cell/shulihua.dict.yaml	四氢化矽	*	R1/R2清理数理化噪声词
+cn_dicts_cell/shulihua.dict.yaml	没药醇	mei yao chun	R1/R2数理化读音修正
+cn_dicts_cell/shulihua.dict.yaml	消旋山莨菪碱	xiao xuan shan liang dang jian	R1/R2数理化读音修正
+cn_dicts_cell/shulihua.dict.yaml	滴滴滴	*	R1/R2清理数理化噪声词
+cn_dicts_cell/shulihua.dict.yaml	硫酸多粘菌素	liu suan duo zhan jun su	R1/R2数理化读音修正
+cn_dicts_cell/shulihua.dict.yaml	维单纯形	*	R1/R2清理数理化噪声词
+cn_dicts_cell/shulihua.dict.yaml	胡罗卜素	hu luo bu su	R1/R2数理化读音修正
+cn_dicts_cell/shulihua.dict.yaml	茄尼醇	jia ni chun	R1/R2数理化读音修正
+cn_dicts_cell/shulihua.dict.yaml	茄替胶	jia ti jiao	R1/R2数理化读音修正
+cn_dicts_cell/shulihua.dict.yaml	茄碱度	jia jian du	R1/R2数理化读音修正
+cn_dicts_cell/shulihua.dict.yaml	还原型辅酶	hai yuan xing fu mei	R1/R2数理化读音修正
+cn_dicts_cell/sport.dict.yaml	亚利山大	*	R2清理体育错词
+cn_dicts_cell/sport.dict.yaml	巴塞罗纳	*	R2清理体育错词
+cn_dicts_cell/sport.dict.yaml	巴黎圣日尔曼	*	R2清理体育错词
+cn_dicts_cell/sport.dict.yaml	本泽玛	*	R2清理体育错词
+cn_dicts_cell/sport.dict.yaml	杜峰	*	R2清理体育错词
+cn_dicts_cell/sport.dict.yaml	约什	yue shen	R1体育词库读音修正
+cn_dicts_cell/sport.dict.yaml	约什卡尔迪伦	yue shen ka er di lun	R1体育词库读音修正
+cn_dicts_cell/sport.dict.yaml	约什布恩	yue shen bu en	R1体育词库读音修正
+cn_dicts_cell/sport.dict.yaml	约什鲍威尔	yue shen bao wei er	R1体育词库读音修正
+cn_dicts_cell/sport.dict.yaml	维多里亚	*	R2清理体育错词
+cn_dicts_cell/sport.dict.yaml	维尼斯	*	R2清理体育错词
+cn_dicts_cell/sport.dict.yaml	驾驶仓	*	R2清理体育错词

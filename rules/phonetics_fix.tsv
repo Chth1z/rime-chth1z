@@ -1,5 +1,907 @@
 # target_file	word	old_py	new_py	reason	source
-# 示例：cn_dicts/base.dict.yaml	某个词	old py	new py	规范读音修正	现汉第7版
+# 审音/读音修正规则（唯一真源，见 docs/DICTIONARY_SPEC.md 第3/6节）
+cn_dicts/8105.dict.yaml	芔	cao	hui	8105单字规范读音修正	现汉第7版
+cn_dicts/base.dict.yaml	上都	shang du	shang dou	R2基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	不咋的	bu za di	bu za de	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	不得劲	bu dei jin	bu de jin	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	与衣狐貉者立	yu yi hu hao zhe li	yu yi hu he zhe li	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	丙泊酚	bing po fen	bing bo fen	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	中大夫	zhong dai fu	zhong da fu	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	临别殷勤重寄词	lin bie yin qin zhong ji ci	lin bie yin qin chong ji ci	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	乍暖还寒	zha nuan huan han	zha nuan hai han	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	乍暖还寒时候	zha nuan huan han shi hou	zha nuan hai han shi hou	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	事了	shi liao	shi le	R2基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	事非得已	shi fei dei yi	shi fei de yi	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	五行八作	wu xing ba zuo	wu hang ba zuo	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	今人多不弹	jin ren duo bu dan	jin ren duo bu tan	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	仙乐风飘处处闻	xian le feng piao chu chu wen	xian yue feng piao chu chu wen	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	以俟夫观人风者得焉	yi qi fu guan ren feng zhe de yan	yi si fu guan ren feng zhe de yan	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	何日更重游	he ri geng zhong you	he ri geng chong you	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	依托泊苷	yi tuo po gan	yi tuo bo gan	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	便宜坊	pian yi fang	bian yi fang	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	俞穴	yu xue	shu xue	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	俟我于城隅	qi wo yu cheng yu	si wo yu cheng yu	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	刑不上大夫	xing bu shang dai fu	xing bu shang da fu	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	利星行	li xing xing	li xing hang	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	刮匙	gua shi	gua chi	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	削骨	xiao gu	xue gu	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	劲装	jin zhuang	jing zhuang	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	勾调	gou diao	gou tiao	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	卡泊芬净	ka po fen jing	ka bo fen jing	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	句芒	ju mang	gou mang	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	善贾而沽	shan gu er gu	shan jia er gu	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	喔哟	wo you	o yo	R2基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	均订	junding	jun ding	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	壳牌	qiao pai	ke pai	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	多粘菌素	duo zhan jun su	duo nian jun su	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	多言数穷	duo yan shu qiong	duo yan shuo qiong	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	大行情	da xing qing	da hang qing	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	头孢泊肟酯	tou bao po wo zhi	tou bao bo wo zhi	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	如听仙乐耳暂明	ru ting xian le er zan ming	ru ting xian yue er zan ming	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	屏声静气	ping sheng jing qi	bing sheng jing qi	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	岑参	cen can	cen shen	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	嵇曾筠	ji ceng yun	ji zeng yun	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	川芎茶调散	chuan xiong cha diao san	chuan xiong cha tiao san	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	弹个	dan ge	tan ge	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	恶之欲其死	e zhi yu qi si	wu zhi yu qi si	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	意义识记	yi yi zhi ji	yi yi shi ji	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	我劝天公重抖擞	wo quan tian gong zhong dou sou	wo quan tian gong chong dou sou	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	我勒个去	wo lei ge qu	wo le ge qu	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	我哟	wo you	wo yo	R2基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	我言秋日胜春朝	wo yan qiu ri sheng chun chao	wo yan qiu ri sheng chun zhao	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	手长	shou zhang	shou chang	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	打颤	da zhan	da chan	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	折衷	she zhong	zhe zhong	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	拉群	la qu	la qun	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	攒竹	zan zhu	cuan zhu	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	攒竹穴	zan zhu xue	cuan zhu xue	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	故技重施	gu ji zhong shi	gu ji chong shi	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	时行感冒	shi hang gan mao	shi xing gan mao	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	星都	xing dou	xing du	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	曝出	pu chu	bao chu	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	曲阑深处重相见	qu lan shen chu zhong xiang jian	qu lan shen chu chong xiang jian	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	有意识地	you yi shi di	you yi shi de	R2基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	有针对性地	you zhen dui xing di	you zhen dui xing de	R2基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	服部半藏	fu bu ban cang	fu bu ban zang	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	格栅灯	ge zha deng	ge shan deng	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	桑给巴尔	sang gei ba er	sang ji ba er	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	桑螵蛸	sang piao shao	sang piao xiao	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	椎心饮泣	zhui xin yin qi	chui xin yin qi	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	母子俩	mu zi liang	mu zi lia	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	水榭花都	shui xie hua dou	shui xie hua du	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	泊洛沙姆	po luo sha mu	bo luo sha mu	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	海螵蛸	hai piao shao	hai piao xiao	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	淡淡地	dan dan di	dan dan de	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	炒茄丝	chao jia si	chao qie si	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	炝青蛤	qiang qing ha	qiang qing ge	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	炸茄饼	zha jia bing	zha qie bing	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	燕都	yan dou	yan du	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	生查子	sheng cha zi	sheng zha zi	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	申时行	shen shi hang	shen shi xing	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	白袷蓝衫	bai qia lan shan	bai jia lan shan	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	盖聂	gai nie	ge nie	R2基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	盛年不重来	sheng nian bu zhong lai	sheng nian bu chong lai	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	直直地	zhi zhi di	zhi zhi de	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	简短地	jian duan di	jian duan de	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	粘多糖	zhan duo tang	nian duo tang	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	粘滞性	zhan zhi xing	nian zhi xing	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	系统地	xi tong di	xi tong de	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	细细地	xi xi di	xi xi de	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	美都	mei dou	mei du	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	肝俞穴	gan yu xue	gan shu xue	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	肝血	gan xie	gan xue	R2基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	肺俞穴	fei yu xue	fei shu xue	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	胃俞穴	wei yu xue	wei shu xue	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	自矜者不长	zi jin zhe bu zhang	zi jin zhe bu chang	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	舌系带	she ji dai	she xi dai	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	舌系带过短	she ji dai guo duan	she xi dai guo duan	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	苓桂术甘汤	ling gui shu gan tang	ling gui zhu gan tang	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	苯并芘	ben bing bi	ben bing pi	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	茜草	xi cao	qian cao	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	落人口实	la ren kou shi	luo ren kou shi	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	蒙藏院	meng cang yuan	meng zang yuan	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	蓦地	mo de	mo di	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	蔚山现代	yu shan xian dai	wei shan xian dai	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	藐姑射之山	miao gu she zhi shan	miao gu ye zhi shan	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	融融泄泄	rong rong xie xie	rong rong yi yi	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	行与行	xing yu xing	hang yu hang	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	行研	xing yan	hang yan	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	行里	xing li	hang li	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	补阳还五汤	bu yang hai wu tang	bu yang huan wu tang	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	裤长	ku zhang	ku chang	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	说唱乐	shuo chang le	shuo chang yue	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	谁谁	shei shui	shei shei	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	调律	diao lv	tiao lv	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	调阻	diao zu	tiao zu	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	调露	diao lu	tiao lu	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	调香	diao xiang	tiao xiang	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	辟兵	pi bing	bi bing	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	辣汁茄丝	la zhi jia si	la zhi qie si	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	还准备	huan zhun bei	hai zhun bei	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	道在屎溺	dao zai shi ni	dao zai shi niao	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	那就得	na jiu de	na jiu dei	R2基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	郄穴	qie xue	xi xue	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	郭寄峤	guo ji jiao	guo ji qiao	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	都一处	dou yi chu	du yi chu	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	都匀毛尖	dou yun mao jian	du yun mao jian	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	都给她	dou ji ta	dou gei ta	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	酥炸茄盒	su zha jia he	su zha qie he	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	重睑成形术	zhong jian cheng xing shu	chong jian cheng xing shu	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	重睑术	zhong jian shu	chong jian shu	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	重言式	zhong yan shi	chong yan shi	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	重雪芝	zhong xue zhi	chong xue zhi	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	钙调磷酸酶	gai diao lin suan mei	gai tiao lin suan mei	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	钙调素	gai diao su	gai tiao su	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	钙调蛋白	gai diao dan bai	gai tiao dan bai	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	键长	jian zhang	jian chang	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	长三乙	zhang san yi	chang san yi	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	长则	zhang ze	chang ze	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	长牛	zhang niu	chang niu	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	长赐轮	zhang ci lun	chang ci lun	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	长链	zhang lian	chang lian	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	闭明塞聪	bi ming sai cong	bi ming se cong	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	阿伽通	a ga tong	a jia tong	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	雪佛兰	xue fu lan	xue fo lan	R2基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	露阴癖	lou yin pi	lu yin pi	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	颠茄	dian jia	dian qie	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	颠茄片	dian jia pian	dian qie pian	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	飞镜又重磨	fei jing you zhong mo	fei jing you chong mo	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	马作的卢飞快	ma zuo de lu fei kuai	ma zuo di lu fei kuai	R1基础词库读音修正	现汉第7版
+cn_dicts/base.dict.yaml	鼻塞	bi sai	bi se	R2基础词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	一遍遍地	yi bian bian di	yi bian bian de	R2扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	万箭攒心	wan jian zan xin	wan jian cuan xin	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	不得有	bu dei you	bu de you	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	不着痕迹	bu zhao hen ji	bu zhuo hen ji	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	世情薄	shi qing bao	shi qing bo	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	两面佛	liang mian fu	liang mian fo	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	丹佛掘金	dan fu jue jin	dan fo jue jin	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	什么都得不到	shen me dou dei bu dao	shen me dou de bu dao	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	令人血脉贲张	ling ren xue mai ben zhang	ling ren xue mai fen zhang	R2扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	佛世界	fu shi jie	fo shi jie	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	佛慧山	fu hui shan	fo hui shan	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	佛有缘	fu you yuan	fo you yuan	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	佛格森	fu ge sen	fo ge sen	R2扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	佛罗伦	fu luo lun	fo luo lun	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	佛罗伦斯	fu luo lun si	fo luo lun si	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	佛道之争	fu dao zhi zheng	fo dao zhi zheng	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	八爪鱼	ba zhao yu	ba zhua yu	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	兵车行	bing che hang	bing che xing	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	刻薄寡恩	ke bao gua en	ke bo gua en	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	势孤力薄	shi gu li bao	shi gu li bo	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	厚味腊毒	hou wei la du	hou wei xi du	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	发现不了	fa xian bu le	fa xian bu liao	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	口角流涎	kou jue liu xian	kou jiao liu xian	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	吉卜力	ji bo li	ji bu li	R2扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	哈佛大学医学院	ha fu da xue yi xue yuan	ha fo da xue yi xue yuan	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	哈佛大学商学院	ha fu da xue shang xue yuan	ha fo da xue shang xue yuan	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	国开行	guo kai xing	guo kai hang	R2扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	处理不了	chu li bu le	chu li bu liao	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	多周目	er zhou mu	duo zhou mu	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	大王村	dai wang cun	da wang cun	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	大黄页	dai huang ye	da huang ye	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	奥利佛	ao li fu	ao li fo	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	宋嬷嬷	song ma ma	song mo mo	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	寡情薄意	gua qing bao yi	gua qing bo yi	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	得好好	de hao hao	dei hao hao	R2扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	得放手时须放手	dei fang shou shi xu fang shou	de fang shou shi xu fang shou	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	必须得到	bi xu dei dao	bi xu de dao	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	抽丝剥茧	chou si bao jian	chou si bo jian	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	挨山塞海	ai shan sai hai	ai shan se hai	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	揎拳捋袖	xuan quan lv xiu	xuan quan luo xiu	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	文徵明	wen zhi ming	wen zheng ming	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	本小利薄	ben xiao li bao	ben xiao li bo	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	李嬷嬷	li ma ma	li mo mo	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	椎拳崇	chui quan chong	zhui quan chong	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	氐土貉	di tu hao	di tu he	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	流血涂野草	liu xie tu ye cao	liu xue tu ye cao	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	浅见薄识	qian jian bao shi	qian jian bo shi	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	浑不似	hun bu shi	hun bu si	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	炸茄盒	zha jia he	zha qie he	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	热情似火	re qing shi huo	re qing si huo	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	熟得快	shou dei kuai	shou de kuai	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	熟得快	shu dei kuai	shu de kuai	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	王嬷嬷	wang ma ma	wang mo mo	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	神使鬼差	shen shi gui cha	shen shi gui chai	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	美国哈佛大学	mei guo ha fu da xue	mei guo ha fo da xue	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	美的空调	mei di kong tiao	mei de kong tiao	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	背俞穴	bei yu xue	bei shu xue	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	舌苔薄白	she tai bao bai	she tai bo bai	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	落下病根	la xia bing gen	lao xia bing gen	R2扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	蔚山广域市	yu shan guang yu shi	wei shan guang yu shi	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	薄情无义	bao qing wu yi	bo qing wu yi	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	血脉贲张	xue mai ben zhang	xue mai fen zhang	R2扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	被坚执锐	bei jian zhi rui	pi jian zhi rui	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	语音转文字	yu yin zhuai wen zi	yu yin zhuan wen zi	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	谁谁谁	shui shui shui	shei shei shei	R2扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	谁都替代不了	shei dou ti dai bu le	shei dou ti dai bu liao	R2扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	谁都替代不了	shui dou ti dai bu le	shui dou ti dai bu liao	R2扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	赖嬷嬷	lai ma ma	lai mo mo	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	轻徭薄赋	qing yao bao fu	qing yao bo fu	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	轻薄无知	qing bao wu zhi	qing bo wu zhi	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	轻薄无礼	qing bao wu li	qing bo wu li	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	郭嵩焘	guo song dao	guo song tao	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	都对应	du dui ying	dou dui ying	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	都得不到	dou dei bu dao	dou de bu dao	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	重头再来	zhong tou zai lai	chong tou zai lai	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	重头开始	zhong tou kai shi	chong tou kai shi	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	金属薄板	jin shu bao ban	jin shu bo ban	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	长肌肉	chang ji rou	zhang ji rou	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	门衰祚薄	men shuai zuo bao	men shuai zuo bo	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	阿其所好	a qi suo hao	e qi suo hao	R1扩展词库读音修正	现汉第7版
+cn_dicts/ext.dict.yaml	鬼女红叶	gui nv gong ye	gui nv hong ye	R1扩展词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	丢勒	diu lei	diu le	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	券门	quan men	xuan men	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	广佛	guang fu	guang fo	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	庶长	shu chang	shu zhang	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	弹速	tan su	dan su	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	心脏压塞	xin zang ya se	xin zang ya sai	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	扒制	ba zhi	pa zhi	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	本传	ben chuan	ben zhuan	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	杀降	sha jiang	sha xiang	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	椎牛	zhui niu	chui niu	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	点校	dian xiao	dian jiao	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	爪机	zhao ji	zhua ji	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	率土	lv tu	shuai tu	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	甜薄撑	tian bo cheng	tian bao cheng	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	缺觉	que jue	que jiao	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	豉油	shi you	chi you	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	颉利	jie li	xie li	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	高弹	gao dan	gao tan	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	鸭脯	ya fu	ya pu	R1杂项词库读音修正	现汉第7版
+cn_dicts/others.dict.yaml	麻爪	ma zhao	ma zhua	R1杂项词库读音修正	现汉第7版
+cn_dicts_cell/animal.dict.yaml	华乐	hua le	hua yue	R1动物词库读音修正	现汉第7版
+cn_dicts_cell/animal.dict.yaml	华乐基因	hua le ji yin	hua yue ji yin	R1动物词库读音修正	现汉第7版
+cn_dicts_cell/animal.dict.yaml	华乐蛋白石基因	hua le dan bai shi ji yin	hua yue dan bai shi ji yin	R1动物词库读音修正	现汉第7版
+cn_dicts_cell/animal.dict.yaml	威尔斯牧畜犬	wei er si mu xu quan	wei er si mu chu quan	R1动物词库读音修正	现汉第7版
+cn_dicts_cell/animal.dict.yaml	裳凤蝶	shang feng die	chang feng die	R1动物词库读音修正	现汉第7版
+cn_dicts_cell/animal.dict.yaml	金裳凤蝶	jin shang feng die	jin chang feng die	R1动物词库读音修正	现汉第7版
+cn_dicts_cell/animal.dict.yaml	黄裳凤蝶	huang shang feng die	huang chang feng die	R1动物词库读音修正	现汉第7版
+cn_dicts_cell/chess.dict.yaml	送佛归殿	song fu gui dian	song fo gui dian	R1象棋读音修正	现汉第7版
+cn_dicts_cell/chess.dict.yaml	长星	zhang xing	chang xing	R1象棋读音修正	现汉第7版
+cn_dicts_cell/chess.dict.yaml	长连禁手	zhang lian jin shou	chang lian jin shou	R1象棋读音修正	现汉第7版
+cn_dicts_cell/chess2.dict.yaml	二将二还将	er jiang er hai jiang	er jiang er huan jiang	R1象棋词库读音修正	现汉第7版
+cn_dicts_cell/chess2.dict.yaml	二打二还打	er da er hai da	er da er huan da	R1象棋词库读音修正	现汉第7版
+cn_dicts_cell/chess2.dict.yaml	单霞丽	dan xia li	shan xia li	R1象棋词库读音修正	现汉第7版
+cn_dicts_cell/chess2.dict.yaml	卜凤波	bo feng bo	bu feng bo	R1象棋词库读音修正	现汉第7版
+cn_dicts_cell/chess2.dict.yaml	审局度势	shen ju du shi	shen ju duo shi	R1象棋词库读音修正	现汉第7版
+cn_dicts_cell/chess2.dict.yaml	挺兵对还中炮	ting bing dui hai zhong pao	ting bing dui huan zhong pao	R1象棋词库读音修正	现汉第7版
+cn_dicts_cell/chess2.dict.yaml	算度深远	suan du shen yuan	suan duo shen yuan	R1象棋词库读音修正	现汉第7版
+cn_dicts_cell/chess2.dict.yaml	落子无悔	lao zi wu hui	luo zi wu hui	R1象棋词库读音修正	现汉第7版
+cn_dicts_cell/chess2.dict.yaml	象棋业余陆级	xiang qi ye yu lu ji	xiang qi ye yu liu ji	R1象棋词库读音修正	现汉第7版
+cn_dicts_cell/chess2.dict.yaml	边马对还中炮	bian ma dui hai zhong pao	bian ma dui huan zhong pao	R1象棋词库读音修正	现汉第7版
+cn_dicts_cell/chess2.dict.yaml	过宫炮对还中炮	guo gong pao dui hai zhong pao	guo gong pao dui huan zhong pao	R1象棋词库读音修正	现汉第7版
+cn_dicts_cell/chess2.dict.yaml	运调	yun tiao	yun diao	R1象棋词库读音修正	现汉第7版
+cn_dicts_cell/chess2.dict.yaml	还中炮	hai zhong pao	huan zhong pao	R1象棋词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	世情薄	shi qing bao	shi qing bo	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	八爪鱼	ba zhao yu	ba zhua yu	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	势孤力薄	shi gu li bao	shi gu li bo	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	厚彼薄此	hou bi bao ci	hou bi bo ci	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	厚积而薄发	hou ji er bao fa	hou ji er bo fa	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	双马尾	shuang ma yi	shuang ma wei	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	咳咳咳	hai hai ke	ke ke ke	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	哪个牌子好	nei ge pai zi hao	na ge pai zi hao	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	嚼过的口香糖	jue guo de kou xiang tang	jiao guo de kou xiang tang	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	嚼饭喂人	jue fan wei ren	jiao fan wei ren	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	大黄页	dai huang ye	da huang ye	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	女红军	nv gong jun	nv hong jun	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	如封似闭	ru feng shi bi	ru feng si bi	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	尚书右仆射	shang shu you pu she	shang shu you pu ye	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	尚书左仆射	shang shu zuo pu she	shang shu zuo pu ye	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	干咳少痰	gan hai shao tan	gan ke shao tan	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	往哪个方向	wang nei ge fang xiang	wang na ge fang xiang	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	慕容廆	mu rong gui	mu rong wei	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	有嚼劲	you jue jin	you jiao jin	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	本小利薄	ben xiao li bao	ben xiao li bo	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	椎拳崇	chui quan chong	zhui quan chong	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	流血涂野草	liu xie tu ye cao	liu xue tu ye cao	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	热情似火	re qing shi huo	re qing si huo	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	红似火	hong shi huo	hong si huo	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	耙耙柑	ba ba gan	pa pa gan	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	背俞穴	bei yu xue	bei shu xue	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	舌苔薄白	she tai bao bai	she tai bo bai	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	花开似锦	hua kai shi jin	hua kai si jin	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	薄今厚古	bao jin hou gu	bo jin hou gu	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	薄宦梗犹泛	bao huan geng you fan	bo huan geng you fan	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	金属薄板	jin shu bao ban	jin shu bo ban	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	马尾发型	ma yi fa xing	ma wei fa xing	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	鬼女红叶	gui nv gong ye	gui nv hong ye	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/composite.dict.yaml	龈下刮治	ken xia gua zhi	yin xia gua zhi	R1/R2综合词库读音修正	现汉第7版
+cn_dicts_cell/exthot.dict.yaml	与辉同行	yu hui tong hang	yu hui tong xing	R1热词读音修正	现汉第7版
+cn_dicts_cell/exthot.dict.yaml	仇白	chou bai	qiu bai	R1热词读音修正	现汉第7版
+cn_dicts_cell/exthot.dict.yaml	女仆长	nv pu chang	nv pu zhang	R1热词读音修正	现汉第7版
+cn_dicts_cell/exthot.dict.yaml	暗河传	an he chuan	an he zhuan	R1热词读音修正	现汉第7版
+cn_dicts_cell/exthot.dict.yaml	曾三仙	ceng san xian	zeng san xian	R1热词读音修正	现汉第7版
+cn_dicts_cell/exthot.dict.yaml	曾婉之	ceng wan zhi	zeng wan zhi	R1热词读音修正	现汉第7版
+cn_dicts_cell/exthot.dict.yaml	朝阳站	zhao yang zhan	chao yang zhan	R1热词读音修正	现汉第7版
+cn_dicts_cell/exthot.dict.yaml	活侠传	huo xia chuan	huo xia zhuan	R1热词读音修正	现汉第7版
+cn_dicts_cell/exthot.dict.yaml	玱玹	cang xuan	qiang xuan	R1热词读音修正	现汉第7版
+cn_dicts_cell/exthot.dict.yaml	眯觉	mi jue	mi jiao	R1热词读音修正	现汉第7版
+cn_dicts_cell/exthot.dict.yaml	莞莞类卿	guan guan lei qing	wan wan lei qing	R1热词读音修正	现汉第7版
+cn_dicts_cell/food.dict.yaml	劲爆鸡米花	jing bao ji mi hua	jin bao ji mi hua	R1食物词库读音修正	现汉第7版
+cn_dicts_cell/food.dict.yaml	奶油扒菜芯	nai you ba cai xin	nai you pa cai xin	R1食物词库读音修正	现汉第7版
+cn_dicts_cell/food.dict.yaml	煲仔鱼丸	bao zi yu wan	bao zai yu wan	R1食物词库读音修正	现汉第7版
+cn_dicts_cell/food.dict.yaml	芫爆肚丝	yuan bao du si	yan bao du si	R1食物词库读音修正	现汉第7版
+cn_dicts_cell/food.dict.yaml	贝丝扒菜胆	bei si ba cai dan	bei si pa cai dan	R1食物词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	乐进	le jin	yue jin	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	云杉木	yun sha mu	yun shan mu	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	云裳	yun shang	yun chang	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	光禄大夫	guang lu dai fu	guang lu da fu	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	克里森船长的华服	ke li sen chuan chang de hua fu	ke li sen chuan zhang de hua fu	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	克里森船长的捕鲸靴	ke li sen chuan chang de bu jing xue	ke li sen chuan zhang de bu jing xue	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	克里森船长的斜桅	ke li sen chuan chang de xie wei	ke li sen chuan zhang de xie wei	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	八荒六合	ba huang lu he	ba huang liu he	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	兰若寺	lan ruo si	lan re si	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	关根明良	wan gen ming liang	guan gen ming liang	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	关根瞳	wan gen tong	guan gen tong	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	刘禅	liu chan	liu shan	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	加尔鲁什	jia er lu shen	jia er lu shi	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	劲松	jin song	jing song	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	十夫长	shi fu chang	shi fu zhang	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	千夫长	qian fu chang	qian fu zhang	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	单手	shan shou	dan shou	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	厚朴	hou pu	hou po	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	参宿	can su	shen xiu	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	参水猿	can shui yuan	shen shui yuan	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	坚果锤	jian guo dui	jian guo chui	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	大宛	da wan	da yuan	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	大宛马	da wan ma	da yuan ma	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	大迦叶	da jia ye	da jia she	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	天姥	tian lao	tian mu	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	太阿	tai a	tai e	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	太阿剑	tai a jian	tai e jian	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	奴隶镣铐	nu dai liao kao	nu li liao kao	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	安柏	an bai	an bo	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	审判之锤	shen pan zhi dui	shen pan zhi chui	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	小还丹	xiao hai dan	xiao huan dan	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	巡逻队长	xun luo dui chang	xun luo dui zhang	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	巴尔的摩	ba er de mo	ba er di mo	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	张说	zhang shuo	zhang yue	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	怪我咯	guai wo ge	guai wo lo	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	拓印	tuo yin	ta yin	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	攲斜弥亘树	yi xie mi gen shu	qi xie mi gen shu	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	无尽之战	mo jin zhi zhan	wu jin zhi zhan	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	无畏	mo wei	wu wei	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	早见沙织	zao xian sha zhi	zao jian sha zhi	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	春秋公羊传	chun qiu gong yang chuan	chun qiu gong yang zhuan	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	曾书书	ceng shu shu	zeng shu shu	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	曾小贤	ceng xiao xian	zeng xiao xian	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	杉木	shan mu	sha mu	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	柏咚乄	bai dong shi	bai dong wu	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	校场	xiao chang	jiao chang	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	楞伽经	leng jia jing	leng qie jing	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	横扫六合	heng sao lu he	heng sao liu he	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	没药	mei yao	mo yao	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	清平乐	qing ping le	qing ping yue	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	渡边明乃	du dao ming nai	du bian ming nai	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	田边留依	tian dao liu yi	tian bian liu yi	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	畠中祐	zai zhong you	tian zhong you	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	百夫长	bai fu chang	bai fu zhang	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	的的喀喀湖	de de ka ka hu	di di ka ka hu	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	的黎波里	de li bo li	di li bo li	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	石见舞菜香	shi xian wu cai xiang	shi jian wu cai xiang	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	磨难	mo nuo	mo nan	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	神龙的无情猛袭	shen long de mo qing meng xi	shen long de wu qing meng xi	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	纤手	qian shou	xian shou	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	膻中	shan zhong	dan zhong	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	船长	chuan chang	chuan zhang	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	艾蒂安	yi di an	ai di an	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	补给	bu gei	bu ji	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	角斗士	jiao dou shi	jue dou shi	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	角色名	jiao se ming	jue se ming	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	觜火猴	zui huo hou	zi huo hou	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	谏议大夫	jian yi dai fu	jian yi da fu	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	迦叶	jia ye	jia she	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	酆都	feng dou	feng du	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	野山参	ye shan can	ye shan shen	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	钉锤	ding dui	ding chui	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	长乐坊	chang yue fang	chang le fang	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	阿什兰	a shen lan	a shi lan	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	阿什坎迪	a shen kan di	a shi kan di	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	阿尔忒弥斯	a er tei mi si	a er te mi si	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	陶泥	bai tao ni	tao ni	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	霓裳羽衣曲	ni shang yu yi qu	ni chang yu yi qu	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	露脊鲸	lou ji jing	lu ji jing	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	骑兵队长	qi bing dui chang	qi bing dui zhang	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	骑士腰带	ji shi yao dai	qi shi yao dai	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	骑士队长	qi shi dui chang	qi shi dui zhang	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/game.dict.yaml	龟壳	gui qiao	gui ke	R1/R2游戏词库读音修正	现汉第7版
+cn_dicts_cell/geography.dict.yaml	不称河	bu cheng he	bu chen he	R1地理词库读音修正	辞海/古今地名
+cn_dicts_cell/geography.dict.yaml	冤句	yuan ju	yuan qu	R1地理词库读音修正	辞海/古今地名
+cn_dicts_cell/geography.dict.yaml	冰川补给	bing chuan bu gei	bing chuan bu ji	R1地理词库读音修正	辞海/古今地名
+cn_dicts_cell/geography.dict.yaml	句章	ju zhang	gou zhang	R1地理词库读音修正	辞海/古今地名
+cn_dicts_cell/geography.dict.yaml	城市蔓生	cheng shi wan sheng	cheng shi man sheng	R1地理词库读音修正	辞海/古今地名
+cn_dicts_cell/geography.dict.yaml	巨大都会带	ju da dou hui dai	ju da du hui dai	R1地理词库读音修正	辞海/古今地名
+cn_dicts_cell/geography.dict.yaml	挽近地壳运动	wan jin di ke yun dong	wan jin di qiao yun dong	R1地理词库读音修正	辞海/古今地名
+cn_dicts_cell/geography.dict.yaml	朱提	zhu ti	shu shi	R1地理词库读音修正	辞海/古今地名
+cn_dicts_cell/geography.dict.yaml	沙羡	sha xian	sha yi	R1地理词库读音修正	辞海/古今地名
+cn_dicts_cell/geography.dict.yaml	累积频数曲线	lei ji pin shuo qu xian	lei ji pin shu qu xian	R1地理词库读音修正	辞海/古今地名
+cn_dicts_cell/geography.dict.yaml	给水度	gei shui du	ji shui du	R1地理词库读音修正	辞海/古今地名
+cn_dicts_cell/geography.dict.yaml	莎车国	sha che guo	suo che guo	R1地理词库读音修正	辞海/古今地名
+cn_dicts_cell/geography.dict.yaml	薄煤层	bo mei ceng	bao mei ceng	R1地理词库读音修正	辞海/古今地名
+cn_dicts_cell/geography.dict.yaml	补给区	bu gei qu	bu ji qu	R1地理词库读音修正	辞海/古今地名
+cn_dicts_cell/geography.dict.yaml	酰罗城	xian luo cheng	xi luo cheng	R1地理词库读音修正	辞海/古今地名
+cn_dicts_cell/geography.dict.yaml	酰罗山	xian luo shan	xi luo shan	R1地理词库读音修正	辞海/古今地名
+cn_dicts_cell/geography.dict.yaml	阳夏	yang xia	yang jia	R1地理词库读音修正	辞海/古今地名
+cn_dicts_cell/history.dict.yaml	上衣下裳	shang yi xia shang	shang yi xia chang	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	下大夫	xia dai fu	xia da fu	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	不降	bu xiang	bu jiang	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	与子同裳	yu zi tong shang	yu zi tong chang	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	东缗	dong mian	dong min	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	东阿	dong a	dong e	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	乐进	le jin	yue jin	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	什伐赤	shen fa chi	shi fa chi	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	仇兆鳌	chou zhao ao	qiu zhao ao	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	伍长华	wu zhang hua	wu chang hua	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	何世璂	he shi ji	he shi qi	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	倓虚	dan xu	tan xu	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	刘玱琳	liu cang lin	liu qiang lin	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	刘禅	liu chan	liu shan	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	区星	qu xing	ou xing	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	召陵	zhao ling	shao ling	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	大宛	da wan	da yuan	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	大玮瑎	da wei jie	da wei xie	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	夫差	fu cha	fu chai	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	姚培偁	yao pei chen	yao pei cheng	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	姬重耳	ji zhong er	ji chong er	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	孛儿只斤	bei er zhi jin	bo er zhi jin	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	嵇曾筠	ji ceng jun	ji zeng yun	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	广都	guang dou	guang du	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	庄钟瀞	zhuang zhong cheng	zhuang zhong jing	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	徐师曾	xu shi ceng	xu shi zeng	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	拉藏汗	la cang han	la zang han	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	晋闵公姬缗	jin min gong ji mian	jin min gong ji min	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	曾天养	ceng tian yang	zeng tian yang	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	曾铸	ceng zhu	zeng zhu	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	朴趾源	pu zhi yuan	piao zhi yuan	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	汪禔	wang ti	wang zhi	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	海都	hai dou	hai du	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	王偁	wang chen	wang cheng	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	王庭筠	wang ting jun	wang ting yun	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	王禔	wang ti	wang zhi	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	琅邪	lang xie	lang ya	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	眭元进	gui yuan jin	sui yuan jin	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	眭固	gui gu	sui gu	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	缪希雍	miu xi yong	miao xi yong	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	缪昌期	miu chang qi	miao chang qi	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	缪荃孙	miu quan sun	miao quan sun	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	萧瓛	xiao ya	xiao huan	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	蒋攸铦	jiang you gua	jiang you xian	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	蜀后主刘禅	shu hou zhu liu chan	shu hou zhu liu shan	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	褚人获	zhu ren huo	chu ren huo	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	褚民谊	zhu min yi	chu min yi	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	诸葛靓	zhu ge liang	zhu ge jing	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	重泉	zhong quan	chong quan	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	陈玉璂	chen yu ji	chen yu qi	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	陈璂卿	chen ji qing	chen qi qing	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	陈鳣	chen shan	chen zhan	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	饮食赏赐与觽有异	yin shi shang ci yu wei you yi	yin shi shang ci yu xi you yi	R1/R2历史词库读音修正	辞海/正史
+cn_dicts_cell/idiom.dict.yaml	一力降十会	yi li jiang shi hui	yi li xiang shi hui	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	一模一样	yi mo yi yang	yi mu yi yang	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	一见了然	yi jian le ran	yi jian liao ran	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	一针见血	yi zhen jian xue	yi zhen jian xie	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	三人同行	san ren tong hang	san ren tong xing	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	不着边际	bu zhao bian ji	bu zhuo bian ji	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	与子同裳	yu zi tong shang	yu zi tong chang	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	丑媳妇总得见公婆	chou xi fu zong de jian gong po	chou xi fu zong dei jian gong po	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	东观西望	dong guang xi wang	dong guan xi wang	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	两豆塞耳	liang dou sai er	liang dou se er	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	了不相干	le bu xiang gan	liao bu xiang gan	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	五藏六府	wu cang liu fu	wu zang liu fu	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	人给家足	ren gei jia zu	ren ji jia zu	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	今夜鄜州月	jin ye lu zhou yue	jin ye fu zhou yue	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	伐木丁丁	fa mu ding ding	fa mu zheng zheng	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	信如君不君臣不臣父不父子不子	xin ru jun bu jun chen bu chen fu bu fu zi dun zi	xin ru jun bu jun chen bu chen fu bu fu zi bu zi	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	倪偁	ni chen	ni cheng	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	公伯寮愬子路于季孙	gong bo liao shuo zi lu yu ji sun	gong bo liao su zi lu yu ji sun	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	其正色邪	qi zheng se xie	qi zheng se ye	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	凤栖梧桐	feng xi wu tong	feng qi wu tong	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	刓方为圆	shu fang wei yuan	wan fang wei yuan	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	削铁如泥	xiao tie ru ni	xue tie ru ni	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	动中窾要	dong zhong kua yao	dong zhong kuan yao	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	劲骨丰肌	jin gu feng ji	jing gu feng ji	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	又得浮生一日凉	you dei fu sheng yi ri liang	you de fu sheng yi ri liang	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	口角流沫	kou jue liu mo	kou jiao liu mo	R1/R2成语读音修正	现汉第7版
 cn_dicts_cell/idiom.dict.yaml	召南	zhao nan	shao nan	周代召公封地规范读 shào nán	现汉第7版
 cn_dicts_cell/idiom.dict.yaml	召忽死之	zhao hu si zhi	shao hu si zhi	春秋人物召忽规范读 shào hū	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	吹竹弹丝	chui zhu dan si	chui zhu tan si	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	周行而不殆	zhou hang er bu dai	zhou xing er bu dai	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	命舛数奇	ming chuan shu qi	ming chuan shu ji	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	哀乐不能入也	ai yue bu neng ru ye	ai le bu neng ru ye	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	哀乐中节	ai yue zhong jie	ai le zhong jie	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	品竹调弦	pin zhu diao xian	pin zhu tiao xian	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	啜菽饮水	shu shu yin shui	chuo shu yin shui	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	善善恶恶	shan shan e e	shan shan wu e	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	垂没之命	chui mei zhi ming	chui mo zhi ming	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	壶浆箪食	hu jiang dan si	hu jiang dan shi	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	多口阿师	duo kou e shi	duo kou a shi	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	大模厮样	da mo si yang	da mu si yang	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	大模大样	da mo da yang	da mu da yang	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	好恶不同	hao e bu tong	hao wu bu tong	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	家长理短	jia zhang li duan	jia chang li duan	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	对酒行	dui jiu hang	dui jiu xing	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	履至尊而制六合	lv zhi zun er zhi lu he	lv zhi zun er zhi liu he	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	山行海宿	shan xing hai xiu	shan xing hai su	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	张旭三杯草圣传	zhang xu san bei cao sheng zhuan	zhang xu san bei cao sheng chuan	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	张说	zhang shuo	zhang yue	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	彼且恶乎待哉	bi qie e hu dai zai	bi qie wu hu dai zai	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	怪模怪样	guai mo guai yang	guai mu guai yang	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	怪腔怪调	guai qiang guai tiao	guai qiang guai diao	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	扛鼎之作	kang ding zhi zuo	gang ding zhi zuo	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	折箭为誓	she jian wei shi	zhe jian wei shi	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	拊背扼吭	fu bei e keng	fu bei e hang	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	挟势弄权	jia shi nong quan	xie shi nong quan	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	携手日同行	xie shou ri tong hang	xie shou ri tong xing	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	摘瑕指瑜	ti xia zhi yu	zhai xia zhi yu	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	擒奸擿伏	qin jian zhe fu	qin jian ti fu	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	敛声屏息	lian sheng ping xi	lian sheng bing xi	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	数罟不入洿池	shu gu bu ru hu chi	cu gu bu ru wu chi	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	断鹤继凫	duan he xu fu	duan he ji fu	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	明朝游上苑	ming chao you shang yuan	ming zhao you shang yuan	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	明朝驿使发	ming chao yi shi fa	ming zhao yi shi fa	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	暮雨朝云	mu yu chao yun	mu yu zhao yun	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	暮鼓朝钟	mu gu chao zhong	mu gu zhao zhong	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	有荷蒉而过孔氏之门者	you he kuai er guo kong shi zhi men zhe	you he kui er guo kong shi zhi men zhe	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	朝三而暮四	chao san er mu si	zhao san er mu si	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	朝避猛虎	chao bi meng hu	zhao bi meng hu	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	木强则折	mu jiang ze zhe	mu qiang ze zhe	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	未数数然也	wei shu shu ran ye	wei shuo shuo ran ye	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	未见颜色而言谓之瞽	wei jian yan shai er yan wei zhi gu	wei jian yan se er yan wei zhi gu	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	杨花水性	yang hu shui xing	yang hua shui xing	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	枕石漱流	zhen shi shou liu	zhen shi shu liu	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	栋折榱崩	dong she cui beng	dong zhe cui beng	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	桃李成蹊	tao li cheng qi	tao li cheng xi	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	桃蹊柳陌	tao qi liu mo	tao xi liu mo	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	槛外长江空自流	kan wai chang jiang kong zi liu	jian wai chang jiang kong zi liu	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	此生此夜不长好	ci sheng ci ye bu zhang hao	ci sheng ci ye bu chang hao	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	江表传	jiang biao chuan	jiang biao zhuan	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	泥而不滓	ni er bu zi	nie er bu zi	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	浮收勒折	fu shou le she	fu shou le zhe	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	湛恩汪濊	zhan en wang hun	zhan en wang hui	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	溱洧	qin wei	zhen wei	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	犬牙差互	quan ya cha hu	quan ya ci hu	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	犹似霓裳羽衣舞	you si ni shang yu yi wu	you si ni chang yu yi wu	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	王禹偁	wang yu chen	wang yu cheng	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	疾风知劲草	ji feng zhi jin cao	ji feng zhi jing cao	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	直道相思了无益	zhi dao xiang si le wu yi	zhi dao xiang si liao wu yi	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	磨棱刓角	mo leng liang jiao	mo leng wan jiao	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	箪食壶浆	dan si hu jiang	dan shi hu jiang	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	箪食瓢饮	dan si piao yin	dan shi piao yin	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	聱牙诘屈	ao ya ji qu	ao ya jie qu	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	肤受之愬	fu shou zhi shuo	fu shou zhi su	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	良贾深藏	liang jia shen cang	liang gu shen cang	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	草率将事	cao lv jiang shi	cao shuai jiang shi	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	衣裳楚楚	yi shang chu chu	yi chang chu chu	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	装模作样	zhuang mo zuo yang	zhuang mu zuo yang	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	诘屈聱牙	ji qu ao ya	jie qu ao ya	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	豪商巨贾	hao shang ju jia	hao shang ju gu	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	贾生才调更无伦	jia sheng cai tiao geng wu lun	jia sheng cai diao geng wu lun	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	赭衣塞路	zhe yi sai lu	zhe yi se lu	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	赵令畤	zhao ling chou	zhao ling zhi	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	越人语天姥	yue ren yu tian lao	yue ren yu tian mu	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	辅世长民	fu shi chang min	fu shi zhang min	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	钧天之乐	jun tian zhi le	jun tian zhi yue	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	铅刀为铦	qian dao wei kuo	qian dao wei xian	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	长孙氏	chang sun shi	zhang sun shi	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	闭门扫迹	bi men sao gui	bi men sao ji	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	闲花落地听无声	xian hua luo de ting wu sheng	xian hua luo di ting wu sheng	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	阿保之功	a bao zhi gong	e bao zhi gong	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	隳高堙庳	hui gao yin bei	hui gao yin bi	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	青山朝别暮还见	qing shan chao bie mu hai jian	qing shan zhao bie mu hai jian	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	青松落色	qing song lao shai	qing song luo se	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	鲁人为长府	lu ren wei zhang fu	lu ren wei chang fu	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	默而识之	mo er shi zhi	mo er zhi zhi	R1/R2成语读音修正	现汉第7版
+cn_dicts_cell/industry_product.dict.yaml	仪表壳体	yi biao qiao ti	yi biao ke ti	R1工业品读音修正	现汉第7版
+cn_dicts_cell/industry_product.dict.yaml	伺服定位系统	ci fu ding wei xi tong	si fu ding wei xi tong	R1工业品读音修正	现汉第7版
+cn_dicts_cell/industry_product.dict.yaml	伺服阀	ci fu fa	si fu fa	R1工业品读音修正	现汉第7版
+cn_dicts_cell/industry_product.dict.yaml	切削电动工具	qie xiao dian dong gong ju	qie xue dian dong gong ju	R1工业品读音修正	现汉第7版
+cn_dicts_cell/industry_product.dict.yaml	呢类系列	ne lei xi lie	ni lei xi lie	R1工业品读音修正	现汉第7版
+cn_dicts_cell/industry_product.dict.yaml	壳体加工	qiao ti jia gong	ke ti jia gong	R1工业品读音修正	现汉第7版
+cn_dicts_cell/industry_product.dict.yaml	密封垫圈	mi feng dian juan	mi feng dian quan	R1工业品读音修正	现汉第7版
+cn_dicts_cell/industry_product.dict.yaml	平纹呢	ping wen ne	ping wen ni	R1工业品读音修正	现汉第7版
+cn_dicts_cell/industry_product.dict.yaml	扎口机	zha kou ji	za kou ji	R1工业品读音修正	现汉第7版
+cn_dicts_cell/industry_product.dict.yaml	扎带	zha dai	za dai	R1工业品读音修正	现汉第7版
+cn_dicts_cell/industry_product.dict.yaml	扎把机	zha ba ji	za ba ji	R1工业品读音修正	现汉第7版
+cn_dicts_cell/industry_product.dict.yaml	扎染布	zha ran bu	za ran bu	R1工业品读音修正	现汉第7版
+cn_dicts_cell/industry_product.dict.yaml	曝气设备	bao qi she bei	pu qi she bei	R1工业品读音修正	现汉第7版
+cn_dicts_cell/industry_product.dict.yaml	模切机	mu qie ji	mo qie ji	R1工业品读音修正	现汉第7版
+cn_dicts_cell/industry_product.dict.yaml	热轧板卷	re ya ban juan	re zha ban juan	R1工业品读音修正	现汉第7版
+cn_dicts_cell/industry_product.dict.yaml	甲壳素纤维	jia ke su xian wei	jia qiao su xian wei	R1工业品读音修正	现汉第7版
+cn_dicts_cell/industry_product.dict.yaml	重氮化合物	zhong dan hua he wu	chong dan hua he wu	R1工业品读音修正	现汉第7版
+cn_dicts_cell/industry_product.dict.yaml	隔离栅	ge li shan	ge li zha	R1工业品读音修正	现汉第7版
+cn_dicts_cell/inputmethod.dict.yaml	九重魔鹤	jiu zhong mo he	jiu chong mo he	R1输入法词库读音修正	现汉第7版
+cn_dicts_cell/literature.dict.yaml	不重生男重生女	bu chong sheng nan chong sheng nv	bu zhong sheng nan zhong sheng nv	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	与子同裳	yu zi tong shang	yu zi tong chang	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	且若亦知夫德之所荡	qi ruo yi zhi fu de zhi suo dang	qie ruo yi zhi fu de zhi suo dang	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	且鸟高飞以避矰弋之害	qi niao gao fei yi bi zeng yi zhi hai	qie niao gao fei yi bi zeng yi zhi hai	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	临邛道士鸿都客	lin qiong dao shi hong dou ke	lin qiong dao shi hong du ke	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	乐出虚	le chu xu	yue chu xu	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	予恶乎知夫死者不悔其始之蕲生乎	yu e hu zhi fu si zhe bu hui qi shi zhi qi sheng hu	yu wu hu zhi fu si zhe bu hui qi shi zhi qi sheng hu	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	予恶乎知恶死之非弱丧而不知归者邪	yu e hu zhi wu si zhi fei ruo sang er bu zhi gui zhe ye	yu wu hu zhi wu si zhi fei ruo sang er bu zhi gui zhe ye	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	予恶乎知说生之非惑邪	yu e hu zhi shuo sheng zhi fei huo ye	yu wu hu zhi yue sheng zhi fei huo ye	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	予谓女梦	yu wei nv meng	yu wei ru meng	R2古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	今夜鄜州月	jin ye lu zhou yue	jin ye fu zhou yue	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	以政接于有庳	yi zheng jie yu you bei	yi zheng jie yu you bi	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	伐木丁丁	fa mu ding ding	fa mu zheng zheng	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	信如君不君臣不臣父不父子不子	xin ru jun bu jun chen bu chen fu bu fu zi dun zi	xin ru jun bu jun chen bu chen fu bu fu zi bu zi	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	倪偁	ni chen	ni cheng	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	儵与忽时相与遇于浑沌之地	shu yu hu shi xiang yu yu hun dun zhi di	shu yu hu shi xiang yu yu yu hun dun zhi di	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	先天地生	xian tian de sheng	xian tian di sheng	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	公伯寮愬子路于季孙	gong bo liao shuo zi lu yu ji sun	gong bo liao su zi lu yu ji sun	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	凤栖梧桐	feng xi wu tong	feng qi wu tong	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	千磨万击还坚劲	qian mo wan ji hai jian jin	qian mo wan ji hai jian jing	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	又得浮生一日凉	you dei fu sheng yi ri liang	you de fu sheng yi ri liang	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	召南	zhao nan	shao nan	R2古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	召忽死之	zhao hu si zhi	shao hu si zhi	R2古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	周行而不殆	zhou hang er bu dai	zhou xing er bu dai	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	呱呱而泣	gua gua er qi	gu gu er qi	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	哿矣富人	jia yi fu ren	ge yi fu ren	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	啜菽饮水	shu shu yin shui	chuo shu yin shui	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	在灯前攲枕	zai deng qian yi zhen	zai deng qian qi zhen	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	女闻地籁而未闻天籁夫	nv wen di lai er wei wen tian lai fu	ru wen di lai er wei wen tian lai fu	R2古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	对酒行	dui jiu hang	dui jiu xing	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	寻声暗问弹者谁	xun sheng an wen dan zhe shui	xun sheng an wen tan zhe shui	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	封之有庳	feng zhi you bei	feng zhi you bi	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	履至尊而制六合	lv zhi zun er zhi lu he	lv zhi zun er zhi liu he	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	巴山楚水凄凉地	ba shan chu shui qi liang de	ba shan chu shui qi liang di	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	幼有所长	you you suo chang	you you suo zhang	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	张旭三杯草圣传	zhang xu san bei cao sheng zhuan	zhang xu san bei cao sheng chuan	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	张说	zhang shuo	zhang yue	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	恶乎然	e hu ran	wu hu ran	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	恶乎至	e hu zhi	wu hu zhi	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	惊破霓裳羽衣曲	jing po ni shang yu yi qu	jing po ni chang yu yi qu	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	愬武古通作牙爪	shuo wu gu tong zuo ya zhao	su wu gu tong zuo ya zhao	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	才了蚕桑又插田	cai le can sang you cha tian	cai liao can sang you cha tian	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	挟宇宙	xia yu zhou	xie yu zhou	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	携手日同行	xie shou ri tong hang	xie shou ri tong xing	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	数罟不入洿池	shu gu bu ru hu chi	cu gu bu ru wu chi	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	无奈朝来寒雨晚来风	wu nai chao lai han yu wan lai feng	wu nai zhao lai han yu wan lai feng	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	明朝游上苑	ming chao you shang yuan	ming zhao you shang yuan	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	春风拂槛露华浓	chun feng fu kan lu hua nong	chun feng fu jian lu hua nong	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	晓驾炭车辗冰辙	xiao jia tan che zhan bing zhe	xiao jia tan che nian bing zhe	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	曰是不是	shi bu shi	yue shi bu shi	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	更行更远还生	geng xing geng yuan huan sheng	geng xing geng yuan hai sheng	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	曾益其所不能	ceng yi qi suo bu neng	zeng yi qi suo bu neng	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	有庳之人奚罪焉	you bei zhi ren xi zui yan	you bi zhi ren xi zui yan	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	有荷蒉而过孔氏之门者	you he kuai er guo kong shi zhi men zhe	you he kui er guo kong shi zhi men zhe	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	朝避猛虎	chao bi meng hu	zhao bi meng hu	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	梦哭泣者	ming ku qi zhe	meng ku qi zhe	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	梦饮酒者	ming yin jiu zhe	meng yin jiu zhe	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	槛外长江空自流	kan wai chang jiang kong zi liu	jian wai chang jiang kong zi liu	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	槛菊愁烟兰泣露	kan ju chou yan lan qi lu	jian ju chou yan lan qi lu	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	此所谓率土地而食人肉	ci suo wei lv tu di er shi ren rou	ci suo wei shuai tu di er shi ren rou	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	此生此夜不长好	ci sheng ci ye bu zhang hao	ci sheng ci ye bu chang hao	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	民湿寝则腰疾偏死	ming shi qin ze yao ji pian si	min shi qin ze yao ji pian si	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	民食刍豢	ming shi chu huan	min shi chu huan	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	江表传	jiang biao chuan	jiang biao zhuan	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	浅草才能没马蹄	qian cao cai neng mei ma ti	qian cao cai neng mo ma ti	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	深巷明朝卖杏花	shen xiang ming chao mai xing hua	shen xiang ming zhao mai xing hua	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	清平乐	qing ping le	qing ping yue	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	犹似霓裳羽衣舞	you si ni shang yu yi wu	you si ni chang yu yi wu	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	猿狙之便执斄之狗来藉	yuan ju zhi bian zhi li zhi gou lai ji	yuan ju zhi bian zhi li zhi gou lai jie	R2古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	猿猵狙以为雌	yuan bian ju yi wei ci	yuan pian ju yi wei ci	R2古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	王禹偁	wang yu chen	wang yu cheng	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	疾风知劲草	ji feng zhi jin cao	ji feng zhi jing cao	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	直道相思了无益	zhi dao xiang si le wu yi	zhi dao xiang si liao wu yi	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	秦失	qin shi	qin yi	R2古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	箪食壶浆以迎王师	dan si hu jiang yi ying wang shi	dan shi hu jiang yi ying wang shi	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	置其滑涽	zhi qi hua hun	zhi qi gu hun	R2古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	而丘也何足以知之	qie qiu ye he zu yi zhi zhi	er qiu ye he zu yi zhi zhi	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	肤受之愬	fu shou zhi shuo	fu shou zhi su	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	胥易技系	kuai yi ji xi	xu yi ji xi	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	芴漠无形	wu mo wu xing	hu mo wu xing	R2古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	蝍蛆甘带	ji qu gan dai	ji ju gan dai	R2古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	螳螂捕蝉	guo fu tang lang bu chan	tang lang bu chan	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	衣裳楚楚	yi shang chu chu	yi chang chu chu	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	贾生才调更无伦	jia sheng cai tiao geng wu lun	jia sheng cai diao geng wu lun	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	赵令畤	zhao ling chou	zhao ling zhi	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	越人语天姥	yue ren yu tian lao	yue ren yu tian mu	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	轻解罗裳	qing jie luo shang	qing jie luo chang	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	通邑大都	tong yi da dou	tong yi da du	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	道行之而成	dao heng zhi er cheng	dao xing zhi er cheng	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	长孙氏	chang sun shi	zhang sun shi	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	闲花落地听无声	xian hua luo de ting wu sheng	xian hua luo di ting wu sheng	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/literature.dict.yaml	默而识之	mo er shi zhi	mo er zhi zhi	R1古诗文读音修正	现汉第7版/古诗文训诂
+cn_dicts_cell/luna.dict.yaml	中山高速公路	zhong shan gao shu gong lu	zhong shan gao su gong lu	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	伽利略·伽利雷	jia li lve ga li lei	jia li lve jia li lei	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	凯茜·弗里曼	kai qian fu li man	kai xi fu li man	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	出火炕	chu huo keng	chu huo kang	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	夭邪	yao xia	yao xie	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	安静自在	an xian zi zai	an jing zi zai	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	忠言奇谋	zhong yan qi mo	zhong yan qi mou	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	悉率	xi shuo	xi shuai	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	挛挛	lvan lvan	luan luan	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	攀车拒轮	pan che che lun	pan che ju lun	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	斫鲙	zhuo kui	zhuo kuai	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	沙鸡	cha ji	sha ji	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	潘金莲给武松敬酒	pan jin lian gei wu song jin jiu	pan jin lian gei wu song jing jiu	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	素女弦	su nv xuan	su nv xian	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	繁塔	bo ta	po ta	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	绁袢	xie ban	xie pan	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	经济怪兽	jing ji guai chou	jing ji guai shou	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	罗伯特·佛洛斯特	luo bo te fu luo si te	luo bo te fo luo si te	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	罗夏克墨渍测验	luo xia ke mo ze ce yan	luo xia ke mo zi ce yan	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	羊须疮	yang xu cang	yang xu chuang	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	葫芦里卖的甚么药	hu lu li mai de shen men yao	hu lu li mai de shen me yao	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	蕃娈	fan lvan	fan luan	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	视觉悬崖	shi jue xuan yai	shi jue xuan ya	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	逻辑闸	luo ji jia	luo ji zha	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	邾娄	zhu lv	zhu lou	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	阿毗昙	a pi tian	a pi tan	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	雁头鸱劳嘴	yan tou zhi lao zui	yan tou chi lao zui	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	骨崖崖	gu yai yai	gu ya ya	R1停用库读音修正	现汉第7版
+cn_dicts_cell/luna.dict.yaml	鸥波	o bo	ou bo	R1停用库读音修正	现汉第7版
+cn_dicts_cell/medication.dict.yaml	乐沙定	yue sha ding	le sha ding	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	乐派	yue pai	le pai	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	元参	yuan can	yuan shen	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	克什克腾	ke shen ke teng	ke shi ke teng	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	利什曼原虫	li shen man yuan chong	li shi man yuan chong	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	剥脱性皮炎	bao tuo xing pi yan	bo tuo xing pi yan	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	剥脱性角质松解症	bao tuo xing jiao zhi song jie zheng	bo tuo xing jiao zhi song jie zheng	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	功能固着	gong neng gu zhe	gong neng gu zhuo	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	动脉栓塞	dong mai shuan sai	dong mai shuan se	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	厚朴	hou pu	hou po	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	参杞	can qi	shen qi	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	参松养心胶囊	can song yang xin jiao nang	shen song yang xin jiao nang	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	参桂理中丸	can gui li zhong wan	shen gui li zhong wan	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	参苓	can ling	shen ling	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	参苓健脾	can ling jian pi	shen ling jian pi	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	参苓健脾胃颗粒	can ling jian pi wei ke li	shen ling jian pi wei ke li	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	参苓白术丸	can ling bai zhu wan	shen ling bai zhu wan	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	参附注射液	can fu zhu she ye	shen fu zhu she ye	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	口角	kou jue	kou jiao	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	土人参	tu ren can	tu ren shen	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	填塞	tian sai	tian se	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	士的宁	shi de ning	shi di ning	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	射干	she gan	ye gan	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	急性荨麻疹	ji xing qian ma zhen	ji xing xun ma zhen	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	术数	zhu shu	shu shu	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	柞蚕蛹	zuo can yong	zha can yong	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	江西樟树化工厂维生素分厂	jiang xi zhang shu hua gong chang wei sheng e fen chang	jiang xi zhang shu hua gong chang wei sheng su fen chang	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	没药	mei yao	mo yao	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	流调人员	liu tiao ren yuan	liu diao ren yuan	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	独参汤	du can tang	du shen tang	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	生晒参	sheng shai can	sheng shai shen	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	甲杓肌	jia biao ji	jia shao ji	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	疗养地	liao yang de	liao yang di	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	白参	bai can	bai shen	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	神藏	shen zang	shen cang	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	粘蛋白	zhan dan bai	nian dan bai	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	缗钱状	mian qian zhuang	min qian zhuang	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	羟脯氨酸	qiang fu an suan	qiang pu an suan	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	肺栓塞	fei shuan sai	fei shuan se	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	脑栓塞	nao shuan sai	nao shuan se	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	脯氨酸	fu an suan	pu an suan	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	膻中	shan zhong	dan zhong	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	膻中穴	shan zhong xue	dan zhong xue	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	蓝圆鲹	lan yuan can	lan yuan shen	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	薄膜包衣预混剂	bao mo bao yi yu hun ji	bo mo bao yi yu hun ji	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	血栓栓塞	xue shuan shuan sai	xue shuan shuan se	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	输精管结扎术	shu jing guan jie zha shu	shu jing guan jie za shu	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	还原型谷胱甘肽	hai yuan xing gu guang gan tai	huan yuan xing gu guang gan tai	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	还原型辅酶	hai yuan xing fu mei	huan yuan xing fu mei	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	酢浆草	zuo jiang cao	cu jiang cao	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	重吸收	zhong xi shou	chong xi shou	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	重铬酸钾	zhong ge suan jia	chong ge suan jia	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	陈香露白露	chen xiang lou bai lu	chen xiang lu bai lu	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	陈香露白露片	chen xiang lou bai lu pian	chen xiang lu bai lu pian	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	颈动脉内膜剥脱术	jing dong mai nei mo bao tuo shu	jing dong mai nei mo bo tuo shu	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	颜色饱和度	yan shai bao he du	yan se bao he du	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	鸊鷉	bi si	pi ti	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	黄柏	huang bai	huang bo	R1/R2医药词库读音修正	中国药典/全国科技名词委
+cn_dicts_cell/name.dict.yaml	于省吾	yu sheng wu	yu xing wu	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	于长平	yu zhang ping	yu chang ping	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	伊什特万	yi shen te wan	yi shi te wan	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	佛母	fu mu	fo mu	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	佛索威	fu suo wei	fo suo wei	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	依什卡	yi shen ka	yi shi ka	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	博伽茹	bo ga ru	bo jia ru	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	叶藏	ye cang	ye zang	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	埃勒里	ai lei li	ai le li	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	塞莱什	sai lai shen	sai lai shi	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	宋世泊	song shi po	song shi bo	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	文格勒	wen ge lei	wen ge le	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	曹名长	cao ming zhang	cao ming chang	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	曾哥	ceng ge	zeng ge	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	朱重八	zhu zhong ba	zhu chong ba	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	李泌	li mi	li bi	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	李重润	li zhong run	li chong run	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	柏辽兹	bai liao zi	bo liao zi	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	滨田省吾	bang tian sheng wu	bin tian sheng wu	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	王曾瑜	wang ceng yu	wang zeng yu	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	王重荣	wang zhong rong	wang chong rong	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	米勒特	mi lei te	mi le te	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	缪德树	mou de shu	miao de shu	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	耶律重元	ye lv zhong yuan	ye lv chong yuan	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	胡三省	hu san sheng	hu san xing	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	艾勒里	ai lei li	ai le li	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	阿代勒吉	a dai lei ji	a dai le ji	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	阿伽松	a ga song	a jia song	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	阿勒曼尼	a lei man ni	a le man ni	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	陈省身	chen sheng shen	chen xing shen	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	韦克斯勒	wei ke si lei	wei ke si le	R1/R2人名读音修正	现汉第7版/L3人名
+cn_dicts_cell/name.dict.yaml	顾曾	gu ceng	gu zeng	R1/R2人名读音修正	现汉第7版/L3人名
 cn_dicts_cell/name2.dict.yaml	丰田早姬	li tian zao ji	feng tian zao ji	日本姓氏豊田简体“丰”规范读 fēng（非 lǐ）	现汉第7版
+cn_dicts_cell/name2.dict.yaml	叄舞白刃	cen wu bai ren	san wu bai ren	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	小西行长	xiao xi hang zhang	xiao xi xing chang	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	恩奇都	en qi dou	en qi du	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	新宝岛康乐队	xin bao dao kang yue dui	xin bao dao kang le dui	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	朝比奈泰煕	zhao bi nai tai yi	zhao bi nai tai xi	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	朴世荣	pu shi rong	piao shi rong	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	朴光贤	pu guang xian	piao guang xian	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	朴初珑	pu chu long	piao chu long	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	朴叙俊	pu xu jun	piao xu jun	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	朴娜莱	pu na lai	piao na lai	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	朴孝敏	pu xiao min	piao xiao min	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	朴宥拉	pu you la	piao you la	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	朴智妍	pu zhi yan	piao zhi yan	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	朴智旻	pu zhi min	piao zhi min	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	朴灿烈	pu can lie	piao can lie	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	朴炯植	pu jiong zhi	piao jiong zhi	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	朴珍荣	pu zhen rong	piao zhen rong	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	朴璐美	pu lu mei	piao lu mei	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	朴秀荣	pu xiu rong	piao xiu rong	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	李劲松	li jin song	li jing song	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	梁翘柏	liang qiao bai	liang qiao bo	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	沙都	sha dou	sha du	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	河岾面	he zai mian	he zhan mian	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	渡边茉莉绘	du dao mo li hui	du bian mo li hui	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	渡边麻友	du dao ma you	du bian ma you	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	王栎鑫	wang yue xin	wang li xin	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	藏人	cang ren	zang ren	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	都暻秀	dou jing xiu	du jing xiu	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	闵玧其	min men qi	min yun qi	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	鲹坂长实	can ban chang shi	shen ban chang shi	R1/R2人名2读音修正	现汉第7版/L3人名
+cn_dicts_cell/place.dict.yaml	七莘路	qi shen lu	qi xin lu	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	什刹海	shen sha hai	shi cha hai	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	六合开发区	liu he kai fa qu	lu he kai fa qu	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	刘行	liu xing	liu hang	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	区庄	qu zhuang	ou zhuang	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	大差市	da cha shi	da chai shi	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	大王基	dai wang ji	da wang ji	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	大王庄	dai wang zhuang	da wang zhuang	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	宝幢	bao zhuang	bao chuang	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	小什字	xiao shen zi	xiao shi zi	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	小行	xiao xing	xiao hang	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	尖沙咀	jian sha ju	jian sha zui	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	川藏立交	chuan cang li jiao	chuan zang li jiao	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	曾家岩	ceng jia yan	zeng jia yan	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	查桥	cha qiao	zha qiao	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	民乐	min yue	min le	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	沃罗涅什	wo luo nie shen	wo luo nie shi	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	沌阳大道	dun yang da dao	zhuan yang da dao	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	河海大学·佛城西路	he hai da xue fu cheng xi lu	he hai da xue fo cheng xi lu	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	石咀	shi ju	shi zui	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	石湫	shi jiao	shi qiu	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	萨勒赫城	sa lei he cheng	sa le he cheng	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	虹莘路	hong shen lu	hong xin lu	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	蛤地	ha di	ge di	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	调景岭	diao jing ling	tiao jing ling	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	谌家矶	chen jia ji	shen jia ji	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	长岭陂	zhang ling bei	chang ling pi	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	闵行开发区	min xing kai fa qu	min hang kai fa qu	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	饶乐府	rao yue fu	rao le fu	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	马家堡	ma jia bao	ma jia pu	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	黄陂	huang pi	huang bei	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/place.dict.yaml	龙爪堰	long zhao yan	long zhua yan	R1地名读音修正	民政地名/轨交官方
+cn_dicts_cell/shulihua.dict.yaml	乙炔发生器	yi gui fa sheng qi	yi que fa sheng qi	R1/R2数理化读音修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	子模	zi mu	zi mo	R1/R2数理化读音修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	子模型	zi mu xing	zi mo xing	R1/R2数理化读音修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	硒弹	xi tan	xi dan	R1/R2数理化读音修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	红磷非晶型	gong lin fei jing xing	hong lin fei jing xing	R1/R2数理化读音修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	羟脯氨酸	qiang fu an suan	qiang pu an suan	R1/R2数理化读音修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	脯氨酸	fu an suan	pu an suan	R1/R2数理化读音修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	苯胺红	ben an gong	ben an hong	R1/R2数理化读音修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	行向量	xing xiang liang	hang xiang liang	R1/R2数理化读音修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	重氮甲烷	zhong dan jia wan	chong dan jia wan	R1/R2数理化读音修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	重铬酸钠	zhong ge suan na	chong ge suan na	R1/R2数理化读音修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	重铬酸钾	zhong ge suan jia	chong ge suan jia	R1/R2数理化读音修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	重铬酸铵	zhong ge suan an	chong ge suan an	R1/R2数理化读音修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	锑弹	ti tan	ti dan	R1/R2数理化读音修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	镉弹	ge tan	ge dan	R1/R2数理化读音修正	全国科技名词委
+cn_dicts_cell/sport.dict.yaml	克里斯波什	ke li si bo shen	ke li si bo shi	R1体育词库读音修正	现汉第7版
+cn_dicts_cell/sport.dict.yaml	单晓娜	dan xiao na	shan xiao na	R1体育词库读音修正	现汉第7版
+cn_dicts_cell/sport.dict.yaml	弹腿	dan tui	tan tui	R1体育词库读音修正	现汉第7版
+cn_dicts_cell/sport.dict.yaml	朝彻	chao che	zhao che	R1体育词库读音修正	现汉第7版
+cn_dicts_cell/sport.dict.yaml	皮什切克	pi shen qie ke	pi shi qie ke	R1体育词库读音修正	现汉第7版
+cn_dicts_cell/sport.dict.yaml	铦矛	gua mao	xian mao	R1体育词库读音修正	现汉第7版
+cn_dicts_cell/sport.dict.yaml	阿什顿	a shen dun	a shi dun	R1体育词库读音修正	现汉第7版

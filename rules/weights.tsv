@@ -1,2 +1,1199 @@
 # target_file	word	py	weight	reason
-# 示例：cn_dicts/base.dict.yaml	一行	yi xing	1600	防止过度降权误伤“删一行数据”
+# 权重覆盖规则（py=* 匹配所有读音；weight 支持精确值 N、封顶 <=N、保底 >=N）
+cn_dicts/8105.dict.yaml	世	shi	2800	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	丼	jing	5	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	兮	xi	200	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	兹	zi	180	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	剌	la	25	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	务	wu	1500	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	勒	lei	200	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	勿	wu	500	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	午	wu	1000	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	卬	ang	5	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	卻	que	3	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	卿	qing	150	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	吾	wu	600	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	呦	you	800	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	和	hu	80	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	和	huo	350	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	咯	ge	400	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	咯	ka	120	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	咯	lo	300	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	咯	luo	80	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	咲	xiao	5	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	哟	you	150	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	唔	wu	300	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	喔	wo	800	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	喙	hui	50	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	嗔	chen	50	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	嘤	ying	60	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	嘬	zuo	40	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	嚼	jue	120	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	坚	jian	700	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	埙	xun	20	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	壤	rang	90	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	壶	hu	1200	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	夔	kui	20	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	失	shi	2000	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	奚	xi	80	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	妇	fu	700	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	始	shi	2500	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	嬢	niang	2	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	嬴	ying	60	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	孩	hai	600	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	实	shi	4500	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	寮	liao	30	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	届	jie	2500	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	屎	shi	1200	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	屮	cao	20	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	己	ji	2500	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	巽	xun	20	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	帨	shui	1	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	弗	fu	150	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	弦	xian	1000	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	弩	nu	150	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	彖	tuan	10	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	得	dei	3000	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	忆	yi	800	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	忒	tui	40	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	惇	dun	30	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	抻	chen	50	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	拓	ta	30	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	撮	zuo	15	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	撸	lu	1000	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	敕	chi	40	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	於	yu	250	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	昇	sheng	15	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	昨	zuo	400	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	朕	zhen	300	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	杵	chu	40	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	析	xi	600	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	检	jian	800	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	楞	leng	300	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	毫	hao	450	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	氘	dao	50	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	氚	chuan	60	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	氟	fu	150	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	氢	qing	300	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	氦	hai	150	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	氪	ke	300	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	汝	ru	200	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	汽	qi	450	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	济	ji	1000	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	激	ji	900	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	焉	yan	300	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	熵	shang	500	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	爪	zhao	30	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	牠	ta	20	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	瑜	yu	200	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	甑	zeng	15	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	町	ding	20	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	疑	yi	1000	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	皆	jie	1200	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	盛	cheng	350	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	盛	sheng	1200	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	矣	yi	300	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	础	chu	200	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	碇	ding	20	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	碘	dian	200	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	磅	bang	800	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	磏	qian	1	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	示	shi	1500	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	祂	ta	80	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	祐	you	40	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	穰	rang	20	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	箫	xiao	150	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	系	ji	500	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	约	yao	60	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	织	zhi	900	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	给	ji	250	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	绩	ji	800	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	缇	ti	25	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	缪	miao	80	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	缪	miu	60	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	缪	mou	100	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	缯	zeng	10	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	育	yu	1200	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	肽	tai	100	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	艺	yi	1100	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	茴	hui	80	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	菈	la	10	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	菘	song	15	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	薅	hao	250	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	薨	hong	30	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	藓	xian	100	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	蘼	mi	20	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	蝰	kui	25	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	血	xie	800	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	行	hang	1800	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	褚	chu	40	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	议	yi	1400	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	识	shi	2000	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	询	xun	220	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	详	xiang	400	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	車	che	1	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	車	ju	30	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	适	shi	1500	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	逍	xiao	150	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	逻	luo	150	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	遗	yi	800	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	邯	han	80	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	郢	ying	40	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	酥	su	600	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	酮	tong	100	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	酶	mei	600	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	释	shi	1000	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	釜	fu	120	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	钚	bu	20	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	钛	tai	120	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	钴	gu	80	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	铬	luo	15	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	锌	xin	200	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	际	ji	900	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	降	xiang	450	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	陞	sheng	10	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	革	ge	600	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	髂	qia	15	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	鲧	gun	20	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	鸠	jiu	60	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	麽	mo	80	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	鼬	you	120	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	龁	he	15	R1/R2单字权重校准
+cn_dicts/base.dict.yaml	一加	yi jia	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	一是	yi shi	2500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	一朝	yi chao	120	R2基础词库权重校准
+cn_dicts/base.dict.yaml	一行	yi xing	1600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	万块	wan kuai	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	万字	wan zi	450	R2基础词库权重校准
+cn_dicts/base.dict.yaml	万股	wan gu	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	万青	wan qing	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	三岛	san dao	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	三是	san shi	1200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	上会	shang hui	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	上有	shang you	1800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	上海	shang hai	20000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	上的	shang de	1500	R1基础词库权重校准
+cn_dicts/base.dict.yaml	上色	shang shai	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	上调了	shang diao le	10	R2基础词库权重校准
+cn_dicts/base.dict.yaml	上调到	shang diao dao	10	R2基础词库权重校准
+cn_dicts/base.dict.yaml	上调至	shang diao zhi	10	R2基础词库权重校准
+cn_dicts/base.dict.yaml	上财	shang cai	350	R2基础词库权重校准
+cn_dicts/base.dict.yaml	下到	xia dao	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	下的	xia de	600	R1基础词库权重校准
+cn_dicts/base.dict.yaml	不了	bu le	120	R2基础词库权重校准
+cn_dicts/base.dict.yaml	不会把	bu hui ba	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	不可能把	bu ke neng ba	80	R2基础词库权重校准
+cn_dicts/base.dict.yaml	不学	bu xue	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	不就	bu jiu	2000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	不掉	bu diao	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	不还	bu hai	120	R2基础词库权重校准
+cn_dicts/base.dict.yaml	与你	yu ni	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	与实力	yu shi li	80	R2基础词库权重校准
+cn_dicts/base.dict.yaml	世界是	shi jie shi	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	丞相	cheng xiang	1000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	丧尸	sang shi	2000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	中以	zhong yi	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	中有	zhong you	750	R2基础词库权重校准
+cn_dicts/base.dict.yaml	中的	zhong de	500	R1基础词库权重校准
+cn_dicts/base.dict.yaml	中证	zhong zheng	700	R2基础词库权重校准
+cn_dicts/base.dict.yaml	中金	zhong jin	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	中锋	zhong feng	450	R2基础词库权重校准
+cn_dicts/base.dict.yaml	临床实验	lin chuang shi yan	40	R2基础词库权重校准
+cn_dicts/base.dict.yaml	为例	wei li	3000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	之上	zhi shang	3500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	之人	zhi ren	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	之地	zhi di	1200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	之子	zhi zi	800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	之心	zhi xin	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	之情	zhi qing	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	之日	zhi ri	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	之死	zhi si	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	之流	zhi liu	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	之父	zhi fu	1000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	之王	zhi wang	1000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	之神	zhi shen	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	之路	zhi lu	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	乐视	le shi	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	也只	ye zhi	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	也够	ye gou	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	书的	shu de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	买给	mai gei	1500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	二是	er shi	1800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	五行	wu hang	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	井上	jing shang	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	人和	ren hu	100	R1基础词库权重校准
+cn_dicts/base.dict.yaml	人是	ren shi	1000	R1基础词库权重校准
+cn_dicts/base.dict.yaml	人有	ren you	1200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	人的	ren de	150	R1基础词库权重校准
+cn_dicts/base.dict.yaml	人血	ren xie	25	R2基础词库权重校准
+cn_dicts/base.dict.yaml	他的诗	ta de shi	80	R2基础词库权重校准
+cn_dicts/base.dict.yaml	他穿着	ta chuan zhuo	20	R1基础词库权重校准
+cn_dicts/base.dict.yaml	仙道	xian dao	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	伊布	yi bu	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	会很	hui hen	500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	会比	hui bi	2000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	传武	chuan wu	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	但其	dan qi	450	R2基础词库权重校准
+cn_dicts/base.dict.yaml	但又	dan you	2500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	但要	dan yao	700	R2基础词库权重校准
+cn_dicts/base.dict.yaml	住的	zhu de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	佐助	zuo zhu	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	你穿着	ni chuan zhuo	15	R2基础词库权重校准
+cn_dicts/base.dict.yaml	便便	pian pian	80	R2基础词库权重校准
+cn_dicts/base.dict.yaml	便宜	bian yi	80	R2基础词库权重校准
+cn_dicts/base.dict.yaml	便衣	bian yi	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	保费	bao fei	1000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	偷着	tou zhao	40	R2基础词库权重校准
+cn_dicts/base.dict.yaml	储户	chu hu	450	R2基础词库权重校准
+cn_dicts/base.dict.yaml	元宵	yuan xiao	1000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	先写	xian xie	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	公会	gong hui	1200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	公知	gong zhi	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	兴起	xing qi	1200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	再补	zai bu	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	写在	xie zai	1200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	准确地说	zhun que de shuo	1000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	准确的说	zhun que de shuo	30	R2基础词库权重校准
+cn_dicts/base.dict.yaml	几人	ji ren	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	几首	ji shou	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	凯恩	kai en	80	R2基础词库权重校准
+cn_dicts/base.dict.yaml	出个	chu ge	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	出球	chu qiu	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	出血	chu xie	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	分割线	fen ge xian	1500	R1基础词库权重校准
+cn_dicts/base.dict.yaml	刘彻	liu che	80	R2基础词库权重校准
+cn_dicts/base.dict.yaml	刘翔	liu xiang	1000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	刘鑫	liu xin	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	则被	ze bei	500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	刚进	gang jin	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	初试	chu shi	1800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	到他	dao ta	350	R2基础词库权重校准
+cn_dicts/base.dict.yaml	前的	qian de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	剑术	jian shu	700	R2基础词库权重校准
+cn_dicts/base.dict.yaml	剑道	jian dao	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	剥下	bo xia	20	R2基础词库权重校准
+cn_dicts/base.dict.yaml	剥了	bo le	15	R2基础词库权重校准
+cn_dicts/base.dict.yaml	剥壳	bo ke	15	R2基础词库权重校准
+cn_dicts/base.dict.yaml	剥掉	bo diao	20	R2基础词库权重校准
+cn_dicts/base.dict.yaml	剥皮	bo pi	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	包贝尔	bao bei er	60	R2基础词库权重校准
+cn_dicts/base.dict.yaml	匿了	ni le	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	千寻	qian xun	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	半熟	ban shou	40	R2基础词库权重校准
+cn_dicts/base.dict.yaml	半藏	ban cang	30	R1基础词库权重校准
+cn_dicts/base.dict.yaml	卖血	mai xie	120	R2基础词库权重校准
+cn_dicts/base.dict.yaml	南审	nan shen	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	卡住	qia zhu	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	卡卡	ka ka	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	卡斯特	ka si te	50	R2基础词库权重校准
+cn_dicts/base.dict.yaml	卡的	ka de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	卵用	luan yong	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	历法	li fa	450	R2基础词库权重校准
+cn_dicts/base.dict.yaml	去问	qu wen	500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	又将	you jiang	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	又得	you de	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	又有	you you	400	R1基础词库权重校准
+cn_dicts/base.dict.yaml	又没	you mei	800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	友商	you shang	700	R2基础词库权重校准
+cn_dicts/base.dict.yaml	叔伯	shu bai	15	R2基础词库权重校准
+cn_dicts/base.dict.yaml	变薄	bian bo	40	R2基础词库权重校准
+cn_dicts/base.dict.yaml	古剑	gu jian	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	只露出	zhi lou chu	25	R2基础词库权重校准
+cn_dicts/base.dict.yaml	吃到	chi dao	1200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	吃到了	chi dao le	350	R2基础词库权重校准
+cn_dicts/base.dict.yaml	吉米	ji mi	350	R2基础词库权重校准
+cn_dicts/base.dict.yaml	同人	tong ren	450	R2基础词库权重校准
+cn_dicts/base.dict.yaml	同行	tong xing	1200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	后摇	hou yao	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	后的	hou de	600	R1基础词库权重校准
+cn_dicts/base.dict.yaml	吐血	tu xie	80	R2基础词库权重校准
+cn_dicts/base.dict.yaml	吱吱	zi zi	50	R2基础词库权重校准
+cn_dicts/base.dict.yaml	吴京	wu jing	350	R2基础词库权重校准
+cn_dicts/base.dict.yaml	吴国	wu guo	500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	周深	zhou shen	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	哥大	ge da	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	哥的	ge de	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	哥谭	ge tan	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	唱法	chang fa	700	R2基础词库权重校准
+cn_dicts/base.dict.yaml	唱的	chang de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	唱跳	chang tiao	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	喝到	he dao	800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	喝的	he de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	喷血	pen xie	20	R2基础词库权重校准
+cn_dicts/base.dict.yaml	回㨃	hui dui	5	R2基础词库权重校准
+cn_dicts/base.dict.yaml	回撤	hui che	350	R2基础词库权重校准
+cn_dicts/base.dict.yaml	国号	guo hao	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	圆熟	yuan shou	10	R2基础词库权重校准
+cn_dicts/base.dict.yaml	圈里	juan li	80	R1基础词库权重校准
+cn_dicts/base.dict.yaml	在这	zai zhe	800	R1基础词库权重校准
+cn_dicts/base.dict.yaml	埃梅里	ai mei li	60	R2基础词库权重校准
+cn_dicts/base.dict.yaml	城乡	cheng xiang	3200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	基函数	ji han shu	50	R2基础词库权重校准
+cn_dicts/base.dict.yaml	基德	ji de	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	士郎	shi lang	80	R2基础词库权重校准
+cn_dicts/base.dict.yaml	声学	sheng xue	800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	声线	sheng xian	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	复联	fu lian	500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	复试	fu shi	1800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	多万	duo wan	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	多为	duo wei	1000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	多去	duo qu	800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	多的	duo de	600	R1基础词库权重校准
+cn_dicts/base.dict.yaml	大一	da yi	1500	R1基础词库权重校准
+cn_dicts/base.dict.yaml	大伯	da bai	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	大卫	da wei	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	大唐	da tang	450	R2基础词库权重校准
+cn_dicts/base.dict.yaml	大城	dai cheng	30	R1基础词库权重校准
+cn_dicts/base.dict.yaml	大王	dai wang	50	R2基础词库权重校准
+cn_dicts/base.dict.yaml	大都	da dou	2100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	天和	tian hu	50	R1基础词库权重校准
+cn_dicts/base.dict.yaml	太熟	tai shou	15	R2基础词库权重校准
+cn_dicts/base.dict.yaml	太薄	tai bo	30	R2基础词库权重校准
+cn_dicts/base.dict.yaml	太行	tai xing	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	央美	yang mei	180	R2基础词库权重校准
+cn_dicts/base.dict.yaml	姜文	jiang wen	800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	姜维	jiang wei	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	姻缘	yin yuan	1200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	字的	zi de	100	R1基础词库权重校准
+cn_dicts/base.dict.yaml	学的	xue de	900	R1基础词库权重校准
+cn_dicts/base.dict.yaml	学硕	xue shuo	1000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	它了	ta le	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	安迪	an di	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	宋江	song jiang	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	完形	wan xing	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	家的	jia de	600	R1基础词库权重校准
+cn_dicts/base.dict.yaml	密钥	mi yue	1816	R2基础词库权重校准
+cn_dicts/base.dict.yaml	富士	fu shi	1500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	对其	dui qi	1200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	对线	dui xian	1000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	将是	jiang shi	900	R2基础词库权重校准
+cn_dicts/base.dict.yaml	将球	jiang qiu	500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	小到	xiao dao	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	小德	xiao de	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	小智	xiao zhi	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	小的	xiao de	1000	R1基础词库权重校准
+cn_dicts/base.dict.yaml	就以	jiu yi	1000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	就只	jiu zhi	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	就将	jiu jiang	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	就把	jiu ba	500	R1基础词库权重校准
+cn_dicts/base.dict.yaml	尸体	shi ti	2000	R1基础词库权重校准
+cn_dicts/base.dict.yaml	尼克	ni ke	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	尼玛	ni ma	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	尾田	wei tian	120	R2基础词库权重校准
+cn_dicts/base.dict.yaml	左传	zuo zhuan	350	R2基础词库权重校准
+cn_dicts/base.dict.yaml	巴赫	ba he	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	布克	bu ke	450	R2基础词库权重校准
+cn_dicts/base.dict.yaml	带的	dai de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	干员	gan yuan	450	R2基础词库权重校准
+cn_dicts/base.dict.yaml	干货	gan huo	5000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	平和	ping hu	100	R1基础词库权重校准
+cn_dicts/base.dict.yaml	并以	bing yi	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	异形	yi xing	1200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	张宇	zhang yu	500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	张郃	zhang he	40	R2基础词库权重校准
+cn_dicts/base.dict.yaml	强答	qiang da	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	彼得	bi de	800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	很熟	hen shou	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	很薄	hen bo	50	R2基础词库权重校准
+cn_dicts/base.dict.yaml	忍术	ren shu	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	怎么还	zen me huan	100	R1基础词库权重校准
+cn_dicts/base.dict.yaml	想从	xiang cong	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	戈登	ge deng	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	成份	cheng fen	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	我又	wo you	2500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	我把	wo ba	800	R1基础词库权重校准
+cn_dicts/base.dict.yaml	我熟	wo shou	20	R2基础词库权重校准
+cn_dicts/base.dict.yaml	我穿着	wo chuan zhuo	20	R1基础词库权重校准
+cn_dicts/base.dict.yaml	或其	huo qi	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	战力	zhan li	1200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	战地	zhan di	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	截止	jie zhi	2200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	所示	suo shi	500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	所要	suo yao	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	手熟	shou shou	10	R2基础词库权重校准
+cn_dicts/base.dict.yaml	打的	da de	1500	R1基础词库权重校准
+cn_dicts/base.dict.yaml	打着	da zhao	400	R1基础词库权重校准
+cn_dicts/base.dict.yaml	把书	ba shu	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	抑或是	yi huo shi	1800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	投保	tou bao	450	R2基础词库权重校准
+cn_dicts/base.dict.yaml	抽血	chou xie	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	拍面	pai mian	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	拔河	ba he	800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	拼的	pin de	500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	挡位	dang wei	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	提的	ti de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	搞基	gao ji	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	搞技术	gao ji shu	180	R2基础词库权重校准
+cn_dicts/base.dict.yaml	搞的	gao de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	摊薄	tan bao	40	R2基础词库权重校准
+cn_dicts/base.dict.yaml	放的	fang de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	放血	fang xie	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	数的	shu de	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	文中	wen zhong	800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	新一	xin yi	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	新浪	xin lang	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	施法	shi fa	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	时的	shi de	300	R1基础词库权重校准
+cn_dicts/base.dict.yaml	时针	shi zhen	1200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	时间的	shi jian de	3000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	明教	ming jiao	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	星期	xing qi	4500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	星舰	xing jian	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	是一件	shi yi jian	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	是不	shi bu	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	是从	shi cong	500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	是以	shi yi	400	R1基础词库权重校准
+cn_dicts/base.dict.yaml	是做	shi zuo	1100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	是在	shi zai	2500	R1基础词库权重校准
+cn_dicts/base.dict.yaml	是将	shi jiang	1100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	是想	shi xiang	800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	是把	shi ba	500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	是指	shi zhi	1500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	是有	shi you	1000	R1基础词库权重校准
+cn_dicts/base.dict.yaml	是用	shi yong	1500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	是由	shi you	800	R1基础词库权重校准
+cn_dicts/base.dict.yaml	是真	shi zhen	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	是被	shi bei	1400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	是谁	shi shui	500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	晕血	yun xie	15	R2基础词库权重校准
+cn_dicts/base.dict.yaml	更薄	geng bo	30	R2基础词库权重校准
+cn_dicts/base.dict.yaml	曹丕	cao pi	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	曹操	cao cao	750	R1基础词库权重校准
+cn_dicts/base.dict.yaml	曼联	man lian	1000	R1基础词库权重校准
+cn_dicts/base.dict.yaml	最薄	zui bo	25	R2基础词库权重校准
+cn_dicts/base.dict.yaml	有人骂	you ren ma	50	R2基础词库权重校准
+cn_dicts/base.dict.yaml	有位	you wei	1000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	有句	you ju	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	有喜了	you xi le	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	有好的	you hao de	1200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	有血	you xie	25	R2基础词库权重校准
+cn_dicts/base.dict.yaml	本纪	ben ji	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	朱棣	zhu di	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	李健	li jian	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	李安	li an	500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	李显	li xian	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	李治	li zhi	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	来的	lai de	1500	R1基础词库权重校准
+cn_dicts/base.dict.yaml	杨过	yang guo	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	杰克	jie ke	900	R2基础词库权重校准
+cn_dicts/base.dict.yaml	极薄	ji bo	15	R2基础词库权重校准
+cn_dicts/base.dict.yaml	林夕	lin xi	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	果壳	guo ke	350	R2基础词库权重校准
+cn_dicts/base.dict.yaml	校区	xiao qu	3000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	校方	xiao fang	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	梅西	mei xi	650	R1基础词库权重校准
+cn_dicts/base.dict.yaml	楚军	chu jun	350	R2基础词库权重校准
+cn_dicts/base.dict.yaml	楚国	chu guo	800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	此行	ci hang	80	R2基础词库权重校准
+cn_dicts/base.dict.yaml	武大	wu da	1200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	武理	wu li	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	气的	qi de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	水的	shui de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	没入	mei ru	40	R2基础词库权重校准
+cn_dicts/base.dict.yaml	没有把	mei you ba	280	R2基础词库权重校准
+cn_dicts/base.dict.yaml	没血了	mei xie le	15	R2基础词库权重校准
+cn_dicts/base.dict.yaml	没过	mo guo	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	法师	fa shi	1000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	泻药	xie yao	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	洗地	xi di	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	活在	huo zai	800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	流川	liu chuan	40	R2基础词库权重校准
+cn_dicts/base.dict.yaml	浅浅	jian jian	20	R1基础词库权重校准
+cn_dicts/base.dict.yaml	消防	xiao fang	2500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	混熟	hun shou	40	R2基础词库权重校准
+cn_dicts/base.dict.yaml	湘北	xiang bei	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	滴血	di xie	80	R2基础词库权重校准
+cn_dicts/base.dict.yaml	澄清	deng qing	350	R2基础词库权重校准
+cn_dicts/base.dict.yaml	炎帝	yan di	500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	炒熟	chao shou	40	R2基础词库权重校准
+cn_dicts/base.dict.yaml	点到	dian dao	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	点的	dian de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	点钱	dian qian	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	烤熟	kao shou	50	R2基础词库权重校准
+cn_dicts/base.dict.yaml	烧熟	shao shou	15	R2基础词库权重校准
+cn_dicts/base.dict.yaml	热火	re huo	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	焦段	jiao duan	500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	煮熟	zhu shou	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	熟的	shou de	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	熟肉	shou rou	30	R2基础词库权重校准
+cn_dicts/base.dict.yaml	熟透	shou tou	60	R2基础词库权重校准
+cn_dicts/base.dict.yaml	燕国	yan guo	350	R2基础词库权重校准
+cn_dicts/base.dict.yaml	牛逼	niu bi	1500	R1基础词库权重校准
+cn_dicts/base.dict.yaml	狗的	gou de	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	猛龙	meng long	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	王菲	wang fei	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	玩到	wan dao	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	玩的	wan de	900	R1基础词库权重校准
+cn_dicts/base.dict.yaml	理发	li fa	2000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	生的	sheng de	300	R1基础词库权重校准
+cn_dicts/base.dict.yaml	用血	yong xie	35	R2基础词库权重校准
+cn_dicts/base.dict.yaml	电场	dian chang	550	R2基础词库权重校准
+cn_dicts/base.dict.yaml	痛风的	tong feng de	70	R2基础词库权重校准
+cn_dicts/base.dict.yaml	癫痫	dian xian	900	R2基础词库权重校准
+cn_dicts/base.dict.yaml	登陆	deng lu	4000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	白起	bai qi	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	皮薄	pi bo	25	R2基础词库权重校准
+cn_dicts/base.dict.yaml	盐选	yan xuan	180	R2基础词库权重校准
+cn_dicts/base.dict.yaml	省的	sheng de	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	真就	zhen jiu	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	睡着觉	shui zhao jiao	15	R2基础词库权重校准
+cn_dicts/base.dict.yaml	知乎	zhi hu	5000	R1基础词库权重校准
+cn_dicts/base.dict.yaml	知友	zhi you	300	R1基础词库权重校准
+cn_dicts/base.dict.yaml	神乐	shen le	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	神的	shen de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	科尔	ke er	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	科斯	ke si	90	R2基础词库权重校准
+cn_dicts/base.dict.yaml	秦时	qin shi	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	穿着	chuan zhuo	2000	R1基础词库权重校准
+cn_dicts/base.dict.yaml	立绘	li hui	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	站的	zhan de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	竞品	jing pin	1800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	端的	duan di	30	R2基础词库权重校准
+cn_dicts/base.dict.yaml	笑得	xiao de	800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	答主	da zhu	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	篮下	lan xia	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	精听	jing ting	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	糖原	tang yuan	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	纤薄	xian bao	50	R2基础词库权重校准
+cn_dicts/base.dict.yaml	线的	xian de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	练的	lian de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	组的	zu de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	经验贴	jing yan tie	30	R2基础词库权重校准
+cn_dicts/base.dict.yaml	给我爸	gei wo ba	70	R2基础词库权重校准
+cn_dicts/base.dict.yaml	网的	wang de	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	罗斯	luo si	900	R2基础词库权重校准
+cn_dicts/base.dict.yaml	美帝	mei di	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	美本	mei ben	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	美漫	mei man	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	美队	mei dui	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	而以	er yi	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	而其	er qi	500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	而对	er dui	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	而当	er dang	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	而被	er bei	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	肖八	xiao ba	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	肖战	xiao zhan	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	背景的	bei jing de	2500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	脑中	nao zhong	900	R2基础词库权重校准
+cn_dicts/base.dict.yaml	脸熟	lian shou	25	R2基础词库权重校准
+cn_dicts/base.dict.yaml	自旋	zi xuan	500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	苏轼	su shi	500	R1基础词库权重校准
+cn_dicts/base.dict.yaml	荀彧	xun yu	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	荒坂	huang ban	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	萧何	xiao he	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	落下	la xia	700	R1基础词库权重校准
+cn_dicts/base.dict.yaml	落在	la zai	350	R1基础词库权重校准
+cn_dicts/base.dict.yaml	落子	lao zi	25	R2基础词库权重校准
+cn_dicts/base.dict.yaml	蒸熟	zheng shou	60	R2基础词库权重校准
+cn_dicts/base.dict.yaml	薄冰	bao bing	20	R2基础词库权重校准
+cn_dicts/base.dict.yaml	薄厚	bo hou	20	R2基础词库权重校准
+cn_dicts/base.dict.yaml	薄壁	bao bi	15	R2基础词库权重校准
+cn_dicts/base.dict.yaml	薄层	bao ceng	30	R2基础词库权重校准
+cn_dicts/base.dict.yaml	薄板	bo ban	25	R2基础词库权重校准
+cn_dicts/base.dict.yaml	薄皮	bo pi	15	R2基础词库权重校准
+cn_dicts/base.dict.yaml	薄薄	bo bo	25	R2基础词库权重校准
+cn_dicts/base.dict.yaml	蜀国	shu guo	350	R2基础词库权重校准
+cn_dicts/base.dict.yaml	蝙蝠侠	bian fu xia	1500	R1基础词库权重校准
+cn_dicts/base.dict.yaml	血块	xie kuai	50	R2基础词库权重校准
+cn_dicts/base.dict.yaml	血水	xie shui	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	血泡	xie pao	15	R2基础词库权重校准
+cn_dicts/base.dict.yaml	血泪	xie lei	70	R2基础词库权重校准
+cn_dicts/base.dict.yaml	血流	xie liu	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	血的	xie de	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	血赚	xie zhuan	40	R2基础词库权重校准
+cn_dicts/base.dict.yaml	被刷了	bei shua le	75	R2基础词库权重校准
+cn_dicts/base.dict.yaml	被我	bei wo	350	R2基础词库权重校准
+cn_dicts/base.dict.yaml	被窝	bei wo	2000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	装的	zhuang de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	褪下	tun xia	20	R2基础词库权重校准
+cn_dicts/base.dict.yaml	褪色	tui shai	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	西交	xi jiao	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	西农	xi nong	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	西政	xi zheng	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	西蒙斯	xi meng si	120	R2基础词库权重校准
+cn_dicts/base.dict.yaml	要为	yao wei	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	要以	yao yi	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	要和	yao he	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	要学	yao xue	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	要高	yao gao	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	见血	jian xie	40	R2基础词库权重校准
+cn_dicts/base.dict.yaml	记的	ji de	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	讲的	jiang de	1400	R1基础词库权重校准
+cn_dicts/base.dict.yaml	读博	du bo	1500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	谁的	shui de	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	谁谁	shui shui	80	R2基础词库权重校准
+cn_dicts/base.dict.yaml	调到	diao dao	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	谢邀	xie yao	1000	R1基础词库权重校准
+cn_dicts/base.dict.yaml	贴到	tie dao	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	贾诩	jia xu	50	R2基础词库权重校准
+cn_dicts/base.dict.yaml	资料时	zi liao shi	40	R2基础词库权重校准
+cn_dicts/base.dict.yaml	赤木	chi mu	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	赵国	zhao guo	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	超薄	chao bo	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	车的	che de	200	R1基础词库权重校准
+cn_dicts/base.dict.yaml	较薄	jiao bo	25	R2基础词库权重校准
+cn_dicts/base.dict.yaml	过熟	guo shou	15	R2基础词库权重校准
+cn_dicts/base.dict.yaml	过的	guo de	1800	R1基础词库权重校准
+cn_dicts/base.dict.yaml	还上	hai shang	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	还和	hai he	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	还带	hai dai	450	R2基础词库权重校准
+cn_dicts/base.dict.yaml	这个药	zhe ge yao	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	这算	zhe suan	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	迷笛	mi di	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	送进	song jin	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	选校	xuan xiao	450	R2基础词库权重校准
+cn_dicts/base.dict.yaml	造反	zao fan	900	R2基础词库权重校准
+cn_dicts/base.dict.yaml	那首	na shou	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	郎朗	lang lang	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	郭靖	guo jing	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	都与	dou yu	500	R2基础词库权重校准
+cn_dicts/base.dict.yaml	都会	du hui	1000	R1基础词库权重校准
+cn_dicts/base.dict.yaml	都叫	dou jiao	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	都好	dou hao	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	都懂	dou dong	900	R2基础词库权重校准
+cn_dicts/base.dict.yaml	都比	dou bi	700	R2基础词库权重校准
+cn_dicts/base.dict.yaml	都花	dou hua	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	配器	pei qi	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	里的	li de	1000	R1基础词库权重校准
+cn_dicts/base.dict.yaml	重用	chong yong	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	野区	ye qu	450	R2基础词库权重校准
+cn_dicts/base.dict.yaml	钟会	zhong hui	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	银时	yin shi	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	银行借	yin hang jie	20	R2基础词库权重校准
+cn_dicts/base.dict.yaml	银魂	yin hun	60	R2基础词库权重校准
+cn_dicts/base.dict.yaml	长了	chang le	700	R2基础词库权重校准
+cn_dicts/base.dict.yaml	长的	chang de	1000	R1基础词库权重校准
+cn_dicts/base.dict.yaml	阵形	zhen xing	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	附魔	fu mo	350	R2基础词库权重校准
+cn_dicts/base.dict.yaml	陆逊	lu xun	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	陌陌	mo mo	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	陵南	ling nan	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	陶喆	tao zhe	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	霉粉	mei fen	120	R2基础词库权重校准
+cn_dicts/base.dict.yaml	霉霉	mei mei	800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	霍光	huo guang	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	露出来	lou chu lai	80	R2基础词库权重校准
+cn_dicts/base.dict.yaml	非常地	fei chang de	1200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	非常的	fei chang de	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	面熟	mian shou	15	R2基础词库权重校准
+cn_dicts/base.dict.yaml	面的	mian di	150	R1基础词库权重校准
+cn_dicts/base.dict.yaml	韩信	han xin	350	R2基础词库权重校准
+cn_dicts/base.dict.yaml	韩寒	han han	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	音游	yin you	450	R2基础词库权重校准
+cn_dicts/base.dict.yaml	音源	yin yuan	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	音阶	yin jie	1200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	顶会	ding hui	350	R2基础词库权重校准
+cn_dicts/base.dict.yaml	预后	yu hou	250	R2基础词库权重校准
+cn_dicts/base.dict.yaml	频数	pin shuo	5	R2基础词库权重校准
+cn_dicts/base.dict.yaml	题主	ti zhu	2000	R1基础词库权重校准
+cn_dicts/base.dict.yaml	首答	shou da	200	R2基础词库权重校准
+cn_dicts/base.dict.yaml	驹子	ju zi	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	高的	gao de	2500	R1基础词库权重校准
+cn_dicts/base.dict.yaml	魅族	mei zu	1000	R2基础词库权重校准
+cn_dicts/base.dict.yaml	魏国	wei guo	400	R2基础词库权重校准
+cn_dicts/base.dict.yaml	魏延	wei yan	350	R2基础词库权重校准
+cn_dicts/base.dict.yaml	魔兽	mo shou	800	R2基础词库权重校准
+cn_dicts/base.dict.yaml	鸡的	ji de	150	R2基础词库权重校准
+cn_dicts/base.dict.yaml	鸣人	ming ren	600	R2基础词库权重校准
+cn_dicts/base.dict.yaml	鹰眼	ying yan	300	R2基础词库权重校准
+cn_dicts/base.dict.yaml	鼻血	bi xie	60	R2基础词库权重校准
+cn_dicts/ext.dict.yaml	㨃天㨃地	*	<=5	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	一句诗	*	<=40	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	一次是	*	<=400	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	一脸懵逼	*	<=300	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	上显示	*	<=50	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	不自觉地	bu zi jue de	1200	R2核心常用短语提权
+cn_dicts/ext.dict.yaml	不香嘛	*	<=10	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	两银子	*	<=20	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	个地方	*	<=50	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	个字符	*	<=30	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	中的角色	*	<=30	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	也没谁	ye mei shui	<=10	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	也没谁了	ye mei shui le	<=10	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	书籍是	*	<=10	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	人或者	*	<=100	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	人生地不熟	ren sheng di bu shou	<=30	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	人生地不熟的	ren sheng di bu shou de	<=20	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	人知道	*	<=50	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	亿立方米	*	<=20	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	任谁都	ren shui dou	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	住范儿	*	<=50	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	你是谁	ni shi shui	<=30	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	你觉得谁	ni jue de shui	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	减振器	*	<=250	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	分多钟	*	<=20	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	及以下	*	<=150	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	双截棍	*	<=80	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	变得成熟	bian de cheng shou	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	古美门	*	<=300	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	吴亦凡	*	<=200	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	喜欢的是	*	<=150	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	大荧幕	*	<=25	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	夫斯基	*	<=10	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	姜先生	*	<=20	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	娴熟地	xian shou de	<=10	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	宋青书	*	<=4	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	对谁都	dui shui dou	<=20	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	师傅领进门	*	<=25	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	座城市	*	<=20	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	弗利萨	*	<=300	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	张麻子	*	<=300	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	懂的都懂	dong de dou dong	800	R2核心常用短语提权
+cn_dicts/ext.dict.yaml	成熟度	cheng shou du	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	成熟的体系	cheng shou de ti xi	<=10	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	成熟程度	cheng shou cheng du	<=6	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	成熟稳重	cheng shou wen zhong	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	我不再	*	<=200	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	我有时	*	<=40	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	我特么	*	<=150	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	手机和	*	<=10	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	技术成熟度	ji shu cheng shou du	<=6	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	投资须谨慎	tou zi xu jin shen	150	R2核心常用短语提权
+cn_dicts/ext.dict.yaml	担心的是	*	<=25	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	拿着微薄的工资	na zhe wei bao de gong zi	<=10	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	拿着微薄的薪水	na zhe wei bao de xin shui	<=10	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	支持和	*	<=50	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	放我出去	*	<=200	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	文件和	*	<=20	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	是一天	*	<=20	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	是好是坏	*	<=200	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	是重点	*	<=150	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	有戏了	you xi le	200	R2核心常用短语提权
+cn_dicts/ext.dict.yaml	有木有	*	<=150	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	有活力	*	<=250	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	机会和	*	<=50	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	杀生丸	*	<=300	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	条件和	*	<=50	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	枚金牌	*	<=20	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	模板化	*	<=20	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	此时是	*	<=15	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	比谁都	bi shui dou	<=30	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	比谁都清楚	bi shui dou qing chu	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	没有谁	mei you shui	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	没有谁对谁错	mei you shui dui shei cuo	<=10	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	没谁了	mei shui le	<=20	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	游戏了	*	<=100	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	熟悉了解	shou xi liao jie	<=6	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	熟悉度	shou xi du	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	熟悉的地方	shou xi de di fang	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	熟悉的感觉	shou xi de gan jue	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	熟悉程度	shou xi cheng du	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	熟练地	shou lian de	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	熟练度	shou lian du	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	熟练程度	shou lian cheng du	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	爱情是	*	<=50	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	知乎上	*	<=800	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	秀一下	*	<=100	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	种颜色	*	<=20	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	系统的学习	*	<=300	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	线城市	*	<=20	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	老师说	*	<=1200	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	老校区	*	<=120	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	老班章	*	<=25	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	肖秀荣	*	<=500	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	脑残粉	*	<=200	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	花落谁家	hua luo shui jia	<=10	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	落地时	*	<=50	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	要及时	*	<=200	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	触发了	*	<=250	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	训练师	*	<=50	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	谁也没	shui ye mei	<=25	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁也没办法	shui ye mei ban fa	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁也没想到	shui ye mei xiang dao	<=20	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁也没有	shui ye mei you	<=20	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁也没有想到	shui ye mei you xiang dao	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁受得了	shui shou de liao	<=20	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁曾想	shui ceng xiang	<=20	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁来着	shui lai zhe	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁没事	shui mei shi	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁没有	shui mei you	<=20	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁还不是个	shui hai bu shi ge	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁还会	shui hai hui	<=25	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁还去	shui hai qu	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁还敢	shui hai gan	<=20	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁还管	shui hai guan	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁还能	shui hai neng	<=20	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁还记得	shui hai ji de	<=20	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都一样	shui dou yi yang	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都不	shui dou bu	<=25	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都不想	shui dou bu xiang	<=20	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都不愿意	shui dou bu yuan yi	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都不是	shui dou bu shi	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都不知道	shui dou bu zhi dao	<=25	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都不认识	shui dou bu ren shi	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都会	shui dou hui	<=30	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都可以	shui dou ke yi	<=30	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都可以做	shui dou ke yi zuo	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都喜欢	shui dou xi huan	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都希望	shui dou xi wang	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都想	shui dou xiang	<=20	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都是	shui dou shi	<=20	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都替代不了	shui dou ti dai bu liao	<=2	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都有	shui dou you	<=25	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都没想到	shui dou mei xiang dao	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都没有	shui dou mei you	<=20	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都知道	shui dou zhi dao	<=30	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都能	shui dou neng	<=30	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都能做	shui dou neng zuo	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	谁都行	shui dou xing	<=10	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	贝吉塔	*	<=400	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	跟谁都	gen shui dou	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	还不熟悉	hai bu shou xi	<=10	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	还是谁	hai shi shui	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	还有谁	hai you shui	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	还有谁能	hai you shui neng	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	这个价	*	<=350	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	这么玩	*	<=150	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	送情书	song qing shu	30	R2核心常用短语提权
+cn_dicts/ext.dict.yaml	都不熟	dou bu shou	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	都是谁	dou shi shui	<=20	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	都有谁	dou you shui	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	都熟悉	dou shou xi	<=15	R1/R2容错或非主流读音降权
+cn_dicts/ext.dict.yaml	里维斯	*	<=60	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	题主的问题	*	<=200	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	首先先	*	<=20	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	首歌曲	*	<=20	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	骚操作	*	<=300	R1/R2扩展词库权重封顶
+cn_dicts/ext.dict.yaml	黄四郎	*	<=300	R1/R2扩展词库权重封顶
+cn_dicts/others.dict.yaml	一骑绝尘	yi ji jue chen	80	R1容错词权重校准
+cn_dicts/others.dict.yaml	伯伯	bai bai	200	R1容错词权重校准
+cn_dicts/others.dict.yaml	坐骑	zuo ji	45	R1容错词权重校准
+cn_dicts/others.dict.yaml	扑街	pu gai	80	R1容错词权重校准
+cn_dicts/others.dict.yaml	铁骑	tie ji	15	R1容错词权重校准
+cn_dicts_cell/chess.dict.yaml	子力	*	<=100	R2象棋词库权重封顶
+cn_dicts_cell/chess2.dict.yaml	停着	ting zhao	10	R1象棋词库权重校准
+cn_dicts_cell/chess2.dict.yaml	应着	ying zhao	10	R1象棋词库权重校准
+cn_dicts_cell/chess2.dict.yaml	杀法	*	<=80	R2象棋词库权重封顶
+cn_dicts_cell/chess2.dict.yaml	起着	qi zhao	20	R1象棋词库权重校准
+cn_dicts_cell/chess2.dict.yaml	金波	*	<=50	R2象棋词库权重封顶
+cn_dicts_cell/chess2.dict.yaml	闲着	xian zhao	20	R1象棋词库权重校准
+cn_dicts_cell/composite.dict.yaml	一只股票	*	>=150	R2综合词库提权
+cn_dicts_cell/composite.dict.yaml	一把梭	*	<=40	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	一支股票	*	<=50	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	万人民币	*	<=20	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	万亿人民币	*	<=20	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	万元人民币	*	<=20	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	万多个	*	<=15	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	万多公里	*	<=15	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	万平方米	*	<=20	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	万日元	*	<=20	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	万门大学	*	<=20	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	个工作日内	*	<=10	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	久伴英语	*	<=10	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	人人贷	*	<=20	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	亿元人民币	*	<=5	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	亿光年	*	<=20	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	亿欧元	*	<=10	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	亿港元	*	<=10	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	亿韩元	*	<=10	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	健康保	*	<=25	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	前三部	*	<=40	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	前两部	*	<=100	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	匹马力	*	<=15	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	即时制	*	<=60	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	厨师机	*	<=50	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	城乡接合部	*	>=150	R2综合词库提权
+cn_dicts_cell/composite.dict.yaml	城乡结合部	*	<=50	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	增势明显	*	>=150	R2综合词库提权
+cn_dicts_cell/composite.dict.yaml	墨水屏	*	<=25	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	多亿美元	*	<=15	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	字母哥	*	<=40	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	家上市公司	*	<=15	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	届世界杯	*	<=10	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	届奥运会	*	<=10	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	平安福	*	<=20	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	年期国债	*	<=15	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	康复师	*	<=40	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	很可观	*	<=180	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	截止目前	*	<=30	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	投资需谨慎	*	<=50	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	故事板	*	<=60	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	有利网	*	<=20	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	棠夫人	*	<=10	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	母语者	*	<=50	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	法律实务	*	<=90	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	活动价	*	<=40	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	父元素	*	<=20	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	科技布	*	<=150	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	线形态	*	<=15	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	细一点	*	<=40	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	经纪业务	*	<=80	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	货拉拉	*	<=20	R1/R2综合词库权重封顶
+cn_dicts_cell/composite.dict.yaml	贺先生	*	<=40	R1/R2综合词库权重封顶
+cn_dicts_cell/computer.dict.yaml	发版	*	<=35	R1计算机词库权重封顶
+cn_dicts_cell/exthot.dict.yaml	古相思曲	*	>=80	R2热词提权
+cn_dicts_cell/exthot.dict.yaml	墨雨云间	*	>=200	R2热词提权
+cn_dicts_cell/exthot.dict.yaml	大馋丫头	*	>=200	R2热词提权
+cn_dicts_cell/exthot.dict.yaml	小提	*	<=50	R2热词权重封顶
+cn_dicts_cell/exthot.dict.yaml	幻塔	*	<=35	R2热词权重封顶
+cn_dicts_cell/exthot.dict.yaml	整板	*	<=40	R2热词权重封顶
+cn_dicts_cell/exthot.dict.yaml	无语子	*	<=15	R2热词权重封顶
+cn_dicts_cell/exthot.dict.yaml	杰青	*	<=120	R2热词权重封顶
+cn_dicts_cell/exthot.dict.yaml	涨球	*	<=45	R2热词权重封顶
+cn_dicts_cell/exthot.dict.yaml	癫火	*	<=40	R2热词权重封顶
+cn_dicts_cell/exthot.dict.yaml	预瞄	*	<=45	R2热词权重封顶
+cn_dicts_cell/food.dict.yaml	干烧大虾	*	>=150	R1菜品提权
+cn_dicts_cell/food.dict.yaml	玫瑰凉糕	*	>=30	R1菜品提权
+cn_dicts_cell/game.dict.yaml	丁满	*	<=15	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	三王	*	<=25	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	九阴	*	<=80	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	二少	*	<=30	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	仁王	*	<=60	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	伊莉雅	*	<=100	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	伍德	*	<=200	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	佐拉	*	<=50	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	克伦	*	<=20	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	克斯	*	<=40	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	刘洋	*	<=40	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	利尔	*	<=40	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	半神	*	<=120	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	反伤	*	<=35	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	取酒	*	<=25	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	古斯	*	<=50	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	吊带上衣	*	>=200	R2游戏词条提权
+cn_dicts_cell/game.dict.yaml	吞噬者	*	<=50	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	周琦	*	<=50	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	唧唧歪歪	*	<=60	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	圣护	*	<=25	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	地刺	*	<=60	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	塔克	*	<=150	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	多莉	*	<=40	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	夜魇	*	<=40	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	奇闻异事	*	<=15	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	富特	*	<=50	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	巴鲁	*	<=60	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	帕拉	*	<=40	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	强混	*	<=25	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	彭彭	*	<=60	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	恶魂	*	<=15	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	情丝未断	*	>=30	R2游戏词条提权
+cn_dicts_cell/game.dict.yaml	扎斯	*	<=30	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	挡刀	*	<=35	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	插旗	*	<=50	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	无懈	*	<=60	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	星灵	*	<=120	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	星盟	*	<=60	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	春娇	*	<=100	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	普渡	*	<=40	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	暴兵	*	<=40	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	末地	*	<=80	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	李二	*	<=60	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	查尔	*	<=35	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	树精	*	<=30	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	格里高	*	<=15	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	横置	*	<=60	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	母星	*	<=150	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	比利	*	<=120	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	没药	*	<=30	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	波拉	*	<=15	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	牛二	*	<=35	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	玉贤	*	<=40	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	璃月	*	<=120	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	电一	*	<=25	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	男神	*	<=400	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	程勇	*	<=15	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	箕谷	*	<=40	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	维克	*	<=60	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	维拉	*	<=100	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	美乐	*	<=60	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	胡迪	*	<=80	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	花间	*	<=40	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	莫雷	*	<=80	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	菊仙	*	<=30	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	薛举	*	<=30	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	被雷	*	<=20	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	谭雅	*	<=40	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	贝丝	*	<=40	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	赤练	*	<=50	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	赫默	*	<=20	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	赵大	*	<=25	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	辛达	*	<=60	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	远方亲戚	*	<=15	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	连狙	*	<=30	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	邦邦	*	<=100	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	金宝	*	<=25	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	锈湖	*	<=150	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	长角	*	<=30	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	阿布	*	<=150	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	阿武	*	<=30	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	青阳	*	<=60	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	飞影	*	<=50	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	马六	*	<=30	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	鬼斩	*	<=35	R1/R2游戏词库权重封顶
+cn_dicts_cell/game.dict.yaml	鹰角	*	<=80	R1/R2游戏词库权重封顶
+cn_dicts_cell/geography.dict.yaml	冷圈	*	<=25	R2地理词库权重封顶
+cn_dicts_cell/geography.dict.yaml	粘土	*	<=180	R2地理词库权重封顶
+cn_dicts_cell/history.dict.yaml	东冶	*	<=30	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	代郡	*	<=20	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	元清	*	<=35	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	刘贺	*	<=150	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	华妃	*	<=150	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	卫霍	*	<=70	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	后燕	*	<=25	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	吴军	*	<=200	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	吴起	*	<=150	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	坤舆全图	*	>=30	R2历史词条提权
+cn_dicts_cell/history.dict.yaml	帝尧	*	<=15	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	张任	*	<=50	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	张恒	*	<=80	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	暴王	*	<=10	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	朱温	*	<=60	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	李严	*	<=80	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	李旦	*	<=150	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	李炎	*	<=60	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	李贤	*	<=100	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	王坚	*	<=120	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	田楷	*	<=20	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	秦地	*	<=30	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	秦楚	*	<=30	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	简雍	*	<=40	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	糜芳	*	<=100	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	辛毗	*	<=20	R1/R2历史词库权重封顶
+cn_dicts_cell/history.dict.yaml	魏玛	*	<=120	R1/R2历史词库权重封顶
+cn_dicts_cell/idiom.dict.yaml	变态百出	*	>=50	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	变生不测	*	>=50	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	变起萧墙	*	>=50	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	叠岭层峦	*	>=30	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	各抒所见	*	>=60	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	名题金榜	*	>=50	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	否往泰来	*	>=50	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	听其自流	*	>=50	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	吮痈舔痔	*	>=30	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	吹弹歌舞	*	>=60	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	呼天叫屈	*	>=80	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	呼群结党	*	>=50	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	哀感中年	*	>=50	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	哗世取宠	*	>=50	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	哲人其萎	*	>=30	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	啧啧称羡	*	>=100	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	善恶昭彰	*	>=50	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	善终正寝	*	>=50	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	堕溷飘茵	*	>=30	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	声气相通	*	>=50	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	备尝艰难	*	>=80	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	天假因缘	*	>=50	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	天高日远	*	>=50	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	床头金尽	*	>=50	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	废然而返	*	>=50	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	开心见诚	*	>=50	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	彩衣娱亲	*	>=100	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	心旌摇摇	*	>=60	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	志学之年	*	>=60	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	恶衣恶食	*	>=50	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	惊喜欲狂	*	>=150	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	惊悸不安	*	>=80	R2成语提权
+cn_dicts_cell/idiom.dict.yaml	惑世诬民	*	>=50	R2成语提权
+cn_dicts_cell/industry_product.dict.yaml	防撞设施	*	>=120	R1工业品提权
+cn_dicts_cell/literature.dict.yaml	唐婉	*	<=30	R1/R2古诗文权重封顶
+cn_dicts_cell/literature.dict.yaml	殆已	*	<=15	R1/R2古诗文权重封顶
+cn_dicts_cell/literature.dict.yaml	泉涸	*	<=20	R1/R2古诗文权重封顶
+cn_dicts_cell/literature.dict.yaml	甄后	*	<=40	R1/R2古诗文权重封顶
+cn_dicts_cell/literature.dict.yaml	知也者	*	<=15	R1/R2古诗文权重封顶
+cn_dicts_cell/literature.dict.yaml	罔两	*	<=30	R1/R2古诗文权重封顶
+cn_dicts_cell/literature.dict.yaml	胠箧	*	<=20	R1/R2古诗文权重封顶
+cn_dicts_cell/literature.dict.yaml	脂批	*	<=25	R1/R2古诗文权重封顶
+cn_dicts_cell/literature.dict.yaml	阑干拍遍	*	>=50	R2古诗文提权
+cn_dicts_cell/medication.dict.yaml	乐友	*	<=30	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	乐派	*	<=30	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	加尔	*	<=20	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	博德	*	<=30	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	卡洛	*	<=40	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	叶霖	*	<=20	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	吉萨	*	<=30	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	商陆	*	<=80	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	固精补肾	*	>=30	R2医药术语提权
+cn_dicts_cell/medication.dict.yaml	威克	*	<=30	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	威尔逊病	*	>=60	R2医药术语提权
+cn_dicts_cell/medication.dict.yaml	小脑梗塞	*	>=80	R2医药术语提权
+cn_dicts_cell/medication.dict.yaml	希德	*	<=30	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	并趾畸形	*	>=30	R2医药术语提权
+cn_dicts_cell/medication.dict.yaml	本味	*	<=120	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	欧维	*	<=10	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	病机	*	<=45	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	白针	*	<=20	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	科林	*	<=30	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	维奇	*	<=30	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	艾达	*	<=30	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	血供	*	<=50	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	达内	*	<=30	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	达林	*	<=30	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	速尔	*	<=30	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	里克	*	<=30	R2医药词库权重封顶
+cn_dicts_cell/medication.dict.yaml	龈沟	*	<=35	R2医药词库权重封顶
+cn_dicts_cell/music.dict.yaml	复调	*	<=200	R1音乐词库权重封顶
+cn_dicts_cell/name.dict.yaml	博子	*	<=40	R2人名权重封顶
+cn_dicts_cell/name.dict.yaml	唐迟	*	<=15	R2人名权重封顶
+cn_dicts_cell/name.dict.yaml	妃英理	*	<=40	R2人名权重封顶
+cn_dicts_cell/name.dict.yaml	村西透	*	<=10	R2人名权重封顶
+cn_dicts_cell/name.dict.yaml	游一庆	*	<=30	R2人名权重封顶
+cn_dicts_cell/name.dict.yaml	王孝杰	*	<=40	R2人名权重封顶
+cn_dicts_cell/name.dict.yaml	白玲	*	<=30	R2人名权重封顶
+cn_dicts_cell/name.dict.yaml	盛瑾	*	<=30	R2人名权重封顶
+cn_dicts_cell/name.dict.yaml	罗夏	*	<=40	R2人名权重封顶
+cn_dicts_cell/name2.dict.yaml	切原	*	<=25	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	刘牧	*	<=20	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	剑八	*	<=20	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	夜愿	*	<=40	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	席尔	*	<=25	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	戈薇	*	<=30	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	朱文	*	<=30	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	李泉	*	<=30	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	林峰	*	<=40	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	破面	*	<=30	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	美浓	*	<=30	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	英二	*	<=25	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	莉瑟	*	<=20	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	豪雪	*	<=30	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	郑仁	*	<=50	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	郭顶	*	<=25	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	陈升	*	<=60	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	青学	*	<=15	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	魏晨	*	<=60	R2人名2权重封顶
+cn_dicts_cell/name2.dict.yaml	黄英	*	<=20	R2人名2权重封顶
+cn_dicts_cell/place.dict.yaml	小北	*	<=120	R2地名权重封顶
+cn_dicts_cell/place.dict.yaml	民乐	min le	20	R1地名民乐降权避免与民乐min yue混淆
+cn_dicts_cell/place.dict.yaml	洪河	*	<=40	R2地名权重封顶
+cn_dicts_cell/shulihua.dict.yaml	协变	*	<=80	R1/R2数理化权重封顶
+cn_dicts_cell/shulihua.dict.yaml	四色猜想	*	>=100	R2数理化术语提权
+cn_dicts_cell/shulihua.dict.yaml	手征	*	<=35	R1/R2数理化权重封顶
+cn_dicts_cell/shulihua.dict.yaml	旋度	*	<=150	R1/R2数理化权重封顶
+cn_dicts_cell/shulihua.dict.yaml	李群	*	<=60	R1/R2数理化权重封顶
+cn_dicts_cell/shulihua.dict.yaml	标碳烷	*	<=5	R1/R2数理化权重封顶
+cn_dicts_cell/shulihua.dict.yaml	标键烷	*	<=5	R1/R2数理化权重封顶
+cn_dicts_cell/shulihua.dict.yaml	水磁双阻	*	<=5	R1/R2数理化权重封顶
+cn_dicts_cell/shulihua.dict.yaml	粘合剂	*	<=35	R1/R2数理化权重封顶
+cn_dicts_cell/shulihua.dict.yaml	粘度	*	<=100	R1/R2数理化权重封顶
+cn_dicts_cell/shulihua.dict.yaml	粘性	*	<=350	R1/R2数理化权重封顶
+cn_dicts_cell/shulihua.dict.yaml	赛罗	*	<=100	R1/R2数理化权重封顶
+cn_dicts_cell/sport.dict.yaml	丁宁	*	<=60	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	中圈	*	<=150	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	中宫	*	<=80	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	伍德	*	<=200	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	包夹	*	<=150	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	厄尔	*	<=40	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	唐斯	*	<=60	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	圈速	*	<=150	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	塔克	*	<=150	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	奥利	*	<=40	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	宋涛	*	<=40	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	巴斯	*	<=40	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	布冯	*	<=70	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	康利	*	<=30	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	德拉	*	<=15	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	拉杜	*	<=15	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	拍头	*	<=50	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	曼城	*	<=150	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	李俊	*	<=80	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	查克	*	<=50	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	混元	*	<=70	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	热刺	*	<=200	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	球友	*	<=60	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	球后	*	<=40	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	科西	*	<=30	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	维拉	*	<=100	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	罗本	*	<=300	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	耶伦	*	<=100	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	触地	*	<=100	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	谢晖	*	<=40	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	里瑟	*	<=25	R1/R2体育词库权重封顶
+cn_dicts_cell/sport.dict.yaml	鲍姆	*	<=40	R1/R2体育词库权重封顶

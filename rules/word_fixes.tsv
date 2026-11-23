@@ -1,0 +1,68 @@
+# target_file	old_word	old_py	new_word	new_py	reason	source
+# 词形与繁简/错字修正规则（old_py=* 匹配所有读音，new_py=* 保留原读音）
+cn_dicts/others.dict.yaml	溝呂木	*	沟吕木	gou lv mu	R1杂项词库正字修正	通用规范汉字表
+cn_dicts/others.dict.yaml	王抒	*	王忬	wang yu	R1杂项词库正字修正	通用规范汉字表
+cn_dicts/others.dict.yaml	马伊俐	*	马伊琍	ma yi li	R1杂项词库正字修正	通用规范汉字表
+cn_dicts_cell/animal.dict.yaml	史塔副郡牛头㹴	*	史塔福郡牛头㹴	shi ta fu jun niu tou geng	R1动物词库正字修正	通用规范汉字表
+cn_dicts_cell/animal.dict.yaml	小史揉查犬	*	小史柔查犬	xiao shi rou cha quan	R1动物词库正字修正	通用规范汉字表
+cn_dicts_cell/animal.dict.yaml	彭布罗克歌基犬	*	彭布罗克柯基犬	peng bu luo ke ke ji quan	R1动物词库正字修正	通用规范汉字表
+cn_dicts_cell/animal.dict.yaml	挪威糜提	*	挪威麋提	nuo wei mi ti	R1动物词库正字修正	通用规范汉字表
+cn_dicts_cell/animal.dict.yaml	挪威糜缇	*	挪威麋缇	nuo wei mi ti	R1动物词库正字修正	通用规范汉字表
+cn_dicts_cell/animal.dict.yaml	桅子灰蝶	*	栀子灰蝶	zhi zi hui die	R1动物词库正字修正	通用规范汉字表
+cn_dicts_cell/animal.dict.yaml	甄蝶	*	珍蝶	zhen die	R1动物词库正字修正	通用规范汉字表
+cn_dicts_cell/animal.dict.yaml	眼碟	*	眼蝶	yan die	R1动物词库正字修正	通用规范汉字表
+cn_dicts_cell/animal.dict.yaml	米尼雪纳瑞犬	*	迷你雪纳瑞犬	mi ni xue na rui quan	R1动物词库正字修正	通用规范汉字表
+cn_dicts_cell/animal.dict.yaml	约瑟猩	*	约瑟㹴	yue se geng	R1动物词库正字修正	通用规范汉字表
+cn_dicts_cell/animal.dict.yaml	美国史塔副郡㹴	*	美国史塔福郡㹴	mei guo shi ta fu jun geng	R1动物词库正字修正	通用规范汉字表
+cn_dicts_cell/animal.dict.yaml	英国小型猎免犬	*	英国小型猎兔犬	ying guo xiao xing lie tu quan	R1动物词库正字修正	通用规范汉字表
+cn_dicts_cell/chess.dict.yaml	双车协士	*	双车胁士	shuang ju xie shi	R1象棋正字修正	通用规范汉字表
+cn_dicts_cell/chess.dict.yaml	太监追黄帝	*	太监追皇帝	tai jian zhui huang di	R1象棋正字修正	通用规范汉字表
+cn_dicts_cell/chess2.dict.yaml	中炮过和车对屏风马横车	*	中炮过河车对屏风马横车	zhong pao guo he ju dui ping feng ma heng ju	R1象棋词库正字修正	通用规范汉字表
+cn_dicts_cell/chess2.dict.yaml	双闲酒杯	*	双献酒杯	shuang xian jiu bei	R1象棋词库正字修正	通用规范汉字表
+cn_dicts_cell/chess2.dict.yaml	葛维浦	*	葛维蒲	ge wei pu	R1象棋词库正字修正	通用规范汉字表
+cn_dicts_cell/food.dict.yaml	东江酿豆付	*	东江酿豆腐	dong jiang niang dou fu	R1食物词库正字修正	通用规范汉字表
+cn_dicts_cell/food.dict.yaml	东譬龙珠	*	东壁龙珠	dong bi long zhu	R1食物词库正字修正	通用规范汉字表
+cn_dicts_cell/food.dict.yaml	玫瑰凉糕	*	玫瑰凉糕	mei gui liang gao	R1食物词库正字修正	通用规范汉字表
+cn_dicts_cell/geography.dict.yaml	仙女木时间	*	仙女木事件	xian nv mu shi jian	R1地理词库正字修正	通用规范汉字表
+cn_dicts_cell/geography.dict.yaml	地图编缉	*	地图编辑	di tu bian ji	R1地理词库正字修正	通用规范汉字表
+cn_dicts_cell/geography.dict.yaml	彭纳没影	*	彭纳投影	peng na tou ying	R1地理词库正字修正	通用规范汉字表
+cn_dicts_cell/geography.dict.yaml	扭称	*	扭秤	niu cheng	R1地理词库正字修正	通用规范汉字表
+cn_dicts_cell/geography.dict.yaml	波所黎各	*	波多黎各	bo duo li ge	R1地理词库正字修正	通用规范汉字表
+cn_dicts_cell/history.dict.yaml	东治	*	东冶	dong ye	R1历史词库正字修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	刘準	*	刘准	liu zhun	R1历史词库正字修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	孔亻由	*	孔伷	kong zhou	R1历史词库正字修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	宋顺帝刘準	*	宋顺帝刘准	song shun di liu zhun	R1历史词库正字修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	宫絳	*	宫绛	gong jiang	R1历史词库正字修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	邹凌澣	*	邹凌瀚	zou ling han	R1历史词库正字修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	鬱林王	*	郁林王	yu lin wang	R1历史词库正字修正	辞海/正史
+cn_dicts_cell/history.dict.yaml	鬱林王萧昭业	*	郁林王萧昭业	yu lin wang xiao zhao ye	R1历史词库正字修正	辞海/正史
+cn_dicts_cell/idiom.dict.yaml	吃著不尽	chi zhu bu jin	吃着不尽	chi zhuo bu jin	R1成语正字正音修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	清官能断家务事	*	清官难断家务事	*	R1成语正字修正	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	蓴羹鲈脍	*	莼羹鲈脍	*	R1成语繁简规范修正	通用规范汉字表
+cn_dicts_cell/industry_product.dict.yaml	冷墩钢	*	冷镦钢	leng dun gang	R1工业品正字修正	通用规范汉字表
+cn_dicts_cell/industry_product.dict.yaml	摇立绒手套	*	摇粒绒手套	yao li rong shou tao	R1工业品正字修正	通用规范汉字表
+cn_dicts_cell/industry_product.dict.yaml	晴纶围巾	*	腈纶围巾	jing lun wei jin	R1工业品正字修正	通用规范汉字表
+cn_dicts_cell/industry_product.dict.yaml	粉粹机	*	粉碎机	fen sui ji	R1工业品正字修正	通用规范汉字表
+cn_dicts_cell/industry_product.dict.yaml	耐侯钢	*	耐候钢	nai hou gang	R1工业品正字修正	通用规范汉字表
+cn_dicts_cell/literature.dict.yaml	甕㼜大瘿	*	瓮㼜大瘿	*	R1繁简规范修正	通用规范汉字表
+cn_dicts_cell/luna.dict.yaml	灵桩	ling chun	灵椿	ling chun	R1正字修正	现汉第7版
+cn_dicts_cell/medication.dict.yaml	五维他囗服溶液	*	五维他口服溶液	wu wei ta kou fu rong ye	R1医药词库正字修正	中国药典
+cn_dicts_cell/medication.dict.yaml	地尔硫艹卓	*	地尔硫䓬	di er liu zhuo	R1医药词库正字修正	中国药典
+cn_dicts_cell/medication.dict.yaml	氯氮艹卓	*	氯氮䓬	lv dan zhuo	R1医药词库正字修正	中国药典
+cn_dicts_cell/medication.dict.yaml	菸碱型受体	*	烟碱型受体	yan jian xing shou ti	R1医药词库正字修正	中国药典
+cn_dicts_cell/name.dict.yaml	梁文峰	*	梁文锋	*	R1人名正字修正	L3人名
+cn_dicts_cell/name.dict.yaml	浜田省吾	*	滨田省吾	*	R1日文新字体规范修正	通用规范汉字表
+cn_dicts_cell/name2.dict.yaml	吴克羣	*	吴克群	wu ke qun	R1人名2正字修正	通用规范汉字表
+cn_dicts_cell/name2.dict.yaml	朝比奈泰煕	*	朝比奈泰熙	zhao bi nai tai xi	R1人名2正字修正	通用规范汉字表
+cn_dicts_cell/name2.dict.yaml	阿褔	*	阿福	a fu	R1人名2正字修正	通用规范汉字表
+cn_dicts_cell/name2.dict.yaml	高木渉	*	高木涉	gao mu she	R1人名2正字修正	通用规范汉字表
+cn_dicts_cell/shulihua.dict.yaml	三角架	*	三脚架	san jiao jia	R1数理化正字修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	异菸肼	*	异烟肼	yi yan jing	R1数理化正字修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	胡罗卜素	*	胡萝卜素	hu luo bo su	R1数理化正字修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	菸硷	*	烟碱	yan jian	R1数理化正字修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	葡聚糖凝膠	*	葡聚糖凝胶	pu ju tang ning jiao	R1数理化正字修正	全国科技名词委
+cn_dicts_cell/shulihua.dict.yaml	重铬酸鈉	*	重铬酸钠	chong ge suan na	R1数理化正字修正	全国科技名词委
+cn_dicts_cell/sport.dict.yaml	奥巴梅杨	*	奥巴梅扬	ao ba mei yang	R1体育词库正字修正	通用规范汉字表
+cn_dicts_cell/sport.dict.yaml	歧伯	*	岐伯	qi bo	R1体育词库正字修正	通用规范汉字表
+cn_dicts_cell/sport.dict.yaml	瑜珈	*	瑜伽	yu jia	R1体育词库正字修正	通用规范汉字表
+cn_dicts_cell/sport.dict.yaml	迈凯轮	*	迈凯伦	mai kai lun	R1体育词库正字修正	通用规范汉字表

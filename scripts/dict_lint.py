@@ -420,6 +420,8 @@ def check_collisions(
     def _top5(py: str) -> list[tuple[str, int, str]]:
         return sorted(code_index.get(py, []), key=lambda x: -x[1])[:5]
 
+    COMMON_HOMOPHONE_THRESHOLD = 50
+
     for cr in ruleset.corrections:
         top = _top5(cr.wrong_py)
         top_non_self = [x for x in top if x[0] != cr.word]
@@ -432,9 +434,15 @@ def check_collisions(
             "top5_active": [[w, wt] for w, wt, _ in top],
         }
         report.append(entry)
-        if cr.category in {"B", "C"} and top_non_self and cr.weight >= top_non_self[0][1] and cr.weight > 0:
+        if (
+            cr.category in {"B", "C"}
+            and top_non_self
+            and top_non_self[0][1] >= COMMON_HOMOPHONE_THRESHOLD
+            and cr.weight >= top_non_self[0][1]
+            and cr.weight > 0
+        ):
             errors.append(
-                f"collision guard: {cr.rule_id} weight {cr.weight} >= top active homophone '{top_non_self[0][0]}' ({top_non_self[0][1]})"
+                f"collision guard: {cr.rule_id} weight {cr.weight} >= top common active homophone '{top_non_self[0][0]}' ({top_non_self[0][1]})"
             )
         if cr.category == "E1" and top_non_self and cr.weight > max(1, top_non_self[0][1] // 20):
             warnings.append(

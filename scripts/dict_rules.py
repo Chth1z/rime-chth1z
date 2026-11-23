@@ -48,6 +48,11 @@ ALL_CN_DICTS: set[str] = set(ACTIVE_CN_DICTS) | {
     "cn_dicts_cell/luna.dict.yaml",
 }
 
+MANAGED_EN_DICTS: set[str] = {
+    "en_dicts/en_ext.dict.yaml",
+    "en_dicts/en.dict.yaml",
+}
+
 MANAGED_OPENCC_TXTS: set[str] = {
     "opencc/others.txt",
     "opencc/chinese_english.txt",
@@ -55,9 +60,17 @@ MANAGED_OPENCC_TXTS: set[str] = {
     "opencc/emoji.txt",
 }
 
+ADDITION_SECTION_HEADERS: dict[str, str] = {
+    "cn_dicts/8105.dict.yaml": "# 补充标准普通话读音",
+    "cn_dicts/base.dict.yaml": "# 补充高频常用词",
+    "cn_dicts/ext.dict.yaml": "# 补充常用短语与现代词",
+    "cn_dicts/others.dict.yaml": "# 补充常用口语词",
+}
+
 CORRECTION_CATEGORIES: set[str] = {"A", "B", "C", "E1"}
-ADDITION_CATEGORIES: set[str] = {"A", "E1", "modern", "tech", "domain", "brand"}
+ADDITION_CATEGORIES: set[str] = {"A", "E1", "modern", "tech", "domain", "brand", "phonetic", "common"}
 EN_CATEGORIES: set[str] = {"hardware", "ai", "dev", "consumer"}
+EN_FIX_ACTIONS: set[str] = {"delete", "replace", "reweight"}
 OPENCC_ACTIONS: set[str] = {"replace", "delete", "add"}
 COMMENT_HARD_MAX_LEN = 40
 COMMENT_WARN_MAX_LEN = 32
@@ -78,6 +91,25 @@ class PhoneticFixRule:
     @property
     def rule_id(self) -> str:
         return f"phonetics_fix.tsv:{self.line_no}:{self.target_file}:{self.word}:{self.old_py}->{self.new_py}"
+
+
+@dataclass(frozen=True)
+class WordFixRule:
+    line_no: int
+    target_file: str
+    old_word: str
+    old_py: str  # concrete pinyin or "*"
+    new_word: str
+    new_py: str  # concrete pinyin or "*" (keep existing pinyin)
+    reason: str
+    source: str
+
+    @property
+    def rule_id(self) -> str:
+        return (
+            f"word_fixes.tsv:{self.line_no}:{self.target_file}:"
+            f"{self.old_word}({self.old_py})->{self.new_word}({self.new_py})"
+        )
 
 
 @dataclass(frozen=True)
@@ -118,13 +150,15 @@ class WeightRule:
     line_no: int
     target_file: str
     word: str
-    py: str
+    py: str  # concrete pinyin or "*"
+    mode: str  # "eq" | "max" (<=N) | "min" (>=N)
     weight: int
     reason: str
 
     @property
     def rule_id(self) -> str:
-        return f"weights.tsv:{self.line_no}:{self.target_file}:{self.word}:{self.py}={self.weight}"
+        op = "=" if self.mode == "eq" else ("<=" if self.mode == "max" else ">=")
+        return f"weights.tsv:{self.line_no}:{self.target_file}:{self.word}:{self.py}{op}{self.weight}"
 
 
 @dataclass(frozen=True)
@@ -169,6 +203,23 @@ class EnAdditionRule:
 
 
 @dataclass(frozen=True)
+class EnFixRule:
+    line_no: int
+    target_file: str
+    old_word: str
+    old_code: str  # concrete code or "*"
+    action: str  # delete | replace | reweight
+    new_word: str
+    new_code: str
+    weight: str
+    reason: str
+
+    @property
+    def rule_id(self) -> str:
+        return f"en_fixes.tsv:{self.line_no}:{self.target_file}:{self.action}:{self.old_word}:{self.old_code}"
+
+
+@dataclass(frozen=True)
 class OpenCCFixRule:
     line_no: int
     target_file: str
@@ -186,12 +237,14 @@ class OpenCCFixRule:
 class RuleSet:
     rules_dir: pathlib.Path
     phonetics_fix: list[PhoneticFixRule] = field(default_factory=list)
+    word_fixes: list[WordFixRule] = field(default_factory=list)
     dual_readings: list[DualReadingRule] = field(default_factory=list)
     corrections: list[CorrectionRule] = field(default_factory=list)
     weights: list[WeightRule] = field(default_factory=list)
     deletions: list[DeletionRule] = field(default_factory=list)
     additions: list[AdditionRule] = field(default_factory=list)
     en_additions: list[EnAdditionRule] = field(default_factory=list)
+    en_fixes: list[EnFixRule] = field(default_factory=list)
     cn_en_rules: list[build_cn_en.CnEnRule] = field(default_factory=list)
     alphanum_additions: list[str] = field(default_factory=list)
     opencc_fixes: list[OpenCCFixRule] = field(default_factory=list)
@@ -202,12 +255,14 @@ class RuleSet:
         ids: list[str] = []
         for group in (
             self.phonetics_fix,
+            self.word_fixes,
             self.dual_readings,
             self.corrections,
             self.weights,
             self.deletions,
             self.additions,
             self.en_additions,
+            self.en_fixes,
             self.cn_en_rules,
             self.opencc_fixes,
         ):
@@ -276,6 +331,21 @@ def _parse_nonneg_int(fname: str, idx: int, raw: str, field_name: str, errors: l
     return v
 
 
+def _parse_weight_spec(fname: str, idx: int, raw: str, errors: list[str]) -> tuple[str, int] | None:
+    mode = "eq"
+    num_s = raw
+    if raw.startswith("<="):
+        mode = "max"
+        num_s = raw[2:]
+    elif raw.startswith(">="):
+        mode = "min"
+        num_s = raw[2:]
+    v = _parse_nonneg_int(fname, idx, num_s, "weight", errors)
+    if v is None:
+        return None
+    return mode, v
+
+
 def load_ruleset(rules_dir: pathlib.Path, valid_syls: set[str] | None = None) -> RuleSet:
     rs = RuleSet(rules_dir=rules_dir)
 
@@ -311,6 +381,38 @@ def load_ruleset(rules_dir: pathlib.Path, valid_syls: set[str] | None = None) ->
                 rs.errors.append(
                     f"phonetics_fix.tsv:{r.line_no}: non-idempotent chain on {tw}: '{r.old_py}' -> '{r.new_py}' feeds another rule"
                 )
+
+    # 1b. word_fixes.tsv
+    wf_seen: set[tuple[str, str, str]] = set()
+    for idx, cols in _iter_tsv(rules_dir / "word_fixes.tsv", 7, rs.errors):
+        target, old_w, old_py, new_w, new_py, reason, source = cols
+        if target not in ALL_CN_DICTS or target == "cn_dicts/corrections.dict.yaml":
+            rs.errors.append(f"word_fixes.tsv:{idx}: invalid target_file '{target}'")
+            continue
+        if not old_w or not old_py or not new_w or not new_py or not reason or not source:
+            rs.errors.append(f"word_fixes.tsv:{idx}: all 7 columns are required")
+            continue
+        if old_w == new_w:
+            rs.errors.append(f"word_fixes.tsv:{idx}: old_word == new_word '{old_w}' (use phonetics_fix.tsv instead)")
+            continue
+        if new_py != "*":
+            _validate_pinyin("word_fixes.tsv", idx, new_w, new_py, valid_syls, rs.errors, check_len=True)
+        wk = (target, old_w, old_py)
+        if wk in wf_seen:
+            rs.errors.append(f"word_fixes.tsv:{idx}: duplicate key {wk}")
+            continue
+        wf_seen.add(wk)
+        rs.word_fixes.append(WordFixRule(idx, target, old_w, old_py, new_w, new_py, reason, source))
+
+    # Detect chained/cyclic word_fixes rules within same target_file
+    wf_old_words_by_target: dict[str, set[str]] = {}
+    for r in rs.word_fixes:
+        wf_old_words_by_target.setdefault(r.target_file, set()).add(r.old_word)
+    for r in rs.word_fixes:
+        if r.new_word in wf_old_words_by_target.get(r.target_file, set()):
+            rs.errors.append(
+                f"word_fixes.tsv:{r.line_no}: non-idempotent chain in {r.target_file}: '{r.old_word}' -> '{r.new_word}' feeds another rule"
+            )
 
     # 2. dual_readings.tsv
     dr_seen: set[tuple[str, str, str]] = set()
@@ -377,19 +479,21 @@ def load_ruleset(rules_dir: pathlib.Path, valid_syls: set[str] | None = None) ->
         if target not in ALL_CN_DICTS or target == "cn_dicts/corrections.dict.yaml":
             rs.errors.append(f"weights.tsv:{idx}: invalid target_file '{target}'")
             continue
-        if not word or not reason:
-            rs.errors.append(f"weights.tsv:{idx}: word and reason are required")
+        if not word or not py or not reason:
+            rs.errors.append(f"weights.tsv:{idx}: word, py (or '*'), and reason are required")
             continue
-        wt = _parse_nonneg_int("weights.tsv", idx, wt_s, "weight", rs.errors)
-        if wt is None:
+        parsed_wt = _parse_weight_spec("weights.tsv", idx, wt_s, rs.errors)
+        if parsed_wt is None:
             continue
-        _validate_pinyin("weights.tsv", idx, word, py, valid_syls, rs.errors, check_len=True)
+        mode, wt = parsed_wt
+        if py != "*":
+            _validate_pinyin("weights.tsv", idx, word, py, valid_syls, rs.errors, check_len=True)
         wk = (target, word, py)
         if wk in wt_seen:
             rs.errors.append(f"weights.tsv:{idx}: duplicate key {wk}")
             continue
         wt_seen.add(wk)
-        rs.weights.append(WeightRule(idx, target, word, py, wt, reason))
+        rs.weights.append(WeightRule(idx, target, word, py, mode, wt, reason))
 
     # 5. deletions.tsv
     del_seen: set[tuple[str, str, str]] = set()
@@ -454,6 +558,38 @@ def load_ruleset(rules_dir: pathlib.Path, valid_syls: set[str] | None = None) ->
             continue
         en_seen.add(ek)
         rs.en_additions.append(EnAdditionRule(idx, word, code, wt_s, category))
+
+    # 7b. en_fixes.tsv
+    ef_seen: set[tuple[str, str, str, str]] = set()
+    for idx, cols in _iter_tsv(rules_dir / "en_fixes.tsv", 8, rs.errors):
+        target, old_w, old_c, action, new_w, new_c, wt_s, reason = cols
+        if target not in MANAGED_EN_DICTS:
+            rs.errors.append(f"en_fixes.tsv:{idx}: invalid target_file '{target}'")
+            continue
+        if action not in EN_FIX_ACTIONS:
+            rs.errors.append(f"en_fixes.tsv:{idx}: invalid action '{action}' (allowed: {sorted(EN_FIX_ACTIONS)})")
+            continue
+        if not old_w or not old_c or not reason:
+            rs.errors.append(f"en_fixes.tsv:{idx}: old_word, old_code (or '*'), and reason are required")
+            continue
+        if action == "replace":
+            if old_c == "*" or not new_w or not new_c:
+                rs.errors.append(f"en_fixes.tsv:{idx}: replace requires concrete old_code, new_word, and new_code")
+                continue
+            if (old_w, old_c) == (new_w, new_c):
+                rs.errors.append(f"en_fixes.tsv:{idx}: no-op replace for ({old_w}, {old_c})")
+                continue
+        elif action == "reweight":
+            if old_c == "*" or wt_s == "":
+                rs.errors.append(f"en_fixes.tsv:{idx}: reweight requires concrete old_code and weight")
+                continue
+            _parse_nonneg_int("en_fixes.tsv", idx, wt_s, "weight", rs.errors)
+        efk = (target, action, old_w, old_c)
+        if efk in ef_seen:
+            rs.errors.append(f"en_fixes.tsv:{idx}: duplicate key {efk}")
+            continue
+        ef_seen.add(efk)
+        rs.en_fixes.append(EnFixRule(idx, target, old_w, old_c, action, new_w, new_c, wt_s, reason))
 
     # 8. cn_en_source.tsv
     cn_en_rules, cn_en_errors = build_cn_en.load_cn_en_rules(rules_dir / "cn_en_source.tsv", valid_syls=valid_syls)
@@ -528,6 +664,13 @@ def load_ruleset(rules_dir: pathlib.Path, valid_syls: set[str] | None = None) ->
                 f"conflict: phonetics_fix.tsv:{r.line_no} target ({r.target_file}, {r.word}, {r.new_py}) is deleted in deletions.tsv"
             )
 
+    for r in rs.word_fixes:
+        check_py = r.new_py if r.new_py != "*" else r.old_py
+        if _is_deleted(r.target_file, r.new_word, check_py):
+            rs.errors.append(
+                f"conflict: word_fixes.tsv:{r.line_no} target ({r.target_file}, {r.new_word}, {check_py}) is deleted in deletions.tsv"
+            )
+
     for r in rs.dual_readings:
         for py in (r.py1, r.py2):
             if _is_deleted(r.target_file, r.word, py):
@@ -578,6 +721,29 @@ def _format_entry(w: str, py: str, wt: str, extra: list[str]) -> str:
     return "\t".join(cols)
 
 
+def _w_int(wt: str) -> int:
+    try:
+        return int(wt)
+    except (ValueError, TypeError):
+        return 0
+
+
+def _apply_weight_rule(wt: str, wr: WeightRule) -> tuple[str, bool]:
+    cur = _w_int(wt)
+    if wr.mode == "eq":
+        new_wt = str(wr.weight)
+        return new_wt, wt != new_wt
+    if wr.mode == "max":
+        if cur > wr.weight:
+            return str(wr.weight), True
+        return wt, False
+    if wr.mode == "min":
+        if cur < wr.weight:
+            return str(wr.weight), True
+        return wt, False
+    return wt, False
+
+
 def apply_cn_overlay(
     rel: str,
     lines: list[str],
@@ -587,13 +753,16 @@ def apply_cn_overlay(
 ) -> list[str]:
     """Apply declarative rules/ overrides for a single non-corrections CN dictionary."""
     pf_map = {(r.word, r.old_py): r for r in ruleset.phonetics_fix if r.target_file == rel}
+    wf_exact = {(r.old_word, r.old_py): r for r in ruleset.word_fixes if r.target_file == rel and r.old_py != "*"}
+    wf_wild = {r.old_word: r for r in ruleset.word_fixes if r.target_file == rel and r.old_py == "*"}
     del_exact = {(r.word, r.py): r for r in ruleset.deletions if r.target_file == rel and r.py != "*"}
     del_wild = {r.word: r for r in ruleset.deletions if r.target_file == rel and r.py == "*"}
-    wt_map = {(r.word, r.py): r for r in ruleset.weights if r.target_file == rel}
+    wt_exact = {(r.word, r.py): r for r in ruleset.weights if r.target_file == rel and r.py != "*"}
+    wt_wild = {r.word: r for r in ruleset.weights if r.target_file == rel and r.py == "*"}
     adds = [r for r in ruleset.additions if r.target_file == rel]
     duals = [r for r in ruleset.dual_readings if r.target_file == rel]
 
-    if not (pf_map or del_exact or del_wild or wt_map or adds or duals):
+    if not (pf_map or wf_exact or wf_wild or del_exact or del_wild or wt_exact or wt_wild or adds or duals):
         return lines
 
     hdr, body = _split_header_body(lines)
@@ -607,34 +776,53 @@ def apply_cn_overlay(
             continue
         w, py, wt, extra = p
 
-        pf = pf_map.get((w, py))
-        if pf is not None:
-            py = pf.new_py
-            hits[pf.rule_id] += 1
-            stats["rules_py_fixed"] += 1
-
+        # 1. Exact/wildcard deletions
         dr = del_exact.get((w, py)) or del_wild.get(w)
         if dr is not None:
             hits[dr.rule_id] += 1
             stats["rules_deleted"] += 1
             continue
 
-        wr = wt_map.get((w, py))
-        if wr is not None:
-            hits[wr.rule_id] += 1
-            if wt != str(wr.weight):
-                wt = str(wr.weight)
+        # 2. Word/character fixes
+        wf = wf_exact.get((w, py)) or wf_wild.get(w)
+        if wf is not None:
+            w = wf.new_word
+            if wf.new_py != "*":
+                py = wf.new_py
+            hits[wf.rule_id] += 1
+            stats["rules_word_fixed"] += 1
+
+        # 3. Phonetic fixes
+        pf = pf_map.get((w, py))
+        if pf is not None:
+            py = pf.new_py
+            hits[pf.rule_id] += 1
+            stats["rules_py_fixed"] += 1
+
+        # 4. Exact weight rule, followed by wildcard weight rule
+        wr_ex = wt_exact.get((w, py))
+        if wr_ex is not None:
+            hits[wr_ex.rule_id] += 1
+            wt, chg = _apply_weight_rule(wt, wr_ex)
+            if chg:
+                stats["rules_reweighted"] += 1
+        wr_wi = wt_wild.get(w)
+        if wr_wi is not None:
+            hits[wr_wi.rule_id] += 1
+            wt, chg = _apply_weight_rule(wt, wr_wi)
+            if chg:
                 stats["rules_reweighted"] += 1
 
         seen.add((w, py))
         out_body.append(_format_entry(w, py, wt, extra))
 
+    new_rows: list[str] = []
     for ar in adds:
         if (ar.word, ar.py) in seen:
             hits[ar.rule_id] += 1
         else:
             seen.add((ar.word, ar.py))
-            out_body.append(_format_entry(ar.word, ar.py, str(ar.weight), []))
+            new_rows.append(_format_entry(ar.word, ar.py, str(ar.weight), []))
             hits[ar.rule_id] += 1
             stats["rules_added"] += 1
 
@@ -644,9 +832,15 @@ def apply_cn_overlay(
                 hits[dr.rule_id] += 1
             else:
                 seen.add((dr.word, py))
-                out_body.append(_format_entry(dr.word, py, str(wt_val), []))
+                new_rows.append(_format_entry(dr.word, py, str(wt_val), []))
                 hits[dr.rule_id] += 1
                 stats["rules_added"] += 1
+
+    if new_rows:
+        sec_hdr = ADDITION_SECTION_HEADERS.get(rel)
+        if sec_hdr and sec_hdr not in out_body:
+            out_body.append(sec_hdr)
+        out_body.extend(new_rows)
 
     return hdr + out_body
 
@@ -706,14 +900,95 @@ def apply_corrections_overlay(
         emitted.add((w, py))
         out_body.append(line)
 
+    new_rows: list[str] = []
     for (w, py), (new_wt, new_cmt, rid) in desired.items():
         if (w, py) not in emitted:
-            out_body.append(_format_entry(w, py, str(new_wt), [new_cmt]))
+            new_rows.append(_format_entry(w, py, str(new_wt), [new_cmt]))
             emitted.add((w, py))
             hits[rid] += 1
             stats["rules_corr_added"] += 1
 
+    if new_rows:
+        sec_hdr = "# 常用易错音、争议读音与习惯读音提示"
+        if sec_hdr not in out_body:
+            out_body.append(sec_hdr)
+        out_body.extend(new_rows)
+
     return hdr + out_body
+
+
+def apply_en_overlay(
+    rel: str,
+    lines: list[str],
+    ruleset: RuleSet,
+    hits: dict[str, int],
+    prior_seen: set[tuple[str, str]] | None = None,
+) -> tuple[list[str], set[tuple[str, str]], dict[str, int]]:
+    """Apply rules/en_fixes.tsv (and rules/en_additions.tsv for en_ext) + deduplicate."""
+    del_exact = {(r.old_word, r.old_code): r for r in ruleset.en_fixes if r.target_file == rel and r.action == "delete" and r.old_code != "*"}
+    del_wild = {r.old_word: r for r in ruleset.en_fixes if r.target_file == rel and r.action == "delete" and r.old_code == "*"}
+    rep_map = {(r.old_word, r.old_code): r for r in ruleset.en_fixes if r.target_file == rel and r.action == "replace"}
+    rw_map = {(r.old_word, r.old_code): r for r in ruleset.en_fixes if r.target_file == rel and r.action == "reweight"}
+
+    hdr, body = _split_header_body(lines)
+    out = list(hdr)
+    seen: set[tuple[str, str]] = set(prior_seen) if prior_seen else set()
+    fixed = 0
+    deleted = 0
+    deduped = 0
+    added = 0
+
+    for line in body:
+        p = _parse_entry(line)
+        if not p:
+            out.append(line)
+            continue
+        w, code, wt, extra = p
+
+        dr = del_exact.get((w, code)) or del_wild.get(w)
+        if dr is not None:
+            hits[dr.rule_id] += 1
+            deleted += 1
+            continue
+
+        rr = rep_map.get((w, code))
+        if rr is not None:
+            w, code = rr.new_word, rr.new_code
+            hits[rr.rule_id] += 1
+            fixed += 1
+
+        rwr = rw_map.get((w, code))
+        if rwr is not None:
+            hits[rwr.rule_id] += 1
+            if wt != rwr.weight:
+                wt = rwr.weight
+                fixed += 1
+
+        if (w, code) in seen:
+            deduped += 1
+            continue
+        seen.add((w, code))
+        out.append(_format_entry(w, code, wt, extra))
+
+    if rel == "en_dicts/en_ext.dict.yaml":
+        new_en_rows = []
+        for er in ruleset.en_additions:
+            if (er.word, er.code) in seen:
+                hits[er.rule_id] += 1
+            else:
+                new_en_rows.append(er)
+        if new_en_rows:
+            sec_hdr = "# 补充现代 AI / 开发 / 硬件常用英文词汇"
+            if sec_hdr not in out:
+                out.append(sec_hdr)
+            for er in new_en_rows:
+                seen.add((er.word, er.code))
+                out.append(_format_entry(er.word, er.code, er.weight, []))
+                hits[er.rule_id] += 1
+                added += 1
+
+    st = {"before": len(lines), "after": len(out), "fixed": fixed, "deleted": deleted, "deduped": deduped, "added": added}
+    return out, seen, st
 
 
 def apply_opencc_overlay(

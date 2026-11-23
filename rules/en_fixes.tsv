@@ -1,0 +1,87 @@
+# target_file	old_word	old_code	action	new_word	new_code	weight	reason
+# 英文词库修正/删除/调权规则（action 限 delete / replace / reweight）
+en_dicts/en.dict.yaml	AcDbLine	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	Auch	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	Bilder	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	Bizjournalshire	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	ChillSeph	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	Faire	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	Ffremont	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	Musica	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	Oder	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	RFT	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	acdbentity	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	adipex	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	amature	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	beastiality	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	cameltoe	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	centro	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	cialis	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	definately	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	der	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	deutsch	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	deutschland	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	dicke	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	espanol	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	fetisch	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	filme	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	gratuit	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	hoteles	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	impressum	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	knowledgestorm	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	ladyboy	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	lesbianas	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	levitra	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	livesex	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	milfseeker	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	millenium	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	neu	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	phentermine	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	pichunter	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	recherche	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	sexcam	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	starsmerchant	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	telefonsex	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	tranny	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	transexual	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	transexuales	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	transexuals	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	worldsex	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en.dict.yaml	zoofilia	*	delete				R1清理英文主库错拼/非英语/垃圾词
+en_dicts/en_ext.dict.yaml	Italilian	*	delete				R1清理英文扩展库错拼或垃圾词
+en_dicts/en_ext.dict.yaml	Kuromis	*	delete				R1清理英文扩展库错拼或垃圾词
+en_dicts/en_ext.dict.yaml	Negro	*	delete				R1清理英文扩展库错拼或垃圾词
+en_dicts/en_ext.dict.yaml	Stepfun	Stepfun	delete				R2清理英文扩展库重复或错误码词
+en_dicts/en_ext.dict.yaml	beyatch	*	delete				R1清理英文扩展库错拼或垃圾词
+en_dicts/en_ext.dict.yaml	bilibili	bilibili	delete				R2清理英文扩展库重复或错误码词
+en_dicts/en_ext.dict.yaml	fo	*	delete				R1清理英文扩展库错拼或垃圾词
+en_dicts/en_ext.dict.yaml	fuckity	*	delete				R1清理英文扩展库错拼或垃圾词
+en_dicts/en_ext.dict.yaml	hading	*	delete				R1清理英文扩展库错拼或垃圾词
+en_dicts/en_ext.dict.yaml	heil	*	delete				R1清理英文扩展库错拼或垃圾词
+en_dicts/en_ext.dict.yaml	iPhone 17 Plus	iPhone	delete				R2清理英文扩展库重复或错误码词
+en_dicts/en_ext.dict.yaml	limon	*	delete				R1清理英文扩展库错拼或垃圾词
+en_dicts/en_ext.dict.yaml	shitwork	*	delete				R1清理英文扩展库错拼或垃圾词
+en_dicts/en_ext.dict.yaml	unfo	*	delete				R1清理英文扩展库错拼或垃圾词
+en_dicts/en_ext.dict.yaml	unhumified	unhumified	delete				R2清理英文扩展库重复或错误码词
+en_dicts/en_ext.dict.yaml	Btitish	Btitish	replace	British	British		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	Cinity	Cinity	replace	CINITY	CINITY		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	Endnote	Endnote	replace	EndNote	EndNote		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	F2A	F2A	replace	2FA	2FA		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	GNU General Public License	GNU	replace	GNU's Not Unix	GNU		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	Laugh Out Loudly	LOL	replace	Laugh Out Loud	LOL		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	LaughOutLoudly	LOL	replace	LaughOutLoud	LOL		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	Lens Protocal	LensProtocal	replace	Lens Protocol	LensProtocol		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	Mathtype	Mathtype	replace	MathType	MathType		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	MplayerX	MplayerX	replace	MPlayerX	MPlayerX		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	Philppines	Philppines	replace	Philippines	Philippines		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	PlistEdit	pliPlistEdit	replace	PlistEdit	PlistEdit		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	Procedural Language / PostGres Structured Query Language	PL/pgSQL	replace	Procedural Language/PostgreSQL	PL/pgSQL		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	R.I.P	R.I.P	replace	R.I.P.	R.I.P.		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	RFT	RFT	replace	RTF	RTF		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	Rich Text Format	RFT	replace	Rich Text Format	RTF		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	Texshop	Texshop	replace	TeXShop	TeXShop		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	blackFriday	blackFriday	replace	Black Friday	BlackFriday		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	itsdangerours	itsdangerours	replace	itsdangerous	itsdangerous		R1/R2英文拼写与大小写修正
+en_dicts/en_ext.dict.yaml	AirPods	AirPods	reweight			999	R2英文扩展库权重校准
+en_dicts/en_ext.dict.yaml	AirPods Max	AirPods	reweight			1	R2英文扩展库权重校准
+en_dicts/en_ext.dict.yaml	macOS Tahoe	macOS	reweight			10	R2英文扩展库权重校准
