@@ -556,7 +556,6 @@ cn_dicts_cell/idiom.dict.yaml	默而识之	mo er shi zhi	mo er zhi zhi	R1/R2成�
 cn_dicts_cell/industry_product.dict.yaml	仪表壳体	yi biao qiao ti	yi biao ke ti	R1工业品读音修正	现汉第7版
 cn_dicts_cell/industry_product.dict.yaml	伺服定位系统	ci fu ding wei xi tong	si fu ding wei xi tong	R1工业品读音修正	现汉第7版
 cn_dicts_cell/industry_product.dict.yaml	伺服阀	ci fu fa	si fu fa	R1工业品读音修正	现汉第7版
-cn_dicts_cell/industry_product.dict.yaml	切削电动工具	qie xiao dian dong gong ju	qie xue dian dong gong ju	R1工业品读音修正	现汉第7版
 cn_dicts_cell/industry_product.dict.yaml	呢类系列	ne lei xi lie	ni lei xi lie	R1工业品读音修正	现汉第7版
 cn_dicts_cell/industry_product.dict.yaml	壳体加工	qiao ti jia gong	ke ti jia gong	R1工业品读音修正	现汉第7版
 cn_dicts_cell/industry_product.dict.yaml	密封垫圈	mi feng dian juan	mi feng dian quan	R1工业品读音修正	现汉第7版
@@ -711,7 +710,6 @@ cn_dicts_cell/medication.dict.yaml	参苓健脾	can ling jian pi	shen ling jian 
 cn_dicts_cell/medication.dict.yaml	参苓健脾胃颗粒	can ling jian pi wei ke li	shen ling jian pi wei ke li	R1/R2医药词库读音修正	中国药典/全国科技名词委
 cn_dicts_cell/medication.dict.yaml	参苓白术丸	can ling bai zhu wan	shen ling bai zhu wan	R1/R2医药词库读音修正	中国药典/全国科技名词委
 cn_dicts_cell/medication.dict.yaml	参附注射液	can fu zhu she ye	shen fu zhu she ye	R1/R2医药词库读音修正	中国药典/全国科技名词委
-cn_dicts_cell/medication.dict.yaml	口角	kou jue	kou jiao	R1/R2医药词库读音修正	中国药典/全国科技名词委
 cn_dicts_cell/medication.dict.yaml	土人参	tu ren can	tu ren shen	R1/R2医药词库读音修正	中国药典/全国科技名词委
 cn_dicts_cell/medication.dict.yaml	填塞	tian sai	tian se	R1/R2医药词库读音修正	中国药典/全国科技名词委
 cn_dicts_cell/medication.dict.yaml	士的宁	shi de ning	shi di ning	R1/R2医药词库读音修正	中国药典/全国科技名词委
@@ -1262,7 +1260,6 @@ cn_dicts_cell/shulihua.dict.yaml	点对称	dian dui cheng	dian dui chen	“对�
 cn_dicts_cell/shulihua.dict.yaml	可对称化核	ke dui cheng hua he	ke dui chen hua he	“对称”规范读 duì chèn	1985审音表/现汉第7版
 cn_dicts_cell/shulihua.dict.yaml	正对称组	zheng dui cheng zu	zheng dui chen zu	“对称”规范读 duì chèn	1985审音表/现汉第7版
 cn_dicts_cell/shulihua.dict.yaml	左方可对称化核	zuo fang ke dui cheng hua he	zuo fang ke dui chen hua he	“对称”规范读 duì chèn	1985审音表/现汉第7版
-cn_dicts/base.dict.yaml	粘滞	zhan zhi	nian zhi	形容词性“粘滞/黏滞”规范读 nián zhì（与 base 粘滞性 nian zhi xing 一致）	现汉第7版
 cn_dicts/base.dict.yaml	粘滞度	zhan zhi du	nian zhi du	“粘滞度/黏滞度”规范读 nián zhì dù	现汉第7版/全国科技名词委
 cn_dicts_cell/composite.dict.yaml	不粘腻	bu zhan ni	bu nian ni	“粘腻/黏腻”规范读 nián nì	现汉第7版
 cn_dicts_cell/composite.dict.yaml	粘腻感	zhan ni gan	nian ni gan	“粘腻/黏腻”规范读 nián nì	现汉第7版
@@ -1635,3 +1632,70 @@ cn_dicts/ext.dict.yaml	谁都不服谁	shui dou bu fu shei	shui dou bu fu shui	�
 cn_dicts/ext.dict.yaml	谁轻谁重	shui qing shei zhong	shui qing shui zhong	统一词内混合 shui/shei 为全 shui，与全 shei 双音并存	现汉第7版/DICTIONARY_SPEC §3
 cn_dicts/ext.dict.yaml	没有谁离不开谁	mei you shui li bu kai shei	mei you shui li bu kai shui	统一词内混合 shui/shei 为全 shui，与全 shei 双音并存	现汉第7版/DICTIONARY_SPEC §3
 cn_dicts_cell/composite.dict.yaml	谁是谁的	shui shi shei de	shui shi shui de	统一词内混合 shui/shei 为全 shui，与全 shei 双音并存	现汉第7版/DICTIONARY_SPEC §3
+cn_dicts/base.dict.yaml	大肠俞	da chang yu	da chang shu	GB/T12346-2021背俞穴统读shù	GB/T12346-2021(L2)
+cn_dicts/base.dict.yaml	肝俞	gan yu	gan shu	GB/T12346-2021背俞穴统读shù	GB/T12346-2021(L2)
+cn_dicts/base.dict.yaml	厥阴俞	jue yin yu	jue yin shu	GB/T12346-2021背俞穴统读shù	GB/T12346-2021(L2)
+cn_dicts/base.dict.yaml	脾俞	pi yu	pi shu	GB/T12346-2021背俞穴统读shù	GB/T12346-2021(L2)
+cn_dicts/base.dict.yaml	三焦俞	san jiao yu	san jiao shu	GB/T12346-2021背俞穴统读shù	GB/T12346-2021(L2)
+cn_dicts/base.dict.yaml	肾俞	shen yu	shen shu	GB/T12346-2021背俞穴统读shù	GB/T12346-2021(L2)
+cn_dicts/base.dict.yaml	胃俞	wei yu	wei shu	GB/T12346-2021背俞穴统读shù	GB/T12346-2021(L2)
+cn_dicts/base.dict.yaml	率谷	lv gu	shuai gu	GB/T12346-2021经穴规范读音shuài gǔ	GB/T12346-2021(L2)
+cn_dicts/base.dict.yaml	坤角	kun jiao	kun jue	戏曲角色义规范读jué	现汉第7版(L1)
+cn_dicts/base.dict.yaml	刨削	bao xue	bao xiao	机加工切削动作与切削/车削/铣削/磨削统一读xiāo	1985审音表/全国名词委(L1/L2)
+cn_dicts/base.dict.yaml	函数重载	han shu zhong zai	han shu chong zai	计算机方法重载规范读chóng zǎi	全国名词委(L2)
+cn_dicts/base.dict.yaml	可重入	ke zhong ru	ke chong ru	计算机可重入规范读chóng rù	全国名词委(L2)
+cn_dicts/base.dict.yaml	重入锁	zhong ru suo	chong ru suo	计算机重入锁规范读chóng rù	全国名词委(L2)
+cn_dicts/base.dict.yaml	重采样	zhong cai yang	chong cai yang	信号处理/统计重采样规范读chóng	全国名词委(L2)
+cn_dicts/base.dict.yaml	调车	tiao che	diao che	铁路编组调车规范读diào chē	现汉第7版/全国名词委(L1/L2)
+cn_dicts/base.dict.yaml	壳层模型	ke ceng mo xing	qiao ceng mo xing	A类规范主音qiào（行业ké由dual_readings保留）	现汉第7版(L1)
+cn_dicts/base.dict.yaml	心包填塞	xin bao tian sai	xin bao tian se	A类规范主音sè（行业sāi由dual_readings保留）	现汉第7版/全国名词委(L1/L2)
+cn_dicts/base.dict.yaml	大栅栏	da zha lan	da shi lan	A类北京标准地名主音dà shí lànr（常见zhà由dual_readings保留）	现汉第7版/北京地名(L1/L2)
+cn_dicts/base.dict.yaml	枳壳	zhi ke	zhi qiao	A类药典规范主音zhǐ qiào（常见ké由dual_readings保留）	现汉第7版/中国药典2020(L1/L2)
+cn_dicts/base.dict.yaml	罂粟壳	ying su ke	ying su qiao	A类药典规范主音qiào（常见ké由dual_readings保留）	现汉第7版/中国药典2020(L1/L2)
+cn_dicts/base.dict.yaml	钢模	gang mo	gang mu	实物模具义规范读mú	现汉第7版(L1)
+cn_dicts/base.dict.yaml	木模	mu mo	mu mu	实物模具义规范读mú	现汉第7版(L1)
+cn_dicts/base.dict.yaml	压模	ya mo	ya mu	实物模具义规范读mú	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	重载铁路	chong zai tie lu	zhong zai tie lu	铁路重负荷heavy-haul规范读zhòng zài	全国名词委(L2)
+cn_dicts/ext.dict.yaml	重载货车	chong zai huo che	zhong zai huo che	重负荷货车规范读zhòng zài	全国名词委(L2)
+cn_dicts/ext.dict.yaml	重载运输	chong zai yun shu	zhong zai yun shu	重负荷运输规范读zhòng zài	全国名词委(L2)
+cn_dicts/ext.dict.yaml	重载荷	chong zai he	zhong zai he	重负荷载荷规范读zhòng zài hè	全国名词委(L2)
+cn_dicts/ext.dict.yaml	调车员	tiao che yuan	diao che yuan	铁路调车工种规范读diào chē	现汉第7版/全国名词委(L1/L2)
+cn_dicts/ext.dict.yaml	曝气槽	bao qi cao	pu qi cao	曝气统一规范主音pù qì	现汉第7版/全国名词委(L1/L2)
+cn_dicts/ext.dict.yaml	曝气系统	bao qi xi tong	pu qi xi tong	曝气统一规范主音pù qì	现汉第7版/全国名词委(L1/L2)
+cn_dicts_cell/composite.dict.yaml	大黄毛	dai huang mao	da huang mao	非药材pypinyin误切大黄dai->da	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	大黄片	dai huang pian	da huang pian	非药材pypinyin误切大黄dai->da	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	大黄牙	dai huang ya	da huang ya	非药材pypinyin误切大黄dai->da	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	大黄猫	dai huang mao	da huang mao	非药材pypinyin误切大黄dai->da	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	大黄瓜	dai huang gua	da huang gua	非药材pypinyin误切大黄dai->da	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	大黄米	dai huang mi	da huang mi	非药材pypinyin误切大黄dai->da	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	大黄花鱼	dai huang hua yu	da huang hua yu	非药材pypinyin误切大黄dai->da	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	大黄蜂号	dai huang feng hao	da huang feng hao	非药材pypinyin误切大黄dai->da	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	大黄蜂战斗机	dai huang feng zhan dou ji	da huang feng zhan dou ji	非药材pypinyin误切大黄dai->da	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	大黄靴	dai huang xue	da huang xue	非药材pypinyin误切大黄dai->da	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	大黄鸭	dai huang ya	da huang ya	非药材pypinyin误切大黄dai->da	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	超级大黄蜂	chao ji dai huang feng	chao ji da huang feng	非药材pypinyin误切大黄dai->da	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	超级大黄蜂战斗机	chao ji dai huang feng zhan dou ji	chao ji da huang feng zhan dou ji	非药材pypinyin误切大黄dai->da	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	野生大黄鱼	ye sheng dai huang yu	ye sheng da huang yu	非药材pypinyin误切大黄dai->da	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	剥柚子	bo you zi	bao you zi	具体口语剥壳剥皮动作规范读bāo	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	车铣刨磨	che xi pao mo	che xi bao mo	金切机床刨床规范读bào	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	木工刨	mu gong pao	mu gong bao	木工推刨工具规范读bào	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	露破绽	lu po zhan	lou po zhan	口语显露隐秘义同露马脚/露馅读lòu	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	不吱声	bu zhi sheng	bu zi sheng	吱声规范读zī shēng	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	不敢吱声	bu gan zhi sheng	bu gan zi sheng	吱声规范读zī shēng	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	别吱声	bie zhi sheng	bie zi sheng	吱声规范读zī shēng	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	剑圣盖聂	jian sheng gai nie	jian sheng ge nie	姓氏盖规范读gě	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	盖聂卫庄	gai nie wei zhuang	ge nie wei zhuang	姓氏盖规范读gě	现汉第7版(L1)
+cn_dicts_cell/shulihua.dict.yaml	黄柏苷	huang bai gan	huang bo gan	中药黄柏规范读huáng bò	现汉第7版/药典(L1/L2)
+cn_dicts_cell/shulihua.dict.yaml	甜没药姜黄醇	tian mei yao jiang huang chun	tian mo yao jiang huang chun	中药没药规范读mò yào	现汉第7版/药典(L1/L2)
+cn_dicts_cell/shulihua.dict.yaml	土大黄苷	tu dai huang gan	tu da huang gan	现汉第7版及药典大黄规范读dà huáng	现汉第7版/药典(L1/L2)
+cn_dicts_cell/shulihua.dict.yaml	重随机泊松过程	zhong sui ji bo song guo cheng	chong sui ji bo song guo cheng	双重随机过程规范读chóng	全国名词委(L2)
+cn_dicts_cell/medication.dict.yaml	膻中疽病	shan zhong ju bing	dan zhong ju bing	膻中规范读dàn zhōng	GB/T12346-2021(L2)
+cn_dicts_cell/medication.dict.yaml	土大黄	tu dai huang	tu da huang	现汉第7版及药典大黄规范读dà huáng	现汉第7版/药典(L1/L2)
+cn_dicts_cell/medication.dict.yaml	土大黄叶	tu dai huang ye	tu da huang ye	现汉第7版及药典大黄规范读dà huáng	现汉第7版/药典(L1/L2)
+cn_dicts_cell/literature.dict.yaml	与众乐乐	yu zhong le le	yu zhong yue le	孟子典故与众乐乐读yuè lè	现汉第7版(L1)
+cn_dicts_cell/idiom.dict.yaml	关情脉脉	guan qing mai mai	guan qing mo mo	脉脉含情规范读mò mò	现汉第7版(L1)
+cn_dicts_cell/idiom.dict.yaml	脉脉相通	mai mai xiang tong	mo mo xiang tong	脉脉规范读mò mò	现汉第7版(L1)
+cn_dicts_cell/idiom.dict.yaml	笔力扛鼎	bi li kang ding	bi li gang ding	力能扛鼎规范读gāng dǐng	现汉第7版(L1)
+cn_dicts_cell/idiom.dict.yaml	扛鼎抃牛	kang ding bian niu	gang ding bian niu	扛鼎规范读gāng dǐng	现汉第7版(L1)
+cn_dicts_cell/idiom.dict.yaml	鼓唇咋舌	gu chun za she	gu chun ze she	咋舌规范读zé shé	现汉第7版(L1)
+cn_dicts_cell/name2.dict.yaml	角斗士武器百货	jiao dou shi wu qi bai huo	jue dou shi wu qi bai huo	角斗士规范读jué dòu shì	现汉第7版(L1)

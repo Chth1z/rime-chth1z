@@ -695,7 +695,6 @@ use_preset_vocabulary: false
 复合窗	fu he chuang	0
 钢筋和预应力机械	gang jin he yu ying li ji xie	0
 隔断与吊顶	ge duan yu diao ding	0
-格栅灯	ge shan deng	1
 工程机械配件	gong cheng ji xie pei jian	1
 工程与建筑机械	gong cheng yu jian zhu ji xie	0
 工地施工材料	gong di shi gong cai liao	0
@@ -1779,7 +1778,7 @@ use_preset_vocabulary: false
 壳体加工	ke ti jia gong	0
 切刀	qie dao	192
 切割片	qie ge pian	0
-切削电动工具	qie xue dian dong gong ju	0
+切削电动工具	qie xiao dian dong gong ju	0
 曲线锯条	qu xian ju tiao	0
 人造磨料	ren zao mo liao	0
 砂带	sha dai	6

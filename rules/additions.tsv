@@ -104,8 +104,6 @@ cn_dicts/base.dict.yaml	西郊	xi jiao	200	common	R1/R2基础词补录
 cn_dicts/base.dict.yaml	调出	tiao chu	200	common	R1/R2基础词补录
 cn_dicts/base.dict.yaml	机长	ji chang	120	common	R1/R2基础词补录
 cn_dicts/base.dict.yaml	调调	tiao tiao	120	common	R1/R2基础词补录
-cn_dicts/base.dict.yaml	味噌	wei ceng	64	common	R1/R2基础词补录
-cn_dicts/base.dict.yaml	味噌	wei zeng	64	common	R1/R2基础词补录
 cn_dicts/base.dict.yaml	对她们	dui ta men	500	common	R1/R2基础词补录
 cn_dicts/base.dict.yaml	那些是	na xie shi	800	common	R1/R2基础词补录
 cn_dicts/base.dict.yaml	她真的	ta zhen de	700	common	R1/R2基础词补录
@@ -152,7 +150,6 @@ cn_dicts/base.dict.yaml	寻宠启事	xun chong qi shi	150	common	R1/R2基础词�
 cn_dicts/base.dict.yaml	各展风采	ge zhan feng cai	150	common	R1/R2基础词补录
 cn_dicts/base.dict.yaml	好朋友们	hao peng you men	150	common	R1/R2基础词补录
 cn_dicts/base.dict.yaml	肉末蒸蛋	rou mo zheng dan	200	common	R1/R2基础词补录
-cn_dicts/base.dict.yaml	山椒凤爪	shan jiao feng zhao	200	common	R1/R2基础词补录
 cn_dicts/ext.dict.yaml	谁又能	shei you neng	415	common	R2扩展词补录
 cn_dicts/ext.dict.yaml	不管是谁	bu guan shi shei	298	common	R2扩展词补录
 cn_dicts/ext.dict.yaml	给他看	gei ta kan	500	common	R2扩展词补录
@@ -350,3 +347,28 @@ cn_dicts_cell/industry_product.dict.yaml	二手摩托车	er shou mo tuo che	10	c
 cn_dicts_cell/industry_product.dict.yaml	二手船舶	er shou chuan bo	10	domain	航运交易常用词（从前缀/后缀过滤找回）
 cn_dicts_cell/industry_product.dict.yaml	二手机床	er shou ji chuang	10	domain	工业设备交易词（从前缀/后缀过滤找回）
 cn_dicts_cell/industry_product.dict.yaml	二手锅炉	er shou guo lu	10	domain	工业设备交易词（从前缀/后缀过滤找回）
+cn_dicts/base.dict.yaml	口角	kou jue	150	common	现汉第7版多义词：争吵义kǒu jué（与嘴角kǒu jiǎo并存）
+cn_dicts/base.dict.yaml	梗犬	geng quan	30	common	现代汉语规范犬种词形（替代非8105扩展A区字㹴犬）
+cn_dicts/base.dict.yaml	拉垮	la kua	80	common	现汉常用口语词（与网络高频拉胯1515并存）
+cn_dicts/base.dict.yaml	胶黏剂	jiao nian ji	150	domain	全国科技名词委L2规范词形（优先于胶粘剂100）
+cn_dicts/base.dict.yaml	薄壳	bo qiao	58	domain	建筑/结构力学L1/L2规范读音bó qiào（与口语báo ké并存）
+cn_dicts/base.dict.yaml	重载	zhong zai	60	domain	铁路/力学重负荷义zhòng zài（与CS重载chóng zǎi并存）
+cn_dicts/base.dict.yaml	井巷	jing hang	15	domain	采矿工程L2规范读音jǐng hàng（与街巷jǐng xiàng并存）
+cn_dicts/base.dict.yaml	炭烤	tan kao	150	common	现代餐饮高频词（规范用炭）
+cn_dicts/base.dict.yaml	道砟	dao zha	20	domain	铁道工程全国名词委规范术语
+cn_dicts/base.dict.yaml	商砼	shang tong	40	domain	建筑工程高频简称（商品混凝土）
+cn_dicts/base.dict.yaml	矽钢	xi gang	20	domain	电工钢行业常用简称（与硅钢并存）
+cn_dicts/base.dict.yaml	睑腺炎	jian xian yan	30	domain	眼科核心规范病名（麦粒肿学名）
+cn_dicts/base.dict.yaml	跖痛症	zhi tong zheng	15	domain	骨科足部常见病名
+cn_dicts/base.dict.yaml	吉兰巴雷综合征	ji lan ba lei zong he zheng	20	domain	神经内科全国名词委规范译名
+cn_dicts/base.dict.yaml	阿伏伽德罗常量	a fu jia de luo chang liang	30	domain	全国科技名词委物理化学现行规范名称
+cn_dicts/base.dict.yaml	鄠邑	hu yi	20	domain	民政部标准地名（西安鄠邑区）
+cn_dicts/ext.dict.yaml	非对称密钥	fei dui chen mi yue	60	tech	密码学高频术语规范读音mì yuè
+cn_dicts/ext.dict.yaml	非对称密钥	fei dui chen mi yao	60	tech	密码学高频术语行业习惯读音mì yào
+cn_dicts/others.dict.yaml	别价	bie jie	10	common	现汉第7版方言正字bié jie（上游base:L68明示保留）
+cn_dicts/others.dict.yaml	别介	bie jie	15	common	高频口语俗写（低于别接19，上游base:L68明示保留）
+cn_dicts/others.dict.yaml	甭价	beng jie	5	common	北方方言正字（上游base:L68明示保留）
+cn_dicts/others.dict.yaml	甭介	beng jie	10	common	北方方言俗写（低于崩解139，上游base:L68明示保留）
+cn_dicts/others.dict.yaml	巨惠	ju hui	15	common	商业高频词（上游others明示保留）
+cn_dicts/others.dict.yaml	钜惠	ju hui	15	common	商业常见异形词（上游others明示保留）
+cn_dicts/others.dict.yaml	鬓毛衰	bin mao cui	7	common	古诗文旧读容错（贺知章《回乡偶书》）

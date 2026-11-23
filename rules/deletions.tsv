@@ -67,7 +67,6 @@ cn_dicts/base.dict.yaml	大都会	da dou hui	R1基础词库读音修正
 cn_dicts/base.dict.yaml	太象了	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	奥金莱	*	R1清理错字或噪声词
 cn_dicts/base.dict.yaml	完型	*	R2清理错字或噪声词
-cn_dicts/base.dict.yaml	密钥	mi yao	R2基础词库读音修正
 cn_dicts/base.dict.yaml	对证下药	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	寻问	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	就得到	jiu dei dao	R1基础词库读音修正
@@ -100,8 +99,6 @@ cn_dicts/base.dict.yaml	有涨有落	you zhang you lao	R2基础词库读音修�
 cn_dicts/base.dict.yaml	有点象	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	检查官	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	正儿巴经	*	R2清理错字或噪声词
-cn_dicts/base.dict.yaml	泊松分布	po song fen bu	R1基础词库读音修正
-cn_dicts/base.dict.yaml	流血	liu xie	R2基础词库读音修正
 cn_dicts/base.dict.yaml	消弥	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	深藏不露	shen cang bu lou	R1基础词库读音修正
 cn_dicts/base.dict.yaml	渐渐的	*	R2清理错字或噪声词
@@ -153,7 +150,6 @@ cn_dicts/base.dict.yaml	调不通	diao bu tong	R2基础词库读音修正
 cn_dicts/base.dict.yaml	调优	diao you	R2基础词库读音修正
 cn_dicts/base.dict.yaml	调通	diao tong	R2基础词库读音修正
 cn_dicts/base.dict.yaml	跑的快	*	R2清理错字或噪声词
-cn_dicts/base.dict.yaml	躯壳	qu ke	R1基础词库读音修正
 cn_dicts/base.dict.yaml	轰堂大笑	*	R1清理错字或噪声词
 cn_dicts/base.dict.yaml	轻薄	qing bao	R1基础词库读音修正
 cn_dicts/base.dict.yaml	过敏源	*	R2清理错字或噪声词
@@ -168,12 +164,10 @@ cn_dicts/base.dict.yaml	陪你到	*	R1清理错字或噪声词
 cn_dicts/base.dict.yaml	震聋发聩	*	R1清理错字或噪声词
 cn_dicts/base.dict.yaml	露出	lou chu	R2基础词库读音修正
 cn_dicts/base.dict.yaml	露出了	lou chu le	R2基础词库读音修正
-cn_dicts/base.dict.yaml	青玉案	qing yu wan	R1基础词库读音修正
-cn_dicts/base.dict.yaml	青玉案元夕	qing yu wan yuan xi	R1基础词库读音修正
 cn_dicts/base.dict.yaml	魔爪	mo zhua	R1基础词库读音修正
 cn_dicts/base.dict.yaml	麦克劳	*	R1清理错字或噪声词
 cn_dicts/base.dict.yaml	龙勃罗	*	R1清理错字或噪声词
-cn_dicts/corrections.dict.yaml	㹴犬	geng quan	R1/R2清理低文化误读或错误纠错项
+cn_dicts/corrections.dict.yaml	㹴犬	geng quan	非8105扩展A区生僻字，标准词形见base:梗犬
 cn_dicts/corrections.dict.yaml	不胜感激	bu shen gan ji	R1/R2清理低文化误读或错误纠错项
 cn_dicts/corrections.dict.yaml	两个	lia ge	R1/R2清理低文化误读或错误纠错项
 cn_dicts/corrections.dict.yaml	丰臣秀吉	feng cheng xiu ji	R1/R2清理低文化误读或错误纠错项
@@ -708,7 +702,6 @@ cn_dicts_cell/game.dict.yaml	卡卡希	*	R1/R2清理游戏噪声词
 cn_dicts_cell/game.dict.yaml	司巴达	*	R1/R2清理游戏噪声词
 cn_dicts_cell/game.dict.yaml	叽叽叽叽叽叽叽叽叽叽	*	R1/R2清理游戏噪声词
 cn_dicts_cell/game.dict.yaml	吃藕	*	R1/R2清理游戏噪声词
-cn_dicts_cell/game.dict.yaml	吐蕃	tu fan	R1/R2游戏词库读音修正
 cn_dicts_cell/game.dict.yaml	咩咩咩咩咩咩咩	*	R1/R2清理游戏噪声词
 cn_dicts_cell/game.dict.yaml	大侠你缺腿部挂件吗	*	R1/R2清理游戏噪声词
 cn_dicts_cell/game.dict.yaml	大便来	*	R1/R2清理游戏噪声词
@@ -1017,7 +1010,6 @@ cn_dicts_cell/medication.dict.yaml	胎萎不长病	tai wei bu chang bing	R1清�
 cn_dicts_cell/medication.dict.yaml	胫前着色斑	jing qian zhe se ban	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	脊髓型颈椎病	ji sui xing jing chui bing	R1/R2医药词库读音修正
 cn_dicts_cell/medication.dict.yaml	腰俞穴	yao yu xue	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	荨麻疹	qian ma zhen	R1/R2医药词库读音修正
 cn_dicts_cell/medication.dict.yaml	薄厥病	bao jue bing	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	薄膜	bao mo	R1/R2医药词库读音修正
 cn_dicts_cell/medication.dict.yaml	血块栓塞	xue kuai shuan sai	R1清理医药重复错音行
@@ -2177,8 +2169,6 @@ cn_dicts_cell/composite.dict.yaml	入场卷	ru chang juan	E2错字(正词：入�
 cn_dicts_cell/game.dict.yaml	点卷	dian juan	E2错字(正词：点券，corrections已有纠偏)
 cn_dicts_cell/game.dict.yaml	柏咚乄	*	Mars-text/noise with Japanese shime 乄
 cn_dicts/base.dict.yaml	解铃还须系铃人	jie ling hai xu ji ling ren	现汉第7版规范读 xì（已恢复 xi ling ren 并于 corrections 收录 B 类纠错）
-cn_dicts/base.dict.yaml	卡住	ka zhu	现汉第7版规范读 qiǎ zhù（保留 qia zhu 并于 corrections 收录 B 类纠错）
-cn_dicts/others.dict.yaml	郭明錤	guo ming qi	现汉第7版及两岸辞典均读 jī，由 corrections C 类纠错承载
 cn_dicts_cell/shulihua.dict.yaml	粘合剂	*	现汉第7版及全国科技名词委规范为“黏合剂”（base 已收录，zhan he ji 由 corrections 引导）
 cn_dicts_cell/animal.dict.yaml	挪威糜提	*	无此犬种（规范犬种为挪威猎麋犬），上游乱码词条
 cn_dicts_cell/animal.dict.yaml	挪威糜缇	*	无此犬种（规范犬种为挪威猎麋犬），上游乱码词条
@@ -2189,7 +2179,6 @@ cn_dicts/base.dict.yaml	回㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY
 cn_dicts/ext.dict.yaml	㨃天㨃地	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
 cn_dicts/base.dict.yaml	没入	mei ru	现汉第7版规范读 mò rù（删除错音以免压过正词“美如”）
 cn_dicts/base.dict.yaml	只露出	zhi lou chu	现汉第7版露出读 lù chū（与已删露出 lou chu 一致，避免压过“只漏出”）
-cn_dicts/base.dict.yaml	频数	pin shuo	现汉第7版统计学术语频数读 pín shù（非 shuò）
 cn_dicts/base.dict.yaml	他穿着	ta chuan zhuo	动态助词“着”规范读 zhe（上游笛卡尔积误注 zhuo）
 cn_dicts/base.dict.yaml	你穿着	ni chuan zhuo	动态助词“着”规范读 zhe（上游笛卡尔积误注 zhuo）
 cn_dicts/base.dict.yaml	我穿着	wo chuan zhuo	动态助词“着”规范读 zhe（上游笛卡尔积误注 zhuo）
@@ -2213,3 +2202,51 @@ cn_dicts/ext.dict.yaml	熟练度	shou lian du	现汉第7版复音词“熟练”
 cn_dicts/ext.dict.yaml	熟练程度	shou lian cheng du	现汉第7版复音词“熟练”读 shú liàn（非口语 shóu）
 cn_dicts/ext.dict.yaml	还不熟悉	hai bu shou xi	现汉第7版复音词“熟悉”读 shú xī（非口语 shóu）
 cn_dicts/ext.dict.yaml	都熟悉	dou shou xi	现汉第7版复音词“熟悉”读 shú xī（非口语 shóu）
+cn_dicts/base.dict.yaml	血泊	xie po	现汉第7版书面复音词仅读xuè pō
+cn_dicts/base.dict.yaml	血沉	xie chen	医学书面术语仅读xuè chén
+cn_dicts/base.dict.yaml	血竭	xie jie	药典及现汉第7版仅读xuè jié
+cn_dicts/base.dict.yaml	凑活	cou huo	W5非规范异形词，正词凑合(cou huo已入corrections引导)
+cn_dicts/base.dict.yaml	成份	cheng fen	W3第一批异形词整理表淘汰，与水份/缘份/过份统一清零
+cn_dicts/base.dict.yaml	交待	jiao dai	W3第一批异形词整理表淘汰，推荐词形交代
+cn_dicts/base.dict.yaml	通霄	tong xiao	W5错别字，正词通宵
+cn_dicts/base.dict.yaml	针炙	zhen zhi	W5错别字，正词针灸
+cn_dicts/base.dict.yaml	挂帐	gua zhang	W3财会账目统一用账（挂账）
+cn_dicts/base.dict.yaml	登陆窗口	deng lu chuang kou	W1语义错配，软件界面规范写作登录窗口
+cn_dicts/base.dict.yaml	视屏	shi ping	W5高频模糊音错字（正词视频）
+cn_dicts/ext.dict.yaml	刹时间	sha shi jian	W5错别字，正词霎时间
+cn_dicts/ext.dict.yaml	翻旧帐	fan jiu zhang	W3财会账目统一用账（翻旧账）
+cn_dicts/ext.dict.yaml	帐房先生	zhang fang xian sheng	W3财会账目统一用账（账房先生）
+cn_dicts/ext.dict.yaml	精华贴	jing hua tie	W3帖子统一用帖（精华帖）
+cn_dicts/ext.dict.yaml	破记录	po ji lu	W1语义错配，竞技成绩规范写作破纪录
+cn_dicts/ext.dict.yaml	下颔骨	xia han gu	W5错别字，正词下颌骨
+cn_dicts/ext.dict.yaml	炭纤维	tan xian wei	W3非规范旧写，标准术语碳纤维
+cn_dicts/ext.dict.yaml	渐渐的明白了	jian jian de ming bai le	W5的/地错配泄漏，与已删渐渐的口径统一
+cn_dicts_cell/composite.dict.yaml	复制黏贴	fu zhi nian tie	W3动词粘贴义规范写作复制粘贴
+cn_dicts_cell/composite.dict.yaml	科普贴	ke pu tie	W3帖子统一用帖（科普帖）
+cn_dicts_cell/composite.dict.yaml	吐槽贴	tu cao tie	W3帖子统一用帖（吐槽帖）
+cn_dicts_cell/composite.dict.yaml	求助贴	qiu zhu tie	W3帖子统一用帖（求助帖）
+cn_dicts_cell/composite.dict.yaml	帐务处理	zhang wu chu li	W3财会账目统一用账（账务处理）
+cn_dicts_cell/composite.dict.yaml	混帐东西	hun zhang dong xi	W3规范写作混账东西
+cn_dicts_cell/composite.dict.yaml	海鲜排挡	hai xian pai dang	W1语义错配，摊位规范写作海鲜排档
+cn_dicts_cell/composite.dict.yaml	照像馆	zhao xiang guan	W3规范写作照相馆
+cn_dicts_cell/composite.dict.yaml	会议纪录	hui yi ji lu	W1语义错配，会议文书规范写作会议记录
+cn_dicts_cell/composite.dict.yaml	碳烤炉	tan kao lu	W3木炭烧烤统一用炭（炭烤炉）
+cn_dicts_cell/composite.dict.yaml	活性碳吸附	huo xing tan xi fu	W3活性炭统一用炭（活性炭吸附）
+cn_dicts_cell/composite.dict.yaml	碳烤生蚝	tan kao sheng hao	W3木炭烧烤统一用炭（炭烤生蚝）
+cn_dicts_cell/composite.dict.yaml	刨腹产	pao fu chan	W5错别字泄漏（corrections已引导剖腹产）
+cn_dicts_cell/composite.dict.yaml	马齿笕	ma chi jian	W5错别字泄漏（正字马齿苋）
+cn_dicts_cell/composite.dict.yaml	进气栅格	jin qi zha ge	W5倒序错词且误注（正词进气格栅）
+cn_dicts_cell/composite.dict.yaml	渐渐的发现	jian jian de fa xian	W5的/地错配泄漏，与已删渐渐的口径统一
+cn_dicts_cell/composite.dict.yaml	渐渐的明白	jian jian de ming bai	W5的/地错配泄漏，与已删渐渐的口径统一
+cn_dicts_cell/composite.dict.yaml	截止目前为止	jie zhi mu qian wei zhi	W4未封顶衍生泄漏（E1仅限白名单截止目前）
+cn_dicts_cell/game.dict.yaml	粘合剂	nian he ji	W3物性词形泄漏（曾以311反超base黏合剂41达7.5倍）
+cn_dicts_cell/shulihua.dict.yaml	图象	tu xiang	W3第一批异形词整理表淘汰，规范写作图像
+cn_dicts_cell/shulihua.dict.yaml	活性碳粉	huo xing tan fen	W3活性炭统一用炭
+cn_dicts_cell/geography.dict.yaml	粘土	*	W3物性规范写作黏土（现汉7/全国名词委/GB统一）
+cn_dicts_cell/industry_product.dict.yaml	格栅灯	ge shan deng	与base A类双读格栅灯重复
+cn_dicts_cell/food.dict.yaml	碳烤鸡肉芝士焗饭	tan kao ji rou zhi shi ju fan	W3木炭烧烤统一用炭
+cn_dicts_cell/food.dict.yaml	碳烧啤酒	tan shao pi jiu	W3炭烧工艺统一用炭
+cn_dicts_cell/medication.dict.yaml	淡豆鼓	dan dou gu	W5错别字，正词淡豆豉
+cn_dicts_cell/medication.dict.yaml	秦纠	qin jiu	W5错别字，正词秦艽
+cn_dicts_cell/medication.dict.yaml	矽肺硅肺	xi fei gui fei	W5同义拼接垃圾词条
+cn_dicts_cell/medication.dict.yaml	血液灌流器活性碳	xue ye guan liu qi huo xing tan	W3活性炭统一用炭

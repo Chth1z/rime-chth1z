@@ -196,7 +196,7 @@ cn_dicts/base.dict.yaml	中的	zhong de	500	R1基础词库权重校准
 cn_dicts/base.dict.yaml	中证	zhong zheng	700	R2基础词库权重校准
 cn_dicts/base.dict.yaml	中金	zhong jin	300	R2基础词库权重校准
 cn_dicts/base.dict.yaml	中锋	zhong feng	450	R2基础词库权重校准
-cn_dicts/base.dict.yaml	临床实验	lin chuang shi yan	40	R2基础词库权重校准
+cn_dicts/base.dict.yaml	临床实验	lin chuang shi yan	30	W4/E1容错上限<=30，规范医学术语为临床试验
 cn_dicts/base.dict.yaml	为例	wei li	3000	R2基础词库权重校准
 cn_dicts/base.dict.yaml	之上	zhi shang	3500	R2基础词库权重校准
 cn_dicts/base.dict.yaml	之人	zhi ren	600	R2基础词库权重校准
@@ -391,7 +391,6 @@ cn_dicts/base.dict.yaml	忍术	ren shu	200	R2基础词库权重校准
 cn_dicts/base.dict.yaml	怎么还	zen me huan	100	R1基础词库权重校准
 cn_dicts/base.dict.yaml	想从	xiang cong	100	R2基础词库权重校准
 cn_dicts/base.dict.yaml	戈登	ge deng	100	R2基础词库权重校准
-cn_dicts/base.dict.yaml	成份	cheng fen	100	R2基础词库权重校准
 cn_dicts/base.dict.yaml	我又	wo you	2500	R2基础词库权重校准
 cn_dicts/base.dict.yaml	我把	wo ba	800	R1基础词库权重校准
 cn_dicts/base.dict.yaml	我熟	wo shou	20	R2基础词库权重校准
@@ -700,7 +699,6 @@ cn_dicts/ext.dict.yaml	人生地不熟的	ren sheng di bu shou de	<=20	R1/R2容�
 cn_dicts/ext.dict.yaml	人知道	*	<=50	R1/R2扩展词库权重封顶
 cn_dicts/ext.dict.yaml	亿立方米	*	<=20	R1/R2扩展词库权重封顶
 cn_dicts/ext.dict.yaml	住范儿	*	<=50	R1/R2扩展词库权重封顶
-cn_dicts/ext.dict.yaml	减振器	*	<=250	R1/R2扩展词库权重封顶
 cn_dicts/ext.dict.yaml	分多钟	*	<=20	R1/R2扩展词库权重封顶
 cn_dicts/ext.dict.yaml	及以下	*	<=150	R1/R2扩展词库权重封顶
 cn_dicts/ext.dict.yaml	双截棍	*	<=80	R1/R2扩展词库权重封顶
@@ -921,7 +919,6 @@ cn_dicts_cell/game.dict.yaml	马六	*	<=30	R1/R2游戏词库权重封顶
 cn_dicts_cell/game.dict.yaml	鬼斩	*	<=35	R1/R2游戏词库权重封顶
 cn_dicts_cell/game.dict.yaml	鹰角	*	<=80	R1/R2游戏词库权重封顶
 cn_dicts_cell/geography.dict.yaml	冷圈	*	<=25	R2地理词库权重封顶
-cn_dicts_cell/geography.dict.yaml	粘土	*	<=180	R2地理词库权重封顶
 cn_dicts_cell/history.dict.yaml	东冶	*	<=30	R1/R2历史词库权重封顶
 cn_dicts_cell/history.dict.yaml	代郡	*	<=20	R1/R2历史词库权重封顶
 cn_dicts_cell/history.dict.yaml	元清	*	<=35	R1/R2历史词库权重封顶
@@ -1057,8 +1054,6 @@ cn_dicts_cell/shulihua.dict.yaml	四色猜想	*	>=100	R2数理化术语提权
 cn_dicts_cell/shulihua.dict.yaml	手征	*	<=35	R1/R2数理化权重封顶
 cn_dicts_cell/shulihua.dict.yaml	旋度	*	<=150	R1/R2数理化权重封顶
 cn_dicts_cell/shulihua.dict.yaml	李群	*	<=60	R1/R2数理化权重封顶
-cn_dicts_cell/shulihua.dict.yaml	粘度	*	<=100	R1/R2数理化权重封顶
-cn_dicts_cell/shulihua.dict.yaml	粘性	*	<=350	R1/R2数理化权重封顶
 cn_dicts_cell/shulihua.dict.yaml	赛罗	*	<=100	R1/R2数理化权重封顶
 cn_dicts_cell/sport.dict.yaml	丁宁	*	<=120	乒乓球奥运冠军，略高于“耵聍(108)”
 cn_dicts_cell/sport.dict.yaml	中圈	*	<=150	R1/R2体育词库权重封顶
@@ -1111,3 +1106,33 @@ cn_dicts/base.dict.yaml	瘀血	yu xie	25	高频口语 xiě 读音安全权重，
 cn_dicts/base.dict.yaml	输血	shu xie	50	高频口语 xiě 读音安全权重，低于“疏泄(64)”
 cn_dicts/ext.dict.yaml	一针见血地指出	yi zhen jian xue de zhi chu	<=30	现汉第7版“一针见血”规范读 xiě，使 xue 低于规范音(74)
 cn_dicts_cell/history.dict.yaml	范睢	*	<=40	保留《史记》传世古籍写法并控权，低于规范正名“范雎”
+cn_dicts/base.dict.yaml	筛骨	shai gu	>=30	Collision Guard：确保颅骨筛骨在shai gu首位，高于晒谷(7)与A类骰骨(5)
+cn_dicts/base.dict.yaml	骰骨	tou gu	>=20	提升规范解剖骨名骰骨(tóu gǔ)权重
+cn_dicts/base.dict.yaml	密钥	mi yao	350	A类双读音次音校准：mi yue(600) > mi yao(350)
+cn_dicts/base.dict.yaml	流血	liu xie	80	A类双读音次音校准：低于刘协(349)/留些(97)
+cn_dicts/base.dict.yaml	卡住	ka zhu	500	A类双读音次音校准：qia zhu(1069) > ka zhu(500)
+cn_dicts/base.dict.yaml	躯壳	qu ke	60	A类双读音次音校准：严控低于去壳(73)
+cn_dicts/base.dict.yaml	青玉案	qing yu wan	30	A类古诗词争议旧读次音校准：an(66) > wan(30)
+cn_dicts/base.dict.yaml	心包填塞	xin bao tian se	>=30	A类规范主音高于行业次音(18)
+cn_dicts/base.dict.yaml	枳壳	zhi qiao	>=45	A类药典规范主音高于常见次音(36)
+cn_dicts/base.dict.yaml	罂粟壳	ying su qiao	>=35	A类药典规范主音高于常见次音(27)
+cn_dicts/base.dict.yaml	射干	ye gan	>=20	A类现汉7规范主音与药典次音(20)持平
+cn_dicts/base.dict.yaml	格栅灯	ge zha deng	>=15	A类规范主音与行业次音(15)持平
+cn_dicts/base.dict.yaml	曝气池	pu qi chi	>=15	A类规范主音与行业次音(15)持平
+cn_dicts/base.dict.yaml	壳层模型	qiao ceng mo xing	>=15	A类规范主音与行业次音(15)持平
+cn_dicts/base.dict.yaml	适应证	shi ying zheng	450	W2：L1/L2规范适应证优先于临床存量适应症(300)
+cn_dicts/base.dict.yaml	适应症	shi ying zheng	300	W2：保留临床存量高频写法但位于规范适应证(450)之后
+cn_dicts/ext.dict.yaml	禁忌证	jin ji zheng	180	W2：L1/L2规范禁忌证优先于临床存量禁忌症(140)
+cn_dicts/base.dict.yaml	禁忌症	jin ji zheng	140	W2：保留临床存量高频写法但位于规范禁忌证(180)之后
+cn_dicts/base.dict.yaml	傅里叶	fu li ye	>=320	W2：全国科技名词委L2规范译名优先于旧译傅立叶(160)
+cn_dicts/base.dict.yaml	傅立叶	fu li ye	<=160	W2：旧译让位于L2规范译名傅里叶(320)
+cn_dicts/ext.dict.yaml	马尔可夫	ma er ke fu	>=200	W2：全国科技名词委L2规范译名优先于马尔科夫(100)
+cn_dicts/ext.dict.yaml	马尔科夫	ma er ke fu	<=100	W2：旧译让位于L2规范译名马尔可夫(200)
+cn_dicts_cell/shulihua.dict.yaml	马尔可夫链	ma er ke fu lian	>=60	W2：L2规范译名优先于马尔科夫链(40)
+cn_dicts/base.dict.yaml	马尔科夫链	ma er ke fu lian	<=40	W2：旧译让位于L2规范译名马尔可夫链(60)
+cn_dicts/ext.dict.yaml	菲涅耳	fei nie er	>=120	W2：全国科技名词委物理规范译名优先于菲涅尔(100)
+cn_dicts/ext.dict.yaml	菲涅尔	fei nie er	<=100	W2：常用旧译让位于L2规范译名菲涅耳(120)
+cn_dicts_cell/medication.dict.yaml	白及	bai ji	>=120	W2：中国药典法定正名白及优先于俗写白芨(20)
+cn_dicts_cell/medication.dict.yaml	白芨	bai ji	<=20	W2：民间俗写让位于药典正名白及(120)
+cn_dicts/base.dict.yaml	真像	zhen xiang	<=100	W1：保留合法搭配真像(真+像)，温和降权避免干扰真相(9218)
+cn_dicts/base.dict.yaml	胶粘剂	jiao zhan ji	<=100	W2：保留历史国标常用写法，位于规范胶黏剂(150)之后

@@ -170,11 +170,11 @@
       "first_text": "哎喲"
     },
     {
-      "name": "dp: habit tolerance 镀铬 (dulo) #1 with hint",
+      "name": "dp: industry disambiguation 镀铬 (dulo) A-class dual hint",
       "schema": "rime_frost_double_pinyin",
       "keys": "dulo",
       "first_text": "鍍鉻",
-      "first_comment": "dù gè"
+      "first_comment": "行业 dù luò / 规范 dù gè"
     },
     {
       "name": "dp: toggle traditionalization=false -> 软件 (no dual)",
@@ -531,7 +531,7 @@
     { "name": "fp: r3 吐蕃 dual tu bo", "schema": "rime_frost", "keys": "tubo", "any_text_with_comment": { "text": "吐蕃", "comment": "大陆 tǔ bō / 台湾 tǔ fān" } },
     { "name": "fp: r3 令人咋舌 below 令人咂舌 (lingrenzashe)", "schema": "rime_frost", "keys": "lingrenzashe", "first_text": "令人咂舌", "any_text_with_comment": { "text": "令人咋舌", "comment": "令人咋(zé)舌" } },
     { "name": "fp: r3 私钥 dual si yue", "schema": "rime_frost", "keys": "siyue", "any_text_with_comment": { "text": "私鑰", "comment": "规范 sī yuè / 习惯 sī yào" } },
-    { "name": "fp: r3 郭明錤 C-class guo ming qi", "schema": "rime_frost", "keys": "guomingqi", "any_text_with_comment": { "text": "郭明錤", "comment": "郭明錤(jī)" } },
+    { "name": "fp: r3 郭明錤 A-class guo ming qi", "schema": "rime_frost", "keys": "guomingqi", "any_text_with_comment": { "text": "郭明錤", "comment": "习惯 郭明錤(qí) / 规范 郭明錤(jī)" } },
     { "name": "fp: r3 善于思考 fixed (shanyusikao)", "schema": "rime_frost", "keys": "shanyusikao", "first_text": "善於思考" },
     { "name": "fp: r3 河南漯河 fixed (henanluohe)", "schema": "rime_frost", "keys": "henanluohe", "first_text": "河南漯河" },
     { "name": "fp: r3 免服兵役 fixed (mianfubingyi)", "schema": "rime_frost", "keys": "mianfubingyi", "first_text": "免服兵役" },
@@ -563,6 +563,35 @@
     { "name": "fp: audit 一针见血 weight restored", "schema": "rime_frost", "keys": "yizhenjianxie", "first_text": "一針見血" },
     { "name": "fp: audit 王栎鑫 L3 wang yue xin", "schema": "rime_frost", "keys": "wangyuexin", "first_text": "王櫟鑫" },
     { "name": "fp: audit 梁翘柏 L3 liang qiao bai", "schema": "rime_frost", "keys": "liangqiaobai", "first_text": "梁翹柏" },
-    { "name": "fp: audit 怎么着 L1 zen me zhe no false error", "schema": "rime_frost", "keys": "zenmezhe", "first_text": "怎麼著", "first_comment_empty": true }
+    { "name": "fp: audit 怎么着 L1 zen me zhe no false error", "schema": "rime_frost", "keys": "zenmezhe", "first_text": "怎麼著", "first_comment_empty": true },
+    { "name": "fp: domain 骰骨 A-class tou gu", "schema": "rime_frost", "keys": "tougu", "any_text_with_comment": { "text": "骰骨", "comment": "规范 tóu gǔ / 习惯 shǎi gǔ" } },
+    { "name": "fp: domain 筛骨 #1 over 骰骨 on shai gu (collision guard)", "schema": "rime_frost", "keys": "shaigu", "first_text": "篩骨", "any_text_with_comment": { "text": "骰骨", "comment": "习惯 shǎi gǔ / 规范 tóu gǔ" } },
+    { "name": "fp: domain 跖骨 A-class industry disambiguation (zhegu)", "schema": "rime_frost", "keys": "zhegu", "text_before": ["這股", "蹠骨"], "any_text_with_comment": { "text": "蹠骨", "comment": "行业 zhé gǔ / 规范 zhí gǔ" } },
+    { "name": "fp: domain 淬火 A-class industry disambiguation (zhanhuo)", "schema": "rime_frost", "keys": "zhanhuo", "text_before": ["戰火", "淬火"], "any_text_with_comment": { "text": "淬火", "comment": "行业 蘸(zhàn)火 / 规范 淬(cuì)火" } },
+    { "name": "fp: domain 格栅 A-class industry (geshan below 隔山)", "schema": "rime_frost", "keys": "geshan", "first_text": "隔山", "any_text_with_comment": { "text": "格柵", "comment": "行业 gé shān / 规范 gé zhà" } },
+    { "name": "fp: domain 格栅灯 A-class dual (geshandeng)", "schema": "rime_frost", "keys": "geshandeng", "first_text": "格柵燈", "first_comment": "行业 格栅(shān)灯 / 规范 zhà" },
+    { "name": "fp: domain 曝气 A-class industry (baoqi below 暴起)", "schema": "rime_frost", "keys": "baoqi", "text_before": ["暴起", "曝氣"], "any_text_with_comment": { "text": "曝氣", "comment": "行业 bào qì / 规范 pù qì" } },
+    { "name": "fp: domain 标识 A-class dual (biaozhi below 标志)", "schema": "rime_frost", "keys": "biaozhi", "first_text": "標誌", "any_text_with_comment": { "text": "標識", "comment": "旧读 biāo zhì / 规范 biāo shí" } },
+    { "name": "fp: domain 射干 A-class L1/L2 (shegan)", "schema": "rime_frost", "keys": "shegan", "first_text": "射干", "first_comment": "行业 shè gān / 规范 yè gān" },
+    { "name": "fp: domain 大黄 A-class old reading (daihuang)", "schema": "rime_frost", "keys": "daihuang", "first_text": "大黃", "first_comment": "旧读 dài huáng / 规范 dà huáng" },
+    { "name": "fp: domain 膻中 A-class GB/T vs TCM (tanzhong)", "schema": "rime_frost", "keys": "tanzhong", "first_text": "談中", "any_text_with_comment": { "text": "膻中", "comment": "行业 tán zhōng / 规范 dàn zhōng" } },
+    { "name": "fp: domain 心包填塞 A-class L1/L2 (xinbaotianse)", "schema": "rime_frost", "keys": "xinbaotianse", "first_text": "心包填塞", "first_comment": "规范 心包填塞(sè) / 行业 sāi" },
+    { "name": "fp: domain 频数 L1 adj restored (pinshuo)", "schema": "rime_frost", "keys": "pinshuo", "first_text": "頻數" },
+    { "name": "fp: domain 别价 upstream restored (biejie)", "schema": "rime_frost", "keys": "biejie", "any_text": "別價" },
+    { "name": "fp: domain 肾俞 fixed shu without hijacking 肾盂 (shenyu)", "schema": "rime_frost", "keys": "shenyu", "any_text": "腎盂", "no_text_regex": "腎俞|肾俞" },
+    { "name": "fp: domain 大肠俞 fixed shu (dachangshu)", "schema": "rime_frost", "keys": "dachangshu", "first_text": "大腸俞" },
+    { "name": "fp: domain 脾俞 fixed shu (pishu)", "schema": "rime_frost", "keys": "pishu", "any_text": "脾俞" },
+    { "name": "fp: domain 黏合剂 #1 over deleted game 粘合剂 (nianheji)", "schema": "rime_frost", "keys": "nianheji", "first_text": "黏合劑", "no_text_regex": "粘合" },
+    { "name": "fp: domain 适应证 W2 ranked above 适应症 (shiyingzheng)", "schema": "rime_frost", "keys": "shiyingzheng", "text_before": ["適應證", "適應症"] },
+    { "name": "fp: domain 傅里叶 W2 ranked above 傅立叶 (fuliye, simplified)", "schema": "rime_frost", "options": { "traditionalization": false }, "keys": "fuliye", "text_before": ["傅里叶", "傅立叶"] },
+    { "name": "fp: domain 减振器 W2 restored above 减震器 (jianzhenqi)", "schema": "rime_frost", "keys": "jianzhenqi", "text_before": ["減振器", "減震器"] },
+    { "name": "fp: domain 脑卒中 comment includes 中(zhòng) (naozuzhong)", "schema": "rime_frost", "keys": "naozuzhong", "first_text": "腦卒中", "first_comment": "脑卒(cù)中(zhòng)" },
+    { "name": "fp: domain 大栅栏 A-class Beijing L2 (dashilan)", "schema": "rime_frost", "keys": "dashilan", "first_text": "大柵欄", "first_comment": "规范 大栅(shí)栏 / 常见 zhà" },
+    { "name": "fp: domain 番禺 C-class place name (fanyu)", "schema": "rime_frost", "keys": "fanyu", "any_text_with_comment": { "text": "番禺", "comment": "pān yú" } },
+    { "name": "fp: domain 阿胶 B-class below 阿娇 (ajiao)", "schema": "rime_frost", "keys": "ajiao", "first_text": "阿嬌", "any_text_with_comment": { "text": "阿膠", "comment": "ē jiāo" } },
+    { "name": "fp: domain 凑合 #1 on couhuo after deleting 凑活", "schema": "rime_frost", "keys": "couhuo", "first_text": "湊合", "first_comment": "còu he" },
+    { "name": "fp: domain 梗犬 standard simplified restored (gengquan)", "schema": "rime_frost", "keys": "gengquan", "any_text": "梗犬" },
+    { "name": "fp: domain 函数重载 fixed chong zai (hanshuchongzai)", "schema": "rime_frost", "keys": "hanshuchongzai", "first_text": "函式過載", "second_text": "函數重載" },
+    { "name": "fp: domain 重载铁路 fixed zhong zai (zhongzaitielu)", "schema": "rime_frost", "keys": "zhongzaitielu", "first_text": "過載鐵路", "second_text": "重載鐵路" }
   ]
 }

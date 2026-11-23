@@ -330,12 +330,20 @@ def check_en_and_cn_en(root: pathlib.Path, rules_dir: pathlib.Path, errors: list
 
 
 def check_schema_and_opencc(root: pathlib.Path, errors: list[str]) -> None:
-    """Verify rime_frost.dict.yaml locks luna off and OpenCC JSON/TXT files are valid."""
+    """Verify rime_frost.dict.yaml locks disabled upstream tables off and OpenCC JSON/TXT files are valid."""
     rf = root / "rime_frost.dict.yaml"
+    disabled_tables = (
+        "- cn_dicts/41448",
+        "- cn_dicts/GB18030-2022",
+        "- cn_dicts/tencent",
+        "- cn_dicts_cell/luna",
+    )
     if rf.exists():
         for idx, line in enumerate(rf.read_text(encoding="utf-8").splitlines(), 1):
-            if line.strip() == "- cn_dicts_cell/luna":
-                errors.append(f"rime_frost.dict.yaml:{idx}: cn_dicts_cell/luna must remain disabled")
+            s = line.strip()
+            for pref in disabled_tables:
+                if s == pref or s.startswith(pref + " ") or s.startswith(pref + "\t"):
+                    errors.append(f"rime_frost.dict.yaml:{idx}: {pref[2:]} must remain disabled")
 
     occ_dir = root / "opencc"
     if occ_dir.exists():

@@ -427,3 +427,6 @@ cn_dicts_cell/medication.dict.yaml	新生儿贲门松驰	xin sheng er ben men so
 cn_dicts_cell/idiom.dict.yaml	耳著明月璫	er zhu ming yue dang	耳著明月珰	er zhuo ming yue dang	《孔雀东南飞》璫->珰且著读 zhuó（与 literature 去重合并）	统编高中语文/现汉第7版
 cn_dicts_cell/idiom.dict.yaml	隔篱呼取尽馀杯	ge li hu qu jin yu bei	隔篱呼取尽余杯	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	诸侯能荐人於天子	zhu hou neng jian ren yu tian zi	诸侯能荐人于天子	*	Trad/JP/variant: 於->于	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts/base.dict.yaml	粘滞	*	黏滞	nian zhi	W3物性性状规范写作黏滞(nián zhì)	现汉第7版/全国名词委(L1/L2)
+cn_dicts/base.dict.yaml	纵膈	zong ge	纵隔	zong ge	W3解剖学唯一规范写作纵隔	全国名词委(L2)
+cn_dicts_cell/composite.dict.yaml	纵膈肿瘤	zong ge zhong liu	纵隔肿瘤	zong ge zhong liu	W3解剖学唯一规范写作纵隔肿瘤	全国名词委(L2)

@@ -5,7 +5,7 @@
 name: rime_frost
 version: "2023-11-13"
 import_tables:
-  - cn_dicts/8105     # 通用规范汉字表（已覆盖全部常用及次常用字）
+  - cn_dicts/8105     # 字表
   # - cn_dicts/41448  # 大字表（实测 800 句准确率贡献为 0，注释以减少生僻字干扰）
   # - cn_dicts/GB18030-2022  # 扩展生僻字表（同上，按需恢复）
   - cn_dicts/base     # 基础词库

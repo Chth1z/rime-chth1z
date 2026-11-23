@@ -25928,7 +25928,6 @@ sort: by_weight
 复利效应	fu li xiao ying	156
 复制一层	fu zhi yi ceng	101
 复制体	fu zhi ti	110
-复制黏贴	fu zhi nian tie	234
 复原图	fu yuan tu	110
 复古感	fu gu gan	117
 复古风格	fu gu feng ge	123
@@ -43988,7 +43987,6 @@ sort: by_weight
 照亮黑夜	zhao liang hei ye	8
 照亮黑暗	zhao liang hei an	16
 照做不误	zhao zuo bu wu	11
-照像馆	zhao xiang guan	1
 照全家福	zhao quan jia fu	3
 照吃不误	zhao chi bu wu	21
 照后减证	zhao hou jian zheng	0
@@ -51040,7 +51038,7 @@ sort: by_weight
 不听话的学生	bu ting hua de xue sheng	12
 不听话的孩子	bu ting hua de hai zi	18
 不吭气	bu keng qi	25
-不吱声	bu zhi sheng	63
+不吱声	bu zi sheng	63
 不吵闹	bu chao nao	14
 不吸人血	bu xi ren xue	1
 不吸湿	bu xi shi	2
@@ -53184,7 +53182,7 @@ sort: by_weight
 不敢发声	bu gan fa sheng	52
 不敢发言	bu gan fa yan	16
 不敢向前	bu gan xiang qian	16
-不敢吱声	bu gan zhi sheng	31
+不敢吱声	bu gan zi sheng	31
 不敢告诉家人	bu gan gao su jia ren	10
 不敢告诉父母	bu gan gao su fu mu	16
 不敢呼吸	bu gan hu xi	11
@@ -95035,7 +95033,6 @@ sort: by_weight
 会议签到	hui yi qian dao	11
 会议简介	hui yi jian jie	1
 会议简报	hui yi jian bao	3
-会议纪录	hui yi ji lu	3
 会议纪律	hui yi ji lv	1
 会议纪要显示	hui yi ji yao xian shi	4
 会议组织	hui yi zu zhi	9
@@ -138320,7 +138317,6 @@ sort: by_weight
 判若两队	pan ruo liang dui	10
 刨宫产	pao gong chan	6
 刨肉机	pao rou ji	1
-刨腹产	pao fu chan	9
 刨花机	bao hua ji	1
 利丰集团	li feng ji tuan	5
 利为民所谋	li wei min suo mou	1
@@ -138892,7 +138888,7 @@ sort: by_weight
 别吃醋	bie chi cu	4
 别后悔	bie hou hui	42
 别吓我	bie xia wo	45
-别吱声	bie zhi sheng	7
+别吱声	bie zi sheng	7
 别吵我	bie chao wo	2
 别告诉她	bie gao su ta	11
 别和自己过不去	bie he zi ji guo bu qu	6
@@ -141871,7 +141867,7 @@ sort: by_weight
 剑南春酒	jian nan chun jiu	4
 剑南道	jian nan dao	19
 剑啸江湖	jian xiao jiang hu	3
-剑圣盖聂	jian sheng gai nie	17
+剑圣盖聂	jian sheng ge nie	17
 剑在手	jian zai shou	5
 剑客们	jian ke men	6
 剑履上殿	jian lv shang dian	16
@@ -141947,7 +141943,7 @@ sort: by_weight
 剥开后	bo kai hou	9
 剥开我的心	bo kai wo de xin	3
 剥板栗	bo ban li	4
-剥柚子	bo you zi	4
+剥柚子	bao you zi	4
 剥树皮	bo shu pi	3
 剥栗子	bo li zi	2
 剥核桃	bo he tao	8
@@ -177443,7 +177439,6 @@ sort: by_weight
 吐槽的对象	tu cao de dui xiang	13
 吐槽老公	tu cao lao gong	7
 吐槽节目	tu cao jie mu	5
-吐槽贴	tu cao tie	29
 吐毛球	tu mao qiu	7
 吐沫星子	tu mo xing zi	31
 吐沫横飞	tu mo heng fei	10
@@ -210701,17 +210696,17 @@ sort: by_weight
 大麻种植	da ma zhong zhi	4
 大麻素	da ma su	15
 大麻酚	da ma fen	4
-大黄毛	dai huang mao	1
-大黄片	dai huang pian	1
-大黄牙	dai huang ya	27
-大黄猫	dai huang mao	5
-大黄瓜	dai huang gua	6
-大黄米	dai huang mi	7
-大黄花鱼	dai huang hua yu	1
-大黄蜂号	dai huang feng hao	6
-大黄蜂战斗机	dai huang feng zhan dou ji	1
-大黄靴	dai huang xue	40
-大黄鸭	dai huang ya	8
+大黄毛	da huang mao	1
+大黄片	da huang pian	1
+大黄牙	da huang ya	27
+大黄猫	da huang mao	5
+大黄瓜	da huang gua	6
+大黄米	da huang mi	7
+大黄花鱼	da huang hua yu	1
+大黄蜂号	da huang feng hao	6
+大黄蜂战斗机	da huang feng zhan dou ji	1
+大黄靴	da huang xue	40
+大黄鸭	da huang ya	8
 大黑伞	da hei san	6
 大黑天	da hei tian	11
 大黑手	da hei shou	32
@@ -251768,7 +251763,6 @@ sort: by_weight
 希路达	xi lu da	3
 希金森	xi jin sen	1
 希阿荣博堪布	xi a rong bo kan bu	3
-帐务处理	zhang wu chu li	2
 帐篷内	zhang peng nei	38
 帐篷出租	zhang peng chu zu	2
 帐篷区	zhang peng qu	37
@@ -286253,7 +286247,6 @@ sort: by_weight
 截止昨天	jie zhi zuo tian	11
 截止昨日	jie zhi zuo ri	5
 截止电压	jie zhi dian ya	13
-截止目前为止	jie zhi mu qian wei zhi	62
 截止至今	jie zhi zhi jin	5
 截止至目前	jie zhi zhi mu qian	12
 截水沟	jie shui gou	3
@@ -340221,7 +340214,7 @@ sort: by_weight
 木属性	mu shu xing	7
 木岛佳苗	mu dao jia miao	3
 木工做	mu gong zuo	23
-木工刨	mu gong pao	3
+木工刨	mu gong bao	3
 木工制作	mu gong zhi zuo	20
 木工坊	mu gong fang	34
 木工家具	mu gong jia ju	1
@@ -350109,7 +350102,6 @@ sort: by_weight
 格林威治大学	ge lin wei zhi da xue	1
 格林家族	ge lin jia zu	2
 格林尼治型	ge lin ni zhi xing	7
-格林巴利综合征	ge lin ba li zong he zheng	17
 格林斯比	ge lin si bi	4
 格林特	ge lin te	1
 格林的三分	ge lin de san fen	3
@@ -363558,7 +363550,6 @@ sort: by_weight
 求助热线	qiu zhu re xian	8
 求助电话	qiu zhu dian hua	17
 求助网友	qiu zhu wang you	5
-求助贴	qiu zhu tie	8
 求勾搭	qiu gou da	10
 求医不如求己	qiu yi bu ru qiu ji	5
 求医之路	qiu yi zhi lu	12
@@ -371382,7 +371373,6 @@ sort: by_weight
 活性炭除甲醛	huo xing tan chu jia quan	5
 活性物	huo xing wu	61
 活性益生菌	huo xing yi sheng jun	23
-活性碳吸附	huo xing tan xi fu	3
 活性组分	huo xing zu fen	14
 活性细胞	huo xing xi bao	4
 活性肽	huo xing tai	9
@@ -374913,7 +374903,6 @@ sort: by_weight
 海鲜干货	hai xian gan huo	9
 海鲜批发	hai xian pi fa	2
 海鲜批发市场	hai xian pi fa shi chang	1
-海鲜排挡	hai xian pai dang	9
 海鲜排档	hai xian pai dang	18
 海鲜控	hai xian kong	1
 海鲜料理	hai xian liao li	9
@@ -378744,7 +378733,6 @@ sort: by_weight
 混子玩家	hun zi wan jia	11
 混官场	hun guan chang	18
 混小子	hun xiao zi	33
-混帐东西	hun zhang dong xi	2
 混成一团	hun cheng yi tuan	16
 混成一片	hun cheng yi pian	10
 混成协	hun cheng xie	3
@@ -380255,8 +380243,6 @@ sort: by_weight
 渐渐清晰	jian jian qing xi	45
 渐渐熄灭	jian jian xi mie	18
 渐渐疏远	jian jian shu yuan	30
-渐渐的发现	jian jian de fa xian	32
-渐渐的明白	jian jian de ming bai	2
 渐渐被人遗忘	jian jian bei ren yi wang	6
 渐渐被遗忘	jian jian bei yi wang	8
 渐渐走远	jian jian zou yuan	13
@@ -416697,7 +416683,7 @@ sort: by_weight
 盖章签字	gai zhang qian zi	20
 盖章认证	gai zhang ren zheng	12
 盖章证明	gai zhang zheng ming	8
-盖聂卫庄	gai nie wei zhuang	32
+盖聂卫庄	ge nie wei zhuang	32
 盖苏文	gai su wen	28
 盖过章	gai guo zhang	9
 盖锅盖	gai guo gai	35
@@ -426510,8 +426496,6 @@ sort: by_weight
 碳水化合物的摄入	tan shui hua he wu de she ru	70
 碳水化合物类	tan shui hua he wu lei	9
 碳汇交易	tan hui jiao yi	7
-碳烤炉	tan kao lu	8
-碳烤生蚝	tan kao sheng hao	3
 碳离子	tan li zi	17
 碳粉盒	tan fen he	1
 碳素材料	tan su cai liao	7
@@ -432261,7 +432245,6 @@ sort: by_weight
 科普讲座	ke pu jiang zuo	20
 科普讲解	ke pu jiang jie	8
 科普课堂	ke pu ke tang	3
-科普贴	ke pu tie	96
 科普达人	ke pu da ren	8
 科林法瑞尔	ke lin fa rui er	11
 科森科技	ke sen ke ji	4
@@ -448198,7 +448181,6 @@ sort: by_weight
 纵置发动机	zong zhi fa dong ji	22
 纵置后驱	zong zhi hou qu	18
 纵置后驱平台	zong zhi hou qu ping tai	3
-纵膈肿瘤	zong ge zhong liu	3
 纵观世界	zong guan shi jie	36
 纵观全国	zong guan quan guo	23
 纵观全场比赛	zong guan quan chang bi sai	12
@@ -460952,7 +460934,6 @@ sort: by_weight
 美尔雅期货	mei er ya qi huo	2
 美尚生态	mei shang sheng tai	1
 美就在身边	mei jiu zai shen bian	1
-美尼尔氏综合征	mei ni er shi zong he zheng	1
 美居酒店	mei ju jiu dian	1
 美山加恋	mei shan jia lian	2
 美工师	mei gong shi	12
@@ -469535,7 +469516,6 @@ sort: by_weight
 胶质感	jiao zhi gan	11
 胶质物	jiao zhi wu	3
 胶质细胞	jiao zhi xi bao	43
-胶黏剂	jiao nian ji	74
 胸下垂	xiong xia chui	20
 胸中有丘壑	xiong zhong you qiu he	29
 胸前口袋	xiong qian kou dai	1
@@ -509804,8 +509784,8 @@ sort: by_weight
 超级大英雄	chao ji da ying xiong	2
 超级大赢家	chao ji da ying jia	4
 超级大逆转	chao ji da ni zhuan	10
-超级大黄蜂	chao ji dai huang feng	9
-超级大黄蜂战斗机	chao ji dai huang feng zhan dou ji	1
+超级大黄蜂	chao ji da huang feng	9
+超级大黄蜂战斗机	chao ji da huang feng zhan dou ji	1
 超级夸张	chao ji kua zhang	7
 超级奇怪	chao ji qi guai	3
 超级奇葩	chao ji qi pa	5
@@ -522795,7 +522775,6 @@ sort: by_weight
 进气孔	jin qi kong	20
 进气方式	jin qi fang shi	7
 进气栅	jin qi zha	2
-进气栅格	jin qi zha ge	1
 进气格栅的设计	jin qi ge zha de she ji	1
 进气格栅设计	jin qi ge zha she ji	3
 进气格栅造型	jin qi ge zha zao xing	2
@@ -533739,7 +533718,7 @@ sort: by_weight
 野生华南虎	ye sheng hua nan hu	1
 野生厨房	ye sheng chu fang	6
 野生品种	ye sheng pin zhong	10
-野生大黄鱼	ye sheng dai huang yu	4
+野生大黄鱼	ye sheng da huang yu	4
 野生天鹅	ye sheng tian e	3
 野生天麻	ye sheng tian ma	4
 野生娃娃鱼	ye sheng wa wa yu	5
@@ -548529,7 +548508,7 @@ sort: by_weight
 露水情缘	lu shui qing yuan	26
 露点电影	lu dian dian ying	1
 露真容	lu zhen rong	6
-露破绽	lu po zhan	13
+露破绽	lou po zhan	13
 露端倪	lu duan ni	4
 露米娅	lu mi ya	21
 露结为霜	lu jie wei shuang	2
@@ -555581,7 +555560,6 @@ sort: by_weight
 颈部酸痛	jing bu suan tong	16
 颈项强直	jing xiang qiang zhi	10
 颈项部	jing xiang bu	7
-颊黏膜	jia nian mo	2
 颌面外科	he mian wai ke	25
 颌面整形	he mian zheng xing	1
 颌骨发育	he gu fa yu	27
@@ -560848,7 +560826,6 @@ sort: by_weight
 马鞭草花海	ma bian cao hua hai	1
 马首铜像	ma shou tong xiang	27
 马马虎虎吧	ma ma hu hu ba	21
-马齿笕	ma chi jian	23
 马齿苋树	ma chi xian shu	6
 马齿苋科	ma chi xian ke	7
 马齿菜	ma chi cai	5
@@ -568302,7 +568279,6 @@ sort: by_weight
 黏膜损伤	nian mo sun shang	8
 黏膜水肿	nian mo shui zhong	16
 黏膜炎症	nian mo yan zheng	26
-黏膜组织	nian mo zu zhi	6
 黏膜细胞	nian mo xi bao	7
 黏蛋白	nian dan bai	28
 黑三角	hei san jiao	42
@@ -595211,7 +595187,7 @@ sort: by_weight
 存佳维片	cun jia wei pian	5
 栀夏洋司	zhi xia yang si	5
 塞巴斯蒂	sai ba si di	5
-车铣刨磨	che xi pao mo	5
+车铣刨磨	che xi bao mo	5
 左文右题	zuo wen you ti	5
 以书代刊	yi shu dai kan	5
 加尼福尼	jia ni fu ni	5

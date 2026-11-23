@@ -4473,8 +4473,8 @@ sort: by_weight
 爆破术	bao po shu	2
 爆破小组	bao po xiao zu	5
 抱朴子	bao pu zi	40
-曝气槽	bao qi cao	1
-曝气系统	bao qi xi tong	1
+曝气槽	pu qi cao	1
+曝气系统	pu qi xi tong	1
 抱歉啊	bao qian a	89
 抱歉抱歉	bao qian bao qian	92
 抱歉了	bao qian le	250
@@ -7123,7 +7123,6 @@ sort: by_weight
 变得不一样	bian de bu yi yang	147
 变得沉默寡言	bian de chen mo gua yan	21
 变得沉稳	bian de chen wen	19
-变得成熟稳重	bian de cheng shou wen zhong	11
 变得成熟	bian de cheng shu	126
 变得成熟稳重	bian de cheng shu wen zhong	11
 变得抽象	bian de chou xiang	8
@@ -7143,7 +7142,6 @@ sort: by_weight
 变得干燥	bian de gan zao	35
 变得高贵	bian de gao gui	4
 变得更白	bian de geng bai	6
-变得更成熟	bian de geng cheng shou	29
 变得更成熟	bian de geng cheng shu	29
 变得更丑	bian de geng chou	6
 变得更聪明	bian de geng cong ming	39
@@ -7151,9 +7149,7 @@ sort: by_weight
 变得更好看	bian de geng hao kan	37
 变得更好了	bian de geng hao le	67
 变得更加昂贵	bian de geng jia ang gui	6
-变得更加成熟	bian de geng jia cheng shou	41
 变得更加成熟	bian de geng jia cheng shu	41
-变得更加的成熟	bian de geng jia de cheng shou	2
 变得更加的成熟	bian de geng jia de cheng shu	2
 变得更加复杂	bian de geng jia fu za	88
 变得更加好	bian de geng jia hao	3
@@ -7289,7 +7285,6 @@ sort: by_weight
 变得愉快了	bian de yu kuai le	2
 变得与众不同	bian de yu zhong bu tong	37
 变得圆滑	bian de yuan hua	22
-变得越来越成熟	bian de yue lai yue cheng shou	18
 变得越来越成熟	bian de yue lai yue cheng shu	18
 变得越来越大	bian de yue lai yue da	93
 变得越来越多	bian de yue lai yue duo	83
@@ -16804,7 +16799,6 @@ sort: by_weight
 产品不行	chan pin bu xing	70
 产品参数	chan pin can shu	88
 产品产地	chan pin chan di	3
-产品成熟度	chan pin cheng shou du	25
 产品成熟度	chan pin cheng shu du	25
 产品传播	chan pin chuan bo	9
 产品创新	chan pin chuang xin	241
@@ -20982,27 +20976,12 @@ sort: by_weight
 城市知名度	cheng shi zhi ming du	7
 城市中心支行	cheng shi zhong xin zhi hang	1
 城市自行车	cheng shi zi xing che	4
-成熟得多	cheng shou de duo	21
-成熟的管理体系	cheng shou de guan li ti xi	5
-成熟的模式	cheng shou de mo shi	35
-成熟的商业模式	cheng shou de shang ye mo shi	34
-成熟的系统	cheng shou de xi tong	35
 承受得住	cheng shou de zhu	84
 承受度	cheng shou du	38
-成熟度不够	cheng shou du bu gou	6
-成熟度高	cheng shou du gao	37
-成熟度模型	cheng shou du mo xing	12
-成熟行业	cheng shou hang ye	32
-成熟和稳重	cheng shou he wen zhong	5
-成熟了不少	cheng shou le bu shao	24
 承受了多少	cheng shou le duo shao	35
 承受了很大的压力	cheng shou le hen da de ya li	8
 承受了巨大的压力	cheng shou le ju da de ya li	24
 承受了太多	cheng shou le tai duo	41
-成熟模式	cheng shou mo shi	16
-成熟稳重的男人	cheng shou wen zhong de nan ren	5
-成熟稳重型	cheng shou wen zhong xing	1
-成熟长大	cheng shou zhang da	3
 承受着巨大的压力	cheng shou zhe ju da de ya li	21
 承受之重	cheng shou zhi zhong	4
 承受重压	cheng shou zhong ya	3
@@ -21155,7 +21134,6 @@ sort: by_weight
 成长不烦恼	cheng zhang bu fan nao	1
 成长策略	cheng zhang ce lve	15
 成长成才	cheng zhang cheng cai	9
-成长成熟	cheng zhang cheng shou	19
 成长成熟	cheng zhang cheng shu	19
 成长初期	cheng zhang chu qi	31
 成长创新	cheng zhang chuang xin	2
@@ -23548,12 +23526,12 @@ sort: by_weight
 重游故地	chong you gu di	8
 重元寺	chong yuan si	1
 冲云破雾	chong yun po wu	5
-重载荷	chong zai he	1
-重载货车	chong zai huo che	4
+重载荷	zhong zai he	1
+重载货车	zhong zai huo che	4
 冲在前	chong zai qian	6
 冲在前面	chong zai qian mian	52
-重载铁路	chong zai tie lu	11
-重载运输	chong zai yun shu	2
+重载铁路	zhong zai tie lu	11
+重载运输	zhong zai yun shu	2
 冲在最前	chong zai zui qian	24
 重造轮子	chong zao lun zi	5
 重掌大权	chong zhang da quan	4
@@ -45177,7 +45155,6 @@ sort: by_weight
 反交错	fan jiao cuo	5
 范进中举	fan jin zhong ju	79
 犯酒瘾	fan jiu yin	2
-翻旧帐	fan jiu zhang	12
 翻卷子	fan juan zi	9
 反绝杀	fan jue sha	19
 翻开了新的一页	fan kai le xin de yi ye	11
@@ -46575,7 +46552,6 @@ sort: by_weight
 非常地不方便	fei chang de bu fang bian	2
 非常地不容易	fei chang de bu rong yi	1
 非常地不舒服	fei chang de bu shu fu	1
-非常地成熟	fei chang de cheng shou	1
 非常地成熟	fei chang de cheng shu	1
 非常地大胆	fei chang de da dan	1
 非常地单纯	fei chang de dan chun	1
@@ -61782,7 +61758,6 @@ sort: by_weight
 行业常态	hang ye chang tai	10
 行业沉淀	hang ye chen dian	18
 行业成本	hang ye cheng ben	10
-行业成熟	hang ye cheng shou	10
 行业成熟	hang ye cheng shu	10
 行业诚信	hang ye cheng xin	2
 行业成长	hang ye cheng zhang	14
@@ -71645,7 +71620,6 @@ sort: by_weight
 技能框	ji neng kuang	6
 技能命中率	ji neng ming zhong lv	7
 机能失调	ji neng shi tiao	4
-技能熟练度	ji neng shou lian du	22
 技能书	ji neng shu	59
 技能熟练度	ji neng shu lian du	22
 技能体系	ji neng ti xi	49
@@ -71967,7 +71941,6 @@ sort: by_weight
 技术高度	ji shu gao du	16
 技术股	ji shu gu	14
 技术官	ji shu guan	9
-技术还不成熟	ji shu hai bu cheng shou	34
 技术还不成熟	ji shu hai bu cheng shu	34
 技术还不错	ji shu hai bu cuo	18
 技术行业	ji shu hang ye	73
@@ -74298,7 +74271,6 @@ sort: by_weight
 简简单单的一句话	jian jian dan dan de yi ju hua	11
 渐渐地发现	jian jian de fa xian	27
 贱贱的感觉	jian jian de gan jue	3
-渐渐的明白了	jian jian de ming bai le	6
 渐渐懂得	jian jian dong de	16
 渐渐觉得	jian jian jue de	59
 渐渐迷失	jian jian mi shi	13
@@ -96685,7 +96657,6 @@ sort: by_weight
 漫上来	man shang lai	7
 满身铜臭	man shen tong xiu	8
 曼食慢语	man shi man yu	18
-满熟练度	man shou lian du	4
 满手是汗	man shou shi han	2
 蛮舒服	man shu fu	77
 满熟练度	man shu lian du	4
@@ -97305,7 +97276,6 @@ sort: by_weight
 没成绩	mei cheng ji	72
 没成家	mei cheng jia	32
 没成年	mei cheng nian	21
-没成熟	mei cheng shou	21
 没成熟	mei cheng shu	21
 没成团	mei cheng tuan	10
 没承想	mei cheng xiang	26
@@ -103509,7 +103479,6 @@ sort: by_weight
 莫生气	mo sheng qi	39
 陌生人围观	mo sheng ren wei guan	2
 陌生之地	mo sheng zhi di	5
-模式成熟	mo shi cheng shou	12
 模式成熟	mo shi cheng shu	12
 模式串	mo shi chuan	164
 模式的创新	mo shi de chuang xin	41
@@ -113418,7 +113387,6 @@ sort: by_weight
 破坏行动	po huai xing dong	14
 破坏严重	po huai yan zhong	28
 破坏欲	po huai yu	31
-破记录	po ji lu	51
 破甲弹	po jia dan	20
 破家荡产	po jia dang chan	1
 破家为国	po jia wei guo	3
@@ -128005,7 +127973,6 @@ sort: by_weight
 什么时辰	shen me shi chen	19
 什么是成功	shen me shi cheng gong	21
 什么是城市	shen me shi cheng shi	4
-什么是成熟	shen me shi cheng shou	11
 什么是成熟	shen me shi cheng shu	11
 什么是成长	shen me shi cheng zhang	2
 什么是传统	shen me shi chuan tong	12
@@ -131036,7 +131003,6 @@ sort: by_weight
 市场参考价格	shi chang can kao jia ge	7
 市场参与度	shi chang can yu du	3
 市场参与主体	shi chang can yu zhu ti	17
-市场成熟度	shi chang cheng shou du	20
 市场成熟度	shi chang cheng shu du	20
 市场冲高回落	shi chang chong gao hui luo	1
 市场传播	shi chang chuan bo	10
@@ -131952,7 +131918,6 @@ sort: by_weight
 十几公里	shi ji gong li	158
 实际关系	shi ji guan xi	16
 实际规模	shi ji gui mo	12
-时机还不成熟	shi ji hai bu cheng shou	11
 时机还不成熟	shi ji hai bu cheng shu	11
 时机还没到	shi ji hai mei dao	4
 世纪海上丝绸之路	shi ji hai shang si chou zhi lu	13
@@ -135139,7 +135104,6 @@ sort: by_weight
 手里有剑	shou li you jian	10
 收敛点	shou lian dian	42
 收敛点儿	shou lian dian er	3
-熟练度不够	shou lian du bu gou	25
 收敛了许多	shou lian le xu duo	18
 收敛起	shou lian qi	28
 收敛式	shou lian shi	2
@@ -141228,7 +141192,6 @@ sort: by_weight
 太虐了	tai nve le	45
 太虐了吧	tai nve le ba	2
 太怕痛	tai pa tong	4
-胎盘成熟度	tai pan cheng shou du	1
 胎盘成熟度	tai pan cheng shu du	1
 太膨胀了	tai peng zhang le	12
 太便宜啦	tai pian yi la	3
@@ -143223,7 +143186,6 @@ sort: by_weight
 体系布局	ti xi bu ju	2
 体系不同	ti xi bu tong	26
 体系不完善	ti xi bu wan shan	16
-体系成熟	ti xi cheng shou	32
 体系成熟	ti xi cheng shu	32
 体系重构	ti xi chong gou	3
 体系搭建	ti xi da jian	65
@@ -144302,7 +144264,7 @@ sort: by_weight
 调畅气机	tiao chang qi ji	5
 调畅情志	tiao chang qing zhi	5
 跳长绳	tiao chang sheng	1
-调车员	tiao che yuan	1
+调车员	diao che yuan	1
 调车作业	tiao che zuo ye	1
 调成糊状	tiao cheng hu zhuang	6
 跳出火坑	tiao chu huo keng	5
@@ -144400,7 +144362,6 @@ sort: by_weight
 条件不行	tiao jian bu xing	19
 条件恶劣	tiao jian e lie	53
 条件关系	tiao jian guan xi	16
-条件还不成熟	tiao jian hai bu cheng shou	9
 条件还不成熟	tiao jian hai bu cheng shu	9
 条件还不错	tiao jian hai bu cuo	40
 条件还行	tiao jian hai xing	25
@@ -152057,7 +152018,6 @@ sort: by_weight
 闻着香味	wen zhe xiang wei	9
 文徵明	wen zheng ming	48
 闻之色变	wen zhi se bian	65
-稳重成熟	wen zhong cheng shou	14
 稳重成熟	wen zhong cheng shu	14
 稳重大方	wen zhong da fang	8
 稳重大气	wen zhong da qi	23
@@ -152069,7 +152029,6 @@ sort: by_weight
 稳重端庄	wen zhong duan zhuang	3
 稳重风格	wen zhong feng ge	6
 稳重感	wen zhong gan	30
-稳重和成熟	wen zhong he cheng shou	6
 稳重和成熟	wen zhong he cheng shu	6
 稳重可靠	wen zhong ke kao	17
 稳重内敛	wen zhong nei lian	7
@@ -156050,7 +156009,6 @@ sort: by_weight
 五七三十五	wu qi san shi wu	1
 五七三五	wu qi san wu	1
 五期生	wu qi sheng	2
-武器熟练度	wu qi shou lian du	14
 武器熟练度	wu qi shu lian du	14
 武器系列	wu qi xi lie	6
 吴起县	wu qi xian	7
@@ -157653,7 +157611,6 @@ sort: by_weight
 系统阐述了	xi tong chan shu le	11
 系统厂商	xi tong chang shang	10
 系统成本	xi tong cheng ben	18
-系统成熟	xi tong cheng shou	10
 系统成熟	xi tong cheng shu	10
 系统重启	xi tong chong qi	14
 系统重塑	xi tong chong su	2
@@ -158615,7 +158572,6 @@ sort: by_weight
 下跪行礼	xia gui xing li	2
 下过一次	xia guo yi ci	13
 下过雨	xia guo yu	49
-下颔骨	xia han gu	3
 下行情	xia hang qing	8
 下好大	xia hao da	3
 下黑手	xia hei shou	97
@@ -159352,7 +159308,6 @@ sort: by_weight
 陷得不深	xian de bu shen	3
 显得苍白	xian de cang bai	35
 显得沉稳	xian de chen wen	14
-显得成熟	xian de cheng shou	17
 显得成熟	xian de cheng shu	17
 显得脆弱	xian de cui ruo	7
 显得大方	xian de da fang	8
@@ -159383,7 +159338,6 @@ sort: by_weight
 显得格外清新	xian de ge wai qing xin	1
 显得格外耀眼	xian de ge wai yao yan	7
 显得更高	xian de geng gao	23
-显得更加成熟	xian de geng jia cheng shou	7
 显得更加成熟	xian de geng jia cheng shu	7
 显得更加大气	xian de geng jia da qi	4
 显得更加的时尚	xian de geng jia de shi shang	1
@@ -159404,7 +159358,6 @@ sort: by_weight
 陷得更深	xian de geng shen	12
 显得过时	xian de guo shi	18
 显得好看	xian de hao kan	11
-显得很成熟	xian de hen cheng shou	3
 显得很成熟	xian de hen cheng shu	3
 显得很大	xian de hen da	24
 显得很低调	xian de hen di diao	2
@@ -164458,7 +164411,6 @@ sort: by_weight
 心里不舒服	xin li bu shu fu	149
 心里不爽	xin li bu shuang	74
 心里藏不住事	xin li cang bu zhu shi	9
-心理成熟度	xin li cheng shou du	13
 心理成熟度	xin li cheng shu du	13
 心理成长	xin li cheng zhang	45
 心理重建	xin li chong jian	9
@@ -173161,7 +173113,6 @@ sort: by_weight
 一点点长大	yi dian dian zhang da	18
 一点都不	yi dian dou bu	3238
 一点都不差	yi dian dou bu cha	80
-一点都不成熟	yi dian dou bu cheng shou	6
 一点都不成熟	yi dian dou bu cheng shu	6
 一点都不吃	yi dian dou bu chi	6
 一点都不丑	yi dian dou bu chou	8
@@ -179588,7 +179539,6 @@ sort: by_weight
 英雄胜率	ying xiong sheng lv	24
 英雄式	ying xiong shi	63
 英雄是什么	ying xiong shi shen me	9
-英雄熟练度	ying xiong shou lian du	13
 英雄熟练度	ying xiong shu lian du	13
 英雄调整	ying xiong tiao zheng	5
 英雄帖	ying xiong tie	9
@@ -187987,7 +187937,6 @@ sort: by_weight
 长大成家	zhang da cheng jia	8
 长大成年	zhang da cheng nian	17
 长大成人后	zhang da cheng ren hou	53
-长大成熟	zhang da cheng shou	19
 长大成熟	zhang da cheng shu	19
 张大导演	zhang da dao yan	4
 长大的地方	zhang da de di fang	30
@@ -188506,7 +188455,6 @@ sort: by_weight
 长相不同	zhang xiang bu tong	12
 长相不行	zhang xiang bu xing	4
 长相差	zhang xiang cha	8
-长相成熟	zhang xiang cheng shou	7
 长相成熟	zhang xiang cheng shu	7
 长相丑	zhang xiang chou	6
 长相丑陋	zhang xiang chou lou	24
@@ -209006,7 +208954,7 @@ sort: by_weight
 减不掉	jian bu diao	17
 减双抗	jian shuang kang	3
 减字谱	jian zi pu	36
-减振器	jian zhen qi	250
+减振器	jian zhen qi	457
 减水剂	jian shui ji	6
 减肥餐	jian fei can	66
 减脂期	jian zhi qi	353
@@ -209834,7 +209782,6 @@ sort: by_weight
 刷装备	shua zhuang bei	167
 刷野快	shua ye kuai	7
 刷野怪	shua ye guai	13
-刹时间	sha shi jian	4
 刺激器	ci ji qi	12
 刺秦王	ci qin wang	18
 刺蒺藜	ci ji li	4
@@ -215553,7 +215500,6 @@ sort: by_weight
 希财君	xi cai jun	3
 希迪智驾	xi di zhi jia	5
 希鲁鲁克	xi lu lu ke	49
-帐房先生	zhang fang xian sheng	3
 帐汗国	zhang han guo	10
 帐面价值	zhang mian jia zhi	15
 帕丁顿	pa ding dun	14
@@ -222702,7 +222648,6 @@ sort: by_weight
 炫动版	xuan dong ban	3
 炫彩版	xuan cai ban	7
 炭治郎	tan zhi lang	44
-炭纤维	tan xian wei	15
 炸一炸	zha yi zha	11
 炸不死	zha bu si	17
 炸香后	zha xiang hou	3
@@ -224938,7 +224883,7 @@ sort: by_weight
 禁停区	jin ting qu	10
 禁养区	jin yang qu	10
 禁塑令	jin su ling	21
-禁忌证	jin ji zheng	36
+禁忌证	jin ji zheng	180
 禁摩令	jin mo ling	5
 禁止入	jin zhi ru	1
 禁止性	jin zhi xing	24
@@ -225583,7 +225528,6 @@ sort: by_weight
 粽叶香	zong ye xiang	1
 精不精	jing bu jing	27
 精华游	jing hua you	2
-精华贴	jing hua tie	11
 精品小说	jing pin xiao shuo	5
 精品电影	jing pin dian ying	5
 精密型	jing mi xing	3
@@ -227393,8 +227337,8 @@ sort: by_weight
 菲普斯	fei pu si	2
 菲洛嘉	fei luo jia	9
 菲洛梅娜	fei luo mei na	5
-菲涅尔	fei nie er	118
-菲涅耳	fei nie er	17
+菲涅尔	fei nie er	100
+菲涅耳	fei nie er	120
 菲莉亚	fei li ya	4
 菲菲姐	fei fei jie	1
 萃华楼	cui hua lou	5
@@ -232100,7 +232044,7 @@ sort: by_weight
 马尔克	ma er ke	18
 马尔凯	ma er kai	10
 马尔卡	ma er ka	4
-马尔可夫	ma er ke fu	87
+马尔可夫	ma er ke fu	200
 马尔基	ma er ji	39
 马尔塞	ma er sai	8
 马尔尚	ma er shang	7
@@ -232109,7 +232053,7 @@ sort: by_weight
 马尔特	ma er te	66
 马尔福	ma er fu	463
 马尔福家	ma er fu jia	16
-马尔科夫	ma er ke fu	188
+马尔科夫	ma er ke fu	100
 马尔考	ma er kao	4
 马尔蒂	ma er di	9
 马尔金	ma er jin	3
@@ -235073,4 +235017,29 @@ sort: by_weight
 黛珂	dai ke	42
 飞科	fei ke	45
 汉高	han gao	60
+非对称密钥	fei dui chen mi yue	60
+非对称密钥	fei dui chen mi yao	60
 流鼻血	liu bi xie	250
+血脉偾张	xue mai ben zhang	80
+周柏豪	zhou bai hao	12
+甲壳虫	jia ke chong	200
+标识符	biao zhi fu	80
+郭明錤	guo ming qi	31
+# 补充「密钥(mi yue)」复合词规范读音
+安全密钥	an quan mi yue	7
+对称密钥	dui chen mi yue	74
+访问密钥	fang wen mi yue	1
+共享密钥	gong xiang mi yue	16
+激活密钥	ji huo mi yue	2
+解密密钥	jie mi mi yue	48
+量子密钥	liang zi mi yue	29
+量子密钥分发	liang zi mi yue fen fa	32
+密钥管理服务	mi yue guan li fu wu	2
+密钥生成	mi yue sheng cheng	29
+密钥延期	mi yue yan qi	7
+签名密钥	qian ming mi yue	3
+生成密钥	sheng cheng mi yue	12
+使用密钥	shi yong mi yue	11
+通行密钥	tong xing mi yue	2
+许可证密钥	xu ke zheng mi yue	1
+找密钥	zhao mi yue	2

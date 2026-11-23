@@ -3915,7 +3915,6 @@ sort: by_weight
 鸿蒙智行	hong meng zhi xing	0
 开谈	kai tan	0
 # 2026-11-04 新增：知乎热榜热词（医学术语「心脏压塞」、团队名「永达智诚」、院校简称「鲁艺」、常用词「多省」「疑因」「预载」，来自 zhihu_missing_2026-11-04 分词缺失词）
-心脏压塞	xin zang ya se	0
 永达智诚	yong da zhi cheng	0
 鲁艺	lu yi	0
 多省	duo sheng	0
@@ -4382,3 +4381,10 @@ sort: by_weight
 蚌住	beng zhu	0
 我勒个	wo le ge	0
 软弹	ruan tan	0
+别价	bie jie	10
+别介	bie jie	15
+甭价	beng jie	5
+甭介	beng jie	10
+巨惠	ju hui	15
+钜惠	ju hui	15
+鬓毛衰	bin mao cui	7

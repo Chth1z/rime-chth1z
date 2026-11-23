@@ -4,33 +4,25 @@
 馄饨	hun dun	150	hún tun	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音（“饨”轻声）
 主角	zhu jiao	200	zhǔ jué	B	R1/R2纠错权重与注释校准
 角色	jiao se	180	jué sè	B	R1/R2纠错权重与注释校准
-说服	shui fu	200	旧读 shuì fú / 规范 shuō fú	A	Round 3 A-dual: KEEP_SECONDARY：与主读音配对为完整A类双标准注释
 道行	dao hang	200	dào heng	B	R1/R2纠错权重与注释校准
 模样	mo yang	200	mú yàng	B	R1/R2纠错权重与注释校准
 有模有样	you mo you yang	100	有模(mú)有样	C	R1/R2纠错权重与注释校准
 一模一样	yi mo yi yang	150	一模(mú)一样	C	R1/R2纠错权重与注释校准
 装模作样	zhuang mo zuo yang	100	装模(mú)作样	C	R1/R2纠错权重与注释校准
 人模狗样	ren mo gou yang	100	人模(mú)狗样	C	R1/R2纠错权重与注释校准
-阿弥陀佛	a mi tuo fo	100	习惯 阿(ā)弥陀佛 / 规范 阿(ē)弥陀佛	A	Round 3 A-dual: UPDATE_SECONDARY：原“ē mí tuó fó”升级为A类双读音注释
-南无阿弥陀佛	na mo a mi tuo fo	50	南无阿(ē)弥陀佛	C	R1/R2纠错权重与注释校准
 南无阿弥陀佛	nan wu a mi tuo fo	50	南无(nā mó)阿(ē)弥陀佛	C	R1/R2纠错权重与注释校准
 南无阿弥陀佛	nan wu e mi tuo fo	50	南无(nā mó)阿弥陀佛	C	R1/R2纠错权重与注释校准
-槟榔	bin lang	150	台湾 bīn láng / 大陆 bīng láng	A	Round 3 A-dual: UPDATE_SECONDARY：原“bīng láng”升级为A类两岸双标准注释
 弄堂	nong tang	120	lòng táng	B	R1/R2纠错权重与注释校准
 心宽体胖	xin kuan ti pang	100	心宽体胖(pán)	C	R1/R2纠错权重与注释校准
 埋怨	mai yuan	150	mán yuàn	B	R1/R2纠错权重与注释校准
 虚与委蛇	xu yu wei she	100	虚与委(wēi)蛇(yí)	C	R1/R2纠错权重与注释校准
 木讷	mu na	100	mù nè	B	R1/R2纠错权重与注释校准
-独乐乐	du le le	50	独乐(yuè)乐(lè)	B	R1/R2纠错权重与注释校准
-众乐乐	zhong le le	50	众乐(yuè)乐(lè)	B	R1/R2纠错权重与注释校准
-荨麻	xun ma	30	审音拟 xún má / 现汉 qián má	A	R1/R2纠错权重与注释校准
-荨麻疹	qian ma zhen	80	习惯 qián má zhěn / 规范 xún má zhěn	A	Round 3 Style A: A类标签标准化：“异读”->“习惯”（32字）
-模具	mo ju	50	mú jù	B	R1/R2纠错权重与注释校准
+独乐乐	du le le	50	独乐(yuè)乐(lè)	C	R1/R2纠错权重与注释校准
+众乐乐	zhong le le	50	众乐(yuè)乐(lè)	C	R1/R2纠错权重与注释校准
 草薙	cao zhi	50	cǎo tì	C	R1/R2纠错权重与注释校准
 草薙京	cao zhi jing	80	草薙(tì)京	C	R1/R2纠错权重与注释校准
 草薙剑	cao zhi jian	50	草薙(tì)剑	C	R1/R2纠错权重与注释校准
 贾平凹	jia ping ao	100	贾平凹(wā)	C	R1/R2纠错权重与注释校准
-雪佛兰	xue fo lan	0	规范 xuě fó lán / 习惯 xuě fú lán	A	R1/R2纠错词条补录
 强劲	qiang jin	150	qiáng jìng	B	R1/R2纠错权重与注释校准
 胴体	tong ti	150	dòng tǐ	C	R1/R2纠错权重与注释校准
 力能扛鼎	li neng kang ding	50	力能扛(gāng)鼎	C	R1/R2纠错权重与注释校准
@@ -40,8 +32,6 @@
 掺和	chan he	150	chān huo	B	R1/R2纠错权重与注释校准
 称职	cheng zhi	110	chèn zhí	B	R1/R2纠错权重与注释校准
 太行山	tai xing shan	100	太行(háng)山	B	R1/R2纠错权重与注释校准
-发酵	fa xiao	250	fā jiào	B	R1/R2纠错权重与注释校准
-酵母菌	xiao mu jun	80	酵(jiào)母菌	B	R1/R2纠错权重与注释校准
 殷红	yin hong	15	yān hóng	B	R1/R2纠错权重与注释校准
 暖和	nuan he	150	nuǎn huo	B	R1/R2纠错权重与注释校准
 模棱两可	mo ling liang ke	100	模棱(léng)两可	C	R1/R2纠错权重与注释校准
@@ -74,33 +64,30 @@
 青𬞟之末	qing ping zhi mo	50	青𬞟(pín)之末	C	R1/R2纠错权重与注释校准
 优惠券	you hui juan	150	优惠券(quàn)	C	R1/R2纠错权重与注释校准
 拱券	gong quan	50	gǒng xuàn	B	R1/R2纠错权重与注释校准
-脑卒中	nao zu zhong	80	脑卒(cù)中	C	R1/R2纠错权重与注释校准
+脑卒中	nao zu zhong	80	脑卒(cù)中(zhòng)	C	R1/R2纠错权重与注释校准
 潟湖	xie hu	50	xì hú	C	R1/R2纠错权重与注释校准
 果脯	guo pu	50	guǒ fǔ	B	R1/R2纠错权重与注释校准
 肉脯	rou pu	50	ròu fǔ	B	R1/R2纠错权重与注释校准
 白𬶨豚	bai qi tun	50	白𬶨(jì)豚	C	R1/R2纠错权重与注释校准
 罄竹难书	xin zhu nan shu	80	馨(罄qìng)竹难书	C	R1/R2纠错权重与注释校准
 饮鸩止渴	yin jiu zhi ke	100	饮鸠(鸩zhèn)止渴	C	R1/R2纠错权重与注释校准
-模板	mo ban	40	习惯 mó bǎn / 规范 mú bǎn	A	R1/R2纠错权重与注释校准
 胡茬	hu zha	80	胡渣(茬chá)	C	Round 3 Style A: 补全NO_TONE_MARK声调：cha->chá
-咖喱	ka li	120	gā lí	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 搅和	jiao he	100	jiǎo huo	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音（“和”轻声）
 神祇	shen zhi	50	神祗(祇qí)	C	R1/R2纠错权重与注释校准
-黏腻	zhan ni	40	粘(黏nián)腻	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-黏膜	zhan mo	15	粘(黏nián)膜	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-黏人	zhan ren	15	粘(黏nián)人	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-胃黏膜	wei zhan mo	80	胃粘(黏nián)膜	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-鼻黏膜	bi zhan mo	80	鼻粘(黏nián)膜	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+黏腻	zhan ni	40	粘(黏nián)腻	C	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+黏膜	zhan mo	15	粘(黏nián)膜	C	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+黏人	zhan ren	15	粘(黏nián)人	C	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+胃黏膜	wei zhan mo	80	胃粘(黏nián)膜	C	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+鼻黏膜	bi zhan mo	80	鼻粘(黏nián)膜	C	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
 烘焙	hong pei	150	烘培(焙bèi)	C	Round 3 Style A: 补全NO_TONE_MARK声调：bei->bèi
 仿佛	pang fo	20	fǎng fú	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 钮祜禄	niu gu lu	50	钮钴(祜hù)禄	C	Round 3 Style A: 补全NO_TONE_MARK声调：hu->hù
 钮祜禄氏	niu gu lu shi	50	钮钴(祜hù)禄氏	C	Round 3 Style A: 补全NO_TONE_MARK声调：hu->hù
-血脉偾张	xue mai ben zhang	80	常见 血脉贲(bēn)张 / 规范 血脉偾(fèn)张	A	Round 3 Style A: A类标签标准化并补全“贲(bēn)”声调（26字）
-黏合	zhan he	50	粘(黏nián)合	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+黏合	zhan he	50	粘(黏nián)合	C	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
 一刹那	yi sha na	100	一霎(刹chà)那	C	Round 3 Style A: 补全NO_TONE_MARK声调：cha->chà
 堂吉诃德	tang ji ke de	80	堂吉柯(诃hē)德	C	Round 3 Style A: 补全NO_TONE_MARK声调：he->hē
 叱咤风云	chi cha feng yun	100	叱诧(咤zhà)风云	C	Round 3 Style A: 补全NO_TONE_MARK声调：zha->zhà
-黏黏糊糊	zhan zhan hu hu	80	粘(黏nián)粘(黏nián)糊糊	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+黏黏糊糊	zhan zhan hu hu	80	粘(黏nián)粘(黏nián)糊糊	C	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
 刹那间	sha na jian	100	霎(刹chà)那间	C	Round 3 Style A: 补全NO_TONE_MARK声调：cha->chà
 刹那	sha na	100	霎(刹chà)那	C	Round 3 Style A: 补全NO_TONE_MARK声调：cha->chà
 螺蛳粉	luo shi fen	150	螺狮(蛳sī)粉	C	Round 3 Style A: 补全NO_TONE_MARK声调：si->sī
@@ -111,9 +98,7 @@
 仿佛	fang fo	150	fǎng fú	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 仿佛	pang fu	20	fǎng fú	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 纨绔子弟	wan kua zi di	100	纨绔(kù)子弟	C	R1/R2纠错词条补录
-比萨	pi sa	180	常见 披萨 pī sà / 规范 比萨 bǐ sà	A	Round 3 A-dual: UPDATE_SECONDARY：原“音译比(bǐ)萨(sà) / 披萨”标准化为A类“常见/规范”模板
 给予	gei yu	200	jǐ yǔ	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-张柏芝	zhang bai zhi	0	规范 张柏(bǎi)芝 / 习惯 张柏(bó)芝	A	Round 3 Style A: 原注释34字触发LEN>32警告，精简为24字并保持规范/习惯对照
 藤蔓	teng man	150	téng wàn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 吱声	zhi sheng	120	zī shēng	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 调换	tiao huan	100	diào huàn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
@@ -127,7 +112,6 @@
 游说	you shuo	400	yóu shuì	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 单薄	dan bao	400	dān bó	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 轻薄	qing bao	400	qīng bó	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-躯壳	qu ke	60	qū qiào	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 裸露	luo lou	150	luǒ lù	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 外露	wai lou	60	wài lù	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 深藏不露	shen cang bu lou	100	深藏不露(lù)	C	R1/R2纠错词条补录
@@ -137,41 +121,21 @@
 扛鼎	kang ding	50	gāng dǐng	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 薄膜	bao mo	80	bó mó	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 刘禅	liu chan	150	liú shàn	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-吐蕃	tu fan	50	台湾 tǔ fān / 大陆 tǔ bō	A	Round 3 A-dual: UPDATE_SECONDARY：原“吐蕃(bō)”升级为A类两岸双标准注释
-泊松分布	po song fen bu	50	泊(bó)松分布	C	R1/R2纠错词条补录
 便宜坊	pian yi fang	50	便(biàn)宜坊	C	R1/R2纠错词条补录
-镀铬	du luo	50	dù gè	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 凑合	cou huo	150	còu he	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音并修复NO_TONE_MARK（“合”轻声）
 契诃夫	qi ke fu	100	契科(诃hē)夫	C	R1/R2纠错词条补录
-味噌	wei ceng	0	规范 wèi cēng / 习惯 wèi zēng	A	R1/R2纠错词条补录
-味噌	wei zeng	0	习惯 wèi zēng / 规范 wèi cēng	A	R1/R2纠错词条补录
-雪佛兰	xue fu lan	150	习惯 xuě fú lán / 规范 xuě fó lán	A	R1/R2纠错词条补录
-张柏芝	zhang bo zhi	0	习惯 张柏(bó)芝 / 规范 张柏(bǎi)芝	A	Round 3 Style A: 原注释34字触发LEN>32警告，精简为24字并保持习惯/规范对照
-密钥	mi yue	0	规范 mì yuè / 习惯 mì yào	A	R1/R2纠错词条补录
-密钥	mi yao	350	习惯 mì yào / 规范 mì yuè	A	R1/R2纠错词条补录
-模板	mu ban	0	规范 mú bǎn / 习惯 mó bǎn	A	R1/R2纠错词条补录
-荨麻	qian ma	0	现汉 qián má / 审音拟 xún má	A	R1/R2纠错词条补录
-荨麻疹	xun ma zhen	0	规范 xún má zhěn / 习惯 qián má zhěn	A	Round 3 Style A: A类标签标准化：“异读”->“习惯”（32字）
-血脉偾张	xue mai fen zhang	0	规范 血脉偾(fèn)张 / 常见 血脉贲(bēn)张	A	Round 3 Style A: A类标签标准化：“亦作”->“常见”（26字）
-呆板	ai ban	30	旧读 ái bǎn / 规范 dāi bǎn	A	Round 3 A-dual: KEEP_SECONDARY：与主读音配对为完整A类双标准注释
-鼻塞	bi sai	250	习惯 bí sāi / 规范 bí sè	A	Round 3 A-dual: UPDATE_SECONDARY：规范标签“口语”->“习惯”，与主读音配对
 爪牙	zhua ya	100	zhǎo yá	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 露出	lou chu	150	lù chū	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 露出了	lou chu le	100	露(lù)出了	B	R1/R2纠错词条补录
 成熟	cheng shou	150	chéng shú	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 熟练	shou lian	100	shú liàn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 相熟	xiang shou	15	xiāng shú	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-流血	liu xie	80	习惯 liú xiě / 规范 liú xuè	A	Round 3 A-dual: UPDATE_SECONDARY：原“流血(xuè)”升级为A类双读音注释
 血渍	xie zi	30	xuè zì	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 衣裳	yi chang	50	yī shang	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音并修复NO_TONE_MARK（“裳”轻声）
 盖聂	gai nie	150	gě niè	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-黄柏	huang bai	40	huáng bò	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-填塞	tian sai	25	tián sè	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 削铁如泥	xiao tie ru ni	80	削(xuē)铁如泥	C	R1/R2纠错词条补录
-宝幢	bao zhuang	15	习惯 bǎo zhuàng / 规范 bǎo chuáng	A	Round 3 A-dual: UPDATE_SECONDARY：原“宝幢(chuáng)”升级为A类双读音注释
 范雎	fan sui	40	范睢(雎jū)	C	Round 3 Style A: 统一为Style A错字纠偏格式“错字(正字zhèng yīn)”（去掉非A类斜杠）
 大迦叶	da jia ye	50	大迦叶(shè)	C	R1/R2纠错词条补录
-壳层	ke ceng	30	qiào céng	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 呷哺呷哺	ga bu ga bu	80	呷(xiā)哺呷哺	C	R1/R2纠错词条补录
 花剌子模	hua ci zi mo	80	花剌(là)子模	C	R1/R2纠错词条补录
 自始至终	zhi shi zhi zhong	80	至(自zì)始至终	C	R1/R2纠错词条补录
@@ -196,9 +160,6 @@
 角逐	jiao zhu	90	jué zhú	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 标的	biao de	100	biāo dì	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 剖腹产	pao fu chan	100	刨(剖pōu)腹产	C	Round 3 Style A: 明确为高频错字“刨腹产”纠偏（区别于已删D类误读“解剖/剖析”）
-混淆	hun yao	150	台湾 hùn yáo / 大陆 hùn xiáo	A	Round 3 A-dual: UPDATE_SECONDARY：原“混(hùn)淆(xiáo)”升级为A类两岸双标准注释
-混淆视听	hun yao shi ting	100	混淆(xiáo)视听	C	Round 3 Style A: 4字纯纠错仅在易错字“淆”后标调（移除非易错字“混”括号）
-混淆是非	hun yao shi fei	50	混淆(xiáo)是非	C	Round 3 Style A: 4字纯纠错仅在易错字“淆”后标调（移除非易错字“混”括号）
 对称	dui cheng	100	duì chèn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 匀称	yun cheng	100	yún chèn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 不称职	bu cheng zhi	100	不称(chèn)职	B	R1/R2纠错词条补录
@@ -211,14 +172,13 @@
 剥削	bo xiao	150	bō xuē	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 削减	xiao jian	200	xuē jiǎn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 剥夺	bao duo	150	bō duó	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-酵母	xiao mu	80	jiào mǔ	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 湖泊	hu bo	150	hú pō	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 血泊	xue bo	100	xuè pō	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 漂泊	piao po	15	piāo bó	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 停泊	ting po	80	tíng bó	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 光纤	guang qian	150	guāng xiān	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 纤维	qian wei	200	xiān wéi	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-膳食纤维	shan shi qian wei	100	膳食纤(xiān)维	C	R1/R2纠错词条补录
+膳食纤维	shan shi qian wei	100	膳食纤(xiān)维	B	R1/R2纠错词条补录
 碳纤维	tan qian wei	100	碳纤(xiān)维	B	R1/R2纠错词条补录
 校准	xiao zhun	150	jiào zhǔn	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 校正	xiao zheng	100	jiào zhèng	B	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
@@ -241,7 +201,6 @@
 粗犷	cu kuang	100	cū guǎng	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 炽热	zhi re	150	chì rè	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 白炽灯	bai zhi deng	100	白炽(chì)灯	C	R1/R2纠错词条补录
-迫击炮	po ji pao	100	迫(pǎi)击炮	B	R1/R2纠错词条补录
 斡旋	gan xuan	100	wò xuán	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 泥淖	ni zhuo	80	ní nào	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 龟裂	gui lie	100	jūn liè	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
@@ -259,7 +218,6 @@
 东莞	dong wan	15	dōng guǎn	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 吐谷浑	tu gu hun	80	吐谷(yù)浑	C	R1/R2纠错词条补录
 亳州	hao zhou	80	bó zhōu	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
-秘鲁	mi lu	150	bì lǔ	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 蚌埠	bang bu	15	bèng bù	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 荥阳	rong yang	80	xíng yáng	C	Round 3 Style A: Style A双字纯纠错去括号改完整带调拼音
 冒顿单于	mao dun dan yu	80	冒(mò)顿(dú)单(chán)于	C	Round 3 Style A: 统一专名括号内拼音为全小写，与规范示例一致
@@ -339,43 +297,319 @@
 怙恶不悛	gu e bu quan	50	怙(hù)恶不悛	C	R1/R2纠错词条补录
 怙恶不悛	gu e bu jun	50	怙(hù)恶不悛(quān)	C	R1/R2纠错词条补录
 怙恶不悛	hu e bu jun	50	怙恶不悛(quān)	C	R1/R2纠错词条补录
-黏性流体	zhan xing liu ti	15	粘(黏nián)性流体	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-黏附分子	zhan fu fen zi	15	粘(黏nián)附分子	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-黏膜免疫	zhan mo mian yi	15	粘(黏nián)膜免疫	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-表观黏度	biao guan zhan du	15	表观粘(黏nián)度	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-黏性力	zhan xing li	15	粘(黏nián)性力	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-黏合力	zhan he li	15	粘(黏nián)合力	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-高黏度	gao zhan du	15	高粘(黏nián)度	B	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
-说服	shuo fu	0	规范 shuō fú / 旧读 shuì fú	A	Round 3 A-dual: ADD_PRIMARY：规范第4节A类示例，补齐主读音w=0双读音注释（L1 shuō fú vs 旧读 shuì fú）
-呆板	dai ban	0	规范 dāi bǎn / 旧读 ái bǎn	A	Round 3 A-dual: ADD_PRIMARY：规范第4节A类示例，补齐主读音w=0双读音注释（L1 dāi bǎn vs 旧读 ái bǎn）
-鼻塞	bi se	0	规范 bí sè / 习惯 bí sāi	A	Round 3 A-dual: ADD_PRIMARY：规范第4节A类示例，补齐主读音w=0双读音注释（L1 bí sè vs 习惯 bí sāi）
-宝幢	bao chuang	0	规范 bǎo chuáng / 习惯 bǎo zhuàng	A	Round 3 A-dual: ADD_PRIMARY：规范第3/4节A类地名示例，补齐主读音w=0双读音注释（L2宁波轨道交通 bǎo chuáng vs 习惯 bǎo zhuàng）
-比萨	bi sa	0	规范 比萨 bǐ sà / 常见 披萨 pī sà	A	Round 3 A-dual: ADD_PRIMARY：规范第4节A类示例，补齐主读音w=0双标准注释（现汉第7版“比萨/披萨”并行）
-吐蕃	tu bo	0	大陆 tǔ bō / 台湾 tǔ fān	A	Round 3 A-dual: ADD_PRIMARY：L1大陆规范tǔ bō与L5台湾/旧读tǔ fān长期并行，补齐主读音w=0双标准注释
-槟榔	bing lang	0	大陆 bīng láng / 台湾 bīn láng	A	Round 3 A-dual: ADD_PRIMARY：L1大陆规范bīng láng与L5台湾国语bīn láng并行，补齐主读音w=0双标准注释
-混淆	hun xiao	0	大陆 hùn xiáo / 台湾 hùn yáo	A	Round 3 A-dual: ADD_PRIMARY：L1大陆规范hùn xiáo与L5台湾国语hùn yáo并行，补齐主读音w=0双标准注释
-流血	liu xue	0	规范 liú xuè / 习惯 liú xiě	A	Round 3 A-dual: ADD_PRIMARY：规范第3节L4/多音字准则明确“流血”书面xuè/口语xiě并行，补齐w=0双读音注释
-阿弥陀佛	e mi tuo fo	0	规范 阿(ē)弥陀佛 / 习惯 阿(ā)弥陀佛	A	Round 3 A-dual: ADD_PRIMARY：L1现汉规范ē与L3佛教梵音通行ā并行，补齐主读音w=0双读音注释
+黏性流体	zhan xing liu ti	15	粘(黏nián)性流体	C	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+黏附分子	zhan fu fen zi	15	粘(黏nián)附分子	C	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+黏膜免疫	zhan mo mian yi	15	粘(黏nián)膜免疫	C	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+表观黏度	biao guan zhan du	15	表观粘(黏nián)度	C	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+黏性力	zhan xing li	15	粘(黏nián)性力	C	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+黏合力	zhan he li	15	粘(黏nián)合力	C	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
+高黏度	gao zhan du	15	高粘(黏nián)度	C	Round 3 Style A: 补全NO_TONE_MARK声调：nian->nián
 阿房宫	e pang gong	0	规范 阿(ē)房(páng)宫 / 常见 ā fáng	A	现汉第7版/社会通行习惯(L1/L5)
 阿房宫	a fang gong	0	常见 阿(ā)房(fáng)宫 / 规范 ē páng	A	现汉第7版/社会通行习惯(L1/L5)
 阿房宫	a pang gong	0	常见 阿(ā)房(páng)宫 / 规范 ē páng	A	现汉第7版/社会通行习惯(L1/L5)
 阿房宫	e fang gong	0	常见 阿(ē)房(fáng)宫 / 规范 ē páng	A	现汉第7版/社会通行习惯(L1/L5)
-甲壳虫	jia qiao chong	0	规范 甲壳(qiào)虫 / 常见 甲壳(ké)虫	A	现汉第7版/社会通行习惯(L1/L5)
-甲壳虫	jia ke chong	0	常见 甲壳(ké)虫 / 规范 甲壳(qiào)虫	A	现汉第7版/社会通行习惯(L1/L5)
-芥蓝	jie lan	0	规范 jiè lán / 旧读 gài lán	A	现汉第7版/第5版旧读(L1)
-芥蓝	gai lan	0	旧读 gài lán / 规范 jiè lán	A	现汉第7版/第5版旧读(L1)
-郭明錤	guo ming qi	31	郭明錤(jī)	C	现汉第7版/两岸重编辞典均读jī(L1/L3)
-周柏豪	zhou bai hao	0	规范 周柏(bǎi)豪 / 习惯 周柏(bó)豪	A	现汉第7版/本人确认读音(L1/L3)
-周柏豪	zhou bo hao	0	习惯 周柏(bó)豪 / 规范 周柏(bǎi)豪	A	现汉第7版/粤语习惯(L1/L3)
-鲗鱼涌	ze yu chong	0	规范 鲗(zé)鱼涌 / 旧读 鲗(zéi)鱼涌	A	现汉第7版/新华字典第12版(L1/L2)
-鲗鱼涌	zei yu chong	0	旧读 鲗(zéi)鱼涌 / 规范 鲗(zé)鱼涌	A	传统/港铁习惯旧读(L2/L5)
 角斗	jiao dou	60	jué dòu	B	现汉第7版(L1)，与主角/角色/配角/角逐同属合法多音字习惯
 角斗士	jiao dou shi	100	角(jué)斗士	B	现汉第7版(L1)，与主角/角色/配角/角逐同属合法多音字习惯
 角力	jiao li	60	jué lì	B	现汉第7版(L1)，与主角/角色/配角/角逐同属合法多音字习惯
 打颤	da chan	60	dǎ zhàn	B	现汉第7版（打颤=打战 dǎ zhàn）
-解铃还须系铃人	jie ling hai xu ji ling ren	50	解铃还须系(xì)铃人	B	现汉第7版(L1)
-卡住	ka zhu	150	qiǎ zhù	B	现汉第7版(L1)
+解铃还须系铃人	jie ling hai xu ji ling ren	50	解铃还须系(xì)铃人	C	现汉第7版(L1)
 胆战心惊	dan chan xin jing	80	胆颤(战zhàn)心惊	C	现汉第7版/历史通假
 柯伊伯带	ke yi bai dai	60	柯伊柏(伯bó)带	C	全国科技名词委/高频错字(L2)
-黏合剂	zhan he ji	20	粘(黏nián)合剂	B	现汉第7版/全国科技名词委(L1/L2)
+黏合剂	zhan he ji	20	粘(黏nián)合剂	C	现汉第7版/全国科技名词委(L1/L2)
 兰若寺	lan ruo si	30	兰若(rě)寺	C	现汉第7版(L1)
+体癣	ti xian	50	tǐ xuǎn	C	现汉第7版(L1)，补齐癣家族SSOT管理
+股癣	gu xian	50	gǔ xuǎn	C	现汉第7版(L1)，补齐癣家族SSOT管理
+足癣	zu xian	50	zú xuǎn	C	现汉第7版(L1)，补齐癣家族SSOT管理
+氙气手电筒	shan qi shou dian tong	50	氙(xiān)气手电筒	C	现汉第7版/全国名词委(L1/L2)，补齐氙气家族SSOT
+柔荑花序	rou yi hua xu	50	柔荑(tí)花序	C	现汉第7版(L1)，补齐柔荑家族SSOT
+手如柔荑	shou ru rou yi	50	手如柔荑(tí)	C	现汉第7版(L1)，补齐柔荑家族SSOT
+起于青𬞟之末	qi yu qing ping zhi mo	50	起于青𬞟(pín)之末	C	现汉第7版(L1)，补齐青𬞟家族SSOT
+风起于青𬞟之末	feng qi yu qing ping zhi mo	50	风起于青𬞟(pín)之末	C	现汉第7版(L1)，补齐青𬞟家族SSOT
+卒中	zu zhong	40	cù zhòng	C	现汉第7版/全国名词委(L1/L2)，补齐脑卒中
+包扎	bao zha	100	bāo zā	B	现汉第7版(L1)，补齐结扎/捆扎
+加压包扎	jia ya bao zha	40	加压包扎(zā)	B	现汉第7版/外科急诊高频(L1)
+栓塞	shuan sai	60	shuān sè	B	现汉第7版/全国名词委(L1/L2)
+肺栓塞	fei shuan sai	50	肺栓塞(sè)	B	现汉第7版/全国名词委(L1/L2)
+脑栓塞	nao shuan sai	30	脑栓塞(sè)	B	现汉第7版/全国名词委(L1/L2)
+地塞米松	di se mi song	40	地塞(sāi)米松	B	中国药典2020/防矫枉过正读sè(L2)
+呋塞米	fu se mi	25	呋塞(sāi)米	B	中国药典2020/防矫枉过正读sè(L2)
+咯血	ge xue	40	kǎ xiě	B	现汉第7版(L1)，咯合法多音字习惯误读
+咯血	luo xue	30	kǎ xiě	B	现汉第7版(L1)，咯合法多音字习惯误读
+咯痰	ge tan	30	kǎ tán	B	现汉第7版(L1)
+咯痰	luo tan	25	kǎ tán	B	现汉第7版(L1)
+枸橼酸	gou yuan suan	40	枸(jǔ)橼酸	B	现汉第7版/中国药典2020(L1/L2)
+枸橼酸钠	gou yuan suan na	30	枸(jǔ)橼酸钠	B	现汉第7版/中国药典2020(L1/L2)
+枸橼酸钾	gou yuan suan jia	30	枸(jǔ)橼酸钾	B	现汉第7版/中国药典2020(L1/L2)
+枸橼酸西地那非	gou yuan suan xi di na fei	30	枸(jǔ)橼酸西地那非	B	中国药典2020(L2)
+肠系膜	chang ji mo	40	肠系(xì)膜	B	现汉第7版/解剖学名词(L1/L2)
+腱鞘炎	jian shao yan	60	腱鞘(qiào)炎	B	现汉第7版/骨科高频(L1/L2)
+鞘膜积液	shao mo ji ye	25	鞘(qiào)膜积液	B	现汉第7版/泌尿高频(L1/L2)
+震颤	zhen zhan	60	zhèn chàn	B	现汉第7版/神经科高频(L1/L2)
+恶露	e lou	40	è lù	B	现汉第7版/产科高频(L1/L2)
+稽留流产	qi liu liu chan	30	稽(jī)留流产	B	现汉第7版/产科高频(L1/L2)
+贲门	pen men	40	bēn mén	C	现汉第7版/解剖学名词(L1/L2)
+嗜铬细胞瘤	shi luo xi bao liu	30	嗜铬(gè)细胞瘤	C	现汉第7版/内分泌高频(L1/L2)
+霰粒肿	san li zhong	30	霰(xiàn)粒肿	C	现汉第7版/眼科高频(L1/L2)
+甲癣	jia xian	25	jiǎ xuǎn	C	现汉第7版(L1)，补齐癣家族
+羟氯喹	jing lv kui	40	羟(qiǎng)氯喹	C	全国科技名词委/药学高频(L2)
+羟氯喹	yang lv kui	30	羟(qiǎng)氯喹	C	全国科技名词委/药学高频(L2)
+依托泊苷	yi tuo po gan	25	依托泊(bó)苷	B	中国药典2020(L2)
+二甲双胍	er jia shuang gu	50	二甲双胍(guā)	C	中国药典2020/内分泌常用药(L2)
+颞下颌关节	nie xia han guan jie	30	颞下颌(hé)关节	C	全国科技名词委/解剖学(L2)
+尿潴留	niao chu liu	30	尿潴(zhū)留	C	现汉第7版/泌尿科高频(L1/L2)
+尿潴留	niao zhe liu	25	尿潴(zhū)留	C	现汉第7版/泌尿科高频(L1/L2)
+龋齿	yu chi	60	qǔ chǐ	C	现汉第7版/口腔高频(L1)
+龋齿	ju chi	60	qǔ chǐ	C	现汉第7版/口腔高频(L1)
+砧骨	zhan gu	25	zhēn gǔ	C	现汉第7版/解剖学听小骨(L1/L2)
+跖屈	zhe qu	25	zhí qū	C	全国科技名词委/骨科衍生防混音(L2)
+跖筋膜炎	zhe jin mo yan	25	跖(zhí)筋膜炎	C	全国科技名词委/骨科衍生防混音(L2)
+跖趾关节	zhe zhi guan jie	25	跖(zhí)趾关节	C	全国科技名词委/骨科衍生防混音(L2)
+跖骨骨折	zhe gu gu zhe	25	跖(zhí)骨骨折	C	全国科技名词委/骨科衍生防混音(L2)
+跖疣	zhe you	20	zhí yóu	C	全国科技名词委/皮肤骨科衍生(L2)
+跖痛	zhe tong	15	zhí tòng	C	全国科技名词委/骨科衍生(L2)
+阿胶	a jiao	80	ē jiāo	B	现汉第7版/中国药典2020(L1/L2)
+东阿阿胶	dong a a jiao	50	东阿(ē)阿(ē)胶	B	现汉第7版/地名及药典(L1/L2)
+东阿阿胶	dong e a jiao	40	东阿阿(ē)胶	B	现汉第7版/药典(L1/L2)
+白术	bai shu	35	bái zhú	B	现汉第7版/中国药典2020(L1/L2)
+参苓白术散	shen ling bai shu san	40	参苓白术(zhú)散	B	中国药典2020(L2)
+苍术	cang shu	40	cāng zhú	B	现汉第7版/中国药典2020(L1/L2)
+莪术	e shu	15	é zhú	B	现汉第7版/中国药典2020(L1/L2)
+桔梗	ju geng	80	jié gěng	B	现汉第7版/中国药典2020(L1/L2)
+没药	mei yao	18	mò yào	B	现汉第7版/中国药典2020(L1/L2)
+茜草	xi cao	30	qiàn cǎo	B	现汉第7版/中国药典2020(L1/L2)
+桑螵蛸	sang piao shao	40	桑螵蛸(xiāo)	B	现汉第7版/中国药典2020(L1/L2)
+海螵蛸	hai piao shao	30	海螵蛸(xiāo)	B	现汉第7版/中国药典2020(L1/L2)
+蔓荆子	wan jing zi	40	蔓(màn)荆子	B	现汉第7版/中国药典2020(L1/L2)
+蛤蚧	ha jie	40	gé jiè	B	现汉第7版/中国药典2020(L1/L2)
+蛤壳	ha ke	30	gé ké	B	中国药典2020 GEKE(L2)
+胖大海	pan da hai	30	胖(pàng)大海	B	现汉第7版/中国药典2020(L1/L2)
+瞿麦	ju mai	20	qú mài	B	现汉第7版/中国药典2020(L1/L2)
+豆豉	dou gu	30	dòu chǐ	C	现汉第7版(L1)
+淡豆豉	dan dou gu	30	淡豆鼓(豉chǐ)	C	现汉第7版/中国药典2020(L1/L2)
+秦艽	qin jiu	30	qín jiāo	C	现汉第7版/中国药典2020(L1/L2)
+秦艽	qin qiu	30	qín jiāo	C	现汉第7版/中国药典2020(L1/L2)
+莱菔子	lai bo zi	40	莱菔(fú)子	C	现汉第7版/中国药典2020(L1/L2)
+川芎	chuan qiong	40	chuān xiōng	C	现汉第7版/中国药典2020(L1/L2)
+黄芪	huang shi	30	huáng qí	C	现汉第7版/中国药典2020(L1/L2)
+萆薢	bei xie	12	bì xiè	C	现汉第7版/中国药典2020(L1/L2)
+萆薢	bi jie	12	bì xiè	C	现汉第7版/中国药典2020(L1/L2)
+薤白	jie bai	20	xiè bái	C	现汉第7版/中国药典2020(L1/L2)
+萹蓄	pian xu	12	biān xù	C	现汉第7版/中国药典2020(L1/L2)
+紫菀	zi yuan	25	zǐ wǎn	C	现汉第7版/中国药典2020(L1/L2)
+诃子	ke zi	20	hē zǐ	C	现汉第7版/中国药典2020(L1/L2)
+石斛	shi jiao	30	shí hú	C	现汉第7版/中国药典2020(L1/L2)
+铁皮石斛	tie pi shi jiao	40	铁皮石斛(hú)	C	现汉第7版/中国药典2020(L1/L2)
+薏苡仁	yi si ren	40	薏苡(yǐ)仁	C	现汉第7版/中国药典2020(L1/L2)
+牛蒡子	niu pang zi	30	牛蒡(bàng)子	C	现汉第7版/中国药典2020(L1/L2)
+马齿苋	ma chi jian	30	马齿笕(苋xiàn)	C	现汉第7版/中国药典2020(L1/L2)
+炙甘草	jiu gan cao	30	炙(zhì)甘草	C	现汉第7版/中国药典2020(L1/L2)
+攒竹	zan zhu	30	cuán zhú	B	GB/T12346-2021(L2)
+攒竹穴	zan zhu xue	40	攒(cuán)竹穴	B	GB/T12346-2021(L2)
+膏肓	gao mang	40	gāo huāng	C	现汉第7版(L1)，补齐病入膏肓
+膻中	shan zhong	40	dàn zhōng	C	GB/T12346-2021(L2)，防误读羊膻shān
+膻中穴	shan zhong xue	40	膻(dàn)中穴	C	GB/T12346-2021(L2)
+率谷	lv gu	20	shuài gǔ	C	GB/T12346-2021(L2)
+枸杞子	gou ji zi	30	枸杞(qǐ)子	C	现汉第7版/药典(L1/L2，仅收3字避狗脊)
+轧钢	ya gang	50	zhá gāng	B	1985审音表/现汉第7版(L1)
+轧制	ya zhi	80	zhá zhì	B	1985审音表/现汉第7版(L1)
+冷轧	leng ya	50	lěng zhá	B	1985审音表/现汉第7版(L1)
+热轧	re ya	50	rè zhá	B	1985审音表/现汉第7版(L1)
+轧机	ya ji	40	zhá jī	B	1985审音表/现汉第7版(L1)
+轧辊	ya gun	30	zhá gǔn	B	1985审音表/现汉第7版(L1)
+栅格	zha ge	100	shān gé	B	现汉第7版/全国名词委(L1/L2)
+栅格化	zha ge hua	60	栅(shān)格化	B	全国名词委/图形学高频(L2)
+栅格系统	zha ge xi tong	50	栅(shān)格系统	B	全国名词委/前端设计高频(L2)
+光栅	guang zha	100	guāng shān	B	现汉第7版/全国名词委(L1/L2)
+光栅化	guang zha hua	80	光栅(shān)化	B	全国名词委/图形学高频(L2)
+栅极	zha ji	60	shān jí	B	现汉第7版/电子工程高频(L1/L2)
+给水	gei shui	120	jǐ shuǐ	B	1985审音表/现汉第7版(L1)
+给水排水	gei shui pai shui	80	给(jǐ)水排水	B	1985审音表/现汉第7版(L1)
+进给	jin gei	15	jìn jǐ	B	现汉第7版/机械制造术语(L1/L2)
+进给量	jin gei liang	30	进给(jǐ)量	B	现汉第7版/机械制造术语(L1/L2)
+进给速度	jin gei su du	30	进给(jǐ)速度	B	现汉第7版/机械制造术语(L1/L2)
+巷道	xiang dao	40	hàng dào	B	1985审音表/现汉第7版采矿专读(L1)
+桁架	hang jia	80	héng jià	B	现汉第7版/建筑结构术语(L1/L2)
+桁架结构	hang jia jie gou	40	桁(héng)架结构	B	现汉第7版/建筑结构术语(L1/L2)
+卡盘	ka pan	50	qiǎ pán	B	现汉第7版/机械夹具术语(L1/L2)
+游标卡尺	you biao qia chi	40	游标卡(kǎ)尺	B	现汉第7版(L1)
+卡尺	qia chi	30	kǎ chǐ	B	现汉第7版(L1)
+刨床	pao chuang	50	bào chuáng	B	现汉第7版(L1)
+刨花板	pao hua ban	80	刨(bào)花板	B	现汉第7版(L1)
+刨刀	pao dao	50	bào dāo	B	现汉第7版(L1)
+刨削	pao xiao	40	bào xiāo	B	现汉第7版/机加工术语(L1/L2)
+切削	qie xue	80	qiē xiāo	B	1985审音表原文：削xiāo切～(L1)
+车削	che xue	30	chē xiāo	B	1985审音表/机加工术语(L1)
+磨削	mo xue	30	mó xiāo	B	1985审音表/机加工术语(L1)
+铣削	xi xue	30	xǐ xiāo	B	1985审音表/机加工术语(L1)
+铣削	xian xiao	20	xǐ xiāo	B	大陆现汉第7版xǐ/台湾xiǎn(L1/L5)
+铣刀	xian dao	30	xǐ dāo	B	大陆现汉第7版xǐ/台湾xiǎn(L1/L5)
+脱模	tuo mo	50	tuō mú	B	现汉第7版(L1)
+开模	kai mo	50	kāi mú	B	现汉第7版(L1)
+字模	zi mo	30	zì mú	B	现汉第7版(L1)
+注塑模具	zhu su mo ju	40	注塑模(mú)具	B	现汉第7版(L1)
+冲压模具	chong ya mo ju	40	冲压模(mú)具	B	现汉第7版(L1)
+校验码	xiao yan ma	80	校(jiào)验码	B	1985审音表/IT高频(L1)
+校验和	xiao yan he	60	校(jiào)验和	B	1985审音表/IT高频(L1)
+奇偶校验	ji ou xiao yan	50	奇偶校(jiào)验	B	1985审音表/IT高频(L1)
+数据校验	shu ju xiao yan	50	数据校(jiào)验	B	1985审音表/IT高频(L1)
+校核	xiao he	40	jiào hé	B	1985审音表/工程高频(L1)
+调校	tiao xiao	60	tiáo jiào	B	1985审音表/汽车数码高频(L1)
+调校	diao jiao	50	tiáo jiào	B	现汉第7版(L1)
+阻塞	zu sai	150	zǔ sè	B	现汉第7版/OS并发高频(L1)
+非阻塞	fei zu sai	80	非阻塞(sè)	B	现汉第7版/OS并发高频(L1)
+阻塞队列	zu sai dui lie	50	阻塞(sè)队列	B	现汉第7版/并发编程高频(L1)
+拥塞	yong sai	80	yōng sè	B	现汉第7版/网络工程高频(L1)
+拥塞控制	yong sai kong zhi	60	拥塞(sè)控制	B	现汉第7版/网络工程高频(L1)
+堵塞	du sai	120	dǔ sè	B	现汉第7版(L1)
+闭塞	bi sai	60	bì sè	B	现汉第7版(L1)
+梗塞	geng sai	80	gěng sè	B	现汉第7版(L1)
+茅塞顿开	mao sai dun kai	80	茅塞(sè)顿开	C	现汉第7版(L1)
+敷衍塞责	fu yan sai ze	80	敷衍塞(sè)责	C	现汉第7版(L1)
+着色	zhao se	100	zhuó sè	B	现汉第7版/图形学高频(L1)
+着色器	zhao se qi	100	着(zhuó)色器	B	现汉第7版/图形学高频(L1)
+顶点着色器	ding dian zhao se qi	50	顶点着(zhuó)色器	B	现汉第7版/图形学高频(L1)
+对称性	dui cheng xing	100	对称(chèn)性	B	现汉第7版/数理高频(L1)
+不对称	bu dui cheng	100	不对称(chèn)	B	现汉第7版(L1)
+非对称	fei dui cheng	80	非对称(chèn)	B	现汉第7版/密码学高频(L1)
+对称加密	dui cheng jia mi	80	对称(chèn)加密	B	现汉第7版/密码学高频(L1)
+非对称加密	fei dui cheng jia mi	80	非对称(chèn)加密	B	现汉第7版/密码学高频(L1)
+轴对称	zhou dui cheng	80	轴对称(chèn)	B	现汉第7版/数学高频(L1)
+奇函数	qi han shu	60	奇(jī)函数	B	现汉第7版/数学高频(L1)
+奇偶	qi ou	80	jī ǒu	B	现汉第7版/数理高频(L1)
+奇偶性	qi ou xing	50	奇(jī)偶性	B	现汉第7版/数理高频(L1)
+奇点	ji dian	50	qí diǎn	B	现汉第7版/物理AI高频(L1)
+劲度系数	jing du xi shu	40	劲(jìn)度系数	B	现汉第7版/物理高频(L1)
+阿伏伽德罗	a fu ga de luo	40	阿伏伽(jiā)德罗	B	现汉第7版/理化高频(L1)
+阿伏伽德罗常数	a fu ga de luo chang shu	40	阿伏伽(jiā)德罗常数	B	现汉第7版/理化高频(L1)
+系泊	xi bo	30	jì bó	B	现汉第7版/船舶海工术语(L1/L2)
+系留	xi liu	30	jì liú	B	现汉第7版/航空航天术语(L1/L2)
+系留气球	xi liu qi qiu	40	系(jì)留气球	B	现汉第7版/航空航天术语(L1/L2)
+非甾体	fei zi ti	60	非甾(zāi)体	B	现汉第7版/全国名词委(L1/L2)
+非甾体抗炎药	fei zi ti kang yan yao	80	非甾(zāi)体抗炎药	B	现汉第7版/全国名词委(L1/L2)
+甾体	zi ti	30	zāi tǐ	B	现汉第7版/全国名词委(L1/L2)
+乙炔	yi gui	30	yǐ quē	B	现汉第7版/化学术语(L1/L2)
+炔烃	gui ting	40	quē tīng	B	现汉第7版/化学术语(L1/L2)
+陈省身	chen sheng shen	50	陈省(xǐng)身	C	现汉第7版/数学家专名(L1/L3)
+电烙铁	dian luo tie	60	电烙(lào)铁	B	现汉第7版/电工高频(L1)
+烙铁	luo tie	60	lào tiě	B	现汉第7版/电工高频(L1)
+氙气	shan qi	50	xiān qì	C	现汉第7版/全国名词委(L1/L2)
+卟啉	pu lin	50	bǔ lín	C	现汉第7版/全国名词委(L1/L2)
+卟啉病	pu lin bing	40	卟(bǔ)啉病	C	现汉第7版/医学高频(L1/L2)
+无砟轨道	wu cha gui dao	40	无碴(砟zhǎ)轨道	C	全国名词委/铁道工程(L2)
+泊松比	po song bi	40	泊(bó)松比	C	辞海规范/力学高频(L2)
+泊松方程	po song fang cheng	40	泊(bó)松方程	C	辞海规范/数学物理高频(L2)
+泊松过程	po song guo cheng	40	泊(bó)松过程	C	辞海规范/概率论高频(L2)
+泊松括号	po song kuo hao	30	泊(bó)松括号	C	辞海规范/分析力学高频(L2)
+伽马刀	jia ma dao	40	伽(gā)马刀	B	现汉第7版(L1)/台湾jiā
+伽马暴	jia ma bao	30	伽(gā)马暴	B	现汉第7版(L1)/台湾jiā
+伽马校正	jia ma jiao zheng	30	伽(gā)马校正	B	现汉第7版(L1)/台湾jiā
+黏度	zhan du	50	粘(黏nián)度	C	现汉第7版/全国名词委(L1/L2)
+黏土	zhan tu	50	粘(黏nián)土	C	现汉第7版/全国名词委(L1/L2)
+黏性	zhan xing	50	粘(黏nián)性	C	现汉第7版/全国名词委(L1/L2)
+黏滞	zhan zhi	50	粘(黏nián)滞	C	现汉第7版/全国名词委(L1/L2)
+胶黏剂	jiao zhan ji	50	胶粘(黏nián)剂	C	全国名词委(L2)
+曝晒	bao shai	100	pù shài	B	现汉第7版(L1)
+曝露	bao lu	30	pù lù	B	现汉第7版(L1)
+扎辫子	zha bian zi	50	扎(zā)辫子	B	现汉第7版(L1)
+扎马尾	zha ma wei	50	扎(zā)马尾	B	现汉第7版(L1)
+拓片	tuo pian	80	tà piàn	B	现汉第7版(L1)
+拓印	tuo yin	80	tà yìn	B	现汉第7版(L1)
+拓本	tuo ben	60	tà běn	B	现汉第7版(L1)
+封禅	feng chan	30	fēng shàn	C	现汉第7版(L1)，补齐禅让/刘禅
+确凿	que zuo	100	què záo	C	1985审音表统读záo/旧读zuò(L1)
+穿凿附会	chuan zuo fu hui	60	穿凿(záo)附会	C	1985审音表统读záo/旧读zuò(L1)
+言之凿凿	yan zhi zuo zuo	60	言之凿(záo)凿	C	1985审音表统读záo/旧读zuò(L1)
+配给	pei gei	100	pèi jǐ	B	现汉第7版(L1)
+说客	shuo ke	150	shuì kè	B	现汉第7版(L1)
+南无	nan wu	50	nā mó	C	现汉第7版(L1)
+露馅	lu xian	150	lòu xiàn	B	现汉第7版(L1)
+露脸	lu lian	150	lòu liǎn	B	现汉第7版(L1)
+露一手	lu yi shou	80	露(lòu)一手	B	现汉第7版(L1)
+露马脚	lu ma jiao	80	露(lòu)马脚	B	现汉第7版(L1)
+露怯	lu qie	80	lòu qiè	B	现汉第7版(L1)
+展露	zhan lou	80	zhǎn lù	B	现汉第7版(L1)
+崭露头角	zhan lou tou jiao	80	崭露(lù)头角	C	现汉第7版(L1)
+淡薄	dan bao	150	dàn bó	B	现汉第7版(L1)
+微薄	wei bao	150	wēi bó	B	现汉第7版(L1)
+薄利	bao li	150	bó lì	B	现汉第7版(L1)
+薄情	bao qing	40	bó qíng	B	现汉第7版(L1，严控<报请72)
+日薄西山	ri bao xi shan	60	日薄(bó)西山	C	现汉第7版(L1)
+厚此薄彼	hou ci bao bi	60	厚此薄(bó)彼	C	现汉第7版(L1)
+劲敌	jin di	100	jìng dí	B	现汉第7版(L1)
+劲旅	jin lv	80	jìng lǚ	B	现汉第7版(L1)
+劲爆	jin bao	40	jìng bào	B	现汉第7版(L1)
+苍劲	cang jin	60	cāng jìng	B	现汉第7版(L1)
+刚劲	gang jin	60	gāng jìng	B	现汉第7版(L1)
+疾风知劲草	ji feng zhi jin cao	60	疾风知劲(jìng)草	C	现汉第7版(L1)
+称心	cheng xin	60	chèn xīn	B	现汉第7版(L1)
+相称	xiang cheng	35	xiāng chèn	B	现汉第7版(L1)
+模子	mo zi	35	mú zi	B	现汉第7版(L1)
+校勘	xiao kan	60	jiào kān	B	现汉第7版(L1)
+校订	xiao ding	60	jiào dìng	B	现汉第7版(L1)
+校场	xiao chang	60	jiào chǎng	B	现汉第7版(L1)
+着落	zhao luo	80	zhuó luò	B	现汉第7版(L1)
+着陆	zhao lu	15	zhuó lù	B	现汉第7版(L1，严控<照录20)
+着想	zhe xiang	30	zhuó xiǎng	B	现汉第7版(L1)
+着装	zhe zhuang	60	zhuó zhuāng	B	现汉第7版(L1)
+着眼	zhe yan	20	zhuó yǎn	B	现汉第7版(L1)
+削藩	xiao fan	60	xuē fān	B	现汉第7版(L1)
+瘦削	shou xiao	60	shòu xuē	B	现汉第7版(L1)
+削足适履	xiao zu shi lv	60	削(xuē)足适履	C	现汉第7版(L1)
+水泊梁山	shui bo liang shan	80	水泊(pō)梁山	C	现汉第7版(L1)
+梁山泊	liang shan bo	20	梁山泊(pō)	C	现汉第7版(L1，严控<梁山伯30)
+罗布泊	luo bu bo	80	罗布泊(pō)	C	现汉第7版/地名(L1/L2)
+恐吓	kong xia	20	kǒng hè	B	现汉第7版(L1，严控<空暇26)
+威吓	wei xia	25	wēi hè	B	现汉第7版(L1，严控<未下33)
+恫吓	dong xia	50	dòng hè	B	现汉第7版(L1)
+落枕	luo zhen	120	lào zhěn	B	现汉第7版(L1)
+丢三落四	diu san luo si	80	丢三落(là)四	C	现汉第7版(L1)
+自省	zi sheng	80	zì xǐng	B	现汉第7版(L1)
+三省吾身	san sheng wu shen	50	三省(xǐng)吾身	C	现汉第7版(L1)
+屏息	ping xi	25	bǐng xī	B	现汉第7版(L1，严控<评戏29)
+屏气	ping qi	35	bǐng qì	B	现汉第7版(L1，严控<平起44)
+揣度	chuai du	80	chuǎi duó	B	现汉第7版(L1)
+以己度人	yi ji du ren	60	以己度(duó)人	C	现汉第7版(L1)
+星宿	xing su	15	xīng xiù	B	现汉第7版(L1，严控<姓苏20)
+一宿	yi su	100	yī xiǔ	B	现汉第7版(L1)
+奇数	qi shu	80	jī shù	B	现汉第7版(L1)
+绿林	lv lin	60	lù lín	C	现汉第7版(L1)
+绿林好汉	lv lin hao han	60	绿(lù)林好汉	C	现汉第7版(L1)
+倔强	jue qiang	100	jué jiàng	B	现汉第7版(L1)
+执拗	zhi ao	80	zhí niù	B	现汉第7版(L1)
+畜牧	chu mu	35	xù mù	B	现汉第7版(L1)
+传记	chuan ji	18	zhuàn jì	B	现汉第7版(L1，严控<船籍21)
+矿藏	kuang zang	80	kuàng cáng	B	现汉第7版(L1)
+参差	can cha	60	cēn cī	C	现汉第7版(L1)
+人头攒动	ren tou zan dong	60	人头攒(cuán)动	C	现汉第7版(L1)
+扁舟	bian zhou	60	piān zhōu	C	现汉第7版(L1)
+刨冰	pao bing	80	bào bīng	B	现汉第7版(L1)
+腌臜	yan za	10	ā zā	C	现汉第7版(L1，严控<演砸13)
+里弄	li nong	60	lǐ lòng	B	现汉第7版(L1)
+单于	dan yu	50	chán yú	C	现汉第7版(L1)
+冒顿	mao dun	50	mò dú	C	现汉第7版(L1)
+独角戏	du jue xi	60	独角(jiǎo)戏	B	现汉第7版(L1，防矫枉过正读jué)
+笑靥	xiao yan	40	xiào yè	C	现汉第7版(L1)
+抓阄	zhua gui	30	zhuā jiū	C	现汉第7版(L1)
+朱由校	zhu you xiao	40	朱由校(jiào)	C	现汉第7版/历史人名(L1/L3)
+风吹草低见牛羊	feng chui cao di jian niu yang	50	风吹草低见(xiàn)牛羊	C	现汉第7版/古诗通假(L1/L3)
+见素抱朴	jian su bao pu	40	见(xiàn)素抱朴	C	现汉第7版/古籍通假(L1/L3)
+番禺	fan yu	40	pān yú	C	L2民政部中国地名录
+乐清	le qing	80	yuè qīng	C	L2民政部中国地名录
+洪洞	hong dong	80	hóng tóng	C	L2民政部中国地名录
+会稽	hui ji	80	kuài jī	C	L2民政部/历史地名
+龟兹	gui zi	25	qiū cí	C	L2历史地名(严控<贵子33)
+大宛	da wan	100	dà yuān	C	L2历史地名，补齐大宛马
+歙县	xi xian	15	shè xiàn	C	L2民政部中国地名录(严控<西县22)
+蔚县	wei xian	80	yù xiàn	C	L2民政部中国地名录
+铅山	qian shan	60	yán shān	C	L2民政部中国地名录
+珲春	hui chun	80	hún chūn	C	L2民政部中国地名录
+单县	dan xian	30	shàn xiàn	C	L2民政部中国地名录(严控<单弦41)
+黄陂	huang bei	80	huáng pí	C	L2民政部中国地名录
+中牟	zhong mou	15	zhōng mù	C	L2民政部中国地名录(严控<钟某18)
+东阿	dong a	80	dōng ē	C	L2民政部中国地名录
+莘庄	shen zhuang	80	xīn zhuāng	C	L2上海官方地名
+马家堡	ma jia bao	12	马家堡(pù)	C	L2北京地名(严控<马甲包14)
+调景岭	diao jing ling	50	调(tiáo)景岭	C	L2香港地名
+大差市	da cha shi	40	大差(chāi)市	C	L2西安官方地名
+石厦	shi sha	40	shí xià	C	L2深圳官方地名
+大埔	da pu	50	dà bù	C	L2广东梅州/香港大埔官方地名

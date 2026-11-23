@@ -3988,7 +3988,7 @@ use_preset_vocabulary: false
 磺胺索嘧啶	huang an suo mi ding	0
 磺胺异恶唑	huang an yi e zuo	0
 磺胺咤啶银	huang an zha ding yin	0
-黄柏苷	huang bai gan	0
+黄柏苷	huang bo gan	0
 黄贝母兰定	huang bei mu lan ding	0
 磺苄西林钠	huang bian xi lin na	0
 磺丙基	huang bing ji	0
@@ -6346,8 +6346,8 @@ use_preset_vocabulary: false
 铌柱	ni zhu	0
 逆转素	ni zhuan su	0
 粘蛋白	nian dan bai	25
-粘液酸	nian ye suan	0
-粘液洋红	nian ye yang hong	0
+黏液酸	nian ye suan	0
+黏液洋红	nian ye yang hong	0
 粘质肌醇	nian zhi ji chun	0
 鸟氨酸加压素	niao an suan jia ya su	0
 脲丙基三乙氧基硅烷	niao bing ji san yi yang ji gui wan	0
@@ -8552,7 +8552,7 @@ use_preset_vocabulary: false
 甜菊醇	tian ju chun	2
 甜菊苷	tian ju gan	0
 甜菊双糖甙	tian ju shuang tang dai	0
-甜没药姜黄醇	tian mei yao jiang huang chun	0
+甜没药姜黄醇	tian mo yao jiang huang chun	0
 甜蜜素水合物	tian mi su shui he wu	0
 天然腔肠素	tian ran qiang chang su	0
 天然乙酸苏合香酯	tian ran yi suan su he xiang zhi	0
@@ -8611,7 +8611,7 @@ use_preset_vocabulary: false
 透析袋洗涤液	tou xi dai xi di ye	0
 土贝母苷甲	tu bei mu gan jia	0
 土贝母苷乙	tu bei mu gan yi	0
-土大黄苷	tu dai huang gan	1
+土大黄苷	tu da huang gan	1
 兔耳草醛	tu er cao quan	0
 土槿皮乙酸	tu jin pi yi suan	0
 土荆皮甲酸	tu jing pi jia suan	0
@@ -8702,7 +8702,7 @@ use_preset_vocabulary: false
 维洛斯明碱	wei luo si ming jian	0
 卫矛碱	wei mao jian	0
 维纳卡兰	wei na ka lan	0
-胃粘膜素	wei nian mo su	0
+胃黏膜素	wei nian mo su	0
 韦氏试剂	wei shi shi ji	0
 维斯体素	wei si ti su	0
 魏因勒卜链接剂	wei yin le bu lian jie ji	0
@@ -11486,7 +11486,6 @@ use_preset_vocabulary: false
 统计学量度离差	tong ji xue liang du li cha	0
 统计学统计图表	tong ji xue tong ji tu biao	0
 统计学正态分布	tong ji xue zheng tai fen bu	0
-图象	tu xiang	193
 图形周界	tu xing zhou jie	0
 外切圆	wai qie yuan	0
 无效数字	wu xiao shu zi	0
@@ -18176,7 +18175,7 @@ use_preset_vocabulary: false
 马尔可夫矩阵	ma er ke fu ju zhen	0
 马尔可夫决策规划	ma er ke fu jue ce gui hua	0
 马尔可夫决策过程	ma er ke fu jue ce guo cheng	13
-马尔可夫链	ma er ke fu lian	48
+马尔可夫链	ma er ke fu lian	60
 马尔可夫时	ma er ke fu shi	0
 马尔可夫性	ma er ke fu xing	9
 马尔库舍维奇基	ma er ku she wei qi ji	0
@@ -18674,9 +18673,8 @@ use_preset_vocabulary: false
 拟左连续	ni zuo lian xu	0
 粘合映射	nian he ying she	0
 年收入率	nian shou ru lv	0
-粘性	nian xing	350
-粘性系数	nian xing xi shu	4
-粘性消失法	nian xing xiao shi fa	0
+黏性系数	nian xing xi shu	4
+黏性消失法	nian xing xiao shi fa	0
 粘着空间	nian zhuo kong jian	0
 涅米茨算子	nie mi ci suan zi	0
 凝聚层	ning ju ceng	0
@@ -24034,7 +24032,7 @@ use_preset_vocabulary: false
 忠实模	zhong shi mo	1
 中数连续性	zhong shu lian xu xing	0
 众数组	zhong shu zu	0
-重随机泊松过程	zhong sui ji bo song guo cheng	0
+重随机泊松过程	chong sui ji bo song guo cheng	0
 终态	zhong tai	16
 重调和方程	zhong tiao he fang cheng	0
 重调和函数	zhong tiao he han shu	0
@@ -25285,7 +25283,7 @@ use_preset_vocabulary: false
 蓖麻油脂肪酸	bi ma you zhi fang suan	0
 吡喃	bi nan	7
 吡喃糖	bi nan tang	0
-比浓对数粘度	bi nong dui shu nian du	0
+比浓对数黏度	bi nong dui shu nian du	0
 吡嗪二羧酸	bi qin er suo suan	1
 吡嗪肼	bi qin jing	0
 吡嗪羧酸	bi qin suo suan	0
@@ -28220,7 +28218,6 @@ use_preset_vocabulary: false
 活性铝	huo xing lv	0
 活性氯试条	huo xing lv shi tiao	0
 活性氢氧化铝	huo xing qing yang hua lv	0
-活性碳粉	huo xing tan fen	0
 活性炭粒	huo xing tan li	0
 活性碳酸镁	huo xing tan suan mei	0
 活性炭吸附剂	huo xing tan xi fu ji	2
@@ -29160,7 +29157,7 @@ use_preset_vocabulary: false
 拉姆齐谢尔德公式	la mu qi xie er de gong shi	0
 拉平溶剂	la ping rong ji	0
 拉平效应	la ping xiao ying	6
-拉伸粘度	la shen nian du	0
+拉伸黏度	la shen nian du	0
 拉丝油	la si you	0
 赖氨酸盐酸盐	lai an suan yan suan yan	0
 来苏儿	lai su er	0
@@ -30392,8 +30389,7 @@ use_preset_vocabulary: false
 逆王水	ni wang shui	0
 逆向伏安法	ni xiang fu an fa	0
 黏蛋白胃	nian dan bai wei	0
-粘度	nian du	100
-粘度标准液	nian du biao zhun ye	0
+黏度标准液	nian du biao zhun ye	0
 粘合剂分散剂	nian he ji fen san ji	0
 粘胶纤维	nian jiao xian wei	13
 鸟氨酸醋酸盐	niao an suan cu suan yan	0
@@ -30451,7 +30447,7 @@ use_preset_vocabulary: false
 牛白朊	niu bai ruan	0
 牛胆酸钠	niu dan suan na	0
 牛胆汁干燥	niu dan zhi gan zao	0
-牛顿剪切粘度	niu dun jian qie nian du	0
+牛顿剪切黏度	niu dun jian qie nian du	0
 牛华盐厂	niu hua yan chang	0
 牛华镇	niu hua zhen	1
 牛黄石胆酸钠	niu huang shi dan suan na	0
@@ -32435,7 +32431,7 @@ use_preset_vocabulary: false
 无色孔雀石绿	wu se kong que shi lv	0
 无砷金属锌	wu shen jin shu xin	0
 无砷锌	wu shen xin	0
-乌氏粘度计	wu shi nian du ji	1
+乌氏黏度计	wu shi nian du ji	1
 无水苯磺酸钠	wu shui ben huang suan na	0
 无水丙二酸钙	wu shui bing er suan gai	0
 无水次碳酸铋	wu shui ci tan suan bi	0
@@ -32679,7 +32675,7 @@ use_preset_vocabulary: false
 相对活度	xiang dui huo du	3
 相对介电常数	xiang dui jie dian chang shu	26
 相对灵敏度系数	xiang dui ling min du xi shu	0
-相对粘度增量	xiang dui nian du zeng liang	0
+相对黏度增量	xiang dui nian du zeng liang	0
 相干激发	xiang gan ji fa	0
 向红基	xiang hong ji	0
 向后散射	xiang hou san she	0
@@ -35597,3 +35593,5 @@ use_preset_vocabulary: false
 第谷	di gu	105
 粗粒化	cu li hua	56
 线极化	xian ji hua	51
+壳层	ke ceng	30
+泊松	po song	55

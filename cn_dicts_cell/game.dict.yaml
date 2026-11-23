@@ -3837,6 +3837,7 @@ use_preset_vocabulary: false
 药王百花谱	yao wang bai hua pu	0
 药王百花谱之七	yao wang bai hua pu zhi qi	0
 邀药王入谷书	yao yao wang ru gu shu	0
+腰俞	yao yu	0
 夜案	ye an	0
 夜别妻儿	ye bie qi er	0
 夜渡凡尘	ye du fan chen	0
@@ -9869,7 +9870,6 @@ use_preset_vocabulary: false
 逆天坛	ni tian tan	0
 逆天无头灵	ni tian wu tou ling	0
 匿影	ni ying	2
-粘合剂	nian he ji	311
 粘土精	nian tu jing	0
 酿酒的辛苦	niang jiu de xin ku	0
 酿酒地	niang jiu di	1
@@ -33763,7 +33763,6 @@ use_preset_vocabulary: false
 加卡尔的强化项链	jia ka er de qiang hua xiang lian	0
 加克	jia ke	1
 贾克布	jia ke bu	0
-甲壳虫	jia ke chong	366
 加克鲁	jia ke lu	0
 加克森	jia ke sen	0
 加克斯宾中尉	jia ke si bin zhong wei	0
@@ -105694,6 +105693,7 @@ use_preset_vocabulary: false
 泥砖楼梯	ni zhuan lou ti	0
 泥砖墙	ni zhuan qiang	1
 泥砖台阶	ni zhuan tai jie	0
+粘土	nian tu	438
 粘土块	nian tu kuai	5
 黏土块	nian tu kuai	1
 粘土球	nian tu qiu	2
@@ -116228,25 +116228,25 @@ use_preset_vocabulary: false
 守护军拳套	shou hu jun quan tao	0
 守护军之弓	shou hu jun zhi gong	0
 守护者盾牌	shou hu zhe dun pai	0
-熟练刺客护具	shou lian ci ke hu ju	0
-熟练刺客夹克	shou lian ci ke jia ke	0
-熟练刺客手护具	shou lian ci ke shou hu ju	0
-熟练刺客头巾	shou lian ci ke tou jin	0
-熟练刺客靴	shou lian ci ke xue	0
-熟练激斗裤子	shou lian ji dou ku zi	0
-熟练激斗帽	shou lian ji dou mao	0
-熟练激斗上装	shou lian ji dou shang zhuang	0
-熟练激斗手套	shou lian ji dou shou tao	0
-熟练激斗鞋	shou lian ji dou xie	0
-熟练死斗裤子	shou lian si dou ku zi	0
-熟练死斗帽	shou lian si dou mao	0
-熟练死斗上装	shou lian si dou shang zhuang	0
-熟练死斗手套	shou lian si dou shou tao	0
-熟练武斗裤子	shou lian wu dou ku zi	0
-熟练武斗帽	shou lian wu dou mao	0
-熟练武斗上装	shou lian wu dou shang zhuang	0
-熟练武斗手套	shou lian wu dou shou tao	0
-熟练武斗鞋	shou lian wu dou xie	0
+熟练刺客护具	shu lian ci ke hu ju	0
+熟练刺客夹克	shu lian ci ke jia ke	0
+熟练刺客手护具	shu lian ci ke shou hu ju	0
+熟练刺客头巾	shu lian ci ke tou jin	0
+熟练刺客靴	shu lian ci ke xue	0
+熟练激斗裤子	shu lian ji dou ku zi	0
+熟练激斗帽	shu lian ji dou mao	0
+熟练激斗上装	shu lian ji dou shang zhuang	0
+熟练激斗手套	shu lian ji dou shou tao	0
+熟练激斗鞋	shu lian ji dou xie	0
+熟练死斗裤子	shu lian si dou ku zi	0
+熟练死斗帽	shu lian si dou mao	0
+熟练死斗上装	shu lian si dou shang zhuang	0
+熟练死斗手套	shu lian si dou shou tao	0
+熟练武斗裤子	shu lian wu dou ku zi	0
+熟练武斗帽	shu lian wu dou mao	0
+熟练武斗上装	shu lian wu dou shang zhuang	0
+熟练武斗手套	shu lian wu dou shou tao	0
+熟练武斗鞋	shu lian wu dou xie	0
 狩猎剑	shou lie jian	0
 狩猎帽	shou lie mao	0
 狩猎皮革漫步鞋	shou lie pi ge man bu xie	0
@@ -135985,11 +135985,11 @@ use_preset_vocabulary: false
 十字头盔	shi zi tou kui	0
 守备卫生队	shou bei wei sheng dui	0
 收夺	shou duo	1
-熟练缝纫技师	shou lian feng ren ji shi	0
-熟练技师	shou lian ji shi	2
-熟练剑士	shou lian jian shi	0
-熟练渔民的钓具	shou lian yu min de diao ju	0
-熟练铸造技师	shou lian zhu zao ji shi	0
+熟练缝纫技师	shu lian feng ren ji shi	0
+熟练技师	shu lian ji shi	2
+熟练剑士	shu lian jian shi	0
+熟练渔民的钓具	shu lian yu min de diao ju	0
+熟练铸造技师	shu lian zhu zao ji shi	0
 手抛网	shou pao wang	3
 首长外袍	shou zhang wai pao	0
 瘦子赫尔吉的铠甲	shou zi he er ji de kai jia	0
@@ -146062,7 +146062,7 @@ use_preset_vocabulary: false
 班翅蛾	ban chi e	0
 班剑	ban jian	2
 半月斩	ban yue zhan	6
-爆击熟练	bao ji shou lian	0
+爆击熟练	bao ji shu lian	0
 爆龙炎弓	bao long yan gong	0
 豹皮裙	bao pi qun	0
 豹纹服	bao wen fu	0
@@ -146118,7 +146118,7 @@ use_preset_vocabulary: false
 苍穹战袍	cang qiong zhan pao	0
 苍穹之冠	cang qiong zhi guan	0
 苍天帝剑	cang tian di jian	0
-长兵器熟练	chang bing qi shou lian	0
+长兵器熟练	chang bing qi shu lian	0
 长顶枪	chang ding qiang	0
 长钩刀	chang gou dao	0
 长剑兵	chang jian bing	0
@@ -146210,7 +146210,7 @@ use_preset_vocabulary: false
 道具补技	dao ju bu ji	0
 道具补血	dao ju bu xue	0
 道具使用加成	dao ju shi yong jia cheng	0
-道具熟练	dao ju shou lian	0
+道具熟练	dao ju shu lian	0
 捣马突枪	dao ma tu qiang	1
 刀魄	dao po	0
 道士袍	dao shi pao	0
@@ -146251,7 +146251,7 @@ use_preset_vocabulary: false
 毒烟玉	du yan yu	0
 毒烟咒	du yan zhou	0
 短背心	duan bei xin	1
-短兵器熟练	duan bing qi shou lian	0
+短兵器熟练	duan bing qi shu lian	0
 断魂镰刀	duan hun lian dao	0
 短披风	duan pi feng	1
 短刃枪	duan ren qiang	1
@@ -146370,7 +146370,7 @@ use_preset_vocabulary: false
 高祖龙袍	gao zu long pao	0
 割菱军旗	ge ling jun qi	0
 工布	gong bu	6
-弓箭熟练	gong jian shou lian	0
+弓箭熟练	gong jian shu lian	0
 公瑾步云靴	gong jin bu yun xue	0
 公瑾剑侠装	gong jin jian xia zhuang	0
 公瑾束发冠	gong jin shu fa guan	0
@@ -146437,7 +146437,7 @@ use_preset_vocabulary: false
 耗费技力降低	hao fei ji li jiang di	0
 豪杰方天戟	hao jie fang tian ji	0
 豪烈	hao lie	5
-合成熟练	he cheng shou lian	0
+合成熟练	he cheng shu lian	0
 合甲	he jia	1
 褐鬃马	he zong ma	0
 黑暗裂鬼	hei an lie gui	0
@@ -147304,7 +147304,7 @@ use_preset_vocabulary: false
 双刃三尖刀	shuang ren san jian dao	0
 双刃月牙戟	shuang ren yue ya ji	0
 双手刀	shuang shou dao	35
-双手武器熟练	shuang shou wu qi shou lian	0
+双手武器熟练	shuang shou wu qi shu lian	0
 双天龙泉	shuang tian long quan	0
 双铁戟	shuang tie ji	4
 双星追月	shuang xing zhui yue	0
@@ -147446,7 +147446,7 @@ use_preset_vocabulary: false
 铜钺戟	tong yue ji	0
 铜钺枪	tong yue qiang	0
 统智豪	tong zhi hao	0
-投掷武器熟练	tou zhi wu qi shou lian	0
+投掷武器熟练	tou zhi wu qi shu lian	0
 土霸王	tu ba wang	10
 土遁杀	tu dun sha	0
 土遁隐杀	tu dun yin sha	0
@@ -147493,7 +147493,7 @@ use_preset_vocabulary: false
 乌龟方	wu gui fang	0
 武将技封咒	wu jiang ji feng zhou	0
 武将技伤害强化	wu jiang ji shang hai qiang hua	0
-武将技熟练	wu jiang ji shou lian	0
+武将技熟练	wu jiang ji shu lian	0
 五雷袭	wu lei xi	0
 武力秘石	wu li mi shi	0
 五品朝服	wu pin chao fu	0
@@ -147833,7 +147833,7 @@ use_preset_vocabulary: false
 智体统军	zhi ti tong jun	0
 智统方	zhi tong fang	0
 织云项链	zhi yun xiang lian	0
-重兵器熟练	zhong bing qi shou lian	0
+重兵器熟练	zhong bing qi shu lian	0
 中单服	zhong dan fu	0
 重甲黑豹	zhong jia hei bao	0
 重甲战虎	zhong jia zhan hu	0

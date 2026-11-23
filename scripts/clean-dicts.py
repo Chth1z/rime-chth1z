@@ -1040,6 +1040,186 @@ def post_fix_non_shenme_shi(lines: list[str], stats: dict) -> list[str]:
     return out
 
 
+def post_add_mi_yue(lines: list[str], stats: dict) -> list[str]:
+    """Post-overlay pass: ensure multi-char 密钥 compounds have standard mi yue alongside mi yao."""
+    hdr, body = split_header_body(lines)
+    existing: set[tuple[str, str]] = set()
+    for line in body:
+        p = parse_entry(line)
+        if p:
+            existing.add((p[0], p[1]))
+    additions: list[str] = []
+    for line in body:
+        p = parse_entry(line)
+        if not p:
+            continue
+        w, py, wt, extra = p
+        if len(w) >= 3 and "密钥" in w and "mi yao" in py:
+            syls = py.split()
+            if len(syls) != len(w):
+                continue
+            new_syls = list(syls)
+            changed = False
+            for i in range(len(w) - 1):
+                if w[i : i + 2] == "密钥" and new_syls[i] == "mi" and new_syls[i + 1] == "yao":
+                    new_syls[i + 1] = "yue"
+                    changed = True
+            if changed:
+                new_py = " ".join(new_syls)
+                if (w, new_py) not in existing:
+                    additions.append(format_entry(w, new_py, wt, extra))
+                    existing.add((w, new_py))
+    out = hdr + body
+    if additions:
+        sec_hdr = "# 补充「密钥(mi yue)」复合词规范读音"
+        if sec_hdr not in out:
+            out.append(sec_hdr)
+        out.extend(additions)
+        stats["added"] += len(additions)
+    return out
+
+
+def post_clean_ext_shou_clones(lines: list[str], stats: dict) -> list[str]:
+    """Post-overlay pass: remove redundant 成熟(cheng shou) / 熟练(shou lian) clones when standard twin exists."""
+    hdr, body = split_header_body(lines)
+    has_std: set[tuple[str, str]] = set()
+    for line in body:
+        p = parse_entry(line)
+        if p:
+            has_std.add((p[0], p[1]))
+    out = list(hdr)
+    for line in body:
+        p = parse_entry(line)
+        if not p:
+            out.append(line)
+            continue
+        w, py, wt, extra = p
+        if "成熟" in w and "cheng shou" in py:
+            std_py = py.replace("cheng shou", "cheng shu")
+            if (w, std_py) in has_std:
+                stats["deleted_wrong_py"] += 1
+                continue
+        if "熟练" in w and "shou lian" in py:
+            std_py = py.replace("shou lian", "shu lian")
+            if (w, std_py) in has_std:
+                stats["deleted_wrong_py"] += 1
+                continue
+        out.append(line)
+    return out
+
+
+def post_normalize_medication(lines: list[str], stats: dict) -> list[str]:
+    """Post-overlay pass: normalize systemic W3 medical word-form and TCM/acupoint phonetic leaks."""
+    hdr, body = split_header_body(lines)
+    out = list(hdr)
+    word_replacements = (
+        ("综合症", "综合征"),
+        ("粘膜", "黏膜"),
+        ("粘液", "黏液"),
+        ("粘稠", "黏稠"),
+        ("粘度", "黏度"),
+        ("粘性", "黏性"),
+        ("纵膈", "纵隔"),
+        ("成份", "成分"),
+    )
+    for line in body:
+        p = parse_entry(line)
+        if not p:
+            out.append(line)
+            continue
+        w, py, wt, extra = p
+        orig_w, orig_py = w, py
+        for old_sub, new_sub in word_replacements:
+            if old_sub in w:
+                w = w.replace(old_sub, new_sub)
+        if "黏" in w and "zhan" in py.split():
+            py = replace_syl_at(w, py, "黏", "zhan", "nian")
+        if ("填塞" in w or "压塞" in w) and "sai" in py.split():
+            py = replace_syl_at(
+                w, py, "塞", "sai", "se",
+                cond=lambda wd, sy, i: i > 0 and wd[i - 1] in "填压",
+            )
+        if "黄柏" in w and "bai" in py.split():
+            py = replace_syl_at(
+                w, py, "柏", "bai", "bo",
+                cond=lambda wd, sy, i: i > 0 and wd[i - 1] == "黄",
+            )
+        if "没药" in w and "mei" in py.split():
+            py = replace_syl_at(
+                w, py, "没", "mei", "mo",
+                cond=lambda wd, sy, i: i + 1 < len(wd) and wd[i + 1] == "药",
+            )
+        if ("枳壳" in w or "罂粟壳" in w) and "ke" in py.split():
+            py = replace_syl_at(
+                w, py, "壳", "ke", "qiao",
+                cond=lambda wd, sy, i: (i > 0 and wd[i - 1] == "枳") or (i >= 2 and wd[i - 2 : i] == "罂粟"),
+            )
+        if w.endswith("俞"):
+            syls = py.split()
+            if len(syls) == len(w) and syls[-1] == "yu":
+                syls[-1] = "shu"
+                py = " ".join(syls)
+        if w != orig_w:
+            stats["fixed_word_or_trad"] += 1
+        if py != orig_py:
+            stats["fixed_py"] += 1
+        out.append(format_entry(w, py, wt, extra))
+    return out
+
+
+def post_normalize_shulihua(lines: list[str], stats: dict) -> list[str]:
+    """Post-overlay pass: normalize W3 physical-property 粘* -> 黏* in shulihua.dict.yaml."""
+    hdr, body = split_header_body(lines)
+    out = list(hdr)
+    word_replacements = (
+        ("粘膜", "黏膜"),
+        ("粘液", "黏液"),
+        ("粘稠", "黏稠"),
+        ("粘度", "黏度"),
+        ("粘性", "黏性"),
+    )
+    for line in body:
+        p = parse_entry(line)
+        if not p:
+            out.append(line)
+            continue
+        w, py, wt, extra = p
+        orig_w, orig_py = w, py
+        for old_sub, new_sub in word_replacements:
+            if old_sub in w:
+                w = w.replace(old_sub, new_sub)
+        if "黏" in w and "zhan" in py.split():
+            py = replace_syl_at(w, py, "黏", "zhan", "nian")
+        if w != orig_w:
+            stats["fixed_word_or_trad"] += 1
+        if py != orig_py:
+            stats["fixed_py"] += 1
+        out.append(format_entry(w, py, wt, extra))
+    return out
+
+
+def post_clean_game_shoulian(lines: list[str], stats: dict) -> list[str]:
+    """Post-overlay pass: normalize 熟练 shou lian -> shu lian in game.dict.yaml."""
+    hdr, body = split_header_body(lines)
+    out = list(hdr)
+    for line in body:
+        p = parse_entry(line)
+        if not p:
+            out.append(line)
+            continue
+        w, py, wt, extra = p
+        if "熟练" in w and "shou lian" in py:
+            new_py = replace_syl_at(
+                w, py, "熟", "shou", "shu",
+                cond=lambda wd, sy, i: i + 1 < len(wd) and wd[i + 1] == "练",
+            )
+            if new_py != py:
+                py = new_py
+                stats["fixed_py"] += 1
+        out.append(format_entry(w, py, wt, extra))
+    return out
+
+
 def clean_animal(lines: list[str], stats: dict) -> list[str]:
     hdr, body = split_header_body(lines)
     new_hdr = [
@@ -1473,7 +1653,15 @@ def main() -> None:
         out_lines = cleaner(raw_lines, st)
         if rel != "cn_dicts/corrections.dict.yaml":
             out_lines = dict_rules.apply_cn_overlay(rel, out_lines, ruleset, rule_hits, st)
-        if rel == "cn_dicts_cell/chess.dict.yaml":
+        if rel in ("cn_dicts/base.dict.yaml", "cn_dicts/ext.dict.yaml"):
+            out_lines = post_add_mi_yue(out_lines, st)
+        if rel == "cn_dicts/ext.dict.yaml":
+            out_lines = post_clean_ext_shou_clones(out_lines, st)
+        elif rel == "cn_dicts_cell/shulihua.dict.yaml":
+            out_lines = post_normalize_shulihua(out_lines, st)
+        elif rel == "cn_dicts_cell/medication.dict.yaml":
+            out_lines = post_normalize_medication(out_lines, st)
+        elif rel == "cn_dicts_cell/chess.dict.yaml":
             out_lines = post_chess_add_ju(out_lines, st, move_only=False)
         elif rel == "cn_dicts_cell/chess2.dict.yaml":
             out_lines = post_chess_add_ju(out_lines, st, move_only=True)
@@ -1484,6 +1672,8 @@ def main() -> None:
             "cn_dicts_cell/exthot.dict.yaml",
         ):
             out_lines = post_fix_non_shenme_shi(out_lines, st)
+            if rel == "cn_dicts_cell/game.dict.yaml":
+                out_lines = post_clean_game_shoulian(out_lines, st)
         cleaned_files[rel] = _dedup_within_file(out_lines, st)
         file_stats[rel] = st
 
@@ -1546,12 +1736,24 @@ def main() -> None:
             rf_missing.append(tok)
     rf_out = []
     inserted_alphanum = False
+    disabled_table_replacements = {
+        "- cn_dicts/41448": "  # - cn_dicts/41448  # 大字表（实测 800 句准确率贡献为 0，注释以减少生僻字干扰）",
+        "- cn_dicts/GB18030-2022": "  # - cn_dicts/GB18030-2022  # 扩展生僻字表（同上，按需恢复）",
+        "- cn_dicts/tencent": "  # - cn_dicts/tencent  # 腾讯词向量（大词库，部署时间较长）",
+        "- cn_dicts_cell/luna": "  # - cn_dicts_cell/luna  # 繁体异体与冗余词条较多，默认关闭",
+    }
     for l in rf_lines:
-        if l.strip() == "- cn_dicts_cell/luna":
-            rf_out.append("  # - cn_dicts_cell/luna  # 繁体异体与冗余词条较多，默认关闭")
+        s_line = l.strip()
+        replaced_disabled = None
+        for prefix, repl in disabled_table_replacements.items():
+            if s_line == prefix or s_line.startswith(prefix + " ") or s_line.startswith(prefix + "\t"):
+                replaced_disabled = repl
+                break
+        if replaced_disabled is not None:
+            rf_out.append(replaced_disabled)
         else:
             rf_out.append(l)
-            if l.strip() == "M4A1" and rf_missing and not inserted_alphanum:
+            if s_line == "M4A1" and rf_missing and not inserted_alphanum:
                 rf_out.extend(rf_missing)
                 inserted_alphanum = True
     (DST_ROOT / "rime_frost.dict.yaml").write_text("\n".join(rf_out) + "\n", encoding="utf-8", newline="\n")
