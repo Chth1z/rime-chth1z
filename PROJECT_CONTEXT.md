@@ -10,7 +10,7 @@
 
 | 上游 | 关注什么 | 怎么跟进 |
 | :--- | :--- | :--- |
-| `upstream`（`gaboolic/rime-frost`） | `cn_dicts/`、`cn_dicts_cell/`、`en_dicts/`、`opencc/` | `.github/workflows/sync-upstream-dicts.yml` 每周自动同步；本地可用 `scripts/sync-dicts-local.ps1` |
+| `upstream`（`gaboolic/rime-frost`） | `cn_dicts/`、`cn_dicts_cell/`、`en_dicts/`、`opencc/*.txt` | `.github/workflows/sync-upstream-dicts.yml` 每周自动同步并运行 `scripts/clean-dicts.py`；本地可用 `scripts/sync-dicts-local.ps1` |
 | `upstream`（`gaboolic/rime-frost`） | `lua/` 与方案改动 | 本地只读远端 `upstream`（已锁 `no_push`，可随时 `git show` 对比）＋ `upstream-watch.yml` 每周汇总 |
 | `rime-ice`（`iDvel/rime-ice`） | 母库 `lua/` 修复与改进 | 本地只读远端 `rime-ice`（已锁 `no_push`）＋ `upstream-watch.yml` 每周汇总 |
 | `Chth1z/rime-neural`（`Release`） | 端侧 ONNX 神经整句重排插件（DLL ＋ `rime_neural.lua`） | `scripts/install-rime-neural.ps1` ＋ `update-local.ps1` 每周校验 SHA-256 自动更新 |
@@ -79,5 +79,5 @@
 
 - **看实测数据**：改完性能或配置都用 `bench/bench-rime.ps1` 和回归测试验证，不凭感觉下结论。
 - **文档保持朴素**：README 和仓库里的文档写清楚事实和用法就行，不堆虚词。
-- **别改同步目录**：`cn_dicts/`、`cn_dicts_cell/`、`en_dicts/` 留给自动任务同步，自己的改动放在 `lua/`、根目录方案、`profiles/`、`themes/`、`bench/`、`scripts/`。
+- **词库清洗走脚本**：上游词库同步后由 `scripts/clean-dicts.py`（幂等且按内容锚点定位）统一清洗、去重与权重校准；新增词库修复规则统一沉淀进该脚本，避免下次同步被上游覆写。
 - **提上游 Issue 从严**：遵守 [`docs/upstream-issues/GUIDELINE.md`](docs/upstream-issues/GUIDELINE.md)，只提实测复现、有实际影响的真 Bug，不提视角或习惯分歧带来的伪问题。

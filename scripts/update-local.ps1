@@ -73,7 +73,7 @@ function Sync-RepoToRime([string]$SourceRoot, [string]$TargetRimeDir, [string]$T
         if (Test-Path $src) { Copy-Item $src (Join-Path $TargetRimeDir "en_dicts\$ef") -Force }
     }
     Copy-Item (Join-Path $SourceRoot "lua\*.lua") (Join-Path $TargetRimeDir "lua") -Force
-    foreach ($of in @("s2tw.json","s2twp.json","STPhrases.ocd2","STCharacters.ocd2","TWPhrases.ocd2","TWVariants.ocd2","t2s.json","TSCharacters.ocd2","TSPhrases.ocd2","emoji.json","emoji.txt","others.txt","chinese_english.json","chinese_english.txt","english_chinese.txt")) {
+    foreach ($of in @("s2tw.json","s2twp.json","STPhrases.ocd2","STCharacters.ocd2","TWPhrases.ocd2","TWVariants.ocd2","t2s.json","tw2sp.json","TSCharacters.ocd2","TSPhrases.ocd2","TWPhrasesRev.ocd2","TWVariantsRev.ocd2","TWVariantsRevPhrases.ocd2","emoji.json","emoji.txt","others.txt","chinese_english.json","chinese_english.txt","english_chinese.txt")) {
         $src = Join-Path $SourceRoot "opencc\$of"
         if (Test-Path $src) { Copy-Item $src (Join-Path $TargetRimeDir "opencc\$of") -Force }
     }

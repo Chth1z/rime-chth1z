@@ -213,8 +213,6 @@ chinese_english:
   option_name: chinese_english
   opencc_config: chinese_english.json
   tips: char
-  comment_format:
-    - "xform/-/ /"
 
 emoji:
   option_name: emoji
@@ -282,14 +280,14 @@ speller:
     - derive/([qjlxnm])iu$/$1ui/
     - derive/([qjlxn])iang$/$1aing/
     - derive/([qjlxn])iang$/$1inag/
-    - derive/([g|k|h|zh|sh])ua$/$1au/
-    - derive/([g|h|k|zh|ch|sh])uai$/$1aui/
+    - derive/(g|k|h|zh|sh)ua$/$1au/
+    - derive/(g|h|k|zh|ch|sh)uai$/$1aui/
     - derive/([qrtysdghjklzxcn])uan$/$1aun/
     - derive/([nlyjqx])ue$/$1eu/
-    - derive/([g|h|k|zh|ch|sh])uang$/$1aung/
-    - derive/([g|h|k|zh|ch|sh])uang$/$1uagn/
-    - derive/([g|h|k|zh|ch|sh])uang$/$1unag/
-    - derive/([g|h|k|zh|ch|sh])uang$/$1augn/
+    - derive/(g|h|k|zh|ch|sh)uang$/$1aung/
+    - derive/(g|h|k|zh|ch|sh)uang$/$1uagn/
+    - derive/(g|h|k|zh|ch|sh)uang$/$1unag/
+    - derive/(g|h|k|zh|ch|sh)uang$/$1augn/
     - derive/([jqx])iong$/$1inog/
     - derive/([jqx])iong$/$1oing/
     - derive/([jqx])iong$/$1iogn/

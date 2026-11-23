@@ -86,6 +86,97 @@
       "second_text": "信息"
     },
     {
+      "name": "dp: tw_dual single-char 1-to-many 发 -> 1.發 2.髮",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "fa",
+      "first_text": "發",
+      "second_text": "髮"
+    },
+    {
+      "name": "dp: tw_dual single-char 1-to-many 面 -> 1.面 2.麵",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "mm",
+      "first_text": "面",
+      "second_text": "麵"
+    },
+    {
+      "name": "dp: tw_dual single-char 1-to-many 只 -> 1.只 2.隻",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "vi",
+      "first_text": "只",
+      "second_text": "隻"
+    },
+    {
+      "name": "dp: tw_dual OpenCC 栗子 stays 栗子 (not 慄子)",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "lizi",
+      "any_text": "栗子",
+      "no_text_regex": "慄子"
+    },
+    {
+      "name": "dp: tw_dual OpenCC 字节跳动 stays 字節跳動",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "zijxtcds",
+      "first_text": "字節跳動"
+    },
+    {
+      "name": "dp: tw_dual OpenCC 蓝牙 -> 藍牙 (not 藍芽)",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "ljya",
+      "first_text": "藍牙"
+    },
+    {
+      "name": "dp: chinese_english preserves hyphenated one-sided",
+      "schema": "rime_frost_double_pinyin",
+      "options": { "traditionalization": false, "chinese_english": true },
+      "keys": "pmmm",
+      "any_text": "one-sided"
+    },
+    {
+      "name": "dp: dict core 是的 (uide) #1",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "uide",
+      "first_text": "是的"
+    },
+    {
+      "name": "dp: dict core 均订 (jpdy) #1",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "jpdy",
+      "first_text": "均訂"
+    },
+    {
+      "name": "dp: dict place 什刹海 (uiiahl) #1",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "uiiahl",
+      "first_text": "什剎海"
+    },
+    {
+      "name": "dp: dict chess 车二进六 (juerjnlq) #1",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "juerjnlq",
+      "first_text": "車二進六"
+    },
+    {
+      "name": "dp: habit tolerance 关卡 (grka) #1 with hint",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "grka",
+      "first_text": "關卡",
+      "first_comment": "关(guān)卡(qiǎ)"
+    },
+    {
+      "name": "dp: habit tolerance 哎哟 (aiyb) #1 while yb stays 有",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "aiyb",
+      "first_text": "哎喲"
+    },
+    {
+      "name": "dp: habit tolerance 镀铬 (dulo) #1 with hint",
+      "schema": "rime_frost_double_pinyin",
+      "keys": "dulo",
+      "first_text": "鍍鉻",
+      "first_comment": "镀铬(gè)"
+    },
+    {
       "name": "dp: toggle traditionalization=false -> 软件 (no dual)",
       "schema": "rime_frost_double_pinyin",
       "options": { "traditionalization": false },
@@ -101,11 +192,12 @@
       "no_raw_pinyin_comment": true
     },
     {
-      "name": "dp: corrector 主角 (zhu jiao)",
+      "name": "dp: corrector 主角 (zhu jiao -> 1.助教 2.主角[zhǔ jué])",
       "schema": "rime_frost_double_pinyin",
       "keys": "vujc",
-      "first_text": "主角",
-      "first_comment": "zhǔ jué",
+      "first_text": "助教",
+      "second_text": "主角",
+      "any_text_with_comment": { "text": "主角", "comment": "zhǔ jué" },
       "no_raw_pinyin_comment": true
     },
     {
@@ -357,11 +449,12 @@
       "no_raw_pinyin_comment": true
     },
     {
-      "name": "fp: corrector zhujiao",
+      "name": "fp: corrector zhujiao -> 1.助教 2.主角[zhǔ jué]",
       "schema": "rime_frost",
       "keys": "zhujiao",
-      "first_text": "主角",
-      "first_comment": "zhǔ jué"
+      "first_text": "助教",
+      "second_text": "主角",
+      "any_text_with_comment": { "text": "主角", "comment": "zhǔ jué" }
     },
     {
       "name": "fp: autocap Hello",
