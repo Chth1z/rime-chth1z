@@ -1019,6 +1019,7 @@ eject	eject ⏏
 石灰石	石灰石 CaCO₃
 石灰水	石灰水 Ca(OH)₂
 胆矾	胆矾 CuSO₄·5H₂O
+二氧化氢	二氧化氢 H₂O₂
 纯碱	纯碱 Na₂CO₃
 熟石灰	熟石灰 Ca(OH)₂
 氨水	氨水 NH₃·H₂O

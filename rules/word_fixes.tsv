@@ -76,7 +76,6 @@ cn_dicts_cell/idiom.dict.yaml	熊梦徵祥	xiong meng zheng xiang	熊梦征祥	*
 cn_dicts_cell/game.dict.yaml	阿扭的项鍊	a niu de xiang lian	阿扭的项链	*	繁体“項鍊”规范简化为“项链”(已移除全局易错映射 鍊->链)	通用规范汉字表
 cn_dicts/base.dict.yaml	和菓子	he guo zi	和果子	*	Trad/JP/variant: 菓->果	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts/base.dict.yaml	姜承録	jiang cheng lu	姜承录	*	Trad/JP/variant: 録->录	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts/base.dict.yaml	天廻龙	tian hui long	天回龙	*	Trad/JP variant 廻->回	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts/ext.dict.yaml	桜都字幕组	ying du zi mu zu	樱都字幕组	*	Trad/JP/variant: 桜->樱	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/food.dict.yaml	红烧牛蒡肉捲	hong shao niu bang rou juan	红烧牛蒡肉卷	*	Trad/JP/variant: 捲->卷	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/food.dict.yaml	鸡肉滷味	ji rou lu wei	鸡肉卤味	*	Trad/JP/variant: 滷->卤	通用规范汉字表/DICTIONARY_SPEC §2.6
