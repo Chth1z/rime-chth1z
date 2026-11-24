@@ -1957,6 +1957,7 @@ def run_pipeline(
             "cn_dicts_cell/sport.dict.yaml",
             "cn_dicts_cell/name2.dict.yaml",
             "cn_dicts_cell/exthot.dict.yaml",
+            "cn_dicts_cell/history.dict.yaml",
         ):
             out_lines = post_fix_non_shenme_shi(out_lines, st)
             if rel == "cn_dicts_cell/game.dict.yaml":

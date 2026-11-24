@@ -3099,3 +3099,67 @@ cn_dicts_cell/shulihua.dict.yaml	进上同调	jin shang tong diao	L16821: 字母
 cn_dicts_cell/shulihua.dict.yaml	进数	jin shu	L16827: 字母剥离残片（p进数）
 cn_dicts_cell/shulihua.dict.yaml	进拓扑	jin tuo pu	L16853: 字母剥离残片（p进拓扑）
 cn_dicts_cell/shulihua.dict.yaml	元调和方程	yuan tiao he fang cheng	L23329: 字母剥离残片（n元调和方程）
+# Batch 3 (history & name2): verified typos, truncations & trad duplicates
+cn_dicts_cell/history.dict.yaml	李暠	li gao	同文件L653已有规范正音 li hao，删误注 li gao（西凉武昭王李暠）
+cn_dicts_cell/history.dict.yaml	拓跋什翼键	*	W5错字：“键”为“犍”之误，同文件L219已有“拓跋什翼犍”
+cn_dicts_cell/history.dict.yaml	钱缪	*	W5错字：吴越武肃王正名为“钱镠”，同文件L202已有“钱镠 qian liu”
+cn_dicts_cell/history.dict.yaml	慕容实	*	W5 OCR错字：后燕惠愍帝为“慕容宝”，base:185518已有“慕容宝”
+cn_dicts_cell/history.dict.yaml	宛颜守绪	*	W5错字：金哀宗为“完颜守绪”，base:271173已有“完颜守绪”
+cn_dicts_cell/history.dict.yaml	左冯翎	*	W5 OCR错字+错音：汉代“左冯翊(zuo ping yi)”，base:372625已有正词
+cn_dicts_cell/history.dict.yaml	藏霸	*	W5错字：曹魏名将正名为“臧霸”，base:342799已有“臧霸”
+cn_dicts_cell/history.dict.yaml	项藉	*	W5错字：西楚霸王正名为“项籍”，同文件L19755已有“项籍”
+cn_dicts_cell/history.dict.yaml	妥怀帖睦尔	*	W5 OCR错字：元顺帝正名为“妥欢帖睦尔”，同文件L225已有正词
+cn_dicts_cell/history.dict.yaml	硕德八刺	*	W5错字+错音：元英宗正名为“硕德八剌(la)”，同文件L208已有正词
+cn_dicts_cell/history.dict.yaml	凿璧偷光	*	W5错字：成语正形为“凿壁偷光”，base:342933已有正词
+cn_dicts_cell/history.dict.yaml	键为郡	*	W5错字+错音：汉代“犍为郡(qian wei jun)”，base:206490已有正词
+cn_dicts_cell/history.dict.yaml	洛宾王	*	W5错字：初唐四杰为“骆宾王”，base:171903已有正词
+cn_dicts_cell/history.dict.yaml	罗家论	*	W5错字：民国学者为“罗家伦”，ext:225937已有正词
+cn_dicts_cell/history.dict.yaml	钱廉益	*	W5错字：明末清初诗人为“钱谦益”，base:206068已有正词
+cn_dicts_cell/history.dict.yaml	刑道荣	*	W5错字：《三国演义》人物为“邢道荣”，ext:229613已有正词
+cn_dicts_cell/history.dict.yaml	候逸凡	*	W5错字：国际象棋棋后为“侯逸凡”，ext:207812已有正词
+cn_dicts_cell/history.dict.yaml	赵之廉	*	W5错字：清代书画家为“赵之谦”，base:347940已有正词
+cn_dicts_cell/history.dict.yaml	张择群	*	W5错字：央视主持人为“张泽群”，base:346727已有正词
+cn_dicts_cell/history.dict.yaml	刘力杨	*	W5错字：歌手为“刘力扬”，base:168467已有正词
+cn_dicts_cell/history.dict.yaml	徐知浩	*	W5错字：南唐烈祖原名为“徐知诰”，composite:269752已有正词
+cn_dicts_cell/history.dict.yaml	宇文术	*	W5错字：隋代权臣为“宇文述”，ext:214117已有正词
+cn_dicts_cell/history.dict.yaml	法士善	*	W5错字：清代诗人为“法式善”，同文件L6279已有正词
+cn_dicts_cell/history.dict.yaml	吴文熔	*	W5错字：晚清重臣为“吴文镕”，同文件L3056已有正词
+cn_dicts_cell/history.dict.yaml	朱由菘	*	W5错字：南明弘光帝为“朱由崧”，同文件L281已有正词
+cn_dicts_cell/history.dict.yaml	胤褆	*	W5 OCR错字+错音：康熙长子为“胤禔”，同文件L3166已有正词
+cn_dicts_cell/history.dict.yaml	胤裪	*	W5 OCR错字：康熙十二子为“胤祹”，同文件L3159已有正词
+cn_dicts_cell/history.dict.yaml	和世梀	*	W5 OCR错字+错音：元明宗“和世㻋/瓎/剌”，同文件L75/L7660已有正词
+cn_dicts_cell/history.dict.yaml	阿速温和吉八	*	W5抓取污染：元天顺帝为“阿速吉八”，base:2358已有正词（多出“温和”）
+cn_dicts_cell/history.dict.yaml	闻失箸	*	W5漏字错词：典故正形“闻雷失箸”，base:277349已有正词
+cn_dicts_cell/history.dict.yaml	尉黎	*	W5错字+错音：汉西域古国正形“尉犁(yu li)”，base:333686已有正词
+cn_dicts_cell/history.dict.yaml	他哈比巳特	*	W5 OCR错字碎片（“巳”形近误识）
+cn_dicts_cell/history.dict.yaml	华阴公主获泽公主	*	W5表格抓取粘连：两封号拼接（L1588）
+cn_dicts_cell/history.dict.yaml	明元昭哀皇后西平公主	*	W5表格抓取粘连：谥号与原封号拼接（L1722）
+cn_dicts_cell/history.dict.yaml	齐晏孺子吕晏孺子	*	W5表格抓取粘连：别名拼接（L11907）
+cn_dicts_cell/history.dict.yaml	宇文衍大象	*	W5表格抓取粘连：姓名与年号拼接（L980）
+cn_dicts_cell/history.dict.yaml	一桓帝世	*	W5古籍校注序号残片：剥离括号的〔一〕桓帝世（L19699）
+cn_dicts_cell/history.dict.yaml	二养子嵩嗣	*	W5古籍校注序号残片：剥离括号的〔二〕养子嵩嗣（L19638）
+cn_dicts_cell/history.dict.yaml	三嵩生太祖	*	W5古籍校注序号残片：剥离括号的〔三〕嵩生太祖（L19672）
+cn_dicts_cell/history.dict.yaml	饮食赏赐与觽有异	*	W5古籍OCR错字：《三国志》原文为“与众有异”，衆误OCR为觽（注意：须同步删除phonetics_fix.tsv:440）
+cn_dicts_cell/history.dict.yaml	文成帝拓跋濬	wen cheng di tuo ba jun	Trad/JP/variant: 濬->浚; simplified already in history.dict.yaml:1867
+cn_dicts_cell/history.dict.yaml	何成濬	he cheng jun	Trad/JP/variant: 濬->浚; simplified already in ext.dict.yaml:207656
+cn_dicts_cell/name2.dict.yaml	仛助	*	W5错字+错音：《死神》吉良斩魄刀正名“侘助”，同文件L17971已有“侘助 cha zhu”
+cn_dicts_cell/name2.dict.yaml	狛树左阵	*	W5错字：《死神》七番队长正名“狛村左阵”，同文件L10199已有正词
+cn_dicts_cell/name2.dict.yaml	戍吊	*	W5错字：《死神》流魂街78区正名“戌吊”，同文件L10893已有正词
+cn_dicts_cell/name2.dict.yaml	斑木一角	*	W5错字：《死神》角色正名“斑目一角”，同文件L10179已有正词
+cn_dicts_cell/name2.dict.yaml	双鱼鲤	*	W5错字：《死神》斩魄刀正名“双鱼理”，同文件L10752已有正词
+cn_dicts_cell/name2.dict.yaml	握凌铁斋	*	W5错字：《死神》角色正名“握菱铁斋”，同文件L10827已有正词
+cn_dicts_cell/name2.dict.yaml	志波燕鹫	*	W5错字：《死神》角色正名“志波岩鹫”，同文件L11024已有正词
+cn_dicts_cell/name2.dict.yaml	六丈光牢	*	W5错字：《死神》缚道61正名“六杖光牢”，同文件L10537已有正词
+cn_dicts_cell/name2.dict.yaml	飞镰脚	*	W5错字：《死神》灭却师步法正名“飞廉脚”，同文件L10303已有正词
+cn_dicts_cell/name2.dict.yaml	狄堂春信	*	W5错字：《死神》角色正名“荻堂春信”，同文件L10265已有正词
+cn_dicts_cell/name2.dict.yaml	草鹿八千留	*	W5错字：《死神》角色正名“草鹿八千流”，同文件L4996已有正词
+cn_dicts_cell/name2.dict.yaml	蓝染总佑介	*	W5错字：《死神》角色正名“蓝染惣/总右介”，同文件L5115/L10495已有正词
+cn_dicts_cell/name2.dict.yaml	候尼勋	*	W5错字：歌手正名“侯尼勋”，同文件L8462已有正词
+cn_dicts_cell/name2.dict.yaml	并和氏续	*	W5错字：日本战国武将正名“垪和氏续”，同文件L319已有正词
+cn_dicts_cell/name2.dict.yaml	臼杵俭速	*	W5错字：日本战国武将正名“臼杵鉴速”，同文件L1827已有正词
+cn_dicts_cell/name2.dict.yaml	森下道与	*	W5错字：日本战国武将正名“森下道誉”，同文件L2850已有正词
+cn_dicts_cell/name2.dict.yaml	娓原景宗	*	W5错字：日本战国武将正名“梶原景宗”，同文件L3655已有正词
+cn_dicts_cell/name2.dict.yaml	问驻所统景	*	W5错字：日本战国武将正名“问注所统景”，同文件L3663已有正词
+cn_dicts_cell/name2.dict.yaml	置鮎龙太郎	zhi nian long tai lang	Trad/JP/variant: 鮎->鲇; simplified already in name2.dict.yaml:11030
+cn_dicts_cell/name2.dict.yaml	金旼锺	jin min zhong	Trad/JP/variant: 锺->钟; simplified already in name2.dict.yaml:5880
+cn_dicts_cell/name2.dict.yaml	佐佐长龝	zuo zuo chang qiu	Trad/JP/variant: 龝->秋; simplified already in name2.dict.yaml:4955

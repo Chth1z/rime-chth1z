@@ -809,3 +809,20 @@ cn_dicts_cell/shulihua.dict.yaml	同凋列	tong diao lie	同调列	*	W5数学词
 cn_dicts_cell/shulihua.dict.yaml	正合上同凋列	zheng he shang tong diao lie	正合上同调列	*	W5数学词库OCR错字凋->调	全国科技名词委《数学名词》(L2)
 cn_dicts_cell/shulihua.dict.yaml	自校验代吗	zi jiao yan dai ma	自校验代码	*	W5数学词库OCR错字吗->码	全国科技名词委(L2)
 cn_dicts_cell/shulihua.dict.yaml	蛤同性体	ge tong xing ti	各向同性体	ge xiang tong xing ti	W5数学词库系统性码表损坏：各向->蛤	全国科技名词委《物理学名词》(L2)
+# Batch 3 (history & name2): verified historical/name word fixes
+cn_dicts_cell/history.dict.yaml	景王秃发偄檀	*	景王秃发傉檀	jing wang tu fa nu tan	南凉景王为“秃发傉檀”（对齐L214及deletions:764），偄为傉之OCR错字	晋书/辞海
+cn_dicts_cell/history.dict.yaml	昭成帝拓跋什翼键	*	昭成帝拓跋什翼犍	zhao cheng di tuo ba shi yi jian	代王正名为“拓跋什翼犍”，键为犍之错字	魏书/辞海
+cn_dicts_cell/history.dict.yaml	武肃王钱缪	*	武肃王钱镠	wu su wang qian liu	吴越武肃王正名为“钱镠(liú)”，缪为镠之错字	旧五代史/辞海
+cn_dicts_cell/history.dict.yaml	烈宗慕容实	*	烈宗慕容宝	lie zong mu rong bao	后燕烈宗正名为“慕容宝”，实为宝之OCR错字	晋书/辞海
+cn_dicts_cell/history.dict.yaml	赢驷	*	嬴驷	*	秦惠文王姓“嬴”，赢为W5错别字	史记/辞海
+cn_dicts_cell/history.dict.yaml	秦惠文王赢驷	*	秦惠文王嬴驷	*	秦惠文王姓“嬴”，赢为W5错别字	史记/辞海
+cn_dicts_cell/history.dict.yaml	刘煦	*	刘昫	*	《旧唐书》主编正名为“刘昫(xù)”，煦为W5形近错字	旧五代史/辞海
+cn_dicts_cell/history.dict.yaml	幼主阿速温和吉八	*	幼主阿速吉八	you zhu a su ji ba	元天顺帝正名为“阿速吉八”，删多出之“温和”	元史/维基百科
+cn_dicts_cell/history.dict.yaml	为卒馻	*	为卒吮疽	wei zu shun ju	吴起典故“为卒吮疽”，原词L2364“吮疽”损毁为“馻”	史记/辞海
+cn_dicts_cell/history.dict.yaml	颌阳	*	郃阳	*	西汉左冯翊古县正形为“郃阳”(今合阳)，颌为OCR错字	汉书地理志/辞海
+cn_dicts_cell/history.dict.yaml	颤阴	*	鹑阴	chun yin	汉代安定郡古县正形为“鹑阴”，颤为OCR错字	汉书地理志/辞海
+cn_dicts_cell/history.dict.yaml	忠孝彰着	zhong xiao zhang zhe	忠孝彰著	zhong xiao zhang zhu	繁转简“著->着”误转且误注zhe，应为“彰著(zhù)”	三国志/现汉第7版
+cn_dicts_cell/history.dict.yaml	鄼县	cuo xian	酂县	*	Trad/JP/variant: 鄼->酂（8105三级字，读cuó xiàn已对）	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/history.dict.yaml	林崑冈	lin kun gang	林昆冈	*	Trad/JP/variant: 崑->昆	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/name2.dict.yaml	忽那通着	hu na tong zhe	忽那通著	hu na tong zhu	日本战国水军武将忽那通著(Kutsuna Michiaki)，繁转简误作“着”且误注zhe	日史/通用规范汉字表
+cn_dicts_cell/name2.dict.yaml	立花誾千代	li hua yin qian dai	立花訚千代	*	Trad/JP/variant: 誾->訚（8105规范简化字）	通用规范汉字表/DICTIONARY_SPEC §2.6

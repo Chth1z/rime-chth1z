@@ -393,7 +393,6 @@ cn_dicts_cell/history.dict.yaml	与子同裳	yu zi tong shang	yu zi tong chang	R
 cn_dicts_cell/history.dict.yaml	东缗	dong mian	dong min	R1/R2历史词库读音修正	辞海/正史
 cn_dicts_cell/history.dict.yaml	东阿	dong a	dong e	R1/R2历史词库读音修正	辞海/正史
 cn_dicts_cell/history.dict.yaml	乐进	le jin	yue jin	R1/R2历史词库读音修正	辞海/正史
-cn_dicts_cell/history.dict.yaml	什伐赤	shen fa chi	shi fa chi	R1/R2历史词库读音修正	辞海/正史
 cn_dicts_cell/history.dict.yaml	仇兆鳌	chou zhao ao	qiu zhao ao	R1/R2历史词库读音修正	辞海/正史
 cn_dicts_cell/history.dict.yaml	伍长华	wu zhang hua	wu chang hua	R1/R2历史词库读音修正	辞海/正史
 cn_dicts_cell/history.dict.yaml	何世璂	he shi ji	he shi qi	R1/R2历史词库读音修正	辞海/正史
@@ -437,7 +436,6 @@ cn_dicts_cell/history.dict.yaml	重泉	zhong quan	chong quan	R1/R2历史词库�
 cn_dicts_cell/history.dict.yaml	陈玉璂	chen yu ji	chen yu qi	R1/R2历史词库读音修正	辞海/正史
 cn_dicts_cell/history.dict.yaml	陈璂卿	chen ji qing	chen qi qing	R1/R2历史词库读音修正	辞海/正史
 cn_dicts_cell/history.dict.yaml	陈鳣	chen shan	chen zhan	R1/R2历史词库读音修正	辞海/正史
-cn_dicts_cell/history.dict.yaml	饮食赏赐与觽有异	yin shi shang ci yu wei you yi	yin shi shang ci yu xi you yi	R1/R2历史词库读音修正	辞海/正史
 cn_dicts_cell/idiom.dict.yaml	一力降十会	yi li jiang shi hui	yi li xiang shi hui	R1/R2成语读音修正	现汉第7版
 cn_dicts_cell/idiom.dict.yaml	一模一样	yi mo yi yang	yi mu yi yang	R1/R2成语读音修正	现汉第7版
 cn_dicts_cell/idiom.dict.yaml	一见了然	yi jian le ran	yi jian liao ran	R1/R2成语读音修正	现汉第7版
@@ -1871,7 +1869,7 @@ cn_dicts_cell/history.dict.yaml	唐德宗李适	tang de zong li shi	tang de zong
 cn_dicts_cell/history.dict.yaml	曹参以功封平阳侯	cao can yi gong feng ping yang hou	cao shen yi gong feng ping yang hou	西汉相国曹参规范读 cáo shēn	辞海/史记
 cn_dicts_cell/history.dict.yaml	宋辟公辟兵	song pi gong pi bing	song bi gong bi bing	战国宋君辟公辟兵规范读 bì	辞海/史记
 cn_dicts_cell/history.dict.yaml	陈云裳	chen yun shang	chen yun chang	人名云裳规范读 yún cháng	辞海/L3人名
-cn_dicts_cell/history.dict.yaml	益州刺史种暠于函谷关搜得其笺	yi zhou ci shi zhong gao yu han gu guan sou de qi jian	yi zhou ci shi chong gao yu han gu guan sou de qi jian	东汉名臣种暠种姓规范读 chóng	后汉书/辞海
+cn_dicts_cell/history.dict.yaml	益州刺史种暠于函谷关搜得其笺	yi zhou ci shi zhong gao yu han gu guan sou de qi jian	yi zhou ci shi chong hao yu han gu guan sou de qi jian	东汉名臣种暠种姓读chóng、暠读hào	后汉书/辞海
 cn_dicts_cell/history.dict.yaml	终军弃繻	zhong jun qi ru	zhong jun qi xu	汉代符信繻规范读 xū	汉书/辞海
 cn_dicts_cell/history.dict.yaml	郑繻公	zheng ru gong	zheng xu gong	战国郑君郑繻公规范读 xū	史记/辞海
 cn_dicts_cell/history.dict.yaml	郑繻公姬骀	zheng ru gong ji dai	zheng xu gong ji dai	战国郑君郑繻公规范读 xū	史记/辞海
@@ -3011,3 +3009,295 @@ cn_dicts_cell/medication.dict.yaml	恶寒无汗	e han wu han	wu han wu han	《�
 cn_dicts_cell/medication.dict.yaml	发热恶寒头项痛	fa re e han tou xiang tong	fa re wu han tou xiang tong	《现汉7》与中医规范“恶寒”读 wù hán	现汉第7版/中医药学名词(L1/L2)
 cn_dicts_cell/medication.dict.yaml	头痛恶寒	tou tong e han	tou tong wu han	《现汉7》与中医规范“恶寒”读 wù hán	现汉第7版/中医药学名词(L1/L2)
 cn_dicts_cell/medication.dict.yaml	外感恶寒	wai gan e han	wai gan wu han	《现汉7》与中医规范“恶寒”读 wù hán	现汉第7版/中医药学名词(L1/L2)
+# Batch 3 (history & name2): verified historical/Sengoku/FF14 phonetic fixes
+cn_dicts_cell/history.dict.yaml	刘曾騄	liu ceng lu	liu zeng lu	人名“曾”规范读 zēng（非副词 céng）	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	次曾	ci ceng	ci zeng	人名/字号“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	公曾	gong ceng	gong zeng	西晋荀勖字公曾，人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	林泰曾	lin tai ceng	lin tai zeng	北洋水师将领林泰曾，人名“曾”读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	蔡曾源	cai ceng yuan	cai zeng yuan	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	曹炳曾	cao bing ceng	cao bing zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	曹曾	cao ceng	cao zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	陈希曾	chen xi ceng	chen xi zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	达曾	da ceng	da zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	戴光曾	dai guang ceng	dai guang zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	狄鲁曾	di lu ceng	di lu zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	方兆曾	fang zhao ceng	fang zhao zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	符曾	fu ceng	fu zeng	清代诗人符曾，人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	甘绍曾	gan shao ceng	gan shao zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	顾曾铭	gu ceng ming	gu zeng ming	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	顾曾唯	gu ceng wei	gu zeng wei	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	归曾祁	gui ceng qi	gui zeng qi	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	黄贯曾	huang guan ceng	huang guan zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	黄省曾	huang sheng ceng	huang xing zeng	明代学者黄省曾（省xǐng/曾zēng，典出曾子三省）	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	景梁曾	jing liang ceng	jing liang zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	李曾蔚	li ceng wei	li zeng wei	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	李觐曾	li jin ceng	li jin zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	林祇曾	lin qi ceng	lin qi zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	刘淑曾	liu shu ceng	liu shu zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	鲁曾煜	lu ceng yu	lu zeng yu	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	陆绍曾	lu shao ceng	lu shao zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	吕耀曾	lv yao ceng	lv yao zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	倪耀曾	ni yao ceng	ni yao zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	潘曾玮	pan ceng wei	pan zeng wei	清代苏州潘氏“曾”字辈（与潘曾莹同辈）读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	潘曾沂	pan ceng yi	pan zeng yi	清代苏州潘氏“曾”字辈（与潘曾莹同辈）读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	潘诒曾	pan yi ceng	pan yi zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	钱曾	qian ceng	qian zeng	明末清初藏书家钱曾读 Qián Zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	钱彭曾	qian peng ceng	qian peng zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	秦兆曾	qin zhao ceng	qin zhao zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	邵曾训	shao ceng xun	shao zeng xun	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	沈恺曾	shen kai ceng	shen kai zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	沈彦曾	shen yan ceng	shen yan zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	施念曾	shi nian ceng	shi nian zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	宋庆曾	song qing ceng	song qing zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	孙超曾	sun chao ceng	sun chao zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	汤右曾	tang you ceng	tang you zeng	清代诗人汤右曾，人名“曾”读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	汪曾瑟	wang ceng se	wang zeng se	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	王宪曾	wang xian ceng	wang xian zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	王毓曾	wang yu ceng	wang yu zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	魏锡曾	wei xi ceng	wei xi zeng	清代篆刻家魏锡曾，人名“曾”读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	魏学曾	wei xue ceng	wei xue zeng	明代兵部尚书魏学曾读 Wèi Xuézēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	武曾保	wu ceng bao	wu zeng bao	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	吴曾贯	wu ceng guan	wu zeng guan	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	谢希曾	xie xi ceng	xie xi zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	徐恩曾	xu en ceng	xu en zeng	民国人物徐恩曾读 Xú Ēnzēng	现汉第7版/维基百科
+cn_dicts_cell/history.dict.yaml	许观曾	xu guan ceng	xu guan zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	徐孟曾	xu meng ceng	xu meng zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	许缵曾	xu zuan ceng	xu zuan zeng	清初官吏许缵曾，人名“曾”读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	严宪曾	yan xian ceng	yan xian zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	言忠曾	yan zhong ceng	yan zhong zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	杨尔曾	yang er ceng	yang er zeng	明代出版家杨尔曾，人名“曾”读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	杨述曾	yang shu ceng	yang shu zeng	清代学者杨述曾，人名“曾”读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	俞奕曾	yu yi ceng	yu yi zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	张悦曾	zhang yue ceng	zhang yue zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	赵曾	zhao ceng	zhao zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	赵曾望	zhao ceng wang	zhao zeng wang	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	周曾培	zhou ceng pei	zhou zeng pei	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	周齐曾	zhou qi ceng	zhou qi zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	周彦曾	zhou yan ceng	zhou yan zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	朱士曾	zhu shi ceng	zhu shi zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	朱文曾	zhu wen ceng	zhu wen zeng	人名“曾”规范读 zēng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	罗卜藏扎什	luo bu cang zha shi	luo bu zang zha shi	藏蒙人名(Lobsang Tashi)，藏读 zàng、什读 shí	清史/现汉第7版
+cn_dicts_cell/history.dict.yaml	噶勒藏多尔济	ga le cang duo er ji	ga le zang duo er ji	蒙藏人名噶勒藏(Galsang)读 zàng（对齐拉藏汗）	清史/辞海
+cn_dicts_cell/history.dict.yaml	明孝宗朱祐樘	ming xiao zong zhu you tang	ming xiao zong zhu you cheng	明孝宗名“樘”现汉第7版规范读 chēng	现汉第7版/明史
+cn_dicts_cell/history.dict.yaml	冯焌光	feng qu guang	feng jun guang	清代官员冯焌光，“焌”人名读 jùn（非烹饪 qū）	现汉第7版/清史
+cn_dicts_cell/history.dict.yaml	乔塞佩	qiao se pei	qiao sai pei	意大利名Giuseppe音译，塞读 sāi/sài（对齐朱塞佩）	现汉第7版/译名规范
+cn_dicts_cell/history.dict.yaml	华裳	hua shang	hua chang	“裳”除口语“衣裳”外均读 cháng	现汉第7版
+cn_dicts_cell/history.dict.yaml	楚裳	chu shang	chu chang	“裳”除口语“衣裳”外均读 cháng	现汉第7版
+cn_dicts_cell/history.dict.yaml	黄乃裳	huang nai shang	huang nai chang	近代华侨领袖黄乃裳读 Huáng Nǎicháng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	黄元裳	huang yuan shang	huang yuan chang	人名“裳”读 cháng	现汉第7版
+cn_dicts_cell/history.dict.yaml	唐咏裳	tang yong shang	tang yong chang	人名“裳”读 cháng	现汉第7版
+cn_dicts_cell/history.dict.yaml	朱裳	zhu shang	zhu chang	明代名臣朱裳，人名“裳”读 cháng	现汉第7版/明史
+cn_dicts_cell/history.dict.yaml	松筠	song jun	song yun	清代军机大臣松筠，“筠”本义及人名读 yún（jūn仅筠连）	现汉第7版/清史
+cn_dicts_cell/history.dict.yaml	程芝筠	cheng zhi jun	cheng zhi yun	人名“筠”规范读 yún	现汉第7版
+cn_dicts_cell/history.dict.yaml	顾隆筠	gu long jun	gu long yun	人名“筠”规范读 yún	现汉第7版
+cn_dicts_cell/history.dict.yaml	姜筠	jiang jun	jiang yun	清末画家姜筠，人名“筠”规范读 yún	现汉第7版
+cn_dicts_cell/history.dict.yaml	焦汝筠	jiao ru jun	jiao ru yun	人名“筠”规范读 yún	现汉第7版
+cn_dicts_cell/history.dict.yaml	李筠嘉	li jun jia	li yun jia	人名“筠”规范读 yún	现汉第7版
+cn_dicts_cell/history.dict.yaml	潘庭筠	pan ting jun	pan ting yun	清代学者潘庭筠，人名“筠”规范读 yún	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	屈秉筠	qu bing jun	qu bing yun	清代女诗人屈秉筠，人名“筠”规范读 yún	现汉第7版
+cn_dicts_cell/history.dict.yaml	沈筠	shen jun	shen yun	人名“筠”规范读 yún	现汉第7版
+cn_dicts_cell/history.dict.yaml	宋筠	song jun	song yun	清代藏书家宋筠，人名“筠”规范读 yún	现汉第7版
+cn_dicts_cell/history.dict.yaml	姚筠	yao jun	yao yun	人名“筠”规范读 yún	现汉第7版
+cn_dicts_cell/history.dict.yaml	张树筠	zhang shu jun	zhang shu yun	人名“筠”规范读 yún	现汉第7版
+cn_dicts_cell/history.dict.yaml	朱筠	zhu jun	zhu yun	清代学者朱筠（朱珪兄），人名“筠”规范读 yún	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	卢焯	lu chao	lu zhuo	“焯”明亮/人名读 zhuō（chāo仅烹饪焯水）	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	蔡焯	cai chao	cai zhuo	人名“焯”规范读 zhuō	现汉第7版
+cn_dicts_cell/history.dict.yaml	陈焯	chen chao	chen zhuo	清代藏书家陈焯，人名“焯”规范读 zhuō	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	丁一焯	ding yi chao	ding yi zhuo	人名“焯”规范读 zhuō	现汉第7版
+cn_dicts_cell/history.dict.yaml	端木焯	duan mu chao	duan mu zhuo	人名“焯”规范读 zhuō	现汉第7版
+cn_dicts_cell/history.dict.yaml	何焯	he chao	he zhuo	清代学者何焯规范读 Hé Zhuō	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	金友焯	jin you chao	jin you zhuo	人名“焯”规范读 zhuō	现汉第7版
+cn_dicts_cell/history.dict.yaml	孔传焯	kong chuan chao	kong chuan zhuo	人名“焯”规范读 zhuō	现汉第7版
+cn_dicts_cell/history.dict.yaml	卢登焯	lu deng chao	lu deng zhuo	人名“焯”规范读 zhuō	现汉第7版
+cn_dicts_cell/history.dict.yaml	钱焯	qian chao	qian zhuo	人名“焯”规范读 zhuō	现汉第7版
+cn_dicts_cell/history.dict.yaml	沈世焯	shen shi chao	shen shi zhuo	人名“焯”规范读 zhuō	现汉第7版
+cn_dicts_cell/history.dict.yaml	滕焯	teng chao	teng zhuo	人名“焯”规范读 zhuō	现汉第7版
+cn_dicts_cell/history.dict.yaml	吴焯	wu chao	wu zhuo	清代藏书家吴焯，人名“焯”规范读 zhuō	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	恽焯	yun chao	yun zhuo	人名“焯”规范读 zhuō	现汉第7版
+cn_dicts_cell/history.dict.yaml	萧詧	xiao qie	xiao cha	西梁宣帝萧詧，“詧”同察读 chá	辞海/周书
+cn_dicts_cell/history.dict.yaml	赵廞	zhao qian	zhao xin	西晋益州刺史赵廞，“廞”单音 xīn	辞海/晋书
+cn_dicts_cell/history.dict.yaml	门渱凤	men gong feng	men hong feng	“渱”规范读 hóng	汉语大字典
+cn_dicts_cell/history.dict.yaml	贠兴宗	yuan xing zong	yun xing zong	南宋学者贠兴宗，姓氏“贠”规范读 yùn	现汉第7版/8105
+cn_dicts_cell/history.dict.yaml	钭江明	dou jiang ming	tou jiang ming	姓氏“钭”规范读 tǒu	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	么辉	me hui	yao hui	姓氏“么”规范读 yāo	现汉第7版
+cn_dicts_cell/history.dict.yaml	莘开	xin kai	shen kai	清代书画家莘开，姓氏“莘”规范读 shēn	现汉第7版
+cn_dicts_cell/history.dict.yaml	句安	ju an	gou an	蜀汉将领句安，姓氏“句”读 gōu	辞海/三国志
+cn_dicts_cell/history.dict.yaml	乐纯	le chun	yue chun	明代人物乐纯，姓氏“乐”读 yuè	现汉第7版
+cn_dicts_cell/history.dict.yaml	乐涫	le guan	yue guan	汉酒泉郡乐涫县读 yuè guàn	汉书/中国历史地名大辞典
+cn_dicts_cell/history.dict.yaml	卜佳	bo jia	bu jia	满洲姓氏/人名“卜”读 bǔ	清史/现汉第7版
+cn_dicts_cell/history.dict.yaml	余祭	yu ji	yu zhai	春秋吴王余祭读 yú zhài	辞海/史记索隐
+cn_dicts_cell/history.dict.yaml	齐召南	qi zhao nan	qi shao nan	清代学者齐召南，名取《诗经·召南》读 shào	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	徐中行	xu zhong hang	xu zhong xing	明后七子徐中行，“中行”取操行义读 xíng	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	张綖	zhang xian	zhang yan	明代词家张綖，“綖”读 yán	辞海/汉语大字典
+cn_dicts_cell/history.dict.yaml	谢文洊	xie wen cun	xie wen jian	清初理学家谢文洊，“洊”读 jiàn	辞海/汉语大字典
+cn_dicts_cell/history.dict.yaml	赵汸	zhao pang	zhao fang	元代经学家赵汸，“汸”人名读 fāng	辞海/明史
+cn_dicts_cell/history.dict.yaml	江汸	jiang pang	jiang fang	人名“汸”读 fāng	汉语大字典
+cn_dicts_cell/history.dict.yaml	寿鉨	shou ni	shou xi	“鉨”古同“玺”读 xǐ（非2017化学元素nǐ）	汉语大字典
+cn_dicts_cell/history.dict.yaml	临菑	lin zai	lin zi	古齐都临菑(同临淄)读 lín zī	辞海/史记
+cn_dicts_cell/history.dict.yaml	琅邪国	lang xie guo	lang ya guo	1985审音表及现汉第7版“琅邪”统读 láng yá	现汉第7版/base对齐
+cn_dicts_cell/history.dict.yaml	蕃县	fan xian	pi xian	汉代鲁国蕃县（今滕州）专读 pí xiàn	汉书应劭注/辞海
+cn_dicts_cell/history.dict.yaml	番汗	fan han	pan han	汉代辽东古县番汗读 pān hán	汉书/中国历史地名大辞典
+cn_dicts_cell/history.dict.yaml	番和	fan he	pan he	汉代武威古县番和读 pān hé	汉书/中国历史地名大辞典
+cn_dicts_cell/history.dict.yaml	且兰	qie lan	ju lan	汉代牂柯郡古国/县且兰读 jū lán	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	枹罕	bao han	fu han	秦汉至唐陇右名城枹罕读 fú hǎn	辞海/现汉第7版
+cn_dicts_cell/history.dict.yaml	漯阴	luo yin	ta yin	西汉济南郡古县漯阴(古漯水)读 tà yīn	辞海/汉书
+cn_dicts_cell/history.dict.yaml	翟衣	zhai yi	di yi	古代后妃雉羽礼服“翟衣”读 dí yī	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	刘玢	liu fen	liu bin	南汉殇帝刘玢读 liú bīn（fēn仅玢岩）	辞海/新五代史
+cn_dicts_cell/history.dict.yaml	殇帝刘玢	shang di liu fen	shang di liu bin	南汉殇帝刘玢读 liú bīn	辞海/新五代史
+cn_dicts_cell/history.dict.yaml	黄玢	huang fen	huang bin	人名“玢”读 bīn	现汉第7版
+cn_dicts_cell/history.dict.yaml	田剡	tian shan	tian yan	战国田齐君主田侯剡读 tián yǎn	辞海/维基百科
+cn_dicts_cell/history.dict.yaml	县令长	xian ling chang	xian ling zhang	秦汉县级长官“县令、县长”读 zhǎng	汉书/现汉第7版
+cn_dicts_cell/history.dict.yaml	万石父子	wan shi fu zi	wan dan fu zi	西汉万石君石奋父子，俸禄“石”读 dàn	史记/现汉第7版
+cn_dicts_cell/history.dict.yaml	六合巾	lu he jin	liu he jin	明代“六合”(天地四方)巾帽读 liù hé	现汉第7版/明史
+cn_dicts_cell/history.dict.yaml	六合一统帽	lu he yi tong mao	liu he yi tong mao	明代六合一统帽读 liù hé（lù仅六合区）	现汉第7版/明史
+cn_dicts_cell/history.dict.yaml	陈率祖	chen lv zu	chen shuai zu	清代官员/书画家陈率祖，“率”读 shuài	现汉第7版
+cn_dicts_cell/history.dict.yaml	程一了	cheng yi le	cheng yi liao	“一了”读 yī liǎo	现汉第7版
+cn_dicts_cell/history.dict.yaml	孛儿只斤铁木真	bei er zhi jin tie mu zhen	bo er zhi jin tie mu zhen	蒙古姓氏孛儿只斤读 bó（对齐phonetics_fix:410）	辞海/元史
+cn_dicts_cell/history.dict.yaml	孛兰合剌孙	bei lan he la sun	bo lan he la sun	蒙古人名“孛”读 bó	辞海/元史
+cn_dicts_cell/history.dict.yaml	孛鲁合	bei lu he	bo lu he	蒙古人名“孛”读 bó	辞海/元史
+cn_dicts_cell/history.dict.yaml	元太祖孛儿只斤铁木真	yuan tai zu bei er zhi jin tie mu zhen	yuan tai zu bo er zhi jin tie mu zhen	蒙古姓氏孛儿只斤读 bó（对齐phonetics_fix:410）	辞海/元史
+cn_dicts_cell/history.dict.yaml	敬悼公张玄靓	jing dao gong zhang xuan liang	jing dao gong zhang xuan jing	前凉君主张玄靓读 jìng（对齐L990及deletions:759）	辞海/晋书
+cn_dicts_cell/history.dict.yaml	方技传	fang ji chuan	fang ji zhuan	《后汉书》传记篇名读 zhuàn	现汉第7版/正史
+cn_dicts_cell/history.dict.yaml	陆逊传	lu xun chuan	lu xun zhuan	《三国志》传记篇名读 zhuàn	现汉第7版/正史
+cn_dicts_cell/history.dict.yaml	吴主传	wu zhu chuan	wu zhu zhuan	《三国志》传记篇名读 zhuàn	现汉第7版/正史
+cn_dicts_cell/history.dict.yaml	宗室传	zong shi chuan	zong shi zhuan	正史宗室传记篇名读 zhuàn	现汉第7版/正史
+cn_dicts_cell/history.dict.yaml	宋桓公御说	song huan gong yu shuo	song huan gong yu yue	春秋宋桓公名御说，“说”通“悦”读 yuè	辞海/左传
+cn_dicts_cell/history.dict.yaml	御说	yu shuo	yu yue	春秋宋桓公名御说读 yù yuè	辞海/左传
+cn_dicts_cell/history.dict.yaml	陈夷公妫说	chen yi gong gui shuo	chen yi gong gui yue	西周陈夷公名说，“说”通“悦”读 yuè	辞海/史记
+cn_dicts_cell/history.dict.yaml	妫说	gui shuo	gui yue	西周陈夷公妫说读 guī yuè	辞海/史记
+cn_dicts_cell/history.dict.yaml	谋说韩信	mou shuo han xin	mou shui han xin	典出蒯通游说韩信，“说”劝说义读 shuì	现汉第7版/史记
+cn_dicts_cell/history.dict.yaml	郭铣	guo xi	guo xian	人名“铣”现汉第7版读 xiǎn（对齐曾铣）	现汉第7版
+cn_dicts_cell/history.dict.yaml	胡铣	hu xi	hu xian	人名“铣”现汉第7版读 xiǎn	现汉第7版
+cn_dicts_cell/history.dict.yaml	卢铣	lu xi	lu xian	人名“铣”现汉第7版读 xiǎn	现汉第7版
+cn_dicts_cell/history.dict.yaml	马铣	ma xi	ma xian	人名“铣”现汉第7版读 xiǎn	现汉第7版
+cn_dicts_cell/history.dict.yaml	出帝石重贵	chu di shi zhong gui	chu di shi chong gui	后晋出帝石重贵规范读 shí chóng guì	辞海/旧五代史
+cn_dicts_cell/history.dict.yaml	温王李重茂	wen wang li zhong mao	wen wang li chong mao	唐殇帝/温王李重茂规范读 lǐ chóng mào	辞海/旧唐书
+cn_dicts_cell/history.dict.yaml	安重荣	an zhong rong	an chong rong	五代后晋将领安重荣规范读 ān chóng róng	辞海/旧五代史
+cn_dicts_cell/history.dict.yaml	谢重辉	xie zhong hui	xie chong hui	清代诗人谢重辉，“重辉”读 chóng huī	辞海
+cn_dicts_cell/history.dict.yaml	郑重光	zheng zhong guang	zheng chong guang	明末清初医家郑重光读 chóng guāng（对齐蒋重光）	辞海
+cn_dicts_cell/history.dict.yaml	高祖刘暠	gao zu liu gao	gao zu liu hao	“暠”人名通“皓”读 hào	辞海/现汉
+cn_dicts_cell/history.dict.yaml	刘暠	liu gao	liu hao	“暠”人名通“皓”读 hào	辞海/现汉
+cn_dicts_cell/history.dict.yaml	武昭王李暠	wu zhao wang li gao	wu zhao wang li hao	西凉武昭王李暠规范读 lǐ hào（对齐L653）	辞海/晋书
+cn_dicts_cell/history.dict.yaml	成諟	cheng di	cheng shi	“諟”古同“是”读 shì	汉语大字典
+cn_dicts_cell/history.dict.yaml	璷妃	fu fei	lu fei	清代后妃封号“璷”读 lǔ	清史/汉语大字典
+cn_dicts_cell/history.dict.yaml	沈宗塙	shen zong qiao	shen zong que	“塙”同“确”读 què	汉语大字典
+cn_dicts_cell/history.dict.yaml	清都公主	qing dou gong zhu	qing du gong zhu	北齐清都公主，“都”城都义读 dū	北齐书/现汉第7版
+cn_dicts_cell/history.dict.yaml	鸿都门下	hong dou men xia	hong du men xia	东汉鸿都门学，“都”读 dū	后汉书/现汉第7版
+cn_dicts_cell/history.dict.yaml	额亦都	e yi dou	e yi du	清初开国五大臣额亦都(Eidu)读 é yì dū	清史/辞海
+cn_dicts_cell/history.dict.yaml	都尔巴	dou er ba	du er ba	满洲人名“都”音译读 dū	清史
+cn_dicts_cell/history.dict.yaml	赫都	he dou	he du	满洲人名“都”音译读 dū	清史
+cn_dicts_cell/history.dict.yaml	坤都	kun dou	kun du	满洲人名“都”音译读 dū	清史
+cn_dicts_cell/history.dict.yaml	喇都	la dou	la du	满洲人名“都”音译读 dū	清史
+cn_dicts_cell/history.dict.yaml	那木都鲁	na mu dou lu	na mu du lu	满洲姓氏那木都鲁(Namdulu)读 dū	清史
+cn_dicts_cell/history.dict.yaml	生都	sheng dou	sheng du	满洲人名“都”音译读 dū	清史
+cn_dicts_cell/history.dict.yaml	温都	wen dou	wen du	满洲姓氏温都(Wendu)读 dū	清史
+cn_dicts_cell/history.dict.yaml	温都礼	wen dou li	wen du li	满洲人名“都”音译读 dū	清史
+cn_dicts_cell/history.dict.yaml	都卬	dou ang	du ang	明代文人都卬，姓氏“都”读 dū	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	都匠	dou jiang	du jiang	古代官职/大匠“都匠”读 dū jiàng	辞海/现汉第7版
+cn_dicts_cell/history.dict.yaml	都锦生	dou jin sheng	du jin sheng	近代丝织实业家都锦生，姓氏“都”读 dū	现汉第7版/辞海
+cn_dicts_cell/history.dict.yaml	都任	dou ren	du ren	明代官员都任，姓氏“都”读 dū	明史/现汉第7版
+cn_dicts_cell/history.dict.yaml	都荣	dou rong	du rong	姓氏“都”读 dū	现汉第7版
+cn_dicts_cell/history.dict.yaml	都水监	dou shui jian	du shui jian	古代水利官署都水监读 dū shuǐ jiān	辞海/现汉第7版
+cn_dicts_cell/history.dict.yaml	都水台	dou shui tai	du shui tai	古代水利官署都水台读 dū shuǐ tái	辞海/现汉第7版
+cn_dicts_cell/history.dict.yaml	都嗣成	dou si cheng	du si cheng	姓氏“都”读 dū	现汉第7版
+cn_dicts_cell/history.dict.yaml	都四德	dou si de	du si de	姓氏“都”读 dū	现汉第7版
+cn_dicts_cell/history.dict.yaml	都台	dou tai	du tai	古代官署/都察院别称“都台”读 dū tái	辞海/现汉第7版
+cn_dicts_cell/history.dict.yaml	龚都	gong dou	gong du	东汉末年将领龚都读 gōng dū	三国志/辞海
+cn_dicts_cell/history.dict.yaml	雩都	yu dou	yu du	古县名雩都(今江西于都)读 yú dū	汉书/辞海
+cn_dicts_cell/history.dict.yaml	汉相国参之后	han xiang guo can zhi hou	han xiang guo shen zhi hou	指汉相国曹参，对齐L19628曹参读 shēn	史记/三国志
+cn_dicts_cell/history.dict.yaml	后所亡豕自还其家	hou suo wang shi zi hai qi jia	hou suo wang shi zi huan qi jia	“自还其家”归还义读 huán	三国志/现汉第7版
+cn_dicts_cell/history.dict.yaml	常称叹暠	chang cheng tan gao	chang cheng tan hao	东汉种暠，“暠”人名读 hào	后汉书/辞海
+cn_dicts_cell/history.dict.yaml	暠后为司徒	gao hou wei si tu	hao hou wei si tu	东汉种暠，“暠”人名读 hào	后汉书/辞海
+cn_dicts_cell/history.dict.yaml	乃寝暠奏	nai qin gao zou	nai qin hao zou	东汉种暠，“暠”人名读 hào	后汉书/辞海
+cn_dicts_cell/history.dict.yaml	以为暠得事上之节	yi wei gao de shi shang zhi jie	yi wei hao de shi shang zhi jie	东汉种暠，“暠”人名读 hào	后汉书/辞海
+cn_dicts_cell/history.dict.yaml	至今适嗣国于容城	zhi jin shi si guo yu rong cheng	zhi jin di si guo yu rong cheng	“适嗣”古同“嫡嗣”，读 dí sì	三国志/现汉第7版
+cn_dicts_cell/name2.dict.yaml	徐子崴	xu zi wei	xu zi wai	歌手徐子崴(Ziwai Xu)本名及现汉人名读 wǎi	L3人名/现汉第7版
+cn_dicts_cell/name2.dict.yaml	朴素珍	pu su zhen	piao su zhen	韩国艺人朴素珍(Park So-jin)，姓氏“朴”读 piáo（绕过clean-dicts朴素豁免）	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	朴素贤	pu su xian	piao su xian	韩国艺人朴素贤(Park So-hyun)，姓氏“朴”读 piáo（绕过clean-dicts朴素豁免）	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	李赫焌	li he qu	li he jun	韩国摄影师李赫焌(Lee Hyuk-jun)，“焌”人名读 jùn	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	张语倢	zhang yu qie	zhang yu jie	台湾歌手张语倢，“倢”规范单音 jié（非 qie）	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	许率智	xu lv zhi	xu shuai zhi	韩国歌手许率智(Heo Sol-ji)，“率”人名读 shuài（对齐朴率美）	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	李和曾	li he ceng	li he zeng	京剧艺术家李和曾，人名“曾”规范读 zēng	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	李宣筠	li xuan jun	li xuan yun	人名“筠”规范读 yún（jūn仅限筠连县）	现汉第7版
+cn_dicts_cell/name2.dict.yaml	藏娃	cang wa	zang wa	藏族歌手藏娃（完马三智），“藏”指藏族读 zàng	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	牛朝阳	niu chao yang	niu zhao yang	中国导演/音乐人牛朝阳，“朝阳”读 zhāo yáng	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	木曾义昌	mu ceng yi chang	mu zeng yi chang	日本姓氏木曾(Kiso)中文规范读 mù zēng（对齐曾根/下曾根）	现汉第7版/辞海
+cn_dicts_cell/name2.dict.yaml	木曾义康	mu ceng yi kang	mu zeng yi kang	同上	现汉第7版/辞海
+cn_dicts_cell/name2.dict.yaml	木曾义利	mu ceng yi li	mu zeng yi li	同上	现汉第7版/辞海
+cn_dicts_cell/name2.dict.yaml	木曾义元	mu ceng yi yuan	mu zeng yi yuan	同上	现汉第7版/辞海
+cn_dicts_cell/name2.dict.yaml	木曾义在	mu ceng yi zai	mu zeng yi zai	同上	现汉第7版/辞海
+cn_dicts_cell/name2.dict.yaml	大友亲家	da you qing jia	da you qin jia	日本武将大友亲家(Chikaie)，非“亲家(qìngjia)”	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	户次亲家	hu ci qing jia	hu ci qin jia	日本武将户次亲家(Chikaie)，非“亲家(qìngjia)”	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	江村亲家	jiang cun qing jia	jiang cun qin jia	日本武将江村亲家(Chikaie)，非“亲家(qìngjia)”	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	滨尾行泰	bin wei hang tai	bin wei xing tai	日本武将滨尾行泰(Yukiyasu)，“行”读 xíng（对齐小西行长）	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	小堀正行	xiao ku zheng hang	xiao ku zheng xing	日本武将小堀正行(Masayuki)，“行”读 xíng	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	日比野六大夫	ri bi ye liu dai fu	ri bi ye liu da fu	日本战国武士通称“大夫”读 dà fū（非医生 dài fu）	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	铃木佐大夫	ling mu zuo dai fu	ling mu zuo da fu	日本战国武士通称“大夫”读 dà fū（非医生 dài fu）	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	坂崎重行	ban qi chong xing	ban qi zhong xing	日本武将名“重”(Shige)中文统读 zhòng（对齐本多重次等300+条）	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	泷本重行	long ben chong xing	long ben zhong xing	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	祢寝重张	mi qin chong zhang	mi qin zhong zhang	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	青木一重	qing mu yi chong	qing mu yi zhong	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	泉田重光	quan tian chong guang	quan tian zhong guang	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	桑山一重	sang shan yi chong	sang shan yi zhong	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	上田重安	shang tian chong an	shang tian zhong an	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	伊地知重兴	yi di zhi chong xing	yi di zhi zhong xing	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	益子重纲	yi zi chong gang	yi zi zhong gang	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	用土重连	yong tu chong lian	yong tu zhong lian	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	竹贯重光	zhu guan chong guang	zhu guan zhong guang	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	城井长房	cheng jing zhang fang	cheng jing chang fang	日本武将名“长”(Naga)中文统读 cháng（对齐神保长住/小西行长）	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	成田长亲	cheng tian zhang qin	cheng tian chang qin	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	川端家长	chuan duan jia zhang	chuan duan jia chang	同上（非“家长 jiāzhǎng”）	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	服部保长	fu bu bao zhang	fu bu bao chang	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	冈部长盛	gang bu zhang sheng	gang bu chang sheng	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	宫部长房	gong bu zhang fang	gong bu chang fang	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	关长尚	guan zhang shang	guan chang shang	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	河田长亲	he tian zhang qin	he tian chang qin	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	来岛长亲	lai dao zhang qin	lai dao chang qin	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	林就长	lin jiu zhang	lin jiu chang	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	内藤家长	nei teng jia zhang	nei teng jia chang	同上（非“家长”）	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	三村长亲	san cun zhang qin	san cun chang qin	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	色部长实	se bu zhang shi	se bu chang shi	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	山县长茂	shan xian zhang mao	shan xian chang mao	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	杉原长房	shan yuan zhang fang	shan yuan chang fang	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	上村长国	shang cun zhang guo	shang cun chang guo	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	上村长陆	shang cun zhang lu	shang cun chang lu	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	上村长种	shang cun zhang zhong	shang cun chang zhong	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	神保长诚	shen bao zhang cheng	shen bao chang cheng	同上（对齐已修神保长住/神保长城）	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	神保长职	shen bao zhang zhi	shen bao chang zhi	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	生驹家长	sheng ju jia zhang	sheng ju jia chang	同上（非“家长”）	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	松平长亲	song ping zhang qin	song ping chang qin	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	陶长房	tao zhang fang	tao chang fang	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	小坂雄长	xiao ban xiong zhang	xiao ban xiong chang	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	小笠原家长	xiao li yuan jia zhang	xiao li yuan jia chang	同上（非“家长”）	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	小笠原长高	xiao li yuan zhang gao	xiao li yuan chang gao	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	筱原长房	xiao yuan zhang fang	xiao yuan chang fang	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	盐川长满	yan chuan zhang man	yan chuan chang man	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	佐佐长成	zuo zuo zhang cheng	zuo zuo chang cheng	同上	现汉第7版/日史
+cn_dicts_cell/name2.dict.yaml	朝雾小牧	chao wu xiao mu	zhao wu xiao mu	“朝雾”晨雾义读 zhāo wù	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	朝雾小雪	chao wu xiao xue	zhao wu xiao xue	“朝雾”晨雾义读 zhāo wù	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	朝香果林	chao xiang guo lin	zhao xiang guo lin	LoveLive!角色朝香果林，日姓“朝”(Asa)读 zhāo（对齐朝比奈/朝仓）	L3人名/现汉第7版
+cn_dicts_cell/name2.dict.yaml	裳悬景利	shang xuan jing li	chang xuan jing li	“裳”除口语“衣裳”外均读 cháng	现汉第7版
+cn_dicts_cell/name2.dict.yaml	美奈裳	mei nai shang	mei nai chang	人名“裳”读 cháng	现汉第7版
+cn_dicts_cell/name2.dict.yaml	伊吹美奈裳	yi chui mei nai shang	yi chui mei nai chang	人名“裳”读 cháng	现汉第7版
+cn_dicts_cell/name2.dict.yaml	北条沙都子	bei tiao sha dou zi	bei tiao sha du zi	寒蝉角色沙都子，人名“都”读 dū（非副词 dōu）	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	宫崎都	gong qi dou	gong qi du	人名“都”读 dū	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	岚千砂都	lan qian sha dou	lan qian sha du	LoveLive!角色岚千砂都，人名“都”读 dū	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	都大人	dou da ren	du da ren	死神志波都敬称，人名“都”读 dū	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	志波都	zhi bo dou	zhi bo du	死神角色志波都，人名“都”读 dū	现汉第7版/L3人名
+cn_dicts_cell/name2.dict.yaml	海之都	hai zhi dou	hai zhi du	FF14主城称谓“都”读 dū（对齐沙都/森之都/砂之都）	现汉第7版/L3专名
+cn_dicts_cell/name2.dict.yaml	吉尔伽美什恩奇都	ji er jia mei shi en qi dou	ji er jia mei shi en qi du	FF14角色恩奇都读 dū（对齐phonetics_fix:781恩奇都）	现汉第7版/L3专名
+cn_dicts_cell/name2.dict.yaml	基迦巨人僧都	ji jia ju ren seng dou	ji jia ju ren seng du	僧官“僧都”读 sēng dū	辞海/现汉第7版
+cn_dicts_cell/name2.dict.yaml	迷你纱都	mi ni sha dou	mi ni sha du	FF14宠物名“纱都”读 dū	现汉第7版/L3专名
+cn_dicts_cell/name2.dict.yaml	森都	sen dou	sen du	FF14主城格里达尼亚简称“森都”读 dū（对齐沙都）	现汉第7版/L3专名
+cn_dicts_cell/name2.dict.yaml	纱都	sha dou	sha du	FF14角色名“纱都”读 dū	现汉第7版/L3专名
+cn_dicts_cell/name2.dict.yaml	山之都	shan zhi dou	shan zhi du	FF14称谓“山之都”读 dū	现汉第7版/L3专名
+cn_dicts_cell/name2.dict.yaml	水晶都脂鲤	shui jing dou zhi li	shui jing du zhi li	FF14地名“水晶都”读 dū	现汉第7版/L3专名
+cn_dicts_cell/name2.dict.yaml	彭忒西勒亚	peng tei xi le ya	peng te xi le ya	希腊译名Penthesilea，“忒”音译读 tè（非方言 tēi）	现汉第7版/译名规范
+cn_dicts_cell/name2.dict.yaml	彭忒西勒亚的火种	peng tei xi le ya di huo zhong	peng te xi le ya de huo zhong	“忒”读 tè 且助词“的”读 de	现汉第7版
+cn_dicts_cell/name2.dict.yaml	和风流地	he feng liu de	he feng liu di	FF14地名“流地”为名词读 dì（非副词 de）	现汉第7版/L3专名
+cn_dicts_cell/name2.dict.yaml	和风流地沿岸	he feng liu de yan an	he feng liu di yan an	FF14地名“流地”为名词读 dì	现汉第7版/L3专名
+cn_dicts_cell/name2.dict.yaml	红角食人魔	hong jue shi ren mo	hong jiao shi ren mo	兽角义“红角”读 jiǎo（pypinyin误作戏曲“红角儿”）	现汉第7版
+cn_dicts_cell/name2.dict.yaml	红角犀鸟胸肉	hong jue xi niao xiong rou	hong jiao xi niao xiong rou	鸟喙/角义“红角”读 jiǎo	现汉第7版
+cn_dicts_cell/name2.dict.yaml	重钢研钵	chong gang yan bo	zhong gang yan bo	FF14道具Heavy Steel Mortar，“重钢”读 zhòng gāng	现汉第7版
+cn_dicts_cell/name2.dict.yaml	重合金锭	chong he jin ding	zhong he jin ding	FF14道具Heavy Alloy Ingot，“重合金”读 zhòng hé jīn	现汉第7版
+cn_dicts_cell/name2.dict.yaml	乌尔达哈调车库	wu er da ha tiao che ku	wu er da ha diao che ku	铁路“调车”读 diào chē（对齐base:261533）	现汉第7版

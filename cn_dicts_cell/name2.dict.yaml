@@ -164,7 +164,7 @@ use_preset_vocabulary: false
 斑鸠平次	ban jiu ping ci	0
 斑目广基	ban mu guang ji	0
 坂木矶八	ban mu ji ba	0
-坂崎重行	ban qi chong xing	0
+坂崎重行	ban qi zhong xing	0
 坂崎直盛	ban qi zhi sheng	0
 伴野贞祥	ban ye zhen xiang	0
 板垣河内守	ban yuan he nei shou	0
@@ -314,7 +314,7 @@ use_preset_vocabulary: false
 滨田景隆	bin tian jing long	0
 滨田经重	bin tian jing zhong	0
 滨田善右卫门	bin tian shan you wei men	0
-滨尾行泰	bin wei hang tai	0
+滨尾行泰	bin wei xing tai	0
 垪和康忠	bing he kang zhong	0
 垪和氏续	bing he shi xu	0
 并河易家	bing he yi jia	0
@@ -508,7 +508,7 @@ use_preset_vocabulary: false
 城户清种	cheng hu qing zhong	0
 城户知正	cheng hu zhi zheng	0
 城井朝房	cheng jing chao fang	0
-城井长房	cheng jing zhang fang	0
+城井长房	cheng jing chang fang	0
 城井镇房	cheng jing zhen fang	0
 城井正房	cheng jing zheng fang	0
 成濑吉正	cheng lai ji zheng	0
@@ -528,7 +528,7 @@ use_preset_vocabulary: false
 成田氏宗	cheng tian shi zong	0
 成田泰季	cheng tian tai ji	0
 成田显泰	cheng tian xian tai	0
-成田长亲	cheng tian zhang qin	1
+成田长亲	cheng tian chang qin	1
 成田正等	cheng tian zheng deng	0
 赤池长任	chi chi chang ren	0
 赤川景弘	chi chuan jing hong	0
@@ -605,7 +605,7 @@ use_preset_vocabulary: false
 川村重吉	chuan cun zhong ji	0
 川岛惟忠	chuan dao wei zhong	0
 川岛宗泰	chuan dao zong tai	0
-川端家长	chuan duan jia zhang	0
+川端家长	chuan duan jia chang	0
 川副常重	chuan fu chang zhong	0
 川副久盛	chuan fu jiu sheng	0
 川井忠远	chuan jing zhong yuan	0
@@ -827,7 +827,7 @@ use_preset_vocabulary: false
 大友亲盛	da you qin sheng	0
 大友亲贞	da you qin zhen	0
 大友亲治	da you qin zhi	0
-大友亲家	da you qing jia	0
+大友亲家	da you qin jia	0
 大友义长	da you yi chang	0
 大友义鉴	da you yi jian	1
 大友义统	da you yi tong	0
@@ -1079,7 +1079,7 @@ use_preset_vocabulary: false
 蜂须贺重家	feng xu he zhong jia	0
 丰永胜元	feng yong sheng yuan	0
 蜂冢右卫门尉	feng zhong you wei men wei	0
-服部保长	fu bu bao zhang	0
+服部保长	fu bu bao chang	0
 服部康成	fu bu kang cheng	0
 服部一忠	fu bu yi zhong	0
 服部友贞	fu bu you zhen	0
@@ -1196,7 +1196,7 @@ use_preset_vocabulary: false
 冈部亲纲	gang bu qin gang	0
 冈部元信	gang bu yuan xin	0
 冈部则纲	gang bu ze gang	0
-冈部长盛	gang bu zhang sheng	0
+冈部长盛	gang bu chang sheng	0
 冈部贞纲	gang bu zhen gang	0
 冈部正纲	gang bu zheng gang	0
 冈定俊	gang ding jun	0
@@ -1291,7 +1291,7 @@ use_preset_vocabulary: false
 亘理宗隆	gen li zong long	0
 宫本道意	gong ben dao yi	0
 宫部继润	gong bu ji run	0
-宫部长房	gong bu zhang fang	0
+宫部长房	gong bu chang fang	0
 宫部宗治	gong bu zong zhi	0
 宫城丰盛	gong cheng feng sheng	0
 宫城赖久	gong cheng lai jiu	0
@@ -1327,7 +1327,7 @@ use_preset_vocabulary: false
 关盛信	guan sheng xin	0
 关武兵卫	guan wu bing wei	0
 关一政	guan yi zheng	0
-关长尚	guan zhang shang	0
+关长尚	guan chang shang	0
 广场重纲	guang chang zhong gang	0
 广濑景房	guang lai jing fang	0
 广桥国光	guang qiao guo guang	0
@@ -1403,7 +1403,7 @@ use_preset_vocabulary: false
 和田新五郎	he tian xin wu lang	0
 和田信业	he tian xin ye	0
 和田业繁	he tian ye fan	0
-河田长亲	he tian zhang qin	0
+河田长亲	he tian chang qin	0
 和田昭为	he tian zhao wei	0
 和田正信	he tian zheng xin	0
 河田重亲	he tian zhong qin	0
@@ -1489,12 +1489,12 @@ use_preset_vocabulary: false
 户次亲繁	hu ci qin fan	0
 户次亲延	hu ci qin yan	0
 户次亲宗	hu ci qin zong	0
-户次亲家	hu ci qing jia	0
+户次亲家	hu ci qin jia	0
 户次统常	hu ci tong chang	0
 户次镇连	hu ci zhen lian	0
 户村义国	hu cun yi guo	0
 狐岛吉次	hu dao ji ci	0
-忽那通着	hu na tong zhe	0
+忽那通著	hu na tong zhu	0
 户田光忠	hu tian guang zhong	0
 户田康光	hu tian kang guang	0
 户田内记	hu tian nei ji	0
@@ -1658,7 +1658,7 @@ use_preset_vocabulary: false
 菅沼忠久	jian zhao zhong jiu	0
 菅正利	jian zheng li	0
 江村亲俊	jiang cun qin jun	0
-江村亲家	jiang cun qing jia	0
+江村亲家	jiang cun qin jia	0
 江户崎监物	jiang hu qi jian wu	0
 江户通长	jiang hu tong chang	0
 江户通泰	jiang hu tong tai	0
@@ -1916,7 +1916,7 @@ use_preset_vocabulary: false
 堀直之	ku zhi zhi	0
 来次时秀	lai ci shi xiu	0
 来次氏秀	lai ci shi xiu	0
-来岛长亲	lai dao zhang qin	0
+来岛长亲	lai dao chang qin	0
 濑户口重为	lai hu kou zhong wei	0
 濑名氏俊	lai ming shi jun	0
 濑名氏贞	lai ming shi zhen	0
@@ -1996,7 +1996,7 @@ use_preset_vocabulary: false
 椋梨弘平	liang li hong ping	0
 蓼沼泰重	liao zhao tai zhong	0
 蓼沼友重	liao zhao you zhong	0
-林就长	lin jiu zhang	0
+林就长	lin jiu chang	0
 林能胜	lin neng sheng	0
 林崎甚助	lin qi shen zhu	1
 林胜久	lin sheng jiu	0
@@ -2052,7 +2052,7 @@ use_preset_vocabulary: false
 柳原淳光	liu yuan chun guang	0
 柳泽信俊	liu ze xin jun	0
 柳泽元政	liu ze yuan zheng	0
-泷本重行	long ben chong xing	0
+泷本重行	long ben zhong xing	0
 泷川辰政	long chuan chen zheng	0
 泷川雄利	long chuan xiong li	0
 泷川一积	long chuan yi ji	0
@@ -2163,7 +2163,7 @@ use_preset_vocabulary: false
 米良祐次	mi liang you ci	0
 米良重方	mi liang zhong fang	0
 祢祢	mi mi	0
-祢寝重张	mi qin chong zhang	0
+祢寝重张	mi qin zhong zhang	0
 祢寝清年	mi qin qing nian	0
 祢寝重长	mi qin zhong chang	0
 米原纲宽	mi yuan gang kuan	0
@@ -2186,11 +2186,11 @@ use_preset_vocabulary: false
 末次元康	mo ci yuan kang	0
 末吉孙左卫门	mo ji sun zuo wei men	0
 木部贞朝	mu bu zhen chao	0
-木曾义昌	mu ceng yi chang	0
-木曾义康	mu ceng yi kang	0
-木曾义利	mu ceng yi li	0
-木曾义元	mu ceng yi yuan	0
-木曾义在	mu ceng yi zai	0
+木曾义昌	mu zeng yi chang	0
+木曾义康	mu zeng yi kang	0
+木曾义利	mu zeng yi li	0
+木曾义元	mu zeng yi yuan	0
+木曾义在	mu zeng yi zai	0
 牧长胜	mu chang sheng	0
 牧长义	mu chang yi	0
 木村定重	mu cun ding zhong	0
@@ -2315,7 +2315,7 @@ use_preset_vocabulary: false
 内藤国贞	nei teng guo zhen	0
 内藤弘春	nei teng hong chun	0
 内藤弘矩	nei teng hong ju	0
-内藤家长	nei teng jia zhang	0
+内藤家长	nei teng jia chang	0
 内藤隆春	nei teng long chun	0
 内藤隆世	nei teng long shi	0
 内藤清长	nei teng qing chang	0
@@ -2583,7 +2583,7 @@ use_preset_vocabulary: false
 青木久矩	qing mu jiu ju	0
 青木俊矩	qing mu jun ju	0
 青木信照	qing mu xin zhao	0
-青木一重	qing mu yi chong	0
+青木一重	qing mu yi zhong	0
 青木一矩	qing mu yi ju	0
 青木贞治	qing mu zhen zhi	0
 青木正重	qing mu zheng zhong	0
@@ -2642,7 +2642,7 @@ use_preset_vocabulary: false
 泉山古康	quan shan gu kang	0
 泉山康朝	quan shan kang chao	0
 泉山政义	quan shan zheng yi	0
-泉田重光	quan tian chong guang	0
+泉田重光	quan tian zhong guang	0
 犬童长广	quan tong chang guang	0
 犬童赖安	quan tong lai an	0
 犬童赖兄	quan tong lai xiong	0
@@ -2673,7 +2673,7 @@ use_preset_vocabulary: false
 壬生义雄	ren sheng yi xiong	0
 壬生胤业	ren sheng yin ye	0
 壬生周长	ren sheng zhou chang	0
-日比野六大夫	ri bi ye liu dai fu	0
+日比野六大夫	ri bi ye liu da fu	0
 日根弘正	ri gen hong zheng	0
 日根野高吉	ri gen ye gao ji	0
 日根野弘就	ri gen ye hong jiu	0
@@ -2716,7 +2716,7 @@ use_preset_vocabulary: false
 三村亲成	san cun qin cheng	0
 三村元范	san cun yuan fan	0
 三村元亲	san cun yuan qin	0
-三村长亲	san cun zhang qin	0
+三村长亲	san cun chang qin	0
 三村宗亲	san cun zong qin	0
 三刀屋久扶	san dao wu jiu fu	0
 三段崎为之	san duan qi wei zhi	0
@@ -2799,7 +2799,7 @@ use_preset_vocabulary: false
 三枝虎吉	san zhi hu ji	0
 三枝守友	san zhi shou you	0
 桑名吉成	sang ming ji cheng	0
-桑山一重	sang shan yi chong	0
+桑山一重	sang shan yi zhong	0
 桑山一晴	sang shan yi qing	0
 桑山一直	sang shan yi zhi	0
 桑山元晴	sang shan yuan qing	0
@@ -2814,7 +2814,7 @@ use_preset_vocabulary: false
 色部胜长	se bu sheng chang	0
 色部宪长	se bu xian chang	0
 色部显长	se bu xian chang	0
-色部长实	se bu zhang shi	0
+色部长实	se bu chang shi	0
 色川盛直	se chuan sheng zhi	0
 涩川尧显	se chuan yao xian	0
 涩川义长	se chuan yi chang	0
@@ -2957,7 +2957,7 @@ use_preset_vocabulary: false
 杉武明	shan wu ming	0
 山县昌次	shan xian chang ci	0
 山县昌满	shan xian chang man	0
-山县长茂	shan xian zhang mao	0
+山县长茂	shan xian chang mao	0
 山县重秋	shan xian zhong qiu	0
 杉兴连	shan xing lian	0
 杉原长氏	shan yuan chang shi	0
@@ -2970,7 +2970,7 @@ use_preset_vocabulary: false
 杉元相	shan yuan xiang	0
 杉元宣	shan yuan xuan	0
 杉原元盛	shan yuan yuan sheng	0
-杉原长房	shan yuan zhang fang	0
+杉原长房	shan yuan chang fang	0
 杉原重政	shan yuan zhong zheng	0
 杉之坊照算	shan zhi fang zhao suan	0
 山中长俊	shan zhong chang jun	0
@@ -2989,9 +2989,9 @@ use_preset_vocabulary: false
 上村赖坚	shang cun lai jian	0
 上村赖孝	shang cun lai xiao	0
 上村赖兴	shang cun lai xing	0
-上村长国	shang cun zhang guo	0
-上村长陆	shang cun zhang lu	0
-上村长种	shang cun zhang zhong	0
+上村长国	shang cun chang guo	0
+上村长陆	shang cun chang lu	0
+上村长种	shang cun chang zhong	0
 上津浦镇贞	shang jin pu zhen zhen	0
 上津浦种直	shang jin pu zhong zhi	0
 上井兼政	shang jing jian zheng	0
@@ -3030,13 +3030,13 @@ use_preset_vocabulary: false
 上松义丰	shang song yi feng	0
 上田长则	shang tian chang ze	0
 上田朝直	shang tian chao zhi	0
-上田重安	shang tian chong an	0
+上田重安	shang tian zhong an	0
 上田实亲	shang tian shi qin	0
 上田宪定	shang tian xian ding	0
 上田政盛	shang tian zheng sheng	0
 上条定宪	shang tiao ding xian	0
 上条政繁	shang tiao zheng fan	0
-裳悬景利	shang xuan jing li	0
+裳悬景利	chang xuan jing li	0
 上野家成	shang ye jia cheng	0
 上野赖久	shang ye lai jiu	0
 上野赖氏	shang ye lai shi	0
@@ -3064,8 +3064,8 @@ use_preset_vocabulary: false
 神保氏	shen bao shi	0
 神保氏张	shen bao shi zhang	0
 神保相茂	shen bao xiang mao	0
-神保长诚	shen bao zhang cheng	0
-神保长职	shen bao zhang zhi	0
+神保长诚	shen bao chang cheng	0
+神保长职	shen bao chang zhi	0
 神代长良	shen dai chang liang	0
 神代贵茂	shen dai gui mao	0
 神代胜利	shen dai sheng li	0
@@ -3089,7 +3089,7 @@ use_preset_vocabulary: false
 榊原忠长	shen yuan zhong chang	0
 深泽利重	shen ze li zhong	0
 神子田正治	shen zi tian zheng zhi	0
-生驹家长	sheng ju jia zhang	0
+生驹家长	sheng ju jia chang	0
 生驹家宗	sheng ju jia zong	0
 生驹利丰	sheng ju li feng	0
 生驹亲清	sheng ju qin qing	0
@@ -3374,7 +3374,7 @@ use_preset_vocabulary: false
 松平伊忠	song ping yi zhong	0
 松平与副	song ping yu fu	0
 松平元心	song ping yuan xin	0
-松平长亲	song ping zhang qin	0
+松平长亲	song ping chang qin	0
 松平张忠	song ping zhang zhong	0
 松平真乘	song ping zhen cheng	0
 松平贞副	song ping zhen fu	0
@@ -3500,7 +3500,7 @@ use_preset_vocabulary: false
 陶晴贤	tao qing xian	3
 陶武护	tao wu hu	0
 陶兴房	tao xing fang	0
-陶长房	tao zhang fang	0
+陶长房	tao chang fang	0
 陶贞明	tao zhen ming	0
 藤方安正	teng fang an zheng	0
 藤方朝成	teng fang chao cheng	0
@@ -3881,7 +3881,7 @@ use_preset_vocabulary: false
 香宗我部贞亲	xiang zong wo bu zhen qin	0
 小坂吉俊	xiao ban ji jun	0
 小坂雄吉	xiao ban xiong ji	0
-小坂雄长	xiao ban xiong zhang	0
+小坂雄长	xiao ban xiong chang	0
 小坂正吉	xiao ban zheng ji	0
 小坂正氏	xiao ban zheng shi	0
 小滨光隆	xiao bin guang long	0
@@ -3923,7 +3923,7 @@ use_preset_vocabulary: false
 小河信章	xiao he xin zhang	0
 小见之方	xiao jian zhi fang	0
 小堀正次	xiao ku zheng ci	0
-小堀正行	xiao ku zheng hang	0
+小堀正行	xiao ku zheng xing	0
 小堀政一	xiao ku zheng yi	1
 小濑甫庵	xiao lai fu an	1
 小濑清长	xiao lai qing chang	0
@@ -3943,7 +3943,7 @@ use_preset_vocabulary: false
 小笠原洞雪斋	xiao li yuan dong xue zhai	0
 小笠原光冬	xiao li yuan guang dong	0
 小笠原吉次	xiao li yuan ji ci	0
-小笠原家长	xiao li yuan jia zhang	0
+小笠原家长	xiao li yuan jia chang	0
 小笠原康广	xiao li yuan kang guang	0
 小笠原千代童丸	xiao li yuan qian dai tong wan	0
 小笠原清广	xiao li yuan qing guang	0
@@ -3959,7 +3959,7 @@ use_preset_vocabulary: false
 小笠原秀政	xiao li yuan xiu zheng	2
 小笠原义赖	xiao li yuan yi lai	0
 小笠原元续	xiao li yuan yuan xu	0
-小笠原长高	xiao li yuan zhang gao	0
+小笠原长高	xiao li yuan chang gao	0
 小笠原贞朝	xiao li yuan zhen chao	0
 小笠原贞赖	xiao li yuan zhen lai	0
 小笠原贞庆	xiao li yuan zhen qing	0
@@ -4025,7 +4025,7 @@ use_preset_vocabulary: false
 筱原一孝	xiao yuan yi xiao	0
 筱原右近	xiao yuan you jin	0
 筱原右京	xiao yuan you jing	0
-筱原长房	xiao yuan zhang fang	0
+筱原长房	xiao yuan chang fang	0
 小原镇实	xiao yuan zhen shi	0
 筱原重之	xiao yuan zhong zhi	0
 筱原自遁	xiao yuan zi dun	0
@@ -4138,7 +4138,7 @@ use_preset_vocabulary: false
 岩成友通	yan cheng you tong	1
 岩城贞隆	yan cheng zhen long	0
 岩城重隆	yan cheng zhong long	0
-盐川长满	yan chuan zhang man	0
+盐川长满	yan chuan chang man	0
 盐谷教纲	yan gu jiao gang	0
 盐谷隆纲	yan gu long gang	0
 盐谷孝纲	yan gu xiao gang	0
@@ -4210,7 +4210,7 @@ use_preset_vocabulary: false
 伊丹元扶	yi dan yuan fu	0
 伊丹忠亲	yi dan zhong qin	0
 伊丹总坚	yi dan zong jian	0
-伊地知重兴	yi di zhi chong xing	0
+伊地知重兴	yi di zhi zhong xing	0
 伊地知重顺	yi di zhi zhong shun	0
 伊地知重政	yi di zhi zhong zheng	0
 一町田信清	yi ding tian xin qing	0
@@ -4314,7 +4314,7 @@ use_preset_vocabulary: false
 伊王野资信	yi wang ye zi xin	0
 伊王野资友	yi wang ye zi you	0
 益子安宗	yi zi an zong	0
-益子重纲	yi zi chong gang	0
+益子重纲	yi zi zhong gang	0
 益子家宗	yi zi jia zong	0
 益子胜家	yi zi sheng jia	0
 益子胜清	yi zi sheng qing	0
@@ -4336,7 +4336,7 @@ use_preset_vocabulary: false
 永井直胜	yong jing zhi sheng	0
 永山义在	yong shan yi zai	0
 永山忠好	yong shan zhong hao	0
-用土重连	yong tu chong lian	0
+用土重连	yong tu zhong lian	0
 永原松云	yong yuan song yun	0
 有坂长次	you ban chang ci	0
 由比正信	you bi zheng xin	0
@@ -4767,7 +4767,7 @@ use_preset_vocabulary: false
 洲贺才藏	zhou he cai cang	0
 簗朝光	zhu chao guang	0
 诸冈一羽	zhu gang yi yu	0
-竹贯重光	zhu guan chong guang	0
+竹贯重光	zhu guan zhong guang	0
 筑后十五城	zhu hou shi wu cheng	0
 猪苗代盛国	zhu miao dai sheng guo	0
 猪苗代盛胤	zhu miao dai sheng yin	0
@@ -4953,11 +4953,10 @@ use_preset_vocabulary: false
 佐竹义住	zuo zhu yi zhu	0
 佐竹政义	zuo zhu zheng yi	0
 佐佐长秋	zuo zuo chang qiu	0
-佐佐长龝	zuo zuo chang qiu	0
 佐佐成政	zuo zuo cheng zheng	5
 佐佐平左卫门	zuo zuo ping zuo wei men	0
 佐佐孙介	zuo zuo sun jie	0
-佐佐长成	zuo zuo zhang cheng	0
+佐佐长成	zuo zuo chang cheng	0
 佐佐政次	zuo zuo zheng ci	0
 阿尔托莉亚	a er tuo li ya	2
 阿散井恋次	a san jing lian ci	11
@@ -4986,7 +4985,7 @@ use_preset_vocabulary: false
 北川润	bei chuan run	0
 北村祐作	bei cun you zuo	1
 北大路五月	bei da lu wu yue	0
-北条沙都子	bei tiao sha dou zi	0
+北条沙都子	bei tiao sha du zi	0
 本城莲	ben cheng lian	1
 播磨拳儿	bo mo quan er	0
 苍崎橙子	cang qi cheng zi	12
@@ -5000,8 +4999,8 @@ use_preset_vocabulary: false
 朝仓纯一	zhao cang chun yi	0
 朝仓凉子	zhao cang liang zi	4
 朝仓音梦	zhao cang yin meng	0
-朝雾小牧	chao wu xiao mu	0
-朝雾小雪	chao wu xiao xue	0
+朝雾小牧	zhao wu xiao mu	0
+朝雾小雪	zhao wu xiao xue	0
 赤木律子	chi mu lv zi	29
 池速人	chi su ren	0
 持田雏子	chi tian chu zi	0
@@ -5054,7 +5053,7 @@ use_preset_vocabulary: false
 高野晶	gao ye jing	0
 葛木宗一郎	ge mu zong yi lang	3
 更木剑八	geng mu jian ba	33
-宫崎都	gong qi dou	0
+宫崎都	gong qi du	0
 宫泽有纪宁	gong ze you ji ning	0
 弓冢五月	gong zhong wu yue	0
 古河秋生	gu he qiu sheng	2
@@ -5400,7 +5399,7 @@ use_preset_vocabulary: false
 鹭泽缘	lu ze yuan	0
 麻寻	ma xun	0
 美海	mei hai	0
-美奈裳	mei nai shang	0
+美奈裳	mei nai chang	0
 鸣海沙子	ming hai sha zi	0
 木濑步	mu lai bu	0
 南云霞	nan yun xia	0
@@ -5438,7 +5437,7 @@ use_preset_vocabulary: false
 野乃原叶夜	ye nai yuan ye ye	0
 叶夜	ye ye	0
 伊波健	yi bo jian	0
-伊吹美奈裳	yi chui mei nai shang	0
+伊吹美奈裳	yi chui mei nai chang	0
 一蹴	yi cu	5
 一条秋名	yi tiao qiu ming	0
 音绪	yin xu	0
@@ -5878,7 +5877,6 @@ use_preset_vocabulary: false
 金敏贞	jin min zhen	0
 金敏智	jin min zhi	0
 金旼钟	jin min zhong	0
-金旼锺	jin min zhong	0
 金娜英	jin na ying	1
 金男珍	jin nan zhen	0
 金浦市	jin pu shi	1
@@ -6235,8 +6233,8 @@ use_preset_vocabulary: false
 浦南洞	pu nan dong	0
 朴瑞俊	piao rui jun	0
 朴善怜	piao shan lian	2
-朴素贤	pu su xian	0
-朴素珍	pu su zhen	0
+朴素贤	piao su xian	0
+朴素珍	piao su zhen	0
 浦项市	pu xiang shi	1
 朴相铉	piao xiang xuan	0
 朴孝珍	piao xiao zhen	0
@@ -6537,7 +6535,7 @@ use_preset_vocabulary: false
 徐惠璘	xu hui lin	0
 许嘉允	xu jia yun	2
 徐俊英	xu jun ying	0
-许率智	xu lv zhi	1
+许率智	xu shuai zhi	1
 许敏善	xu min shan	0
 许敏真	xu min zhen	0
 徐仁英	xu ren ying	0
@@ -6749,7 +6747,6 @@ use_preset_vocabulary: false
 本愿寺证如	ben yuan si zheng ru	0
 本愿寺准如	ben yuan si zhun ru	0
 滨松	bin song	13
-并和氏续	bing he shi xu	0
 兵农合一	bing nong he yi	10
 播磨	bo mo	16
 播磨屋宗德	bo mo wu zong de	0
@@ -6901,7 +6898,6 @@ use_preset_vocabulary: false
 津田监物	jin tian jian wu	0
 金泽	jin ze	97
 金子元春	jin zi yuan chun	0
-臼杵俭速	jiu chu jian su	0
 九鬼广隆	jiu gui guang long	0
 九州征伐	jiu zhou zheng fa	1
 崛立直正	jue li zhi zheng	0
@@ -6913,13 +6909,13 @@ use_preset_vocabulary: false
 堀越公方	ku yue gong fang	0
 来岛通康	lai dao tong kang	0
 濑田扫部	lai tian sao bu	0
-立花誾千代	li hua yin qian dai	0
+立花訚千代	li hua yin qian dai	0
 蛎崎庆广	li qi qing guang	0
 利休七哲	li xiu qi zhe	0
 镰仓公方	lian cang gong fang	6
 镰仓御所	lian cang yu suo	0
 林通胜	lin tong sheng	0
-铃木佐大夫	ling mu zuo dai fu	0
+铃木佐大夫	ling mu zuo da fu	0
 六角承祯	liu jiao cheng zhen	0
 柳生兵库助	liu sheng bing ku zhu	2
 柳生十兵卫	liu sheng shi bing wei	3
@@ -6973,7 +6969,6 @@ use_preset_vocabulary: false
 三好义贤	san hao yi xian	1
 三河魂	san he hun	0
 三中老	san zhong lao	0
-森下道与	sen xia dao yu	0
 杀生关白	sha sheng guan bai	1
 山名禅高	shan ming chan gao	2
 山名持丰	shan ming chi feng	0
@@ -7027,11 +7022,9 @@ use_preset_vocabulary: false
 土屋昌次	tu wu chang ci	0
 拓植三之丞	tuo zhi san zhi cheng	0
 望月六郎	wang yue liu lang	0
-娓原景宗	wei yuan jing zong	0
 尾张	wei zhang	37
 尾张之虎	wei zhang zhi hu	0
 文龟	wen gui	0
-问驻所统景	wen zhu suo tong jing	0
 五大老	wu da lao	6
 五奉行	wu feng xing	1
 武田逍遥轩	wu tian xiao yao xuan	0
@@ -7777,7 +7770,7 @@ use_preset_vocabulary: false
 佐藤由加理	zuo teng you jia li	0
 佐佐木优佳里	zuo zuo mu you jia li	0
 艾玛维尔德	ai ma wei er de	0
-朝香果林	chao xiang guo lin	0
+朝香果林	zhao xiang guo lin	0
 东条希	dong tiao xi	0
 渡边曜	du bian yao	1
 高坂穗乃果	gao ban sui nai guo	1
@@ -7790,7 +7783,7 @@ use_preset_vocabulary: false
 黑泽露比	hei ze lu bi	0
 津岛善子	jin dao shan zi	0
 近江彼方	jin jiang bi fang	0
-岚千砂都	lan qian sha dou	0
+岚千砂都	lan qian sha du	0
 米女芽衣	mi nv ya yi	0
 米娅泰勒	mi ya tai le	0
 南小鸟	nan xiao niao	11
@@ -8019,7 +8012,7 @@ use_preset_vocabulary: false
 蔡镇泽	cai zhen ze	0
 仓本裕基	cang ben yu ji	0
 仓持阳一	cang chi yang yi	0
-藏娃	cang wa	0
+藏娃	zang wa	0
 曹诚模	cao cheng mo	4
 曹方	cao fang	44
 曹格	cao ge	62
@@ -8460,7 +8453,6 @@ use_preset_vocabulary: false
 侯高俊杰	hou gao jun jie	0
 侯美仪	hou mei yi	0
 侯尼勋	hou ni xun	0
-候尼勋	hou ni xun	0
 侯旭	hou xu	0
 胡白	hu bai	9
 胡蓓蔚	hu bei wei	1
@@ -8736,8 +8728,8 @@ use_preset_vocabulary: false
 李岗霖	li gang lin	0
 李海宁	li hai ning	0
 李濠	li hao	0
-李和曾	li he ceng	3
-李赫焌	li he qu	0
+李和曾	li he zeng	3
+李赫焌	li he jun	0
 李骥	li ji	15
 李基灿	li ji can	0
 李吉汉	li ji han	0
@@ -8794,7 +8786,7 @@ use_preset_vocabulary: false
 李修	li xiu	37
 李秀	li xiu	16
 李璇	li xuan	12
-李宣筠	li xuan jun	0
+李宣筠	li xuan yun	0
 李宣榕	li xuan rong	0
 李雅微	li ya wei	0
 栗雅馨	li ya xin	0
@@ -9126,7 +9118,7 @@ use_preset_vocabulary: false
 鸟山雄司	niao shan xiong si	0
 涅磐	nie pan	24
 宁零	ning ling	0
-牛朝阳	niu chao yang	2
+牛朝阳	niu zhao yang	2
 钮大可	niu da ke	0
 牛飞	niu fei	0
 牛嘉	niu jia	0
@@ -9704,7 +9696,7 @@ use_preset_vocabulary: false
 徐智英	xu zhi ying	0
 徐仲薇	xu zhong wei	0
 徐子涵	xu zi han	0
-徐子崴	xu zi wei	0
+徐子崴	xu zi wai	0
 徐子源	xu zi yuan	0
 宣教前锋乐团	xuan jiao qian feng yue tuan	0
 炫龙	xuan long	18
@@ -9978,7 +9970,7 @@ use_preset_vocabulary: false
 张永智	zhang yong zhi	0
 张佑方	zhang you fang	0
 张钰茜	zhang yu qian	0
-张语倢	zhang yu qie	0
+张语倢	zhang yu jie	0
 张羽伟	zhang yu wei	0
 张媛	zhang yuan	4
 张远	zhang yuan	90
@@ -10175,7 +10167,6 @@ use_preset_vocabulary: false
 白一护	bai yi hu	13
 白一露	bai yi lu	0
 白哉	bai zai	56
-斑木一角	ban mu yi jiao	0
 斑目一角	ban mu yi jiao	16
 半虚	ban xu	2
 暴风男爵	bao feng nan jue	2
@@ -10197,7 +10188,6 @@ use_preset_vocabulary: false
 狛村	bo cun	18
 狛村队长	bo cun dui zhang	0
 狛村左阵	bo cun zuo zhen	8
-狛树左阵	bo shu zuo zhen	0
 不精独乐	bu jing du le	0
 不良商人	bu liang shang ren	5
 布鲁巴艾	bu lu ba ai	0
@@ -10206,7 +10196,6 @@ use_preset_vocabulary: false
 苍剑炮	cang jian pao	0
 苍角王子	cang jiao wang zi	0
 草鹿	cao lu	3
-草鹿八千留	cao lu ba qian liu	0
 草莓君	cao mei jun	1
 叁舞白刃	san wu bai ren	0
 茶渡	cha du	16
@@ -10261,7 +10250,6 @@ use_preset_vocabulary: false
 迪罗伊	di luo yi	0
 第七席	di qi xi	0
 第三席	di san xi	4
-狄堂春信	di tang chun xin	0
 荻堂春信	di tang chun xin	0
 第五席官	di wu xi guan	0
 蒂雅赫丽贝尔	di ya he li bei er	0
@@ -10273,7 +10261,7 @@ use_preset_vocabulary: false
 咚德恰卡	dong de qia ka	0
 东仙要	dong xian yao	12
 冻云	dong yun	5
-都大人	dou da ren	0
+都大人	du da ren	0
 毒峰莉露卡	du feng li lu ka	0
 断藏丸	duan cang wan	0
 断地风	duan di feng	2
@@ -10287,7 +10275,6 @@ use_preset_vocabulary: false
 盾舜六花	dun shun liu hua	0
 多尔多尼	duo er duo ni	0
 多鲁托尼	duo lu tuo ni	0
-仛助	duo zhu	0
 恶魔的左臂	e mo de zuo bi	0
 二段归刃	er duan gui ren	2
 发动语	fa dong yu	0
@@ -10301,7 +10288,6 @@ use_preset_vocabulary: false
 狒骨大炮	fei gu da pao	0
 飞帘脚	fei lian jiao	0
 飞廉脚	fei lian jiao	1
-飞镰脚	fei lian jiao	0
 飞龙击贼震天雷炮	fei long ji zei zhen tian lei pao	0
 飞梅	fei mei	10
 飞田展男	fei tian zhan nan	2
@@ -10491,7 +10477,6 @@ use_preset_vocabulary: false
 蓝大	lan da	98
 蓝露	lan lu	21
 蓝染	lan ran	150
-蓝染总佑介	lan ran zong you jie	0
 蓝染总右介	lan ran zong you jie	0
 蓝桃	lan tao	0
 雷吼炮	lei hou pao	0
@@ -10533,7 +10518,6 @@ use_preset_vocabulary: false
 琉璃色孔雀	liu li se kong que	6
 琉璃色藤孔雀	liu li se teng kong que	0
 流刃若火	liu ren ruo huo	7
-六丈光牢	liu zhang guang lao	0
 六杖光牢	liu zhang guang lao	0
 龙贵	long gui	10
 龙纹鬼灯丸	long wen gui deng wan	5
@@ -10743,14 +10727,12 @@ use_preset_vocabulary: false
 狩矢	shou shi	26
 狩矢神	shou shi shen	0
 受胎告知	shou tai gao zhi	2
-戍吊	shu diao	0
 双重咏唱	shuang chong yong chang	0
 双儿响转	shuang er xiang zhuan	0
 双鲤挺	shuang li ting	0
 双莲苍火坠	shuang lian cang huo zhui	0
 双天归盾	shuang tian gui dun	1
 双鱼理	shuang yu li	9
-双鱼鲤	shuang yu li	0
 水天逆卷	shui tian ni juan	0
 瞬閧	shun hong	0
 瞬花	shun hua	0
@@ -10823,7 +10805,6 @@ use_preset_vocabulary: false
 卫门西凛太郎	wei men xi lin tai lang	0
 为霜	wei shuang	4
 嵬腕	wei wan	0
-握凌铁斋	wo ling tie zhai	0
 握菱铁斋	wo ling tie zhai	0
 乌尔奇奥拉	wu er qi ao la	23
 乌尔奇奥拉希佛	wu er qi ao la xi fo	0
@@ -11017,16 +10998,14 @@ use_preset_vocabulary: false
 之芭	zhi ba	0
 止绷	zhi beng	0
 志波	zhi bo	5
-志波都	zhi bo dou	0
+志波都	zhi bo du	0
 志波海燕	zhi bo hai yan	2
 志波家	zhi bo jia	3
 志波空鹤	zhi bo kong he	1
 志波岩鹫	zhi bo yan jiu	15
-志波燕鹫	zhi bo yan jiu	0
 志波一族	zhi bo yi zu	1
 织露	zhi lu	0
 置鲇	zhi nian	0
-置鮎龙太郎	zhi nian long tai lang	0
 置鲇龙太郎	zhi nian long tai lang	3
 植松淳一	zhi song chun yi	0
 植之冢光邦	zhi zhi zhong guang bang	0
@@ -11986,8 +11965,8 @@ use_preset_vocabulary: false
 赤眼海盗	chi yan hai dao	0
 赤爪海盗	chi zhao hai dao	0
 重逢集市	chong feng ji shi	1
-重钢研钵	chong gang yan bo	0
-重合金锭	chong he jin ding	0
+重钢研钵	zhong gang yan bo	0
+重合金锭	zhong he jin ding	0
 重建用的阿拉米格岩盐	chong jian yong de a la mi ge yan yan	0
 重建用的白梣木原木	chong jian yong de bai chen mu yuan mu	0
 重建用的梣木原木	chong jian yong de chen mu yuan mu	0
@@ -13104,7 +13083,7 @@ use_preset_vocabulary: false
 海洋陷阱	hai yang xian jing	0
 海云水母	hai yun shui mu	0
 海藻盐	hai zao yan	4
-海之都	hai zhi dou	2
+海之都	hai zhi du	2
 海之国	hai zhi guo	0
 海中爆弹	hai zhong bao dan	0
 海中老人	hai zhong lao ren	2
@@ -13122,8 +13101,8 @@ use_preset_vocabulary: false
 合成生物的粗皮	he cheng sheng wu de cu pi	0
 河鲷	he diao	0
 褐飞刀	he fei dao	0
-和风流地	he feng liu de	0
-和风流地沿岸	he feng liu de yan an	0
+和风流地	he feng liu di	0
+和风流地沿岸	he feng liu di yan an	0
 和风陆门	he feng lu men	0
 河红眼鲈	he hong yan lu	0
 赫拉斯瓦尔格	he la si wa er ge	37
@@ -13330,8 +13309,8 @@ use_preset_vocabulary: false
 虹茧线	hong jian xian	0
 虹鳉	hong jiang	0
 虹结晶石材	hong jie jing shi cai	0
-红角食人魔	hong jue shi ren mo	0
-红角犀鸟胸肉	hong jue xi niao xiong rou	0
+红角食人魔	hong jiao shi ren mo	0
+红角犀鸟胸肉	hong jiao xi niao xiong rou	0
 红孔雀石	hong kong que shi	0
 红蝲蛄	hong la gu	0
 红莲体势	hong lian ti shi	0
@@ -13649,7 +13628,7 @@ use_preset_vocabulary: false
 矶灯笼	ji deng long	0
 吉多	ji duo	14
 基尔波特哨塔	ji er bo te shao ta	0
-吉尔伽美什恩奇都	ji er jia mei shi en qi dou	0
+吉尔伽美什恩奇都	ji er jia mei shi en qi du	0
 吉尔伽美什红莲	ji er jia mei shi hong lian	0
 疾风体势	ji feng ti shi	0
 鸡高汤	ji gao tang	15
@@ -13660,7 +13639,7 @@ use_preset_vocabulary: false
 吉吉卢恩交易站	ji ji lu en jiao yi zhan	0
 唧唧咋咋	ji ji za za	3
 基迦巨人比丘	ji jia ju ren bi qiu	0
-基迦巨人僧都	ji jia ju ren seng dou	0
+基迦巨人僧都	ji jia ju ren seng du	0
 基迦巨人沙门	ji jia ju ren sha men	0
 基迦鲈	ji jia lu	0
 基迦石斑鱼	ji jia shi ban yu	0
@@ -14789,7 +14768,7 @@ use_preset_vocabulary: false
 迷你其日娜	mi ni qi ri na	0
 迷你瑞姆	mi ni rui mu	0
 迷你桑克瑞德	mi ni sang ke rui de	0
-迷你纱都	mi ni sha dou	0
+迷你纱都	mi ni sha du	0
 迷你食肉者	mi ni shi rou zhe	0
 迷你斯卡哈	mi ni si ka ha	0
 迷你塔塔露	mi ni ta ta lu	0
@@ -15337,8 +15316,8 @@ use_preset_vocabulary: false
 盆栽龙舌兰	pen zai long she lan	0
 盆栽鱼	pen zai yu	0
 蓬松海龙	peng song hai long	0
-彭忒西勒亚	peng tei xi le ya	1
-彭忒西勒亚的火种	peng tei xi le ya di huo zhong	0
+彭忒西勒亚	peng te xi le ya	1
+彭忒西勒亚的火种	peng te xi le ya de huo zhong	0
 烹调高厨帽	peng tiao gao chu mao	0
 烹调高跟鞋	peng tiao gao gen xie	0
 烹调工作裤	peng tiao gong zuo ku	0
@@ -15777,7 +15756,7 @@ use_preset_vocabulary: false
 扫堂枪	sao tang qiang	0
 扫帚草	sao zhou cao	1
 森城	sen cheng	2
-森都	sen dou	1
+森都	sen du	1
 森疾龙	sen ji long	0
 森林兔蝓	sen lin tu yu	0
 森林之民	sen lin zhi min	0
@@ -15788,7 +15767,7 @@ use_preset_vocabulary: false
 沙地巨虫之牙	sha di ju chong zhi ya	0
 沙鲷鱼	sha diao yu	0
 沙都	sha du	67
-纱都	sha dou	13
+纱都	sha du	13
 沙遁鱼	sha dun yu	0
 砂犷兽的粗皮	sha guang shou de cu pi	0
 砂犷兽革	sha guang shou ge	0
@@ -15901,7 +15880,7 @@ use_preset_vocabulary: false
 闪耀金染剂	shan yao jin ran ji	0
 闪耀银染剂	shan yao yin ran ji	0
 山岳神杜父鱼	shan yue shen du fu yu	0
-山之都	shan zhi dou	2
+山之都	shan zhi du	2
 山中战线泽梅尔要塞	shan zhong zhan xian ze mei er yao sai	0
 上级加工	shang ji jia gong	0
 赏梅鱼	shang mei yu	0
@@ -16189,7 +16168,7 @@ use_preset_vocabulary: false
 水剑鱼	shui jian yu	0
 水晶刺鱼	shui jing ci yu	0
 水晶刀鱼	shui jing dao yu	0
-水晶都脂鲤	shui jing dou zhi li	0
+水晶都脂鲤	shui jing du zhi li	0
 水晶飞鸽	shui jing fei ge	0
 水晶龙之鳞	shui jing long zhi lin	0
 水晶鳍	shui jing qi	0
@@ -16638,7 +16617,7 @@ use_preset_vocabulary: false
 乌尔达哈	wu er da ha	72
 乌尔达哈来生回廊	wu er da ha lai sheng hui lang	0
 乌尔达哈商会馆	wu er da ha shang hui guan	0
-乌尔达哈调车库	wu er da ha tiao che ku	0
+乌尔达哈调车库	wu er da ha diao che ku	0
 乌尔达哈现世回廊	wu er da ha xian shi hui lang	0
 兀尔德恩惠地	wu er de en hui di	0
 无二江流域	wu er jiang liu yu	0
