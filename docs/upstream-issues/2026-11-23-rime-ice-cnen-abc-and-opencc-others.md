@@ -1,7 +1,7 @@
 # [Bug] `cn_en_{abc,ziguang}.txt`「T.S.艾略特」双拼错码及 `opencc/others.txt` 化学式事实错误
 
 ## 环境与版本
-- **上游版本**：`iDvel/rime-ice@927e1cf`（其中 `opencc/others.txt` 同步影响 `gaboolic/rime-frost@ab64ecf`）
+- **上游版本**：`iDvel/rime-ice@927e1cf`（已确认最新 `main` 仍可复现；其中 `opencc/others.txt` 同步影响 `gaboolic/rime-frost@c982966`）
 - **客户端与引擎**：Weasel `0.17.4` / `librime 1.17.0`
 - **影响范围**：智能 ABC 双拼（`double_pinyin_abc`）、紫光双拼（`double_pinyin_ziguang`），以及开启 `emoji` 开关（加载 `opencc/emoji.json` → `others.txt`）的全部方案
 
