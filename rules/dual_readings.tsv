@@ -180,3 +180,8 @@
 给水排水	ji shui pai shui	96	规范 给(jǐ)水排水 / 行业 gěi	gei shui pai shui	60	行业 给(gěi)水排水 / 规范 jǐ	cn_dicts/ext.dict.yaml	现汉第7版/建筑市政行业(L1/行业，同给排水)
 # --- Batch 2: others.dict.yaml dual reading ---
 阿嬷	a mo	15	规范 ā mó / 习惯 ā mā	a ma	15	习惯 ā mā / 规范 ā mó	cn_dicts/others.dict.yaml	现汉第7版mó/闽台口语习惯mā(L1/L5，严控<阿莫60与阿妈110)
+# --- Batch 2: place.dict.yaml & exthot.dict.yaml dual readings ---
+金匮公园	jin gui gong yuan	1	规范 金匮(guì)公园 / 习惯 kuì	jin kui gong yuan	1	习惯 金匮(kuì)公园 / 规范 guì	cn_dicts_cell/place.dict.yaml	现汉第7版guì/无锡地铁1号线官方Jinkui Park(L1/L2)
+邬隘	wu ai	0	规范 wù ài / 习惯 wù gà	wu ga	0	习惯 wù gà / 规范 wù ài	cn_dicts_cell/place.dict.yaml	现汉第7版ài/宁波地铁1号线官方Wuga(L1/L2)
+邱隘东	qiu ai dong	0	规范 邱隘(ài)东 / 习惯 gà	qiu ga dong	0	习惯 邱隘(gà)东 / 规范 ài	cn_dicts_cell/place.dict.yaml	现汉第7版ài/宁波地铁1号线官方Qiuga East(L1/L2)
+摇骰子	yao tou zi	44	规范 摇骰(tóu)子 / 习惯 shǎi	yao shai zi	15	习惯 摇骰(shǎi)子 / 规范 tóu	cn_dicts_cell/exthot.dict.yaml	现汉第7版/全民口语习惯(L1/L5，同骰子，w2=15护摇色子16)

@@ -127,7 +127,6 @@ use_preset_vocabulary: false
 不嘻嘻	bu xi xi	0
 不学的	bu xue de	0
 不要内耗	bu yao nei hao	7
-不允洗	bu yun xi	0
 不置换	bu zhi huan	0
 菜就多练	cai jiu duo lian	10
 裁判报告	cai pan bao gao	24
@@ -699,7 +698,7 @@ use_preset_vocabulary: false
 空腹有氧	kong fu you yang	18
 空悬	kong xuan	192
 口碑分	kou bei fen	0
-扣地	kou di	15
+抠地	kou di	15
 苦茶子	ku cha zi	11
 库蒂	ku di	2
 库迪咖啡	ku di ka fei	0
@@ -1800,7 +1799,6 @@ use_preset_vocabulary: false
 招吗	zhao ma	0
 赵小童	zhao xiao tong	0
 朝阳站	chao yang zhan	2
-这才是真实拍	zhe cai shi zhen shi pai	0
 折分	zhe fen	5
 这个赛道	zhe ge sai dao	0
 这很难评	zhe hen nan ping	2
@@ -1905,3 +1903,6 @@ use_preset_vocabulary: false
 左奇函	zuo qi han	0
 坐滩	zuo tan	0
 葬送的芙莉莲	zang song de fu li lian	80
+谁发明的	shei fa ming de	19
+谁家好人	shei jia hao ren	3
+摇骰子	yao shai zi	15

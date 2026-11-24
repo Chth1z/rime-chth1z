@@ -151,7 +151,7 @@ use_preset_vocabulary: false
 槽波	cao bo	0
 草甸沼泽	cao dian zhao ze	0
 草绘等高线	cao hui deng gao xian	0
-漕矩咤国	cao ju zha guo	0
+漕矩吒国	cao ju zha guo	0
 草原土壤	cao yuan tu rang	1
 测地参考系	ce di can kao xi	0
 测井	ce jing	58
@@ -935,7 +935,6 @@ use_preset_vocabulary: false
 蜂窝状风化	feng wo zhuang feng hua	0
 蜂窝状沙丘	feng wo zhuang sha qiu	0
 风向频度图	feng xiang pin du tu	0
-丰芽	feng ya	0
 峰值小区划	feng zhi xiao qu hua	0
 富冰冻土	fu bing dong tu	0
 俯冲板块	fu chong ban kuai	3
@@ -1574,7 +1573,7 @@ use_preset_vocabulary: false
 穆鲁山	mu lu shan	0
 母质层	mu zhi ceng	0
 拿贡巴东	na gong ba dong	0
-奈斯维市	nai si wei shi	0
+涅斯维日	nie si wei ri	0
 南北地震带	nan bei di zhen dai	0
 南磁极	nan ci ji	6
 南津关组	nan jin guan zu	0
@@ -1669,7 +1668,6 @@ use_preset_vocabulary: false
 气体色谱	qi ti se pu	1
 栖霞组	qi xia zu	0
 气旋路线	qi xuan lu xian	0
-恰高	qia gao	0
 浅部构造	qian bu gou zao	0
 潜伏地震	qian fu di zhen	0
 潜火山	qian huo shan	1
@@ -1704,7 +1702,6 @@ use_preset_vocabulary: false
 亲铁元素	qin tie yuan su	1
 亲铜元素	qin tong yuan su	1
 倾滑断层	qing hua duan ceng	0
-黥基	qing ji	0
 倾斜场	qing xie chang	0
 庆州历史区	qing zhou li shi qu	0
 琼戈尼	qiong ge ni	0
@@ -1714,7 +1711,7 @@ use_preset_vocabulary: false
 球面应力	qiu mian ying li	0
 球状风化	qiu zhuang feng hua	1
 屈服应变	qu fu ying bian	0
-屈浪拏国	qu lang na guo	0
+屈浪拿国	qu lang na guo	0
 曲流	qu liu	8
 瞿毗霜那国	qu pi shuang na guo	0
 瞿师罗园	qu shi luo yuan	0
@@ -1775,7 +1772,7 @@ use_preset_vocabulary: false
 韧性断层	ren xing duan ceng	0
 人种地理学	ren zhong di li xue	1
 日光山	ri guang shan	2
-日曼投影	ri man tou ying	0
+日晷投影	ri gui tou ying	0
 日晒风化	ri shai feng hua	0
 日温差	ri wen cha	12
 日月潮	ri yue chao	0
@@ -2003,7 +2000,6 @@ use_preset_vocabulary: false
 条植	tiao zhi	0
 铁拉登特罗	tie la deng te luo	0
 铁质土	tie zhi tu	0
-通艾	tong ai	0
 统层	tong ceng	0
 同化带	tong hua dai	0
 统计地震学	tong ji di zhen xue	0
@@ -2076,7 +2072,6 @@ use_preset_vocabulary: false
 微观震中	wei guan zhen zhong	0
 微碱水生境	wei jian shui sheng jing	0
 微量金属	wei liang jin shu	2
-魏玛和德绍	wei ma he de shao	0
 韦内雷港	wei nei lei gang	0
 委任统治地	wei ren tong zhi di	0
 卫生填土法	wei sheng tian tu fa	0
@@ -2512,7 +2507,6 @@ use_preset_vocabulary: false
 主量	zhu liang	3
 注水试验	zhu shui shi yan	0
 朱提	shu shi	11
-住宅和工作室	zhu zhai he gong zuo shi	0
 主震型地震	zhu zhen xing di zhen	0
 柱状结构	zhu zhuang jie gou	13
 砖红壤性土	zhuan hong rang xing tu	0
@@ -2567,3 +2561,4 @@ use_preset_vocabulary: false
 作物布局	zuo wu bu ju	0
 作物组合	zuo wu zu he	0
 雨极	yu ji	5
+夕卡岩	xi ka yan	10

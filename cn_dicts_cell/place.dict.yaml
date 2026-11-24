@@ -1303,7 +1303,7 @@ sort: by_weight
 驼峰街	tuo feng jie	0
 联大街	lian da jie	0
 谊康南路	yi kang nan lu	0
-市级行政中心清风	shi ji xing zheng zhong xin qing feng	0
+市级行政中心·清风	shi ji xing zheng zhong xin qing feng	0
 宜和路	yi he lu	0
 昆明南火车站	kun ming nan huo che zhan	0
 塘子巷	tang zi xiang	0
@@ -1817,3 +1817,6 @@ sort: by_weight
 宜兴埠北	yi xing fu bei	0
 龙爪堰	long zhua yan	0
 泊里	bo li	4
+金匮公园	jin kui gong yuan	1
+邬隘	wu ga	0
+邱隘东	qiu ga dong	0

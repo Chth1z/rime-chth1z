@@ -644,3 +644,7 @@ cn_dicts_cell/composite.dict.yaml	打到吐血	da dao tu xue	3	common	保留L1�
 cn_dicts_cell/composite.dict.yaml	吐血不止	tu xue bu zhi	2	common	保留L1吐血(tu xie)并补齐社会通行读音(tu xue)
 # --- Batch 2: complete phrase replacing others truncation fragment ---
 cn_dicts/ext.dict.yaml	寓军于民	yu jun yu min	20	modern	补齐正规四字语（替代others截断残片“寓军”）
+# --- Batch 2: geography & exthot standard additions ---
+cn_dicts_cell/geography.dict.yaml	夕卡岩	xi ka yan	10	domain	全国科技名词委地质规范正形（与W2传统形矽卡岩 w=7 并存）
+cn_dicts_cell/exthot.dict.yaml	谁发明的	shei fa ming de	19	phonetic	现汉第7版“谁”shéi/shuí双规范音补齐(DICTIONARY_SPEC §3.2)
+cn_dicts_cell/exthot.dict.yaml	谁家好人	shei jia hao ren	3	phonetic	现汉第7版“谁”shéi/shuí双规范音补齐(DICTIONARY_SPEC §3.2)

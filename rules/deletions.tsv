@@ -2903,3 +2903,12 @@ cn_dicts_cell/chess2.dict.yaml	四卒平	*	去尾阿拉伯数字残缺记谱（�
 cn_dicts_cell/chess2.dict.yaml	中卒进	*	去尾阿拉伯数字残缺记谱（原为黑方“中卒进1”类着法）
 cn_dicts_cell/chess2.dict.yaml	中卒平	*	去尾阿拉伯数字残缺记谱（原为黑方“中卒平4”类着法）
 cn_dicts_cell/chess2.dict.yaml	中炮直车对屏风马卒河口炮	*	去数字残缺词（原为《布局骗着与对策》“中炮直车对屏风马7卒河口炮”）
+# --- Batch 2: geography & exthot confirmed truncations / typos ---
+cn_dicts_cell/geography.dict.yaml	丰芽	*	越南世界遗产“丰芽—格邦国家公园”连字符截断残片
+cn_dicts_cell/geography.dict.yaml	恰高	*	伊朗世界遗产“恰高·占比尔”间隔号截断残片
+cn_dicts_cell/geography.dict.yaml	黥基	*	马达加斯加世界遗产“黥基·德·贝马拉哈自然保护区”间隔号截断残片
+cn_dicts_cell/geography.dict.yaml	通艾	*	泰国世界遗产“通艾—会卡肯野生生物保护区”连字符截断残片
+cn_dicts_cell/geography.dict.yaml	魏玛和德绍	*	德国世界遗产“魏玛和德绍的包豪斯建筑及其遗址”的字截断残片
+cn_dicts_cell/geography.dict.yaml	住宅和工作室	*	世界遗产标题截断残片（布鲁塞尔奥塔的住宅和工作室等）
+cn_dicts_cell/exthot.dict.yaml	不允洗	*	W5错别字（“不允许”输入误打）
+cn_dicts_cell/exthot.dict.yaml	这才是真实拍	*	清理热词短视频标题截断噪声碎片
