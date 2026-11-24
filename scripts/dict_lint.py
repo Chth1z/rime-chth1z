@@ -7,23 +7,30 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import importlib.util
 import json
 import pathlib
 import re
-import shutil
 import subprocess
-import sys
-import tempfile
 
 import build_cn_en
+import dict_common
 import dict_rules
 
-REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
+REPO_ROOT = dict_common.REPO_ROOT
 
-EXTRA_VALID_SYLS = {"hm", "hng", "m", "n", "ng"}
+EXTRA_VALID_SYLS = dict_common.EXTRA_VALID_SYLS
 ZERO_WIDTH_RE = re.compile(r"[\u200b\u200c\u200d\ufeff]")
 ZERO_WIDTH_NO_ZWJ_RE = re.compile(r"[\u200b\u200c\ufeff]")
-LUE_NUE_RE = re.compile(r"\b[ln]ue\b")
+CONTROL_CHAR_RE = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]")
+LUE_NUE_RE = dict_common.LUE_NUE_RE
+CENSORED_STARS_RE = re.compile(r"\*{4,}")
+GLUED_COLON_POS_RE = re.compile(
+    r"[a-zA-Z0-9]:(?:vbl|n|v|vt|vi|a|adj|ad|adv|prep|conj|pron|num|int|art)\."
+)
+TRAILING_EMPTY_POS_RE = re.compile(
+    r"(?:^|\s)(?:vbl|n|v|vt|vi|a|adj|ad|adv|prep|conj|pron|num|int|art)\.$"
+)
 
 MANAGED_EN_FILES = (
     "en_dicts/en.dict.yaml",
@@ -39,12 +46,18 @@ MANAGED_OPENCC_FILES = (
 )
 
 ALL_MANAGED_FILES: tuple[str, ...] = (
-    *dict_rules.ACTIVE_CN_DICTS,
+    *dict_common.ACTIVE_CN_DICTS,
     "cn_dicts/corrections.dict.yaml",
     "cn_dicts_cell/luna.dict.yaml",
     "rime_frost.dict.yaml",
     *MANAGED_EN_FILES,
     *MANAGED_OPENCC_FILES,
+)
+
+EXTRA_HYGIENE_FILES: tuple[str, ...] = (
+    "melt_eng.schema.yaml",
+    "melt_eng.dict.yaml",
+    "custom_phrase.txt",
 )
 
 DISABLED_UPSTREAM_DICTS: set[str] = {
@@ -58,81 +71,136 @@ ALLOW_A_CLASS_HIGH_W2: set[tuple[str, str]] = {
     ("密钥", "mi yao"),
 }
 
+# Genuine cross-domain homographs whose readings legitimately differ across active CN dicts
+CROSS_DICT_HOMOGRAPH_ALLOWLIST: frozenset[str] = frozenset({
+    "起着", "闲着", "停着", "应着",  # base (着 zhe) vs chess2 (棋着 zhao)
+    "重炮",                          # base (heavy artillery zhong) vs chess (double cannon chong)
+    "民乐",                          # base (folk music yue) vs place (Minle County/Station le)
+    "两行",                          # base (two lines hang) vs literature (two columns/marching xing)
+    "测度",                          # base (conjecture duo) vs shulihua (measure theory du)
+    "得治",                          # base (must treat dei) vs medication (be cured de)
+    "千石",                          # base (1000 dan salary) vs name2 (Japanese surname Sengoku shi)
+    "乐友",                          # base (music lover yue) vs medication (brand/term le)
+    "正角",                          # base (opera lead role jue) vs shulihua (positive angle jiao)
+})
 
-def _split_header_body(lines: list[str]) -> tuple[list[str], list[str], int]:
-    for i, line in enumerate(lines):
-        if line.strip() == "...":
-            return lines[: i + 1], lines[i + 1 :], i + 2
-    return [], lines, 1
+_split_header_body = dict_common.split_header_body_with_lineno
 
 
-def _sha256(path: pathlib.Path) -> str:
+def _sha256_bytes(data: bytes) -> str:
     h = hashlib.sha256()
-    h.update(path.read_bytes())
+    h.update(data)
     return h.hexdigest()
 
 
-def _load_valid_syls(root: pathlib.Path) -> set[str]:
-    valid: set[str] = set(EXTRA_VALID_SYLS)
-    p = root / "cn_dicts/8105.dict.yaml"
+def _sha256(path: pathlib.Path) -> str:
+    return _sha256_bytes(path.read_bytes())
+
+
+def _load_valid_syls(root: pathlib.Path, errors: list[str] | None = None) -> set[str]:
+    return dict_common.load_valid_syls(root, strict_errors=errors)
+
+
+def _check_file_hygiene(root: pathlib.Path, rel: str, errors: list[str], require_entry_checks: bool) -> None:
+    p = root / rel
     if not p.exists():
-        return valid
-    _, body, _ = _split_header_body(p.read_text(encoding="utf-8").splitlines())
-    for line in body:
+        errors.append(f"missing managed file: {rel}")
+        return
+    raw = p.read_bytes()
+    if raw.startswith(b"\xef\xbb\xbf"):
+        errors.append(f"{rel}: UTF-8 BOM is forbidden")
+    if b"\r\n" in raw:
+        errors.append(f"{rel}: CRLF line endings detected (must be LF)")
+    if rel.endswith(".json") and raw and not raw.endswith(b"\n"):
+        errors.append(f"{rel}: missing trailing LF newline")
+    try:
+        text = raw.decode("utf-8")
+    except UnicodeDecodeError as exc:
+        errors.append(f"{rel}: invalid UTF-8 ({exc})")
+        return
+
+    if not require_entry_checks:
+        return
+
+    is_dict = rel.endswith(".dict.yaml")
+    is_cn_en = rel.startswith("en_dicts/cn_en")
+    allows_emoji_zwj = rel in ("opencc/emoji.txt", "opencc/others.txt")
+    lines = text.splitlines()
+    start_idx = 1
+    if is_dict:
+        _, lines, start_idx = _split_header_body(lines)
+
+    for idx, line in enumerate(lines, start_idx):
         s = line.strip()
         if not s or s.startswith("#"):
             continue
-        cols = line.split("\t")
-        if len(cols) >= 2:
-            valid.add(cols[1])
-    return valid
+        if CONTROL_CHAR_RE.search(line):
+            errors.append(f"{rel}:{idx}: C0/C1 control character in entry")
+        if "\u3000" in line:
+            errors.append(f"{rel}:{idx}: full-width space U+3000 in entry")
+        if allows_emoji_zwj:
+            key_part = line.split("\t", 1)[0]
+            if ZERO_WIDTH_RE.search(key_part) or ZERO_WIDTH_NO_ZWJ_RE.search(line):
+                errors.append(f"{rel}:{idx}: zero-width character in entry")
+        elif ZERO_WIDTH_RE.search(line):
+            errors.append(f"{rel}:{idx}: zero-width character in entry")
+        if is_dict or is_cn_en:
+            if "\t\t" in line:
+                errors.append(f"{rel}:{idx}: consecutive tabs (empty column) in entry")
+            cols = line.split("\t")
+            if len(cols) < 2 and rel != "rime_frost.dict.yaml":
+                errors.append(f"{rel}:{idx}: missing tab delimiter")
+                continue
+            if len(cols) >= 2:
+                if not cols[0] or not cols[1]:
+                    errors.append(f"{rel}:{idx}: empty text or code column")
+                if any(c != c.strip() for c in cols[:2]):
+                    errors.append(f"{rel}:{idx}: leading/trailing whitespace in text or code")
+                if "  " in cols[1]:
+                    errors.append(f"{rel}:{idx}: double space inside code column '{cols[1]}'")
+                for col_i in range(2, len(cols)):
+                    if cols[col_i] != cols[col_i].rstrip(" "):
+                        errors.append(f"{rel}:{idx}: trailing whitespace in column {col_i + 1}")
+                    if col_i == 2 and cols[2] != cols[2].strip():
+                        errors.append(f"{rel}:{idx}: leading/trailing whitespace in weight column")
 
 
 def check_hygiene(root: pathlib.Path, errors: list[str]) -> None:
-    """Check UTF-8 no BOM, LF line endings, and clean whitespace on all managed files."""
+    """Check UTF-8 no BOM, LF line endings, and clean whitespace on all managed + owned config files."""
     for rel in ALL_MANAGED_FILES:
-        p = root / rel
-        if not p.exists():
-            errors.append(f"missing managed file: {rel}")
-            continue
-        raw = p.read_bytes()
-        if raw.startswith(b"\xef\xbb\xbf"):
-            errors.append(f"{rel}: UTF-8 BOM is forbidden")
-        if b"\r\n" in raw:
-            errors.append(f"{rel}: CRLF line endings detected (must be LF)")
-        try:
-            text = raw.decode("utf-8")
-        except UnicodeDecodeError as exc:
-            errors.append(f"{rel}: invalid UTF-8 ({exc})")
-            continue
+        _check_file_hygiene(root, rel, errors, require_entry_checks=True)
+    for rel in EXTRA_HYGIENE_FILES:
+        if (root / rel).exists():
+            _check_file_hygiene(root, rel, errors, require_entry_checks=False)
+    occ_dir = root / "opencc"
+    if occ_dir.exists():
+        for jf in sorted(occ_dir.glob("*.json")):
+            _check_file_hygiene(root, f"opencc/{jf.name}", errors, require_entry_checks=False)
 
-        is_dict = rel.endswith(".dict.yaml")
-        is_cn_en = rel.startswith("en_dicts/cn_en")
-        allows_emoji_zwj = rel in ("opencc/emoji.txt", "opencc/others.txt")
-        lines = text.splitlines()
-        start_idx = 1
-        if is_dict:
-            _, lines, start_idx = _split_header_body(lines)
 
-        for idx, line in enumerate(lines, start_idx):
-            s = line.strip()
-            if not s or s.startswith("#"):
+def _is_allowed_cross_dict_variant(
+    word: str,
+    pys: set[str],
+    dual_reading_words: set[str],
+) -> bool:
+    if len(word) < 2 or word in dual_reading_words or word in CROSS_DICT_HOMOGRAPH_ALLOWLIST:
+        return True
+    py_list = [p.split() for p in pys]
+    w_nodot = word.replace("·", "")
+    if any(len(s) != len(w_nodot) for s in py_list):
+        return False
+    ref = py_list[0]
+    for other in py_list[1:]:
+        for ch, s1, s2 in zip(w_nodot, ref, other):
+            if s1 == s2:
                 continue
-            if "\u3000" in line:
-                errors.append(f"{rel}:{idx}: full-width space U+3000 in entry")
-            if allows_emoji_zwj:
-                key_part = line.split("\t", 1)[0]
-                if ZERO_WIDTH_RE.search(key_part) or ZERO_WIDTH_NO_ZWJ_RE.search(line):
-                    errors.append(f"{rel}:{idx}: zero-width character in entry")
-            elif ZERO_WIDTH_RE.search(line):
-                errors.append(f"{rel}:{idx}: zero-width character in entry")
-            if is_dict or is_cn_en:
-                cols = line.split("\t")
-                if len(cols) < 2 and rel != "rime_frost.dict.yaml":
-                    errors.append(f"{rel}:{idx}: missing tab delimiter")
-                    continue
-                if any(c != c.strip() for c in cols[:2]):
-                    errors.append(f"{rel}:{idx}: leading/trailing whitespace in text or code")
+            pair = {s1, s2}
+            if ch == "谁" and pair == {"shei", "shui"}:
+                continue
+            if ch == "血" and pair == {"xue", "xie"}:
+                continue
+            return False
+    return True
 
 
 def check_cn_invariants(
@@ -142,7 +210,7 @@ def check_cn_invariants(
     errors: list[str],
     warnings: list[str],
 ) -> tuple[dict, set[tuple[str, str]], dict[str, list[tuple[str, int, str]]]]:
-    """Verify the 5 CN invariants + corrections.dict.yaml contract."""
+    """Verify the CN invariants, cross-dict phonetic consistency, and corrections.dict.yaml contract."""
     invalid_syls: list[tuple] = []
     len_mismatches: list[tuple] = []
     lue_nue: list[tuple] = []
@@ -150,9 +218,10 @@ def check_cn_invariants(
     cross_dups = 0
     active_keys: set[tuple[str, str]] = set()
     code_index: dict[str, list[tuple[str, int, str]]] = {}
+    word_readings_active: dict[str, list[tuple[str, str, int]]] = {}
     active_entry_count = 0
 
-    cn_files = (*dict_rules.ACTIVE_CN_DICTS, "cn_dicts/corrections.dict.yaml", "cn_dicts_cell/luna.dict.yaml")
+    cn_files = (*dict_common.ACTIVE_CN_DICTS, "cn_dicts/corrections.dict.yaml", "cn_dicts_cell/luna.dict.yaml")
     for rel in cn_files:
         p = root / rel
         if not p.exists():
@@ -175,13 +244,14 @@ def check_cn_invariants(
             if LUE_NUE_RE.search(py):
                 lue_nue.append((rel, idx, w, py))
             syls = py.split()
+            w_nodot = w.replace("·", "")
+            if not w_nodot or not syls:
+                errors.append(f"{rel}:{idx}: empty word or pinyin ('{w}', '{py}')")
             for sy in syls:
                 if sy not in valid_syls:
                     invalid_syls.append((rel, idx, w, py, sy))
-            if not is_corr:
-                w_nodot = w.replace("·", "")
-                if len(syls) != len(w_nodot):
-                    len_mismatches.append((rel, idx, w, py))
+            if not is_corr and len(syls) != len(w_nodot):
+                len_mismatches.append((rel, idx, w, py))
 
             k = (w, py)
             if k in local_seen:
@@ -198,7 +268,30 @@ def check_cn_invariants(
                 except ValueError:
                     errors.append(f"{rel}:{idx}: non-integer weight '{wt_s}'")
                     wt_val = 0
+                if wt_val < 0:
+                    errors.append(f"{rel}:{idx}: negative weight {wt_val} for ({w}, {py})")
                 code_index.setdefault(py, []).append((w, wt_val, rel))
+                if rel not in ("cn_dicts/8105.dict.yaml", "cn_dicts/others.dict.yaml"):
+                    word_readings_active.setdefault(w, []).append((rel, py, wt_val))
+
+    # Cross-dict same-word reading-conflict check (catches idiom/literature or cell drift)
+    dual_reading_words = {dr.word for dr in ruleset.dual_readings}
+    cross_reading_conflicts = 0
+    for w, items in word_readings_active.items():
+        files = {r for r, _, _ in items}
+        pys = {py for _, py, _ in items}
+        if len(files) > 1 and len(pys) > 1:
+            if not _is_allowed_cross_dict_variant(w, pys, dual_reading_words):
+                cross_reading_conflicts += 1
+                short = [(r.split("/")[-1], py, wt) for r, py, wt in items]
+                errors.append(f"cross-dict reading conflict for '{w}': {short}")
+
+    # Spec limit: E1 whitelist total <= 10
+    e1_count = sum(1 for r in ruleset.corrections if r.category == "E1") + sum(
+        1 for r in ruleset.additions if r.category == "E1"
+    )
+    if e1_count > dict_rules.E1_MAX_COUNT:
+        errors.append(f"E1 whitelist count {e1_count} exceeds limit {dict_rules.E1_MAX_COUNT}")
 
     # Dedicated corrections.dict.yaml contract + SSOT coverage check (runs after active_keys is fully built)
     managed_corr_keys: set[tuple[str, str]] = {
@@ -285,13 +378,20 @@ def check_cn_invariants(
         "remaining_lue_nue": len(lue_nue),
         "within_file_dups": within_dups,
         "cross_file_dups_active_26": cross_dups,
+        "cross_dict_reading_conflicts": cross_reading_conflicts,
         "corrections_overlap_nonzero": corr_overlap_nonzero,
         "corrections_unmanaged": corr_unmanaged,
+        "e1_count": e1_count,
     }
     return stats, active_keys, code_index
 
 
-def check_en_and_cn_en(root: pathlib.Path, rules_dir: pathlib.Path, errors: list[str]) -> dict:
+def check_en_and_cn_en(
+    root: pathlib.Path,
+    rules_dir: pathlib.Path,
+    errors: list[str],
+    valid_syls: set[str] | None = None,
+) -> dict:
     """Verify en_dicts/ integrity and 100% parity across all 7 cn_en*.txt layouts."""
     word_seqs: dict[str, list[str]] = {}
     counts: dict[str, int] = {}
@@ -338,15 +438,18 @@ def check_en_and_cn_en(root: pathlib.Path, rules_dir: pathlib.Path, errors: list
     cn_en_src = rules_dir / "cn_en_source.tsv"
     if cn_en_src.exists():
         try:
-            _, changed = build_cn_en.apply_cn_en_rules(root, root, cn_en_src, dry_run=True)
+            _, changed = build_cn_en.apply_cn_en_rules(
+                root, root, cn_en_src, dry_run=True, valid_syls=valid_syls
+            )
             if changed:
                 errors.append(f"cn_en tables out of sync with rules/cn_en_source.tsv: {changed}")
         except ValueError as exc:
             errors.append(str(exc))
 
-    # Check en_ext & en no within-file duplicates, plus symbol-code anti-hijack guards
-    protected_en_codes: dict[str, set[str]] = {}  # lower plain code from en.dict or weighted (>1) en_ext
-    leading_sym_entries: list[tuple[str, int, str, str, str]] = []  # (rel, idx, word, code, stripped_lower)
+    # Check en_ext & en no within-file/cross-file duplicates, valid weights, and symbol-code anti-hijack guards
+    protected_en_codes: dict[str, set[str]] = {}
+    leading_sym_entries: list[tuple[str, int, str, str, str]] = []
+    global_en_seen: dict[tuple[str, str], str] = {}
     for rel in ("en_dicts/en_ext.dict.yaml", "en_dicts/en.dict.yaml"):
         p = root / rel
         if not p.exists():
@@ -354,6 +457,7 @@ def check_en_and_cn_en(root: pathlib.Path, rules_dir: pathlib.Path, errors: list
         _, body, start_idx = _split_header_body(p.read_text(encoding="utf-8").splitlines())
         seen_en: set[tuple[str, str]] = set()
         dup_cnt = 0
+        cross_dup_cnt = 0
         for idx, line in enumerate(body, start_idx):
             s = line.strip()
             if not s or s.startswith("#"):
@@ -365,6 +469,17 @@ def check_en_and_cn_en(root: pathlib.Path, rules_dir: pathlib.Path, errors: list
                 if k in seen_en:
                     dup_cnt += 1
                 seen_en.add(k)
+                if k in global_en_seen and global_en_seen[k] != rel:
+                    cross_dup_cnt += 1
+                else:
+                    global_en_seen[k] = rel
+                if len(cols) >= 3 and cols[2] != "":
+                    try:
+                        en_wt = int(cols[2])
+                        if en_wt < 0:
+                            errors.append(f"{rel}:{idx}: negative weight {en_wt} for '{w}'")
+                    except ValueError:
+                        errors.append(f"{rel}:{idx}: non-integer weight '{cols[2]}' for '{w}'")
                 if re.search(r"[^\x21-\x7e]", code):
                     errors.append(
                         f"{rel}:{idx}: non-ASCII or whitespace char in EN code '{code}' for '{w}' "
@@ -387,6 +502,8 @@ def check_en_and_cn_en(root: pathlib.Path, rules_dir: pathlib.Path, errors: list
                         protected_en_codes.setdefault(code.lower(), set()).add(w)
         if dup_cnt:
             errors.append(f"{rel}: {dup_cnt} within-file duplicates")
+        if cross_dup_cnt:
+            errors.append(f"{rel}: {cross_dup_cnt} cross-file duplicates with en_ext.dict.yaml")
 
     for rel, idx, w, code, stripped_lower in leading_sym_entries:
         colliding_words = protected_en_codes.get(stripped_lower, set()) - {w}
@@ -405,13 +522,48 @@ def check_en_and_cn_en(root: pathlib.Path, rules_dir: pathlib.Path, errors: list
     return {"cn_en_entry_counts": counts}
 
 
+def _collect_opencc_json_files(obj) -> list[str]:
+    files: list[str] = []
+    if isinstance(obj, dict):
+        if "file" in obj and isinstance(obj["file"], str):
+            files.append(obj["file"])
+        for v in obj.values():
+            files.extend(_collect_opencc_json_files(v))
+    elif isinstance(obj, list):
+        for x in obj:
+            files.extend(_collect_opencc_json_files(x))
+    return files
+
+
+def _load_yaml_unique_keys(yaml_mod, text: str, label: str, errors: list[str]):
+    """Load YAML with SafeLoader while flagging any duplicate mapping keys."""
+
+    class _UniqueKeyLoader(yaml_mod.SafeLoader):
+        pass
+
+    def _construct_mapping(loader, node, deep=False):
+        seen: set = set()
+        for key_node, _ in node.value:
+            k = loader.construct_object(key_node, deep=deep)
+            if k in seen:
+                line_no = getattr(key_node.start_mark, "line", 0) + 1
+                errors.append(f"{label}:{line_no}: duplicate YAML key {k!r}")
+            seen.add(k)
+        return loader.construct_mapping(node, deep=deep)
+
+    _UniqueKeyLoader.add_constructor(
+        yaml_mod.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _construct_mapping
+    )
+    return yaml_mod.load(text, Loader=_UniqueKeyLoader)
+
+
 def check_schema_and_opencc(
     root: pathlib.Path,
     errors: list[str],
     warnings: list[str],
     strict: bool = False,
 ) -> None:
-    """Verify rime_frost.dict.yaml locks disabled upstream tables off and OpenCC JSON/TXT files are valid."""
+    """Verify rime_frost.dict.yaml import_tables parity, OpenCC JSON/TXT quality, and YAML schemas."""
     rf = root / "rime_frost.dict.yaml"
     disabled_tables = (
         "- cn_dicts/41448",
@@ -430,15 +582,26 @@ def check_schema_and_opencc(
     if occ_dir.exists():
         for jf in sorted(occ_dir.glob("*.json")):
             try:
-                json.loads(jf.read_text(encoding="utf-8"))
+                doc = json.loads(jf.read_text(encoding="utf-8"))
             except Exception as exc:
                 errors.append(f"opencc/{jf.name}: invalid JSON ({exc})")
+                continue
+            for ref_file in _collect_opencc_json_files(doc):
+                if not (occ_dir / ref_file).exists():
+                    errors.append(f"opencc/{jf.name}: referenced dictionary file 'opencc/{ref_file}' does not exist")
+
         for rel in MANAGED_OPENCC_FILES:
             p = root / rel
             if not p.exists():
                 continue
             seen_keys: set[str] = set()
             is_ec = rel == "opencc/english_chinese.txt"
+            is_emoji_like = rel in ("opencc/emoji.txt", "opencc/others.txt")
+            check_first_tok = rel in (
+                "opencc/chinese_english.txt",
+                "opencc/english_chinese.txt",
+                "opencc/emoji.txt",
+            )
             for idx, line in enumerate(p.read_text(encoding="utf-8").splitlines(), 1):
                 if not line.strip():
                     continue
@@ -455,6 +618,11 @@ def check_schema_and_opencc(
                 seen_keys.add(k)
                 if "  " in v:
                     errors.append(f"{rel}:{idx}: double space in value for '{k}'")
+                if CENSORED_STARS_RE.search(v):
+                    errors.append(f"{rel}:{idx}: censored '****' token in value for '{k}'")
+                toks = v.split(" ")
+                if check_first_tok and not k.startswith("----------") and toks and toks[0] != k:
+                    errors.append(f"{rel}:{idx}: first value token '{toks[0]}' != key '{k}'")
                 if is_ec:
                     if " " in k:
                         errors.append(f"{rel}:{idx}: whitespace in english_chinese key '{k}'")
@@ -462,6 +630,26 @@ def check_schema_and_opencc(
                         errors.append(f"{rel}:{idx}: stray trailing NUM in value for '{k}'")
                     if "计算机]" in v:
                         errors.append(f"{rel}:{idx}: corrupted '计算机]' tag in value for '{k}'")
+                    if GLUED_COLON_POS_RE.search(v):
+                        errors.append(f"{rel}:{idx}: glued entry/POS token in value for '{k}'")
+                    if TRAILING_EMPTY_POS_RE.search(v):
+                        errors.append(f"{rel}:{idx}: trailing empty POS tag in value for '{k}'")
+                if is_emoji_like and not k.startswith("----------"):
+                    seen_toks: set[str] = set()
+                    seen_vs16_base: dict[str, str] = {}
+                    for t in toks:
+                        if t in seen_toks:
+                            errors.append(f"{rel}:{idx}: duplicate token '{t}' for '{k}'")
+                        seen_toks.add(t)
+                        # Detect VS16 vs bare duplicate pairs (allowing intentional VS16 vs VS15 \ufe0e pairs)
+                        if "\ufe0e" not in t:
+                            base = t.replace("\ufe0f", "")
+                            prev = seen_vs16_base.get(base)
+                            if prev is not None and prev != t:
+                                errors.append(
+                                    f"{rel}:{idx}: duplicate VS16/non-VS16 token pair ('{prev}', '{t}') for '{k}'"
+                                )
+                            seen_vs16_base[base] = t
 
     # Guard against unmanaged new upstream dictionary files
     known_dict_files = set(ALL_MANAGED_FILES) | DISABLED_UPSTREAM_DICTS
@@ -480,28 +668,64 @@ def check_schema_and_opencc(
     except ImportError:
         yaml = None
     if yaml is None:
-        msg = "PyYAML is not installed; cannot run YAML syntax, melt_eng order, spelling_hints, and symbols_v guards (install pyyaml)"
+        msg = "PyYAML is not installed; cannot run YAML syntax, rime_frost import_tables, melt_eng order, spelling_hints, and symbols_v guards (install pyyaml)"
         if strict:
             errors.append(msg)
         else:
             warnings.append(msg)
     if yaml is not None:
+        # Verify rime_frost.dict.yaml import_tables exact parity (set + order) with ACTIVE_CN_DICTS and disk existence
+        if rf.exists():
+            rf_hdr, _, _ = _split_header_body(rf.read_text(encoding="utf-8").splitlines())
+            try:
+                rf_doc = yaml.safe_load("\n".join(rf_hdr)) or {}
+            except Exception as exc:
+                errors.append(f"rime_frost.dict.yaml: invalid YAML header ({exc})")
+                rf_doc = {}
+            imp = rf_doc.get("import_tables") or []
+            if not isinstance(imp, list):
+                errors.append("rime_frost.dict.yaml: import_tables must be a list")
+            else:
+                imp_files = [f"{t}.dict.yaml" for t in imp]
+                for rel_t in imp_files:
+                    if not (root / rel_t).exists():
+                        errors.append(f"rime_frost.dict.yaml: imported table '{rel_t}' does not exist on disk")
+                if "cn_dicts/corrections.dict.yaml" not in imp_files:
+                    errors.append("rime_frost.dict.yaml: cn_dicts/corrections must be enabled in import_tables")
+                active_imp = [f for f in imp_files if f != "cn_dicts/corrections.dict.yaml"]
+                expected_active = list(dict_common.ACTIVE_CN_DICTS)
+                if active_imp != expected_active:
+                    if set(active_imp) != set(expected_active):
+                        missing = sorted(set(expected_active) - set(active_imp))
+                        extra = sorted(set(active_imp) - set(expected_active))
+                        errors.append(
+                            f"rime_frost.dict.yaml: import_tables set mismatch vs ACTIVE_CN_DICTS (missing={missing}, extra={extra})"
+                        )
+                    else:
+                        errors.append(
+                            "rime_frost.dict.yaml: import_tables order differs from dict_common.ACTIVE_CN_DICTS"
+                        )
+
         yaml_files = (
             [p for p in sorted(root.glob("*.yaml")) if not p.name.endswith(".dict.yaml")]
             + sorted((root / "profiles").glob("*.yaml"))
             + sorted((root / "themes").glob("*.yaml"))
         )
         for yf in yaml_files:
+            rel_y = yf.relative_to(root).as_posix()
+            raw_y = yf.read_bytes()
+            if raw_y.startswith(b"\xef\xbb\xbf"):
+                errors.append(f"{rel_y}: UTF-8 BOM is forbidden")
             try:
-                yaml.safe_load(yf.read_text(encoding="utf-8-sig"))
+                yaml.safe_load(raw_y.decode("utf-8"))
             except Exception as exc:
-                errors.append(f"{yf.relative_to(root).as_posix()}: invalid YAML ({exc})")
+                errors.append(f"{rel_y}: invalid YAML ({exc})")
 
         # Guard melt_eng FP+ZRM parity and algebra pipeline order (pre -> CN -> post)
         me_schema = root / "melt_eng.schema.yaml"
         me_common = root / "melt_eng_algebra_common.yaml"
         if me_schema.exists():
-            me_doc = yaml.safe_load(me_schema.read_text(encoding="utf-8-sig")) or {}
+            me_doc = yaml.safe_load(me_schema.read_text(encoding="utf-8")) or {}
             alg_ref = (me_doc.get("speller") or {}).get("algebra", {})
             inc = alg_ref.get("__include") if isinstance(alg_ref, dict) else None
             if inc != "melt_eng_algebra:/algebra_fp_zrm":
@@ -510,18 +734,19 @@ def check_schema_and_opencc(
                     f"(got {inc!r}) so Full Pinyin and Natural Double Pinyin remain equal first-class schemas"
                 )
         if me_common.exists():
-            mc_doc = yaml.safe_load(me_common.read_text(encoding="utf-8-sig")) or {}
+            mc_doc = yaml.safe_load(me_common.read_text(encoding="utf-8")) or {}
             pre_rules = mc_doc.get("algebra_common_pre") or []
             post_rules = mc_doc.get("algebra_common_post") or []
-            erase_rule = "erase/^[^a-zA-Z0-9].+$/"
-            if erase_rule in pre_rules:
+            erase_rules = {"erase/^[^a-zA-Z0-9].+$/", "erase/[^a-zA-Z]/"}
+            bad_pre = [r for r in pre_rules if r in erase_rules]
+            if bad_pre:
                 errors.append(
-                    "melt_eng_algebra_common.yaml: erase/^[^a-zA-Z0-9].+$/ must not be in algebra_common_pre "
+                    f"melt_eng_algebra_common.yaml: {bad_pre[0]} must not be in algebra_common_pre "
                     "(breaks Chinese phonetic derivation for leading-symbol entries like .gitignore/.DS_Store)"
                 )
-            if erase_rule not in post_rules:
+            if not any(r in post_rules for r in erase_rules):
                 errors.append(
-                    "melt_eng_algebra_common.yaml: algebra_common_post must contain erase/^[^a-zA-Z0-9].+$/"
+                    "melt_eng_algebra_common.yaml: algebra_common_post must contain erase/[^a-zA-Z]/ (or erase/^[^a-zA-Z0-9].+$/)"
                 )
             for k, v in mc_doc.items():
                 if isinstance(v, dict) and "__include" in v and ":" not in str(v["__include"]):
@@ -531,7 +756,7 @@ def check_schema_and_opencc(
                     )
         me_alg = root / "melt_eng_algebra.yaml"
         if me_alg.exists():
-            ma_doc = yaml.safe_load(me_alg.read_text(encoding="utf-8-sig")) or {}
+            ma_doc = yaml.safe_load(me_alg.read_text(encoding="utf-8")) or {}
             for k, v in ma_doc.items():
                 if isinstance(v, dict) and "__include" in v and ":" not in str(v["__include"]):
                     errors.append(
@@ -560,7 +785,7 @@ def check_schema_and_opencc(
                 sc_p = root / sc_rel
                 if not sc_p.exists():
                     continue
-                sc_doc = yaml.safe_load(sc_p.read_text(encoding="utf-8-sig")) or {}
+                sc_doc = yaml.safe_load(sc_p.read_text(encoding="utf-8")) or {}
                 sh = (sc_doc.get("translator") or {}).get("spelling_hints")
                 if not isinstance(sh, int) or sh < max_corr_syls:
                     errors.append(
@@ -568,21 +793,29 @@ def check_schema_and_opencc(
                         f"{max_corr_syls} ('{max_corr_sample}'); comments on longer corrections will be dropped"
                     )
 
-        # Guard symbols_v.yaml keys match recognizer/patterns/punct and have no duplicate items
+        # Guard symbols_v.yaml: unique YAML keys, /vs calculator-prefix guard, punct regex reachability, no dup items
         sym_p = root / "symbols_v.yaml"
         if sym_p.exists():
-            sym_doc = yaml.safe_load(sym_p.read_text(encoding="utf-8-sig")) or {}
+            try:
+                sym_doc = _load_yaml_unique_keys(yaml, sym_p.read_text(encoding="utf-8"), "symbols_v.yaml", errors) or {}
+            except Exception as exc:
+                errors.append(f"symbols_v.yaml: failed to parse YAML ({exc})")
+                sym_doc = {}
             sym_map = sym_doc.get("symbols") or {}
             punct_pats = []
             for sc_rel in ("rime_frost.schema.yaml", "rime_frost_double_pinyin.schema.yaml"):
                 sc_p = root / sc_rel
                 if sc_p.exists():
-                    sc_doc = yaml.safe_load(sc_p.read_text(encoding="utf-8-sig")) or {}
+                    sc_doc = yaml.safe_load(sc_p.read_text(encoding="utf-8")) or {}
                     pat = ((sc_doc.get("recognizer") or {}).get("patterns") or {}).get("punct")
                     if pat:
                         punct_pats.append((sc_rel, re.compile(pat)))
             for sk, vals in sym_map.items():
                 sk_s = str(sk)
+                if sk_s.startswith("/vs"):
+                    errors.append(
+                        f"symbols_v.yaml: key '{sk_s}' collides with calculator prefix '/vs'"
+                    )
                 for sc_rel, pat_re in punct_pats:
                     if not pat_re.match(sk_s):
                         errors.append(
@@ -598,57 +831,68 @@ def check_schema_and_opencc(
                         seen_v.add(vs)
 
 
+def _load_clean_dicts_module(root: pathlib.Path):
+    cleaner_path = root / "scripts/clean-dicts.py"
+    if not cleaner_path.exists():
+        cleaner_path = REPO_ROOT / "scripts/clean-dicts.py"
+    spec = importlib.util.spec_from_file_location("_rime_clean_dicts_idemp", cleaner_path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"Cannot load cleaner module from {cleaner_path}")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
 def check_idempotency(root: pathlib.Path, rules_dir: pathlib.Path, errors: list[str]) -> dict:
-    """Copy all managed files to a tempdir, run clean-dicts.py, and assert 0 SHA-256 diffs."""
-    with tempfile.TemporaryDirectory(prefix="rime-lint-idemp-") as tmp:
-        tmp_root = pathlib.Path(tmp)
-        before_hashes: dict[str, str] = {}
-        for rel in ALL_MANAGED_FILES:
-            src = root / rel
-            if not src.exists():
-                continue
-            dst = tmp_root / rel
-            dst.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(src, dst)
-            before_hashes[rel] = _sha256(dst)
+    """Run clean-dicts.py in-memory (no disk writes) and assert 0 SHA-256 diffs and 0 pass-2 churn."""
+    try:
+        cleaner_mod = _load_clean_dicts_module(root)
+        manifest, out_buffers = cleaner_mod.run_pipeline(root, root, rules_dir, write=False)
+    except Exception as exc:
+        errors.append(f"idempotency clean-dicts.py failed: {exc}")
+        return {"checked_files": 0, "diffs": ["<cleaner failed>"]}
 
-        cleaner = root / "scripts/clean-dicts.py"
-        manifest_path = tmp_root / "manifest.json"
-        proc = subprocess.run(
-            [
-                sys.executable,
-                str(cleaner),
-                "--src-dir",
-                str(tmp_root),
-                "--out-dir",
-                str(tmp_root),
-                "--rules-dir",
-                str(rules_dir),
-                "--manifest",
-                str(manifest_path),
-            ],
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-        )
-        if proc.returncode != 0:
-            errors.append(f"idempotency clean-dicts.py failed (rc={proc.returncode}): {proc.stderr or proc.stdout}")
-            return {"checked_files": len(before_hashes), "diffs": ["<cleaner failed>"]}
+    diffs: list[str] = []
+    checked = 0
+    for rel in ALL_MANAGED_FILES:
+        src = root / rel
+        if not src.exists():
+            continue
+        checked += 1
+        h_before = _sha256(src)
+        buf = out_buffers.get(rel)
+        if buf is None:
+            errors.append(f"idempotency: cleaner did not emit buffer for managed file '{rel}'")
+            diffs.append(rel)
+            continue
+        h_after = _sha256_bytes(buf.encode("utf-8"))
+        if h_after != h_before:
+            diffs.append(rel)
+    if diffs:
+        errors.append(f"idempotency failed: {len(diffs)} file(s) changed on pass 2: {diffs}")
 
-        diffs: list[str] = []
-        for rel, h_before in before_hashes.items():
-            h_after = _sha256(tmp_root / rel)
-            if h_after != h_before:
-                diffs.append(rel)
-        if diffs:
-            errors.append(f"idempotency failed: {len(diffs)} file(s) changed on pass 2: {diffs}")
+    # Assert zero pass-2 ping-pong churn counters across managed files
+    churn_keys = (
+        "reweighted", "fixed_py", "fixed_word_or_trad", "deleted_boilerplate_or_spam",
+        "deleted_noise_or_typo", "deleted_wrong_py", "added",
+        "rules_deleted", "rules_word_fixed", "rules_py_fixed", "rules_reweighted", "rules_added",
+        "rules_corr_updated", "rules_corr_added", "dedup_within_file", "dedup_cross_file",
+        "dedup_weight_promoted", "fixed", "deleted", "normalized", "overlay_fixed",
+    )
+    churn_hits: dict[str, dict[str, int]] = {}
+    for rel, st in manifest.get("files", {}).items():
+        nonzero = {k: st[k] for k in churn_keys if st.get(k, 0)}
+        if nonzero:
+            churn_hits[rel] = nonzero
+    if churn_hits:
+        errors.append(f"idempotency pass-2 ping-pong detected (non-zero churn counters): {churn_hits}")
 
-        rules_summary = {}
-        if manifest_path.exists():
-            m = json.loads(manifest_path.read_text(encoding="utf-8"))
-            rules_summary = m.get("rules", {})
-        return {"checked_files": len(before_hashes), "diffs": diffs, "rules_manifest": rules_summary}
+    return {
+        "checked_files": checked,
+        "diffs": diffs,
+        "churn": churn_hits,
+        "rules_manifest": manifest.get("rules", {}),
+    }
 
 
 def check_collisions(
@@ -767,11 +1011,6 @@ def _git_show_lines(root: pathlib.Path, rel: str) -> list[str] | None:
     return proc.stdout.decode("utf-8", errors="replace").splitlines()
 
 
-def _count_dict_entries(lines: list[str]) -> int:
-    _, body, _ = _split_header_body(lines)
-    return sum(1 for l in body if l.strip() and not l.strip().startswith("#") and "\t" in l)
-
-
 def _entry_set(lines: list[str], is_dict: bool = True) -> set[str]:
     body = _split_header_body(lines)[1] if is_dict else lines
     return {l for l in body if l.strip() and not l.strip().startswith("#") and "\t" in l}
@@ -783,45 +1022,59 @@ def check_diff_budget(
     max_corrections_delta: int,
     max_cn_en_delta: int,
 ) -> dict:
-    """Compare current working tree vs HEAD to drive CI circuit-breaker decisions."""
+    """Compare current working tree vs HEAD using symmetric differences for CI circuit-breaker decisions."""
     active_before = 0
     active_after = 0
-    for rel in (*dict_rules.ACTIVE_CN_DICTS, "cn_dicts/corrections.dict.yaml"):
-        head_lines = _git_show_lines(root, rel)
+    active_symdiff = 0
+    for rel in (*dict_common.ACTIVE_CN_DICTS, "cn_dicts/corrections.dict.yaml"):
+        head_lines = _git_show_lines(root, rel) or []
         cur_p = root / rel
-        if head_lines is not None:
-            active_before += _count_dict_entries(head_lines)
-        if cur_p.exists():
-            active_after += _count_dict_entries(cur_p.read_text(encoding="utf-8").splitlines())
+        cur_lines = cur_p.read_text(encoding="utf-8").splitlines() if cur_p.exists() else []
+        head_set = _entry_set(head_lines, True)
+        cur_set = _entry_set(cur_lines, True)
+        active_before += len(head_set)
+        active_after += len(cur_set)
+        active_symdiff += len(head_set ^ cur_set)
     active_delta = active_after - active_before
 
     corr_head = _git_show_lines(root, "cn_dicts/corrections.dict.yaml") or []
     corr_cur = (root / "cn_dicts/corrections.dict.yaml").read_text(encoding="utf-8").splitlines()
     corr_changed = len(_entry_set(corr_head, True) ^ _entry_set(corr_cur, True))
 
-    cn_en_head = _git_show_lines(root, "en_dicts/cn_en.txt") or []
-    cn_en_cur = (root / "en_dicts/cn_en.txt").read_text(encoding="utf-8").splitlines()
-    cn_en_changed = len(_entry_set(cn_en_head, False) ^ _entry_set(cn_en_cur, False))
+    cn_en_per_file: dict[str, int] = {}
+    for fname, _ in build_cn_en.CN_EN_FILES:
+        rel = f"en_dicts/{fname}"
+        ce_head = _git_show_lines(root, rel) or []
+        ce_p = root / rel
+        ce_cur = ce_p.read_text(encoding="utf-8").splitlines() if ce_p.exists() else []
+        cn_en_per_file[rel] = len(_entry_set(ce_head, False) ^ _entry_set(ce_cur, False))
+    cn_en_changed = max(cn_en_per_file.values()) if cn_en_per_file else 0
+    cn_en_total_symdiff = sum(cn_en_per_file.values())
 
     reasons: list[str] = []
-    if abs(active_delta) > max_active_delta:
-        reasons.append(f"active_cn_net_delta={active_delta:+d} exceeds ±{max_active_delta}")
+    if active_symdiff > max_active_delta:
+        reasons.append(f"active_cn_symdiff={active_symdiff} exceeds {max_active_delta} (net={active_delta:+d})")
     if corr_changed > max_corrections_delta:
         reasons.append(f"corrections_changed_entries={corr_changed} exceeds {max_corrections_delta}")
     if cn_en_changed > max_cn_en_delta:
-        reasons.append(f"cn_en_changed_entries={cn_en_changed} exceeds {max_cn_en_delta}")
+        reasons.append(
+            f"cn_en_max_file_symdiff={cn_en_changed} exceeds {max_cn_en_delta} (all_7_total={cn_en_total_symdiff})"
+        )
 
     needs_review = len(reasons) > 0
     summary = (
-        f"active_cn={active_before:,}->{active_after:,} ({active_delta:+,}), "
-        f"corrections_symdiff={corr_changed}, cn_en_symdiff={cn_en_changed}"
+        f"active_cn={active_before:,}->{active_after:,} (net={active_delta:+,}, symdiff={active_symdiff:,}), "
+        f"corrections_symdiff={corr_changed}, cn_en_max_symdiff={cn_en_changed} (all7={cn_en_total_symdiff})"
     )
     return {
         "active_cn_before": active_before,
         "active_cn_after": active_after,
         "active_cn_net_delta": active_delta,
+        "active_cn_symdiff": active_symdiff,
         "corrections_changed_entries": corr_changed,
         "cn_en_changed_entries": cn_en_changed,
+        "cn_en_total_symdiff": cn_en_total_symdiff,
+        "cn_en_per_file_symdiff": cn_en_per_file,
         "needs_review": needs_review,
         "reasons": reasons,
         "summary": summary,
@@ -840,7 +1093,7 @@ def main() -> None:
     ap.add_argument("--root", type=pathlib.Path, default=REPO_ROOT)
     ap.add_argument("--rules-dir", type=pathlib.Path, default=None)
     ap.add_argument("--strict", action="store_true", help="Run all hygiene, invariant, parity, and rules SSOT checks")
-    ap.add_argument("--idempotent", action="store_true", help="Run pass-2 SHA-256 idempotency verification in tempdir")
+    ap.add_argument("--idempotent", action="store_true", help="Run pass-2 in-memory SHA-256 idempotency verification")
     ap.add_argument("--check-collisions", action="store_true", help="Audit top-5 homophone collisions for rules/ entries")
     ap.add_argument("--diff-budget", action="store_true", help="Compute working-tree vs HEAD diff budget for CI circuit breaker")
     ap.add_argument("--max-active-delta", type=int, default=5000)
@@ -856,14 +1109,14 @@ def main() -> None:
     errors: list[str] = []
     warnings: list[str] = []
 
-    valid_syls = _load_valid_syls(root)
+    valid_syls = _load_valid_syls(root, errors=errors)
     ruleset = dict_rules.load_ruleset(rules_dir, valid_syls=valid_syls)
     errors.extend(ruleset.errors)
     warnings.extend(ruleset.warnings)
 
     check_hygiene(root, errors)
     cn_stats, _, code_index = check_cn_invariants(root, valid_syls, ruleset, errors, warnings)
-    en_stats = check_en_and_cn_en(root, rules_dir, errors)
+    en_stats = check_en_and_cn_en(root, rules_dir, errors, valid_syls=valid_syls)
     check_schema_and_opencc(root, errors, warnings, strict=args.strict)
 
     idemp_stats = None
@@ -901,8 +1154,9 @@ def main() -> None:
     }
 
     if args.json_out:
-        args.json_out.parent.mkdir(parents=True, exist_ok=True)
-        args.json_out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
+        dict_common.atomic_write_text(
+            args.json_out, json.dumps(report, ensure_ascii=False, indent=2) + "\n"
+        )
 
     if args.github_output:
         gh_kv = {

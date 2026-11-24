@@ -17,9 +17,10 @@ import re
 from collections import Counter
 
 import build_cn_en
+import dict_common
 import dict_rules
 
-REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
+REPO_ROOT = dict_common.REPO_ROOT
 SRC_ROOT = REPO_ROOT
 DST_ROOT = REPO_ROOT
 
@@ -204,39 +205,12 @@ def jp_t2s(text: str) -> str:
     return text.translate(TRAD_JP_TO_SIMP)
 
 
-def split_header_body(lines: list[str]) -> tuple[list[str], list[str]]:
-    """Split a Rime .dict.yaml file into header (up to and including '...') and body."""
-    for i, line in enumerate(lines):
-        if line.strip() == "...":
-            return lines[: i + 1], lines[i + 1 :]
-    return [], lines
-
-
-def parse_entry(line: str) -> tuple[str, str, str, list[str]] | None:
-    """Return (word, py, weight, extra_cols) or None if comment/blank."""
-    s = line.strip()
-    if not s or s.startswith("#"):
-        return None
-    parts = line.rstrip("\r\n").split("\t")
-    if len(parts) < 2:
-        return None
-    w = parts[0]
-    py = parts[1]
-    wt = parts[2] if len(parts) >= 3 else ""
-    extra = parts[3:] if len(parts) > 3 else []
-    return w, py, wt, extra
-
-
-def format_entry(w: str, py: str, wt: str, extra: list[str]) -> str:
-    cols = [w, py]
-    if wt != "" or extra:
-        cols.append(wt)
-    cols.extend(extra)
-    return "\t".join(cols)
-
-
-def normalize_lue_nue(py: str) -> str:
-    return re.sub(r"\b([ln])ue\b", r"\1ve", py)
+split_header_body = dict_common.split_header_body
+split_header_body_with_lineno = dict_common.split_header_body_with_lineno
+parse_entry = dict_common.parse_entry
+format_entry = dict_common.format_entry
+normalize_lue_nue = dict_common.normalize_lue_nue
+w_int = dict_common.w_int
 
 
 def replace_syl_at(word: str, py: str, char: str, old_s: str, new_s: str, cond=None) -> str:
@@ -252,20 +226,19 @@ def replace_syl_at(word: str, py: str, char: str, old_s: str, new_s: str, cond=N
     return " ".join(syls) if changed else py
 
 
-def w_int(wt: str) -> int:
-    try:
-        return int(wt)
-    except ValueError:
-        return 0
-
-
 def find_entry_span(
     body: list[str],
     start_key: tuple[str, str],
     end_key: tuple[str, str],
     next_word: str | None = None,
+    max_span_len: int | None = None,
+    stats: dict | None = None,
 ) -> tuple[int, int] | None:
-    """Locate an inclusive [start_idx, end_idx] span in body by (word, py) sentinels."""
+    """Locate an inclusive [start_idx, end_idx] span in body by (word, py) sentinels.
+
+    If max_span_len is provided and the matched span exceeds max_span_len lines
+    (e.g. due to upstream re-sorting), aborts safely and returns None.
+    """
     start_idx = None
     for i, line in enumerate(body):
         p = parse_entry(line)
@@ -285,6 +258,11 @@ def find_entry_span(
                         continue
                 start_idx = i
         elif k == end_key:
+            span_len = i - start_idx + 1
+            if max_span_len is not None and span_len > max_span_len:
+                if stats is not None:
+                    stats["span_guard_aborted"] += 1
+                return None
             return start_idx, i
     return None
 
@@ -476,7 +454,7 @@ def clean_base(lines: list[str], stats: dict) -> list[str]:
 EXT_STANDARD_XIE_MARKERS: tuple[str, ...] = (
     "一针见血", "血淋淋", "血糊糊", "血晕", "流鼻血", "鼻血",
     "鸡血", "狗血", "鸭血", "猪血", "羊血", "毛血旺",
-    "吐血", "咳血", "尿血",
+    "吐血", "咳血", "咯血", "尿血",
 )
 
 
@@ -568,7 +546,10 @@ def clean_corrections(lines: list[str], stats: dict) -> list[str]:
 
 def clean_food(lines: list[str], stats: dict) -> list[str]:
     hdr, body = split_header_body(lines)
-    poi_span = find_entry_span(body, ("阿巴尼", "a ba ni"), ("昨重", "zuo zhong"), next_word="阿宝面")
+    poi_span = find_entry_span(
+        body, ("阿巴尼", "a ba ni"), ("昨重", "zuo zhong"),
+        next_word="阿宝面", max_span_len=150_000, stats=stats,
+    )
     out = list(hdr)
     braise_markers = ("扒菜", "扒鸡", "扒鸭", "扒鱼", "扒肉", "扒肘", "扒翅", "扒鲍", "扒海", "扒豆腐", "扒白菜", "扒菇")
     for offset, line in enumerate(body):
@@ -602,8 +583,8 @@ def clean_food(lines: list[str], stats: dict) -> list[str]:
 
 def clean_place(lines: list[str], stats: dict) -> list[str]:
     hdr, body = split_header_body(lines)
-    hk_span = find_entry_span(body, ("欣澳", "xin ao"), ("烏溪沙", "wu xi sha"))
-    dump_span = find_entry_span(body, ("分洪区", "fen hong qu"), ("鼠白胜处", "shu bai sheng chu"))
+    hk_span = find_entry_span(body, ("欣澳", "xin ao"), ("烏溪沙", "wu xi sha"), max_span_len=200, stats=stats)
+    dump_span = find_entry_span(body, ("分洪区", "fen hong qu"), ("鼠白胜处", "shu bai sheng chu"), max_span_len=5_000, stats=stats)
     out = list(hdr)
     untypable_re = re.compile(r"[0-9A-Z()]")
     chang_words = {
@@ -655,7 +636,10 @@ def clean_place(lines: list[str], stats: dict) -> list[str]:
 
 def clean_chess2(lines: list[str], stats: dict) -> list[str]:
     hdr, body = split_header_body(lines)
-    sec3_span = find_entry_span(body, ("八平", "ba ping"), ("卒五个", "zu wu ge"), next_word="八卒")
+    sec3_span = find_entry_span(
+        body, ("八平", "ba ping"), ("卒五个", "zu wu ge"),
+        next_word="八卒", max_span_len=1_200, stats=stats,
+    )
     out = list(hdr)
     trad_pieces = re.compile(r"[車俥馬傌砲將帥]")
     for offset, line in enumerate(body):
@@ -677,8 +661,14 @@ def clean_chess2(lines: list[str], stats: dict) -> list[str]:
     return out
 
 
-def post_chess_add_ju(lines: list[str], stats: dict, move_only: bool) -> list[str]:
-    """Generate xiangqi '车' standard ju readings after rules/ overlay."""
+def post_chess_add_ju(
+    lines: list[str],
+    stats: dict,
+    move_only: bool,
+    deleted_exact: set[tuple[str, str]] | None = None,
+    deleted_wild: set[str] | None = None,
+) -> list[str]:
+    """Generate xiangqi '车' standard ju readings after rules/ overlay (respecting deletions)."""
     hdr, body = split_header_body(lines)
     move_re = re.compile(r"(车|前车|后车|中车).*(进|退|平)")
     existing: set[tuple[str, str]] = set()
@@ -686,6 +676,8 @@ def post_chess_add_ju(lines: list[str], stats: dict, move_only: bool) -> list[st
         p = parse_entry(line)
         if p:
             existing.add((p[0], p[1]))
+    del_ex = deleted_exact or set()
+    del_wi = deleted_wild or set()
     ju_additions: list[str] = []
     for line in body:
         p = parse_entry(line)
@@ -696,7 +688,7 @@ def post_chess_add_ju(lines: list[str], stats: dict, move_only: bool) -> list[st
             if move_only and not move_re.search(w):
                 continue
             ju_py = replace_syl_at(w, py, "车", "che", "ju")
-            if ju_py != py and (w, ju_py) not in existing:
+            if ju_py != py and (w, ju_py) not in existing and (w, ju_py) not in del_ex and w not in del_wi:
                 ju_additions.append(format_entry(w, ju_py, wt, extra))
                 existing.add((w, ju_py))
     out = hdr + body
@@ -733,6 +725,12 @@ def clean_geography(lines: list[str], stats: dict) -> list[str]:
     return out
 
 
+INDUSTRY_PRODUCT_WHITELIST: frozenset[str] = frozenset({
+    "进出口代理", "软件代理", "医疗器械代理",
+    "二手摩托车", "二手船舶", "二手机床", "二手锅炉",
+})
+
+
 def clean_industry_product(lines: list[str], stats: dict) -> list[str]:
     hdr, body = split_header_body(lines)
     new_hdr = [
@@ -748,7 +746,9 @@ def clean_industry_product(lines: list[str], stats: dict) -> list[str]:
             continue
         w, py, wt, extra = parsed
         py = normalize_lue_nue(py)
-        if w.startswith(("其他", "其它", "二手", "库存")) or w.endswith(("代理", "项目合作")):
+        if w not in INDUSTRY_PRODUCT_WHITELIST and (
+            w.startswith(("其他", "其它", "二手", "库存")) or w.endswith(("代理", "项目合作"))
+        ):
             stats["deleted_boilerplate_or_spam"] += 1
             continue
         if w.endswith("匙扣"):
@@ -762,8 +762,8 @@ def clean_industry_product(lines: list[str], stats: dict) -> list[str]:
 
 def clean_shulihua(lines: list[str], stats: dict) -> list[str]:
     hdr, body = split_header_body(lines)
-    tw_span = find_entry_span(body, ("愛殺松", "ai sha song"), ("重鉻酸鈉", "zhong ge suan na"))
-    news_span = find_entry_span(body, ("阿拉斯加上空", "a la si jia shang kong"), ("左右的结果", "zuo you de jie guo"))
+    tw_span = find_entry_span(body, ("愛殺松", "ai sha song"), ("重鉻酸鈉", "zhong ge suan na"), max_span_len=1_000, stats=stats)
+    news_span = find_entry_span(body, ("阿拉斯加上空", "a la si jia shang kong"), ("左右的结果", "zuo you de jie guo"), max_span_len=1_500, stats=stats)
     out = list(hdr)
     for offset, line in enumerate(body):
         if news_span and news_span[0] <= offset <= news_span[1]:
@@ -793,21 +793,21 @@ def clean_shulihua(lines: list[str], stats: dict) -> list[str]:
 def clean_medication(lines: list[str], stats: dict) -> list[str]:
     hdr, body = split_header_body(lines)
     spam_span_specs = (
-        (("百香", "bai xiang"), ("左旋维生素", "zuo xuan wei sheng su"), "百香御"),
-        (("参荷舒妍清茵宁", "can he shu yan qing yin ning"), ("滋阳御元贴", "zi yang yu yuan tie"), "焕体妙姿纤秀膏"),
-        (("百克舒", "bai ke shu"), ("石上甘抑菌膏", "shi shang gan yi jun gao"), "健华牛敏康"),
-        (("安舒清结", "an shu qing jie"), ("安舒清结怡乳贴", "an shu qing jie yi ru tie"), "安舒清结怡"),
-        (("黄塔金方痔乐舒", "huang ta jin fang zhi le shu"), ("亿康痔乐舒", "yi kang zhi le shu"), "靖纹清创去痕膏"),
-        (("桂苓十香", "gui ling shi xiang"), ("亿康桂苓十香散湿贴", "yi kang gui ling shi xiang san shi tie"), "桂苓十香散湿"),
-        (("创薇修痕平纹霜", "chuang wei xiu hen ping wen shuang"), ("意中颜薏仁丸", "yi zhong yan yi ren wan"), "欢颜子益膏"),
-        (("佰草固元龟舒康", "bai cao gu yuan gui shu kang"), ("竹参薏根康", "zhu can yi gen kang"), "白叶草蔓姿纤美膏"),
-        (("非遗黄塔明时通筋骨膏", "fei yi huang ta ming shi tong jin gu gao"), ("亿康时通筋骨膏", "yi kang shi tong jin gu gao"), "黄塔明时通筋骨膏"),
-        (("九妙丰姿莹润膏", "jiu miao feng zi ying run gao"), ("亿康青罗夏清露", "yi kang qing luo xia qing lu"), "九妙丰姿莹润饮"),
-        (("白叶轻脂妙姿贴", "bai ye qing zhi miao zi tie"), ("万养堂九味舒宁怡梦膏", "wan yang tang jiu wei shu ning yi meng gao"), "冰莹玉润乳"),
+        (("百香", "bai xiang"), ("左旋维生素", "zuo xuan wei sheng su"), "百香御", 2_000),
+        (("参荷舒妍清茵宁", "can he shu yan qing yin ning"), ("滋阳御元贴", "zi yang yu yuan tie"), "焕体妙姿纤秀膏", 100),
+        (("百克舒", "bai ke shu"), ("石上甘抑菌膏", "shi shang gan yi jun gao"), "健华牛敏康", 100),
+        (("安舒清结", "an shu qing jie"), ("安舒清结怡乳贴", "an shu qing jie yi ru tie"), "安舒清结怡", 100),
+        (("黄塔金方痔乐舒", "huang ta jin fang zhi le shu"), ("亿康痔乐舒", "yi kang zhi le shu"), "靖纹清创去痕膏", 100),
+        (("桂苓十香", "gui ling shi xiang"), ("亿康桂苓十香散湿贴", "yi kang gui ling shi xiang san shi tie"), "桂苓十香散湿", 100),
+        (("创薇修痕平纹霜", "chuang wei xiu hen ping wen shuang"), ("意中颜薏仁丸", "yi zhong yan yi ren wan"), "欢颜子益膏", 100),
+        (("佰草固元龟舒康", "bai cao gu yuan gui shu kang"), ("竹参薏根康", "zhu can yi gen kang"), "白叶草蔓姿纤美膏", 100),
+        (("非遗黄塔明时通筋骨膏", "fei yi huang ta ming shi tong jin gu gao"), ("亿康时通筋骨膏", "yi kang shi tong jin gu gao"), "黄塔明时通筋骨膏", 100),
+        (("九妙丰姿莹润膏", "jiu miao feng zi ying run gao"), ("亿康青罗夏清露", "yi kang qing luo xia qing lu"), "九妙丰姿莹润饮", 100),
+        (("白叶轻脂妙姿贴", "bai ye qing zhi miao zi tie"), ("万养堂九味舒宁怡梦膏", "wan yang tang jiu wei shu ning yi meng gao"), "冰莹玉润乳", 100),
     )
     spam_spans = [
-        sp for s_key, e_key, nxt in spam_span_specs
-        if (sp := find_entry_span(body, s_key, e_key, next_word=nxt)) is not None
+        sp for s_key, e_key, nxt, max_len in spam_span_specs
+        if (sp := find_entry_span(body, s_key, e_key, next_word=nxt, max_span_len=max_len, stats=stats)) is not None
     ]
     out = list(hdr)
 
@@ -870,7 +870,7 @@ def _fix_post_jp_t2s_py(orig_w: str, sim_w: str, py: str, stats: dict) -> str:
 
 def clean_game(lines: list[str], stats: dict) -> list[str]:
     hdr, body = split_header_body(lines)
-    quest_span = find_entry_span(body, ("暗虎精", "an hu jing"), ("做任务", "zuo ren wu"))
+    quest_span = find_entry_span(body, ("暗虎精", "an hu jing"), ("做任务", "zuo ren wu"), max_span_len=3_500, stats=stats)
     out = list(hdr)
     for offset, line in enumerate(body):
         parsed = parse_entry(line)
@@ -1041,14 +1041,21 @@ def post_fix_non_shenme_shi(lines: list[str], stats: dict) -> list[str]:
     return out
 
 
-def post_add_mi_yue(lines: list[str], stats: dict) -> list[str]:
-    """Post-overlay pass: ensure multi-char 密钥 compounds have standard mi yue alongside mi yao."""
+def post_add_mi_yue(
+    lines: list[str],
+    stats: dict,
+    deleted_exact: set[tuple[str, str]] | None = None,
+    deleted_wild: set[str] | None = None,
+) -> list[str]:
+    """Post-overlay generator: ensure multi-char 密钥 compounds have standard mi yue alongside mi yao."""
     hdr, body = split_header_body(lines)
     existing: set[tuple[str, str]] = set()
     for line in body:
         p = parse_entry(line)
         if p:
             existing.add((p[0], p[1]))
+    del_ex = deleted_exact or set()
+    del_wi = deleted_wild or set()
     additions: list[str] = []
     for line in body:
         p = parse_entry(line)
@@ -1067,7 +1074,7 @@ def post_add_mi_yue(lines: list[str], stats: dict) -> list[str]:
                     changed = True
             if changed:
                 new_py = " ".join(new_syls)
-                if (w, new_py) not in existing:
+                if (w, new_py) not in existing and (w, new_py) not in del_ex and w not in del_wi:
                     additions.append(format_entry(w, new_py, wt, extra))
                     existing.add((w, new_py))
     out = hdr + body
@@ -1419,9 +1426,18 @@ def clean_animal(lines: list[str], stats: dict) -> list[str]:
 
 def clean_composite(lines: list[str], stats: dict) -> list[str]:
     hdr, body = split_header_body(lines)
-    tail_span = find_entry_span(body, ("晒伤没", "shai shang mei"), ("挨没挨住", "ai mei ai zhu"), next_word="没晒伤")
-    r2_suffix_span = find_entry_span(body, ("李副校", "li fu xiao"), ("之会源堂", "zhi hui yuan tang"))
-    r2_template_span = find_entry_span(body, ("示之以", "shi zhi yi"), ("晒不伤", "shai bu shang"))
+    tail_span = find_entry_span(
+        body, ("晒伤没", "shai shang mei"), ("挨没挨住", "ai mei ai zhu"),
+        next_word="没晒伤", max_span_len=1_000, stats=stats,
+    )
+    r2_suffix_span = find_entry_span(
+        body, ("李副校", "li fu xiao"), ("之会源堂", "zhi hui yuan tang"),
+        max_span_len=25_000, stats=stats,
+    )
+    r2_template_span = find_entry_span(
+        body, ("示之以", "shi zhi yi"), ("晒不伤", "shai bu shang"),
+        max_span_len=8_000, stats=stats,
+    )
     out = list(hdr)
     promo_substrings = (
         "关注我的公众号", "点击下方", "点击右上角", "点个赞", "欢迎私信", "私信问我",
@@ -1566,40 +1582,50 @@ def clean_generic(lines: list[str], stats: dict) -> list[str]:
 # ---------------------------------------------------------------------------
 
 
-def clean_en_dicts(manifest: dict, ruleset: dict_rules.RuleSet, rule_hits: dict[str, int]) -> None:
-    en_dir = DST_ROOT / "en_dicts"
-    en_dir.mkdir(parents=True, exist_ok=True)
-
+def clean_en_dicts(
+    src_root: pathlib.Path,
+    dst_root: pathlib.Path,
+    manifest: dict,
+    ruleset: dict_rules.RuleSet,
+    rule_hits: dict[str, int],
+    valid_syls: set[str] | None,
+    out_buffers: dict[str, str],
+) -> None:
     # Per melt_eng.dict.yaml: en_ext is imported BEFORE en (to preserve alias ordering like PS -> Photoshop).
     # Therefore clean en_ext first, then deduplicate en against en_ext!
-    ext_lines = (SRC_ROOT / "en_dicts/en_ext.dict.yaml").read_text(encoding="utf-8").splitlines()
+    ext_lines = (src_root / "en_dicts/en_ext.dict.yaml").read_text(encoding="utf-8").splitlines()
     ext_out, ext_seen, ext_st = dict_rules.apply_en_overlay("en_dicts/en_ext.dict.yaml", ext_lines, ruleset, rule_hits)
-    (en_dir / "en_ext.dict.yaml").write_text("\n".join(ext_out) + "\n", encoding="utf-8", newline="\n")
+    out_buffers["en_dicts/en_ext.dict.yaml"] = "\n".join(ext_out) + "\n"
     manifest["files"]["en_dicts/en_ext.dict.yaml"] = ext_st
 
-    en_lines = (SRC_ROOT / "en_dicts/en.dict.yaml").read_text(encoding="utf-8").splitlines()
+    en_lines = (src_root / "en_dicts/en.dict.yaml").read_text(encoding="utf-8").splitlines()
     en_out, _, en_st = dict_rules.apply_en_overlay("en_dicts/en.dict.yaml", en_lines, ruleset, rule_hits, prior_seen=ext_seen)
-    (en_dir / "en.dict.yaml").write_text("\n".join(en_out) + "\n", encoding="utf-8", newline="\n")
+    out_buffers["en_dicts/en.dict.yaml"] = "\n".join(en_out) + "\n"
     manifest["files"]["en_dicts/en.dict.yaml"] = {
         "before": en_st["before"], "after": en_st["after"],
         "fixed": en_st["fixed"], "deleted": en_st["deleted"], "deduped_against_en_ext": en_st["deduped"],
     }
 
     build_cn_en.apply_cn_en_rules(
-        SRC_ROOT,
-        DST_ROOT,
+        src_root,
+        dst_root,
         ruleset.rules_dir / "cn_en_source.tsv",
         manifest=manifest,
         rule_hits=rule_hits,
+        valid_syls=valid_syls,
+        out_buffers=out_buffers,
     )
 
 
-def clean_opencc_texts(manifest: dict, ruleset: dict_rules.RuleSet, rule_hits: dict[str, int]) -> None:
-    occ_dir = DST_ROOT / "opencc"
-    occ_dir.mkdir(parents=True, exist_ok=True)
-
+def clean_opencc_texts(
+    src_root: pathlib.Path,
+    manifest: dict,
+    ruleset: dict_rules.RuleSet,
+    rule_hits: dict[str, int],
+    out_buffers: dict[str, str],
+) -> None:
     # 1. opencc/others.txt
-    src_lines = (SRC_ROOT / "opencc/others.txt").read_text(encoding="utf-8").splitlines()
+    src_lines = (src_root / "opencc/others.txt").read_text(encoding="utf-8").splitlines()
     has_sigma_ma = any(l.startswith("西格玛\t") for l in src_lines)
     invalid_vs16_pairs = (
         ("\U0001F648\uFE0F", "\U0001F648"),
@@ -1671,11 +1697,11 @@ def clean_opencc_texts(manifest: dict, ruleset: dict_rules.RuleSet, rule_hits: d
         out.append(line)
     out, ov_fixes = dict_rules.apply_opencc_overlay("opencc/others.txt", out, ruleset, rule_hits)
     fixes += ov_fixes
-    (occ_dir / "others.txt").write_text("\n".join(out) + "\n", encoding="utf-8", newline="\n")
+    out_buffers["opencc/others.txt"] = "\n".join(out) + "\n"
     manifest["files"]["opencc/others.txt"] = {"before": len(src_lines), "after": len(out), "fixed": fixes}
 
     # 2. opencc/chinese_english.txt
-    ce_path = SRC_ROOT / "opencc/chinese_english.txt"
+    ce_path = src_root / "opencc/chinese_english.txt"
     if ce_path.exists():
         ce_lines = ce_path.read_text(encoding="utf-8").splitlines()
         ce_out = []
@@ -1690,11 +1716,11 @@ def clean_opencc_texts(manifest: dict, ruleset: dict_rules.RuleSet, rule_hits: d
             ce_out.append(line)
         ce_out, ce_ov = dict_rules.apply_opencc_overlay("opencc/chinese_english.txt", ce_out, ruleset, rule_hits)
         ce_fixed += ce_ov
-        (occ_dir / "chinese_english.txt").write_text("\n".join(ce_out) + "\n", encoding="utf-8", newline="\n")
+        out_buffers["opencc/chinese_english.txt"] = "\n".join(ce_out) + "\n"
         manifest["files"]["opencc/chinese_english.txt"] = {"before": len(ce_lines), "after": len(ce_out), "fixed": ce_fixed}
 
     # 3. opencc/english_chinese.txt
-    ec_path = SRC_ROOT / "opencc/english_chinese.txt"
+    ec_path = src_root / "opencc/english_chinese.txt"
     if ec_path.exists():
         ec_lines = ec_path.read_text(encoding="utf-8").splitlines()
         ec_out = []
@@ -1729,7 +1755,8 @@ def clean_opencc_texts(manifest: dict, ruleset: dict_rules.RuleSet, rule_hits: d
             merged = toks[:1]
             for t in toks[1:]:
                 if len(merged) >= 2 and not pos_re.match(t) and not t.startswith("["):
-                    merged[-1] += t
+                    sep = "\u00a0" if (merged[-1] and t and merged[-1][-1].isascii() and t[0].isascii()) else ""
+                    merged[-1] += sep + t
                 else:
                     merged.append(t)
             cleaned_toks: list[str] = [merged[0]]
@@ -1754,18 +1781,18 @@ def clean_opencc_texts(manifest: dict, ruleset: dict_rules.RuleSet, rule_hits: d
                 ec_norm += 1
             ec_out.append(new_line)
         ec_out, ec_ov = dict_rules.apply_opencc_overlay("opencc/english_chinese.txt", ec_out, ruleset, rule_hits)
-        (occ_dir / "english_chinese.txt").write_text("\n".join(ec_out) + "\n", encoding="utf-8", newline="\n")
+        out_buffers["opencc/english_chinese.txt"] = "\n".join(ec_out) + "\n"
         manifest["files"]["opencc/english_chinese.txt"] = {
             "before": len(ec_lines), "after": len(ec_out), "deleted": ec_del,
             "normalized": ec_norm, "overlay_fixed": ec_ov,
         }
 
     # 4. opencc/emoji.txt
-    em_path = SRC_ROOT / "opencc/emoji.txt"
+    em_path = src_root / "opencc/emoji.txt"
     if em_path.exists():
         em_lines = em_path.read_text(encoding="utf-8").splitlines()
         em_out, em_ov = dict_rules.apply_opencc_overlay("opencc/emoji.txt", em_lines, ruleset, rule_hits)
-        (occ_dir / "emoji.txt").write_text("\n".join(em_out) + "\n", encoding="utf-8", newline="\n")
+        out_buffers["opencc/emoji.txt"] = "\n".join(em_out) + "\n"
         manifest["files"]["opencc/emoji.txt"] = {"before": len(em_lines), "after": len(em_out), "overlay_fixed": em_ov}
 
 
@@ -1805,75 +1832,102 @@ def _dedup_within_file(lines: list[str], stats: dict) -> list[str]:
     return hdr + dedup_body
 
 
-def main() -> None:
+def _build_cn_plan() -> list[tuple[str, object]]:
+    """Return all 28 CN dicts in authoritative deduplication precedence order."""
+    cleaner_by_rel = {
+        "cn_dicts/8105.dict.yaml": clean_8105,
+        "cn_dicts/base.dict.yaml": clean_base,
+        "cn_dicts/ext.dict.yaml": clean_ext,
+        "cn_dicts/others.dict.yaml": clean_others,
+        "cn_dicts/corrections.dict.yaml": clean_corrections,
+        "cn_dicts_cell/literature.dict.yaml": clean_literature,
+        "cn_dicts_cell/idiom.dict.yaml": clean_strip_blanks,
+        "cn_dicts_cell/history.dict.yaml": clean_strip_blanks,
+        "cn_dicts_cell/geography.dict.yaml": clean_geography,
+        "cn_dicts_cell/place.dict.yaml": clean_place,
+        "cn_dicts_cell/shulihua.dict.yaml": clean_shulihua,
+        "cn_dicts_cell/medication.dict.yaml": clean_medication,
+        "cn_dicts_cell/industry_product.dict.yaml": clean_industry_product,
+        "cn_dicts_cell/sport.dict.yaml": clean_sport,
+        "cn_dicts_cell/animal.dict.yaml": clean_animal,
+        "cn_dicts_cell/chess.dict.yaml": clean_strip_blanks,
+        "cn_dicts_cell/chess2.dict.yaml": clean_chess2,
+        "cn_dicts_cell/music.dict.yaml": clean_strip_blanks,
+        "cn_dicts_cell/computer.dict.yaml": clean_strip_blanks,
+        "cn_dicts_cell/media.dict.yaml": clean_generic,
+        "cn_dicts_cell/inputmethod.dict.yaml": clean_strip_blanks,
+        "cn_dicts_cell/food.dict.yaml": clean_food,
+        "cn_dicts_cell/game.dict.yaml": clean_game,
+        "cn_dicts_cell/name.dict.yaml": clean_name,
+        "cn_dicts_cell/name2.dict.yaml": clean_name2,
+        "cn_dicts_cell/exthot.dict.yaml": clean_exthot,
+        "cn_dicts_cell/composite.dict.yaml": clean_composite,
+        "cn_dicts_cell/luna.dict.yaml": clean_strip_blanks,
+    }
+    plan: list[tuple[str, object]] = []
+    for rel in dict_common.ACTIVE_CN_DICTS:
+        plan.append((rel, cleaner_by_rel[rel]))
+        if rel == "cn_dicts/others.dict.yaml":
+            plan.append(("cn_dicts/corrections.dict.yaml", cleaner_by_rel["cn_dicts/corrections.dict.yaml"]))
+    plan.append(("cn_dicts_cell/luna.dict.yaml", cleaner_by_rel["cn_dicts_cell/luna.dict.yaml"]))
+    return plan
+
+
+def run_pipeline(
+    src_root: pathlib.Path,
+    dst_root: pathlib.Path,
+    rules_dir: pathlib.Path,
+    write: bool = True,
+) -> tuple[dict, dict[str, str]]:
+    """Run the full cleaning, overlay, deduplication, and in-memory verification pipeline.
+
+    Commits output files atomically via temp-file + os.replace() ONLY after Step 5
+    in-memory invariant verification succeeds (and write=True).
+    """
     global SRC_ROOT, DST_ROOT
-    ap = argparse.ArgumentParser(description="Clean and deduplicate rime-chth1z dictionaries in place.")
-    ap.add_argument("--src-dir", type=pathlib.Path, default=REPO_ROOT)
-    ap.add_argument("--out-dir", type=pathlib.Path, default=None, help="Defaults to --src-dir (in-place)")
-    ap.add_argument("--rules-dir", type=pathlib.Path, default=REPO_ROOT / "rules", help="Declarative rules/ directory")
-    ap.add_argument("--manifest", type=pathlib.Path, default=None, help="Optional path to write JSON summary")
-    args = ap.parse_args()
+    SRC_ROOT = src_root.resolve()
+    DST_ROOT = dst_root.resolve()
+    rules_dir = rules_dir.resolve()
 
-    SRC_ROOT = args.src_dir.resolve()
-    DST_ROOT = (args.out_dir or args.src_dir).resolve()
-    rules_dir = args.rules_dir.resolve()
-    (DST_ROOT / "cn_dicts").mkdir(parents=True, exist_ok=True)
-    (DST_ROOT / "cn_dicts_cell").mkdir(parents=True, exist_ok=True)
+    # Load and strictly validate 8105 reference syllables upfront BEFORE loading rules
+    syl_errors: list[str] = []
+    valid_syls = dict_common.load_valid_syls(SRC_ROOT, strict_errors=syl_errors)
+    if syl_errors:
+        raise RuntimeError("Invalid 8105 syllable table:\n  " + "\n  ".join(syl_errors))
 
-    ruleset = dict_rules.load_ruleset(rules_dir)
+    ruleset = dict_rules.load_ruleset(rules_dir, valid_syls=valid_syls)
     if ruleset.errors:
-        raise SystemExit("Declarative rules validation failed:\n  " + "\n  ".join(ruleset.errors))
+        raise RuntimeError("Declarative rules validation failed:\n  " + "\n  ".join(ruleset.errors))
     rule_hits: dict[str, int] = {rid: 0 for rid in ruleset.all_rule_ids()}
 
     manifest: dict = {"files": {}, "rules": {}, "summary": {}}
+    out_buffers: dict[str, str] = {}
+    cn_plan = _build_cn_plan()
 
-    # Ordered by global deduplication precedence
-    cn_plan = [
-        ("cn_dicts/8105.dict.yaml", clean_8105),
-        ("cn_dicts/base.dict.yaml", clean_base),
-        ("cn_dicts/ext.dict.yaml", clean_ext),
-        ("cn_dicts/others.dict.yaml", clean_others),
-        ("cn_dicts/corrections.dict.yaml", clean_corrections),
-        ("cn_dicts_cell/literature.dict.yaml", clean_literature),
-        ("cn_dicts_cell/idiom.dict.yaml", clean_strip_blanks),
-        ("cn_dicts_cell/history.dict.yaml", clean_strip_blanks),
-        ("cn_dicts_cell/geography.dict.yaml", clean_geography),
-        ("cn_dicts_cell/place.dict.yaml", clean_place),
-        ("cn_dicts_cell/shulihua.dict.yaml", clean_shulihua),
-        ("cn_dicts_cell/medication.dict.yaml", clean_medication),
-        ("cn_dicts_cell/industry_product.dict.yaml", clean_industry_product),
-        ("cn_dicts_cell/sport.dict.yaml", clean_sport),
-        ("cn_dicts_cell/animal.dict.yaml", clean_animal),
-        ("cn_dicts_cell/chess.dict.yaml", clean_strip_blanks),
-        ("cn_dicts_cell/chess2.dict.yaml", clean_chess2),
-        ("cn_dicts_cell/music.dict.yaml", clean_strip_blanks),
-        ("cn_dicts_cell/computer.dict.yaml", clean_strip_blanks),
-        ("cn_dicts_cell/media.dict.yaml", clean_generic),
-        ("cn_dicts_cell/inputmethod.dict.yaml", clean_strip_blanks),
-        ("cn_dicts_cell/food.dict.yaml", clean_food),
-        ("cn_dicts_cell/game.dict.yaml", clean_game),
-        ("cn_dicts_cell/name.dict.yaml", clean_name),
-        ("cn_dicts_cell/name2.dict.yaml", clean_name2),
-        ("cn_dicts_cell/exthot.dict.yaml", clean_exthot),
-        ("cn_dicts_cell/composite.dict.yaml", clean_composite),
-        ("cn_dicts_cell/luna.dict.yaml", clean_strip_blanks),
-    ]
+    # Pre-index per-file deletions so post-overlay generators never revive rule-deleted entries
+    del_exact_by_file: dict[str, set[tuple[str, str]]] = {}
+    del_wild_by_file: dict[str, set[str]] = {}
+    for dr in ruleset.deletions:
+        if dr.py == "*":
+            del_wild_by_file.setdefault(dr.target_file, set()).add(dr.word)
+        else:
+            del_exact_by_file.setdefault(dr.target_file, set()).add((dr.word, dr.py))
 
-    # Step 1: per-file structural cleaning + declarative rules/ overlay + post-generators + within-file dedup
+    # Step 1: Structural cleaners -> Pre-overlay orthography/phonetic normalizers ->
+    #         Declarative rules/ SSOT overlay -> Post-overlay generators -> Within-file dedup
     cleaned_files: dict[str, list[str]] = {}
     file_stats: dict[str, Counter] = {}
     before_entries_total = 0
     for rel, cleaner in cn_plan:
         raw_lines = (SRC_ROOT / rel).read_text(encoding="utf-8").splitlines()
-        before_entries = sum(1 for l in raw_lines if parse_entry(l) is not None)
+        _, raw_body = split_header_body(raw_lines)
+        before_entries = sum(1 for l in raw_body if parse_entry(l) is not None)
         before_entries_total += before_entries
         st: Counter = Counter()
         st["before_entries"] = before_entries
         out_lines = cleaner(raw_lines, st)
-        if rel != "cn_dicts/corrections.dict.yaml":
-            out_lines = dict_rules.apply_cn_overlay(rel, out_lines, ruleset, rule_hits, st)
-        if rel in ("cn_dicts/base.dict.yaml", "cn_dicts/ext.dict.yaml"):
-            out_lines = post_add_mi_yue(out_lines, st)
+
+        # Pre-overlay orthography & systemic phonetic normalizers (run BEFORE rules/ SSOT)
         if rel == "cn_dicts/ext.dict.yaml":
             out_lines = post_clean_ext_shou_clones(out_lines, st)
         elif rel == "cn_dicts_cell/literature.dict.yaml":
@@ -1886,10 +1940,6 @@ def main() -> None:
             out_lines = post_normalize_shulihua(out_lines, st)
         elif rel == "cn_dicts_cell/medication.dict.yaml":
             out_lines = post_normalize_medication(out_lines, st)
-        elif rel == "cn_dicts_cell/chess.dict.yaml":
-            out_lines = post_chess_add_ju(out_lines, st, move_only=False)
-        elif rel == "cn_dicts_cell/chess2.dict.yaml":
-            out_lines = post_chess_add_ju(out_lines, st, move_only=False)
         elif rel in (
             "cn_dicts_cell/game.dict.yaml",
             "cn_dicts_cell/sport.dict.yaml",
@@ -1901,6 +1951,25 @@ def main() -> None:
                 out_lines = post_clean_game_shoulian(out_lines, st)
             elif rel == "cn_dicts_cell/name2.dict.yaml":
                 out_lines = post_normalize_name2(out_lines, st)
+
+        # Authoritative declarative rules/ SSOT overlay
+        if rel != "cn_dicts/corrections.dict.yaml":
+            out_lines = dict_rules.apply_cn_overlay(rel, out_lines, ruleset, rule_hits, st)
+
+        # Post-overlay generators (respecting rules/deletions.tsv)
+        if rel in ("cn_dicts/base.dict.yaml", "cn_dicts/ext.dict.yaml"):
+            out_lines = post_add_mi_yue(
+                out_lines, st,
+                deleted_exact=del_exact_by_file.get(rel),
+                deleted_wild=del_wild_by_file.get(rel),
+            )
+        elif rel in ("cn_dicts_cell/chess.dict.yaml", "cn_dicts_cell/chess2.dict.yaml"):
+            out_lines = post_chess_add_ju(
+                out_lines, st, move_only=False,
+                deleted_exact=del_exact_by_file.get(rel),
+                deleted_wild=del_wild_by_file.get(rel),
+            )
+
         cleaned_files[rel] = _dedup_within_file(out_lines, st)
         file_stats[rel] = st
 
@@ -1920,8 +1989,32 @@ def main() -> None:
     )
     cleaned_files[corr_rel] = _dedup_within_file(corr_updated, file_stats[corr_rel])
 
-    # Step 2: global cross-file deduplication
+    # Step 2: weight-preserving global cross-file deduplication (in-memory)
+    best_weight: dict[tuple[str, str], int] = {}
+    for rel, _ in cn_plan:
+        if rel in ("cn_dicts/corrections.dict.yaml", "cn_dicts_cell/luna.dict.yaml"):
+            continue
+        _, body = split_header_body(cleaned_files[rel])
+        for l in body:
+            p = parse_entry(l)
+            if not p:
+                continue
+            k = (p[0], p[1])
+            wv = w_int(p[2])
+            if k not in best_weight or wv > best_weight[k]:
+                best_weight[k] = wv
+
+    pinned_exact: set[tuple[str, str, str]] = {
+        (wr.target_file, wr.word, wr.py) for wr in ruleset.weights if wr.py != "*"
+    } | {
+        (dr.target_file, dr.word, py) for dr in ruleset.dual_readings for py in (dr.py1, dr.py2)
+    }
+    pinned_wild: set[tuple[str, str]] = {
+        (wr.target_file, wr.word) for wr in ruleset.weights if wr.py == "*"
+    }
+
     global_seen: set[tuple[str, str]] = set()
+    final_cn_files: dict[str, list[str]] = {}
     after_entries_total = 0
     after_active_entries_total = 0
 
@@ -1937,23 +2030,30 @@ def main() -> None:
             if not p:
                 final_body.append(l)
                 continue
-            k = (p[0], p[1])
+            w, py, wt, extra = p
+            k = (w, py)
             if not is_corrections and k in global_seen:
                 st["dedup_cross_file"] += 1
                 continue
             if not is_corrections and not is_luna:
                 global_seen.add(k)
+                is_pinned = (rel, w, py) in pinned_exact or (rel, w) in pinned_wild
+                bw = best_weight.get(k, 0)
+                if not is_pinned and bw > w_int(wt):
+                    l = format_entry(w, py, str(bw), extra)
+                    st["dedup_weight_promoted"] += 1
             final_body.append(l)
         final_lines = hdr + final_body
+        final_cn_files[rel] = final_lines
         after_entries = sum(1 for l in final_body if parse_entry(l) is not None)
         st["after_entries"] = after_entries
         after_entries_total += after_entries
         if not is_luna:
             after_active_entries_total += after_entries
-        (DST_ROOT / rel).write_text("\n".join(final_lines) + "\n", encoding="utf-8", newline="\n")
+        out_buffers[rel] = "\n".join(final_lines) + "\n"
         manifest["files"][rel] = dict(st)
 
-    # Step 3: ensure cn_dicts_cell/luna is disabled & modern alphanumeric combos exist in rime_frost.dict.yaml
+    # Step 3: ensure disabled tables stay commented & modern alphanumeric combos exist in rime_frost.dict.yaml
     rf_lines = (SRC_ROOT / "rime_frost.dict.yaml").read_text(encoding="utf-8").splitlines()
     rf_existing = {l.strip() for l in rf_lines if l.strip() and not l.strip().startswith("#")}
     rf_missing = []
@@ -1961,6 +2061,7 @@ def main() -> None:
         rule_hits[f"alphanum_additions.txt:{tok}"] += 1
         if tok not in rf_existing:
             rf_missing.append(tok)
+    has_m4a1 = any(l.strip() == "M4A1" for l in rf_lines)
     rf_out = []
     inserted_alphanum = False
     disabled_table_replacements = {
@@ -1969,6 +2070,7 @@ def main() -> None:
         "- cn_dicts/tencent": "  # - cn_dicts/tencent  # 腾讯词向量（大词库，部署时间较长）",
         "- cn_dicts_cell/luna": "  # - cn_dicts_cell/luna  # 繁体异体与冗余词条较多，默认关闭",
     }
+    others_anchor = "# 加入词典，响应 opencc/others.txt"
     for l in rf_lines:
         s_line = l.strip()
         replaced_disabled = None
@@ -1978,31 +2080,34 @@ def main() -> None:
                 break
         if replaced_disabled is not None:
             rf_out.append(replaced_disabled)
-        else:
-            rf_out.append(l)
-            if s_line == "M4A1" and rf_missing and not inserted_alphanum:
-                rf_out.extend(rf_missing)
-                inserted_alphanum = True
+            continue
+        if not has_m4a1 and rf_missing and not inserted_alphanum and s_line.startswith(others_anchor):
+            rf_out.extend(rf_missing)
+            inserted_alphanum = True
+        rf_out.append(l)
+        if has_m4a1 and s_line == "M4A1" and rf_missing and not inserted_alphanum:
+            rf_out.extend(rf_missing)
+            inserted_alphanum = True
     if rf_missing and not inserted_alphanum:
         rf_out.extend(rf_missing)
-    (DST_ROOT / "rime_frost.dict.yaml").write_text("\n".join(rf_out) + "\n", encoding="utf-8", newline="\n")
+    out_buffers["rime_frost.dict.yaml"] = "\n".join(rf_out) + "\n"
 
-    # Step 4: English & OpenCC
-    clean_en_dicts(manifest, ruleset, rule_hits)
-    clean_opencc_texts(manifest, ruleset, rule_hits)
+    # Step 4: English & OpenCC (buffered in-memory)
+    clean_en_dicts(SRC_ROOT, DST_ROOT, manifest, ruleset, rule_hits, valid_syls, out_buffers)
+    clean_opencc_texts(SRC_ROOT, manifest, ruleset, rule_hits, out_buffers)
     manifest["rules"] = dict_rules.summarize_rule_hits(ruleset, rule_hits)
 
-    # Step 5: Post-cleanup invariant verification across ALL 27 CN dicts in DST_ROOT
-    valid_syls = set()
-    for l in (DST_ROOT / "cn_dicts/8105.dict.yaml").read_text(encoding="utf-8").splitlines():
-        p = parse_entry(l)
-        if p:
-            valid_syls.add(p[1])
-    valid_syls.update({"hm", "hng", "m", "n", "ng"})
+    # Step 5: In-memory post-cleanup invariant verification across ALL 28 CN dicts BEFORE any disk write
+    v_8105_errors: list[str] = []
+    post_valid_syls = dict_common.extract_valid_syls_from_lines(
+        final_cn_files["cn_dicts/8105.dict.yaml"], strict_errors=v_8105_errors
+    )
 
     v_invalid_syls = []
     v_len_mismatch = []
     v_lue_nue = []
+    v_neg_weights = []
+    v_empty_fields = []
     v_within_dups = 0
     v_cross_dups = 0
     v_global = set()
@@ -2011,20 +2116,29 @@ def main() -> None:
         local_seen = set()
         is_corr = rel == "cn_dicts/corrections.dict.yaml"
         is_luna = rel == "cn_dicts_cell/luna.dict.yaml"
-        for idx, l in enumerate((DST_ROOT / rel).read_text(encoding="utf-8").splitlines(), 1):
+        _, body, start_idx = split_header_body_with_lineno(final_cn_files[rel])
+        for idx, l in enumerate(body, start_idx):
             p = parse_entry(l)
             if not p:
                 continue
-            w, py, _, _ = p
+            w, py, wt_s, _ = p
             syls = py.split()
-            if re.search(r"\b[ln]ue\b", py):
+            w_nodot = w.replace("·", "")
+            if not w_nodot or not syls:
+                v_empty_fields.append((rel, idx, w, py))
+            if dict_common.LUE_NUE_RE.search(py):
                 v_lue_nue.append((rel, idx, w, py))
             for sy in syls:
-                if sy not in valid_syls:
+                if sy not in post_valid_syls:
                     v_invalid_syls.append((rel, idx, w, py, sy))
-            w_nodot = w.replace("·", "")
             if not is_corr and len(syls) != len(w_nodot):
                 v_len_mismatch.append((rel, idx, w, py))
+            if wt_s != "":
+                try:
+                    if int(wt_s) < 0:
+                        v_neg_weights.append((rel, idx, w, py, wt_s))
+                except ValueError:
+                    v_neg_weights.append((rel, idx, w, py, wt_s))
             k = (w, py)
             if k in local_seen:
                 v_within_dups += 1
@@ -2039,19 +2153,68 @@ def main() -> None:
         "after_cn_entries_all_28_files": after_entries_total,
         "after_cn_entries_active_27_files_excl_luna": after_active_entries_total,
         "verification": {
+            "invalid_8105_syllables": len(v_8105_errors),
             "invalid_syllables": len(v_invalid_syls),
             "invalid_syllable_samples": v_invalid_syls[:10],
             "len_mismatches": len(v_len_mismatch),
             "len_mismatch_samples": v_len_mismatch[:10],
             "remaining_lue_nue": len(v_lue_nue),
+            "negative_or_bad_weights": len(v_neg_weights),
+            "empty_fields": len(v_empty_fields),
             "within_file_dups": v_within_dups,
             "cross_file_dups_active_26": v_cross_dups,
         },
     }
+
+    ver = manifest["summary"]["verification"]
+    if (
+        ver["invalid_8105_syllables"]
+        or ver["invalid_syllables"]
+        or ver["len_mismatches"]
+        or ver["remaining_lue_nue"]
+        or ver["negative_or_bad_weights"]
+        or ver["empty_fields"]
+        or ver["within_file_dups"]
+        or ver["cross_file_dups_active_26"]
+    ):
+        raise RuntimeError("Post-cleanup invariant check failed (no files written): " + json.dumps(ver, ensure_ascii=False))
+
+    # Step 6: Atomic commit to DST_ROOT only after all invariants pass
+    if write:
+        written_count = 0
+        for rel, content in out_buffers.items():
+            if dict_common.atomic_write_text(DST_ROOT / rel, content):
+                written_count += 1
+        manifest["summary"]["files_written"] = written_count
+
+    return manifest, out_buffers
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser(description="Clean and deduplicate rime-chth1z dictionaries in place.")
+    ap.add_argument("--src-dir", type=pathlib.Path, default=REPO_ROOT)
+    ap.add_argument("--out-dir", type=pathlib.Path, default=None, help="Defaults to --src-dir (in-place)")
+    ap.add_argument("--rules-dir", type=pathlib.Path, default=REPO_ROOT / "rules", help="Declarative rules/ directory")
+    ap.add_argument("--manifest", type=pathlib.Path, default=None, help="Optional path to write JSON summary")
+    args = ap.parse_args()
+
+    src_root = args.src_dir.resolve()
+    dst_root = (args.out_dir or args.src_dir).resolve()
+    rules_dir = args.rules_dir.resolve()
+
+    try:
+        manifest, _ = run_pipeline(src_root, dst_root, rules_dir, write=True)
+    except RuntimeError as exc:
+        raise SystemExit(str(exc))
+
     if args.manifest:
-        args.manifest.write_text(
-            json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n"
+        dict_common.atomic_write_text(
+            args.manifest, json.dumps(manifest, ensure_ascii=False, indent=2) + "\n"
         )
+
+    before_entries_total = manifest["summary"]["before_cn_entries_28_files"]
+    after_entries_total = manifest["summary"]["after_cn_entries_all_28_files"]
+    after_active_entries_total = manifest["summary"]["after_cn_entries_active_27_files_excl_luna"]
 
     print("=== CLEANUP SUMMARY ===")
     print(f"Before (28 CN dicts):        {before_entries_total:>10,}")
@@ -2069,16 +2232,6 @@ def main() -> None:
                 print(f"  {rel:42s}: {b:>7,} -> {a:>7,} ({a-b:>+8,})  {extras}")
         else:
             print(f"  {rel:42s}: {st}")
-
-    ver = manifest["summary"]["verification"]
-    if (
-        ver["invalid_syllables"]
-        or ver["len_mismatches"]
-        or ver["remaining_lue_nue"]
-        or ver["within_file_dups"]
-        or ver["cross_file_dups_active_26"]
-    ):
-        raise SystemExit("Post-cleanup invariant check failed!")
 
 
 if __name__ == "__main__":

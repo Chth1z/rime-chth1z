@@ -11,54 +11,15 @@ from collections import Counter
 from dataclasses import dataclass, field
 
 import build_cn_en
+import dict_common
 
-REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
-
-ACTIVE_CN_DICTS: tuple[str, ...] = (
-    "cn_dicts/8105.dict.yaml",
-    "cn_dicts/base.dict.yaml",
-    "cn_dicts/ext.dict.yaml",
-    "cn_dicts/others.dict.yaml",
-    "cn_dicts_cell/literature.dict.yaml",
-    "cn_dicts_cell/idiom.dict.yaml",
-    "cn_dicts_cell/history.dict.yaml",
-    "cn_dicts_cell/geography.dict.yaml",
-    "cn_dicts_cell/place.dict.yaml",
-    "cn_dicts_cell/shulihua.dict.yaml",
-    "cn_dicts_cell/medication.dict.yaml",
-    "cn_dicts_cell/industry_product.dict.yaml",
-    "cn_dicts_cell/sport.dict.yaml",
-    "cn_dicts_cell/animal.dict.yaml",
-    "cn_dicts_cell/chess.dict.yaml",
-    "cn_dicts_cell/chess2.dict.yaml",
-    "cn_dicts_cell/music.dict.yaml",
-    "cn_dicts_cell/computer.dict.yaml",
-    "cn_dicts_cell/media.dict.yaml",
-    "cn_dicts_cell/inputmethod.dict.yaml",
-    "cn_dicts_cell/food.dict.yaml",
-    "cn_dicts_cell/game.dict.yaml",
-    "cn_dicts_cell/name.dict.yaml",
-    "cn_dicts_cell/name2.dict.yaml",
-    "cn_dicts_cell/exthot.dict.yaml",
-    "cn_dicts_cell/composite.dict.yaml",
-)
-
-ALL_CN_DICTS: set[str] = set(ACTIVE_CN_DICTS) | {
-    "cn_dicts/corrections.dict.yaml",
-    "cn_dicts_cell/luna.dict.yaml",
-}
-
-MANAGED_EN_DICTS: set[str] = {
-    "en_dicts/en_ext.dict.yaml",
-    "en_dicts/en.dict.yaml",
-}
-
-MANAGED_OPENCC_TXTS: set[str] = {
-    "opencc/others.txt",
-    "opencc/chinese_english.txt",
-    "opencc/english_chinese.txt",
-    "opencc/emoji.txt",
-}
+REPO_ROOT = dict_common.REPO_ROOT
+ACTIVE_CN_DICTS = dict_common.ACTIVE_CN_DICTS
+ALL_CN_DICTS = dict_common.ALL_CN_DICTS
+MANAGED_EN_DICTS = dict_common.MANAGED_EN_DICTS
+MANAGED_OPENCC_TXTS = dict_common.MANAGED_OPENCC_TXTS
+_ASCII_CODE_RE = re.compile(r"^[\x21-\x7e]+$")
+E1_MAX_COUNT = 10
 
 ADDITION_SECTION_HEADERS: dict[str, str] = {
     "cn_dicts/8105.dict.yaml": "# 补充标准普通话读音",
@@ -283,6 +244,7 @@ def _iter_tsv(path: pathlib.Path, expected_cols: int, errors: list[str]) -> list
     raw_bytes = path.read_bytes()
     if raw_bytes.startswith(b"\xef\xbb\xbf"):
         errors.append(f"{path.name}: UTF-8 BOM is forbidden")
+        raw_bytes = raw_bytes[3:]
     if b"\r\n" in raw_bytes:
         errors.append(f"{path.name}: CRLF line endings found (must be LF)")
     for idx, line in enumerate(raw_bytes.decode("utf-8").splitlines(), 1):
@@ -583,6 +545,9 @@ def load_ruleset(rules_dir: pathlib.Path, valid_syls: set[str] | None = None) ->
             if old_c == "*" or not new_w or not new_c:
                 rs.errors.append(f"en_fixes.tsv:{idx}: replace requires concrete old_code, new_word, and new_code")
                 continue
+            if not _ASCII_CODE_RE.fullmatch(new_c):
+                rs.errors.append(f"en_fixes.tsv:{idx}: non-ASCII or whitespace char in new_code '{new_c}'")
+                continue
             if (old_w, old_c) == (new_w, new_c):
                 rs.errors.append(f"en_fixes.tsv:{idx}: no-op replace for ({old_w}, {old_c})")
                 continue
@@ -599,6 +564,44 @@ def load_ruleset(rules_dir: pathlib.Path, valid_syls: set[str] | None = None) ->
             continue
         ef_seen.add(efk)
         rs.en_fixes.append(EnFixRule(idx, target, old_w, old_c, action, new_w, new_c, wt_s, reason))
+
+    # Detect conflicting or chained en_fixes rules
+    ef_by_exact: dict[tuple[str, str, str], list[EnFixRule]] = {}
+    ef_del_wild: dict[tuple[str, str], EnFixRule] = {}
+    ef_del_exact: dict[tuple[str, str, str], EnFixRule] = {}
+    ef_rep_sources: dict[tuple[str, str, str], EnFixRule] = {}
+    for er in rs.en_fixes:
+        if er.action == "delete" and er.old_code == "*":
+            ef_del_wild[(er.target_file, er.old_word)] = er
+        else:
+            ef_by_exact.setdefault((er.target_file, er.old_word, er.old_code), []).append(er)
+            if er.action == "delete":
+                ef_del_exact[(er.target_file, er.old_word, er.old_code)] = er
+            elif er.action == "replace":
+                ef_rep_sources[(er.target_file, er.old_word, er.old_code)] = er
+    for key3, group in ef_by_exact.items():
+        if len(group) > 1:
+            acts = [r.action for r in group]
+            rs.errors.append(
+                f"en_fixes.tsv:{group[1].line_no}: conflicting actions {acts} on {key3}"
+            )
+    for er in rs.en_fixes:
+        if er.action in {"replace", "reweight"}:
+            dw = ef_del_wild.get((er.target_file, er.old_word))
+            if dw is not None:
+                rs.errors.append(
+                    f"en_fixes.tsv:{er.line_no}: {er.action} on ({er.old_word}, {er.old_code}) conflicts with wildcard delete at line {dw.line_no}"
+                )
+        if er.action == "replace":
+            dst3 = (er.target_file, er.new_word, er.new_code)
+            if dst3 in ef_rep_sources:
+                rs.errors.append(
+                    f"en_fixes.tsv:{er.line_no}: chained replace ({er.old_word}, {er.old_code}) -> ({er.new_word}, {er.new_code}) feeds line {ef_rep_sources[dst3].line_no}"
+                )
+            if dst3 in ef_del_exact or (er.target_file, er.new_word) in ef_del_wild:
+                rs.errors.append(
+                    f"en_fixes.tsv:{er.line_no}: replace target ({er.new_word}, {er.new_code}) is deleted in en_fixes.tsv"
+                )
 
     # 8. cn_en_source.tsv
     cn_en_rules, cn_en_errors = build_cn_en.load_cn_en_rules(rules_dir / "cn_en_source.tsv", valid_syls=valid_syls)
@@ -648,9 +651,17 @@ def load_ruleset(rules_dir: pathlib.Path, valid_syls: set[str] | None = None) ->
         if action in {"replace", "add", "rename"} and not value:
             rs.errors.append(f"opencc_fixes.tsv:{idx}: action '{action}' requires non-empty value")
             continue
-        if action == "rename" and "|" not in value:
-            rs.errors.append(f"opencc_fixes.tsv:{idx}: action 'rename' requires 'new_key|new_value' in value column")
-            continue
+        if action == "rename":
+            if "|" not in value:
+                rs.errors.append(f"opencc_fixes.tsv:{idx}: action 'rename' requires 'new_key|new_value' in value column")
+                continue
+            new_k, new_v = value.split("|", 1)
+            if not new_k or not new_v.strip():
+                rs.errors.append(f"opencc_fixes.tsv:{idx}: rename requires non-empty new_key and new_value")
+                continue
+            if new_k == key:
+                rs.errors.append(f"opencc_fixes.tsv:{idx}: no-op rename '{key}' -> '{new_k}' (use replace instead)")
+                continue
         ok = (target, key)
         if ok in occ_seen:
             rs.errors.append(f"opencc_fixes.tsv:{idx}: duplicate key {ok}")
@@ -658,17 +669,68 @@ def load_ruleset(rules_dir: pathlib.Path, valid_syls: set[str] | None = None) ->
         occ_seen.add(ok)
         rs.opencc_fixes.append(OpenCCFixRule(idx, target, key, action, value, reason))
 
+    # Detect opencc_fixes rename collisions (rename target vs another rule's key or rename target)
+    occ_rename_targets: dict[tuple[str, str], OpenCCFixRule] = {}
+    for r in rs.opencc_fixes:
+        if r.action == "rename":
+            new_k, _ = r.value.split("|", 1)
+            tk = (r.target_file, new_k)
+            if tk in occ_seen:
+                rs.errors.append(
+                    f"opencc_fixes.tsv:{r.line_no}: rename target '{new_k}' collides with another rule key in {r.target_file}"
+                )
+            if tk in occ_rename_targets:
+                rs.errors.append(
+                    f"opencc_fixes.tsv:{r.line_no}: duplicate rename target '{new_k}' (also targeted at line {occ_rename_targets[tk].line_no})"
+                )
+            else:
+                occ_rename_targets[tk] = r
+
     # Cross-table conflict detection
     def _is_deleted(target: str, word: str, py: str) -> bool:
         return (target, word, py) in del_seen or (target, word, "*") in del_seen
 
+    dr_exact: dict[tuple[str, str, str], DualReadingRule] = {}
+    dr_by_tw: dict[tuple[str, str], DualReadingRule] = {}
+    dr_by_wp: dict[tuple[str, str], DualReadingRule] = {}
+    for dr in rs.dual_readings:
+        dr_by_tw[(dr.target_file, dr.word)] = dr
+        for py in (dr.py1, dr.py2):
+            dr_exact[(dr.target_file, dr.word, py)] = dr
+            dr_by_wp[(dr.word, py)] = dr
+
+    add_wp_seen: dict[tuple[str, str], AdditionRule] = {}
     for r in rs.additions:
         if _is_deleted(r.target_file, r.word, r.py):
             rs.errors.append(f"conflict: additions.tsv:{r.line_no} ({r.target_file}, {r.word}, {r.py}) is also in deletions.tsv")
+        if (r.word, r.py) in dr_by_wp:
+            dr_hit = dr_by_wp[(r.word, r.py)]
+            rs.errors.append(
+                f"conflict: additions.tsv:{r.line_no} ({r.target_file}, {r.word}, {r.py}) duplicates dual_readings.tsv:{dr_hit.line_no}"
+            )
+        prev_add = add_wp_seen.get((r.word, r.py))
+        if prev_add is not None:
+            rs.errors.append(
+                f"conflict: additions.tsv:{r.line_no} ({r.word}, {r.py}) duplicates target in additions.tsv:{prev_add.line_no} ({prev_add.target_file} vs {r.target_file})"
+            )
+        else:
+            add_wp_seen[(r.word, r.py)] = r
 
     for r in rs.weights:
         if _is_deleted(r.target_file, r.word, r.py):
             rs.errors.append(f"conflict: weights.tsv:{r.line_no} ({r.target_file}, {r.word}, {r.py}) is also in deletions.tsv")
+        if r.py == "*":
+            dr_hit = dr_by_tw.get((r.target_file, r.word))
+            if dr_hit is not None:
+                rs.errors.append(
+                    f"conflict: weights.tsv:{r.line_no} ({r.target_file}, {r.word}, *) overlaps dual_readings.tsv:{dr_hit.line_no} (keep single weight SSOT in dual_readings.tsv)"
+                )
+        else:
+            dr_hit = dr_exact.get((r.target_file, r.word, r.py))
+            if dr_hit is not None:
+                rs.errors.append(
+                    f"conflict: weights.tsv:{r.line_no} ({r.target_file}, {r.word}, {r.py}) duplicates dual_readings.tsv:{dr_hit.line_no} (keep single weight SSOT in dual_readings.tsv)"
+                )
 
     for r in rs.phonetics_fix:
         if _is_deleted(r.target_file, r.word, r.new_py):
@@ -682,6 +744,15 @@ def load_ruleset(rules_dir: pathlib.Path, valid_syls: set[str] | None = None) ->
             rs.errors.append(
                 f"conflict: word_fixes.tsv:{r.line_no} target ({r.target_file}, {r.new_word}, {check_py}) is deleted in deletions.tsv"
             )
+        for pf in pf_by_tw.get((r.target_file, r.new_word), []):
+            if r.new_py == "*" or r.new_py == pf.old_py:
+                rs.errors.append(
+                    f"conflict: word_fixes.tsv:{r.line_no} ({r.old_word}->{r.new_word}, new_py={r.new_py}) chains into phonetics_fix.tsv:{pf.line_no} ({pf.old_py}->{pf.new_py}); set final new_py directly in word_fixes.tsv"
+                )
+
+    e1_total = sum(1 for r in rs.corrections if r.category == "E1") + sum(1 for r in rs.additions if r.category == "E1")
+    if e1_total > E1_MAX_COUNT:
+        rs.errors.append(f"E1 whitelist count {e1_total} exceeds spec limit {E1_MAX_COUNT}")
 
     for r in rs.dual_readings:
         for py in (r.py1, r.py2):
@@ -720,40 +791,10 @@ def load_ruleset(rules_dir: pathlib.Path, valid_syls: set[str] | None = None) ->
     return rs
 
 
-def _split_header_body(lines: list[str]) -> tuple[list[str], list[str]]:
-    for i, line in enumerate(lines):
-        if line.strip() == "...":
-            return lines[: i + 1], lines[i + 1 :]
-    return [], lines
-
-
-def _parse_entry(line: str) -> tuple[str, str, str, list[str]] | None:
-    s = line.strip()
-    if not s or s.startswith("#"):
-        return None
-    parts = line.rstrip("\r\n").split("\t")
-    if len(parts) < 2:
-        return None
-    w = parts[0]
-    py = parts[1]
-    wt = parts[2] if len(parts) >= 3 else ""
-    extra = parts[3:] if len(parts) > 3 else []
-    return w, py, wt, extra
-
-
-def _format_entry(w: str, py: str, wt: str, extra: list[str]) -> str:
-    cols = [w, py]
-    if wt != "" or extra:
-        cols.append(wt)
-    cols.extend(extra)
-    return "\t".join(cols)
-
-
-def _w_int(wt: str) -> int:
-    try:
-        return int(wt)
-    except (ValueError, TypeError):
-        return 0
+_split_header_body = dict_common.split_header_body
+_parse_entry = dict_common.parse_entry
+_format_entry = dict_common.format_entry
+_w_int = dict_common.w_int
 
 
 def _apply_weight_rule(wt: str, wr: WeightRule) -> tuple[str, bool]:

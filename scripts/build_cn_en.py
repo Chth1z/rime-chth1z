@@ -8,9 +8,12 @@ from __future__ import annotations
 
 import argparse
 import pathlib
+import re
 from dataclasses import dataclass
 
-REPO_ROOT = pathlib.Path(__file__).resolve().parent.parent
+import dict_common
+
+REPO_ROOT = dict_common.REPO_ROOT
 
 # Rime double-pinyin schemes for syncing all 7 cn_en*.txt tables identically
 SHUANGPIN_SCHEMES: dict[str, dict[str, dict[str, str]]] = {
@@ -45,7 +48,7 @@ SHUANGPIN_SCHEMES: dict[str, dict[str, dict[str, str]]] = {
     "abc": {  # 智能ABC
         "init": {"zh": "a", "ch": "e", "sh": "v"},
         "fin": {
-            "ei": "q", "ian": "w", "iu": "r", "er": "r", "iang": "t", "uang": "t",
+            "ei": "q", "ian": "w", "iu": "r", "iang": "t", "uang": "t",
             "ing": "y", "uai": "c", "uo": "o", "uan": "p", "ong": "s", "iong": "s",
             "ia": "d", "ua": "d", "en": "f", "eng": "g", "ang": "h", "an": "j",
             "ao": "k", "ai": "l", "iao": "z", "ie": "x", "in": "c", "ou": "b",
@@ -59,7 +62,7 @@ SHUANGPIN_SCHEMES: dict[str, dict[str, dict[str, str]]] = {
     "mspy": {  # 微软双拼
         "init": {"zh": "v", "ch": "i", "sh": "u"},
         "fin": {
-            "iu": "q", "ia": "w", "ua": "w", "er": "r", "uan": "r", "ue": "t",
+            "iu": "q", "ia": "w", "ua": "w", "uan": "r", "ue": "t",
             "uai": "y", "uo": "o", "un": "p", "ong": "s", "iong": "s", "uang": "d",
             "iang": "d", "en": "f", "eng": "g", "ang": "h", "an": "j", "ao": "k",
             "ai": "l", "ing": ";", "ei": "z", "ie": "x", "iao": "c", "ui": "v",
@@ -73,7 +76,7 @@ SHUANGPIN_SCHEMES: dict[str, dict[str, dict[str, str]]] = {
     "sogou": {  # 搜狗双拼
         "init": {"zh": "v", "ch": "i", "sh": "u"},
         "fin": {
-            "iu": "q", "ia": "w", "ua": "w", "er": "r", "uan": "r", "ue": "t",
+            "iu": "q", "ia": "w", "ua": "w", "uan": "r", "ue": "t",
             "ve": "t", "v": "y", "uai": "y", "uo": "o", "un": "p", "ong": "s", "iong": "s",
             "uang": "d", "iang": "d", "en": "f", "eng": "g", "ang": "h", "an": "j",
             "ao": "k", "ai": "l", "ing": ";", "ei": "z", "ie": "x", "iao": "c",
@@ -89,7 +92,7 @@ SHUANGPIN_SCHEMES: dict[str, dict[str, dict[str, str]]] = {
         "fin": {
             "ao": "q", "en": "w", "an": "r", "eng": "t", "in": "y", "uo": "o",
             "ai": "p", "ang": "s", "ie": "d", "ian": "f", "iang": "g", "uang": "g",
-            "ong": "h", "iong": "h", "er": "j", "iu": "j", "ei": "k", "uan": "l",
+            "ong": "h", "iong": "h", "iu": "j", "ei": "k", "uan": "l",
             "ing": ";", "ou": "z", "ia": "x", "ua": "x", "iao": "b", "ui": "n",
             "ue": "n", "ve": "n", "un": "m", "uai": "y",
         },
@@ -109,6 +112,8 @@ CN_EN_FILES: tuple[tuple[str, str | None], ...] = (
     ("cn_en_sogou.txt", "sogou"),
     ("cn_en_ziguang.txt", "ziguang"),
 )
+
+_ASCII_CODE_RE = re.compile(r"^[\x21-\x7e]+$")
 
 
 @dataclass(frozen=True)
@@ -178,9 +183,16 @@ def load_cn_en_rules(
         errors.append(f"Missing CN-EN source file: {source_path}")
         return rules, errors
 
+    raw_bytes = source_path.read_bytes()
+    if raw_bytes.startswith(b"\xef\xbb\xbf"):
+        errors.append(f"{source_path.name}: UTF-8 BOM is forbidden")
+        raw_bytes = raw_bytes[3:]
+    if b"\r\n" in raw_bytes:
+        errors.append(f"{source_path.name}: CRLF line endings found (must be LF)")
+
     seen_keys: set[tuple[str, str, tuple[str, ...], str, str]] = set()
     seen_single_word_actions: set[tuple[str, str]] = set()
-    for idx, raw in enumerate(source_path.read_text(encoding="utf-8").splitlines(), 1):
+    for idx, raw in enumerate(raw_bytes.decode("utf-8").splitlines(), 1):
         s = raw.strip()
         if not s or s.startswith("#"):
             continue
@@ -197,12 +209,20 @@ def load_cn_en_rules(
             continue
         syls = tuple(cn_syls_raw.split()) if cn_syls_raw else ()
         emit_lower = False
-        if action == "rename" and not prefix_en:
-            errors.append(f"{source_path.name}:{idx}: rename requires new word in prefix_en column")
-            continue
-        if action == "case_fix" and (not prefix_en or not suffix_en):
-            errors.append(f"{source_path.name}:{idx}: case_fix requires old prefix in prefix_en and new prefix in suffix_en")
-            continue
+        if action == "rename":
+            if not prefix_en:
+                errors.append(f"{source_path.name}:{idx}: rename requires new word in prefix_en column")
+                continue
+            if prefix_en == word:
+                errors.append(f"{source_path.name}:{idx}: no-op rename '{word}' -> '{prefix_en}'")
+                continue
+        if action == "case_fix":
+            if not prefix_en or not suffix_en:
+                errors.append(f"{source_path.name}:{idx}: case_fix requires old prefix in prefix_en and new prefix in suffix_en")
+                continue
+            if not _ASCII_CODE_RE.fullmatch(prefix_en) or not _ASCII_CODE_RE.fullmatch(suffix_en):
+                errors.append(f"{source_path.name}:{idx}: case_fix prefixes must be printable ASCII without whitespace")
+                continue
         if action in {"add", "replace"}:
             if not syls:
                 errors.append(f"{source_path.name}:{idx}: {action} requires cn_syls")
@@ -210,11 +230,18 @@ def load_cn_en_rules(
             if emit_lower_raw not in {"true", "false"}:
                 errors.append(f"{source_path.name}:{idx}: emit_lower must be 'true' or 'false', got '{emit_lower_raw}'")
                 continue
+            if prefix_en and not _ASCII_CODE_RE.fullmatch(prefix_en):
+                errors.append(f"{source_path.name}:{idx}: prefix_en '{prefix_en}' must be printable ASCII without whitespace")
+                continue
+            if suffix_en and not _ASCII_CODE_RE.fullmatch(suffix_en):
+                errors.append(f"{source_path.name}:{idx}: suffix_en '{suffix_en}' must be printable ASCII without whitespace")
+                continue
             emit_lower = emit_lower_raw == "true"
-            if valid_syls is not None:
-                for sy in syls:
-                    if sy not in valid_syls:
-                        errors.append(f"{source_path.name}:{idx}: invalid syllable '{sy}' in '{word}'")
+            for sy in syls:
+                if dict_common.LUE_NUE_RE.search(sy):
+                    errors.append(f"{source_path.name}:{idx}: forbidden lue/nue syllable '{sy}' in '{word}'")
+                elif valid_syls is not None and sy not in valid_syls:
+                    errors.append(f"{source_path.name}:{idx}: invalid syllable '{sy}' in '{word}'")
         key = (action, word, syls, prefix_en, suffix_en)
         if key in seen_keys:
             errors.append(f"{source_path.name}:{idx}: duplicate rule for {key}")
@@ -228,13 +255,31 @@ def load_cn_en_rules(
         seen_keys.add(key)
         rules.append(CnEnRule(idx, action, word, prefix_en, syls, suffix_en, emit_lower, note))
 
-    # Cross-action conflicts: cannot delete and add/rename the same word
+    # Cross-action conflicts: delete vs add/rename/replace/case_fix; replace vs add/rename; rename chains
     deleted_words = {r.word for r in rules if r.action == "delete"}
+    replaced_words = {r.word for r in rules if r.action == "replace"}
+    rename_sources = {r.word for r in rules if r.action == "rename"}
     for r in rules:
-        if r.action == "add" and r.word in deleted_words:
-            errors.append(f"{source_path.name}:{r.line_no}: conflict: '{r.word}' is both deleted and added")
-        if r.action == "rename" and (r.word in deleted_words or r.prefix_en in deleted_words):
-            errors.append(f"{source_path.name}:{r.line_no}: conflict: rename '{r.word}' -> '{r.prefix_en}' overlaps delete")
+        if r.action == "add":
+            if r.word in deleted_words:
+                errors.append(f"{source_path.name}:{r.line_no}: conflict: '{r.word}' is both deleted and added")
+            if r.word in replaced_words:
+                errors.append(f"{source_path.name}:{r.line_no}: conflict: '{r.word}' has both replace and add rules")
+        elif r.action == "replace":
+            if r.word in deleted_words:
+                errors.append(f"{source_path.name}:{r.line_no}: conflict: '{r.word}' is both deleted and replaced")
+        elif r.action == "case_fix":
+            if r.word in deleted_words:
+                errors.append(f"{source_path.name}:{r.line_no}: conflict: '{r.word}' is both deleted and case_fix'd")
+            if r.word in replaced_words:
+                errors.append(f"{source_path.name}:{r.line_no}: conflict: '{r.word}' has both replace and case_fix rules")
+        elif r.action == "rename":
+            if r.word in deleted_words or r.prefix_en in deleted_words:
+                errors.append(f"{source_path.name}:{r.line_no}: conflict: rename '{r.word}' -> '{r.prefix_en}' overlaps delete")
+            if r.word in replaced_words or r.prefix_en in replaced_words:
+                errors.append(f"{source_path.name}:{r.line_no}: conflict: rename '{r.word}' -> '{r.prefix_en}' overlaps replace")
+            if r.prefix_en in rename_sources:
+                errors.append(f"{source_path.name}:{r.line_no}: conflict: chained rename '{r.word}' -> '{r.prefix_en}' feeds another rename")
 
     return rules, errors
 
@@ -246,8 +291,10 @@ def apply_cn_en_rules(
     manifest: dict | None = None,
     rule_hits: dict[str, int] | None = None,
     dry_run: bool = False,
+    valid_syls: set[str] | None = None,
+    out_buffers: dict[str, str] | None = None,
 ) -> tuple[list[CnEnRule], list[str]]:
-    rules, errors = load_cn_en_rules(rules_path)
+    rules, errors = load_cn_en_rules(rules_path, valid_syls=valid_syls)
     if errors:
         raise ValueError("Invalid cn_en_source.tsv:\n  " + "\n  ".join(errors))
 
@@ -262,7 +309,7 @@ def apply_cn_en_rules(
             rule_hits.setdefault(r.rule_id, 0)
 
     en_dir = dst_root / "en_dicts"
-    if not dry_run:
+    if not dry_run and out_buffers is None:
         en_dir.mkdir(parents=True, exist_ok=True)
 
     changed_files: list[str] = []
@@ -272,8 +319,18 @@ def apply_cn_en_rules(
             continue
         raw_text = src_path.read_text(encoding="utf-8")
         raw_lines = raw_text.splitlines()
+
+        existing_codes_by_word: dict[str, list[str]] = {}
+        for line in raw_lines:
+            if not line.strip() or line.strip().startswith("#"):
+                continue
+            parts = line.split("\t")
+            if len(parts) >= 2:
+                existing_codes_by_word.setdefault(parts[0], []).append(parts[1])
+
         out_lines: list[str] = []
         seen: set[tuple[str, str]] = set()
+        replaced_done: set[str] = set()
         del_cnt = 0
         fix_cnt = 0
         add_cnt = 0
@@ -300,12 +357,16 @@ def apply_cn_en_rules(
                     rule_hits[r.rule_id] += 1
             if w in replaces:
                 r = replaces[w]
-                for rep_code in encode_cn_en_codes(r.prefix_en, r.cn_syls, r.suffix_en, r.emit_lower, scheme):
-                    if (w, rep_code) not in seen:
-                        seen.add((w, rep_code))
-                        out_lines.append(f"{w}\t{rep_code}")
-                        if rep_code != code:
-                            fix_cnt += 1
+                if w not in replaced_done:
+                    replaced_done.add(w)
+                    expected_codes = encode_cn_en_codes(r.prefix_en, r.cn_syls, r.suffix_en, r.emit_lower, scheme)
+                    existing_codes = existing_codes_by_word.get(w, [])
+                    for rep_code in expected_codes:
+                        if (w, rep_code) not in seen:
+                            seen.add((w, rep_code))
+                            out_lines.append(f"{w}\t{rep_code}")
+                    if set(existing_codes) != set(expected_codes) or len(existing_codes) != len(expected_codes):
+                        fix_cnt += max(1, len(set(existing_codes) ^ set(expected_codes)))
                 if rule_hits is not None:
                     rule_hits[r.rule_id] += 1
                 continue
@@ -329,17 +390,19 @@ def apply_cn_en_rules(
                     if rule_hits is not None:
                         rule_hits[r.rule_id] += 1
                 else:
-                    # Already present (idempotent pass) still counts as active presence
                     if rule_hits is not None:
                         rule_hits[r.rule_id] += 1
 
         new_text = "\n".join(out_lines) + "\n"
+        rel = f"en_dicts/{fname}"
         if new_text != raw_text:
-            changed_files.append(f"en_dicts/{fname}")
-        if not dry_run:
-            (en_dir / fname).write_text(new_text, encoding="utf-8", newline="\n")
+            changed_files.append(rel)
+        if out_buffers is not None:
+            out_buffers[rel] = new_text
+        elif not dry_run:
+            dict_common.atomic_write_text(en_dir / fname, new_text)
         if manifest is not None:
-            manifest["files"][f"en_dicts/{fname}"] = {
+            manifest["files"][rel] = {
                 "before": len(raw_lines),
                 "after": len(out_lines),
                 "fixed": fix_cnt,
@@ -361,8 +424,14 @@ def main() -> None:
     src_root = args.src_dir.resolve()
     dst_root = (args.out_dir or args.src_dir).resolve()
     rules_path = args.rules_dir.resolve() / "cn_en_source.tsv"
+    syl_errors: list[str] = []
+    valid_syls = dict_common.load_valid_syls(src_root, strict_errors=syl_errors)
+    if syl_errors:
+        raise SystemExit("Invalid 8105 syllable table:\n  " + "\n  ".join(syl_errors))
     manifest: dict = {"files": {}}
-    rules, changed = apply_cn_en_rules(src_root, dst_root, rules_path, manifest=manifest, dry_run=args.check)
+    rules, changed = apply_cn_en_rules(
+        src_root, dst_root, rules_path, manifest=manifest, dry_run=args.check, valid_syls=valid_syls
+    )
     if args.check:
         if changed:
             raise SystemExit(f"cn_en tables out of sync with {rules_path}: {changed}")
