@@ -31,6 +31,64 @@ powershell -ExecutionPolicy Bypass -File $s -InstallWeasel -NeuralModel pumpkin 
 
 常用参数见 [`skills/rime-chth1z-setup/SKILL.md`](skills/rime-chth1z-setup/SKILL.md) 与 [`skills/rime-chth1z-setup/references/customization.md`](skills/rime-chth1z-setup/references/customization.md)（支持切换全拼默认、选用轻量模型 `-NeuralModel feather`、纯统计模式 `-NeuralModel none`、自动安装 `Noto Sans CJK` 或回退微软雅黑字体）。
 
+## 评测数据
+
+### 测试环境与口径
+
+- **运行环境与外部模型**：官方小狼毫 `0.17.4`（`librime 1.17.0`，Lua `5.4.8`），硬件为 Intel Core Ultra 7 255HX（插电 AC）。语法模型为 [`amzxyz/rime-wanxiang-data`](https://github.com/amzxyz/rime-wanxiang-data/releases/tag/LTS) 的 `wanxiang-lts-zh-hans.gram`（方案默认 `grammar/collocation_penalty: -15.5`、`contextual_suggestions: false`，注释 `41448` 与 `GB18030-2022` 生僻字表）；神经重排采用 [`Chth1z/rime-neural`](https://github.com/Chth1z/rime-neural) `v1.2.1` 搭配 [`dd1000001000/zhiyi_models`](https://github.com/dd1000001000/zhiyi_models) 的 12 层量化模型 `ML-pumpkin-1103`（`threads: 0`，自动限幅 `4..8` 线程）。
+- **隔离条件与复现**：离线评测通过父子进程隔离沙箱调用本机 `rime.dll`（见 `bench/eval-accuracy.py` 与 `bench/bench-rime.ps1`），测试期间关闭用户词库（`enable_user_dict: false`）、UIA 读屏与本地反馈写入；分句与同义词归一化规则（`其它→其他`、`他/她/它→他`、`的/地/得→的`）与 [`gaboolic/rime-schema-compare`](https://github.com/gaboolic/rime-schema-compare) 一致。下表同时保留同环境关闭神经重排的纯统计基线及 `-14` 惩罚参数对照。
+
+### 1. Rime 主流方案对比（`gaboolic/rime-schema-compare/report/latest.md`）
+
+语料为 [`rime-schema-compare`](https://github.com/gaboolic/rime-schema-compare/blob/main/report/latest.md) 公开的 `public_articles_2026-11-19.txt`（阮一峰科技爱好者周刊正文，200 句）与同版 `wanxiang-lts-zh-hans.gram`。
+
+| 方案 / 组合 | 整句正确率 | 文字正确率 | 说明 |
+| :--- | :---: | :---: | :--- |
+| `mingyuepinyin`（明月，无模型） | `63.32%` | `92.15%` | 上游报告（199 句） |
+| `luna_pinyin_with_octagram`（朙月 + 八股文） | `66.83%` | `93.78%` | 上游报告 |
+| `rime_ice`（雾凇，无模型） | `69.35%` | `93.93%` | 上游报告 |
+| `wanxiang`（万象，无模型） | `69.35%` | `94.02%` | 上游报告 |
+| `rime_frost`（白霜，无模型） | `70.85%` | `94.27%` | 上游报告 |
+| `rime_ice_with_gram`（雾凇 + 万象 `.gram`） | `74.37%` | `95.95%` | 上游报告 |
+| `rime_wanxiang_with_gram`（万象 + 万象 `.gram`） | `78.89%` | `96.84%` | 上游报告 |
+| `rime_wubi_sentens_wubi86_with_gram`（五笔整句 + 万象） | `79.40%` | `96.99%` | 上游报告 |
+| `rime_frost_with_gram`（白霜 + 万象 `.gram`） | `82.91%` | `97.38%` | 上游报告（`collocation_penalty: -14`） |
+| 本仓库纯统计对照（全拼，`-14`） | `83.00%` | `97.39%` | 166/200，复现上游统计基线 |
+| 本仓库纯统计（全拼 / 双拼，`-15.5`） | `80.50%` / `81.00%` | `96.95%` / `97.04%` | 161/200、162/200（关闭神经重排） |
+| **本仓库 + `rime-neural v1.2.1`（全拼·严格零上文）** | **`90.00%`** | **`98.47%`** | `-15.5` 为 180/200（`-14` 为 `89.50%` 179/200） |
+| **本仓库 + `rime-neural v1.2.1`（双拼·严格零上文）** | **`90.50%`** | **`98.57%`** | 自然码双拼 181/200 |
+| **本仓库 + `rime-neural v1.2.1`（全拼 / 双拼·段落上文）** | **`91.50%`** | **`98.67%` / `98.72%`** | 按段落保留 `commit_history`（均为 183/200） |
+| **本仓库 + `rime-neural v1.2.1`（双拼·连续上文）** | **`92.00%`** | **`98.87%`** | 全篇保留 `commit_history`（184/200；全拼 `91.50%` / `98.77%`） |
+
+### 2. 跨领域 246 句商业输入法参考（`rime-schema-compare/report/other_latest.md`）
+
+语料为 [`other_latest.md`](https://github.com/gaboolic/rime-schema-compare/blob/main/report/other_latest.md) 对应的 246 句公开跨领域语料（commit `99da339a`：`news 36`、`novel 136`、`prose 38`、`tech 31`、`test 5`），同义词归一化规则与原报告一致。
+
+| 输入法 / 方案 | 总整句 (246 句) | 总字正确率 | `news` | `novel` | `prose` | `tech` | `test` |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 微信输入法（原报告 Notepad 黑盒） | `51.63%` | `89.18%` | `61.11%` | `47.79%` | `50.00%` | `58.06%` | `60.0%` |
+| 搜狗拼音（原报告 Notepad 黑盒） | `54.47%` | `77.02%` | `77.78%` | `45.59%` | `50.00%` | `74.19%` | `40.0%` |
+| 微软拼音（原报告 Notepad 黑盒） | `67.89%` | `92.71%` | `83.33%` | `63.24%` | `63.16%` | `74.19%` | `80.0%` |
+| 手心输入法（原报告 Notepad 黑盒） | `71.14%` | `94.48%` | `86.11%` | `66.18%` | `65.79%` | `80.65%` | `80.0%` |
+| 原报告 `rime_frost_with_gram`（2026-04-25） | `71.54%` | `95.45%` | `88.89%` | `67.65%` | `55.26%` | `83.87%` | `100%` |
+| 本仓库纯统计（全拼 / 双拼，`-15.5`） | `76.42%` | `95.92%` | `97.22%` | `69.85%` | `71.05%` | `83.87%` | `100%` |
+| **本仓库 + `rime-neural v1.2.1`（全拼·严格零上文）** | **`81.71%`** | `97.22%` | **`97.22%`** | **`77.94%`** | `68.42%` | **`93.55%`** | **`100%`** |
+| **本仓库 + `rime-neural v1.2.1`（双拼·严格零上文）** | **`81.71%`** | `97.33%` | **`97.22%`** | **`77.94%`** | `68.42%` | **`93.55%`** | **`100%`** |
+| **本仓库 + `rime-neural v1.2.1`（双拼·段落上文）** | **`82.52%`** | **`97.62%`** | **`97.22%`** | **`77.94%`** | **`76.32%`** | `90.32%` | **`100%`** |
+
+> 商业输入法数据引自 `rime-schema-compare/report/other_latest.md`（Notepad 前台自动化黑盒采集，受系统环境、默认设置与联网状态影响）。神经重排器在 `metasequoiaime/chinese-ime-lm` 1,631 句固定候选池上的横向对比见 [`Chth1z/rime-neural`](https://github.com/Chth1z/rime-neural#%E8%AF%84%E6%B5%8B%E6%95%B0%E6%8D%AE)。
+
+### 3. 按键延迟（`bench/bench-rime.ps1`）
+
+Intel Core Ultra 7 255HX（插电 AC），隔离 `rime.dll` 沙箱实测（含 `wanxiang-lts-zh-hans.gram`、台湾繁体双出滤镜与 `melt_eng` 英文混输）：
+
+| 模式 | 初始化 + 切方案 | 首键均值 | 后续键均值 | 长句峰值 |
+| :--- | :---: | :---: | :---: | :---: |
+| 纯统计（自然码双拼） | `113.8 ms` | `0.1 ms` | `0.4 ms` | `1.0 ms` |
+| 纯统计（全拼） | `123.6 ms` | `0.2 ms` | `1.0 ms` | `4.6 ms` |
+| **+ `rime-neural v1.2.1`（自然码双拼）** | `117.0 ms` | **`0.2 ms`** | **`1.7 ms`** | **`9.6 ms`** |
+| **+ `rime-neural v1.2.1`（全拼）** | `128.8 ms` | **`0.2 ms`** | **`4.6 ms`** | **`13.3 ms`** |
+
 ## 词库治理与清洗体系
 
 全部词库修订均遵循 [docs/DICTIONARY_SPEC.md](docs/DICTIONARY_SPEC.md) 定义的五级审音依据链（L1 现行国家规范《普通话异读词审音表》/《通用规范汉字表》/《现代汉语词典》第 7 版 → L2 全国科技名词委/民政地名/药典 → L3 品牌/人名/古诗文训诂 → L4 2016 审音修订稿 → L5 两岸与大规模社会通行习惯）、五类读音决策矩阵（A–E）及五级官民异形词标准（W1–W5）。
