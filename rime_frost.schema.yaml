@@ -248,16 +248,10 @@ speller:
   initials: "zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA"
   delimiter: " '"
   algebra:
-    - erase/^hm$/
-    - erase/^m$/
-    - erase/^n$/
-    - erase/^ng$/
     - abbrev/^([a-z]).+$/$1/
     - abbrev/^([zcs]h).+$/$1/
     - derive/^([nl])ve$/$1ue/
     - derive/^([jqxy])u/$1v/
-    - derive/^([nl])ue$/$1ve/
-    - derive/^([jqxy])v/$1u/
     - fuzz/^([zcs])h(a|e|i|u|ao|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/
     - fuzz/^([wghk])ai$/$1ia/
     - fuzz/^([wfghk])ei$/$1ie/
@@ -290,6 +284,3 @@ speller:
     - fuzz/^([jqx])iong$/$1oing/
     - fuzz/^([jqx])iong$/$1iogn/
     - fuzz/^([jqx])iong$/$1oign/
-    - fuzz/^([rtsdghkzc])o(u|ng)$/$1o/
-    - fuzz/^([tl])eng$/$1en/
-    - fuzz/^([qwrtypsdfghjklzxcbnm])([aeio])ng$/$1ng/

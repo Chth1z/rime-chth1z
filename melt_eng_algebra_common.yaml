@@ -4,14 +4,13 @@
 # 置于各方案中文数字/符号谐音派生之前，保留原始符号以便中文规则匹配前导符号（如 .NET、.gitignore）。
 algebra_common_pre:
   # 数字派生
-  - derive/1([4-79])/$1teen/
+  - derive/1([4679])/$1teen/
   - derive/11/eleven/
   - derive/12/twelve/
   - derive/13/thirteen/
   - derive/15/fifteen/
   - derive/18/eighteen/
   - derive/0/o/ # 如 1000 -> oneOOO
-  - derive/0/O/
   - derive/0/zero/
   - derive/1/one/
   - derive/10/ten/
@@ -49,8 +48,8 @@ algebra_common_post:
   - derive/[_]//
   # 派生无任何非字母数字字符的拼写
   - derive/[^a-zA-Z0-9]//
-  # 禁用非英文、数字开头的编码
-  - erase/^[^a-zA-Z0-9].+$/
+  # 禁用含非英文字母的不可打编码（避免在 6x 大小写展开前产生冗余棱镜条目）
+  - erase/[^a-zA-Z]/
   # 全小写
   - derive/^.+$/\L$0/
   # 全大写
