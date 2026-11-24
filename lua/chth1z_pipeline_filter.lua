@@ -5,38 +5,70 @@
 
 local M = {}
 
-local CORRECTIONS_FILE = "/cn_dicts/corrections.dict.yaml"
+local CORRECTIONS_REL = "cn_dicts/corrections.dict.yaml"
 local cached_corrections = nil
 local cached_has_single = false
+local logged_corrections_warn = false
 local gc_tick = 0
+
+local function open_corrections_file()
+    local candidates = {}
+    if rime_api and type(rime_api.get_user_data_dir) == "function" then
+        local ud = rime_api.get_user_data_dir()
+        if type(ud) == "string" and #ud > 0 then
+            candidates[#candidates + 1] = ud .. "/" .. CORRECTIONS_REL
+        end
+    end
+    -- Relative fallback works when Weasel CWD is user_data_dir even under non-ASCII Windows profiles
+    candidates[#candidates + 1] = CORRECTIONS_REL
+    if rime_api and type(rime_api.get_shared_data_dir) == "function" then
+        local ok_s, sd = pcall(rime_api.get_shared_data_dir)
+        if ok_s and type(sd) == "string" and #sd > 0 then
+            candidates[#candidates + 1] = sd .. "/" .. CORRECTIONS_REL
+        end
+    end
+    for i = 1, #candidates do
+        local f = io.open(candidates[i], "r")
+        if f then
+            return f
+        end
+    end
+    return nil
+end
 
 local function load_corrections()
     if cached_corrections ~= nil then
         return cached_corrections, cached_has_single
     end
 
+    local file = open_corrections_file()
+    if not file then
+        if not logged_corrections_warn and log and log.warning then
+            logged_corrections_warn = true
+            log.warning("chth1z_pipeline_filter: unable to open " .. CORRECTIONS_REL .. " (check non-ASCII user path or deployment)")
+        end
+        return {}, false
+    end
+
     local corrections = {}
     local has_single = false
-    local file = io.open(rime_api.get_user_data_dir() .. CORRECTIONS_FILE, "r")
-    if file then
-        for line in file:lines() do
-            line = line:gsub("\r$", "")
-            local text, code, comment = line:match("^([^\t#][^\t]*)\t([^\t]+)\t[^\t]*\t(.+)$")
-            if text and code and comment then
-                if not has_single and not code:find(" ", 1, true) then
-                    has_single = true
-                end
-                local items = corrections[code]
-                local item = { text = text, comment = comment }
-                if items then
-                    items[#items + 1] = item
-                else
-                    corrections[code] = { item }
-                end
+    for line in file:lines() do
+        line = line:gsub("\r$", "")
+        local text, code, comment = line:match("^([^\t#][^\t]*)\t([^\t]+)\t[^\t]*\t(.+)$")
+        if text and code and comment then
+            if not has_single and not code:find(" ", 1, true) then
+                has_single = true
+            end
+            local items = corrections[code]
+            local item = { text = text, comment = comment }
+            if items then
+                items[#items + 1] = item
+            else
+                corrections[code] = { item }
             end
         end
-        file:close()
     end
+    file:close()
 
     cached_corrections = corrections
     cached_has_single = has_single
@@ -62,6 +94,7 @@ local function load_pin_cands(config)
     end
 
     local pin_cands = {}
+    local auto_seen = {}
     local sep = "\x1f"
     for i = 0, list.size - 1 do
         local item = list:get_value_at(i)
@@ -79,8 +112,12 @@ local function load_pin_cands(config)
 
             local preedit_no_spaces = preedit:gsub(" ", "")
             local entries = {}
+            local seen_entry = {}
             for text in texts:gmatch("[^" .. sep .. "]+") do
-                entries[#entries + 1] = text
+                if not seen_entry[text] then
+                    seen_entry[text] = true
+                    entries[#entries + 1] = text
+                end
             end
             pin_cands[preedit_no_spaces] = entries
 
@@ -92,14 +129,20 @@ local function load_pin_cands(config)
                     local p2 = last_part:match("^[zcs]h") and (prefix .. last_part:sub(1, 2)) or ""
                     for _, p in ipairs({ p1, p2 }) do
                         if p ~= "" and not explicit[p] then
-                            if pin_cands[p] ~= nil then
-                                for _, text in ipairs(entries) do
-                                    pin_cands[p][#pin_cands[p] + 1] = text
+                            local target = pin_cands[p]
+                            local seen = auto_seen[p]
+                            if not target then
+                                target = {}
+                                seen = {}
+                                pin_cands[p] = target
+                                auto_seen[p] = seen
+                            end
+                            for j = 1, #entries do
+                                local text = entries[j]
+                                if not seen[text] then
+                                    seen[text] = true
+                                    target[#target + 1] = text
                                 end
-                            else
-                                local copy = {}
-                                for j = 1, #entries do copy[j] = entries[j] end
-                                pin_cands[p] = copy
                             end
                         end
                     end
@@ -177,6 +220,20 @@ local function load_reduce_english(config)
     return idx, map
 end
 
+--- Extract the active unconfirmed segment slice from `context.input` so multi-segment input
+--- (e.g. confirmed Chinese seg 1 + English seg 2) drives `autocap` and `reduce_english` accurately.
+local function active_segment_code(context)
+    local full = context.input or ""
+    local comp = context.composition
+    if comp and not comp:empty() then
+        local seg = comp:back()
+        if seg and seg.start and seg._end and seg._end > seg.start then
+            return full:sub(seg.start + 1, seg._end)
+        end
+    end
+    return full
+end
+
 function M.init(env)
     local config = env.engine.schema.config
 
@@ -216,7 +273,7 @@ function M.func(input, env)
     end
 
     local context = env.engine.context
-    local code = context.input
+    local code = active_segment_code(context)
     local codeLen = #code
 
     -- Autocap mode: 0 = off, 1 = Title, 2 = ALL UPPER
@@ -252,11 +309,11 @@ function M.func(input, env)
     local function emit(cand)
         -- Stage 2: corrector (parse full-width bracketed pinyin comment ［...］)
         local comment = cand.comment
-        if #comment > 6 and comment:byte(1) == 0xEF
+        if #comment >= 6 and comment:byte(1) == 0xEF
             and comment:sub(1, 3) == "\239\188\187" and comment:sub(-3) == "\239\188\189" then
             local pinyin = comment:sub(4, -4)
             local correction_comment
-            if has_single or env_delimiter or pinyin:find(" ", 1, true) then
+            if #pinyin > 0 and (has_single or env_delimiter or pinyin:find(" ", 1, true)) then
                 local key = env_delimiter and pinyin:gsub(env_delimiter, " ") or pinyin
                 local items = corrections[key]
                 if items then
@@ -273,7 +330,7 @@ function M.func(input, env)
             if correction_comment then
                 cand:get_genuine().comment = corrector_plain and correction_comment
                     or corrector_style:gsub("{comment}", function() return correction_comment end)
-            elseif keep_comment then
+            elseif keep_comment and #pinyin > 0 then
                 cand:get_genuine().comment = corrector_plain and pinyin
                     or corrector_style:gsub("{comment}", function() return pinyin end)
             else
@@ -281,7 +338,7 @@ function M.func(input, env)
             end
         end
 
-        -- Stage 3: autocap (only active when input length > 1 and starts with A-Z)
+        -- Stage 3: autocap (only active when active segment length > 1 and starts with A-Z)
         if cap_mode ~= 0 then
             local text = cand.text
             if not text:find("[^%w%p%s]") and not text:find("%s") then
@@ -289,16 +346,20 @@ function M.func(input, env)
                 if pureText:sub(1, codeLen) ~= code
                     and (cand.type == "completion" or pureCodeLower == pureText:lower()) then
                     if cap_mode == 2 then
-                        text = text:upper()
+                        -- Preserve intentional CamelCase brand words (uppercase after pos 1 + lowercase, e.g. `VSCode`, `iPhone`, `GitHub`, `jQuery`)
+                        if not (text:find("%u", 2) and text:find("%l")) then
+                            text = text:upper()
+                            cand = cand:to_shadow_candidate(cand.type, text, cand.comment)
+                        end
                     else
                         text = text:gsub("^%a", string.upper)
+                        cand = cand:to_shadow_candidate(cand.type, text, cand.comment)
                     end
-                    cand = cand:to_shadow_candidate(cand.type, text, cand.comment)
                 end
             end
         end
 
-        -- Stage 4: reduce_english (only active when input is in reduce_map)
+        -- Stage 4: reduce_english (only active when active segment is in reduce_map)
         if not reduce_active or reduce_done then
             yield(cand)
             return
@@ -328,48 +389,55 @@ function M.func(input, env)
         local pin_max_scan = env.pin_max_scan
 
         for cand in input:iter() do
-            local pe = cand.preedit
+            local pe = cand.preedit or ""
             if pe:find(" ", 1, true) then
                 pe = pe:gsub(" ", "")
             end
 
             if not target_texts then
-                local texts = pin_cands[pe]
-                if not texts then
+                -- Skip empty-preedit translator hits (date/lunar) without aborting pinning for pinyin candidates
+                if pe == "" then
                     emit(cand)
-                    break
+                else
+                    local texts = pin_cands[pe]
+                    if not texts then
+                        emit(cand)
+                        break
+                    end
+                    target_pe = pe
+                    target_texts = texts
+                    target_len = #texts
+                    pined = {}
+                    for i = 1, target_len do pined[i] = false end
+                    others = {}
                 end
-                target_pe = pe
-                target_texts = texts
-                target_len = #texts
-                pined = {}
-                for i = 1, target_len do pined[i] = false end
-                others = {}
             elseif pe ~= target_pe then
                 others_len = others_len + 1
                 others[others_len] = cand
                 break
             end
 
-            local ctext = cand.text
-            local matched_idx = 0
-            for i = 1, target_len do
-                if target_texts[i] == ctext then
-                    matched_idx = i
+            if target_texts then
+                local ctext = cand.text
+                local matched_idx = 0
+                for i = 1, target_len do
+                    if target_texts[i] == ctext then
+                        matched_idx = i
+                        break
+                    end
+                end
+
+                if matched_idx ~= 0 and not pined[matched_idx] then
+                    pined[matched_idx] = cand
+                    pined_count = pined_count + 1
+                else
+                    others_len = others_len + 1
+                    others[others_len] = cand
+                end
+
+                if pined_count == target_len or others_len >= pin_max_scan then
                     break
                 end
-            end
-
-            if matched_idx ~= 0 and not pined[matched_idx] then
-                pined[matched_idx] = cand
-                pined_count = pined_count + 1
-            else
-                others_len = others_len + 1
-                others[others_len] = cand
-            end
-
-            if pined_count == target_len or others_len >= pin_max_scan then
-                break
             end
         end
 
