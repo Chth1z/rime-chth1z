@@ -31,7 +31,6 @@ cn_dicts/base.dict.yaml	善贾而沽	shan gu er gu	shan jia er gu	R1基础词库
 cn_dicts/base.dict.yaml	喔哟	wo you	o yo	R2基础词库读音修正	现汉第7版
 cn_dicts/base.dict.yaml	均订	junding	jun ding	R1基础词库读音修正	现汉第7版
 cn_dicts/base.dict.yaml	壳牌	qiao pai	ke pai	R1基础词库读音修正	现汉第7版
-cn_dicts/base.dict.yaml	多粘菌素	duo zhan jun su	duo nian jun su	R1基础词库读音修正	现汉第7版
 cn_dicts/base.dict.yaml	多言数穷	duo yan shu qiong	duo yan shuo qiong	R1基础词库读音修正	现汉第7版
 cn_dicts/base.dict.yaml	大行情	da xing qing	da hang qing	R1基础词库读音修正	现汉第7版
 cn_dicts/base.dict.yaml	头孢泊肟酯	tou bao po wo zhi	tou bao bo wo zhi	R1基础词库读音修正	现汉第7版
@@ -79,7 +78,6 @@ cn_dicts/base.dict.yaml	盖聂	gai nie	ge nie	R2基础词库读音修正	现汉�
 cn_dicts/base.dict.yaml	盛年不重来	sheng nian bu zhong lai	sheng nian bu chong lai	R1基础词库读音修正	现汉第7版
 cn_dicts/base.dict.yaml	直直地	zhi zhi di	zhi zhi de	R1基础词库读音修正	现汉第7版
 cn_dicts/base.dict.yaml	简短地	jian duan di	jian duan de	R1基础词库读音修正	现汉第7版
-cn_dicts/base.dict.yaml	粘多糖	zhan duo tang	nian duo tang	R1基础词库读音修正	现汉第7版
 cn_dicts/base.dict.yaml	系统地	xi tong di	xi tong de	R1基础词库读音修正	现汉第7版
 cn_dicts/base.dict.yaml	细细地	xi xi di	xi xi de	R1基础词库读音修正	现汉第7版
 cn_dicts/base.dict.yaml	美都	mei dou	mei du	R1基础词库读音修正	现汉第7版
@@ -4933,3 +4931,393 @@ cn_dicts_cell/literature.dict.yaml	子独不闻夫至人之自行邪	zi du bu we
 cn_dicts_cell/literature.dict.yaml	子奚为者邪	zi xi wei zhe xie	zi xi wei zhe ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
 cn_dicts_cell/literature.dict.yaml	子之师谁邪	zi zhi shi shui xie	zi zhi shi shui ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
 cn_dicts_cell/literature.dict.yaml	子之师邪	zi zhi shi xie	zi zhi shi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+# Batch 3 (base & ext): verified phonetic fixes
+cn_dicts/base.dict.yaml	重铬酸盐	zhong ge suan yan	chong ge suan yan	化学词头重(di-)规范读chóng	全国科技名词委/现汉第7版
+cn_dicts/base.dict.yaml	重氮盐	zhong dan yan	chong dan yan	化学词头重(diazo)规范读chóng	全国科技名词委/现汉第7版
+cn_dicts/base.dict.yaml	重氮化	zhong dan hua	chong dan hua	化学词头重(diazo)规范读chóng	全国科技名词委/现汉第7版
+cn_dicts/base.dict.yaml	重睑	zhong jian	chong jian	双层眼睑规范读chóng jiǎn	现汉第7版/全国科技名词委
+cn_dicts/base.dict.yaml	重放攻击	zhong fang gong ji	chong fang gong ji	重复播放(replay)读chóng	全国科技名词委
+cn_dicts/base.dict.yaml	重配置	zhong pei zhi	chong pei zhi	重新配置读chóng	现汉第7版
+cn_dicts/base.dict.yaml	重用机制	zhong yong ji zhi	chong yong ji zhi	重复使用(reuse)读chóng	全国科技名词委
+cn_dicts/base.dict.yaml	重用性	zhong yong xing	chong yong xing	可重复使用性读chóng	全国科技名词委
+cn_dicts/base.dict.yaml	国机重装	guo ji chong zhuang	guo ji zhong zhuang	国机重型装备集团简称读zhòng	企业官方全称
+cn_dicts/base.dict.yaml	玄麦甘桔颗粒	xuan mai gan ju ke li	xuan mai gan jie ke li	药材桔梗规范读jié gěng	中国药典/现汉第7版
+cn_dicts/base.dict.yaml	甘桔冰梅片	gan ju bing mei pian	gan jie bing mei pian	药材桔梗规范读jié gěng	中国药典/现汉第7版
+cn_dicts/base.dict.yaml	没食子酸	mei shi zi suan	mo shi zi suan	没食子(mò shí zǐ)酸	全国科技名词委/现汉第7版
+cn_dicts/base.dict.yaml	次没食子酸铋	ci mei shi zi suan bi	ci mo shi zi suan bi	没食子(mò shí zǐ)酸衍生物	中国药典/全国科技名词委
+cn_dicts/base.dict.yaml	杓状软骨	biao zhuang ruan gu	shao zhuang ruan gu	喉部杓(sháo)状软骨	全国科技名词委/现汉第7版
+cn_dicts/base.dict.yaml	露阴	lou yin	lu yin	书面医学术语规范读lù yīn	现汉第7版
+cn_dicts/base.dict.yaml	袒胸露乳	tan xiong lou ru	tan xiong lu ru	书面成语规范读tǎn xiōng lù rǔ	现汉第7版
+cn_dicts/base.dict.yaml	万柏林	wan bo lin	wan bai lin	太原市万柏林区地名读bǎi	民政部地名标准
+cn_dicts/base.dict.yaml	地窝堡	di wo bao	di wo pu	乌鲁木齐地窝堡地名读pù	民政部地名标准
+cn_dicts/base.dict.yaml	柴窝堡	chai wo bao	chai wo pu	乌鲁木齐柴窝堡地名读pù	民政部地名标准
+cn_dicts/base.dict.yaml	厦禾路	sha he lu	xia he lu	厦门地名路名厦专读xià	民政部地名/现汉第7版
+cn_dicts/base.dict.yaml	厦港	sha gang	xia gang	厦门思明区厦港街道专读xià	民政部地名/现汉第7版
+cn_dicts/base.dict.yaml	厦新	sha xin	xia xin	厦门企业品牌厦新专读xià	现汉第7版
+cn_dicts/base.dict.yaml	莘凌路	shen ling lu	xin ling lu	上海莘庄区域道路读xīn	民政部地名标准
+cn_dicts/base.dict.yaml	唐都医院	tang dou yi yuan	tang du yi yuan	都城义院名读dū	现汉第7版
+cn_dicts/base.dict.yaml	鸿都	hong dou	hong du	东汉鸿都门学读dū	辞海/现汉第7版
+cn_dicts/base.dict.yaml	茶都	cha dou	cha du	都市义“茶都”读dū	现汉第7版
+cn_dicts/base.dict.yaml	宋都	song dou	song du	都城义“宋都”读dū	现汉第7版
+cn_dicts/base.dict.yaml	莱蒙都会	lai meng dou hui	lai meng du hui	“都会”规范读dū huì	现汉第7版
+cn_dicts/base.dict.yaml	长友佑都	chang you you dou	chang you you du	人名用字“都”读dū	现汉第7版
+cn_dicts/base.dict.yaml	朝阳分局	zhao yang fen ju	chao yang fen ju	北京朝阳区读cháo yáng	民政部地名标准
+cn_dicts/base.dict.yaml	张家港行	zhang jia gang xing	zhang jia gang hang	张家港农商银行简称读háng	证券官方简称
+cn_dicts/base.dict.yaml	汪曾祺	wang ceng qi	wang zeng qi	人名用字“曾”规范读zēng	现汉第7版
+cn_dicts/base.dict.yaml	中曾根康弘	zhong ceng gen kang hong	zhong zeng gen kang hong	日姓中曾根“曾”读zēng	辞海/现汉第7版
+cn_dicts/base.dict.yaml	夏曾佑	xia ceng you	xia zeng you	人名用字“曾”规范读zēng	现汉第7版
+cn_dicts/base.dict.yaml	李石曾	li shi ceng	li shi zeng	人名用字“曾”规范读zēng	现汉第7版
+cn_dicts/base.dict.yaml	陈师曾	chen shi ceng	chen shi zeng	人名用字“曾”规范读zēng	现汉第7版
+cn_dicts/base.dict.yaml	唐师曾	tang shi ceng	tang shi zeng	人名用字“曾”规范读zēng	现汉第7版
+cn_dicts/base.dict.yaml	郑若曾	zheng ruo ceng	zheng ruo zeng	人名用字“曾”规范读zēng	现汉第7版
+cn_dicts/base.dict.yaml	卢见曾	lu jian ceng	lu jian zeng	人名用字“曾”规范读zēng	现汉第7版
+cn_dicts/base.dict.yaml	王又曾	wang you ceng	wang you zeng	人名用字“曾”规范读zēng	现汉第7版
+cn_dicts/base.dict.yaml	张学曾	zhang xue ceng	zhang xue zeng	人名用字“曾”规范读zēng	现汉第7版
+cn_dicts/base.dict.yaml	外曾	wai ceng	wai zeng	亲属称谓外曾祖/孙读zēng	现汉第7版
+cn_dicts/base.dict.yaml	曾呼吁	zeng hu yu	ceng hu yu	副词“曾经呼吁”读céng	现汉第7版
+cn_dicts/base.dict.yaml	神荼郁垒	shen shu yu lei	shen shu yu lv	门神郁垒规范读yù lǜ	现汉第7版
+cn_dicts/base.dict.yaml	唐蕃会盟碑	tang fan hui meng bei	tang bo hui meng bei	吐蕃专名规范读bō	现汉第7版/历史教材
+cn_dicts/base.dict.yaml	邪马台国	xie ma tai guo	ye ma tai guo	历史专名邪马台读yé	辞海/历史教材
+cn_dicts/base.dict.yaml	浑邪王	hun xie wang	hun ye wang	匈奴专名浑邪王读hún yé wáng	现汉第7版/辞海
+cn_dicts/base.dict.yaml	朱祐樘	zhu you tang	zhu you cheng	明孝宗名“樘”专读chēng	现汉第7版/历史教材
+cn_dicts/base.dict.yaml	许寿裳	xu shou shang	xu shou chang	人名“裳”规范读cháng	现汉第7版
+cn_dicts/base.dict.yaml	术赤	shu chi	zhu chi	繁体“朮赤”规范读zhú chì	辞海/历史教材
+cn_dicts/base.dict.yaml	长泽梓	zhang ze zi	chang ze zi	日姓长泽规范读cháng zé	现汉第7版
+cn_dicts/base.dict.yaml	中散大夫	zhong san dai fu	zhong san da fu	古代官职大夫读dà fū	现汉第7版
+cn_dicts/base.dict.yaml	姓能	xing neng	xing nai	“能”作姓氏规范读nài	现汉第7版
+cn_dicts/base.dict.yaml	退牧还草	tui mu hai cao	tui mu huan cao	归还恢复义读huán	现汉第7版
+cn_dicts/base.dict.yaml	按时还	an shi hai	an shi huan	按时归还/还款读huán	现汉第7版
+cn_dicts/base.dict.yaml	还多了	huan duo le	hai duo le	副词“更加/还多了”读hái为主	现汉第7版
+cn_dicts/base.dict.yaml	忘得了	wang de le	wang de liao	可能补语“得了”读liǎo	现汉第7版
+cn_dicts/base.dict.yaml	徒长枝	tu chang zhi	tu zhang zhi	植物徒长(tú zhǎng)枝	全国科技名词委/现汉第7版
+cn_dicts/base.dict.yaml	甲长	jia chang	jia zhang	保甲制头目规范读jiǎ zhǎng	现汉第7版
+cn_dicts/base.dict.yaml	长豆	zhang dou	chang dou	长豆角义读cháng dòu	现汉第7版
+cn_dicts/base.dict.yaml	阑风长雨	lan feng zhang yu	lan feng chang yu	连绵长雨义读cháng	汉语大词典
+cn_dicts/base.dict.yaml	踏踏实实地	ta ta shi shi di	ta ta shi shi de	状语结构助词“地”读de	现汉第7版
+cn_dicts/base.dict.yaml	履行地	lv xing de	lv xing di	法律术语履行地点读dì	现汉第7版
+cn_dicts/base.dict.yaml	哀的美敦书	ai de mei dun shu	ai di mei dun shu	外来音译词规范读āi dì	现汉第7版
+cn_dicts/base.dict.yaml	搂膝拗步	lou xi niu bu	lou xi ao bu	太极拳术语“拗步”读ào bù	太极拳规范/现汉第7版
+cn_dicts/base.dict.yaml	省身	sheng shen	xing shen	反省自身规范读xǐng shēn	现汉第7版
+cn_dicts/base.dict.yaml	昏迷不省	hun mi bu sheng	hun mi bu xing	不省人事义规范读xǐng	现汉第7版
+cn_dicts/base.dict.yaml	手拉着手	shou la zhuo shou	shou la zhe shou	动态助词“着”读zhe	现汉第7版
+cn_dicts/base.dict.yaml	催着要	cui zhuo yao	cui zhe yao	动态助词“着”读zhe	现汉第7版
+cn_dicts/base.dict.yaml	哼着唱	heng zhao chang	heng zhe chang	动态助词“着”读zhe	现汉第7版
+cn_dicts/base.dict.yaml	逮了个正着	dai le ge zheng zhe	dai le ge zheng zhao	“正着”规范读zhèng zháo	现汉第7版
+cn_dicts/base.dict.yaml	碰了个正着	peng le ge zheng zhe	peng le ge zheng zhao	“正着”规范读zhèng zháo	现汉第7版
+cn_dicts/base.dict.yaml	打了个正着	da le ge zheng zhe	da le ge zheng zhao	“正着”规范读zhèng zháo	现汉第7版
+cn_dicts/base.dict.yaml	行内元素	xing nei yuan su	hang nei yuan su	排版/CSS行内(inline)读háng	全国科技名词委
+cn_dicts/base.dict.yaml	行扫描	xing sao miao	hang sao miao	逐行/隔行扫描读háng	全国科技名词委
+cn_dicts/base.dict.yaml	行转列	xing zhuan lie	hang zhuan lie	行列转换读háng	现汉第7版
+cn_dicts/base.dict.yaml	水果行	shui guo xing	shui guo hang	商行店铺义读háng	现汉第7版
+cn_dicts/base.dict.yaml	取给	qu gei	qu ji	供给义规范读qǔ jǐ	现汉第7版
+cn_dicts/base.dict.yaml	技术见长	ji shu jian zhang	ji shu jian chang	擅长义“见长”读jiàn cháng	现汉第7版
+cn_dicts/base.dict.yaml	一段长	yi duan zhang	yi duan chang	长度义读cháng	现汉第7版
+cn_dicts/base.dict.yaml	长眼	chang yan	zhang yan	不长眼/长眼睛义读zhǎng	现汉第7版
+cn_dicts/base.dict.yaml	睡了个好觉	shui le ge hao jue	shui le ge hao jiao	睡眠义规范读jiào	现汉第7版
+cn_dicts/base.dict.yaml	睡了个懒觉	shui le ge lan jue	shui le ge lan jiao	睡眠义规范读jiào	现汉第7版
+cn_dicts/base.dict.yaml	穆天子传	mu tian zi chuan	mu tian zi zhuan	典籍传记名读zhuàn	辞海/现汉第7版
+cn_dicts/base.dict.yaml	五柳先生传	wu liu xian sheng chuan	wu liu xian sheng zhuan	人物传记篇名读zhuàn	统编语文教材
+cn_dicts/base.dict.yaml	格萨尔王传	ge sa er wang chuan	ge sa er wang zhuan	史诗传记名读zhuàn	现汉第7版
+cn_dicts/base.dict.yaml	种树郭橐驼传	zhong shu guo tuo tuo chuan	zhong shu guo tuo tuo zhuan	人物传记篇名读zhuàn	统编语文教材
+cn_dicts/base.dict.yaml	孔明传	kong ming chuan	kong ming zhuan	人物传记/作品名读zhuàn	现汉第7版
+cn_dicts/base.dict.yaml	削下来	xue xia lai	xiao xia lai	用刀斜切口语动作读xiāo	现汉第7版
+cn_dicts/base.dict.yaml	削下	xue xia	xiao xia	用刀斜切口语动作读xiāo	现汉第7版
+cn_dicts/base.dict.yaml	削着	xue zhe	xiao zhe	用刀斜切口语动作读xiāo	现汉第7版
+cn_dicts/base.dict.yaml	脚著谢公屐	jiao zhu xie gong ji	jiao zhuo xie gong ji	穿着义“著”读zhuó	统编语文教材
+cn_dicts/base.dict.yaml	泻水著地	xie shui zhu di	xie shui zhuo di	附着义“著”读zhuó	现汉第7版/世说新语
+cn_dicts/base.dict.yaml	画图省识春风面	hua tu sheng shi chun feng mian	hua tu xing shi chun feng mian	知晓义“省识”读xǐng	统编语文教材
+cn_dicts/base.dict.yaml	君子博学而日参省乎己	jun zi bo xue er ri can sheng hu ji	jun zi bo xue er ri can xing hu ji	反省义“参省”读xǐng	统编语文教材
+cn_dicts/base.dict.yaml	属予作文以记之	shu yu zuo wen yi ji zhi	zhu yu zuo wen yi ji zhi	通“嘱”规范读zhǔ	统编语文教材
+cn_dicts/base.dict.yaml	属对	shu dui	zhu dui	连缀对仗义规范读zhǔ duì	现汉第7版
+cn_dicts/base.dict.yaml	范增数目项王	fan zeng shu mu xiang wang	fan zeng shuo mu xiang wang	屡次义“数”规范读shuò	统编语文教材
+cn_dicts/base.dict.yaml	几死者数矣	ji si zhe shu yi	ji si zhe shuo yi	屡次义“数”规范读shuò	统编语文教材
+cn_dicts/base.dict.yaml	宓妃留枕魏王才	mi fei liu zhen wei wang cai	fu fei liu zhen wei wang cai	洛神宓妃规范读fú fēi	辞海/现汉第7版
+cn_dicts/base.dict.yaml	非是藉秋风	fei shi ji qiu feng	fei shi jie qiu feng	凭借义“藉”读jiè	统编语文教材
+cn_dicts/base.dict.yaml	非以其无私邪	fei yi qi wu si xie	fei yi qi wu si ye	文言语气词通“耶”读yé	现汉第7版
+cn_dicts/base.dict.yaml	岂轻于天下邪	qi qing yu tian xia xie	qi qing yu tian xia ye	文言语气词通“耶”读yé	现汉第7版
+cn_dicts/base.dict.yaml	其真无马邪	qi zhen wu ma xie	qi zhen wu ma ye	文言语气词通“耶”读yé	统编语文教材
+cn_dicts/base.dict.yaml	则胡可得而累邪	ze hu ke de er lei xie	ze hu ke de er lei ye	文言语气词通“耶”读yé	现汉第7版
+cn_dicts/base.dict.yaml	若有人兮山之阿	ruo you ren xi shan zhi a	ruo you ren xi shan zhi e	山坳义“阿”读ē	统编语文教材
+cn_dicts/base.dict.yaml	阳阿	yang a	yang e	古乐曲/古地名读yáng ē	辞海/汉语大词典
+cn_dicts/base.dict.yaml	曲阿	qu a	qu e	古县名读qū ē	辞海/汉语大词典
+cn_dicts/base.dict.yaml	被石兰兮带杜衡	bei shi lan xi dai du heng	pi shi lan xi dai du heng	通“披”规范读pī	统编语文教材
+cn_dicts/base.dict.yaml	被薜荔兮带女萝	bei bi li xi dai nv luo	pi bi li xi dai nv luo	通“披”规范读pī	统编语文教材
+cn_dicts/base.dict.yaml	灵衣兮被被	ling yi xi bei bei	ling yi xi pi pi	通“披披”规范读pī pī	楚辞注/辞海
+cn_dicts/base.dict.yaml	赢粮而景从	ying liang er jing cong	ying liang er ying cong	通“影”规范读yǐng	统编语文教材
+cn_dicts/base.dict.yaml	返景入深林	fan jing ru shen lin	fan ying ru shen lin	通“影”规范读yǐng	统编语文教材
+cn_dicts/base.dict.yaml	然得而腊之以为饵	ran de er la zhi yi wei er	ran de er xi zhi yi wei er	风干干肉义“腊”读xī	统编语文教材
+cn_dicts/base.dict.yaml	陇馔有熊腊	long zhuan you xiong la	long zhuan you xiong xi	干肉义“腊”读xī	汉语大词典/苏轼诗注
+cn_dicts/base.dict.yaml	遗我双鲤鱼	yi wo shuang li yu	wei wo shuang li yu	赠送义“遗”规范读wèi	现汉第7版/语文教材
+cn_dicts/base.dict.yaml	将以遗兮下女	jiang yi yi xi xia nv	jiang yi wei xi xia nv	赠送义“遗”规范读wèi	现汉第7版/楚辞注
+cn_dicts/base.dict.yaml	折芳馨兮遗所思	zhe fang xin xi yi suo si	zhe fang xin xi wei suo si	赠送义“遗”规范读wèi	现汉第7版/楚辞注
+cn_dicts/base.dict.yaml	度我至军中	du wo zhi jun zhong	duo wo zhi jun zhong	估计义“度”规范读duó	统编语文教材
+cn_dicts/base.dict.yaml	度道里会遇之礼毕	du dao li hui yu zhi li bi	duo dao li hui yu zhi li bi	估计义“度”规范读duó	统编语文教材
+cn_dicts/base.dict.yaml	相思迢递隔重城	xiang si tiao di ge zhong cheng	xiang si tiao di ge chong cheng	重重城池义读chóng	现汉第7版
+cn_dicts/base.dict.yaml	两重心字罗衣	liang zhong xin zi luo yi	liang chong xin zi luo yi	两层义读chóng	现汉第7版
+cn_dicts/base.dict.yaml	又闻此语重唧唧	you wen ci yu zhong ji ji	you wen ci yu chong ji ji	更加/又义读chóng	统编语文教材
+cn_dicts/base.dict.yaml	又重之以修能	you zhong zhi yi xiu neng	you chong zhi yi xiu neng	加上义读chóng	统编语文教材
+cn_dicts/base.dict.yaml	藏人带树远含清	zang ren dai shu yuan han qing	cang ren dai shu yuan han qing	隐藏义读cáng	现汉第7版
+cn_dicts/base.dict.yaml	是造物者之无尽藏也	shi zao wu zhe zhi wu jin cang ye	shi zao wu zhe zhi wu jin zang ye	宝藏义“无尽藏”读zàng	统编语文教材
+cn_dicts/base.dict.yaml	走马川行奉送封大夫出师西征	zou ma chuan xing feng song feng dai fu chu shi xi zheng	zou ma chuan xing feng song feng da fu chu shi xi zheng	古代官职御史大夫读dà fū	统编语文教材
+cn_dicts/base.dict.yaml	自从盛酒长儿孙	zi cong sheng jiu zhang er sun	zi cong cheng jiu zhang er sun	盛放酒义读chéng	现汉第7版
+cn_dicts/base.dict.yaml	玉碗盛来琥珀光	yu wan sheng lai hu po guang	yu wan cheng lai hu po guang	盛放义读chéng	现汉第7版
+cn_dicts/base.dict.yaml	欲渡黄河冰塞川	yu du huang he bing sai chuan	yu du huang he bing se chuan	堵塞义“塞”规范读sè	统编语文教材
+cn_dicts/base.dict.yaml	塞源而欲流长也	sai yuan er yu liu chang ye	se yuan er yu liu chang ye	堵塞源头义读sè	统编语文教材
+cn_dicts/base.dict.yaml	学至乎没而后止也	xue zhi hu mei er hou zhi ye	xue zhi hu mo er hou zhi ye	终了/死亡义读mò	统编语文教材
+cn_dicts/base.dict.yaml	杳杳没孤鸿	yao yao mei gu hong	yao yao mo gu hong	隐没义读mò	现汉第7版
+cn_dicts/base.dict.yaml	没在石棱中	mei zai shi leng zhong	mo zai shi leng zhong	陷入义读mò	统编语文教材
+cn_dicts/base.dict.yaml	食之不能尽其材	shi zhi bu neng jin qi cai	si zhi bu neng jin qi cai	通“饲”喂养义读sì	统编语文教材
+cn_dicts/base.dict.yaml	曾不吝情去留	ceng bu lin qing qu liu	zeng bu lin qing qu liu	文言副词竟/连…都读zēng	统编语文教材/现汉第7版
+cn_dicts/base.dict.yaml	曾不知老之将至	ceng bu zhi lao zhi jiang zhi	zeng bu zhi lao zhi jiang zhi	文言副词竟然读zēng	统编语文教材/现汉第7版
+cn_dicts/base.dict.yaml	则天地曾不能以一瞬	ze tian di ceng bu neng yi yi shun	ze tian di zeng bu neng yi yi shun	文言副词竟/连…都读zēng	统编语文教材/现汉第7版
+cn_dicts/base.dict.yaml	藤床纸帐朝眠起	teng chuang zhi zhang chao mian qi	teng chuang zhi zhang zhao mian qi	早晨义读zhāo	现汉第7版
+cn_dicts/base.dict.yaml	朝饮木兰之坠露兮	chao yin mu lan zhi zhui lu xi	zhao yin mu lan zhi zhui lu xi	早晨义读zhāo	统编语文教材
+cn_dicts/base.dict.yaml	朝闻游子唱离歌	chao wen you zi chang li ge	zhao wen you zi chang li ge	早晨义读zhāo	现汉第7版
+cn_dicts/base.dict.yaml	都护铁衣冷难着	dou hu tie yi leng nan zhe	du hu tie yi leng nan zhuo	都护(dū)与穿着(zhuó)双修正	统编语文教材
+cn_dicts/base.dict.yaml	处众人之所恶	chu zhong ren zhi suo e	chu zhong ren zhi suo wu	厌恶义读wù	现汉第7版/老子
+cn_dicts/base.dict.yaml	死亦我所恶	si yi wo suo e	si yi wo suo wu	厌恶义读wù	统编语文教材
+cn_dicts/base.dict.yaml	恶紫之夺朱也	e zi zhi duo zhu ye	wu zi zhi duo zhu ye	厌恶义读wù	现汉第7版/论语
+cn_dicts/base.dict.yaml	恶在其为民父母也	e zai qi wei min fu mu ye	wu zai qi wei min fu mu ye	疑问代词何在义读wū	现汉第7版/孟子
+cn_dicts/base.dict.yaml	年四十而见恶焉	nian si shi er jian e yan	nian si shi er jian wu yan	厌恶义读wù	现汉第7版/论语
+cn_dicts/base.dict.yaml	此率兽而食人也	ci lv shou er shi ren ye	ci shuai shou er shi ren ye	带领义读shuài	现汉第7版/孟子
+cn_dicts/base.dict.yaml	学不成名誓不还	xue bu cheng ming shi bu hai	xue bu cheng ming shi bu huan	返回义读huán	现汉第7版
+cn_dicts/base.dict.yaml	三十日不还	san shi ri bu hai	san shi ri bu huan	返回义读huán	统编语文教材
+cn_dicts/base.dict.yaml	不见有人还	bu jian you ren hai	bu jian you ren huan	归返义读huán	现汉第7版
+cn_dicts/base.dict.yaml	鸟倦飞而知还	niao juan fei er zhi hai	niao juan fei er zhi huan	返回义读huán	统编语文教材
+cn_dicts/base.dict.yaml	谈笑凯歌还	tan xiao kai ge hai	tan xiao kai ge huan	凯旋归来义读huán	现汉第7版
+cn_dicts/base.dict.yaml	还来就菊花	hai lai jiu ju hua	huan lai jiu ju hua	返回再来义读huán	统编语文教材
+cn_dicts/base.dict.yaml	系在红罗襦	xi zai hong luo ru	ji zai hong luo ru	结系义读jì	现汉第7版
+cn_dicts/base.dict.yaml	钓罢归来不系船	diao ba gui lai bu xi chuan	diao ba gui lai bu ji chuan	拴系义读jì	现汉第7版
+cn_dicts/base.dict.yaml	行道之人弗受	hang dao zhi ren fu shou	xing dao zhi ren fu shou	过路行人义读xíng dào	统编语文教材
+cn_dicts/base.dict.yaml	儿女忽成行	er nv hu cheng xing	er nv hu cheng hang	成行列义读chéng háng	现汉第7版/杜甫诗注
+cn_dicts/base.dict.yaml	君子生非异也	jun zi sheng fei yi ye	jun zi xing fei yi ye	通“性”规范读xìng	统编语文教材
+cn_dicts/base.dict.yaml	外无期功强近之亲	wai wu qi gong qiang jin zhi qin	wai wu ji gong qiang jin zhi qin	期服丧期义规范读jī	统编语文教材
+cn_dicts/base.dict.yaml	交戟之卫士欲止不内	jiao ji zhi wei shi yu zhi bu nei	jiao ji zhi wei shi yu zhi bu na	通“纳”规范读nà	统编语文教材
+cn_dicts/base.dict.yaml	才美不外见	cai mei bu wai jian	cai mei bu wai xian	通“现”规范读xiàn	统编语文教材
+cn_dicts/base.dict.yaml	沛公之参乘樊哙者也	pei gong zhi can cheng fan kuai zhe ye	pei gong zhi can sheng fan kuai zhe ye	车右护卫参乘读cān shèng	统编语文教材
+cn_dicts/base.dict.yaml	骖乘	can cheng	can sheng	古代车右护卫规范读cān shèng	现汉第7版/辞海
+cn_dicts/base.dict.yaml	终见降王走传车	zhong jian jiang wang zou chuan che	zhong jian xiang wang zou zhuan che	降王(xiáng)与传车(zhuàn)双修正	现汉第7版/辞海
+cn_dicts/base.dict.yaml	夕余至乎县圃	xi yu zhi hu xian pu	xi yu zhi hu xuan pu	通“悬圃”规范读xuán pǔ	统编语文教材/辞海
+cn_dicts/base.dict.yaml	胡瞻尔庭有县貆兮	hu zhan er ting you xian huan xi	hu zhan er ting you xuan huan xi	通“悬”规范读xuán	诗经注/辞海
+cn_dicts/base.dict.yaml	汩余若将不及兮	gu yu ruo jiang bu ji xi	yu yu ruo jiang bu ji xi	疾行貌“汩”规范读yù	统编语文教材/现汉第7版
+cn_dicts/base.dict.yaml	罗裳	luo shang	luo chang	除“衣裳”外均读cháng	现汉第7版
+cn_dicts/base.dict.yaml	鸿衣羽裳	hong yi yu shang	hong yi yu chang	除“衣裳”外均读cháng	现汉第7版
+cn_dicts/base.dict.yaml	集芙蓉以为裳	ji fu rong yi wei shang	ji fu rong yi wei chang	下衣古义读cháng	统编语文教材/现汉第7版
+cn_dicts/base.dict.yaml	猿鸣三声泪沾裳	yuan ming san sheng lei zhan shang	yuan ming san sheng lei zhan chang	下衣古义读cháng	统编语文教材/现汉第7版
+cn_dicts/base.dict.yaml	华裳九州	hua shang jiu zhou	hua chang jiu zhou	礼服下衣义读cháng	现汉第7版
+cn_dicts/ext.dict.yaml	三一重装	san yi chong zhuang	san yi zhong zhuang	重型装备简称读zhòng	现汉第7版/品牌官方(L1/L3)
+cn_dicts/ext.dict.yaml	兰石重装	lan shi chong zhuang	lan shi zhong zhuang	重型装备简称读zhòng	现汉第7版/品牌官方(L1/L3)
+cn_dicts/ext.dict.yaml	重装上阵	chong zhuang shang zhen	zhong zhuang shang zhen	与轻装上阵相对，规范读zhòng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	重装步兵	chong zhuang bu bing	zhong zhuang bu bing	重型装备步兵读zhòng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	重装徒步	chong zhuang tu bu	zhong zhuang tu bu	负重背装徒步读zhòng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	重装骑兵	chong zhuang qi bing	zhong zhuang qi bing	重型装备骑兵读zhòng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	重装部队	chong zhuang bu dui	zhong zhuang bu dui	重型装备部队读zhòng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	重装武器	chong zhuang wu qi	zhong zhuang wu qi	重型装备武器读zhòng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	重装战士	chong zhuang zhan shi	zhong zhuang zhan shi	重型装备战士读zhòng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	重装骑士	chong zhuang qi shi	zhong zhuang qi shi	重型装备骑士读zhòng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	重装干员	chong zhuang gan yuan	zhong zhuang gan yuan	重型防御干员读zhòng	现汉第7版/游戏官方(L1/L3)
+cn_dicts/ext.dict.yaml	重装集团	chong zhuang ji tuan	zhong zhuang ji tuan	重型装备集团读zhòng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	重装坦克	chong zhuang tan ke	zhong zhuang tan ke	重型装甲坦克读zhòng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	重装机甲	chong zhuang ji jia	zhong zhuang ji jia	重型装甲机甲读zhòng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	重装英雄	chong zhuang ying xiong	zhong zhuang ying xiong	重装职业英雄读zhòng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	重积分	zhong ji fen	chong ji fen	多重积分规范读chóng	全国科技名词委/现汉第7版(L1/L2)
+cn_dicts/ext.dict.yaml	重睑线	zhong jian xian	chong jian xian	重睑（双眼皮）规范读chóng	现汉第7版/全国科技名词委(L1/L2)
+cn_dicts/ext.dict.yaml	白重恩	bai zhong en	bai chong en	人名官方拼音Chong-En Bai	公众人物本人/清华经管(L3)
+cn_dicts/ext.dict.yaml	重头来	zhong tou lai	chong tou lai	重新开始读chóng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	重头来过	zhong tou lai guo	chong tou lai guo	重新开始读chóng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	又重又沉	you chong you chen	you zhong you chen	重量沉重读zhòng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	东莞麻涌	dong guan ma yong	dong guan ma chong	广东地名麻涌规范读má chōng	民政部标准地名(L2)
+cn_dicts/ext.dict.yaml	大都市区	da dou shi qu	da du shi qu	都市规范读dū	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	都道府县	dou dao fu xian	du dao fu xian	都城/行政区都读dū	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	都敏俊	dou min jun	du min jun	姓氏都规范读Dū	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	都教授	dou jiao shou	du jiao shou	姓氏都规范读Dū	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	天都黑了	tian du hei le	tian dou hei le	副词都读dōu	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	卡罗拉都	ka luo la du	ka luo la dou	副词都读dōu	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	安的列斯群岛	an de lie si qun dao	an di lie si qun dao	外语译名地名“的”读dì	中国地名委/辞海(L2)
+cn_dicts/ext.dict.yaml	团泊湖	tuan bo hu	tuan po hu	天津静海地名湖泊读pō	民政部标准地名(L2)
+cn_dicts/ext.dict.yaml	于家堡	yu jia bao	yu jia pu	天津滨海地名于家堡读pù	民政部标准地名(L2)
+cn_dicts/ext.dict.yaml	镇北堡	zhen bei bao	zhen bei bu	宁夏地名镇北堡读bǔ	民政部标准地名/现汉第7版(L1/L2)
+cn_dicts/ext.dict.yaml	薄扶林	bao fu lin	bo fu lin	香港地名薄扶林读bó	地名标准/维基词典(L2)
+cn_dicts/ext.dict.yaml	卡子拉山	qia zi la shan	ka zi la shan	四川甘孜藏语音译读kǎ	民政部标准地名(L2)
+cn_dicts/ext.dict.yaml	朝阳地区	zhao yang di qu	chao yang di qu	辽宁地名朝阳规范读Cháoyáng	民政部标准地名(L2)
+cn_dicts/ext.dict.yaml	还于旧都	hai yu jiu du	huan yu jiu du	《出师表》回归旧都读huán	统编语文教材/现汉第7版(L1)
+cn_dicts/ext.dict.yaml	还以颜色	hai yi yan se	huan yi yan se	回敬反击义读huán	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	还车贷	hai che dai	huan che dai	归还贷款读huán	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	还则罢了	huan ze ba liao	hai ze ba le	副词还读hái，语气词罢了读bà le	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	上得了厅堂	shang de le ting tang	shang de liao ting tang	可能补语“得了”读liǎo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	上得了台面	shang de le tai mian	shang de liao tai mian	可能补语“得了”读liǎo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	下得了厨房	xia de le chu fang	xia de liao chu fang	可能补语“得了”读liǎo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	下得了手	xia de le shou	xia de liao shou	可能补语“得了”读liǎo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	出得了厅堂	chu de le ting tang	chu de liao ting tang	可能补语“得了”读liǎo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	最受不了	zui shou bu le	zui shou bu liao	可能补语“不了”读liǎo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	最受不了的	zui shou bu le de	zui shou bu liao de	可能补语“不了”读liǎo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	见不了人	jian bu le ren	jian bu liao ren	可能补语“不了”读liǎo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	见不了面	jian bu le mian	jian bu liao mian	可能补语“不了”读liǎo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	谈不了恋爱	tan bu le lian ai	tan bu liao lian ai	可能补语“不了”读liǎo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	想不了这么多	xiang bu le zhe me duo	xiang bu liao zhe me duo	可能补语“不了”读liǎo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	感动不了你	gan dong bu le ni	gan dong bu liao ni	可能补语“不了”读liǎo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	春梦了无痕	chun meng le wu hen	chun meng liao wu hen	“了无”意为全无读liǎo	现汉第7版/古诗文(L1/L3)
+cn_dicts/ext.dict.yaml	进得了	jin de le	jin de liao	可能补语“得了”读liǎo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	你受得了吗	ni shou de le ma	ni shou de liao ma	可能补语“得了”读liǎo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	爱不了	ai bu le	ai bu liao	可能补语“不了”读liǎo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	多了不起	duo le bu qi	duo liao bu qi	了不起规范读liǎo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	好了不起	hao le bu qi	hao liao bu qi	了不起规范读liǎo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	搅了局	jiao liao ju	jiao le ju	动态助词“了”读le	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	太精明了	tai jing ming liao	tai jing ming le	语气助词“了”读le	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	做错了事	zuo cuo liao shi	zuo cuo le shi	动态助词“了”读le	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	不长痘痘	bu chang dou dou	bu zhang dou dou	生长义读zhǎng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	不长个子	bu chang ge zi	bu zhang ge zi	生长义读zhǎng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	不长毛	bu chang mao	bu zhang mao	生长义读zhǎng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	不长脑子	bu chang nao zi	bu zhang nao zi	生长义读zhǎng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	不长心	bu chang xin	bu zhang xin	生长义读zhǎng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	不长脂肪粒	bu chang zhi fang li	bu zhang zhi fang li	生长义读zhǎng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	生于斯长于斯	sheng yu si chang yu si	sheng yu si zhang yu si	成长于此读zhǎng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	长于斯	chang yu si	zhang yu si	成长于此读zhǎng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	长脚跑	chang jiao pao	zhang jiao pao	长出脚来跑读zhǎng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	自己长脚跑了	zi ji chang jiao pao le	zi ji zhang jiao pao le	长出脚来跑读zhǎng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	马齿徒长	ma chi tu chang	ma chi tu zhang	年龄增长义读zhǎng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	多长点心	duo chang dian xin	duo zhang dian xin	长心眼读zhǎng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	长脂肪	chang zhi fang	zhang zhi fang	生长增加读zhǎng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	长上影线	zhang shang ying xian	chang shang ying xian	K线长上影线读cháng	现汉第7版/金融术语(L1/L2)
+cn_dicts/ext.dict.yaml	张家长李家短	zhang jia zhang li jia duan	zhang jia chang li jia duan	长短是非读cháng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	长白班	zhang bai ban	chang bai ban	长时间白班读cháng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	汪曾祺先生	wang ceng qi xian sheng	wang zeng qi xian sheng	姓氏曾规范读Zēng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	新马师曾	xin ma shi ceng	xin ma shi zeng	粤剧名家艺名师曾读zēng	人物通行读音/现汉第7版(L1/L3)
+cn_dicts/ext.dict.yaml	查全性	cha quan xing	zha quan xing	院士姓氏查规范读Zhā	现汉第7版/中科院(L1/L3)
+cn_dicts/ext.dict.yaml	种家军	zhong jia jun	chong jia jun	北宋将门姓氏种读Chóng	现汉第7版/史学规范(L1/L3)
+cn_dicts/ext.dict.yaml	一省一校	yi sheng yi jiao	yi sheng yi xiao	学校义读xiào	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	校本教材	jiao ben jiao cai	xiao ben jiao cai	以学校为本读xiào	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	校本课	jiao ben ke	xiao ben ke	以学校为本读xiào	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	校本研修	jiao ben yan xiu	xiao ben yan xiu	以学校为本读xiào	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	三校合并	san jiao he bing	san xiao he bing	三所学校合并读xiào	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	一校两区	yi jiao liang qu	yi xiao liang qu	一所学校两校区读xiào	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	一校三区	yi jiao san qu	yi xiao san qu	一所学校三校区读xiào	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	不省事	bu xing shi	bu sheng shi	省事义读shěng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	三省堂	san sheng tang	san xing tang	典出“吾日三省吾身”读xǐng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	宇宙第一大行	yu zhou di yi da xing	yu zhou di yi da hang	指大型商业银行读háng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	国有大行	guo you da xing	guo you da hang	指国有大型银行读háng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	国有六大行	guo you liu da xing	guo you liu da hang	指六大国有银行读háng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	六大行	liu da xing	liu da hang	指六大国有银行读háng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	本色当行	ben se dang xing	ben se dang hang	当行（内行）规范读háng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	艺压当行	yi ya dang xing	yi ya dang hang	当行（同行/内行）规范读háng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	单行法律	dan hang fa lv	dan xing fa lv	单行（单独施行）读xíng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	行行好吧	hang hang hao ba	xing xing hao ba	行好义读xíng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	大藏家	da zang jia	da cang jia	大收藏家简称读cáng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	劲牌公司	jin pai gong si	jing pai gong si	品牌官方读音jìng（Jing Brand）	品牌官方(L3)
+cn_dicts/ext.dict.yaml	劲牌有限公司	jin pai you xian gong si	jing pai you xian gong si	品牌官方读音jìng（Jing Brand）	品牌官方(L3)
+cn_dicts/ext.dict.yaml	中药内调	zhong yao nei diao	zhong yao nei tiao	中医内在调理读tiáo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	内调外养	nei diao wai yang	nei tiao wai yang	中医内在调理读tiáo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	内调外治	nei diao wai zhi	nei tiao wai zhi	中医内在调理读tiáo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	卜一卦	bo yi gua	bu yi gua	占卜义读bǔ	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	萝卜缨	luo bu ying	luo bo ying	萝卜中“卜”规范读bo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	攒尖顶	zan jian ding	cuan jian ding	古建筑攒尖屋顶规范读cuán	现汉第7版/建筑名词(L1/L2)
+cn_dicts/ext.dict.yaml	不着寸缕	bu zhao cun lv	bu zhuo cun lv	穿衣义“着”规范读zhuó	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	不着相	bu zhao xiang	bu zhuo xiang	佛学“着相”规范读zhuó	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	黏着妈妈	nian zhuo ma ma	nian zhe ma ma	动态助词“着”读zhe（非胶质黏着）	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	颤抖着手	chan dou zhuo shou	chan dou zhe shou	动态助词“着”读zhe（非着手）	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	挥着手	hui zhuo shou	hui zhe shou	动态助词“着”读zhe（非着手）	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	举着手	ju zhuo shou	ju zhe shou	动态助词“着”读zhe（非着手）	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	空着手	kong zhuo shou	kong zhe shou	动态助词“着”读zhe（非着手）	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	伸着手	shen zhuo shou	shen zhe shou	动态助词“着”读zhe（非着手）	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	手挽着手	shou wan zhuo shou	shou wan zhe shou	动态助词“着”读zhe（非着手）	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	蒙着眼	meng zhuo yan	meng zhe yan	动态助词“着”读zhe（非着眼）	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	斜着眼	xie zhuo yan	xie zhe yan	动态助词“着”读zhe（非着眼）	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	眨巴着眼	zha ba zhuo yan	zha ba zhe yan	动态助词“着”读zhe（非着眼）	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	吸引着人	xi yin zhuo ren	xi yin zhe ren	动态助词“着”读zhe	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	倒着数	dao zhao shu	dao zhe shu	动态助词“着”读zhe	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	偷着吃	tou zhao chi	tou zhe chi	动态助词“着”读zhe	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	偷着看	tou zhao kan	tou zhe kan	动态助词“着”读zhe	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	偷着玩	tou zhao wan	tou zhe wan	动态助词“着”读zhe	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	偷着笑	tou zhao xiao	tou zhe xiao	动态助词“着”读zhe	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	偷着笑吧	tou zhao xiao ba	tou zhe xiao ba	动态助词“着”读zhe	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	水没过	shui mei guo	shui mo guo	漫过义“没”规范读mò	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	没过膝盖	mei guo xi gai	mo guo xi gai	漫过义“没”规范读mò	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	出没出国	chu mo chu guo	chu mei chu guo	正反问句“没”读méi	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	率大军	lv da jun	shuai da jun	率领义读shuài	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	至死不降	zhi si bu jiang	zhi si bu xiang	投降义读xiáng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	随地便溺	sui di bian ni	sui di bian niao	排尿义“便溺”规范读niào	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	神乐署	shen le shu	shen yue shu	明清祭祀乐舞官署读yuè	现汉第7版/史学规范(L1/L3)
+cn_dicts/ext.dict.yaml	东吁王朝	dong xu wang chao	dong yu wang chao	缅甸历史地名东吁读yū	辞海/史学规范(L2/L3)
+cn_dicts/ext.dict.yaml	黑奴吁天录	hei nu xu tian lu	hei nu yu tian lu	呼吁义“吁”规范读yù	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	邪马台	xie ma tai	ye ma tai	古地名邪马台规范读yé	辞海/汉典(L2/L3)
+cn_dicts/ext.dict.yaml	薄伽梵	bo jia fan	bo qie fan	梵语音译薄伽梵读qié	现汉第7版/辞海(L1)
+cn_dicts/ext.dict.yaml	薄伽梵歌	bo jia fan ge	bo qie fan ge	梵语音译薄伽梵读qié	现汉第7版/辞海(L1)
+cn_dicts/ext.dict.yaml	僧伽罗语	seng qie luo yu	seng jia luo yu	斯里兰卡僧伽罗规范读jiā	辞海/现汉第7版(L1/L2)
+cn_dicts/ext.dict.yaml	犍陀罗	qian tuo luo	jian tuo luo	除犍为外“犍”规范读jiān	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	目犍连	mu qian lian	mu jian lian	佛经人名目犍连规范读jiān	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	禽滑厘	qin hua li	qin gu li	先秦人名禽滑厘规范读gǔ	辞海/史学规范(L3)
+cn_dicts/ext.dict.yaml	叨陪鲤对	dao pei li dui	tao pei li dui	《滕王阁序》谦辞“叨”读tāo	统编语文教材/现汉第7版(L1)
+cn_dicts/ext.dict.yaml	野叟曝言	ye sou bao yan	ye sou pu yan	典出“野人献曝”读pù	现汉第7版/古籍规范(L1/L3)
+cn_dicts/ext.dict.yaml	王朝云	wang chao yun	wang zhao yun	苏轼侍妾名“朝云”读zhāo	史学规范/现汉第7版(L1/L3)
+cn_dicts/ext.dict.yaml	王朝闻	wang chao wen	wang zhao wen	美学家名出“朝闻道”读zhāo	人物本人/现汉第7版(L1/L3)
+cn_dicts/ext.dict.yaml	朝华出版社	chao hua chu ban she	zhao hua chu ban she	朝华夕拾义读zhāo	机构官方/现汉第7版(L1/L3)
+cn_dicts/ext.dict.yaml	朝孔雀	chao kong que	zhao kong que	早晨开屏义读zhāo	现汉第7版/作品官方(L1/L3)
+cn_dicts/ext.dict.yaml	朱朝阳	zhu chao yang	zhu zhao yang	《隐秘的角落》主角读zhāo	作品官方/现汉第7版(L1/L3)
+cn_dicts/ext.dict.yaml	屈大夫	qu dai fu	qu da fu	先秦官职三闾大夫读dà fū	现汉第7版/史学规范(L1)
+cn_dicts/ext.dict.yaml	雷水解	lei shui xie	lei shui jie	《周易》解卦规范读jiě	现汉第7版/古籍规范(L1/L3)
+cn_dicts/ext.dict.yaml	柏举之战	bo ju zhi zhan	bai ju zhi zhan	春秋地名柏举规范读bǎi	辞海/史学规范(L2/L3)
+cn_dicts/ext.dict.yaml	著我旧时裳	zhu wo jiu shi shang	zhuo wo jiu shi chang	《木兰诗》“著”读zhuó、“裳”读cháng	统编语文教材/现汉第7版(L1)
+cn_dicts/ext.dict.yaml	势单力薄	shi dan li bao	shi dan li bo	成语薄弱义规范读bó	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	绵薄之力	mian bao zhi li	mian bo zhi li	成语薄弱义规范读bó	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	薄太后	bao tai hou	bo tai hou	姓氏薄规范读Bó	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	厚往薄来	hou wang bao lai	hou wang bo lai	成语轻少义规范读bó	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	轻徭薄税	qing yao bao shui	qing yao bo shui	成语减轻义规范读bó	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	最薄的地方	zui bo de di fang	zui bao de di fang	单用指厚度小规范读báo	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	飞得快	fei dei kuai	fei de kuai	结构助词“得”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	过得快	guo dei kuai	guo de kuai	结构助词“得”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	红得快	hong dei kuai	hong de kuai	结构助词“得”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	降得快	jiang dei kuai	jiang de kuai	结构助词“得”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	开得快	kai dei kuai	kai de kuai	结构助词“得”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	老得快	lao dei kuai	lao de kuai	结构助词“得”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	溜得快	liu dei kuai	liu de kuai	结构助词“得”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	脑子转得快	nao zi zhuan dei kuai	nao zi zhuan de kuai	结构助词“得”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	去得快	qu dei kuai	qu de kuai	结构助词“得”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	时间过得快	shi jian guo dei kuai	shi jian guo de kuai	结构助词“得”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	游得快	you dei kuai	you de kuai	结构助词“得”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	转得快	zhuan dei kuai	zhuan de kuai	结构助词“得”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	不舍得买	bu she dei mai	bu she de mai	“舍得”中“得”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	你说得有道理	ni shuo dei you dao li	ni shuo de you dao li	结构助词“得”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	更得人心	geng dei ren xin	geng de ren xin	获得义“得”读dé	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	出得去	chu dei qu	chu de qu	可能补语“得”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	我得病了	wo dei bing le	wo de bing le	患病义“得病”读dé	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	一般不得	yi ban bu dei	yi ban bu de	禁止/不可义“不得”读dé	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	不得回	bu dei hui	bu de hui	不能/不可义“不得”读dé	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	美得让	mei dei rang	mei de rang	结构助词“得”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	得安慰	dei an wei	de an wei	获得义“得”读dé	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	得安稳	dei an wen	de an wen	获得义“得”读dé	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	得安息	dei an xi	de an xi	获得义“得”读dé	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	得平安	dei ping an	de ping an	获得义“得”读dé	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	还可得	hai ke dei	hai ke de	可得义“得”读dé	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	万事得	wan shi dei	wan shi de	港澳品牌名Mazda音译读dé	现汉第7版/品牌官方(L1/L3)
+cn_dicts/ext.dict.yaml	一天天地	yi tian tian di	yi tian tian de	状语结构助词“地”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	非常地大	fei chang di da	fei chang de da	状语结构助词“地”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	不必要地	bu bi yao di	bu bi yao de	状语结构助词“地”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	不适当地	bu shi dang di	bu shi dang de	状语结构助词“地”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	很小心地控制	hen xiao xin di kong zhi	hen xiao xin de kong zhi	状语结构助词“地”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	陷之死地而后生	xian zhi si de er hou sheng	xian zhi si di er hou sheng	《孙子兵法》“死地”名词读dì	现汉第7版/古籍规范(L1)
+cn_dicts/ext.dict.yaml	陷之死地然后生	xian zhi si de ran hou sheng	xian zhi si di ran hou sheng	《孙子兵法》“死地”名词读dì	现汉第7版/古籍规范(L1)
+cn_dicts/ext.dict.yaml	进面的	jin mian di	jin mian de	助词“的”读de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	爱咋的就咋的	ai za di jiu za di	ai za de jiu za de	口语“咋的”规范读zǎ de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	爱咋的咋的	ai za di za di	ai za de za de	口语“咋的”规范读zǎ de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	爱咋咋的吧	ai za za di ba	ai za za de ba	口语“咋的”规范读zǎ de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	还能咋的	hai neng za di	hai neng za de	口语“咋的”规范读zǎ de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	咋的咋的	za di za di	za de za de	口语“咋的”规范读zǎ de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	咋咋的	za za di	za za de	口语“咋的”规范读zǎ de	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	削了皮	xue le pi	xiao le pi	具体切削动作读xiāo	1985审音表/现汉第7版(L1)
+cn_dicts/ext.dict.yaml	路卡利欧	lu qia li ou	lu ka li ou	外语音译Lucario读kǎ	品牌官方/现汉第7版(L1/L3)
+cn_dicts/ext.dict.yaml	喉塞音	hou sai yin	hou se yin	语言学术语“塞音”规范读sè	现汉第7版/语言学名词(L1/L2)
+cn_dicts/ext.dict.yaml	轧花厂	zha hua chang	ya hua chang	“轧花”规范读yà huā	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	用来盛放	yong lai sheng fang	yong lai cheng fang	盛装容器义读chéng	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	合模力	he mo li	he mu li	注塑模具术语规范读mú	现汉第7版/工程名词(L1/L2)
+cn_dicts/ext.dict.yaml	测度法	ce duo fa	ce du fa	数学/经济测量方法读cè dù	全国科技名词委(L2)
+cn_dicts/ext.dict.yaml	流血事件	liu xie shi jian	liu xue shi jian	复音书面词“流血”规范读xuè（且全库缺正音）	现汉第7版/DICTIONARY_SPEC §3.2
+cn_dicts/ext.dict.yaml	流血冲突	liu xie chong tu	liu xue chong tu	复音书面词“流血”规范读xuè（且全库缺正音）	现汉第7版/DICTIONARY_SPEC §3.2
+cn_dicts/ext.dict.yaml	流血政变	liu xie zheng bian	liu xue zheng bian	复音书面词“流血”规范读xuè（且全库缺正音）	现汉第7版/DICTIONARY_SPEC §3.2
+cn_dicts/ext.dict.yaml	流血流汗	liu xie liu han	liu xue liu han	复音书面词“流血”规范读xuè（且全库缺正音）	现汉第7版/DICTIONARY_SPEC §3.2
+cn_dicts/ext.dict.yaml	流血牺牲	liu xie xi sheng	liu xue xi sheng	复音书面词“流血”规范读xuè（且全库缺正音）	现汉第7版/DICTIONARY_SPEC §3.2
+cn_dicts/base.dict.yaml	恶寒	e han	wu han	《现汉7》与中医规范“恶寒”读 wù hán	现汉第7版/中医药学名词(L1/L2)
+cn_dicts/base.dict.yaml	恶寒发热	e han fa re	wu han fa re	《现汉7》与中医规范“恶寒”读 wù hán	现汉第7版/中医药学名词(L1/L2)
+cn_dicts/ext.dict.yaml	不恶寒	bu e han	bu wu han	《现汉7》与中医规范“恶寒”读 wù hán	现汉第7版/中医药学名词(L1/L2)
+cn_dicts/ext.dict.yaml	发热恶寒	fa re e han	fa re wu han	《现汉7》与中医规范“恶寒”读 wù hán	现汉第7版/中医药学名词(L1/L2)
+cn_dicts/ext.dict.yaml	鸡血石	ji xie shi	ji xue shi	《现汉7》“鸡血石”规范读 jī xuè shí（与composite:昌化鸡血石对齐）	现汉第7版(L1)
+cn_dicts/ext.dict.yaml	五石之瓠	wu shi zhi hu	wu dan zhi hu	统编高中语文《五石之瓠》容量单位“石”读 dàn	统编高中语文/现汉第7版(L1)

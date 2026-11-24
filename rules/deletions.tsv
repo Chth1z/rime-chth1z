@@ -3371,3 +3371,91 @@ cn_dicts_cell/literature.dict.yaml	构造出了	*	非文学论文残片
 cn_dicts_cell/literature.dict.yaml	擅自作了添加	*	非文学说明残片
 cn_dicts_cell/literature.dict.yaml	也被越来越多的	*	非文学现代碎片
 cn_dicts_cell/idiom.dict.yaml	家长理短	*	W5错别字（上游idiom含jia zhang li duan，与base同步清理，正词：家长里短）
+# Batch 3 (base & ext): verified 㨃, trad 著, W3/W5 typos & xie duplicates
+cn_dicts/base.dict.yaml	被㨃	*	非8105生僻异体字冗余，base已有同权“被怼”
+cn_dicts/base.dict.yaml	㨃得	*	非8105生僻异体字冗余，base已有同权“怼得”
+cn_dicts/base.dict.yaml	㨃进	*	非8105生僻异体字冗余，base已有同权“怼进”
+cn_dicts/base.dict.yaml	㨃人	*	非8105生僻异体字冗余，base已有同权“怼人”
+cn_dicts/base.dict.yaml	互㨃	*	非8105生僻异体字冗余，base已有同权“互怼”
+cn_dicts/base.dict.yaml	怒㨃	*	非8105生僻异体字冗余，base已有同权“怒怼”
+cn_dicts/base.dict.yaml	罗音	luo yin	W3非规范医学写法，全国名词委规范作“啰音”
+cn_dicts/base.dict.yaml	多粘菌素	*	W3非规范药名，中国药典规范作“多黏菌素”(须同步移除phonetics_fix.tsv:34)
+cn_dicts/base.dict.yaml	压的住	ya de zhu	W5“的”误代“得”，base已有“压得住”
+cn_dicts/base.dict.yaml	达的到	da de dao	W5“的”误代“得”，base已有“达得到”
+cn_dicts/base.dict.yaml	坐的下	zuo de xia	W5“的”误代“得”，base已有“坐得下”
+cn_dicts/base.dict.yaml	费话	fei hua	W5错别字，base已有“废话”
+cn_dicts/base.dict.yaml	鸦鹊无声	ya que wu sheng	W5错别字，base已有“鸦雀无声”
+cn_dicts/base.dict.yaml	兰宝石	lan bao shi	W5错别字，base已有“蓝宝石”
+cn_dicts/base.dict.yaml	家长理短	jia chang li duan	W5错别字，base已有“家长里短”
+cn_dicts/base.dict.yaml	召集贴	zhao ji tie	W3非规范写法，base已有“召集帖”
+cn_dicts/base.dict.yaml	排行版	pai hang ban	W5漏g错别字(排行榜)
+cn_dicts/base.dict.yaml	掘起	jue qi	W5错别字，base已有“崛起”
+cn_dicts/base.dict.yaml	急待	ji dai	W3/W5非规范词形，现汉第7版仅收“亟待”
+cn_dicts/ext.dict.yaml	㨃得好	*	非8105异体字㨃(U+3A03)，同文件已有怼得好，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	㨃了起来	*	非8105异体字㨃(U+3A03)，同文件已有怼了起来，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	㨃天㨃地㨃空气	*	非8105异体字㨃(U+3A03)，同文件已有怼天怼地怼空气，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	互㨃模式	*	非8105异体字㨃(U+3A03)，同文件已有互怼模式，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	开㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	反㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	直㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	一㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	相㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	暗㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	明㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	纯㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	大㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	专㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	全㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	防㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	必㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	绝㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	轻㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	推㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	遭㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	群㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	暴㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	神㨃	*	非8105异体字㨃(U+3A03)，符合 DICTIONARY_SPEC §2.6 统一清理
+cn_dicts/ext.dict.yaml	意味著	*	W5繁体著(=着)泄漏（base已有意味着w=19216）
+cn_dicts/ext.dict.yaml	睡不著	*	W5繁体著(=着)泄漏（base已有睡不着w=2325）
+cn_dicts/ext.dict.yaml	紧接著	*	W5繁体著(=着)泄漏（base已有紧接着w=4185）
+cn_dicts/ext.dict.yaml	曾国潘	*	W5错别字（正词：曾国藩，base已有w=1041）
+cn_dicts/ext.dict.yaml	圣彼德堡	*	W5错别字（正词：圣彼得堡，base已有w=401）
+cn_dicts/ext.dict.yaml	苏门达腊	*	W5错别字（正词：苏门答腊，base已有w=95）
+cn_dicts/ext.dict.yaml	造形艺术	*	W5错别字（正词：造型艺术，base已有w=78）
+cn_dicts/ext.dict.yaml	叶腊石	*	W3/W5非规范词形且权重倒挂（全国科技名词委规范：叶蜡石，base已有w=2）
+cn_dicts/ext.dict.yaml	流线形	*	W3/W5非规范词形（现汉第7版/全国科技名词委规范：流线型，base已有w=294）
+cn_dicts/ext.dict.yaml	邪魔歪道	*	W3/W5非规范讹变词形（现汉第7版规范：邪魔外道，ext已有w=45）
+cn_dicts/ext.dict.yaml	死的很惨	*	W5结构助词得误作的且权重倒挂（同文件已有死得很惨w=93）
+cn_dicts/ext.dict.yaml	累的不行	*	W5结构助词得误作的且权重倒挂（同文件已有累得不行w=63）
+cn_dicts/ext.dict.yaml	佩服的五体投地	*	W5结构助词得误作的（base已有佩服得五体投地w=66）
+cn_dicts/ext.dict.yaml	够的上	*	W5结构助词得误作的（base已有够得上w=176）
+cn_dicts/ext.dict.yaml	搞的定	*	W5结构助词得误作的（base已有搞得定w=148）
+cn_dicts/ext.dict.yaml	跑的动	*	W5结构助词得误作的（同文件已有跑得动w=31）
+cn_dicts/ext.dict.yaml	表现的还不错	*	W5结构助词得误作的（同文件已有表现得还不错w=10）
+cn_dicts/ext.dict.yaml	睡的好吗	*	W5结构助词得误作的（同文件已有睡得好吗w=7）
+cn_dicts/ext.dict.yaml	出落的亭亭玉立	*	W5结构助词得误作的（同文件已有出落得亭亭玉立w=11）
+cn_dicts/ext.dict.yaml	考的咋样	*	W5结构助词得误作的且权重倒挂（base已有考得咋样w=4）
+cn_dicts/ext.dict.yaml	考的怎样	*	W5结构助词得误作的且权重倒挂（base已有考得怎样w=3）
+cn_dicts/ext.dict.yaml	你想的美	*	W5结构助词得误作的（同文件已有你想得美w=16）
+cn_dicts/ext.dict.yaml	真得好	*	W5错字且错音dei（同文件已有真的好w=2005）
+cn_dicts/ext.dict.yaml	字仇杀队	*	前缀截断噪声（截自V字仇杀队）
+cn_dicts/ext.dict.yaml	帐汗国	*	前缀截断噪声（截自金帐汗国，同文件已有金帐汗国w=164）
+cn_dicts/ext.dict.yaml	本武藏	*	前缀截断噪声（截自宫本武藏，base已有宫本武藏w=370）
+cn_dicts/ext.dict.yaml	屈一指	*	前缀截断噪声（截自首屈一指，base已有首屈一指w=633）
+cn_dicts/ext.dict.yaml	辛万苦	*	前缀截断噪声（截自千辛万苦，base已有千辛万苦w=511）
+cn_dicts/ext.dict.yaml	得了白血病	de le bai xie bing	复音医学词冗余xie错音行（同文件已有xue正音w=55）
+cn_dicts/ext.dict.yaml	血氧饱和度	xie yang bao he du	复音医学词冗余xie错音行（同文件已有xue正音w=329）
+cn_dicts/ext.dict.yaml	血药浓度	xie yao nong du	复音医学词冗余xie错音行（同文件已有xue正音w=106）
+cn_dicts/ext.dict.yaml	失血严重	shi xie yan zhong	复音书面词冗余xie错音行（同文件已有xue正音w=7）
+cn_dicts/ext.dict.yaml	参加无偿献血	can jia wu chang xian xie	复音书面词冗余xie错音行（同文件已有xue正音w=3）
+cn_dicts/ext.dict.yaml	参加献血	can jia xian xie	复音书面词冗余xie错音行（同文件已有xue正音w=2）
+cn_dicts/ext.dict.yaml	包扎止血	bao za zhi xie	复音医学词冗余xie错音行（同文件已有xue正音w=18）
+cn_dicts/ext.dict.yaml	止血包扎	zhi xie bao za	复音医学词冗余xie错音行（同文件已有xue正音w=6）
+cn_dicts/ext.dict.yaml	严重出血	yan zhong chu xie	复音医学词冗余xie错音行（同文件已有xue正音w=19）
+cn_dicts/ext.dict.yaml	血泊中	xie po zhong	复音书面词冗余xie错音行（同文件已有xue正音w=62）
+cn_dicts/ext.dict.yaml	血流满地	xie liu man di	复音书面词冗余xie错音行（同文件已有xue正音w=26）
+cn_dicts/ext.dict.yaml	打得头破血流	da de tou po xie liu	成语书面词冗余xie错音行（同文件已有xue正音w=51）
+cn_dicts/ext.dict.yaml	撞得头破血流	zhuang de tou po xie liu	成语书面词冗余xie错音行（同文件已有xue正音w=52）
+cn_dicts/ext.dict.yaml	地上的血迹	di shang de xie ji	复音书面词冗余xie错音行（同文件已有xue正音w=9）
+cn_dicts/ext.dict.yaml	阿胶补血	e jiao bu xie	复音书面词冗余xie错音行（同文件已有xue正音w=4）
+cn_dicts/ext.dict.yaml	吃什么补血	chi shen me bu xie	复音书面词冗余xie错音行（同文件已有xue正音w=4）

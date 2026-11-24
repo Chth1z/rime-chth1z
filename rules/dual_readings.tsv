@@ -185,3 +185,8 @@
 邬隘	wu ai	0	规范 wù ài / 习惯 wù gà	wu ga	0	习惯 wù gà / 规范 wù ài	cn_dicts_cell/place.dict.yaml	现汉第7版ài/宁波地铁1号线官方Wuga(L1/L2)
 邱隘东	qiu ai dong	0	规范 邱隘(ài)东 / 习惯 gà	qiu ga dong	0	习惯 邱隘(gà)东 / 规范 ài	cn_dicts_cell/place.dict.yaml	现汉第7版ài/宁波地铁1号线官方Qiuga East(L1/L2)
 摇骰子	yao tou zi	44	规范 摇骰(tóu)子 / 习惯 shǎi	yao shai zi	15	习惯 摇骰(shǎi)子 / 规范 tóu	cn_dicts_cell/exthot.dict.yaml	现汉第7版/全民口语习惯(L1/L5，同骰子，w2=15护摇色子16)
+# Batch 3 (base): classical & dual-sense A-class readings
+不可说也	bu ke tuo ye	23	规范 诗经·氓 tuō / 佛语 shuō	bu ke shuo ye	15	常见 佛语 shuō / 诗经 tuō	cn_dicts/base.dict.yaml	统编语文《诗经·氓》通“脱”/佛家文言双留(L1/L3)
+重言	chong yan	20	规范 叠词 chóng yán / 庄子 zhòng yán	zhong yan	20	规范 庄子 zhòng yán / 叠词 chóng yán	cn_dicts/base.dict.yaml	现汉第7版双义词(L1，严控<重檐30)
+仁者乐山	ren zhe yao shan	18	旧读 论语 yào / 现汉 lè	ren zhe le shan	18	现汉 仁者乐(lè)山 / 旧读 yào	cn_dicts/base.dict.yaml	论语朱熹集注古读yào/现汉第7版通行lè(L1/L3)
+智者乐水	zhi zhe yao shui	12	旧读 论语 yào / 现汉 lè	zhi zhe le shui	12	现汉 智者乐(lè)水 / 旧读 yào	cn_dicts/base.dict.yaml	论语朱熹集注古读yào/现汉第7版通行lè(L1/L3)

@@ -928,3 +928,14 @@ cn_dicts_cell/literature.dict.yaml	燕宿雕粱	yan su diao liang	燕宿雕梁	*
 cn_dicts_cell/literature.dict.yaml	第一折技花样画罗裙	di yi zhe ji hua yang hua luo qun	第一折枝花样画罗裙	di yi zhe zhi hua yang hua luo qun	W5 OCR错字（“折枝”误作“折技”）	古诗词
 cn_dicts_cell/literature.dict.yaml	筋国之士矜雅	jin guo zhi shi jin ya	饬国之士矜雅	chi guo zhi shi jin ya	W5 OCR错字（《庄子》“饬国”，误作“筋国”）	庄子
 cn_dicts_cell/literature.dict.yaml	戌狄是膺	xu di shi ying	戎狄是膺	rong di shi ying	W5 OCR错字（《诗经》《孟子》“戎狄是膺”，误作“戌狄”）	诗经/孟子
+# Batch 3 (base & ext): verified W3/W5 word fixes
+cn_dicts/base.dict.yaml	粘多糖	*	黏多糖	nian duo tang	W3生化术语规范写作黏多糖(须同步移除phonetics_fix.tsv:82)	全国科技名词委/现汉第7版
+cn_dicts/base.dict.yaml	粘弹性	*	黏弹性	nian tan xing	W3物性力学规范写作黏弹性	全国科技名词委/现汉第7版
+cn_dicts/base.dict.yaml	粘孢子虫	*	黏孢子虫	nian bao zi chong	W3生物学规范写作黏孢子虫	全国科技名词委/国家标准
+cn_dicts/base.dict.yaml	拿的住	na de zhu	拿得住	na de zhu	W5可能补语“的”误代“得”	现汉第7版
+cn_dicts/base.dict.yaml	抽的出来	chou de chu lai	抽得出来	chou de chu lai	W5可能补语“的”误代“得”	现汉第7版
+cn_dicts/base.dict.yaml	放的住	fang de zhu	放得住	fang de zhu	W5可能补语“的”误代“得”	现汉第7版
+cn_dicts/base.dict.yaml	抱的动	bao de dong	抱得动	bao de dong	W5可能补语“的”误代“得”	现汉第7版
+cn_dicts/base.dict.yaml	伊邪纳岐	yi xie na qi	伊邪那岐	yi xie na qi	W5日本神话神名规范写作伊邪那岐	辞海/通用译名
+cn_dicts/base.dict.yaml	转贴到	zhuan tie dao	转帖到	zhuan tie dao	W3发帖转帖规范用“帖”	现汉第7版
+cn_dicts/ext.dict.yaml	怎么过的了	zen me guo de le	怎么过得了	zen me guo de liao	W5结构助词得误作的且可能补语了读liǎo	现汉第7版/DICTIONARY_SPEC §4.2

@@ -762,3 +762,10 @@ cn_dicts/8105.dict.yaml	𫟷	li	5	phonetic	2017全国科技名词委元素116号
 cn_dicts/8105.dict.yaml	鿬	tian	5	phonetic	2017全国科技名词委元素117号鿬(Ts)规范定名
 cn_dicts/8105.dict.yaml	鿫	ao	5	phonetic	2017全国科技名词委元素118号鿫(Og)规范定名
 cn_dicts/8105.dict.yaml	贠	yun	5	phonetic	现代汉语常见姓氏yùn(对齐rime-ice #666)
+# Batch 3 (base): missing valid modern second readings
+cn_dicts/base.dict.yaml	还回去	huan hui qu	383	phonetic	现汉第7版(归还义补录，与hai hui qu并存)
+cn_dicts/base.dict.yaml	还回来	huan hui lai	234	phonetic	现汉第7版(归还义补录，<换回来282)
+cn_dicts/base.dict.yaml	还给我们	huan gei wo men	214	phonetic	现汉第7版(归还义补录，与hai gei wo men并存)
+cn_dicts/base.dict.yaml	还回	huan hui	88	phonetic	现汉第7版(归还义补录，<唤回97/换回854)
+cn_dicts/base.dict.yaml	还多了	huan duo le	40	phonetic	现汉第7版(归还过多义补录，次于hai duo le 344)
+cn_dicts/base.dict.yaml	削了	xiao le	180	phonetic	现汉第7版(削皮义补录，严控<消了223，保留xue le 279)

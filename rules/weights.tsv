@@ -1324,3 +1324,7 @@ cn_dicts/8105.dict.yaml	铈	shi	10	化学元素单字降权避压一级字驶(18
 cn_dicts/8105.dict.yaml	酚	fen	20	化学专字降权避压一级字纷(250)/氛(120)
 # Batch 3 (game): 世界树 tier boost
 cn_dicts_cell/game.dict.yaml	世界树	shi jie shu	>=60	神话与游戏核心专名（北欧Yggdrasil/魔兽/原神/老头环）由0提权至T3，避免被computer:世界书(30)与base:视界术(2)压制
+# Batch 3 (base): collision guard & W3 weight migration
+cn_dicts/base.dict.yaml	术赤	zhu chi	<=120	读音修正后降权防压常见词“住持”(131)
+cn_dicts/base.dict.yaml	啰音	luo yin	36	承接已删非规范词“罗音”(36)权重，仍低于“罗隐”(69)
+cn_dicts/base.dict.yaml	多黏菌素	duo nian jun su	12	承接已删非规范词“多粘菌素”(12)权重
