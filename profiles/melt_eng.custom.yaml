@@ -1,2 +1,2 @@
-# 自然碼英文派生已直接整合進根目錄 melt_eng.schema.yaml；此檔保留供本機臨時覆寫
+# 全拼與自然碼英文派生已直接整合進根目錄 melt_eng.schema.yaml；此檔保留供本機臨時覆寫
 patch: {}

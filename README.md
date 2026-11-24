@@ -4,8 +4,8 @@
 
 仓库包含两部分内容：
 
-1. **可复现的声明式词库清洗与治理层**：以 [gaboolic/rime-frost（白霜拼音）](https://github.com/gaboolic/rime-frost) 为上游基座，通过 `rules/` 声明式规则库（9,989 条规则）、确定性清洗引擎 `scripts/clean-dicts.py` 与静态门禁 `scripts/dict_lint.py`，对中文核心词库、22 份活跃细胞词库、英文词库、7 种拼音布局中英混输词表及 OpenCC 文本词表执行幂等清洗、审音校对、词形规范、双读音建档与同音碰撞校验。
-2. **个人日常输入方案与运行时配置**：以自然码双拼为主、全拼为辅，搭配万象语法模型、可选端侧神经整句重排（[Chth1z/rime-neural](https://github.com/Chth1z/rime-neural)）及台湾繁体双出滤镜（首选 `s2twp` 台湾用法，存在词汇差异时次选 `s2tw` 台湾正体保留原词；全局记忆上次切换状态，`Claude` 桌面端默认臺繁，其余应用默认简中）。
+1. **可复现的声明式词库清洗与治理层**：以 [gaboolic/rime-frost（白霜拼音）](https://github.com/gaboolic/rime-frost) 为上游基座，通过 `rules/` 声明式规则库（10,021 条规则）、确定性清洗引擎 `scripts/clean-dicts.py` 与静态门禁 `scripts/dict_lint.py`，对中文核心词库、22 份活跃细胞词库、英文词库、7 种拼音布局中英混输词表及 OpenCC 文本词表执行幂等清洗、审音校对、词形规范、双读音建档与同音碰撞校验。
+2. **个人日常输入方案与运行时配置**：内置自然码双拼与全拼两套完整方案（`melt_eng` 并行支持两套数字与符号中文谐音派生，默认自然码双拼优先，可通过 `-PrimaryLayout full` 切换全拼优先），搭配万象语法模型、可选端侧神经整句重排（[Chth1z/rime-neural](https://github.com/Chth1z/rime-neural)）及台湾繁体双出滤镜（首选 `s2twp` 台湾用法，存在词汇差异时次选 `s2tw` 台湾正体保留原词；全局记忆上次切换状态，`Claude` 桌面端默认臺繁，其余应用默认简中）。
 
 > 方案键位、外观与 `app_options` 按个人习惯定制；词库文件、`rules/` 声明式规则、清洗与门禁脚本及治理规范 [docs/DICTIONARY_SPEC.md](docs/DICTIONARY_SPEC.md) 可独立参考或复用。如需通用上游方案或独立神经重排插件，可直接使用 [gaboolic/rime-frost](https://github.com/gaboolic/rime-frost) 或 [Chth1z/rime-neural](https://github.com/Chth1z/rime-neural)。
 
@@ -48,13 +48,13 @@ powershell -ExecutionPolicy Bypass -File $s -InstallWeasel -NeuralModel pumpkin 
 | **精确清理** | `rules/deletions.tsv` | `2,765` 条 | 清除已核实错别字（W5）、垃圾词条与冗余错音克隆；配合清洗脚本同步清理细胞词库中的非领域抓取块（POI、广告、模板尾块等约 17.1 万条）及 2.4 万条重复项 |
 | **权重校准** | `rules/weights.tsv` | `1,265` 条 | 校准 `8105` 主音排序、翻转 W2 规范词形倒挂、限制专名/细胞词抢占通用词；对 `.gram` 语法路径高频词采用温和降权保护 |
 | **词条补录** | `rules/additions.tsv` | `629` 条 | 补齐 `8105` 规范缺失多音及常用现代通用词、城市地名与多义项读音 |
-| **英文、中英混输与字母数字** | `rules/en_{additions,fixes}.tsv`、`cn_en_source.tsv`、`alphanum_additions.txt` | `760` 条 | 维护 `en_ext` 现代开发/AI/硬件词表、清理 `en` 错词并去重；通过 `scripts/build_cn_en.py` 从单一源同步生成全部 7 种拼音布局的 `en_dicts/cn_en*.txt`（各 `1,113` 条） |
+| **英文、中英混输与字母数字** | `rules/en_{additions,fixes}.tsv`、`cn_en_source.tsv`、`alphanum_additions.txt` | `792` 条 | 维护 `en_ext` 现代开发/AI/硬件与符号/数字词表、清理 `en` 错词并去重；通过 `scripts/build_cn_en.py` 从单一源同步生成全部 7 种拼音布局的 `en_dicts/cn_en*.txt`（各 `1,123` 条） |
 | **OpenCC 文本词表** | `rules/opencc_fixes.tsv` | `251` 条 | 修复 `emoji.txt`（色块互换、释义错配与 `食盐` 遮蔽）、`others.txt`（化学式与重复 emoji）、`chinese_english.txt` 与 `english_chinese.txt`（清理 `NUM` 尾垃圾、断行截断与不可达多词键） |
 
 ### 自动化校验与四级门禁
 
-- **静态门禁与幂等校验（`scripts/dict_lint.py`）**：强制校验 5 项零容忍不变量（非法音节、字音长度失配、残留 `lue/nue`、单文件重复、26 份活跃中文词库跨文件重复均为 `0`），同时校验 YAML 语法、`rules/` 零冲突、A/B/C 类同音碰撞安全边界、`cn_en` 7 布局一致性及二次清洗 SHA-256 零差异。
-- **引擎部署与确定性回归（`bench/accuracy-test.ps1`）**：基于本机 `rime.dll` 在隔离目录执行 `242` 项确定性回归断言，覆盖双读音注释、纠错排序、同音碰撞边界、台繁双出、中英混输、OpenCC 与 Lua 滤镜行为。
+- **静态门禁与幂等校验（`scripts/dict_lint.py`）**：强制校验 5 项零容忍不变量（非法音节、字音长度失配、残留 `lue/nue`、单文件重复、26 份活跃中文词库跨文件重复均为 `0`），同时校验 YAML 语法、`rules/` 零冲突、A/B/C 类同音碰撞安全边界、`melt_eng` 双拼/全拼派生对等与符号防劫持约束、`cn_en` 7 布局一致性及二次清洗 SHA-256 零差异。
+- **引擎部署与确定性回归（`bench/accuracy-test.ps1`）**：基于本机 `rime.dll` 在隔离目录执行 `280` 项确定性回归断言，覆盖双读音注释、纠错排序、同音碰撞边界、台繁双出、中英混输、符号/数字双方案谐音派生、OpenCC 与 Lua 滤镜行为。
 - **盲测防退化监控（`bench/eval-accuracy.py`）**：参考 [gaboolic/rime-schema-compare](https://github.com/gaboolic/rime-schema-compare) 公开语料与同义归一化口径，在双拼/全拼 × 纯统计/神经重排四组模式下执行 A/B 对比，防止调权或删词引发整句准确率退化。
 
 ### 词库与规则复用方式
@@ -77,7 +77,7 @@ python scripts/build_cn_en.py
 ## 目录说明
 
 - `cn_dicts/`、`cn_dicts_cell/`、`en_dicts/`、`opencc/`：同步自白霜上游并经 `scripts/clean-dicts.py` 清洗校准的词库与 OpenCC 词表（当前 27 份活跃中文词库共 `1,658,757` 条，含 `corrections.dict.yaml` `1,247` 条）
-- `rules/`：词库审音、双读音、纠错、权重、词形修正、英文、中英混输与 OpenCC 修复的声明式规则单一事实源（SSOT，共 `9,989` 条）
+- `rules/`：词库审音、双读音、纠错、权重、词形修正、英文、中英混输与 OpenCC 修复的声明式规则单一事实源（SSOT，共 `10,021` 条）
 - `lua/`：6 个自用脚本——单遍合并管线（`chth1z_pipeline_filter.lua`）、台湾繁体双出滤镜（`tw_dual_filter.lua`，支持单字一简对多繁展开与拆字简形透传）以及日期、农历、计算器（含大数阶乘防溢出与求值校验）、以词定字脚本；神经重排脚本 `rime_neural.lua` 与原生 DLL 由 `Chth1z/rime-neural` 发行包管理
 - `profiles/`：`rime.lua`（Lua 5.4 GC 参数）及预留的本机临时覆盖文件 `*.custom.yaml`
 - `themes/`：小狼毫外观配置（`apple_graphite_dark`，含 `claude.exe` / `claude-desktop.exe` `app_options` 臺繁设定）

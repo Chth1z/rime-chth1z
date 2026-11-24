@@ -328,3 +328,4 @@ en_dicts/en.dict.yaml	minolta	minolta	replace	Minolta	Minolta		品牌首字母�
 en_dicts/en.dict.yaml	ticketmaster	ticketmaster	replace	Ticketmaster	Ticketmaster		品牌首字母大写(Ticketmaster)
 en_dicts/en.dict.yaml	bentley	bentley	replace	Bentley	Bentley		品牌/姓氏首字母大写(Bentley)
 en_dicts/en.dict.yaml	arial	arial	replace	Arial	Arial		字体专名首字母大写(Arial)
+en_dicts/en_ext.dict.yaml	01.AI	01AI	replace	01.AI	01.AI		保留编码中的句点以支持 dot/dian/dm 谐音派生（derive/[.]// 仍保留 01AI）

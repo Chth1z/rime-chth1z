@@ -1,6 +1,6 @@
 # Rime schema
 # encoding: utf-8
-# 白霜全拼（備用方案，基於白霜拼音與霧凇拼音深度客製化）
+# 白霜全拼（基於白霜拼音與霧凇拼音深度客製化）
 
 schema:
   schema_id: rime_frost

@@ -4,13 +4,13 @@ Apply customizations via `*.custom.yaml` inside `<rime_user_dir>` so future `rim
 
 ## 1. Make Full Pinyin (`rime_frost`) the Default Schema
 
-Create or edit `<rime_user_dir>\default.custom.yaml`:
+Pass `-PrimaryLayout full` to `bootstrap.ps1`, or edit `<rime_user_dir>\default.custom.yaml` manually (`melt_eng.schema.yaml` already supports both Full Pinyin and Natural Double Pinyin digit/symbol derivations simultaneously via `algebra_fp_zrm`):
 
 ```yaml
 patch:
   schema_list:
     - schema: rime_frost                 # 全拼默认
-    - schema: rime_frost_double_pinyin   # 自然码双拼备用
+    - schema: rime_frost_double_pinyin   # 自然码双拼
 ```
 
 ## 2. Disable `claude.exe` Automatic Traditional Chinese (`app_options`)

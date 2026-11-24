@@ -52,7 +52,9 @@ If the user explicitly asked for **"全套默认安装 / 按你的完整配置�
 
 Otherwise, briefly summarize the audit and confirm:
 1. **Weasel Nightly** (*only if `weasel_dir` is null or `rime_dll_lua54_exports` is false*): confirm downloading and running the official Weasel Nightly installer (`-InstallWeasel`, triggers UAC if not elevated).
-2. **Primary Layout**: Keep default (**自然码双拼为主 + 全拼备用**), or switch default to **全拼优先** (see [`references/customization.md`](./references/customization.md)).
+2. **Primary Layout**:
+   - `zrm` (default): **自然码双拼为主 + 全拼并列**（`-PrimaryLayout zrm`）。
+   - `full`: **全拼为主 + 自然码双拼并列**（`-PrimaryLayout full`）。（`melt_eng` 已内置同时支持全拼与自然码数字/符号谐音派生，两个方案均完整可用。）
 3. **Neural Model**:
    - `pumpkin` (default, recommended): `ML-pumpkin-1103` (12L, ~82 MB, highest accuracy).
    - `feather`: `zhen-feather` (8L, ~38 MB, lighter for battery/RAM-constrained laptops).
@@ -84,6 +86,7 @@ powershell -ExecutionPolicy Bypass -File $bootstrap `
 Common optional flags for `bootstrap.ps1`:
 - `-InstallWeasel`: install or upgrade to official Weasel Nightly (`tags/latest`) when missing or `< 0.17.4`.
 - `-RepoDir "<path>"`: reuse an existing local clone (or specify where `git clone` should place `rime-chth1z`; default `%USERPROFILE%\rime-chth1z`). Pass `-NoGitClone` to use a temporary zip archive instead.
+- `-PrimaryLayout zrm | full`: choose Natural Double Pinyin (`zrm`, default) or Full Pinyin (`full`) as the primary default schema.
 - `-NeuralModel pumpkin | feather | none`
 - `-SkipGram`: skip downloading the ~373 MB Wanxiang `.gram` model.
 - `-Theme apple_graphite_dark | keep`: use `keep` to preserve the user's existing `weasel.custom.yaml`.

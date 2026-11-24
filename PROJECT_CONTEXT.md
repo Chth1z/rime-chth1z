@@ -22,7 +22,7 @@
 - **系统与硬件**：Windows 11（`zh-Hant-TW` / `0x0404`），Intel Core Ultra 7 255HX，32 GB 内存
 - **输入法**：Weasel Nightly `0.17.4.98.f96ed24`（`librime 1.17.0`、`Lua 5.4.8`、Direct2D WARP）
 - **字体**：系统已装 Google 官方完整版 `NotoSansCJK.ttc` + `NotoSerifCJK.ttc`（繁简日韩无缺字），以及 `Chiron GoRound TC VF`、`Inter Variable Text`、`LXGW WenKai TC`、`Newsreader`、`Source Serif 4`、`Plus Jakarta Sans`
-- **当前自用配置**：自然码双拼（主力）＋ 全拼（备用），挂 `wanxiang-lts-zh-hans.gram`（372.68 MB，`collocation_penalty: -15.5`、`non_collocation_penalty: -4`、`contextual_suggestions: false`）、独立插件 `Chth1z/rime-neural`（`v1.0.0` 官方发行版，`ML-pumpkin-1103` KV-cache ＋ `.gram` 共享映射 ＋ Pass-2 P2C ＋ 非阻塞 UIA）、台湾繁体双出滤镜（`tw_dual_filter.lua`：首选 `s2twp` 台湾用法，次选 `s2tw` 台湾正体保留原词；全局持久化在 `user.yaml`，`claude.exe` / `claude-desktop.exe` 通过 `app_options` 固定臺繁、其余默认简中）、竖排 5 候选（`F4` 菜单单页 6 项），主题 `apple_graphite_dark`（`#262626`、`#2C62CE`、`Noto Sans CJK TC:medium` 13pt / 11pt 阿拉伯数字）
+- **当前自用配置**：自然码双拼（主力）＋ 全拼（并列，`melt_eng` 并行支持两套数字与符号中文谐音），挂 `wanxiang-lts-zh-hans.gram`（372.68 MB，`collocation_penalty: -15.5`、`non_collocation_penalty: -4`、`contextual_suggestions: false`）、独立插件 `Chth1z/rime-neural`（`v1.0.0` 官方发行版，`ML-pumpkin-1103` KV-cache ＋ `.gram` 共享映射 ＋ Pass-2 P2C ＋ 非阻塞 UIA）、台湾繁体双出滤镜（`tw_dual_filter.lua`：首选 `s2twp` 台湾用法，次选 `s2tw` 台湾正体保留原词；全局持久化在 `user.yaml`，`claude.exe` / `claude-desktop.exe` 通过 `app_options` 固定臺繁、其余默认简中）、竖排 5 候选（`F4` 菜单单页 6 项），主题 `apple_graphite_dark`（`#262626`、`#2C62CE`、`Noto Sans CJK TC:medium` 13pt / 11pt 阿拉伯数字）
 
 ## 3. 已测出的性能与准确率数据
 
@@ -77,7 +77,7 @@
 
 ## 4. 平时协作的基本约定
 
-- **看实测数据**：改完性能、脚本或词库后均经 `bench/accuracy-test.ps1 -WaitNeural`（242 项确定性回归）、`bench/bench-rime.ps1` 与 `bench/eval-accuracy.py` 盲测验证，不凭感觉下结论。
+- **看实测数据**：改完性能、脚本或词库后均经 `bench/accuracy-test.ps1 -WaitNeural`（280 项确定性回归）、`bench/bench-rime.ps1` 与 `bench/eval-accuracy.py` 盲测验证，不凭感觉下结论。
 - **文档保持朴素**：README 和仓库里的文档写清楚事实和用法就行，不堆虚词。
-- **词库清洗与治理走规范**：词库收词、审音、纠错分类、权重标尺与上线四级门禁统一遵循 [`docs/DICTIONARY_SPEC.md`](docs/DICTIONARY_SPEC.md)；全部 9,989 条词库覆写统一沉淀在声明式规则目录 `rules/`（中英混输通过 `rules/cn_en_source.tsv` ＋ `scripts/build_cn_en.py` 派生 7 份布局文件），由 `scripts/clean-dicts.py` 幂等应用、`scripts/dict_lint.py --strict --idempotent --check-collisions` 校验，确保上游同步可洁净重放且零冲突。
+- **词库清洗与治理走规范**：词库收词、审音、纠错分类、权重标尺与上线四级门禁统一遵循 [`docs/DICTIONARY_SPEC.md`](docs/DICTIONARY_SPEC.md)；全部 10,021 条词库覆写统一沉淀在声明式规则目录 `rules/`（中英混输通过 `rules/cn_en_source.tsv` ＋ `scripts/build_cn_en.py` 派生 7 份布局文件），由 `scripts/clean-dicts.py` 幂等应用、`scripts/dict_lint.py --strict --idempotent --check-collisions` 校验，确保上游同步可洁净重放且零冲突。
 - **提上游 Issue 从严**：遵守 [`docs/upstream-issues/GUIDELINE.md`](docs/upstream-issues/GUIDELINE.md)，只提实测复现、有实际影响的真 Bug，不提视角或习惯分歧带来的伪问题。

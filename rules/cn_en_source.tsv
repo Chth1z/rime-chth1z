@@ -106,3 +106,12 @@ add	写PPT		xie	PPT	true	职场高频混输词
 add	转PDF		zhuan	PDF	true	办公高频混输词
 add	大S		da	S	true	艺人艺名
 add	小S		xiao	S	true	艺人艺名
+add	C++	C	jia jia		false	编程语言中文谐音(全拼Cjiajia/自然码Cjwjw等7布局同步，仅大写触发避免污染小写中文)
+add	C#	C	jing		false	编程语言中文谐音(全拼Cjing/自然码Cjy等7布局同步，仅大写触发避免污染小写中文)
+add	F#	F	jing		false	编程语言中文谐音(全拼Fjing/自然码Fjy等7布局同步，仅大写触发避免污染小写中文)
+add	g++	G	jia jia		false	编译器中文谐音(全拼Gjiajia/自然码Gjwjw等7布局同步，仅大写触发避免污染小写中文)
+add	C/C++	CC	jia jia		false	编程语言组合中文谐音(仅大写触发避免污染小写 cc 简拼)
+add	A+	A	jia		false	评级符号中文谐音(仅大写触发避免污染小写中文)
+add	S+	S	jia		false	评级符号中文谐音(仅大写触发避免污染小写中文)
+add	.NET		dian	NET	true	开发框架前导句点中文谐音(保留 en_ext 中 net:2/.NET:1 权重序避免抢占英文 net，7布局同步)
+add	.env		dian	env	false	配置文件前导句点中文谐音(避免抢占英文 env，配合 en_ext dotenv 覆盖全部7布局)

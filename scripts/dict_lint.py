@@ -344,7 +344,9 @@ def check_en_and_cn_en(root: pathlib.Path, rules_dir: pathlib.Path, errors: list
         except ValueError as exc:
             errors.append(str(exc))
 
-    # Check en_ext & en no within-file duplicates
+    # Check en_ext & en no within-file duplicates, plus symbol-code anti-hijack guards
+    protected_en_codes: dict[str, set[str]] = {}  # lower plain code from en.dict or weighted (>1) en_ext
+    leading_sym_entries: list[tuple[str, int, str, str, str]] = []  # (rel, idx, word, code, stripped_lower)
     for rel in ("en_dicts/en_ext.dict.yaml", "en_dicts/en.dict.yaml"):
         p = root / rel
         if not p.exists():
@@ -352,18 +354,43 @@ def check_en_and_cn_en(root: pathlib.Path, rules_dir: pathlib.Path, errors: list
         _, body, start_idx = _split_header_body(p.read_text(encoding="utf-8").splitlines())
         seen_en: set[tuple[str, str]] = set()
         dup_cnt = 0
-        for line in body:
+        for idx, line in enumerate(body, start_idx):
             s = line.strip()
             if not s or s.startswith("#"):
                 continue
             cols = line.split("\t")
             if len(cols) >= 2:
-                k = (cols[0], cols[1])
+                w, code = cols[0], cols[1]
+                k = (w, code)
                 if k in seen_en:
                     dup_cnt += 1
                 seen_en.add(k)
+                if re.search(r"[^a-zA-Z0-9]", code):
+                    stripped = re.sub(r"[^a-zA-Z0-9]", "", code)
+                    if len(stripped) <= 1:
+                        errors.append(
+                            f"{rel}:{idx}: symbol code '{code}' for '{w}' collapses to <=1 alnum char "
+                            f"('{stripped}') under melt_eng algebra; use safe ASCII code in en_ext + "
+                            f"rules/cn_en_source.tsv (emit_lower=false)"
+                        )
+                    elif re.match(r"^[^a-zA-Z0-9]", code):
+                        leading_sym_entries.append((rel, idx, w, code, stripped.lower()))
+                else:
+                    is_base = rel == "en_dicts/en.dict.yaml"
+                    is_weighted = len(cols) >= 3 and cols[2].isdigit() and int(cols[2]) > 1
+                    if is_base or is_weighted:
+                        protected_en_codes.setdefault(code.lower(), set()).add(w)
         if dup_cnt:
             errors.append(f"{rel}: {dup_cnt} within-file duplicates")
+
+    for rel, idx, w, code, stripped_lower in leading_sym_entries:
+        colliding_words = protected_en_codes.get(stripped_lower, set()) - {w}
+        if colliding_words:
+            errors.append(
+                f"{rel}:{idx}: leading-symbol code '{code}' for '{w}' strips to '{stripped_lower}' "
+                f"which collides with protected EN word(s) {sorted(colliding_words)} and hijacks via librime "
+                f"per-key weight normalization; keep plain code/weight or route Chinese phonetic via rules/cn_en_source.tsv"
+            )
 
     return {"cn_en_entry_counts": counts}
 
@@ -448,6 +475,33 @@ def check_schema_and_opencc(root: pathlib.Path, errors: list[str]) -> None:
                 yaml.safe_load(yf.read_text(encoding="utf-8-sig"))
             except Exception as exc:
                 errors.append(f"{yf.relative_to(root).as_posix()}: invalid YAML ({exc})")
+
+        # Guard melt_eng FP+ZRM parity and algebra pipeline order (pre -> CN -> post)
+        me_schema = root / "melt_eng.schema.yaml"
+        me_common = root / "melt_eng_algebra_common.yaml"
+        if me_schema.exists():
+            me_doc = yaml.safe_load(me_schema.read_text(encoding="utf-8-sig")) or {}
+            alg_ref = (me_doc.get("speller") or {}).get("algebra", {})
+            inc = alg_ref.get("__include") if isinstance(alg_ref, dict) else None
+            if inc != "melt_eng_algebra:/algebra_fp_zrm":
+                errors.append(
+                    f"melt_eng.schema.yaml: speller/algebra/__include must be 'melt_eng_algebra:/algebra_fp_zrm' "
+                    f"(got {inc!r}) so Full Pinyin and Natural Double Pinyin remain equal first-class schemas"
+                )
+        if me_common.exists():
+            mc_doc = yaml.safe_load(me_common.read_text(encoding="utf-8-sig")) or {}
+            pre_rules = mc_doc.get("algebra_common_pre") or []
+            post_rules = mc_doc.get("algebra_common_post") or []
+            erase_rule = "erase/^[^a-zA-Z0-9].+$/"
+            if erase_rule in pre_rules:
+                errors.append(
+                    "melt_eng_algebra_common.yaml: erase/^[^a-zA-Z0-9].+$/ must not be in algebra_common_pre "
+                    "(breaks Chinese phonetic derivation for leading-symbol entries like .gitignore/.DS_Store)"
+                )
+            if erase_rule not in post_rules:
+                errors.append(
+                    "melt_eng_algebra_common.yaml: algebra_common_post must contain erase/^[^a-zA-Z0-9].+$/"
+                )
 
 
 def check_idempotency(root: pathlib.Path, rules_dir: pathlib.Path, errors: list[str]) -> dict:

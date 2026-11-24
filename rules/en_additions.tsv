@@ -283,3 +283,25 @@ ICU	ICU		consumer
 HPV	HPV		consumer
 BMI	BMI		consumer
 MRI	MRI		consumer
+C++	Cplusplus		dev
+F#	Fsharp		dev
+g++	gplusplus		dev
+Clang	Clang		dev
+clang++	clang++		dev
+C/C++	CCplusplus		dev
+ASP.NET	ASP.NET		dev
+.env	dotenv		dev
+UI/UX	UI/UX		dev
+HTTP/2	HTTP/2		dev
+HTTP/3	HTTP/3		dev
+Nuxt.js	Nuxt.js		dev
+Three.js	Three.js		dev
+Web3	Web3		dev
+H.264	H.264		hardware
+H.265	H.265		hardware
+Qwen2.5	Qwen2.5		ai
+Claude 3.5	Claude3.5		ai
+Claude 3.7	Claude3.7		ai
+Disney+	Disney+		consumer
+A+	Aplus		consumer
+S+	Splus		consumer

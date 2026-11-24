@@ -1111,3 +1111,13 @@ BMI指数	bmiuiiu
 大S	das
 小S	xbS
 小S	xbs
+C++	Cjxjx
+C#	Cj;
+F#	Fj;
+g++	Gjxjx
+C/C++	CCjxjx
+A+	Ajx
+S+	Sjx
+.NET	dfNET
+.NET	dfnet
+.env	dfenv

@@ -1111,3 +1111,13 @@ BMI指数	bmiaivu
 大S	das
 小S	xzS
 小S	xzs
+C++	Cjdjd
+C#	Cjy
+F#	Fjy
+g++	Gjdjd
+C/C++	CCjdjd
+A+	Ajd
+S+	Sjd
+.NET	dwNET
+.NET	dwnet
+.env	dwenv

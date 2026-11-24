@@ -1,9 +1,10 @@
 # encoding: utf-8
-# 各方案的英文拼写派生规则；通用规则从独立文件载入。
+# 各方案的英文拼写派生规则；通用前置/后置规则从独立文件载入，
+# 中文数字与符号谐音位于前置符号展开之后、后置去符号/擦除前导符号/大小写展开之前。
 
 # 全拼
-algebra_rime_frost:
-  __include: melt_eng_algebra_common:/algebra_common
+_pre_rime_frost:
+  __include: melt_eng_algebra_common:/algebra_common_pre
   __append:
     - derive/(?<!\d)1([1-9])(?!\d)/shi$1/
     - derive/([1-9])0000(?!0)/$1wan/
@@ -26,9 +27,14 @@ algebra_rime_frost:
     - derive/9/jiu/
     - derive/\+/jia/
     - derive/#/jing/
+algebra_rime_frost:
+  __include: _pre_rime_frost
+  __append:
+    __include: melt_eng_algebra_common:/algebra_common_post
+
 # 自然码双拼
-algebra_double_pinyin:
-  __include: melt_eng_algebra_common:/algebra_common
+_pre_double_pinyin:
+  __include: melt_eng_algebra_common:/algebra_common_pre
   __append:
     - derive/(?<!\d)1([1-9])(?!\d)/ui$1/
     - derive/([1-9])0000(?!0)/$1wj/
@@ -51,9 +57,14 @@ algebra_double_pinyin:
     - derive/9/jq/
     - derive/\+/jw/
     - derive/#/jy/
+algebra_double_pinyin:
+  __include: _pre_double_pinyin
+  __append:
+    __include: melt_eng_algebra_common:/algebra_common_post
+
 # 小鹤双拼
-algebra_flypy:
-  __include: melt_eng_algebra_common:/algebra_common
+_pre_flypy:
+  __include: melt_eng_algebra_common:/algebra_common_pre
   __append:
     - derive/(?<!\d)1([1-9])(?!\d)/ui$1/
     - derive/([1-9])0000(?!0)/$1wj/
@@ -76,35 +87,45 @@ algebra_flypy:
     - derive/9/jq/
     - derive/\+/jx/
     - derive/#/jk/
+algebra_flypy:
+  __include: _pre_flypy
+  __append:
+    __include: melt_eng_algebra_common:/algebra_common_post
+
 # 微软双拼
+_pre_mspy:
+  __include: melt_eng_algebra_common:/algebra_common_pre
+  __append:
+    - derive/(?<!\d)1([1-9])(?!\d)/ui$1/
+    - derive/([1-9])0000(?!0)/$1wj/
+    - derive/([1-9])000(?!0)/$1qm/
+    - derive/([1-9])00(?!0)/$1bl/
+    - derive/([2-9])0(?!0)/$1ui/
+    - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1ui$2/
+    - derive/\./dm/
+    - derive/10/ui/
+    - derive/0/l;/
+    - derive/1/yi/
+    - derive/2/er/
+    - derive/2/or/
+    - derive/2/ld/
+    - derive/3/sj/
+    - derive/4/si/
+    - derive/5/wu/
+    - derive/6/lq/
+    - derive/7/qi/
+    - derive/8/ba/
+    - derive/9/jq/
+    - derive/\+/jw/
+    - derive/#/j;/
 algebra_mspy:
-  __include: melt_eng_algebra_common:/algebra_common
+  __include: _pre_mspy
   __append:
-    - derive/(?<!\d)1([1-9])(?!\d)/ui$1/
-    - derive/([1-9])0000(?!0)/$1wj/
-    - derive/([1-9])000(?!0)/$1qm/
-    - derive/([1-9])00(?!0)/$1bl/
-    - derive/([2-9])0(?!0)/$1ui/
-    - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1ui$2/
-    - derive/\./dm/
-    - derive/10/ui/
-    - derive/0/l;/
-    - derive/1/yi/
-    - derive/2/er/
-    - derive/2/or/
-    - derive/2/ld/
-    - derive/3/sj/
-    - derive/4/si/
-    - derive/5/wu/
-    - derive/6/lq/
-    - derive/7/qi/
-    - derive/8/ba/
-    - derive/9/jq/
-    - derive/\+/jw/
-    - derive/#/j;/
+    __include: melt_eng_algebra_common:/algebra_common_post
+
 # 搜狗双拼
-algebra_sogou:
-  __include: melt_eng_algebra_common:/algebra_common
+_pre_sogou:
+  __include: melt_eng_algebra_common:/algebra_common_pre
   __append:
     - derive/(?<!\d)1([1-9])(?!\d)/ui$1/
     - derive/([1-9])0000(?!0)/$1wj/
@@ -128,9 +149,14 @@ algebra_sogou:
     - derive/9/jq/
     - derive/\+/jw/
     - derive/#/j;/
+algebra_sogou:
+  __include: _pre_sogou
+  __append:
+    __include: melt_eng_algebra_common:/algebra_common_post
+
 # 智能ABC双拼
-algebra_abc:
-  __include: melt_eng_algebra_common:/algebra_common
+_pre_abc:
+  __include: melt_eng_algebra_common:/algebra_common_pre
   __append:
     - derive/(?<!\d)1([1-9])(?!\d)/vi$1/
     - derive/([1-9])0000(?!0)/$1wj/
@@ -154,9 +180,14 @@ algebra_abc:
     - derive/9/jr/
     - derive/\+/jd/
     - derive/#/jy/
+algebra_abc:
+  __include: _pre_abc
+  __append:
+    __include: melt_eng_algebra_common:/algebra_common_post
+
 # 紫光双拼
-algebra_ziguang:
-  __include: melt_eng_algebra_common:/algebra_common
+_pre_ziguang:
+  __include: melt_eng_algebra_common:/algebra_common_pre
   __append:
     - derive/(?<!\d)1([1-9])(?!\d)/ii$1/
     - derive/([1-9])0000(?!0)/$1wr/
@@ -180,3 +211,52 @@ algebra_ziguang:
     - derive/9/jj/
     - derive/\+/jx/
     - derive/#/j;/
+algebra_ziguang:
+  __include: _pre_ziguang
+  __append:
+    __include: melt_eng_algebra_common:/algebra_common_post
+
+# 全拼 + 自然码双拼并行（使内置的两套方案同时原生支持数字与符号中文谐音）
+_pre_fp_zrm:
+  __include: melt_eng_algebra_common:/algebra_common_pre
+  __append:
+    - derive/(?<!\d)1([1-9])(?!\d)/shi$1/
+    - derive/(?<!\d)1([1-9])(?!\d)/ui$1/
+    - derive/([1-9])0000(?!0)/$1wan/
+    - derive/([1-9])0000(?!0)/$1wj/
+    - derive/([1-9])000(?!0)/$1qian/
+    - derive/([1-9])000(?!0)/$1qm/
+    - derive/([1-9])00(?!0)/$1bai/
+    - derive/([1-9])00(?!0)/$1bl/
+    - derive/([2-9])0(?!0)/$1shi/
+    - derive/([2-9])0(?!0)/$1ui/
+    - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1shi$2/
+    - derive/(?<!\d)([2-9])([1-9])(?!\d)/$1ui$2/
+    - derive/\./dian/
+    - derive/\./dm/
+    - derive/10/shi/
+    - derive/10/ui/
+    - derive/0/ling/
+    - derive/0/ly/
+    - derive/1/yi/
+    - derive/2/er/
+    - derive/2/liang/
+    - derive/2/ld/
+    - derive/3/san/
+    - derive/3/sj/
+    - derive/4/si/
+    - derive/5/wu/
+    - derive/6/liu/
+    - derive/6/lq/
+    - derive/7/qi/
+    - derive/8/ba/
+    - derive/9/jiu/
+    - derive/9/jq/
+    - derive/\+/jia/
+    - derive/\+/jw/
+    - derive/#/jing/
+    - derive/#/jy/
+algebra_fp_zrm:
+  __include: _pre_fp_zrm
+  __append:
+    __include: melt_eng_algebra_common:/algebra_common_post

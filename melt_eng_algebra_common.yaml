@@ -1,7 +1,8 @@
 # encoding: utf-8
 
-# 通用的派生规则
-algebra_common:
+# 通用派生（前置）：英文数字与符号读音展开
+# 置于各方案中文数字/符号谐音派生之前，保留原始符号以便中文规则匹配前导符号（如 .NET、.gitignore）。
+algebra_common_pre:
   # 数字派生
   - derive/1([4-7|9])/$1teen/
   - derive/11/eleven/
@@ -36,6 +37,10 @@ algebra_common:
   - derive / slash
   - derive/&/and/
   - derive/%/percent/
+
+# 通用派生（后置）：去除特殊符号、禁用非字母数字开头编码、大小写派生
+# 置于各方案中文数字/符号谐音派生之后，确保前导符号词条可派生中文谐音且中文谐音编码获得完整大小写变体。
+algebra_common_post:
   # 派生无单个特殊字符的拼写
   - derive/[.]//
   - derive/[+]//
@@ -62,3 +67,9 @@ algebra_common:
   # - derive/^([a-z]{8})/\U$1/
   # - derive/^([a-z]{9})/\U$1/
   # - derive/^([a-z]{10})/\U$1/
+
+# 完整通用规则（供直接引用 melt_eng_algebra_common:/algebra_common 的配置使用）
+algebra_common:
+  __include: algebra_common_pre
+  __append:
+    __include: algebra_common_post

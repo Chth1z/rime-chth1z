@@ -46,8 +46,8 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " '"
   algebra:
-    # 配合自然碼雙拼主力方案使用自然碼數字／符號派生
-    __include: melt_eng_algebra:/algebra_double_pinyin
+    # 同時支援全拼與自然碼雙拼的數字／符號派生
+    __include: melt_eng_algebra:/algebra_fp_zrm
 
 translator:
   dictionary: melt_eng

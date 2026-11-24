@@ -153,7 +153,8 @@ Rime 拼音编码为无调拼音，**纯声调差异**（如 `下载 zài/zǎi`�
 2. **同音竞争安全边界（Collision Guard）**：新增或上调权重的词条须通过 `python scripts/dict_lint.py --check-collisions` 检查同一 `code` 下 Top-5 竞争词；B/C 类纠错词与 E1 习惯错写严禁反超同音高频正词。
 3. **长尾污染清理标准**：满足明显截断拼接尾块（如 `composite` 尾部抓取垃圾段）、非法标点/数字乱码、低俗广告、无意义人名乱拼、已核实错误音译、且不在 `.gram` 高频路径中的词条，一律清除。
 4. **英文、中英混合与字母数字词表规范**：
-   - `en_ext.dict.yaml`：由 `rules/en_additions.tsv` 管理现代开发/AI/硬件补充词；普通词全小写，专名保持规范大小写（如 `GitHub`、`ONNX`、`DeepSeek`、`Claude`）。
+   - `en_ext.dict.yaml`：由 `rules/en_additions.tsv` 管理现代开发/AI/硬件补充词；普通词全小写，专名保持规范大小写（如 `GitHub`、`ONNX`、`DeepSeek`、`Claude`）。编码含符号时须遵守两条防劫持护栏（由 `scripts/dict_lint.py` 静态强制拦截）：① 去除非字母数字后长度 `<= 1` 的单字母符号词（如 `C++`、`C#`、`F#`、`g++`、`A+`、`S+`）严禁将原始符号写入 `en_ext` 编码列，英文读音（如 `Cplusplus`、`Csharp`）走 `en_ext`，中文谐音统一走 `rules/cn_en_source.tsv`（`emit_lower=false`）；② 前导符号词若去符号后与已有纯英文词撞码（如 `.NET` 与 `net`、`.env` 与 `env`），须保留纯字母编码权重序或使用无前导符号编码，其前导点中文谐音走 `rules/cn_en_source.tsv`。
+   - `melt_eng_algebra_common.yaml` 与 `melt_eng_algebra.yaml`：通用派生拆分为 `algebra_common_pre`（英文数字/符号展开）→ 各方案中文数字/符号谐音 → `algebra_common_post`（去符号、擦除残余前导符号、大小写派生）；`melt_eng.schema.yaml` 使用 `algebra_fp_zrm` 并行支持全拼与自然码双拼。
    - `en_dicts/cn_en*.txt`：严禁手工分改 7 份文件；统一在 `rules/cn_en_source.tsv` 维护增删改规则，经 `scripts/build_cn_en.py` 自动派生并同步全部 7 种布局（全拼 + 自然码/小鹤/智能 ABC/微软/搜狗/紫光）。
    - `rime_frost.dict.yaml` 字母数字词：统一在 `rules/alphanum_additions.txt` 维护，仅收高频短组合（长度 `<= 10`）。
 

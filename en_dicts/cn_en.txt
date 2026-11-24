@@ -1111,3 +1111,13 @@ BMI指数	bmizhishu
 大S	das
 小S	xiaoS
 小S	xiaos
+C++	Cjiajia
+C#	Cjing
+F#	Fjing
+g++	Gjiajia
+C/C++	CCjiajia
+A+	Ajia
+S+	Sjia
+.NET	dianNET
+.NET	diannet
+.env	dianenv

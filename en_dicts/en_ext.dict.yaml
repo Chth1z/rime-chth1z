@@ -2254,7 +2254,7 @@ iFLYTEK	iFLYTEK
 Baichuan	Baichuan
 Moonshot	Moonshot
 Moonshot AI	MoonshotAI
-01.AI	01AI
+01.AI	01.AI
 01AI	01AI
 StepFun	StepFun
 SenseTime	SenseTime
@@ -2555,3 +2555,25 @@ ICU	ICU
 HPV	HPV
 BMI	BMI
 MRI	MRI
+C++	Cplusplus
+F#	Fsharp
+g++	gplusplus
+Clang	Clang
+clang++	clang++
+C/C++	CCplusplus
+ASP.NET	ASP.NET
+UI/UX	UI/UX
+HTTP/2	HTTP/2
+HTTP/3	HTTP/3
+Nuxt.js	Nuxt.js
+Three.js	Three.js
+Web3	Web3
+H.264	H.264
+H.265	H.265
+Qwen2.5	Qwen2.5
+Claude 3.5	Claude3.5
+Claude 3.7	Claude3.7
+Disney+	Disney+
+A+	Aplus
+S+	Splus
+.env	dotenv
