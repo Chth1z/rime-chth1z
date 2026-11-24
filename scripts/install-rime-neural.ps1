@@ -16,11 +16,16 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-[Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
+$OutputEncoding = [System.Text.UTF8Encoding]::new($false)
+try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}
+try {
+    [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
+} catch {}
+
+. (Join-Path $PSScriptRoot "_common.ps1")
 
 if (-not $RimeDir) {
-    $regDir = (Get-ItemProperty -Path "HKCU:\SOFTWARE\Rime\Weasel" -Name "RimeUserDir" -ErrorAction SilentlyContinue).RimeUserDir
-    $RimeDir = if ($regDir -and $regDir.Trim()) { $regDir.Trim() } else { Join-Path $env:APPDATA "Rime" }
+    $RimeDir = Get-RimeUserDir
 }
 
 $repoRoot       = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
@@ -35,7 +40,8 @@ if ($ReleaseTag)        { $params.ReleaseTag        = $ReleaseTag }
 if ($LocalModelArchive) { $params.LocalModelArchive = $LocalModelArchive }
 if ($ForceDownload)     { $params.ForceDownload     = $true }
 
-if (Test-Path $localInstaller) {
+if (Test-Path -LiteralPath $localInstaller) {
+    Write-Output "[INFO] Using local sibling rime-neural installer: $localInstaller"
     $global:LASTEXITCODE = 0
     & $localInstaller @params
     $rc = if ($null -eq $LASTEXITCODE) { 0 } else { [int]$LASTEXITCODE }
@@ -48,13 +54,16 @@ try {
     # Always fetch the latest hardened installer from main; -ReleaseTag selects the target release asset.
     $url = "https://raw.githubusercontent.com/Chth1z/rime-neural/main/scripts/install.ps1"
     Write-Output "Downloading official rime-neural installer from $url..."
-    & curl.exe -fSL --retry 3 --connect-timeout 20 -o $tmpScript $url
-    if ($LASTEXITCODE -ne 0) { throw "Failed to download rime-neural installer." }
+    $dl = Invoke-NativeSafe { & curl.exe -fsSL --retry 3 --connect-timeout 20 -o $tmpScript $url }
+    if ($dl.ExitCode -ne 0 -or -not (Test-Path -LiteralPath $tmpScript) -or (Get-Item -LiteralPath $tmpScript).Length -eq 0) {
+        $tail = ($dl.Output | Select-Object -Last 8) -join " | "
+        throw "Failed to download rime-neural installer (ExitCode=$($dl.ExitCode)): $tail"
+    }
     $global:LASTEXITCODE = 0
     & $tmpScript @params
     $rc = if ($null -eq $LASTEXITCODE) { 0 } else { [int]$LASTEXITCODE }
 }
 finally {
-    if (Test-Path $tmpScript) { Remove-Item $tmpScript -Force -ErrorAction SilentlyContinue }
+    if (Test-Path -LiteralPath $tmpScript) { Remove-Item -LiteralPath $tmpScript -Force -ErrorAction SilentlyContinue }
 }
 exit $rc
