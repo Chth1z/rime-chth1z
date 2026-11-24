@@ -167,16 +167,18 @@ local function log10(x)
 end
 calcPlugin["log10"] = log10
 
--- 平均值
+-- 平均值（任一参数非有效有限数字时返回 nil，避免 ipairs 在 nil 处截断产生错值）
 local function avg(...)
   local data = {...}
   local n = select("#", ...)
-  -- 样本数量不能为0
   if n == 0 then return nil end
 
-  -- 计算总和
   local sum = 0
-  for _, value in ipairs(data) do
+  for i = 1, n do
+    local value = data[i]
+    if type(value) ~= "number" or value ~= value or value == math.huge or value == -math.huge then
+      return nil
+    end
     sum = sum + value
   end
 
@@ -184,24 +186,25 @@ local function avg(...)
 end
 calcPlugin["avg"] = avg
 
--- 方差
+-- 方差（任一参数非有效有限数字时返回 nil）
 local function variance(...)
   local data = {...}
   local n = select("#", ...)
-  -- 样本数量不能为0
   if n == 0 then return nil end
 
-  -- 计算均值
   local sum = 0
-  for _, value in ipairs(data) do
+  for i = 1, n do
+    local value = data[i]
+    if type(value) ~= "number" or value ~= value or value == math.huge or value == -math.huge then
+      return nil
+    end
     sum = sum + value
   end
   local mean = sum / n
 
-  -- 计算方差
   local sum_squared_diff = 0
-  for _, value in ipairs(data) do
-    sum_squared_diff = sum_squared_diff + (value - mean)^2
+  for i = 1, n do
+    sum_squared_diff = sum_squared_diff + (data[i] - mean)^2
   end
 
   return sum_squared_diff / n
@@ -228,6 +231,34 @@ local function replaceToFactorial(str)
   return str:gsub("([0-9]+)!", "fact(%1)")
 end
 
+-- 只读沙箱代理，阻止表达式写入污染 calcPlugin 全局函数或常量（如 pi/e）
+local calcEnv = setmetatable({}, {
+  __index = calcPlugin,
+  __newindex = function() error("read-only calculator environment") end,
+  __metatable = false,
+})
+
+local FORBIDDEN_KEYWORDS = {
+  ["function"] = true, ["while"] = true, ["for"] = true, ["repeat"] = true,
+  ["until"] = true, ["do"] = true, ["end"] = true, ["goto"] = true,
+  ["local"] = true, ["return"] = true, ["if"] = true, ["then"] = true,
+  ["else"] = true, ["elseif"] = true, ["break"] = true, ["in"] = true,
+}
+
+local function isSafeExpression(expr)
+  if #expr > 160 then return false end
+  -- 仅允许字母数字、空白与算术/括号/逗号/小数点/阶乘符号（禁止引号、冒号、方括号、花括号、分号、等号）
+  if not expr:match("^[%w%s%+%-%*/%%%^%(%)%.,!]+$") then
+    return false
+  end
+  for ident in expr:gmatch("[%a_][%w_]*") do
+    if FORBIDDEN_KEYWORDS[ident] then
+      return false
+    end
+  end
+  return true
+end
+
 -- 简单计算器
 function M.func(input, seg, env)
   -- 以方案的识别规则为准，避免把双拼的 v 声母当成计算器前缀。
@@ -244,18 +275,14 @@ function M.func(input, seg, env)
   local express = truncateFromStart(input, prefix)
   -- 算式长度 < 2 直接终止(没有计算意义)
   if (string.len(express) < 2) then return end
-  -- pcall()的原因需要控制一下 . 符号的位置
-  -- 现在不需要了
-  -- if (string.match(express, "[^0-9]%.")) then
-  --   yield(Candidate(input, seg.start, seg._end, express, "小数点不能在非数字字符后面"))
-  --   return
-  -- end
   local code = replaceToFactorial(express)
 
-  local fn = load("return " .. code, "calculate", "t", calcPlugin)
   local success, result = false, nil
-  if fn then
-    success, result = pcall(fn)
+  if isSafeExpression(express) then
+    local fn = load("return " .. code, "calculate", "t", calcEnv)
+    if fn then
+      success, result = pcall(fn)
+    end
   end
   if success and type(result) == "number" and result == result and result ~= math.huge and result ~= -math.huge then
     result = tostring(result)

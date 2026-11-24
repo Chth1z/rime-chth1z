@@ -78,9 +78,13 @@ function M.init(env)
     local tag_list = config:get_list(ns .. "/tags")
     if tag_list and tag_list.size > 0 then
         for i = 0, tag_list.size - 1 do
-            tags[#tags + 1] = tag_list:get_value_at(i).value
+            local item = tag_list:get_value_at(i)
+            if item and type(item.value) == "string" and #item.value > 0 then
+                tags[#tags + 1] = item.value
+            end
         end
-    else
+    end
+    if #tags == 0 then
         tags = { "abc" }
     end
     env.tags = tags

@@ -51,18 +51,25 @@ local function load_pin_cands(config)
 
     local explicit = {}
     for i = 0, list.size - 1 do
-        local raw = list:get_value_at(i).value
-        local preedit, texts = raw:match("([^\t]+)\t(.+)")
-        if preedit and texts and #preedit > 0 and #texts > 0 then
-            explicit[preedit:gsub(" ", "")] = true
+        local item = list:get_value_at(i)
+        local raw = item and item.value
+        if type(raw) == "string" then
+            local preedit, texts = raw:match("([^\t]+)\t(.+)")
+            if preedit and texts and #preedit > 0 and #texts > 0 then
+                explicit[preedit:gsub(" ", "")] = true
+            end
         end
     end
 
     local pin_cands = {}
     local sep = "\x1f"
     for i = 0, list.size - 1 do
-        local raw = list:get_value_at(i).value
-        local preedit, texts = raw:match("([^\t]+)\t(.+)")
+        local item = list:get_value_at(i)
+        local raw = item and item.value
+        local preedit, texts = nil, nil
+        if type(raw) == "string" then
+            preedit, texts = raw:match("([^\t]+)\t(.+)")
+        end
         if preedit and texts and #preedit > 0 and #texts > 0 then
             if texts:find(" > ", 1, true) then
                 texts = texts:gsub(" > ", sep)
@@ -160,7 +167,10 @@ local function load_reduce_english(config)
     local list = config:get_list("reduce_english_filter/words")
     if list then
         for i = 0, list.size - 1 do
-            map[list:get_value_at(i).value] = true
+            local item = list:get_value_at(i)
+            if item and type(item.value) == "string" then
+                map[item.value] = true
+            end
         end
     end
 
