@@ -642,6 +642,7 @@ def clean_chess2(lines: list[str], stats: dict) -> list[str]:
     )
     out = list(hdr)
     trad_pieces = re.compile(r"[車俥馬傌砲將帥]")
+    obsolete_black_cannon = re.compile(r"^[前后]包[进退平]")
     for offset, line in enumerate(body):
         if sec3_span and sec3_span[0] <= offset <= sec3_span[1]:
             if parse_entry(line):
@@ -654,7 +655,7 @@ def clean_chess2(lines: list[str], stats: dict) -> list[str]:
             continue
         w, py, wt, extra = parsed
         py = normalize_lue_nue(py)
-        if trad_pieces.search(w):
+        if trad_pieces.search(w) or obsolete_black_cannon.search(w):
             stats["deleted_trad_piece"] += 1
             continue
         out.append(format_entry(w, py, wt, extra))

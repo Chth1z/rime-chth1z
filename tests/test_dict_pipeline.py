@@ -553,6 +553,25 @@ class TestCleanerHardeningAndZeroPingPong(unittest.TestCase):
                 clean_dicts.run_pipeline(root, root, root / "rules", write=True)
             self.assertEqual((root / "cn_dicts_cell/literature.dict.yaml").read_bytes(), lit_before)
 
+    def test_clean_chess2_strips_obsolete_bao_cannon(self) -> None:
+        lines = [
+            "---",
+            "name: chess2",
+            "...",
+            "前包进一\tqian bao jin yi\t0",
+            "后包平五\thou bao ping wu\t1",
+            "前炮进一\tqian pao jin yi\t0",
+            "炮二平五\tpao er ping wu\t5",
+        ]
+        st: Counter = Counter()
+        out = clean_dicts.clean_chess2(lines, st)
+        joined = "\n".join(out)
+        self.assertNotIn("前包进一", joined)
+        self.assertNotIn("后包平五", joined)
+        self.assertIn("前炮进一\tqian pao jin yi\t0", joined)
+        self.assertIn("炮二平五\tpao er ping wu\t5", joined)
+        self.assertEqual(st["deleted_trad_piece"], 2)
+
 
 if __name__ == "__main__":
     unittest.main()

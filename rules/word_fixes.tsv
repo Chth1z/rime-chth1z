@@ -737,3 +737,5 @@ cn_dicts_cell/name2.dict.yaml	天然粘土	*	天然黏土	*	W3物性黏土规范
 # --- Batch 2: proactive upstream PR #426-#440 guards (others.dict.yaml) ---
 cn_dicts/others.dict.yaml	低粘度	*	低黏度	*	W3异形词归并（粘度->黏度，前置拦截上游PR #438，同base低黏度）	现汉第7版/DICTIONARY_SPEC §4.2
 cn_dicts/others.dict.yaml	抗炫光	*	抗眩光	*	W5光学防眩光术语正字为“眩”(目旁)，前置拦截上游PR #436	现汉第7版/全国科技名词委
+# --- Batch 2: chess2.dict.yaml classical verse fix ---
+cn_dicts_cell/chess2.dict.yaml	进炮应须要辅车	*	炮进应须要辅车	pao jin ying xu yao fu che	W5《事林广记》象棋古诀倒字（进炮->炮进，post_chess_add_ju自动衍生ju读音）	事林广记(Wikisource/ctext)

@@ -275,37 +275,6 @@ use_preset_vocabulary: false
 二兵平四	er bing ping si	0
 二兵平五	er bing ping wu	0
 二兵平一	er bing ping yi	0
-二卒进	er zu jin	0
-二卒平	er zu ping	0
-后包进	hou bao jin	1
-后包进八	hou bao jin ba	0
-后包进二	hou bao jin er	0
-后包进九	hou bao jin jiu	0
-后包进六	hou bao jin liu	0
-后包进七	hou bao jin qi	0
-后包进三	hou bao jin san	0
-后包进四	hou bao jin si	0
-后包进五	hou bao jin wu	0
-后包进一	hou bao jin yi	0
-后包平	hou bao ping	0
-后包平八	hou bao ping ba	0
-后包平二	hou bao ping er	0
-后包平九	hou bao ping jiu	0
-后包平六	hou bao ping liu	0
-后包平七	hou bao ping qi	0
-后包平三	hou bao ping san	0
-后包平四	hou bao ping si	0
-后包平五	hou bao ping wu	0
-后包平一	hou bao ping yi	0
-后包退	hou bao tui	0
-后包退八	hou bao tui ba	0
-后包退二	hou bao tui er	0
-后包退六	hou bao tui liu	0
-后包退七	hou bao tui qi	0
-后包退三	hou bao tui san	0
-后包退四	hou bao tui si	0
-后包退五	hou bao tui wu	0
-后包退一	hou bao tui yi	0
 后兵八进一	hou bing ba jin yi	0
 后兵八平七	hou bing ba ping qi	0
 后兵二进一	hou bing er jin yi	0
@@ -339,7 +308,6 @@ use_preset_vocabulary: false
 后兵五平四	hou bing wu ping si	0
 后兵一进一	hou bing yi jin yi	0
 后兵一平二	hou bing yi ping er	0
-后车进	hou che jin	0
 后车进八	hou che jin ba	0
 后车进二	hou che jin er	0
 后车进六	hou che jin liu	0
@@ -348,7 +316,6 @@ use_preset_vocabulary: false
 后车进四	hou che jin si	0
 后车进五	hou che jin wu	0
 后车进一	hou che jin yi	0
-后车平	hou che ping	0
 后车平八	hou che ping ba	0
 后车平二	hou che ping er	0
 后车平九	hou che ping jiu	0
@@ -358,7 +325,6 @@ use_preset_vocabulary: false
 后车平四	hou che ping si	1
 后车平五	hou che ping wu	0
 后车平一	hou che ping yi	0
-后车退	hou che tui	0
 后车退八	hou che tui ba	0
 后车退二	hou che tui er	0
 后车退六	hou che tui liu	0
@@ -367,7 +333,6 @@ use_preset_vocabulary: false
 后车退四	hou che tui si	0
 后车退五	hou che tui wu	0
 后车退一	hou che tui yi	0
-后马进	hou ma jin	0
 后马进八	hou ma jin ba	0
 后马进二	hou ma jin er	0
 后马进九	hou ma jin jiu	0
@@ -377,7 +342,6 @@ use_preset_vocabulary: false
 后马进四	hou ma jin si	0
 后马进五	hou ma jin wu	0
 后马进一	hou ma jin yi	0
-后马退	hou ma tui	0
 后马退八	hou ma tui ba	0
 后马退二	hou ma tui er	0
 后马退九	hou ma tui jiu	0
@@ -387,7 +351,6 @@ use_preset_vocabulary: false
 后马退四	hou ma tui si	0
 后马退五	hou ma tui wu	0
 后马退一	hou ma tui yi	0
-后炮进	hou pao jin	0
 后炮进八	hou pao jin ba	0
 后炮进二	hou pao jin er	0
 后炮进九	hou pao jin jiu	0
@@ -397,7 +360,6 @@ use_preset_vocabulary: false
 后炮进四	hou pao jin si	0
 后炮进五	hou pao jin wu	0
 后炮进一	hou pao jin yi	0
-后炮平	hou pao ping	0
 后炮平八	hou pao ping ba	0
 后炮平二	hou pao ping er	0
 后炮平九	hou pao ping jiu	0
@@ -407,7 +369,6 @@ use_preset_vocabulary: false
 后炮平四	hou pao ping si	0
 后炮平五	hou pao ping wu	0
 后炮平一	hou pao ping yi	0
-后炮退	hou pao tui	0
 后炮退八	hou pao tui ba	0
 后炮退二	hou pao tui er	0
 后炮退六	hou pao tui liu	0
@@ -416,8 +377,6 @@ use_preset_vocabulary: false
 后炮退四	hou pao tui si	0
 后炮退五	hou pao tui wu	0
 后炮退一	hou pao tui yi	0
-后卒进	hou zu jin	0
-后卒平	hou zu ping	0
 马八进九	ma ba jin jiu	3
 马八进六	ma ba jin liu	0
 马八进七	ma ba jin qi	6
@@ -660,7 +619,6 @@ use_preset_vocabulary: false
 炮四退四	pao si tui si	0
 炮四退五	pao si tui wu	0
 炮四退一	pao si tui yi	0
-炮退	pao tui	0
 炮五进八	pao wu jin ba	0
 炮五进二	pao wu jin er	0
 炮五进九	pao wu jin jiu	0
@@ -713,35 +671,6 @@ use_preset_vocabulary: false
 炮一退四	pao yi tui si	0
 炮一退五	pao yi tui wu	0
 炮一退一	pao yi tui yi	0
-前包进	qian bao jin	0
-前包进八	qian bao jin ba	0
-前包进二	qian bao jin er	0
-前包进六	qian bao jin liu	0
-前包进七	qian bao jin qi	0
-前包进三	qian bao jin san	0
-前包进四	qian bao jin si	0
-前包进五	qian bao jin wu	0
-前包进一	qian bao jin yi	0
-前包平	qian bao ping	0
-前包平八	qian bao ping ba	0
-前包平二	qian bao ping er	0
-前包平九	qian bao ping jiu	0
-前包平六	qian bao ping liu	0
-前包平七	qian bao ping qi	0
-前包平三	qian bao ping san	0
-前包平四	qian bao ping si	0
-前包平五	qian bao ping wu	0
-前包平一	qian bao ping yi	0
-前包退	qian bao tui	0
-前包退八	qian bao tui ba	0
-前包退二	qian bao tui er	0
-前包退九	qian bao tui jiu	0
-前包退六	qian bao tui liu	0
-前包退七	qian bao tui qi	0
-前包退三	qian bao tui san	0
-前包退四	qian bao tui si	0
-前包退五	qian bao tui wu	0
-前包退一	qian bao tui yi	0
 前兵八进一	qian bing ba jin yi	0
 前兵八平七	qian bing ba ping qi	0
 前兵二进一	qian bing er jin yi	0
@@ -775,7 +704,6 @@ use_preset_vocabulary: false
 前兵五平四	qian bing wu ping si	0
 前兵一进一	qian bing yi jin yi	0
 前兵一平二	qian bing yi ping er	0
-前车进	qian che jin	0
 前车进八	qian che jin ba	0
 前车进二	qian che jin er	0
 前车进六	qian che jin liu	0
@@ -784,7 +712,6 @@ use_preset_vocabulary: false
 前车进四	qian che jin si	0
 前车进五	qian che jin wu	0
 前车进一	qian che jin yi	5
-前车平	qian che ping	0
 前车平八	qian che ping ba	0
 前车平二	qian che ping er	0
 前车平九	qian che ping jiu	0
@@ -794,7 +721,6 @@ use_preset_vocabulary: false
 前车平四	qian che ping si	0
 前车平五	qian che ping wu	0
 前车平一	qian che ping yi	0
-前车退	qian che tui	0
 前车退八	qian che tui ba	0
 前车退二	qian che tui er	0
 前车退六	qian che tui liu	0
@@ -803,7 +729,6 @@ use_preset_vocabulary: false
 前车退四	qian che tui si	0
 前车退五	qian che tui wu	0
 前车退一	qian che tui yi	1
-前马进	qian ma jin	0
 前马进八	qian ma jin ba	0
 前马进二	qian ma jin er	0
 前马进九	qian ma jin jiu	0
@@ -813,7 +738,6 @@ use_preset_vocabulary: false
 前马进四	qian ma jin si	1
 前马进五	qian ma jin wu	0
 前马进一	qian ma jin yi	0
-前马退	qian ma tui	0
 前马退八	qian ma tui ba	0
 前马退二	qian ma tui er	0
 前马退九	qian ma tui jiu	0
@@ -823,7 +747,6 @@ use_preset_vocabulary: false
 前马退四	qian ma tui si	0
 前马退五	qian ma tui wu	0
 前马退一	qian ma tui yi	0
-前炮进	qian pao jin	0
 前炮进八	qian pao jin ba	0
 前炮进二	qian pao jin er	0
 前炮进六	qian pao jin liu	0
@@ -832,7 +755,6 @@ use_preset_vocabulary: false
 前炮进四	qian pao jin si	0
 前炮进五	qian pao jin wu	0
 前炮进一	qian pao jin yi	0
-前炮平	qian pao ping	0
 前炮平八	qian pao ping ba	0
 前炮平二	qian pao ping er	0
 前炮平九	qian pao ping jiu	0
@@ -842,7 +764,6 @@ use_preset_vocabulary: false
 前炮平四	qian pao ping si	0
 前炮平五	qian pao ping wu	1
 前炮平一	qian pao ping yi	0
-前炮退	qian pao tui	0
 前炮退八	qian pao tui ba	0
 前炮退二	qian pao tui er	0
 前炮退九	qian pao tui jiu	0
@@ -852,8 +773,6 @@ use_preset_vocabulary: false
 前炮退四	qian pao tui si	0
 前炮退五	qian pao tui wu	0
 前炮退一	qian pao tui yi	0
-前卒进	qian zu jin	0
-前卒平	qian zu ping	0
 三兵进一	san bing jin yi	0
 三兵平八	san bing ping ba	0
 三兵平二	san bing ping er	0
@@ -864,9 +783,6 @@ use_preset_vocabulary: false
 三兵平四	san bing ping si	0
 三兵平五	san bing ping wu	0
 三兵平一	san bing ping yi	0
-三卒进	san zu jin	0
-三卒平	san zu ping	0
-士进	shi jin	0
 仕六进五	shi liu jin wu	0
 士六进五	shi liu jin wu	2
 仕六退五	shi liu tui wu	0
@@ -875,7 +791,6 @@ use_preset_vocabulary: false
 士四进五	shi si jin wu	0
 仕四退五	shi si tui wu	0
 士四退五	shi si tui wu	0
-士退	shi tui	0
 仕五进六	shi wu jin liu	0
 士五进六	shi wu jin liu	0
 仕五进四	shi wu jin si	0
@@ -903,9 +818,6 @@ use_preset_vocabulary: false
 四兵平四	si bing ping si	0
 四兵平五	si bing ping wu	0
 四兵平一	si bing ping yi	0
-四卒进	si zu jin	0
-四卒平	si zu ping	0
-象进	xiang jin	4
 相九进七	xiang jiu jin qi	0
 相九退七	xiang jiu tui qi	0
 相七进九	xiang qi jin jiu	0
@@ -916,7 +828,6 @@ use_preset_vocabulary: false
 相三进一	xiang san jin yi	2
 相三退五	xiang san tui wu	2
 相三退一	xiang san tui yi	1
-象退	xiang tui	0
 相五进七	xiang wu jin qi	0
 相五进三	xiang wu jin san	0
 相五退七	xiang wu tui qi	0
@@ -933,10 +844,6 @@ use_preset_vocabulary: false
 中兵平四	zhong bing ping si	0
 中兵平五	zhong bing ping wu	0
 中兵平一	zhong bing ping yi	0
-中卒进	zhong zu jin	0
-中卒平	zhong zu ping	0
-卒进	zu jin	0
-卒平	zu ping	0
 暗根子	an gen zi	0
 按规行棋	an gui xing qi	0
 按时拨钟	an shi bo zhong	0
@@ -1136,7 +1043,7 @@ use_preset_vocabulary: false
 金钩炮	jin gou pao	6
 金钩炮对起马	jin gou pao dui qi ma	0
 金海英	jin hai ying	0
-进炮应须要辅车	jin pao ying xu yao fu che	0
+炮进应须要辅车	pao jin ying xu yao fu che	0
 靳玉砚	jin yu yan	1
 禁止着法	jin zhi zhao fa	1
 精选着法	jing xuan zhao fa	0
@@ -1402,7 +1309,6 @@ use_preset_vocabulary: false
 中炮七路马对三步虎转列炮	zhong pao qi lu ma dui san bu hu zhuan lie pao	0
 中炮巡河炮对反宫马	zhong pao xun he pao dui fan gong ma	0
 中炮巡河炮对屏风马三步虎	zhong pao xun he pao dui ping feng ma san bu hu	0
-中炮直车对屏风马卒河口炮	zhong pao zhi che dui ping feng ma zu he kou pao	0
 中炮直车对左炮封车转半途列炮	zhong pao zhi che dui zuo pao feng che zhuan ban tu lie pao	0
 中炮直车七路马对屏风马双炮过河	zhong pao zhi che qi lu ma dui ping feng ma shuang pao guo he	0
 中原五豹	zhong yuan wu bao	0
@@ -1677,7 +1583,6 @@ use_preset_vocabulary: false
 车一退四	ju yi tui si	0
 车一退五	ju yi tui wu	0
 车一退一	ju yi tui yi	0
-后车进	hou ju jin	0
 后车进八	hou ju jin ba	0
 后车进二	hou ju jin er	0
 后车进六	hou ju jin liu	0
@@ -1686,7 +1591,6 @@ use_preset_vocabulary: false
 后车进四	hou ju jin si	0
 后车进五	hou ju jin wu	0
 后车进一	hou ju jin yi	0
-后车平	hou ju ping	0
 后车平八	hou ju ping ba	0
 后车平二	hou ju ping er	0
 后车平九	hou ju ping jiu	0
@@ -1696,7 +1600,6 @@ use_preset_vocabulary: false
 后车平四	hou ju ping si	1
 后车平五	hou ju ping wu	0
 后车平一	hou ju ping yi	0
-后车退	hou ju tui	0
 后车退八	hou ju tui ba	0
 后车退二	hou ju tui er	0
 后车退六	hou ju tui liu	0
@@ -1705,7 +1608,6 @@ use_preset_vocabulary: false
 后车退四	hou ju tui si	0
 后车退五	hou ju tui wu	0
 后车退一	hou ju tui yi	0
-前车进	qian ju jin	0
 前车进八	qian ju jin ba	0
 前车进二	qian ju jin er	0
 前车进六	qian ju jin liu	0
@@ -1714,7 +1616,6 @@ use_preset_vocabulary: false
 前车进四	qian ju jin si	0
 前车进五	qian ju jin wu	0
 前车进一	qian ju jin yi	5
-前车平	qian ju ping	0
 前车平八	qian ju ping ba	0
 前车平二	qian ju ping er	0
 前车平九	qian ju ping jiu	0
@@ -1724,7 +1625,6 @@ use_preset_vocabulary: false
 前车平四	qian ju ping si	0
 前车平五	qian ju ping wu	0
 前车平一	qian ju ping yi	0
-前车退	qian ju tui	0
 前车退八	qian ju tui ba	0
 前车退二	qian ju tui er	0
 前车退六	qian ju tui liu	0
@@ -1754,7 +1654,6 @@ use_preset_vocabulary: false
 红直横车	hong zhi heng ju	0
 花心车	hua xin ju	0
 缓开车	huan kai ju	2
-进炮应须要辅车	jin pao ying xu yao fu ju	0
 肋车	lei ju	2
 立马车	li ma ju	0
 弃象陷车	qi xiang xian ju	0
@@ -1783,10 +1682,10 @@ use_preset_vocabulary: false
 中炮横车盘头马对屏风马	zhong pao heng ju pan tou ma dui ping feng ma	0
 中炮横车七路马对屏风马	zhong pao heng ju qi lu ma dui ping feng ma	0
 中炮进七兵过河车对反宫马	zhong pao jin qi bing guo he ju dui fan gong ma	0
-中炮直车对屏风马卒河口炮	zhong pao zhi ju dui ping feng ma zu he kou pao	0
 中炮直车对左炮封车转半途列炮	zhong pao zhi ju dui zuo pao feng ju zhuan ban tu lie pao	0
 中炮直车七路马对屏风马双炮过河	zhong pao zhi ju qi lu ma dui ping feng ma shuang pao guo he	0
 后车进九	hou ju jin jiu	0
 后车退九	hou ju tui jiu	0
 前车进九	qian ju jin jiu	0
 前车退九	qian ju tui jiu	0
+炮进应须要辅车	pao jin ying xu yao fu ju	0
