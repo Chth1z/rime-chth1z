@@ -2521,3 +2521,6 @@ cn_dicts_cell/name2.dict.yaml	长满苔藓的石爪	zhang man tai xian de shi zh
 # --- Batch 2: others.dict.yaml & proactive upstream PR #426-#440 guards ---
 cn_dicts/others.dict.yaml	梦差	meng cha	meng chai	《影之刃零》专名(Herald of the Veil)差役义读chāi（同鬼差/差使）	影之刃零官方/现汉第7版(L1/L3)
 cn_dicts/others.dict.yaml	帖勒瑞	tie lei rui	tie le rui	外语音译“勒”规范读lè(Teleri)，非lēi（前置拦截上游PR #436）	现汉第7版/L3专名
+# --- Batch 2: industry_product & food phonetic fixes ---
+cn_dicts_cell/industry_product.dict.yaml	标识防伪	biao zhi fang wei	biao shi fang wei	现汉第7版“标识”(识别记号义)规范读biāo shí，与base防伪标识/商标标识统一	现汉第7版
+cn_dicts_cell/food.dict.yaml	银丝仔乌汤	yin si zai wu tang	yin si zi wu tang	仔乌（幼小乌贼）“仔”作前缀表幼小，规范读zǐ（同仔鸡/仔鲇）	现汉第7版(L1)

@@ -648,3 +648,5 @@ cn_dicts/ext.dict.yaml	寓军于民	yu jun yu min	20	modern	补齐正规四字�
 cn_dicts_cell/geography.dict.yaml	夕卡岩	xi ka yan	10	domain	全国科技名词委地质规范正形（与W2传统形矽卡岩 w=7 并存）
 cn_dicts_cell/exthot.dict.yaml	谁发明的	shei fa ming de	19	phonetic	现汉第7版“谁”shéi/shuí双规范音补齐(DICTIONARY_SPEC §3.2)
 cn_dicts_cell/exthot.dict.yaml	谁家好人	shei jia hao ren	3	phonetic	现汉第7版“谁”shéi/shuí双规范音补齐(DICTIONARY_SPEC §3.2)
+# --- Batch 2: industry_product W2 standard counterpart ---
+cn_dicts_cell/industry_product.dict.yaml	合成胶黏剂	he cheng jiao nian ji	2	domain	现汉第7版胶黏剂规范正形（与W2国标形合成胶粘剂 w=1 并存）

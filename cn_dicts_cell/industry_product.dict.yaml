@@ -13,7 +13,7 @@ use_preset_vocabulary: false
 包装薄膜	bao zhuang bo mo	2
 包装防伪	bao zhuang fang wei	0
 包装印刷加工	bao zhuang yin shua jia gong	0
-标识防伪	biao zhi fang wei	0
+标识防伪	biao shi fang wei	0
 玻璃类印刷	bo li lei yin shua	0
 玻璃油墨	bo li you mo	0
 不干胶印刷	bu gan jiao yin shua	0
@@ -710,7 +710,6 @@ use_preset_vocabulary: false
 监控器材及系统	jian kong qi cai ji xi tong	0
 建筑玻璃	jian zhu bo li	4
 建筑门窗及五金	jian zhu men chuang ji wu jin	0
-建筑配套设施及其他	jian zhu pei tao she shi ji qi ta	0
 建筑图纸	jian zhu tu zhi	20
 建筑用黏合剂	jian zhu yong nian he ji	1
 建筑装潢工程承包	jian zhu zhuang huang gong cheng cheng bao	0
@@ -909,7 +908,6 @@ use_preset_vocabulary: false
 触片	chu pian	2
 道路照明灯	dao lu zhao ming deng	1
 灯具配附件	deng ju pei fu jian	0
-灯柱灯杆	deng zhu deng gan	0
 电光源材料	dian guang yuan cai liao	1
 电子粉	dian zi fen	0
 电子加工	dian zi jia gong	0
@@ -923,7 +921,7 @@ use_preset_vocabulary: false
 焊接加工	han jie jia gong	3
 航空障碍灯	hang kong zhang ai deng	0
 红外线灯泡	hong wai xian deng pao	2
-环型荧光灯管	huan xing ying guang deng guan	0
+环形荧光灯管	huan xing ying guang deng guan	0
 机床灯具	ji chuang deng ju	0
 检修灯	jian xiu deng	0
 角灯	jiao deng	12
@@ -1099,7 +1097,6 @@ use_preset_vocabulary: false
 围巾手套二件套	wei jin shou tao er jian tao	0
 橡胶鞋底	xiang jiao xie di	14
 鞋材化工	xie cai hua gong	0
-鞋材鞋件	xie cai xie jian	0
 鞋撑	xie cheng	7
 鞋成型机	xie cheng xing ji	0
 鞋辅件	xie fu jian	0
@@ -1451,7 +1448,6 @@ use_preset_vocabulary: false
 蜡烛及烛台	la zhu ji zhu tai	0
 蜡烛器皿及配件	la zhu qi min ji pei jian	0
 柳编工艺品	liu bian gong yi pin	0
-琉璃水晶玻璃工艺品	liu li shui jing bo li gong yi pin	0
 流苏工艺品	liu su gong yi pin	0
 铝艺品	lv yi pin	0
 民间工艺品	min jian gong yi pin	1
@@ -1925,7 +1921,6 @@ use_preset_vocabulary: false
 护肤膏霜	hu fu gao shuang	0
 护肤乳液	hu fu ru ye	3
 会客椅	hui ke yi	0
-家具配件附件	jia ju pei jian fu jian	0
 家居清洗用品	jia ju qing xi yong pin	0
 家居用品加工	jia ju yong pin jia gong	0
 家用玻璃制品	jia yong bo li zhi pin	0
@@ -2328,3 +2323,4 @@ use_preset_vocabulary: false
 二手船舶	er shou chuan bo	10
 二手机床	er shou ji chuang	10
 二手锅炉	er shou guo lu	10
+合成胶黏剂	he cheng jiao nian ji	2

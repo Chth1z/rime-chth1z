@@ -596,7 +596,7 @@ cn_dicts_cell/food.dict.yaml	姜茸柠檬锔鸡腿	*	姜茸柠檬焗鸡腿	*	W5�
 cn_dicts_cell/food.dict.yaml	锦锈龙虾	*	锦绣龙虾	*	W5锦绣错字	现汉第7版
 cn_dicts_cell/food.dict.yaml	昆布海澡瘦肉汤	*	昆布海藻瘦肉汤	*	W5海藻错字	现汉第7版
 cn_dicts_cell/food.dict.yaml	馏鱼片	*	熘鱼片	*	W5烹调技法熘错字	现汉第7版
-cn_dicts_cell/food.dict.yaml	么么喳喳珍珠糖水	me me zha zha zhen zhu tang shui	摩摩喳喳珍珠糖水	mo mo zha zha zhen zhu tang shui	W5东南亚甜品规范作摩摩喳喳	社会通行
+cn_dicts_cell/food.dict.yaml	么么喳喳珍珠糖水	me me zha zha zhen zhu tang shui	摩摩喳喳珍珠糖水	mo mo cha cha zhen zhu tang shui	W5东南亚甜品规范作摩摩喳喳(bubur cha-cha，喳读chā)	现汉第7版/社会通行
 cn_dicts_cell/food.dict.yaml	面酱银丝青耗	*	面酱银丝青蚝	*	W5青蚝错字	现汉第7版
 cn_dicts_cell/food.dict.yaml	奶汤棱桃仁	nai tang leng tao ren	奶汤核桃仁	nai tang he tao ren	W5核桃仁OCR错字	菜谱正字
 cn_dicts_cell/food.dict.yaml	泡莱鲫鱼	pao lai ji yu	泡菜鲫鱼	pao cai ji yu	W5泡菜OCR错字	现汉第7版
@@ -746,3 +746,12 @@ cn_dicts_cell/geography.dict.yaml	漕矩咤国	cao ju zha guo	漕矩吒国	*	《
 cn_dicts_cell/geography.dict.yaml	屈浪拏国	qu lang na guo	屈浪拿国	*	§2.6非8105异体字规范化：拏→拿（《大唐西域记》古国名）	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/geography.dict.yaml	奈斯维市	nai si wei shi	涅斯维日	nie si wei ri	白俄罗斯世界遗产地名Nesvizh规范译名为“涅斯维日”，原条“奈斯维市”系误译	世界遗产名录/世界地名翻译大辞典
 cn_dicts_cell/exthot.dict.yaml	扣地	kou di	抠地	*	W5错别字修正（热梗“脚趾抠地”正字为“抠”，全库缺正形）	现汉第7版/DICTIONARY_SPEC §4.2
+# --- Batch 2: animal, industry_product & food OCR/W5 word fixes ---
+cn_dicts_cell/animal.dict.yaml	黑流蛱蝶	*	黑脉蛱蝶	hei mai jia die	W5蝴蝶学名OCR错字（流->脉，学名Hestina assimilis）	中国生物物种名录/维基百科(L2)
+cn_dicts_cell/animal.dict.yaml	虎纹针凤蝶	*	虎纹剑凤蝶	hu wen jian feng die	W5蝴蝶别名OCR错字（针->剑，即绿凤蝶Graphium antiphates别名）	中国生物物种名录(L2)
+cn_dicts_cell/industry_product.dict.yaml	环型荧光灯管	*	环形荧光灯管	*	W5表圆环形状规范用“形”（照明国标作环形荧光灯，同钳形表）	GB 19044/现汉第7版
+cn_dicts_cell/food.dict.yaml	花汇兔丁	*	花仁兔丁	hua ren tu ding	W5四川冷菜“花仁兔丁”OCR错字（仁->汇）	川菜菜谱
+cn_dicts_cell/food.dict.yaml	网油棒榻	*	网油椿塌	wang you chun ta	W5传统鲁菜“网油椿塌/网油椿榻”OCR错字（椿->棒）	鲁菜菜谱
+cn_dicts_cell/food.dict.yaml	油条西舌	*	油条西施舌	you tiao xi shi she	W5闽菜“油条西施舌”漏字（脱“施”字）	闽菜菜谱
+cn_dicts_cell/food.dict.yaml	鱼包三经	*	鱼包三丝	yu bao san si	W5传统鲁菜“鱼包三丝”OCR错字（丝->经）	鲁菜菜谱
+cn_dicts_cell/food.dict.yaml	椰汁板兰糕	*	椰汁斑斓糕	ye zhi ban lan gao	W5“斑斓”误作“板兰”	菜谱正字

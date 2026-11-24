@@ -263,7 +263,6 @@ use_preset_vocabulary: false
 白点褐蚬蝶	bai dian he xian die	0
 白角星弄蝶	bai jiao xing nong die	0
 白弄蝶	bai nong die	0
-白室蚬蝶	bai shi xian die	0
 白蚬蝶	bai xian die	0
 斑凤蝶	ban feng die	0
 宝镜凤蝶	bao jing feng die	0
@@ -289,7 +288,6 @@ use_preset_vocabulary: false
 大纹白粉蝶	da wen bai fen die	0
 大紫蛱蝶	da zi jia die	0
 淡纹青斑蝶	dan wen qing ban die	0
-地珠环蝶	di zhu huan die	0
 电蛱蝶	dian jia die	0
 颠眼蝶	dian yan die	0
 东方菜粉蝶	dong fang cai fen die	0
@@ -301,7 +299,6 @@ use_preset_vocabulary: false
 凤尾青凤蝶	feng wei qing feng die	0
 凤眼方环蝶	feng yan fang huan die	0
 柑橘凤蝶	gan ju feng die	0
-果神粉蝶	guo shen fen die	0
 鹤顶粉蝶	he ding fen die	0
 合欢黄粉蝶	he huan huang fen die	0
 黑斑伞弄蝶	hei ban san nong die	0
@@ -310,7 +307,7 @@ use_preset_vocabulary: false
 黑点小粉蝶	hei dian xiao fen die	0
 黑凤蝶	hei feng die	1
 黑绢斑蝶	hei juan ban die	0
-黑流蛱蝶	hei liu jia die	0
+黑脉蛱蝶	hei mai jia die	0
 黑脉桦斑蝶	hei mai hua ban die	0
 黑脉园粉蝶	hei mai yuan fen die	0
 黑燕尾蚬蝶	hei yan wei xian die	0
@@ -326,7 +323,7 @@ use_preset_vocabulary: false
 虎斑蝶	hu ban die	3
 虎纹斑蝶	hu wen ban die	0
 虎纹剑尾凤蝶	hu wen jian wei feng die	0
-虎纹针凤蝶	hu wen zhen feng die	0
+虎纹剑凤蝶	hu wen jian feng die	0
 桦斑蝶	hua ban die	0
 花椒凤蝶	hua jiao feng die	0
 幻紫斑蝶	huan zi ban die	0

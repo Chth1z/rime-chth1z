@@ -842,7 +842,7 @@ use_preset_vocabulary: false
 滑蛋虾仁	hua dan xia ren	1
 花菇石鸡	hua gu shi ji	0
 花菇田鸡	hua gu tian ji	1
-花汇兔丁	hua hui tu ding	0
+花仁兔丁	hua ren tu ding	0
 化积解热饮	hua ji jie re yin	0
 花椒红糖汤	hua jiao hong tang tang	0
 花椒姜枣汤	hua jiao jiang zao tang	0
@@ -975,7 +975,6 @@ use_preset_vocabulary: false
 鸡油莴苣笋	ji you wo ju sun	0
 鸡油香菇	ji you xiang gu	0
 鲫鱼汆白玉	ji yu cuan bai yu	0
-鸡沾口蘑	ji zhan kou mo	0
 鸡汁菜卷	ji zhi cai juan	0
 鸡汁虾卷	ji zhi xia juan	0
 鸡汁燕窝	ji zhi yan wo	0
@@ -1132,7 +1131,6 @@ use_preset_vocabulary: false
 桔络丸子	ju luo wan zi	0
 蒟蒻凉拌	ju ruo liang ban	0
 聚三鲜	ju san xian	0
-桔烧巴	ju shao ba	0
 桔香红枣茶	ju xiang hong zao cha	0
 菊香凉拌丝	ju xiang liang ban si	0
 桔子盏	ju zi zhan	0
@@ -1378,7 +1376,7 @@ use_preset_vocabulary: false
 芒果色拉	mang guo se la	0
 毛豆煎臭豆腐	mao dou jian chou dou fu	0
 茅根豆粥	mao gen dou zhou	0
-摩摩喳喳珍珠糖水	mo mo zha zha zhen zhu tang shui	0
+摩摩喳喳珍珠糖水	mo mo cha cha zhen zhu tang shui	0
 美白淡斑茶	mei bai dan ban cha	0
 美白爽身茶	mei bai shuang shen cha	0
 眉豆花生猪蹄汤	mei dou hua sheng zhu ti tang	0
@@ -1482,7 +1480,6 @@ use_preset_vocabulary: false
 嫩姜子鸭片	nen jiang zi ya pian	0
 酿枇杷	niang pi pa	0
 酿银瓜	niang yin gua	0
-宁氏鳝丝	ning shi shan si	0
 柠香洛神茶	ning xiang luo shen cha	0
 柠汁焗鹌鹑	ning zhi ju an chun	0
 柠汁炸软鸡	ning zhi zha ruan ji	0
@@ -1620,7 +1617,6 @@ use_preset_vocabulary: false
 青椒牛肉丝	qing jiao niu rou si	0
 青椒茄泥	qing jiao qie ni	0
 青韭鱿鱼丝	qing jiu you yu si	0
-清凉漱口剂	qing liang shu kou ji	0
 清凉消痘茶	qing liang xiao dou cha	0
 青萝卜陈皮煲鸭汤	qing luo bo chen pi bao ya tang	0
 青螺炖鞭笋	qing luo dun bian sun	0
@@ -2051,7 +2047,7 @@ use_preset_vocabulary: false
 汆银耳鸭舌	cuan yin er ya she	0
 豌豆鸡丝	wan dou ji si	0
 万子酥鸭	wan zi su ya	0
-网油棒榻	wang you bang ta	0
+网油椿塌	wang you chun ta	0
 网油凤肝卷	wang you feng gan juan	0
 网油腰卷	wang you yao juan	0
 网油鱼包	wang you yu bao	0
@@ -2365,7 +2361,7 @@ use_preset_vocabulary: false
 银花薄荷饮	yin hua bo he yin	0
 银杞明目汤	yin qi ming mu tang	0
 银丝圆	yin si yuan	0
-银丝仔乌汤	yin si zai wu tang	0
+银丝仔乌汤	yin si zi wu tang	0
 银杏蚬鸭煲	yin xing xian ya bao	0
 银杏芋泥	yin xing yu ni	0
 银杏蒸鸭	yin xing zheng ya	0
@@ -2401,7 +2397,7 @@ use_preset_vocabulary: false
 油泼青鱼	you po qing yu	0
 油酥火焙鱼	you su huo bei yu	0
 油烫茭白	you tang jiao bai	0
-油条西舌	you tiao xi she	0
+油条西施舌	you tiao xi shi she	0
 油旋子锅魁	you xuan zi guo kui	2
 鱿鱼烩杨桃	you yu hui yang tao	0
 鱿鱼三鲜	you yu san xian	0
@@ -2409,7 +2405,7 @@ use_preset_vocabulary: false
 柚子封乌鸡	you zi feng wu ji	0
 玉板翠带	yu ban cui dai	0
 玉板蟹	yu ban xie	0
-鱼包三经	yu bao san jing	0
+鱼包三丝	yu bao san si	0
 禹城扒鸡	yu cheng pa ji	0
 鱼花豆腐	yu hua dou fu	0
 鱼胶圆肉炖水鸭	yu jiao yuan rou dun shui ya	0
@@ -2423,7 +2419,6 @@ use_preset_vocabulary: false
 玉米须猪小肚汤	yu mi xu zhu xiao du tang	0
 鱼片蒸水蛋	yu pian zheng shui dan	0
 鱼蓉熘面包	yu rong liu mian bao	0
-御扇豆黄	yu shan dou huang	0
 玉树麒麟生鱼	yu shu qi lin sheng yu	0
 玉兔白菜	yu tu bai cai	0
 玉兔海参	yu tu hai shen	1
@@ -3593,7 +3588,6 @@ use_preset_vocabulary: false
 玫瑰瓜子	mei gui gua zi	1
 绵阳米粉	mian yang mi fen	12
 绵竹羊肉粉	mian zhu yang rou fen	1
-魔芋系列	mo yu xi lie	1
 牡丹煎酿蛇脯	mu dan jian niang she pu	1
 母油船鸭	mu you chuan ya	1
 目鱼炒韭菜	mu yu chao jiu cai	1
@@ -4089,7 +4083,6 @@ use_preset_vocabulary: false
 炒米线	chao mi xian	1
 超山梅子	chao shan mei zi	0
 潮式老婆饼	chao shi lao po bing	0
-朝鲜蓟亚之竹心蔬菜罐头	chao xian ji ya zhi zhu xin shu cai guan tou	0
 超益	chao yi	0
 车轮酥饼	che lun su bing	0
 衬衫蛋糕	chen shan dan gao	0
@@ -4188,7 +4181,6 @@ use_preset_vocabulary: false
 当归红枣汤冲剂	dang gui hong zao tang chong ji	0
 道酒	dao jiu	0
 道口烧鸡罐头	dao kou shao ji guan tou	0
-刀狼	dao lang	13
 岛山米糖	dao shan mi tang	0
 稻香春南味食品	dao xiang chun nan wei shi pin	0
 德国乳酪蛋糕	de guo ru lao dan gao	0
@@ -4461,7 +4453,6 @@ use_preset_vocabulary: false
 韩式辣酱鱿鱼丝	han shi la jiang you yu si	0
 汉中梆梆面	han zhong bang bang mian	0
 杭式榴莲酥	hang shi liu lian su	0
-杭州刺绣	hang zhou ci xiu	0
 杭州绿豆糕	hang zhou lv dou gao	0
 好吃来瓜子	hao chi lai gua zi	0
 豪坊	hao fang	0
@@ -4538,7 +4529,6 @@ use_preset_vocabulary: false
 红虾酥心糖	hong xia su xin tang	0
 红雪牌柠檬汽水	hong xue pai ning meng qi shui	0
 红芽歪尾桃	hong ya wai wei tao	0
-红衣财神系列	hong yi cai shen xi lie	0
 红鹰牌海底鸡	hong ying pai hai di ji	0
 红枣枸杞奶	hong zao gou qi nai	0
 红枣年糕	hong zao nian gao	0
@@ -4805,7 +4795,6 @@ use_preset_vocabulary: false
 砍盆箐茶	kan pen qing cha	0
 抗坏血酸磷酸酯镁	kang huai xue suan lin suan zhi mei	1
 康加恋舞咖啡	kang jia lian wu ka fei	0
-康桔桔圆果	kang ju ju yuan guo	0
 炕炕馍	kang kang mo	0
 抗浪鱼	kang lang yu	2
 康寿茶	kang shou cha	0
@@ -5112,7 +5101,6 @@ use_preset_vocabulary: false
 拿破仑奶油蛋糕	na po lun nai you dan gao	0
 拿破仑酥	na po lun su	0
 纳溪泡糖	na xi pao tang	0
-钠盐酚	na yan fen	0
 奶白鲫鱼汤	nai bai ji yu tang	0
 奶层糕	nai ceng gao	0
 奶黄冰皮月饼	nai huang bing pi yue bing	0
@@ -5227,7 +5215,6 @@ use_preset_vocabulary: false
 破酥包	po su bao	2
 破酥缸炉	po su gang lu	0
 普洱茶糕点	pu er cha gao dian	0
-蒲公英节	pu gong ying jie	0
 葡皇世家	pu huang shi jia	0
 蒲江猪油米花糖	pu jiang zhu you mi hua tang	0
 普鲁红糖	pu lu hong tang	0
@@ -5295,7 +5282,6 @@ use_preset_vocabulary: false
 巧克力牛油蛋糕	qiao ke li niu you dan gao	0
 巧克力汽酒	qiao ke li qi jiu	0
 巧克力奇普	qiao ke li qi pu	5
-巧克力收蛋泡盏	qiao ke li shou dan pao zhan	0
 巧克力双色夹心糕	qiao ke li shuang se jia xin gao	0
 巧克力甜甜圈	qiao ke li tian tian quan	2
 巧克力无花果球	qiao ke li wu hua guo qiu	0
@@ -5439,7 +5425,6 @@ use_preset_vocabulary: false
 神农牌	shen nong pai	0
 参茸茶	shen rong cha	0
 沈阳白冰糖	shen yang bai bing tang	0
-圣艾吉尼系列	sheng ai ji ni xi lie	0
 圣奥清真原汁牛尾罐头	sheng ao qing zhen yuan zhi niu wei guan tou	0
 圣诞老人蛋糕	sheng dan lao ren dan gao	0
 圣嘉	sheng jia	0
@@ -5552,7 +5537,6 @@ use_preset_vocabulary: false
 酸枣色	suan zao se	0
 酸枣汁汽水	suan zao zhi qi shui	0
 遂川狗牯脑	sui chuan gou gu nao	0
-隋王府系列	sui wang fu xi lie	0
 绥阳空心面	sui yang kong xin mian	0
 塔比的假日	ta bi de jia ri	0
 泰安煎饼	tai an jian bing	0
@@ -5660,7 +5644,6 @@ use_preset_vocabulary: false
 王婆麻辣鸡	wang po ma la ji	0
 网清茶	wang qing cha	0
 往往清泉	wang wang qing quan	0
-王星记扇子	wang xing ji shan zi	0
 旺运红	wang yun hong	0
 维多利亚三明治	wei duo li ya san ming zhi	0
 维多思果汁	wei duo si guo zhi	0
@@ -5736,7 +5719,6 @@ use_preset_vocabulary: false
 西红柿翡翠面	xi hong shi fei cui mian	0
 西湖保灵蜜	xi hu bao ling mi	0
 西湖蜜皇彩花	xi hu mi huang cai hua	0
-西湖天竺筷	xi hu tian zhu kuai	0
 细花糕	xi hua gao	1
 硒化卡拉胶	xi hua ka la jiao	0
 希腊罗马式咖啡	xi la luo ma shi ka fei	0
@@ -5820,7 +5802,6 @@ use_preset_vocabulary: false
 香蕉蛋奶饼	xiang jiao dan nai bing	0
 香蕉果粒玛芬	xiang jiao guo li ma fen	0
 香蕉锅炸	xiang jiao guo zha	0
-香蕉果炸	xiang jiao guo zha	0
 香蕉核桃饼干	xiang jiao he tao bing gan	0
 香蕉软糖	xiang jiao ruan tang	0
 香蕉芝士蛋糕	xiang jiao zhi shi dan gao	1
@@ -5863,7 +5844,6 @@ use_preset_vocabulary: false
 小猫脚	xiao mao jiao	0
 小脑壳烧烤	xiao nao ke shao kao	0
 小巧火腿酥	xiao qiao huo tui su	0
-萧山花边	xiao shan hua bian	0
 萧山萝卜干	xiao shan luo bo gan	0
 萧山杨梅	xiao shan yang mei	0
 硝酸硫胺素	xiao suan liu an su	0
@@ -5902,7 +5882,6 @@ use_preset_vocabulary: false
 杏仁香片酥	xing ren xiang pian su	0
 杏仁小饼干	xing ren xiao bing gan	0
 杏香冻芝士	xing xiang dong zhi shi	0
-兴业容器	xing ye rong qi	0
 杏源	xing yuan	0
 杏圆饼干	xing yuan bing gan	0
 杏子甜果汁	xing zi tian guo zhi	0
@@ -5977,8 +5956,7 @@ use_preset_vocabulary: false
 椰香红豆糕	ye xiang hong dou gao	0
 椰香花卷	ye xiang hua juan	0
 椰香面包	ye xiang mian bao	0
-椰汁板兰糕	ye zhi ban lan gao	0
-椰汁板子糕	ye zhi ban zi gao	0
+椰汁斑斓糕	ye zhi ban lan gao	0
 椰汁红豆糕	ye zhi hong dou gao	1
 叶子面包	ye zi mian bao	0
 伊村山野	yi cun shan ye	0
@@ -6202,7 +6180,6 @@ use_preset_vocabulary: false
 粽香羊排	zong xiang yang pai	0
 醉鸡翅	zui ji chi	0
 醉酒的天使蛋糕	zui jiu de tian shi dan gao	0
-樽皇酒具	zun huang jiu ju	0
 尊尼萨达	zun ni sa da	0
 尊尼沃加	zun ni wo jia	0
 遵义鸡蛋糕	zun yi ji dan gao	0
