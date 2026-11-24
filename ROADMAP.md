@@ -83,8 +83,8 @@
 ## P5 — 词库 SSOT 治理体系、AI Agent 技能包与双仓库安全/可靠性全面升级（已完成）
 
 - [x] **建立声明式词库治理层（`rules/` SSOT ＋ `docs/DICTIONARY_SPEC.md` ＋ 四级上线门禁）**
-  - 收口全部 10,183 条词库覆写规则至 `rules/`（12 份纯文本表），统一由 `scripts/dict_common.py`、`scripts/clean-dicts.py`、`scripts/dict_rules.py`、`scripts/build_cn_en.py` 确定性重放（前置字形规范化 → `rules/` 权威覆写 → 生成器 → 保权跨表去重 → 内存态全量校验 → 原子落盘），消除全部二次运行往复漂移。
-  - `scripts/dict_lint.py` 覆盖 5 项零容忍不变量、严格无 BOM UTF-8、YAML 重复键、`rime_frost.dict.yaml` 活跃词表顺序一致性、跨词库同词异读守卫、A/B/C 同音碰撞护栏、对称差异 `--diff-budget` 熔断（含全部 7 份 `cn_en*.txt`）与内存态幂等校验；配套 18 项单元测试 `tests/test_dict_pipeline.py`。
+  - 收口全部 14,516 条词库覆写规则至 `rules/`（12 份纯文本表），统一由 `scripts/dict_common.py`、`scripts/clean-dicts.py`、`scripts/dict_rules.py`、`scripts/build_cn_en.py` 确定性重放（前置字形/多音结构化规范化 → `rules/` 权威覆写 → 跨表阴影修音/修词传播 → 生成器 → 保权跨表去重 → 内存态全量校验 → 原子落盘），消除二次运行往复漂移并确保原始上游全量重放零冲突。
+  - `scripts/dict_lint.py` 覆盖 5 项零容忍不变量、严格无 BOM UTF-8、YAML 重复键、`rime_frost.dict.yaml` 活跃词表顺序一致性、OpenCC 1.3 `group` 节点 `match_policy` 模式守卫、跨词库同词异读守卫、A/B/C 同音碰撞护栏、对称差异 `--diff-budget` 熔断（含全部 7 份 `cn_en*.txt`）与内存态幂等校验；配套 23 项单元测试 `tests/test_dict_pipeline.py`。
 - [x] **AI Agent 一键安装与验收技能包（`skills/rime-chth1z-setup/`）与 `rime-neural v1.1.0+` 零明文反馈升级**
   - 新增独立免依赖的 `inspect-env.ps1`、`bootstrap.ps1`、`verify-setup.ps1`（PE32+ 导出表 Lua 5.4 检测、全链路 SHA-256 闭环校验、非生成 `*.custom.yaml` 自动备份、部署日志精准锚定）。
   - 配合 `Chth1z/rime-neural` 升级至 Rust Edition 2024、零明文纯数值 v2 反馈、单遍 `.gram` 前向 trie、令牌级 KV-cache 与 fail-closed MTA UIA。

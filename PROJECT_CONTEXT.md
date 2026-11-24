@@ -39,7 +39,7 @@
 | ＋ 端侧神经重排 v0.2.0（`ML-pumpkin-1103` KV-cache ＋ `.gram` 融合 ＋ P2C） | `0.4 ms / 4.1 ms`（峰值 `22.3 ms`） | `0.1 ms / 1.6 ms`（峰值 `9.8 ms`） | 全拼插电 `4.2 ms`/电池 `9.2 ms`（峰值 `12.6`/`27.9 ms`），88 项回归全过 |
 | ＋ 端侧神经重排 v0.3.0（＋ Pass-2 校验 P2C ＋ 非阻塞 UIA ＋ 7 种双拼通用） | 待补测（同架构） | `0.1 ms / 1.8 ms`（峰值 `10.3 ms`） | 全拼 `0.1 / 4.3 ms`（峰值 `13.5 ms`），88 项回归＋3 轮热部署全过 |
 | ＋ 独立正式版 `Chth1z/rime-neural` `v1.0.0`（官方 GitHub Release 安装实测） | 同架构（`~4.1 ms`） | **`0.1 ms / 2.0 ms`**（峰值 **`11.5 ms`**） | 全拼 `0.2 / 4.7 ms`（峰值 `14.7 ms`），90/90 冷热回归全过 |
-| ＋ 跨仓库深度升级态（`rime-chth1z` 10,183 规则 ＋ `rime-neural` 单遍 trie / 令牌 KV-cache） | 同架构 | **`0.2 ms / 1.6–1.9 ms`**（峰值 **`9.8–11.3 ms`**） | 全拼 `0.1–0.2 / 4.6–4.7 ms`（峰值 `13.0–14.9 ms`），329/329 回归＋全表面巡检＋零 `%TEMP%` 残留全过 |
+| ＋ 跨仓库深度升级态（`rime-chth1z` 14,516 规则 ＋ `rime-neural` 单遍 trie / 令牌 KV-cache） | 同架构 | **`0.2 ms / 1.6–1.9 ms`**（峰值 **`9.8–11.3 ms`**） | 全拼 `0.1–0.2 / 4.6–4.7 ms`（峰值 `13.0–14.9 ms`），329/329 回归＋全表面巡检＋零 `%TEMP%` 残留全过 |
 
 ### 语料准确率评测（`bench/eval-accuracy.py`，复用 `gaboolic/rime-schema-compare` 公开语料与同义归一化口径）
 
@@ -80,5 +80,5 @@
 
 - **看实测数据**：改完性能、脚本或词库后均经 `bench/accuracy-test.ps1 -WaitNeural`（329 项大小写敏感确定性回归）、`bench/audit-surface.ps1`（双方案全表面运行时巡检）、`bench/bench-rime.ps1` 与 `bench/eval-accuracy.py` 盲测验证，不凭感觉下结论。
 - **文档保持朴素**：README 和仓库里的文档写清楚事实和用法就行，不堆虚词。
-- **词库清洗与治理走规范**：词库收词、审音、纠错分类、权重标尺与上线四级门禁统一遵循 [`docs/DICTIONARY_SPEC.md`](docs/DICTIONARY_SPEC.md)；全部 10,183 条词库覆写统一沉淀在声明式规则目录 `rules/`（中英混输通过 `rules/cn_en_source.tsv` ＋ `scripts/build_cn_en.py` 派生 7 份布局文件），由 `scripts/clean-dicts.py` 内存态校验并原子落盘、`scripts/dict_lint.py --strict --idempotent --check-collisions` 与 `tests/test_dict_pipeline.py` 校验，确保上游同步可洁净重放且零冲突。
+- **词库清洗与治理走规范**：词库收词、审音、纠错分类、权重标尺与上线四级门禁统一遵循 [`docs/DICTIONARY_SPEC.md`](docs/DICTIONARY_SPEC.md)；全部 14,516 条词库覆写统一沉淀在声明式规则目录 `rules/`（中英混输通过 `rules/cn_en_source.tsv` ＋ `scripts/build_cn_en.py` 派生 7 份布局文件），由 `scripts/clean-dicts.py` 内存态校验并原子落盘、`scripts/dict_lint.py --strict --idempotent --check-collisions` 与 `tests/test_dict_pipeline.py` 校验，确保上游同步可洁净重放且零冲突。
 - **提上游 Issue 从严**：遵守 [`docs/upstream-issues/GUIDELINE.md`](docs/upstream-issues/GUIDELINE.md)，只提实测复现、有实际影响的真 Bug，不提视角或习惯分歧带来的伪问题。
