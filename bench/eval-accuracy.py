@@ -3,6 +3,8 @@
 Scientific sentence & character accuracy evaluator for rime-chth1z using Weasel's rime.dll.
 Follows the exact sentence splitting, synonym normalization, and Levenshtein CER protocol
 of gaboolic/rime-schema-compare, supporting both Natural Double Pinyin (ZRM) and Full Pinyin.
+Runs rime.dll inside a child worker subprocess so all glog / DLL / mmap handles are released
+before sandbox cleanup (zero %TEMP% directory or cross-volume hardlink/copy leaks).
 """
 
 from __future__ import annotations
@@ -18,7 +20,7 @@ import subprocess
 import sys
 import tempfile
 import time
-from typing import Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 from pypinyin import Style, lazy_pinyin
 
@@ -30,8 +32,20 @@ _DUNHAO_OR_SHUMINGHAO_RE = re.compile(r"[、]|《|》")
 _HANZI_ONLY_RE = re.compile(r"^[\u4e00-\u9fff]+$")
 MIN_EVAL_HANZI_CHARS = 5
 
-ZRM_INITIALS = {"zh": "v", "ch": "i", "sh": "u"}
-ZRM_FINALS = {
+# Prefer single-source ZRM mapping from scripts/build_cn_en.py; keep standalone fallback
+_REPO_SCRIPTS = pathlib.Path(__file__).resolve().parent.parent / "scripts"
+_build_cn_en_syl = None
+if _REPO_SCRIPTS.is_dir():
+    if str(_REPO_SCRIPTS) not in sys.path:
+        sys.path.insert(0, str(_REPO_SCRIPTS))
+    try:
+        import build_cn_en as _build_cn_en_mod  # type: ignore[import-not-found]
+        _build_cn_en_syl = _build_cn_en_mod.syl_to_shuangpin
+    except Exception:
+        _build_cn_en_syl = None
+
+_FALLBACK_ZRM_INITIALS = {"zh": "v", "ch": "i", "sh": "u"}
+_FALLBACK_ZRM_FINALS = {
     "iu": "q", "ia": "w", "ua": "w", "uan": "r", "van": "r",
     "ue": "t", "ve": "t", "ing": "y", "uai": "y", "uo": "o",
     "un": "p", "vn": "p", "ong": "s", "iong": "s", "iang": "d",
@@ -42,7 +56,9 @@ ZRM_FINALS = {
 
 
 def syllable_to_zrm(syl: str) -> str:
-    s = syl.lower().replace("ü", "v")
+    s = re.sub(r"^([jqxy])v", r"\1u", syl.lower().replace("ü", "v"))
+    if _build_cn_en_syl is not None:
+        return _build_cn_en_syl(s, "double_pinyin")
     if s in ("a", "o", "e"):
         return s + s
     if s in ("ai", "an", "ao", "ei", "en", "er", "ou"):
@@ -51,15 +67,13 @@ def syllable_to_zrm(syl: str) -> str:
         return "ah"
     if s == "eng":
         return "eg"
-    if len(s) >= 2 and s[:2] in ZRM_INITIALS:
-        ini = ZRM_INITIALS[s[:2]]
+    if len(s) >= 2 and s[:2] in _FALLBACK_ZRM_INITIALS:
+        ini = _FALLBACK_ZRM_INITIALS[s[:2]]
         fin = s[2:]
     else:
         ini = s[0]
         fin = s[1:]
-    if ini in ("j", "q", "x", "y") and fin == "v":
-        fin = "u"
-    fin = ZRM_FINALS.get(fin, fin)
+    fin = _FALLBACK_ZRM_FINALS.get(fin, fin)
     return ini + fin
 
 
@@ -240,7 +254,7 @@ def find_weasel_dir() -> pathlib.Path:
                 with winreg.OpenKey(hive, sub) as k:
                     root, _ = winreg.QueryValueEx(k, "WeaselRoot")
                     if isinstance(root, str) and root.strip():
-                        p = pathlib.Path(root.strip())
+                        p = pathlib.Path(root.strip()).resolve()
                         if (p / "rime.dll").is_file():
                             return p
             except OSError:
@@ -250,7 +264,7 @@ def find_weasel_dir() -> pathlib.Path:
     cands: List[pathlib.Path] = []
     for base in (pathlib.Path(r"C:\Program Files\Rime"), pathlib.Path(r"C:\Program Files (x86)\Rime")):
         if base.is_dir():
-            cands.extend(d for d in base.glob("weasel-*") if (d / "rime.dll").is_file())
+            cands.extend(d.resolve() for d in base.glob("weasel-*") if (d / "rime.dll").is_file())
     cands.sort(key=lambda p: p.stat().st_mtime, reverse=True)
     if cands:
         return cands[0]
@@ -262,6 +276,44 @@ def _hardlink_or_copy(src: pathlib.Path, dst: pathlib.Path) -> None:
         os.link(src, dst)
     except OSError:
         shutil.copy2(src, dst)
+
+
+def _is_reparse_point(path: pathlib.Path) -> bool:
+    is_junc = getattr(os.path, "isjunction", None)
+    if is_junc is not None:
+        try:
+            if is_junc(path):
+                return True
+        except OSError:
+            pass
+    if os.path.islink(path):
+        return True
+    if os.name == "nt":
+        attrs = ctypes.windll.kernel32.GetFileAttributesW(str(path))
+        if attrs != -1 and (attrs & 0x400):
+            return True
+    return False
+
+
+def _unlink_reparse_points_recursive(root: pathlib.Path) -> None:
+    if not root.exists():
+        return
+    try:
+        entries = list(os.scandir(root))
+    except OSError:
+        return
+    for entry in entries:
+        p = pathlib.Path(entry.path)
+        if _is_reparse_point(p):
+            try:
+                os.rmdir(p)
+            except OSError:
+                try:
+                    os.unlink(p)
+                except OSError:
+                    pass
+        elif entry.is_dir(follow_symlinks=False):
+            _unlink_reparse_points_recursive(p)
 
 
 class RimeEngine:
@@ -347,10 +399,6 @@ class RimeEngine:
                 break
             has_menu = ctx.menu.num_candidates > 0
             preview = ctx.commit_text_preview.decode("utf-8", errors="ignore") if ctx.commit_text_preview else ""
-            top1 = ""
-            if has_menu:
-                c0 = ctx.menu.candidates[0]
-                top1 = c0.text.decode("utf-8", errors="ignore") if c0.text else ""
             self.dll.RimeFreeContext(ctypes.byref(ctx))
             if not has_menu:
                 if preview:
@@ -376,95 +424,106 @@ class RimeEngine:
 
 def create_isolated_env(rime_dir: pathlib.Path, schema_id: str, yaml_overrides: Optional[Dict[str, str]] = None) -> pathlib.Path:
     tmp = pathlib.Path(tempfile.mkdtemp(prefix="rime-eval-"))
-    (tmp / "logs").mkdir()
-    (tmp / "build").mkdir()
-    for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts"):
-        src = rime_dir / d
-        if src.exists():
-            subprocess.run(["cmd", "/c", "mklink", "/J", str(tmp / d), str(src)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
-    neural_src = rime_dir / "neural"
-    if neural_src.is_dir():
-        neural_dst = tmp / "neural"
-        neural_dst.mkdir()
-        for f in neural_src.iterdir():
-            if f.is_file() and not re.match(r"^feedback\.jsonl(\.\d+)?$", f.name, re.IGNORECASE):
-                _hardlink_or_copy(f, neural_dst / f.name)
-    for f in (rime_dir / "build").iterdir():
-        if f.is_file():
-            if f.suffix == ".bin":
-                _hardlink_or_copy(f, tmp / "build" / f.name)
-            else:
-                shutil.copy2(f, tmp / "build" / f.name)
-    for f in rime_dir.iterdir():
-        if f.is_file() and f.suffix in (".yaml", ".lua", ".txt") and f.name not in ("user.yaml", "installation.yaml"):
-            shutil.copy2(f, tmp / f.name)
-        elif f.is_file() and f.suffix == ".gram":
-            _hardlink_or_copy(f, tmp / f.name)
-
-    schema_path = tmp / "build" / f"{schema_id}.schema.yaml"
-    raw = schema_path.read_text(encoding="utf-8")
-
-    # Disable user_dict specifically inside translator: section (avoid matching melt_eng/enable_user_dict)
-    trans_re = re.compile(r"(?m)^translator:\r?\n((?:  .*\r?\n)*)")
-    tm = trans_re.search(raw)
-    if tm:
-        tbody = tm.group(1)
-        if re.search(r"(?m)^  enable_user_dict:", tbody):
-            tbody = re.sub(r"(?m)^  enable_user_dict:.*$", "  enable_user_dict: false", tbody, count=1)
-        else:
-            tbody = "  enable_user_dict: false\n" + tbody
-        raw = raw[:tm.start(1)] + tbody + raw[tm.end(1):]
-
-    if yaml_overrides:
-        for section_key, val in yaml_overrides.items():
-            sec, key = section_key.split("/", 1)
-            # Replace existing key (including indented block lists) inside section or insert right after header
-            sec_re = re.compile(rf"(?m)^{re.escape(sec)}:\r?\n((?:  .*(?:\r?\n|$))*)")
-            m = sec_re.search(raw)
-            if m:
-                body = m.group(1)
-                key_re = re.compile(rf"(?m)^  {re.escape(key)}:.*(?:\r?\n    .*)*")
-                if key_re.search(body):
-                    new_body = key_re.sub(f"  {key}: {val}", body, count=1)
+    try:
+        (tmp / "logs").mkdir()
+        (tmp / "build").mkdir()
+        junction_pairs = []
+        for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts"):
+            src = rime_dir / d
+            if src.exists():
+                junction_pairs.append({"dst": str(tmp / d), "src": str(src)})
+        if junction_pairs:
+            ps_cmd = (
+                "$ErrorActionPreference='Stop'; "
+                "$items = [Console]::In.ReadToEnd() | ConvertFrom-Json; "
+                "foreach ($it in @($items)) { New-Item -ItemType Junction -Path $it.dst -Target $it.src | Out-Null }"
+            )
+            subprocess.run(
+                ["powershell.exe", "-NoProfile", "-Command", ps_cmd],
+                input=json.dumps(junction_pairs, ensure_ascii=True),
+                text=True,
+                encoding="utf-8",
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.PIPE,
+                check=True,
+            )
+        neural_src = rime_dir / "neural"
+        if neural_src.is_dir():
+            neural_dst = tmp / "neural"
+            neural_dst.mkdir()
+            for f in neural_src.iterdir():
+                if f.is_file() and not re.match(r"^feedback\.jsonl(\.\d+)?$", f.name, re.IGNORECASE):
+                    _hardlink_or_copy(f, neural_dst / f.name)
+        for f in (rime_dir / "build").iterdir():
+            if f.is_file():
+                if f.suffix == ".bin":
+                    _hardlink_or_copy(f, tmp / "build" / f.name)
                 else:
-                    new_body = f"  {key}: {val}\n" + body
-                raw = raw[:m.start(1)] + new_body + raw[m.end(1):]
+                    shutil.copy2(f, tmp / "build" / f.name)
+        for f in rime_dir.iterdir():
+            if f.is_file() and f.suffix in (".yaml", ".lua", ".txt") and f.name not in ("user.yaml", "installation.yaml"):
+                shutil.copy2(f, tmp / f.name)
+            elif f.is_file() and f.suffix == ".gram":
+                _hardlink_or_copy(f, tmp / f.name)
+
+        schema_path = tmp / "build" / f"{schema_id}.schema.yaml"
+        raw = schema_path.read_text(encoding="utf-8")
+
+        # Disable user_dict specifically inside translator: section (avoid matching melt_eng/enable_user_dict)
+        trans_re = re.compile(r"(?m)^translator:\r?\n((?:  .*\r?\n)*)")
+        tm = trans_re.search(raw)
+        if tm:
+            tbody = tm.group(1)
+            if re.search(r"(?m)^  enable_user_dict:", tbody):
+                tbody = re.sub(r"(?m)^  enable_user_dict:.*$", "  enable_user_dict: false", tbody, count=1)
             else:
-                raw += f"\n{sec}:\n  {key}: {val}\n"
+                tbody = "  enable_user_dict: false\n" + tbody
+            raw = raw[:tm.start(1)] + tbody + raw[tm.end(1):]
 
-    schema_path.write_text(raw, encoding="utf-8")
-    return tmp
+        if yaml_overrides:
+            for section_key, val in yaml_overrides.items():
+                sec, key = section_key.split("/", 1)
+                # Replace existing key (including indented block lists) inside section or insert right after header
+                sec_re = re.compile(rf"(?m)^{re.escape(sec)}:\r?\n((?:  .*(?:\r?\n|$))*)")
+                m = sec_re.search(raw)
+                if m:
+                    body = m.group(1)
+                    key_re = re.compile(rf"(?m)^  {re.escape(key)}:.*(?:\r?\n    .*)*")
+                    if key_re.search(body):
+                        new_body = key_re.sub(lambda _, k=key, v=val: f"  {k}: {v}", body, count=1)
+                    else:
+                        new_body = f"  {key}: {val}\n" + body
+                    raw = raw[:m.start(1)] + new_body + raw[m.end(1):]
+                else:
+                    raw += f"\n{sec}:\n  {key}: {val}\n"
+
+        schema_path.write_text(raw, encoding="utf-8")
+        return tmp
+    except BaseException:
+        cleanup_isolated_env(tmp, strict=False)
+        raise
 
 
-def cleanup_isolated_env(tmp: pathlib.Path) -> None:
-    for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts"):
-        p = tmp / d
-        if p.exists():
-            subprocess.run(["cmd", "/c", "rmdir", str(p)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    shutil.rmtree(tmp, ignore_errors=True)
+def cleanup_isolated_env(tmp: pathlib.Path, strict: bool = True) -> None:
+    if not tmp.exists():
+        return
+    _unlink_reparse_points_recursive(tmp)
+    try:
+        shutil.rmtree(tmp)
+    except OSError as exc:
+        if strict:
+            raise RuntimeError(f"Failed to remove isolated eval sandbox {tmp}: {exc}") from exc
+    if strict and tmp.exists():
+        raise RuntimeError(f"Isolated eval sandbox still exists after cleanup: {tmp}")
 
 
-def evaluate(
-    rime_dir: pathlib.Path,
-    schema_id: str,
-    sentences: List[str],
-    overrides: Optional[Dict[str, str]] = None,
-    show_errors: int = 0,
-    neural: bool = False,
-) -> Dict[str, float]:
+def _run_worker(sandbox_dir: pathlib.Path, pairs_json: pathlib.Path, result_json: pathlib.Path, schema_id: str, neural: bool) -> None:
     weasel_dir = find_weasel_dir()
     double_pinyin = "double_pinyin" in schema_id
-    pairs = [(s, sentence_to_keys(s, double_pinyin)) for s in sentences]
-    pairs = [(s, k) for s, k in pairs if k]
+    pairs: List[Tuple[str, str]] = [tuple(x) for x in json.loads(pairs_json.read_text(encoding="utf-8"))]
 
-    eff_overrides = dict(overrides or {})
-    if neural:
-        eff_overrides.setdefault("rime_neural/sync_init", "true")
-
-    tmp = create_isolated_env(rime_dir, schema_id, eff_overrides)
-    eng = None
+    eng = RimeEngine(weasel_dir, sandbox_dir, sandbox_dir / "logs")
     try:
-        eng = RimeEngine(weasel_dir, tmp, tmp / "logs")
         eng.select_schema(schema_id)
         eng.dll.RimeSetOption(eng.sid, b"neural_rerank", neural)
         # Warmup
@@ -490,27 +549,72 @@ def evaluate(
             total_keys += len(keys)
             total_ms += ms
     finally:
-        if eng is not None:
-            eng.close()
-        cleanup_isolated_env(tmp)
+        eng.close()
 
     n = len(pairs)
-    sent_acc = exact / n * 100.0 if n else 0.0
-    char_acc = (1.0 - total_ed / total_chars) * 100.0 if total_chars else 0.0
-    ms_per_key = total_ms / total_keys if total_keys else 0.0
+    payload: Dict[str, Any] = {
+        "n": n,
+        "exact": exact,
+        "sent_acc": (exact / n * 100.0) if n else 0.0,
+        "char_acc": ((1.0 - total_ed / total_chars) * 100.0) if total_chars else 0.0,
+        "ms_per_key": (total_ms / total_keys) if total_keys else 0.0,
+        "errors": errors,
+    }
+    result_json.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
 
+
+def evaluate(
+    rime_dir: pathlib.Path,
+    schema_id: str,
+    sentences: List[str],
+    overrides: Optional[Dict[str, str]] = None,
+    show_errors: int = 0,
+    neural: bool = False,
+) -> Dict[str, float]:
+    double_pinyin = "double_pinyin" in schema_id
+    pairs = [(s, sentence_to_keys(s, double_pinyin)) for s in sentences]
+    pairs = [(s, k) for s, k in pairs if k]
+
+    eff_overrides = dict(overrides or {})
+    if neural:
+        eff_overrides.setdefault("rime_neural/sync_init", "true")
+
+    tmp = create_isolated_env(rime_dir, schema_id, eff_overrides)
+    try:
+        pairs_json = tmp / "_worker_pairs.json"
+        result_json = tmp / "_worker_result.json"
+        pairs_json.write_text(json.dumps(pairs, ensure_ascii=False), encoding="utf-8")
+
+        cmd = [
+            sys.executable,
+            str(pathlib.Path(__file__).resolve()),
+            "--worker-sandbox", str(tmp),
+            "--worker-pairs", str(pairs_json),
+            "--worker-result", str(result_json),
+            "--schema", schema_id,
+        ]
+        if neural:
+            cmd.append("--neural")
+        subprocess.run(cmd, check=True)
+        res = json.loads(result_json.read_text(encoding="utf-8"))
+    finally:
+        # Child process has exited: all rime.dll / glog / rime_neural.dll / .gram handles are closed.
+        cleanup_isolated_env(tmp, strict=True)
+
+    errors = res.get("errors", [])
+    n = res["n"]
     if show_errors > 0:
         errors.sort(key=lambda x: -x[0])
         print(f"  Top {min(show_errors, len(errors))} mismatches (total {len(errors)}/{n}):")
-        for ed, gold, pred, keys in errors[:show_errors]:
+        for ed, gold, pred, _keys in errors[:show_errors]:
             print(f"    [ed={ed}] gold={gold} | pred={pred}")
 
     return {
         "n": n,
-        "exact": exact,
-        "sent_acc": sent_acc,
-        "char_acc": char_acc,
-        "ms_per_key": ms_per_key,
+        "exact": res["exact"],
+        "sent_acc": res["sent_acc"],
+        "char_acc": res["char_acc"],
+        "ms_per_key": res["ms_per_key"],
     }
 
 
@@ -518,12 +622,29 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--rime-dir", default=default_rime_dir())
     ap.add_argument("--schema", default="rime_frost_double_pinyin")
-    ap.add_argument("--corpus", required=True, help="Path to corpus .txt file")
+    ap.add_argument("--corpus", help="Path to corpus .txt file")
     ap.add_argument("--limit", type=int, default=0, help="Max sentences (0 = all)")
     ap.add_argument("--override", action="append", default=[], help="section/key=value")
     ap.add_argument("--show-errors", type=int, default=0)
     ap.add_argument("--neural", action="store_true", help="Enable rime-neural ONNX reranking (sync init)")
+    # Internal child-worker arguments (used by evaluate() to isolate rime.dll handles)
+    ap.add_argument("--worker-sandbox", default="", help=argparse.SUPPRESS)
+    ap.add_argument("--worker-pairs", default="", help=argparse.SUPPRESS)
+    ap.add_argument("--worker-result", default="", help=argparse.SUPPRESS)
     args = ap.parse_args()
+
+    if args.worker_sandbox:
+        _run_worker(
+            pathlib.Path(args.worker_sandbox),
+            pathlib.Path(args.worker_pairs),
+            pathlib.Path(args.worker_result),
+            args.schema,
+            neural=args.neural,
+        )
+        return
+
+    if not args.corpus:
+        ap.error("the following arguments are required: --corpus")
 
     text = pathlib.Path(args.corpus).read_text(encoding="utf-8")
     sents = split_corpus_sentences(text)

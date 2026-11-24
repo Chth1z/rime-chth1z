@@ -1,104 +1,83 @@
-﻿<#
+<#
 .SYNOPSIS
     Reproducible millisecond keystroke latency benchmark for librime (rime.dll).
 .DESCRIPTION
-    Runs an isolated, read-only session against Weasel's rime.dll without touching
-    live *.userdb files. Measures init time, all 26 single-letter first-keystroke
-    latencies (a-z), and short/medium/20-char sentence keystroke latencies.
+    Runs an isolated, zero-leak child-worker session against Weasel's rime.dll without touching
+    live *.userdb files or neural/feedback.jsonl. Measures init time, all 26 single-letter
+    first-keystroke latencies (a-z), and short/medium/long sentence keystroke latencies.
 .PARAMETER RimeDir
     Source Rime user directory containing build/, lua/, opencc/, *.gram.
-    Defaults to %APPDATA%\Rime.
+    Defaults to HKCU\SOFTWARE\Rime\Weasel\RimeUserDir or %APPDATA%\Rime.
 .PARAMETER SchemaId
     Rime schema_id to benchmark. Defaults to rime_frost_double_pinyin.
+.PARAMETER WaitNeural
+    Wait for async background ONNX neural initialization to complete after Init + SelectSchema
+    (preserving apples-to-apples non-blocking startup timing) before running typing benchmarks.
+.PARAMETER WorkerBenchDir
+    Internal child-worker sandbox path passed by the parent orchestrator. Do not set manually.
 #>
 param(
-    [string]$RimeDir  = "",
-    [string]$SchemaId = "rime_frost_double_pinyin",
-    [switch]$WaitNeural
+    [string]$RimeDir        = "",
+    [string]$SchemaId       = "rime_frost_double_pinyin",
+    [switch]$WaitNeural,
+    [string]$WorkerBenchDir = ""
 )
 
 $ErrorActionPreference = "Stop"
+$OutputEncoding = [System.Text.UTF8Encoding]::new($false)
+try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}
+
+. (Join-Path (Split-Path $PSScriptRoot -Parent) "scripts\_common.ps1")
 
 if (-not $RimeDir) {
-    $regDir = (Get-ItemProperty -Path "HKCU:\SOFTWARE\Rime\Weasel" -Name "RimeUserDir" -ErrorAction SilentlyContinue).RimeUserDir
-    $RimeDir = if ($regDir -and $regDir.Trim()) { $regDir.Trim() } else { Join-Path $env:APPDATA "Rime" }
+    $RimeDir = Get-RimeUserDir
 }
 
-function Get-WeaselDir {
-    $proc = Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue | Select-Object -First 1
-    if ($proc) {
-        try {
-            $procDir = Split-Path $proc.Path -Parent
-            if ($procDir -and (Test-Path (Join-Path $procDir "rime.dll"))) { return $procDir }
-        } catch {}
-    }
-    foreach ($regPath in @("HKLM:\SOFTWARE\Rime\Weasel", "HKLM:\SOFTWARE\WOW6432Node\Rime\Weasel", "HKCU:\SOFTWARE\Rime\Weasel")) {
-        $root = (Get-ItemProperty -Path $regPath -Name "WeaselRoot" -ErrorAction SilentlyContinue).WeaselRoot
-        if ($root -and (Test-Path (Join-Path $root "rime.dll"))) { return $root }
-    }
-    $cands = @()
-    foreach ($base in @("C:\Program Files\Rime", "C:\Program Files (x86)\Rime")) {
-        if (Test-Path $base) {
-            $cands += Get-ChildItem $base -Directory -Filter "weasel-*" -ErrorAction SilentlyContinue |
-                Where-Object { Test-Path (Join-Path $_.FullName "rime.dll") }
-        }
-    }
-    $best = $cands | Sort-Object LastWriteTime -Descending | Select-Object -First 1
-    if ($best) { return $best.FullName }
-    return $null
+$weaselDir = Get-WeaselDir -RequireFile "rime.dll"
+if (-not $weaselDir -or -not (Test-Path -LiteralPath (Join-Path $weaselDir "rime.dll"))) {
+    throw "Could not find Weasel rime.dll via running process, registry, or Program Files"
 }
 
-function New-SafeHardlinkOrCopy([string]$Dst, [string]$Src) {
-    $prev = $ErrorActionPreference
-    $ErrorActionPreference = "Continue"
+# --- Parent Orchestrator Mode (zero-leak sandbox lifecycle) ---
+if ([string]::IsNullOrEmpty($WorkerBenchDir)) {
+    # Report power & CPU context so Battery vs AC comparisons stay apples-to-apples
+    $bat = Get-CimInstance Win32_Battery -ErrorAction SilentlyContinue | Select-Object -First 1
+    $cpu = Get-CimInstance Win32_Processor -ErrorAction SilentlyContinue | Select-Object -First 1
+    $cpuName = if ($cpu -and $cpu.Name) { $cpu.Name.Trim() } else { "Unknown CPU" }
+    $pwr = if (-not $bat) { "Desktop/AC" } elseif ($bat.BatteryStatus -eq 2) { "AC ($($bat.EstimatedChargeRemaining)%)" } else { "Battery ($($bat.EstimatedChargeRemaining)%)" }
+    Write-Output ("=== Environment: {0} | Power: {1} | Schema: {2} ===" -f $cpuName, $pwr, $SchemaId)
+
+    $benchDir = New-BenchSandbox -Prefix "rime-frost-bench" -RimeDir $RimeDir
+    $workerExit = 1
     try {
-        $global:LASTEXITCODE = 0
-        & cmd /c mklink /H "$Dst" "$Src" 2>&1 | Out-Null
-        if ($LASTEXITCODE -ne 0 -or -not (Test-Path $Dst)) {
-            Copy-Item -Path $Src -Destination $Dst -Force
+        $childArgs = @(
+            "-NoProfile", "-ExecutionPolicy", "Bypass",
+            "-File", $PSCommandPath,
+            "-RimeDir", $RimeDir,
+            "-SchemaId", $SchemaId,
+            "-WorkerBenchDir", $benchDir
+        )
+        if ($WaitNeural) { $childArgs += "-WaitNeural" }
+
+        $prevEap = $ErrorActionPreference
+        $ErrorActionPreference = "Continue"
+        try {
+            $global:LASTEXITCODE = 0
+            & powershell.exe @childArgs
+            $workerExit = if ($null -eq $LASTEXITCODE) { 0 } else { [int]$LASTEXITCODE }
+        } finally {
+            $ErrorActionPreference = $prevEap
         }
     } finally {
-        $ErrorActionPreference = $prev
+        Remove-BenchSandbox -BenchDir $benchDir
     }
+    exit $workerExit
 }
 
-$weaselDir = Get-WeaselDir
-if (-not $weaselDir -or -not (Test-Path (Join-Path $weaselDir "rime.dll"))) {
-    throw "Could not find Weasel rime.dll via registry or Program Files"
-}
-
-# Report power & CPU context so Battery vs AC comparisons stay apples-to-apples
-$bat = Get-CimInstance Win32_Battery -ErrorAction SilentlyContinue
-$cpu = Get-CimInstance Win32_Processor | Select-Object -First 1
-$pwr = if (-not $bat) { "Desktop/AC" } elseif ($bat.BatteryStatus -eq 2) { "AC ($($bat.EstimatedChargeRemaining)%)" } else { "Battery ($($bat.EstimatedChargeRemaining)%)" }
-Write-Output ("=== Environment: {0} | Power: {1} | Schema: {2} ===" -f $cpu.Name.Trim(), $pwr, $SchemaId)
-
-$benchDir = Join-Path $env:TEMP ("rime-frost-bench-" + (Get-Date -Format "yyyyMMddHHmmss") + "-" + [guid]::NewGuid().ToString("N").Substring(0, 6))
-New-Item -ItemType Directory -Force -Path "$benchDir\logs" | Out-Null
-$junctionDirs = @("build", "lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts")
-
-try {
-    foreach ($d in $junctionDirs) {
-        $src = Join-Path $RimeDir $d
-        if (Test-Path $src) { cmd /c mklink /J "$benchDir\$d" "$src" | Out-Null }
-    }
-    $neuralSrc = Join-Path $RimeDir "neural"
-    if (Test-Path $neuralSrc) {
-        $neuralDst = Join-Path $benchDir "neural"
-        New-Item -ItemType Directory -Force -Path $neuralDst | Out-Null
-        Get-ChildItem $neuralSrc -File | Where-Object { $_.Name -notmatch '^feedback\.jsonl(\.\d+)?$' } | ForEach-Object {
-            New-SafeHardlinkOrCopy (Join-Path $neuralDst $_.Name) $_.FullName
-        }
-    }
-    Get-ChildItem $RimeDir -File | Where-Object {
-        $_.Extension -in @(".yaml", ".lua", ".txt") -and $_.Name -notin @("user.yaml", "installation.yaml")
-    } | ForEach-Object { Copy-Item $_.FullName $benchDir }
-    Get-ChildItem $RimeDir -File -Filter "*.gram" | ForEach-Object {
-        New-SafeHardlinkOrCopy (Join-Path $benchDir $_.Name) $_.FullName
-    }
-
-    if (-not ("RimeFrostBench" -as [type])) {
-        Add-Type -TypeDefinition @"
+# --- Child Worker Mode ---
+$benchDir = $WorkerBenchDir
+if (-not ("RimeFrostBench" -as [type])) {
+    Add-Type -TypeDefinition @"
 using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
@@ -148,7 +127,9 @@ public static class RimeFrostBench {
         UIntPtr sid = UIntPtr.Zero;
         try {
             sid = RimeCreateSession();
-            RimeSelectSchema(sid, schemaId);
+            if (!RimeSelectSchema(sid, schemaId)) {
+                throw new Exception("RimeSelectSchema failed: " + schemaId);
+            }
             swInit.Stop();
             Console.WriteLine("Init + SelectSchema : {0:F1} ms", swInit.Elapsed.TotalMilliseconds);
             if (waitNeuralMs > 0) {
@@ -215,22 +196,10 @@ public static class RimeFrostBench {
     }
 }
 "@
-    }
+}
 
-    # Background ORT init takes ~0.8s on AC and ~2.7s on battery
-    $waitMs = if ($WaitNeural) { 4500 } else { 0 }
-    [RimeFrostBench]::Run($weaselDir, $benchDir, "$benchDir\logs", $SchemaId, $waitMs)
-}
-finally {
-    foreach ($d in $junctionDirs) {
-        $jp = Join-Path $benchDir $d
-        if (Test-Path $jp) {
-            try {
-                if ((Get-Item $jp -Force).Attributes -band [System.IO.FileAttributes]::ReparsePoint) {
-                    [System.IO.Directory]::Delete($jp, $false)
-                }
-            } catch {}
-        }
-    }
-    Remove-Item $benchDir -Recurse -Force -ErrorAction SilentlyContinue
-}
+# Keep async init during SelectSchema so startup timing remains apples-to-apples;
+# background ORT init takes ~0.8s on AC and ~2.7s on battery.
+$waitMs = if ($WaitNeural) { 4500 } else { 0 }
+[RimeFrostBench]::Run($weaselDir, $benchDir, (Join-Path $benchDir "logs"), $SchemaId, $waitMs)
+exit 0

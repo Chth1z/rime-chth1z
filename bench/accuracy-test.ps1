@@ -1,101 +1,103 @@
-﻿<#
+<#
 .SYNOPSIS
     Automated functional regression test suite against Weasel's rime.dll.
 .DESCRIPTION
-    Runs isolated test cases from bench/accuracy-cases.json without touching live *.userdb.
+    Runs isolated test cases from bench/accuracy-cases.json in a zero-leak child-worker sandbox
+    without touching live *.userdb or neural/feedback.jsonl.
     Verifies candidates, comments, pins, corrector hints, autocap, reduce_english, s2twp,
-    date/lunar/calculator, select_character, and checks Rime logs for any Lua runtime errors.
+    date/lunar/calculator, select_character, and checks flushed Rime logs for any runtime errors.
 .PARAMETER RimeDir
     Source Rime user directory containing build/, lua/, opencc/, *.gram.
-    Defaults to %APPDATA%\Rime.
+    Defaults to HKCU\SOFTWARE\Rime\Weasel\RimeUserDir or %APPDATA%\Rime.
 .PARAMETER CasesPath
     Path to JSON test cases file. Defaults to bench/accuracy-cases.json.
+.PARAMETER WaitNeural
+    Patch the isolated sandbox's copied build/*.schema.yaml to rime_neural/sync_init: true
+    so ONNX neural reranking initializes deterministically before test cases run.
+.PARAMETER WorkerBenchDir
+    Internal child-worker sandbox path passed by the parent orchestrator. Do not set manually.
 #>
 param(
-    [string]$RimeDir   = "",
-    [string]$CasesPath = (Join-Path $PSScriptRoot "accuracy-cases.json"),
-    [switch]$WaitNeural
+    [string]$RimeDir        = "",
+    [string]$CasesPath      = (Join-Path $PSScriptRoot "accuracy-cases.json"),
+    [switch]$WaitNeural,
+    [string]$WorkerBenchDir = ""
 )
 
 $ErrorActionPreference = "Stop"
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+$OutputEncoding = [System.Text.UTF8Encoding]::new($false)
+try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}
+
+. (Join-Path (Split-Path $PSScriptRoot -Parent) "scripts\_common.ps1")
 
 if (-not $RimeDir) {
-    $regDir = (Get-ItemProperty -Path "HKCU:\SOFTWARE\Rime\Weasel" -Name "RimeUserDir" -ErrorAction SilentlyContinue).RimeUserDir
-    $RimeDir = if ($regDir -and $regDir.Trim()) { $regDir.Trim() } else { Join-Path $env:APPDATA "Rime" }
+    $RimeDir = Get-RimeUserDir
 }
 
-function Get-WeaselDir {
-    $proc = Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue | Select-Object -First 1
-    if ($proc) {
-        try {
-            $procDir = Split-Path $proc.Path -Parent
-            if ($procDir -and (Test-Path (Join-Path $procDir "rime.dll"))) { return $procDir }
-        } catch {}
-    }
-    foreach ($regPath in @("HKLM:\SOFTWARE\Rime\Weasel", "HKLM:\SOFTWARE\WOW6432Node\Rime\Weasel", "HKCU:\SOFTWARE\Rime\Weasel")) {
-        $root = (Get-ItemProperty -Path $regPath -Name "WeaselRoot" -ErrorAction SilentlyContinue).WeaselRoot
-        if ($root -and (Test-Path (Join-Path $root "rime.dll"))) { return $root }
-    }
-    $cands = @()
-    foreach ($base in @("C:\Program Files\Rime", "C:\Program Files (x86)\Rime")) {
-        if (Test-Path $base) {
-            $cands += Get-ChildItem $base -Directory -Filter "weasel-*" -ErrorAction SilentlyContinue |
-                Where-Object { Test-Path (Join-Path $_.FullName "rime.dll") }
-        }
-    }
-    $best = $cands | Sort-Object LastWriteTime -Descending | Select-Object -First 1
-    if ($best) { return $best.FullName }
-    return $null
+$weaselDir = Get-WeaselDir -RequireFile "rime.dll"
+if (-not $weaselDir -or -not (Test-Path -LiteralPath (Join-Path $weaselDir "rime.dll"))) {
+    throw "Could not find Weasel rime.dll via running process, registry, or Program Files"
 }
 
-function New-SafeHardlinkOrCopy([string]$Dst, [string]$Src) {
-    $prev = $ErrorActionPreference
-    $ErrorActionPreference = "Continue"
+# --- Parent Orchestrator Mode (zero-leak sandbox lifecycle + post-exit flushed log check) ---
+if ([string]::IsNullOrEmpty($WorkerBenchDir)) {
+    $benchDir = New-BenchSandbox -Prefix "rime-accuracy" -RimeDir $RimeDir -CopyBuildYamls:$WaitNeural -EnableNeuralSyncInit:$WaitNeural
+    $workerExit = 1
+    $logFailed = $false
     try {
-        $global:LASTEXITCODE = 0
-        & cmd /c mklink /H "$Dst" "$Src" 2>&1 | Out-Null
-        if ($LASTEXITCODE -ne 0 -or -not (Test-Path $Dst)) {
-            Copy-Item -Path $Src -Destination $Dst -Force
+        $childArgs = @(
+            "-NoProfile", "-ExecutionPolicy", "Bypass",
+            "-File", $PSCommandPath,
+            "-RimeDir", $RimeDir,
+            "-CasesPath", $CasesPath,
+            "-WorkerBenchDir", $benchDir
+        )
+        if ($WaitNeural) { $childArgs += "-WaitNeural" }
+
+        $prevEap = $ErrorActionPreference
+        $ErrorActionPreference = "Continue"
+        try {
+            $global:LASTEXITCODE = 0
+            & powershell.exe @childArgs
+            $workerExit = if ($null -eq $LASTEXITCODE) { 0 } else { [int]$LASTEXITCODE }
+        } finally {
+            $ErrorActionPreference = $prevEap
+        }
+
+        # Child process has exited: all glog, DLL, and mmap handles are released and log buffers are flushed.
+        $logIssues = [System.Collections.Generic.List[string]]::new()
+        $logDir = Join-Path $benchDir "logs"
+        if (Test-Path -LiteralPath $logDir) {
+            Get-ChildItem -LiteralPath $logDir -File -ErrorAction SilentlyContinue | ForEach-Object {
+                $fname = $_.Name
+                foreach ($line in (Get-Content -LiteralPath $_.FullName -Encoding UTF8 -ErrorAction SilentlyContinue)) {
+                    if ($line -match "nonexistent config file '.*user\.yaml'") { continue }
+                    if ($line -match '^[EF]\d{4,8}\s' -or $line -match 'error running|attempt to|stack traceback|syntax error') {
+                        $logIssues.Add("($fname): $line")
+                    }
+                }
+            }
+        }
+        if ($logIssues.Count -gt 0) {
+            $logFailed = $true
+            Write-Output "[FAIL] Rime/Lua runtime errors detected in flushed sandbox logs:"
+            $logIssues | Select-Object -First 30 | ForEach-Object { Write-Output "  $_" }
         }
     } finally {
-        $ErrorActionPreference = $prev
+        Remove-BenchSandbox -BenchDir $benchDir
     }
+
+    if ($workerExit -ne 0 -or $logFailed) { exit 1 }
+    exit 0
 }
 
-$weaselDir = Get-WeaselDir
-if (-not $weaselDir -or -not (Test-Path (Join-Path $weaselDir "rime.dll"))) {
-    throw "Could not find Weasel rime.dll via registry or Program Files"
-}
-
+# --- Child Worker Mode (loads rime.dll in isolated process, runs cases, exits cleanly) ---
+$benchDir = $WorkerBenchDir
 $casesJson = [System.IO.File]::ReadAllText($CasesPath, [System.Text.Encoding]::UTF8)
 $suite = $casesJson | ConvertFrom-Json
-
-$benchDir = Join-Path $env:TEMP ("rime-accuracy-" + (Get-Date -Format "yyyyMMddHHmmss") + "-" + [guid]::NewGuid().ToString("N").Substring(0, 6))
-New-Item -ItemType Directory -Force -Path "$benchDir\logs" | Out-Null
 $rimeInited = $false
-$junctionDirs = @("build", "lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts")
 
 try {
-    foreach ($d in $junctionDirs) {
-        $src = Join-Path $RimeDir $d
-        if (Test-Path $src) { cmd /c mklink /J "$benchDir\$d" "$src" | Out-Null }
-    }
-    $neuralSrc = Join-Path $RimeDir "neural"
-    if (Test-Path $neuralSrc) {
-        $neuralDst = Join-Path $benchDir "neural"
-        New-Item -ItemType Directory -Force -Path $neuralDst | Out-Null
-        Get-ChildItem $neuralSrc -File | Where-Object { $_.Name -notmatch '^feedback\.jsonl(\.\d+)?$' } | ForEach-Object {
-            New-SafeHardlinkOrCopy (Join-Path $neuralDst $_.Name) $_.FullName
-        }
-    }
-    Get-ChildItem $RimeDir -File | Where-Object {
-        $_.Extension -in @(".yaml", ".lua", ".txt") -and $_.Name -notin @("user.yaml", "installation.yaml")
-    } | ForEach-Object { Copy-Item $_.FullName $benchDir }
-    Get-ChildItem $RimeDir -File -Filter "*.gram" | ForEach-Object {
-        New-SafeHardlinkOrCopy (Join-Path $benchDir $_.Name) $_.FullName
-    }
-
     if (-not ("RimeAccuracyRunner" -as [type])) {
         Add-Type -TypeDefinition @"
 using System;
@@ -288,11 +290,11 @@ public static class RimeAccuracyRunner {
 "@
     }
 
-    [RimeAccuracyRunner]::Init($weaselDir, $benchDir, "$benchDir\logs")
+    [RimeAccuracyRunner]::Init($weaselDir, $benchDir, (Join-Path $benchDir "logs"))
     $rimeInited = $true
     if ($WaitNeural) {
+        # Sandbox build/*.schema.yaml was patched with rime_neural/sync_init: true by parent
         [RimeAccuracyRunner]::EnsureSchema("rime_frost_double_pinyin")
-        Start-Sleep -Milliseconds 4500
     }
 
     $passed = 0
@@ -325,51 +327,51 @@ public static class RimeAccuracyRunner {
         $firstComment = if ($cands.Count -gt 0) { $cands[0].Comment } else { "" }
 
         if ($tc.PSObject.Properties.Name -contains "first_text") {
-            if ($firstText -ne $tc.first_text) {
+            if ($firstText -cne $tc.first_text) {
                 $errs.Add("first_text expected '$($tc.first_text)' got '$firstText'")
             }
         }
         if ($tc.PSObject.Properties.Name -contains "second_text") {
-            if ($secondText -ne $tc.second_text) {
+            if ($secondText -cne $tc.second_text) {
                 $errs.Add("second_text expected '$($tc.second_text)' got '$secondText'")
             }
         }
         if ($tc.PSObject.Properties.Name -contains "no_first_text") {
-            if ($firstText -eq $tc.no_first_text) {
+            if ($firstText -ceq $tc.no_first_text) {
                 $errs.Add("first_text must not be '$($tc.no_first_text)'")
             }
         }
         if ($tc.PSObject.Properties.Name -contains "first_text_regex") {
-            if ($firstText -notmatch $tc.first_text_regex) {
+            if ($firstText -cnotmatch $tc.first_text_regex) {
                 $errs.Add("first_text '$firstText' did not match /$($tc.first_text_regex)/")
             }
         }
         if ($tc.PSObject.Properties.Name -contains "first_comment") {
-            if ($firstComment -ne $tc.first_comment) {
+            if ($firstComment -cne $tc.first_comment) {
                 $errs.Add("first_comment expected '$($tc.first_comment)' got '$firstComment'")
             }
         }
         if ($tc.PSObject.Properties.Name -contains "first_comment_empty" -and $tc.first_comment_empty) {
-            if ($firstComment -ne "") {
+            if ($firstComment -cne "") {
                 $errs.Add("first_comment expected empty got '$firstComment'")
             }
         }
         if ($tc.PSObject.Properties.Name -contains "no_raw_pinyin_comment" -and $tc.no_raw_pinyin_comment) {
             foreach ($c in $cands) {
-                if ($c.Comment -match '^\uFF3B.+\uFF3D$') {
+                if ($c.Comment -cmatch '^\uFF3B.+\uFF3D$') {
                     $errs.Add("leaked raw pinyin comment '$($c.Comment)' on '$($c.Text)'")
                 }
             }
         }
         if ($tc.PSObject.Properties.Name -contains "any_text") {
             $found = $false
-            foreach ($c in $cands) { if ($c.Text -eq $tc.any_text) { $found = $true; break } }
+            foreach ($c in $cands) { if ($c.Text -ceq $tc.any_text) { $found = $true; break } }
             if (-not $found) { $errs.Add("any_text '$($tc.any_text)' not found") }
         }
         if ($tc.PSObject.Properties.Name -contains "any_text_with_comment") {
             $found = $false
             foreach ($c in $cands) {
-                if ($c.Text -eq $tc.any_text_with_comment.text -and $c.Comment -eq $tc.any_text_with_comment.comment) {
+                if ($c.Text -ceq $tc.any_text_with_comment.text -and $c.Comment -ceq $tc.any_text_with_comment.comment) {
                     $found = $true; break
                 }
             }
@@ -381,8 +383,8 @@ public static class RimeAccuracyRunner {
             $a = $tc.text_before[0]; $b = $tc.text_before[1]
             $ia = -1; $ib = -1
             for ($idx = 0; $idx -lt $cands.Count; $idx++) {
-                if ($ia -lt 0 -and $cands[$idx].Text -eq $a) { $ia = $idx }
-                if ($ib -lt 0 -and $cands[$idx].Text -eq $b) { $ib = $idx }
+                if ($ia -lt 0 -and $cands[$idx].Text -ceq $a) { $ia = $idx }
+                if ($ib -lt 0 -and $cands[$idx].Text -ceq $b) { $ib = $idx }
             }
             if ($ia -lt 0 -or $ib -lt 0 -or $ia -ge $ib) {
                 $errs.Add("expected '$a' (idx=$ia) before '$b' (idx=$ib)")
@@ -390,18 +392,18 @@ public static class RimeAccuracyRunner {
         }
         if ($tc.PSObject.Properties.Name -contains "no_text_regex") {
             foreach ($c in $cands) {
-                if ($c.Text -match $tc.no_text_regex) {
+                if ($c.Text -cmatch $tc.no_text_regex) {
                     $errs.Add("forbidden text '$($c.Text)' matched /$($tc.no_text_regex)/")
                 }
             }
         }
         if ($tc.PSObject.Properties.Name -contains "commit") {
-            if ($res.Commit -ne $tc.commit) {
+            if ($res.Commit -cne $tc.commit) {
                 $errs.Add("commit expected '$($tc.commit)' got '$($res.Commit)'")
             }
         }
         if ($tc.PSObject.Properties.Name -contains "preedit") {
-            if ($res.Preedit -ne $tc.preedit) {
+            if ($res.Preedit -cne $tc.preedit) {
                 $errs.Add("preedit expected '$($tc.preedit)' got '$($res.Preedit)'")
             }
         }
@@ -420,35 +422,13 @@ public static class RimeAccuracyRunner {
     [RimeAccuracyRunner]::Shutdown()
     $rimeInited = $false
 
-    # Check logs for Lua runtime errors
-    $luaErrs = @()
-    Get-ChildItem "$benchDir\logs" -File -ErrorAction SilentlyContinue | ForEach-Object {
-        $hits = Select-String -Path $_.FullName -Pattern "error running|attempt to|stack traceback|syntax error" -ErrorAction SilentlyContinue
-        if ($hits) { $luaErrs += $hits }
-    }
-    if ($luaErrs.Count -gt 0) {
-        $failed++
-        Write-Output "[FAIL] Lua runtime errors detected in logs:"
-        $luaErrs | ForEach-Object { Write-Output "  $($_.Line)" }
-    }
-
     Write-Output ("=== Accuracy Test Summary: {0} passed, {1} failed (total {2} cases) ===" -f $passed, $failed, $suite.cases.Count)
     if ($failed -gt 0) { exit 1 }
+    exit 0
 }
 finally {
     if ($rimeInited) {
         try { [RimeAccuracyRunner]::Shutdown() } catch {}
         $rimeInited = $false
     }
-    foreach ($d in $junctionDirs) {
-        $jp = Join-Path $benchDir $d
-        if (Test-Path $jp) {
-            try {
-                if ((Get-Item $jp -Force).Attributes -band [System.IO.FileAttributes]::ReparsePoint) {
-                    [System.IO.Directory]::Delete($jp, $false)
-                }
-            } catch {}
-        }
-    }
-    Remove-Item $benchDir -Recurse -Force -ErrorAction SilentlyContinue
 }

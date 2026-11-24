@@ -1,9 +1,9 @@
-﻿<#
+<#
 .SYNOPSIS
     Proactive full-surface live rime.dll audit across both Double Pinyin and Full Pinyin schemas.
 .DESCRIPTION
-    Runs an exhaustive, isolated runtime surface audit against Weasel's rime.dll without touching
-    live *.userdb or neural/feedback.jsonl. Verifies:
+    Runs an exhaustive, zero-leak child-worker surface audit against Weasel's rime.dll without
+    touching live *.userdb or neural/feedback.jsonl. Verifies:
       1. All 26 single-letter keys (a-z) and 100% of pin_cand_filter entries in DP & FP.
       2. 100% of cn_dicts/corrections.dict.yaml entries in DP & FP (reachability, exact comment
          attachment, and zero raw full-width pinyin bracket leaks).
@@ -12,77 +12,46 @@
       5. High-frequency EN-vs-CN anti-hijack checks (2-letter ZRM syllables, high-frequency FP
          abbreviations, and symbol-code anti-hijack guard keys).
       6. Calculator portable math + Lua boundary fuzzing + all-options-on smoke check + 0 log errors.
-    Exits 0 iff all surface checks pass.
+    Exits 0 iff all surface checks and post-exit flushed log checks pass.
 .PARAMETER RimeDir
-    Source Rime user directory containing build/, lua/, opencc/, *.gram. Defaults to %APPDATA%\Rime.
+    Source Rime user directory containing build/, lua/, opencc/, *.gram.
+    Defaults to HKCU\SOFTWARE\Rime\Weasel\RimeUserDir or %APPDATA%\Rime.
+.PARAMETER WorkerBenchDir
+    Internal child-worker sandbox path passed by the parent orchestrator. Do not set manually.
 #>
 param(
-    [string]$RimeDir = ""
+    [string]$RimeDir        = "",
+    [string]$WorkerBenchDir = ""
 )
 
 $ErrorActionPreference = "Stop"
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+$OutputEncoding = [System.Text.UTF8Encoding]::new($false)
+try { [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false) } catch {}
+
+. (Join-Path (Split-Path $PSScriptRoot -Parent) "scripts\_common.ps1")
 
 if (-not $RimeDir) {
-    $regDir = (Get-ItemProperty -Path "HKCU:\SOFTWARE\Rime\Weasel" -Name "RimeUserDir" -ErrorAction SilentlyContinue).RimeUserDir
-    $RimeDir = if ($regDir -and $regDir.Trim()) { $regDir.Trim() } else { Join-Path $env:APPDATA "Rime" }
-}
-
-function Get-WeaselDir {
-    $proc = Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue | Select-Object -First 1
-    if ($proc) {
-        try {
-            $procDir = Split-Path $proc.Path -Parent
-            if ($procDir -and (Test-Path (Join-Path $procDir "rime.dll"))) { return $procDir }
-        } catch {}
-    }
-    foreach ($regPath in @("HKLM:\SOFTWARE\Rime\Weasel", "HKLM:\SOFTWARE\WOW6432Node\Rime\Weasel", "HKCU:\SOFTWARE\Rime\Weasel")) {
-        $root = (Get-ItemProperty -Path $regPath -Name "WeaselRoot" -ErrorAction SilentlyContinue).WeaselRoot
-        if ($root -and (Test-Path (Join-Path $root "rime.dll"))) { return $root }
-    }
-    $cands = @()
-    foreach ($base in @("C:\Program Files\Rime", "C:\Program Files (x86)\Rime")) {
-        if (Test-Path $base) {
-            $cands += Get-ChildItem $base -Directory -Filter "weasel-*" -ErrorAction SilentlyContinue |
-                Where-Object { Test-Path (Join-Path $_.FullName "rime.dll") }
-        }
-    }
-    $best = $cands | Sort-Object LastWriteTime -Descending | Select-Object -First 1
-    if ($best) { return $best.FullName }
-    return $null
-}
-
-function New-SafeHardlinkOrCopy([string]$Dst, [string]$Src) {
-    $prev = $ErrorActionPreference
-    $ErrorActionPreference = "Continue"
-    try {
-        $global:LASTEXITCODE = 0
-        & cmd /c mklink /H "$Dst" "$Src" 2>&1 | Out-Null
-        if ($LASTEXITCODE -ne 0 -or -not (Test-Path $Dst)) {
-            Copy-Item -Path $Src -Destination $Dst -Force
-        }
-    } finally {
-        $ErrorActionPreference = $prev
-    }
+    $RimeDir = Get-RimeUserDir
 }
 
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
-$weaselDir = Get-WeaselDir
-if (-not $weaselDir -or -not (Test-Path (Join-Path $weaselDir "rime.dll"))) {
-    throw "Could not find Weasel rime.dll via registry or Program Files"
+$weaselDir = Get-WeaselDir -RequireFile "rime.dll"
+if (-not $weaselDir -or -not (Test-Path -LiteralPath (Join-Path $weaselDir "rime.dll"))) {
+    throw "Could not find Weasel rime.dll via running process, registry, or Program Files"
 }
 
-$benchDir = Join-Path $env:TEMP ("rime-surface-audit-" + (Get-Date -Format "yyyyMMddHHmmss") + "-" + [guid]::NewGuid().ToString("N").Substring(0, 6))
-New-Item -ItemType Directory -Force -Path "$benchDir\logs" | Out-Null
-$payloadPath = Join-Path $benchDir "surface_inputs.json"
-$rimeInited = $false
-$junctionDirs = @("build", "lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts")
-
-try {
-    # 1. Extract exact test inputs from repo SSOT via Python (zero duplication of ZRM tables)
-    $pyExtract = @"
+# --- Parent Orchestrator Mode (zero-leak sandbox lifecycle + post-exit flushed log check) ---
+if ([string]::IsNullOrEmpty($WorkerBenchDir)) {
+    $benchDir = New-BenchSandbox -Prefix "rime-surface-audit" -RimeDir $RimeDir
+    $payloadPath = Join-Path $benchDir "surface_inputs.json"
+    $workerExit = 1
+    $logFailures = [System.Collections.Generic.List[string]]::new()
+    try {
+        # 1. Extract exact test inputs from repo SSOT via Python (paths passed safely via sys.argv)
+        $pyExtract = @'
 import json, pathlib, re, sys, yaml
-root = pathlib.Path(r"$repoRoot")
+root = pathlib.Path(sys.argv[1])
+payload_path = pathlib.Path(sys.argv[2])
 sys.path.insert(0, str(root / "scripts"))
 import build_cn_en
 
@@ -165,31 +134,67 @@ payload = {
     "zrm_2letter_en": zrm_2letter_en,
     "fp_abbr_hi": sorted(fp_abbr_hi),
 }
-pathlib.Path(r"$payloadPath").write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
-"@
-    $pyExtract | python -
-    if ($LASTEXITCODE -ne 0) { throw "Failed to extract surface audit inputs via Python." }
-
-    # 2. Prepare isolated Rime sandbox (never touches live *.userdb or feedback.jsonl)
-    foreach ($d in $junctionDirs) {
-        $src = Join-Path $RimeDir $d
-        if (Test-Path $src) { cmd /c mklink /J "$benchDir\$d" "$src" | Out-Null }
-    }
-    $neuralSrc = Join-Path $RimeDir "neural"
-    if (Test-Path $neuralSrc) {
-        $neuralDst = Join-Path $benchDir "neural"
-        New-Item -ItemType Directory -Force -Path $neuralDst | Out-Null
-        Get-ChildItem $neuralSrc -File | Where-Object { $_.Name -notmatch '^feedback\.jsonl(\.\d+)?$' } | ForEach-Object {
-            New-SafeHardlinkOrCopy (Join-Path $neuralDst $_.Name) $_.FullName
+payload_path.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+'@
+        $pyRes = Invoke-NativeSafe { $pyExtract | & python - $repoRoot $payloadPath }
+        if ($pyRes.ExitCode -ne 0 -or -not (Test-Path -LiteralPath $payloadPath)) {
+            $tail = ($pyRes.Output | Select-Object -Last 10) -join "`n"
+            throw "Failed to extract surface audit inputs via Python (ExitCode=$($pyRes.ExitCode)):`n$tail"
         }
-    }
-    Get-ChildItem $RimeDir -File | Where-Object {
-        $_.Extension -in @(".yaml", ".lua", ".txt") -and $_.Name -notin @("user.yaml", "installation.yaml")
-    } | ForEach-Object { Copy-Item $_.FullName $benchDir }
-    Get-ChildItem $RimeDir -File -Filter "*.gram" | ForEach-Object {
-        New-SafeHardlinkOrCopy (Join-Path $benchDir $_.Name) $_.FullName
+
+        # 2. Launch isolated child worker so rime.dll / glog release all handles on exit
+        $childArgs = @(
+            "-NoProfile", "-ExecutionPolicy", "Bypass",
+            "-File", $PSCommandPath,
+            "-RimeDir", $RimeDir,
+            "-WorkerBenchDir", $benchDir
+        )
+        $prevEap = $ErrorActionPreference
+        $ErrorActionPreference = "Continue"
+        try {
+            $global:LASTEXITCODE = 0
+            & powershell.exe @childArgs
+            $workerExit = if ($null -eq $LASTEXITCODE) { 0 } else { [int]$LASTEXITCODE }
+        } finally {
+            $ErrorActionPreference = $prevEap
+        }
+
+        # 3. Post-exit flushed log cleanliness check (ignoring expected isolated-sandbox missing user.yaml)
+        $logDir = Join-Path $benchDir "logs"
+        if (Test-Path -LiteralPath $logDir) {
+            Get-ChildItem -LiteralPath $logDir -File -ErrorAction SilentlyContinue | ForEach-Object {
+                $fname = $_.Name
+                foreach ($line in (Get-Content -LiteralPath $_.FullName -Encoding UTF8 -ErrorAction SilentlyContinue)) {
+                    if ($line -match '^[WEF]\d{4,8}\s' -and $line -notmatch "nonexistent config file '.*user\.yaml'") {
+                        $logFailures.Add("log($fname): $line")
+                    }
+                }
+            }
+        }
+        Write-Host "[6/6] Calculator, Lua fuzzing, all-options-on & post-exit log cleanliness checked"
+        Write-Host ""
+        if ($workerExit -eq 0 -and $logFailures.Count -eq 0) {
+            Write-Host "=== Surface Audit Summary: PASS (0 failures across DP & FP) ===" -ForegroundColor Green
+        } else {
+            if ($logFailures.Count -gt 0) {
+                $logFailures | Select-Object -First 30 | ForEach-Object { Write-Host "  [FAIL] $_" -ForegroundColor Red }
+            }
+            Write-Host ("=== Surface Audit Summary: FAIL (workerExit={0}, logFailures={1}) ===" -f $workerExit, $logFailures.Count) -ForegroundColor Red
+        }
+    } finally {
+        Remove-BenchSandbox -BenchDir $benchDir
     }
 
+    if ($workerExit -ne 0 -or $logFailures.Count -gt 0) { exit 1 }
+    exit 0
+}
+
+# --- Child Worker Mode ---
+$benchDir = $WorkerBenchDir
+$payloadPath = Join-Path $benchDir "surface_inputs.json"
+$rimeInited = $false
+
+try {
     if (-not ("RimeSurfaceAuditor" -as [type])) {
         Add-Type -TypeDefinition @"
 using System;
@@ -247,13 +252,19 @@ public static class RimeSurfaceAuditor {
             app_name = Utf8("rime.surface"), min_log_level = 1
         };
         RimeSetup(ref t); RimeInitialize(ref t); _sid = RimeCreateSession();
+        _curSchema = "";
     }
     public static void Close() {
         if (_sid != UIntPtr.Zero) { RimeDestroySession(_sid); _sid = UIntPtr.Zero; }
         RimeFinalize();
     }
     public static void SetSchema(string schema, bool trad, bool emoji, bool ce) {
-        if (_curSchema != schema) { RimeSelectSchema(_sid, schema); _curSchema = schema; }
+        if (_curSchema != schema) {
+            if (!RimeSelectSchema(_sid, schema)) {
+                throw new Exception("RimeSelectSchema failed: " + schema);
+            }
+            _curSchema = schema;
+        }
         RimeSetOption(_sid, "traditionalization", trad);
         RimeSetOption(_sid, "emoji", emoji);
         RimeSetOption(_sid, "chinese_english", ce);
@@ -285,11 +296,11 @@ public static class RimeSurfaceAuditor {
 "@
     }
 
-    $data = Get-Content $payloadPath -Raw -Encoding UTF8 | ConvertFrom-Json
+    $data = [System.IO.File]::ReadAllText($payloadPath, [System.Text.Encoding]::UTF8) | ConvertFrom-Json
     $failures = [System.Collections.Generic.List[string]]::new()
     function Is-PureAscii([string]$s) { return $s -match '^[A-Za-z0-9\s\.\-\+\#/&''_@]+$' }
 
-    [RimeSurfaceAuditor]::Init($weaselDir, (Join-Path $weaselDir "data"), $benchDir, "$benchDir\logs")
+    [RimeSurfaceAuditor]::Init($weaselDir, (Join-Path $weaselDir "data"), $benchDir, (Join-Path $benchDir "logs"))
     $rimeInited = $true
 
     # Check 1: Single letters & pin_cand_filter (DP & FP)
@@ -328,7 +339,7 @@ public static class RimeSurfaceAuditor {
             $cands = [RimeSurfaceAuditor]::Query($code, 15)
             $found = $null
             foreach ($cand in $cands) {
-                if ($cand.Comment -match "［.*］") {
+                if ($cand.Comment -match '\uFF3B.*\uFF3D') {
                     $failures.Add("[$sc] raw pinyin leak on '$($cr.word)' [$code]: '$($cand.Comment)'")
                 }
                 if ($cand.Text -eq $cr.word) { $found = $cand; break }
@@ -400,7 +411,11 @@ public static class RimeSurfaceAuditor {
         @("/vstanh(100)", "^1(\.0)?$"),
         @("/vsldexp(2,3)", "^16(\.0)?$")
     )
-    $fuzzBad = @("/vs1/0", "/vs0/0", "/vs1%0", "/vs2^1024", "/vs1000!", "/vs-1!", "/vssin", "/vsavg()", "/vsavg(fact(200),10)", "/vs(((", "/vsloge(0)", "/vslog10(-1)", "/vs(function()while(1)do;end;end)()")
+    $fuzzBad = @(
+        "/vs1/0", "/vs0/0", "/vs1%0", "/vs2^1024", "/vs1000!", "/vs-1!", "/vs2.5!",
+        "/vssin", "/vsavg()", "/vsavg(fact(200),10)", "/vs(((", "/vsloge(0)", "/vslog10(-1)",
+        "/vs(function()while(1)do;end;end)()", "/vs(e..1).rep(1,10)", "/vs1,2,3"
+    )
     foreach ($sc in @("rime_frost_double_pinyin", "rime_frost")) {
         [RimeSurfaceAuditor]::SetSchema($sc, $true, $true, $true)
         foreach ($pair in $calcExpect) {
@@ -424,40 +439,16 @@ public static class RimeSurfaceAuditor {
     [RimeSurfaceAuditor]::Close()
     $rimeInited = $false
 
-    # Check Rime logs for any W/E/F errors (ignoring expected isolated-sandbox missing user.yaml)
-    Get-ChildItem "$benchDir\logs" -File -ErrorAction SilentlyContinue | ForEach-Object {
-        foreach ($line in Get-Content $_.FullName -ErrorAction SilentlyContinue) {
-            if ($line -match "^[WEF]\d{8}\s" -and $line -notmatch "nonexistent config file '.*user\.yaml'") {
-                $failures.Add("log($($_.Name)): $line")
-            }
-        }
-    }
-    Write-Host "[6/6] Calculator, Lua fuzzing, all-options-on & log cleanliness checked"
-
-    Write-Host ""
-    if ($failures.Count -eq 0) {
-        Write-Host "=== Surface Audit Summary: PASS (0 failures across DP & FP) ===" -ForegroundColor Green
-        exit 0
-    } else {
-        Write-Host "=== Surface Audit Summary: FAIL ($($failures.Count) failures) ===" -ForegroundColor Red
+    if ($failures.Count -gt 0) {
         $failures | Select-Object -First 30 | ForEach-Object { Write-Host "  [FAIL] $_" -ForegroundColor Red }
+        Write-Host "  Total worker failures: $($failures.Count)" -ForegroundColor Red
         exit 1
     }
+    exit 0
 }
 finally {
     if ($rimeInited) {
         try { [RimeSurfaceAuditor]::Close() } catch {}
         $rimeInited = $false
     }
-    foreach ($d in $junctionDirs) {
-        $jp = Join-Path $benchDir $d
-        if (Test-Path $jp) {
-            try {
-                if ((Get-Item $jp -Force).Attributes -band [System.IO.FileAttributes]::ReparsePoint) {
-                    [System.IO.Directory]::Delete($jp, $false)
-                }
-            } catch {}
-        }
-    }
-    Remove-Item -Recurse -Force $benchDir -ErrorAction SilentlyContinue
 }
