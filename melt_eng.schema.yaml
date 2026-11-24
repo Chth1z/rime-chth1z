@@ -64,7 +64,9 @@ recognizer:
 
 # 兼容已有的外部引用；本方案及新补丁应直接引用独立规则文件。
 algebra_common:
-  __include: melt_eng_algebra_common:/algebra_common
+  __include: melt_eng_algebra_common:/algebra_common_pre
+  __append:
+    __include: melt_eng_algebra_common:/algebra_common_post
 algebra_rime_frost:
   __include: melt_eng_algebra:/algebra_rime_frost
 algebra_double_pinyin:

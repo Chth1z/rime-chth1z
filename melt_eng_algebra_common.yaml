@@ -4,7 +4,7 @@
 # 置于各方案中文数字/符号谐音派生之前，保留原始符号以便中文规则匹配前导符号（如 .NET、.gitignore）。
 algebra_common_pre:
   # 数字派生
-  - derive/1([4-7|9])/$1teen/
+  - derive/1([4-79])/$1teen/
   - derive/11/eleven/
   - derive/12/twelve/
   - derive/13/thirteen/
@@ -67,9 +67,3 @@ algebra_common_post:
   # - derive/^([a-z]{8})/\U$1/
   # - derive/^([a-z]{9})/\U$1/
   # - derive/^([a-z]{10})/\U$1/
-
-# 完整通用规则（供直接引用 melt_eng_algebra_common:/algebra_common 的配置使用）
-algebra_common:
-  __include: algebra_common_pre
-  __append:
-    __include: algebra_common_post
