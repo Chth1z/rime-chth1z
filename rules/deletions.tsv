@@ -3459,3 +3459,24 @@ cn_dicts/ext.dict.yaml	撞得头破血流	zhuang de tou po xie liu	成语书面�
 cn_dicts/ext.dict.yaml	地上的血迹	di shang de xie ji	复音书面词冗余xie错音行（同文件已有xue正音w=9）
 cn_dicts/ext.dict.yaml	阿胶补血	e jiao bu xie	复音书面词冗余xie错音行（同文件已有xue正音w=4）
 cn_dicts/ext.dict.yaml	吃什么补血	chi shen me bu xie	复音书面词冗余xie错音行（同文件已有xue正音w=4）
+# Batch 3 upstream-replay cross-dict deletion guards (prevent resurrection from lower-priority upstream dicts)
+cn_dicts/ext.dict.yaml	怒㨃	*	上游ext冗余非8105异体字㨃，与base同步清理
+cn_dicts_cell/medication.dict.yaml	多粘菌素	*	上游medication残留W3多粘菌素，与base同步清理
+cn_dicts_cell/game.dict.yaml	刀狼	*	上游game残留W5错别字刀狼(正形刀郎在base)，与food同步清理
+cn_dicts_cell/game.dict.yaml	渭城朝雨邑轻尘	*	上游game残留W5错字诗句，与literature同步清理
+cn_dicts_cell/game.dict.yaml	玉筋应啼别离后	*	上游game残留W5错字诗句，与literature同步清理
+cn_dicts_cell/idiom.dict.yaml	飞沈理自隔	*	上游idiom残留繁体沈，与literature同步清理
+cn_dicts_cell/idiom.dict.yaml	冥冥日沈夕	*	上游idiom残留繁体沈，与literature同步清理
+cn_dicts_cell/idiom.dict.yaml	折戟沈沙铁未销	*	上游idiom残留繁体沈，与literature同步清理
+cn_dicts_cell/idiom.dict.yaml	布齐必变食	*	上游idiom残留OCR错字，与literature同步清理
+cn_dicts_cell/idiom.dict.yaml	渭城朝雨邑轻尘	*	上游idiom残留W5错字诗句，与literature同步清理
+cn_dicts_cell/idiom.dict.yaml	松月夜窗墟	*	上游idiom残留W5错字诗句，与literature同步清理
+cn_dicts_cell/idiom.dict.yaml	西路蝉声唱	*	上游idiom残留W5错字诗句，与literature同步清理
+cn_dicts_cell/idiom.dict.yaml	一舞剑气动四方	*	上游idiom残留W5错字诗句，与literature同步清理
+cn_dicts_cell/idiom.dict.yaml	玉筋应啼别离后	*	上游idiom残留W5错字诗句，与literature同步清理
+cn_dicts_cell/idiom.dict.yaml	姊妹弟兄皆列士	*	上游idiom残留W5错字诗句，与literature同步清理
+cn_dicts_cell/idiom.dict.yaml	冰崖转石万壑雷	*	上游idiom残留W5错字诗句，与literature同步清理
+cn_dicts_cell/idiom.dict.yaml	我们参照了	*	上游idiom残留非文学现代残片，与literature同步清理
+cn_dicts_cell/idiom.dict.yaml	主要参照了	*	上游idiom残留非文学现代残片，与literature同步清理
+cn_dicts_cell/idiom.dict.yaml	构造出了	*	上游idiom残留非文学现代残片，与literature同步清理
+cn_dicts_cell/idiom.dict.yaml	也被越来越多的	*	上游idiom残留非文学现代残片，与literature同步清理

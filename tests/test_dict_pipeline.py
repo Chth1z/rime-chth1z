@@ -623,6 +623,48 @@ class TestCleanerHardeningAndZeroPingPong(unittest.TestCase):
         self.assertIn("椎心泣血\tchui xin qi xue\t2", out)
         self.assertEqual(st["fixed_py"], 2)
 
+    def test_cross_dict_shadow_fix_propagation_and_dual_protection(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            root = pathlib.Path(td)
+            _create_mini_repo(root)
+            # literature fixes (测试, ce ci) -> (测试, ce shi) and (旧词 -> 新词);
+            # lower-priority idiom still has raw upstream duplicates of both!
+            (root / "cn_dicts/8105.dict.yaml").write_text(
+                "---\nname: 8105\n...\n测\tce\t10\n试\tshi\t10\n词\tci\t10\n旧\tjiu\t10\n新\txin\t10\n双\tshuang\t10\n读\tdu\t10\n",
+                encoding="utf-8",
+                newline="\n",
+            )
+            (root / "cn_dicts_cell/literature.dict.yaml").write_text(
+                "---\nname: literature\n...\n测试\tce ci\t5\n旧词\tjiu ci\t3\n",
+                encoding="utf-8",
+                newline="\n",
+            )
+            (root / "cn_dicts_cell/idiom.dict.yaml").write_text(
+                "---\nname: idiom\n...\n测试\tce ci\t20\n旧词\tjiu ci\t12\n",
+                encoding="utf-8",
+                newline="\n",
+            )
+            (root / "rules/phonetics_fix.tsv").write_text(
+                "cn_dicts_cell/literature.dict.yaml\t测试\tce ci\tce shi\tfix\tsrc\n",
+                encoding="utf-8",
+                newline="\n",
+            )
+            (root / "rules/word_fixes.tsv").write_text(
+                "cn_dicts_cell/literature.dict.yaml\t旧词\tjiu ci\t新词\txin ci\twf\tsrc\n",
+                encoding="utf-8",
+                newline="\n",
+            )
+            manifest, buffers = clean_dicts.run_pipeline(root, root, root / "rules", write=False)
+            lit_out = buffers["cn_dicts_cell/literature.dict.yaml"]
+            idiom_out = buffers["cn_dicts_cell/idiom.dict.yaml"]
+            # Literature inherits max weight via Step 2 dedup, idiom has 0 shadow conflicts/resurrections
+            self.assertIn("测试\tce shi\t20", lit_out)
+            self.assertIn("新词\txin ci\t12", lit_out)
+            self.assertNotIn("测试\tce ci", idiom_out)
+            self.assertNotIn("旧词\tjiu ci", idiom_out)
+            self.assertEqual(manifest["files"]["cn_dicts_cell/idiom.dict.yaml"]["propagated_py_shadow"], 1)
+            self.assertEqual(manifest["files"]["cn_dicts_cell/idiom.dict.yaml"]["propagated_wf_shadow"], 1)
+
 
 if __name__ == "__main__":
     unittest.main()

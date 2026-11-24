@@ -1942,11 +1942,19 @@ def run_pipeline(
     cleaned_files: dict[str, list[str]] = {}
     file_stats: dict[str, Counter] = {}
     before_entries_total = 0
+    raw_word_pys_by_file: dict[str, dict[str, set[str]]] = {}
     for rel, cleaner in cn_plan:
         raw_lines = (SRC_ROOT / rel).read_text(encoding="utf-8").splitlines()
         _, raw_body = split_header_body(raw_lines)
         before_entries = sum(1 for l in raw_body if parse_entry(l) is not None)
         before_entries_total += before_entries
+        if rel not in ("cn_dicts/corrections.dict.yaml", "cn_dicts_cell/luna.dict.yaml"):
+            raw_map: dict[str, set[str]] = {}
+            for l in raw_body:
+                p0 = parse_entry(l)
+                if p0:
+                    raw_map.setdefault(p0[0], set()).add(normalize_lue_nue(p0[1]))
+            raw_word_pys_by_file[rel] = raw_map
         st: Counter = Counter()
         st["before_entries"] = before_entries
         out_lines = cleaner(raw_lines, st)
@@ -1997,6 +2005,109 @@ def run_pipeline(
 
         cleaned_files[rel] = _dedup_within_file(out_lines, st)
         file_stats[rel] = st
+
+    # Step 1.4: Cross-dict shadow-fix propagation before global cross-file dedup.
+    # Propagate authoritative phonetic and word fixes from higher-priority active CN dicts
+    # to lower-priority dicts holding identical uncleaned upstream duplicates, so Step 2
+    # cleanly deduplicates them without cross-dict reading conflicts or typo resurrections.
+    dual_protected: set[tuple[str, str]] = {
+        (dr.word, py) for dr in ruleset.dual_readings for py in (dr.py1, dr.py2)
+    }
+    explicit_protected: set[tuple[str, str, str]] = (
+        {(ar.target_file, ar.word, ar.py) for ar in ruleset.additions}
+        | {(dr.target_file, dr.word, py) for dr in ruleset.dual_readings for py in (dr.py1, dr.py2)}
+        | {(pf.target_file, pf.word, pf.new_py) for pf in ruleset.phonetics_fix}
+    )
+    cn_prio: dict[str, int] = {rel: idx for idx, (rel, _) in enumerate(cn_plan)}
+    cleaned_word_pys: dict[str, dict[str, set[str]]] = {}
+    for rel, _ in cn_plan:
+        if rel in ("cn_dicts/corrections.dict.yaml", "cn_dicts_cell/luna.dict.yaml"):
+            continue
+        wmap: dict[str, set[str]] = {}
+        _, b0 = split_header_body(cleaned_files[rel])
+        for l in b0:
+            p0 = parse_entry(l)
+            if p0:
+                wmap.setdefault(p0[0], set()).add(p0[1])
+        cleaned_word_pys[rel] = wmap
+
+    propagated_py: dict[tuple[str, str], tuple[int, str]] = {}
+    # 1) Structural / pre-overlay single-reading phonetic fixes per higher-priority active dict
+    for rel, raw_map in raw_word_pys_by_file.items():
+        prio_hi = cn_prio[rel]
+        after_map = cleaned_word_pys.get(rel, {})
+        for w, old_pys in raw_map.items():
+            new_pys = after_map.get(w)
+            if not new_pys or len(new_pys) != 1:
+                continue
+            sole_new = next(iter(new_pys))
+            for old_py in old_pys:
+                if old_py == sole_new or (w, old_py) in dual_protected:
+                    continue
+                if (w, old_py) not in propagated_py or prio_hi < propagated_py[(w, old_py)][0]:
+                    propagated_py[(w, old_py)] = (prio_hi, sole_new)
+    # 2) Declarative rules/phonetics_fix.tsv entries verified active in their target dict
+    for pf in ruleset.phonetics_fix:
+        if pf.target_file not in cleaned_word_pys:
+            continue
+        prio_hi = cn_prio[pf.target_file]
+        after_pys = cleaned_word_pys[pf.target_file].get(pf.word, set())
+        if pf.new_py in after_pys and pf.old_py not in after_pys and (pf.word, pf.old_py) not in dual_protected:
+            if (pf.word, pf.old_py) not in propagated_py or prio_hi < propagated_py[(pf.word, pf.old_py)][0]:
+                propagated_py[(pf.word, pf.old_py)] = (prio_hi, pf.new_py)
+
+    # 3) Declarative rules/word_fixes.tsv entries verified active in their target dict
+    propagated_wf_exact: dict[tuple[str, str], tuple[int, str, str]] = {}
+    propagated_wf_wild: dict[str, tuple[int, str, str]] = {}
+    for wf in ruleset.word_fixes:
+        if wf.target_file not in cleaned_word_pys:
+            continue
+        prio_hi = cn_prio[wf.target_file]
+        after_map = cleaned_word_pys[wf.target_file]
+        if wf.new_word in after_map and wf.old_word not in after_map:
+            if wf.old_py == "*":
+                if wf.old_word not in propagated_wf_wild or prio_hi < propagated_wf_wild[wf.old_word][0]:
+                    propagated_wf_wild[wf.old_word] = (prio_hi, wf.new_word, wf.new_py)
+            else:
+                k = (wf.old_word, wf.old_py)
+                if k not in propagated_wf_exact or prio_hi < propagated_wf_exact[k][0]:
+                    propagated_wf_exact[k] = (prio_hi, wf.new_word, wf.new_py)
+
+    for rel, _ in cn_plan:
+        if rel == "cn_dicts/corrections.dict.yaml":
+            continue
+        prio_lo = cn_prio[rel]
+        hdr, body = split_header_body(cleaned_files[rel])
+        st = file_stats[rel]
+        out_prop = list(hdr)
+        changed_prop = False
+        for l in body:
+            p0 = parse_entry(l)
+            if not p0:
+                out_prop.append(l)
+                continue
+            w, py, wt, extra = p0
+            if (rel, w, py) not in explicit_protected:
+                pf_hit = propagated_py.get((w, py))
+                if pf_hit and pf_hit[0] < prio_lo:
+                    py = pf_hit[1]
+                    st["propagated_py_shadow"] += 1
+                    changed_prop = True
+                else:
+                    wf_hit = propagated_wf_exact.get((w, py)) or propagated_wf_wild.get(w)
+                    if wf_hit and wf_hit[0] < prio_lo:
+                        _, new_w, new_py = wf_hit
+                        if new_py != "*":
+                            w, py = new_w, new_py
+                            st["propagated_wf_shadow"] += 1
+                            changed_prop = True
+                        elif len(new_w.replace("·", "")) == len(py.split()):
+                            w = new_w
+                            st["propagated_wf_shadow"] += 1
+                            changed_prop = True
+            out_prop.append(format_entry(w, py, wt, extra))
+        if changed_prop:
+            cleaned_files[rel] = _dedup_within_file(out_prop, st)
 
     # Step 1.5: apply corrections/dual_readings declarative overlay with full knowledge of active CN keys
     active_keys: set[tuple[str, str]] = set()
