@@ -9,6 +9,28 @@
 
 > 方案键位、外观与 `app_options` 按个人习惯定制；词库文件、`rules/` 声明式规则、清洗与门禁脚本及治理规范 [docs/DICTIONARY_SPEC.md](docs/DICTIONARY_SPEC.md) 可独立参考或复用。如需通用上游方案或独立神经重排插件，可直接使用 [gaboolic/rime-frost](https://github.com/gaboolic/rime-frost) 或 [Chth1z/rime-neural](https://github.com/Chth1z/rime-neural)。
 
+## 快速安装（完整配置）
+
+### 方式一：由 AI Agent 一键安装与配置
+
+将以下指令发送给支持终端操作的 AI Agent（如 Claude Code、Codex、Cursor、Antigravity、Gemini CLI 等），Agent 会读取仓库内的 [`skills/rime-chth1z-setup/SKILL.md`](skills/rime-chth1z-setup/SKILL.md) 与辅助脚本，依次完成环境体检、官方小狼毫 Nightly（`>= 0.17.4`）安装或核验、既有配置备份、仓库同步、万象 LTS 语法模型（SHA-256 校验）、`Chth1z/rime-neural` 端侧神经重排安装、外观主题与可选字体/周更任务配置，以及部署后的独立端到端验收：
+
+```text
+请阅读 https://raw.githubusercontent.com/Chth1z/rime-chth1z/main/skills/rime-chth1z-setup/SKILL.md，按其中的步骤为本机安装并配置完整的小狼毫 + rime-chth1z 词库与配置 + 万象语法模型 + rime-neural，完成后部署并验证结果。
+```
+
+### 方式二：手动一键脚本
+
+在 Windows 10/11 (x64) PowerShell 中下载并执行编排脚本（已装小狼毫 `0.17.4+` 时可省略 `-InstallWeasel`）：
+
+```powershell
+$s = Join-Path $env:TEMP "rime-chth1z-bootstrap.ps1"
+& curl.exe -fSL -o $s "https://raw.githubusercontent.com/Chth1z/rime-chth1z/main/skills/rime-chth1z-setup/scripts/bootstrap.ps1"
+powershell -ExecutionPolicy Bypass -File $s -InstallWeasel -NeuralModel pumpkin -RegisterWeeklyTask
+```
+
+常用参数见 [`skills/rime-chth1z-setup/SKILL.md`](skills/rime-chth1z-setup/SKILL.md) 与 [`skills/rime-chth1z-setup/references/customization.md`](skills/rime-chth1z-setup/references/customization.md)（支持切换全拼默认、选用轻量模型 `-NeuralModel feather`、纯统计模式 `-NeuralModel none`、自动安装 `Noto Sans CJK` 或回退微软雅黑字体）。
+
 ## 词库治理与清洗体系
 
 全部词库修订均遵循 [docs/DICTIONARY_SPEC.md](docs/DICTIONARY_SPEC.md) 定义的五级审音依据链（L1 现行国家规范《普通话异读词审音表》/《通用规范汉字表》/《现代汉语词典》第 7 版 → L2 全国科技名词委/民政地名/药典 → L3 品牌/人名/古诗文训诂 → L4 2016 审音修订稿 → L5 两岸与大规模社会通行习惯）、五类读音决策矩阵（A–E）及五级官民异形词标准（W1–W5）。
@@ -61,6 +83,7 @@ python scripts/build_cn_en.py
 - `themes/`：小狼毫外观配置（`apple_graphite_dark`，含 `claude.exe` / `claude-desktop.exe` `app_options` 臺繁设定）
 - `bench/`：调用本机 `rime.dll` 的功能回归测试（`accuracy-test.ps1`、`accuracy-cases.json`）、按键耗时测试（`bench-rime.ps1`）与语料准确率评测（`eval-accuracy.py`）
 - `scripts/`：本地同步与清洗词库（`sync-dicts-local.ps1`、`clean-dicts.py`、`dict_rules.py`、`dict_lint.py`、`build_cn_en.py`）、检查上游更新、安装或升级 `Chth1z/rime-neural`（`install-rime-neural.ps1`）、本地部署（`deploy-local.ps1`）及本机周更脚本（`update-local.ps1`）
+- `skills/rime-chth1z-setup/`：面向 AI Agent 的全套一键安装、配置与验收技能包（`SKILL.md`、`inspect-env.ps1`、`bootstrap.ps1`、`verify-setup.ps1` 及自定义/排错参考）
 - `docs/`：词库维护与治理规范（`DICTIONARY_SPEC.md`）及向上游反馈问题的约定与记录（`upstream-issues/`）
 - `PROJECT_CONTEXT.md` / `ROADMAP.md`：项目背景记录与优化清单
 

@@ -8,15 +8,35 @@
 #>
 param(
     [string]$Theme = "apple_graphite_dark",
+    [string]$RimeDir = "",
     [switch]$RunBench,
     [switch]$Verify
 )
 
 $ErrorActionPreference = "Stop"
 $repoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
-$rimeDir  = Join-Path $env:APPDATA "Rime"
-$weaselDir = (Get-ChildItem "C:\Program Files\Rime" -Directory -Filter "weasel-*" -ErrorAction SilentlyContinue |
-    Sort-Object LastWriteTime -Descending | Select-Object -First 1).FullName
+
+if (-not $RimeDir) {
+    $regDir = (Get-ItemProperty -Path "HKCU:\SOFTWARE\Rime\Weasel" -Name "RimeUserDir" -ErrorAction SilentlyContinue).RimeUserDir
+    $RimeDir = if ($regDir -and $regDir.Trim()) { $regDir.Trim() } else { Join-Path $env:APPDATA "Rime" }
+}
+$rimeDir = $RimeDir
+
+$weaselCandidates = @()
+foreach ($regPath in @("HKLM:\SOFTWARE\Rime\Weasel", "HKLM:\SOFTWARE\WOW6432Node\Rime\Weasel", "HKCU:\SOFTWARE\Rime\Weasel")) {
+    $root = (Get-ItemProperty -Path $regPath -Name "WeaselRoot" -ErrorAction SilentlyContinue).WeaselRoot
+    if ($root -and (Test-Path (Join-Path $root "WeaselDeployer.exe"))) {
+        $weaselCandidates += (Get-Item $root)
+    }
+}
+foreach ($base in @("C:\Program Files\Rime", "C:\Program Files (x86)\Rime")) {
+    if (Test-Path $base) {
+        $weaselCandidates += Get-ChildItem $base -Directory -Filter "weasel-*" -ErrorAction SilentlyContinue |
+            Where-Object { Test-Path (Join-Path $_.FullName "WeaselDeployer.exe") }
+    }
+}
+$weaselItem = $weaselCandidates | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+$weaselDir  = if ($weaselItem) { $weaselItem.FullName } else { $null }
 if (-not $weaselDir) { throw "Weasel install directory not found." }
 
 function Stop-WeaselServerClean([string]$ExePath) {
@@ -64,6 +84,12 @@ $rootYamls = @(
 foreach ($ry in $rootYamls) {
     $src = Join-Path $repoRoot $ry
     if (Test-Path $src) { Copy-Item $src (Join-Path $rimeDir $ry) -Force }
+}
+
+$customPhraseDst = Join-Path $rimeDir "custom_phrase.txt"
+$customPhraseSrc = Join-Path $repoRoot "custom_phrase.txt"
+if (-not (Test-Path $customPhraseDst) -and (Test-Path $customPhraseSrc)) {
+    Copy-Item $customPhraseSrc $customPhraseDst -Force
 }
 
 # 3. Apply curated profiles & selected Weasel theme

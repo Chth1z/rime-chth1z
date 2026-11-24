@@ -10,16 +10,24 @@
 param(
     [switch]$Force,
     [switch]$InitOnly,
-    [string]$RepoDir = "D:\Github\rime-chth1z",
+    [string]$RepoDir = "",
+    [string]$RimeDir = "",
     [string]$Theme   = "apple_graphite_dark"
 )
 
 $ErrorActionPreference = "Stop"
-$rimeDir   = Join-Path $env:APPDATA "Rime"
+if (-not $RimeDir) {
+    $regDir = (Get-ItemProperty -Path "HKCU:\SOFTWARE\Rime\Weasel" -Name "RimeUserDir" -ErrorAction SilentlyContinue).RimeUserDir
+    $RimeDir = if ($regDir -and $regDir.Trim()) { $regDir.Trim() } else { Join-Path $env:APPDATA "Rime" }
+}
+if (-not $RepoDir -and (Test-Path "D:\Github\rime-chth1z\.git")) {
+    $RepoDir = "D:\Github\rime-chth1z"
+}
+$rimeDir   = $RimeDir
 $workDir   = Join-Path $rimeDir "auto_update"
 $stateFile = Join-Path $workDir "state.json"
 $logFile   = Join-Path $workDir "update.log"
-$headers   = @{ "User-Agent" = "RimeChth1zWeeklyUpdater/1.1" }
+$headers   = @{ "User-Agent" = "RimeChth1zWeeklyUpdater/1.2" }
 
 New-Item -ItemType Directory -Force -Path $workDir | Out-Null
 
@@ -40,9 +48,21 @@ function Trim-Log {
 }
 
 function Get-WeaselDir {
-    $d = Get-ChildItem "C:\Program Files\Rime" -Directory -Filter "weasel-*" -ErrorAction SilentlyContinue |
-        Sort-Object LastWriteTime -Descending | Select-Object -First 1
-    if ($d) { return $d.FullName }
+    $candidates = @()
+    foreach ($regPath in @("HKLM:\SOFTWARE\Rime\Weasel", "HKLM:\SOFTWARE\WOW6432Node\Rime\Weasel", "HKCU:\SOFTWARE\Rime\Weasel")) {
+        $root = (Get-ItemProperty -Path $regPath -Name "WeaselRoot" -ErrorAction SilentlyContinue).WeaselRoot
+        if ($root -and (Test-Path (Join-Path $root "WeaselDeployer.exe"))) {
+            $candidates += (Get-Item $root)
+        }
+    }
+    foreach ($base in @("C:\Program Files\Rime", "C:\Program Files (x86)\Rime")) {
+        if (Test-Path $base) {
+            $candidates += Get-ChildItem $base -Directory -Filter "weasel-*" -ErrorAction SilentlyContinue |
+                Where-Object { Test-Path (Join-Path $_.FullName "WeaselDeployer.exe") }
+        }
+    }
+    $best = $candidates | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+    if ($best) { return $best.FullName }
     return $null
 }
 
@@ -233,7 +253,7 @@ try {
         $deploySource = $null
         if ($needRepo) {
             $usedLocalGit = $false
-            if ((Test-Path (Join-Path $RepoDir ".git")) -and (Get-Command git -ErrorAction SilentlyContinue)) {
+            if ($RepoDir -and (Test-Path (Join-Path $RepoDir ".git")) -and (Get-Command git -ErrorAction SilentlyContinue)) {
                 $branchOut = & git -C $RepoDir rev-parse --abbrev-ref HEAD 2>$null
                 $branch = if ($LASTEXITCODE -eq 0 -and $branchOut) { ([string]$branchOut).Trim() } else { "" }
                 $dirty  = & git -C $RepoDir status --porcelain 2>$null
