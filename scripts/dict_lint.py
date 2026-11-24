@@ -397,10 +397,20 @@ def check_en_and_cn_en(root: pathlib.Path, rules_dir: pathlib.Path, errors: list
                 f"per-key weight normalization; keep plain code/weight or route Chinese phonetic via rules/cn_en_source.tsv"
             )
 
+    # Guard MSPY/Sogou ü(v) -> y mapping consistency in build_cn_en.py
+    for sch in ("mspy", "sogou"):
+        if build_cn_en.syl_to_shuangpin("nv", sch) != "ny" or build_cn_en.syl_to_shuangpin("lv", sch) != "ly":
+            errors.append(f"build_cn_en.py: {sch} must map nv/lv -> ny/ly (ü -> y)")
+
     return {"cn_en_entry_counts": counts}
 
 
-def check_schema_and_opencc(root: pathlib.Path, errors: list[str]) -> None:
+def check_schema_and_opencc(
+    root: pathlib.Path,
+    errors: list[str],
+    warnings: list[str],
+    strict: bool = False,
+) -> None:
     """Verify rime_frost.dict.yaml locks disabled upstream tables off and OpenCC JSON/TXT files are valid."""
     rf = root / "rime_frost.dict.yaml"
     disabled_tables = (
@@ -464,11 +474,17 @@ def check_schema_and_opencc(root: pathlib.Path, errors: list[str]) -> None:
             if rel not in known_dict_files:
                 errors.append(f"unmanaged dictionary file detected: {rel} (must be added to clean-dicts.py & dict_lint.py or explicitly excluded)")
 
-    # Optional PyYAML syntax verification for root, profile, and theme YAML files
+    # PyYAML syntax & schema invariant verification for root, profile, and theme YAML files
     try:
         import yaml  # type: ignore
     except ImportError:
         yaml = None
+    if yaml is None:
+        msg = "PyYAML is not installed; cannot run YAML syntax, melt_eng order, spelling_hints, and symbols_v guards (install pyyaml)"
+        if strict:
+            errors.append(msg)
+        else:
+            warnings.append(msg)
     if yaml is not None:
         yaml_files = (
             [p for p in sorted(root.glob("*.yaml")) if not p.name.endswith(".dict.yaml")]
@@ -507,6 +523,21 @@ def check_schema_and_opencc(root: pathlib.Path, errors: list[str]) -> None:
                 errors.append(
                     "melt_eng_algebra_common.yaml: algebra_common_post must contain erase/^[^a-zA-Z0-9].+$/"
                 )
+            for k, v in mc_doc.items():
+                if isinstance(v, dict) and "__include" in v and ":" not in str(v["__include"]):
+                    errors.append(
+                        f"melt_eng_algebra_common.yaml: key '{k}' has self-file __include '{v['__include']}' "
+                        "(triggers librime circular-dependency warnings)"
+                    )
+        me_alg = root / "melt_eng_algebra.yaml"
+        if me_alg.exists():
+            ma_doc = yaml.safe_load(me_alg.read_text(encoding="utf-8-sig")) or {}
+            for k, v in ma_doc.items():
+                if isinstance(v, dict) and "__include" in v and ":" not in str(v["__include"]):
+                    errors.append(
+                        f"melt_eng_algebra.yaml: key '{k}' has self-file __include '{v['__include']}' "
+                        "(triggers librime circular-dependency warnings)"
+                    )
 
         # Guard translator/spelling_hints >= max syllable length in cn_dicts/corrections.dict.yaml
         corr_p = root / "cn_dicts/corrections.dict.yaml"
@@ -833,7 +864,7 @@ def main() -> None:
     check_hygiene(root, errors)
     cn_stats, _, code_index = check_cn_invariants(root, valid_syls, ruleset, errors, warnings)
     en_stats = check_en_and_cn_en(root, rules_dir, errors)
-    check_schema_and_opencc(root, errors)
+    check_schema_and_opencc(root, errors, warnings, strict=args.strict)
 
     idemp_stats = None
     if args.idempotent:

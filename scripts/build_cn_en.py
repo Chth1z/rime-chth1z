@@ -63,7 +63,7 @@ SHUANGPIN_SCHEMES: dict[str, dict[str, dict[str, str]]] = {
             "uai": "y", "uo": "o", "un": "p", "ong": "s", "iong": "s", "uang": "d",
             "iang": "d", "en": "f", "eng": "g", "ang": "h", "an": "j", "ao": "k",
             "ai": "l", "ing": ";", "ei": "z", "ie": "x", "iao": "c", "ui": "v",
-            "ve": "v", "ou": "b", "in": "n", "ian": "m",
+            "ve": "v", "v": "y", "ou": "b", "in": "n", "ian": "m",
         },
         "zero": {
             "a": "oa", "o": "oo", "e": "oe", "ai": "ol", "ei": "oz", "ao": "ok",
@@ -74,7 +74,7 @@ SHUANGPIN_SCHEMES: dict[str, dict[str, dict[str, str]]] = {
         "init": {"zh": "v", "ch": "i", "sh": "u"},
         "fin": {
             "iu": "q", "ia": "w", "ua": "w", "er": "r", "uan": "r", "ue": "t",
-            "ve": "t", "uai": "y", "uo": "o", "un": "p", "ong": "s", "iong": "s",
+            "ve": "t", "v": "y", "uai": "y", "uo": "o", "un": "p", "ong": "s", "iong": "s",
             "uang": "d", "iang": "d", "en": "f", "eng": "g", "ang": "h", "an": "j",
             "ao": "k", "ai": "l", "ing": ";", "ei": "z", "ie": "x", "iao": "c",
             "ui": "v", "ou": "b", "in": "n", "ian": "m",
@@ -139,10 +139,10 @@ def syl_to_shuangpin(syl: str, scheme: str) -> str:
     else:
         ini = s[0]
         fin = s[1:]
-    if fin == "v":
-        fcode = "v"
-    elif fin in sc["fin"]:
+    if fin in sc["fin"]:
         fcode = sc["fin"][fin]
+    elif fin == "v":
+        fcode = "v"
     else:
         fcode = fin
     return ini + fcode
@@ -179,6 +179,7 @@ def load_cn_en_rules(
         return rules, errors
 
     seen_keys: set[tuple[str, str, tuple[str, ...], str, str]] = set()
+    seen_single_word_actions: set[tuple[str, str]] = set()
     for idx, raw in enumerate(source_path.read_text(encoding="utf-8").splitlines(), 1):
         s = raw.strip()
         if not s or s.startswith("#"):
@@ -218,6 +219,12 @@ def load_cn_en_rules(
         if key in seen_keys:
             errors.append(f"{source_path.name}:{idx}: duplicate rule for {key}")
             continue
+        if action in {"replace", "rename", "delete"}:
+            sw_key = (action, word)
+            if sw_key in seen_single_word_actions:
+                errors.append(f"{source_path.name}:{idx}: duplicate {action} rule for word '{word}'")
+                continue
+            seen_single_word_actions.add(sw_key)
         seen_keys.add(key)
         rules.append(CnEnRule(idx, action, word, prefix_en, syls, suffix_en, emit_lower, note))
 

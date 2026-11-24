@@ -115,3 +115,4 @@ add	A+	A	jia		false	评级符号中文谐音(仅大写触发避免污染小写�
 add	S+	S	jia		false	评级符号中文谐音(仅大写触发避免污染小写中文)
 add	.NET		dian	NET	true	开发框架前导句点中文谐音(保留 en_ext 中 net:2/.NET:1 权重序避免抢占英文 net，7布局同步)
 add	.env		dian	env	false	配置文件前导句点中文谐音(避免抢占英文 env，配合 en_ext dotenv 覆盖全部7布局)
+replace	AV女优	AV	nv you		true	修正微软/搜狗双拼 ü(v)->y 编码(AVnyyb/avnyyb)，7布局统一派生

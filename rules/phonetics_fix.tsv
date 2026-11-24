@@ -2499,3 +2499,11 @@ cn_dicts/base.dict.yaml	新传	xin zhuan	xin chuan	新闻传播简称新传规�
 cn_dicts/base.dict.yaml	地被	di bei	de bei	高频状语结构地被读de bèi(植物义已有地被植物)	现汉第7版
 cn_dicts/base.dict.yaml	得快	dei kuai	de kuai	动词补语结构得快规范读de kuài	现汉第7版
 cn_dicts/base.dict.yaml	新斯的明	xin si de ming	xin si di ming	中国药典音译Xinsidiming的读dì	中国药典(L2)
+cn_dicts/base.dict.yaml	还似旧时游上苑	huan si jiu shi you shang yuan	hai si jiu shi you shang yuan	李煜词「还似」意为仍然规范读hái	现汉第7版
+cn_dicts/base.dict.yaml	一樽还酹江月	yi zun huan lei jiang yue	yi zun hai lei jiang yue	苏轼词「还酹」规范读hái	现汉第7版
+cn_dicts_cell/composite.dict.yaml	折彦质	zhe yan zhi	she yan zhi	北宋折氏姓氏规范读shé(与ext.dict对齐)	现汉第7版
+cn_dicts_cell/composite.dict.yaml	折御勋	zhe yu xun	she yu xun	北宋折氏姓氏规范读shé(与ext.dict对齐)	现汉第7版
+cn_dicts_cell/chess.dict.yaml	将军抽车	jiang jun chou che	jiang jun chou ju	中国象棋「车」规范读jū(与base.dict对齐)	现汉第7版
+cn_dicts_cell/chess.dict.yaml	车马冷着	che ma leng zhao	ju ma leng zhao	中国象棋「车」规范读jū(与base.dict对齐)	现汉第7版
+cn_dicts_cell/chess.dict.yaml	巡河车	xun he che	xun he ju	中国象棋「车」规范读jū(与base.dict对齐)	现汉第7版
+cn_dicts_cell/chess2.dict.yaml	双车错	shuang che cuo	shuang ju cuo	中国象棋「车」规范读jū(与base.dict对齐)	现汉第7版

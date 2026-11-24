@@ -306,7 +306,6 @@ cn_dicts_cell/chess2.dict.yaml	横车	heng ju	31	domain	象棋标准读音 héng
 cn_dicts_cell/chess2.dict.yaml	投子认负	tou zi ren fu	13	domain	棋类常用成语（从 n-gram 尾块误杀找回）
 cn_dicts_cell/chess2.dict.yaml	缓手	huan shou	12	domain	棋类核心术语（从 n-gram 尾块误杀找回）
 cn_dicts_cell/chess2.dict.yaml	边卒	bian zu	11	domain	象棋核心术语（从 n-gram 尾块误杀找回）
-cn_dicts_cell/chess2.dict.yaml	白脸将	bai lian jiang	11	domain	象棋经典杀法（从 n-gram 尾块误杀找回）
 cn_dicts_cell/chess2.dict.yaml	棋例	qi li	10	domain	象棋规则核心术语（从 n-gram 尾块误杀找回）
 cn_dicts_cell/chess2.dict.yaml	底士	di shi	10	domain	象棋核心术语（从 n-gram 尾块误杀找回）
 cn_dicts_cell/chess2.dict.yaml	底线防守	di xian fang shou	10	domain	棋类/体育常用术语（从 n-gram 尾块误杀找回）

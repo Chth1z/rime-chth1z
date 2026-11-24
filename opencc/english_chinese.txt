@@ -1950,7 +1950,7 @@ appellate	appellate a.控诉的;上诉的
 appellation	appellation n.名称;称呼
 appellee	appellee n.被告
 appellor	appellor n.上诉人
-append	append vt.附加;添加;悬挂 n.DOS命令:建立数据文件的子目录搜索路经
+append	append vt.附加;添加;悬挂 n.DOS命令:建立数据文件的子目录搜索路径
 appendage	appendage n.附加物;附属肢体
 appendectomy	appendectomy n.阑尾切除术
 appendices	appendices n.pl.附加物;附录;盲肠
@@ -3019,7 +3019,7 @@ backswing	backswing n.背向摆动
 backtalk	backtalk n.工作联络交谈
 backtrack	backtrack vi.返回;退走;撤退;放弃
 backtracking	backtracking n.回索
-backup	backup n.后援;支持;阻赛 vt.做备份 a.候补的;支持性的 n.备份 n.DOS命令:备份;将文件从一个磁盘复制到另一个磁盘上
+backup	backup n.后援;支持;阻塞 vt.做备份 a.候补的;支持性的 n.备份 n.DOS命令:备份;将文件从一个磁盘复制到另一个磁盘上
 backwardation	backwardation n.交割延期费
 backwards	backwards ad.向后
 backwash	backwash n.以橹反推的水;浪涛;逆流;反响
@@ -5096,7 +5096,7 @@ budgetary	budgetary a.预算的
 buff	buff n.浅黄色;浅黄色皮革;人的皮肤 vt.擦亮;使柔软 a.浅黄色的
 buffalo	buffalo n.水牛
 buffer	buffer n.缓冲;缓冲区 vt.缓冲 n.缓冲区
-buffers	buffers n.[[计]DOS命令:设置或改变当前联机的子目录
+buffers	buffers n.[计]缓冲区;缓冲器
 buffet	buffet n.自助餐;小卖部;碗橱;殴打;冲击 vt.连续打;冲击;搏斗 vi.奋斗
 buffoon	buffoon n.小丑
 buffoonery	buffoonery n.打诨;滑稽
@@ -13799,7 +13799,7 @@ fadeless	fadeless a.不褪色的;不凋落的;不衰弱的
 fadeout	fadeout n.渐隐;渐没
 fader	fader n.化音器
 fading	fading n.衰退;衰落
-faeces	faeces n.=faeces
+faeces	faeces n.粪便;排泄物
 faery	faery n.仙子;仙境
 fag	fag n.吃力的工作;苦工 vi.努力的工作 vt.使劳累
 faggot	faggot n.柴把;束薪 vt.捆;束
@@ -14258,7 +14258,7 @@ fiasco	fiasco n.惨败;大失败
 fiat	fiat n.命令;严命;许可
 fib	fib n.小谎;一击;打 vi.撒小谎 vt.一击;打
 fibber	fibber n.撒小谎者
-fibre	fibre n.=fibre
+fibre	fibre n.纤维;纤维制品;质地
 fiber	fiber n.=fibre
 fiberglass	fiberglass n.玻璃纤维
 fibril	fibril n.小纤维;须根
@@ -19095,7 +19095,7 @@ including	including vbl.包括
 inclusion	inclusion n.包含;内含物
 inclusive	inclusive a.包含的;包括的
 incode	incode n.驿码
-incognita	incognita a. ad.n
+incognita	incognita a.隐姓埋名的;微服的 n.匿名女子
 incognito	incognito ad.微行;用假名的 n.微行者;匿名者 a.微行的;改名的;匿名的
 incognizant	incognizant a.不认识;无意识的;不知觉的
 incoherent	incoherent a.不连贯的;语无伦次的
@@ -21352,7 +21352,7 @@ largesse	largesse n.慷慨的赠与;慷慨;慷慨的赏钱;厚礼
 largest	largest a.大的;多量的
 largish	largish a.稍大的
 largo	largo a.缓慢的 ad.缓慢地 n.缓慢曲
-lariat	lariat n.套索 vt.━套索捉
+lariat	lariat n.套索 vt.用套索捉
 lark	lark n.云雀;欢乐;百灵鸟;嬉耍 vi.嬉耍;骑马玩乐 vt.愚弄
 larkspur	larkspur n.燕草属植物
 larky	larky a.爱闹玩的
@@ -35408,7 +35408,7 @@ specialising	specialising vbl.专攻
 specializing	specializing vbl.专攻
 specially	specially ad.特别地;临时地
 specialties	specialties n.专门;特性;特别
-specialty	specialty n.=pseciality
+specialty	specialty n.专业;特长;特产;特色菜
 specie	specie n.正币;硬币
 species	species n.种;类;外形
 specific	specific n.特效药;特性 a.特殊的;明确的;具有特效的;特定的;具体的

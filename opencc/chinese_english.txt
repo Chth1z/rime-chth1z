@@ -4265,7 +4265,7 @@ T恤	T恤 T shirt
 估算	估算 estimate
 估计	估计 estimate reckon
 估量	估量 estimate
-伲	伲 self s
+伲	伲 self
 伴	伴 partner companion associate accompany comrade menstruation
 伴侣	伴侣 companion mate partner
 伴唱	伴唱 vocal accompaniment accompany a singer support of sb echo sb chime in with sb
@@ -5661,7 +5661,7 @@ T恤	T恤 T shirt
 先验论	先验论 apriorism
 光	光 light ray bright
 光临	光临 present
-光二极管	光二极管 light emitting diode LED s
+光二极管	光二极管 light emitting diode LEDs
 光亚	光亚 Guangya
 光亮	光亮 bright
 光信号	光信号 optical signal
@@ -11342,7 +11342,7 @@ T恤	T恤 T shirt
 各项	各项 each item
 吆	吆 shout
 吆喝	吆喝 call
-合	合 council-chamber shelf side door 1 10 of a peck Chinese musical note fit join
+合	合 council-chamber shelf side door 1/10 of a peck Chinese musical note fit join
 合乎	合乎 conform with
 合乎逻辑	合乎逻辑 logical
 合众国	合众国 federated country
@@ -11801,7 +11801,7 @@ T恤	T恤 T shirt
 否定的否定	否定的否定 the negation of negation
 否有效	否有效 inefficient
 否认	否认 declare to be untrue deny
-吧	吧 dumb ba (sentence final article indicating polite suggestion, request, approval, doubt, uncertainly, etc.)
+吧	吧 dumb ba (sentence final particle indicating polite suggestion, request, approval, doubt, uncertainty, etc.)
 吨	吨 ton
 吨位	吨位 tonnage
 吨公里	吨公里 ton kilometer

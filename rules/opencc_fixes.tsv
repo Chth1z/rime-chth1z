@@ -251,3 +251,15 @@ opencc/english_chinese.txt	winconsin	delete		清理上游英汉词典OCR/拼写�
 opencc/english_chinese.txt	xeroradiogrphy	delete		清理上游英汉词典OCR/拼写错误词头
 opencc/english_chinese.txt	zabra	delete		清理上游英汉词典OCR/拼写错误词头
 opencc/english_chinese.txt	zoroastrainism	delete		清理上游英汉词典OCR/拼写错误词头
+opencc/english_chinese.txt	append	replace	append vt.附加;添加;悬挂 n.DOS命令:建立数据文件的子目录搜索路径	修正错字(搜索路经->搜索路径)
+opencc/english_chinese.txt	backup	replace	backup n.后援;支持;阻塞 vt.做备份 a.候补的;支持性的 n.备份 n.DOS命令:备份;将文件从一个磁盘复制到另一个磁盘上	修正错字(阻赛->阻塞)
+opencc/english_chinese.txt	buffers	replace	buffers n.[计]缓冲区;缓冲器	修复错贴为chdir的释义与失衡双括号
+opencc/english_chinese.txt	faeces	replace	faeces n.粪便;排泄物	修复自循环释义(=faeces)
+opencc/english_chinese.txt	fibre	replace	fibre n.纤维;纤维制品;质地	修复自循环释义(=fibre)
+opencc/english_chinese.txt	incognita	replace	incognita a.隐姓埋名的;微服的 n.匿名女子	补全截断释义
+opencc/english_chinese.txt	lariat	replace	lariat n.套索 vt.用套索捉	修复OCR错字(━->用)
+opencc/english_chinese.txt	specialty	replace	specialty n.专业;特长;特产;特色菜	修复拼错交叉引用(=pseciality)
+opencc/chinese_english.txt	伲	replace	伲 self	清理残留孤立字母token s
+opencc/chinese_english.txt	光二极管	replace	光二极管 light emitting diode LEDs	合并被拆散的复数LED s为LEDs
+opencc/chinese_english.txt	合	replace	合 council-chamber shelf side door 1/10 of a peck Chinese musical note fit join	合并被斜杠拆散的1 10 of a peck为1/10 of a peck
+opencc/chinese_english.txt	吧	replace	吧 dumb ba (sentence final particle indicating polite suggestion, request, approval, doubt, uncertainty, etc.)	修正错词(article->particle,uncertainly->uncertainty)

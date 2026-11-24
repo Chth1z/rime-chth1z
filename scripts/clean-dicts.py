@@ -1983,6 +1983,8 @@ def main() -> None:
             if s_line == "M4A1" and rf_missing and not inserted_alphanum:
                 rf_out.extend(rf_missing)
                 inserted_alphanum = True
+    if rf_missing and not inserted_alphanum:
+        rf_out.extend(rf_missing)
     (DST_ROOT / "rime_frost.dict.yaml").write_text("\n".join(rf_out) + "\n", encoding="utf-8", newline="\n")
 
     # Step 4: English & OpenCC
