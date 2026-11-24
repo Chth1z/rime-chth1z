@@ -10,7 +10,7 @@
 - **实际影响说明**：
   1. `lua/calculator.lua` 在 Lua 5.4 下用整数累乘阶乘，`21!` 即触发 64 位有符号整数溢出为负数，`66!` 溢成 `0`；且未校验求值结果类型和无穷大/NaN，输入 `Vsin` / `Vcos` 直接将 Lua 函数对象内存地址 `function: 0000...` 作为候选输出，输入 `V1/0` / `V0/0` 输出 `inf` / `-nan(ind)`。
   2. `lua/reduce_english_filter.lua` 将 `pending_cands` 的输出循环错写在 `if index >= M.idx + #pending_cands - 1` 分支内：当输入编码命中 `words` 列表（如双拼下输入 `bench`、`benz`）且无足够中文候选时，循环结束即退出，**全部英文候选被静默吞掉，候选栏完全为空**（`iDvel/rime-ice` 已将该循环移至外部修复，白霜尚未同步）。
-  3. 附带：`lua/select_character.lua:22` 同样存在 `is_composing() or has_menu()` 导致无候选菜单的 URL 态按 `[`（如 `http://[`）被吞并上屏单字母 `h` 的问题（母库 `rime-ice` 已另行反馈）。
+  3. 附带：`lua/select_character.lua:22` 同样存在 `is_composing() or has_menu()` 导致无候选菜单的 URL 态按 `[`（如 `http://[`）被吞并上屏单字母 `h` 的问题（母库 `rime-ice` 已反馈见 https://github.com/iDvel/rime-ice/issues/1648 ）。
 
 ## 复现步骤
 1. 使用干净的 `gaboolic/rime-frost@c982966` 默认配置（未叠加个人 `*.custom.yaml`）部署。
