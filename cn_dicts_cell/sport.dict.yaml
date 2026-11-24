@@ -71,7 +71,7 @@ use_preset_vocabulary: true
 戴丽丽	dai li li	1
 单桧	dan gui	2
 单明杰	shan ming jie	0
-弹网	dan wang	7
+弹网	tan wang	7
 挡球	dang qiu	13
 德佩特里索娃	de pei te li suo wa	0
 荻村伊智朗	di cun yi zhi lang	0
@@ -1477,7 +1477,7 @@ use_preset_vocabulary: true
 练精	lian jing	23
 炼溺	lian ni	0
 炼气化神	lian qi hua shen	1
-炼神还虚	lian shen hai xu	1
+炼神还虚	lian shen huan xu	1
 练至	lian zhi	11
 灵静	ling jing	1
 六不祥	liu bu xiang	0
@@ -1712,7 +1712,7 @@ use_preset_vocabulary: true
 真坐	zhen zuo	0
 征诸	zheng zhu	4
 止观法	zhi guan fa	1
-制检还魄	zhi jian hai po	0
+制检还魄	zhi jian huan po	0
 智能功	zhi neng gong	0
 智能气功	zhi neng qi gong	0
 治万病坐功诀	zhi wan bing zuo gong jue	0
@@ -1986,7 +1986,7 @@ use_preset_vocabulary: true
 城市广场球馆	cheng shi guang chang qiu guan	0
 成志明	cheng zhi ming	0
 冲撞犯规	chong zhuang fan gui	0
-仇素兵	chou su bing	0
+仇素兵	qiu su bing	0
 出场次数	chu chang ci shu	128
 触及篮框	chu ji lan kuang	0
 出拳打架	chu quan da jia	0
@@ -2307,7 +2307,6 @@ use_preset_vocabulary: true
 胡光	hu guang	7
 华盛顿国会	hua sheng dun guo hui	1
 华盛顿国会队	hua sheng dun guo hui dui	0
-华盛顿华盛顿国会	hua sheng dun hua sheng dun guo hui	0
 换手运球	huan shou yun qiu	5
 黄金队	huang jin dui	8
 汇中	hui zhong	1
@@ -2834,8 +2833,8 @@ use_preset_vocabulary: true
 彭飞	peng fei	32
 皮特鲁斯	pi te lu si	9
 皮亚考斯基	pi ya kao si ji	0
-匹兹保铁人	pi zi bao tie ren	0
-匹兹保铁人队	pi zi bao tie ren dui	0
+匹兹堡铁人	pi zi bao tie ren	0
+匹兹堡铁人队	pi zi bao tie ren dui	0
 平均每场盖帽	ping jun mei chang gai mao	1
 平均每场助攻	ping jun mei chang zhu gong	0
 普里茨比拉	pu li ci bi la	0
@@ -3391,7 +3390,7 @@ use_preset_vocabulary: true
 尤伯杯赛	you bo bei sai	0
 羽毛球混合双打	yu mao qiu hun he shuang da	0
 正拍	zheng pai	74
-重发球	zhong fa qiu	0
+重发球	chong fa qiu	0
 周蜜	zhou mi	2
 左半场	zuo ban chang	5
 按劲	an jin	0
@@ -3410,7 +3409,7 @@ use_preset_vocabulary: true
 绷法	beng fa	0
 庇身捶	bi shen chui	1
 掤劲	bing jin	1
-掤捋挤按采挒肘靠	bing luo ji an cai lie zhou kao	0
+掤捋挤按采挒肘靠	bing lv ji an cai lie zhou kao	0
 采劲	cai jin	0
 侧仰左腕	ce yang zuo wan	0
 缠丝	chan si	26
@@ -3425,7 +3424,7 @@ use_preset_vocabulary: true
 穿心肘	chuan xin zhou	0
 川字步	chuan zi bu	0
 摧刚炼柔	cui gang lian rou	0
-弹抖	dan dou	11
+弹抖	tan dou	11
 倒卷肱	dao juan gong	1
 倒撵猴	dao nian hou	7
 倒骑麟	dao qi lin	0
@@ -3439,8 +3438,8 @@ use_preset_vocabulary: true
 翻身单摆莲	fan shen dan bai lian	0
 翻身二起	fan shen er qi	0
 翻身二起脚	fan shen er qi jiao	0
-翻身三甬背	fan shen san yong bei	0
-飞步拗鸾肘	fei bu niu luan zhou	0
+翻身三通背	fan shen san tong bei	0
+飞步拗鸾肘	fei bu ao luan zhou	0
 风摆荷叶	feng bai he ye	1
 风扫梅花	feng sao mei hua	0
 盖步云手	gai bu yun shou	0
@@ -3474,21 +3473,20 @@ use_preset_vocabulary: true
 开合手	kai he shou	0
 开手	kai shou	11
 靠劲	kao jin	3
-濑扎衣	lai zha yi	0
 揽雀尾绷法	lan que wei beng fa	0
-揽雀尾捋法	lan que wei luo fa	0
+揽雀尾捋法	lan que wei lv fa	0
 懒扎衣	lan zha yi	6
 立定时	li ding shi	0
 两足直踏	liang zu zhi ta	0
 挒劲	lie jin	0
 六封四闭	liu feng si bi	2
-捋劲	luo jin	0
+捋劲	lv jin	0
 螺旋缠丝	luo xuan chan si	1
 抹眉红	mo mei hong	0
 内外相合	nei wai xiang he	3
 逆缠	ni chan	0
 逆缠丝	ni chan si	0
-拗鸾肘	niu luan zhou	0
+拗鸾肘	ao luan zhou	0
 劈架子	pi jia zi	0
 披身捶	pi shen chui	0
 撇身锤	pie shen chui	0
@@ -3497,7 +3495,7 @@ use_preset_vocabulary: true
 扑面掌	pu mian zhang	0
 起势	qi shi	236
 气与力合	qi yu li he	0
-前蹚拗步	qian tang niu bu	0
+前蹚拗步	qian tang ao bu	0
 前招	qian zhao	6
 前招后招	qian zhao hou zhao	0
 青龙摆尾	qing long bai wei	0
@@ -3532,7 +3530,7 @@ use_preset_vocabulary: true
 顺缠丝	shun chan si	0
 顺鸾肘	shun luan zhou	0
 四稍	si shao	0
-松活弹抖	song huo dan dou	4
+松活弹抖	song huo tan dou	4
 松腰胯	song yao kua	0
 太极起式	tai ji qi shi	0
 太极拳起势	tai ji quan qi shi	1
@@ -3559,7 +3557,7 @@ use_preset_vocabulary: true
 斜单鞭	xie dan bian	0
 斜飞式	xie fei shi	1
 斜行	xie xing	19
-斜行拗步	xie xing niu bu	0
+斜行拗步	xie xing ao bu	0
 心与意合	xin yu yi he	1
 虚灵顶劲	xu ling ding jin	19
 掩手肱捶	yan shou gong chui	0
@@ -3607,7 +3605,7 @@ use_preset_vocabulary: true
 转身白蛇吐信	zhuan shen bai she tu xin	0
 转身搬拦捶	zhuan shen ban lan chui	0
 转身蹬脚	zhuan shen deng jiao	0
-转身六合	zhuan shen lu he	0
+转身六合	zhuan shen liu he	0
 转身双摆莲	zhuan shen shuang bai lian	0
 转身左蹬脚	zhuan shen zuo deng jiao	0
 左白鹤亮翅	zuo bai he liang chi	0
@@ -3620,7 +3618,7 @@ use_preset_vocabulary: true
 左脚变虚	zuo jiao bian xu	0
 左脚实	zuo jiao shi	0
 左揽雀尾	zuo lan que wei	0
-左搂膝拗步	zuo lou xi niu bu	0
+左搂膝拗步	zuo lou xi ao bu	0
 左手在后	zuo shou zai hou	1
 左下势独立	zuo xia shi du li	0
 左右穿梭	zuo you chuan suo	3
@@ -3629,7 +3627,7 @@ use_preset_vocabulary: true
 左右倒转肱	zuo you dao zhuan gong	0
 左右分脚	zuo you fen jiao	0
 左右金鸡独立	zuo you jin ji du li	0
-左右搂膝拗步	zuo you lou xi niu bu	0
+左右搂膝拗步	zuo you lou xi ao bu	0
 左右野马分鬃	zuo you ye ma fen zong	1
 保护扣球	bao hu kou qiu	0
 背飞	bei fei	50
@@ -3730,7 +3728,6 @@ use_preset_vocabulary: true
 轮转得分	lun zhuan de fen	0
 鸣哨	ming shao	21
 排球技术	pai qiu ji shu	0
-排球矢量图	pai qiu shi liang tu	0
 排球柱	pai qiu zhu	0
 排纵深地带	pai zong shen di dai	0
 配合排球	pei he pai qiu	0
@@ -3936,7 +3933,7 @@ use_preset_vocabulary: true
 外格挡	wai ge dang	0
 吾道馆	wu dao guan	0
 武德馆	wu de guan	0
-系道带	xi dao dai	0
+系道带	ji dao dai	0
 下格挡	xia ge dang	2
 下劈	xia pi	36
 下劈腿	xia pi tui	1
@@ -3994,7 +3991,7 @@ use_preset_vocabulary: true
 曹在东	cao zai dong	0
 侧踢腿	ce ti tui	5
 插步	cha bu	1
-查拳	cha quan	19
+查拳	zha quan	19
 缠腕	chan wan	1
 禅圆功	chan yuan gong	0
 长柄单锤	chang bing dan chui	1
@@ -4181,13 +4178,13 @@ use_preset_vocabulary: true
 卢宗仁	lu zong ren	0
 轮臂	lun bi	0
 抡棍	lun gun	3
-捋手	luo shou	0
+捋手	lv shou	0
 绿沉	lv chen	7
 马步冲拳	ma bu chong quan	1
 马形	ma xing	3
 矛端生火	mao duan sheng huo	0
 矛盾桩	mao dun zhuang	3
-矛生角	mao sheng jue	0
+矛生角	mao sheng jiao	0
 猫行拳	mao xing quan	0
 矛叶舞矛	mao ye wu mao	0
 梅花刀	mei hua dao	0
@@ -4448,7 +4445,7 @@ use_preset_vocabulary: true
 指我矛	zhi wo mao	0
 执铱	zhi yi	0
 执钺	zhi yue	12
-重英	zhong ying	0
+重英	chong ying	0
 周钺	zhou yue	0
 朱英	zhu ying	25
 朱钺	zhu yue	4
@@ -4548,7 +4545,7 @@ use_preset_vocabulary: true
 场均数据	chang jun shu ju	41
 长暂停	chang zan ting	3
 陈鑫	chen xin	86
-仇华	chou hua	16
+仇华	qiu hua	16
 错位防守	cuo wei fang shou	11
 打板投篮	da ban tou lan	8
 大成生化	da cheng sheng hua	0
@@ -6600,7 +6597,7 @@ use_preset_vocabulary: true
 博斯尼亚克	bo si ni ya ke	0
 波斯皮西尔	bo si pi xi er	1
 博斯文森	bo si wen sen	0
-波苏伊曾	bo su yi ceng	0
+波苏伊曾	bo su yi zeng	0
 博塔哈尔	bo ta ha er	0
 波塔诺瓦	bo ta nuo wa	0
 波泰尔斯	bo tai er si	0
@@ -6630,7 +6627,7 @@ use_preset_vocabulary: true
 布迪索	bu di suo	0
 布杜洛斯	bu du luo si	0
 布尔岑斯卡	bu er cen si ka	0
-布尔曾斯卡	bu er ceng si ka	0
+布尔曾斯卡	bu er zeng si ka	0
 布尔达里奇	bu er da li qi	0
 布尔格斯	bu er ge si	0
 布尔罕埃瑟尔	bu er han ai se er	0
@@ -7002,7 +6999,7 @@ use_preset_vocabulary: true
 丹英格斯泰德	dan ying ge si tai de	0
 党云飞	dang yun fei	0
 倒地扫射	dao di sao she	3
-倒勾球	dao gou qiu	0
+倒钩球	dao gou qiu	0
 倒勾射门	dao gou she men	4
 倒脚	dao jiao	102
 稻垣顺	dao yuan shun	0
@@ -7468,7 +7465,7 @@ use_preset_vocabulary: true
 范穆里克	fan mu li ke	0
 范那佛洛	fan na fo luo	0
 范纽斯塔德	fan niu si ta de	0
-范纽文胡伊曾	fan niu wen hu yi ceng	0
+范纽文胡伊曾	fan niu wen hu yi zeng	0
 范纽文胡伊泽	fan niu wen hu yi ze	0
 范欧登霍温	fan ou deng huo wen	0
 范佩西埃	fan pei xi ai	0
@@ -8681,7 +8678,7 @@ use_preset_vocabulary: true
 凯福拉维克	kai fu la wei ke	0
 开角球	kai jiao qiu	13
 凯拉尔森	kai la er sen	0
-凯里姆曾金	kai li mu ceng jin	0
+凯里姆曾金	kai li mu zeng jin	0
 凯马尔阿斯兰	kai ma er a si lan	0
 凯尼亚	kai ni ya	0
 开球点	kai qiu dian	5
@@ -11722,7 +11719,7 @@ use_preset_vocabulary: true
 托比亚斯劳	tuo bi ya si lao	0
 托尔格洛	tuo er ge luo	0
 托尔加奥兹根	tuo er jia ao zi gen	0
-托尔加曾金	tuo er jia ceng jin	0
+托尔加曾金	tuo er jia zeng jin	0
 托尔加多甘特兹	tuo er jia duo gan te zi	0
 托尔加西罕	tuo er jia xi han	0
 托尔纳吉	tuo er na ji	0
@@ -11877,7 +11874,7 @@ use_preset_vocabulary: true
 威尔士浦	wei er shi pu	0
 维尔舒雷	wei er shu lei	0
 维尔斯塔蓬	wei er si ta peng	0
-维尔苏伊曾	wei er su yi ceng	0
+维尔苏伊曾	wei er su yi zeng	0
 维尔塔宁	wei er ta ning	0
 维尔汤恩	wei er tang en	0
 维尔图斯	wei er tu si	2
@@ -12072,7 +12069,7 @@ use_preset_vocabulary: true
 乌马亚	wu ma ya	0
 乌穆内格布	wu mu nei ge bu	0
 乌穆特布鲁特	wu mu te bu lu te	0
-乌穆特索曾	wu mu te suo ceng	0
+乌穆特索曾	wu mu te suo zeng	0
 乌纳尔	wu na er	0
 乌纳尔阿尔普甘	wu na er a er pu gan	0
 乌纳尔萨里	wu na er sa li	0
@@ -12711,7 +12708,7 @@ use_preset_vocabulary: true
 詹纳罗德尔维奇奥	zhan na luo de er wei qi ao	0
 詹尼凯达	zhan ni kai da	0
 战术犯规	zhan shu fan gui	73
-战术脚球	zhan shu jiao qiu	1
+战术角球	zhan shu jiao qiu	1
 詹斯波尔森	zhan si bo er sen	0
 詹斯乔恩吉恩纳普	zhan si qiao en ji en na pu	0
 张枫五	zhang feng wu	0
@@ -12901,7 +12898,6 @@ use_preset_vocabulary: true
 多梅尼卡利	duo mei ni ka li	0
 法国马尼库尔赛道	fa guo ma ni ku er sai dao	0
 法拉利车队	fa la li che dui	21
-法拉利官网	fa la li guan wang	0
 法拉利赛车	fa la li sai che	8
 发起组建	fa qi zu jian	5
 发展部主管	fa zhan bu zhu guan	0

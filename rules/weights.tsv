@@ -1322,3 +1322,5 @@ cn_dicts/8105.dict.yaml	钫	fang	10	化学元素单字降权避压纺(51)/妨(10
 cn_dicts/8105.dict.yaml	锎	kai	10	化学元素单字降权避压一级字慨(100)
 cn_dicts/8105.dict.yaml	铈	shi	10	化学元素单字降权避压一级字驶(180)
 cn_dicts/8105.dict.yaml	酚	fen	20	化学专字降权避压一级字纷(250)/氛(120)
+# Batch 3 (game): 世界树 tier boost
+cn_dicts_cell/game.dict.yaml	世界树	shi jie shu	>=60	神话与游戏核心专名（北欧Yggdrasil/魔兽/原神/老头环）由0提权至T3，避免被computer:世界书(30)与base:视界术(2)压制

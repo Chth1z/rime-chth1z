@@ -826,3 +826,12 @@ cn_dicts_cell/history.dict.yaml	鄼县	cuo xian	酂县	*	Trad/JP/variant: 鄼->�
 cn_dicts_cell/history.dict.yaml	林崑冈	lin kun gang	林昆冈	*	Trad/JP/variant: 崑->昆	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/name2.dict.yaml	忽那通着	hu na tong zhe	忽那通著	hu na tong zhu	日本战国水军武将忽那通著(Kutsuna Michiaki)，繁转简误作“着”且误注zhe	日史/通用规范汉字表
 cn_dicts_cell/name2.dict.yaml	立花誾千代	li hua yin qian dai	立花訚千代	*	Trad/JP/variant: 誾->訚（8105规范简化字）	通用规范汉字表/DICTIONARY_SPEC §2.6
+# Batch 3 (sport & game): verified word fixes
+cn_dicts_cell/sport.dict.yaml	战术脚球	*	战术角球	zhan shu jiao qiu	W5足球术语“战术角球”同音错字（角->脚，sport:12714）	体育规范术语
+cn_dicts_cell/sport.dict.yaml	匹兹保铁人	*	匹兹堡铁人	pi zi bao tie ren	W5美国BAA球队“匹兹堡铁人”(Pittsburgh Ironmen)同音错字（堡->保，sport:2837）	体育专名
+cn_dicts_cell/sport.dict.yaml	匹兹保铁人队	*	匹兹堡铁人队	pi zi bao tie ren dui	W5美国BAA球队“匹兹堡铁人队”同音错字（堡->保，sport:2838）	体育专名
+cn_dicts_cell/sport.dict.yaml	翻身三甬背	*	翻身三通背	fan shen san tong bei	W5太极拳式“翻身三通背”OCR错字（通->甬，对照sport:3510三通背，sport:3442）	太极拳谱
+cn_dicts_cell/sport.dict.yaml	倒勾球	*	倒钩球	dao gou qiu	W3/W5足球术语规范作“倒钩球”（对照base:倒钩，sport:7005）	现汉第7版(L1)
+cn_dicts_cell/game.dict.yaml	古今着闻集	*	古今著闻集	gu jin zhu wen ji	W5日本典籍《古今著闻集》“著”误作“着”且误注zhe（game:104054）	辞海/L3专名
+cn_dicts_cell/game.dict.yaml	暗穴净化着	*	暗穴净化者	an xue jing hua zhe	W5魔兽世界怪物名“净化者”同音错字（者->着，game:19263）	魔兽世界官方译名
+cn_dicts_cell/game.dict.yaml	钉刺着	*	钉刺者	ding ci zhe	W5魔兽世界怪物名“钉刺者”同音错字（者->着，game:25465）	魔兽世界官方译名

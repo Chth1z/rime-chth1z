@@ -1548,6 +1548,18 @@ def clean_composite(lines: list[str], stats: dict) -> list[str]:
             if new_py != py:
                 py = new_py
                 stats["fixed_py"] += 1
+        if "似" in w and "shi" in py.split() and "似的" not in w and "似地" not in w:
+            new_py = replace_syl_at(w, py, "似", "shi", "si")
+            if new_py != py:
+                py = new_py
+                stats["fixed_py"] += 1
+        if "椎" in w and "chui" in py.split():
+            chui_allow = ("木椎", "铜椎", "铁椎", "石椎", "椎心", "椎胸", "椎鼓", "椎牛", "椎埋")
+            if not any(k in w for k in chui_allow):
+                new_py = replace_syl_at(w, py, "椎", "chui", "zhui")
+                if new_py != py:
+                    py = new_py
+                    stats["fixed_py"] += 1
         if "谁" in w and "shui" in py.split():
             shei_py = replace_syl_at(w, py, "谁", "shui", "shei")
             if shei_py != py:

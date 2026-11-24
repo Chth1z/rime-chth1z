@@ -603,6 +603,26 @@ class TestCleanerHardeningAndZeroPingPong(unittest.TestCase):
         self.assertIn("福科什引理\tfu ke shi yin li\t0", sh_out)
         self.assertEqual(sh_st["fixed_py"], 1)
 
+    def test_clean_composite_normalizes_si_and_zhui(self) -> None:
+        lines = [
+            "---",
+            "name: composite",
+            "...",
+            "追忆似水年华\tzhui yi shi shui nian hua\t174",
+            "飞也似地\tfei ye shi di\t5",
+            "似的大喊\tshi de da han\t3",
+            "颈椎按摩仪\tjing chui an mo yi\t62",
+            "椎心泣血\tchui xin qi xue\t2",
+        ]
+        st: Counter = Counter()
+        out = "\n".join(clean_dicts.clean_composite(lines, st))
+        self.assertIn("追忆似水年华\tzhui yi si shui nian hua\t174", out)
+        self.assertIn("飞也似地\tfei ye shi di\t5", out)
+        self.assertIn("似的大喊\tshi de da han\t3", out)
+        self.assertIn("颈椎按摩仪\tjing zhui an mo yi\t62", out)
+        self.assertIn("椎心泣血\tchui xin qi xue\t2", out)
+        self.assertEqual(st["fixed_py"], 2)
+
 
 if __name__ == "__main__":
     unittest.main()

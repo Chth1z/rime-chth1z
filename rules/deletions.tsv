@@ -3163,3 +3163,65 @@ cn_dicts_cell/name2.dict.yaml	问驻所统景	*	W5错字：日本战国武将正
 cn_dicts_cell/name2.dict.yaml	置鮎龙太郎	zhi nian long tai lang	Trad/JP/variant: 鮎->鲇; simplified already in name2.dict.yaml:11030
 cn_dicts_cell/name2.dict.yaml	金旼锺	jin min zhong	Trad/JP/variant: 锺->钟; simplified already in name2.dict.yaml:5880
 cn_dicts_cell/name2.dict.yaml	佐佐长龝	zuo zuo chang qiu	Trad/JP/variant: 龝->秋; simplified already in name2.dict.yaml:4955
+# Batch 3 (sport, game, composite & food:昌化鸡血石): verified typos, fragments & spam
+cn_dicts_cell/sport.dict.yaml	濑扎衣	*	W5太极拳式“懒扎衣”OCR错字（sport:3480已收懒扎衣，sport:3477）
+cn_dicts_cell/sport.dict.yaml	华盛顿华盛顿国会	*	前缀重复抓取噪声（sport:2308已收华盛顿国会，sport:2310）
+cn_dicts_cell/sport.dict.yaml	排球矢量图	*	素材站SEO抓取噪声（sport:3733）
+cn_dicts_cell/sport.dict.yaml	法拉利官网	*	非体育术语网页SEO抓取噪声（sport:12904）
+cn_dicts_cell/game.dict.yaml	流狼乐章	*	W5原神武器“流浪乐章”错字（base:168416已收流浪乐章，game:4426）
+cn_dicts_cell/game.dict.yaml	还有辛存者	*	W5“还有幸存者”错字（game:76760已收还有幸存者，game:2762）
+cn_dicts_cell/game.dict.yaml	美好的一天从紫花苜宿开始	*	W5“紫花苜蓿”错字（苜蓿误作苜宿，game:140997）
+cn_dicts_cell/game.dict.yaml	无面操纵着	*	W5炉石传说卡牌“无面操纵者”错字（game:65111已收无面操纵者，game:118466）
+cn_dicts_cell/game.dict.yaml	战利品储藏着	*	W5炉石传说卡牌“战利品贮藏者”错字（game:118663已收战利品贮藏者，game:118662）
+cn_dicts_cell/game.dict.yaml	拍战场着	*	W5错字碎片（排战场者误作拍战场着，game:43919）
+cn_dicts_cell/game.dict.yaml	天神换蒙着	*	W5错字碎片（换梦者误作换蒙着，game:118414）
+cn_dicts_cell/game.dict.yaml	藏袍女藏袍女上衣	*	前缀重复抓取垃圾词条且双误音（game:131556）
+cn_dicts_cell/game.dict.yaml	刺客面刺客面罩女	*	前缀重复抓取垃圾词条（game:131646）
+cn_dicts_cell/game.dict.yaml	一行僧一行	*	前缀重复抓取垃圾词条（game:3349已收僧一行，game:96885）
+cn_dicts_cell/game.dict.yaml	合并第章	*	去数字残留碎片（game:30800）
+cn_dicts_cell/game.dict.yaml	荆棘谷的青山第页	*	去数字残留碎片（game:35053）
+cn_dicts_cell/game.dict.yaml	灵兽秘籍第部	*	去数字残留碎片（game:66350）
+cn_dicts_cell/game.dict.yaml	便便的传说第卷	*	去数字残留碎片（game:112965）
+cn_dicts_cell/game.dict.yaml	杜特的原稿第部	*	去数字残留碎片（game:113360）
+cn_dicts_cell/game.dict.yaml	赫菲斯托纪行第卷	*	去数字残留碎片（game:113773）
+cn_dicts_cell/game.dict.yaml	空乐谱次演奏用	*	去数字残留碎片（原“N次演奏用”，game:114476）
+cn_dicts_cell/game.dict.yaml	空乐谱次演奏用中级	*	去数字残留碎片（game:114477）
+cn_dicts_cell/game.dict.yaml	装潢第版	*	去数字残留碎片（game:117388）
+cn_dicts_cell/game.dict.yaml	超眩至级	*	去数字残留碎片（原“超眩1至N级”，game:128766）
+cn_dicts_cell/game.dict.yaml	攻防打的哭出来进图就掉线	*	W5“打得哭出来”错字+误注di+游戏吐槽长句噪声（game:139588）
+cn_dicts_cell/food.dict.yaml	昌化鸡血石	*	非食品类印石工艺品误收（composite:330409修音为chang hua ji xue shi后保留唯一规范项，food:4070）
+cn_dicts_cell/composite.dict.yaml	亏你想的出来	*	W5“的/得”语法错字（应作“想得出来”，comp:77637）
+cn_dicts_cell/composite.dict.yaml	可以看的出	*	W5“的/得”语法错字（应作“看得出”，comp:169650）
+cn_dicts_cell/composite.dict.yaml	能买的起	*	W5“的/得”语法错字（应作“买得起”，w=80，comp:469625）
+cn_dicts_cell/composite.dict.yaml	能看的出	*	W5“的/得”语法错字（应作“看得出”，comp:470206）
+cn_dicts_cell/composite.dict.yaml	能看的见	*	W5“的/得”语法错字（应作“看得见”，comp:470210）
+cn_dicts_cell/composite.dict.yaml	泡脚凤爪	*	W5“泡椒凤爪”同音错字（food已双音收录泡椒凤爪，comp:369063）
+cn_dicts_cell/composite.dict.yaml	花刺子模	*	W5“花剌子模”形近错字（ext:66801已收花剌子模且corrections已纠偏，comp:595163）
+cn_dicts_cell/composite.dict.yaml	布尔什维主义	*	W5漏字错词（布尔什维克主义脱“克”且误注shen，comp:594528）
+cn_dicts_cell/composite.dict.yaml	意地绪语	*	W5“意第绪语”同音错字（ext:173006已收意第绪语，comp:595119）
+cn_dicts_cell/composite.dict.yaml	一涌而上	*	W5“一拥而上”同音错字（base:322024已收一拥而上，comp:9660）
+cn_dicts_cell/composite.dict.yaml	一涌而出	*	W5“一拥而出”同音错字（comp:9661）
+cn_dicts_cell/composite.dict.yaml	纷涌而至	*	W5“蜂拥而至”同音错字（base:80365已收蜂拥而至，comp:448145）
+cn_dicts_cell/composite.dict.yaml	粘玉米	*	W3淘汰词形且误注zhan（comp:568187已收规范词形“黏玉米 nian yu mi”，comp:442747）
+cn_dicts_cell/composite.dict.yaml	全国记录	*	W1语义错配（体育纪录规范作“全国纪录”，base:213647已收，comp:115329）
+cn_dicts_cell/composite.dict.yaml	程似锦	*	尾部截断碎片（“前程似锦”脱首字且误注shi，comp:433751）
+cn_dicts_cell/composite.dict.yaml	燕然勒	*	尾部截断碎片（“燕然勒功/燕然勒石”截断且误注lei，comp:595343）
+cn_dicts_cell/composite.dict.yaml	宋齐梁	*	尾部截断碎片（“宋齐梁陈”截断，comp:595345）
+cn_dicts_cell/composite.dict.yaml	诸子之	*	尾部截断碎片（comp:595359）
+cn_dicts_cell/composite.dict.yaml	惊天大	*	尾部截断碎片（comp:595360）
+cn_dicts_cell/composite.dict.yaml	先赞后	*	尾部截断碎片（“先赞后看”截断，comp:595365）
+cn_dicts_cell/composite.dict.yaml	挟天子以	*	尾部截断碎片（“挟天子以令诸侯”截断，comp:594771）
+cn_dicts_cell/composite.dict.yaml	负雅志于	*	尾部截断碎片（comp:594801）
+cn_dicts_cell/composite.dict.yaml	塞巴斯蒂	*	尾部截断碎片（“塞巴斯蒂安”截断，comp:595107）
+cn_dicts_cell/composite.dict.yaml	洛茜妮娅	*	尾部截断碎片（“叶芙洛茜妮娅”截断且误注qian，comp:595050）
+cn_dicts_cell/composite.dict.yaml	节车厢	*	去数字残留碎片（comp:595265）
+cn_dicts_cell/composite.dict.yaml	级任务	*	去数字残留碎片（comp:595285）
+cn_dicts_cell/composite.dict.yaml	白橡的	*	截断残片（comp:595284）
+cn_dicts_cell/composite.dict.yaml	马屁拍的	*	截断残片（comp:595280）
+cn_dicts_cell/composite.dict.yaml	上的二维码	*	截断残片（comp:570412）
+cn_dicts_cell/composite.dict.yaml	扫描下方二维码	*	自媒体引流营销垃圾句（comp:27995）
+cn_dicts_cell/composite.dict.yaml	点击以下链接	*	自媒体引流营销垃圾句（comp:387603）
+cn_dicts_cell/composite.dict.yaml	可关注公众号	*	自媒体引流营销垃圾句（clean_composite已删“可以关注公众号”漏此变体，comp:169819）
+cn_dicts_cell/composite.dict.yaml	喜欢请点赞	*	自媒体引流营销垃圾句（comp:185443）
+cn_dicts_cell/composite.dict.yaml	不要忘记点赞	*	自媒体引流营销垃圾句（comp:56071）
+cn_dicts_cell/composite.dict.yaml	点赞加关注	*	自媒体引流营销垃圾句（comp:387895）
