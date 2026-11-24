@@ -18,7 +18,7 @@ Installs and configures the complete [`Chth1z/rime-chth1z`](https://github.com/C
 ## Stack Components
 
 - **Input Engine**: Official Windows Weasel Nightly `>= 0.17.4` (`librime >= 1.17.0` with Lua 5.4 C API exports).
-- **Schemas & Cleaned Dictionaries (`Chth1z/rime-chth1z`)**: Natural Double Pinyin (`rime_frost_double_pinyin`, default) + Full Pinyin (`rime_frost`), 27 active cleaned CN dicts (`1.66M` entries, `rules/` SSOT `10,041` rules), EN / CN-EN / OpenCC tables, 6 Lua scripts (`chth1z_pipeline_filter`, `tw_dual_filter`, `calculator`, `date_translator`, `lunar`, `select_character`), Lua 5.4 GC tuning (`rime.lua`), and `apple_graphite_dark` theme (`weasel.custom.yaml`, with `claude.exe` / `claude-desktop.exe` defaulting to 臺繁).
+- **Schemas & Cleaned Dictionaries (`Chth1z/rime-chth1z`)**: Natural Double Pinyin (`rime_frost_double_pinyin`, default) + Full Pinyin (`rime_frost`), 27 active cleaned CN dicts (`1.66M` entries, `rules/` SSOT `10,182` rules), EN / CN-EN / OpenCC tables, 6 Lua scripts (`chth1z_pipeline_filter`, `tw_dual_filter`, `calculator`, `date_translator`, `lunar`, `select_character`), Lua 5.4 GC tuning (`rime.lua`), and `apple_graphite_dark` theme (`weasel.custom.yaml`, with `claude.exe` / `claude-desktop.exe` defaulting to 臺繁).
 - **Grammar Model**: `wanxiang-lts-zh-hans.gram` (~373 MB, SHA-256 verified from `amzxyz/rime-wanxiang-data` LTS release).
 - **Neural Reranker**: Official [`Chth1z/rime-neural`](https://github.com/Chth1z/rime-neural) release (`rime_neural.dll` + `onnxruntime.dll` + `ML-pumpkin-1103` 82 MB or `zhen-feather` 38 MB, SHA-256 verified).
 - **Optional Extras**: Google `Noto Sans CJK` Super OTC font (~91 MB zip, or `Microsoft YaHei UI` fallback) and Windows Scheduled Task `RimeChth1zWeeklyUpdate` (Sundays 03:30, no admin required).
@@ -86,12 +86,12 @@ powershell -ExecutionPolicy Bypass -File $bootstrap `
 Common optional flags for `bootstrap.ps1`:
 - `-InstallWeasel`: install or upgrade to official Weasel Nightly (`tags/latest`) when missing or `< 0.17.4`.
 - `-RepoDir "<path>"`: reuse an existing local clone (or specify where `git clone` should place `rime-chth1z`; default `%USERPROFILE%\rime-chth1z`). Pass `-NoGitClone` to use a temporary zip archive instead.
-- `-PrimaryLayout zrm | full`: choose Natural Double Pinyin (`zrm`, default) or Full Pinyin (`full`) as the primary default schema.
+- `-PrimaryLayout zrm | full`: choose Natural Double Pinyin (`zrm`, default) or Full Pinyin (`full`) as the primary default schema. Note: on existing installations with a saved `user.yaml` (`previously_selected_schema`), Rime restores the previously selected schema until switched once via `F4`.
 - `-NeuralModel pumpkin | feather | none`
 - `-SkipGram`: skip downloading the ~373 MB Wanxiang `.gram` model.
 - `-Theme apple_graphite_dark | keep`: use `keep` to preserve the user's existing `weasel.custom.yaml`.
 - `-InstallNotoFont` / `-UseFallbackFont`: install `NotoSansCJK.ttc` or patch `weasel.custom.yaml` to `Microsoft YaHei UI`.
-- `-RunAccuracyTest`: also run the 300-case `bench\accuracy-test.ps1` suite after deployment (requires local checkout).
+- `-RunAccuracyTest`: also run the 329-case `bench\accuracy-test.ps1` suite after deployment (works with both local git checkouts and `-NoGitClone` archives).
 
 ### Step 4: Apply Optional Customizations
 

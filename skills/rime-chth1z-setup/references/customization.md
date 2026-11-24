@@ -15,7 +15,7 @@ patch:
 
 ## 2. Disable `claude.exe` Automatic Traditional Chinese (`app_options`)
 
-In `<rime_user_dir>\weasel.custom.yaml`, remove or override:
+In `<rime_user_dir>\weasel.custom.yaml`, remove the `app_options/claude.exe` and `app_options/claude-desktop.exe` entries so Claude inherits the global simplified/traditional toggle saved in `user.yaml`. To explicitly pin Claude to Simplified Chinese instead, set:
 
 ```yaml
   "app_options/claude.exe":

@@ -79,3 +79,16 @@
     - 修复 Electron/Chromium 下 UIA 跨出输入框泄漏周边按钮文字问题（`RangeFromChild` 钳制 ＋ `U+FFFC` 截断）、首键异步预热、窗口切换竞态与 `s2twp` 反馈抓取原词；
     - 新增 ONNX 模型动态层数/头数与 `choice_compact` 自省（同时支持 12 层 `ML-pumpkin-1103` 与 8 层 `zhen-feather`）、选择性 ORT 输出裁剪、零 HashMap 分配 `char_logits` 解码、零堆分配 `.gram` 评分与真 LRU 缓存。
   - `rime-chth1z` 同步移除重复的原生源码，改为直接消费 `Chth1z/rime-neural` 正式 Release（`scripts/install-rime-neural.ps1` 与周更脚本 `update-local.ps1` 自动校验 SHA-256 升级），同时完成自用部分体检（修复 `calculator.lua` 超大阶乘上限、`lunar.lua` 整理为 `M.init` 模块并移除死函数、`chth1z_pipeline_filter.lua` `autocap` 保留 `preedit`、清理主方案死 `recognizer` 正则）。
+
+## P5 — 词库 SSOT 治理体系、AI Agent 技能包与双仓库安全/可靠性全面升级（已完成）
+
+- [x] **建立声明式词库治理层（`rules/` SSOT ＋ `docs/DICTIONARY_SPEC.md` ＋ 四级上线门禁）**
+  - 收口全部 10,182 条词库覆写规则至 `rules/`（12 份纯文本表），统一由 `scripts/dict_common.py`、`scripts/clean-dicts.py`、`scripts/dict_rules.py`、`scripts/build_cn_en.py` 确定性重放（前置字形规范化 → `rules/` 权威覆写 → 生成器 → 保权跨表去重 → 内存态全量校验 → 原子落盘），消除全部二次运行往复漂移。
+  - `scripts/dict_lint.py` 覆盖 5 项零容忍不变量、严格无 BOM UTF-8、YAML 重复键、`rime_frost.dict.yaml` 活跃词表顺序一致性、跨词库同词异读守卫、A/B/C 同音碰撞护栏、对称差异 `--diff-budget` 熔断（含全部 7 份 `cn_en*.txt`）与内存态幂等校验；配套 18 项单元测试 `tests/test_dict_pipeline.py`。
+- [x] **AI Agent 一键安装与验收技能包（`skills/rime-chth1z-setup/`）与 `rime-neural v1.1.0+` 零明文反馈升级**
+  - 新增独立免依赖的 `inspect-env.ps1`、`bootstrap.ps1`、`verify-setup.ps1`（PE32+ 导出表 Lua 5.4 检测、全链路 SHA-256 闭环校验、非生成 `*.custom.yaml` 自动备份、部署日志精准锚定）。
+  - 配合 `Chth1z/rime-neural` 升级至 Rust Edition 2024、零明文纯数值 v2 反馈、单遍 `.gram` 前向 trie、令牌级 KV-cache 与 fail-closed MTA UIA。
+- [x] **安全加固、零残留压测架构与 CI 门禁（`.github/workflows/ci.yml`）**
+  - `lua/calculator.lua` 重写为纯 Lua 递归下降解析器（彻底消除 `load()` 字符串元表沙箱逃逸与 ReDoS/OOM 风险，并修复浮点阶乘、溢出、负零与 Welford 均值/方差）；`chth1z_pipeline_filter.lua` 改为活跃分段驱动并精确保护驼峰品牌词；`tw_dual_filter.lua` 增加 `tags_match` 与 `pcall`；`date_translator.lua` 改用 UCRT `%z` 防 DST 偏差；`select_character.lua` 改用 `toSegmentation()` 精确前缀提取；清理 `rime_frost.schema.yaml` 3 条全拼高频英文劫持 `fuzz/` 规则与 `melt_eng_algebra_common.yaml` 冗余规则。
+  - `bench/{accuracy-test,audit-surface,bench-rime}.ps1` 与 `bench/eval-accuracy.py` 全部升级为父子进程隔离沙箱（退出后释放 `rime.dll`/glog 句柄并动态安全卸载 NTFS Junction，实测 `%TEMP%` 零残留），回归测试扩充至 329 项大小写敏感用例并通过 `audit-surface.ps1` 全表面巡检。
+  - 新增 `push`/`pull_request` CI 门禁 `.github/workflows/ci.yml`，统一全仓 `.ps1` 为无 BOM 纯 ASCII 并修复 `.gitattributes` 行尾一致性。

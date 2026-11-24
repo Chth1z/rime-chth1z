@@ -45,7 +45,7 @@
 3. **合法音节集**：中文词条音节必须属于合法普通话无调音节全集（以 `8105.dict.yaml` 单字音节集合为基准，另含规范叹词 `hm`、`hng`、`m`、`n`、`ng`）。
 4. **`ü` 拼写统一**：`lü`/`nü`/`lüe`/`nüe` 统一写作 `lv`/`nv`/`lve`/`nve`，禁止出现 `lue`、`nue`；`j/q/x/y` 后省点写作 `u`。
 5. **字音长度一致**：除 `corrections.dict.yaml` 中的刻意错字触发项外，词条去除间隔号 `·`（`U+00B7`）后的字数必须严格等于 `code.split()` 音节数。
-6. **规范简体字形**：活跃中文词库统一使用大陆《通用规范汉字表》规范简体字形，清理混入的港台繁体、日本新字体及非规范异体字；规范表内特殊字（如 `𬞟`、`𬶨`、`祇`）除外。
+6. **规范简体字形**：活跃中文词库统一使用大陆《通用规范汉字表》规范简体字形，清理混入的港台繁体、日本新字体及非规范异体字；规范表内特殊字（如 `𬞟`、`𬶨`、`祇`）及 `cn_dicts/others.dict.yaml` 中 `##### 叠字` 段（用于触发 `opencc/others.txt` 叠字输出）除外。
 7. **唯一性约束**：
    - 单文件内 `(text, code)` 重复数 = `0`。
    - 26 个活跃中文词库（4 份核心表 ＋ 22 份活跃细胞词库，不含 `corrections` 与停用的 `luna`）跨文件 `(text, code)` 重复数 = `0`。
@@ -180,15 +180,18 @@ rules/
   alphanum_additions.txt    # 字母数字补充（rime_frost.dict.yaml）
   opencc_fixes.tsv          # OpenCC 文本修复：target_file | key | action | value | reason
 scripts/
-  clean-dicts.py            # 确定性、幂等词库清洗主引擎（依次执行结构清洗 + rules/ 覆写 + 全局去重）
-  dict_rules.py             # rules/ 解析、应用、冲突校验与规则命中计数（stale_rules）模块
+  dict_common.py            # 共享词表权威顺序（ACTIVE_CN_DICTS）、解析格式化、音节表校验与原子写入模块
+  clean-dicts.py            # 确定性、幂等词库清洗主引擎（前置字形规范化 → rules/ 权威覆写 → 生成器 → 保权去重 → 内存态校验 → 原子落盘）
+  dict_rules.py             # rules/ 解析、应用、静态冲突校验与规则命中计数（stale_rules）模块
   build_cn_en.py            # cn_en_source.tsv -> 7 布局 en_dicts/cn_en*.txt 生成器
-  dict_lint.py              # 独立静态门禁、幂等校验、同音碰撞预检与 CI 变更熔断脚本
+  dict_lint.py              # 独立静态门禁、内存态幂等校验、跨词库同词异读检查、同音碰撞预检与 CI 对称差异熔断脚本
+tests/
+  test_dict_pipeline.py     # 词库管线单元测试（双拼音节双射、冲突拦截、负面缺陷注入门禁、零往复校验）
 ```
 
 ### 规则引擎安全机制
 
-- **静态冲突拦截**：同一 `(target_file, word, py)` 不得同时出现在 `deletions.tsv` 与 `additions.tsv`/`weights.tsv`；`phonetics_fix.tsv` 禁止形成链式二次改写循环；`dual_readings.tsv` 单点声明并同步生成主词库双音与 `corrections.dict.yaml` 双注释。
+- **静态冲突拦截**：同一 `(target_file, word, py)` 不得同时出现在 `deletions.tsv` 与 `additions.tsv`/`weights.tsv`；`weights.tsv`/`additions.tsv` 不得与 `dual_readings.tsv` 冲突；`phonetics_fix.tsv` 与 `word_fixes.tsv -> phonetics_fix.tsv` 禁止链式二次改写；`dual_readings.tsv` 单点声明并同步生成主词库双音与 `corrections.dict.yaml` 双注释；`en_fixes.tsv`、`opencc_fixes.tsv` 与 `cn_en_source.tsv` 均执行同键动作冲突校验。
 - **规则活性追踪（`stale_rules`）**：每次运行 `scripts/clean-dicts.py --manifest <path>` 记录各条外部规则命中次数；上游 `gaboolic/rime-frost` 自行修复导致连续 2 次同步零命中的历史规则，在季度审计时核实退场。
 
 ---
@@ -199,9 +202,9 @@ scripts/
 
 | 场景 | 频率 | 标准操作流（SOP） |
 | :--- | :--- | :--- |
-| **日常微调** | 按需 | 按第 3、4 节决策树定性 → 写入 `rules/*.tsv`（附 `reason` 与权威依据）→ 运行 `python scripts/clean-dicts.py` → 运行 `python scripts/dict_lint.py --strict --idempotent --check-collisions` → 补 1 条 `bench/accuracy-cases.json` 断言 → 本机部署验证。 |
-| **上游周更** | 每周日（CI） | `.github/workflows/sync-upstream-dicts.yml` 拉取 `gaboolic/rime-frost` → 运行 `clean-dicts.py` → 运行 `dict_lint.py --strict --idempotent --diff-budget` → 全通过且在熔断阈值内则自动提交推送；**若校验失败，阻断推送并开/更 Issue 告警；若活跃词条 `\|Δ\| > 5,000`、`corrections` 变动 `> 50` 行或 `cn_en` 变动 `> 200` 行，阻断直推 `main` 并自动提 PR 交人工复核**。 |
-| **月度反馈复盘** | 每月一次 | 聚合分析本机 `%APPDATA%\Rime\neural\feedback.jsonl` 的高频翻页模式（仅提取脱敏词级频次，不保留原句），筛选稳定缺词或持续错排项按规范吸收进 `rules/`。 |
+| **日常微调** | 按需 | 按第 3、4 节决策树定性 → 写入 `rules/*.tsv`（附 `reason` 与权威依据）→ 运行 `python scripts/clean-dicts.py` → 运行 `python scripts/dict_lint.py --strict --idempotent --check-collisions` 与 `python -m unittest discover -s tests` → 补 1 条 `bench/accuracy-cases.json` 断言 → 本机部署验证。 |
+| **上游周更** | 每周日（CI） | `.github/workflows/sync-upstream-dicts.yml` 拉取 `gaboolic/rime-frost` → 运行 `clean-dicts.py` → 运行 `dict_lint.py --strict --idempotent --check-collisions --diff-budget` → 全通过且在熔断阈值内则自动提交推送；**若校验失败，阻断推送并开/更 Issue 告警；若活跃词条对称差异 `> 5,000`、`corrections` 对称差异 `> 50` 行或 7 份 `cn_en` 任一对称差异 `> 200` 行，阻断直推 `main` 并自动提 PR 交人工复核**。 |
+| **月度参数校准** | 每月一次 | 对本机 `%APPDATA%\Rime\neural\feedback.jsonl`（零明文纯数值 v2 记录）运行 `rime-neural` 的 `scripts/tune-fusion.py`，按需执行 Newton MAP 权重校准并结合日常使用记录补充缺词至 `rules/`。 |
 | **季度专题审计** | 每季度一次 | 脚本扫描 ＋ LLM 分片审计轮巡（Q1 审音与多音字 / Q2 现代新词与中英混输 / Q3 细胞词库长尾污染 / Q4 规则退场与权重漂移）；确定性上游真 Bug 按 `docs/upstream-issues/GUIDELINE.md` 打包回馈上游。 |
 
 ### 7.2 评测防过拟合铁律
