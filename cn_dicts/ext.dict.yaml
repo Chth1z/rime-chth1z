@@ -119818,6 +119818,7 @@ sort: by_weight
 裙子长度	qun zi chang du	3
 裙子的长度	qun zi de chang du	2
 燃爆了	ran bao le	34
+然并卵	ran bing luan	300
 然而好景不长	ran er hao jing bu chang	84
 然而没想到	ran er mei xiang dao	38
 然而事与愿违	ran er shi yu yuan wei	32
@@ -150575,7 +150576,7 @@ sort: by_weight
 未了的心愿	wei liao de xin yuan	16
 未了因	wei liao yin	9
 未了之事	wei liao zhi shi	2
-尉缭子	yu liao zi	40
+尉缭子	wei liao zi	40
 维林诺	wei lin nuo	262
 卫龙大面筋	wei long da mian jin	2
 卫龙辣条	wei long la tiao	22
@@ -234655,7 +234656,7 @@ sort: by_weight
 自洁性	zi jie xing	1
 至臻点	zhi zhen dian	1
 致雅型	zhi ya xing	1
-舌苔薄白	she tai bo bai	14
+舌苔薄白	she tai bao bai	14
 色彩顾问	se cai gu wen	3
 艳无双	yan wu shuang	1
 芙萝娅	fu luo ya	2
@@ -235003,7 +235004,6 @@ sort: by_weight
 宇舶	yu bo	40
 异尖线虫	yi jian xian chong	40
 流鼻血	liu bi xie	250
-血脉偾张	xue mai ben zhang	80
 周柏豪	zhou bai hao	12
 甲壳虫	jia ke chong	200
 标识符	biao zhi fu	80
@@ -235035,3 +235035,5 @@ sort: by_weight
 许可证密钥	xu ke zheng mi yue	1
 找密钥	zhao mi yue	2
 全须全尾	quan xu quan wei	40
+伽马暴	jia ma bao	16
+给水排水	gei shui pai shui	60

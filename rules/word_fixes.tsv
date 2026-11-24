@@ -175,7 +175,7 @@ cn_dicts_cell/idiom.dict.yaml	磨昬抉聩	mo hun jue kui	磨昏抉聩	*	Trad/JP
 cn_dicts_cell/idiom.dict.yaml	喯珠吐玉	pen zhu tu yu	喷珠吐玉	*	Trad/JP/variant: 喯->喷	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	骈肩杂遝	pian jian za ta	骈肩杂沓	*	Trad/JP/variant: 遝->沓	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	飘籓坠溷	piao fan zhui hun	飘藩坠溷	*	Trad/JP/variant: 籓->藩	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/idiom.dict.yaml	启瞶振聋	qi gui zhen long	启聩振聋	qi kui zhen long	Variant 瞶(gui)->聩(kui)	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/idiom.dict.yaml	启瞶振聋	qi gui zhen long	启聩振聋	qi kui zhen long	古通假/现代通行异形(非8105字瞶归并至聩)	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	弃其馀鱼	qi qi yu yu	弃其余鱼	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	荣膺鴞荐	rong ying xiao jian	荣膺鹗荐	rong ying e jian	《幼学琼林》原典为“荣膺鹗荐”（孔融《荐祢衡表》），上游误作鴞	现汉第7版/幼学琼林
 cn_dicts_cell/idiom.dict.yaml	如蝇附羶	ru ying fu shan	如蝇附膻	*	Trad/JP/variant: 羶->膻	通用规范汉字表/DICTIONARY_SPEC §2.6
@@ -194,15 +194,15 @@ cn_dicts_cell/idiom.dict.yaml	行鍼走线	xing zhen zou xian	行针走线	*	Tra
 cn_dicts_cell/idiom.dict.yaml	悬狟素飡	xuan huan su can	悬狟素餐	*	Trad/JP/variant: 飡->餐	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	諠客夺主	xuan ke duo zhu	喧客夺主	*	Trad/JP/variant: 諠->喧	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	悬鞀建铎	xuan tao jian duo	悬鼗建铎	*	Trad/JP/variant: 鞀->鼗	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/idiom.dict.yaml	询谋谘度	xun mou zi du	询谋咨度	*	Trad/JP/variant: 谘->咨	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/idiom.dict.yaml	询谋谘度	xun mou zi du	询谋咨度	xun mou zi duo	Trad/JP/variant: 谘->咨（并修正谋度“度”读 duó）	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	腌里巴臢	yan li ba za	腌里巴臜	a li ba za	臢->臜，腌臜规范读 ā zā	现汉第7版
 cn_dicts_cell/idiom.dict.yaml	鹰瞵鴞视	ying lin xiao shi	鹰瞵鹗视	ying lin e shi	《吴都赋》/《宋书》正字为“鹰瞵鹗视”，归并入规范词条	汉语大词典/成语词典
 cn_dicts_cell/idiom.dict.yaml	游刃馀地	you ren yu di	游刃余地	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	踰墙避命	yu qiang bi ming	逾墙避命	*	Trad/JP/variant: 踰->逾	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	余音嘹喨	yu yin liao liang	余音嘹亮	*	Trad/JP/variant: 喨->亮	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	造端讬始	zao duan tuo shi	造端托始	*	Non-8105 variant 讬->托	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/idiom.dict.yaml	饘粥餬口	zhan zhou hu kou	饘粥糊口	*	Trad/JP/variant: 餬->糊	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/idiom.dict.yaml	振聋启瞶	zhen long qi gui	振聋启聩	zhen long qi kui	Variant 瞶(gui)->聩(kui)	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/idiom.dict.yaml	饘粥餬口	zhan zhou hu kou	𫗴粥糊口	*	Trad/JP/variant: 饘->𫗴、餬->糊	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/idiom.dict.yaml	振聋启瞶	zhen long qi gui	振聋启聩	zhen long qi kui	古通假/现代通行异形(非8105字瞶归并至聩)	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	自惭譾陋	zi can jian lou	自惭谫陋	*	Trad/JP/variant: 譾->谫	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/idiom.dict.yaml	谘经诹史	zi jing zou shi	咨经诹史	*	Trad/JP/variant: 谘->咨	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	待忘了馀香	dai wang le yu xiang	待忘了余香	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
@@ -291,7 +291,7 @@ cn_dicts_cell/literature.dict.yaml	是以肠一日而九迴	shi yi chang yi ri e
 cn_dicts_cell/literature.dict.yaml	世之相後也	shi zhi xiang hou ye	世之相后也	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	为无後也	wei wu hou ye	为无后也	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	未有义而後其君者也	wei you yi er hou qi jun zhe ye	未有义而后其君者也	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/literature.dict.yaml	西出都门百馀里	xi chu dou men bai yu li	西出都门百余里	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/literature.dict.yaml	西出都门百馀里	xi chu dou men bai yu li	西出都门百余里	xi chu du men bai yu li	Trad/JP/variant: 馀->余（并修正都门“都”读 dū）	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	许子必织布而後衣乎	xu zi bi zhi bu er hou yi hu	许子必织布而后衣乎	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	许子必种粟而後食乎	xu zi bi zhong su er hou shi hu	许子必种粟而后食乎	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	学焉而後臣之	xue yan er hou chen zhi	学焉而后臣之	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
@@ -318,9 +318,9 @@ cn_dicts_cell/medication.dict.yaml	鱣鱼	shan yu	鳣鱼	zhan yu	Trad 鱣->鳣 (
 cn_dicts_cell/medication.dict.yaml	鱣鱼肝	shan yu gan	鳣鱼肝	zhan yu gan	Trad 鱣->鳣 (py shan->zhan)	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/medication.dict.yaml	上灙人参	shang dang ren shen	上党人参	*	OCR typo 灙->党	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/medication.dict.yaml	白庀颗粒	bai pi ke li	白疕颗粒	bai bi ke li	OCR typo 庀(pi)->疕(bi) for psoriasis TCM granule	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/medication.dict.yaml	呫吨翔酸	che dun xiang suan	呫吨羧酸	tie dun suo suan	OCR typo 翔->羧 (keeps IUPAC 呫; fix py che->tie)	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/medication.dict.yaml	呫吨翔酸	che dun xiang suan	呫吨羧酸	zhan dun suo suan	OCR typo 翔->羧 (keeps IUPAC 呫; fix py che->zhan)	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/medication.dict.yaml	葛根定眩胶嚢	ge gen ding xuan jiao nang	葛根定眩胶囊	*	Trad/JP/variant: 嚢->囊	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/medication.dict.yaml	摺皱菌素	zhe zhou jun su	折皱菌素	*	Trad/JP/variant: 摺->折	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/medication.dict.yaml	摺皱菌素	zhe zhou jun su	褶皱菌素	*	Trad/JP/variant: 摺->褶(规范作褶皱菌素)	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/medication.dict.yaml	氨茶硷意外中毒	an cha jian yi wai zhong du	氨茶碱意外中毒	*	Trad/JP/variant: 硷->碱	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/medication.dict.yaml	垂体嗜硷性瘤切除术	chui ti shi jian xing liu qie chu shu	垂体嗜碱性瘤切除术	*	Trad/JP/variant: 硷->碱	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/medication.dict.yaml	东莨菪硷类植物中毒	dong lang dang jian lei zhi wu zhong du	东莨菪碱类植物中毒	*	Trad/JP/variant: 硷->碱	通用规范汉字表/DICTIONARY_SPEC §2.6
@@ -505,7 +505,7 @@ cn_dicts_cell/food.dict.yaml	鸡棕酥	*	鸡枞酥	*	W5鸡棕→鸡枞	现汉第
 cn_dicts_cell/food.dict.yaml	鸡纵	*	鸡枞	*	W5鸡纵→鸡枞	现汉第7版(L1)
 cn_dicts_cell/food.dict.yaml	胡芦桔翅	*	葫芦桔翅	*	W5胡芦→葫芦	现汉第7版(L1)
 cn_dicts_cell/food.dict.yaml	椰蓉马卡隆	*	椰蓉马卡龙	*	W5法甜macaron规范作马卡龙	社会通行规范(L5)
-cn_dicts_cell/food.dict.yaml	馥郁布朗宁	*	馥郁布朗尼	*	W5甜品brownie规范作布朗尼	社会通行规范(L5)
+cn_dicts_cell/food.dict.yaml	馥郁布朗宁	*	馥郁布朗尼	fu yu bu lang ni	W5甜品brownie规范作布朗尼	社会通行规范(L5)
 cn_dicts_cell/food.dict.yaml	鲜奶泡夫	*	鲜奶泡芙	*	W5甜品puff规范作泡芙	现汉第7版(L1)
 cn_dicts_cell/food.dict.yaml	香酥蛋塔盅	*	香酥蛋挞盅	*	W5大陆规范作蛋挞	现汉第7版(L1)
 cn_dicts_cell/food.dict.yaml	凤梨火腿蛋琣果	feng li huo tui dan beng guo	凤梨火腿蛋贝果	feng li huo tui dan bei guo	W5生造非8105字琣果→贝果	通用规范汉字表(L1)

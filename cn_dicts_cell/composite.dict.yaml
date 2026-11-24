@@ -177422,13 +177422,13 @@ sort: by_weight
 吐纳术	tu na shu	7
 吐芬芳	tu fen fang	2
 吐莲花	tu lian hua	4
-吐血三升	tu xue san sheng	41
-吐血不止	tu xue bu zhi	2
-吐血推荐	tu xue tui jian	87
-吐血整理	tu xue zheng li	121
-吐血而亡	tu xue er wang	20
-吐血而死	tu xue er si	5
-吐血身亡	tu xue shen wang	17
+吐血三升	tu xie san sheng	41
+吐血不止	tu xie bu zhi	2
+吐血推荐	tu xie tui jian	87
+吐血整理	tu xie zheng li	121
+吐血而亡	tu xie er wang	20
+吐血而死	tu xie er si	5
+吐血身亡	tu xie shen wang	17
 吐词不清	tu ci bu qing	10
 吐谷浑人	tu yu hun ren	4
 吐露实情	tu lu shi qing	10
@@ -206297,7 +206297,7 @@ sort: by_weight
 大口吃肉大口喝酒	da kou chi rou da kou he jiu	8
 大口吃面	da kou chi mian	4
 大口吃饭	da kou chi fan	21
-大口吐血	da kou tu xue	4
+大口吐血	da kou tu xie	4
 大口吞	da kou tun	8
 大口吞咽	da kou tun yan	12
 大口呼吸	da kou hu xi	78
@@ -206363,7 +206363,7 @@ sort: by_weight
 大后寿寿花	da hou shou shou hua	3
 大后超	da hou chao	9
 大吐特吐	da tu te tu	9
-大吐血	da tu xue	6
+大吐血	da tu xie	6
 大吸力	da xi li	73
 大吸力油烟机	da xi li you yan ji	6
 大吹特吹	da chui te chui	96
@@ -289779,7 +289779,7 @@ sort: by_weight
 打分表	da fen biao	46
 打到住院	da dao zhu yuan	4
 打到后期	da dao hou qi	37
-打到吐血	da dao tu xue	3
+打到吐血	da dao tu xie	3
 打到哪	da dao na	22
 打到家门口	da dao jia men kou	17
 打到怀疑人生	da dao huai yi ren sheng	15
@@ -360846,7 +360846,7 @@ sort: by_weight
 气候适应	qi hou shi ying	3
 气候预测	qi hou yu ce	24
 气冲天	qi chong tian	32
-气到吐血	qi dao tu xue	23
+气到吐血	qi dao tu xie	23
 气到爆炸	qi dao bao zha	17
 气力不足	qi li bu zu	13
 气功养生	qi gong yang sheng	5
@@ -360894,7 +360894,7 @@ sort: by_weight
 气压过低	qi ya guo di	3
 气压过高	qi ya guo gao	2
 气压高	qi ya gao	7
-气吐血	qi tu xue	31
+气吐血	qi tu xie	31
 气味分子	qi wei fen zi	36
 气味刺鼻	qi wei ci bi	2
 气味图书馆	qi wei tu shu guan	19
@@ -588720,7 +588720,7 @@ sort: by_weight
 西部世界	xi bu shi jie	147
 西部发展	xi bu fa zhan	9
 西部电影	xi bu dian ying	17
-要吐血	yao tu xue	47
+要吐血	yao tu xie	47
 要来吗	yao lai ma	2
 要淡定	yao dan ding	47
 覆盖不足	fu gai bu zu	18
@@ -595850,3 +595850,16 @@ sort: by_weight
 汉字学	han zi xue	40
 轻薄本	qing bao ben	300
 攻壳机动队	gong qiao ji dong dui	120
+吐血整理	tu xue zheng li	121
+吐血推荐	tu xue tui jian	87
+要吐血	yao tu xue	47
+吐血三升	tu xue san sheng	41
+气吐血	qi tu xue	31
+气到吐血	qi dao tu xue	23
+吐血而亡	tu xue er wang	20
+吐血身亡	tu xue shen wang	17
+大吐血	da tu xue	6
+吐血而死	tu xue er si	5
+大口吐血	da kou tu xue	4
+打到吐血	da dao tu xue	3
+吐血不止	tu xue bu zhi	2

@@ -31,7 +31,7 @@ columns:
 南无阿弥陀佛	na mo a mi tuo fo	0	习惯 南无阿(ā)弥陀佛 / 规范 ē
 南无阿弥陀佛	nan wu a mi tuo fo	50	南无(nā mó)阿(ē)弥陀佛
 南无阿弥陀佛	nan wu e mi tuo fo	50	南无(nā mó)阿弥陀佛
-槟榔	bin lang	0	台湾 bīn láng / 大陆 bīng láng
+槟榔	bin lang	0	台湾 bīn láng / 大陆 bīng lang
 弄堂	nong tang	120	lòng táng
 心宽体胖	xin kuan ti pang	100	心宽体胖(pán)
 埋怨	mai yuan	150	mán yuàn
@@ -121,7 +121,6 @@ columns:
 仿佛	pang fo	20	fǎng fú
 钮祜禄	niu gu lu	50	钮钴(祜hù)禄
 钮祜禄氏	niu gu lu shi	50	钮钴(祜hù)禄氏
-血脉偾张	xue mai ben zhang	0	常见 血脉贲(bēn)张 / 规范 血脉偾(fèn)张
 黏合	zhan he	50	粘(黏nián)合
 一刹那	yi sha na	100	一霎(刹chà)那
 堂吉诃德	tang ji ke de	80	堂吉柯(诃hē)德
@@ -201,7 +200,7 @@ columns:
 披露	pi lou	150	pī lù
 揭露	jie lou	100	jiē lù
 显露	xian lou	80	xiǎn lù
-露骨	lou gu	80	lù gǔ
+露骨	lou gu	10	lù gǔ
 露面	lu mian	50	lòu miàn
 配角	pei jiao	150	pèi jué
 男主角	nan zhu jiao	150	男主角(jué)
@@ -288,7 +287,6 @@ columns:
 恬不知耻	gua bu zhi chi	80	恬(tián)不知耻
 像模像样	xiang mo xiang yang	80	像模(mú)像样
 杞人忧天	ji ren you tian	80	杞(qǐ)人忧天
-高屋建瓴	gao wu jian lin	80	高屋建瓴(líng)
 按图索骥	an tu suo yi	80	按图索骥(jì)
 锲而不舍	qi er bu she	100	锲(qiè)而不舍
 病入膏肓	bing ru gao mang	100	病入膏肓(huāng)
@@ -391,12 +389,12 @@ columns:
 龋齿	yu chi	60	qǔ chǐ
 龋齿	ju chi	60	qǔ chǐ
 砧骨	zhan gu	25	zhēn gǔ
-跖屈	zhe qu	25	zhí qū
-跖筋膜炎	zhe jin mo yan	25	跖(zhí)筋膜炎
-跖趾关节	zhe zhi guan jie	25	跖(zhí)趾关节
-跖骨骨折	zhe gu gu zhe	25	跖(zhí)骨骨折
-跖疣	zhe you	20	zhí yóu
-跖痛	zhe tong	15	zhí tòng
+跖屈	zhe qu	0	行业 zhé qū / 规范 zhí qū
+跖筋膜炎	zhe jin mo yan	0	行业 跖(zhé)筋膜炎 / 规范 zhí
+跖趾关节	zhe zhi guan jie	0	行业 跖(zhé)趾关节 / 规范 zhí
+跖骨骨折	zhe gu gu zhe	0	行业 跖(zhé)骨骨折 / 规范 zhí
+跖疣	zhe you	0	行业 zhé yóu / 规范 zhí yóu
+跖痛	zhe tong	0	行业 zhé tòng / 规范 zhí tòng
 阿胶	a jiao	80	ē jiāo
 东阿阿胶	dong a a jiao	50	东阿(ē)阿(ē)胶
 东阿阿胶	dong e a jiao	40	东阿阿(ē)胶
@@ -452,8 +450,8 @@ columns:
 光栅	guang zha	100	guāng shān
 光栅化	guang zha hua	80	光栅(shān)化
 栅极	zha ji	60	shān jí
-给水	gei shui	120	jǐ shuǐ
-给水排水	gei shui pai shui	80	给(jǐ)水排水
+给水	gei shui	0	行业 gěi shuǐ / 规范 jǐ shuǐ
+给水排水	gei shui pai shui	0	行业 给(gěi)水排水 / 规范 jǐ
 进给	jin gei	15	jìn jǐ
 进给量	jin gei liang	30	进给(jǐ)量
 进给速度	jin gei su du	30	进给(jǐ)速度
@@ -471,13 +469,13 @@ columns:
 车削	che xue	30	chē xiāo
 磨削	mo xue	30	mó xiāo
 铣削	xi xue	30	xǐ xiāo
-铣削	xian xiao	20	xǐ xiāo
-铣刀	xian dao	30	xǐ dāo
+铣削	xian xiao	0	台湾 xiǎn xiāo / 大陆 xǐ xiāo
+铣刀	xian dao	0	台湾 xiǎn dāo / 大陆 xǐ dāo
 脱模	tuo mo	50	tuō mú
 开模	kai mo	50	kāi mú
 字模	zi mo	30	zì mú
-注塑模具	zhu su mo ju	40	注塑模(mú)具
-冲压模具	chong ya mo ju	40	冲压模(mú)具
+注塑模具	zhu su mo ju	0	行业 注塑模(mó)具 / 规范 mú
+冲压模具	chong ya mo ju	0	行业 冲压模(mó)具 / 规范 mú
 校验码	xiao yan ma	80	校(jiào)验码
 校验和	xiao yan he	60	校(jiào)验和
 奇偶校验	ji ou xiao yan	50	奇偶校(jiào)验
@@ -526,13 +524,13 @@ columns:
 卟啉	pu lin	50	bǔ lín
 卟啉病	pu lin bing	40	卟(bǔ)啉病
 无砟轨道	wu cha gui dao	40	无碴(砟zhǎ)轨道
-泊松比	po song bi	40	泊(bó)松比
-泊松方程	po song fang cheng	40	泊(bó)松方程
-泊松过程	po song guo cheng	40	泊(bó)松过程
-泊松括号	po song kuo hao	30	泊(bó)松括号
-伽马刀	jia ma dao	40	伽(gā)马刀
-伽马暴	jia ma bao	30	伽(gā)马暴
-伽马校正	jia ma jiao zheng	30	伽(gā)马校正
+泊松比	po song bi	0	行业 泊(pō)松比 / 规范 bó
+泊松方程	po song fang cheng	0	行业 泊(pō)松方程 / 规范 bó
+泊松过程	po song guo cheng	0	行业 泊(pō)松过程 / 规范 bó
+泊松括号	po song kuo hao	0	行业 泊(pō)松括号 / 规范 bó
+伽马刀	jia ma dao	0	台湾 伽(jiā)马刀 / 大陆 gā
+伽马暴	jia ma bao	0	台湾 伽(jiā)马暴 / 大陆 gā
+伽马校正	jia ma jiao zheng	0	台湾 伽(jiā)马校正 / 大陆 gā
 黏度	zhan du	50	粘(黏nián)度
 黏土	zhan tu	50	粘(黏nián)土
 黏性	zhan xing	50	粘(黏nián)性
@@ -655,7 +653,7 @@ columns:
 削价	xiao jia	30	xuē jià
 给付	gei fu	150	jǐ fù
 轧账	ya zhang	35	gá zhàng
-轧差	ya cha	25	gá chà
+轧差	ya cha	25	gá chā
 轧空	ya kong	80	gá kōng
 囤积	dun ji	25	tún jī
 囤货	dun huo	120	tún huò
@@ -703,7 +701,6 @@ columns:
 重耳	zhong er	50	chóng ěr
 夫差	fu cha	30	fū chāi
 墨翟	mo zhai	50	mò dí
-枚乘	mei cheng	15	méi shèng
 岑参	cen can	80	cén shēn
 曾参	zeng can	60	zēng shēn
 李泌	li mi	15	lǐ bì
@@ -724,7 +721,6 @@ columns:
 仇英	chou ying	40	qiú yīng
 查良镛	cha liang yong	50	查(zhā)良镛
 种师道	zhong shi dao	40	种(chóng)师道
-尉缭子	wei liao zi	40	尉(yù)缭子
 张说	zhang shuo	40	zhāng yuè
 傅说	fu shuo	40	fù yuè
 左冯翊	zuo feng yi	30	左冯(píng)翊
@@ -755,7 +751,6 @@ columns:
 辟邪	pi xie	60	bì xié
 辟雍	pi yong	30	bì yōng
 征辟	zheng pi	12	zhēng bì
-大辟	da pi	30	dà bì
 迦叶	jia ye	40	jiā shè
 摩诃迦叶	mo he jia ye	30	摩诃迦叶(shè)
 兰若	lan ruo	30	lán rě
@@ -913,8 +908,6 @@ columns:
 枞阳	cong yang	60	zōng yáng
 莘县	xin xian	7	shēn xiàn
 百色	bo se	40	bǎi sè
-尉氏	wei shi	40	yù shì
-尉氏县	wei shi xian	50	尉(yù)氏县
 柞水	zuo shui	50	zhà shuǐ
 柞水县	zuo shui xian	50	柞(zhà)水县
 十里堡	shi li bao	50	十里堡(pù)
@@ -995,15 +988,12 @@ columns:
 鼻塞	bi sai	0	习惯 bí sāi / 规范 bí sè
 雪佛兰	xue fu lan	0	习惯 xuě fú lán / 规范 xuě fó lán
 说服	shuo fu	0	规范 shuō fú / 旧读 shuì fú
-比萨	bi sa	0	规范 比萨 bǐ sà / 常见 披萨 pī sà
-比萨	pi sa	0	常见 披萨 pī sà / 规范 比萨 bǐ sà
-槟榔	bing lang	0	大陆 bīng láng / 台湾 bīn láng
+槟榔	bing lang	0	大陆 bīng lang / 台湾 bīn láng
 混淆	hun xiao	0	大陆 hùn xiáo / 台湾 hùn yáo
 混淆	hun yao	0	台湾 hùn yáo / 大陆 hùn xiáo
 阿弥陀佛	e mi tuo fo	0	规范 阿(ē)弥陀佛 / 习惯 阿(ā)弥陀佛
 荨麻疹	xun ma zhen	0	规范 xún má zhěn / 习惯 qián má zhěn
 荨麻	qian ma	0	现汉 qián má / 审音拟 xún má
-血脉偾张	xue mai fen zhang	0	规范 血脉偾(fèn)张 / 常见 血脉贲(bēn)张
 吐蕃	tu bo	0	大陆 tǔ bō / 台湾 tǔ fān
 吐蕃	tu fan	0	台湾 tǔ fān / 大陆 tǔ bō
 呆板	dai ban	0	规范 dāi bǎn / 旧读 ái bǎn
@@ -1102,8 +1092,8 @@ columns:
 酵母	xiao mu	0	台湾 xiào mǔ / 大陆 jiào mǔ
 酵母菌	jiao mu jun	0	大陆 酵(jiào)母菌 / 台湾 xiào
 咖喱	ga li	0	大陆 gā lí / 台湾 kā lǐ
-秘鲁	bi lu	0	大陆 bì lǔ / 台湾 mì lǔ
-秘鲁	mi lu	0	台湾 mì lǔ / 大陆 bì lǔ
+秘鲁	bi lu	0	规范 bì lǔ / 常见 mì lǔ
+秘鲁	mi lu	0	常见 mì lǔ / 规范 bì lǔ
 迫击炮	pai ji pao	0	大陆 迫(pǎi)击炮 / 台湾 pò
 迫击炮	po ji pao	0	台湾 迫(pò)击炮 / 大陆 pǎi
 混淆视听	hun xiao shi ting	0	大陆 混淆(xiáo)视听 / 台湾 yáo
@@ -1143,8 +1133,8 @@ columns:
 小乘佛教	xiao sheng fo jiao	0	台湾 小乘(shèng)佛教 / 大陆 chéng
 太簇	tai cou	0	规范 tài còu / 常见 tài cù
 太簇	tai cu	0	常见 tài cù / 规范 tài còu
-角宿	jiao xiu	0	大陆 jiǎo xiù / 旧读 jué xiù
-角宿	jue xiu	0	旧读 jué xiù / 大陆 jiǎo xiù
+角宿	jiao xiu	0	大陆 jiǎo xiù / 台湾 jué xiù
+角宿	jue xiu	0	台湾 jué xiù / 大陆 jiǎo xiù
 一骑红尘	yi qi hong chen	0	规范 一骑(qí)红尘 / 旧读 jì
 一骑红尘	yi ji hong chen	0	旧读 一骑(jì)红尘 / 规范 qí
 一骑红尘妃子笑	yi qi hong chen fei zi xiao	0	规范 一骑(qí)红尘妃子笑 / 旧读 jì
@@ -1177,16 +1167,16 @@ columns:
 井柏然	jing bo ran	0	习惯 井柏(bó)然 / 规范 bǎi
 刘柏辛	liu bai xin	0	规范 刘柏(bǎi)辛 / 习惯 bó
 刘柏辛	liu bo xin	0	习惯 刘柏(bó)辛 / 规范 bǎi
-宜兴埠	yi xing bu	0	规范 宜兴埠(bù) / 习惯 fù
-宜兴埠	yi xing fu	0	习惯 宜兴埠(fù) / 规范 bù
-宜兴埠北	yi xing bu bei	0	规范 宜兴埠(bù)北 / 习惯 fù
-宜兴埠北	yi xing fu bei	0	习惯 宜兴埠(fù)北 / 规范 bù
+宜兴埠	yi xing bu	0	规范 宜兴埠(bù) / 习惯 fǔ
+宜兴埠	yi xing fu	0	习惯 宜兴埠(fǔ) / 规范 bù
+宜兴埠北	yi xing bu bei	0	规范 宜兴埠(bù)北 / 习惯 fǔ
+宜兴埠北	yi xing fu bei	0	习惯 宜兴埠(fǔ)北 / 规范 bù
 包小柏	bao xiao bai	0	规范 包小柏(bǎi) / 习惯 bó
 包小柏	bao xiao bo	0	习惯 包小柏(bó) / 规范 bǎi
 龙爪堰	long zhao yan	0	规范 龙爪(zhǎo)堰 / 习惯 zhuǎ
 龙爪堰	long zhua yan	0	习惯 龙爪(zhuǎ)堰 / 规范 zhǎo
-谌龙	chen long	0	规范 chén lóng / 旧读 shèn lóng
-谌龙	shen long	0	旧读 shèn lóng / 规范 chén lóng
+谌龙	chen long	0	规范 chén lóng / 常见 shèn lóng
+谌龙	shen long	0	常见 shèn lóng / 规范 chén lóng
 垃圾	la ji	0	大陆 lā jī / 台湾 lè sè
 垃圾	le se	0	台湾 lè sè / 大陆 lā jī
 暂时	zan shi	0	大陆 zàn shí / 台湾 zhàn shí
@@ -1223,16 +1213,16 @@ columns:
 鸡血	ji xue	0	常见 jī xuè / 规范 jī xiě
 湮灭	yan mie	0	大陆 yān miè / 台湾 yīn miè
 湮灭	yin mie	0	台湾 yīn miè / 大陆 yān miè
-武藏	wu cang	0	常见 wǔ cáng / 旧读 wǔ zàng
-武藏	wu zang	0	旧读 wǔ zàng / 常见 wǔ cáng
+武藏	wu cang	0	大陆 wǔ cáng / 台湾 wǔ zàng
+武藏	wu zang	0	台湾 wǔ zàng / 大陆 wǔ cáng
 卡死	ka si	0	习惯 kǎ sǐ / 规范 qiǎ sǐ
 卡死	qia si	0	规范 qiǎ sǐ / 习惯 kǎ sǐ
 戛纳	ga na	0	规范 gā nà / 旧读 jiá nà
 戛纳	jia na	0	旧读 jiá nà / 规范 gā nà
 着地	zhuo di	0	规范 zhuó dì / 习惯 zháo dì
 着地	zhao di	0	习惯 zháo dì / 规范 zhuó dì
-张角	zhang jiao	0	大陆 zhāng jiǎo / 旧读 zhāng jué
-张角	zhang jue	0	旧读 zhāng jué / 大陆 zhāng jiǎo
+张角	zhang jiao	0	大陆 zhāng jiǎo / 台湾 zhāng jué
+张角	zhang jue	0	台湾 zhāng jué / 大陆 zhāng jiǎo
 卡住了	qia zhu le	0	规范 卡(qiǎ)住了 / 习惯 kǎ
 卡住了	ka zhu le	0	习惯 卡(kǎ)住了 / 规范 qiǎ
 说客	shuo ke	0	规范 shuō kè / 旧读 shuì kè
@@ -1261,11 +1251,43 @@ columns:
 风化壳	feng hua ke	0	常见 风化壳(ké) / 规范 qiào
 甲壳素	jia qiao su	0	规范 甲壳(qiào)素 / 常见 ké
 甲壳素	jia ke su	0	常见 甲壳(ké)素 / 规范 qiào
-褪去	tui qu	0	规范 tuì qù(褪色) / 常见 tùn qù
-褪去	tun qu	0	规范 tùn qù(脱衣) / 常见 tuì qù
+褪去	tui qu	0	规范 tuì qù / 常见 tùn qù
+褪去	tun qu	0	常见 tùn qù / 规范 tuì qù
 朴树	po shu	0	规范 pò shù(植物) / 习惯 pǔ shù
 朴树	pu shu	0	习惯 pǔ shù(歌手) / 规范 pò shù
 剥皮抽筋	bao pi chou jin	15	剥(bō)皮抽筋
 龙爪手	long zhua shou	25	龙爪(zhǎo)手
 全须全尾	quan xu quan yi	0	规范 全须全尾(yǐ) / 习惯 wěi
 全须全尾	quan xu quan wei	0	习惯 全须全尾(wěi) / 规范 yǐ
+枚乘	mei sheng	15	méi chéng
+尉缭子	yu liao zi	40	尉(wèi)缭子
+大辟	da bi	30	dà pì
+尉氏	yu shi	30	wèi shì
+尉氏县	yu shi xian	50	尉(wèi)氏县
+抛头露面	pao tou lou mian	30	抛头露(lù)面
+纤薄	xian bao	35	xiān bó
+皮肤磨削术	pi fu mo xue shu	15	皮肤磨削(xiāo)术
+石爪山脉	shi zhua shan mai	20	石爪(zhǎo)山脉
+泊里	po li	0	规范 pō lǐ / 习惯 bó lǐ
+泊里	bo li	0	习惯 bó lǐ / 规范 pō lǐ
+般涉调	ban she diao	0	大陆 般(bān)涉调 / 台湾 pán
+般涉调	pan she diao	0	台湾 般(pán)涉调 / 大陆 bān
+铣削	xi xiao	0	大陆 xǐ xiāo / 台湾 xiǎn xiāo
+铣刀	xi dao	0	大陆 xǐ dāo / 台湾 xiǎn dāo
+伽马刀	ga ma dao	0	大陆 伽(gā)马刀 / 台湾 jiā
+伽马暴	ga ma bao	0	大陆 伽(gā)马暴 / 台湾 jiā
+伽马校正	ga ma jiao zheng	0	大陆 伽(gā)马校正 / 台湾 jiā
+泊松比	bo song bi	0	规范 泊(bó)松比 / 行业 pō
+泊松方程	bo song fang cheng	0	规范 泊(bó)松方程 / 行业 pō
+泊松过程	bo song guo cheng	0	规范 泊(bó)松过程 / 行业 pō
+泊松括号	bo song kuo hao	0	规范 泊(bó)松括号 / 行业 pō
+注塑模具	zhu su mu ju	0	规范 注塑模(mú)具 / 行业 mó
+冲压模具	chong ya mu ju	0	规范 冲压模(mú)具 / 行业 mó
+跖屈	zhi qu	0	规范 zhí qū / 行业 zhé qū
+跖筋膜炎	zhi jin mo yan	0	规范 跖(zhí)筋膜炎 / 行业 zhé
+跖趾关节	zhi zhi guan jie	0	规范 跖(zhí)趾关节 / 行业 zhé
+跖骨骨折	zhi gu gu zhe	0	规范 跖(zhí)骨骨折 / 行业 zhé
+跖疣	zhi you	0	规范 zhí yóu / 行业 zhé yóu
+跖痛	zhi tong	0	规范 zhí tòng / 行业 zhé tòng
+给水	ji shui	0	规范 jǐ shuǐ / 行业 gěi shuǐ
+给水排水	ji shui pai shui	0	规范 给(jǐ)水排水 / 行业 gěi

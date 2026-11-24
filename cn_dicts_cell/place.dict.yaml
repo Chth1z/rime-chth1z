@@ -1152,7 +1152,7 @@ sort: by_weight
 九里堤	jiu li di	16
 花照壁	hua zhao bi	1
 金沙博物馆	jin sha bo wu guan	19
-龙爪堰	long zhua yan	0
+龙爪堰	long zhao yan	0
 武侯大道	wu hou da dao	2
 高朋大道	gao peng da dao	2
 三瓦窑	san wa yao	0
@@ -1553,7 +1553,7 @@ sort: by_weight
 古镇口	gu zhen kou	3
 贡口湾	gong kou wan	0
 董家口港	dong jia kou gang	0
-泊里	bo li	4
+泊里	po li	4
 董家口火车站	dong jia kou huo che zhan	0
 孔目湖	kong mu hu	1
 庐山南大道	lu shan nan da dao	2
@@ -1815,4 +1815,5 @@ sort: by_weight
 宝幢	bao zhuang	15
 宜兴埠	yi xing fu	1
 宜兴埠北	yi xing fu bei	0
-龙爪堰	long zhao yan	0
+龙爪堰	long zhua yan	0
+泊里	bo li	4

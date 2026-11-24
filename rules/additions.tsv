@@ -1,6 +1,6 @@
 # target_file	word	py	weight	category	source
 # 词条补录规则（category 限 A / E1 / modern / tech / domain / brand / phonetic / common）
-cn_dicts/8105.dict.yaml	屮	che	50	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	屮	che	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	呇	qi	2	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	颤	zhan	50	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	暴	pu	30	phonetic	现汉第7版
@@ -53,7 +53,7 @@ cn_dicts/8105.dict.yaml	胳	ga	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	红	gong	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	乐	lao	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	乐	yao	5	phonetic	现汉第7版
-cn_dicts/8105.dict.yaml	挼	ruo	15	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	挼	ruo	5	phonetic	现汉第7版(严控<偌12)
 cn_dicts/8105.dict.yaml	杓	shao	15	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	唛	ma	20	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	蓂	ming	10	phonetic	现汉第7版
@@ -63,7 +63,7 @@ cn_dicts/8105.dict.yaml	俞	shu	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	转	zhuai	10	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	食	yi	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	其	ji	5	phonetic	现汉第7版
-cn_dicts/8105.dict.yaml	钭	tou	1	phonetic	现汉第7版
+cn_dicts/8105.dict.yaml	钭	tou	1	phonetic	广韵/汉语大字典古音
 cn_dicts/8105.dict.yaml	铤	ding	5	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	坻	chi	2	phonetic	现汉第7版
 cn_dicts/8105.dict.yaml	廆	gui	2	phonetic	通用规范汉字表/汉语大字典
@@ -230,7 +230,7 @@ cn_dicts/8105.dict.yaml	般	pan	10	phonetic	现汉第7版：古同“盘”（�
 cn_dicts/8105.dict.yaml	芥	gai	10	phonetic	现汉第5版旧读：蔬菜名“芥蓝 gài lán”旧读支持
 cn_dicts/8105.dict.yaml	适	kuo	10	phonetic	现汉第7版：姓氏及历史人名（唐德宗李适、南宫适）
 cn_dicts/8105.dict.yaml	陶	yao	10	phonetic	现汉第7版：上古人物名“皋陶 Gāoyáo”（举皋陶）
-cn_dicts/8105.dict.yaml	鲗	ze	2	phonetic	新华字典第12版 + 现汉第7版：香港地名“鲗鱼涌 Zé yú chōng”规范读音
+cn_dicts/8105.dict.yaml	鲗	ze	2	phonetic	新华字典第12版/香港地名(L1/L2)
 cn_dicts/8105.dict.yaml	觜	zui	10	phonetic	现汉第7版：古同“嘴”（现汉第7版收 zī / zuǐ 双音）
 cn_dicts/8105.dict.yaml	嗄	a	3	phonetic	现汉第7版：叹词同“啊”（现汉第7版收 shà / á 双音）
 cn_dicts/8105.dict.yaml	擘	bai	10	phonetic	现汉第7版：同“掰”（现汉第7版收 bò / bāi 双音）
@@ -493,7 +493,6 @@ cn_dicts_cell/music.dict.yaml	应钟	ying zhong	30	domain	十二律（Top5: 营�
 cn_dicts_cell/music.dict.yaml	清商乐	qing shang yue	30	domain	汉魏六朝乐种（Top5: NONE）
 cn_dicts_cell/music.dict.yaml	斫琴	zhuo qin	30	domain	古琴制作工艺（Top5: NONE）
 cn_dicts_cell/music.dict.yaml	筚篥	bi li	30	domain	古代管乐器（Top5: 比例27795, 笔力471, 哔哩40）
-cn_dicts_cell/music.dict.yaml	般涉调	pan she diao	20	domain	唐宋燕乐宫调（Top5: NONE）
 cn_dicts/base.dict.yaml	阿耨多罗	a nou duo luo	20	domain	佛经高频梵译（Top5: NONE）
 cn_dicts/base.dict.yaml	阿兰若	a lan re	25	domain	佛教清净处（Top5: NONE）
 cn_dicts/base.dict.yaml	辟雍	bi yong	30	domain	古代天子学宫（Top5: 比用272, 必用166）
@@ -526,7 +525,7 @@ cn_dicts_cell/literature.dict.yaml	绿衣黄裳	lv yi huang chang	25	domain	诗�
 cn_dicts_cell/idiom.dict.yaml	行商坐贾	xing shang zuo gu	30	domain	常用成语（Top5: NONE）
 cn_dicts_cell/literature.dict.yaml	不龟手之药	bu jun shou zhi yao	25	domain	庄子逍遥游典故（Top5: NONE）
 cn_dicts_cell/history.dict.yaml	乘舆	sheng yu	30	domain	帝王车驾（Top5: 剩余5008, 胜于533）
-cn_dicts/8105.dict.yaml	丼	dan	10	phonetic	现汉规范/日语借词(原仅收jing=5)
+cn_dicts/8105.dict.yaml	丼	dan	10	phonetic	集韵/汉语大字典/日本汉字读音规范
 cn_dicts/base.dict.yaml	花蛤	hua ge	120	common	现汉第7版(原库仅存炒花蛤/辣炒花蛤，严控<花个893)
 cn_dicts/base.dict.yaml	桃脯	tao fu	30	common	现汉第7版(高于桃符11)
 cn_dicts/base.dict.yaml	苹果脯	ping guo fu	30	common	现汉第7版(无碰撞)
@@ -570,7 +569,7 @@ cn_dicts/base.dict.yaml	路环	lu huan	40	common	澳门核心岛区(无碰撞)
 cn_dicts/base.dict.yaml	沱江	tuo jiang	60	common	长江重要支流/凤凰古城河流(严控<脱缰83)
 cn_dicts/base.dict.yaml	长汀	chang ting	50	common	国家历史文化名城(原仅长汀县，严控<长亭61)
 cn_dicts/base.dict.yaml	长乐	chang le	80	common	福州长乐区/长乐宫(严控<常乐150)
-cn_dicts/base.dict.yaml	尉氏	yu shi	30	common	河南开封尉氏县(严控<玉石456)
+cn_dicts/base.dict.yaml	尉氏	wei shi	30	common	河南开封尉氏县(规范读wèi shì，严控<伪史301)
 cn_dicts/base.dict.yaml	大城县	dai cheng xian	25	common	河北廊坊大城县(无碰撞)
 cn_dicts/base.dict.yaml	郫都	pi du	40	common	成都郫都区(原仅郫都区37，无碰撞)
 cn_dicts/base.dict.yaml	黟县	yi xian	30	common	安徽宏村西递所在地(严控<一掀43)
@@ -628,3 +627,18 @@ cn_dicts/base.dict.yaml	落了	la le	200	common	遗漏落下义là le(对齐落�
 cn_dicts/base.dict.yaml	降重	jiang zhong	100	domain	汽车/航天轻量化降重义jiàng zhòng(严控<江中141)
 cn_dicts/base.dict.yaml	新传	xin zhuan	80	common	保留文学传记新传义xīn zhuàn
 cn_dicts/ext.dict.yaml	异尖线虫	yi jian xian chong	40	domain	寄生虫规范专名(替换others分词残片异尖)
+cn_dicts/base.dict.yaml	地被	di bei	15	domain	风景园林/林学名词地被植物(L2，配合de bei保留第二义项)
+cn_dicts_cell/medication.dict.yaml	眼用黏弹剂	yan yong nian tan ji	10	domain	全国科技名词委规范正形黏弹剂(与NMPA粘弹剂W2并存)
+cn_dicts_cell/composite.dict.yaml	吐血整理	tu xue zheng li	121	common	保留L1吐血(tu xie)并补齐社会通行读音(tu xue)
+cn_dicts_cell/composite.dict.yaml	吐血推荐	tu xue tui jian	87	common	保留L1吐血(tu xie)并补齐社会通行读音(tu xue)
+cn_dicts_cell/composite.dict.yaml	要吐血	yao tu xue	47	common	保留L1吐血(tu xie)并补齐社会通行读音(tu xue)
+cn_dicts_cell/composite.dict.yaml	吐血三升	tu xue san sheng	41	common	保留L1吐血(tu xie)并补齐社会通行读音(tu xue)
+cn_dicts_cell/composite.dict.yaml	气吐血	qi tu xue	31	common	保留L1吐血(tu xie)并补齐社会通行读音(tu xue)
+cn_dicts_cell/composite.dict.yaml	气到吐血	qi dao tu xue	23	common	保留L1吐血(tu xie)并补齐社会通行读音(tu xue)
+cn_dicts_cell/composite.dict.yaml	吐血而亡	tu xue er wang	20	common	保留L1吐血(tu xie)并补齐社会通行读音(tu xue)
+cn_dicts_cell/composite.dict.yaml	吐血身亡	tu xue shen wang	17	common	保留L1吐血(tu xie)并补齐社会通行读音(tu xue)
+cn_dicts_cell/composite.dict.yaml	大吐血	da tu xue	6	common	保留L1吐血(tu xie)并补齐社会通行读音(tu xue)
+cn_dicts_cell/composite.dict.yaml	吐血而死	tu xue er si	5	common	保留L1吐血(tu xie)并补齐社会通行读音(tu xue)
+cn_dicts_cell/composite.dict.yaml	大口吐血	da kou tu xue	4	common	保留L1吐血(tu xie)并补齐社会通行读音(tu xue)
+cn_dicts_cell/composite.dict.yaml	打到吐血	da dao tu xue	3	common	保留L1吐血(tu xie)并补齐社会通行读音(tu xue)
+cn_dicts_cell/composite.dict.yaml	吐血不止	tu xue bu zhi	2	common	保留L1吐血(tu xie)并补齐社会通行读音(tu xue)

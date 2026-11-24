@@ -68,7 +68,7 @@ cn_dicts/8105.dict.yaml	朕	zhen	300	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	杵	chu	40	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	析	xi	600	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	检	jian	800	R1/R2单字权重校准
-cn_dicts/8105.dict.yaml	楞	leng	300	R1/R2单字权重校准
+cn_dicts/8105.dict.yaml	楞	leng	120	R1/R2单字权重校准(严控<棱266)
 cn_dicts/8105.dict.yaml	毫	hao	450	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	氘	dao	50	R1/R2单字权重校准
 cn_dicts/8105.dict.yaml	氚	chuan	60	R1/R2单字权重校准
@@ -536,7 +536,6 @@ cn_dicts/base.dict.yaml	答主	da zhu	250	R2基础词库权重校准
 cn_dicts/base.dict.yaml	篮下	lan xia	300	R2基础词库权重校准
 cn_dicts/base.dict.yaml	精听	jing ting	100	R2基础词库权重校准
 cn_dicts/base.dict.yaml	糖原	tang yuan	250	R2基础词库权重校准
-cn_dicts/base.dict.yaml	纤薄	xian bao	50	R2基础词库权重校准
 cn_dicts/base.dict.yaml	线的	xian de	200	R1基础词库权重校准
 cn_dicts/base.dict.yaml	练的	lian de	200	R1基础词库权重校准
 cn_dicts/base.dict.yaml	组的	zu de	200	R1基础词库权重校准
@@ -577,9 +576,9 @@ cn_dicts/base.dict.yaml	薄薄	bo bo	25	R2基础词库权重校准
 cn_dicts/base.dict.yaml	蜀国	shu guo	350	R2基础词库权重校准
 cn_dicts/base.dict.yaml	蝙蝠侠	bian fu xia	1500	R1基础词库权重校准
 cn_dicts/base.dict.yaml	血块	xie kuai	50	R2基础词库权重校准
-cn_dicts/base.dict.yaml	血水	xie shui	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	血水	xie shui	25	R2基础词库权重校准(严控<泄水33)
 cn_dicts/base.dict.yaml	血泡	xie pao	15	R2基础词库权重校准
-cn_dicts/base.dict.yaml	血流	xie liu	100	R2基础词库权重校准
+cn_dicts/base.dict.yaml	血流	xie liu	15	R2基础词库权重校准(严控<蟹柳24)
 cn_dicts/base.dict.yaml	血的	xie de	100	R2基础词库权重校准
 cn_dicts/base.dict.yaml	血赚	xie zhuan	40	R2基础词库权重校准
 cn_dicts/base.dict.yaml	被刷了	bei shua le	75	R2基础词库权重校准
@@ -1111,8 +1110,8 @@ cn_dicts_cell/shulihua.dict.yaml	马尔可夫链	ma er ke fu lian	>=60	W2：L2�
 cn_dicts/base.dict.yaml	马尔科夫链	ma er ke fu lian	<=40	W2：旧译让位于L2规范译名马尔可夫链(60)
 cn_dicts/ext.dict.yaml	菲涅耳	fei nie er	>=120	W2：全国科技名词委物理规范译名优先于菲涅尔(100)
 cn_dicts/ext.dict.yaml	菲涅尔	fei nie er	<=100	W2：常用旧译让位于L2规范译名菲涅耳(120)
-cn_dicts_cell/medication.dict.yaml	白及	bai ji	>=120	W2：中国药典法定正名白及优先于俗写白芨(20)
-cn_dicts_cell/medication.dict.yaml	白芨	bai ji	<=20	W2：民间俗写让位于药典正名白及(120)
+cn_dicts_cell/medication.dict.yaml	白及	bai ji	>=25	W2：中国药典法定正名白及优先于俗写白芨(20，严控<白鸡46/拜祭56)
+cn_dicts_cell/medication.dict.yaml	白芨	bai ji	<=20	W2：民间俗写让位于药典正名白及(25)
 cn_dicts/base.dict.yaml	真像	zhen xiang	<=100	W1：保留合法搭配真像(真+像)，温和降权避免干扰真相(9218)
 cn_dicts/base.dict.yaml	胶粘剂	jiao zhan ji	<=100	W2：保留历史国标常用写法，位于规范胶黏剂(150)之后
 cn_dicts/base.dict.yaml	非营利	fei ying li	450	W1校准:民法典法定非营利(450)高于非盈利(150)
@@ -1132,7 +1131,7 @@ cn_dicts_cell/composite.dict.yaml	一般纳税人	yi ban na shui ren	80	高频�
 cn_dicts_cell/composite.dict.yaml	养老金融	yang lao jin rong	60	中央金融工作会议五篇大文章摆脱w=0
 cn_dicts/base.dict.yaml	蜡梅	la mei	80	W2现汉/植物学主形蜡梅压过腊梅(68)，严控<辣妹(159)
 cn_dicts_cell/composite.dict.yaml	蚧壳虫	jie ke chong	<=80	W2规范主形介壳虫(100)压过常见异形蚧壳虫(原142倒挂)
-cn_dicts/base.dict.yaml	烧卖	shao mai	260	(可选)W2现汉第7版主形烧卖(原168)压过烧麦(243)
+cn_dicts/base.dict.yaml	烧卖	shao mai	260	W2现汉第7版主形烧卖(原168)压过烧麦(243)
 cn_dicts/base.dict.yaml	撑竿跳	cheng gan tiao	>=100	W2体育规范词形撑竿跳高于撑杆跳(83)
 cn_dicts/8105.dict.yaml	喔	o	500	现汉第7版叹词主读o(严控<哦/噢)
 cn_dicts/8105.dict.yaml	吖	ya	50	防等权撞击常用字芽(347)
@@ -1246,3 +1245,6 @@ cn_dicts/ext.dict.yaml	种不同	zhong bu tong	<=20	.gram保底温和降权
 cn_dicts/base.dict.yaml	熟人	shou ren	<=30	口语白读严控低于手刃(253)/兽人(217)/首任(206)/授人(50)
 cn_dicts/base.dict.yaml	红血	hong xie	<=25	游戏口语白读严控低于红鞋(34)/红蟹(31)
 cn_dicts/base.dict.yaml	血线	xie xian	<=23	游戏口语白读补齐降权严控低于谢贤(51)
+cn_dicts/base.dict.yaml	般地	ban de	<=150	恢复.gram高频路径并低于办的(1314)/办得(156)
+cn_dicts/base.dict.yaml	上调至	shang diao zhi	10	与上调了/上调到保持一致(人事调动义保留低权)
+cn_dicts/ext.dict.yaml	然并卵	ran bing luan	<=300	2015十大网络流行语恢复并按T3控权

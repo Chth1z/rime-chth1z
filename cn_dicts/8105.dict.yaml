@@ -3576,7 +3576,7 @@ sort: by_weight
 礌	lei	0
 癗	lei	0
 冷	leng	3825
-楞	leng	300
+楞	leng	120
 愣	leng	453
 棱	leng	266
 崚	leng	9
@@ -8554,7 +8554,7 @@ sort: by_weight
 笮	zuo	4
 岞	zuo	0
 # 补充标准普通话读音
-屮	che	50
+屮	che	10
 呇	qi	2
 颤	zhan	50
 暴	pu	30
@@ -8607,7 +8607,7 @@ sort: by_weight
 红	gong	10
 乐	lao	10
 乐	yao	5
-挼	ruo	15
+挼	ruo	5
 杓	shao	15
 唛	ma	20
 蓂	ming	10

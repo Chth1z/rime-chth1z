@@ -130,7 +130,6 @@ cn_dicts/base.dict.yaml	维生物	*	R2清理错字或噪声词
 cn_dicts/base.dict.yaml	罢了	ba liao	R1基础词库读音修正
 cn_dicts/base.dict.yaml	美的	mei di	R1基础词库读音修正
 cn_dicts/base.dict.yaml	脉脉	mai mai	R1基础词库读音修正
-cn_dicts/base.dict.yaml	般地	ban di	R1基础词库读音修正
 cn_dicts/base.dict.yaml	般的	*	R1清理错字或噪声词
 cn_dicts/base.dict.yaml	船小好	*	R1清理错字或噪声词
 cn_dicts/base.dict.yaml	莫明其妙	*	R1清理错字或噪声词
@@ -338,7 +337,6 @@ cn_dicts/ext.dict.yaml	活性碳	*	R2清理错字或噪声词
 cn_dicts/ext.dict.yaml	流水帐	*	R2清理错字或噪声词
 cn_dicts/ext.dict.yaml	消声匿迹	*	R1清理错字或噪声词
 cn_dicts/ext.dict.yaml	清楚的记得	*	R2清理错字或噪声词
-cn_dicts/ext.dict.yaml	然并卵	*	R1清理错字或噪声词
 cn_dicts/ext.dict.yaml	照像机	*	R2清理错字或噪声词
 cn_dicts/ext.dict.yaml	照像馆	*	R1清理错字或噪声词
 cn_dicts/ext.dict.yaml	熟地黄	shou di huang	R2扩展词库读音修正
@@ -649,7 +647,6 @@ cn_dicts_cell/exthot.dict.yaml	歌手突围赛	*	R1清理热词噪声
 cn_dicts_cell/exthot.dict.yaml	武磊两射两传	*	R1清理热词噪声
 cn_dicts_cell/exthot.dict.yaml	汪苏泷唱氧气	*	R1清理热词噪声
 cn_dicts_cell/exthot.dict.yaml	沟槽的	*	R1清理热词噪声
-cn_dicts_cell/exthot.dict.yaml	河北彩花	*	R1清理热词噪声
 cn_dicts_cell/exthot.dict.yaml	泰国丸美	*	R1清理热词噪声
 cn_dicts_cell/exthot.dict.yaml	炉岩碳	*	R1清理热词噪声
 cn_dicts_cell/exthot.dict.yaml	热的很	*	R1清理热词噪声
@@ -850,7 +847,6 @@ cn_dicts_cell/literature.dict.yaml	其或非也邪	qi huo fei ye xie	R1古诗文
 cn_dicts_cell/literature.dict.yaml	其未尝有言邪	qi wei chang you yan xie	R1古诗文读音修正
 cn_dicts_cell/literature.dict.yaml	其正色邪	qi zheng se xie	R1古诗文读音修正
 cn_dicts_cell/literature.dict.yaml	其远而无所至极邪	qi yuan er wu suo zhi ji xie	R1古诗文读音修正
-cn_dicts_cell/literature.dict.yaml	前者唱于而随者唱喁	qian zhe chang yu er sui zhe chang yu	R1古诗文读音修正
 cn_dicts_cell/literature.dict.yaml	可不哀邪	ke bu ai xie	R1古诗文读音修正
 cn_dicts_cell/literature.dict.yaml	吾所待又有待而然者邪	wu suo dai you you dai er ran zhe xie	R1古诗文读音修正
 cn_dicts_cell/literature.dict.yaml	吾有待而然者邪	wu you dai er ran zhe xie	R1古诗文读音修正
@@ -1433,7 +1429,6 @@ cn_dicts/base.dict.yaml	石厦	shi sha	深圳地铁 3/7 号线“石厦”官方
 cn_dicts/base.dict.yaml	大差市	da cha shi	西安地铁“大差市”官方标准读 dà chāi shì，clean-dicts.py L1325 已修 place(w=1) 漏删 base（西安地铁官方播报/民政地名(L2)）
 cn_dicts_cell/history.dict.yaml	句章	ju zhang	古县名“句章”（今宁波）规范读 gōu zhāng，clean-dicts.py L1563 已修 geography(w=10) 漏修 history（辞海/中国古今地名大词典(L2/L3)）
 cn_dicts_cell/history.dict.yaml	冤句	yuan ju	古县名“冤句”（今菏泽）规范读 yuān qú，clean-dicts.py L1569 已修 geography(w=2) 漏修 history（辞海/中国古今地名大词典(L2/L3)）
-cn_dicts_cell/history.dict.yaml	阳夏	yang xia	古县名“阳夏”（今太康）规范读 yáng jiǎ，clean-dicts.py L1568 已修 geography(w=7) 漏修 history（辞海/中国古今地名大词典(L2/L3)）
 cn_dicts_cell/history.dict.yaml	朱提	zhu ti	汉古郡县名“朱提”（朱提银）规范读 shū shí，clean-dicts.py L1570 已修 geography(w=11) 漏修 history（辞海/中国古今地名大词典(L2/L3)）
 cn_dicts_cell/history.dict.yaml	沙羡	sha xian	汉晋古县名“沙羡”规范读 shā yí，clean-dicts.py L1565 已修 geography(w=0) 漏修 history（辞海/中国古今地名大词典(L2/L3)）
 cn_dicts/base.dict.yaml	朱由校	zhu you xiao	明熹宗“朱由校”规范读 zhū yóu jiào（《明史·礼志五》天启避讳改“较”为证，与弟朱由检合称校检）；history 已有 zhu you jiao(w=42)（辞海/明史·礼志五(L3)）
@@ -1469,7 +1464,6 @@ cn_dicts/ext.dict.yaml	咋的啊	za di a	同上，“咋的”仅读 zǎ de；�
 cn_dicts/ext.dict.yaml	咋的啦	za di la	同上，“咋的”仅读 zǎ de；同文件已有 za de la（现汉第7版(L1)）
 cn_dicts/base.dict.yaml	瞅你咋的	chou ni za di	同上，“咋的”仅读 zǎ de；同文件已有 chou ni za de（现汉第7版(L1)）
 cn_dicts/base.dict.yaml	新关卡	xin guan ka	“关卡”规范读 guān qiǎ（clean-dicts.py L268 已删 base 的“关卡 guan ka”并移入 corrections）；同文件已有 xin guan qia（现汉第7版(L1)）
-cn_dicts/base.dict.yaml	皮肤磨削术	pi fu mo xiao shu	医学/工程复音词“磨削”规范读 mó xuē（clean-dicts.py L231 已修“削骨 -> xue gu”）；medication 已有 pi fu mo xue shu（现汉第7版/全国科技名词委(L1/L2)）
 cn_dicts/base.dict.yaml	杉篙	shan gao	1985 审音表与《现汉》7版规定“杉木/杉篙”读 shā（shā gāo）；同文件已有 sha gao（1985普通话异读词审音表/现汉第7版(L1)）
 cn_dicts/base.dict.yaml	靓妆	liang zhuang	《现汉》7版“靓妆”规范读 jìng zhuāng（liàng 仅用于粤方言“靓女”等）；同文件已有 jing zhuang（现汉第7版(L1)）
 cn_dicts/base.dict.yaml	胳肢窝	ge zhi wo	《现汉》7版“胳肢窝”规范读 gā zhi wō（R2 亦专为此补录 8105“胳 ga”）；同文件已有 ga zhi wo（现汉第7版(L1)）
@@ -2174,7 +2168,6 @@ cn_dicts/base.dict.yaml	他穿着	ta chuan zhuo	动态助词“着”规范读 z
 cn_dicts/base.dict.yaml	你穿着	ni chuan zhuo	动态助词“着”规范读 zhe（上游笛卡尔积误注 zhuo）
 cn_dicts/base.dict.yaml	我穿着	wo chuan zhuo	动态助词“着”规范读 zhe（上游笛卡尔积误注 zhuo）
 cn_dicts/base.dict.yaml	睡着觉	shui zhao jiao	动态助词“着”规范读 zhe（上游误注 zhao）
-cn_dicts/base.dict.yaml	上调至	shang diao zhi	价格/利率“上调至”规范读 shàng tiáo zhì
 cn_dicts/base.dict.yaml	圆熟	yuan shou	现汉第7版复音书面词“圆熟”读 yuán shú（与已删成熟/熟练一致）
 cn_dicts/ext.dict.yaml	变得成熟	bian de cheng shou	现汉第7版复音词“成熟”读 chéng shú（非口语 shóu）
 cn_dicts/ext.dict.yaml	娴熟地	xian shou de	现汉第7版复音词“娴熟”读 xián shú（非口语 shóu）
@@ -2295,7 +2288,6 @@ cn_dicts/base.dict.yaml	如雷灌耳	*	W5 E2错别字成语（正形：如雷贯
 cn_dicts/base.dict.yaml	张惶失措	*	W5 E2错别字成语（正形：张皇失措）
 cn_dicts/base.dict.yaml	合盘托出	*	W5 E2错别字成语（正形：和盘托出）
 cn_dicts/base.dict.yaml	明火执杖	*	W5 E2错别字成语（正形：明火执仗）
-cn_dicts/base.dict.yaml	视如敝履	*	W5 E2错别字成语（正形：视如敝屣）
 cn_dicts/ext.dict.yaml	一片狼籍	*	W5 E2错别字（正形：一片狼藉）
 cn_dicts/ext.dict.yaml	哀声叹气	*	W5 E2错别字成语（正形：唉声叹气）
 cn_dicts/ext.dict.yaml	成群结对	*	W5 E2错别字成语（正形：成群结队）
@@ -2504,7 +2496,6 @@ cn_dicts_cell/food.dict.yaml	盐水鸭亲	*	OCR错字非词
 cn_dicts_cell/food.dict.yaml	薏米膳继	*	OCR乱码非词
 cn_dicts_cell/food.dict.yaml	一品配方	*	OCR错字重复(同文件已有一品酥方)
 cn_dicts_cell/food.dict.yaml	义腿肾鞭	*	OCR错字非词
-cn_dicts_cell/food.dict.yaml	银牙韭菜花	*	W5错字重复(同文件已有银芽韭菜花)
 cn_dicts_cell/food.dict.yaml	油鹏自远方来	*	谐音段子非菜名
 cn_dicts_cell/food.dict.yaml	鱼香芷排	*	错字非词
 cn_dicts_cell/food.dict.yaml	原笼粉蒸	*	尾字截断残片
@@ -2854,9 +2845,7 @@ cn_dicts_cell/idiom.dict.yaml	越俎代疱	*	W5成语错字（正词越俎代庖
 cn_dicts_cell/industry_product.dict.yaml	脱模剂	tuo mo ji	L1实物模具脱模规范读 mú（base 已有 tuo mu ji）
 cn_dicts_cell/industry_product.dict.yaml	纸浆模塑	zhi jiang mo su	L1实物模具模塑规范读 mú（base 已有 zhi jiang mu su）
 cn_dicts_cell/composite.dict.yaml	如嚼鸡肋	ru jue ji lei	L1成语嚼规范读 jiáo（idiom 已有 ru jiao ji lei）
-cn_dicts_cell/composite.dict.yaml	石爪山脉	shi zhao shan mai	统一魔兽地名爪读音为 zhuǎ（game 已有 shi zhua shan mai）
-cn_dicts_cell/composite.dict.yaml	石爪峰	shi zhao feng	统一魔兽地名爪读音为 zhuǎ（game 已有 shi zhua feng）
-cn_dicts_cell/game.dict.yaml	石爪图腾效果	shi zhao tu teng xiao guo	同文件已有规范读音 shi zhua tu teng xiao guo
+cn_dicts_cell/game.dict.yaml	石爪图腾效果	shi zhua tu teng xiao guo	同文件已有规范读音 shi zhao tu teng xiao guo
 cn_dicts_cell/game.dict.yaml	朝阳峰	zhao yang feng	地名朝阳峰规范读 cháo yáng fēng（ext 已有 chao yang feng）
 cn_dicts_cell/game.dict.yaml	农村上网贵进来请准备	*	早期论坛标题党垃圾（同步 idiom 已删规则）
 cn_dicts_cell/composite.dict.yaml	大眼瞪	*	截断噪声残片（同步 ext 已删规则）
@@ -2867,3 +2856,5 @@ cn_dicts_cell/composite.dict.yaml	阿尔巴尼	*	阿尔巴尼亚截断残片（�
 cn_dicts_cell/composite.dict.yaml	八哥犬	*	W5错字正名巴哥犬（同步 animal 已删规则）
 cn_dicts/ext.dict.yaml	明眼人都看的出来	*	W5结构助词得误作的（同文件紧邻已有明眼人都看得出来）
 cn_dicts_cell/composite.dict.yaml	可以看的出来	*	W5结构助词得误作的（ext 已有可以看得出来）
+cn_dicts/base.dict.yaml	纤薄	xian bao	L1书面纤薄规范读 xiān bó（迁入 corrections B类，低于献宝44）
+cn_dicts/corrections.dict.yaml	血脉偾张	xue mai ben zhang	血脉偾张与血脉贲张为独立合法词形(L1)，移除上游错音提示以对齐dual_readings删除

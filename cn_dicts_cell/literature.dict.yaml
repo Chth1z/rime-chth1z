@@ -9207,7 +9207,7 @@ use_preset_vocabulary: false
 高乎视低	gao hu shi di	0
 高怀见物理	gao huai jian wu li	0
 高节人相重	gao jie ren xiang zhong	0
-高句骊	gao ju li	8
+高句骊	gao gou li	8
 高楼风雨感斯文	gao lou feng yu gan si wen	0
 高论怨诽	gao lun yuan fei	0
 高明逼神恶	gao ming bi shen e	0
@@ -18327,7 +18327,7 @@ use_preset_vocabulary: false
 亦足以发	yi zu yi fa	3
 忆醉	yi zui	0
 一醉累月轻王侯	yi zui lei yue qing wang hou	7
-一尊还酹江月	yi zun hai lei jiang yue	23
+一尊还酹江月	yi zun huan lei jiang yue	23
 以佐五谷	yi zuo wu gu	0
 因步其韵奉和	yin bu qi yun feng he	0
 因不失其亲	yin bu shi qi qin	4
@@ -20380,7 +20380,7 @@ use_preset_vocabulary: false
 奔而殿	ben er dian	0
 必变	bi bian	12
 必察焉	bi cha yan	0
-裨谌草创之	bi chen cao chuang zhi	0
+裨谌草创之	pi chen cao chuang zhi	0
 必畜之	bi chu zhi	1
 鄙夫可与事君也与哉	bi fu ke yu shi jun ye yu zai	0
 必复命曰	bi fu ming yue	0
@@ -25656,7 +25656,7 @@ use_preset_vocabulary: false
 将比今之诸侯而诛之乎	jiang bi jin zhi zhu hou er zhu zhi hu	0
 将虫响悲于前听	jiang chong xiang bei yu qian ting	0
 将贷子三百金	jiang dai zi san bai jin	0
-将恶乎托业以及此言邪	jiang wu hu tuo ye yi ji ci yan xie	0
+将恶乎托业以及此言邪	jiang wu hu tuo ye yi ji ci yan ye	0
 将反于宗	jiang fan yu zong	1
 将复取而盛以箧衍	jiang fu qu er sheng yi qie yan	0
 将赴吴兴登乐游原	jiang fu wu xing deng le you yuan	1
@@ -27144,9 +27144,9 @@ use_preset_vocabulary: false
 女必像汝	nv bi xiang ru	1
 女殆著乎吾所以著也	nv dai zhu hu wu suo yi zhu ye	0
 女独不欲	nv du bu yu	0
-女恶知贵贱之门	nv wu zhi gui jian zhi men	0
-女恶之乎	nv wu zhi hu	0
-女将恶乎比予哉	nv jiang wu hu bi yu zai	0
+女恶知贵贱之门	ru wu zhi gui jian zhi men	0
+女恶之乎	ru wu zhi hu	0
+女将恶乎比予哉	ru jiang wu hu bi yu zai	0
 女色难自夸	nv se nan zi kua	0
 女神将守形	nv shen jiang shou xing	0
 女亡人哉	nv wang ren zai	0
@@ -29679,7 +29679,7 @@ use_preset_vocabulary: false
 宋有荆氏者	song you jing shi zhe	0
 宋元君将画图	song yuan jun jiang hua tu	0
 宋元君闻之	song yuan jun wen zhi	0
-宋元君夜半而梦人被发窥阿门	song yuan jun ye ban er meng ren pi fa kui a men	0
+宋元君夜半而梦人被发窥阿门	song yuan jun ye ban er meng ren pi fa kui e men	0
 叟何人邪	sou he ren xie	0
 叟何为此	sou he wei ci	0
 搜于国中三日三夜	sou yu guo zhong san ri san ye	1
@@ -31232,7 +31232,7 @@ use_preset_vocabulary: false
 夕贬潮阳路八千	xi bian chao yang lu ba qian	1
 晞不解衣	xi bu jie yi	0
 奚不去也	xi bu qu ye	0
-西出都门百余里	xi chu dou men bai yu li	0
+西出都门百余里	xi chu du men bai yu li	0
 晞出见太尉	xi chu jian tai wei	0
 戏答元珍	xi da yuan zhen	1
 细大之不可为倪	xi da zhi bu ke wei ni	0
@@ -33365,7 +33365,7 @@ use_preset_vocabulary: false
 则苟生有轩冕之尊	ze gou sheng you xuan mian zhi zun	0
 则故而已矣	ze gu er yi yi	0
 则寡取之	ze gua qu zhi	0
-则寡人恶乎属国而可	ze gua ren wu hu shu guo er ke	0
+则寡人恶乎属国而可	ze gua ren wu hu zhu guo er ke	0
 则盍反其本矣	ze he fan qi ben yi	1
 则何惧之有	ze he ju zhi you	0
 则何辱之有	ze he ru zhi you	0
@@ -33409,7 +33409,7 @@ use_preset_vocabulary: false
 则列士坏植散群	ze lie shi huai zhi san qun	0
 则邻国之民	ze lin guo zhi min	0
 则六凿相攘	ze liu zao xiang rang	0
-则美恶有间矣	ze mei wu you jian yi	0
+则美恶有间矣	ze mei e you jian yi	0
 则苗槁矣	ze miao gao yi	0
 则苗然兴之矣	ze miao ran xing zhi yi	0
 则莫若以明	ze mo ruo yi ming	0
@@ -34356,7 +34356,7 @@ use_preset_vocabulary: false
 卒之于惑	zu zhi yu huo	0
 钻穴隙相窥	zuan xue xi xiang kui	1
 罪不容于死	zui bu rong yu si	0
-罪从大辟皆除死	zui cong da bi jie chu si	0
+罪从大辟皆除死	zui cong da pi jie chu si	0
 罪且及副元师	zui qie ji fu yuan shi	0
 罪人不孥	zui ren bu nu	0
 最是不胜清怨月明中	zui shi bu sheng qing yuan yue ming zhong	3
@@ -35296,7 +35296,7 @@ use_preset_vocabulary: false
 女闻地籁而未闻天籁夫	ru wen di lai er wei wen tian lai fu	70
 作则万窍怒呺	zuo ze wan qiao nu hao	70
 而独不闻之翏翏乎	er du bu wen zhi liu liu hu	70
-前者唱于而随者唱喁	qian zhe chang yu er sui zhe chang yong	70
+前者唱于而随者唱喁	qian zhe chang yu er sui zhe chang yu	70
 怒者其谁邪	nu zhe qi shui ye	70
 乐出虚	yue chu xu	70
 蒸成菌	zheng cheng jun	70

@@ -245,7 +245,7 @@ use_preset_vocabulary: false
 白环俞	bai huan shu	0
 败火草	bai huo cao	0
 白芨	bai ji	20
-白及	bai ji	120
+白及	bai ji	25
 白及粉	bai ji fen	0
 白鸡屎藤	bai ji shi teng	0
 白鸡肫	bai ji zhun	0
@@ -7291,7 +7291,7 @@ use_preset_vocabulary: false
 鸡冠花炭	ji guan hua tan	0
 鸡冠苗	ji guan miao	0
 激光毛发移植	ji guang mao fa yi zhi	0
-激光皮肤磨削术	ji guang pi fu mo xue shu	0
+激光皮肤磨削术	ji guang pi fu mo xiao shu	0
 激光切割手术	ji guang qie ge shou shu	0
 激光扫描共焦显微镜	ji guang sao miao gong jiao xian wei jing	0
 激光伤	ji guang shang	0
@@ -7383,7 +7383,7 @@ use_preset_vocabulary: false
 机能性幻觉	ji neng xing huan jue	0
 肌能修整	ji neng xiu zheng	0
 机能主义	ji neng zhu yi	8
-荠苨	ji ni	0
+荠苨	qi ni	0
 荠薴	ji ning	0
 奇偶问题学习	ji ou wen ti xue xi	0
 肌皮瓣	ji pi ban	0
@@ -12240,7 +12240,6 @@ use_preset_vocabulary: false
 皮肤淋巴细胞浸润症	pi fu lin ba xi bao jin run zheng	0
 皮肤淋巴细胞瘤	pi fu lin ba xi bao liu	0
 皮肤毛细血管瘤	pi fu mao xi xue guan liu	0
-皮肤磨削术	pi fu mo xue shu	2
 皮肤脑脊	pi fu nao ji	0
 皮肤尿流改道术	pi fu niao liu gai dao shu	0
 皮肤平滑肌瘤	pi fu ping hua ji liu	0
@@ -14698,7 +14697,7 @@ use_preset_vocabulary: false
 蛇胆陈皮散	she dan chen pi san	0
 蛇胆川贝枇杷膏	she dan chuan bei pi pa gao	0
 舌淡苔白	she dan tai bai	17
-舌淡苔薄白	she dan tai bo bai	2
+舌淡苔薄白	she dan tai bao bai	2
 蛇地钱	she di qian	0
 蛇毒内攻证	she du nei gong zheng	0
 蛇毒上攻证	she du shang gong zheng	0
@@ -17792,7 +17791,7 @@ use_preset_vocabulary: false
 胃家实	wei jia shi	0
 未接触抗原者	wei jie chu kang yuan zhe	0
 胃津	wei jin	2
-微晶皮肤磨削术	wei jing pi fu mo xue shu	0
+微晶皮肤磨削术	wei jing pi fu mo xiao shu	0
 苇茎汤	wei jing tang	2
 苇茎汤方出干金	wei jing tang fang chu gan jin	0
 微晶学说	wei jing xue shuo	0
@@ -18057,7 +18056,7 @@ use_preset_vocabulary: false
 窝痈病	wo yong bing	0
 窝状角质松解症	wo zhuang jiao zhi song jie zheng	0
 五瓣成形术	wu ban cheng xing shu	0
-无瘢痕皮肤磨削术	wu ban hen pi fu mo xue shu	0
+无瘢痕皮肤磨削术	wu ban hen pi fu mo xiao shu	0
 五瓣寄生	wu ban ji sheng	0
 无孢子生殖	wu bao zi sheng zhi	0
 五倍子苗	wu bei zi miao	0
@@ -26095,7 +26094,7 @@ use_preset_vocabulary: false
 厌氧菌鉴定卡	yan yang jun jian ding ka	0
 眼用灌注液	yan yong guan zhu ye	0
 眼用填充气体	yan yong tian chong qi ti	0
-眼用粘弹剂	yan yong zhan tan ji	0
+眼用粘弹剂	yan yong nian tan ji	0
 岩藻糖苷酶	yan zao tang gan mei	2
 岩澡糖苷酶	yan zao tang gan mei	0
 岩澡糖苷酶试剂盒	yan zao tang gan mei shi ji he	0
@@ -30786,7 +30785,7 @@ use_preset_vocabulary: false
 超氧物歧化酶	chao yang wu qi hua mei	0
 超诱导	chao you dao	0
 超阈值	chao yu zhi	2
-呫吨羧酸	tie dun suo suan	0
+呫吨羧酸	zhan dun suo suan	0
 车前二糖	che qian er tang	0
 车前番泻	che qian fan xie	0
 车前番泻复合颗粒	che qian fan xie fu he ke li	0
@@ -63186,7 +63185,7 @@ use_preset_vocabulary: false
 柘木糖浆	zhe mu tang jiang	0
 着生	zhe sheng	19
 蔗糖铁注射液	zhe tang tie zhu she ye	0
-折皱菌素	zhe zhou jun su	0
+褶皱菌素	zhe zhou jun su	0
 珍棒	zhen bang	0
 珍宝解毒胶囊	zhen bao jie du jiao nang	0
 珍宝丸	zhen bao wan	0
@@ -76562,8 +76561,8 @@ use_preset_vocabulary: false
 氨甲酰丝氨酸脱胺酶	an jia xian si an suan tuo an mei	0
 氨甲酰天冬氨酸钙	an jia xian tian dong an suan gai	0
 安坤片薄膜衣	an kun pian bo mo yi	0
-氨来呫诺	an lai tie nuo	0
-氨来呫诺糊剂	an lai tie nuo hu ji	0
+氨来呫诺	an lai zhan nuo	0
+氨来呫诺糊剂	an lai zhan nuo hu ji	0
 氨酪酸片糖衣	an lao suan pian tang yi	0
 氨酪酸调节剂	an lao suan tiao jie ji	0
 安乐片糖衣	an le pian tang yi	0
@@ -83811,7 +83810,7 @@ use_preset_vocabulary: false
 腭帆缩短术	e fan suo duan shu	0
 鹅膏毒碱	e gao du jian	0
 腭弓成形术	e gong cheng xing shu	0
-额骨部分磨削术	e gu bu fen mo xue shu	0
+额骨部分磨削术	e gu bu fen mo xiao shu	0
 额骨恶性肿瘤	e gu e xing zhong liu	0
 腭骨骨折	e gu gu zhe	0
 额骨骨折	e gu gu zhe	1
@@ -101311,7 +101310,7 @@ use_preset_vocabulary: false
 面部裂伤	mian bu lie shang	0
 面部毛细血管扩张	mian bu mao xi xue guan kuo zhang	0
 面部模型制备	mian bu mo xing zhi bei	0
-面部磨削术	mian bu mo xue shu	0
+面部磨削术	mian bu mo xiao shu	0
 面部脓皮病	mian bu nong pi bing	0
 面部脓肿引流术	mian bu nong zhong yin liu shu	0
 面部皮肤挫伤	mian bu pi fu cuo shang	0
@@ -103252,7 +103251,7 @@ use_preset_vocabulary: false
 脾肺固定术	pi fei gu ding shu	0
 皮肤巴尔通体病	pi fu ba er tong ti bing	0
 皮肤疤痕磨除	pi fu ba hen mo chu	0
-皮肤疤痕磨削术	pi fu ba hen mo xue shu	0
+皮肤疤痕磨削术	pi fu ba hen mo xiao shu	0
 皮肤瘢痕切除术	pi fu ban hen qie chu shu	0
 皮肤瘢痕子宫内膜异位	pi fu ban hen zi gong nei mo yi wei	0
 皮肤病恐怖	pi fu bing kong bu	0
@@ -111365,7 +111364,7 @@ use_preset_vocabulary: false
 下颌颈联合根治术	xia he jing lian he gen zhi shu	0
 下颌开窗引流术	xia he kai chuang yin liu shu	0
 下颌隆突区	xia he long tu qu	0
-下颌磨削术	xia he mo xue shu	0
+下颌磨削术	xia he mo xiao shu	0
 下颌磨牙后垫区	xia he mo ya hou dian qu	0
 下颌前庭沟过浅	xia he qian ting gou guo qian	0
 下颌前庭加深术	xia he qian ting jia shen shu	0
@@ -118124,7 +118123,7 @@ use_preset_vocabulary: false
 跖筋膜松解术	zhi jin mo song jie shu	0
 跖筋膜松解术切断术	zhi jin mo song jie shu qie duan shu	0
 跖筋膜纤维瘤病	zhi jin mo xian wei liu bing	0
-跖筋膜炎	zhi jin mo yan	0
+跖筋膜炎	zhi jin mo yan	10
 治近宁眼药水	zhi jin ning yan yao shui	0
 指浸润性纤维瘤	zhi jin run xing xian wei liu	0
 知觉迟钝	zhi jue chi dun	2
@@ -123377,7 +123376,7 @@ use_preset_vocabulary: false
 石蛭螫人	shi zhi shi ren	0
 石竹根	shi zhu gen	0
 石竹子	shi zhu zi	0
-石子荠苨汤	shi zi ji ni tang	0
+石子荠苨汤	shi zi qi ni tang	0
 史子仁	shi zi ren	0
 衰者补之	shuai zhe bu zhi	0
 衰之以属	shuai zhi yi shu	0
@@ -126153,3 +126152,6 @@ use_preset_vocabulary: false
 闭合不全	bi he bu quan	13
 鼻中隔弯曲	bi zhong ge wan qu	7
 杜鹃花酸	du juan hua suan	6
+眼用黏弹剂	yan yong nian tan ji	10
+跖屈	zhe qu	32
+跖筋膜炎	zhe jin mo yan	10

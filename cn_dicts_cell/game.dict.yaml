@@ -43835,7 +43835,7 @@ use_preset_vocabulary: false
 欧玛利的仪器	ou ma li de yi qi	0
 欧麦尼	ou mai ni	0
 欧麦尼外套	ou mai ni wai tao	0
-欧米伽符文	ou mi jia fu wen	0
+欧米伽符文	ou mi ga fu wen	0
 欧莫克	ou mo ke	0
 欧莫克大王	ou mo ke da wang	2
 欧莫克的瘦身腰带	ou mo ke de shou shen yao dai	0
@@ -49468,16 +49468,15 @@ use_preset_vocabulary: false
 石铸巨剑	shi zhu ju jian	0
 石柱群	shi zhu qun	5
 石抓峰	shi zhua feng	0
-石爪峰	shi zhua feng	3
-石爪昏迷	shi zhua hun mi	0
-石爪山	shi zhua shan	8
-石爪山脉	shi zhua shan mai	5
-石爪苔液	shi zhua tai ye	0
-石爪图腾	shi zhua tu teng	0
-石爪图腾雕文	shi zhua tu teng diao wen	0
-石爪图腾效果	shi zhua tu teng xiao guo	0
+石爪峰	shi zhao feng	3
+石爪昏迷	shi zhao hun mi	0
+石爪山	shi zhao shan	8
+石爪山脉	shi zhao shan mai	5
+石爪苔液	shi zhao tai ye	0
+石爪图腾	shi zhao tu teng	0
+石爪图腾雕文	shi zhao tu teng diao wen	0
 石抓小径	shi zhua xiao jing	0
-石爪小径	shi zhua xiao jing	0
+石爪小径	shi zhao xiao jing	0
 十字军宝珠	shi zi jun bao zhu	0
 十字军臂甲	shi zi jun bi jia	0
 十字军长弓	shi zi jun chang gong	0
@@ -91690,6 +91689,7 @@ use_preset_vocabulary: false
 拾遗竞技场	shi yi jing ji chang	0
 拾遗老妖	shi yi lao yao	0
 实战练武场	shi zhan lian wu chang	0
+石爪图腾效果	shi zhao tu teng xiao guo	0
 狮子搏兔卷八	shi zi bo tu juan ba	0
 狮子搏兔卷二	shi zi bo tu juan er	0
 狮子搏兔卷六	shi zi bo tu juan liu	0
@@ -123997,7 +123997,7 @@ use_preset_vocabulary: false
 米亚尔加	mi ya er jia	0
 米亚基	mi ya ji	0
 米兹罗	mi zi luo	0
-缪宁	miao ning	2
+缪宁	miu ning	2
 莫比忒	mo bi tei	0
 莫茨	mo ci	21
 摩登赫斯	mo deng he si	0

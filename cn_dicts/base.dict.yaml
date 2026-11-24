@@ -48771,7 +48771,7 @@ sort: by_weight
 大鹏展翅	da peng zhan chi	31
 大批	da pi	3228
 大皮	da pi	4
-大辟	da bi	18
+大辟	da pi	18
 大劈叉	da pi cha	9
 打屁虫	da pi chong	1
 大屁股	da pi gu	216
@@ -103557,7 +103557,7 @@ sort: by_weight
 海中	hai zhong	580
 海中月	hai zhong yue	2
 海州	hai zhou	28
-解州	hai zhou	32
+解州	hai zhou	20
 解州关帝庙	hai zhou guan di miao	4
 海州区	hai zhou qu	2
 还住	hai zhu	31
@@ -170153,7 +170153,7 @@ sort: by_weight
 漏点	lou dian	105
 # 楼店	lou dian	0
 漏电保护	lou dian bao hu	37
-露点写真	lu dian xie zhen	2
+露点写真	lou dian xie zhen	2
 漏掉	lou diao	740
 楼顶	lou ding	866
 楼顶上	lou ding shang	93
@@ -176935,7 +176935,7 @@ sort: by_weight
 美称	mei cheng	169
 梅城	mei cheng	20
 煤城	mei cheng	3
-枚乘	mei sheng	22
+枚乘	mei cheng	22
 没成交	mei cheng jiao	24
 没撑住	mei cheng zhu	23
 没吃	mei chi	480
@@ -196759,7 +196759,7 @@ sort: by_weight
 抛投	pao tou	245
 泡透	pao tou	10
 抛头颅	pao tou lu	27
-抛头露面	pao tou lou mian	208
+抛头露面	pao tou lu mian	208
 刨土	pao tu	26
 跑团	pao tuan	556
 炮团	pao tuan	7
@@ -198133,6 +198133,7 @@ sort: by_weight
 皮肤科用药	pi fu ke yong yao	1
 皮肤溃疡	pi fu kui yang	20
 皮肤敏感	pi fu min gan	78
+皮肤磨削术	pi fu mo xiao shu	2
 皮肤黏膜	pi fu nian mo	44
 皮肤瘙痒	pi fu sao yang	120
 皮肤色素	pi fu se su	5
@@ -226192,6 +226193,7 @@ sort: by_weight
 商调	shang diao	19
 上调到	shang diao dao	10
 上吊了	shang diao le	50
+上调至	shang diao zhi	10
 上调了	shang diao le	10
 上吊自杀	shang diao zi sha	158
 商定	shang ding	237
@@ -237582,6 +237584,7 @@ sort: by_weight
 食肉类	shi rou lei	22
 驶入	shi ru	250
 视如	shi ru	28
+视如敝履	shi ru bi lv	2
 事如春梦了无痕	shi ru chun meng liao wu hen	9
 是如此	shi ru ci	2126
 视如儿戏	shi ru er xi	1
@@ -275382,7 +275385,7 @@ sort: by_weight
 为时未晚	wei shi wei wan	41
 为实现	wei shi xian	283
 未实现	wei shi xian	96
-尉氏县	yu shi xian	2
+尉氏县	wei shi xian	2
 为事业	wei shi ye	45
 为时已晚	wei shi yi wan	394
 为适应	wei shi ying	105
@@ -289240,7 +289243,6 @@ sort: by_weight
 县办	xian ban	6
 线报	xian bao	115
 先报	xian bao	98
-纤薄	xian bao	50
 献宝	xian bao	44
 宪报	xian bao	3
 先抱	xian bao	8
@@ -297787,7 +297789,7 @@ sort: by_weight
 谢灵运	xie ling yun	102
 泄流	xie liu	3
 蟹柳	xie liu	24
-血流	xie liu	100
+血流	xie liu	15
 蟹六跪而二螯	xie liu gui er er ao	7
 泄露	xie lou	2499
 泄漏	xie lou	841
@@ -297963,7 +297965,7 @@ sort: by_weight
 写数据	xie shu ju	50
 写书评	xie shu ping	111
 鞋刷	xie shua	17
-血水	xie shui	100
+血水	xie shui	25
 泄水	xie shui	33
 协税	xie shui	4
 泄水孔	xie shui kong	3
@@ -322918,7 +322920,7 @@ sort: by_weight
 一醉解千愁	yi zui jie qian chou	6
 以最快	yi zui kuai	30
 一尊	yi zun	308
-一樽还酹江月	yi zun hai lei jiang yue	14
+一樽还酹江月	yi zun huan lei jiang yue	14
 一尊尊	yi zun zun	12
 一座	yi zuo	5274
 以作	yi zuo	192
@@ -355999,7 +356001,7 @@ sort: by_weight
 志同	zhi tong	12
 制桶	zhi tong	11
 稚童	zhi tong	21
-跖痛	zhi tong	0
+跖痛	zhi tong	10
 # 智通	zhi tong	0
 直通车	zhi tong che	2321
 志同道合	zhi tong dao he	1132
@@ -373754,6 +373756,7 @@ sort: by_weight
 浙财	zhe cai	555
 盒马	he ma	320
 人能	ren neng	1753
+般地	ban de	150
 投顾	tou gu	334
 天刀	tian dao	522
 财管	cai guan	589
@@ -376574,7 +376577,7 @@ sort: by_weight
 沱江	tuo jiang	60
 长汀	chang ting	50
 长乐	chang le	80
-尉氏	yu shi	30
+尉氏	wei shi	30
 大城县	dai cheng xian	25
 郫都	pi du	40
 黟县	yi xian	30
@@ -376596,7 +376599,6 @@ sort: by_weight
 鼻塞	bi sai	250
 雪佛兰	xue fu lan	150
 说服	shui fu	200
-比萨	pi sa	180
 槟榔	bin lang	150
 混淆	hun yao	150
 阿弥陀佛	a mi tuo fo	100
@@ -376715,3 +376717,15 @@ sort: by_weight
 弱密钥	ruo mi yue	2
 数据加密密钥	shu ju jia mi mi yue	6
 主密钥	zhu mi yue	13
+地被	di bei	15
+铣削	xian xiao	10
+铣刀	xian dao	16
+伽马刀	jia ma dao	32
+伽马校正	jia ma jiao zheng	4
+注塑模具	zhu su mo ju	12
+冲压模具	chong ya mo ju	18
+跖趾关节	zhe zhi guan jie	34
+跖骨骨折	zhe gu gu zhe	6
+跖疣	zhe you	16
+跖痛	zhe tong	10
+给水	gei shui	100

@@ -69,6 +69,8 @@ DISABLED_UPSTREAM_DICTS: set[str] = {
 ALLOW_A_CLASS_HIGH_W2: set[tuple[str, str]] = {
     ("公钥", "gong yao"),
     ("密钥", "mi yao"),
+    ("介壳虫", "jie ke chong"),
+    ("卡死", "ka si"),
 }
 
 # Genuine cross-domain homographs whose readings legitimately differ across active CN dicts
@@ -82,6 +84,7 @@ CROSS_DICT_HOMOGRAPH_ALLOWLIST: frozenset[str] = frozenset({
     "千石",                          # base (1000 dan salary) vs name2 (Japanese surname Sengoku shi)
     "乐友",                          # base (music lover yue) vs medication (brand/term le)
     "正角",                          # base (opera lead role jue) vs shulihua (positive angle jiao)
+    "阳夏",                          # geography (Qin/Han county yang jia) vs history (1911 Battle of Yangxia yang xia)
 })
 
 _split_header_body = dict_common.split_header_body_with_lineno
