@@ -4,7 +4,7 @@
 
 仓库包含两部分内容：
 
-1. **可复现的声明式词库清洗与治理层**：以 [gaboolic/rime-frost（白霜拼音）](https://github.com/gaboolic/rime-frost) 为上游基座，通过 `rules/` 声明式规则库（10,182 条规则）、确定性清洗引擎 `scripts/clean-dicts.py` 与静态门禁 `scripts/dict_lint.py`，对中文核心词库、22 份活跃细胞词库、英文词库、7 种拼音布局中英混输词表及 OpenCC 文本词表执行幂等清洗、审音校对、词形规范、双读音建档与同音碰撞校验。
+1. **可复现的声明式词库清洗与治理层**：以 [gaboolic/rime-frost（白霜拼音）](https://github.com/gaboolic/rime-frost) 为上游基座，通过 `rules/` 声明式规则库（10,183 条规则）、确定性清洗引擎 `scripts/clean-dicts.py` 与静态门禁 `scripts/dict_lint.py`，对中文核心词库、22 份活跃细胞词库、英文词库、7 种拼音布局中英混输词表及 OpenCC 文本词表执行幂等清洗、审音校对、词形规范、双读音建档与同音碰撞校验。
 2. **个人日常输入方案与运行时配置**：内置自然码双拼与全拼两套完整方案（`melt_eng` 并行支持两套数字与符号中文谐音派生，默认自然码双拼优先，可通过 `-PrimaryLayout full` 切换全拼优先），搭配万象语法模型、可选端侧神经整句重排（[Chth1z/rime-neural](https://github.com/Chth1z/rime-neural)）及台湾繁体双出滤镜（首选 `s2twp` 台湾用法，存在词汇差异时次选 `s2tw` 台湾正体保留原词；全局记忆上次切换状态，`Claude` 桌面端默认臺繁，其余应用默认简中）。
 
 > 方案键位、外观与 `app_options` 按个人习惯定制；词库文件、`rules/` 声明式规则、清洗与门禁脚本及治理规范 [docs/DICTIONARY_SPEC.md](docs/DICTIONARY_SPEC.md) 可独立参考或复用。如需通用上游方案或独立神经重排插件，可直接使用 [gaboolic/rime-frost](https://github.com/gaboolic/rime-frost) 或 [Chth1z/rime-neural](https://github.com/Chth1z/rime-neural)。
@@ -41,11 +41,11 @@ powershell -ExecutionPolicy Bypass -File $s -InstallWeasel -NeuralModel pumpkin 
 
 | 治理维度 | 规则文件 | 当前规模 | 主要内容 |
 | :--- | :--- | :---: | :--- |
-| **双读音双注释（A 类）** | `rules/dual_readings.tsv` | `158` 组 | 行业防混淆异读（如 `镀铬`、`淬火`、`跖骨`、`格栅`、`曝气`）、临床/药典双轨、2016 审音拟与两岸/旧读并存词；单点声明并同步生成主库双音与 `corrections.dict.yaml` 零权双向对照注释 |
-| **错音与错字纠偏（B/C 类）** | `rules/corrections.tsv` | `931` 条 | 高频多音误读、生僻字/地名/人名/成语易错音与错字触发项（`corrections.dict.yaml` 活跃词条共 `1,247` 条），排除 D 类识字硬伤与模糊音，严控权重低于同音高频正词 |
-| **审音校对** | `rules/phonetics_fix.tsv` | `2,513` 条 | 修正 `8105`、核心词库与细胞词库中的确定性多音误注（如背俞穴、自动注音切分失误、古诗文与专名错音） |
-| **词形规范** | `rules/word_fixes.tsv` | `735` 条 | 统一官方淘汰异形词（W3）、错别字与混入的非规范繁日异体字（保留合法语义分工词 W1 与规范并存词 W2） |
-| **精确清理** | `rules/deletions.tsv` | `2,871` 条 | 清除已核实错别字（W5）、垃圾词条与冗余错音克隆；配合清洗脚本同步清理细胞词库中的非领域抓取块（POI、广告、模板尾块等约 17.1 万条）及 2.4 万条重复项 |
+| **双读音双注释（A 类）** | `rules/dual_readings.tsv` | `159` 组 | 行业防混淆异读（如 `镀铬`、`淬火`、`跖骨`、`格栅`、`曝气`）、临床/药典双轨、2016 审音拟与两岸/旧读并存词；单点声明并同步生成主库双音与 `corrections.dict.yaml` 零权双向对照注释 |
+| **错音与错字纠偏（B/C 类）** | `rules/corrections.tsv` | `933` 条 | 高频多音误读、生僻字/地名/人名/成语易错音与错字触发项（`corrections.dict.yaml` 活跃词条共 `1,251` 条），排除 D 类识字硬伤与模糊音，严控权重低于同音高频正词 |
+| **审音校对** | `rules/phonetics_fix.tsv` | `2,516` 条 | 修正 `8105`、核心词库与细胞词库中的确定性多音误注（如背俞穴、自动注音切分失误、古诗文与专名错音） |
+| **词形规范** | `rules/word_fixes.tsv` | `734` 条 | 统一官方淘汰异形词（W3）、错别字与混入的非规范繁日异体字（保留合法语义分工词 W1 与规范并存词 W2） |
+| **精确清理** | `rules/deletions.tsv` | `2,867` 条 | 清除已核实错别字（W5）、垃圾词条与冗余错音克隆；配合清洗脚本同步清理细胞词库中的非领域抓取块（POI、广告、模板尾块等约 17.1 万条）及 2.4 万条重复项 |
 | **权重校准** | `rules/weights.tsv` | `1,246` 条 | 校准 `8105` 主音排序、翻转 W2 规范词形倒挂、限制专名/细胞词抢占通用词；对 `.gram` 语法路径高频词采用温和降权保护 |
 | **词条补录** | `rules/additions.tsv` | `628` 条 | 补齐 `8105` 规范缺失多音及常用现代通用词、城市地名与多义项读音 |
 | **英文、中英混输与字母数字** | `rules/en_{additions,fixes}.tsv`、`cn_en_source.tsv`、`alphanum_additions.txt` | `793` 条 | 维护 `en_ext` 现代开发/AI/硬件与符号/数字词表、清理 `en` 错词并去重；通过 `scripts/build_cn_en.py` 从单一源同步生成全部 7 种拼音布局的 `en_dicts/cn_en*.txt`（各 `1,113` 条） |
@@ -54,7 +54,7 @@ powershell -ExecutionPolicy Bypass -File $s -InstallWeasel -NeuralModel pumpkin 
 ### 自动化校验与四级门禁
 
 - **静态门禁与幂等校验（`scripts/dict_lint.py`、`tests/test_dict_pipeline.py`）**：强制校验 5 项零容忍不变量（非法音节、字音长度失配、残留 `lue/nue`、单文件重复、26 份活跃中文词库跨文件重复均为 `0`），同时校验 YAML 语法与去重、严格无 BOM UTF-8、`rime_frost.dict.yaml` 活跃词表顺序一致性、`rules/` 零冲突、跨词库同词异读检查、A/B/C 类同音碰撞安全边界、`translator/spelling_hints >= corrections` 最大音节数、`symbols_v.yaml` 正则可达性与去重、`melt_eng` 双拼/全拼派生对等与符号/非 ASCII 防劫持约束、`cn_en` 7 布局一致性及内存态二次清洗 SHA-256 零差异；配套 `tests/test_dict_pipeline.py`（18 项单元测试）覆盖音节双射、冲突守卫与负面缺陷注入门禁。
-- **引擎部署与确定性回归（`bench/accuracy-test.ps1`、`bench/audit-surface.ps1`）**：通过父子进程隔离沙箱调用本机 `rime.dll`（进程退出后自动释放句柄并零残留清理 `%TEMP%`），执行 `329` 项大小写敏感确定性回归断言，并配套全表面运行时巡检脚本 `bench/audit-surface.ps1`（覆盖双拼/全拼全量 1,247 条纠错注释挂载、395 条符号键、全部置顶键、高频中英反劫持及 Lua 边界模糊测试）。
+- **引擎部署与确定性回归（`bench/accuracy-test.ps1`、`bench/audit-surface.ps1`）**：通过父子进程隔离沙箱调用本机 `rime.dll`（进程退出后自动释放句柄并零残留清理 `%TEMP%`），执行 `329` 项大小写敏感确定性回归断言，并配套全表面运行时巡检脚本 `bench/audit-surface.ps1`（覆盖双拼/全拼全量 1,251 条纠错注释挂载、395 条符号键、全部置顶键、高频中英反劫持及 Lua 边界模糊测试）。
 - **盲测防退化监控（`bench/eval-accuracy.py`）**：参考 [gaboolic/rime-schema-compare](https://github.com/gaboolic/rime-schema-compare) 公开语料与同义归一化口径，在双拼/全拼 × 纯统计/神经重排四组模式下执行 A/B 对比，防止调权或删词引发整句准确率退化。
 
 ### 词库与规则复用方式
@@ -76,8 +76,8 @@ python scripts/build_cn_en.py
 
 ## 目录说明
 
-- `cn_dicts/`、`cn_dicts_cell/`、`en_dicts/`、`opencc/`：同步自白霜上游并经 `scripts/clean-dicts.py` 清洗校准的词库与 OpenCC 词表（当前 27 份活跃中文词库共 `1,658,629` 条，含 `corrections.dict.yaml` `1,247` 条）
-- `rules/`：词库审音、双读音、纠错、权重、词形修正、英文、中英混输与 OpenCC 修复的声明式规则单一事实源（SSOT，共 `10,182` 条）
+- `cn_dicts/`、`cn_dicts_cell/`、`en_dicts/`、`opencc/`：同步自白霜上游并经 `scripts/clean-dicts.py` 清洗校准的词库与 OpenCC 词表（当前 27 份活跃中文词库共 `1,658,636` 条，含 `corrections.dict.yaml` `1,251` 条）
+- `rules/`：词库审音、双读音、纠错、权重、词形修正、英文、中英混输与 OpenCC 修复的声明式规则单一事实源（SSOT，共 `10,183` 条）
 - `lua/`：6 个自用脚本——单遍合并管线（`chth1z_pipeline_filter.lua`，按活跃分段执行大小写与英文降权并保护驼峰品牌词）、台湾繁体双出滤镜（`tw_dual_filter.lua`，通过 `tags_match` 精确作用域过滤，支持单字一简对多繁展开与拆字简形透传）以及日期（UCRT `%z` 时区安全）、农历、纯 Lua 递归下降解析计算器（支持常见数学函数与溢出保护）、以词定字脚本；神经重排脚本 `rime_neural.lua` 与原生 DLL 由 `Chth1z/rime-neural` 发行包管理
 - `profiles/`：`rime.lua`（Lua 5.4 GC 参数）及预留的本机临时覆盖文件 `*.custom.yaml`
 - `themes/`：小狼毫外观配置（`apple_graphite_dark`，含 `claude.exe` / `claude-desktop.exe` `app_options` 臺繁设定）
