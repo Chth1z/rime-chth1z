@@ -2518,3 +2518,6 @@ cn_dicts_cell/game.dict.yaml	石爪图腾	shi zhua tu teng	shi zhao tu teng	书�
 cn_dicts_cell/game.dict.yaml	石爪图腾雕文	shi zhua tu teng diao wen	shi zhao tu teng diao wen	书面/专名石爪规范读 shí zhǎo（与龙爪手/强化石爪图腾/碎石爪统一）	现汉第7版(L1)
 cn_dicts_cell/game.dict.yaml	石爪小径	shi zhua xiao jing	shi zhao xiao jing	书面/专名石爪规范读 shí zhǎo（与龙爪手/强化石爪图腾/碎石爪统一）	现汉第7版(L1)
 cn_dicts_cell/name2.dict.yaml	长满苔藓的石爪	zhang man tai xian de shi zhua	zhang man tai xian de shi zhao	书面/专名石爪规范读 shí zhǎo（与龙爪手/强化石爪图腾/碎石爪统一）	现汉第7版(L1)
+# --- Batch 2: others.dict.yaml & proactive upstream PR #426-#440 guards ---
+cn_dicts/others.dict.yaml	梦差	meng cha	meng chai	《影之刃零》专名(Herald of the Veil)差役义读chāi（同鬼差/差使）	影之刃零官方/现汉第7版(L1/L3)
+cn_dicts/others.dict.yaml	帖勒瑞	tie lei rui	tie le rui	外语音译“勒”规范读lè(Teleri)，非lēi（前置拦截上游PR #436）	现汉第7版/L3专名

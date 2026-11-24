@@ -178,3 +178,5 @@
 跖痛	zhi tong	10	规范 zhí tòng / 行业 zhé tòng	zhe tong	10	行业 zhé tòng / 规范 zhí tòng	cn_dicts/base.dict.yaml	现汉第7版/骨科临床防混趾骨(L1/行业，同跖骨)
 给水	ji shui	177	规范 jǐ shuǐ / 行业 gěi shuǐ	gei shui	100	行业 gěi shuǐ / 规范 jǐ shuǐ	cn_dicts/base.dict.yaml	现汉第7版/建筑市政行业(L1/行业，同给排水)
 给水排水	ji shui pai shui	96	规范 给(jǐ)水排水 / 行业 gěi	gei shui pai shui	60	行业 给(gěi)水排水 / 规范 jǐ	cn_dicts/ext.dict.yaml	现汉第7版/建筑市政行业(L1/行业，同给排水)
+# --- Batch 2: others.dict.yaml dual reading ---
+阿嬷	a mo	15	规范 ā mó / 习惯 ā mā	a ma	15	习惯 ā mā / 规范 ā mó	cn_dicts/others.dict.yaml	现汉第7版mó/闽台口语习惯mā(L1/L5，严控<阿莫60与阿妈110)

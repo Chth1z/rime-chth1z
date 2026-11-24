@@ -734,3 +734,6 @@ cn_dicts_cell/composite.dict.yaml	能看的出来	*	能看得出来	*	W5结构�
 cn_dicts_cell/idiom.dict.yaml	粘稠沥青	*	黏稠沥青	*	W3物理性状黏稠规范用黏	第一批异形词整理表/全国科技名词委
 cn_dicts_cell/name2.dict.yaml	石粉粘土	*	石粉黏土	*	W3物性黏土规范用黏	第一批异形词整理表/全国科技名词委
 cn_dicts_cell/name2.dict.yaml	天然粘土	*	天然黏土	*	W3物性黏土规范用黏	第一批异形词整理表/全国科技名词委
+# --- Batch 2: proactive upstream PR #426-#440 guards (others.dict.yaml) ---
+cn_dicts/others.dict.yaml	低粘度	*	低黏度	*	W3异形词归并（粘度->黏度，前置拦截上游PR #438，同base低黏度）	现汉第7版/DICTIONARY_SPEC §4.2
+cn_dicts/others.dict.yaml	抗炫光	*	抗眩光	*	W5光学防眩光术语正字为“眩”(目旁)，前置拦截上游PR #436	现汉第7版/全国科技名词委

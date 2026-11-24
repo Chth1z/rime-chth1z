@@ -1248,3 +1248,5 @@ cn_dicts/base.dict.yaml	血线	xie xian	<=23	游戏口语白读补齐降权严�
 cn_dicts/base.dict.yaml	般地	ban de	<=150	恢复.gram高频路径并低于办的(1314)/办得(156)
 cn_dicts/base.dict.yaml	上调至	shang diao zhi	10	与上调了/上调到保持一致(人事调动义保留低权)
 cn_dicts/ext.dict.yaml	然并卵	ran bing luan	<=300	2015十大网络流行语恢复并按T3控权
+# --- Batch 2: others.dict.yaml weight alignment ---
+cn_dicts/others.dict.yaml	铁剂	tie ji	>=18	临床常用补铁药物高于铁骑旧读(15)且低于贴剂(20)

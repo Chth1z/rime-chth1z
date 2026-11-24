@@ -642,3 +642,5 @@ cn_dicts_cell/composite.dict.yaml	吐血而死	tu xue er si	5	common	保留L1吐
 cn_dicts_cell/composite.dict.yaml	大口吐血	da kou tu xue	4	common	保留L1吐血(tu xie)并补齐社会通行读音(tu xue)
 cn_dicts_cell/composite.dict.yaml	打到吐血	da dao tu xue	3	common	保留L1吐血(tu xie)并补齐社会通行读音(tu xue)
 cn_dicts_cell/composite.dict.yaml	吐血不止	tu xue bu zhi	2	common	保留L1吐血(tu xie)并补齐社会通行读音(tu xue)
+# --- Batch 2: complete phrase replacing others truncation fragment ---
+cn_dicts/ext.dict.yaml	寓军于民	yu jun yu min	20	modern	补齐正规四字语（替代others截断残片“寓军”）

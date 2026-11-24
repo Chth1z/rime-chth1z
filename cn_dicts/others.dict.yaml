@@ -425,7 +425,6 @@ sort: by_weight
 偏强	pian qiang	0
 刘明远	liu ming yuan	0
 曜星社	yao xing she	0
-王义为	wang yi wei	0
 白牌	bai pai	0
 钝化工艺	dun hua gong yi	0
 # 2026-09-05 新增：热榜新词/角色名/专名（来自 zhihu_missing_2026-09-05 分词缺失词）
@@ -2167,7 +2166,6 @@ sort: by_weight
 年冠	nian guan	0
 年缴	nian jiao	0
 年款	nian kuan	0
-黏连	nian lian	0
 年线	nian xian	0
 尿多	niao duo	0
 宁诺	ning nuo	0
@@ -2436,7 +2434,7 @@ sort: by_weight
 条框	tiao kuang	0
 跳音	tiao yin	0
 贴防	tie fang	0
-铁剂	tie ji	0
+铁剂	tie ji	18
 铁钱	tie qian	0
 铁卫	tie wei	0
 贴文	tie wen	0
@@ -2477,7 +2475,6 @@ sort: by_weight
 位错	wei cuo	0
 尾单	wei dan	0
 危废	wei fei	0
-位份	wei fen	0
 卫宫	wei gong	0
 伪距	wei ju	0
 威朗	wei lang	0
@@ -3642,7 +3639,6 @@ sort: by_weight
 专博	zhuan bo	0
 哥姐	ge jie	0
 切粒	qie li	0
-寓军	yu jun	0
 花螺	hua luo	0
 补赛	bu sai	0
 西太	xi tai	0
@@ -3859,7 +3855,6 @@ sort: by_weight
 挤脚	ji jiao	0
 断底	duan di	0
 偏宽	pian kuan	0
-魏派	wei pai	0
 残尘	can chen	0
 狠犟	hen jiang	0
 庭后	ting hou	0
@@ -4130,7 +4125,7 @@ sort: by_weight
 # 2026-11-17 新增：知乎热榜热词（AI 视频提示词/摄影用光/影之刃零/哈利波特剧版/医疗/三国，来自 zhihu_missing_2026-11-17 分词缺失词）
 冷青	leng qing	0
 绢面	juan mian	0
-梦差	meng cha	0
+梦差	meng chai	0
 枷笼山	jia long shan	0
 画案	hua an	0
 受光处	shou guang chu	0
@@ -4191,7 +4186,7 @@ sort: by_weight
 试香	shi xiang	0
 梅香咸鱼	mei xiang xian yu	0
 广东四大名鹅	guang dong si da ming e	0
-阿嬷	a ma	0
+阿嬷	a ma	15
 给阿嬷的情书	gei a ma de qing shu	0
 滑索	hua suo	0
 快降绳	kuai jiang sheng	0
@@ -4254,7 +4249,6 @@ sort: by_weight
 严抓	yan zhua	0
 生柴	sheng chai	0
 礼规	li gui	0
-成名立万	cheng ming li wan	0
 选边	xuan bian	0
 选边站	xuan bian zhan	0
 非常设	fei chang she	0
@@ -4373,3 +4367,4 @@ sort: by_weight
 钜惠	ju hui	15
 鬓毛衰	bin mao cui	7
 谌龙	shen long	0
+阿嬷	a mo	15

@@ -2858,3 +2858,11 @@ cn_dicts/ext.dict.yaml	明眼人都看的出来	*	W5结构助词得误作的（�
 cn_dicts_cell/composite.dict.yaml	可以看的出来	*	W5结构助词得误作的（ext 已有可以看得出来）
 cn_dicts/base.dict.yaml	纤薄	xian bao	L1书面纤薄规范读 xiān bó（迁入 corrections B类，低于献宝44）
 cn_dicts/corrections.dict.yaml	血脉偾张	xue mai ben zhang	血脉偾张与血脉贲张为独立合法词形(L1)，移除上游错音提示以对齐dual_readings删除
+# --- Batch 2: others.dict.yaml confirmed errors & proactive upstream PR #431 guard ---
+cn_dicts/others.dict.yaml	黏连	*	W3/W5非规范异形词（现汉第7版及DICTIONARY_SPEC §4.2规范为粘连 zhān lián，base已有）
+cn_dicts/others.dict.yaml	位份	*	W3异形词归并（*份->*分，现汉第7版规范为位分，base已有）
+cn_dicts/others.dict.yaml	王义为	*	W5人名错字（中国人民大学教授王义桅，composite已有正形）
+cn_dicts/others.dict.yaml	魏派	*	W5品牌错字（长城WEY正名为魏牌，others已有正形）
+cn_dicts/others.dict.yaml	成名立万	*	W5成语错字（正形扬名立万，base已有）
+cn_dicts/others.dict.yaml	寓军	*	知乎热词分词截断残片（原词为寓军于民）
+cn_dicts/others.dict.yaml	猫藓	*	W5错别字（规范词形猫癣 mao xuan，base已收录，前置拦截上游PR #431）
