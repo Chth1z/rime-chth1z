@@ -937,9 +937,7 @@ cn_dicts_cell/luna.dict.yaml	鬼计多端	*	R1清理停用库噪声词
 cn_dicts_cell/medication.dict.yaml	一次性使用导光鼻塞	yi ci xing shi yong dao guang bi se	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	一次性使用输氧管输出管加鼻塞	yi ci xing shi yong shu yang guan shu chu guan jia bi se	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	三焦俞穴	san jiao yu xue	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	下极俞	xia ji yu	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	中以保身长全	zhong yi bao shen zhang quan	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	中膂俞	zhong lv yu	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	丹参保心茶	dan can bao xin cha	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	人体对称美	ren ti dui cheng mei	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	人参保肺	ren can bao fei	R1清理医药重复错音行
@@ -961,8 +959,7 @@ cn_dicts_cell/medication.dict.yaml	墨元参	mo yuan can	R1清理医药重复错
 cn_dicts_cell/medication.dict.yaml	天行赤眼暴翳病	tian hang chi yan bao yi bing	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	天行赤眼病	tian hang chi yan bing	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	姜汤调服止嗽频	jiang tang diao fu zhi sou pin	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	实者枳壳易人参	shi zhe zhi ke yi ren can	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	巨阙俞	ju que yu	R1清理医药重复错音行
+cn_dicts_cell/medication.dict.yaml	实者枳壳易人参	shi zhe zhi qiao yi ren can	R1清理医药重复错音行(人参误注can)
 cn_dicts_cell/medication.dict.yaml	干姜甘草与人参	gan jiang gan cao yu ren can	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	心俞穴	xin yu xue	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	悸眩瞤惕急煎尝	ji xuan shun ti ji jian chang	R1清理医药重复错音行
@@ -994,7 +991,6 @@ cn_dicts_cell/medication.dict.yaml	石荠苧	shi ji zhu	R1清理医药重复错�
 cn_dicts_cell/medication.dict.yaml	神藏穴	shen zang xue	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	种氨基酸	*	R1/R2清理医药噪声词
 cn_dicts_cell/medication.dict.yaml	窗头柜	*	R1/R2清理医药噪声词
-cn_dicts_cell/medication.dict.yaml	经络府俞	jing luo fu yu	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	缝扎法重睑成形术	feng zha fa zhong jian cheng xing shu	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	肋间神经	le jian shen jing	R1/R2医药词库读音修正
 cn_dicts_cell/medication.dict.yaml	肠系膜栓塞	chang xi mo shuan sai	R1清理医药重复错音行
@@ -1004,7 +1000,6 @@ cn_dicts_cell/medication.dict.yaml	肩中俞穴	jian zhong yu xue	R1清理医药
 cn_dicts_cell/medication.dict.yaml	肩外俞穴	jian wai yu xue	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	肾动脉栓塞	shen dong mai shuan sai	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	肾动脉栓塞术	shen dong mai shuan sai shu	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	胃脘下俞	wei wan xia yu	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	胆俞穴	dan yu xue	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	胎萎不长病	tai wei bu chang bing	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	胫前着色斑	jing qian zhe se ban	R1清理医药重复错音行
@@ -1158,10 +1153,6 @@ cn_dicts_cell/sport.dict.yaml	巴塞罗纳	*	R2清理体育错词
 cn_dicts_cell/sport.dict.yaml	巴黎圣日尔曼	*	R2清理体育错词
 cn_dicts_cell/sport.dict.yaml	本泽玛	*	R2清理体育错词
 cn_dicts_cell/sport.dict.yaml	杜峰	*	R2清理体育错词
-cn_dicts_cell/sport.dict.yaml	约什	yue shen	R1体育词库读音修正
-cn_dicts_cell/sport.dict.yaml	约什卡尔迪伦	yue shen ka er di lun	R1体育词库读音修正
-cn_dicts_cell/sport.dict.yaml	约什布恩	yue shen bu en	R1体育词库读音修正
-cn_dicts_cell/sport.dict.yaml	约什鲍威尔	yue shen bao wei er	R1体育词库读音修正
 cn_dicts_cell/sport.dict.yaml	维多里亚	*	R2清理体育错词
 cn_dicts_cell/sport.dict.yaml	维尼斯	*	R2清理体育错词
 cn_dicts_cell/sport.dict.yaml	驾驶仓	*	R2清理体育错词
@@ -1866,7 +1857,7 @@ cn_dicts/base.dict.yaml	传播淫秽电子信息刑事案件具体应用法律	c
 cn_dicts_cell/food.dict.yaml	黑森林蛋糕为爱吃狂	hei sen lin dan gao wei ai chi kuang	美食文章标题/广告语抓取垃圾
 cn_dicts_cell/food.dict.yaml	不饱和脂肪酸单甘脂	bu bao he zhi fang suan dan gan zhi	E2错字（正名：不饱和脂肪酸单甘酯，酯非脂）
 cn_dicts_cell/food.dict.yaml	美国奥丽蓝梅淡糖浆罐头	mei guo ao li lan mei dan tang jiang guan tou	E2错字（蓝梅->蓝莓）且杂牌商品标题抓取
-cn_dicts_cell/food.dict.yaml	台湾老船长蕃茄汁大沙丁鱼	tai wan lao chuan zhang fan qie zhi da sha ding yu	非规范用字（蕃茄->番茄）且商品标题抓取
+cn_dicts_cell/food.dict.yaml	台湾老船长番茄汁大沙丁鱼	tai wan lao chuan zhang fan qie zhi da sha ding yu	商品标题抓取垃圾
 cn_dicts_cell/idiom.dict.yaml	北山伐木场中间的箱子	bei shan fa mu chang zhong jian de xiang zi	魔兽世界任务物件名误入成语词库
 cn_dicts_cell/idiom.dict.yaml	福无双至乡祸不单行	fu wu shuang zhi xiang huo bu dan xing	抓取/OCR错乱夹杂多余字“乡”（正词：福无双至祸不单行）
 cn_dicts_cell/idiom.dict.yaml	光明不会告诉你的事情	guang ming bu hui gao su ni de shi qing	魔兽世界牧师任务书名误入成语词库
@@ -1999,13 +1990,13 @@ cn_dicts_cell/medication.dict.yaml	及牛胎血清和马血清	ji niu tai xue qi
 cn_dicts_cell/medication.dict.yaml	甲氧基羟基扁桃酸酸	jia yang ji qiang ji bian tao suan suan	L93753: Corrupted doubled suffix 酸酸
 cn_dicts_cell/medication.dict.yaml	氯环氧丙烷氯环氧丙烷	lv huan yang bing wan lv huan yang bing wan	L100516: Exact X+X duplicate concatenation
 cn_dicts_cell/medication.dict.yaml	毛发号搽剂厦门市一	mao fa hao cha ji xia men shi yi	L101067: Digit-stripped hospital formula (毛发1号搽剂)
-cn_dicts_cell/medication.dict.yaml	粘膜溃疡脂南平市皮	nian mo kui yang zhi nan ping shi pi	截断医院制剂名称（“南平市皮”系“南平市皮肤病医院”截断）
-cn_dicts_cell/medication.dict.yaml	粘膜溃疡脂乳膏市皮	nian mo kui yang zhi ru gao shi pi	截断医院制剂名称（尾部“市皮”系医院名截断）
+cn_dicts_cell/medication.dict.yaml	黏膜溃疡脂南平市皮	nian mo kui yang zhi nan ping shi pi	截断医院制剂名称（“南平市皮”系“南平市皮肤病医院”截断）
+cn_dicts_cell/medication.dict.yaml	黏膜溃疡脂乳膏市皮	nian mo kui yang zhi ru gao shi pi	截断医院制剂名称（尾部“市皮”系医院名截断）
 cn_dicts_cell/medication.dict.yaml	乳膏基质号龙岩市一	ru gao ji zhi hao long yan shi yi	L106063: Digit-stripped hospital formula (基质1号)
 cn_dicts_cell/medication.dict.yaml	未成熟儿孕期小于整周	wei cheng shu er yun qi xiao yu zheng zhou	L110783: Digit-stripped ICD-10 term (小于28/37整周)
 cn_dicts_cell/medication.dict.yaml	型大疱性表皮松解症	xing da pao xing biao pi song jie zheng	L113506: Prefix Roman-numeral-stripped term starting with 型
 cn_dicts_cell/medication.dict.yaml	胰腺囊肿胃引流术术	yi xian nang zhong wei yin liu shu shu	L116256: Corrupted doubled suffix 术术
-cn_dicts_cell/medication.dict.yaml	综合症无青光眼亚型	zong he zheng wu qing guang yan ya xing	L120033: Prefix Latin-stripped syndrome name starting with 综合症
+cn_dicts_cell/medication.dict.yaml	综合征无青光眼亚型	zong he zheng wu qing guang yan ya xing	L120033: Prefix Latin-stripped syndrome name starting with 综合征
 cn_dicts_cell/medication.dict.yaml	尿绒毛膜促性肥腺液素	niao rong mao mo cu xing fei xian ye su	L126379: Garbled typo for 尿绒毛膜促性腺激素
 cn_dicts_cell/game.dict.yaml	般若波罗密多心经释门经典	bo re bo luo mi duo xin jing shi men jing dian	L2429: HTML table-scrape BookTitle+SetDesc (+ typo 密 for 蜜)
 cn_dicts_cell/game.dict.yaml	采莲曲青莲居士李太白的诗稿	cai lian qu qing lian ju shi li tai bai de shi gao	L2448: HTML table-scrape BookTitle+SetDesc
@@ -2416,8 +2407,7 @@ cn_dicts/others.dict.yaml	蒜苔	*	W3异形错字(base已有蒜薹)
 cn_dicts/others.dict.yaml	知致	*	分词残片/倒序错词
 cn_dicts/others.dict.yaml	鱼获	*	W5错字(base已有渔获)
 cn_dicts/others.dict.yaml	蚌住	bang zhu	错音重复(同文件已有蚌住 beng zhu)
-cn_dicts_cell/animal.dict.yaml	凯利兰㹴	*	W5错字且非8105字(同文件已有凯利蓝梗)
-cn_dicts_cell/animal.dict.yaml	苏格兰㹴	*	非8105字重复(同文件已有苏格兰梗)
+cn_dicts_cell/animal.dict.yaml	凯利兰梗	*	W5错字(同文件已有凯利蓝梗)
 cn_dicts_cell/animal.dict.yaml	鹿鹿	*	犬种词表尾部昵称噪声
 cn_dicts_cell/animal.dict.yaml	狮狮	*	犬种词表尾部昵称噪声
 cn_dicts_cell/chess2.dict.yaml	车进	*	象棋棋谱剥离数字截断残片
@@ -2531,7 +2521,7 @@ cn_dicts_cell/food.dict.yaml	鸡汤煮千丝	*	OCR错字重复(同文件已有�
 cn_dicts_cell/food.dict.yaml	牛腩煲水煮牛肉	*	两菜名拼接垃圾
 cn_dicts_cell/food.dict.yaml	莉雀舌毫	*	截断重复(同文件已有茉莉雀舌毫)
 cn_dicts_cell/food.dict.yaml	肉未烧饼	*	OCR错字重复(同文件已有肉末烧饼)
-cn_dicts_cell/food.dict.yaml	油焖鲜蘑蜜汁蕃茄	*	两菜名拼接垃圾
+cn_dicts_cell/food.dict.yaml	油焖鲜蘑蜜汁番茄	*	两菜名拼接垃圾
 cn_dicts_cell/food.dict.yaml	籽冬笋	*	截断重复(同文件已有虾籽冬笋)
 cn_dicts_cell/food.dict.yaml	白的虾	*	带字语篇抓取残片
 cn_dicts_cell/food.dict.yaml	龟打	*	无意义截断残片
@@ -2765,3 +2755,119 @@ cn_dicts_cell/game.dict.yaml	郄正	xi zheng	L1姓氏郄规范读Qiè(history已
 cn_dicts_cell/medication.dict.yaml	随弃式导电粘胶极板	sui qi shi dao dian zhan jiao ji ban	L1/L2黏胶规范读nián(同文件已有nian)
 cn_dicts_cell/idiom.dict.yaml	驿树西连汉畤平	yi shu xi lian han chou ping	L1汉畤规范读hàn zhì(literature已有zhi)
 cn_dicts_cell/name2.dict.yaml	粘土	nian tu	W3异形词清零(正形:base黏土)
+cn_dicts_cell/idiom.dict.yaml	彼恶得而知之	bi e de er zhi zhi	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	彼恶知之	bi e zhi zhi	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	曾觌	ceng di	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	常在於险远	chang zai yu xian yuan	上游古籍重复块残留繁体於异体（正形已由 literature/base 收录）
+cn_dicts_cell/idiom.dict.yaml	除臣洗马	chu chen xi ma	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	词客哀时且未还	ci ke ai shi qie wei hai	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	従来佳茗似佳人	cong lai jia ming si jia ren	上游古籍重复块残留日文新字体従（literature 已有简体正形）
+cn_dicts_cell/idiom.dict.yaml	电子版说明	dian zi ban shuo ming	上游古籍块残留电子书垃圾（已从 literature 清理）
+cn_dicts_cell/idiom.dict.yaml	恶乎成名	e hu cheng ming	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	非不说子之道	fei bu shuo zi zhi dao	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	风高大夫树	feng gao dai fu shu	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	古人之观於天地	gu ren zhi guan yu tian di	上游古籍重复块残留繁体於异体（正形已由 literature/base 收录）
+cn_dicts_cell/idiom.dict.yaml	寡人之於国也	gua ren zhi yu guo ye	上游古籍重复块残留繁体於异体（正形已由 literature/base 收录）
+cn_dicts_cell/idiom.dict.yaml	洪适	hong shi	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	胡马大宛名	hu ma da wan ming	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	黄裳元吉	huang shang yuan ji	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	黄钟乐	huang zhong le	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	殛鲧於羽山	ji gun yu yu shan	上游古籍重复块残留繁体於异体（正形已由 literature/base 收录）
+cn_dicts_cell/idiom.dict.yaml	见齐衰者	jian qi shuai zhe	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	将仲子兮	jiang zhong zi xi	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	将子无怒	jiang zi wu nu	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	今朝拜首临欲别	jin chao bai shou lin yu bie	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	劳力者治於人	lao li zhe zhi yu ren	上游古籍重复块残留繁体於异体（正形已由 literature/base 收录）
+cn_dicts_cell/idiom.dict.yaml	乐婉	le wan	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	南宫适出	nan gong shi chu	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	破阵乐	po zhen le	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	人之所恶	ren zhi suo e	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	三事大夫	san shi dai fu	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	升阶伛偻荐脯酒	sheng jie yu lv jian pu jiu	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	事其大夫之贤者	shi qi dai fu zhi xian zhe	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	手提掷还崔大夫	shou ti zhi huan cui dai fu	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	数尝於	shu chang yu	上游古籍重复块残留繁体於异体（正形已由 literature/base 收录）
+cn_dicts_cell/idiom.dict.yaml	说之虽不以道	shuo zhi sui bu yi dao	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	俟我於城隅	si wo yu cheng yu	上游古籍重复块残留繁体於异体（正形已由 literature/base 收录）
+cn_dicts_cell/idiom.dict.yaml	所恶勿施尔也	suo e wu shi er ye	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	天下恶乎定	tian xia e hu ding	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	天下可运於掌	tian xia ke yun yu zhang	上游古籍重复块残留繁体於异体（正形已由 literature/base 收录）
+cn_dicts_cell/idiom.dict.yaml	万方乐奏有于阗	wan fang le zou you yu tian	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	谓其大夫曰	wei qi dai fu yue	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	闻乐不乐	wen le bu le	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	物或恶之	wu huo e zhi	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	野有死麕	ye you si qun	上游古籍重复块残留异体麕及错音 qun（literature 已有野有死麇 ye you si jun）
+cn_dicts_cell/idiom.dict.yaml	衣裳楚楚	yi shang chu chu	上游古籍重复块残留未校正读音（ext 已有诗经正音 yi chang chu chu）
+cn_dicts_cell/idiom.dict.yaml	一枕黄梁再现	yi zhen huang liang zai xian	上游古籍重复块残留错字黄梁（literature 已有正形一枕黄粱再现）
+cn_dicts_cell/idiom.dict.yaml	犹吾大夫崔子也	you wu dai fu cui zi ye	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	於穆不已	yu mu bu yi	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	於穆清庙	yu mu qing miao	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	於人为可讥	yu ren wei ke ji	上游古籍重复块残留繁体於异体（正形已由 literature/base 收录）
+cn_dicts_cell/idiom.dict.yaml	於我心有戚戚焉	yu wo xin you qi qi yan	上游古籍重复块残留繁体於异体（正形已由 literature/base 收录）
+cn_dicts_cell/idiom.dict.yaml	则政不在大夫	ze zheng bu zai dai fu	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	治人者食於人	zhi ren zhe shi yu ren	上游古籍重复块残留繁体於异体（正形已由 literature/base 收录）
+cn_dicts_cell/idiom.dict.yaml	治於人者食人	zhi yu ren zhe shi ren	上游古籍重复块残留繁体於异体（正形已由 literature/base 收录）
+cn_dicts_cell/idiom.dict.yaml	中华民族的	zhong hua min zu de	上游古籍块残留电子书垃圾（已从 literature 清理）
+cn_dicts_cell/idiom.dict.yaml	重门深锁无寻处	zhong men shen suo wu xun chu	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	朱门先达笑弹冠	zhu men xian da xiao dan guan	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	转徙於江湖间	zhuan xi yu jiang hu jian	上游古籍重复块残留繁体於异体（正形已由 literature/base 收录）
+cn_dicts_cell/idiom.dict.yaml	转於僮仆亲	zhuan yu tong pu qin	上游古籍重复块残留繁体於异体（正形已由 literature/base 收录）
+cn_dicts_cell/idiom.dict.yaml	子见齐衰者	zi jian qi shuai zhe	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	不可以为滕薛大夫	bu ke yi wei teng xue dai fu	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	不说也	bu shuo ye	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	曾皙后	ceng xi hou	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	曾皙曰	ceng xi yue	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	恶不孙以为勇者	e bu sun yi wei yong zhe	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	恶果敢而窒者	e guo gan er zhi zhe	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	恶徼以为知者	e jiao yi wei zhi zhe	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	恶讦以为直	e jie yi wei zhi	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	恶利口之覆邦家者	e li kou zhi fu bang jia zhe	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	恶郑声之乱雅乐也	e zheng sheng zhi luan ya yue ye	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	公叔文子之臣大夫僎	gong shu wen zi zhi chen dai fu zhuan	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	近者说	jin zhe shuo	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	君子亦有恶乎	jun zi yi you e hu	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	南宫适问于孔子曰	nan gong shi wen yu kong zi yue	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	能无说乎	neng wu shuo hu	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	是故恶夫佞者	shi gu e fu ning zhe	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	叔孙武叔语大夫于朝	shu sun wu shu yu dai fu yu chao	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	说而不绎	shuo er bu yi	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	说之不以道	shuo zhi bu yi dao	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	所恶也	suo e ye	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	言不可不慎也夫子之不可及	yan bu ke bu shen ye fu zi zhi bu ke ji	上游古籍块残留电子书垃圾（已从 literature 清理）
+cn_dicts_cell/idiom.dict.yaml	亦有恶乎	yi you e hu	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	于吾言无所不说	yu wu yan wu suo bu shuo	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	与下大夫言	yu xia dai fu yan	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	政逮于大夫四世矣	zheng dai yu dai fu si shi yi	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	众恶之	zhong e zhi	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	子见齐衰者冕衣裳者与瞽者	zi jian qi shuai zhe mian yi shang zhe yu gu zhe	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	子路不说	zi lu bu shuo	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	子路曾皙冉有公西华侍坐	zi lu ceng xi ran you gong xi hua shi zuo	上游古籍重复块残留未校正错音（literature 已收录规范正音）
+cn_dicts_cell/idiom.dict.yaml	恶之欲其	e zhi yu qi	上游古籍重复残留错音 e（literature 已有论语正音 wu zhi yu qi）
+cn_dicts_cell/idiom.dict.yaml	血石坠子	xie shi zhui zi	游戏装备名混入成语且误注 xie（game 已有 xue shi zhui zi）
+cn_dicts_cell/idiom.dict.yaml	走到哪儿于到哪儿	*	W5错字残句（OCR 讹误于字）
+cn_dicts_cell/idiom.dict.yaml	安土重还	*	W5成语错字（正词安土重迁已在 base）
+cn_dicts_cell/idiom.dict.yaml	曾经沧桑	*	W5成语错字杂糅（正词曾经沧海已在 base）
+cn_dicts_cell/idiom.dict.yaml	耳提在命	*	W5成语错字（正词耳提面命已在 base）
+cn_dicts_cell/idiom.dict.yaml	廖若晨星	*	W5成语错字（正词寥若晨星已在 base）
+cn_dicts_cell/idiom.dict.yaml	蓬荜增辉	*	W5成语错字（正词蓬荜生辉已在 base）
+cn_dicts_cell/idiom.dict.yaml	喜结金兰	*	W5成语错字（正词义结金兰已在 base）
+cn_dicts_cell/idiom.dict.yaml	余能可贾	*	W5成语错字（正词余勇可贾已在 base）
+cn_dicts_cell/idiom.dict.yaml	越俎代疱	*	W5成语错字（正词越俎代庖已在 base）
+cn_dicts_cell/industry_product.dict.yaml	脱模剂	tuo mo ji	L1实物模具脱模规范读 mú（base 已有 tuo mu ji）
+cn_dicts_cell/industry_product.dict.yaml	纸浆模塑	zhi jiang mo su	L1实物模具模塑规范读 mú（base 已有 zhi jiang mu su）
+cn_dicts_cell/composite.dict.yaml	如嚼鸡肋	ru jue ji lei	L1成语嚼规范读 jiáo（idiom 已有 ru jiao ji lei）
+cn_dicts_cell/composite.dict.yaml	龙爪手	long zhao shou	统一爪读音为 zhuǎ（game 已有 long zhua shou）
+cn_dicts_cell/composite.dict.yaml	石爪山脉	shi zhao shan mai	统一魔兽地名爪读音为 zhuǎ（game 已有 shi zhua shan mai）
+cn_dicts_cell/composite.dict.yaml	石爪峰	shi zhao feng	统一魔兽地名爪读音为 zhuǎ（game 已有 shi zhua feng）
+cn_dicts_cell/composite.dict.yaml	龙爪树	long zhao shu	统一植物名爪读音为 zhuǎ（medication 已有 long zhua shu）
+cn_dicts_cell/game.dict.yaml	石爪图腾效果	shi zhao tu teng xiao guo	同文件已有规范读音 shi zhua tu teng xiao guo
+cn_dicts_cell/game.dict.yaml	朝阳峰	zhao yang feng	地名朝阳峰规范读 cháo yáng fēng（ext 已有 chao yang feng）
+cn_dicts_cell/game.dict.yaml	农村上网贵进来请准备	*	早期论坛标题党垃圾（同步 idiom 已删规则）
+cn_dicts_cell/composite.dict.yaml	大眼瞪	*	截断噪声残片（同步 ext 已删规则）
+cn_dicts_cell/composite.dict.yaml	疯疯颠颠	*	W5错字颠->癫（同步 ext 已删规则）
+cn_dicts_cell/composite.dict.yaml	联通新	*	截断噪声残片（同步 ext 已删规则）
+cn_dicts_cell/composite.dict.yaml	虎谋皮	*	与虎谋皮截断残片（同步 ext 已删规则）
+cn_dicts_cell/composite.dict.yaml	阿尔巴尼	*	阿尔巴尼亚截断残片（同步 ext 已删规则）
+cn_dicts_cell/composite.dict.yaml	八哥犬	*	W5错字正名巴哥犬（同步 animal 已删规则）
+cn_dicts/ext.dict.yaml	明眼人都看的出来	*	W5结构助词得误作的（同文件紧邻已有明眼人都看得出来）
+cn_dicts_cell/composite.dict.yaml	可以看的出来	*	W5结构助词得误作的（ext 已有可以看得出来）

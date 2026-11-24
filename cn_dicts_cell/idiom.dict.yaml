@@ -10,66 +10,8 @@ sort: by_weight
 use_preset_vocabulary: false
 ...
 厚彼薄此	hou bi bo ci	1
-彼恶得而知之	bi e de er zhi zhi	0
-彼恶知之	bi e zhi zhi	0
-曾觌	ceng di	5
-常在於险远	chang zai yu xian yuan	1
-除臣洗马	chu chen xi ma	3
-词客哀时且未还	ci ke ai shi qie wei hai	0
-従来佳茗似佳人	cong lai jia ming si jia ren	0
-电子版说明	dian zi ban shuo ming	0
-恶乎成名	e hu cheng ming	2
-非不说子之道	fei bu shuo zi zhi dao	0
-风高大夫树	feng gao dai fu shu	0
-古人之观於天地	gu ren zhi guan yu tian di	1
-寡人之於国也	gua ren zhi yu guo ye	0
-洪适	hong shi	3
-胡马大宛名	hu ma da wan ming	0
-黄裳元吉	huang shang yuan ji	2
-黄钟乐	huang zhong le	0
-殛鲧於羽山	ji gun yu yu shan	1
-见齐衰者	jian qi shuai zhe	0
-将仲子兮	jiang zhong zi xi	16
-将子无怒	jiang zi wu nu	11
-今朝拜首临欲别	jin chao bai shou lin yu bie	0
-劳力者治於人	lao li zhe zhi yu ren	1
-乐婉	le wan	9
-南宫适出	nan gong shi chu	0
-破阵乐	po zhen le	1
 溱洧	zhen wei	20
-人之所恶	ren zhi suo e	17
-三事大夫	san shi dai fu	0
-升阶伛偻荐脯酒	sheng jie yu lv jian pu jiu	0
-事其大夫之贤者	shi qi dai fu zhi xian zhe	0
-手提掷还崔大夫	shou ti zhi huan cui dai fu	0
-数尝於	shu chang yu	0
-说之虽不以道	shuo zhi sui bu yi dao	0
-俟我於城隅	si wo yu cheng yu	5
-所恶勿施尔也	suo e wu shi er ye	0
-天下恶乎定	tian xia e hu ding	0
-天下可运於掌	tian xia ke yun yu zhang	1
-万方乐奏有于阗	wan fang le zou you yu tian	0
-谓其大夫曰	wei qi dai fu yue	0
 惟余莽莽	wei yu mang mang	0
-闻乐不乐	wen le bu le	1
-物或恶之	wu huo e zhi	15
-野有死麕	ye you si qun	21
-衣裳楚楚	yi shang chu chu	5
-一枕黄梁再现	yi zhen huang liang zai xian	0
-犹吾大夫崔子也	you wu dai fu cui zi ye	0
-於穆不已	yu mu bu yi	0
-於穆清庙	yu mu qing miao	0
-於人为可讥	yu ren wei ke ji	1
-於我心有戚戚焉	yu wo xin you qi qi yan	5
-则政不在大夫	ze zheng bu zai dai fu	0
-治人者食於人	zhi ren zhe shi yu ren	0
-治於人者食人	zhi yu ren zhe shi ren	0
-中华民族的	zhong hua min zu de	0
-重门深锁无寻处	zhong men shen suo wu xun chu	0
-朱门先达笑弹冠	zhu men xian da xiao dan guan	3
-转徙於江湖间	zhuan xi yu jiang hu jian	0
-转於僮仆亲	zhuan yu tong pu qin	0
-子见齐衰者	zi jian qi shuai zhe	0
 阿保之劳	a bao zhi lao	0
 阿鼻叫唤	a bi jiao huan	1
 阿狗阿猫	a gou a mao	2
@@ -1003,7 +945,6 @@ use_preset_vocabulary: false
 饱暖生淫欲	bao nuan sheng yin yu	0
 饱暖思淫	bao nuan si yin	0
 暴虐浮躁	bao nve fu zao	0
-剥皮抽筋	bao pi chou jin	18
 剥皮楦草	bao pi xuan cao	0
 抱朴寡欲	bao pu gua yu	0
 抱朴含真	bao pu han zhen	0
@@ -7289,7 +7230,6 @@ use_preset_vocabulary: false
 遏云绕梁	e yun rao liang	0
 恶则坠诸	e ze zhui zhu	0
 恶直丑正	e zhi chou zheng	1
-恶之欲其	e zhi yu qi	0
 阿尊事贵	e zun shi gui	0
 恩爱夫妻不到头	en ai fu qi bu dao tou	0
 恩不放债	en bu fang zhai	0
@@ -18771,7 +18711,7 @@ use_preset_vocabulary: false
 泥猪瓦狗	ni zhu wa gou	0
 逆子贼臣	ni zi zei chen	0
 辇车骊驾	nian che li jia	0
-粘稠沥青	nian chou li qing	0
+黏稠沥青	nian chou li qing	0
 年登花甲	nian deng hua jia	0
 拈断髭须	nian duan zi xu	0
 年方舞勺	nian fang wu shao	0
@@ -21478,7 +21418,6 @@ use_preset_vocabulary: false
 犬兔之争	quan tu zhi zheng	0
 全无忌惮	quan wu ji dan	0
 全心济世	quan xin ji shi	0
-全须全尾	quan xu quan wei	40
 犬牙错互	quan ya cuo hu	0
 犬牙相接	quan ya xiang jie	0
 犬牙相临	quan ya xiang lin	0
@@ -26591,7 +26530,7 @@ use_preset_vocabulary: false
 纤芥之疾	xian jie zhi ji	0
 衔橛之变	xian jue zhi bian	0
 衔橛之虞	xian jue zhi yu	0
-涎脸饧眼	xian lian tang yan	0
+涎脸饧眼	xian lian xing yan	0
 涎脸涎皮	xian lian xian pi	0
 陷落计中	xian luo ji zhong	0
 挦毛捣鬓	xian mao dao bin	0
@@ -26900,7 +26839,6 @@ use_preset_vocabulary: false
 蝎肉大餐	xie rou da can	0
 蟹肉蛋糕	xie rou dan gao	0
 偕生之疾	xie sheng zhi ji	0
-血石坠子	xie shi zhui zi	0
 协私罔上	xie si wang shang	0
 谢庭兰玉	xie ting lan yu	0
 斜头歪脑	xie tou wai nao	0
@@ -31708,35 +31646,6 @@ use_preset_vocabulary: false
 做张做智	zuo zhang zuo zhi	0
 左支右调	zuo zhi you tiao	0
 作作有芒	zuo zuo you mang	0
-不可以为滕薛大夫	bu ke yi wei teng xue dai fu	0
-不说也	bu shuo ye	0
-曾皙后	ceng xi hou	0
-曾皙曰	ceng xi yue	0
-恶不孙以为勇者	e bu sun yi wei yong zhe	0
-恶果敢而窒者	e guo gan er zhi zhe	0
-恶徼以为知者	e jiao yi wei zhi zhe	0
-恶讦以为直	e jie yi wei zhi	0
-恶利口之覆邦家者	e li kou zhi fu bang jia zhe	0
-恶郑声之乱雅乐也	e zheng sheng zhi luan ya yue ye	2
-公叔文子之臣大夫僎	gong shu wen zi zhi chen dai fu zhuan	0
-近者说	jin zhe shuo	0
-君子亦有恶乎	jun zi yi you e hu	0
-南宫适问于孔子曰	nan gong shi wen yu kong zi yue	0
-能无说乎	neng wu shuo hu	0
-是故恶夫佞者	shi gu e fu ning zhe	2
-叔孙武叔语大夫于朝	shu sun wu shu yu dai fu yu chao	0
-说而不绎	shuo er bu yi	0
-说之不以道	shuo zhi bu yi dao	0
-所恶也	suo e ye	0
-言不可不慎也夫子之不可及	yan bu ke bu shen ye fu zi zhi bu ke ji	0
-亦有恶乎	yi you e hu	0
-于吾言无所不说	yu wu yan wu suo bu shuo	0
-与下大夫言	yu xia dai fu yan	0
-政逮于大夫四世矣	zheng dai yu dai fu si shi yi	0
-众恶之	zhong e zhi	0
-子见齐衰者冕衣裳者与瞽者	zi jian qi shuai zhe mian yi shang zhe yu gu zhe	0
-子路不说	zi lu bu shuo	2
-子路曾皙冉有公西华侍坐	zi lu ceng xi ran you gong xi hua shi zuo	1
 阿斗当皇帝	a dou dang huang di	0
 阿斗的江山	a dou de jiang shan	0
 阿公吃黄连	a gong chi huang lian	0
@@ -33163,7 +33072,6 @@ use_preset_vocabulary: false
 自找难看	zi zhao nan kan	1
 总有一别	zong you yi bie	1
 走错了门	zou cuo le men	3
-走到哪儿于到哪儿	zou dao na er yu dao na er	0
 走的是一个方向	zou de shi yi ge fang xiang	0
 走对了路子	zou dui le lu zi	3
 走路算账	zou lu suan zhang	0
@@ -33173,15 +33081,7 @@ use_preset_vocabulary: false
 嘴馋上了当	zui chan shang le dang	0
 醉汉过铁索桥	zui han guo tie suo qiao	0
 作用不全	zuo yong bu quan	0
-安土重还	an tu zhong hai	0
-曾经沧桑	ceng jing cang sang	0
-耳提在命	er ti zai ming	0
-廖若晨星	liao ruo chen xing	0
-蓬荜增辉	peng bi zeng hui	0
 闪烁其辞	shan shuo qi ci	6
-喜结金兰	xi jie jin lan	0
-余能可贾	yu neng ke gu	0
-越俎代疱	yue zu dai pao	1
 不致于人	bu zhi yu ren	2
 归根究底	gui gen jiu di	117
 致人而不致于人	zhi ren er bu zhi yu ren	35

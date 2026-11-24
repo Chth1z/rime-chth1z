@@ -3649,7 +3649,6 @@ T恤	T恤 T shirt
 他们自己	他们自己 themselves
 他们都	他们都 all of them
 他国	他国 third country
-他妈的	他妈的 ****
 他乡	他乡 place not one's home
 他日	他日 some another day
 他杀	他杀 homicide
@@ -4571,7 +4570,6 @@ T恤	T恤 T shirt
 佟	佟 Tong
 你	你 you
 你争我夺	你争我夺 compete with each other
-你他妈	你他妈 you ****
 你们	你们 you
 你好	你好 hello how are you
 你就说	你就说 you say
@@ -12305,7 +12303,7 @@ T恤	T恤 T shirt
 响彻	响彻 resound through
 响起	响起 sound
 哎	哎 hey lookout why
-哎呀	哎呀 Ah! ****
+哎呀	哎呀 Ah!
 哎哟	哎哟 hey ow ouch
 哏	哏 funny
 哐	哐 crash bang
@@ -12406,7 +12404,7 @@ T恤	T恤 T shirt
 唉	唉 yes oh right alas oh dear
 唉声叹气	唉声叹气 heave deep sighs sign in despair
 唏	唏 sound of sobbing
-唐	唐 Tang dynasty Tang fDown
+唐	唐 Tang dynasty Tang
 唐三彩	唐三彩 Tang tri-colored glazed pottery
 唐人	唐人 Chinese
 唐人街	唐人街 Chinatown
@@ -13905,7 +13903,6 @@ T恤	T恤 T shirt
 坏处	坏处 fault
 坏死	坏死 necrosis
 坏消息	坏消息 bad news
-坏蛋	坏蛋 *******
 坏话	坏话 evil talk cuss malediction
 坐	坐 sit take a seat take
 坐下	坐下 sit down
@@ -16319,7 +16316,6 @@ T恤	T恤 T shirt
 妈	妈 ma mamma
 妈咪	妈咪 Mummy
 妈妈	妈妈 mama mommy
-妈的	妈的 ****
 妈祖	妈祖 Ma Zu
 妈祖庙	妈祖庙 Ma Zu Temple
 妊	妊 pregnant
@@ -34566,7 +34562,7 @@ T恤	T恤 T shirt
 王侯	王侯 the nobility emir pendragon raja rajah princes and marquises
 王储	王储 crown prince
 王充	王充 Wang Chong
-王八	王八 tortoise ******
+王八	王八 tortoise
 王公	王公 nobility
 王冠	王冠 crown
 王制	王制 governed by king
@@ -43599,7 +43595,6 @@ T恤	T恤 T shirt
 菲律宾人	菲律宾人 Filipino
 菲菲	菲菲 very fragrant luxurious beautiful
 菲霞	菲霞 Feixia
-菸	菸 cigarette tobacco
 萁	萁 stalks of pulse
 萃	萃 collect collection dense grassy thick assemble gather
 萃取	萃取 extract extraction leach

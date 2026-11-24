@@ -3,7 +3,7 @@
 cn_dicts/others.dict.yaml	溝呂木	*	沟吕木	gou lv mu	R1杂项词库正字修正	通用规范汉字表
 cn_dicts/others.dict.yaml	王抒	*	王忬	wang yu	R1杂项词库正字修正	通用规范汉字表
 cn_dicts/others.dict.yaml	马伊俐	*	马伊琍	ma yi li	R1杂项词库正字修正	通用规范汉字表
-cn_dicts_cell/animal.dict.yaml	史塔副郡牛头㹴	*	史塔福郡牛头梗	shi ta fu jun niu tou geng	R1动物词库正字修正	通用规范汉字表
+cn_dicts_cell/animal.dict.yaml	史塔副郡牛头梗	*	史塔福郡牛头梗	shi ta fu jun niu tou geng	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/animal.dict.yaml	小史揉查犬	*	小史柔查犬	xiao shi rou cha quan	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/animal.dict.yaml	彭布罗克歌基犬	*	彭布罗克柯基犬	peng bu luo ke ke ji quan	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/animal.dict.yaml	桅子灰蝶	*	栀子灰蝶	zhi zi hui die	R1动物词库正字修正	通用规范汉字表
@@ -11,7 +11,7 @@ cn_dicts_cell/animal.dict.yaml	甄蝶	*	珍蝶	zhen die	R1动物词库正字修�
 cn_dicts_cell/animal.dict.yaml	眼碟	*	眼蝶	yan die	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/animal.dict.yaml	米尼雪纳瑞犬	*	迷你雪纳瑞犬	mi ni xue na rui quan	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/animal.dict.yaml	约瑟猩	*	约瑟梗	yue se geng	R1动物词库正字修正	通用规范汉字表
-cn_dicts_cell/animal.dict.yaml	美国史塔副郡㹴	*	美国史塔福郡梗	mei guo shi ta fu jun geng	R1动物词库正字修正	通用规范汉字表
+cn_dicts_cell/animal.dict.yaml	美国史塔副郡梗	*	美国史塔福郡梗	mei guo shi ta fu jun geng	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/animal.dict.yaml	英国小型猎免犬	*	英国小型猎兔犬	ying guo xiao xing lie tu quan	R1动物词库正字修正	通用规范汉字表
 cn_dicts_cell/chess.dict.yaml	双车协士	*	双车胁士	shuang ju xie shi	R1象棋正字修正	通用规范汉字表
 cn_dicts_cell/chess.dict.yaml	太监追黄帝	*	太监追皇帝	tai jian zhui huang di	R1象棋正字修正	通用规范汉字表
@@ -49,7 +49,7 @@ cn_dicts_cell/medication.dict.yaml	地尔硫艹卓	*	地尔硫䓬	di er liu zhuo
 cn_dicts_cell/medication.dict.yaml	氯氮艹卓	*	氯氮䓬	lv dan zhuo	R1医药词库正字修正	中国药典
 cn_dicts_cell/medication.dict.yaml	菸碱型受体	*	烟碱型受体	yan jian xing shou ti	R1医药词库正字修正	中国药典
 cn_dicts_cell/name.dict.yaml	梁文峰	*	梁文锋	*	R1人名正字修正	L3人名
-cn_dicts_cell/name.dict.yaml	浜田省吾	*	滨田省吾	*	R1日文新字体规范修正	通用规范汉字表
+cn_dicts_cell/name.dict.yaml	浜田省吾	*	滨田省吾	bin tian sheng wu	R1日文新字体规范修正并正音 bin	通用规范汉字表
 cn_dicts_cell/name2.dict.yaml	吴克羣	*	吴克群	wu ke qun	R1人名2正字修正	通用规范汉字表
 cn_dicts_cell/name2.dict.yaml	阿褔	*	阿福	a fu	R1人名2正字修正	通用规范汉字表
 cn_dicts_cell/name2.dict.yaml	高木渉	*	高木涉	gao mu she	R1人名2正字修正	通用规范汉字表
@@ -270,10 +270,10 @@ cn_dicts_cell/literature.dict.yaml	然後大行	ran hou da xing	然后大行	*	T
 cn_dicts_cell/literature.dict.yaml	然後耳有闻	ran hou er you wen	然后耳有闻	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	然後敢入	ran hou gan ru	然后敢入	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	然後敢治私事	ran hou gan zhi si shi	然后敢治私事	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/literature.dict.yaml	然後尽於人心	ran hou jin yu ren xin	然后尽于人心	*	Trad/JP/variant: 後->后, 於->于	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/literature.dict.yaml	然後尽于人心	ran hou jin yu ren xin	然后尽于人心	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	然後可以为民父母	ran hou ke yi wei min fu mu	然后可以为民父母	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	然後可以爰方启行	ran hou ke yi yuan fang qi xing	然后可以爰方启行	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/literature.dict.yaml	然後快於心与	ran hou kuai yu xin yu	然后快于心与	*	Trad/JP/variant: 後->后, 於->于	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/literature.dict.yaml	然後快于心与	ran hou kuai yu xin yu	然后快于心与	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	然後能服天下	ran hou neng fu tian xia	然后能服天下	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	然後求见长者乎	ran hou qiu jian zhang zhe hu	然后求见长者乎	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	然後去之	ran hou qu zhi	然后去之	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
@@ -309,7 +309,7 @@ cn_dicts_cell/literature.dict.yaml	则蚓而後可者也	ze yin er hou ke zhe ye
 cn_dicts_cell/literature.dict.yaml	置君而後去之	zhi jun er hou qu zhi	置君而后去之	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	众人皆有馀	zhong ren jie you yu	众人皆有余	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	周馀黎民	zhou yu li min	周余黎民	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/literature.dict.yaml	诸侯失国而後托於诸侯	zhu hou shi guo er hou tuo yu zhu hou	诸侯失国而后托于诸侯	*	Trad/JP/variant: 後->后, 於->于	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/literature.dict.yaml	诸侯失国而後托于诸侯	zhu hou shi guo er hou tuo yu zhu hou	诸侯失国而后托于诸侯	*	Trad/JP/variant: 後->后	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/literature.dict.yaml	寄言纨袴与膏粱	ji yan wan ku yu gao liang	寄言纨绔与膏粱	*	Obsolete variant 袴->绔	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts_cell/medication.dict.yaml	鸊鷉	bi si	䴙䴘	pi ti	繁体 鸊鷉->䴙䴘 且修复上游错音 bi si->pi ti	通用规范汉字表/现汉第7版
 cn_dicts_cell/medication.dict.yaml	鱤鱼	gan yu	鳡鱼	*	Trad/JP/variant: 鱤->鳡	通用规范汉字表/DICTIONARY_SPEC §2.6
@@ -426,7 +426,6 @@ cn_dicts_cell/medication.dict.yaml	松驰治疗	song chi zhi liao	松弛治疗	*
 cn_dicts_cell/medication.dict.yaml	新生儿贲门松驰	xin sheng er ben men song chi	新生儿贲门松弛	*	E2错字转正词：松驰->松弛	现汉第7版(L1)
 cn_dicts_cell/idiom.dict.yaml	耳著明月璫	er zhu ming yue dang	耳著明月珰	er zhuo ming yue dang	《孔雀东南飞》璫->珰且著读 zhuó（与 literature 去重合并）	统编高中语文/现汉第7版
 cn_dicts_cell/idiom.dict.yaml	隔篱呼取尽馀杯	ge li hu qu jin yu bei	隔篱呼取尽余杯	*	Trad/JP/variant: 馀->余	通用规范汉字表/DICTIONARY_SPEC §2.6
-cn_dicts_cell/literature.dict.yaml	诸侯能荐人於天子	zhu hou neng jian ren yu tian zi	诸侯能荐人于天子	*	Trad/JP/variant: 於->于	通用规范汉字表/DICTIONARY_SPEC §2.6
 cn_dicts/base.dict.yaml	粘滞	*	黏滞	nian zhi	W3物性性状规范写作黏滞(nián zhì)	现汉第7版/全国名词委(L1/L2)
 cn_dicts/base.dict.yaml	纵膈	zong ge	纵隔	zong ge	W3解剖学唯一规范写作纵隔	全国名词委(L2)
 cn_dicts_cell/composite.dict.yaml	纵膈肿瘤	zong ge zhong liu	纵隔肿瘤	zong ge zhong liu	W3解剖学唯一规范写作纵隔肿瘤	全国名词委(L2)
@@ -439,8 +438,8 @@ cn_dicts_cell/history.dict.yaml	妥懽帖睦尔	tuo guan tie mu er	妥欢帖睦�
 cn_dicts_cell/history.dict.yaml	元顺帝妥懽帖睦尔	yuan shun di tuo guan tie mu er	元顺帝妥欢帖睦尔	yuan shun di tuo huan tie mu er	元顺帝名非8105繁体懽->欢且修正误读 guan->huan	辞海/通用规范汉字表
 cn_dicts_cell/literature.dict.yaml	数罟不入池	shu gu bu ru chi	数罟不入洿池	cu gu bu ru wu chi	《孟子》漏字残句补正洿且数读 cù	孟子/统编语文
 cn_dicts_cell/literature.dict.yaml	王使盖大夫王为辅行	wang shi gai dai fu wang wei fu xing	王使盖大夫王欢为辅行	wang shi ge da fu wang huan wei fu xing	《孟子》漏字残句(原字驩简化为欢)且修正盖(gě)大夫(dà fū)	孟子/通用规范汉字表
-cn_dicts_cell/literature.dict.yaml	不可法於者	bu ke fa yu zhe	不可法于后世者	bu ke fa yu hou shi zhe	《孟子·离娄上》漏字残句补正且於->于	孟子/通用规范汉字表
-cn_dicts_cell/literature.dict.yaml	於人心独无乎	yu ren xin du wu hu	于人心独无恔乎	yu ren xin du wu xiao hu	《孟子·公孙丑下》漏字残句补正恔(xiào)且於->于	孟子/通用规范汉字表
+cn_dicts_cell/literature.dict.yaml	不可法于者	bu ke fa yu zhe	不可法于后世者	bu ke fa yu hou shi zhe	《孟子·离娄上》漏字残句补正	孟子/通用规范汉字表
+cn_dicts_cell/literature.dict.yaml	于人心独无乎	yu ren xin du wu hu	于人心独无恔乎	yu ren xin du wu xiao hu	《孟子·公孙丑下》漏字残句补正恔(xiào)	孟子/通用规范汉字表
 cn_dicts_cell/literature.dict.yaml	是人这所恶也	shi ren zhe suo e ye	是人之所恶也	shi ren zhi suo wu ye	《孟子》错字这->之且厌恶义恶读 wù	孟子
 cn_dicts_cell/literature.dict.yaml	恶用是鶂鶂者为哉	e yong shi yi yi zhe wei zai	恶用是鹢鹢者为哉	wu yong shi yi yi zhe wei zai	《孟子》繁体鶂->鹢且疑问词恶读 wū	孟子/通用规范汉字表
 cn_dicts_cell/literature.dict.yaml	狼籍残红	lang ji can hong	狼藉残红	*	E2错字狼籍->狼藉	现汉第7版
@@ -518,8 +517,8 @@ cn_dicts_cell/game.dict.yaml	主体强化功杀一重	*	主体强化攻杀一重
 cn_dicts_cell/game.dict.yaml	主体强化功杀二重	*	主体强化攻杀二重	*	W5错字功杀->攻杀	游戏技能正字
 cn_dicts_cell/game.dict.yaml	主体强化功杀三重	*	主体强化攻杀三重	*	W5错字功杀->攻杀	游戏技能正字
 cn_dicts_cell/game.dict.yaml	主体强化功杀四重	*	主体强化攻杀四重	*	W5错字功杀->攻杀	游戏技能正字
-cn_dicts_cell/game.dict.yaml	主体强化功杀五重	zhu ti qiang hua gong sha wu zhong	主体强化攻杀五重	zhu ti qiang hua gong sha wu chong	W5错字功杀->攻杀且正音chong	游戏技能正字/现汉第7版
-cn_dicts_cell/game.dict.yaml	主体强化功杀六重	zhu ti qiang hua gong sha liu zhong	主体强化攻杀六重	zhu ti qiang hua gong sha liu chong	W5错字功杀->攻杀且正音chong	游戏技能正字/现汉第7版
+cn_dicts_cell/game.dict.yaml	主体强化功杀五重	zhu ti qiang hua gong sha wu chong	主体强化攻杀五重	zhu ti qiang hua gong sha wu chong	W5错字功杀->攻杀	游戏技能正字/现汉第7版
+cn_dicts_cell/game.dict.yaml	主体强化功杀六重	zhu ti qiang hua gong sha liu chong	主体强化攻杀六重	zhu ti qiang hua gong sha liu chong	W5错字功杀->攻杀	游戏技能正字/现汉第7版
 cn_dicts_cell/game.dict.yaml	积分点卷	ji fen dian juan	积分点券	ji fen dian quan	W5错字点卷->点券且正音quan	现汉第7版
 cn_dicts_cell/game.dict.yaml	裁缝大会入场卷	cai feng da hui ru chang juan	裁缝大会入场券	cai feng da hui ru chang quan	W5错字入场卷->入场券且正音quan	现汉第7版
 cn_dicts_cell/game.dict.yaml	迷图闯天关入场卷	mi tu chuang tian guan ru chang juan	迷图闯天关入场券	mi tu chuang tian guan ru chang quan	W5错字入场卷->入场券且正音quan	现汉第7版
@@ -718,7 +717,7 @@ cn_dicts_cell/medication.dict.yaml	球结膜瓣复盖术	*	球结膜瓣覆盖术
 cn_dicts_cell/medication.dict.yaml	人发人工肌健	*	人发人工肌腱	*	W5肌腱错字健->腱	全国科技名词委
 cn_dicts_cell/medication.dict.yaml	骨盆肩甲骨发育异常	*	骨盆肩胛骨发育异常	*	W5肩胛骨错字甲->胛	全国科技名词委
 cn_dicts_cell/medication.dict.yaml	针炙针	zhen zhi zhen	针灸针	zhen jiu zhen	W5针灸错字炙->灸并正音jiu	现汉第7版
-cn_dicts_cell/medication.dict.yaml	精神烦燥综合症	*	精神烦躁综合征	*	W5烦躁错字燥->躁且统一综合征	现汉第7版
+cn_dicts_cell/medication.dict.yaml	精神烦燥综合征	*	精神烦躁综合征	*	W5烦躁错字燥->躁	现汉第7版
 cn_dicts_cell/medication.dict.yaml	俘获幅射	*	俘获辐射	*	W5辐射错字幅->辐	现汉第7版
 cn_dicts_cell/medication.dict.yaml	家俱起光剂意外中毒	*	家具起光剂意外中毒	*	W3家具规范用具	第一批异形词整理表
 cn_dicts_cell/medication.dict.yaml	身分障碍	*	身份障碍	*	W3身份规范用份	第一批异形词整理表
@@ -731,3 +730,8 @@ cn_dicts_cell/game.dict.yaml	珍品蜜腊	*	珍品蜜蜡	*	W5蜜蜡错字腊->�
 cn_dicts_cell/game.dict.yaml	震摄卷	*	震慑卷	*	W5震慑错字摄->慑	现汉第7版
 cn_dicts_cell/game.dict.yaml	震摄之卷	*	震慑之卷	*	W5震慑错字摄->慑	现汉第7版
 cn_dicts_cell/game.dict.yaml	珠联壁合	*	珠联璧合	*	W5珠联璧合错字壁->璧	现汉第7版
+cn_dicts_cell/composite.dict.yaml	能看的出来	*	能看得出来	*	W5结构助词得误作的(看的出来->看得出来)	现汉第7版/DICTIONARY_SPEC §4.2
+cn_dicts_cell/idiom.dict.yaml	粘稠沥青	*	黏稠沥青	*	W3物理性状黏稠规范用黏	第一批异形词整理表/全国科技名词委
+cn_dicts_cell/name2.dict.yaml	石粉粘土	*	石粉黏土	*	W3物性黏土规范用黏	第一批异形词整理表/全国科技名词委
+cn_dicts_cell/name2.dict.yaml	天然粘土	*	天然黏土	*	W3物性黏土规范用黏	第一批异形词整理表/全国科技名词委
+cn_dicts_cell/history.dict.yaml	耿飚	geng biao	耿飙	*	非8105异体字飚->飙	通用规范汉字表/DICTIONARY_SPEC §2.6

@@ -254,7 +254,6 @@ cn_dicts/base.dict.yaml	几首	ji shou	300	R2基础词库权重校准
 cn_dicts/base.dict.yaml	凯恩	kai en	80	R2基础词库权重校准
 cn_dicts/base.dict.yaml	出个	chu ge	250	R2基础词库权重校准
 cn_dicts/base.dict.yaml	出球	chu qiu	150	R2基础词库权重校准
-cn_dicts/base.dict.yaml	出血	chu xie	250	R2基础词库权重校准
 cn_dicts/base.dict.yaml	分割线	fen ge xian	1500	R1基础词库权重校准
 cn_dicts/base.dict.yaml	刘彻	liu che	80	R2基础词库权重校准
 cn_dicts/base.dict.yaml	刘翔	liu xiang	1000	R2基础词库权重校准
@@ -299,7 +298,6 @@ cn_dicts/base.dict.yaml	同人	tong ren	450	R2基础词库权重校准
 cn_dicts/base.dict.yaml	同行	tong xing	1200	R2基础词库权重校准
 cn_dicts/base.dict.yaml	后摇	hou yao	600	R2基础词库权重校准
 cn_dicts/base.dict.yaml	后的	hou de	600	R1基础词库权重校准
-cn_dicts/base.dict.yaml	吐血	tu xie	80	R2基础词库权重校准
 cn_dicts/base.dict.yaml	吱吱	zi zi	50	R2基础词库权重校准
 cn_dicts/base.dict.yaml	吴京	wu jing	350	R2基础词库权重校准
 cn_dicts/base.dict.yaml	吴国	wu guo	500	R2基础词库权重校准
@@ -353,7 +351,6 @@ cn_dicts/base.dict.yaml	安迪	an di	150	R2基础词库权重校准
 cn_dicts/base.dict.yaml	宋江	song jiang	300	R2基础词库权重校准
 cn_dicts/base.dict.yaml	完形	wan xing	600	R2基础词库权重校准
 cn_dicts/base.dict.yaml	家的	jia de	600	R1基础词库权重校准
-cn_dicts/base.dict.yaml	密钥	mi yue	600	A类主读音保持高位且不致过度压制“蜜月(181)”
 cn_dicts/base.dict.yaml	富士	fu shi	1500	R2基础词库权重校准
 cn_dicts/base.dict.yaml	对其	dui qi	1200	R2基础词库权重校准
 cn_dicts/base.dict.yaml	对线	dui xian	1000	R2基础词库权重校准
@@ -415,7 +412,6 @@ cn_dicts/base.dict.yaml	搞基	gao ji	100	R2基础词库权重校准
 cn_dicts/base.dict.yaml	搞技术	gao ji shu	180	R2基础词库权重校准
 cn_dicts/base.dict.yaml	搞的	gao de	200	R1基础词库权重校准
 cn_dicts/base.dict.yaml	放的	fang de	200	R1基础词库权重校准
-cn_dicts/base.dict.yaml	放血	fang xie	100	R2基础词库权重校准
 cn_dicts/base.dict.yaml	数的	shu de	300	R2基础词库权重校准
 cn_dicts/base.dict.yaml	文中	wen zhong	800	R2基础词库权重校准
 cn_dicts/base.dict.yaml	新一	xin yi	400	R2基础词库权重校准
@@ -1087,8 +1083,6 @@ cn_dicts_cell/sport.dict.yaml	里瑟	*	<=25	R1/R2体育词库权重封顶
 cn_dicts_cell/sport.dict.yaml	鲍姆	*	<=40	R1/R2体育词库权重封顶
 cn_dicts_cell/medication.dict.yaml	并指畸形	*	>=40	临床高频手部畸形，排在足部“并趾畸形(30)”之前
 cn_dicts/8105.dict.yaml	薁	ao	5	有机化学蓝烃(azulene)合法读音 ào，低于主读音 yù(10)
-cn_dicts/base.dict.yaml	私钥	si yao	300	A类次读音权重校准，低于同音常用词“撕咬(413)”
-cn_dicts/base.dict.yaml	公钥	gong yao	300	A类次读音权重校准，与私钥保持对称
 cn_dicts/base.dict.yaml	不熟	bu shou	100	现汉第7版口语 shóu 合法读音，低于“不受(496)/不收(206)”
 cn_dicts/base.dict.yaml	熟了	shou le	100	现汉第7版口语 shóu 合法读音，低于“收了(936)/受了(912)”
 cn_dicts/base.dict.yaml	岁时	*	60	恢复合法词典词并降权（低于随时/虽是/碎石）
@@ -1105,19 +1099,6 @@ cn_dicts/base.dict.yaml	输血	shu xie	50	高频口语 xiě 读音安全权重�
 cn_dicts/ext.dict.yaml	一针见血地指出	yi zhen jian xue de zhi chu	<=30	现汉第7版“一针见血”规范读 xiě，使 xue 低于规范音(74)
 cn_dicts_cell/history.dict.yaml	范睢	*	<=40	保留《史记》传世古籍写法并控权，低于规范正名“范雎”
 cn_dicts/base.dict.yaml	筛骨	shai gu	>=30	Collision Guard：确保颅骨筛骨在shai gu首位，高于晒谷(7)与A类骰骨(5)
-cn_dicts/base.dict.yaml	骰骨	tou gu	>=20	提升规范解剖骨名骰骨(tóu gǔ)权重
-cn_dicts/base.dict.yaml	密钥	mi yao	350	A类双读音次音校准：mi yue(600) > mi yao(350)
-cn_dicts/base.dict.yaml	流血	liu xie	80	A类双读音次音校准：低于刘协(349)/留些(97)
-cn_dicts/base.dict.yaml	卡住	ka zhu	500	A类双读音次音校准：qia zhu(1069) > ka zhu(500)
-cn_dicts/base.dict.yaml	躯壳	qu ke	60	A类双读音次音校准：严控低于去壳(73)
-cn_dicts/base.dict.yaml	青玉案	qing yu wan	30	A类古诗词争议旧读次音校准：an(66) > wan(30)
-cn_dicts/base.dict.yaml	心包填塞	xin bao tian se	>=30	A类规范主音高于行业次音(18)
-cn_dicts/base.dict.yaml	枳壳	zhi qiao	>=45	A类药典规范主音高于常见次音(36)
-cn_dicts/base.dict.yaml	罂粟壳	ying su qiao	>=35	A类药典规范主音高于常见次音(27)
-cn_dicts/base.dict.yaml	射干	ye gan	>=20	A类现汉7规范主音与药典次音(20)持平
-cn_dicts/base.dict.yaml	格栅灯	ge zha deng	>=15	A类规范主音与行业次音(15)持平
-cn_dicts/base.dict.yaml	曝气池	pu qi chi	>=15	A类规范主音与行业次音(15)持平
-cn_dicts/base.dict.yaml	壳层模型	qiao ceng mo xing	>=15	A类规范主音与行业次音(15)持平
 cn_dicts/base.dict.yaml	适应证	shi ying zheng	450	W2：L1/L2规范适应证优先于临床存量适应症(300)
 cn_dicts/base.dict.yaml	适应症	shi ying zheng	300	W2：保留临床存量高频写法但位于规范适应证(450)之后
 cn_dicts/ext.dict.yaml	禁忌证	jin ji zheng	180	W2：L1/L2规范禁忌证优先于临床存量禁忌症(140)

@@ -2154,7 +2154,7 @@ ardently	ardently ad.热心地;热烈地
 ardour	ardour n.热心;热情
 ardor	ardor n.热心;热情
 arduous	arduous a.费力的;辛勤的;险峻的
-are	are prep.是;在
+are	are v.是;在
 area	area n.区域;面积;范围
 arena	arena n.竞技场;舞台
 arenose	arenose a.多沙的
@@ -2276,7 +2276,7 @@ arrhythmia	arrhythmia n.心律不齐
 arrhythmic	arrhythmic a.无节奏的
 arrival	arrival n.到达;抵达;新来者
 arrive	arrive vi.到达;抵达
-arrl	arrl n.AmericanRadioReleyLeague之简写
+arrl	arrl n.美国无线电中继联盟(American Radio Relay League)
 arrogance	arrogance n.傲慢态度;自大
 arrogant	arrogant a.傲慢的;自大的
 arrogate	arrogate vt.诈称;霸占;僭越
@@ -11948,7 +11948,7 @@ dysuria	dysuria n.排尿困难
 e	e n.字母e
 each	each a.每个;每;每一 ad.每个 pron.每个;个人;个自
 eager	eager a.热心的;渴望的;热望的
-eagerness	eagerness nis:n.网络信息服务(NetworkInformationServices) n.热心
+eagerness	eagerness n.热心;渴望
 eagle	eagle n.鹰;鹰状标饰
 eaglet	eaglet n.小鹰
 ear	ear n.耳朵;倾听;听觉;麦穗 vi.抽穗
@@ -15382,7 +15382,7 @@ friction-monger	friction-monger n.制造摩擦者
 Friday	Friday n.星期五
 fridge	fridge n.电冰箱
 fried	fried a.油炸的
-friedrich	friedrich n.Friedrich
+friedrich	friedrich n.弗里德里希(男子名)
 friend	friend n.朋友;支持者;赞助者
 friendless	friendless a.没有朋友的;无依无靠的
 friendliness	friendliness n.友谊;亲切;亲密
@@ -15464,7 +15464,7 @@ frowziness	frowziness n.不整洁;有臭味;闷热
 frowzy	frowzy a.不整洁的;有臭味的;很闷的
 froze	froze vbl.冻结;冷冻;僵硬;freeze的过去式
 frozen	frozen a.冻结的;冰冷的;冷酷的 vbl.冻结;冷冻;僵硬;freeze的过去分词
-frp	frp n.FRP
+frp	frp n.纤维增强塑料(玻璃钢)
 fructify	fructify vi.结果实 vt.使结果实;使肥沃
 fructose	fructose n.果糖
 frugal	frugal a.节俭的;朴素的
@@ -15490,7 +15490,7 @@ frustration	frustration n.打破;挫折;顿挫
 frustum	frustum n.截头体
 fry	fry n.油炸食物;油炸锅;鱼苗 vt.vi.油炸;煎
 frying	frying ing.煎
-ftp	ftp n.文件传输协议(FileTransferProtocol)
+ftp	ftp n.文件传输协议(File Transfer Protocol)
 fubsy	fubsy a.肥胖的;矮胖的
 fuchsia	fuchsia n.晚樱科植物
 fuck	fuck vt.欺骗;利用 n.些微 int.他妈的 n.做爱
@@ -18249,8 +18249,8 @@ hoydenish	hoydenish a.淘气的
 hoyle	hoyle n.纸牌游戏法
 hp	hp n.惠普公司 n.H-马力的简写
 hpp	hpp n.BorlandC++语言的头文件
-html	html 超级文本宏语言(HyperTextMarkupLanguage)
-http	http 超级文本传输协议(HyperTextTransferProtocol)
+html	html 超文本标记语言(HyperText Markup Language)
+http	http 超文本传输协议(HyperText Transfer Protocol)
 Hualien	Hualien n.花莲
 huang	huang n.黄
 hub	hub n.毂;木片;中心
@@ -20244,7 +20244,7 @@ Iraqi	Iraqi n.伊拉克人;伊拉克阿拉伯语 a.伊拉克的;伊拉克人的
 irascibility	irascibility n.易怒;脾气暴躁
 irascible	irascible a.易怒的;暴躁的
 irate	irate a.发怒的;生气
-irc	irc n.InternetRelayChat
+irc	irc n.因特网中继聊天(Internet Relay Chat)
 ire	ire n.忿怒
 ireful	ireful a.忿怒的
 Ireland	Ireland n.爱尔兰
@@ -20679,7 +20679,7 @@ joviality	joviality n.快乐;高兴;愉悦
 Jovian	Jovian a.朱庇特神的;朱庇特神似的;威风凛凛的
 joy	joy n.欢喜;乐事;高兴 vt.使快乐;令人高兴 vi.欢喜
 joyance	joyance n.喜悦
-Joyce	Joyce n.James
+Joyce	Joyce n.James Joyce(爱尔兰作家)
 joyful	joyful a.欢喜的;高兴的;令人高兴的
 joyless	joyless a.不高兴的;不快乐的
 joyous	joyous a.快乐的;高兴的
@@ -20723,7 +20723,7 @@ jujube	jujube n.枣树;枣子;枣子糖
 juke	juke vt.用假动作诱使
 jukebox	jukebox n.自动唱片点唱机
 jul	jul n.七月
-Julian	Julian a.JuliusCaesar的
+Julian	Julian a.Julius Caesar的
 Juliet	Juliet n.朱丽叶
 July	July n.七月
 jumble	jumble vi.搀杂;混杂 vt.搞乱;使混乱 n.混乱;薄饼
@@ -22268,7 +22268,7 @@ loquat	loquat n.枇杷
 lorad	lorad n.看
 loran	loran n.远距离无线电导航系统
 lord	lord n.统治者;阁下;上帝 vi.称王;作威作福 vt.使成贵族
-lord's	lord's n.Lord'sCricketGround
+lord's	lord's n.洛德板球场(Lord's Cricket Ground)
 lordliness	lordliness n.贵族式;贵族气派;权势
 lordling	lordling n.小君子;小公子;小贵族
 lordly	lordly a.有威严的;贵族似的;高傲的 ad.贵族般地;有气派地;傲然地
@@ -22669,7 +22669,7 @@ mainsheet	mainsheet n.大桅帆操纵索
 mainstay	mainstay n.支柱;中流砥柱
 mainstream	mainstream n.主流
 maintain	maintain vt.维持;维修;保持;坚持;供养;主张
-maintained	maintained v.维护 vbl.
+maintained	maintained v.维护
 maintainability	maintainability n.可持久率
 maintenance	maintenance n.维护;保持;维修;生活费用;坚持;扶养;瞻养义务
 maintop	maintop n.大桅楼
@@ -23727,7 +23727,6 @@ migrator	migrator n.候鸟;移居者
 migratory	migratory a.迁移的;流浪的
 mike	mike vi.偷懒;游手好闲 n.懒惰;游手好闲;扩音器;话筒
 mil	mil n.千分之一寸
-mil-std-863	mil-std-863 n.MIL-STD-863
 milan	milan n.米兰
 milanese	milanese n.米兰人 a.米兰的
 milch	milch a.生乳的
@@ -25231,7 +25230,7 @@ nibble	nibble n.半位元组;细咬;轻咬;啃 vt.vi.一点一点地咬;细咬;�
 nibel	nibel n.诽谤
 niblick	niblick n.铁头球杆之一种
 nibs	nibs n.上司;大人物
-nic	nic NetworkInformationCenter网络信息中心
+nic	nic n.网络信息中心(Network Information Center)
 nice	nice a.美好的;和蔼的;正派的;体贴的;精密的;细微的;挑剔的;拘泥的
 nicely	nicely ad.漂亮地;爽快地;恰好地
 nicene	nicene a.小亚细亚旧都尼西亚的
@@ -25305,7 +25304,7 @@ nipping	nipping a.刺骨的;刺人肌肤的;讥刺的
 nipple	nipple n.乳头;奶头;奶嘴
 nippy	nippy a.刺骨的;凛冽的;锐利的
 nirvana	nirvana n.涅盘;天堂
-nis	nis n.网络信息服务(NetworkInformationServices)
+nis	nis n.网络信息服务(Network Information Services)
 nit	nit n.没用的人;幼虫;卵
 nit-pick	nit-pick vi.挑剔;吹毛求疵
 nitration	nitration n.用硝酸处理;硝化;硝基置换
@@ -27355,7 +27354,7 @@ pattypan	pattypan n.面饼锅
 patulous	patulous a.扩展的;张开的
 paucity	paucity n.少数;少量;缺乏
 paul	paul n.保罗
-pauline	pauline a.使徒Paul的 n.St.Paul'sSchool学生;女子名
+pauline	pauline a.使徒Paul的 n.St. Paul's School学生;女子名
 paunch	paunch n.腹;胃;大肚子 vt.剖腹;取出内脏
 paunchy	paunchy a.大肚子的
 pauper	pauper n.贫民;被救济者;穷人
@@ -28114,7 +28113,7 @@ pickles	pickles n.泡菜
 picklock	picklock n.撬锁工具;撬锁人;盗贼
 pickpocket	pickpocket n.扒手
 pickup	pickup n.拾起;加速;刺激;电视摄像
-pickwick	pickwick n.Dickens著PickwickPapers中的主角
+pickwick	pickwick n.Dickens著Pickwick Papers中的主角
 picky	picky a.吹毛求疵的;挑剔的;找麻烦的
 picnic	picnic n.野餐;远足 vi.野餐;远足
 picnicker	picnicker n.郊游的人
@@ -29059,8 +29058,8 @@ powerpc	powerpc n.由IBM公司与Motorola公司推出一种RISC微处理器
 powerpoint	powerpoint n.微软公司的图形演示软件
 powwow	powwow n.仪式;巫师;医师 vi.举行仪式;商谈 vt.用巫术医治
 pox	pox n.发疹的疾病;痘;疹;瘟疫
-ppi	ppi n.PPI
-ppp	ppp n.点到点协议(PointtoPointProtocol)
+ppi	ppi n.每英寸像素数;生产者物价指数
+ppp	ppp n.点对点协议(Point-to-Point Protocol)
 practicability	practicability n.有实行可能;实用性
 practicable	practicable a.可实行的;可做的;可用的
 practicably	practicably ad.能用地;实用地
@@ -29553,7 +29552,7 @@ proclaim	proclaim vt.宣布;公告;宣言;表明;赞扬
 proclamation	proclamation n.宣言;公布;文告
 proclitic	proclitic a.后接的 n.后接词
 proclivity	proclivity n.倾向;癖性;气质
-procomm	procomm 软件名称(ProcomPlusforWindows)
+procomm	procomm 软件名称(Procomm Plus for Windows)
 proconsul	proconsul n.地方总督;殖民地总督
 proconsular	proconsular a.地方总督的
 procrastinate	procrastinate vt.vi.延迟;耽搁
@@ -29673,7 +29672,7 @@ prolix	prolix a.冗长的;说话罗唆的
 prolixity	prolixity n.冗长;罗唆
 prolixly	prolixly ad.冗长地;罗嗦地
 prolocutor	prolocutor n.议长;代辩者
-prolog	prolog 人工智能标准语言(PROgrammingLOGical)
+prolog	prolog 人工智能逻辑编程语言(PROgramming in LOGic)
 prologue	prologue n.开场白;序言;序幕 vt.说开场白;加上...前言
 prolong	prolong vt.延长;拖延;拖长
 prolongation	prolongation n.延伸;延长;延长部分
@@ -33928,7 +33927,7 @@ sexualise	sexualise vt.使有性别;使有性特征
 sexualize	sexualize vt.使有性别;使有性特征
 sexy	sexy a.有性感的;色情的
 Seychelles	Seychelles pla.塞舌尔
-sgml	sgml 标准的通用的宏语言(Standardized;GeneralizedMarkupLanguage)
+sgml	sgml 标准通用标记语言(Standard Generalized Markup Language)
 shabbily	shabbily ad.衣衫褴褛地;不体面地;卑鄙地
 shabbiness	shabbiness n.衣衫褴褛的样子;不体面;卑鄙
 shabby	shabby a.衣衫褴褛的;不体面的;破旧的;吝啬的;卑鄙的
@@ -34304,7 +34303,7 @@ sickliness	sickliness n.多病
 sickly	sickly a.病弱的;阴沉的;无精打采的 ad.成苍白色 vt.使现病容
 sickness	sickness n.疾病;不健康;呕吐
 sickroom	sickroom n.病房
-sid	sid n.SID
+sid	sid n.安全标识符;系统标识符
 side	side n.旁边;侧;方面;胁;侧边;血统 a.旁的;侧的;次要的 vt.偏袒;同意;支持 vi.支持;赞助
 sidearm	sidearm a.侧投球的
 sideband	sideband n.边带
@@ -34851,7 +34850,7 @@ smashup	smashup n.猛撞;翻覆;惨败
 smatter	smatter vt.vi.充内行 n.一知半解;肤浅的知识
 sme	sme n.制造工程师协会
 smear	smear vt.涂;擦上;玷污;抹擦使变模糊 vi.被弄脏 n.污点;污迹;污蔑
-smearcase	smearcase n.COTTAGEcheese
+smearcase	smearcase n.农家干酪(cottage cheese)
 smeary	smeary a.染污的;油污的;能粘染的
 smell	smell n.味道;气味;嗅觉;嗅;臭味;风味 vt.闻;探出;察觉;发出...的味道 vi.嗅;散发气味;发臭
 smeller	smeller n.闻的人;触须;鼻子
@@ -42240,7 +42239,7 @@ ws	ws n.暂时储存区;工作储存区
 www	www n.Inernet上的电子通信数据交换;商用密码运用环境
 wye	wye n.Y字;Y字形物
 wynd	wynd n.狭巷
-WYSIWYG	WYSIWYG n.所见即所得(WhatYouSeeIsWhatYouGet)
+WYSIWYG	WYSIWYG n.所见即所得(What You See Is What You Get)
 xanthate	xanthate n.黄酸盐
 Xanthippe	Xanthippe n.悍妇
 xanthochroic	xanthochroic a.金发白种人的

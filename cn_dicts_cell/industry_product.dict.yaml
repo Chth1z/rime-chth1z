@@ -124,7 +124,6 @@ use_preset_vocabulary: false
 特种塑料	te zhong su liao	1
 通用塑料	tong yong su liao	5
 脱硫机	tuo liu ji	0
-脱模剂	tuo mo ji	1
 文教用橡胶制品	wen jiao yong xiang jiao zhi pin	0
 吸塑加工	xi su jia gong	0
 橡胶裁断机	xiang jiao cai duan ji	0
@@ -2113,7 +2112,6 @@ use_preset_vocabulary: false
 贴标机械	tie biao ji xie	0
 文具胶带	wen ju jiao dai	0
 纸包装机械	zhi bao zhuang ji xie	0
-纸浆模塑	zhi jiang mo su	1
 纸类包装制品	zhi lei bao zhuang zhi pin	0
 纸类标签	zhi lei biao qian	0
 纸筒管	zhi tong guan	0

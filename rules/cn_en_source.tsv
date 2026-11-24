@@ -3,6 +3,7 @@
 #   delete   -> word 为待删词，其余字段留空
 #   rename   -> word 为旧词，prefix_en 为新词
 #   case_fix -> word 为目标词，prefix_en 为旧编码前缀，suffix_en 为新编码前缀
+#   replace  -> 覆盖既有 word 的编码，按 prefix_en + cn_syls + suffix_en + emit_lower 统一派生全部 7 种拼音布局
 #   add      -> word + prefix_en + cn_syls(空格分隔全拼) + suffix_en + emit_lower(true/false)，自动派生全部 7 种拼音布局
 delete	n遍					垃圾低质混输词
 delete	动L					垃圾低质混输词
