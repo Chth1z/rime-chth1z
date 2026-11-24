@@ -17,12 +17,12 @@
 | `amzxyz/rime-wanxiang-data`（`LTS`） | `wanxiang-lts-zh-hans.gram`（不入 Git） | `upstream-watch.yml` 记录 SHA-256；`scripts/update-local.ps1` 每周校验 SHA-256 自动同步 |
 | `rime/weasel`（`latest` Nightly） | Windows 客户端与 `librime` 版本 | `upstream-watch.yml` ＋ `scripts/check-upstreams.ps1` |
 
-## 2. 本机环境（2026-11-24）
+## 2. 本机环境（2026-11-25）
 
 - **系统与硬件**：Windows 11（`zh-Hant-TW` / `0x0404`），Intel Core Ultra 7 255HX，32 GB 内存
 - **输入法**：Weasel Nightly `0.17.4.98.f96ed24`（`librime 1.17.0`、`Lua 5.4.8`、Direct2D WARP）
 - **字体**：系统已装 Google 官方完整版 `NotoSansCJK.ttc` + `NotoSerifCJK.ttc`（繁简日韩无缺字），以及 `Chiron GoRound TC VF`、`Inter Variable Text`、`LXGW WenKai TC`、`Newsreader`、`Source Serif 4`、`Plus Jakarta Sans`
-- **当前自用配置**：自然码双拼（主力）＋ 全拼（并列，`melt_eng` 并行支持两套数字与符号中文谐音），挂 `wanxiang-lts-zh-hans.gram`（372.68 MB，`collocation_penalty: -15.5`、`non_collocation_penalty: -4`、`contextual_suggestions: false`）、独立插件 `Chth1z/rime-neural`（`v1.1.0+` 架构：`ML-pumpkin-1103` 令牌级前缀 KV-cache ＋ 单遍 `.gram` 共享映射 ＋ Pass-2 P2C ＋ MTA 非阻塞 UIA ＋ 零明文 v2 反馈）、台湾繁体双出滤镜（`tw_dual_filter.lua`：首选 `s2twp` 台湾用法，次选 `s2tw` 台湾正体保留原词；全局持久化在 `user.yaml`，`claude.exe` / `claude-desktop.exe` 通过 `app_options` 固定臺繁、其余默认简中）、竖排 5 候选（`F4` 菜单单页 6 项），主题 `apple_graphite_dark`（`#262626`、`#2C62CE`、`Noto Sans CJK TC:medium` 13pt / 11pt 阿拉伯数字）
+- **当前自用配置**：自然码双拼（主力）＋ 全拼（并列，`melt_eng` 并行支持两套数字与符号中文谐音），挂 `wanxiang-lts-zh-hans.gram`（372.68 MB，`collocation_penalty: -15.5`、`non_collocation_penalty: -4`、`contextual_suggestions: false`）、独立插件 `Chth1z/rime-neural`（官方正式版 `v1.2.1`：`ML-pumpkin-1103` 令牌级前缀 KV-cache ＋ 统一 `char_logits` 分母约去 ＋ 按路径共享只读 `.gram` 映射 ＋ Pass-2 P2C ＋ `focus_epoch` MTA 非阻塞 UIA ＋ 原生 `tags_match` ＋ 零明文 v2 反馈）、台湾繁体双出滤镜（`tw_dual_filter.lua`：首选 `s2twp` 台湾用法，次选 `s2tw` 台湾正体保留原词；全局持久化在 `user.yaml`，`claude.exe` / `claude-desktop.exe` 通过 `app_options` 固定臺繁、其余默认简中）、竖排 5 候选（`F4` 菜单单页 6 项），主题 `apple_graphite_dark`（`#262626`、`#2C62CE`、`Noto Sans CJK TC:medium` 13pt / 11pt 阿拉伯数字）
 
 ## 3. 已测出的性能与准确率数据
 
@@ -40,6 +40,7 @@
 | ＋ 端侧神经重排 v0.3.0（＋ Pass-2 校验 P2C ＋ 非阻塞 UIA ＋ 7 种双拼通用） | 待补测（同架构） | `0.1 ms / 1.8 ms`（峰值 `10.3 ms`） | 全拼 `0.1 / 4.3 ms`（峰值 `13.5 ms`），88 项回归＋3 轮热部署全过 |
 | ＋ 独立正式版 `Chth1z/rime-neural` `v1.0.0`（官方 GitHub Release 安装实测） | 同架构（`~4.1 ms`） | **`0.1 ms / 2.0 ms`**（峰值 **`11.5 ms`**） | 全拼 `0.2 / 4.7 ms`（峰值 `14.7 ms`），90/90 冷热回归全过 |
 | ＋ 跨仓库深度升级态（`rime-chth1z` 14,516 规则 ＋ `rime-neural` 单遍 trie / 令牌 KV-cache） | 同架构 | **`0.2 ms / 1.6–1.9 ms`**（峰值 **`9.8–11.3 ms`**） | 全拼 `0.1–0.2 / 4.6–4.7 ms`（峰值 `13.0–14.9 ms`），329/329 回归＋全表面巡检＋零 `%TEMP%` 残留全过 |
+| ＋ 官方正式版 `Chth1z/rime-neural` `v1.2.1`（`rime-chth1z@83beb34` 14,516 规则实测） | 同架构 | **`0.2 ms / 1.7 ms`**（峰值 **`9.6 ms`**） | 全拼 `0.2 / 4.6 ms`（峰值 `13.3 ms`）；同场纯统计对照双拼 `0.1 / 0.4 ms`（峰值 `1.0 ms`）、全拼 `0.2 / 1.0 ms`（峰值 `4.6 ms`）；329/329 回归＋全表面巡检＋8/8＋11/11 验收全过 |
 
 ### 语料准确率评测（`bench/eval-accuracy.py`，复用 `gaboolic/rime-schema-compare` 公开语料与同义归一化口径）
 
@@ -67,6 +68,11 @@
   - 840 句 5 个完全未见跨领域（新闻/小说/散文/旧科技/08-30 知乎）官方小狼毫实跑：**`68.57%`**（576/840，**`+8.09%`**，文字 **`93.52%`**）；
   - 全拼科技 200 句官方小狼毫实跑：单句零上下文 **`89.50%`**（179/200，文字 `98.42%`）、连续 `commit_history` **`91.00%`**（182/200，文字 **`98.72%`**）；
   - 动态 ONNX 自省验证：同份 `rime_neural.dll` 零重编直接跑 8 层轻量 `zhen-feather`（`laya.one.w4.onnx`，`choice_compact=true`），双拼科技 200 句达 **`88.50%`**（177/200，文字 `98.23%`）。
+- **四批词库全量审计后（`rime-chth1z@83beb34`，14,516 条 `rules/` 规则）＋ 官方正式版 `Chth1z/rime-neural` `v1.2.1`（全口径隔离实跑，默认先验 `[1.0, -1.4, 0.05, 0.15, 0.0]`，`enable_user_dict: false`、关闭 UIA）**：
+  - 科技周刊 200 句（`public_articles_2026-11-19.txt`）：纯统计对照全拼 `-14` `83.00%`（166/200，文字 `97.39%`）、全拼 `-15.5` `80.50%`（161/200，文字 `96.95%`）、双拼 `-15.5` `81.00%`（162/200，文字 `97.04%`）；开启 `v1.2.1` 后，严格零上文全拼 `-14` `89.50%`（179/200，文字 `98.42%`）、全拼 `-15.5` **`90.00%`**（180/200，文字 `98.47%`）、双拼 `-15.5` **`90.50%`**（181/200，文字 `98.57%`）；段落上文全拼 **`91.50%`**（183/200，文字 `98.67%`）、双拼 **`91.50%`**（183/200，文字 `98.72%`）；连续 `commit_history` 全拼 **`91.50%`**（183/200，文字 `98.77%`）、双拼 **`92.00%`**（184/200，文字 **`98.87%`**）；
+  - 跨领域 246 句（`rime-schema-compare@99da339a`：`news 36` / `novel 136` / `prose 38` / `tech 31` / `test 5`）：纯统计 `-15.5`（双拼/全拼一致）**`76.42%`**（188/246，文字 `95.92%`；`news 97.22%`、`novel 69.85%`、`prose 71.05%`、`tech 83.87%`、`test 100%`）；开启 `v1.2.1` 后，全拼严格零上文 **`81.71%`**（201/246，文字 `97.22%`）、双拼严格零上文 **`81.71%`**（201/246，文字 `97.33%`）、双拼段落上文 **`82.52%`**（203/246，文字 **`97.62%`**；`news 97.22%`、`novel 77.94%`、`prose 76.32%`、`tech 90.32%`、`test 100%`）；
+  - 1,600 句双拼混合（科技 200 + 知乎开发 400 + 知乎验证 1,000）：纯统计 `75.12%`（1202/1600，文字 `95.48%`）；`v1.2.1` 严格零上文 **`81.25%`**（1300/1600，文字 `96.76%`；科技 `90.50%`、开发 `78.50%`、验证 `80.50%`）、连续 `commit_history` **`82.38%`**（1318/1600，文字 **`97.04%`**；科技 **`92.00%`**、开发 **`80.50%`**、验证 `81.20%`）；全量 2,784 句知乎热榜（`zhihu_hotlist_2026-11-18.txt`）双拼连续实跑由纯统计 `75.47%`（2101/2784，文字 `95.34%`）提升至 **`82.94%`**（2309/2784，**`+7.47%`**，净多对 208 句，文字 `96.98%`）；
+  - 开源重排器固定候选池（`metasequoiaime/chinese-ime-lm` `sentences-ctx-v1` 1,631 条整句，直调已安装 `rime_neural.dll v1.2.1`，CPU 4T）：纯 `ML-pumpkin-1103` **`93.01%`**（1517/1631；有上文 `95.15%` 1138/1196、无上文 `87.13%` 379/435）、`+ .gram` **`93.32%`**（1522/1631；无上文 `88.28%` 384/435）、默认全融合 **`93.26%`**（1521/1631；有上文 `94.98%` 1136/1196、无上文 `88.51%` 385/435），三组命中与 `v1.0.0` 逐句完全一致；全量冷缓存单次决策耗时（AC 4T）有上文 `p50 17.0 ms / p95 22.0 ms`、无上文 `p50 7.0 ms / p95 10.0 ms`。
 
 已经核实的事实：
 1. 400 MB 万象模型本身几乎不拖慢按键；`melt_eng` 缩减前 5–10 位大写派生后 `melt_eng.prism.bin` 从 `6.82 MB` 降到 `4.97 MB`。
