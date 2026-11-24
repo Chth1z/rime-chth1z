@@ -685,6 +685,14 @@
     { "name": "fp: sym anti-hijack cjing stays 場景 (not C#)", "schema": "rime_frost", "keys": "cjing", "first_text": "場景", "no_text_regex": "C#" },
     { "name": "fp: sym anti-hijack cjiajia not hijacked by C++", "schema": "rime_frost", "keys": "cjiajia", "no_text_regex": "C\\+\\+" },
     { "name": "fp: sym anti-hijack fjing stays 風景 (not F#)", "schema": "rime_frost", "keys": "fjing", "first_text": "風景", "no_text_regex": "F#" },
-    { "name": "fp: sym anti-hijack cc stays 純粹 (not C/C++)", "schema": "rime_frost", "keys": "cc", "first_text": "純粹", "no_text_regex": "C/C\\+\\+" }
+    { "name": "fp: sym anti-hijack cc stays 純粹 (not C/C++)", "schema": "rime_frost", "keys": "cc", "first_text": "純粹", "no_text_regex": "C/C\\+\\+" },
+    { "name": "dp: audit3 9-char correction comment preserved 何时眼前突兀见此屋", "schema": "rime_frost_double_pinyin", "keys": "heuiyjqmtuwujmciwu", "first_text": "何時眼前突兀見此屋", "first_comment": "何时眼前突兀见(xiàn)此屋" },
+    { "name": "fp: audit3 9-char correction comment preserved 何时眼前突兀见此屋", "schema": "rime_frost", "keys": "heshiyanqiantuwujianciwu", "first_text": "何時眼前突兀見此屋", "first_comment": "何时眼前突兀见(xiàn)此屋" },
+    { "name": "fp: audit3 calculator portable log10(100) == 2", "schema": "rime_frost", "keys": "/vslog10(100)", "first_text_regex": "^2(\\.0)?$" },
+    { "name": "fp: audit3 calculator portable atan2(1,1) == pi/4", "schema": "rime_frost", "keys": "/vsatan2(1,1)", "first_text_regex": "^0\\.785398" },
+    { "name": "fp: audit3 calculator portable sinh(1)", "schema": "rime_frost", "keys": "/vssinh(1)", "first_text_regex": "^1\\.175201" },
+    { "name": "fp: audit3 calculator portable cosh(1)", "schema": "rime_frost", "keys": "/vscosh(1)", "first_text_regex": "^1\\.543080" },
+    { "name": "fp: audit3 calculator portable tanh(100) clamped to 1 (no NaN)", "schema": "rime_frost", "keys": "/vstanh(100)", "first_text_regex": "^1(\\.0)?$" },
+    { "name": "fp: audit3 calculator portable ldexp(2,3) == 16", "schema": "rime_frost", "keys": "/vsldexp(2,3)", "first_text_regex": "^16(\\.0)?$" }
   ]
 }

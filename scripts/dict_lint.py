@@ -365,6 +365,11 @@ def check_en_and_cn_en(root: pathlib.Path, rules_dir: pathlib.Path, errors: list
                 if k in seen_en:
                     dup_cnt += 1
                 seen_en.add(k)
+                if re.search(r"[^\x21-\x7e]", code):
+                    errors.append(
+                        f"{rel}:{idx}: non-ASCII or whitespace char in EN code '{code}' for '{w}' "
+                        f"(untypeable under ASCII speller/alphabet)"
+                    )
                 if re.search(r"[^a-zA-Z0-9]", code):
                     stripped = re.sub(r"[^a-zA-Z0-9]", "", code)
                     if len(stripped) <= 1:
@@ -502,6 +507,64 @@ def check_schema_and_opencc(root: pathlib.Path, errors: list[str]) -> None:
                 errors.append(
                     "melt_eng_algebra_common.yaml: algebra_common_post must contain erase/^[^a-zA-Z0-9].+$/"
                 )
+
+        # Guard translator/spelling_hints >= max syllable length in cn_dicts/corrections.dict.yaml
+        corr_p = root / "cn_dicts/corrections.dict.yaml"
+        max_corr_syls = 0
+        max_corr_sample = ""
+        if corr_p.exists():
+            _, corr_body, _ = _split_header_body(corr_p.read_text(encoding="utf-8").splitlines())
+            for line in corr_body:
+                s = line.strip()
+                if not s or s.startswith("#"):
+                    continue
+                cols = line.split("\t")
+                if len(cols) >= 4:
+                    n_syl = len(cols[1].split())
+                    if n_syl > max_corr_syls:
+                        max_corr_syls = n_syl
+                        max_corr_sample = cols[0]
+        if max_corr_syls > 0:
+            for sc_rel in ("rime_frost.schema.yaml", "rime_frost_double_pinyin.schema.yaml"):
+                sc_p = root / sc_rel
+                if not sc_p.exists():
+                    continue
+                sc_doc = yaml.safe_load(sc_p.read_text(encoding="utf-8-sig")) or {}
+                sh = (sc_doc.get("translator") or {}).get("spelling_hints")
+                if not isinstance(sh, int) or sh < max_corr_syls:
+                    errors.append(
+                        f"{sc_rel}: translator/spelling_hints={sh!r} < max corrections syllable count "
+                        f"{max_corr_syls} ('{max_corr_sample}'); comments on longer corrections will be dropped"
+                    )
+
+        # Guard symbols_v.yaml keys match recognizer/patterns/punct and have no duplicate items
+        sym_p = root / "symbols_v.yaml"
+        if sym_p.exists():
+            sym_doc = yaml.safe_load(sym_p.read_text(encoding="utf-8-sig")) or {}
+            sym_map = sym_doc.get("symbols") or {}
+            punct_pats = []
+            for sc_rel in ("rime_frost.schema.yaml", "rime_frost_double_pinyin.schema.yaml"):
+                sc_p = root / sc_rel
+                if sc_p.exists():
+                    sc_doc = yaml.safe_load(sc_p.read_text(encoding="utf-8-sig")) or {}
+                    pat = ((sc_doc.get("recognizer") or {}).get("patterns") or {}).get("punct")
+                    if pat:
+                        punct_pats.append((sc_rel, re.compile(pat)))
+            for sk, vals in sym_map.items():
+                sk_s = str(sk)
+                for sc_rel, pat_re in punct_pats:
+                    if not pat_re.match(sk_s):
+                        errors.append(
+                            f"symbols_v.yaml: key '{sk_s}' does not match {sc_rel} recognizer/patterns/punct "
+                            f"'{pat_re.pattern}' (unreachable)"
+                        )
+                if isinstance(vals, list):
+                    seen_v: set[str] = set()
+                    for v in vals:
+                        vs = str(v)
+                        if vs in seen_v:
+                            errors.append(f"symbols_v.yaml: duplicate item '{vs}' under key '{sk_s}'")
+                        seen_v.add(vs)
 
 
 def check_idempotency(root: pathlib.Path, rules_dir: pathlib.Path, errors: list[str]) -> dict:

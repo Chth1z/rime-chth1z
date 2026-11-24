@@ -214,7 +214,7 @@ scripts/
 
 | 门禁 | 执行命令 / 检查项 | 触发条件 | 通过标准 |
 | :--- | :--- | :--- | :--- |
-| **Gate 1：静态 Lint 与幂等** | `python scripts/dict_lint.py --strict --idempotent --check-collisions` | 每次改动 ＋ 每周 CI | 5 项不变量全 `0`、YAML 语法与 `rules/` 零冲突、`cn_en` 7 份一致、注释与同音碰撞护栏合规、二次执行 SHA-256 差异 = `0` |
+| **Gate 1：静态 Lint 与幂等** | `python scripts/dict_lint.py --strict --idempotent --check-collisions` | 每次改动 ＋ 每周 CI | 5 项不变量全 `0`、YAML 语法与 `rules/` 零冲突、`spelling_hints` 覆盖最长纠错、`symbols_v` 正则可达、`en` 编码纯 ASCII 且防劫持、`cn_en` 7 份一致、二次执行 SHA-256 差异 = `0` |
 | **Gate 2：引擎编译** | `WeaselDeployer /build` 或 `scripts/deploy-local.ps1` | 每次本地改动 | 退出码 `0`、Weasel 日志 0 error / 0 warning、`.table.bin` 体积变动可解释 |
-| **Gate 3：功能回归** | `bench/accuracy-test.ps1 -WaitNeural` | 每次本地改动 | 100% 通过（0 failed），单实例 `WeaselServer.exe` 正常 |
+| **Gate 3：功能回归与全表面巡检** | `bench/accuracy-test.ps1 -WaitNeural` ＋ `bench/audit-surface.ps1` | 每次本地改动 / 大改验收 | 回归 100% 通过（0 failed）、全表面巡检 0 failures 且 Rime 日志 0 W/E/F、单实例 `WeaselServer.exe` 正常 |
 | **Gate 4：盲测防退化** | `bench/eval-accuracy.py`（DP/FP × 统计/神经） | 涉及权重调整、批量删词或季度审计 | 字准与句准无退化；任何单句波动须查明根因 |

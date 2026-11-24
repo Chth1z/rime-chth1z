@@ -53,8 +53,8 @@ powershell -ExecutionPolicy Bypass -File $s -InstallWeasel -NeuralModel pumpkin 
 
 ### 自动化校验与四级门禁
 
-- **静态门禁与幂等校验（`scripts/dict_lint.py`）**：强制校验 5 项零容忍不变量（非法音节、字音长度失配、残留 `lue/nue`、单文件重复、26 份活跃中文词库跨文件重复均为 `0`），同时校验 YAML 语法、`rules/` 零冲突、A/B/C 类同音碰撞安全边界、`melt_eng` 双拼/全拼派生对等与符号防劫持约束、`cn_en` 7 布局一致性及二次清洗 SHA-256 零差异。
-- **引擎部署与确定性回归（`bench/accuracy-test.ps1`）**：基于本机 `rime.dll` 在隔离目录执行 `280` 项确定性回归断言，覆盖双读音注释、纠错排序、同音碰撞边界、台繁双出、中英混输、符号/数字双方案谐音派生、OpenCC 与 Lua 滤镜行为。
+- **静态门禁与幂等校验（`scripts/dict_lint.py`）**：强制校验 5 项零容忍不变量（非法音节、字音长度失配、残留 `lue/nue`、单文件重复、26 份活跃中文词库跨文件重复均为 `0`），同时校验 YAML 语法、`rules/` 零冲突、A/B/C 类同音碰撞安全边界、`translator/spelling_hints >= corrections` 最大音节数、`symbols_v.yaml` 正则可达性与去重、`melt_eng` 双拼/全拼派生对等与符号/非 ASCII 防劫持约束、`cn_en` 7 布局一致性及二次清洗 SHA-256 零差异。
+- **引擎部署与确定性回归（`bench/accuracy-test.ps1`、`bench/audit-surface.ps1`）**：基于本机 `rime.dll` 在隔离目录执行 `288` 项确定性回归断言，并配套全表面运行时巡检脚本 `bench/audit-surface.ps1`（覆盖双拼/全拼全量 1,247 条纠错注释挂载、395 条符号键、全部置顶键、高频中英反劫持及 Lua 边界模糊测试）。
 - **盲测防退化监控（`bench/eval-accuracy.py`）**：参考 [gaboolic/rime-schema-compare](https://github.com/gaboolic/rime-schema-compare) 公开语料与同义归一化口径，在双拼/全拼 × 纯统计/神经重排四组模式下执行 A/B 对比，防止调权或删词引发整句准确率退化。
 
 ### 词库与规则复用方式
@@ -81,7 +81,7 @@ python scripts/build_cn_en.py
 - `lua/`：6 个自用脚本——单遍合并管线（`chth1z_pipeline_filter.lua`）、台湾繁体双出滤镜（`tw_dual_filter.lua`，支持单字一简对多繁展开与拆字简形透传）以及日期、农历、计算器（含大数阶乘防溢出与求值校验）、以词定字脚本；神经重排脚本 `rime_neural.lua` 与原生 DLL 由 `Chth1z/rime-neural` 发行包管理
 - `profiles/`：`rime.lua`（Lua 5.4 GC 参数）及预留的本机临时覆盖文件 `*.custom.yaml`
 - `themes/`：小狼毫外观配置（`apple_graphite_dark`，含 `claude.exe` / `claude-desktop.exe` `app_options` 臺繁设定）
-- `bench/`：调用本机 `rime.dll` 的功能回归测试（`accuracy-test.ps1`、`accuracy-cases.json`）、按键耗时测试（`bench-rime.ps1`）与语料准确率评测（`eval-accuracy.py`）
+- `bench/`：调用本机 `rime.dll` 的功能回归测试（`accuracy-test.ps1`、`accuracy-cases.json`）、全表面运行时巡检（`audit-surface.ps1`）、按键耗时测试（`bench-rime.ps1`）与语料准确率评测（`eval-accuracy.py`）
 - `scripts/`：本地同步与清洗词库（`sync-dicts-local.ps1`、`clean-dicts.py`、`dict_rules.py`、`dict_lint.py`、`build_cn_en.py`）、检查上游更新、安装或升级 `Chth1z/rime-neural`（`install-rime-neural.ps1`）、本地部署（`deploy-local.ps1`）及本机周更脚本（`update-local.ps1`）
 - `skills/rime-chth1z-setup/`：面向 AI Agent 的全套一键安装、配置与验收技能包（`SKILL.md`、`inspect-env.ps1`、`bootstrap.ps1`、`verify-setup.ps1` 及自定义/排错参考）
 - `docs/`：词库维护与治理规范（`DICTIONARY_SPEC.md`）及向上游反馈问题的约定与记录（`upstream-issues/`）

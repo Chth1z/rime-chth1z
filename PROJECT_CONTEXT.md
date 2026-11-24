@@ -77,7 +77,7 @@
 
 ## 4. 平时协作的基本约定
 
-- **看实测数据**：改完性能、脚本或词库后均经 `bench/accuracy-test.ps1 -WaitNeural`（280 项确定性回归）、`bench/bench-rime.ps1` 与 `bench/eval-accuracy.py` 盲测验证，不凭感觉下结论。
+- **看实测数据**：改完性能、脚本或词库后均经 `bench/accuracy-test.ps1 -WaitNeural`（288 项确定性回归）、`bench/audit-surface.ps1`（双方案全表面运行时巡检）、`bench/bench-rime.ps1` 与 `bench/eval-accuracy.py` 盲测验证，不凭感觉下结论。
 - **文档保持朴素**：README 和仓库里的文档写清楚事实和用法就行，不堆虚词。
 - **词库清洗与治理走规范**：词库收词、审音、纠错分类、权重标尺与上线四级门禁统一遵循 [`docs/DICTIONARY_SPEC.md`](docs/DICTIONARY_SPEC.md)；全部 10,021 条词库覆写统一沉淀在声明式规则目录 `rules/`（中英混输通过 `rules/cn_en_source.tsv` ＋ `scripts/build_cn_en.py` 派生 7 份布局文件），由 `scripts/clean-dicts.py` 幂等应用、`scripts/dict_lint.py --strict --idempotent --check-collisions` 校验，确保上游同步可洁净重放且零冲突。
 - **提上游 Issue 从严**：遵守 [`docs/upstream-issues/GUIDELINE.md`](docs/upstream-issues/GUIDELINE.md)，只提实测复现、有实际影响的真 Bug，不提视角或习惯分歧带来的伪问题。

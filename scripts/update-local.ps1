@@ -9,6 +9,7 @@
 #>
 param(
     [switch]$Force,
+    [switch]$ForceTheme,
     [switch]$InitOnly,
     [string]$RepoDir = "",
     [string]$RimeDir = "",
@@ -76,7 +77,7 @@ function Invoke-CurlDownload([string]$Url, [string]$OutFile) {
     }
 }
 
-function Sync-RepoToRime([string]$SourceRoot, [string]$TargetRimeDir, [string]$ThemeName) {
+function Sync-RepoToRime([string]$SourceRoot, [string]$TargetRimeDir, [string]$ThemeName, [bool]$OverwriteTheme = $false) {
     New-Item -ItemType Directory -Force -Path `
         (Join-Path $TargetRimeDir "cn_dicts"), `
         (Join-Path $TargetRimeDir "cn_dicts_cell"), `
@@ -106,12 +107,20 @@ function Sync-RepoToRime([string]$SourceRoot, [string]$TargetRimeDir, [string]$T
         $src = Join-Path $SourceRoot $ry
         if (Test-Path $src) { Copy-Item $src (Join-Path $TargetRimeDir $ry) -Force }
     }
+    # Always sync rime.lua (runtime GC tuning); preserve existing user *.custom.yaml overrides
     Get-ChildItem (Join-Path $SourceRoot "profiles") -File -ErrorAction SilentlyContinue | ForEach-Object {
-        Copy-Item $_.FullName (Join-Path $TargetRimeDir $_.Name) -Force
+        $dst = Join-Path $TargetRimeDir $_.Name
+        $isCustomYaml = $_.Name.EndsWith(".custom.yaml")
+        if (-not $isCustomYaml -or (-not (Test-Path $dst))) {
+            Copy-Item $_.FullName $dst -Force
+        }
     }
-    $themeFile = Join-Path $SourceRoot "themes\$ThemeName.custom.yaml"
-    if (Test-Path $themeFile) {
-        Copy-Item $themeFile (Join-Path $TargetRimeDir "weasel.custom.yaml") -Force
+    $weaselCustomDst = Join-Path $TargetRimeDir "weasel.custom.yaml"
+    if ($ThemeName -ne "keep" -and ($OverwriteTheme -or (-not (Test-Path $weaselCustomDst)))) {
+        $themeFile = Join-Path $SourceRoot "themes\$ThemeName.custom.yaml"
+        if (Test-Path $themeFile) {
+            Copy-Item $themeFile $weaselCustomDst -Force
+        }
     }
     $selfUpdater = Join-Path $SourceRoot "scripts\update-local.ps1"
     if (Test-Path $selfUpdater) {
@@ -357,7 +366,7 @@ try {
         # 4. Apply updates
         if ($needRepo -and $deploySource) {
             Write-Log "Syncing files from $deploySource -> $rimeDir..."
-            Sync-RepoToRime -SourceRoot $deploySource -TargetRimeDir $rimeDir -ThemeName $Theme
+            Sync-RepoToRime -SourceRoot $deploySource -TargetRimeDir $rimeDir -ThemeName $Theme -OverwriteTheme ([bool]$ForceTheme)
         }
 
         if ($needNeural -and $neuralStageDll -and $neuralStageLua) {

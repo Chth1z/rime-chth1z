@@ -42,9 +42,9 @@ local function sin(x)
 end
 calcPlugin["sin"] = sin
 
--- 双曲正弦
+-- 双曲正弦（兼容 LuaJIT / Lua 5.4 / 5.5）
 local function sinh(x)
-  return math.sinh(x)
+  return (math.exp(x) - math.exp(-x)) * 0.5
 end
 calcPlugin["sinh"] = sinh
 
@@ -60,9 +60,9 @@ local function cos(x)
 end
 calcPlugin["cos"] = cos
 
--- 双曲余弦
+-- 双曲余弦（兼容 LuaJIT / Lua 5.4 / 5.5）
 local function cosh(x)
-  return math.cosh(x)
+  return (math.exp(x) + math.exp(-x)) * 0.5
 end
 calcPlugin["cosh"] = cosh
 
@@ -78,9 +78,12 @@ local function tan(x)
 end
 calcPlugin["tan"] = tan
 
--- 双曲正切
+-- 双曲正切（兼容 LuaJIT / Lua 5.4 / 5.5，避免大参数下 exp 溢出产生 NaN）
 local function tanh(x)
-  return math.tanh(x)
+  if x > 20 then return 1.0 end
+  if x < -20 then return -1.0 end
+  local e2x = math.exp(2 * x)
+  return (e2x - 1) / (e2x + 1)
 end
 calcPlugin["tanh"] = tanh
 
@@ -94,7 +97,8 @@ calcPlugin["atan"] = atan
 -- 返回范围从−π到π （以弧度为单位），其中负角度表示向下旋转，正角度表示向上旋转
 -- 它与传统的 math.atan(y/x) 函数相比，具有更好的数学定义，因为它能够正确处理边界情况（例如x=0）
 local function atan2(y, x)
-  return math.atan2(y, x)
+  if math.atan2 then return math.atan2(y, x) end
+  return math.atan(y, x)
 end
 calcPlugin["atan2"] = atan2
 
@@ -117,9 +121,10 @@ calcPlugin["rad"] = rad
 -- end
 -- calcPlugin["frexp"] = frexp
 
--- 返回 x*2^y
+-- 返回 x*2^y（兼容 LuaJIT / Lua 5.4 / 5.5）
 local function ldexp(x, y)
-  return math.ldexp(x, y)
+  if math.ldexp then return math.ldexp(x, y) end
+  return x * (2.0 ^ y)
 end
 calcPlugin["ldexp"] = ldexp
 
@@ -147,18 +152,18 @@ calcPlugin["log"] = log
 -- 自然数e为底的对数
 local function loge(x)
   -- 不能为负数或0
-  if x <= 0 then return nil end
+  if type(x) ~= "number" or x <= 0 then return nil end
 
   return math.log(x)
 end
 calcPlugin["loge"] = loge
 
--- 10为底的对数
+-- 10为底的对数（兼容 LuaJIT / Lua 5.4 / 5.5）
 local function log10(x)
   -- 不能为负数或0
-  if x <= 0 then return nil end
+  if type(x) ~= "number" or x <= 0 then return nil end
 
-  return math.log10(x)
+  return math.log(x) / math.log(10)
 end
 calcPlugin["log10"] = log10
 

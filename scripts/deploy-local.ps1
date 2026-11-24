@@ -9,6 +9,8 @@
 param(
     [string]$Theme = "apple_graphite_dark",
     [string]$RimeDir = "",
+    [switch]$ForceCustom,
+    [switch]$SkipDeploy,
     [switch]$RunBench,
     [switch]$Verify
 )
@@ -93,14 +95,23 @@ if (-not (Test-Path $customPhraseDst) -and (Test-Path $customPhraseSrc)) {
 }
 
 # 3. Apply curated profiles & selected Weasel theme
+# Always sync rime.lua (GC tuning); preserve existing user *.custom.yaml unless -ForceCustom is passed.
 Get-ChildItem (Join-Path $repoRoot "profiles") -File | ForEach-Object {
-    Copy-Item $_.FullName (Join-Path $rimeDir $_.Name) -Force
+    $dst = Join-Path $rimeDir $_.Name
+    $isCustomYaml = $_.Name.EndsWith(".custom.yaml")
+    if (-not $isCustomYaml -or $ForceCustom -or (-not (Test-Path $dst))) {
+        Copy-Item $_.FullName $dst -Force
+    }
 }
-$themeFile = Join-Path $repoRoot "themes\$Theme.custom.yaml"
-if (Test-Path $themeFile) {
-    Copy-Item $themeFile (Join-Path $rimeDir "weasel.custom.yaml") -Force
+if ($Theme -eq "keep") {
+    Write-Output "Keeping existing weasel.custom.yaml (-Theme keep)"
 } else {
-    Write-Warning "Theme file not found: $themeFile (keeping existing weasel.custom.yaml)"
+    $themeFile = Join-Path $repoRoot "themes\$Theme.custom.yaml"
+    if (Test-Path $themeFile) {
+        Copy-Item $themeFile (Join-Path $rimeDir "weasel.custom.yaml") -Force
+    } else {
+        Write-Warning "Theme file not found: $themeFile (keeping existing weasel.custom.yaml)"
+    }
 }
 $updaterSrc = Join-Path $repoRoot "scripts\update-local.ps1"
 if (Test-Path $updaterSrc) {
@@ -137,6 +148,11 @@ foreach ($rel in $obsoleteRelPaths) {
         Remove-Item $obs -Recurse -Force -ErrorAction SilentlyContinue
         Write-Output "Removed obsolete file: $rel"
     }
+}
+
+if ($SkipDeploy) {
+    Write-Output "Files synced to $rimeDir (-SkipDeploy)."
+    return
 }
 
 # 4. Deploy & verify WeaselDeployer log + single WeaselServer
