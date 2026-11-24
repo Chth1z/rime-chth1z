@@ -10258,7 +10258,7 @@ deoxidize	deoxidize vt.除氧;还原
 deoxidiser	deoxidiser n.去氧剂;还元剂
 deoxidizer	deoxidizer n.去氧剂;还元剂
 deoxygenate	deoxygenate vt.去氧
-deoxyribonucleic	deoxyribonucleic a.脱氧核糖的
+deoxyribonucleic	deoxyribonucleic a.脱氧核糖核酸的
 depart	depart vi.离开;出发;放弃;违反;去世
 departed	departed a.过去的;已往的;死了的
 department	department n.部门;系;机关
@@ -20225,7 +20225,7 @@ iodoform	iodoform n.三碘甲烷;碘仿
 ion	ion n.离子
 Ionian	Ionian a.爱奥尼亚的;爱奥尼亚式的 n.爱奥尼亚人
 ionic	ionic a.离子的 a.爱奥尼亚的;爱奥尼亚韵脚的;爱奥尼亚式的 n.爱奥尼亚方言
-onium	onium n.鎓离子
+onium	onium n.𬭩离子
 ionium	ionium n.一种化学元素
 ionization	ionization n.离子化;电离
 ionise	ionise vt.使离子化 vi.电离

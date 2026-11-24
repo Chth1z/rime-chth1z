@@ -1,7 +1,7 @@
 # word	code	weight	category
 # category: hardware | ai | dev | consumer
 # Hardware / OS completion
-Two-Factor Authentication	2FA		hardware
+Two-Factor Authentication	2FA		dev
 macOS Sequoia	macOS	9	hardware
 macOS Sequoia	macOSSequoia		hardware
 macOS Tahoe	macOSTahoe		hardware
@@ -207,7 +207,7 @@ Suno	Suno		ai
 ElevenLabs	ElevenLabs		ai
 sing-box	sing-box		dev
 mihomo	mihomo		dev
-v2ray	v2ray		dev
+V2Ray	V2Ray		dev
 VLESS	VLESS		dev
 ZeroTier	ZeroTier		dev
 OrbStack	OrbStack		dev
@@ -224,7 +224,7 @@ Typst	Typst		dev
 Biome	Biome		dev
 Rspack	Rspack		dev
 esbuild	esbuild		dev
-Webpack	Webpack		dev
+webpack	webpack		dev
 shadcn/ui	shadcn/ui		dev
 OpenTelemetry	OpenTelemetry		dev
 Caddy	Caddy		dev

@@ -2479,7 +2479,6 @@ Suno	Suno
 ElevenLabs	ElevenLabs
 sing-box	sing-box
 mihomo	mihomo
-v2ray	v2ray
 VLESS	VLESS
 ZeroTier	ZeroTier
 OrbStack	OrbStack
@@ -2496,7 +2495,6 @@ Typst	Typst
 Biome	Biome
 Rspack	Rspack
 esbuild	esbuild
-Webpack	Webpack
 shadcn/ui	shadcn/ui
 OpenTelemetry	OpenTelemetry
 Caddy	Caddy
@@ -2577,3 +2575,5 @@ Disney+	Disney+
 A+	Aplus
 S+	Splus
 .env	dotenv
+V2Ray	V2Ray
+webpack	webpack

@@ -71,10 +71,10 @@ opencc/english_chinese.txt	manikin	replace	manikin n.人体模型;侏儒	修复�
 opencc/english_chinese.txt	transmittance	replace	transmittance n.透射率;透光率	修复自transistance误复制释义
 opencc/english_chinese.txt	triffid	replace	triffid n.三脚树(科幻食人植物)	修复自trifid误复制释义
 opencc/english_chinese.txt	hector	replace	hector vt.威吓;欺凌 n.恶霸	修复自hecto误复制释义
-opencc/english_chinese.txt	onium	replace	onium n.鎓离子	修复自ionium误复制释义
+opencc/english_chinese.txt	onium	replace	onium n.𬭩离子	修复自ionium误复制释义(采用8105规范字𬭩)
 opencc/english_chinese.txt	smudgy	replace	smudgy a.污迹斑斑的;模糊的	修复错误释义
 opencc/english_chinese.txt	smudgily	replace	smudgily ad.污迹斑斑地;模糊地	修复错误释义
-opencc/english_chinese.txt	deoxyribonucleic	replace	deoxyribonucleic a.脱氧核糖的	修复OCR错字趣氧核醣酸
+opencc/english_chinese.txt	deoxyribonucleic	replace	deoxyribonucleic a.脱氧核糖核酸的	修复OCR错字趣氧核醣酸
 opencc/english_chinese.txt	castanets	replace	castanets n.响板	清理未闭合截断括号
 opencc/english_chinese.txt	circulate	replace	circulate vi.vt.(使)流通;(使)循环;(使)传播	补全缺失左括号
 opencc/english_chinese.txt	indemnify	replace	indemnify vt.赔偿;补偿;保障	修复错字赔长

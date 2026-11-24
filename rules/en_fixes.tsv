@@ -73,7 +73,7 @@ en_dicts/en_ext.dict.yaml	Philppines	Philppines	replace	Philippines	Philippines	
 en_dicts/en_ext.dict.yaml	PlistEdit	pliPlistEdit	replace	PlistEdit	PlistEdit		R1/R2英文拼写与大小写修正
 en_dicts/en_ext.dict.yaml	Procedural Language / PostGres Structured Query Language	PL/pgSQL	replace	Procedural Language/PostgreSQL	PL/pgSQL		R1/R2英文拼写与大小写修正
 en_dicts/en_ext.dict.yaml	R.I.P	R.I.P	replace	R.I.P.	R.I.P.		R1/R2英文拼写与大小写修正
-en_dicts/en_ext.dict.yaml	RFT	RFT	replace	RTF	RTF		清理英文主库误入的缩写噪音（RTF 已规范收录）
+en_dicts/en_ext.dict.yaml	RFT	RFT	replace	RTF	RTF		清理英文扩展库误入的缩写噪音（RTF 已规范收录）
 en_dicts/en_ext.dict.yaml	Rich Text Format	RFT	replace	Rich Text Format	RTF		R1/R2英文拼写与大小写修正
 en_dicts/en_ext.dict.yaml	Texshop	Texshop	replace	TeXShop	TeXShop		R1/R2英文拼写与大小写修正
 en_dicts/en_ext.dict.yaml	blackFriday	blackFriday	replace	Black Friday	BlackFriday		R1/R2英文拼写与大小写修正
@@ -101,7 +101,7 @@ en_dicts/en_ext.dict.yaml	PreSearch	PreSearch	replace	Presearch	Presearch		官�
 en_dicts/en_ext.dict.yaml	bromite	bromite	replace	Bromite	Bromite		官方品牌大小写(Bromite)
 en_dicts/en_ext.dict.yaml	Initial Public Offerings	IPO	replace	Initial Public Offering	IPO		与单数缩写IPO匹配
 en_dicts/en_ext.dict.yaml	espanso	espanso	replace	Espanso	Espanso		官方品牌大小写(Espanso)
-en_dicts/en_ext.dict.yaml	okey	okey	delete				清理英文主库低频非正式拼写变体（主用 okay）
+en_dicts/en_ext.dict.yaml	okey	okey	delete				清理英文扩展库低频非正式拼写变体（主用 okay）
 en_dicts/en_ext.dict.yaml	sider	sider	replace	Sider	Sider		官方AI产品品牌大小写(Sider)
 en_dicts/en_ext.dict.yaml	traefik	traefik	replace	Traefik	Traefik		官方品牌大小写(Traefik)
 en_dicts/en_ext.dict.yaml	Asics	Asics	replace	ASICS	ASICS		官方品牌全大写缩写(ASICS)
@@ -220,7 +220,6 @@ en_dicts/en.dict.yaml	soleil	*	delete				非英语法语抓取词
 en_dicts/en.dict.yaml	blanco	*	delete				非英语西语抓取词
 en_dicts/en.dict.yaml	Dec.	Dec	delete				冗余重复项(en_ext已收录Dec./Dec.并由algebra派生Dec)
 en_dicts/en.dict.yaml	Fri.	Fri	delete				冗余重复项(en_ext已收录Fri./Fri.并由algebra派生Fri)
-en_dicts/en.dict.yaml	adobe	*	delete				小写品牌冗余(en_ext已规范收录Adobe)
 en_dicts/en.dict.yaml	adsense	*	delete				小写品牌冗余(en_ext已规范收录AdSense)
 en_dicts/en.dict.yaml	flickr	*	delete				小写品牌冗余(en_ext已规范收录Flickr)
 en_dicts/en.dict.yaml	gpl	*	delete				小写缩写冗余(en_ext已规范收录GPL)
@@ -329,3 +328,4 @@ en_dicts/en.dict.yaml	ticketmaster	ticketmaster	replace	Ticketmaster	Ticketmaste
 en_dicts/en.dict.yaml	bentley	bentley	replace	Bentley	Bentley		品牌/姓氏首字母大写(Bentley)
 en_dicts/en.dict.yaml	arial	arial	replace	Arial	Arial		字体专名首字母大写(Arial)
 en_dicts/en_ext.dict.yaml	01.AI	01AI	replace	01.AI	01.AI		保留编码中的句点以支持 dot/dian/dm 谐音派生（derive/[.]// 仍保留 01AI）
+en_dicts/en.dict.yaml	Moslem	*	delete				过时拼写变体(补齐 en_ext 漏网项，主库已规范收录Muslim)
