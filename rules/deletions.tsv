@@ -3225,3 +3225,149 @@ cn_dicts_cell/composite.dict.yaml	可关注公众号	*	自媒体引流营销垃�
 cn_dicts_cell/composite.dict.yaml	喜欢请点赞	*	自媒体引流营销垃圾句（comp:185443）
 cn_dicts_cell/composite.dict.yaml	不要忘记点赞	*	自媒体引流营销垃圾句（comp:56071）
 cn_dicts_cell/composite.dict.yaml	点赞加关注	*	自媒体引流营销垃圾句（comp:387895）
+# Batch 3 (idiom & literature): verified trad leaks, W5 typos & non-literature garbage
+cn_dicts_cell/idiom.dict.yaml	不乾不净	*	繁体“乾(干)”规范简体化（规范词条“不干不净”已存在）
+cn_dicts_cell/idiom.dict.yaml	更待乾罢	*	繁体“乾(干)”规范简体化（规范词条“更待干罢”已存在）
+cn_dicts_cell/idiom.dict.yaml	河涸海乾	*	繁体“乾(干)”规范简体化（规范词条“河涸海干”已存在）
+cn_dicts_cell/idiom.dict.yaml	河落海乾	*	繁体“乾(干)”规范简体化（规范词条“河落海干”已存在）
+cn_dicts_cell/idiom.dict.yaml	涸思乾虑	*	繁体“乾(干)”规范简体化（规范词条“涸思干虑”已存在）
+cn_dicts_cell/idiom.dict.yaml	回乾就湿	*	繁体“乾(干)”规范简体化（规范词条“回干就湿”已存在）
+cn_dicts_cell/idiom.dict.yaml	焦唇乾肺	*	繁体“乾(干)”规范简体化（规范词条“焦唇干肺”已存在）
+cn_dicts_cell/idiom.dict.yaml	焦唇乾舌	*	繁体“乾(干)”规范简体化（规范词条“焦唇干舌”已存在）
+cn_dicts_cell/idiom.dict.yaml	口血未乾	*	繁体“乾(干)”规范简体化（规范词条“口血未干”已存在）
+cn_dicts_cell/idiom.dict.yaml	口燥唇乾	*	繁体“乾(干)”规范简体化（规范词条“口燥唇干”已存在）
+cn_dicts_cell/idiom.dict.yaml	烈火乾柴	*	繁体“乾(干)”规范简体化（规范词条“烈火干柴”已存在）
+cn_dicts_cell/idiom.dict.yaml	木乾鸟栖	*	繁体“乾(干)”规范简体化（规范词条“木干鸟栖”已存在）
+cn_dicts_cell/idiom.dict.yaml	乾巴利脆	*	繁体“乾(干)”规范简体化（规范词条“干巴利脆”已存在）
+cn_dicts_cell/idiom.dict.yaml	乾巴利落	*	繁体“乾(干)”规范简体化（规范词条“干巴利落”已存在）
+cn_dicts_cell/idiom.dict.yaml	乾愁万斛	*	繁体“乾(干)”规范简体化（规范词条“干愁万斛”已存在）
+cn_dicts_cell/idiom.dict.yaml	乾脆利落	*	繁体“乾(干)”规范简体化（规范词条“干脆利落”已存在）
+cn_dicts_cell/idiom.dict.yaml	乾脆利索	*	繁体“乾(干)”规范简体化（规范词条“干脆利索”已存在）
+cn_dicts_cell/idiom.dict.yaml	乾啼湿哭	*	繁体“乾(干)”规范简体化（规范词条“干啼湿哭”已存在）
+cn_dicts_cell/idiom.dict.yaml	乳臭未乾	*	繁体“乾(干)”规范简体化（规范词条“乳臭未干”已存在）
+cn_dicts_cell/idiom.dict.yaml	手脚乾净	*	繁体“乾(干)”规范简体化（规范词条“手脚干净”已存在）
+cn_dicts_cell/idiom.dict.yaml	唾面自乾	*	繁体“乾(干)”规范简体化（规范词条“唾面自干”已存在）
+cn_dicts_cell/idiom.dict.yaml	外强中乾	*	繁体“乾(干)”规范简体化（规范词条“外强中干”已存在）
+cn_dicts_cell/idiom.dict.yaml	煨乾避湿	*	繁体“乾(干)”规范简体化（规范词条“煨干避湿”已存在）
+cn_dicts_cell/idiom.dict.yaml	瓮尽杯乾	*	繁体“乾(干)”规范简体化（规范词条“瓮尽杯干”已存在）
+cn_dicts_cell/idiom.dict.yaml	油乾灯尽	*	繁体“乾(干)”规范简体化（规范词条“油干灯尽”已存在）
+cn_dicts_cell/idiom.dict.yaml	油乾火尽	*	繁体“乾(干)”规范简体化（规范词条“油干火尽”已存在）
+cn_dicts_cell/idiom.dict.yaml	浮瓜沈李	*	繁体“沈(沉)”规范简体化（规范词条“浮瓜沉李”已存在）
+cn_dicts_cell/idiom.dict.yaml	浮石沈木	*	繁体“沈(沉)”规范简体化（规范词条“浮石沉木”已存在）
+cn_dicts_cell/idiom.dict.yaml	鸿断鱼沈	*	繁体“沈(沉)”规范简体化（规范词条“鸿断鱼沉”已存在）
+cn_dicts_cell/idiom.dict.yaml	暮气沈沈	*	繁体“沈(沉)”规范简体化（规范词条“暮气沉沉”已存在）
+cn_dicts_cell/idiom.dict.yaml	破釜沈舟	*	繁体“沈(沉)”规范简体化（规范词条“破釜沉舟”已存在）
+cn_dicts_cell/idiom.dict.yaml	随俗浮沈	*	繁体“沈(沉)”规范简体化（规范词条“随俗浮沉”已存在）
+cn_dicts_cell/idiom.dict.yaml	随俗沈浮	*	繁体“沈(沉)”规范简体化（规范词条“随俗沉浮”已存在）
+cn_dicts_cell/idiom.dict.yaml	雁断鱼沈	*	繁体“沈(沉)”规范简体化（规范词条“雁断鱼沉”已存在）
+cn_dicts_cell/idiom.dict.yaml	与世沈浮	*	繁体“沈(沉)”规范简体化（规范词条“与世沉浮”已存在）
+cn_dicts_cell/idiom.dict.yaml	月落星沈	*	繁体“沈(沉)”规范简体化（规范词条“月落星沉”已存在）
+cn_dicts_cell/idiom.dict.yaml	黄锺毁弃	*	非姓氏“锺”规范作“钟”（规范词条“黄钟毁弃”已存在）
+cn_dicts_cell/idiom.dict.yaml	二缶锺惑	*	非姓氏“锺”规范作“钟”（规范词条“二缶钟惑”已存在）
+cn_dicts_cell/idiom.dict.yaml	摇头稾脑	*	异体/OCR错字“稾”实为“晃”（规范词条“摇头晃脑”已存在）
+cn_dicts_cell/idiom.dict.yaml	睹着知微	*	“显著”义正字为“著”(zhù)，误作“着”（规范词条“睹著知微”已存在）
+cn_dicts_cell/idiom.dict.yaml	鸿篇巨着	*	著作义正字为“著”(zhù)，误作“着”（规范词条“鸿篇巨著”已存在）
+cn_dicts_cell/idiom.dict.yaml	深切着白	*	显著义正字为“著”(zhù)，误作“着”（规范词条“深切著白”已存在）
+cn_dicts_cell/idiom.dict.yaml	威望素着	*	显著义正字为“著”(zhù)，误作“着”（规范词条“威望素著”已存在）
+cn_dicts_cell/idiom.dict.yaml	以微知着	*	显著义正字为“著”(zhù)，误作“着”（规范词条“以微知著”已存在）
+cn_dicts_cell/idiom.dict.yaml	彰明较着	*	显著义正字为“著”(zhù)，误作“着”（规范词条“彰明较著”已存在）
+cn_dicts_cell/idiom.dict.yaml	爱屋及屋	*	W5成语错别字“及屋”实为“及乌”（规范词条“爱屋及乌”已存在）
+cn_dicts_cell/idiom.dict.yaml	疤丁解牛	*	W5成语错别字“疤丁”实为“庖丁”（规范词条“庖丁解牛”已存在）
+cn_dicts_cell/idiom.dict.yaml	摆八挂阵	*	W5错别字“八挂”实为“八卦”（规范词条“摆八卦阵”已存在）
+cn_dicts_cell/idiom.dict.yaml	抱撼终身	*	W5错别字“抱撼”实为“抱憾”（规范词条“抱憾终身”已存在）
+cn_dicts_cell/idiom.dict.yaml	避军三舍	*	W5错别字（误拼“避军三舍”）（规范词条“退避三舍”已存在）
+cn_dicts_cell/idiom.dict.yaml	不克自拔	*	W5错字“不克自拔”实为“不能自拔/不可自拔”（规范词条“不能自拔”已存在）
+cn_dicts_cell/idiom.dict.yaml	不挑之祖	*	W5错别字“不挑”实为“不祧”（规范词条“不祧之祖”已存在）
+cn_dicts_cell/idiom.dict.yaml	楚棺秦楼	*	W5错别字“楚棺”实为“楚馆”（规范词条“楚馆秦楼”已存在）
+cn_dicts_cell/idiom.dict.yaml	出家从夫	*	W5错别字“出家”实为“出嫁”（规范词条“出嫁从夫”已存在）
+cn_dicts_cell/idiom.dict.yaml	代矮相传	*	W5 OCR错字“代矮”实为“代代”（规范词条“代代相传”已存在）
+cn_dicts_cell/idiom.dict.yaml	今蝉蜕壳	*	W5错字+错音“今蝉蜕壳(ke)”实为“金蝉脱壳(qiao)”（规范词条“金蝉脱壳”已存在）
+cn_dicts_cell/idiom.dict.yaml	荆旗蔽空	*	W5错别字“荆旗”实为“旌旗”（规范词条“旌旗蔽空”已存在）
+cn_dicts_cell/idiom.dict.yaml	口就月将	*	W5 OCR错字“口就”实为“日就”（规范词条“日就月将”已存在）
+cn_dicts_cell/idiom.dict.yaml	良田万倾	*	W5错别字“万倾”实为“万顷”（规范词条“良田万顷”已存在）
+cn_dicts_cell/idiom.dict.yaml	千帆竟发	*	W5错别字“竟发”实为“竞发”（规范词条“千帆竞发”已存在）
+cn_dicts_cell/idiom.dict.yaml	牵丝扳腾	*	W5错别字“扳腾”实为“攀藤”（规范词条“牵丝攀藤”已存在）
+cn_dicts_cell/idiom.dict.yaml	强弓劲孥	*	W5错别字+错音“强弓劲孥(jin)”（规范“强弓劲弩 qiang gong jing nu”已在 ext.dict.yaml）
+cn_dicts_cell/idiom.dict.yaml	轻财重土	*	W5 OCR错字“重土”实为“重士”（规范词条“轻财重士”已存在）
+cn_dicts_cell/idiom.dict.yaml	瑞卒勿攻	*	W5错别字“瑞卒”实为“锐卒”（规范词条“锐卒勿攻”已存在）
+cn_dicts_cell/idiom.dict.yaml	暑门大嚼	*	W5 OCR错字“暑门大嚼”（规范“屠门大嚼 tu men da jiao”已在 composite.dict.yaml）
+cn_dicts_cell/idiom.dict.yaml	万绿从中一点红	*	W5错别字“从中”实为“丛中”（规范词条“万绿丛中一点红”已存在）
+cn_dicts_cell/idiom.dict.yaml	刎劲之交	*	W5错别字“刎劲”实为“刎颈”（规范词条“刎颈之交”已存在）
+cn_dicts_cell/idiom.dict.yaml	严寒酷署	*	W5错别字“酷署”实为“酷暑”（规范词条“严寒酷暑”已存在）
+cn_dicts_cell/idiom.dict.yaml	依丱附木	*	W5 OCR错字“依丱”实为“依草”（规范词条“依草附木”已存在）
+cn_dicts_cell/idiom.dict.yaml	一言以敝	*	W5错别字“以敝”实为“以蔽”（规范词条“一言以蔽”已存在）
+cn_dicts_cell/idiom.dict.yaml	曹操败走华客道	*	W5歇后语OCR错字“华客道”实为“华容道”（规范词条“曹操败走华容道”已存在）
+cn_dicts_cell/idiom.dict.yaml	根深时茂	*	W5歇后语OCR错字“时茂”实为“叶茂”（规范词条“根深叶茂”已存在）
+cn_dicts_cell/idiom.dict.yaml	管的宽	*	W5歇后语错字“管的宽”实为“管得宽”（规范词条“管得宽”已存在）
+cn_dicts_cell/idiom.dict.yaml	看破戏尘	*	W5歇后语OCR错字“戏尘”实为“红尘”（规范词条“看破红尘”已存在）
+cn_dicts_cell/idiom.dict.yaml	空袋了	*	W5歇后语OCR错字“空袋了”实为“空袋子”（规范词条“空袋子”已存在）
+cn_dicts_cell/idiom.dict.yaml	滥竿充数	*	W5错别字“滥竿”实为“滥竽”（规范词条“滥竽充数”已存在）
+cn_dicts_cell/idiom.dict.yaml	齐头并迸	*	W5 OCR错字“并迸”实为“并进”（规范词条“齐头并进”已存在）
+cn_dicts_cell/idiom.dict.yaml	饶舌的鸟鸦	*	W5歇后语OCR错字“鸟鸦”实为“乌鸦”（规范词条“饶舌的乌鸦”已存在）
+cn_dicts_cell/idiom.dict.yaml	细嚼馒咽	*	W5错别字“馒咽”实为“慢咽”（规范词条“细嚼慢咽”已存在）
+cn_dicts_cell/idiom.dict.yaml	灶王爷上尺	*	W5歇后语OCR错字“上尺”实为“上天”（规范词条“灶王爷上天”已存在）
+cn_dicts_cell/idiom.dict.yaml	自骑自夸	*	W5歇后语OCR错字“自骑”实为“自卖”（规范词条“自卖自夸”已存在）
+cn_dicts_cell/literature.dict.yaml	飞沈理自隔	*	繁体“沈(沉)”规范简体化（规范词条“飞沉理自隔”已存在）
+cn_dicts_cell/literature.dict.yaml	冥冥日沈夕	*	繁体“沈(沉)”规范简体化（规范词条“冥冥日沉夕”已存在）
+cn_dicts_cell/literature.dict.yaml	折戟沈沙铁未销	*	繁体“沈(沉)”规范简体化（规范词条“折戟沉沙铁未销”已存在）
+cn_dicts_cell/literature.dict.yaml	守著窗儿	*	李清照《声声慢》助词“著”规范简体作“着”(zhe)（规范词条“守着窗儿”已存在）
+cn_dicts_cell/literature.dict.yaml	则眸子焉	*	W5漏字截断（《孟子》原句“则眸子了焉”）
+cn_dicts_cell/literature.dict.yaml	黎民不不寒	*	W5叠字错词（《孟子》原句“黎民不饥不寒”）
+cn_dicts_cell/literature.dict.yaml	吾乡示之以以太冲莫胜	*	W5叠字错词（《庄子》原句“吾乡示之以太冲莫胜”）
+cn_dicts_cell/literature.dict.yaml	下及及五伯	*	W5叠字错词（原句“下及五伯”）
+cn_dicts_cell/literature.dict.yaml	飞湍瀑流争喧兀豕	*	W5 OCR乱码拆字（《蜀道难》“喧豗”拆成“兀豕”）
+cn_dicts_cell/literature.dict.yaml	反信馋而音期怒	*	W5 OCR乱码拆字（《屈原列传》“齌怒”拆成“音期怒”）
+cn_dicts_cell/literature.dict.yaml	贾王扁	*	W5 OCR拆字人名（《红楼梦》“贾玚/贾𤦡”拆作“王扁”）
+cn_dicts_cell/literature.dict.yaml	布齐必变食	*	W5 OCR错字（《论语》原句“齐必变食”，多出“布”字）
+cn_dicts_cell/literature.dict.yaml	薄雾浓云愁水昼	*	W5 OCR错字（李清照《醉花阴》“水昼”实为“永昼”）（规范词条“薄雾浓云愁永昼”已存在）
+cn_dicts_cell/literature.dict.yaml	渭城朝雨邑轻尘	*	W5错字+错音（王维诗“邑”实为“浥”，“朝”读 zhāo）（规范词条“渭城朝雨浥轻尘”已存在）
+cn_dicts_cell/literature.dict.yaml	朋友切切缌缌	*	W5错字（《论语》原句“朋友切切偲偲”）（规范词条“朋友切切偲偲”已存在）
+cn_dicts_cell/literature.dict.yaml	解落三叶秋	*	W5字序颠倒错句（李峤《风》原句“解落三秋叶”）
+cn_dicts_cell/literature.dict.yaml	佛刖以中牟畔	*	W5 OCR错字（《论语》原句“佛肸以中牟畔”，已有 L20602）
+cn_dicts_cell/literature.dict.yaml	不有祝跎之佞	*	W5错字（《论语》卫大夫“祝鮀”，误作“祝跎”）（规范词条“不有祝鮀之佞”已存在）
+cn_dicts_cell/literature.dict.yaml	祝砣治宗庙	*	W5错字（《论语》“祝鮀”，误作“祝砣”）（规范词条“祝鮀治宗庙”已存在）
+cn_dicts_cell/literature.dict.yaml	公叔文子之臣大夫撰	*	W5错字（《论语》“大夫僎”，误作“撰”）（规范词条“公叔文子之臣大夫僎”已存在）
+cn_dicts_cell/literature.dict.yaml	君子不以绀诹饰	*	W5错字（《论语》“绀緅”，误作“绀诹”）（规范词条“君子不以绀緅饰”已存在）
+cn_dicts_cell/literature.dict.yaml	犁牛之子锌且角	*	W5错字（《论语》“骍且角”，误作“锌且角”）（规范词条“犁牛之子骍且角”已存在）
+cn_dicts_cell/literature.dict.yaml	桓雎其如予何	*	W5错字（《论语》宋司马“桓魋”，误作“桓雎”）（规范词条“桓魋其如予何”已存在）
+cn_dicts_cell/literature.dict.yaml	慎而无礼则思	*	W5错字（《论语》原句“慎而无礼则葸”）（规范词条“慎而无礼则葸”已存在）
+cn_dicts_cell/literature.dict.yaml	温椟而藏诸	*	W5 OCR错字（《论语》原句“韫椟而藏诸”）（规范词条“韫椟而藏诸”已存在）
+cn_dicts_cell/literature.dict.yaml	子夏为苣父宰	*	W5错字（《论语》地名“莒父”，误作“苣父”）（规范词条“子夏为莒父宰”已存在）
+cn_dicts_cell/literature.dict.yaml	是皇帝之所听荧也	*	W5错字（《庄子·齐物论》“黄帝”，误作“皇帝”）（规范词条“是黄帝之所听荧也”已存在）
+cn_dicts_cell/literature.dict.yaml	苔焉似丧其耦	*	W5 OCR错字（《庄子》“荅焉似丧其耦”，已有 L35294）
+cn_dicts_cell/literature.dict.yaml	五千仞岳山摩天	*	W5 OCR错字（陆游诗“上摩天”，误作“山摩天”）（规范词条“五千仞岳上摩天”已存在）
+cn_dicts_cell/literature.dict.yaml	今因足以及禽兽	*	W5 OCR错字（《孟子》“今恩足以”，误作“今因”）（规范词条“今恩足以及禽兽”已存在）
+cn_dicts_cell/literature.dict.yaml	临行密密逢	*	W5错别字（孟郊《游子吟》“密密缝”，误作“逢”）（规范词条“临行密密缝”已存在）
+cn_dicts_cell/literature.dict.yaml	关塞萧条行陆难	*	W5错字（高适《燕歌行》“行路难”，误作“行陆难”）（规范词条“关塞萧条行路难”已存在）
+cn_dicts_cell/literature.dict.yaml	十里杨州	*	W5错别字（地名“扬州”，误作“杨州”）（规范词条“十里扬州”已存在）
+cn_dicts_cell/literature.dict.yaml	今霄好向郎边去	*	W5错别字（“今宵”误作“今霄”）（规范词条“今宵好向郎边去”已存在）
+cn_dicts_cell/literature.dict.yaml	酒醒帘暮低垂	*	W5错别字（“帘幕”误作“帘暮”）（规范词条“酒醒帘幕低垂”已存在）
+cn_dicts_cell/literature.dict.yaml	松月夜窗墟	*	W5错字（孟浩然诗“夜窗虚”，误作“墟”）（规范词条“松月夜窗虚”已存在）
+cn_dicts_cell/literature.dict.yaml	西路蝉声唱	*	W5错字（骆宾王《在狱咏蝉》“西陆”，误作“西路”）（规范词条“西陆蝉声唱”已存在）
+cn_dicts_cell/literature.dict.yaml	一舞剑气动四方	*	W5错字（杜甫《观公孙大娘弟子舞剑器行》“剑器”，误作“剑气”）（规范词条“一舞剑器动四方”已存在）
+cn_dicts_cell/literature.dict.yaml	玉筋应啼别离后	*	W5 OCR错字（高适《燕歌行》“玉箸”实为泪箸，误作“玉筋”）（规范词条“玉箸应啼别离后”已存在）
+cn_dicts_cell/literature.dict.yaml	姊妹弟兄皆列士	*	W5 OCR错字（《长恨歌》“皆列土”，误作“皆列士”）（规范词条“姊妹弟兄皆列土”已存在）
+cn_dicts_cell/literature.dict.yaml	走马兰台娄转蓬	*	W5错字（李商隐诗“类转蓬”，误作“娄转蓬”）（规范词条“走马兰台类转蓬”已存在）
+cn_dicts_cell/literature.dict.yaml	冰崖转石万壑雷	*	W5错字（《蜀道难》“砯崖转石”，误作“冰崖”）（规范词条“砯崖转石万壑雷”已存在）
+cn_dicts_cell/literature.dict.yaml	尽荞麦青青	*	W5错字（姜夔《扬州慢》“尽荠麦青青”，误作“荞麦”）（规范词条“尽荠麦青青”已存在）
+cn_dicts_cell/literature.dict.yaml	来着犹可追	*	W5错别字（《论语》“来者犹可追”，误作“来着”）（规范词条“来者犹可追”已存在）
+cn_dicts_cell/literature.dict.yaml	官盛则近庚	*	W5 OCR错字（《庄子》“近谀”，误作“近庚”）（规范词条“官盛则近谀”已存在）
+cn_dicts_cell/literature.dict.yaml	深港明朝卖杏花	*	W5 OCR错字+错音（陆游诗“深巷明朝(zhāo)”，误作“深港”）（规范词条“深巷明朝卖杏花”已存在）
+cn_dicts_cell/literature.dict.yaml	浪陶风簸自天涯	*	W5错别字（刘禹锡诗“浪淘”，误作“浪陶”）（规范词条“浪淘风簸自天涯”已存在）
+cn_dicts_cell/literature.dict.yaml	日师日弟子云者	*	W5 OCR错字（韩愈《师说》“曰师曰弟子”，误作“日”）（规范词条“曰师曰弟子云者”已存在）
+cn_dicts_cell/literature.dict.yaml	非吾所谓传其解其惑者也	*	W5漏字残句（《师说》原句“非吾所谓传其道解其惑者也”）
+cn_dicts_cell/literature.dict.yaml	戌狄是膺荆	*	W5 OCR错字+截断残片（《诗经》“戎狄是膺，荆舒是惩”）
+cn_dicts_cell/literature.dict.yaml	数口之家可以无矣	*	W5漏字残句（《孟子》原句“数口之家，可以无饥矣”）
+cn_dicts_cell/literature.dict.yaml	土山焦而热	*	W5漏字残句（《庄子》原句“土山焦而不热”）
+cn_dicts_cell/literature.dict.yaml	子不利害	*	W5漏字残句（《庄子》原句“子不知利害”）
+cn_dicts_cell/literature.dict.yaml	其也以礼	*	W5漏字残句（《论语》原句“其使民也义”/“其事上也敬”/“其养民也惠”）
+cn_dicts_cell/literature.dict.yaml	臣待汤药	*	W5 OCR错字（《陈情表》“臣侍汤药”，误作“臣待”）（规范词条“臣侍汤药”已存在）
+cn_dicts_cell/literature.dict.yaml	美国微软公司未见	*	非文学现代抓取噪声残片
+cn_dicts_cell/literature.dict.yaml	美国超级超导对撞机实验室	*	非文学现代抓取噪声词
+cn_dicts_cell/literature.dict.yaml	我们参照了	*	非文学论文/说明残片
+cn_dicts_cell/literature.dict.yaml	主要参照了	*	非文学论文/说明残片
+cn_dicts_cell/literature.dict.yaml	构造出了一个朴素	*	非文学论文残片
+cn_dicts_cell/literature.dict.yaml	构造出了	*	非文学论文残片
+cn_dicts_cell/literature.dict.yaml	擅自作了添加	*	非文学说明残片
+cn_dicts_cell/literature.dict.yaml	也被越来越多的	*	非文学现代碎片
+cn_dicts_cell/idiom.dict.yaml	家长理短	*	W5错别字（上游idiom含jia zhang li duan，与base同步清理，正词：家长里短）

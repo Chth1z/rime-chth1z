@@ -835,3 +835,96 @@ cn_dicts_cell/sport.dict.yaml	倒勾球	*	倒钩球	dao gou qiu	W3/W5足球术�
 cn_dicts_cell/game.dict.yaml	古今着闻集	*	古今著闻集	gu jin zhu wen ji	W5日本典籍《古今著闻集》“著”误作“着”且误注zhe（game:104054）	辞海/L3专名
 cn_dicts_cell/game.dict.yaml	暗穴净化着	*	暗穴净化者	an xue jing hua zhe	W5魔兽世界怪物名“净化者”同音错字（者->着，game:19263）	魔兽世界官方译名
 cn_dicts_cell/game.dict.yaml	钉刺着	*	钉刺者	ding ci zhe	W5魔兽世界怪物名“钉刺者”同音错字（者->着，game:25465）	魔兽世界官方译名
+# Batch 3 (idiom & literature): verified trad/OCR/classical quote word fixes
+cn_dicts_cell/idiom.dict.yaml	偎乾就湿	wei qian jiu shi	偎干就湿	wei gan jiu shi	繁体“乾(干)”规范简体化	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/idiom.dict.yaml	油乾灯草尽	you qian deng cao jin	油干灯草尽	you gan deng cao jin	繁体“乾(干)”规范简体化	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/idiom.dict.yaml	浑浑沈沈	hun hun shen shen	浑浑沉沉	hun hun chen chen	繁体“沈(沉)”规范简体化	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/idiom.dict.yaml	鱼沈落雁	yu shen luo yan	鱼沉落雁	yu chen luo yan	繁体“沈(沉)”规范简体化	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/idiom.dict.yaml	粉饰昇平	fen shi sheng ping	粉饰升平	*	繁体“昇(升)”规范简体化	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/idiom.dict.yaml	黄锺瓦缶	huang zhong wa fou	黄钟瓦缶	*	非姓氏“锺”规范作“钟”	通用规范汉字表注32
+cn_dicts_cell/idiom.dict.yaml	齐打夥儿	qi da huo er	齐打伙儿	*	“夥”作伙伴义规范作“伙”	通用规范汉字表/现汉第7版
+cn_dicts_cell/idiom.dict.yaml	花貎蓬心	hua ni peng xin	花貌蓬心	hua mao peng xin	异体字“貎”规范作“貌”并正音 ni->mao	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/idiom.dict.yaml	栖鸟徚泉	qi niao dong quan	栖鸟冻泉	*	异体字“徚”规范作“冻”	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/idiom.dict.yaml	断头将茄	duan tou jiang qie	断头将军	duan tou jiang jun	W5 OCR错字“将茄”实为“将军”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	佛年刮金	fo nian gua jin	佛面刮金	fo mian gua jin	W5 OCR错字“佛年”实为“佛面”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	鉏铻难人	ju wu nan ren	鉏铻难入	ju yu nan ru	W5 OCR错字“难人”实为“难入”（正形“龃龉难入”）	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	聋情盛意	long qing sheng yi	隆情盛意	*	W5错别字“聋情”实为“隆情”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	三尸暴跳七窃生烟	san shi bao tiao qi qie sheng yan	三尸暴跳七窍生烟	san shi bao tiao qi qiao sheng yan	W5错别字+错音“七窃(qie)”实为“七窍(qiao)”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	顺风而呼闻着彰	shun feng er hu wen zhe zhang	顺风而呼闻者彰	shun feng er hu wen zhe zhang	W5错别字《劝学》“闻着”实为“闻者”	统编高中必修上
+cn_dicts_cell/idiom.dict.yaml	案板底下放风第	an ban di xia fang feng di	案板底下放风筝	an ban di xia fang feng zheng	W5歇后语OCR错字“风第”实为“风筝”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	白蜡材结桂花	bai la cai jie gui hua	白蜡杆结桂花	bai la gan jie gui hua	W5歇后语OCR错字“白蜡材”实为“白蜡杆/白蜡树”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	柏马屁拍到蹄子上	bai ma pi pai dao ti zi shang	拍马屁拍到蹄子上	pai ma pi pai dao ti zi shang	W5歇后语OCR错字“柏马屁”实为“拍马屁”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	斑鸩打架	ban zhen da jia	斑鸠打架	ban jiu da jia	W5歇后语OCR错字“斑鸩”实为“斑鸠”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	大门日的石狮子	da men ri de shi shi zi	大门口的石狮子	da men kou de shi shi zi	W5歇后语OCR错字“大门日”实为“大门口”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	挡凤板做锅盖	dang feng ban zuo guo gai	挡风板做锅盖	dang feng ban zuo guo gai	W5歇后语OCR错字“挡凤板”实为“挡风板”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	恶鬼见钟旭	e gui jian zhong xu	恶鬼见钟馗	e gui jian zhong kui	W5歇后语OCR错字“钟旭”实为“钟馗”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	饿狼日里夺脆骨	e lang ri li duo cui gu	饿狼口里夺脆骨	e lang kou li duo cui gu	W5歇后语OCR错字“饿狼日里”实为“饿狼口里”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	各于一行	ge yu yi hang	各干一行	ge gan yi hang	W5歇后语OCR错字“各于”实为“各干”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	旱该倒了	han gai dao le	早该倒了	zao gai dao le	W5歇后语OCR错字“旱该”实为“早该”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	黑李这碰见猛张飞	hei li zhe peng jian meng zhang fei	黑李逵碰见猛张飞	hei li kui peng jian meng zhang fei	W5歇后语OCR错字“黑李这”实为“黑李逵”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	黄鼠狼下息	huang shu lang xia xi	黄鼠狼下崽	huang shu lang xia zai	W5歇后语OCR错字“下息”实为“下崽”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	浑身打哆哆	hun shen da duo duo	浑身打哆嗦	hun shen da duo suo	W5歇后语OCR错字“打哆哆”实为“打哆嗦”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	鸡肠舌刮油	ji chang she gua you	鸡肠子刮油	ji chang zi gua you	W5歇后语OCR错字“鸡肠舌”实为“鸡肠子”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	藉丝炒黄豆芽	ji si chao huang dou ya	藕丝炒黄豆芽	ou si chao huang dou ya	W5歇后语OCR错字“藉丝”实为“藕丝”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	酱缸腌时子	jiang gang yan shi zi	酱缸腌茄子	jiang gang yan qie zi	W5歇后语OCR错字“时子”实为“茄子/叶子”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	跤龙头上搔痒	jiao long tou shang sao yang	蛟龙头上搔痒	*	W5歇后语OCR错字“跤龙”实为“蛟龙”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	开卦府的包公	kai gua fu de bao gong	开封府的包公	kai feng fu de bao gong	W5歇后语OCR错字“开卦府”实为“开封府”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	空肚子打饱隔	kong du zi da bao ge	空肚子打饱嗝	*	W5歇后语错字“饱隔”实为“饱嗝”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	癞蛤蟆打吹欠	lai ha ma da chui qian	癞蛤蟆打哈欠	lai ha ma da ha qian	W5歇后语OCR错字“打吹欠”实为“打哈欠”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	麦芒戮到眼睛里	mai mang lu dao yan jing li	麦芒戳到眼睛里	mai mang chuo dao yan jing li	W5歇后语OCR错字“戮到”实为“戳到”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	撵走孤狸住上狼	nian zou gu li zhu shang lang	撵走狐狸住上狼	nian zou hu li zhu shang lang	W5歇后语OCR错字“孤狸”实为“狐狸”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	牛背上翻踉头	niu bei shang fan liang tou	牛背上翻跟头	niu bei shang fan gen tou	W5歇后语OCR错字“踉头”实为“跟头”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	暖水瓶爆烈	nuan shui ping bao lie	暖水瓶爆裂	*	W5错别字“爆烈”实为“爆裂”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	青石板上摔鸟龟	qing shi ban shang shuai niao gui	青石板上摔乌龟	qing shi ban shang shuai wu gui	W5歇后语OCR错字“鸟龟”实为“乌龟”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	青蛙拴生鞭梢上	qing wa shuan sheng bian shao shang	青蛙拴在鞭梢上	qing wa shuan zai bian shao shang	W5歇后语OCR错字“拴生”实为“拴在”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	青娃望玉兔	qing wa wang yu tu	青蛙望玉兔	*	W5歇后语错字“青娃”实为“青蛙”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	青娃笑蝌蚪	qing wa xiao ke dou	青蛙笑蝌蚪	*	W5歇后语错字“青娃”实为“青蛙”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	蜻蜒点水鱼打花	qing yan dian shui yu da hua	蜻蜓点水鱼打花	qing ting dian shui yu da hua	W5歇后语OCR错字“蜻蜒”实为“蜻蜓”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	让结巴念绕回令	rang jie ba nian rao hui ling	让结巴念绕口令	rang jie ba nian rao kou ling	W5歇后语OCR错字“绕回令”实为“绕口令”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	容不得半点火垦	rong bu de ban dian huo ken	容不得半点火星	rong bu de ban dian huo xing	W5歇后语OCR错字“火垦”实为“火星”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	肉丸子掉迸煤堆里	rou wan zi diao beng mei dui li	肉丸子掉进煤堆里	rou wan zi diao jin mei dui li	W5歇后语OCR错字“掉迸”实为“掉进”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	三角挫刀	san jiao cuo dao	三角锉刀	*	W5错别字“挫刀”实为“锉刀”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	设底儿	she di er	没底儿	mei di er	W5歇后语OCR错字“设底儿”实为“没底儿”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	瘦子光膀几	shou zi guang bang ji	瘦子光膀子	shou zi guang bang zi	W5歇后语OCR错字“光膀几”实为“光膀子”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	太岁乡头坐	tai sui xiang tou zuo	太岁头上坐	tai sui tou shang zuo	W5歇后语OCR错字“乡头”实为“头上”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	陶工手里的粘上	tao gong shou li de zhan shang	陶工手里的黏土	tao gong shou li de nian tu	W5歇后语OCR错字“粘上”实为“黏土”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	蚊龙困在沙滩上	wen long kun zai sha tan shang	蛟龙困在沙滩上	jiao long kun zai sha tan shang	W5歇后语OCR错字“蚊龙”实为“蛟龙”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	瞎子打过独林桥	xia zi da guo du lin qiao	瞎子走过独木桥	xia zi zou guo du mu qiao	W5歇后语OCR错字“独林桥”实为“独木桥”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	惜债买藉吃	xi zhai mai ji chi	借债买藕吃	jie zhai mai ou chi	W5歇后语OCR错字“惜债买藉”实为“借债买藕”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	鞋上绣金夙	xie shang xiu jin su	鞋上绣金凤	xie shang xiu jin feng	W5歇后语OCR错字“金夙”实为“金凤”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	养麦地里藏秃子	yang mai di li cang tu zi	荞麦地里藏秃子	qiao mai di li cang tu zi	W5歇后语OCR错字“养麦”实为“荞麦”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	唁闲嗑	yan xian ke	唠闲嗑	lao xian ke	W5歇后语OCR错字“唁闲嗑”实为“唠闲嗑”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	姨奶奶的枕头凤	yi nai nai de zhen tou feng	姨奶奶的枕头风	yi nai nai de zhen tou feng	W5歇后语OCR错字“枕头凤”实为“枕头风”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	有无地之别	you wu di zhi bie	有天地之别	you tian di zhi bie	W5歇后语OCR错字“无地”实为“天地”	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	肢皮人烤火	zhi pi ren kao huo	胶皮人烤火	jiao pi ren kao huo	W5歇后语OCR错字“肢皮人”实为“胶皮人”	现汉第7版
+cn_dicts_cell/literature.dict.yaml	长河渐落晓星沈	chang he jian luo xiao xing shen	长河渐落晓星沉	chang he jian luo xiao xing chen	繁体“沈(沉)”规范简体化	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/literature.dict.yaml	千寻铁锁沈江底	qian xun tie suo shen jiang di	千寻铁锁沉江底	qian xun tie suo chen jiang di	繁体“沈(沉)”规范简体化	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/literature.dict.yaml	沈吟放拨插弦中	shen yin fang bo cha xian zhong	沉吟放拨插弦中	chen yin fang bo cha xian zhong	繁体“沈(沉)”规范简体化	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/literature.dict.yaml	大荒沈沈飞雪白	da huang shen shen fei xue bai	大荒沉沉飞雪白	da huang chen chen fei xue bai	繁体“沈(沉)”规范简体化	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/literature.dict.yaml	天下莫不沈浮	tian xia mo bu shen fu	天下莫不沉浮	tian xia mo bu chen fu	繁体“沈(沉)”规范简体化	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/literature.dict.yaml	非銛于钩戟长铩也	fei gua yu gou ji chang sha ye	非铦于钩戟长铩也	fei xian yu gou ji chang sha ye	《过秦论》繁体“銛”规范作“铦”且错音 gua->xian	统编高中选择性必修中/通用规范汉字表
+cn_dicts_cell/literature.dict.yaml	盖禄万锺	gai lu wan zhong	盖禄万钟	*	非姓氏古代容量单位“锺”规范作“钟”	通用规范汉字表注32
+cn_dicts_cell/literature.dict.yaml	三千锺而不洎	san qian zhong er bu ji	三千钟而不洎	*	非姓氏古代容量单位“锺”规范作“钟”	通用规范汉字表注32
+cn_dicts_cell/literature.dict.yaml	则受三锺与十束薪	ze shou san zhong yu shi shu xin	则受三钟与十束薪	*	非姓氏古代容量单位“锺”规范作“钟”	通用规范汉字表注32
+cn_dicts_cell/literature.dict.yaml	不是不曾经著	bu shi bu ceng jing zhu	不是不曾经着	bu shi bu ceng jing zhe	繁体助词“著(zhe)”规范简体作“着”并正音	通用规范汉字表/现汉第7版
+cn_dicts_cell/literature.dict.yaml	记著尊前雪	ji zhu zun qian xue	记着尊前雪	ji zhe zun qian xue	繁体助词“著(zhe)”规范简体作“着”并正音	通用规范汉字表/现汉第7版
+cn_dicts_cell/literature.dict.yaml	旧游忆著山阴	jiu you yi zhu shan yin	旧游忆着山阴	jiu you yi zhe shan yin	繁体助词“著(zhe)”规范简体作“着”并正音	通用规范汉字表/现汉第7版
+cn_dicts_cell/literature.dict.yaml	留著舞衣中	liu zhu wu yi zhong	留着舞衣中	liu zhe wu yi zhong	繁体助词“著(zhe)”规范简体作“着”并正音	通用规范汉字表/现汉第7版
+cn_dicts_cell/literature.dict.yaml	说著分携泪暗流	shuo zhu fen xie lei an liu	说着分携泪暗流	shuo zhe fen xie lei an liu	繁体助词“著(zhe)”规范简体作“着”并正音	通用规范汉字表/现汉第7版
+cn_dicts_cell/literature.dict.yaml	飞花和雨著轻绍	fei hua he yu zhu qing shao	飞花和雨着轻绡	fei hua he yu zhuo qing xiao	W5错字+错音（晏几道词“轻绍”实为“轻绡”，“着”读 zhuó）	宋词
+cn_dicts_cell/literature.dict.yaml	勿复重纷坛	wu fu zhong fen tan	勿复重纷纭	wu fu chong fen yun	W5错字+错音（陶渊明《饮酒》“纷坛”实为“纷纭”，“重”读 chóng）	古诗文
+cn_dicts_cell/literature.dict.yaml	制灯迷贾政悲谶语	zhi deng mi jia zheng bei chen yu	制灯谜贾政悲谶语	*	W5错别字（《红楼梦》第22回“灯迷”实为“灯谜”）	红楼梦
+cn_dicts_cell/literature.dict.yaml	殽函为官	yao han wei guan	殽函为宫	xiao han wei gong	W5错字+错音（《过秦论》“为官”实为“为宫”，“殽”读 xiáo）	统编高中选择性必修中
+cn_dicts_cell/literature.dict.yaml	子及女偕亡	zi ji nv xie wang	予及女偕亡	yu ji ru xie wang	W5错字+错音（《尚书》《孟子》“予及女偕亡”，误作“子”）	尚书/孟子
+cn_dicts_cell/literature.dict.yaml	齐桓普文之事	qi huan pu wen zhi shi	齐桓晋文之事	qi huan jin wen zhi shi	W5 OCR错字（《孟子》“晋文”，误作“普文”）	统编高中必修下
+cn_dicts_cell/literature.dict.yaml	君命召不矣驾	jun ming zhao bu yi jia	君命召不俟驾	jun ming zhao bu si jia	W5 OCR错字（《论语》“不俟驾”，误作“不矣驾”）	论语·乡党
+cn_dicts_cell/literature.dict.yaml	今人作见孺子将入于井	jin ren zuo jian ru zi jiang ru yu jing	今人乍见孺子将入于井	jin ren zha jian ru zi jiang ru yu jing	W5 OCR错字（《孟子》“乍见”，误作“作见”）	统编高中选择性必修上
+cn_dicts_cell/literature.dict.yaml	副元师勋塞天地	fu yuan shi xun sai tian di	副元帅勋塞天地	fu yuan shuai xun se tian di	W5 OCR错字+错音（韩愈《段太尉逸事状》“副元帅”，“塞”读 sè）	古文观止
+cn_dicts_cell/literature.dict.yaml	罪且及副元师	zui qie ji fu yuan shi	罪且及副元帅	zui qie ji fu yuan shuai	W5 OCR错字（《段太尉逸事状》“副元帅”，误作“元师”）	古文观止
+cn_dicts_cell/literature.dict.yaml	盖微招角招是也	gai wei zhao jiao zhao shi ye	盖徵招角招是也	gai zhi zhao jue zhao shi ye	W5 OCR错字+错音（《孟子》五音“徵招角招”，误作“微招”）	孟子·梁惠王下
+cn_dicts_cell/literature.dict.yaml	今不忍人无冠暴死	jin bu ren ren wu guan bao si	今不忍人无寇暴死	jin bu ren ren wu kou bao si	W5 OCR错字（《段太尉逸事状》“无寇暴死”，误作“无冠”）	古文观止
+cn_dicts_cell/literature.dict.yaml	故汤之于依尹	gu tang zhi yu yi yin	故汤之于伊尹	*	W5错字（《孟子》“伊尹”，误作“依尹”）	孟子·公孙丑下
+cn_dicts_cell/literature.dict.yaml	燕宿雕粱	yan su diao liang	燕宿雕梁	*	W5错别字（“雕梁”误作“雕粱”）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	第一折技花样画罗裙	di yi zhe ji hua yang hua luo qun	第一折枝花样画罗裙	di yi zhe zhi hua yang hua luo qun	W5 OCR错字（“折枝”误作“折技”）	古诗词
+cn_dicts_cell/literature.dict.yaml	筋国之士矜雅	jin guo zhi shi jin ya	饬国之士矜雅	chi guo zhi shi jin ya	W5 OCR错字（《庄子》“饬国”，误作“筋国”）	庄子
+cn_dicts_cell/literature.dict.yaml	戌狄是膺	xu di shi ying	戎狄是膺	rong di shi ying	W5 OCR错字（《诗经》《孟子》“戎狄是膺”，误作“戌狄”）	诗经/孟子

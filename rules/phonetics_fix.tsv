@@ -473,7 +473,6 @@ cn_dicts_cell/idiom.dict.yaml	多口阿师	duo kou e shi	duo kou a shi	R1/R2成�
 cn_dicts_cell/idiom.dict.yaml	大模厮样	da mo si yang	da mu si yang	R1/R2成语读音修正	现汉第7版
 cn_dicts_cell/idiom.dict.yaml	大模大样	da mo da yang	da mu da yang	R1/R2成语读音修正	现汉第7版
 cn_dicts_cell/idiom.dict.yaml	好恶不同	hao e bu tong	hao wu bu tong	R1/R2成语读音修正	现汉第7版
-cn_dicts_cell/idiom.dict.yaml	家长理短	jia zhang li duan	jia chang li duan	R1/R2成语读音修正	现汉第7版
 cn_dicts_cell/idiom.dict.yaml	对酒行	dui jiu hang	dui jiu xing	R1/R2成语读音修正	现汉第7版
 cn_dicts_cell/idiom.dict.yaml	履至尊而制六合	lv zhi zun er zhi lu he	lv zhi zun er zhi liu he	R1/R2成语读音修正	现汉第7版
 cn_dicts_cell/idiom.dict.yaml	山行海宿	shan xing hai xiu	shan xing hai su	R1/R2成语读音修正	现汉第7版
@@ -2006,7 +2005,6 @@ cn_dicts_cell/literature.dict.yaml	大夫一位	dai fu yi wei	da fu yi wei	古�
 cn_dicts_cell/literature.dict.yaml	大夫有赐于士	dai fu you ci yu shi	da fu you ci yu shi	古籍官职大夫规范读 dà fū	现汉第7版/古籍
 cn_dicts_cell/literature.dict.yaml	大夫则以身殉家	dai fu ze yi shen xun jia	da fu ze yi shen xun jia	古籍官职大夫规范读 dà fū	现汉第7版/古籍
 cn_dicts_cell/literature.dict.yaml	二大夫曰	er dai fu yue	er da fu yue	古籍官职大夫规范读 dà fū	现汉第7版/古籍
-cn_dicts_cell/literature.dict.yaml	公叔文子之臣大夫撰	gong shu wen zi zhi chen dai fu zhuan	gong shu wen zi zhi chen da fu zhuan	古籍官职大夫规范读 dà fū	现汉第7版/古籍
 cn_dicts_cell/literature.dict.yaml	古人所以重施刑于大夫者	gu ren suo yi chong shi xing yu dai fu zhe	gu ren suo yi zhong shi xing yu da fu zhe	古籍官职大夫规范读 dà fū	现汉第7版/古籍
 cn_dicts_cell/literature.dict.yaml	轮台歌奉送封大夫出师西征	lun tai ge feng song feng dai fu chu shi xi zheng	lun tai ge feng song feng da fu chu shi xi zheng	古籍官职大夫规范读 dà fū	现汉第7版/古籍
 cn_dicts_cell/literature.dict.yaml	卿禄二大夫	qing lu er dai fu	qing lu er da fu	古籍官职大夫规范读 dà fū	现汉第7版/古籍
@@ -3760,3 +3758,1178 @@ cn_dicts_cell/composite.dict.yaml	剥虾壳	bo xia ke	bao xia ke	口语去皮动
 cn_dicts_cell/composite.dict.yaml	剥玉米	bo yu mi	bao yu mi	口语去皮动作“剥”规范读 bāo	1985审音表/现汉第7版(L1)
 cn_dicts_cell/composite.dict.yaml	剥栗子	bo li zi	bao li zi	口语去皮动作“剥”规范读 bāo	1985审音表/现汉第7版(L1)
 cn_dicts_cell/composite.dict.yaml	剥橙子	bo cheng zi	bao cheng zi	口语去皮动作“剥”规范读 bāo	1985审音表/现汉第7版(L1)
+# Batch 3 (idiom & literature): verified classical/textbook/idiom phonetic fixes
+cn_dicts_cell/idiom.dict.yaml	呱呱堕地	gua gua duo di	gu gu duo di	婴儿啼哭声“呱呱”规范读 gū gū	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	拔本塞源	ba ben sai yuan	ba ben se yuan	“塞”义为堵塞，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	面折廷诤	mian she ting zheng	mian zhe ting zheng	“面折”当面指责，规范读 zhé	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	杜门屏迹	du men ping ji	du men bing ji	“屏迹”隐退避迹，规范读 bǐng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	老师宿儒	lao shi xiu ru	lao shi su ru	“宿儒”老成博学之儒，规范读 sù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	当行本色	dang xing ben se	dang hang ben se	“当行”内行/本行，规范读 háng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	马革盛尸	ma ge sheng shi	ma ge cheng shi	“盛”义为容纳/装入（金何宏中七律平仄亦证平声），规范读 chéng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	食不重味	shi bu zhong wei	shi bu chong wei	“重味”两样以上菜肴，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	食不重肉	shi bu zhong rou	shi bu chong rou	“重肉”两样以上肉菜，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	不龟手药	bu gui shou yao	bu jun shou yao	“龟手”通“皲”，皮肤冻裂，规范读 jūn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	揆时度势	kui shi du shi	kui shi duo shi	“度势”估量形势，规范读 duó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	脱壳金蝉	tuo ke jin chan	tuo qiao jin chan	“金蝉脱壳”规范读 qiào	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	专精覃思	zhuan jing qin si	zhuan jing tan si	“覃思”深思，规范读 tán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	恶恶从短	wu wu cong duan	wu e cong duan	“恶(wù)恶(è)”憎恶过失，第二字为名词读 è	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	恶直丑正	e zhi chou zheng	wu zhi chou zheng	《左传》动词“憎恶正直之人”（对举好谀恶直），规范读 wù	现汉第7版/古汉词典
+cn_dicts_cell/idiom.dict.yaml	鹏鴳齐致	peng e qi zhi	peng yan qi zhi	“鴳”指鹌鹑类小鸟（斥鴳），读 yàn	辞海/古汉词典
+cn_dicts_cell/idiom.dict.yaml	情见埶竭	qing jian yi jie	qing xian shi jie	“见”通现读 xiàn；“埶”为势之古字读 shì	辞海/古汉词典
+cn_dicts_cell/idiom.dict.yaml	神龙失埶	shen long shi yi	shen long shi shi	“埶”为势之古字（失势），读 shì	辞海/古汉词典
+cn_dicts_cell/idiom.dict.yaml	审曲面埶	shen qu mian yi	shen qu mian shi	《考工记》“埶”同势，读 shì	辞海/古汉词典
+cn_dicts_cell/idiom.dict.yaml	雕龙炙輠	diao long zhi hua	diao long zhi guo	《史记》“炙輠”盛油脂器，读 guǒ	汉语大词典/辞海
+cn_dicts_cell/idiom.dict.yaml	渔阳鞞鼓	yu yang bing gu	yu yang pi gu	“鞞鼓”同“鼙鼓”（战鼓），读 pí	现汉第7版/辞海
+cn_dicts_cell/idiom.dict.yaml	恫疑虚猲	dong yi xu ge	dong yi xu he	《史记》“虚猲”恐吓威胁，读 hè	汉语大词典/辞海
+cn_dicts_cell/idiom.dict.yaml	赋芧戏狙	fu zhu xi ju	fu xu xi ju	《庄子》“赋芧”橡子，读 xù	汉语大词典/辞海
+cn_dicts_cell/idiom.dict.yaml	鉏麑之悔	ju ni zhi hui	chu ni zhi hui	春秋晋国力士鉏麑（Chú Ní），读 chú	辞海/古汉词典
+cn_dicts_cell/idiom.dict.yaml	珠槃玉敦	zhu pan yu dun	zhu pan yu dui	古代礼器“玉敦”，规范读 duì	现汉第7版/辞海
+cn_dicts_cell/idiom.dict.yaml	珠盘玉敦	zhu pan yu dun	zhu pan yu dui	古代礼器“玉敦”，规范读 duì	现汉第7版/辞海
+cn_dicts_cell/idiom.dict.yaml	火齐木难	huo qi mu nan	huo ji mu nan	古代宝石名“火齐”，规范读 huǒ jì	现汉第7版/辞海
+cn_dicts_cell/idiom.dict.yaml	横僿不文	heng sai bu wen	heng se bu wen	“僿”指鄙陋/粗俗，规范读 sè	汉语大词典/辞海
+cn_dicts_cell/idiom.dict.yaml	阿匼取容	a ke qu rong	e ke qu rong	“阿”迎合曲从，规范读 ē	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	阿顺取容	a shun qu rong	e shun qu rong	“阿顺”迎合顺从，规范读 ē	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	阿旨顺情	a zhi shun qing	e zhi shun qing	“阿旨”迎合意旨，规范读 ē	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	阿娜多姿	a na duo zi	e nuo duo zi	“阿娜”同“婀娜”，规范读 ē nuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	阿娜妩媚	a na wu mei	e nuo wu mei	“阿娜”同“婀娜”，规范读 ē nuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	不塞不流不止不行	bu sai bu liu bu zhi bu xing	bu se bu liu bu zhi bu xing	韩愈《原道》“塞”堵塞，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	豺狼塞道	chai lang sai dao	chai lang se dao	“塞道”堵塞道路，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	豺狼塞路	chai lang sai lu	chai lang se lu	“塞路”堵塞道路，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	充天塞地	chong tian sai di	chong tian se di	“塞地”充塞天地，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	垂头塞耳	chui tou sai er	chui tou se er	“塞耳”堵塞耳朵，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	担雪塞井	dan xue sai jing	dan xue se jing	“塞井”填塞水井，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	杜门塞窦	du men sai dou	du men se dou	“塞窦”堵塞孔洞，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	锢聪塞明	gu cong sai ming	gu cong se ming	“塞明”蔽塞视听，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	汗牛塞栋	han niu sai dong	han niu se dong	“塞栋”充塞屋栋，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	壶浆塞道	hu jiang sai dao	hu jiang se dao	“塞道”堵塞道路，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	黄雾四塞	huang wu si sai	huang wu si se	“四塞”弥漫充塞，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	禁舍开塞	jin she kai sai	jin she kai se	“开塞”开通与闭塞，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	两耳塞豆	liang er sai dou	liang er se dou	“塞豆”堵塞耳朵，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	聊以塞命	liao yi sai ming	liao yi se ming	“塞命”敷衍应命，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	裂冠毁冕拔本塞源	lie guan hui mian ba ben sai yuan	lie guan hui mian ba ben se yuan	“拔本塞源”堵塞源头，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	漫山塞野	man shan sai ye	man shan se ye	“塞野”充塞原野，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	漫天塞地	man tian sai di	man tian se di	“塞地”充塞天地，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	迁善塞违	qian shan sai wei	qian shan se wei	“塞违”堵塞违失，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	日堙月塞	ri yin yue sai	ri yin yue se	“堙塞”淤塞不通，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	塞耳盗钟	sai er dao zhong	se er dao zhong	“塞耳”堵塞耳朵，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	塞耳偷铃	sai er tou ling	se er tou ling	“塞耳”堵塞耳朵，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	塞井焚舍	sai jing fen she	se jing fen she	“塞井”填塞水井，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	填街塞巷	tian jie sai xiang	tian jie se xiang	“塞巷”堵塞街巷，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	屯街塞巷	tun jie sai xiang	tun jie se xiang	“塞巷”堵塞街巷，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	屯蹶否塞	tun jue pi sai	tun jue pi se	“否塞”闭塞不通，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	下塞上聋	xia sai shang long	xia se shang long	“下塞”下情壅塞，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	抑塞磊落	yi sai lei luo	yi se lei luo	“抑塞”郁结闭塞，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	鹰犬塞途	ying quan sai tu	ying quan se tu	“塞途”堵塞道路，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	朝穿暮塞	zhao chuan mu sai	zhao chuan mu se	“暮塞”堵塞，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	钻山塞海	zuan shan sai hai	zuan shan se hai	“塞海”填塞大海，规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	榱崩栋折	cui beng dong she	cui beng dong zhe	“栋折”栋梁折断，规范读 zhé	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	榱栋崩折	cui dong beng she	cui dong beng zhe	“崩折”折断，规范读 zhé	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	得马折足	de ma she zu	de ma zhe zu	“折足”摔断腿，书面成语规范读 zhé	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	鼎折覆餗	ding she fu su	ding zhe fu su	《周易》“鼎折足”，规范读 zhé	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	鼎折餗覆	ding she su fu	ding zhe su fu	《周易》“鼎折足”，规范读 zhé	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	栋折榱坏	dong she cui huai	dong zhe cui huai	“栋折”栋梁折断，规范读 zhé	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	桂折兰摧	gui she lan cui	gui zhe lan cui	“桂折”折断，规范读 zhé	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	桂折一枝	gui she yi zhi	gui zhe yi zhi	“桂折”折桂，规范读 zhé	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	规旋矩折	gui xuan ju she	gui xuan ju zhe	“矩折”如矩转折，规范读 zhé	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	拉枯折朽	la ku she xiu	la ku zhe xiu	“折朽”折断枯朽，规范读 zhé	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	面折庭争	mian she ting zheng	mian zhe ting zheng	“面折”当面指责，规范读 zhé	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	千磨百折	qian mo bai she	qian mo bai zhe	“百折”多次挫折，规范读 zhé	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	强自取折	qiang zi qu she	qiang zi qu zhe	《荀子》“强自取折”折断，规范读 zhé	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	推枯折腐	tui ku she fu	tui ku zhe fu	“折腐”折断腐朽，规范读 zhé	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	朝折暮折	zhao she mu she	zhao zhe mu zhe	“朝折暮折”曲折弯折，规范读 zhé	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	朱云折槛	zhu yun she jian	zhu yun zhe jian	《汉书》“朱云折槛”攀折栏杆，规范读 zhé	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	敛手屏足	lian shou ping zu	lian shou bing zu	“屏足”止步不敢前，规范读 bǐng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	栖风宿雨	qi feng xiu yu	qi feng su yu	“宿雨”露宿雨中，规范读 sù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	深仇宿怨	shen chou xiu yuan	shen chou su yuan	“宿怨”旧怨，规范读 sù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	水宿山行	shui xiu shan xing	shui su shan xing	“水宿”水上宿夜，规范读 sù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	硕望宿德	shuo wang xiu de	shuo wang su de	“宿德”素有德望，规范读 sù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	宿水餐风	xiu shui can feng	su shui can feng	“宿水”露宿水边，规范读 sù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	宿雨餐风	xiu yu can feng	su yu can feng	“宿雨”露宿雨中，规范读 sù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	参伍错综	cen wu cuo zong	can wu cuo zong	《周易》“参伍以变”，规范读 cān	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	斗转参斜	dou zhuan can xie	dou zhuan shen xie	“参”指参星，规范读 shēn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	德浅行薄	de qian xing bao	de qian xing bo	书面成语“行薄”规范读 bó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	根孤伎薄	gen gu ji bao	gen gu ji bo	书面成语“伎薄”规范读 bó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	官情纸薄	guan qing zhi bao	guan qing zhi bo	书面成语“纸薄”规范读 bó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	命薄缘悭	ming bao yuan qian	ming bo yuan qian	“命薄”规范读 bó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	轻赋薄敛	qing fu bao lian	qing fu bo lian	“薄敛”减轻赋税，规范读 bó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	轻口薄舌	qing kou bao she	qing kou bo she	“薄舌”规范读 bó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	日薄桑榆	ri bao sang yu	ri bo sang yu	“日薄”迫近，规范读 bó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	日薄虞渊	ri bao yu yuan	ri bo yu yuan	“日薄”迫近，规范读 bó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	身微力薄	shen wei li bao	shen wei li bo	“力薄”规范读 bó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	帏薄不修	wei bao bu xiu	wei bo bu xiu	《汉书》“帏薄”门帘，规范读 bó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	西山日薄	xi shan ri bao	xi shan ri bo	“日薄”迫近，规范读 bó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	敲骨剥髓	qiao gu bao sui	qiao gu bo sui	书面复音词“剥髓”规范读 bō	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	酬功给效	chou gong gei xiao	chou gong ji xiao	“给效”供应给养，规范读 jǐ	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	户给人足	hu gei ren zu	hu ji ren zu	“户给”家家丰足，规范读 jǐ	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	口才辨给	kou cai bian gei	kou cai bian ji	“辨给”口才敏捷，规范读 jǐ	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	口齿便给	kou chi bian gei	kou chi bian ji	“便给”口才敏捷，规范读 jǐ	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	口谐辞给	kou xie ci gei	kou xie ci ji	“辞给”言辞敏捷，规范读 jǐ	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	利口辩给	li kou bian gei	li kou bian ji	“辩给”言辞敏捷，规范读 jǐ	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	民给家足	min gei jia zu	min ji jia zu	“民给”百姓丰足，规范读 jǐ	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	大模尸样	da mo shi yang	da mu shi yang	同“大模大样/大模厮样”，“模”读 mú	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	好模好样	hao mo hao yang	hao mu hao yang	“模样”义，规范读 mú	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	起模画样	qi mo hua yang	qi mu hua yang	“起模”比照模样，规范读 mú	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	乔模乔样	qiao mo qiao yang	qiao mu qiao yang	“模样”义，规范读 mú	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	死模活样	si mo huo yang	si mu huo yang	“模样”义，规范读 mú	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	妆模作样	zhuang mo zuo yang	zhuang mu zuo yang	同“装模作样”，“模”读 mú	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	狗头生角	gou tou sheng jue	gou tou sheng jiao	动物犄角，规范读 jiǎo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	口角垂涎	kou jue chui xian	kou jiao chui xian	“口角”指嘴角，规范读 jiǎo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	敌力角气	di li jiao qi	di li jue qi	“角气”较量气力，规范读 jué	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	埒材角妙	lie cai jiao miao	lie cai jue miao	“角妙”较量巧妙，规范读 jué	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	以宫笑角	yi gong xiao jiao	yi gong xiao jue	五音“宫商角徵羽”，规范读 jué	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	引商刻角	yin shang ke jiao	yin shang ke jue	五音“角”，规范读 jué	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	一暴一寒	yi bao yi han	yi pu yi han	同“一暴十寒”，“暴”义为晒，规范读 pù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	暴腮之鱼	bao sai zhi yu	pu sai zhi yu	“暴腮”晾干鱼鳃（同暴鳃龙门），规范读 pù	现汉第7版/辞海
+cn_dicts_cell/idiom.dict.yaml	鞭辟近里	bian bi jin li	bian pi jin li	同“鞭辟入里”，“辟”透彻，规范读 pì	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	三征七辟	san zheng qi pi	san zheng qi bi	古代征召做官“征辟”，规范读 bì	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	复政厥辟	fu zheng jue pi	fu zheng jue bi	《尚书》“厥辟”君主，规范读 bì	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	罢软无为	ba ruan wu wei	pi ruan wu wei	“罢”通“疲”，规范读 pí	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	劣倦罢极	lie juan ba ji	lie juan pi ji	“罢极”疲惫至极，规范读 pí	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	日莫途远	ri mo tu yuan	ri mu tu yuan	“莫”通“暮”，规范读 mù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	其道亡繇	qi dao wang yao	qi dao wu you	“亡”通无读 wú；“繇”通由读 yóu	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	道殣相属	dao jin xiang shu	dao jin xiang zhu	“相属”接连不断，规范读 zhǔ	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	洞洞属属	dong dong shu shu	dong dong zhu zhu	《礼记》恭敬专一貌，规范读 zhǔ zhǔ	现汉第7版/辞海
+cn_dicts_cell/idiom.dict.yaml	龙兴云属	long xing yun shu	long xing yun zhu	“云属”附随连接，规范读 zhǔ	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	神情不属	shen qing bu shu	shen qing bu zhu	“不属”不连属，规范读 zhǔ	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	属耳垣墙	shu er yuan qiang	zhu er yuan qiang	“属耳”附耳偷听，规范读 zhǔ	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	烟聚波属	yan ju bo shu	yan ju bo zhu	“波属”接连聚集，规范读 zhǔ	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	车胤盛萤	che yin sheng ying	che yin cheng ying	“盛萤”装萤火虫，规范读 chéng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	画瓶盛粪	hua ping sheng fen	hua ping cheng fen	“盛粪”装粪便，规范读 chéng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	囊里盛锥	nang li sheng zhui	nang li cheng zhui	“盛锥”装锥子，规范读 chéng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	被苫蒙荆	bei shan meng jing	pi shan meng jing	“被”通“披”，规范读 pī	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	被蓑救火	bei suo jiu huo	pi suo jiu huo	“被蓑”披着蓑衣，规范读 pī	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	大度君子	da duo jun zi	da du jun zi	“大度”气度宽宏，规范读 dù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	高识远度	gao shi yuan duo	gao shi yuan du	“远度”识度气度，规范读 dù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	尺表度天	chi biao du tian	chi biao duo tian	“度天”测量天高，规范读 duó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	度长絜短	du chang xie duan	duo chang xie duan	“度”衡量量度，规范读 duó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	度德而让	du de er rang	duo de er rang	“度德”估量德行，规范读 duó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	度德而师	du de er shi	duo de er shi	“度德”估量德行，规范读 duó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	度时揆势	du shi kui shi	duo shi kui shi	“度时”估量时局，规范读 duó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	度时审势	du shi shen shi	duo shi shen shi	“度时”估量时局，规范读 duó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	度体裁衣	du ti cai yi	duo ti cai yi	同“量体裁衣”，“度”测量，规范读 duó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	度形而衣	du xing er yi	duo xing er yi	“度形”量体，规范读 duó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	胡猜乱度	hu cai luan du	hu cai luan duo	“乱度”揣度，规范读 duó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	鉴影度形	jian ying du xing	jian ying duo xing	“度形”揣度形貌，规范读 duó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	量时度力	liang shi du li	liang shi duo li	“度力”估量力量，规范读 duó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	审几度势	shen ji du shi	shen ji duo shi	“度势”估量形势，规范读 duó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	识微知著	shi wei zhi zhuo	shi wei zhi zhu	“知著”显著，规范读 zhù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	不著不落	bu zhu bu luo	bu zhuo bu luo	“著”附着着落，规范读 zhuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	不著痕迹	bu zhu hen ji	bu zhuo hen ji	同“不着痕迹”，规范读 zhuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	不著筋节	bu zhu jin jie	bu zhuo jin jie	“著”接触着落，规范读 zhuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	不著疼热	bu zhu teng re	bu zhuo teng re	“著”沾边着落，规范读 zhuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	不著痛痒	bu zhu tong yang	bu zhuo tong yang	同“不着痛痒”，规范读 zhuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	不著一字	bu zhu yi zi	bu zhuo yi zi	“不著一字，尽得风流”，规范读 zhuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	大处著眼	da chu zhu yan	da chu zhuo yan	同“大处着眼”，规范读 zhuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	佛眼著粪	fo yan zhu fen	fo yan zhuo fen	同“佛头着粪”，规范读 zhuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	一度著蛇咬怕见断井索	yi du zhu she yao pa jian duan jing suo	yi du zhuo she yao pa jian duan jing suo	“著蛇咬”遭受，规范读 zhuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	枝附叶著	zhi fu ye zhu	zhi fu ye zhuo	“叶著”附着，规范读 zhuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	著手成春	zhu shou cheng chun	zhuo shou cheng chun	同“着手成春”，规范读 zhuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	著手回春	zhu shou hui chun	zhuo shou hui chun	同“着手回春”，规范读 zhuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	倒枕着床	dao zhen zhe chuang	dao zhen zhuo chuang	“着床”接触床铺，规范读 zhuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	佛头着屎	fo tou zhe shi	fo tou zhuo shi	同“佛头着粪”，规范读 zhuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	黏皮着骨	nian pi zhe gu	nian pi zhuo gu	“着骨”附着，规范读 zhuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	不着筋节	bu zhao jin jie	bu zhuo jin jie	“着”附着切中，规范读 zhuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	添盐着醋	tian yan zhao cu	tian yan zhuo cu	“着醋”加进放上，规范读 zhuó	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	羹里不着饭里着	geng li bu zhao fan li zhe	geng li bu zhao fan li zhao	“饭里着”碰到着了，规范读 zháo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	十捉九着	shi zhuo jiu zhe	shi zhuo jiu zhao	“捉着”抓到，规范读 zháo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	双日不着单日着	shuang ri bu zhao dan ri zhe	shuang ri bu zhao dan ri zhao	“单日着”碰到遇到，规范读 zháo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	城隍庙里着了火	cheng huang miao li zhe le huo	cheng huang miao li zhao le huo	“着火”燃烧，规范读 zháo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	悔之亡及	hui zhi wang ji	hui zhi wu ji	同“悔之无及”，“亡”读 wú	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	进退亡据	jin tui wang ju	jin tui wu ju	同“进退无据”，“亡”读 wú	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	冥僶亡见	ming min wang jian	ming min wu jian	“亡见”无所见，“亡”读 wú	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	日饮亡何	ri yin wang he	ri yin wu he	《汉书》“亡何”无何，“亡”读 wú	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	亡可奈何	wang ke nai he	wu ke nai he	同“无可奈何”，“亡”读 wú	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	有名亡实	you ming wang shi	you ming wu shi	同“有名无实”，“亡”读 wú	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	氓獠户歌	mang liao hu ge	meng liao hu ge	“氓”百姓，规范读 méng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	殚精覃思	dan jing qin si	dan jing tan si	“覃思”深思，规范读 tán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	恩将恩报仇将仇还	en jiang en bao chou jiang chou hai	en jiang en bao chou jiang chou huan	“仇还”偿还，规范读 huán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	还顾之忧	hai gu zhi you	huan gu zhi you	“还顾”回过头看，规范读 huán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	久假当还	jiu jia dang hai	jiu jia dang huan	“当还”归还，规范读 huán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	倦翼知还	juan yi zhi hai	juan yi zhi huan	“知还”飞回，规范读 huán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	六月债还得快	liu yue zhai hai de kuai	liu yue zhai huan de kuai	“还债”偿还，规范读 huán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	七返九还	qi fan jiu hai	qi fan jiu huan	道教内丹“九还”，规范读 huán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	一尺还他十寸	yi chi hai ta shi cun	yi chi huan ta shi cun	“还他”归还，规范读 huán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	还不了	hai bu le	huan bu liao	歇后语释义“还(huán)不了(liǎo)”偿还不了	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	博览书传	bo lan shu chuan	bo lan shu zhuan	“书传”经书传记，规范读 zhuàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	李好义传	li hao yi chuan	li hao yi zhuan	史书传记名，规范读 zhuàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	薛道衡传	xue dao heng chuan	xue dao heng zhuan	史书传记名，规范读 zhuàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	周陈国大长公主传	zhou chen guo da zhang gong zhu chuan	zhou chen guo da zhang gong zhu zhuan	史书传记名，规范读 zhuàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	驽蹇之乘	nu jian zhi cheng	nu jian zhi sheng	古代车马车辆，规范读 shèng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	处降纳叛	chu jiang na pan	chu xiang na pan	“降”投降者，规范读 xiáng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	鸟兽率舞	niao shou lv wu	niao shou shuai wu	《尚书》“率舞”相率而舞，规范读 shuài	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	一夔一契	yi kui yi qi	yi kui yi xie	上古贤臣“契”，规范读 xiè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	气咽声丝	qi yan sheng si	qi ye sheng si	“气咽”声音哽咽，规范读 yè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	声丝气咽	sheng si qi yan	sheng si qi ye	“气咽”声音哽咽，规范读 yè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	官差吏差来人不差	guan chai li cha lai ren bu cha	guan chai li chai lai ren bu cha	“吏差”差遣，规范读 chāi	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	神差鬼遣	shen cha gui qian	shen chai gui qian	同“鬼使神差”，规范读 chāi	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	委差委缺	wei cha wei que	wei chai wei que	“委差”差事，规范读 chāi	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	百虑攒心	bai lv zan xin	bai lv cuan xin	“攒心”聚集，规范读 cuán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	蔟锦攒花	cu jin zan hua	cu jin cuan hua	“攒花”聚集花团，规范读 cuán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	不是知音莫与弹	bu shi zhi yin mo yu dan	bu shi zhi yin mo yu tan	“弹”弹琴，规范读 tán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	弹铗无鱼	dan jia wu yu	tan jia wu yu	“弹铗”敲击剑把，规范读 tán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	冯驩弹铗	feng huan dan jia	feng huan tan jia	“弹铗”敲击剑把，规范读 tán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	冯生弹铗	feng sheng dan jia	feng sheng tan jia	“弹铗”敲击剑把，规范读 tán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	明珠弹肉	ming zhu dan rou	ming zhu tan rou	同“明珠弹雀”，弹射动作读 tán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	千载一弹	qian zai yi dan	qian zai yi tan	“一弹”弹指/弹奏，规范读 tán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	越弹越乱	yue dan yue luan	yue tan yue luan	“弹”弹奏/弹棉花，规范读 tán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	弹丸脱手	tan wan tuo shou	dan wan tuo shou	“弹丸”弹弓丸子，规范读 dàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	长鸣都尉	chang ming dou wei	chang ming du wei	官名“都尉”，规范读 dū	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	都俞吁咈	dou yu xu fu	du yu xu fu	《尚书》感叹赞美词“都俞”，规范读 dū	现汉第7版/辞海
+cn_dicts_cell/idiom.dict.yaml	吁咈都俞	yu fu dou yu	yu fu du yu	《尚书》“都俞”，规范读 dū	现汉第7版/辞海
+cn_dicts_cell/idiom.dict.yaml	过都历块	guo dou li kuai	guo du li kuai	“过都”经过都城，规范读 dū	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	鸿都买第	hong dou mai di	hong du mai di	汉代“鸿都门”，规范读 dū	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	清都绛阙	qing dou jiang que	qing du jiang que	“清都”天帝居所，规范读 dū	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	清都紫府	qing dou zi fu	qing du zi fu	“清都”天帝居所，规范读 dū	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	清都紫微	qing dou zi wei	qing du zi wei	“清都”天帝居所，规范读 dū	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	三徙成都	san xi cheng dou	san xi cheng du	“成都”成为都会，规范读 dū	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	通都大埠	tong dou da bu	tong du da bu	“通都”大都会，规范读 dū	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	通都巨邑	tong dou ju yi	tong du ju yi	“通都”大都会，规范读 dū	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	五都望重	wu dou wang zhong	wu du wang zhong	“五都”五个都会，规范读 dū	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	笔力独扛	bi li du kang	bi li du gang	“独扛”双手举起（同力能扛鼎），规范读 gāng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	力扛九鼎	li kang jiu ding	li gang jiu ding	“扛鼎”双手举鼎，规范读 gāng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	摘瓜抱蔓	zhai gua bao man	zhai gua bao wan	瓜蔓植物细茎，规范读 wàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	大肚便便	da du bian bian	da du pian pian	“便便”肥胖貌，规范读 pián pián	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	腹笥便便	fu si bian bian	fu si pian pian	“便便”腹满学富貌，规范读 pián pián	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	金声玉色	jin sheng yu shai	jin sheng yu se	书面成语“玉色”规范读 sè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	大篇长什	da pian chang shen	da pian chang shi	“篇什”诗篇，规范读 shí	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	各什各物	ge shen ge wu	ge shi ge wu	“什物”日常器物，规范读 shí	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	皎阳似火	jiao yang shi huo	jiao yang si huo	同“骄阳似火”，规范读 sì	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	垂裳而治	chui shang er zhi	chui chang er zhi	古代下裙“衣裳”，规范读 cháng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	颠衣到裳	dian yi dao shang	dian yi dao chang	古代下裙“衣裳”，规范读 cháng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	拱手垂裳	gong shou chui shang	gong shou chui chang	古代下裙“垂裳”，规范读 cháng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	坏裳为裤	huai shang wei ku	huai chang wei ku	古代下裙“裳”，规范读 cháng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	卉裳罽衣	hui shang ji yi	hui chang ji yi	古代下裙“卉裳”，规范读 cháng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	搴裳躩步	qian shang jue bu	qian chang jue bu	提起下衣“搴裳”，规范读 cháng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	水佩风裳	shui pei feng shang	shui pei feng chang	“风裳”下衣，规范读 cháng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	难言兰臭	nan yan lan chou	nan yan lan xiu	“兰臭”兰草香气（同如兰之臭），规范读 xiù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	赏善罚否	shang shan fa fou	shang shan fa pi	“否”恶/坏（同臧否），规范读 pǐ	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	陵劲淬砺	ling jin cui li	ling jing cui li	“劲”强劲刚健，规范读 jìng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	单丁之身	shan ding zhi shen	dan ding zhi shen	“单丁”单个男丁，规范读 dān	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	刀笔贾竖	dao bi jia shu	dao bi gu shu	“贾竖”商人，规范读 gǔ	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	善价而贾	shan jia er jia	shan jia er gu	“贾”售卖/做买卖，规范读 gǔ	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	衔玉贾石	xian yu jia shi	xian yu gu shi	“贾石”卖石头，规范读 gǔ	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	衒玉贾石	xuan yu jia shi	xuan yu gu shi	“贾石”卖石头，规范读 gǔ	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	兼包并畜	jian bao bing chu	jian bao bing xu	“并畜”容纳蓄养（同兼收并蓄），规范读 xù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	俳优畜之	pai you chu zhi	pai you xu zhi	“畜之”当作倡优蓄养，规范读 xù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	容民畜众	rong min chu zhong	rong min xu zhong	《周易》“畜众”养育民众，规范读 xù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	三年之畜	san nian zhi chu	san nian zhi xu	“之畜”积蓄储备，规范读 xù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	豕交兽畜	shi jiao shou chu	shi jiao shou xu	《孟子》“兽畜”当作牲畜喂养，规范读 xù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	养精畜锐	yang jing chu rui	yang jing xu rui	同“养精蓄锐”，规范读 xù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	犯而勿校	fan er wu xiao	fan er wu jiao	同“犯而不校”，“校”计较，规范读 jiào	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	犯之不校	fan zhi bu xiao	fan zhi bu jiao	同“犯而不校”，“校”计较，规范读 jiào	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	同年而校	tong nian er xiao	tong nian er jiao	“校”比较较量，规范读 jiào	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	调弦品竹	diao xian pin zhu	tiao xian pin zhu	“调弦”调理琴弦，规范读 tiáo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	弄管调弦	nong guan diao xian	nong guan tiao xian	“调弦”调理琴弦，规范读 tiáo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	琴瑟和调	qin se he diao	qin se he tiao	“和调”和谐协调，规范读 tiáo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	调嘴调舌	tiao zui diao she	tiao zui tiao she	“调嘴调舌”挑唆/耍嘴皮，两“调”均读 tiáo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	不同凡调	bu tong fan tiao	bu tong fan diao	“凡调”曲调格调，规范读 diào	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	才调无伦	cai tiao wu lun	cai diao wu lun	“才调”才华情调，规范读 diào	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	才调秀出	cai tiao xiu chu	cai diao xiu chu	“才调”才华情调，规范读 diào	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	常调官好做家常饭好吃	chang tiao guan hao zuo jia chang fan hao chi	chang diao guan hao zuo jia chang fan hao chi	“常调官”按常规选调之官，规范读 diào	现汉第7版/辞海
+cn_dicts_cell/idiom.dict.yaml	调高和寡	tiao gao he gua	diao gao he gua	同“曲高和寡”，“调”曲调，规范读 diào	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	左支右调	zuo zhi you tiao	zuo zhi you diao	“右调”调度调配，规范读 diào	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	头会箕敛	tou hui ji lian	tou kuai ji lian	按人头计税“头会”，规范读 kuài	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	横从穿贯	heng cong chuan guan	heng zong chuan guan	“横从”纵横，规范读 zòng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	入孝出弟	ru xiao chu di	ru xiao chu ti	《论语》“弟”通“悌”，规范读 tì	现汉第7版/统编教材
+cn_dicts_cell/idiom.dict.yaml	解衣般礴	jie yi ban bo	jie yi pan bo	《庄子》“般礴”盘腿而坐，规范读 pán	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	养在圈里的猪	yang zai quan li de zhu	yang zai juan li de zhu	猪圈，“圈”规范读 juàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	斗重山齐	dou chong shan qi	dou zhong shan qi	“斗重”如北斗般尊贵/分量重，规范读 zhòng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	豆重榆瞑	dou chong yu ming	dou zhong yu ming	《养生论》食豆令人体沉重，规范读 zhòng	汉语大词典
+cn_dicts_cell/idiom.dict.yaml	内重外轻	nei chong wai qing	nei zhong wai qing	中央权重大于地方，规范读 zhòng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	轻事重报	qing shi chong bao	qing shi zhong bao	轻罪重报，与“轻”对举，规范读 zhòng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	戴凭重席	dai ping zhong xi	dai ping chong xi	《后汉书》重叠坐席五十余重，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	高山重嶂	gao shan zhong zhang	gao shan chong zhang	“重嶂”层层叠叠的山嶂，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	宫墙重仞	gong qiang zhong ren	gong qiang chong ren	“重仞”数仞/层层高墙，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	规重矩迭	gui zhong ju die	gui chong ju die	“重迭”重叠，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	寒恋重衾	han lian zhong qin	han lian chong qin	“重衾”多层棉被，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	兼官重绂	jian guan zhong fu	jian guan chong fu	“重绂”佩双印绶，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	兼朱重紫	jian zhu zhong zi	jian zhu chong zi	“重紫”叠佩紫绶，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	枯树重花	ku shu zhong hua	ku shu chong hua	枯树重新开花，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	铜盘重肉	tong pan zhong rou	tong pan chong rou	“重肉”多种肉菜（同食不重肉），规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	朽骨重肉	xiu gu zhong rou	xiu gu chong rou	使枯骨重新生肉，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	重关击柝	zhong guan ji tuo	chong guan ji tuo	“重关”重重关隘，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	重廊复阁	zhong lang fu ge	chong lang fu ge	“重廊”重叠回廊，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	重泉之下	zhong quan zhi xia	chong quan zhi xia	“重泉”九泉/地下深泉，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	重熙累洽	zhong xi lei qia	chong xi lei qia	“重熙”国家接连兴盛，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	重岩迭嶂	zhong yan die zhang	chong yan die zhang	同“重岩叠嶂”，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	重雍袭熙	zhong yong xi xi	chong yong xi xi	“重雍”世代接续和乐，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	重宇别院	zhong yu bie yuan	chong yu bie yuan	“重宇”重重院落房屋，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	重纸累札	zhong zhi lei zha	chong zhi lei zha	“重纸”一纸叠一纸，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	重足屏息	zhong zu bing xi	chong zu bing xi	“重足”叠足而立，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	重作冯妇	zhong zuo feng fu	chong zuo feng fu	同“重做冯妇”，再次充当，规范读 chóng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	朝生三千暮死八百	chao sheng san qian mu si ba bai	zhao sheng san qian mu si ba bai	与“暮”对举，早晨读 zhāo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	连朝接夕	lian chao jie xi	lian zhao jie xi	与“夕”对举，早晨读 zhāo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	每朝每日	mei chao mei ri	mei zhao mei ri	每日每朝，早晨读 zhāo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	每朝逐日	mei chao zhu ri	mei zhao zhu ri	逐日每朝，早晨读 zhāo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	暮不保朝	mu bu bao chao	mu bu bao zhao	与“暮”对举，早晨读 zhāo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	暮爨朝舂	mu cuan chao chong	mu cuan zhao chong	与“暮”对举，早晨读 zhāo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	暮史朝经	mu shi chao jing	mu shi zhao jing	与“暮”对举，早晨读 zhāo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	暮云朝雨	mu yun chao yu	mu yun zhao yu	与“暮”对举，早晨读 zhāo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	朝衣东市	zhao yi dong shi	chao yi dong shi	《史记》晁错穿朝服斩于东市，规范读 cháo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	赋食行水	fu shi hang shui	fu shi xing shui	“行水”巡视水道/施水，规范读 xíng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	口绝行语	kou jue hang yu	kou jue xing yu	“行语”行走谈话/出行语，规范读 xíng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	虑周行果	lv zhou hang guo	lv zhou xing guo	“行果”行动果断，规范读 xíng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	每行拮据	mei hang jie ju	mei xing jie ju	“每行”每次行动/行为，规范读 xíng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	千虑一行	qian lv yi hang	qian lv yi xing	“一行”一次实行，规范读 xíng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	人禁我行	ren jin wo hang	ren jin wo xing	“我行”我做/我行，规范读 xíng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	尚堪一行	shang kan yi hang	shang kan yi xing	“一行”去一趟，规范读 xíng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	水荡舟行风扬帆动	shui dang zhou hang feng yang fan dong	shui dang zhou xing feng yang fan dong	“舟行”船行驶，规范读 xíng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	蓼菜成行	liao cai cheng xing	liao cai cheng hang	“成行”排成行列，规范读 háng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	鹭序鸳行	lu xu yuan xing	lu xu yuan hang	“鸳行”朝官行列，规范读 háng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	五行俱下	wu xing ju xia	wu hang ju xia	“五行”书行五行同时看下，规范读 háng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	才长识寡	cai zhang shi gua	cai chang shi gua	“才长”才华长处，规范读 cháng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	道长说短	dao zhang shuo duan	dao chang shuo duan	同“说长道短”，与“短”对举，规范读 cháng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	更无短计消长日	geng wu duan ji xiao zhang ri	geng wu duan ji xiao chang ri	“长日”漫长白昼，规范读 cháng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	日长神倦	ri zhang shen juan	ri chang shen juan	“日长”白昼漫长，规范读 cháng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	日长岁久	ri zhang sui jiu	ri chang sui jiu	时间长久，规范读 cháng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	山静日长	shan jing ri zhang	shan jing ri chang	“日长”白昼漫长，规范读 cháng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	术愧长房	shu kui zhang fang	shu kui chang fang	汉代方士费长房，规范读 cháng	辞海/汉语大词典
+cn_dicts_cell/idiom.dict.yaml	长年三老	zhang nian san lao	chang nian san lao	峡江舵工船夫称“长年”，规范读 cháng	现汉第7版/辞海
+cn_dicts_cell/idiom.dict.yaml	长嘴泥鳅	zhang zui ni qiu	chang zui ni qiu	长着长嘴，规范读 cháng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	二尺长的吹火筒	er chi zhang de chui huo tong	er chi chang de chui huo tong	长度二尺长，规范读 cháng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	长恶不悛	chang e bu quan	zhang e bu quan	《左传》“长恶”助长恶行，规范读 zhǎng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	长恶靡悛	chang e mi quan	zhang e mi quan	助长恶行不改，规范读 zhǎng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	长嫂就是母	chang sao jiu shi mu	zhang sao jiu shi mu	“长嫂”大嫂，规范读 zhǎng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	触类而长	chu lei er chang	chu lei er zhang	《周易》推演增长，规范读 zhǎng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	村生泊长	cun sheng bo chang	cun sheng bo zhang	农村生长，规范读 zhǎng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	孤阴则不生独阳则不长	gu yin ze bu sheng du yang ze bu chang	gu yin ze bu sheng du yang ze bu zhang	万物生长，规范读 zhǎng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	进退消长	jin tui xiao chang	jin tui xiao zhang	“消长”消减与增长，规范读 zhǎng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	钜人长德	ju ren chang de	ju ren zhang de	《汉书》“长德”长者高德，规范读 zhǎng	汉语大词典
+cn_dicts_cell/idiom.dict.yaml	没舅不生没舅不长	mei jiu bu sheng mei jiu bu chang	mei jiu bu sheng mei jiu bu zhang	生长长大，规范读 zhǎng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	日引月长	ri yin yue chang	ri yin yue zhang	逐月增长，规范读 zhǎng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	眼睛长在脑门儿上	yan jing chang zai nao men er shang	yan jing zhang zai nao men er shang	生长在脑门上，规范读 zhǎng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	养痈长疽	yang yong chang ju	yang yong zhang ju	长出疮疽，规范读 zhǎng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	一岁使长百岁奴	yi sui shi chang bai sui nu	yi sui shi zhang bai sui nu	“长”长大/长辈，规范读 zhǎng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	只愁不养不愁不长	zhi chou bu yang bu chou bu chang	zhi chou bu yang bu chou bu zhang	生长长大，规范读 zhǎng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	脊梁骨上长茄子	ji liang gu shang chang qie zi	ji liang gu shang zhang qie zi	生长茄子，规范读 zhǎng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	苦生苦长	ku sheng ku chang	ku sheng ku zhang	苦水里长大，规范读 zhǎng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	蚂蛉长毛	ma ling chang mao	ma ling zhang mao	长出毛来，规范读 zhǎng	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	哀乐相生	ai yue xiang sheng	ai le xiang sheng	哀伤与欢乐，规范读 lè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	礼坏乐缺	li huai le que	li huai yue que	同“礼崩乐坏”，“乐”礼乐，规范读 yuè	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	子卯不乐	zi mao bu le	zi mao bu yue	《礼记》忌日不奏乐，规范读 yuè	现汉第7版/辞海
+cn_dicts_cell/idiom.dict.yaml	好谀恶直	hao yu e zhi	hao yu wu zhi	与“好(hào)”对举，厌恶正直，规范读 wù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	畏影恶迹	wei ying e ji	wei ying wu ji	《庄子》厌恶自己的足迹，规范读 wù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	恶则坠诸	e ze zhui zhu	wu ze zhui zhu	厌恶则舍弃，规范读 wù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	不恶下问	bu e xia wen	bu wu xia wen	不厌恶向地位低的人请教，规范读 wù	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	同恶相恤	tong wu xiang xu	tong e xiang xu	同为作恶之人互相体恤（同同恶相济），规范读 è	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	同恶相助	tong wu xiang zhu	tong e xiang zhu	同为作恶之人互相帮助，规范读 è	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	存荣没哀	cun rong mei ai	cun rong mo ai	《论语》“其生也荣，其死也哀”，没=死读 mò	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	鬼施神没	gui shi shen mei	gui shi shen mo	同“神出鬼没”，规范读 mò	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	棘没铜驼	ji mei tong tuo	ji mo tong tuo	荆棘淹没铜驼，规范读 mò	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	赍志没地	ji zhi mei di	ji zhi mo di	抱憾死去埋骨地下，规范读 mò	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	没没求活	mei mei qiu huo	mo mo qiu huo	“没没”沉沦/默默，规范读 mò mò	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	没石饮羽	mei shi yin yu	mo shi yin yu	箭射入石中没入箭羽，规范读 mò	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	没卫饮羽	mei wei yin yu	mo wei yin yu	箭没入箭羽，规范读 mò	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	蓬蒿没人	peng hao mei ren	peng hao mo ren	蓬蒿高过人头（淹没），规范读 mò	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	刃没利存	ren mei li cun	ren mo li cun	刀刃淹没/隐藏，规范读 mò	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	食饥息劳	shi ji xi lao	si ji xi lao	给饥者食物吃，动词“喂/给吃”读 sì	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	归遗细君	gui yi xi jun	gui wei xi jun	《汉书》东方朔割肉赠送妻子，“遗”赠送读 wèi	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	割爱见遗	ge ai jian yi	ge ai jian wei	“见遗”赠送给我，规范读 wèi	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	于呼哀哉	yu hu ai zai	wu hu ai zai	同“呜呼哀哉”，“于”叹词读 wū	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	七石缸里捞芝麻	qi shi gang li lao zhi ma	qi dan gang li lao zhi ma	“七石缸”容量七石的大水缸，规范读 dàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	白疼了一场	bai teng liao yi chang	bai teng le yi chang	动态助词“了”，规范读 le	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	宁可无了有不可有了无	ning ke wu le you bu ke you liao wu	ning ke wu le you bu ke you le wu	“有了无”助词“了”（同前“无了有”），读 le	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	盖棺事了	gai guan shi le	gai guan shi liao	“事了”了结完毕，规范读 liǎo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	了不相关	le bu xiang guan	liao bu xiang guan	“了”完全/全然，规范读 liǎo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	了不相属	le bu xiang zhu	liao bu xiang zhu	“了”完全/全然，规范读 liǎo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	了然无闻	le ran wu wen	liao ran wu wen	“了然”清楚明白，规范读 liǎo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	了身脱命	le shen tuo ming	liao shen tuo ming	“了身”了结尘缘，规范读 liǎo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	七了八当	qi le ba dang	qi liao ba dang	完备妥当，规范读 liǎo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	千了万当	qian le wan dang	qian liao wan dang	完全妥当，规范读 liǎo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	无了无休	wu le wu xiu	wu liao wu xiu	没有完结，规范读 liǎo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	治得了病治不了命	zhi de le bing zhi bu liao ming	zhi de liao bing zhi bu liao ming	“治得了”可能补语，规范读 liǎo	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	掣襟肘见	che jin zhou jian	che jin zhou xian	《庄子》“肘见”露出胳膊肘，规范读 xiàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	牵衣肘见	qian yi zhou jian	qian yi zhou xian	“肘见”露出胳膊肘，规范读 xiàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	踵决肘见	zhong jue zhou jian	zhong jue zhou xian	“肘见”露出胳膊肘，规范读 xiàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	捉襟肘见	zhuo jin zhou jian	zhuo jin zhou xian	同“捉襟见肘”，“见”露出，规范读 xiàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	情见乎词	qing jian hu ci	qing xian hu ci	“情见”情感显露，规范读 xiàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	情见乎言	qing jian hu yan	qing xian hu yan	“情见”情感显露，规范读 xiàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	情见势屈	qing jian shi qu	qing xian shi qu	“情见”实情暴露，规范读 xiàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	情见于词	qing jian yu ci	qing xian yu ci	“情见”情感显露，规范读 xiàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	情见于色	qing jian yu se	qing xian yu se	“情见”情感显露于神色，规范读 xiàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	时隐时见	shi yin shi jian	shi yin shi xian	同“时隐时现”，“见”显现，规范读 xiàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	喜见于色	xi jian yu se	xi xian yu se	喜悦显露在脸上，规范读 xiàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	一贵一贱交情乃见	yi gui yi jian jiao qing nai jian	yi gui yi jian jiao qing nai xian	《史记》交情才显现，规范读 xiàn	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	堕神圣地	duo shen sheng de	duo shen sheng di	“圣地”地方，规范读 dì	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	霜打的黄瓜	shuang da di huang gua	shuang da de huang gua	结构助词“的”，规范读 de	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	霜打的麻叶	shuang da di ma ye	shuang da de ma ye	结构助词“的”，规范读 de	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	高兴得发傻	gao xing dei fa sha	gao xing de fa sha	补语助词“得”，规范读 de	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	随得方就得圆	sui de fang jiu dei yuan	sui de fang jiu de yuan	同前“随得方”，助词“得”读 de	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	丛矢之的	cong shi zhi de	cong shi zhi di	箭靶“的”，规范读 dì	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	集矢之的	ji shi zhi de	ji shi zhi di	箭靶“的”，规范读 dì	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	切近的当	qie jin de dang	qie jin di dang	“的当”确切恰当，规范读 dí	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	丑媳妇也得见公婆	chou xi fu ye de jian gong po	chou xi fu ye dei jian gong po	口语必须“得”，规范读 děi	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	丑媳妇早晚也得见公婆	chou xi fu zao wan ye de jian gong po	chou xi fu zao wan ye dei jian gong po	口语必须“得”，规范读 děi	现汉第7版
+cn_dicts_cell/idiom.dict.yaml	顿足椎胸	dun zu zhui xiong	dun zu chui xiong	同“顿足捶胸”，“椎”捶打，规范读 chuí	现汉第7版
+cn_dicts_cell/literature.dict.yaml	复道行空	fu dao heng kong	fu dao xing kong	《阿房宫赋》行走横跨空中，规范读 xíng	统编高中必修下/现汉第7版
+cn_dicts_cell/literature.dict.yaml	举酒属客	ju jiu shu ke	ju jiu zhu ke	《赤壁赋》“属”通嘱，劝酒，规范读 zhǔ	统编高中必修上/现汉第7版
+cn_dicts_cell/literature.dict.yaml	寒梅着花未	han mei zhe hua wei	han mei zhuo hua wei	王维《杂诗》“着花”开花，规范读 zhuó	现汉第7版/古诗文规范
+cn_dicts_cell/literature.dict.yaml	寒梅著花未	han mei zhu hua wei	han mei zhuo hua wei	王维《杂诗》“著花”同“着花”开花，规范读 zhuó	现汉第7版/古诗文规范
+cn_dicts_cell/literature.dict.yaml	满座重闻皆掩泣	man zuo zhong wen jie yan qi	man zuo chong wen jie yan qi	《琵琶行》再次听闻，规范读 chóng	统编高中必修上/现汉第7版
+cn_dicts_cell/literature.dict.yaml	军阀重开战	jun fa zhong kai zhan	jun fa chong kai zhan	毛泽东《清平乐》再次开战，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	不如诸夏之亡也	bu ru zhu xia zhi wang ye	bu ru zhu xia zhi wu ye	《论语》“亡”古同“无”，规范读 wú	现汉第7版
+cn_dicts_cell/literature.dict.yaml	日知其所亡	ri zhi qi suo wang	ri zhi qi suo wu	《论语》“亡”古同“无”，规范读 wú	现汉第7版
+cn_dicts_cell/literature.dict.yaml	于嗟鸠兮	yu jie jiu xi	xu jie jiu xi	《诗经·氓》“于嗟”通“吁嗟”，教材注 xū	统编高中选择性必修下
+cn_dicts_cell/literature.dict.yaml	于嗟女兮	yu jie nv xi	xu jie nv xi	《诗经·氓》“于嗟”通“吁嗟”，教材注 xū（女=女子读nǚ）	统编高中选择性必修下
+cn_dicts_cell/literature.dict.yaml	犹可说也	you ke shuo ye	you ke tuo ye	《诗经·氓》“说”通“脱”解脱，教材注 tuō	统编高中选择性必修下
+cn_dicts_cell/literature.dict.yaml	氓之蚩蚩	mang zhi chi chi	meng zhi chi chi	《诗经·氓》民/男子，规范读 méng	统编高中选择性必修下/现汉第7版
+cn_dicts_cell/literature.dict.yaml	愿受一廛而为氓	yuan shou yi chan er wei mang	yuan shou yi chan er wei meng	《孟子》百姓，规范读 méng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	谁听呢喃语	shui ting ne nan yu	shui ting ni nan yu	“呢喃”燕子叫声，规范读 ní	现汉第7版
+cn_dicts_cell/literature.dict.yaml	葛覃	ge qin	ge tan	《诗经·周南·葛覃》蔓延，规范读 tán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	葛之覃兮	ge zhi qin xi	ge zhi tan xi	《诗经·葛覃》蔓延，规范读 tán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	沟浍皆盈	gou hui jie ying	gou kuai jie ying	《孟子》田间水渠“沟浍”，规范读 kuài	现汉第7版
+cn_dicts_cell/literature.dict.yaml	五日画一石	wu ri hua yi dan	wu ri hua yi shi	杜甫诗画山石，规范读 shí	现汉第7版
+cn_dicts_cell/literature.dict.yaml	有物先天地	you wu xian tian de	you wu xian tian di	《道德经》天地，规范读 dì	现汉第7版
+cn_dicts_cell/literature.dict.yaml	则眸子了焉	ze mou zi le yan	ze mou zi liao yan	《孟子》眼珠明亮，“了”读 liǎo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	于嗟乎	yu jie hu	xu jie hu	《诗经》叹词“于嗟”同“吁嗟”，读 xū	辞海/诗经注音
+cn_dicts_cell/literature.dict.yaml	于嗟阔兮	yu jie kuo xi	xu jie kuo xi	《诗经·击鼓》“于嗟”同“吁嗟”，读 xū	辞海/诗经注音
+cn_dicts_cell/literature.dict.yaml	于嗟麟兮	yu jie lin xi	xu jie lin xi	《诗经·麟之趾》“于嗟”同“吁嗟”，读 xū	辞海/诗经注音
+cn_dicts_cell/literature.dict.yaml	于嗟洵兮	yu jie xun xi	xu jie xun xi	《诗经·击鼓》“于嗟”同“吁嗟”，读 xū	辞海/诗经注音
+cn_dicts_cell/literature.dict.yaml	皆悦而愿为之氓矣	jie yue er yuan wei zhi mang yi	jie yue er yuan wei zhi meng yi	《孟子》百姓，规范读 méng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	君之于氓也	jun zhi yu mang ye	jun zhi yu meng ye	百姓“氓”，规范读 méng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	愿为圣人氓	yuan wei sheng ren mang	yuan wei sheng ren meng	百姓“氓”，规范读 méng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	甿隶之人	mang li zhi ren	meng li zhi ren	《过秦论》“甿”同“氓”，耕田人，读 méng	统编高中选择性必修中
+cn_dicts_cell/literature.dict.yaml	十三覃	shi san qin	shi san tan	平水韵目“十三覃”，读 tán	现汉第7版/辞海
+cn_dicts_cell/literature.dict.yaml	佛狸祠下	fo li ci xia	bi li ci xia	辛弃疾《永遇乐》拓跋焘小字佛狸，规范读 bì	统编高中必修上/现汉第7版
+cn_dicts_cell/literature.dict.yaml	风雨佛狸愁	feng yu fo li chou	feng yu bi li chou	“佛狸”北魏太武帝小字，规范读 bì	现汉第7版
+cn_dicts_cell/literature.dict.yaml	佛肸以中牟畔	fo xi yi zhong mu pan	bi xi yi zhong mu pan	《论语·阳货》晋大夫佛肸（Bì Xī），规范读 bì	现汉第7版/辞海
+cn_dicts_cell/literature.dict.yaml	佛肸召	fo xi zhao	bi xi zhao	《论语·阳货》佛肸（Bì Xī），规范读 bì	现汉第7版/辞海
+cn_dicts_cell/literature.dict.yaml	初为霓裳后六么	chu wei ni chang hou liu me	chu wei ni chang hou liu yao	《琵琶行》唐代乐曲名《六幺/六么》，规范读 yāo	统编高中必修上/现汉第7版
+cn_dicts_cell/literature.dict.yaml	鉏耰棘矜	ju you ji jin	chu you ji qin	《过秦论》“鉏”通锄读 chú，“矜”矛柄读 qín	统编高中选择性必修中/现汉第7版
+cn_dicts_cell/literature.dict.yaml	秦孝公据殽函之固	qin xiao gong ju yao han zhi gu	qin xiao gong ju xiao han zhi gu	《过秦论》崤山“殽函”，规范读 xiáo	统编高中选择性必修中/辞海
+cn_dicts_cell/literature.dict.yaml	殽函之固	yao han zhi gu	xiao han zhi gu	《过秦论》崤山“殽函”，规范读 xiáo	统编高中选择性必修中/辞海
+cn_dicts_cell/literature.dict.yaml	约从离衡	yue cong li heng	yue zong li heng	《过秦论》合纵连横“约从”，规范读 zòng	统编高中选择性必修中/现汉第7版
+cn_dicts_cell/literature.dict.yaml	于是从散约败	yu shi cong san yue bai	yu shi zong san yue bai	《过秦论》合纵瓦解，规范读 zòng	统编高中选择性必修中/现汉第7版
+cn_dicts_cell/literature.dict.yaml	既无叔伯	ji wu shu bai	ji wu shu bo	《陈情表》“叔伯”书面读 bó	统编高中选择性必修下/现汉第7版
+cn_dicts_cell/literature.dict.yaml	经冬犹绿林	jing dong you lu lin	jing dong you lv lin	王维《青溪》绿色树林，规范读 lǜ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	客路青山外行舟绿水前	ke lu qing shan wai hang zhou lv shui qian	ke lu qing shan wai xing zhou lv shui qian	王湾《次北固山下》行舟，规范读 xíng	统编初中七上/现汉第7版
+cn_dicts_cell/literature.dict.yaml	今子有五石之瓠	jin zi you wu shi zhi hu	jin zi you wu dan zhi hu	《庄子·逍遥游》容量单位五石，教材注 dàn	统编高中选择性必修上/现汉第7版
+cn_dicts_cell/literature.dict.yaml	我树之成而实五石	wo shu zhi cheng er shi wu shi	wo shu zhi cheng er shi wu dan	《庄子·逍遥游》容量单位五石，教材注 dàn	统编高中选择性必修上/现汉第7版
+cn_dicts_cell/literature.dict.yaml	能不龟手	neng bu gui shou	neng bu jun shou	《庄子·逍遥游》“龟手”同皲，读 jūn	统编高中选择性必修上/现汉第7版
+cn_dicts_cell/literature.dict.yaml	能不龟手一也	neng bu gui shou yi ye	neng bu jun shou yi ye	《庄子·逍遥游》“龟手”同皲，读 jūn	统编高中选择性必修上/现汉第7版
+cn_dicts_cell/literature.dict.yaml	宋人有善为不龟手之药者	song ren you shan wei bu gui shou zhi yao zhe	song ren you shan wei bu jun shou zhi yao zhe	《庄子·逍遥游》“龟手”同皲，读 jūn	统编高中选择性必修上/现汉第7版
+cn_dicts_cell/literature.dict.yaml	风清露白	feng qing lou bai	feng qing lu bai	白露露水，规范读 lù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	露白宵钟彻	lou bai xiao zhong che	lu bai xiao zhong che	白露露水，规范读 lù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	泪花落枕红绵冷	lei hua lao zhen hong mian leng	lei hua luo zhen hong mian leng	“落枕”泪滴落在枕上，规范读 luò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	以蜃盛溺	yi shen sheng ni	yi shen cheng niao	《庄子》用大蛤壳盛尿，“盛”读 chéng，“溺”读 niào	现汉第7版/古汉词典
+cn_dicts_cell/literature.dict.yaml	将复取而盛以箧衍	jiang fu qu er sheng yi qie yan	jiang fu qu er cheng yi qie yan	《庄子》盛放于竹箱，规范读 chéng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	盛以箧衍	sheng yi qie yan	cheng yi qie yan	《庄子》盛放于竹箱，规范读 chéng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	以筐盛矢	yi kuang sheng shi	yi kuang cheng shi	用筐盛放，规范读 chéng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	以盛水浆	yi sheng shui jiang	yi cheng shui jiang	用来盛装水浆，规范读 chéng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	零露漙兮	ling lu zhuan xi	ling lu tuan xi	《诗经·野有蔓草》露多貌“漙”，规范读 tuán	现汉第7版/辞海
+cn_dicts_cell/literature.dict.yaml	开揭磊砢	kai jie lei ke	kai jie lei luo	“磊砢”众石貌/魁伟貌，规范读 lěi luǒ	现汉第7版/辞海
+cn_dicts_cell/literature.dict.yaml	嫁得瞿塘贾	jia de qu tang jia	jia de qu tang gu	《长干行》商人“贾”，规范读 gǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	则市贾不贰	ze shi gu bu er	ze shi jia bu er	《孟子》“市贾”通“市价”，规范读 jià	现汉第7版/古汉词典
+cn_dicts_cell/literature.dict.yaml	一日暴之	yi ri bao zhi	yi ri pu zhi	《孟子》“一日暴之，十日寒之”曝晒，规范读 pù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	秋阳以暴之	qiu yang yi bao zhi	qiu yang yi pu zhi	《孟子》秋日阳光曝晒，规范读 pù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	佩玉将将	pei yu jiang jiang	pei yu qiang qiang	《诗经·有女同车》玉声锵锵，规范读 qiāng qiāng	现汉第7版/辞海
+cn_dicts_cell/literature.dict.yaml	鲁有单豹者	lu you dan bao zhe	lu you shan bao zhe	《庄子·达生》鲁人姓单名豹，姓氏规范读 shàn	现汉第7版
+cn_dicts_cell/literature.dict.yaml	单聘仁	dan pin ren	shan pin ren	《红楼梦》人名姓单（谐音善骗人），规范读 shàn	现汉第7版
+cn_dicts_cell/literature.dict.yaml	便便言	bian bian yan	pian pian yan	《论语》善辩貌“便便”，规范读 pián pián	现汉第7版
+cn_dicts_cell/literature.dict.yaml	友便辟	you bian pi	you pian pi	《论语》“便辟”谄媚逢迎，规范读 pián	现汉第7版
+cn_dicts_cell/literature.dict.yaml	再拜便辟	zai bai bian pi	zai bai pian pi	“便辟”恭顺逢迎，规范读 pián	现汉第7版
+cn_dicts_cell/literature.dict.yaml	而独不见之调调之刁刁乎	er du bu jian zhi diao diao zhi diao diao hu	er du bu jian zhi tiao tiao zhi diao diao hu	《庄子·齐物论》草木摇动貌“调调刁刁”，规范读 tiáo tiáo	辞海/庄子注音
+cn_dicts_cell/literature.dict.yaml	口角流沫右手胝	kou jue liu mo you shou zhi	kou jiao liu mo you shou zhi	“口角”嘴角，规范读 jiǎo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	先拂声弦后角羽	xian fu sheng xian hou jiao yu	xian fu sheng xian hou jue yu	五音“角羽”，规范读 jué	现汉第7版
+cn_dicts_cell/literature.dict.yaml	有其声而无宫角	you qi sheng er wu gong jiao	you qi sheng er wu gong jue	五音“宫角”，规范读 jué	现汉第7版
+cn_dicts_cell/literature.dict.yaml	啮缺问道乎被衣	nie que wen dao hu bei yi	nie que wen dao hu pi yi	《庄子》古人名“被衣”，读 pī（同 L21949 被衣大说）	辞海/古汉词典
+cn_dicts_cell/literature.dict.yaml	王倪之师曰被衣	wang ni zhi shi yue bei yi	wang ni zhi shi yue pi yi	《庄子》古人名“被衣”，读 pī	辞海/古汉词典
+cn_dicts_cell/literature.dict.yaml	贡者校数岁之中为常	gong zhe xiao shu sui zhi zhong wei chang	gong zhe jiao shu sui zhi zhong wei chang	《孟子》比较核计，规范读 jiào	现汉第7版
+cn_dicts_cell/literature.dict.yaml	校人烹之	xiao ren peng zhi	jiao ren peng zhi	《孟子》掌池沼小吏“校人”，读 jiào	辞海/古汉词典
+cn_dicts_cell/literature.dict.yaml	子产使校人畜之池	zi chan shi xiao ren chu zhi chi	zi chan shi jiao ren xu zhi chi	《孟子》“校人”读 jiào，“畜之池”养育读 xù	现汉第7版/辞海
+cn_dicts_cell/literature.dict.yaml	乘乘马	cheng cheng ma	cheng sheng ma	《礼记》驾驭四匹马一乘，“乘(chéng)乘(shèng)马”	现汉第7版/古汉词典
+cn_dicts_cell/literature.dict.yaml	昌寓骖乘	chang yu can cheng	chang yu can sheng	《庄子》“骖乘”古代车右陪乘，规范读 shèng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	陈文子有马十乘	chen wen zi you ma shi cheng	chen wen zi you ma shi sheng	《论语》车辆单位“十乘”，规范读 shèng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	摄齐升堂	she qi sheng tang	she zi sheng tang	《论语》提起下衣边缘“齐”，规范读 zī	现汉第7版
+cn_dicts_cell/literature.dict.yaml	齐疏之服	qi shu zhi fu	zi shu zhi fu	《孟子》丧服“齐衰/齐疏”，规范读 zī	现汉第7版
+cn_dicts_cell/literature.dict.yaml	必齐如也	bi qi ru ye	bi zhai ru ye	《论语》“齐”同斋，恭敬斋戒貌，规范读 zhāi	现汉第7版
+cn_dicts_cell/literature.dict.yaml	齐必变食	qi bi bian shi	zhai bi bian shi	《论语》斋戒必改常食，“齐”读 zhāi	现汉第7版
+cn_dicts_cell/literature.dict.yaml	必齐以静心	bi qi yi jing xin	bi zhai yi jing xin	《庄子》斋戒以静心，“齐”读 zhāi	现汉第7版
+cn_dicts_cell/literature.dict.yaml	夔夔齐栗	kui kui qi li	kui kui zhai li	《尚书》“齐栗”肃敬战栗，“齐”读 zhāi	现汉第7版
+cn_dicts_cell/literature.dict.yaml	试齐	shi qi	shi zhai	《庄子·应帝王》试着斋戒，“齐”读 zhāi	现汉第7版/古汉词典
+cn_dicts_cell/literature.dict.yaml	岂弟君子	kai di jun zi	kai ti jun zi	《诗经》“岂弟”同“恺悌”，和乐平易，读 tì	辞海/古汉词典
+cn_dicts_cell/literature.dict.yaml	其为人也孝弟	qi wei ren ye xiao di	qi wei ren ye xiao ti	《论语》“孝弟”通“孝悌”，读 tì	统编教材/现汉第7版
+cn_dicts_cell/literature.dict.yaml	乡党称弟焉	xiang dang cheng di yan	xiang dang cheng ti yan	《论语》“弟”通“悌”，读 tì	统编教材/现汉第7版
+cn_dicts_cell/literature.dict.yaml	孝弟也者	xiao di ye zhe	xiao ti ye zhe	《论语》“孝弟”通“孝悌”，读 tì	统编教材/现汉第7版
+cn_dicts_cell/literature.dict.yaml	幼而不孙弟	you er bu sun di	you er bu sun ti	《论语》“孙弟”通“逊悌”，读 tì	古汉词典
+cn_dicts_cell/literature.dict.yaml	无然泄泄	wu ran xie xie	wu ran yi yi	《诗经》《孟子》“泄泄”多言怠缓貌，规范读 yì yì	现汉第7版/辞海
+cn_dicts_cell/literature.dict.yaml	今子欲以子之梁国而吓我邪	jin zi yu yi zi zhi liang guo er xia wo xie	jin zi yu yi zi zhi liang guo er he wo ye	《庄子·秋水》“吓”发怒恐吓读 hè；“邪”疑问助词读 yé	现汉第7版
+cn_dicts_cell/literature.dict.yaml	不冯其子	bu feng qi zi	bu ping qi zi	《庄子》“冯”通凭依靠，规范读 píng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	彷徨乎冯闳	pang huang hu feng hong	pang huang hu ping hong	《庄子》“冯闳”虚廓太空，“冯”通凭读 píng	现汉第7版/辞海
+cn_dicts_cell/literature.dict.yaml	离而腊之	li er la zhi	li er xi zhi	《庄子·外物》晾制成干肉，“腊”读 xī	现汉第7版/古汉词典
+cn_dicts_cell/literature.dict.yaml	放于琅邪	fang yu lang xie	fang yu lang ya	《孟子》地名“琅邪”同“琅琊”，规范读 yá	现汉第7版
+cn_dicts_cell/literature.dict.yaml	倡优畜之	chang you chu zhi	chang you xu zhi	当作倡优蓄养，规范读 xù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	俯足以畜妻子	fu zu yi chu qi zi	fu zu yi xu qi zi	《孟子》养育妻子儿女，规范读 xù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	必畜之	bi chu zhi	bi xu zhi	《论语》饲养畜养，规范读 xù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	不蕲畜乎樊中	bu qi chu hu fan zhong	bu qi xu hu fan zhong	《庄子》被饲养在笼中，规范读 xù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	畜君何尤	chu jun he you	xu jun he you	《孟子》劝止/喜爱君主，读 xù	辞海/孟子注音
+cn_dicts_cell/literature.dict.yaml	大邦不过欲兼畜人	da bang bu guo yu jian chu ren	da bang bu guo yu jian xu ren	《孟子》兼并蓄养人民，规范读 xù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	非上之所以畜下也	fei shang zhi suo yi chu xia ye	fei shang zhi suo yi xu xia ye	《庄子》养育下民，规范读 xù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	俯不足以畜妻子	fu bu zu yi chu qi zi	fu bu zu yi xu qi zi	《孟子》养育妻子儿女，规范读 xù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	夫尧畜畜然仁	fu yao chu chu ran ren	fu yao xu xu ran ren	《庄子》“畜畜然”爱护貌，规范读 xù xù	辞海/古汉词典
+cn_dicts_cell/literature.dict.yaml	古之畜天下者	gu zhi chu tian xia zhe	gu zhi xu tian xia zhe	《庄子》养育天下，规范读 xù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	圣人之心以畜天下也	sheng ren zhi xin yi chu tian xia ye	sheng ren zhi xin yi xu tian xia ye	养育天下，规范读 xù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	万物畜而不知	wan wu chu er bu zhi	wan wu xu er bu zhi	《庄子》万物受养育而不知，规范读 xù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	以此畜下	yi ci chu xia	yi ci xu xia	养育下民，规范读 xù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	知君之犬马畜	zhi jun zhi quan ma chu	zhi jun zhi quan ma xu	《孟子》把贤者当犬马蓄养，规范读 xù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	酬郭给事	chou guo gei shi	chou guo ji shi	唐代官职“给事中”，规范读 jǐ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	御人以口给	yu ren yi kou gei	yu ren yi kou ji	《论语》“口给”口才敏捷，规范读 jǐ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	穿池而养给	chuan chi er yang gei	chuan chi er yang ji	供给充足，规范读 jǐ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	给数以敏	gei shu yi min	ji shu yi min	《庄子》敏捷周密，规范读 jǐ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	共给之之谓安	gong gei zhi zhi wei an	gong ji zhi zhi wei an	供应给养，规范读 jǐ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	敏给搏捷矢	min gei bo jie shi	min ji bo jie shi	《庄子》“敏给”敏捷，规范读 jǐ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	听董大弹胡笳声兼寄语弄房给事	ting dong da dan hu jia sheng jian ji yu nong fang gei shi	ting dong da tan hu jia sheng jian ji yu nong fang ji shi	弹奏读 tán；官职“房给事”读 jǐ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	愁其五藏以为仁义	chou qi wu cang yi wei ren yi	chou qi wu zang yi wei ren yi	《庄子》“五藏”同五脏，规范读 zàng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	故君子苟能无解其五藏	gu jun zi gou neng wu jie qi wu cang	gu jun zi gou neng wu jie qi wu zang	《庄子》“五藏”同五脏，规范读 zàng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	江南旧事休重省	jiang nan jiu shi xiu zhong sheng	jiang nan jiu shi xiu chong xing	重新回省，读 chóng xǐng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	往事后期空记省	wang shi hou qi kong ji sheng	wang shi hou qi kong ji xing	“记省”记忆省悟，规范读 xǐng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重省	zhong sheng	chong xing	再次省察/回忆，读 chóng xǐng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重省别时泪湿	zhong sheng bie shi lei shi	chong xing bie shi lei shi	重新回想，读 chóng xǐng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	九重谁省谏书函	jiu chong shui sheng jian shu han	jiu chong shui xing jian shu han	“省”省察阅览，规范读 xǐng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	愁痕满地无人省	chou hen man di wu ren sheng	chou hen man di wu ren xing	“无人省”无人知晓理解，规范读 xǐng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	春省耕而补不足	chun sheng geng er bu bu zu	chun xing geng er bu bu zu	《孟子》春天视察春耕（同 L27927 秋省 xǐng），规范读 xǐng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	凭仗丹青重省识	ping zhang dan qing zhong sheng shi	ping zhang dan qing chong xing shi	重新辨识/省识，读 chóng xǐng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	因任已明而原省次之	yin ren yi ming er yuan sheng ci zhi	yin ren yi ming er yuan xing ci zhi	《庄子》“原省”推究省察，规范读 xǐng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	原省已明而是非次之	yuan sheng yi ming er shi fei ci zhi	yuan xing yi ming er shi fei ci zhi	《庄子》“原省”推究省察，规范读 xǐng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	省宫闱贾元妃染恙	sheng gong wei jia yuan fei ran yang	xing gong wei jia yuan fei ran yang	《红楼梦》探视省视宫闱，规范读 xǐng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	屏四恶	ping si e	bing si e	《论语》屏除四种恶政，规范读 bǐng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	出妻屏子	chu qi ping zi	chu qi bing zi	《孟子》休妻远离儿子，规范读 bǐng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	维参与昴	wei can yu mao	wei shen yu mao	《诗经》参星与昴星，规范读 shēn	现汉第7版
+cn_dicts_cell/literature.dict.yaml	参乎	can hu	shen hu	《论语》曾参（Zēng Shēn），规范读 shēn	现汉第7版
+cn_dicts_cell/literature.dict.yaml	参也鲁	can ye lu	shen ye lu	《论语》曾参，规范读 shēn	现汉第7版
+cn_dicts_cell/literature.dict.yaml	率疲弊之卒	lv pi bi zhi zu	shuai pi bi zhi zu	《过秦论》率领疲惫士兵，规范读 shuài	统编高中选择性必修中/现汉第7版
+cn_dicts_cell/literature.dict.yaml	率其子弟	lv qi zi di	shuai qi zi di	率领子弟，规范读 shuài	现汉第7版
+cn_dicts_cell/literature.dict.yaml	率西水浒	lv xi shui hu	shuai xi shui hu	《诗经》《孟子》沿着西方水滨，“率”循行读 shuài	现汉第7版
+cn_dicts_cell/literature.dict.yaml	率以货窜名军伍中	lv yi huo cuan ming jun wu zhong	shuai yi huo cuan ming jun wu zhong	大抵/全都，规范读 shuài	现汉第7版
+cn_dicts_cell/literature.dict.yaml	是率天下而路也	shi lv tian xia er lu ye	shi shuai tian xia er lu ye	《孟子》率领天下人奔波，规范读 shuài	现汉第7版
+cn_dicts_cell/literature.dict.yaml	王请度之	wang qing du zhi	wang qing duo zhi	《孟子》请大王估量，规范读 duó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	而后得从容以容度其顺	er hou de cong rong yi rong du qi shun	er hou de cong rong yi rong duo qi shun	揣度/量度，规范读 duó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	为我度量掘臼科	wei wo du liang jue jiu ke	wei wo duo liang jue jiu ke	测量估量“度量”，规范读 duó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾不容刀	ceng bu rong dao	zeng bu rong dao	《诗经·河广》竟然容不下一条小船，规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾诞	ceng dan	zeng dan	姓氏“曾”，规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾栋	ceng dong	zeng dong	姓氏“曾”，规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾开国	ceng kai guo	zeng kai guo	姓氏“曾”，规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾揆	ceng kui	zeng kui	姓氏“曾”，规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾隶	ceng li	zeng li	姓氏“曾”，规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾协	ceng xie	zeng xie	姓氏“曾”，规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾允元	ceng yun yuan	zeng yun yuan	姓氏“曾”，规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾肇	ceng zhao	zeng zhao	宋代文学家曾肇，姓氏规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾西蹴然曰	ceng xi cu ran yue	zeng xi cu ran yue	《孟子》曾参之孙曾西，姓氏规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾西艴然不悦	ceng xi fu ran bu yue	zeng xi fu ran bu yue	《孟子》曾西，姓氏规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾西之所不为也	ceng xi zhi suo bu wei ye	zeng xi zhi suo bu wei ye	《孟子》曾西，姓氏规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	或问乎曾西曰	huo wen hu ceng xi yue	huo wen hu zeng xi yue	《孟子》曾西，姓氏规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾是以为孝乎	ceng shi yi wei xiao hu	zeng shi yi wei xiao hu	《论语》“曾”乃/竟然，规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾由与求之问	ceng you yu qiu zhi wen	zeng you yu qiu zhi wen	《论语》竟然问起仲由与冉求，规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾是以为	ceng shi yi wei	zeng shi yi wei	《论语》竟然以为，规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾谓泰山不如林放乎	ceng wei tai shan bu ru lin fang hu	zeng wei tai shan bu ru lin fang hu	《论语》竟然说泰山不如林放，规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾由	ceng you	zeng you	《论语》“曾由与求之问”节录，规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾不如早索我于枯鱼之肆	ceng bu ru zao suo wo yu ku yu zhi si	zeng bu ru zao suo wo yu ku yu zhi si	《庄子》竟然不如早点去干鱼店找我，规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾不知以食牛干秦穆公之为污也	ceng bu zhi yi shi niu gan qin mu gong zhi wei wu ye	zeng bu zhi yi si niu gan qin mu gong zhi wei wu ye	《孟子》“曾”竟然读 zēng，“食牛”喂牛读 sì	现汉第7版
+cn_dicts_cell/literature.dict.yaml	曾谓泰山	ceng wei tai shan	zeng wei tai shan	《论语》竟然说泰山，规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	尔何曾比予于管仲	er he ceng bi yu yu guan zhong	er he zeng bi yu yu guan zhong	《孟子》“何曾”为何竟然，规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	尔何曾比予于是	er he ceng bi yu yu shi	er he zeng bi yu yu shi	《孟子》“何曾”为何竟然，规范读 zēng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	则天地曾不能以	ze tian di ceng bu neng yi	ze tian di zeng bu neng yi	《赤壁赋》“曾不能以一瞬”竟然，规范读 zēng	统编高中必修上/现汉第7版
+cn_dicts_cell/literature.dict.yaml	生天生地	sheng tian sheng de	sheng tian sheng di	天地“地”，规范读 dì	现汉第7版
+cn_dicts_cell/literature.dict.yaml	先天地生而不为久	xian tian de sheng er bu wei jiu	xian tian di sheng er bu wei jiu	《庄子》天地，规范读 dì	现汉第7版
+cn_dicts_cell/literature.dict.yaml	有先天地生者物邪	you xian tian de sheng zhe wu xie	you xian tian di sheng zhe wu ye	《庄子》“天地”读 dì；“邪”疑问助词读 yé	现汉第7版
+cn_dicts_cell/literature.dict.yaml	话未了	hua wei le	hua wei liao	话还没说完，规范读 liǎo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	待他年整顿乾坤事了	dai ta nian zheng dun qian kun shi le	dai ta nian zheng dun qian kun shi liao	“事了”事情完结，规范读 liǎo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	了无尘隔	le wu chen ge	liao wu chen ge	“了无”完全没有，规范读 liǎo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	秦吉了	qin ji le	qin ji liao	鸟名“秦吉了”（鹩哥），规范读 liǎo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	晚妆初了明肌雪	wan zhuang chu le ming ji xue	wan zhuang chu liao ming ji xue	“初了”刚画完，规范读 liǎo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	遥知新妆了	yao zhi xin zhuang le	yao zhi xin zhuang liao	“妆了”梳妆完毕，规范读 liǎo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	早趁催科了纳	zao chen cui ke le na	zao chen cui ke liao na	“了纳”缴纳完毕，规范读 liǎo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	静故了群动	jing gu le qun dong	jing gu liao qun dong	苏轼诗“了”了解明了，规范读 liǎo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	净理了可悟	jing li le ke wu	jing li liao ke wu	“了可悟”完全可领悟，规范读 liǎo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	要愁那得功夫	yao chou na dei gong fu	yao chou na de gong fu	辛弃疾词“那得”哪能得到，文言读 dé	现汉第7版
+cn_dicts_cell/literature.dict.yaml	把意念沉潜得下	ba yi nian chen qian dei xia	ba yi nian chen qian de xia	补语助词“得”，读 de	现汉第7版
+cn_dicts_cell/literature.dict.yaml	得使之也	dei shi zhi ye	de shi zhi ye	《庄子》能够使役，文言读 dé	现汉第7版
+cn_dicts_cell/literature.dict.yaml	夫得是而穷之者	fu dei shi er qiong zhi zhe	fu de shi er qiong zhi zhe	《庄子》得到此道，文言读 dé	现汉第7版
+cn_dicts_cell/literature.dict.yaml	夫得是至美至乐也	fu dei shi zhi mei zhi le ye	fu de shi zhi mei zhi le ye	《庄子》得到此道，文言读 dé	现汉第7版
+cn_dicts_cell/literature.dict.yaml	回之未始得使	hui zhi wei shi dei shi	hui zhi wei shi de shi	《庄子》未曾得以出使，文言读 dé	现汉第7版
+cn_dicts_cell/literature.dict.yaml	那得分明语	na dei fen ming yu	na de fen ming yu	哪能得到，文言读 dé	现汉第7版
+cn_dicts_cell/literature.dict.yaml	那得任自专	na dei ren zi zhuan	na de ren zi zhuan	《孔雀东南飞》哪能任由，文言读 dé	现汉第7版
+cn_dicts_cell/literature.dict.yaml	人间那得几回闻	ren jian na dei ji hui wen	ren jian na de ji hui wen	杜甫诗哪能得到，文言读 dé	现汉第7版
+cn_dicts_cell/literature.dict.yaml	汝何得有夫道	ru he dei you fu dao	ru he de you fu dao	《庄子》如何得以拥有，文言读 dé	现汉第7版
+cn_dicts_cell/literature.dict.yaml	是得人之得而不自得其得者也	shi dei ren zhi de er bu zi de qi de zhe ye	shi de ren zhi de er bu zi de qi de zhe ye	《庄子》得到他人之得，文言读 dé	现汉第7版
+cn_dicts_cell/literature.dict.yaml	他得驱驰我得闲	ta dei qu chi wo de xian	ta de qu chi wo de xian	与后“我得闲”对举，文言读 dé	现汉第7版
+cn_dicts_cell/literature.dict.yaml	我得斗升之水然活耳	wo dei dou sheng zhi shui ran huo er	wo de dou sheng zhi shui ran huo er	《庄子》得到斗升之水，文言读 dé	现汉第7版
+cn_dicts_cell/literature.dict.yaml	我得夫子之道矣	wo dei fu zi zhi dao yi	wo de fu zi zhi dao yi	《庄子》学得夫子之道，文言读 dé	现汉第7版
+cn_dicts_cell/literature.dict.yaml	物出不得先物也	wu chu bu dei xian wu ye	wu chu bu de xian wu ye	《庄子》“不得”不能，文言读 dé	现汉第7版
+cn_dicts_cell/literature.dict.yaml	不得中行而与之	bu de zhong hang er yu zhi	bu de zhong xing er yu zhi	《论语》“中行”中庸之道/行径，读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	行当封侯归	hang dang feng hou gui	xing dang feng hou gui	“行当”将要，规范读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	行当浮桂棹	hang dang fu gui zhao	xing dang fu gui zhao	“行当”将要，规范读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	行名失己	hang ming shi ji	xing ming shi ji	《庄子》追求虚名丧失本性，读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	客中行	ke zhong hang	ke zhong xing	李白诗题乐府体“行”，规范读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	李行言	li hang yan	li xing yan	唐代诗人名李行言，读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	我行不来	wo hang bu lai	wo xing bu lai	出行不归，规范读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	我行其野	wo hang qi ye	wo xing qi ye	《诗经》行走在原野，规范读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	我行殊未已	wo hang shu wei yi	wo xing shu wei yi	行路未止，规范读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	一岁四行役	yi sui si hang yi	yi sui si xing yi	“行役”服役出行，规范读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	有女同行	you nv tong hang	you nv tong xing	《诗经》共同出行，规范读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	月中行	yue zhong hang	yue zhong xing	月下行走，规范读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	昨夜月同行	zuo ye yue tong hang	zuo ye yue tong xing	与月同行，规范读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	道固不小行	dao gu bu xiao hang	dao gu bu xiao xing	《庄子》大道不行小道，规范读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	将行仁政	jiang hang ren zheng	jiang xing ren zheng	《孟子》施行仁政，规范读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	今将行王政	jin jiang hang wang zheng	jin jiang xing wang zheng	《孟子》施行王政，规范读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	洛阳行子空叹息	luo yang hang zi kong tan xi	luo yang xing zi kong tan xi	“行子”游子旅人，规范读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	水由地中行	shui you di zhong hang	shui you di zhong xing	《孟子》水在大地中流淌，规范读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	小行伤道	xiao hang shang dao	xiao xing shang dao	“小行”小德小行，规范读 xíng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	煎泪几千行	jian lei ji qian xing	jian lei ji qian hang	泪水千行，规范读 háng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	涕落百余行	ti luo bai yu xing	ti luo bai yu hang	眼泪百余行，规范读 háng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	相思泪成行	xiang si lei cheng xing	xiang si lei cheng hang	眼泪成行，规范读 háng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	入鸟不乱行	ru niao bu luan xing	ru niao bu luan hang	《庄子》飞鸟行列，规范读 háng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	双行夹批	shuang xing jia pi	shuang hang jia pi	红楼梦脂评术语“双行夹批”，规范读 háng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	朝来塞雁先还	chao lai sai yan xian hai	zhao lai sai yan xian huan	“朝来”清晨读 zhāo，“先还”飞回读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	栖鸦常带夕阳还	qi ya chang dai xi yang hai	qi ya chang dai xi yang huan	飞回巢穴，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	推手含情还却手	tui shou han qing hai que shou	tui shou han qing huan que shou	退回/收回手，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	意倦须还	yi juan xu hai	yi juan xu huan	意倦归去，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	总还鸥鹭	zong hai ou lu	zong huan ou lu	归还给鸥鹭，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	别君去时何时还	bie jun qu shi he shi hai	bie jun qu shi he shi huan	李白诗何时归来，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	不久当还归	bu jiu dang hai gui	bu jiu dang huan gui	《孔雀东南飞》回归，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	不遣胡儿匹马还	bu qian hu er pi ma hai	bu qian hu er pi ma huan	匹马生还，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	春生江上几人还	chun sheng jiang shang ji ren hai	chun sheng jiang shang ji ren huan	几人归还，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	东还海道	dong hai hai dao	dong huan hai dao	向东归还，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	伏波惟愿裹尸还	fu bo wei yuan guo shi hai	fu bo wei yuan guo shi huan	马革裹尸还，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	各各还家门	ge ge hai jia men	ge ge huan jia men	《孔雀东南飞》返回家门，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	还归长安去	hai gui chang an qu	huan gui chang an qu	返回长安，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	还京乐	hai jing le	huan jing yue	唐教坊乐曲《还京乐》，读 huán jīng yuè	现汉第7版/辞海
+cn_dicts_cell/literature.dict.yaml	还军霸上	hai jun ba shang	huan jun ba shang	《鸿门宴》撤军返回霸上，规范读 huán	统编高中必修下/现汉第7版
+cn_dicts_cell/literature.dict.yaml	何时照我还	he shi zhao wo hai	he shi zhao wo huan	王安石诗照我归还，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	何言复来还	he yan fu lai hai	he yan fu lai huan	回来归还，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	今日还家去	jin ri hai jia qu	jin ri huan jia qu	返回家中，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	君还何所望	jun hai he suo wang	jun huan he suo wang	您回去有何指望，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	明年春色倍还人	ming nian chun se bei hai ren	ming nian chun se bei huan ren	加倍归还给人，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	莫遣沙场匹马还	mo qian sha chang pi ma hai	mo qian sha chang pi ma huan	匹马生还，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	暮禽相与还	mu qin xiang yu hai	mu qin xiang yu huan	归鸟相伴飞回，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	且暂还家去	qie zan hai jia qu	qie zan huan jia qu	暂且回家，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	三十一年还旧国	san shi yi nian hai jiu guo	san shi yi nian huan jiu guo	回到故国，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	使还	shi hai	shi huan	出使归来，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	时清独北还	shi qing du bei hai	shi qing du bei huan	独自北归，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	始适还家门	shi shi hai jia men	shi shi huan jia men	《孔雀东南飞》退回娘家，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	天涯孤棹还	tian ya gu zhao hai	tian ya gu zhao huan	孤舟归来，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	王母摘桃海上还	wang mu zhai tao hai shang hai	wang mu zhai tao hai shang huan	从海上归来，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	问君西游何时还	wen jun xi you he shi hai	wen jun xi you he shi huan	《蜀道难》何时归还，规范读 huán	统编高中选择性必修下/现汉第7版
+cn_dicts_cell/literature.dict.yaml	西还	xi hai	xi huan	向西归还，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	相逢每醉还	xiang feng mei zui hai	xiang feng mei zui huan	每次醉归，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	不知征战几人还	bu zhi zheng zhan ji ren hai	bu zhi zheng zhan ji ren huan	几人生还，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	府吏还家去	fu li hai jia qu	fu li huan jia qu	《孔雀东南飞》回家去，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	府吏再拜还	fu li zai bai hai	fu li zai bai huan	《孔雀东南飞》拜别而归，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	还部白府君	hai bu bai fu jun	huan bu bai fu jun	《孔雀东南飞》回到官署，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	皆解甲散还火伍中	jie jie jia san hai huo wu zhong	jie jie jia san huan huo wu zhong	返回军伍，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	巨鱼无所还其体	ju yu wu suo hai qi ti	ju yu wu suo huan qi ti	《庄子》“还”同旋/回转，读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	兰芝初还时	lan zhi chu hai shi	lan zhi chu huan shi	《孔雀东南飞》刚回娘家时，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	香销轻梦还	xiang xiao qing meng hai	xiang xiao qing meng huan	梦归，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	相与还而观之	xiang yu hai er guan zhi	xiang yu huan er guan zhi	回头观看，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	寻遣丞请还	xun qian cheng qing hai	xun qian cheng qing huan	请她回来，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	颜回端拱还目而窥之	yan hui duan gong hai mu er kui zhi	yan hui duan gong huan mu er kui zhi	“还目”转目回视，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	再拜还入户	zai bai hai ru hu	zai bai huan ru hu	《孔雀东南飞》转身回房，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	中道还兄门	zhong dao hai xiong men	zhong dao huan xiong men	《孔雀东南飞》返回娘家，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	还孽债迎女返真元	hai nie zhai ying nv fan zhen yuan	huan nie zhai ying nv fan zhen yuan	《红楼梦》偿还孽债，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	甄应嘉蒙恩还玉阙	zhen ying jia meng en hai yu que	zhen ying jia meng en huan yu que	《红楼梦》返回朝廷，规范读 huán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	欲说还休梦已阑	yu shuo huan xiu meng yi lan	yu shuo hai xiu meng yi lan	“欲说还休”反而/还是，规范读 hái	现汉第7版
+cn_dicts_cell/literature.dict.yaml	夜读李广传	ye du li guang chuan	ye du li guang zhuan	《史记·李将军列传》，规范读 zhuàn	现汉第7版
+cn_dicts_cell/literature.dict.yaml	李姬传	li ji chuan	li ji zhuan	侯方域《李姬传》，规范读 zhuàn	现汉第7版
+cn_dicts_cell/literature.dict.yaml	徐文长传	xu wen chang chuan	xu wen chang zhuan	袁宏道《徐文长传》，规范读 zhuàn	现汉第7版
+cn_dicts_cell/literature.dict.yaml	以传食于诸侯	yi chuan shi yu zhu hou	yi zhuan shi yu zhu hou	《孟子》乘驿车就食，驿车“传”读 zhuàn	现汉第7版
+cn_dicts_cell/literature.dict.yaml	评女传巧姐慕贤良	ping nv chuan qiao jie mu xian liang	ping nv zhuan qiao jie mu xian liang	《红楼梦》评《列女传》，规范读 zhuàn	现汉第7版
+cn_dicts_cell/literature.dict.yaml	毛诗传	mao shi chuan	mao shi zhuan	经学典籍《毛诗传》，规范读 zhuàn	现汉第7版
+cn_dicts_cell/literature.dict.yaml	独立东风弹泪眼	du li dong feng dan lei yan	du li dong feng tan lei yan	弹去眼泪，规范读 tán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	锦筝弹怨	jin zheng dan yuan	jin zheng tan yuan	弹奏锦筝，规范读 tán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	泪弹不尽临窗滴	lei dan bu jin lin chuang di	lei tan bu jin lin chuang di	弹落泪珠，规范读 tán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	泪珠弹粉	lei zhu dan fen	lei zhu tan fen	弹落泪珠，规范读 tán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	闷来弹鹊	men lai dan que	men lai tan que	弹射/弹打喜鹊，规范读 tán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	偷弹清泪寄烟波	tou dan qing lei ji yan bo	tou tan qing lei ji yan bo	悄悄弹落眼泪，规范读 tán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	涌起弹棋局	yong qi dan qi ju	yong qi tan qi ju	古代博戏“弹棋”，规范读 tán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	初弹渌水后楚妃	chu dan lu shui hou chu fei	chu tan lu shui hou chu fei	弹奏古曲《渌水》，规范读 tán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	使快弹数曲	shi kuai dan shu qu	shi kuai tan shu qu	《琵琶行》弹奏数曲，规范读 tán	统编高中必修上/现汉第7版
+cn_dicts_cell/literature.dict.yaml	弹看飞鸿劝胡酒	dan kan fei hong quan hu jiu	tan kan fei hong quan hu jiu	弹剑/弹琴看飞鸿，规范读 tán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	低眉信手续续弹	di mei xin shou xu xu dan	di mei xin shou xu xu tan	《琵琶行》接连弹奏，规范读 tán	统编高中必修上/现汉第7版
+cn_dicts_cell/literature.dict.yaml	无言暗将红泪弹	wu yan an jiang hong lei dan	wu yan an jiang hong lei tan	悄悄弹泪，规范读 tán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	王熙凤正言弹妒意	wang xi feng zheng yan dan du yi	wang xi feng zheng yan tan du yi	《红楼梦》弹压/弹劾，规范读 tán	现汉第7版
+cn_dicts_cell/literature.dict.yaml	世传顷年都下市肆中	shi chuan qing nian dou xia shi si zhong	shi chuan qing nian du xia shi si zhong	“都下”京城，规范读 dū	现汉第7版
+cn_dicts_cell/literature.dict.yaml	宴清都	yan qing dou	yan qing du	词牌名《宴清都》，规范读 dū	现汉第7版
+cn_dicts_cell/literature.dict.yaml	绛都春	jiang dou chun	jiang du chun	词牌名《绛都春》，规范读 dū	现汉第7版
+cn_dicts_cell/literature.dict.yaml	南都行	nan dou xing	nan du xing	诗题《南都行》，规范读 dū	现汉第7版
+cn_dicts_cell/literature.dict.yaml	洵美且都	xun mei qie dou	xun mei qie du	《诗经》美好优雅“都”，规范读 dū	现汉第7版
+cn_dicts_cell/literature.dict.yaml	公诚以都虞候命某者	gong cheng yi dou yu hou ming mou zhe	gong cheng yi du yu hou ming mou zhe	官职“都虞候”，规范读 dū	现汉第7版
+cn_dicts_cell/literature.dict.yaml	公都子曰	gong dou zi yue	gong du zi yue	《孟子》弟子公都子，规范读 dū	现汉第7版
+cn_dicts_cell/literature.dict.yaml	公都子以告	gong dou zi yi gao	gong du zi yi gao	《孟子》弟子公都子，规范读 dū	现汉第7版
+cn_dicts_cell/literature.dict.yaml	故三徙成都	gu san xi cheng dou	gu san xi cheng du	成为都会，规范读 dū	现汉第7版
+cn_dicts_cell/literature.dict.yaml	观经鸿都尚填咽	guan jing hong dou shang tian yan	guan jing hong du shang tian ye	“鸿都”读 dū；“填咽”拥挤堵塞读 yè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	谟盖都君	mo gai dou jun	mo gai du jun	《孟子》“都君”指虞舜，规范读 dū	现汉第7版
+cn_dicts_cell/literature.dict.yaml	王之为都者	wang zhi wei dou zhe	wang zhi wei du zhe	《孟子》治理都邑之官，规范读 dū	现汉第7版
+cn_dicts_cell/literature.dict.yaml	长安都中	chang an dou zhong	chang an du zhong	《红楼梦》京城都中，规范读 dū	现汉第7版
+cn_dicts_cell/literature.dict.yaml	林黛玉抛父进京都	lin dai yu pao fu jin jing dou	lin dai yu pao fu jin jing du	《红楼梦》京都，规范读 dū	现汉第7版
+cn_dicts_cell/literature.dict.yaml	彩扇咽寒蝉	cai shan yan han chan	cai shan ye han chan	寒蝉悲咽，规范读 yè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	楚箫咽	chu xiao yan	chu xiao ye	箫声呜咽，规范读 yè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	歌声频为行人咽	ge sheng pin wei xing ren yan	ge sheng pin wei xing ren ye	歌声哽咽，规范读 yè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	耿耿寒漏咽	geng geng han lou yan	geng geng han lou ye	漏声低咽，规范读 yè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	仙人凤咽琼箫	xian ren feng yan qiong xiao	xian ren feng ye qiong xiao	箫声呜咽，规范读 yè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	乍咽凉柯	zha yan liang ke	zha ye liang ke	蝉声呜咽，规范读 yè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	喇叭声咽	la ba sheng yan	la ba sheng ye	毛泽东《忆秦娥》喇叭声呜咽，规范读 yè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	泉声咽危石	quan sheng yan wei shi	quan sheng ye wei shi	王维诗泉水受阻低咽，规范读 yè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	泪咽却无声	lei yan que wu sheng	lei ye que wu sheng	泪哽咽无声，规范读 yè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	千年调	qian nian tiao	qian nian diao	词牌名《千年调》，规范读 diào	现汉第7版
+cn_dicts_cell/literature.dict.yaml	凄凉调	qi liang tiao	qi liang diao	凄凉曲调，规范读 diào	现汉第7版
+cn_dicts_cell/literature.dict.yaml	非复酒垆风调	fei fu jiu lu feng tiao	fei fu jiu lu feng diao	“风调”风度情调，规范读 diào	现汉第7版
+cn_dicts_cell/literature.dict.yaml	调角断清秋	diao jiao duan qing qiu	tiao jiao duan qing qiu	吹调号角，规范读 tiáo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	夫或改调一弦	fu huo gai diao yi xian	fu huo gai tiao yi xian	《庄子》调整琴弦音律，规范读 tiáo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	早觉闲愁挂乔木	zao jiao xian chou gua qiao mu	zao jue xian chou gua qiao mu	早早发觉，规范读 jué	现汉第7版
+cn_dicts_cell/literature.dict.yaml	乍过清明早觉伤春暮	zha guo qing ming zao jiao shang chun mu	zha guo qing ming zao jue shang chun mu	早早发觉，规范读 jué	现汉第7版
+cn_dicts_cell/literature.dict.yaml	鸿雁之什	hong yan zhi shen	hong yan zhi shi	《诗经》篇什，规范读 shí	现汉第7版
+cn_dicts_cell/literature.dict.yaml	鹿鸣之什	lu ming zhi shen	lu ming zhi shi	《诗经》篇什，规范读 shí	现汉第7版
+cn_dicts_cell/literature.dict.yaml	南有嘉鱼之什	nan you jia yu zhi shen	nan you jia yu zhi shi	《诗经》篇什，规范读 shí	现汉第7版
+cn_dicts_cell/literature.dict.yaml	或相什伯	huo xiang shen bo	huo xiang shi bo	《孟子》十倍百倍，规范读 shí	现汉第7版
+cn_dicts_cell/literature.dict.yaml	水佩风裳无数	shui pei feng shang wu shu	shui pei feng chang wu shu	“风裳”下衣，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	风为裳	feng wei shang	feng wei chang	下衣“裳”，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	衮衣绣裳	gun yi xiu shang	gun yi xiu chang	《诗经》下衣“绣裳”，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	渐车帷裳	jian che wei shang	jian che wei chang	《诗经·氓》车旁帷幔，规范读 cháng	统编高中选择性必修下/现汉第7版
+cn_dicts_cell/literature.dict.yaml	褰裳	qian shang	qian chang	《诗经》提起下衣“褰裳”，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	褰裳涉溱	qian shang she qin	qian chang she qin	《诗经》提起下衣涉水，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	为公子裳	wei gong zi shang	wei gong zi chang	《诗经·七月》做下衣，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	之子无裳	zhi zi wu shang	zhi zi wu chang	《诗经》没有下衣，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	非帷裳	fei wei shang	fei wei chang	《论语》朝祭下裳，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	裂裳衣疮	lie shang yi chuang	lie chang yi chuang	撕裂下衣包扎伤口，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	冕衣裳者与瞽者	mian yi shang zhe yu gu zhe	mian yi chang zhe yu gu zhe	《论语》穿礼服下裳者（同 L21724），规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	元龙臭味	yuan long chou wei	yuan long xiu wei	“臭味”气味志趣，规范读 xiù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	臭恶	chou e	xiu e	《论语》“臭恶不食”气味变坏，规范读 xiù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	三曰五臭熏鼻	san yue wu chou xun bi	san yue wu xiu xun bi	《庄子》“五臭”五种气味，规范读 xiù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	叹凤嗟身否	tan feng jie shen fou	tan feng jie shen pi	杜甫诗身世困顿，规范读 pǐ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	予所否者	yu suo fou zhe	yu suo pi zhe	《论语》做不正当之事，规范读 pǐ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	善否相非	shan fou xiang fei	shan pi xiang fei	善与恶相非难，规范读 pǐ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	思虑善否	si lv shan fou	si lv shan pi	思量善恶，规范读 pǐ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	霜风劲	shuang feng jin	shuang feng jing	寒风强劲，规范读 jìng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	风劲角弓鸣	feng jin jiao gong ming	feng jing jiao gong ming	王维《观猎》风势强劲，规范读 jìng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	一年一度秋风劲	yi nian yi du qiu feng jin	yi nian yi du qiu feng jing	毛泽东《采桑子》秋风强劲，规范读 jìng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	堆山塞海	dui shan sai hai	dui shan se hai	充塞填海，规范读 sè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	薄妆桃脸	bao zhuang tao lian	bo zhuang tao lian	淡妆“薄妆”，规范读 bó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	安花著叶	an hua zhu ye	an hua zhuo ye	花叶附着，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	春衫著破谁针线	chun shan zhu po shui zhen xian	chun shan zhuo po shui zhen xian	穿着春衫，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	东风著意	dong feng zhu yi	dong feng zhuo yi	“著意”同“着意”用心，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	歌笑迷著	ge xiao mi zhu	ge xiao mi zhuo	执着沉迷，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	更著风和雨	geng zhu feng he yu	geng zhuo feng he yu	陆游《卜算子》遭受风吹雨打，规范读 zhuó	统编初中八下/现汉第7版
+cn_dicts_cell/literature.dict.yaml	泪湿阑干花著露	lei shi lan gan hua zhu lu	lei shi lan gan hua zhuo lu	花朵沾着露水，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	罗衣著破前香在	luo yi zhu po qian xiang zai	luo yi zhuo po qian xiang zai	穿着罗衣，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	漫试著春衫	man shi zhu chun shan	man shi zhuo chun shan	试穿春衫，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	为谁都著眉端聚	wei shui dou zhu mei duan ju	wei shui dou zhuo mei duan ju	附着凝聚于眉端，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	著人滋味	zhu ren zi wei	zhuo ren zi wei	“著人”惹人/沾染人，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	著我扁舟一叶	zhu wo pian zhou yi ye	zhuo wo pian zhou yi ye	张孝祥《念奴娇》放置安顿，规范读 zhuó	统编高中必修下/现汉第7版
+cn_dicts_cell/literature.dict.yaml	著意寻春不肯香	zhu yi xun chun bu ken xiang	zhuo yi xun chun bu ken xiang	“著意”用心，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	醉里簪花倒著冠	zui li zan hua dao zhu guan	zui li zan hua dao zhuo guan	戴帽“著冠”，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	不自著罗衣	bu zi zhu luo yi	bu zi zhuo luo yi	穿着罗衣，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	春情著杏花	chun qing zhu xing hua	chun qing zhuo xing hua	附着在杏花上，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	都护铁衣冷犹著	du hu tie yi leng you zhu	du hu tie yi leng you zhuo	穿着铁衣，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	红罗著压逐时新	hong luo zhu ya zhu shi xin	hong luo zhuo ya zhu shi xin	穿着/点缀，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	倾城最在著戎衣	qing cheng zui zai zhu rong yi	qing cheng zui zai zhuo rong yi	穿着戎装，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	秋来未著花	qiu lai wei zhu hua	qiu lai wei zhuo hua	开花“著花”，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	老树春深更著花	lao shu chun shen geng zhu hua	lao shu chun shen geng zhuo hua	开花“著花”，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	谁复著手为摩挲	shui fu zhu shou wei ma sa	shui fu zhuo shou wei ma sa	“著手”动手接触，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	一朵芙蓉著秋雨	yi duo fu rong zhu qiu yu	yi duo fu rong zhuo qiu yu	沾着秋雨，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	一片晕红才著雨	yi pian yun hong cai zhu yu	yi pian yun hong cai zhuo yu	沾着春雨，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	影著纤腰画	ying zhu xian yao hua	ying zhuo xian yao hua	附着描绘，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	大著色	da zhu se	da zhuo se	绘画“着色”，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	小著色	xiao zhu se	xiao zhuo se	绘画“着色”，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	淡着燕脂匀注	dan zhe yan zhi yun zhu	dan zhuo yan zhi yun zhu	涂抹“着胭脂”，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	桃花落尽着无所	tao hua luo jin zhe wu suo	tao hua luo jin zhuo wu suo	“着无所”无处着落，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	无处着清香	wu chu zhe qing xiang	wu chu zhuo qing xiang	安放/着落，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	着娉婷	zhe ping ting	zhuo ping ting	点缀/着意，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	可怜着尽汉宫衣	ke lian zhe jin han gong yi	ke lian zhuo jin han gong yi	穿着汉宫衣，规范读 zhuó	现汉第7版
+cn_dicts_cell/literature.dict.yaml	莫教啼鸟惊着	mo jiao ti niao jing zhe	mo jiao ti niao jing zhao	惊动到“惊着”，规范读 zháo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	一言为重百金轻	yi yan wei chong bai jin qing	yi yan wei zhong bai jin qing	分量重，与“轻”对举，规范读 zhòng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	廉士重名	lian shi chong ming	lian shi zhong ming	看重名声，规范读 zhòng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	宝扇重寻明月影	bao shan zhong xun ming yue ying	bao shan chong xun ming yue ying	再次寻觅，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	不卷重帘	bu juan zhong lian	bu juan chong lian	重重帘幕，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	不堪重记	bu kan zhong ji	bu kan chong ji	再次回记，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	才簪又重数	cai zan you zhong shu	cai zan you chong shu	重新计数，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	古柳重攀	gu liu zhong pan	gu liu chong pan	再次攀折，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	寒炉重熨	han lu zhong yun	han lu chong yun	再次熨烫，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	何人重赋清景	he ren zhong fu qing jing	he ren chong fu qing jing	再次赋诗，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	何意重经前地	he yi zhong jing qian di	he yi chong jing qian di	再次经过，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	几时重	ji shi zhong	ji shi chong	苏轼词“几时重”何时重来，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	佳人重约还轻别	jia ren zhong yue hai qing bie	jia ren chong yue hai qing bie	再次相约，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	渐把旧衫重剪	jian ba jiu shan zhong jian	jian ba jiu shan chong jian	重新裁剪，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	明日重扶残醉	ming ri zhong fu can zui	ming ri chong fu can zui	明日再次扶醉，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	片绣点重茵	pian xiu dian zhong yin	pian xiu dian chong yin	“重茵”双层坐垫，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	前度刘郎重到	qian du liu lang zhong dao	qian du liu lang chong dao	再次到来，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	轻叠数重	qing die shu zhong	qing die shu chong	数层“数重”，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	秋千院落重帘暮	qiu qian yuan luo zhong lian mu	qiu qian yuan luo chong lian mu	“重帘”重重帘幕，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	试重寻消息	shi zhong xun xiao xi	shi chong xun xiao xi	试着重新寻觅，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	送客重寻西去路	song ke zhong xun xi qu lu	song ke chong xun xi qu lu	再次寻路，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	他年重到	ta nian zhong dao	ta nian chong dao	他年再次到来，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	往来却恨重帘碍	wang lai que hen zhong lian ai	wang lai que hen chong lian ai	“重帘”重重帘幕，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	有酒重携	you jiu zhong xie	you jiu chong xie	再次携带美酒，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	欲重歌兮梦觉	yu zhong ge xi meng jue	yu chong ge xi meng jue	欲再次歌唱，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	怨曲重招	yuan qu zhong zhao	yuan qu chong zhao	再次招魂/弹唱，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	只愁重洒西州泪	zhi chou zhong sa xi zhou lei	zhi chou chong sa xi zhou lei	再次洒泪，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重把离愁深诉	zhong ba li chou shen su	chong ba li chou shen su	再次倾诉离愁，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重城不见	zhong cheng bu jian	chong cheng bu jian	“重城”重重城阙，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重到须惊	zhong dao xu jing	chong dao xu jing	再次到来，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重拂人间尘土	zhong fu ren jian chen tu	chong fu ren jian chen tu	再次拂去尘土，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重解绣鞍	zhong jie xiu an	chong jie xiu an	再次解鞍，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重进酒	zhong jin jiu	chong jin jiu	再次斟酒，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重帘未卷	zhong lian wei juan	chong lian wei juan	“重帘”重重帘幕，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重帘下遍阑干曲	zhong lian xia bian lan gan qu	chong lian xia bian lan gan qu	“重帘”重重帘幕，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重觅幽香	zhong mi you xiang	chong mi you xiang	再次寻觅，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重然绛蜡	zhong ran jiang la	chong ran jiang la	再次点亮红烛，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重锁隋堤	zhong suo sui di	chong suo sui di	层层笼罩，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重寻无处	zhong xun wu chu	chong xun wu chu	再次寻觅无处，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重淹罗巾	zhong yan luo jin	chong yan luo jin	再次泪湿罗巾，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重阴未开	zhong yin wei kai	chong yin wei kai	“重阴”层层阴云，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	醉拥重衾	zui yong zhong qin	zui yong chong qin	“重衾”多层棉被，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	不须怀抱重凄凄	bu xu huai bao zhong qi qi	bu xu huai bao chong qi qi	再次凄伤，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	共约重芳日	gong yue zhong fang ri	gong yue chong fang ri	再次繁花盛开之日，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	红霞万朵百重衣	hong xia wan duo bai zhong yi	hong xia wan duo bai chong yi	百层花衣，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	几时杯重把	ji shi bei zhong ba	ji shi bei chong ba	杜甫诗何时重把酒杯，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	苦情重诉	ku qing zhong su	ku qing chong su	再次倾诉苦情，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	岭树重遮千里目	ling shu zhong zhe qian li mu	ling shu chong zhe qian li mu	柳宗元诗层层遮挡，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	密锁重关掩绿苔	mi suo zhong guan yan lv tai	mi suo chong guan yan lv tai	“重关”重重关门，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	奈何阻重深	nai he zu zhong shen	nai he zu chong shen	“重深”重重叠叠幽深，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	岂宜重问后庭花	qi yi zhong wen hou ting hua	qi yi chong wen hou ting hua	再次唱问《玉树后庭花》，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	洒落出重云	sa luo chu zhong yun	sa luo chu chong yun	“重云”层层云彩，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	上尽重城更上楼	shang jin zhong cheng geng shang lou	shang jin chong cheng geng shang lou	“重城”重重城楼，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	树杪百重泉	shu miao bai zhong quan	shu miao bai chong quan	王维诗百层飞泉，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	早服谓之重积德	zao fu wei zhi zhong ji de	zao fu wei zhi chong ji de	《道德经》层层积累德行，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重积德则无不克	zhong ji de ze wu bu ke	chong ji de ze wu bu ke	《道德经》层层积德，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重比翼	zhong bi yi	chong bi yi	再次比翼双飞，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重题	zhong ti	chong ti	古诗题《重题》再次题咏，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重帷深下莫愁堂	zhong wei shen xia mo chou tang	chong wei shen xia mo chou tang	李商隐诗“重帷”重重帷幕，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重为乡党所笑	zhong wei xiang dang suo xiao	chong wei xiang dang suo xiao	《报任安书》再次被乡里讥笑，规范读 chóng	统编高中选择性必修中/现汉第7版
+cn_dicts_cell/literature.dict.yaml	重有感	zhong you gan	chong you gan	李商隐诗题《重有感》再次有感，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重有金樽开	zhong you jin zun kai	chong you jin zun kai	再次开樽，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	胞有重阆	bao you zhong lang	bao you chong lang	《庄子·外物》双重空处，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	而重以燧人	er zhong yi sui ren	er chong yi sui ren	《庄子》继而又加上燧人氏，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	奉济驿重送严公四韵	feng ji yi zhong song yan gong si yun	feng ji yi chong song yan gong si yun	杜甫诗题再次送别严武，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	固将重昏而终身	gu jiang zhong hun er zhong shen	gu jiang chong hun er zhong shen	《庄子》沉重/重重昏暗（同重昏侯），读 chóng	古汉词典
+cn_dicts_cell/literature.dict.yaml	江州重别薛六柳八二员外	jiang zhou zhong bie xue liu liu ba er yuan wai	jiang zhou chong bie xue liu liu ba er yuan wai	刘长卿诗题再次送别，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	忍听湘弦重理	ren ting xiang xian zhong li	ren ting xiang xian chong li	再次调理琴弦，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重泉若有双鱼寄	zhong quan ruo you shuang yu ji	chong quan ruo you shuang yu ji	“重泉”九泉地下，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	重寻碧落茫茫	zhong xun bi luo mang mang	chong xun bi luo mang mang	再次寻觅，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	探惊风贾环重结怨	tan jing feng jia huan zhong jie yuan	tan jing feng jia huan chong jie yuan	《红楼梦》重新结怨，规范读 chóng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	朝来波浪翻屋	chao lai bo lang fan wu	zhao lai bo lang fan wu	“朝来”清晨以来，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	朝雨轻阴乍阁	chao yu qing yin zha ge	zhao yu qing yin zha ge	“朝雨”晨雨，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	海棠半含朝雨	hai tang ban han chao yu	hai tang ban han zhao yu	“朝雨”晨雨，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	汉箭朝飞金仆姑	han jian chao fei jin pu gu	han jian zhao fei jin pu gu	清晨飞箭，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	红朝翠暮	hong chao cui mu	hong zhao cui mu	与“暮”对举，早晨读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	看爽气朝来三数峰	kan shuang qi chao lai san shu feng	kan shuang qi zhao lai san shu feng	“朝来”清晨，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	料得明朝	liao de ming chao	liao de ming zhao	“明朝”明天早晨，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	梦中朝雨	meng zhong chao yu	meng zhong zhao yu	“朝雨”晨雨，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	明朝酒醒大江流	ming chao jiu xing da jiang liu	ming zhao jiu xing da jiang liu	“明朝”明天，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	明朝且做莫思量	ming chao qie zuo mo si liang	ming zhao qie zuo mo si liang	“明朝”明天，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	明朝事与孤冷	ming chao shi yu gu leng	ming zhao shi yu gu leng	“明朝”明天，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	明朝万一西风动	ming chao wan yi xi feng dong	ming zhao wan yi xi feng dong	“明朝”明天，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	明朝又寒食	ming chao you han shi	ming zhao you han shi	“明朝”明天，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	暮宴朝欢	mu yan chao huan	mu yan zhao huan	与“暮”对举，早晨读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	雾朝烟暮	wu chao yan mu	wu zhao yan mu	与“暮”对举，早晨读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	朝餐是草根	chao can shi cao gen	zhao can shi cao gen	早餐，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	朝成绣夹裙	chao cheng xiu jia qun	zhao cheng xiu jia qun	《孔雀东南飞》早晨做成，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	朝扣富儿门	chao kou fu er men	zhao kou fu er men	杜甫诗早晨叩门，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	朝同一源出	chao tong yi yuan chu	zhao tong yi yuan chu	早晨同出，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	朝闻游子唱骊歌	chao wen you zi chang li ge	zhao wen you zi chang li ge	清晨听闻，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	更有明朝恨	geng you ming chao hen	geng you ming zhao hen	“明朝”明天，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	柳绿更带朝烟	liu lv geng dai chao yan	liu lv geng dai zhao yan	“朝烟”晨雾，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	靡有朝矣	mi you chao yi	mi you zhao yi	《诗经·氓》没有一天，规范读 zhāo	统编高中选择性必修下/现汉第7版
+cn_dicts_cell/literature.dict.yaml	明朝挂帆席	ming chao gua fan xi	ming zhao gua fan xi	李白诗“明朝”明天，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	明朝望乡处	ming chao wang xiang chu	ming zhao wang xiang chu	“明朝”明天，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	明朝有封事	ming chao you feng shi	ming zhao you feng shi	杜甫诗“明朝”明天，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	明朝元会日	ming chao yuan hui ri	ming zhao yuan hui ri	“明朝”明天，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	莫言朝花不复落	mo yan chao hua bu fu luo	mo yan zhao hua bu fu luo	“朝花”晨花，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	山中习静观朝槿	shan zhong xi jing guan chao jin	shan zhong xi jing guan zhao jin	王维诗清晨木槿，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	无奈朝来寒雨	wu nai chao lai han yu	wu nai zhao lai han yu	李煜词“朝来”清晨，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	雉朝飞	zhi chao fei	zhi zhao fei	古乐府曲名《雉朝飞》清晨飞翔，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	朝彻而后能见独	chao che er hou neng jian du	zhao che er hou neng jian du	《庄子》“朝彻”如朝阳清明彻悟（同 L35234），规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	朝将视朝	chao jiang shi chao	zhao jiang shi chao	《孟子》早晨将上朝，第一“朝”读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	朝来定有霜	chao lai ding you shuang	zhao lai ding you shuang	“朝来”清晨，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	朝泪如潮	chao lei ru chao	zhao lei ru chao	清晨泪如潮，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	朝令而夜循	chao ling er ye xun	zhao ling er ye xun	与“夜”对举，早晨读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	而后能朝彻	er hou neng chao che	er hou neng zhao che	《庄子》“朝彻”，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	来朝走马	lai chao zou ma	lai zhao zou ma	《诗经》次日清晨，规范读 zhāo	现汉第7版
+cn_dicts_cell/literature.dict.yaml	长行长在眼	chang xing zhang zai yan	chang xing chang zai yan	长久在眼，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	算好春长在	suan hao chun zhang zai	suan hao chun chang zai	春光长在，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	功名富贵若长在	gong ming fu gui ruo zhang zai	gong ming fu gui ruo chang zai	李白诗若能长在，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	迥立阊阖生长风	jiong li chang he sheng zhang feng	jiong li chang he sheng chang feng	杜甫诗吹起长风，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	一生长对水晶盘	yi sheng zhang dui shui jing pan	yi sheng chang dui shui jing pan	长久面对，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	愿君学长松	yuan jun xue zhang song	yuan jun xue chang song	高长松树，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	长得君王带笑看	zhang de jun wang dai xiao kan	chang de jun wang dai xiao kan	白居易《长恨歌》长久得到，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	长在汉家营	zhang zai han jia ying	chang zai han jia ying	长久驻守，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	事如芳草春长在	shi ru fang cao chun zhang zai	shi ru fang cao chun chang zai	春天长在，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	死生长别离	si sheng zhang bie li	si sheng chang bie li	长久别离，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	无如此处学长生	wu ru ci chu xue zhang sheng	wu ru ci chu xue chang sheng	“长生”长生不老，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	以长得其用	yi zhang de qi yong	yi chang de qi yong	长久得其用，规范读 cháng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	长而不宰	chang er bu zai	zhang er bu zai	《道德经》使万物生长而不主宰，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	长而异俗	chang er yi su	zhang er yi su	《荀子》长大后习俗各异，规范读 zhǎng	统编高中必修上/现汉第7版
+cn_dicts_cell/literature.dict.yaml	长我育我	chang wo yu wo	zhang wo yu wo	《诗经·蓼莪》抚育长大，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	长于水而安于水	chang yu shui er an yu shui	zhang yu shui er an yu shui	《庄子》在水中长大，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	长之育之	chang zhi yu zhi	zhang zhi yu zhi	《道德经》使之生长培育，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	惆怅长岑长	chou chang chang cen chang	chou chang chang cen zhang	后一“长”指长岑县长，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	南山新长凤凰雏	nan shan xin chang feng huang chu	nan shan xin zhang feng huang chu	新成长出雏凤，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	予助苗长矣	yu zhu miao chang yi	yu zhu miao zhang yi	《孟子》揠苗助长，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	草木遂长	cao mu sui chang	cao mu sui zhang	草木于是生长，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	长而明仁义之行	chang er ming ren yi zhi xing	zhang er ming ren yi zhi xing	长大后明白仁义，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	长先而少从	chang xian er shao cong	zhang xian er shao cong	年长者在前年少者在后，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	长于上古而不为老	chang yu shang gu er bu wei lao	zhang yu shang gu er bu wei lao	《庄子》年长于上古，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	长于上古而不为寿	chang yu shang gu er bu wei shou	zhang yu shang gu er bu wei shou	《庄子》年长于上古，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	地不长而万物育	di bu chang er wan wu yu	di bu zhang er wan wu yu	生长滋育，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	辅世长民莫如德	fu shi chang min mo ru de	fu shi zhang min mo ru de	《孟子》管理百姓“长民”，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	揽蔓其枝而王长其间	lan man qi zhi er wang chang qi jian	lan man qi zhi er wang zhang qi jian	《庄子》称王称长，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	年齿长矣	nian chi chang yi	nian chi zhang yi	年纪大了，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	牛羊茁壮长而已矣	niu yang zhuo zhuang chang er yi yi	niu yang zhuo zhuang zhang er yi yi	《孟子》牛羊茁壮成长，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	宋人有闵其苗之不长而揠之者	song ren you min qi miao zhi bu chang er ya zhi zhe	song ren you min qi miao zhi bu zhang er ya zhi zhe	《孟子》秧苗不长高，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	之年者已长矣	zhi nian zhe yi chang yi	zhi nian zhe yi zhang yi	年纪已长，规范读 zhǎng	现汉第7版
+cn_dicts_cell/literature.dict.yaml	哀乐转相寻	ai yue zhuan xiang xun	ai le zhuan xiang xun	哀伤与欢乐，规范读 lè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	衔杯乐圣称世贤	xian bei yue sheng cheng shi xian	xian bei le sheng cheng shi xian	杜甫诗喜好圣人酒/以酒为乐，规范读 lè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	乐节礼乐	yue jie li yue	le jie li yue	《论语》喜好节度礼乐，第一“乐”读 lè（非音乐）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	哀乐不易施乎前	ai yue bu yi shi hu qian	ai le bu yi shi hu qian	《庄子》哀伤与欢乐，规范读 lè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	哀乐之来	ai yue zhi lai	ai le zhi lai	《庄子》哀伤与欢乐，规范读 lè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	三千乐指	san qian le zhi	san qian yue zhi	奏乐手指，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	夜半乐	ye ban le	ye ban yue	词牌名/乐曲名《夜半乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	长生乐	chang sheng le	chang sheng yue	唐乐曲名《长生乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	长寿乐	chang shou le	chang shou yue	唐乐曲名《长寿乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	朝天乐	chao tian le	chao tian yue	曲牌名《朝天乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	东原乐	dong yuan le	dong yuan yue	曲牌名《东原乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	估客乐	gu ke le	gu ke yue	乐府曲名《估客乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	好乐何如	hao le he ru	hao yue he ru	《孟子》喜好音乐，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	回波乐	hui bo le	hui bo yue	唐教坊曲《回波乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	开元乐	kai yuan le	kai yuan yue	唐乐曲《开元乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	乐其可知也	le qi ke zhi ye	yue qi ke zhi ye	《论语》音乐是可以知晓的，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	乐世	le shi	yue shi	唐代大曲《乐世》（绿腰），规范读 yuè	辞海/古诗文
+cn_dicts_cell/literature.dict.yaml	乐云乐云	le yun le yun	yue yun yue yun	《论语》“乐云乐云，钟鼓云乎哉”，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	抛球乐	pao qiu le	pao qiu yue	词牌/教坊曲《抛球乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	普天乐	pu tian le	pu tian yue	元曲曲牌《普天乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	三部乐	san bu le	san bu yue	词牌/乐曲《三部乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	三登乐	san deng le	san deng yue	词牌名《三登乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	三年不为乐	san nian bu wei le	san nian bu wei yue	《论语》三年不奏乐，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	上云乐	shang yun le	shang yun yue	乐府曲名《上云乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	升平乐	sheng ping le	sheng ping yue	词牌/唐曲《升平乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	思归乐	si gui le	si gui yue	乐曲名《思归乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	天下乐	tian xia le	tian xia yue	元曲曲牌《天下乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	王语暴以好乐	wang yu bao yi hao le	wang yu bao yi hao yue	《孟子》喜好音乐，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	王之好乐甚	wang zhi hao le shen	wang zhi hao yue shen	《孟子》大王喜好音乐，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	西平乐	xi ping le	xi ping yue	词牌名《西平乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	逍遥乐	xiao yao le	xiao yao yue	词牌名《逍遥乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	应景乐	ying jing le	ying jing yue	词牌名《应景乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	渔父乐	yu fu le	yu fu yue	乐曲名《渔父乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	与人乐乐	yu ren le le	yu ren yue le	《孟子》“与人乐(yuè)乐(lè)”欣赏音乐之乐，第一“乐”读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	与少乐乐	yu shao le le	yu shao yue le	《孟子》“与少乐(yuè)乐(lè)”，第一“乐”读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	征部乐	zheng bu le	zheng bu yue	词牌名《征部乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	中央乐	zhong yang le	zhong yang yue	乐曲名《中央乐》，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	不图为乐之至于斯也	bu tu wei le zhi zhi yu si ye	bu tu wei yue zhi zhi yu si ye	《论语》孔子听韶乐“为乐”，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	成于乐	cheng yu le	cheng yu yue	《论语》“兴于诗，立于礼，成于乐”，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	乐必崩	le bi beng	yue bi beng	《论语》礼坏乐崩，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	乐则韶	le ze shao	yue ze shao	《论语》“乐则韶舞”音乐，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	如乐何	ru le he	ru yue he	《论语》“人而不仁，如乐何”，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	子语鲁大师乐	zi yu lu da shi le	zi yu lu da shi yue	《论语》孔子与鲁国太师谈音乐，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	澶漫为乐	chan man wei le	chan man wei yue	《庄子》放纵作乐，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	臣请为王言乐	chen qing wei wang yan le	chen qing wei wang yan yue	《孟子》谈论音乐，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	此乐本自龟兹出	ci le ben zi qiu ci chu	ci yue ben zi qiu ci chu	音乐出自龟兹，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	寡人非能好先王之乐也	gua ren fei neng hao xian wang zhi le ye	gua ren fei neng hao xian wang zhi yue ye	《孟子》先王雅乐，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	乐未毕也	le wei bi ye	yue wei bi ye	奏乐未终，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	乐则韶舞	le ze shao wu	yue ze shao wu	《论语》音乐采用韶舞，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	乐之末也	le zhi mo ye	yue zhi mo ye	音乐之末节，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	王尝语庄子以好乐	wang chang yu zhuang zi yi hao le	wang chang yu zhuang zi yi hao yue	《孟子》喜好音乐，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	闻其乐而知其德	wen qi le er zhi qi de	wen qi yue er zhi qi de	《孟子》听其音乐知其德行，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	由古之乐也	you gu zhi le ye	you gu zhi yue ye	《孟子》犹如古代音乐，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	直好世俗之乐耳	zhi hao shi su zhi le er	zhi hao shi su zhi yue er	《孟子》只喜好世俗音乐，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	子语鲁太师乐	zi yu lu tai shi le	zi yu lu tai shi yue	《论语》孔子谈音乐，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	奏九韶以为乐	zou jiu shao yi wei le	zou jiu shao yi wei yue	演奏九韶作为音乐，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	恶不仁者	e bu ren zhe	wu bu ren zhe	《论语》厌恶不仁者，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	恶称人之恶者	e cheng ren zhi e zhe	wu cheng ren zhi e zhe	《论语》厌恶宣扬他人过恶者，第一“恶”读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	恶勇而无礼者	e yong er wu li zhe	wu yong er wu li zhe	《论语》厌恶勇敢而无礼者，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	高明逼神恶	gao ming bi shen e	gao ming bi shen wu	遭鬼神厌忌，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	世情恶衰歇	shi qing e shuai xie	shi qing wu shuai xie	杜甫诗世俗厌弃衰败，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	能恶人	neng e ren	neng wu ren	《论语》“唯仁者能好人，能恶人”，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	彼恶敢当我哉	bi e gan dang wo zai	bi wu gan dang wo zai	《孟子》疑问副词“怎么/哪敢”，规范读 wū	现汉第7版
+cn_dicts_cell/literature.dict.yaml	楚恶而伐之	chu e er fa zhi	chu wu er fa zhi	楚国厌恶并讨伐之，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	恶不仁者其为仁矣	e bu ren zhe qi wei ren yi	wu bu ren zhe qi wei ren yi	《论语》厌恶不仁者，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	恶至而倪贵贱	e zhi er ni gui jian	wu zhi er ni gui jian	《庄子》疑问代词“哪里/何处”，规范读 wū	现汉第7版
+cn_dicts_cell/literature.dict.yaml	恶至而倪小大	e zhi er ni xiao da	wu zhi er ni xiao da	《庄子》疑问代词“哪里/何处”，规范读 wū	现汉第7版
+cn_dicts_cell/literature.dict.yaml	好和而恶奸	hao he er e jian	hao he er wu jian	喜好和谐厌恶奸邪，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	今恶辱而居不仁	jin e ru er ju bu ren	jin wu ru er ju bu ren	《孟子》厌恶耻辱，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	鸟兽不恶	niao shou bu e	niao shou bu wu	《庄子》鸟兽不厌恶，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	且苟为人悦贤而恶不肖	qie gou wei ren yue xian er e bu xiao	qie gou wei ren yue xian er wu bu xiao	厌恶不肖之人，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	全人恶天	quan ren e tian	quan ren wu tian	《庄子》全人厌恶天然，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	是以神人恶众至	shi yi shen ren e zhong zhi	shi yi shen ren wu zhong zhi	《庄子》厌恶众人聚集，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	万物之所生恶起	wan wu zhi suo sheng e qi	wan wu zhi suo sheng wu qi	《庄子》从何而起，“恶”读 wū	现汉第7版
+cn_dicts_cell/literature.dict.yaml	我又何恶焉	wo you he e yan	wo you he wu yan	《庄子》我又厌恶什么，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	吾又何恶焉	wu you he e yan	wu you he wu yan	《庄子》我又厌恶什么，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	奚乐奚恶	xi le xi e	xi le xi wu	何所乐何所厌恶，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	阳货欲见孔子而恶无礼	yang huo yu jian kong zi er e wu li	yang huo yu jian kong zi er wu wu li	《孟子》厌恶失礼，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	又恶不由其道	you e bu you qi dao	you wu bu you qi dao	《孟子》厌恶不走正道，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	又恶取君子小人于其间哉	you e qu jun zi xiao ren yu qi jian zai	you wu qu jun zi xiao ren yu qi jian zai	《庄子》怎么能区分，“恶”读 wū	现汉第7版
+cn_dicts_cell/literature.dict.yaml	欲恶去就	yu e qu jiu	yu wu qu jiu	《庄子》爱欲与厌恶，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	欲恶之孽为性	yu e zhi nie wei xing	yu wu zhi nie wei xing	《庄子》爱欲与厌恶，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	禹恶旨酒	yu e zhi jiu	yu wu zhi jiu	《孟子》大禹厌恶美酒，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	则无恶于智矣	ze wu e yu zhi yi	ze wu wu yu zhi yi	《孟子》就不厌恶智者了，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	致其所恶则散	zhi qi suo e ze san	zhi qi suo wu ze san	招致所厌恶的事，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	诸侯恶其害己也	zhu hou e qi hai ji ye	zhu hou wu qi hai ji ye	《孟子》诸侯厌恶它妨害自己，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	子恶之乎	zi e zhi hu	zi wu zhi hu	《庄子》您厌恶它吗，规范读 wù	现汉第7版
+cn_dicts_cell/literature.dict.yaml	不知说生	bu zhi shuo sheng	bu zhi yue sheng	《庄子》“说”通“悦”，欣喜贪生，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	说怿女美	shuo yi nv mei	yue yi ru mei	《诗经·静女》“说”通悦读 yuè，“女”通汝读 rǔ	统编高中必修上/现汉第7版
+cn_dicts_cell/literature.dict.yaml	公则说	gong ze shuo	gong ze yue	《论语》“说”通“悦”，规范读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	君子易事而难说也	jun zi yi shi er nan shuo ye	jun zi yi shi er nan yue ye	《论语》难以取悦，“说”读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	小人难事而易说也	xiao ren nan shi er yi shuo ye	xiao ren nan shi er yi yue ye	《论语》容易取悦，“说”读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	不自说也	bu zi shuo ye	bu zi yue ye	《庄子》不自喜，“说”通悦读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	夫人之难说也	fu ren zhi nan shuo ye	fu ren zhi nan yue ye	难以取悦，“说”读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	则暖暖姝姝而私自说也	ze nuan nuan shu shu er si zi shuo ye	ze nuan nuan shu shu er si zi yue ye	《庄子》私自得意，“说”通悦读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	子而说子之执政而后人者也	zi er shuo zi zhi zhi zheng er hou ren zhe ye	zi er yue zi zhi zhi zheng er hou ren zhe ye	《庄子》喜悦，“说”读 yuè	现汉第7版
+cn_dicts_cell/literature.dict.yaml	鲰生说我曰	zou sheng shuo wo yue	zou sheng shui wo yue	《鸿门宴》劝说“说我”，规范读 shuì	统编高中必修下/现汉第7版
+cn_dicts_cell/literature.dict.yaml	从说则以金板	cong shuo ze yi jin ban	zong shui ze yi jin ban	《庄子》纵说（合纵游说），读 zòng shuì	现汉第7版/古汉词典
+cn_dicts_cell/literature.dict.yaml	横说之则以诗	heng shuo zhi ze yi shi	heng shui zhi ze yi shi	《庄子》横说（游说），规范读 shuì	现汉第7版
+cn_dicts_cell/literature.dict.yaml	今先生何以说吾君	jin xian sheng he yi shuo wu jun	jin xian sheng he yi shui wu jun	《庄子》如何游说君主，规范读 shuì	现汉第7版
+cn_dicts_cell/literature.dict.yaml	十二经以说	shi er jing yi shuo	shi er jing yi shui	《庄子》游说老聃，规范读 shuì	现汉第7版
+cn_dicts_cell/literature.dict.yaml	说卫灵公	shuo wei ling gong	shui wei ling gong	《庄子》游说卫灵公，规范读 shuì	现汉第7版
+cn_dicts_cell/literature.dict.yaml	吾所以说吾君者	wu suo yi shuo wu jun zhe	wu suo yi shui wu jun zhe	《庄子》我游说君主的方法，规范读 shuì	现汉第7版
+cn_dicts_cell/literature.dict.yaml	先生独何以说吾君乎	xian sheng du he yi shuo wu jun hu	xian sheng du he yi shui wu jun hu	《庄子》如何游说君主，规范读 shuì	现汉第7版
+cn_dicts_cell/literature.dict.yaml	以说吴王	yi shuo wu wang	yi shui wu wang	《庄子·逍遥游》游说吴王，规范读 shuì	统编高中选择性必修上/现汉第7版
+cn_dicts_cell/literature.dict.yaml	祝宗人玄端以临牢柙说彘	zhu zong ren xuan duan yi lin lao xia shuo zhi	zhu zong ren xuan duan yi lin lao xia shui zhi	《庄子·达生》劝说祭猪，规范读 shuì	现汉第7版
+cn_dicts_cell/literature.dict.yaml	宫殿孤鸿没	gong dian gu hong mei	gong dian gu hong mo	孤鸿隐没，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	白日向西没	bai ri xiang xi mei	bai ri xiang xi mo	太阳西沉没落，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	长河没晓天	chang he mei xiao tian	chang he mo xiao tian	银河隐没在拂晓天际，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	飞鸟没何处	fei niao mei he chu	fei niao mo he chu	飞鸟隐没何处，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	旧谷既没	jiu gu ji mei	jiu gu ji mo	《论语》旧谷已尽，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	没蕃故人	mei fan gu ren	mo fan gu ren	张籍诗陷没吐蕃的故人，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	没马蹄	mei ma ti	mo ma ti	白居易诗“浅草才能没马蹄”遮没，规范读 mò	统编初中八上/现汉第7版
+cn_dicts_cell/literature.dict.yaml	渺渺没孤鸿	miao miao mei gu hong	miao miao mo gu hong	隐没孤鸿，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	宁知晓向云间没	ning zhi xiao xiang yun jian mei	ning zhi xiao xiang yun jian mo	隐没云间，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	平沙日未没	ping sha ri wei mei	ping sha ri wei mo	太阳尚未沉没，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	文王既没	wen wang ji mei	wen wang ji mo	《论语》文王去世，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	昔时人已没	xi shi ren yi mei	xi shi ren yi mo	昔人已去世，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	孝公既没	xiao gong ji mei	xiao gong ji mo	《过秦论》秦孝公去世，规范读 mò	统编高中选择性必修中/现汉第7版
+cn_dicts_cell/literature.dict.yaml	谢公行处苍苔没	xie gong xing chu cang tai mei	xie gong xing chu cang tai mo	苍苔淹没，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	钟期久已没	zhong qi jiu yi mei	zhong qi jiu yi mo	钟子期早已去世，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	父没	fu mei	fu mo	《论语》父亲去世，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	没阶	mei jie	mo jie	《论语》走完台阶，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	城下没全师	cheng xia mei quan shi	cheng xia mo quan shi	全军覆没，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	蹶泥则没足灭跗	jue ni ze mei zu mie fu	jue ni ze mo zu mie fu	《庄子》淹没脚面，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	可怜青冢已芜没	ke lian qing zhong yi wu mei	ke lian qing zhong yi wu mo	荒芜湮没，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	梦为鱼而没于渊	meng wei yu er mei yu yuan	meng wei yu er mo yu yuan	《庄子》沉没于深渊，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	秦王既没	qin wang ji mei	qin wang ji mo	《过秦论》秦始皇去世，规范读 mò	统编高中选择性必修中/现汉第7版
+cn_dicts_cell/literature.dict.yaml	若乃夫没人	ruo nai fu mei ren	ruo nai fu mo ren	《庄子》潜水之人“没人”，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	昔者孔子没	xi zhe kong zi mei	xi zhe kong zi mo	《孟子》孔子去世，规范读 mò	现汉第7版
+cn_dicts_cell/literature.dict.yaml	匪女之为美	fei nv zhi wei mei	fei ru zhi wei mei	《诗经·静女》“女”通“汝”，规范读 rǔ	统编高中必修上/现汉第7版
+cn_dicts_cell/literature.dict.yaml	往之女家	wang zhi nv jia	wang zhi ru jia	《孟子》“女家”你的婆家，“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	亦不女从	yi bu nv cong	yi bu ru cong	《诗经》也不听从你，“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	安女安则为之	an nv an ze wei zhi	an ru an ze wei zhi	《论语》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	诲女知之乎	hui nv zhi zhi hu	hui ru zhi zhi hu	《论语》“诲女”教导你，“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	今女安	jin nv an	jin ru an	《论语》现在你安心吗，“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	居吾语女	ju wu yu nv	ju wu yu ru	《论语》坐下我告诉你，“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	女得人焉耳乎	nv de ren yan er hu	ru de ren yan er hu	《论语》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	女弗能救与	nv fu neng jiu yu	ru fu neng jiu yu	《论语》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	女为君子儒	nv wei jun zi ru	ru wei jun zi ru	《论语》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	女闻六言六蔽矣乎	nv wen liu yan liu bi yi hu	ru wen liu yan liu bi yi hu	《论语》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	女奚不曰	nv xi bu yue	ru xi bu yue	《论语》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	女以予为多学而识之者与	nv yi yu wei duo xue er shi zhi zhe yu	ru yi yu wei duo xue er zhi zhi zhe yu	《论语》“女”通汝读 rǔ，“识”记住读 zhì	现汉第7版
+cn_dicts_cell/literature.dict.yaml	吾以女为死矣	wu yi nv wei si yi	wu yi ru wei si yi	《论语》我以为你死了，“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	于女安乎	yu nv an hu	yu ru an hu	《论语》对你来说安心吗，“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	而女求之以为有	er nv qiu zhi yi wei you	er ru qiu zhi yi wei you	《庄子》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	而丘使女往吊之	er qiu shi nv wang diao zhi	er qiu shi ru wang diao zhi	《庄子》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	姑舍女所学而从我	gu she nv suo xue er cong wo	gu she ru suo xue er cong wo	《孟子》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	女独不欲	nv du bu yu	ru du bu yu	《庄子》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	女闻地籁而不闻天籁夫	nv wen di lai er bu wen tian lai fu	ru wen di lai er bu wen tian lai fu	《庄子·齐物论》“女”通汝读 rǔ（同 L35296）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	女闻人籁而未闻地籁	nv wen ren lai er wei wen di lai	ru wen ren lai er wei wen di lai	《庄子·齐物论》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	女奚患焉	nv xi huan yan	ru xi huan yan	《庄子》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	女以妄听之	nv yi wang ting zhi	ru yi wang ting zhi	《庄子》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	且女独不闻邪	qie nv du bu wen xie	qie ru du bu wen ye	《庄子》“女”通汝读 rǔ，“邪”疑问助词读 yé	现汉第7版
+cn_dicts_cell/literature.dict.yaml	且女亦大早计	qie nv yi da zao ji	qie ru yi da zao ji	《庄子》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	丘也与女皆梦也	qiu ye yu nv jie meng ye	qiu ye yu ru jie meng ye	《庄子》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	日中始何以语女	ri zhong shi he yi yu nv	ri zhong shi he yi yu ru	《庄子》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	慎守女身	shen shou nv shen	shen shou ru shen	《庄子》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	始也我以女为圣人邪	shi ye wo yi nv wei sheng ren xie	shi ye wo yi ru wei sheng ren ye	《庄子》“女”通汝读 rǔ，“邪”疑问助词读 yé	现汉第7版
+cn_dicts_cell/literature.dict.yaml	为女入于窈冥之门矣	wei nv ru yu yao ming zhi men yi	wei ru ru yu yao ming zhi men yi	《庄子》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	我使掌与女乘	wo shi zhang yu nv cheng	wo shi zhang yu ru cheng	《孟子》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	我为女遂于大明之上矣	wo wei nv sui yu da ming zhi shang yi	wo wei ru sui yu da ming zhi shang yi	《庄子》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	无劳女形	wu lao nv xing	wu lao ru xing	《庄子》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	吾语女至道	wu yu nv zhi dao	wu yu ru zhi dao	《庄子》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	予尝为女妄言之	yu chang wei nv wang yan zhi	yu chang wei ru wang yan zhi	《庄子》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	予谓女梦亦梦也	yu wei nv meng yi meng ye	yu wei ru meng yi meng ye	《庄子》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	正女身哉	zheng nv shen zai	zheng ru shen zai	《庄子》“女”通汝读 rǔ	现汉第7版
+cn_dicts_cell/literature.dict.yaml	其在彼邪亡乎我	qi zai bi xie wang hu wo	qi zai bi ye wu hu wo	《庄子》“邪”疑问助词读 yé，“亡”通无读 wú	现汉第7版
+cn_dicts_cell/literature.dict.yaml	在我邪亡乎彼	zai wo xie wang hu bi	zai wo ye wu hu bi	《庄子》“邪”疑问助词读 yé，“亡”通无读 wú	现汉第7版
+cn_dicts_cell/literature.dict.yaml	彼何人者邪	bi he ren zhe xie	bi he ren zhe ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	不知先生之洗我以善邪	bu zhi xian sheng zhi xi wo yi shan xie	bu zhi xian sheng zhi xi wo yi shan ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	不知至人之以是为己桎梏邪	bu zhi zhi ren zhi yi shi wei ji zhi gu xie	bu zhi zhi ren zhi yi shi wei ji zhi gu ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	不足以自反邪	bu zu yi zi fan xie	bu zu yi zi fan ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	操舟可学邪	cao zhou ke xue xie	cao zhou ke xue ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	诚不善邪	cheng bu shan xie	cheng bu shan ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	道可得学邪	dao ke de xue xie	dao ke de xue ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	道之难明邪	dao zhi nan ming xie	dao zhi nan ming ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	而且说明邪	er qie shuo ming xie	er qie shuo ming ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	而未知此其必然邪	er wei zhi ci qi bi ran xie	er wei zhi ci qi bi ran ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	而物或间之邪	er wu huo jian zhi xie	er wu huo jian zhi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	非王德者邪	fei wang de zhe xie	fei wang de zhe ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	夫子阖行邪	fu zi he xing xie	fu zi he xing ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	公阅休奚为者邪	gong yue xiu xi wei zhe xie	gong yue xiu xi wei zhe ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	果不乐邪	guo bu le xie	guo bu le ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	果孰是邪	guo shu shi xie	guo shu shi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	何可易邪	he ke yi xie	he ke yi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	何其下邪	he qi xia xie	he qi xia ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	何其愈甚邪	he qi yu shen xie	he qi yu shen ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	何其愈下邪	he qi yu xia xie	he qi yu xia ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	何适而无有道邪	he shi er wu you dao xie	he shi er wu you dao ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	何谓人与天一邪	he wei ren yu tian yi xie	he wei ren yu tian yi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	何为者邪	he wei zhe xie	he wei zhe ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	何先生之惫邪	he xian sheng zhi bei xie	he xian sheng zhi bei ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	何以知其然邪	he yi zhi qi ran xie	he yi zhi qi ran ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	或者若鲁遽者邪	huo zhe ruo lu ju zhe xie	huo zhe ruo lu ju zhe ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	今鲁国独非君之皮邪	jin lu guo du fei jun zhi pi xie	jin lu guo du fei jun zhi pi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	可不慎邪	ke bu shen xie	ke bu shen ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	梨橘柚邪	li ju you xie	li ju you ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	宁得自引深藏于岩穴邪	ning de zi yin shen cang yu yan xue xie	ning de zi yin shen cang yu yan xue ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	其寡人亦有社稷之福邪	qi gua ren yi you she ji zhi fu xie	qi gua ren yi you she ji zhi fu ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	蕲乎而人不善之邪	qi hu er ren bu shan zhi xie	qi hu er ren bu shan zhi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	其梦未始觉者邪	qi meng wei shi jue zhe xie	qi meng wei shi jue zhe ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	其孰是邪	qi shu shi xie	qi shu shi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	其所以为灵公者何邪	qi suo yi wei ling gong zhe he xie	qi suo yi wei ling gong zhe he ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	其为乐可胜计邪	qi wei le ke sheng ji xie	qi wei le ke sheng ji ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	其庸可得邪	qi yong ke de xie	qi yong ke de ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	其欲干酒肉之味邪	qi yu gan jiu rou zhi wei xie	qi yu gan jiu rou zhi wei ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	岂直过也而去之邪	qi zhi guo ye er qu zhi xie	qi zhi guo ye er qu zhi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	且得有此大也邪	qie de you ci da ye xie	qie de you ci da ye ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	且若是者邪	qie ruo shi zhe xie	qie ruo shi zhe ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	且又为不神者求邪	qie you wei bu shen zhe qiu xie	qie you wei bu shen zhe qiu ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	然则何贵于道邪	ran ze he gui yu dao xie	ran ze he gui yu dao ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	然则俗故严于亲而尊于君邪	ran ze su gu yan yu qin er zun yu jun xie	ran ze su gu yan yu qin er zun yu jun ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	然则子无师邪	ran ze zi wu shi xie	ran ze zi wu shi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	人大喜邪	ren da xi xie	ren da xi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	人之性邪	ren zhi xing xie	ren zhi xing ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	汝将固惊邪	ru jiang gu jing xie	ru jiang gu jing ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	若将比予于文木邪	ruo jiang bi yu yu wen mu xie	ruo jiang bi yu yu wen mu ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	若之何其无鬼邪	ruo zhi he qi wu gui xie	ruo zhi he qi wu gui ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	若之何其有鬼邪	ruo zhi he qi you gui xie	ruo zhi he qi you gui ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	是非其梦邪	shi fei qi meng xie	shi fei qi meng ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	是非其眯邪	shi fei qi mi xie	shi fei qi mi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	是其市南宜僚邪	shi qi shi nan yi liao xie	shi qi shi nan yi liao ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	使我乘成以随先生邪	shi wo cheng cheng yi sui xian sheng xie	shi wo cheng cheng yi sui xian sheng ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	死生有待邪	si sheng you dai xie	si sheng you dai ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	叟何人邪	sou he ren xie	sou he ren ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	孙子所言非邪	sun zi suo yan fei xie	sun zi suo yan fei ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	孙子之所言是邪	sun zi zhi suo yan shi xie	sun zi zhi suo yan shi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	所盗者岂独其国邪	suo dao zhe qi du qi guo xie	suo dao zhe qi du qi guo ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	天忘朕邪	tian wang zhen xie	tian wang zhen ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	天下均治而有虞氏治之邪	tian xia jun zhi er you yu shi zhi zhi xie	tian xia jun zhi er you yu shi zhi zhi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	亡其略弗及邪	wang qi lve fu ji xie	wang qi lve fu ji ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	未有天地可知邪	wei you tian di ke zhi xie	wei you tian di ke zhi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	文王其犹未邪	wen wang qi you wei xie	wen wang qi you wei ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	我其杓之人邪	wo qi biao zhi ren xie	wo qi biao zhi ren ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	吾敢不为邪	wu gan bu wei xie	wu gan bu wei ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	吾未知善之诚善邪	wu wei zhi shan zhi cheng shan xie	wu wei zhi shan zhi cheng shan ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	无形而心成者邪	wu xing er xin cheng zhe xie	wu xing er xin cheng zhe ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	吾又未知乐之果乐邪	wu you wei zhi le zhi guo le xie	wu you wei zhi le zhi guo le ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	吾之自寐邪	wu zhi zi mei xie	wu zhi zi mei ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	奚可得邪	xi ke de xie	xi ke de ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	先生所言是邪	xian sheng suo yan shi xie	xian sheng suo yan shi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	先生之所言非邪	xian sheng zhi suo yan fei xie	xian sheng zhi suo yan fei ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	向之人何为者邪	xiang zhi ren he wei zhe xie	xiang zhi ren he wei zhe ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	抑固窭邪	yi gu ju xie	yi gu ju ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	以贱为本邪	yi jian wei ben xie	yi jian wei ben ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	意者其运转而不能自止邪	yi zhe qi yun zhuan er bu neng zi zhi xie	yi zhe qi yun zhuan er bu neng zi zhi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	又胡可得而有邪	you hu ke de er you xie	you hu ke de er you ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	有罪以免邪	you zui yi mian xie	you zui yi mian ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	于是三呼邪	yu shi san hu xie	yu shi san hu ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	则是非窃仁义圣知邪	ze shi fei qie ren yi sheng zhi xie	ze shi fei qie ren yi sheng zhi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	则为社何邪	ze wei she he xie	ze wei she he ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	终日不自反邪	zhong ri bu zi fan xie	zhong ri bu zi fan ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	子独不闻夫至人之自行邪	zi du bu wen fu zhi ren zhi zi xing xie	zi du bu wen fu zhi ren zhi zi xing ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	子奚为者邪	zi xi wei zhe xie	zi xi wei zhe ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	子之师谁邪	zi zhi shi shui xie	zi zhi shi shui ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
+cn_dicts_cell/literature.dict.yaml	子之师邪	zi zhi shi xie	zi zhi shi ye	古文句末疑问助词“邪”同“耶”，规范读 yé（与 L35275–35448 统一）	现汉第7版
