@@ -71,13 +71,13 @@
 1. 400 MB 万象模型本身几乎不拖慢按键；`melt_eng` 缩减前 5–10 位大写派生后 `melt_eng.prism.bin` 从 `6.82 MB` 降到 `4.97 MB`。
 2. 之前 `5–6 ms` 的主因是 `profiles/rime.lua` 里误写了 `collectgarbage("incremental", 80, 300)`（`pause < 100` 取消 GC 间隔）；改为 `(150, 200)` 并合并滤镜后，纯统计双拼压到 `0.1 / 0.4 ms`（峰值 `0.9 ms`）。
 3. 词库消融（800 句实测）：去掉 `41448` 和 `GB18030-2022` 准确率零损失（`622/800 = 77.75%`），可减少 ~10 万生僻字干扰；`composite`（62 万加权短语）贡献 `+1.13%`，必须保留；加入 `tencent` 增重 `10 MB` 但准确率贡献 `0.00%`，保持关闭；双拼下开启 `enable_correction` 会让整句率从 `72.88%` 暴跌至 `57.57%`，保持关闭。
-4. 官方小狼毫 `0.17.4` 的 `rime.dll` 原生导出全部 154 个 Lua 5.4 C API 符号且开放 `package.loadlib`。独立开源插件 [`Chth1z/rime-neural`](https://github.com/Chth1z/rime-neural)（Apache-2.0，安装于 `%APPDATA%\Rime\neural\` 与 `lua\rime_neural.lua`）通过 `GetModuleHandleA("rime.dll")` 动态解析符号并钉驻宿主进程避免重新部署崩溃；支持 7 大双拼（3,008/3,008 零失配）＋ 记忆化全拼、动态模型层数/头数与 `choice_compact` 自省、选择性 ORT 输出裁剪、`.gram` 共享映射、KV 缓存 Pass-2 校验 P2C、`RangeFromChild`＋`U+FFFC` 钳制的非阻塞 UIA 上下文与原词脱敏反馈（配合 Newton MAP + 5 折 NLL + 95% CI 离线调参）。
+4. 官方小狼毫 `0.17.4` 的 `rime.dll` 原生导出全部 154 个 Lua 5.4 C API 符号且开放 `package.loadlib`。独立开源插件 [`Chth1z/rime-neural`](https://github.com/Chth1z/rime-neural)（Apache-2.0，安装于 `%APPDATA%\Rime\neural\` 与 `lua\rime_neural.lua`）通过 `GetModuleHandleA("rime.dll")` 动态解析符号并钉驻宿主进程避免重新部署崩溃；支持 7 大双拼（3,008/3,008 零失配）＋ 记忆化全拼、动态模型层数/头数与 `choice_compact` 自省、选择性 ORT 输出裁剪、`.gram` 共享映射、KV 缓存 Pass-2 校验 P2C、`RangeFromChild`＋`U+FFFC` 钳制的非阻塞 UIA 上下文与零明文数值反馈（配合 Newton MAP + 5 折分块 NLL + Hajek 95% CI 离线调参）。
 5. 仓库 `lua/` 目录已完成收口清理：仅保留 6 个自用活跃脚本（`rime_neural.lua` 由 `Chth1z/rime-neural` 发行包随 DLL 原子同步），并在 `deploy-local.ps1` / `update-local.ps1` 中同步自动清理 `%APPDATA%\Rime\lua\` 遗留文件。
 6. 这台机器插电和电池相差约 2.5–3.3 倍，开启 v0.2.0 神经重排后双拼均值插电 `1.6 ms`（峰值 `9.8 ms`）、电池实测 `4.1 ms`（峰值 `22.3 ms`），全拼电池 `9.2 ms`（峰值 `27.9 ms`），后台异步冷加载电池约 `2.7 s`（不阻塞启动）。
 
 ## 4. 平时协作的基本约定
 
-- **看实测数据**：改完性能、脚本或词库后均经 `bench/accuracy-test.ps1 -WaitNeural`（288 项确定性回归）、`bench/audit-surface.ps1`（双方案全表面运行时巡检）、`bench/bench-rime.ps1` 与 `bench/eval-accuracy.py` 盲测验证，不凭感觉下结论。
+- **看实测数据**：改完性能、脚本或词库后均经 `bench/accuracy-test.ps1 -WaitNeural`（300 项确定性回归）、`bench/audit-surface.ps1`（双方案全表面运行时巡检）、`bench/bench-rime.ps1` 与 `bench/eval-accuracy.py` 盲测验证，不凭感觉下结论。
 - **文档保持朴素**：README 和仓库里的文档写清楚事实和用法就行，不堆虚词。
-- **词库清洗与治理走规范**：词库收词、审音、纠错分类、权重标尺与上线四级门禁统一遵循 [`docs/DICTIONARY_SPEC.md`](docs/DICTIONARY_SPEC.md)；全部 10,021 条词库覆写统一沉淀在声明式规则目录 `rules/`（中英混输通过 `rules/cn_en_source.tsv` ＋ `scripts/build_cn_en.py` 派生 7 份布局文件），由 `scripts/clean-dicts.py` 幂等应用、`scripts/dict_lint.py --strict --idempotent --check-collisions` 校验，确保上游同步可洁净重放且零冲突。
+- **词库清洗与治理走规范**：词库收词、审音、纠错分类、权重标尺与上线四级门禁统一遵循 [`docs/DICTIONARY_SPEC.md`](docs/DICTIONARY_SPEC.md)；全部 10,041 条词库覆写统一沉淀在声明式规则目录 `rules/`（中英混输通过 `rules/cn_en_source.tsv` ＋ `scripts/build_cn_en.py` 派生 7 份布局文件），由 `scripts/clean-dicts.py` 幂等应用、`scripts/dict_lint.py --strict --idempotent --check-collisions` 校验，确保上游同步可洁净重放且零冲突。
 - **提上游 Issue 从严**：遵守 [`docs/upstream-issues/GUIDELINE.md`](docs/upstream-issues/GUIDELINE.md)，只提实测复现、有实际影响的真 Bug，不提视角或习惯分歧带来的伪问题。

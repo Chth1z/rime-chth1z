@@ -35,15 +35,17 @@ jobs:
                       return None
                   raise
 
-          frost_lua = fetch_json("https://api.github.com/repos/gaboolic/rime-frost/commits?path=lua&per_page=5")
-          frost_root = fetch_json("https://api.github.com/repos/gaboolic/rime-frost/commits?per_page=5")
-          ice_lua = fetch_json("https://api.github.com/repos/iDvel/rime-ice/commits?path=lua&per_page=5")
+          frost_lua = fetch_json("https://api.github.com/repos/gaboolic/rime-frost/commits?path=lua&per_page=5", optional=True)
+          frost_root = fetch_json("https://api.github.com/repos/gaboolic/rime-frost/commits?per_page=5", optional=True)
+          ice_lua = fetch_json("https://api.github.com/repos/iDvel/rime-ice/commits?path=lua&per_page=5", optional=True)
           neural_rel = fetch_json("https://api.github.com/repos/Chth1z/rime-neural/releases/latest", optional=True)
           zhiyi_rels = fetch_json("https://api.github.com/repos/dd1000001000/zhiyi_models/releases?per_page=3", optional=True)
-          weasel_rel = fetch_json("https://api.github.com/repos/rime/weasel/releases/tags/latest")
-          wx_rel = fetch_json("https://api.github.com/repos/amzxyz/rime-wanxiang-data/releases/tags/LTS")
+          weasel_rel = fetch_json("https://api.github.com/repos/rime/weasel/releases/tags/latest", optional=True)
+          wx_rel = fetch_json("https://api.github.com/repos/amzxyz/rime-wanxiang-data/releases/tags/LTS", optional=True)
 
           def fmt_commits(items):
+              if not items:
+                  return "- (unavailable)"
               lines = []
               for c in items:
                   sha = c["sha"][:8]
@@ -55,7 +57,7 @@ jobs:
 
           neural_line = (
               f"- **`{neural_rel['tag_name']}`** (published `{neural_rel['published_at'][:10]}`) — [{neural_rel['html_url']}]({neural_rel['html_url']})"
-              if neural_rel else "- (no release found)"
+              if neural_rel else "- (unavailable)"
           )
           zhiyi_lines = (
               "\n".join(
@@ -65,16 +67,16 @@ jobs:
               if zhiyi_rels else "- (unavailable)"
           )
 
-          weasel_inst = next((a for a in weasel_rel.get("assets", []) if a["name"].endswith("installer.exe")), None)
-          gram_asset = next((a for a in wx_rel.get("assets", []) if a["name"] == "wanxiang-lts-zh-hans.gram"), None)
+          weasel_inst = next((a for a in (weasel_rel or {}).get("assets", []) if a["name"].endswith("installer.exe")), None)
+          gram_asset = next((a for a in (wx_rel or {}).get("assets", []) if a["name"] == "wanxiang-lts-zh-hans.gram"), None)
 
           weasel_line = (
               f"- **{weasel_rel.get('name', 'latest')}**: `{weasel_inst['name']}` (updated `{weasel_inst['updated_at'][:10]}`) — [Download]({weasel_inst['browser_download_url']})"
-              if weasel_inst else "- No installer found"
+              if weasel_rel and weasel_inst else "- (unavailable)"
           )
           gram_line = (
               f"- **`wanxiang-lts-zh-hans.gram`**: `{gram_asset['size'] / 1048576:.2f} MB`, updated `{gram_asset['updated_at'][:10]}`, digest `{gram_asset.get('digest', 'n/a')}`"
-              if gram_asset else "- No gram asset found"
+              if wx_rel and gram_asset else "- (unavailable)"
           )
 
           body = f"""## 上游多源更新追蹤摘要

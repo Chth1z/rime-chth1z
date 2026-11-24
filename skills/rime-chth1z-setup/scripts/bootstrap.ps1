@@ -35,16 +35,39 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$headers = @{ "User-Agent" = "RimeChth1zSetup/1.0" }
+[Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
+$headers = @{ "User-Agent" = "RimeChth1zSetup/1.1" }
+$ghToken = if ($env:GITHUB_TOKEN) { $env:GITHUB_TOKEN } elseif ($env:GH_TOKEN) { $env:GH_TOKEN } else { "" }
+if ($ghToken) { $headers["Authorization"] = "Bearer $ghToken" }
+
+function Invoke-NativeSafe {
+    param(
+        [Parameter(Mandatory = $true)][string]$FilePath,
+        [string[]]$ArgumentList = @()
+    )
+    $prev = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    try {
+        $output = & $FilePath @ArgumentList 2>&1
+        $code = $LASTEXITCODE
+        return [pscustomobject]@{
+            ExitCode = if ($null -eq $code) { 0 } else { [int]$code }
+            Output   = @($output | ForEach-Object { [string]$_ })
+        }
+    }
+    finally {
+        $ErrorActionPreference = $prev
+    }
+}
 
 function Get-WeaselDir {
-    $candidates = @()
     foreach ($regPath in @("HKLM:\SOFTWARE\Rime\Weasel", "HKLM:\SOFTWARE\WOW6432Node\Rime\Weasel", "HKCU:\SOFTWARE\Rime\Weasel")) {
         $root = (Get-ItemProperty -Path $regPath -Name "WeaselRoot" -ErrorAction SilentlyContinue).WeaselRoot
         if ($root -and (Test-Path (Join-Path $root "rime.dll"))) {
-            $candidates += (Get-Item $root)
+            return (Get-Item $root).FullName
         }
     }
+    $candidates = @()
     foreach ($base in @("C:\Program Files\Rime", "C:\Program Files (x86)\Rime")) {
         if (Test-Path $base) {
             $candidates += Get-ChildItem $base -Directory -Filter "weasel-*" -ErrorAction SilentlyContinue |
@@ -89,13 +112,17 @@ function Stop-WeaselServerClean([string]$WeaselDirPath) {
     if (-not (Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)) { return }
     if ($WeaselDirPath) {
         $exe = Join-Path $WeaselDirPath "WeaselServer.exe"
-        if (Test-Path $exe) { & $exe /q 2>$null }
+        if (Test-Path $exe) { [void](Invoke-NativeSafe -FilePath $exe -ArgumentList @("/q")) }
     }
     for ($i = 0; $i -lt 20; $i++) {
-        if (-not (Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)) { break }
+        if (-not (Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)) { return }
         Start-Sleep -Milliseconds 250
     }
     Get-Process -Name WeaselServer -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
+    for ($i = 0; $i -lt 15; $i++) {
+        if (-not (Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)) { break }
+        Start-Sleep -Milliseconds 200
+    }
 }
 
 function Invoke-CurlDownload([string]$Url, [string]$OutFile) {
@@ -185,10 +212,13 @@ try {
         if (Test-Path (Join-Path $targetRepo ".git")) {
             $sourceRoot = (Resolve-Path $targetRepo).Path
             $isGitClone = $true
-            $dirty = & git -C $sourceRoot status --porcelain 2>$null
-            if (-not $dirty) {
+            $dirtyRes = Invoke-NativeSafe -FilePath "git" -ArgumentList @("-C", $sourceRoot, "status", "--porcelain")
+            if ($dirtyRes.ExitCode -eq 0 -and $dirtyRes.Output.Count -eq 0) {
                 Write-Output "[3/7] Updating clean git checkout at $sourceRoot..."
-                & git -C $sourceRoot pull --ff-only origin main 2>&1 | Out-Null
+                $pullRes = Invoke-NativeSafe -FilePath "git" -ArgumentList @("-C", $sourceRoot, "pull", "--ff-only", "--quiet", "origin", "main")
+                if ($pullRes.ExitCode -ne 0) {
+                    Write-Warning "git pull skipped/failed (ExitCode=$($pullRes.ExitCode)); continuing with existing checkout."
+                }
             } else {
                 Write-Output "[3/7] Using existing dirty git checkout at $sourceRoot (skipping pull)."
             }
@@ -250,15 +280,17 @@ try {
         if (Test-Path $installNeural) {
             $nParams = @{ RimeDir = $RimeDir; Model = $NeuralModel }
             if ($ForceRedownload) { $nParams.ForceDownload = $true }
+            $global:LASTEXITCODE = 0
             & $installNeural @nParams
-            if ($LASTEXITCODE -ne 0) { throw "install-rime-neural.ps1 failed (ExitCode=$LASTEXITCODE)" }
+            if ($null -ne $LASTEXITCODE -and $LASTEXITCODE -ne 0) { throw "install-rime-neural.ps1 failed (ExitCode=$LASTEXITCODE)" }
         } else {
             $tmpN = Join-Path $stage "install-rime-neural-upstream.ps1"
             Invoke-CurlDownload "https://raw.githubusercontent.com/Chth1z/rime-neural/main/scripts/install.ps1" $tmpN
             $nParams = @{ RimeDir = $RimeDir; Model = $NeuralModel; Prebuilt = $true }
             if ($ForceRedownload) { $nParams.ForceDownload = $true }
+            $global:LASTEXITCODE = 0
             & $tmpN @nParams
-            if ($LASTEXITCODE -ne 0) { throw "rime-neural install.ps1 failed (ExitCode=$LASTEXITCODE)" }
+            if ($null -ne $LASTEXITCODE -and $LASTEXITCODE -ne 0) { throw "rime-neural install.ps1 failed (ExitCode=$LASTEXITCODE)" }
         }
     }
 
@@ -318,10 +350,12 @@ public static class Win32FontNotify {
     Write-Output "[7/7] Deploying rime-chth1z to $RimeDir..."
     $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
     $deployScript = Join-Path $sourceRoot "scripts\deploy-local.ps1"
+    $global:LASTEXITCODE = 0
     & $deployScript -Theme $Theme -RimeDir $RimeDir -SkipDeploy
-    if ($LASTEXITCODE -ne 0) { throw "deploy-local.ps1 file sync failed (ExitCode=$LASTEXITCODE)" }
+    if ($null -ne $LASTEXITCODE -and $LASTEXITCODE -ne 0) { throw "deploy-local.ps1 file sync failed (ExitCode=$LASTEXITCODE)" }
 
-    # If user chose Full Pinyin as primary layout (-PrimaryLayout full), put rime_frost first in default.custom.yaml
+    # Primary layout override (reset previously generated default.custom.yaml when switching back to zrm)
+    $defaultCustomPath = Join-Path $RimeDir "default.custom.yaml"
     if ($PrimaryLayout -eq "full") {
         $fullDefaultPatch = @(
             "# Generated by rime-chth1z-setup (-PrimaryLayout full): Full Pinyin first, Natural Double Pinyin second",
@@ -330,10 +364,16 @@ public static class Win32FontNotify {
             "    - schema: rime_frost",
             "    - schema: rime_frost_double_pinyin"
         ) -join "`n"
-        [System.IO.File]::WriteAllText((Join-Path $RimeDir "default.custom.yaml"), $fullDefaultPatch + "`n", $utf8NoBom)
+        [System.IO.File]::WriteAllText($defaultCustomPath, $fullDefaultPatch + "`n", $utf8NoBom)
+    } elseif (Test-Path $defaultCustomPath) {
+        $prevDef = [System.IO.File]::ReadAllText($defaultCustomPath, [System.Text.Encoding]::UTF8)
+        if ($prevDef.StartsWith("# Generated by rime-chth1z-setup")) {
+            [System.IO.File]::WriteAllText($defaultCustomPath, "# Generated by rime-chth1z-setup (-PrimaryLayout zrm)`npatch: {}`n", $utf8NoBom)
+        }
     }
 
     # Merge schema-level optional patches (-NeuralModel none and/or -SkipGram) into *.custom.yaml
+    # Also reset stale bootstrap-generated *.custom.yaml when re-enabling neural/.gram defaults.
     $schemaPatchLines = [System.Collections.Generic.List[string]]::new()
     $schemaPatchLines.Add("# Generated by rime-chth1z-setup")
     $schemaPatchLines.Add("patch:")
@@ -351,10 +391,17 @@ public static class Win32FontNotify {
         $hasSchemaPatch = $true
         $schemaPatchLines.Add("  grammar: {}")
     }
-    if ($hasSchemaPatch) {
-        $patchText = ($schemaPatchLines -join "`n") + "`n"
-        [System.IO.File]::WriteAllText((Join-Path $RimeDir "rime_frost.custom.yaml"), $patchText, $utf8NoBom)
-        [System.IO.File]::WriteAllText((Join-Path $RimeDir "rime_frost_double_pinyin.custom.yaml"), $patchText, $utf8NoBom)
+    foreach ($scName in @("rime_frost.custom.yaml", "rime_frost_double_pinyin.custom.yaml")) {
+        $scPath = Join-Path $RimeDir $scName
+        if ($hasSchemaPatch) {
+            $patchText = ($schemaPatchLines -join "`n") + "`n"
+            [System.IO.File]::WriteAllText($scPath, $patchText, $utf8NoBom)
+        } elseif (Test-Path $scPath) {
+            $prevSc = [System.IO.File]::ReadAllText($scPath, [System.Text.Encoding]::UTF8)
+            if ($prevSc.StartsWith("# Generated by rime-chth1z-setup")) {
+                [System.IO.File]::WriteAllText($scPath, "# Generated by rime-chth1z-setup (defaults active)`npatch: {}`n", $utf8NoBom)
+            }
+        }
     }
 
     # If user requested fallback font (without Noto Sans CJK TC)
@@ -377,14 +424,14 @@ public static class Win32FontNotify {
 
     $weaselLogDir = Join-Path $env:TEMP "rime.weasel"
     if (Test-Path $weaselLogDir) {
-        $infoLog = Get-ChildItem $weaselLogDir -Filter "rime.weasel*.INFO*" -File -ErrorAction SilentlyContinue |
+        $recentInfos = @(Get-ChildItem $weaselLogDir -Filter "rime.weasel*.INFO*" -File -ErrorAction SilentlyContinue |
             Where-Object { $_.LastWriteTime -ge $deployStart.AddSeconds(-2) } |
-            Sort-Object LastWriteTime -Descending | Select-Object -First 1
-        if ($infoLog) {
+            Sort-Object LastWriteTime -Descending | Select-Object -First 4)
+        foreach ($infoLog in $recentInfos) {
             $infoLines = Get-Content $infoLog.FullName -Encoding UTF8 -ErrorAction SilentlyContinue
             $summaryLine = $infoLines | Where-Object { $_ -match 'finished updating schemas:' } | Select-Object -Last 1
             if ($summaryLine) {
-                Write-Output "Deploy log: $summaryLine"
+                Write-Output "Deploy log ($($infoLog.Name)): $summaryLine"
                 if ($summaryLine -notmatch '0 failure') {
                     throw "WeaselDeployer reported schema failures: $summaryLine"
                 }
@@ -425,6 +472,7 @@ public static class Win32FontNotify {
             $argParts = @("-NoProfile", "-ExecutionPolicy", "Bypass", "-WindowStyle", "Hidden", "-File", "`"$updaterPath`"", "-RimeDir", "`"$RimeDir`"")
             if ($isGitClone) { $argParts += @("-RepoDir", "`"$sourceRoot`"") }
             if ($Theme -eq "keep" -or $UseFallbackFont) { $argParts += @("-Theme", "keep") }
+            if ($SkipGram) { $argParts += @("-SkipGram") }
             $action   = New-ScheduledTaskAction -Execute "powershell.exe" -Argument ($argParts -join " ")
             $trigger  = New-ScheduledTaskTrigger -Weekly -DaysOfWeek Sunday -At "03:30"
             $settings = New-ScheduledTaskSettingsSet -StartWhenAvailable -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -ExecutionTimeLimit (New-TimeSpan -Minutes 20)
@@ -435,12 +483,13 @@ public static class Win32FontNotify {
 
     if ($RunAccuracyTest -and (Test-Path (Join-Path $sourceRoot "bench\accuracy-test.ps1"))) {
         Write-Output "Running regression suite (bench\accuracy-test.ps1)..."
+        $global:LASTEXITCODE = 0
         if ($NeuralModel -ne "none") {
-            & (Join-Path $sourceRoot "bench\accuracy-test.ps1") -WaitNeural
+            & (Join-Path $sourceRoot "bench\accuracy-test.ps1") -RimeDir $RimeDir -WaitNeural
         } else {
-            & (Join-Path $sourceRoot "bench\accuracy-test.ps1")
+            & (Join-Path $sourceRoot "bench\accuracy-test.ps1") -RimeDir $RimeDir
         }
-        if ($LASTEXITCODE -ne 0) { throw "bench\accuracy-test.ps1 failed (ExitCode=$LASTEXITCODE)" }
+        if ($null -ne $LASTEXITCODE -and $LASTEXITCODE -ne 0) { throw "bench\accuracy-test.ps1 failed (ExitCode=$LASTEXITCODE)" }
     }
 
     Write-Output "=== BOOTSTRAP COMPLETE ==="
@@ -450,3 +499,4 @@ public static class Win32FontNotify {
 finally {
     if (Test-Path $stage) { Remove-Item $stage -Recurse -Force -ErrorAction SilentlyContinue }
 }
+exit 0

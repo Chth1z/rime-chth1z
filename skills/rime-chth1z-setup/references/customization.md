@@ -41,7 +41,7 @@ Add under `patch:` in `<rime_user_dir>\rime_frost_double_pinyin.custom.yaml` and
 ```yaml
 patch:
   rime_neural/enable_uia_context: false   # disable cross-app cursor context reading
-  rime_neural/log_feedback: false         # disable local redacted feedback.jsonl
+  rime_neural/log_feedback: false         # disable local numeric feedback.jsonl
   # rime_neural/threads: 4                # cap CPU threads (0 = auto 4..8)
 ```
 
@@ -61,11 +61,12 @@ patch:
 
 ## 6. Enable Emoji or Chinese-English Translation by Default
 
-`emoji` and `chinese_english` are wired in both schemas and can be toggled in the `F4` menu (persisted in `user.yaml`). To enable `emoji` by default via patch:
+`chinese_english` appears in the `F4` menu (`翻譯關 / 翻譯開`, persisted in `user.yaml`). `emoji` is wired in both schemas without an `F4` menu entry by default; to enable `emoji` by default (or expose it in `F4`) via patch:
 
 ```yaml
 patch:
   "switches/@5/reset": 1
+  # "switches/@5/states": [ 表情關, 表情開 ]
 ```
 
 ## 7. Reuse Cleaned Dictionaries Only (Inside Another Rime Config)

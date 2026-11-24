@@ -693,6 +693,18 @@
     { "name": "fp: audit3 calculator portable sinh(1)", "schema": "rime_frost", "keys": "/vssinh(1)", "first_text_regex": "^1\\.175201" },
     { "name": "fp: audit3 calculator portable cosh(1)", "schema": "rime_frost", "keys": "/vscosh(1)", "first_text_regex": "^1\\.543080" },
     { "name": "fp: audit3 calculator portable tanh(100) clamped to 1 (no NaN)", "schema": "rime_frost", "keys": "/vstanh(100)", "first_text_regex": "^1(\\.0)?$" },
-    { "name": "fp: audit3 calculator portable ldexp(2,3) == 16", "schema": "rime_frost", "keys": "/vsldexp(2,3)", "first_text_regex": "^16(\\.0)?$" }
+    { "name": "fp: audit3 calculator portable ldexp(2,3) == 16", "schema": "rime_frost", "keys": "/vsldexp(2,3)", "first_text_regex": "^16(\\.0)?$" },
+    { "name": "fp: audit4 exact FP yongan -> 永安 (not hijacked by 勇敢)", "schema": "rime_frost", "keys": "yongan", "first_text": "永安", "no_text_regex": "勇敢" },
+    { "name": "fp: audit4 exact FP hongan -> 紅岸 (not hijacked by 烘乾)", "schema": "rime_frost", "keys": "hongan", "first_text": "紅岸", "no_text_regex": "烘乾|烘干" },
+    { "name": "fp: audit4 exact FP zhongao -> 中澳 (not hijacked by 忠告)", "schema": "rime_frost", "keys": "zhongao", "first_text": "中澳", "no_text_regex": "忠告" },
+    { "name": "fp: audit4 exact FP dongan -> 東岸 (not hijacked by 動感)", "schema": "rime_frost", "keys": "dongan", "first_text": "東岸", "no_text_regex": "動感|动感" },
+    { "name": "fp: audit4 exact FP zihan -> 自汗/子涵 (not hijacked by 治安)", "schema": "rime_frost", "keys": "zihan", "first_text_regex": "^(自汗|子涵)$", "no_text_regex": "治安|只按|至暗" },
+    { "name": "fp: audit4 exact FP suhe -> 蘇合 (not hijacked by 數額)", "schema": "rime_frost", "keys": "suhe", "first_text": "蘇合", "no_text_regex": "數額|数额" },
+    { "name": "fp: audit4 FP fuzz typo tolerance hoakan -> 好看", "schema": "rime_frost", "keys": "hoakan", "first_text": "好看" },
+    { "name": "fp: audit4 FP fuzz ao fix hzao -> 找", "schema": "rime_frost", "keys": "hzao", "first_text": "找" },
+    { "name": "fp: audit4 cross-dict fix 還似舊時游上苑 (hai)", "schema": "rime_frost", "keys": "haisijiushiyoushangyuan", "first_text": "還似舊時游上苑" },
+    { "name": "fp: audit4 cross-dict chess fix 將軍抽車 (ju)", "schema": "rime_frost", "keys": "jiangjunchouju", "first_text": "將軍抽車" },
+    { "name": "fp: audit4 calculator nil-safe avg(fact(200),10)", "schema": "rime_frost", "keys": "/vsavg(fact(200),10)", "first_comment": "解析失败" },
+    { "name": "fp: audit4 calculator sandbox blocks loop payload", "schema": "rime_frost", "keys": "/vs(function()while(1)do;end;end)()", "first_comment": "解析失败" }
   ]
 }

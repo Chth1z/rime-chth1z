@@ -11,26 +11,54 @@ param(
     [switch]$Force,
     [switch]$ForceTheme,
     [switch]$InitOnly,
+    [switch]$SkipGram,
     [string]$RepoDir = "",
     [string]$RimeDir = "",
     [string]$Theme   = "apple_graphite_dark"
 )
 
 $ErrorActionPreference = "Stop"
+try {
+    [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
+} catch {}
+
 if (-not $RimeDir) {
     $regDir = (Get-ItemProperty -Path "HKCU:\SOFTWARE\Rime\Weasel" -Name "RimeUserDir" -ErrorAction SilentlyContinue).RimeUserDir
     $RimeDir = if ($regDir -and $regDir.Trim()) { $regDir.Trim() } else { Join-Path $env:APPDATA "Rime" }
 }
-if (-not $RepoDir -and (Test-Path "D:\Github\rime-chth1z\.git")) {
-    $RepoDir = "D:\Github\rime-chth1z"
+if (-not $RepoDir -and $PSScriptRoot) {
+    $candRepo = Split-Path $PSScriptRoot -Parent
+    if ($candRepo -and (Test-Path (Join-Path $candRepo ".git")) -and (Test-Path (Join-Path $candRepo "rime_frost_double_pinyin.schema.yaml"))) {
+        $RepoDir = $candRepo
+    }
 }
 $rimeDir   = $RimeDir
 $workDir   = Join-Path $rimeDir "auto_update"
 $stateFile = Join-Path $workDir "state.json"
 $logFile   = Join-Path $workDir "update.log"
-$headers   = @{ "User-Agent" = "RimeChth1zWeeklyUpdater/1.2" }
+$headers   = @{ "User-Agent" = "RimeChth1zWeeklyUpdater/1.3" }
+$ghToken   = if ($env:GITHUB_TOKEN) { $env:GITHUB_TOKEN } elseif ($env:GH_TOKEN) { $env:GH_TOKEN } else { "" }
+if ($ghToken) { $headers["Authorization"] = "Bearer $ghToken" }
 
 New-Item -ItemType Directory -Force -Path $workDir | Out-Null
+
+function Write-Utf8NoBom([string]$Path, [string]$Content) {
+    [System.IO.File]::WriteAllText($Path, $Content, [System.Text.UTF8Encoding]::new($false))
+}
+
+function Invoke-NativeSafe {
+    param([scriptblock]$Action)
+    $prev = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    try {
+        $global:LASTEXITCODE = 0
+        $out = & $Action 2>&1
+        $code = if ($null -eq $LASTEXITCODE) { 0 } else { [int]$LASTEXITCODE }
+        return [pscustomobject]@{ ExitCode = $code; Output = @($out) }
+    } finally {
+        $ErrorActionPreference = $prev
+    }
+}
 
 function Write-Log([string]$Msg) {
     $ts = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
@@ -49,13 +77,20 @@ function Trim-Log {
 }
 
 function Get-WeaselDir {
-    $candidates = @()
+    $proc = Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue | Select-Object -First 1
+    if ($proc) {
+        try {
+            $procDir = Split-Path $proc.Path -Parent
+            if ($procDir -and (Test-Path (Join-Path $procDir "WeaselDeployer.exe"))) { return $procDir }
+        } catch {}
+    }
     foreach ($regPath in @("HKLM:\SOFTWARE\Rime\Weasel", "HKLM:\SOFTWARE\WOW6432Node\Rime\Weasel", "HKCU:\SOFTWARE\Rime\Weasel")) {
         $root = (Get-ItemProperty -Path $regPath -Name "WeaselRoot" -ErrorAction SilentlyContinue).WeaselRoot
         if ($root -and (Test-Path (Join-Path $root "WeaselDeployer.exe"))) {
-            $candidates += (Get-Item $root)
+            return $root
         }
     }
+    $candidates = @()
     foreach ($base in @("C:\Program Files\Rime", "C:\Program Files (x86)\Rime")) {
         if (Test-Path $base) {
             $candidates += Get-ChildItem $base -Directory -Filter "weasel-*" -ErrorAction SilentlyContinue |
@@ -67,10 +102,35 @@ function Get-WeaselDir {
     return $null
 }
 
+function Stop-WeaselCleanly([string]$ServerExe) {
+    if (-not (Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue)) { return }
+    if ($ServerExe -and (Test-Path $ServerExe)) {
+        [void](Invoke-NativeSafe { & $ServerExe /q })
+    }
+    for ($i = 0; $i -lt 20; $i++) {
+        if (-not (Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue)) { break }
+        Start-Sleep -Milliseconds 300
+    }
+    Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
+    for ($i = 0; $i -lt 10; $i++) {
+        if (-not (Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue)) { break }
+        Start-Sleep -Milliseconds 200
+    }
+}
+
+function Start-WeaselDetached([string]$ServerExe) {
+    if (-not $ServerExe -or -not (Test-Path $ServerExe)) { return }
+    try {
+        Invoke-CimMethod -ClassName Win32_Process -MethodName Create -Arguments @{ CommandLine = "`"$ServerExe`"" } | Out-Null
+    } catch {
+        Start-Process -FilePath $ServerExe
+    }
+}
+
 function Invoke-CurlDownload([string]$Url, [string]$OutFile) {
-    & curl.exe -fSL --retry 3 --connect-timeout 20 -o $OutFile $Url
-    if ($LASTEXITCODE -ne 0) {
-        throw "curl download failed (ExitCode=$LASTEXITCODE): $Url"
+    $res = Invoke-NativeSafe { & curl.exe -fSL --retry 3 --connect-timeout 20 -o $OutFile $Url }
+    if ($res.ExitCode -ne 0) {
+        throw "curl download failed (ExitCode=$($res.ExitCode)): $Url"
     }
     if (-not (Test-Path $OutFile) -or (Get-Item $OutFile).Length -eq 0) {
         throw "Downloaded file missing or empty: $OutFile"
@@ -107,11 +167,27 @@ function Sync-RepoToRime([string]$SourceRoot, [string]$TargetRimeDir, [string]$T
         $src = Join-Path $SourceRoot $ry
         if (Test-Path $src) { Copy-Item $src (Join-Path $TargetRimeDir $ry) -Force }
     }
-    # Always sync rime.lua (runtime GC tuning); preserve existing user *.custom.yaml overrides
+    # Preserve existing user *.custom.yaml and customized non-GC rime.lua overrides
     Get-ChildItem (Join-Path $SourceRoot "profiles") -File -ErrorAction SilentlyContinue | ForEach-Object {
         $dst = Join-Path $TargetRimeDir $_.Name
         $isCustomYaml = $_.Name.EndsWith(".custom.yaml")
-        if (-not $isCustomYaml -or (-not (Test-Path $dst))) {
+        if ($isCustomYaml) {
+            if (-not (Test-Path $dst)) {
+                Copy-Item $_.FullName $dst -Force
+            }
+        } elseif ($_.Name -eq "rime.lua") {
+            $canOverwrite = -not (Test-Path $dst)
+            if (-not $canOverwrite) {
+                $nonGcLines = @(Get-Content $dst -Encoding UTF8 -ErrorAction SilentlyContinue |
+                    Where-Object { $_ -notmatch '^\s*(--.*)?$' -and $_ -notmatch '^\s*collectgarbage\(' })
+                $canOverwrite = ($nonGcLines.Count -eq 0)
+            }
+            if ($canOverwrite) {
+                Copy-Item $_.FullName $dst -Force
+            } else {
+                Write-Log "Preserving customized rime.lua."
+            }
+        } else {
             Copy-Item $_.FullName $dst -Force
         }
     }
@@ -149,6 +225,7 @@ if (-not $createdNew) {
     exit 0
 }
 
+$wasRunning = $false
 try {
     Write-Log "=== Weekly update check (rime-chth1z / rime-neural / Wanxiang LTS / Weasel Nightly) ==="
 
@@ -177,11 +254,13 @@ try {
 
     $neuralRel      = $null
     $neuralAsset    = $null
+    $neuralSumAsset = $null
     $remoteNeuralTag = ""
     try {
         $neuralRel = Invoke-RestMethod "https://api.github.com/repos/Chth1z/rime-neural/releases/latest" -Headers $headers -TimeoutSec 20
         $remoteNeuralTag = [string]$neuralRel.tag_name
         $neuralAsset = $neuralRel.assets | Where-Object { $_.name -match 'win-x64\.zip$' } | Select-Object -First 1
+        $neuralSumAsset = $neuralRel.assets | Where-Object { $_.name -eq 'SHA256SUMS.txt' } | Select-Object -First 1
     } catch {
         Write-Log "[WARN] Could not query Chth1z/rime-neural latest release: $_"
     }
@@ -221,7 +300,7 @@ try {
         $state.gram_meta      = $remoteGramMeta
         $state.weasel_nightly = $remoteWeaselName
         $state.last_check     = (Get-Date -Format "o")
-        $state | ConvertTo-Json | Set-Content -Path $stateFile -Encoding UTF8
+        Write-Utf8NoBom $stateFile ($state | ConvertTo-Json)
         Write-Log "Initialized state baseline (state.json)."
         Trim-Log
         exit 0
@@ -231,12 +310,16 @@ try {
     $needRepo   = $Force -or ($remoteRepoSha -ne $state.repo_sha)
     $needNeural = $neuralInstalled -and [bool]$neuralAsset -and ($Force -or ($remoteNeuralTag -ne $state.neural_tag))
     $needGram   = $false
-    if ($Force) {
-        $needGram = [bool]$gramAsset
-    } elseif ($remoteGramSha) {
-        $needGram = ($remoteGramSha -ne $localGramSha)
-    } elseif ($remoteGramMeta) {
-        $needGram = ($remoteGramMeta -ne $state.gram_meta)
+    if (-not $SkipGram) {
+        if ($Force) {
+            $needGram = [bool]$gramAsset
+        } elseif (Test-Path $localGramPath) {
+            if ($remoteGramSha) {
+                $needGram = ($remoteGramSha -ne $localGramSha)
+            } elseif ($remoteGramMeta) {
+                $needGram = ($remoteGramMeta -ne $state.gram_meta)
+            }
+        }
     }
 
     if ($remoteWeaselName -and $state.weasel_nightly -and ($remoteWeaselName -ne $state.weasel_nightly)) {
@@ -249,12 +332,12 @@ try {
         $state.gram_sha256 = $localGramSha
         if ($remoteGramMeta) { $state.gram_meta = $remoteGramMeta }
         if (-not $state.weasel_nightly) { $state.weasel_nightly = $remoteWeaselName }
-        $state | ConvertTo-Json | Set-Content -Path $stateFile -Encoding UTF8
+        Write-Utf8NoBom $stateFile ($state | ConvertTo-Json)
         Trim-Log
         exit 0
     }
 
-    $stage = Join-Path $env:TEMP ("rime-chth1z-update-" + (Get-Date -Format "yyyyMMddHHmmss"))
+    $stage = Join-Path $env:TEMP ("rime-chth1z-update-" + (Get-Date -Format "yyyyMMddHHmmss") + "-" + [guid]::NewGuid().ToString("N").Substring(0, 8))
     New-Item -ItemType Directory -Force -Path $stage | Out-Null
 
     try {
@@ -263,15 +346,16 @@ try {
         if ($needRepo) {
             $usedLocalGit = $false
             if ($RepoDir -and (Test-Path (Join-Path $RepoDir ".git")) -and (Get-Command git -ErrorAction SilentlyContinue)) {
-                $branchOut = & git -C $RepoDir rev-parse --abbrev-ref HEAD 2>$null
-                $branch = if ($LASTEXITCODE -eq 0 -and $branchOut) { ([string]$branchOut).Trim() } else { "" }
-                $dirty  = & git -C $RepoDir status --porcelain 2>$null
-                if ($branch -eq "main" -and -not $dirty) {
+                $branchRes = Invoke-NativeSafe { & git -C $RepoDir rev-parse --abbrev-ref HEAD }
+                $branch = if ($branchRes.ExitCode -eq 0 -and $branchRes.Output.Count -gt 0) { ([string]$branchRes.Output[0]).Trim() } else { "" }
+                $dirtyRes = Invoke-NativeSafe { & git -C $RepoDir status --porcelain }
+                $dirty = @($dirtyRes.Output | Where-Object { [string]$_ -and ([string]$_).Trim() -ne "" })
+                if ($branch -eq "main" -and $dirty.Count -eq 0) {
                     Write-Log "Fast-forwarding clean local repo at $RepoDir..."
-                    & git -C $RepoDir pull --ff-only origin main 2>&1 | Out-Null
-                    if ($LASTEXITCODE -eq 0) {
-                        $headOut = & git -C $RepoDir rev-parse HEAD 2>$null
-                        $headSha = if ($LASTEXITCODE -eq 0 -and $headOut) { ([string]$headOut).Trim() } else { "" }
+                    $pullRes = Invoke-NativeSafe { & git -C $RepoDir pull --ff-only origin main }
+                    if ($pullRes.ExitCode -eq 0) {
+                        $headRes = Invoke-NativeSafe { & git -C $RepoDir rev-parse HEAD }
+                        $headSha = if ($headRes.ExitCode -eq 0 -and $headRes.Output.Count -gt 0) { ([string]$headRes.Output[0]).Trim() } else { "" }
                         if ($headSha -eq $remoteRepoSha) {
                             $deploySource = $RepoDir
                             $usedLocalGit = $true
@@ -297,30 +381,48 @@ try {
             }
         }
 
-        # 2b. Prepare rime-neural official release bundle (DLL + Lua + SHA-256)
+        # 2b. Prepare rime-neural official release bundle (verify against external Release SHA256SUMS.txt)
         $neuralStageDll = $null
         $neuralStageLua = $null
         if ($needNeural) {
+            if (-not $neuralSumAsset) {
+                throw "rime-neural release $remoteNeuralTag missing external SHA256SUMS.txt asset; refusing unverified binary."
+            }
             Write-Log "Downloading Chth1z/rime-neural $remoteNeuralTag ($($neuralAsset.name))..."
             $nZip = Join-Path $stage $neuralAsset.name
+            $extSum = Join-Path $stage "SHA256SUMS.txt"
             Invoke-CurlDownload $neuralAsset.browser_download_url $nZip
+            Invoke-CurlDownload $neuralSumAsset.browser_download_url $extSum
+
+            $sumLines = Get-Content $extSum -Encoding UTF8
+            $zipGot = (Get-FileHash $nZip -Algorithm SHA256).Hash.ToLowerInvariant()
+            if ($neuralAsset.digest -match '^sha256:([0-9a-fA-F]{64})$') {
+                $apiDigest = $Matches[1].ToLowerInvariant()
+                if ($zipGot -ne $apiDigest) {
+                    throw "$($neuralAsset.name) SHA-256 mismatch against GitHub digest (got=$zipGot, expected=$apiDigest)"
+                }
+            }
+            $zipPattern = '(?i)^([0-9a-f]{64})\s+\*?' + [regex]::Escape($neuralAsset.name) + '$'
+            $zipMatch = $sumLines | Where-Object { $_.Trim() -match $zipPattern } | Select-Object -First 1
+            if ($zipMatch) {
+                $zipExp = ($zipMatch.Trim() -split '\s+')[0].ToLowerInvariant()
+                if ($zipGot -ne $zipExp) {
+                    throw "$($neuralAsset.name) SHA-256 mismatch against SHA256SUMS.txt (got=$zipGot, expected=$zipExp)"
+                }
+            }
+
             $nEx = Join-Path $stage "neural"
             Expand-Archive -Path $nZip -DestinationPath $nEx -Force
             $dll = Join-Path $nEx "rime_neural.dll"
             $lua = Join-Path $nEx "rime_neural.lua"
-            $sum = Join-Path $nEx "SHA256SUMS.txt"
             if (-not (Test-Path $dll) -or -not (Test-Path $lua)) {
                 throw "rime-neural release bundle missing DLL or Lua script."
             }
-            if (-not (Test-Path $sum)) {
-                throw "rime-neural release bundle missing SHA256SUMS.txt; refusing unverified binary."
-            }
-            $sumLines = Get-Content $sum -Encoding UTF8
             foreach ($pair in @(@{ Name = "rime_neural.dll"; Path = $dll }, @{ Name = "rime_neural.lua"; Path = $lua })) {
-                $pattern = [regex]::Escape($pair.Name) + '$'
-                $matchLine = $sumLines | Where-Object { $_ -match $pattern } | Select-Object -First 1
+                $pattern = '(?i)^([0-9a-f]{64})\s+\*?' + [regex]::Escape($pair.Name) + '$'
+                $matchLine = $sumLines | Where-Object { $_.Trim() -match $pattern } | Select-Object -First 1
                 if (-not $matchLine) {
-                    throw "SHA256SUMS.txt missing checksum entry for $($pair.Name)"
+                    throw "External SHA256SUMS.txt missing checksum entry for $($pair.Name)"
                 }
                 $expHash = ($matchLine.Trim() -split '\s+')[0].ToLowerInvariant()
                 $gotHash = (Get-FileHash $pair.Path -Algorithm SHA256).Hash.ToLowerInvariant()
@@ -330,7 +432,7 @@ try {
             }
             $neuralStageDll = $dll
             $neuralStageLua = $lua
-            Write-Log "rime-neural $remoteNeuralTag verified."
+            Write-Log "rime-neural $remoteNeuralTag verified against external SHA256SUMS.txt."
         }
 
         # 2c. Prepare Wanxiang LTS .gram
@@ -355,12 +457,7 @@ try {
 
         $wasRunning = [bool](Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue)
         if ($wasRunning) {
-            & $serverExe /q 2>$null
-            for ($i = 0; $i -lt 20; $i++) {
-                if (-not (Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue)) { break }
-                Start-Sleep -Milliseconds 300
-            }
-            Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
+            Stop-WeaselCleanly $serverExe
         }
 
         # 4. Apply updates
@@ -371,11 +468,7 @@ try {
 
         if ($needNeural -and $neuralStageDll -and $neuralStageLua) {
             Write-Log "Installing rime-neural $remoteNeuralTag..."
-            if (Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue) {
-                & $serverExe /q 2>$null
-                Start-Sleep -Milliseconds 300
-                Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
-            }
+            Stop-WeaselCleanly $serverExe
             Copy-Item $neuralStageDll (Join-Path $rimeDir "neural\rime_neural.dll") -Force
             Copy-Item $neuralStageLua (Join-Path $rimeDir "lua\rime_neural.lua") -Force
         }
@@ -387,12 +480,8 @@ try {
             Move-Item -Path $tmpTarget -Destination $localGramPath -Force
         }
 
-        # 5. Deploy & verify WeaselDeployer log + single WeaselServer
-        if (Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue) {
-            & $serverExe /q 2>$null
-            Start-Sleep -Milliseconds 300
-            Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
-        }
+        # 5. Deploy & verify WeaselDeployer logs + single WeaselServer
+        Stop-WeaselCleanly $serverExe
         Write-Log "Running WeaselDeployer /deploy..."
         $deployStart = Get-Date
         $pDep = Start-Process -FilePath $deployerExe -ArgumentList "/deploy" -Wait -PassThru
@@ -402,30 +491,33 @@ try {
         }
         $weaselLogDir = Join-Path $env:TEMP "rime.weasel"
         if (Test-Path $weaselLogDir) {
-            $infoLog = Get-ChildItem $weaselLogDir -Filter "rime.weasel*.INFO*" -File -ErrorAction SilentlyContinue |
+            $recentLogs = @(Get-ChildItem $weaselLogDir -Filter "rime.weasel*.INFO*" -File -ErrorAction SilentlyContinue |
                 Where-Object { $_.LastWriteTime -ge $deployStart.AddSeconds(-2) } |
-                Sort-Object LastWriteTime -Descending | Select-Object -First 1
-            if ($infoLog) {
-                $infoLines = Get-Content $infoLog.FullName -Encoding UTF8 -ErrorAction SilentlyContinue
-                $summaryLine = $infoLines | Where-Object { $_ -match 'finished updating schemas:' } | Select-Object -Last 1
-                if ($summaryLine -and ($summaryLine -notmatch '0 failure')) {
-                    throw "WeaselDeployer reported schema failures: $summaryLine"
+                Sort-Object LastWriteTime -Descending | Select-Object -First 4)
+            $summaryLine = $null
+            $badLog = $null
+            foreach ($log in $recentLogs) {
+                $lines = Get-Content $log.FullName -Encoding UTF8 -ErrorAction SilentlyContinue
+                if (-not $summaryLine) {
+                    $s = $lines | Where-Object { $_ -match 'finished updating schemas:' } | Select-Object -Last 1
+                    if ($s) { $summaryLine = $s }
                 }
-                $badLines = $infoLines | Where-Object { $_ -match '^[EF]\d{8}\s' }
-                if ($badLines) {
-                    throw "WeaselDeployer logged errors in $($infoLog.Name)"
+                if (-not $badLog -and ($lines | Where-Object { $_ -match '^[EF]\d{4,8}\s' })) {
+                    $badLog = $log.Name
                 }
+            }
+            if ($summaryLine -and ($summaryLine -notmatch '0 failure')) {
+                throw "WeaselDeployer reported schema failures: $summaryLine"
+            }
+            if ($badLog) {
+                throw "WeaselDeployer logged errors in $badLog"
             }
         }
 
         Start-Sleep -Milliseconds 400
         $procs = @(Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue)
         if ($wasRunning -and $procs.Count -eq 0) {
-            try {
-                Invoke-CimMethod -ClassName Win32_Process -MethodName Create -Arguments @{ CommandLine = "`"$serverExe`"" } | Out-Null
-            } catch {
-                Start-Process -FilePath $serverExe
-            }
+            Start-WeaselDetached $serverExe
             Write-Log "Restarted WeaselServer.exe."
         } elseif ($procs.Count -gt 1) {
             $procs | Sort-Object StartTime | Select-Object -Skip 1 | Stop-Process -Force -ErrorAction SilentlyContinue
@@ -441,7 +533,7 @@ try {
         $state.last_check     = (Get-Date -Format "o")
         $state.last_update    = (Get-Date -Format "o")
         $state.weasel_nightly = $remoteWeaselName
-        $state | ConvertTo-Json | Set-Content -Path $stateFile -Encoding UTF8
+        Write-Utf8NoBom $stateFile ($state | ConvertTo-Json)
         Write-Log "=== Update completed ==="
     }
     finally {
@@ -453,8 +545,8 @@ try {
 catch {
     Write-Log "[ERROR] Update exception: $_"
     $weaselDir = Get-WeaselDir
-    if ($weaselDir -and -not (Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue)) {
-        Start-Process -FilePath (Join-Path $weaselDir "WeaselServer.exe")
+    if ($wasRunning -and $weaselDir -and -not (Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue)) {
+        Start-WeaselDetached (Join-Path $weaselDir "WeaselServer.exe")
     }
     Trim-Log
     exit 1

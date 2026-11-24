@@ -22,13 +22,13 @@ param(
 $ErrorActionPreference = "Stop"
 
 function Get-WeaselDir {
-    $candidates = @()
     foreach ($regPath in @("HKLM:\SOFTWARE\Rime\Weasel", "HKLM:\SOFTWARE\WOW6432Node\Rime\Weasel", "HKCU:\SOFTWARE\Rime\Weasel")) {
         $root = (Get-ItemProperty -Path $regPath -Name "WeaselRoot" -ErrorAction SilentlyContinue).WeaselRoot
         if ($root -and (Test-Path (Join-Path $root "rime.dll"))) {
-            $candidates += (Get-Item $root)
+            return (Get-Item $root).FullName
         }
     }
+    $candidates = @()
     foreach ($base in @("C:\Program Files\Rime", "C:\Program Files (x86)\Rime")) {
         if (Test-Path $base) {
             $candidates += Get-ChildItem $base -Directory -Filter "weasel-*" -ErrorAction SilentlyContinue |
@@ -108,6 +108,7 @@ if (-not $SkipNeural) {
     }
     $onnxFiles = @(Get-ChildItem $neuralDir -Filter "*.onnx" -ErrorAction SilentlyContinue)
     if ($onnxFiles.Count -lt 1) { $missingN += "neural\*.onnx" }
+    elseif ($onnxFiles.Count -gt 1) { $missingN += "CONFLICT: multiple .onnx models ($($onnxFiles.Name -join ', '))" }
     if (-not (Test-Path (Join-Path $RimeDir "lua\rime_neural.lua"))) { $missingN += "lua\rime_neural.lua" }
     $nDetail = if ($missingN.Count -eq 0) {
         $mNames = ($onnxFiles | ForEach-Object { "$($_.Name) ({0:F1} MB)" -f ($_.Length / 1MB) }) -join ", "
@@ -145,29 +146,36 @@ $procs   = @(Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)
 $pidText = ($procs | ForEach-Object { $_.Id }) -join ","
 Add-Check -Name "process:WeaselServer" -Ok ($procs.Count -eq 1) -Detail "count=$($procs.Count) pids=$pidText"
 
-# 7. Recent Weasel deploy & warning/error logs
+# 7. Recent Weasel deploy & warning/error logs (scan multiple INFO logs so WeaselServer never masks WeaselDeployer)
 $logDir  = Join-Path $env:TEMP "rime.weasel"
 $logErrs = [System.Collections.Generic.List[string]]::new()
 $summary = ""
 if (Test-Path $logDir) {
     $cutoff = (Get-Date).AddMinutes(-15)
-    $latestInfo = Get-ChildItem $logDir -Filter "rime.weasel*.INFO*" -File -ErrorAction SilentlyContinue |
-        Sort-Object LastWriteTime -Descending | Select-Object -First 1
-    if ($latestInfo) {
-        $lines = Get-Content $latestInfo.FullName -Encoding UTF8 -ErrorAction SilentlyContinue
-        $sLine = $lines | Where-Object { $_ -match 'finished updating schemas:' } | Select-Object -Last 1
-        if ($sLine) {
-            $summary = $sLine.Trim()
-            if ($summary -notmatch '0 failure') { $logErrs.Add("deploy failure: $summary") }
+    $recentInfos = @(Get-ChildItem $logDir -Filter "rime.weasel*.INFO*" -File -ErrorAction SilentlyContinue |
+        Where-Object { $_.LastWriteTime -ge $cutoff } |
+        Sort-Object LastWriteTime -Descending | Select-Object -First 4)
+    if ($recentInfos.Count -eq 0) {
+        $recentInfos = @(Get-ChildItem $logDir -Filter "rime.weasel*.INFO*" -File -ErrorAction SilentlyContinue |
+            Sort-Object LastWriteTime -Descending | Select-Object -First 2)
+    }
+    foreach ($inf in $recentInfos) {
+        $lines = Get-Content $inf.FullName -Encoding UTF8 -ErrorAction SilentlyContinue
+        if (-not $summary) {
+            $sLine = $lines | Where-Object { $_ -match 'finished updating schemas:' } | Select-Object -Last 1
+            if ($sLine) {
+                $summary = "$($inf.Name): $($sLine.Trim())"
+                if ($summary -notmatch '0 failure') { $logErrs.Add("deploy failure: $summary") }
+            }
         }
-        $efLines = $lines | Where-Object { $_ -match '^[EF]\d{8}\s' } | Select-Object -First 3
-        foreach ($l in $efLines) { $logErrs.Add("$($latestInfo.Name): $($l.Trim())") }
+        $efLines = $lines | Where-Object { $_ -match '^[EF]\d{4,8}\s' } | Select-Object -First 3
+        foreach ($l in $efLines) { $logErrs.Add("$($inf.Name): $($l.Trim())") }
     }
     $warnLogs = Get-ChildItem $logDir -File -ErrorAction SilentlyContinue |
         Where-Object { $_.LastWriteTime -ge $cutoff -and ($_.Name -match 'WARNING|ERROR') } |
         Sort-Object LastWriteTime -Descending | Select-Object -First 4
     foreach ($wf in $warnLogs) {
-        $hits = Select-String -Path $wf.FullName -Pattern 'rime_neural|chth1z_pipeline|tw_dual|lua_filter.*error|loadlib failed' -ErrorAction SilentlyContinue | Select-Object -First 3
+        $hits = Select-String -Path $wf.FullName -Pattern 'rime_neural|chth1z_pipeline|tw_dual|lua_filter.*error|loadlib failed|circular dependencies' -ErrorAction SilentlyContinue | Select-Object -First 3
         foreach ($h in $hits) { $logErrs.Add("$($wf.Name):$($h.LineNumber): $($h.Line.Trim())") }
     }
 }

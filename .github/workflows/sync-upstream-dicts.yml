@@ -52,6 +52,7 @@ jobs:
         if: steps.clean.outcome == 'success'
         continue-on-error: true
         run: |
+          python3 -c "import yaml" 2>/dev/null || pip install --quiet pyyaml
           python3 scripts/dict_lint.py \
             --strict \
             --idempotent \
@@ -150,10 +151,15 @@ jobs:
             --head "$BRANCH" \
             --title "chore(dicts): sync upstream rime-frost @ ${{ steps.sync.outputs.upstream_sha }} (review required)" \
             --body-file /tmp/pr-body.md; then
-            echo "PR creation unavailable (check repo workflow PR permission); opening fallback issue."
-            gh issue create \
-              --title "[CI] 上游词库同步触发大变动熔断 (@ ${{ steps.sync.outputs.upstream_sha }})" \
-              --body-file /tmp/pr-body.md || true
+            echo "PR creation unavailable (check repo workflow PR permission); checking fallback issue."
+            EXISTING_ISSUE=$(gh issue list --state open --search "in:title ${UPSTREAM_SHA}" --json number --jq '.[0].number // empty' || true)
+            if [ -z "$EXISTING_ISSUE" ]; then
+              gh issue create \
+                --title "[CI] 上游词库同步触发大变动熔断 (@ ${{ steps.sync.outputs.upstream_sha }})" \
+                --body-file /tmp/pr-body.md || true
+            else
+              echo "Open circuit-breaker issue #${EXISTING_ISSUE} already exists for ${UPSTREAM_SHA}."
+            fi
           fi
 
       - name: Commit and push directly to main when within safe diff budget

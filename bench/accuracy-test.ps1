@@ -12,7 +12,7 @@
     Path to JSON test cases file. Defaults to bench/accuracy-cases.json.
 #>
 param(
-    [string]$RimeDir   = (Join-Path $env:APPDATA "Rime"),
+    [string]$RimeDir   = "",
     [string]$CasesPath = (Join-Path $PSScriptRoot "accuracy-cases.json"),
     [switch]$WaitNeural
 )
@@ -20,28 +20,80 @@ param(
 $ErrorActionPreference = "Stop"
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
-$weaselDir = (Get-ChildItem "C:\Program Files\Rime" -Directory -Filter "weasel-*" |
-    Sort-Object LastWriteTime -Descending | Select-Object -First 1).FullName
+if (-not $RimeDir) {
+    $regDir = (Get-ItemProperty -Path "HKCU:\SOFTWARE\Rime\Weasel" -Name "RimeUserDir" -ErrorAction SilentlyContinue).RimeUserDir
+    $RimeDir = if ($regDir -and $regDir.Trim()) { $regDir.Trim() } else { Join-Path $env:APPDATA "Rime" }
+}
+
+function Get-WeaselDir {
+    $proc = Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue | Select-Object -First 1
+    if ($proc) {
+        try {
+            $procDir = Split-Path $proc.Path -Parent
+            if ($procDir -and (Test-Path (Join-Path $procDir "rime.dll"))) { return $procDir }
+        } catch {}
+    }
+    foreach ($regPath in @("HKLM:\SOFTWARE\Rime\Weasel", "HKLM:\SOFTWARE\WOW6432Node\Rime\Weasel", "HKCU:\SOFTWARE\Rime\Weasel")) {
+        $root = (Get-ItemProperty -Path $regPath -Name "WeaselRoot" -ErrorAction SilentlyContinue).WeaselRoot
+        if ($root -and (Test-Path (Join-Path $root "rime.dll"))) { return $root }
+    }
+    $cands = @()
+    foreach ($base in @("C:\Program Files\Rime", "C:\Program Files (x86)\Rime")) {
+        if (Test-Path $base) {
+            $cands += Get-ChildItem $base -Directory -Filter "weasel-*" -ErrorAction SilentlyContinue |
+                Where-Object { Test-Path (Join-Path $_.FullName "rime.dll") }
+        }
+    }
+    $best = $cands | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+    if ($best) { return $best.FullName }
+    return $null
+}
+
+function New-SafeHardlinkOrCopy([string]$Dst, [string]$Src) {
+    $prev = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    try {
+        $global:LASTEXITCODE = 0
+        & cmd /c mklink /H "$Dst" "$Src" 2>&1 | Out-Null
+        if ($LASTEXITCODE -ne 0 -or -not (Test-Path $Dst)) {
+            Copy-Item -Path $Src -Destination $Dst -Force
+        }
+    } finally {
+        $ErrorActionPreference = $prev
+    }
+}
+
+$weaselDir = Get-WeaselDir
 if (-not $weaselDir -or -not (Test-Path (Join-Path $weaselDir "rime.dll"))) {
-    throw "Could not find Weasel rime.dll under C:\Program Files\Rime"
+    throw "Could not find Weasel rime.dll via registry or Program Files"
 }
 
 $casesJson = [System.IO.File]::ReadAllText($CasesPath, [System.Text.Encoding]::UTF8)
 $suite = $casesJson | ConvertFrom-Json
 
-$benchDir = Join-Path $env:TEMP ("rime-accuracy-" + (Get-Date -Format "yyyyMMddHHmmss"))
+$benchDir = Join-Path $env:TEMP ("rime-accuracy-" + (Get-Date -Format "yyyyMMddHHmmss") + "-" + [guid]::NewGuid().ToString("N").Substring(0, 6))
 New-Item -ItemType Directory -Force -Path "$benchDir\logs" | Out-Null
+$rimeInited = $false
+$junctionDirs = @("build", "lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts")
 
 try {
-    foreach ($d in @("build", "lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "neural")) {
+    foreach ($d in $junctionDirs) {
         $src = Join-Path $RimeDir $d
         if (Test-Path $src) { cmd /c mklink /J "$benchDir\$d" "$src" | Out-Null }
+    }
+    $neuralSrc = Join-Path $RimeDir "neural"
+    if (Test-Path $neuralSrc) {
+        $neuralDst = Join-Path $benchDir "neural"
+        New-Item -ItemType Directory -Force -Path $neuralDst | Out-Null
+        Get-ChildItem $neuralSrc -File | Where-Object { $_.Name -notmatch '^feedback\.jsonl(\.\d+)?$' } | ForEach-Object {
+            New-SafeHardlinkOrCopy (Join-Path $neuralDst $_.Name) $_.FullName
+        }
     }
     Get-ChildItem $RimeDir -File | Where-Object {
         $_.Extension -in @(".yaml", ".lua", ".txt") -and $_.Name -notin @("user.yaml", "installation.yaml")
     } | ForEach-Object { Copy-Item $_.FullName $benchDir }
     Get-ChildItem $RimeDir -File -Filter "*.gram" | ForEach-Object {
-        cmd /c mklink /H "$benchDir\$($_.Name)" "$($_.FullName)" | Out-Null
+        New-SafeHardlinkOrCopy (Join-Path $benchDir $_.Name) $_.FullName
     }
 
     if (-not ("RimeAccuracyRunner" -as [type])) {
@@ -134,18 +186,25 @@ public static class RimeAccuracyRunner {
         return Encoding.UTF8.GetString(buf);
     }
 
+    static IntPtr Utf8(string s) {
+        var b = Encoding.UTF8.GetBytes(s + "\0");
+        var p = Marshal.AllocHGlobal(b.Length);
+        Marshal.Copy(b, 0, p, b.Length);
+        return p;
+    }
+
     public static void Init(string weaselDir, string userDir, string logDir) {
         SetDllDirectory(weaselDir);
         var t = new RimeTraits {
             data_size = Marshal.SizeOf(typeof(RimeTraits)) - sizeof(int),
-            shared_data_dir = Marshal.StringToHGlobalAnsi(weaselDir + @"\data"),
-            user_data_dir = Marshal.StringToHGlobalAnsi(userDir),
-            distribution_name = Marshal.StringToHGlobalAnsi("AccuracyTest"),
-            distribution_code_name = Marshal.StringToHGlobalAnsi("AccuracyTest"),
-            distribution_version = Marshal.StringToHGlobalAnsi("1.0"),
-            app_name = Marshal.StringToHGlobalAnsi("rime.accuracy"),
+            shared_data_dir = Utf8(weaselDir + @"\data"),
+            user_data_dir = Utf8(userDir),
+            distribution_name = Utf8("AccuracyTest"),
+            distribution_code_name = Utf8("AccuracyTest"),
+            distribution_version = Utf8("1.0"),
+            app_name = Utf8("rime.accuracy"),
             min_log_level = 1,
-            log_dir = Marshal.StringToHGlobalAnsi(logDir)
+            log_dir = Utf8(logDir)
         };
         RimeSetup(ref t);
         RimeInitialize(ref t);
@@ -230,6 +289,7 @@ public static class RimeAccuracyRunner {
     }
 
     [RimeAccuracyRunner]::Init($weaselDir, $benchDir, "$benchDir\logs")
+    $rimeInited = $true
     if ($WaitNeural) {
         [RimeAccuracyRunner]::EnsureSchema("rime_frost_double_pinyin")
         Start-Sleep -Milliseconds 4500
@@ -358,6 +418,7 @@ public static class RimeAccuracyRunner {
     }
 
     [RimeAccuracyRunner]::Shutdown()
+    $rimeInited = $false
 
     # Check logs for Lua runtime errors
     $luaErrs = @()
@@ -375,8 +436,19 @@ public static class RimeAccuracyRunner {
     if ($failed -gt 0) { exit 1 }
 }
 finally {
-    foreach ($d in @("build", "lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "neural")) {
-        if (Test-Path "$benchDir\$d") { cmd /c rmdir "$benchDir\$d" 2>$null | Out-Null }
+    if ($rimeInited) {
+        try { [RimeAccuracyRunner]::Shutdown() } catch {}
+        $rimeInited = $false
+    }
+    foreach ($d in $junctionDirs) {
+        $jp = Join-Path $benchDir $d
+        if (Test-Path $jp) {
+            try {
+                if ((Get-Item $jp -Force).Attributes -band [System.IO.FileAttributes]::ReparsePoint) {
+                    [System.IO.Directory]::Delete($jp, $false)
+                }
+            } catch {}
+        }
     }
     Remove-Item $benchDir -Recurse -Force -ErrorAction SilentlyContinue
 }

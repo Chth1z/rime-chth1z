@@ -14,13 +14,20 @@ param()
 $ErrorActionPreference = "SilentlyContinue"
 
 function Get-WeaselDir {
-    $candidates = @()
+    $proc = Get-Process -Name "WeaselServer" -ErrorAction SilentlyContinue | Select-Object -First 1
+    if ($proc) {
+        try {
+            $procDir = Split-Path $proc.Path -Parent
+            if ($procDir -and (Test-Path (Join-Path $procDir "rime.dll"))) { return $procDir }
+        } catch {}
+    }
     foreach ($regPath in @("HKLM:\SOFTWARE\Rime\Weasel", "HKLM:\SOFTWARE\WOW6432Node\Rime\Weasel", "HKCU:\SOFTWARE\Rime\Weasel")) {
         $root = (Get-ItemProperty -Path $regPath -Name "WeaselRoot" -ErrorAction SilentlyContinue).WeaselRoot
         if ($root -and (Test-Path (Join-Path $root "rime.dll"))) {
-            $candidates += (Get-Item $root)
+            return $root
         }
     }
+    $candidates = @()
     foreach ($base in @("C:\Program Files\Rime", "C:\Program Files (x86)\Rime")) {
         if (Test-Path $base) {
             $candidates += Get-ChildItem $base -Directory -Filter "weasel-*" |
@@ -100,9 +107,9 @@ foreach ($cfgFile in @("default.custom.yaml", "default.yaml")) {
         $lines = Get-Content $p -Encoding UTF8
         $inList = $false
         foreach ($line in $lines) {
-            if ($line -match '^\s*schema_list\s*:') { $inList = $true; continue }
+            if ($line -match '^\s*schema_list(?:/\+)?\s*:') { $inList = $true; continue }
             if ($inList) {
-                if ($line -match '^\s*-\s*schema\s*:\s*([A-Za-z0-9_\-]+)') {
+                if ($line -match '^\s*-\s*\{?\s*schema\s*:\s*["'']?([A-Za-z0-9_\-]+)["'']?') {
                     if ($activeSchemas -notcontains $Matches[1]) { $activeSchemas += $Matches[1] }
                 } elseif ($line -match '^\s*[A-Za-z_]' -and $line -notmatch '^\s*#') {
                     $inList = $false
@@ -149,7 +156,11 @@ $chth1zDeployed = (Test-Path (Join-Path $userDir "lua\chth1z_pipeline_filter.lua
 
 $task = Get-ScheduledTask -TaskName "RimeChth1zWeeklyUpdate" -ErrorAction SilentlyContinue
 $repoCandidates = @()
-foreach ($cand in @($PWD.Path, (Join-Path $env:USERPROFILE "rime-chth1z"), "D:\Github\rime-chth1z")) {
+$scriptRepoCand = $null
+if ($PSScriptRoot) {
+    try { $scriptRepoCand = Split-Path (Split-Path (Split-Path $PSScriptRoot -Parent) -Parent) -Parent } catch {}
+}
+foreach ($cand in @($scriptRepoCand, $PWD.Path, (Join-Path $env:USERPROFILE "rime-chth1z"))) {
     if ($cand -and (Test-Path (Join-Path $cand "rime_frost_double_pinyin.schema.yaml")) -and (Test-Path (Join-Path $cand "scripts\deploy-local.ps1"))) {
         $resolved = (Resolve-Path $cand).Path
         if ($repoCandidates -notcontains $resolved) { $repoCandidates += $resolved }

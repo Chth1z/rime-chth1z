@@ -216,13 +216,52 @@ class RimeCommit(ctypes.Structure):
     ]
 
 
+def default_rime_dir() -> str:
+    try:
+        import winreg
+        with winreg.OpenKey(winreg.HKEY_CURRENT_USER, r"SOFTWARE\Rime\Weasel") as k:
+            val, _ = winreg.QueryValueEx(k, "RimeUserDir")
+            if isinstance(val, str) and val.strip():
+                return val.strip()
+    except OSError:
+        pass
+    return os.path.join(os.environ.get("APPDATA", ""), "Rime")
+
+
 def find_weasel_dir() -> pathlib.Path:
-    base = pathlib.Path(r"C:\Program Files\Rime")
-    cands = sorted(base.glob("weasel-*"), key=lambda p: p.stat().st_mtime, reverse=True)
-    for d in cands:
-        if (d / "rime.dll").is_file():
-            return d
-    raise FileNotFoundError("Could not find Weasel rime.dll under C:\\Program Files\\Rime")
+    try:
+        import winreg
+        for hive, sub in (
+            (winreg.HKEY_LOCAL_MACHINE, r"SOFTWARE\Rime\Weasel"),
+            (winreg.HKEY_LOCAL_MACHINE, r"SOFTWARE\WOW6432Node\Rime\Weasel"),
+            (winreg.HKEY_CURRENT_USER, r"SOFTWARE\Rime\Weasel"),
+        ):
+            try:
+                with winreg.OpenKey(hive, sub) as k:
+                    root, _ = winreg.QueryValueEx(k, "WeaselRoot")
+                    if isinstance(root, str) and root.strip():
+                        p = pathlib.Path(root.strip())
+                        if (p / "rime.dll").is_file():
+                            return p
+            except OSError:
+                continue
+    except ImportError:
+        pass
+    cands: List[pathlib.Path] = []
+    for base in (pathlib.Path(r"C:\Program Files\Rime"), pathlib.Path(r"C:\Program Files (x86)\Rime")):
+        if base.is_dir():
+            cands.extend(d for d in base.glob("weasel-*") if (d / "rime.dll").is_file())
+    cands.sort(key=lambda p: p.stat().st_mtime, reverse=True)
+    if cands:
+        return cands[0]
+    raise FileNotFoundError("Could not find Weasel rime.dll via registry or Program Files")
+
+
+def _hardlink_or_copy(src: pathlib.Path, dst: pathlib.Path) -> None:
+    try:
+        os.link(src, dst)
+    except OSError:
+        shutil.copy2(src, dst)
 
 
 class RimeEngine:
@@ -255,13 +294,13 @@ class RimeEngine:
 
         self.dll = RimeEngine._dll
         self._keep = [
-            str(weasel_dir / "data").encode("mbcs"),
-            str(user_dir).encode("mbcs"),
+            str(weasel_dir / "data").encode("utf-8"),
+            str(user_dir).encode("utf-8"),
             b"Chth1zEval",
             b"Chth1zEval",
             b"1.0",
             b"rime.eval",
-            str(log_dir).encode("mbcs"),
+            str(log_dir).encode("utf-8"),
         ]
         t = RimeTraits()
         t.data_size = ctypes.sizeof(RimeTraits) - ctypes.sizeof(ctypes.c_int)
@@ -339,21 +378,28 @@ def create_isolated_env(rime_dir: pathlib.Path, schema_id: str, yaml_overrides: 
     tmp = pathlib.Path(tempfile.mkdtemp(prefix="rime-eval-"))
     (tmp / "logs").mkdir()
     (tmp / "build").mkdir()
-    for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "neural"):
+    for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts"):
         src = rime_dir / d
         if src.exists():
             subprocess.run(["cmd", "/c", "mklink", "/J", str(tmp / d), str(src)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
+    neural_src = rime_dir / "neural"
+    if neural_src.is_dir():
+        neural_dst = tmp / "neural"
+        neural_dst.mkdir()
+        for f in neural_src.iterdir():
+            if f.is_file() and not re.match(r"^feedback\.jsonl(\.\d+)?$", f.name, re.IGNORECASE):
+                _hardlink_or_copy(f, neural_dst / f.name)
     for f in (rime_dir / "build").iterdir():
         if f.is_file():
             if f.suffix == ".bin":
-                subprocess.run(["cmd", "/c", "mklink", "/H", str(tmp / "build" / f.name), str(f)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
+                _hardlink_or_copy(f, tmp / "build" / f.name)
             else:
                 shutil.copy2(f, tmp / "build" / f.name)
     for f in rime_dir.iterdir():
         if f.is_file() and f.suffix in (".yaml", ".lua", ".txt") and f.name not in ("user.yaml", "installation.yaml"):
             shutil.copy2(f, tmp / f.name)
         elif f.is_file() and f.suffix == ".gram":
-            subprocess.run(["cmd", "/c", "mklink", "/H", str(tmp / f.name), str(f)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
+            _hardlink_or_copy(f, tmp / f.name)
 
     schema_path = tmp / "build" / f"{schema_id}.schema.yaml"
     raw = schema_path.read_text(encoding="utf-8")
@@ -391,7 +437,7 @@ def create_isolated_env(rime_dir: pathlib.Path, schema_id: str, yaml_overrides: 
 
 
 def cleanup_isolated_env(tmp: pathlib.Path) -> None:
-    for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts", "neural"):
+    for d in ("lua", "opencc", "cn_dicts", "cn_dicts_cell", "en_dicts"):
         p = tmp / d
         if p.exists():
             subprocess.run(["cmd", "/c", "rmdir", str(p)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -416,6 +462,7 @@ def evaluate(
         eff_overrides.setdefault("rime_neural/sync_init", "true")
 
     tmp = create_isolated_env(rime_dir, schema_id, eff_overrides)
+    eng = None
     try:
         eng = RimeEngine(weasel_dir, tmp, tmp / "logs")
         eng.select_schema(schema_id)
@@ -442,9 +489,9 @@ def evaluate(
             total_ed += ed
             total_keys += len(keys)
             total_ms += ms
-
-        eng.close()
     finally:
+        if eng is not None:
+            eng.close()
         cleanup_isolated_env(tmp)
 
     n = len(pairs)
@@ -469,7 +516,7 @@ def evaluate(
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--rime-dir", default=os.path.join(os.environ["APPDATA"], "Rime"))
+    ap.add_argument("--rime-dir", default=default_rime_dir())
     ap.add_argument("--schema", default="rime_frost_double_pinyin")
     ap.add_argument("--corpus", required=True, help="Path to corpus .txt file")
     ap.add_argument("--limit", type=int, default=0, help="Max sentences (0 = all)")

@@ -24,31 +24,41 @@ if (-not $RimeDir) {
 }
 $rimeDir = $RimeDir
 
-$weaselCandidates = @()
+$weaselDir = $null
 foreach ($regPath in @("HKLM:\SOFTWARE\Rime\Weasel", "HKLM:\SOFTWARE\WOW6432Node\Rime\Weasel", "HKCU:\SOFTWARE\Rime\Weasel")) {
     $root = (Get-ItemProperty -Path $regPath -Name "WeaselRoot" -ErrorAction SilentlyContinue).WeaselRoot
     if ($root -and (Test-Path (Join-Path $root "WeaselDeployer.exe"))) {
-        $weaselCandidates += (Get-Item $root)
+        $weaselDir = (Get-Item $root).FullName
+        break
     }
 }
-foreach ($base in @("C:\Program Files\Rime", "C:\Program Files (x86)\Rime")) {
-    if (Test-Path $base) {
-        $weaselCandidates += Get-ChildItem $base -Directory -Filter "weasel-*" -ErrorAction SilentlyContinue |
-            Where-Object { Test-Path (Join-Path $_.FullName "WeaselDeployer.exe") }
+if (-not $weaselDir) {
+    $weaselCandidates = @()
+    foreach ($base in @("C:\Program Files\Rime", "C:\Program Files (x86)\Rime")) {
+        if (Test-Path $base) {
+            $weaselCandidates += Get-ChildItem $base -Directory -Filter "weasel-*" -ErrorAction SilentlyContinue |
+                Where-Object { Test-Path (Join-Path $_.FullName "WeaselDeployer.exe") }
+        }
     }
+    $weaselItem = $weaselCandidates | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+    $weaselDir  = if ($weaselItem) { $weaselItem.FullName } else { $null }
 }
-$weaselItem = $weaselCandidates | Sort-Object LastWriteTime -Descending | Select-Object -First 1
-$weaselDir  = if ($weaselItem) { $weaselItem.FullName } else { $null }
 if (-not $weaselDir) { throw "Weasel install directory not found." }
 
 function Stop-WeaselServerClean([string]$ExePath) {
     if (-not (Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)) { return }
-    & $ExePath /q 2>$null
+    $prevEap = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    try { & $ExePath /q 2>$null } finally { $ErrorActionPreference = $prevEap }
     for ($i = 0; $i -lt 15; $i++) {
-        if (-not (Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)) { break }
+        if (-not (Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)) { return }
         Start-Sleep -Milliseconds 250
     }
     Get-Process -Name WeaselServer -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
+    for ($i = 0; $i -lt 15; $i++) {
+        if (-not (Get-Process -Name WeaselServer -ErrorAction SilentlyContinue)) { break }
+        Start-Sleep -Milliseconds 200
+    }
 }
 
 Write-Output "Deploying from $repoRoot -> $rimeDir (Theme=$Theme)"
@@ -95,11 +105,27 @@ if (-not (Test-Path $customPhraseDst) -and (Test-Path $customPhraseSrc)) {
 }
 
 # 3. Apply curated profiles & selected Weasel theme
-# Always sync rime.lua (GC tuning); preserve existing user *.custom.yaml unless -ForceCustom is passed.
+# Preserve existing user *.custom.yaml (and custom non-GC rime.lua) unless -ForceCustom is passed.
 Get-ChildItem (Join-Path $repoRoot "profiles") -File | ForEach-Object {
     $dst = Join-Path $rimeDir $_.Name
     $isCustomYaml = $_.Name.EndsWith(".custom.yaml")
-    if (-not $isCustomYaml -or $ForceCustom -or (-not (Test-Path $dst))) {
+    if ($isCustomYaml) {
+        if ($ForceCustom -or (-not (Test-Path $dst))) {
+            Copy-Item $_.FullName $dst -Force
+        }
+    } elseif ($_.Name -eq "rime.lua") {
+        $canOverwrite = $ForceCustom -or (-not (Test-Path $dst))
+        if (-not $canOverwrite) {
+            $nonGcLines = @(Get-Content $dst -Encoding UTF8 -ErrorAction SilentlyContinue |
+                Where-Object { $_ -notmatch '^\s*(--.*)?$' -and $_ -notmatch '^\s*collectgarbage\(' })
+            $canOverwrite = ($nonGcLines.Count -eq 0)
+        }
+        if ($canOverwrite) {
+            Copy-Item $_.FullName $dst -Force
+        } else {
+            Write-Output "Preserving customized rime.lua (pass -ForceCustom to overwrite)."
+        }
+    } else {
         Copy-Item $_.FullName $dst -Force
     }
 }
@@ -152,7 +178,7 @@ foreach ($rel in $obsoleteRelPaths) {
 
 if ($SkipDeploy) {
     Write-Output "Files synced to $rimeDir (-SkipDeploy)."
-    return
+    exit 0
 }
 
 # 4. Deploy & verify WeaselDeployer log + single WeaselServer
@@ -164,19 +190,19 @@ if ($p.ExitCode -ne 0) { throw "WeaselDeployer failed with ExitCode=$($p.ExitCod
 
 $weaselLogDir = Join-Path $env:TEMP "rime.weasel"
 if (Test-Path $weaselLogDir) {
-    $infoLog = Get-ChildItem $weaselLogDir -Filter "rime.weasel*.INFO*" -File -ErrorAction SilentlyContinue |
+    $recentInfos = @(Get-ChildItem $weaselLogDir -Filter "rime.weasel*.INFO*" -File -ErrorAction SilentlyContinue |
         Where-Object { $_.LastWriteTime -ge $deployStart.AddSeconds(-2) } |
-        Sort-Object LastWriteTime -Descending | Select-Object -First 1
-    if ($infoLog) {
+        Sort-Object LastWriteTime -Descending | Select-Object -First 4)
+    foreach ($infoLog in $recentInfos) {
         $infoLines = Get-Content $infoLog.FullName -Encoding UTF8 -ErrorAction SilentlyContinue
         $summaryLine = $infoLines | Where-Object { $_ -match 'finished updating schemas:' } | Select-Object -Last 1
         if ($summaryLine) {
-            Write-Output "Deploy log: $summaryLine"
+            Write-Output "Deploy log ($($infoLog.Name)): $summaryLine"
             if ($summaryLine -notmatch '0 failure') {
                 throw "WeaselDeployer reported schema failures: $summaryLine"
             }
         }
-        $badLines = $infoLines | Where-Object { $_ -match '^[EF]\d{8}\s' }
+        $badLines = $infoLines | Where-Object { $_ -match '^[EF]\d{4,8}\s' }
         if ($badLines) {
             throw "WeaselDeployer logged errors in $($infoLog.Name): $($badLines | Select-Object -First 3 | Out-String)"
         }
@@ -202,9 +228,12 @@ Write-Output "WeaselServer running: count=$($procs.Count) PID=$($procs.Id -join 
 if ($procs.Count -ne 1) { throw "Expected exactly 1 WeaselServer instance, found $($procs.Count)" }
 
 if ($Verify) {
-    & (Join-Path $repoRoot "bench\accuracy-test.ps1") -WaitNeural
-    if ($LASTEXITCODE -ne 0) { throw "accuracy-test.ps1 failed" }
+    $global:LASTEXITCODE = 0
+    & (Join-Path $repoRoot "bench\accuracy-test.ps1") -RimeDir $rimeDir -WaitNeural
+    if ($null -ne $LASTEXITCODE -and $LASTEXITCODE -ne 0) { throw "accuracy-test.ps1 failed" }
 }
 if ($RunBench -or $Verify) {
-    & (Join-Path $repoRoot "bench\bench-rime.ps1") -WaitNeural
+    $global:LASTEXITCODE = 0
+    & (Join-Path $repoRoot "bench\bench-rime.ps1") -RimeDir $rimeDir -WaitNeural
 }
+exit 0

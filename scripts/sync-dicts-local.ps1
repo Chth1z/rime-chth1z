@@ -38,7 +38,7 @@ try {
         if ($LASTEXITCODE -ne 0) { throw "dict_lint.py failed" }
     }
 
-    $status = git status --short
+    $status = git status --short -- cn_dicts/ cn_dicts_cell/ en_dicts/ opencc/ rime_frost.dict.yaml
     if (-not $status) {
         Write-Output "Dictionaries already match cleaned upstream/master @ $sha."
         return
@@ -50,7 +50,7 @@ try {
         if (Test-Path $lintReport) {
             $report = Get-Content $lintReport -Raw -Encoding UTF8 | ConvertFrom-Json
             if ($report.diff_budget -and $report.diff_budget.needs_review) {
-                throw "Diff budget exceeded ($($report.diff_budget.review_reasons -join '; ')); inspect changes before committing manually."
+                throw "Diff budget exceeded ($($report.diff_budget.reasons -join '; ')); inspect changes before committing manually."
             }
         }
         git add cn_dicts/ cn_dicts_cell/ en_dicts/ opencc/ rime_frost.dict.yaml
