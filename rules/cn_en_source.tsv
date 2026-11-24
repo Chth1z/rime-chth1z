@@ -117,3 +117,53 @@ add	S+	S	jia		false	评级符号中文谐音(仅大写触发避免污染小写�
 add	.NET		dian	NET	true	开发框架前导句点中文谐音(保留 en_ext 中 net:2/.NET:1 权重序避免抢占英文 net，7布局同步)
 add	.env		dian	env	false	配置文件前导句点中文谐音(避免抢占英文 env，配合 en_ext dotenv 覆盖全部7布局)
 replace	AV女优	AV	nv you		true	修正微软/搜狗双拼 ü(v)->y 编码(AVnyyb/avnyyb)，7布局统一派生
+# Batch 4: curated CN-EN modern tech/hardware/medical additions
+add	R语言	R	yu yan		true	编程语言高频混输词(rime-ice同步)
+add	pH值	pH	zhi		true	化学/日常高频混输词(rime-ice同步)
+add	PN结	PN	jie		true	半导体基础术语(rime-ice同步)
+add	P型半导体	P	xing ban dao ti		true	半导体基础术语(rime-ice同步)
+add	N型半导体	N	xing ban dao ti		true	半导体基础术语(rime-ice同步)
+add	SD卡	SD	ka		true	数码存储高频混输词(rime-ice同步)
+add	CNC加工	CNC	jia gong		true	制造行业高频混输词(rime-ice同步)
+add	K金	K	jin		true	珠宝日常高频混输词(rime-ice同步)
+add	K歌之王	K	ge zhi wang		true	流行文化高频混输词(rime-ice同步)
+add	B级片	B	ji pian		true	影视高频混输词(rime-ice同步)
+add	ABO血型系统	ABO	xue xing xi tong		true	医学高频混输词(rime-ice同步)
+add	Rh阳性血	Rh	yang xing xue		true	医学高频混输词(rime-ice同步)
+add	Rh阴性血	Rh	yin xing xue		true	医学高频混输词(rime-ice同步)
+add	Rh血型系统	Rh	xue xing xi tong		true	医学高频混输词(rime-ice同步)
+add	HB铅笔	HB	qian bi		true	文具日常高频混输词(rime-ice同步)
+add	打call		da	call	false	高频网络混输词(rime-ice同步)
+add	hold住	hold	zhu		false	高频口语混输词(rime-ice同步)
+add	Type-C接口	TypeC	jie kou		true	现代硬件高频混输词
+add	Type-C线	TypeC	xian		true	现代硬件高频混输词
+add	USB-C接口	USBC	jie kou		true	现代硬件高频混输词
+add	HDMI线	HDMI	xian		true	现代硬件高频混输词
+add	HDMI接口	HDMI	jie kou		true	现代硬件高频混输词
+add	AI生图	AI	sheng tu		true	现代AI高频混输词
+add	AI办公	AI	ban gong		true	现代AI高频混输词
+add	AI剪辑	AI	jian ji		true	现代AI高频混输词
+add	AI换脸	AI	huan lian		true	现代AI高频混输词
+add	AI模型	AI	mo xing		true	现代AI高频混输词
+add	AI面试	AI	mian shi		true	现代AI高频混输词
+add	IP属地	IP	shu di		true	现代互联网高频混输词
+add	SSL证书	SSL	zheng shu		true	现代开发高频混输词
+add	DNS解析	DNS	jie xi		true	现代开发高频混输词
+add	CDN加速	CDN	jia su		true	现代开发高频混输词
+add	GPU加速	GPU	jia su		true	现代硬件/AI高频混输词
+add	NPU算力	NPU	suan li		true	现代AI硬件高频混输词
+add	CPU核心	CPU	he xin		true	现代硬件高频混输词
+add	RAM内存	RAM	nei cun		true	现代硬件高频混输词
+add	Mac电脑	Mac	dian nao		true	日常数码高频混输词
+add	iPad平板	iPad	ping ban		true	日常数码高频混输词
+add	Git分支	Git	fen zhi		true	现代开发高频混输词
+add	Git提交	Git	ti jiao		true	现代开发高频混输词
+add	Linux内核	Linux	nei he		true	现代开发高频混输词
+add	Python代码	Python	dai ma		true	现代开发高频混输词
+add	SQL语句	SQL	yu ju		true	现代开发高频混输词
+add	JSON数据	JSON	shu ju		true	现代开发高频混输词
+add	CSV文件	CSV	wen jian		true	现代办公/开发高频混输词
+add	YAML文件	YAML	wen jian		true	现代开发高频混输词
+add	MRI检查	MRI	jian cha		true	医疗高频混输词
+add	CT扫描	CT	sao miao		true	医疗高频混输词
+add	LED屏幕	LED	ping mu		true	现代硬件高频混输词

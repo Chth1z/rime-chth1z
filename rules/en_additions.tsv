@@ -217,7 +217,7 @@ Vitest	Vitest		dev
 pnpm	pnpm		dev
 Ruff	Ruff		dev
 pytest	pytest		dev
-Mypy	Mypy		dev
+mypy	mypy		dev
 Pyright	Pyright		dev
 Polars	Polars		dev
 Typst	Typst		dev
@@ -305,3 +305,188 @@ Claude 3.7	Claude3.7		ai
 Disney+	Disney+		consumer
 A+	Aplus		consumer
 S+	Splus		consumer
+# Batch 4: curated 2025-2026 tech/Apple/AI/dev/consumer additions & were:2 contraction pair
+# Contraction ordering pair (fixes we're hijacking were)
+were	were	2	consumer
+# Apple 2025-2026 Hardware & OS (verified official releases)
+iPhone 17e	iPhone17e		hardware
+iPhone 18 Pro	iPhone	8	hardware
+iPhone 18 Pro	iPhone18Pro		hardware
+iPhone 18 Pro Max	iPhone	7	hardware
+iPhone 18 Pro Max	iPhone18ProMax		hardware
+iPhone Duo	iPhone	6	hardware
+iPhone Duo	iPhoneDuo		hardware
+macOS Golden Gate	macOS	11	hardware
+macOS Golden Gate	macOSGoldenGate		hardware
+Apple Pencil Pro	ApplePencilPro		hardware
+Magic Mouse	MagicMouse		hardware
+Magic Keyboard	MagicKeyboard		hardware
+AirTag	AirTag		hardware
+Apple Intelligence	AppleIntelligence		hardware
+Apple TV 4K	AppleTV4K		hardware
+Apple Watch SE	AppleWatchSE		hardware
+Apple Watch Ultra	AppleWatchUltra		hardware
+HomePod	HomePod		hardware
+HomePod mini	HomePodmini		hardware
+EarPods	EarPods		hardware
+Studio Display XDR	StudioDisplayXDR		hardware
+Pro Display XDR	ProDisplayXDR		hardware
+Liquid Glass	LiquidGlass		hardware
+HomeView	HomeView		hardware
+Apple HomeView	AppleHomeView		hardware
+M5 Pro	M5Pro		hardware
+M5 Max	M5Max		hardware
+# AI 2025-2026 Models, Agents & Platforms
+Claude Sonnet	ClaudeSonnet		ai
+Claude Opus	ClaudeOpus		ai
+Claude Haiku	ClaudeHaiku		ai
+Claude Mythos	ClaudeMythos		ai
+Codex CLI	CodexCLI		ai
+Cherry Studio	CherryStudio		ai
+AnythingLLM	AnythingLLM		ai
+Open WebUI	OpenWebUI		ai
+LobeHub	LobeHub		ai
+LibreChat	LibreChat		ai
+WorkBuddy	WorkBuddy		ai
+CodeBuddy	CodeBuddy		ai
+Qoder	Qoder		ai
+Nano Banana	NanoBanana		ai
+Seedance	Seedance		ai
+LMArena	LMArena		ai
+FastGPT	FastGPT		ai
+GPT-5.2	GPT-5.2		ai
+GPT-5.4	GPT-5.4		ai
+GPT-5.6	GPT-5.6		ai
+Gemini 3	Gemini3		ai
+NLP	NLP		ai
+Natural Language Processing	NLP		ai
+OpenCV	OpenCV		ai
+Keras	Keras		ai
+# High-Value Dev / Infra / Security / CLI
+PyPI	PyPI		dev
+ASN	ASN		dev
+SHA-1	SHA-1		dev
+SHA-256	SHA-256		dev
+SHA-512	SHA-512		dev
+MD5	MD5		dev
+1Password	1Password		dev
+KeePassXC	KeePassXC		dev
+7-Zip	7-Zip		dev
+AutoHotkey	AutoHotkey		dev
+DBeaver	DBeaver		dev
+Ansible	Ansible		dev
+etcd	etcd		dev
+rclone	rclone		dev
+pandoc	pandoc		dev
+wget	wget		dev
+LLVM	LLVM		dev
+LLDB	LLDB		dev
+MSVC	MSVC		dev
+WinGet	WinGet		dev
+Hyper-V	Hyper-V		dev
+VirtualBox	VirtualBox		dev
+OAuth2	OAuth2		dev
+CPython	CPython		dev
+OpenJDK	OpenJDK		dev
+JRE	JRE		dev
+RHEL	RHEL		dev
+Syncthing	Syncthing		dev
+PuTTY	PuTTY		dev
+WinSCP	WinSCP		dev
+Termux	Termux		dev
+ShareX	ShareX		dev
+HandBrake	HandBrake		dev
+TablePlus	TablePlus		dev
+Proxyman	Proxyman		dev
+Excalidraw	Excalidraw		dev
+Docusaurus	Docusaurus		dev
+Puppeteer	Puppeteer		dev
+Vulkan	Vulkan		dev
+Haskell	Haskell		dev
+OCaml	OCaml		dev
+Clojure	Clojure		dev
+NestJS	NestJS		dev
+Fastify	Fastify		dev
+Hono	Hono		dev
+VitePress	VitePress		dev
+Vite+	Vite+		dev
+Oxc	Oxc		dev
+Rolldown	Rolldown		dev
+UnoCSS	UnoCSS		dev
+KaTeX	KaTeX		dev
+MathJax	MathJax		dev
+Swagger	Swagger		dev
+Neo4j	Neo4j		dev
+TiDB	TiDB		dev
+RocksDB	RocksDB		dev
+LevelDB	LevelDB		dev
+InfluxDB	InfluxDB		dev
+MinIO	MinIO		dev
+ZooKeeper	ZooKeeper		dev
+RocketMQ	RocketMQ		dev
+Memcached	Memcached		dev
+Nmap	Nmap		dev
+SearXNG	SearXNG		dev
+RSSHub	RSSHub		dev
+AppImage	AppImage		dev
+K3s	K3s		dev
+CWE	CWE		dev
+LGTM	LGTM		dev
+UML	UML		dev
+OOP	OOP		dev
+LTS	LTS		dev
+W3C	W3C		dev
+ECMAScript	ECMAScript		dev
+React Native	ReactNative		dev
+Godot	Godot		dev
+VS Code	VSCode		dev
+Clash Verge	ClashVerge		dev
+Shadowrocket	Shadowrocket		dev
+v2rayN	v2rayN		dev
+Xray-core	Xray-core		dev
+Hysteria	Hysteria		dev
+Kaspersky	Kaspersky		dev
+MacPorts	MacPorts		dev
+Manjaro	Manjaro		dev
+DevSecOps	DevSecOps		dev
+# Hardware / Silicon / Display
+LED	LED		hardware
+Arduino	Arduino		hardware
+Raspberry Pi	RaspberryPi		hardware
+UEFI	UEFI		hardware
+CMOS	CMOS		hardware
+HEVC	HEVC		hardware
+ASIC	ASIC		hardware
+EPYC	EPYC		hardware
+TPM	TPM		hardware
+JTAG	JTAG		hardware
+KIOXIA	KIOXIA		hardware
+Realtek	Realtek		hardware
+Broadcom	Broadcom		hardware
+Infineon	Infineon		hardware
+Marvell	Marvell		hardware
+Microchip	Microchip		hardware
+Renesas	Renesas		hardware
+LineageOS	LineageOS		hardware
+Chromebook	Chromebook		hardware
+Android Auto	AndroidAuto		hardware
+Android TV	AndroidTV		hardware
+# Consumer / Gaming / Culture / Science
+CS2	CS2		consumer
+GTA5	GTA5		consumer
+GTA6	GTA6		consumer
+LGBTQ	LGBTQ		consumer
+IELTS	IELTS		consumer
+TOEFL	TOEFL		consumer
+Temu	Temu		consumer
+Costco	Costco		consumer
+Pinterest	Pinterest		consumer
+Substack	Substack		consumer
+Polymarket	Polymarket		consumer
+Mercedes-Benz	Mercedes-Benz		consumer
+PM2.5	PM2.5		consumer
+SARS-CoV-2	SARS-CoV-2		consumer
+OpenStreetMap	OpenStreetMap		consumer
+ETH	ETH		consumer
+Ethereum	Ethereum		consumer
+USDC	USDC		consumer

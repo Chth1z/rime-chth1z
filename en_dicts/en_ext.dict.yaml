@@ -149,10 +149,10 @@ iPhone 16	iPhone	4
 iPhone 16 Plus	iPhone	3
 iPhone 16 Pro	iPhone	2
 iPhone 16 Pro Max	iPhone	1
-iPhone 17	iPhone	4
-iPhone 17 Pro	iPhone	2
-iPhone 17 Pro Max	iPhone	1
-iPhone Air	iPhone	1
+iPhone 17	iPhone	5
+iPhone 17 Pro	iPhone	4
+iPhone 17 Pro Max	iPhone	3
+iPhone Air	iPhone	3
 
 Mac OS X	MacOSX	999
 Mac OS X Cheetah	MacOSX	1
@@ -389,7 +389,7 @@ Google Chrome	GoogleChrome
 Google Workspace	GoogleWorkspace
 WYSIWYG	WYSIWYG
 What You See Is What You Get	WYSIWYG
-Mark Text	MarkText
+MarkText	MarkText
 Joplin	Joplin
 SteamOS	SteamOS
 TikTok	TikTok
@@ -611,7 +611,7 @@ Apple News	AppleNews
 Apple Pay	ApplePay
 iTunes Store	iTunesStore
 AMD	AMD
-AMDgpu	AMDgpu
+amdgpu	amdgpu
 Amphetamine	Amphetamine
 App Store	AppStore
 AirDrop	AirDrop
@@ -788,7 +788,7 @@ Pixelmator	Pixelmator
 Play by Play	PlaybyPlay
 PlistEdit	PlistEdit
 PopClip	PopClip
-PowerPack	PowerPack
+Powerpack	Powerpack
 Privoxy	Privoxy
 Promotee	Promotee
 Proxifier	Proxifier
@@ -865,7 +865,7 @@ Windows Server	WindowsServer
 Windows Mobile	WindowsMobile
 Windows Phone	WindowsPhone
 Workflow	Workflow
-WorkFlowy	WorkFlowy
+Workflowy	Workflowy
 WWDC	WWDC
 Apple Worldwide Developers Conference	WWDC
 Xee	Xee
@@ -1018,8 +1018,8 @@ XML	XML
 Extensible Markup Language	XML
 Extensible Markup Language	ExtensibleMarkupLanguage
 XHTML	XHTML
-eXtensible HyperText Markup Language	XHTML
-eXtensible HyperText Markup Language	eXtensibleHyperTextMarkupLanguage
+Extensible HyperText Markup Language	XHTML
+Extensible HyperText Markup Language	ExtensibleHyperTextMarkupLanguage
 Googlebot	Googlebot
 Baiduspider	Baiduspider
 Bingbot	Bingbot
@@ -1448,7 +1448,7 @@ OpenAI ChatGPT	OpenAIChatGPT
 VoIP	VoIP
 Voice over Internet Protocol	VoIP
 Greasy Fork	GreasyFork
-GalGame	GalGame
+galgame	galgame
 VoLTE	VoLTE
 VoWiFi	VoWiFi
 Voice Over LTE	VoLTE
@@ -1772,7 +1772,7 @@ DigitalOcean	DigitalOcean
 Google Authenticator	GoogleAuthenticator
 Authenticator	Authenticator
 authenticator	authenticator
-Depay	Depay
+DePay	DePay
 Codeium	Codeium
 OpenCat	OpenCat
 OpenWrt	OpenWrt
@@ -1866,7 +1866,6 @@ UUID	UUID
 Universally Unique Identifier	UUID
 Fyne	Fyne
 Claude	Claude
-Claude+	Claude+
 Anthropic	Anthropic
 Cinderella	Cinderella
 WebGPU	WebGPU
@@ -1990,8 +1989,8 @@ personalization	personalization
 K8s	K8s
 Kubernetes	K8s
 Kubernetes	Kubernetes
-Kubeadm	Kubeadm
-Minikube	Minikube
+kubeadm	kubeadm
+minikube	minikube
 A4	A4
 3D	3D
 Loki	Loki
@@ -2042,7 +2041,7 @@ DLsite	DLsite
 I'm	I'm
 you're	you're
 she's	she's
-we're	we're
+we're	were	1
 they're	they're
 aren't	aren't
 wasn't	wasn't
@@ -2155,7 +2154,6 @@ Zippo	Zippo
 QR code	QRcode
 Prometheus	Prometheus
 Grafana	Grafana
-Mirtle	Mirtle
 Hadoop	Hadoop
 HBase	HBase
 Hive	Hive
@@ -2488,7 +2486,7 @@ Vitest	Vitest
 pnpm	pnpm
 Ruff	Ruff
 pytest	pytest
-Mypy	Mypy
+mypy	mypy
 Pyright	Pyright
 Polars	Polars
 Typst	Typst
@@ -2577,3 +2575,181 @@ S+	Splus
 .env	dotenv
 V2Ray	V2Ray
 webpack	webpack
+were	were	2
+iPhone 17e	iPhone17e
+iPhone 18 Pro	iPhone	8
+iPhone 18 Pro	iPhone18Pro
+iPhone 18 Pro Max	iPhone	7
+iPhone 18 Pro Max	iPhone18ProMax
+iPhone Duo	iPhone	6
+iPhone Duo	iPhoneDuo
+macOS Golden Gate	macOS	11
+macOS Golden Gate	macOSGoldenGate
+Apple Pencil Pro	ApplePencilPro
+Magic Mouse	MagicMouse
+Magic Keyboard	MagicKeyboard
+AirTag	AirTag
+Apple Intelligence	AppleIntelligence
+Apple TV 4K	AppleTV4K
+Apple Watch SE	AppleWatchSE
+Apple Watch Ultra	AppleWatchUltra
+HomePod	HomePod
+HomePod mini	HomePodmini
+EarPods	EarPods
+Studio Display XDR	StudioDisplayXDR
+Pro Display XDR	ProDisplayXDR
+Liquid Glass	LiquidGlass
+HomeView	HomeView
+Apple HomeView	AppleHomeView
+M5 Pro	M5Pro
+M5 Max	M5Max
+Claude Sonnet	ClaudeSonnet
+Claude Opus	ClaudeOpus
+Claude Haiku	ClaudeHaiku
+Claude Mythos	ClaudeMythos
+Codex CLI	CodexCLI
+Cherry Studio	CherryStudio
+AnythingLLM	AnythingLLM
+Open WebUI	OpenWebUI
+LobeHub	LobeHub
+LibreChat	LibreChat
+WorkBuddy	WorkBuddy
+CodeBuddy	CodeBuddy
+Qoder	Qoder
+Nano Banana	NanoBanana
+Seedance	Seedance
+LMArena	LMArena
+FastGPT	FastGPT
+GPT-5.2	GPT-5.2
+GPT-5.4	GPT-5.4
+GPT-5.6	GPT-5.6
+Gemini 3	Gemini3
+NLP	NLP
+Natural Language Processing	NLP
+OpenCV	OpenCV
+Keras	Keras
+PyPI	PyPI
+ASN	ASN
+SHA-1	SHA-1
+SHA-256	SHA-256
+SHA-512	SHA-512
+MD5	MD5
+1Password	1Password
+KeePassXC	KeePassXC
+7-Zip	7-Zip
+AutoHotkey	AutoHotkey
+DBeaver	DBeaver
+Ansible	Ansible
+etcd	etcd
+rclone	rclone
+pandoc	pandoc
+wget	wget
+LLVM	LLVM
+LLDB	LLDB
+MSVC	MSVC
+WinGet	WinGet
+Hyper-V	Hyper-V
+VirtualBox	VirtualBox
+OAuth2	OAuth2
+CPython	CPython
+OpenJDK	OpenJDK
+JRE	JRE
+RHEL	RHEL
+Syncthing	Syncthing
+PuTTY	PuTTY
+WinSCP	WinSCP
+Termux	Termux
+ShareX	ShareX
+HandBrake	HandBrake
+TablePlus	TablePlus
+Proxyman	Proxyman
+Excalidraw	Excalidraw
+Docusaurus	Docusaurus
+Puppeteer	Puppeteer
+Vulkan	Vulkan
+Haskell	Haskell
+OCaml	OCaml
+Clojure	Clojure
+NestJS	NestJS
+Fastify	Fastify
+Hono	Hono
+VitePress	VitePress
+Vite+	Vite+
+Oxc	Oxc
+Rolldown	Rolldown
+UnoCSS	UnoCSS
+KaTeX	KaTeX
+MathJax	MathJax
+Swagger	Swagger
+Neo4j	Neo4j
+TiDB	TiDB
+RocksDB	RocksDB
+LevelDB	LevelDB
+InfluxDB	InfluxDB
+MinIO	MinIO
+ZooKeeper	ZooKeeper
+RocketMQ	RocketMQ
+Memcached	Memcached
+Nmap	Nmap
+SearXNG	SearXNG
+RSSHub	RSSHub
+AppImage	AppImage
+K3s	K3s
+CWE	CWE
+LGTM	LGTM
+UML	UML
+OOP	OOP
+LTS	LTS
+W3C	W3C
+ECMAScript	ECMAScript
+React Native	ReactNative
+Godot	Godot
+VS Code	VSCode
+Clash Verge	ClashVerge
+Shadowrocket	Shadowrocket
+v2rayN	v2rayN
+Xray-core	Xray-core
+Hysteria	Hysteria
+Kaspersky	Kaspersky
+MacPorts	MacPorts
+Manjaro	Manjaro
+DevSecOps	DevSecOps
+LED	LED
+Arduino	Arduino
+Raspberry Pi	RaspberryPi
+UEFI	UEFI
+CMOS	CMOS
+HEVC	HEVC
+ASIC	ASIC
+EPYC	EPYC
+TPM	TPM
+JTAG	JTAG
+KIOXIA	KIOXIA
+Realtek	Realtek
+Broadcom	Broadcom
+Infineon	Infineon
+Marvell	Marvell
+Microchip	Microchip
+Renesas	Renesas
+LineageOS	LineageOS
+Chromebook	Chromebook
+Android Auto	AndroidAuto
+Android TV	AndroidTV
+CS2	CS2
+GTA5	GTA5
+GTA6	GTA6
+LGBTQ	LGBTQ
+IELTS	IELTS
+TOEFL	TOEFL
+Temu	Temu
+Costco	Costco
+Pinterest	Pinterest
+Substack	Substack
+Polymarket	Polymarket
+Mercedes-Benz	Mercedes-Benz
+PM2.5	PM2.5
+SARS-CoV-2	SARS-CoV-2
+OpenStreetMap	OpenStreetMap
+ETH	ETH
+Ethereum	Ethereum
+USDC	USDC

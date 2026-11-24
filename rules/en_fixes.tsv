@@ -329,3 +329,75 @@ en_dicts/en.dict.yaml	bentley	bentley	replace	Bentley	Bentley		品牌/姓氏首�
 en_dicts/en.dict.yaml	arial	arial	replace	Arial	Arial		字体专名首字母大写(Arial)
 en_dicts/en_ext.dict.yaml	01.AI	01AI	replace	01.AI	01.AI		保留编码中的句点以支持 dot/dian/dm 谐音派生（derive/[.]// 仍保留 01AI）
 en_dicts/en.dict.yaml	Moslem	*	delete				过时拼写变体(补齐 en_ext 漏网项，主库已规范收录Muslim)
+# Batch 4 (en_ext & en): official branding/casing, contraction we're/were ordering, iPhone weights & 2000s noise cleanup
+en_dicts/en_ext.dict.yaml	Mark Text	MarkText	replace	MarkText	MarkText		官方项目名无空格(github.com/marktext/marktext)
+en_dicts/en_ext.dict.yaml	AMDgpu	AMDgpu	replace	amdgpu	amdgpu		Linux内核驱动官方全小写(amdgpu，非混合大小写AMDgpu)
+en_dicts/en_ext.dict.yaml	PowerPack	PowerPack	replace	Powerpack	Powerpack		Alfred官方插件名小写p(Powerpack)
+en_dicts/en_ext.dict.yaml	WorkFlowy	WorkFlowy	replace	Workflowy	Workflowy		官方现代品牌大小写(Workflowy)
+en_dicts/en_ext.dict.yaml	eXtensible HyperText Markup Language	XHTML	replace	Extensible HyperText Markup Language	XHTML		W3C规范首字母大写(Extensible，对齐XML全称)
+en_dicts/en_ext.dict.yaml	eXtensible HyperText Markup Language	eXtensibleHyperTextMarkupLanguage	replace	Extensible HyperText Markup Language	ExtensibleHyperTextMarkupLanguage		W3C规范首字母大写(Extensible，对齐XML全称)
+en_dicts/en_ext.dict.yaml	GalGame	GalGame	replace	galgame	galgame		通用游戏类型词全小写(galgame，对齐roguelike/cosplay)
+en_dicts/en_ext.dict.yaml	Depay	Depay	replace	DePay	DePay		官方品牌驼峰大小写(DePay)
+en_dicts/en_ext.dict.yaml	Kubeadm	Kubeadm	replace	kubeadm	kubeadm		Kubernetes官方文档全小写CLI工具名(对齐kubectl)
+en_dicts/en_ext.dict.yaml	Minikube	Minikube	replace	minikube	minikube		Kubernetes官方文档全小写工具名(minikube)
+en_dicts/en_ext.dict.yaml	Claude+	*	delete				2023年Poe平台已退役旧名，去符号后与Claude撞码
+en_dicts/en_ext.dict.yaml	Mirtle	*	delete				极生僻方言废词/误拼噪音(非通用英语，同hading/unhumified)
+en_dicts/en_ext.dict.yaml	we're	we're	replace	we're	were	1	避免en_ext前置缩写we're在去符号后抢占高频动词were(配对were:2)
+en_dicts/en_ext.dict.yaml	iPhone 17	iPhone	reweight			5	修正iPhone 15/16/17同权倒挂，新机型排位优先
+en_dicts/en_ext.dict.yaml	iPhone 17 Pro	iPhone	reweight			4	修正iPhone 15/16/17 Pro同权倒挂
+en_dicts/en_ext.dict.yaml	iPhone 17 Pro Max	iPhone	reweight			3	修正iPhone 15/16/17 Pro Max同权倒挂
+en_dicts/en_ext.dict.yaml	iPhone Air	iPhone	reweight			3	提升2025机型权重避免压于iPhone 15/16之后
+en_dicts/en.dict.yaml	Banning	Banning	replace	banning	banning		常用动词分词误大写(无小写banning词条)
+en_dicts/en.dict.yaml	Blogroll	Blogroll	replace	blogroll	blogroll		普通互联网名词误大写(blogroll)
+en_dicts/en.dict.yaml	E-Business	E-Business	replace	e-business	e-business		普通复合名词误大写(对齐ecommerce全小写)
+en_dicts/en.dict.yaml	eCards	eCards	replace	ecards	ecards		普通名词复数大小写不一致(单数ecard为全小写)
+en_dicts/en.dict.yaml	Ezine	Ezine	replace	ezine	ezine		普通名词误大写(ezine)
+en_dicts/en.dict.yaml	Gzip	Gzip	replace	gzip	gzip		GNU官方文档与RFC 1952全小写工具/格式名(gzip)
+en_dicts/en.dict.yaml	Surnames	Surnames	replace	surnames	surnames		普通名词复数误大写(单数surname为小写)
+en_dicts/en.dict.yaml	Visas	Visas	replace	visas	visas		普通名词复数误大写(无小写visas词条)
+en_dicts/en.dict.yaml	gameboy	*	delete				小写品牌冗余(en_ext已规范收录Game Boy)
+en_dicts/en.dict.yaml	gradle	gradle	replace	Gradle	Gradle		构建工具品牌首字母大写(Gradle，对齐Maven)
+en_dicts/en.dict.yaml	hewlett	hewlett	replace	Hewlett	Hewlett		公司/姓氏专名首字母大写(Hewlett)
+en_dicts/en.dict.yaml	macromedia	macromedia	replace	Macromedia	Macromedia		软件公司专名首字母大写(Macromedia)
+en_dicts/en.dict.yaml	myspace	myspace	replace	Myspace	Myspace		网站品牌专名首字母大写(Myspace)
+en_dicts/en.dict.yaml	packard	packard	replace	Packard	Packard		公司/姓氏专名首字母大写(Packard)
+en_dicts/en.dict.yaml	pentium	pentium	replace	Pentium	Pentium		Intel芯片商标首字母大写(Pentium)
+en_dicts/en.dict.yaml	twiki	twiki	replace	TWiki	TWiki		官方软件品牌大小写(TWiki)
+en_dicts/en.dict.yaml	warcraft	warcraft	replace	Warcraft	Warcraft		游戏品牌专名首字母大写(Warcraft)
+en_dicts/en.dict.yaml	burkina	burkina	replace	Burkina	Burkina		国家专名首字母大写(Burkina Faso)
+en_dicts/en.dict.yaml	futuna	futuna	replace	Futuna	Futuna		地区专名首字母大写(对齐已大写的Wallis)
+en_dicts/en.dict.yaml	inverness	inverness	replace	Inverness	Inverness		地名专名首字母大写(Inverness)
+en_dicts/en.dict.yaml	lanka	lanka	replace	Lanka	Lanka		国家专名首字母大写(Sri Lanka)
+en_dicts/en.dict.yaml	lauderdale	lauderdale	replace	Lauderdale	Lauderdale		地名专名首字母大写(Fort Lauderdale)
+en_dicts/en.dict.yaml	orleans	orleans	replace	Orleans	Orleans		地名专名首字母大写(New Orleans)
+en_dicts/en.dict.yaml	puerto	puerto	replace	Puerto	Puerto		地名专名首字母大写(Puerto Rico)
+en_dicts/en.dict.yaml	rhode	rhode	replace	Rhode	Rhode		州名/专名首字母大写(Rhode Island)
+en_dicts/en.dict.yaml	somerset	somerset	replace	Somerset	Somerset		英国郡名专名首字母大写(对齐其余全部英国郡名)
+en_dicts/en.dict.yaml	wigan	wigan	replace	Wigan	Wigan		英国城镇专名首字母大写(Wigan)
+en_dicts/en.dict.yaml	yellowstone	yellowstone	replace	Yellowstone	Yellowstone		地名专名首字母大写(Yellowstone)
+en_dicts/en.dict.yaml	aerosmith	aerosmith	replace	Aerosmith	Aerosmith		乐队专名首字母大写(Aerosmith)
+en_dicts/en.dict.yaml	audioslave	audioslave	replace	Audioslave	Audioslave		乐队专名首字母大写(Audioslave)
+en_dicts/en.dict.yaml	elvis	elvis	replace	Elvis	Elvis		人名专名首字母大写(Elvis)
+en_dicts/en.dict.yaml	eminem	eminem	replace	Eminem	Eminem		艺人专名首字母大写(Eminem)
+en_dicts/en.dict.yaml	metallica	metallica	replace	Metallica	Metallica		乐队专名首字母大写(Metallica)
+en_dicts/en.dict.yaml	shakira	shakira	replace	Shakira	Shakira		艺人专名首字母大写(Shakira)
+en_dicts/en.dict.yaml	switchfoot	switchfoot	replace	Switchfoot	Switchfoot		乐队专名首字母大写(Switchfoot)
+en_dicts/en.dict.yaml	good-by	*	delete				已淘汰旧式拼写变体(主库已收录现代标准goodbye)
+en_dicts/en.dict.yaml	goodby	*	delete				已淘汰旧式拼写变体(主库已收录现代标准goodbye)
+en_dicts/en.dict.yaml	incase	*	delete				高频英文拼写错误(正确为in case，对齐everytime规则)
+en_dicts/en.dict.yaml	Twink	*	delete				色情标签抓取词且首字母异常大写(同milfs/shemale/bukkake)
+en_dicts/en.dict.yaml	twinks	*	delete				色情标签抓取词(同Twink/milfs/shemale)
+en_dicts/en.dict.yaml	BerliOS	*	delete				2014年已关停开源托管站域名抓取噪音(同Bitpipe/dooyoo)
+en_dicts/en.dict.yaml	Bloglines	*	delete				已关停早期RSS聚合站域名抓取噪音(同looksmart/epinions)
+en_dicts/en.dict.yaml	cingular	*	delete				2007年已并入AT&T退役运营商旧名小写抓取噪音
+en_dicts/en.dict.yaml	Conftest	*	delete				autoconf临时测试文件conftest抓取噪音(同libdevel/sbjct)
+en_dicts/en.dict.yaml	expansys	*	delete				已停业早期电子零售商域名抓取噪音
+en_dicts/en.dict.yaml	FilePlanet	*	delete				2012年已停运早期下载站域名抓取噪音
+en_dicts/en.dict.yaml	muze	*	delete				已收购停运早期娱乐数据库抓取噪音
+en_dicts/en.dict.yaml	newsgator	*	delete				已停运早期RSS服务域名抓取噪音
+en_dicts/en.dict.yaml	NexTag	*	delete				已停运早期比价站域名抓取噪音(同dealtime/shopzilla/bizrate)
+en_dicts/en.dict.yaml	PriceGrabber	*	delete				早期比价站域名抓取噪音(同dealtime/shopzilla/bizrate)
+en_dicts/en.dict.yaml	PriceRunner	*	delete				早期比价站域名抓取噪音(同dealtime/shopzilla/bizrate)
+en_dicts/en.dict.yaml	technorati	*	delete				已停运早期博客搜索引擎域名抓取噪音
+en_dicts/en.dict.yaml	TrustPass	*	delete				早期Alibaba TrustPass标签抓取噪音
+en_dicts/en.dict.yaml	webshots	*	delete				已停运早期相册站域名抓取噪音
