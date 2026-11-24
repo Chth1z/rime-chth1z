@@ -18,7 +18,15 @@ local converter_cache = {}
 local function get_converter(cfg_name)
     local conv = converter_cache[cfg_name]
     if conv == nil then
-        conv = Opencc(cfg_name) or false
+        local ok, occ = pcall(Opencc, cfg_name)
+        if not ok then
+            if log and log.warning then
+                log.warning("tw_dual_filter: failed to initialize Opencc(" .. tostring(cfg_name) .. "): " .. tostring(occ))
+            end
+            conv = false
+        else
+            conv = occ or false
+        end
         converter_cache[cfg_name] = conv
     end
     return conv
@@ -90,6 +98,16 @@ function M.init(env)
     env.tags = tags
 end
 
+function M.tags_match(seg, env)
+    local tags = env.tags
+    for i = 1, #tags do
+        if seg:has_tag(tags[i]) then
+            return true
+        end
+    end
+    return false
+end
+
 function M.func(input, env)
     local context = env.engine.context
     local conv_twp = env.conv_twp
@@ -102,74 +120,55 @@ function M.func(input, env)
         return
     end
 
-    local comp = context.composition
-    local seg = (comp and not comp:empty()) and comp:back() or nil
-    if seg then
-        local allowed = false
-        local tags = env.tags
-        for i = 1, #tags do
-            if seg:has_tag(tags[i]) then
-                allowed = true
-                break
-            end
-        end
-        if not allowed then
-            for cand in input:iter() do
-                yield(cand)
-            end
-            return
-        end
-    end
-
     for cand in input:iter() do
         if cand.type == "simplified" then
             yield(cand)
         else
-        local src = cand.text
-        local has_hz, is_single = analyze_text(src)
-        if not has_hz then
-            yield(cand)
-        elseif is_single then
-            local words_twp = conv_twp:convert_word(src)
-            local words_tw = conv_tw and conv_tw:convert_word(src) or nil
-            if (words_twp and #words_twp > 0) or (words_tw and #words_tw > 0) then
-                local seen = {}
-                if words_twp then
-                    for i = 1, #words_twp do
-                        emit_variant(cand, src, words_twp[i], seen)
-                    end
-                end
-                if words_tw then
-                    for i = 1, #words_tw do
-                        emit_variant(cand, src, words_tw[i], seen)
-                    end
-                end
-            else
+            local src = cand.text
+            local has_hz, is_single = analyze_text(src)
+            if not has_hz then
                 yield(cand)
-            end
-        else
-            local twp = conv_twp:convert(src)
-            local tw = conv_tw and conv_tw:convert(src) or twp
-
-            if twp == tw then
-                if twp == src then
-                    yield(cand)
+            elseif is_single then
+                local words_twp = conv_twp:convert_word(src)
+                local words_tw = conv_tw and conv_tw:convert_word(src) or nil
+                if (words_twp and #words_twp > 0) or (words_tw and #words_tw > 0) then
+                    local seen = {}
+                    if words_twp then
+                        for i = 1, #words_twp do
+                            emit_variant(cand, src, words_twp[i], seen)
+                        end
+                    end
+                    if words_tw then
+                        for i = 1, #words_tw do
+                            emit_variant(cand, src, words_tw[i], seen)
+                        end
+                    end
                 else
-                    yield(cand:to_shadow_candidate(cand.type, twp, cand.comment))
+                    yield(cand)
                 end
             else
-                if twp == src then
-                    yield(cand)
+                local twp = conv_twp:convert(src)
+                local tw = conv_tw and conv_tw:convert(src) or twp
+
+                if twp == tw then
+                    if twp == src then
+                        yield(cand)
+                    else
+                        yield(cand:to_shadow_candidate(cand.type, twp, cand.comment))
+                    end
                 else
-                    yield(cand:to_shadow_candidate(cand.type, twp, cand.comment))
-                end
-                if tw == src then
-                    yield(cand)
-                else
-                    yield(cand:to_shadow_candidate(cand.type, tw, cand.comment))
+                    if twp == src then
+                        yield(cand)
+                    else
+                        yield(cand:to_shadow_candidate(cand.type, twp, cand.comment))
+                    end
+                    if tw == src then
+                        yield(cand)
+                    else
+                        yield(cand:to_shadow_candidate(cand.type, tw, cand.comment))
+                    end
                 end
             end
-        end
         end
     end
 end

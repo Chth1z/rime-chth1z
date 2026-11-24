@@ -1,9 +1,34 @@
 -- 以词定字
 -- 原脚本 https://github.com/BlindingDark/rime-lua-select-character
 -- 支持单字/词组/长句定字、光标不在句尾及长句部分选词后保留剩余编码，
--- 使用 cand._end 与 plain 匹配，修复光标在句首重复回填与特殊字符/重复词误替换问题。
+-- 通过 composition:toSegmentation() 精确提取前段已确认文本，避免重复词前缀误匹配。
 
 local select = {}
+
+local function collect_confirmed_prefix(context, cand_start)
+    if not cand_start or cand_start <= 0 or not context.composition then
+        return nil
+    end
+    local comp = context.composition
+    if type(comp.toSegmentation) ~= 'function' then
+        return nil
+    end
+    local ok, segs = pcall(comp.toSegmentation, comp)
+    if not ok or not segs or not segs.size then
+        return nil
+    end
+    local out = {}
+    for i = 0, segs.size - 1 do
+        local seg = segs:get_at(i)
+        if seg and seg._end <= cand_start then
+            local sc = seg:get_selected_candidate()
+            if sc and sc.text and #sc.text > 0 then
+                out[#out + 1] = sc.text
+            end
+        end
+    end
+    return table.concat(out)
+end
 
 function select.init(env)
     local config = env.engine.schema.config
@@ -43,18 +68,16 @@ function select.func(key, env)
             selected_char = last and selected_text:sub(last) or selected_text
         end
 
-        -- 获取当前段之前的已确认文本（若存在）
-        local commit_text = context:get_commit_text()
-        local preedit = context:get_preedit()
-        local sel_start = (preedit and preedit.sel_start and preedit.sel_start > 0) and preedit.sel_start or 0
-        local confirmed_prefix = ''
-        if sel_start > 0 then
-            local pos = commit_text:find(selected_text, sel_start + 1, true)
-            if pos then
-                confirmed_prefix = commit_text:sub(1, pos - 1)
-            else
-                -- 兼容 preedit 与 commit_text 之间可能存在的空格差异
-                pos = commit_text:find(selected_text, 1, true)
+        -- 优先通过 segmentation 精确拼接 cand.start 之前的已确认段文本
+        local confirmed_prefix = collect_confirmed_prefix(context, cand.start)
+        if confirmed_prefix == nil then
+            confirmed_prefix = ''
+            local preedit = context:get_preedit()
+            local sel_start = (preedit and preedit.sel_start and preedit.sel_start > 0) and preedit.sel_start or 0
+            if sel_start > 0 then
+                local commit_text = context:get_commit_text()
+                local pos = commit_text:find(selected_text, sel_start + 1, true)
+                    or commit_text:find(selected_text, 1, true)
                 if pos then
                     confirmed_prefix = commit_text:sub(1, pos - 1)
                 end
