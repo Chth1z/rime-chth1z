@@ -199,7 +199,7 @@ scripts/
 | 场景 | 频率 | 标准操作流（SOP） |
 | :--- | :--- | :--- |
 | **日常微调** | 按需 | 按第 3、4 节决策树定性 → 写入 `rules/*.tsv`（附 `reason` 与权威依据）→ 运行 `python scripts/clean-dicts.py` → 运行 `python scripts/dict_lint.py --strict --idempotent --check-collisions` → 补 1 条 `bench/accuracy-cases.json` 断言 → 本机部署验证。 |
-| **上游周更** | 每周日（CI） | `.github/workflows/sync-upstream-dicts.yml` 拉取 `gaboolic/rime-frost` → 运行 `clean-dicts.py` → 运行 `dict_lint.py --strict --idempotent --diff-budget` → 全通过且在熔断阈值内则自动提交推送；**若校验失败，阻断推送并开/更 Issue 告警；若活跃词条 `|Δ| > 5,000`、`corrections` 变动 `> 50` 行或 `cn_en` 变动 `> 200` 行，阻断直推 `main` 并自动提 PR 交人工复核**。 |
+| **上游周更** | 每周日（CI） | `.github/workflows/sync-upstream-dicts.yml` 拉取 `gaboolic/rime-frost` → 运行 `clean-dicts.py` → 运行 `dict_lint.py --strict --idempotent --diff-budget` → 全通过且在熔断阈值内则自动提交推送；**若校验失败，阻断推送并开/更 Issue 告警；若活跃词条 `\|Δ\| > 5,000`、`corrections` 变动 `> 50` 行或 `cn_en` 变动 `> 200` 行，阻断直推 `main` 并自动提 PR 交人工复核**。 |
 | **月度反馈复盘** | 每月一次 | 聚合分析本机 `%APPDATA%\Rime\neural\feedback.jsonl` 的高频翻页模式（仅提取脱敏词级频次，不保留原句），筛选稳定缺词或持续错排项按规范吸收进 `rules/`。 |
 | **季度专题审计** | 每季度一次 | 脚本扫描 ＋ LLM 分片审计轮巡（Q1 审音与多音字 / Q2 现代新词与中英混输 / Q3 细胞词库长尾污染 / Q4 规则退场与权重漂移）；确定性上游真 Bug 按 `docs/upstream-issues/GUIDELINE.md` 打包回馈上游。 |
 
