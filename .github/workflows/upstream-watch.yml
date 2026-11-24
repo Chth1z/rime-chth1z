@@ -10,6 +10,10 @@ permissions:
   contents: read
   issues: write
 
+concurrency:
+  group: upstream-watch
+  cancel-in-progress: false
+
 jobs:
   watch-upstreams:
     runs-on: ubuntu-latest
@@ -19,9 +23,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 - <<'PY'
-          import json, os, subprocess, urllib.request
+          import json, os, subprocess, sys, urllib.request
 
-          HEADERS = {"User-Agent": "rime-chth1z-upstream-watcher/1.1"}
+          HEADERS = {"User-Agent": "rime-chth1z-upstream-watcher/1.2"}
           if os.environ.get("GH_TOKEN"):
               HEADERS["Authorization"] = f"Bearer {os.environ['GH_TOKEN']}"
 
@@ -30,7 +34,8 @@ jobs:
               try:
                   with urllib.request.urlopen(req, timeout=20) as r:
                       return json.loads(r.read().decode("utf-8"))
-              except Exception:
+              except Exception as exc:
+                  print(f"[WARN] Failed to fetch {url}: {exc}", file=sys.stderr)
                   if optional:
                       return None
                   raise
@@ -43,25 +48,39 @@ jobs:
           weasel_rel = fetch_json("https://api.github.com/repos/rime/weasel/releases/tags/latest", optional=True)
           wx_rel = fetch_json("https://api.github.com/repos/amzxyz/rime-wanxiang-data/releases/tags/LTS", optional=True)
 
+          all_fetches = [frost_lua, frost_root, ice_lua, neural_rel, zhiyi_rels, weasel_rel, wx_rel]
+          failed_count = sum(1 for item in all_fetches if item is None)
+          if failed_count >= 4:
+              print(
+                  f"[ERROR] {failed_count}/{len(all_fetches)} upstream API fetches failed; "
+                  "aborting without overwriting the rolling tracking issue.",
+                  file=sys.stderr,
+              )
+              sys.exit(1)
+
+          def fmt_date(val):
+              return (val or "unknown")[:10]
+
           def fmt_commits(items):
               if not items:
                   return "- (unavailable)"
               lines = []
               for c in items:
-                  sha = c["sha"][:8]
-                  date = c["commit"]["committer"]["date"][:10]
-                  msg = c["commit"]["message"].splitlines()[0]
-                  url = c["html_url"]
+                  sha = (c.get("sha") or "")[:8]
+                  commit_obj = c.get("commit") or {}
+                  date = fmt_date((commit_obj.get("committer") or {}).get("date"))
+                  msg = ((commit_obj.get("message") or "").splitlines() or [""])[0]
+                  url = c.get("html_url") or ""
                   lines.append(f"- `{date}` [`{sha}`]({url}) {msg}")
               return "\n".join(lines)
 
           neural_line = (
-              f"- **`{neural_rel['tag_name']}`** (published `{neural_rel['published_at'][:10]}`) — [{neural_rel['html_url']}]({neural_rel['html_url']})"
+              f"- **`{neural_rel['tag_name']}`** (published `{fmt_date(neural_rel.get('published_at'))}`) — [{neural_rel['html_url']}]({neural_rel['html_url']})"
               if neural_rel else "- (unavailable)"
           )
           zhiyi_lines = (
               "\n".join(
-                  f"- `{r['published_at'][:10]}` [`{r['tag_name']}`]({r['html_url']}) {r.get('name', '')}"
+                  f"- `{fmt_date(r.get('published_at'))}` [`{r['tag_name']}`]({r['html_url']}) {r.get('name') or ''}"
                   for r in zhiyi_rels
               )
               if zhiyi_rels else "- (unavailable)"
@@ -71,11 +90,11 @@ jobs:
           gram_asset = next((a for a in (wx_rel or {}).get("assets", []) if a["name"] == "wanxiang-lts-zh-hans.gram"), None)
 
           weasel_line = (
-              f"- **{weasel_rel.get('name', 'latest')}**: `{weasel_inst['name']}` (updated `{weasel_inst['updated_at'][:10]}`) — [Download]({weasel_inst['browser_download_url']})"
+              f"- **{weasel_rel.get('name') or 'latest'}**: `{weasel_inst['name']}` (updated `{fmt_date(weasel_inst.get('updated_at'))}`) — [Download]({weasel_inst['browser_download_url']})"
               if weasel_rel and weasel_inst else "- (unavailable)"
           )
           gram_line = (
-              f"- **`wanxiang-lts-zh-hans.gram`**: `{gram_asset['size'] / 1048576:.2f} MB`, updated `{gram_asset['updated_at'][:10]}`, digest `{gram_asset.get('digest', 'n/a')}`"
+              f"- **`wanxiang-lts-zh-hans.gram`**: `{gram_asset['size'] / 1048576:.2f} MB`, updated `{fmt_date(gram_asset.get('updated_at'))}`, digest `{gram_asset.get('digest') or 'n/a'}`"
               if wx_rel and gram_asset else "- (unavailable)"
           )
 

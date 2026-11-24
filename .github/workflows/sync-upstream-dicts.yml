@@ -52,7 +52,7 @@ jobs:
         if: steps.clean.outcome == 'success'
         continue-on-error: true
         run: |
-          python3 -c "import yaml" 2>/dev/null || pip install --quiet pyyaml
+          python3 -c "import yaml" 2>/dev/null || (sudo apt-get update && sudo apt-get install -y python3-yaml)
           python3 scripts/dict_lint.py \
             --strict \
             --idempotent \
@@ -120,12 +120,12 @@ jobs:
           DIFF_SUMMARY: ${{ steps.lint.outputs.diff_summary }}
           REVIEW_REASONS: ${{ steps.lint.outputs.review_reasons }}
         run: |
-          BRANCH="chore/dict-sync-${{ steps.sync.outputs.upstream_sha }}"
+          BRANCH="chore/dict-sync-${UPSTREAM_SHA}"
           git checkout -B "$BRANCH"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add cn_dicts/ cn_dicts_cell/ en_dicts/ opencc/ rime_frost.dict.yaml
-          git commit -m "chore(dicts): sync upstream rime-frost @ ${{ steps.sync.outputs.upstream_sha }} (review required)"
+          git commit -m "chore(dicts): sync upstream rime-frost @ ${UPSTREAM_SHA} (review required)"
           git push --force origin "HEAD:${BRANCH}"
 
           python3 - <<'PY' > /tmp/pr-body.md
@@ -149,24 +149,27 @@ jobs:
           elif ! gh pr create \
             --base main \
             --head "$BRANCH" \
-            --title "chore(dicts): sync upstream rime-frost @ ${{ steps.sync.outputs.upstream_sha }} (review required)" \
+            --title "chore(dicts): sync upstream rime-frost @ ${UPSTREAM_SHA} (review required)" \
             --body-file /tmp/pr-body.md; then
-            echo "PR creation unavailable (check repo workflow PR permission); checking fallback issue."
+            echo "PR creation failed (check repo workflow PR permission); opening fallback issue and failing workflow."
             EXISTING_ISSUE=$(gh issue list --state open --search "in:title ${UPSTREAM_SHA}" --json number --jq '.[0].number // empty' || true)
             if [ -z "$EXISTING_ISSUE" ]; then
               gh issue create \
-                --title "[CI] 上游词库同步触发大变动熔断 (@ ${{ steps.sync.outputs.upstream_sha }})" \
+                --title "[CI] 上游词库同步触发大变动熔断 (@ ${UPSTREAM_SHA})" \
                 --body-file /tmp/pr-body.md || true
             else
               echo "Open circuit-breaker issue #${EXISTING_ISSUE} already exists for ${UPSTREAM_SHA}."
             fi
+            exit 1
           fi
 
       - name: Commit and push directly to main when within safe diff budget
         if: steps.diff.outputs.changed == 'true' && steps.lint.outputs.needs_review != 'true'
+        env:
+          UPSTREAM_SHA: ${{ steps.sync.outputs.upstream_sha }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add cn_dicts/ cn_dicts_cell/ en_dicts/ opencc/ rime_frost.dict.yaml
-          git commit -m "chore(dicts): sync upstream rime-frost @ ${{ steps.sync.outputs.upstream_sha }}"
+          git commit -m "chore(dicts): sync upstream rime-frost @ ${UPSTREAM_SHA}"
           git push origin HEAD:main

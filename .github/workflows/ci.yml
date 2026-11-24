@@ -1,0 +1,136 @@
+name: CI (Lint, Tests, Syntax & Script Integrity)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+
+      - name: Install Lua 5.4 and PyYAML
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lua5.4 python3-yaml
+
+      - name: Run strict dictionary lint, idempotency, and collision gate
+        run: python3 scripts/dict_lint.py --strict --idempotent --check-collisions
+
+      - name: Run Python unit tests
+        run: |
+          if [ -d tests ]; then
+            python3 -m unittest discover -s tests -v
+          else
+            echo "No tests/ directory present; skipping."
+          fi
+
+      - name: Compile-check Python scripts
+        run: python3 -m py_compile scripts/*.py bench/eval-accuracy.py
+
+      - name: Validate JSON and YAML configuration files
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, yaml
+
+          root = pathlib.Path(".")
+          json_files = [root / "bench/accuracy-cases.json"] + sorted((root / "opencc").glob("*.json"))
+          for jf in json_files:
+              data = json.loads(jf.read_text(encoding="utf-8"))
+              if jf.name == "accuracy-cases.json":
+                  cases = data.get("cases")
+                  if not isinstance(cases, list) or len(cases) == 0:
+                      raise SystemExit(f"Invalid cases list in {jf}")
+          print(f"JSON validated: {len(json_files)} files")
+
+          yaml_files = (
+              [p for p in sorted(root.glob("*.yaml")) if not p.name.endswith(".dict.yaml")]
+              + sorted((root / "themes").glob("*.yaml"))
+              + sorted((root / "profiles").glob("*.yaml"))
+              + sorted((root / ".github/workflows").glob("*.yml"))
+          )
+          for yf in yaml_files:
+              yaml.safe_load(yf.read_text(encoding="utf-8"))
+          print(f"YAML validated: {len(yaml_files)} files")
+          PY
+
+      - name: Syntax-check Lua 5.4 scripts
+        run: luac5.4 -p lua/*.lua profiles/rime.lua
+
+      - name: PowerShell AST parse, pure-ASCII, no-BOM, and standalone-contract check
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $files = @(
+              Get-ChildItem -Path scripts, bench -Filter "*.ps1" -File
+              Get-ChildItem -Path skills -Recurse -Filter "*.ps1" -File
+          ) | Sort-Object FullName -Unique
+
+          if ($files.Count -eq 0) { throw "No .ps1 files found to validate." }
+
+          $errors = [System.Collections.Generic.List[string]]::new()
+          foreach ($f in $files) {
+              $tokens = $null
+              $parseErrors = $null
+              [void][System.Management.Automation.Language.Parser]::ParseFile($f.FullName, [ref]$tokens, [ref]$parseErrors)
+              if ($parseErrors -and $parseErrors.Count -gt 0) {
+                  foreach ($pe in $parseErrors) {
+                      $errors.Add("PARSE $($f.FullName):$($pe.Extent.StartLineNumber): $($pe.Message)")
+                  }
+              }
+
+              $bytes = [System.IO.File]::ReadAllBytes($f.FullName)
+              if ($bytes.Length -ge 3 -and $bytes[0] -eq 0xEF -and $bytes[1] -eq 0xBB -and $bytes[2] -eq 0xBF) {
+                  $errors.Add("BOM $($f.FullName): UTF-8 BOM detected (must be UTF-8 without BOM)")
+              }
+              $nonAscii = 0
+              for ($i = 0; $i -lt $bytes.Length; $i++) {
+                  if ($bytes[$i] -gt 0x7F) { $nonAscii++ }
+              }
+              if ($nonAscii -gt 0) {
+                  $errors.Add("NON-ASCII $($f.FullName): found $nonAscii non-ASCII bytes (must be pure ASCII for PS 5.1 safety)")
+              }
+          }
+
+          # Cross-script standalone contract: standalone scripts must never dot-source _common.ps1
+          $standalonePaths = @(
+              "scripts/update-local.ps1",
+              "skills/rime-chth1z-setup/scripts/bootstrap.ps1",
+              "skills/rime-chth1z-setup/scripts/inspect-env.ps1",
+              "skills/rime-chth1z-setup/scripts/verify-setup.ps1"
+          )
+          foreach ($sp in $standalonePaths) {
+              if (-not (Test-Path -LiteralPath $sp)) {
+                  $errors.Add("MISSING standalone script: $sp")
+                  continue
+              }
+              $raw = [System.IO.File]::ReadAllText((Resolve-Path -LiteralPath $sp).Path, [System.Text.Encoding]::UTF8)
+              if ($raw -match '_common\.ps1') {
+                  $errors.Add("STANDALONE-VIOLATION ${sp}: must remain self-contained and not reference _common.ps1")
+              }
+          }
+
+          foreach ($req in @("scripts/deploy-local.ps1", "scripts/update-local.ps1", "scripts/_common.ps1")) {
+              if (-not (Test-Path -LiteralPath $req)) {
+                  $errors.Add("MISSING required script: $req")
+              }
+          }
+
+          if ($errors.Count -gt 0) {
+              $errors | ForEach-Object { Write-Error $_ }
+              exit 1
+          }
+          Write-Output "PowerShell AST + pure-ASCII + no-BOM + standalone contract OK ($($files.Count) files)."
