@@ -2944,3 +2944,5 @@ cn_dicts_cell/food.dict.yaml	西湖天竺筷	*	非食品类特产抓取噪声（
 cn_dicts_cell/food.dict.yaml	萧山花边	*	非食品类特产抓取噪声（花边工艺品）
 cn_dicts_cell/food.dict.yaml	兴业容器	*	非食品包装企业名噪声（同已删盛百威包装）
 cn_dicts_cell/food.dict.yaml	樽皇酒具	*	非食品器皿抓取噪声（酒具）
+# --- Batch 2: 8105.dict.yaml non-L1 deletion ---
+cn_dicts/8105.dict.yaml	呒	mu	现汉第7版/新华字典12无mu读音(仅收fǔ与吴语鼻音ḿ)，且w=25倒挂规范主读fu(5)

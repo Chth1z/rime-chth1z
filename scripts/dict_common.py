@@ -63,6 +63,9 @@ MANAGED_OPENCC_TXTS: set[str] = {
 }
 
 EXTRA_VALID_SYLS: frozenset[str] = frozenset({"hm", "hng", "m", "n", "ng"})
+# Standard Mandarin colloquial syllables (e.g. 这 zhèi in 现汉第7版) whose characters
+# may not yet carry that reading in raw upstream 8105.dict.yaml before rules/additions.tsv runs.
+STANDARD_COLLOQUIAL_SYLS: frozenset[str] = frozenset({"zhei"})
 STRICT_SYL_RE = re.compile(r"^[a-z]+$")
 LUE_NUE_RE = re.compile(r"\b[ln]ue\b")
 
@@ -123,7 +126,7 @@ def extract_valid_syls_from_lines(
     source_label: str = "cn_dicts/8105.dict.yaml",
 ) -> set[str]:
     """Extract strictly validated lowercase ASCII pinyin syllables from 8105.dict.yaml lines."""
-    valid: set[str] = set(EXTRA_VALID_SYLS)
+    valid: set[str] = set(EXTRA_VALID_SYLS) | set(STANDARD_COLLOQUIAL_SYLS)
     _, body, start_idx = split_header_body_with_lineno(lines)
     for idx, line in enumerate(body, start_idx):
         p = parse_entry(line)

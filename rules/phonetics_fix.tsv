@@ -2524,3 +2524,5 @@ cn_dicts/others.dict.yaml	帖勒瑞	tie lei rui	tie le rui	外语音译“勒”
 # --- Batch 2: industry_product & food phonetic fixes ---
 cn_dicts_cell/industry_product.dict.yaml	标识防伪	biao zhi fang wei	biao shi fang wei	现汉第7版“标识”(识别记号义)规范读biāo shí，与base防伪标识/商标标识统一	现汉第7版
 cn_dicts_cell/food.dict.yaml	银丝仔乌汤	yin si zai wu tang	yin si zi wu tang	仔乌（幼小乌贼）“仔”作前缀表幼小，规范读zǐ（同仔鸡/仔鲇）	现汉第7版(L1)
+# --- Batch 2: 8105.dict.yaml phonetic fix ---
+cn_dicts/8105.dict.yaml	硔	gong	hong	8105三级字唯一规范读音hóng(木梨硔/古同谼)，gong属认字认半边误注	通用规范汉字字典/新华字典/汉语大字典
