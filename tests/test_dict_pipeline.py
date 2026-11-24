@@ -665,6 +665,27 @@ class TestCleanerHardeningAndZeroPingPong(unittest.TestCase):
             self.assertEqual(manifest["files"]["cn_dicts_cell/idiom.dict.yaml"]["propagated_py_shadow"], 1)
             self.assertEqual(manifest["files"]["cn_dicts_cell/idiom.dict.yaml"]["propagated_wf_shadow"], 1)
 
+    def test_opencc_json_group_match_policy_guard(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            root = pathlib.Path(td)
+            (root / "opencc").mkdir()
+            (root / "opencc/a.txt").write_text("k\tk v\n", encoding="utf-8", newline="\n")
+            (root / "opencc/bad.json").write_text(
+                '{"name":"bad","conversion_chain":[{"dict":{"type":"group","dicts":[{"type":"text","file":"a.txt"}]}}]}\n',
+                encoding="utf-8",
+                newline="\n",
+            )
+            (root / "opencc/good.json").write_text(
+                '{"name":"good","conversion_chain":[{"dict":{"type":"group","match_policy":"short_circuit","dicts":[{"type":"text","file":"a.txt"}]}}]}\n',
+                encoding="utf-8",
+                newline="\n",
+            )
+            errs: list[str] = []
+            warns: list[str] = []
+            dict_lint.check_schema_and_opencc(root, errs, warns)
+            self.assertTrue(any("bad.json" in e and "match_policy" in e for e in errs), errs)
+            self.assertFalse(any("good.json" in e for e in errs), errs)
+
 
 if __name__ == "__main__":
     unittest.main()

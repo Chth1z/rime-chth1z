@@ -1564,7 +1564,7 @@ T恤	T恤 T shirt
 丘尔金	丘尔金 Churkin
 丘陵	丘陵 hillock mound knoll hills knap
 丙	丙 the third of the ten heavenly stems the third position third number three
-丙乾	丙乾 third heaven
+丙干	丙干 third Heavenly Stem
 丙烯	丙烯 acroleic propene propylene
 丙烯酸	丙烯酸 acrylic acid
 丙烷	丙烷 dimethylmethane propane
@@ -1585,7 +1585,6 @@ T恤	T恤 T shirt
 业界标准	业界标准 industry standard
 业经	业经 already
 业绩	业绩 outstanding achievement
-业馀者	业馀者 amateur
 丛	丛 cluster collection collection of books thicket
 丛书	丛书 collection
 丛刊	丛刊 collection
@@ -2675,14 +2674,9 @@ T恤	T恤 T shirt
 乳腺	乳腺 mammary gland
 乳腺癌	乳腺癌 breast cancer
 乳酸	乳酸 lactic acid
-乾	乾 dry male strong Qian
-乾净	乾净 clean neat
+乾	乾 Qian heaven male strong
 乾坤	乾坤 universe
-乾旱	乾旱 drought
-乾杯	乾杯 drink a toast propose a toast here's to cheers
-乾燥	乾燥 dry arid
-乾草	乾草 hay
-乾酪	乾酪 cheese
+干草	干草 hay
 乾隆	乾隆 Qianlong
 了	了 (past tense marker) (modal particle intensifying preceding clause) clear know understand look afar from a high place
 了不得	了不得 extraordinary
@@ -5819,7 +5813,6 @@ T恤	T恤 T shirt
 克里斯蒂	克里斯蒂 Chrystie
 克里斯蒂安斯塔德	克里斯蒂安斯塔德 Kristianstad
 克里斯蒂安桑	克里斯蒂安桑 Kristiansand
-克里福特－伍斯特	克里福特－伍斯特 Hereford & Worcester
 克里米亚	克里米亚 Crimea
 克里西乌马	克里西乌马 Crisciuma
 克隆	克隆 clone
@@ -6734,7 +6727,7 @@ T恤	T恤 T shirt
 再则	再则 moreover
 再审	再审 re-try rehear retrial
 再度	再度 once more once again one more time
-再接再励	再接再励 make persistent efforts
+再接再厉	再接再厉 make persistent efforts
 再教育	再教育 reeducate reeducation reorient retrain
 再来一个	再来一个 encore
 再次	再次 one more time again one more once again
@@ -8173,7 +8166,6 @@ T恤	T恤 T shirt
 制造厂	制造厂 manufactory factory
 制造商	制造商 manufacturing company
 制造者	制造者 maker
-制醣	制醣 refine sugar
 制钱	制钱 copper cash
 制陶工人	制陶工人 potter
 制革	制革 process hides tan tanning
@@ -8432,7 +8424,6 @@ T恤	T恤 T shirt
 剩余价值率	剩余价值率 surplus value rate
 剩余劳动	剩余劳动 surplus work
 剩磁	剩磁 residual magnetism remanence
-剩馀	剩馀 surplus
 割	割 cut off
 割伤	割伤 slash
 割地	割地 cede territory
@@ -9780,7 +9771,7 @@ T恤	T恤 T shirt
 卡	卡 check stop block card customs station choked fasten clip wedge check-post
 卡亚尼	卡亚尼 Kajaani
 卡其	卡其 khaki
-卡内基－梅隆大学	卡内基－梅隆大学 Carnegie-Mellon University
+卡内基梅隆大学	卡内基梅隆大学 Carnegie-Mellon University
 卡农城	卡农城 Canon City
 卡利	卡利 Cali
 卡利亚里	卡利亚里 Cagliari
@@ -13371,7 +13362,7 @@ T恤	T恤 T shirt
 国际瀑布城	国际瀑布城 International Falls
 国际电信联盟	国际电信联盟 International Telecommunications Union ITU
 国际电报电话咨询委员会	国际电报电话咨询委员会 International Telegraph and Telephone Consultative Committee CCITT
-国际电话电报谘询委员会	国际电话电报谘询委员会 International Consultative Committee for Telephone and Telegraph CCITT
+国际电话电报咨询委员会	国际电话电报咨询委员会 International Consultative Committee for Telephone and Telegraph CCITT
 国际私法	国际私法 international private law
 国际级	国际级 international level
 国际组织	国际组织 international organization
@@ -13564,7 +13555,6 @@ T恤	T恤 T shirt
 圣卢西亚岛	圣卢西亚岛 St. Lucia
 圣地	圣地 the holy land sacred place
 圣地亚哥	圣地亚哥 San Diego
-圣地亚哥－德尔埃斯特罗	圣地亚哥－德尔埃斯特罗 Santiago del Estero
 圣埃斯皮里图岛	圣埃斯皮里图岛 Espiritu Santo Island
 圣基茨	圣基茨 St. Kitts
 圣基茨岛	圣基茨岛 St. Kitts
@@ -14400,7 +14390,6 @@ T恤	T恤 T shirt
 塞班	塞班 Saipan
 塞舌尔	塞舌尔 Seychelles
 塞舌耳	塞舌耳 Seychelles
-塞莱比－皮奎	塞莱比－皮奎 Selebi-Phikwe
 塞萨洛尼基	塞萨洛尼基 Thessaloniki
 塞车	塞车 traffic jam
 塞韦里诺	塞韦里诺 Severino
@@ -14965,13 +14954,11 @@ T恤	T恤 T shirt
 多边贸易	多边贸易 multilateral trade
 多达	多达 as many as as much as
 多远	多远 how far
-多醣	多醣 polysaccharide
 多长	多长 how long
 多长时间	多长时间 how long
 多面体	多面体 polyhedron
 多面角	多面角 polyhedral angle
 多项式	多项式 multinomial polynomial
-多馀	多馀 superfluous
 多高	多高 how tall how high
 夜	夜 night
 夜以继日	夜以继日 day and night
@@ -15053,7 +15040,7 @@ T恤	T恤 T shirt
 大使级	大使级 ambassador level
 大使馆	大使馆 embassy
 大便	大便 excrement feces
-大便乾燥	大便乾燥 constipated
+大便干燥	大便干燥 constipated
 大修	大修 overhauling
 大修理	大修理 overhaul
 大修理基金	大修理基金 overhaul fund
@@ -16458,7 +16445,6 @@ T恤	T恤 T shirt
 威奇托福尔斯	威奇托福尔斯 Wichita Falls
 威尔	威尔 Weale Wier
 威尔克斯伯纳	威尔克斯伯纳 Wilkesboro
-威尔克斯－巴里	威尔克斯－巴里 Wilkes Barre
 威尔士	威尔士 Wales
 威尔士语	威尔士语 Welsh language Welsh
 威尔明顿	威尔明顿 Wilmington
@@ -17012,7 +16998,6 @@ T恤	T恤 T shirt
 安如泰山	安如泰山 as secure as Mount Tai as solid as a rock
 安如磐石	安如磐石 as solid as rock
 安娜	安娜 Anna
-安嫩代尔-埃斯克代尔	安嫩代尔-埃斯克代尔 Annandale & Eskdale
 安宁	安宁 peaceful tranquil calm composed free from worry
 安宁片	安宁片 meprobamate
 安安静静	安安静静 quiet quietly
@@ -19122,7 +19107,6 @@ T恤	T恤 T shirt
 巴布内斯瓦尔	巴布内斯瓦尔 Bhubaneswar
 巴库	巴库 Baku
 巴德诺赫	巴德诺赫 Badenoch
-巴德诺赫－斯特拉斯佩	巴德诺赫－斯特拉斯佩 Badenoch and Strathspey
 巴拉圭	巴拉圭 Paraguay
 巴拉戈湖	巴拉戈湖 Lake Baringo
 巴拉科亚	巴拉科亚 Baracoa
@@ -19576,7 +19560,7 @@ T恤	T恤 T shirt
 干掉	干掉 kill murder
 干支	干支 Heavenly Stems and the Earthly Branches
 干旱	干旱 drought drouth
-干杯	干杯 drink toast
+干杯	干杯 cheers drink a toast propose a toast here's to
 干果	干果 dry fruit
 干枯	干枯 withered
 干校	干校 cadre school
@@ -20640,7 +20624,6 @@ T恤	T恤 T shirt
 弱小	弱小 small and weak
 弱点	弱点 weak point failing
 弱电	弱电 weak electricity
-弱硷	弱硷 weak base
 弱碱	弱碱 weak base
 弱者	弱者 weak man
 弱脉	弱脉 weak pulse
@@ -22199,7 +22182,7 @@ T恤	T恤 T shirt
 感到	感到 feel sense have the feeling that think that move affect
 感动	感动 move touch moving
 感化	感化 influence
-感化饼乾	感化饼乾 wafer
+威化饼干	威化饼干 wafer
 感受	感受 feel
 感受到	感受到 feel
 感受器	感受器 receptor
@@ -23777,8 +23760,6 @@ T恤	T恤 T shirt
 拙	拙 clumsy
 拙劣	拙劣 clumsy inferior inaptitude inexpert
 拙著	拙著 clumsy
-拚	拚 disregard reject stake all
-拚命	拚命 risk one's life defy death desperately
 招	招 provoke recruit
 招亲	招亲 marry into and live with the bride's family
 招供	招供 confess
@@ -24039,7 +24020,6 @@ T恤	T恤 T shirt
 按时	按时 on time before deadline on schedule
 按期	按期 on schedule on time
 按次	按次 on the order of numbers sequentially orderly
-按步就班	按步就班 follow the prescribed order keep to conventional ways
 按比例发展	按比例发展 develop in proportion
 按照	按照 according to in accordance with in the light of on the basis of
 按照字面	按照字面 literally
@@ -24283,10 +24263,8 @@ T恤	T恤 T shirt
 据统计	据统计 according to statistics
 据讲	据讲 According to what is said
 据说	据说 it is said that reportedly
-捱	捱 dawdle suffer
-捱到	捱到 endure through
-捱打	捱打 beaten
-捱饿	捱饿 suffer from hungry hungry
+挨到	挨到 endure through
+挨饿	挨饿 suffer from hunger hungry
 捶	捶 beat with the fist hammer cudgel
 捷	捷 victory triumph quick prompt rapid
 捷克	捷克 Czech
@@ -24923,7 +24901,6 @@ T恤	T恤 T shirt
 摹仿	摹仿 imitate copy
 摹拟	摹拟 imitate
 摹画	摹画 describe
-摺	摺 folded document fold
 撂	撂 leave
 撂下	撂下 put down
 撄	撄 oppose attack
@@ -25893,7 +25870,6 @@ T恤	T恤 T shirt
 斯	斯 this servant
 斯佩林	斯佩林 Spelling
 斯佩罗	斯佩罗 Spero
-斯凯－洛哈尔什	斯凯－洛哈尔什 Skye and Lochalsh Skye & Lochalsh
 斯利那加	斯利那加 Srinagar
 斯卡伯勒礁	斯卡伯勒礁 Scarborough Shoal
 斯图加特	斯图加特 Stuttgart
@@ -29926,7 +29902,6 @@ T恤	T恤 T shirt
 残迹	残迹 remnant mark
 残部	残部 remnants of defeated troops
 残酷	残酷 cruel cruelty
-残馀物	残馀物 litter trash
 残骸	残骸 remains wreckage
 殍	殍 die of starvation
 殒	殒 perish die
@@ -31474,7 +31449,6 @@ T恤	T恤 T shirt
 泰安	泰安 Tai'an Taian
 泰山	泰山 Taishan mountain
 泰州	泰州 Taizhou
-泰恩－威尔	泰恩－威尔 Tyne and Wear Tyne & Wear
 泰戈尔	泰戈尔 Tagore
 泰文	泰文 Thai language Thai
 泰斗	泰斗 highly respected person
@@ -32508,8 +32482,6 @@ T恤	T恤 T shirt
 渔船	渔船 fishing boat
 渔获量	渔获量 catch
 渔轮	渔轮 fishing vessel
-渖	渖 pour Shen
-渖阳	渖阳 Shenyang
 渗	渗 seep ooze horrify
 渗入	渗入 permeate
 渗出	渗出 seep out exudation exude percolate
@@ -33434,7 +33406,6 @@ T恤	T恤 T shirt
 烈焰	烈焰 roaring flame
 烊	烊 molten smelt
 烘	烘 bake heat by fire
-烘乾	烘乾 parch
 烘干	烘干 drying
 烘干机	烘干机 dryer
 烘房	烘房 drying room
@@ -34735,7 +34706,6 @@ T恤	T恤 T shirt
 玻璃钢	玻璃钢 glass fiber reinforced plastic
 珀	珀 amber
 珀斯	珀斯 Perth
-珀斯－金罗斯	珀斯－金罗斯 Perth and Kinross Perth & Kinross
 珀杜大学	珀杜大学 Purdue University
 珂	珂 jade-like stone
 珈	珈 gamma jewelry
@@ -34792,7 +34762,6 @@ T恤	T恤 T shirt
 班固	班固 Ban Gu
 班图斯坦	班图斯坦 Bantustan
 班夫	班夫 Banff
-班夫－巴肯	班夫－巴肯 Banff and Buchan
 班子	班子 organized group theatrical troupe
 班宁	班宁 Banning
 班布里其	班布里其 Bambridge
@@ -35941,7 +35910,6 @@ T恤	T恤 T shirt
 痔疮	痔疮 piles hemorrhoids
 痕	痕 scar traces
 痕迹	痕迹 vestige
-痖	痖 tanager
 痘	痘 small pox smallpox smallpox pustule
 痛	痛 ache pain sorrow
 痛切	痛切 with intense sorrow
@@ -36069,7 +36037,7 @@ T恤	T恤 T shirt
 登陆月球	登陆月球 moon landing land on the moon
 登高	登高 ascend a height uprise
 白	白 white snowy empty blank bright clear plain pure gratuitous
-白乾儿	白乾儿 spirit
+白干儿	白干儿 spirit
 白云	白云 white clouds Baiyun
 白云山	白云山 Baiyunshan Baiyun Mountain
 白云母	白云母 muscovite white mica
@@ -37229,11 +37197,8 @@ T恤	T恤 T shirt
 石鼓文	石鼓文 inscription on drum-shaped stone block
 矶	矶 breakwater jetty
 矸石	矸石 gangue
-矽	矽 silicon
 矽肺	矽肺 silicosis
 矽肺病	矽肺病 silicosis
-矽酸	矽酸 silicon acid
-矽钢片	矽钢片 silicon sheet steel
 矾	矾 alum
 矿	矿 ore mine
 矿业	矿业 mining industry
@@ -37478,7 +37443,6 @@ T恤	T恤 T shirt
 确立	确立 establish
 确认	确认 confirm verify
 确诊	确诊 make a definite diagnosis
-硷	硷 alkali soda base
 硼	硼 boron
 硼酸	硼酸 boric acid
 碇	碇 anchor
@@ -39144,7 +39108,6 @@ T恤	T恤 T shirt
 算盘	算盘 abacus
 算算	算算 calculate
 算计	算计 plan
-箝	箝 pliers pincers clamp
 管	管 take care of take care control manage in charge of look after run tube pipe
 管乐	管乐 wind music
 管乐器	管乐器 wind instrument
@@ -40864,7 +40827,6 @@ T恤	T恤 T shirt
 罗托鲁阿	罗托鲁阿 Rotorua
 罗拉	罗拉 Rolla
 罗斯	罗斯 Roth
-罗斯－克罗马蒂	罗斯－克罗马蒂 Ross and Cromarty Ross & Cromarty
 罗斯堡	罗斯堡 Roseburg
 罗斯托夫	罗斯托夫 Rostov
 罗斯福	罗斯福 Roosevelt
@@ -41293,7 +41255,7 @@ T恤	T恤 T shirt
 老董	老董 Lao Dong
 老虎	老虎 tiger
 老虎口	老虎口 tiger's mouth
-老虎箝	老虎箝 vice pincer pliers
+老虎钳	老虎钳 vice pincer pliers
 老规矩	老规矩 old rule
 老话	老话 proverb
 老调	老调 same old tune
@@ -43764,13 +43726,13 @@ T恤	T恤 T shirt
 葙子	葙子 suitcase
 葚	葚 fruit of mulberry
 葛	葛 coarse grass linen Ge
-葛底斯堡	葛底斯堡 Getttysburg
+葛底斯堡	葛底斯堡 Gettysburg
 葛洲坝	葛洲坝 Gezhouba Dam
 葛罗米柯	葛罗米柯 Gromyko
 葡	葡 grapes
 葡糖	葡糖 glucose
 葡萄	葡萄 grape
-葡萄乾	葡萄乾 raisin
+葡萄干	葡萄干 raisin
 葡萄园	葡萄园 vineyard
 葡萄牙	葡萄牙 Portugal
 葡萄牙人	葡萄牙人 Portuguese
@@ -45304,7 +45266,6 @@ T恤	T恤 T shirt
 譬	譬 give an example
 譬喻	譬喻 metaphor analogy simile
 譬如	譬如 for example for instance such as
-讠	讠 pure gold
 计	计 calculate compute count reckon ruse plan
 计乘车	计乘车 cab
 计件	计件 reckon by piece
@@ -46094,10 +46055,7 @@ T恤	T恤 T shirt
 谕旨	谕旨 imperial instruction
 谖	谖 Hemerocallis flava false forget
 谗	谗 slander defame misrepresent speak maliciously
-谘	谘 consult
-谘文	谘文 official communication
-谘议局	谘议局 advisory bureau
-谘询	谘询 seek advice from consult
+咨议局	咨议局 advisory bureau
 谙	谙 versed in know well
 谙练	谙练 conversant skilled proficient
 谚	谚 proverb
@@ -46611,7 +46569,6 @@ T恤	T恤 T shirt
 费城	费城 Philadelphia
 费尔	费尔 Fil
 费尔利迪金森大学	费尔利迪金森大学 Fairleigh Dickinson University
-费尔南多－迪诺罗尼亚	费尔南多－迪诺罗尼亚 Fernando de Noronha
 费尔巴哈	费尔巴哈 Feuerbach
 费尔干纳	费尔干纳 Fergana
 费尔班克斯	费尔班克斯 Fairbanks
@@ -49088,7 +49045,6 @@ T恤	T恤 T shirt
 邓尼金	邓尼金 Denikin
 邓巴顿	邓巴顿 Dumbarton
 邓弗姆林	邓弗姆林 Dundermline
-邓弗里斯－盖洛韦	邓弗里斯－盖洛韦 Dumfries & Galloway
 邓甘嫩	邓甘嫩 Dungannon
 邓肯	邓肯 Duncan Quam
 邓迪	邓迪 Dundee
@@ -49441,18 +49397,11 @@ T恤	T恤 T shirt
 醚	醚 ether
 醛	醛 aldehyde
 醢	醢 minced meat pickled meat
-醣	醣 carbohydrate
-醣化	醣化 saccharify saccharification
-醣厂	醣厂 sugar refinery
-醣尿病	醣尿病 diabetes
-醣果	醣果 candy
-醣水	醣水 syrup
-醣浆	醣浆 syrup
-醣类	醣类 carbohydrate
-醣精	醣精 saccharin
-醣蜜	醣蜜 molasses
-醣衣	醣衣 sugarcoating
-醣醋	醣醋 sugar and vinegar sweet and sour
+糖化	糖化 saccharify saccharification
+糖厂	糖厂 sugar refinery
+糖水	糖水 syrup
+糖蜜	糖蜜 molasses
+糖衣	糖衣 sugarcoating
 醪	醪 wine with sediment liquor with sediment
 醭	醭 mold on liquids
 醮	醮 perform sacrifice
@@ -49696,7 +49645,6 @@ T恤	T恤 T shirt
 金匠	金匠 goldsmith
 金华	金华 Jinhua
 金卡丁	金卡丁 Kincardine
-金卡丁－迪赛德	金卡丁－迪赛德 Kincardine and Deeside Kincardine & Deeside
 金县	金县 Jinxian
 金发	金发 blond
 金和	金和 Jinhe
@@ -51471,7 +51419,7 @@ T恤	T恤 T shirt
 难得	难得 seldom rare hard to come by
 难忘	难忘 unforgettable
 难怪	难怪 no wonder it's no wonder it's not surprising not surprisingly
-难捱	难捱 trying, difficult
+难挨	难挨 trying, difficult
 难易	难易 difficulty
 难民	难民 refugee
 难民营	难民营 refugee camp
@@ -52759,9 +52707,8 @@ T恤	T恤 T shirt
 饺	饺 dumplings with meat filling
 饺子	饺子 stuffed dumpling
 饼	饼 round flat cake cookie cake pastry
-饼乾	饼乾 biscuit cracker cookie
 饼子	饼子 maize pancake millet pancake
-饼干	饼干 cookie cooky
+饼干	饼干 biscuit cracker cookie
 饼肥	饼肥 cake fertilizer
 饼铛	饼铛 baking pan
 饼饵	饼饵 cakes pastry
@@ -52769,9 +52716,6 @@ T恤	T恤 T shirt
 饽饽	饽饽 pastry steamed bun cake
 饿	饿 hungry
 饿死	饿死 starve to death starvation
-馀	馀 remainder
-馀数	馀数 remainder
-馀烬	馀烬 ember
 馁	馁 hungry
 馄	馄 Chinese ravioli
 馄饨	馄饨 wonton

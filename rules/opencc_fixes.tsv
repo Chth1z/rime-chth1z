@@ -307,3 +307,187 @@ opencc/emoji.txt	左上	replace	左上 ↖️	去重VS16/无VS16重复箭头对(
 opencc/emoji.txt	左上箭头	replace	左上箭头 ↖️	去重VS16/无VS16重复箭头对(保留↖️)
 opencc/emoji.txt	上下	replace	上下 ↕️	去重VS16/无VS16重复箭头对(保留↕️)
 opencc/emoji.txt	上下箭头	replace	上下箭头 ↕️	去重VS16/无VS16重复箭头对(保留↕️)
+# Batch 4 (opencc): others non-8105 keys, emoji fixes, chinese_english & english_chinese audited fixes
+opencc/others.txt	篠田步美	rename	筱田步美|筱田步美 篠田あゆみ	非8105异体篠改规范简体筱(对齐rime-ice与筱田优)
+opencc/others.txt	篠惠美	rename	筱惠美|筱惠美 篠めぐみ	非8105异体篠改规范简体筱(对齐rime-ice)
+opencc/others.txt	瑠川里菜	rename	琉川里菜|琉川里菜 瑠川リナ	非8105异体瑠改规范简体琉(消除不可达键)
+opencc/others.txt	三舩美铃	rename	三船美铃|三船美铃 三舩みすず	非8105日文异体舩改规范简体船(消除不可达键)
+opencc/emoji.txt	爱	replace	爱 ❤️	扑克红桃♥️(U+2665)改规范红心❤️(U+2764，对齐rime-ice)
+opencc/emoji.txt	心	replace	心 ❤️	扑克红桃♥️(U+2665)改规范红心❤️(U+2764，对齐rime-ice)
+opencc/emoji.txt	红心	replace	红心 ❤️	扑克红桃♥️(U+2665)改规范红心❤️(U+2764，对齐rime-ice)
+opencc/emoji.txt	国王	replace	国王 🫅	王子🤴(U+1F934)改戴王冠者🫅(U+1FAC5，对齐rime-ice)
+opencc/emoji.txt	加纳利群岛	rename	加那利群岛|加那利群岛 🇮🇨	修正西班牙加那利群岛规范译名(对齐民政部/新华社与rime-ice)
+opencc/emoji.txt	干你	delete		清理低俗粗口键(对齐Batch 1低俗词清理口径)
+opencc/chinese_english.txt	讠	delete		清理乱码错译(讠误译为pure gold且非8105不可达)
+opencc/chinese_english.txt	痖	delete		清理错译(痖为哑/喑哑非唐纳雀tanager且非8105不可达)
+opencc/chinese_english.txt	葛底斯堡	replace	葛底斯堡 Gettysburg	修正英文三连字母拼写错误Getttysburg->Gettysburg
+opencc/chinese_english.txt	再接再励	rename	再接再厉|再接再厉 make persistent efforts	修复成语W5错字(再接再励->再接再厉)
+opencc/chinese_english.txt	按步就班	delete		删除W5错字键(同表已有正词按部就班)
+opencc/chinese_english.txt	感化饼乾	rename	威化饼干|威化饼干 wafer	修复OCR错字与繁体乾(感化饼乾->威化饼干)
+opencc/chinese_english.txt	丙乾	rename	丙干|丙干 third Heavenly Stem	修复天干误繁为乾(丙乾->丙干)并修正释义
+opencc/chinese_english.txt	乾	replace	乾 Qian heaven male strong	移除繁体乾混入的“干(dry)”释义
+opencc/chinese_english.txt	干杯	replace	干杯 cheers drink a toast propose a toast here's to	合并清理繁体乾杯后的常用英文释义
+opencc/chinese_english.txt	饼干	replace	饼干 biscuit cracker cookie	合并清理繁体饼乾后的常用英文释义
+opencc/chinese_english.txt	乾净	delete		繁体乾泄漏(同表已有干净)
+opencc/chinese_english.txt	乾旱	delete		繁体乾泄漏(同表已有干旱)
+opencc/chinese_english.txt	乾杯	delete		繁体乾泄漏(已并入干杯)
+opencc/chinese_english.txt	乾燥	delete		繁体乾泄漏(同表已有干燥)
+opencc/chinese_english.txt	乾酪	delete		繁体乾泄漏(同表已有干酪)
+opencc/chinese_english.txt	烘乾	delete		繁体乾泄漏(同表已有烘干)
+opencc/chinese_english.txt	饼乾	delete		繁体乾泄漏(已并入饼干)
+opencc/chinese_english.txt	业馀者	delete		非8105繁体馀(同表已有业余者)
+opencc/chinese_english.txt	剩馀	delete		非8105繁体馀(同表已有剩余)
+opencc/chinese_english.txt	多馀	delete		非8105繁体馀(同表已有多余)
+opencc/chinese_english.txt	残馀物	delete		非8105繁体馀(同表已有残余物)
+opencc/chinese_english.txt	馀	delete		非8105繁体馀(同表已有余)
+opencc/chinese_english.txt	馀数	delete		非8105繁体馀(同表已有余数)
+opencc/chinese_english.txt	馀烬	delete		非8105繁体馀(同表已有余烬)
+opencc/chinese_english.txt	制醣	delete		非8105繁体醣(同表已有制糖)
+opencc/chinese_english.txt	多醣	delete		非8105繁体醣(同表已有多糖)
+opencc/chinese_english.txt	醣	delete		非8105繁体醣(同表已有糖)
+opencc/chinese_english.txt	醣尿病	delete		非8105繁体醣(同表已有糖尿病)
+opencc/chinese_english.txt	醣果	delete		非8105繁体醣(同表已有糖果)
+opencc/chinese_english.txt	醣浆	delete		非8105繁体醣(同表已有糖浆)
+opencc/chinese_english.txt	醣类	delete		非8105繁体醣(同表已有糖类)
+opencc/chinese_english.txt	醣精	delete		非8105繁体醣(同表已有糖精)
+opencc/chinese_english.txt	醣醋	delete		非8105繁体醣(同表已有糖醋)
+opencc/chinese_english.txt	谘	delete		非8105繁体谘(同表已有咨)
+opencc/chinese_english.txt	谘文	delete		非8105繁体谘(同表已有咨文)
+opencc/chinese_english.txt	谘询	delete		非8105繁体谘(同表已有咨询)
+opencc/chinese_english.txt	弱硷	delete		非8105异体硷(同表已有弱碱)
+opencc/chinese_english.txt	硷	delete		非8105异体硷(同表已有碱)
+opencc/chinese_english.txt	箝	delete		非8105异体箝(同表已有钳)
+opencc/chinese_english.txt	拚	delete		非8105异体拚(同表已有拼)
+opencc/chinese_english.txt	拚命	delete		非8105异体拚(同表已有拼命)
+opencc/chinese_english.txt	摺	delete		非8105繁体摺(同表已有折)
+opencc/chinese_english.txt	渖	delete		非8105繁体渖(同表已有沈)
+opencc/chinese_english.txt	渖阳	delete		非8105繁体渖(同表已有沈阳)
+opencc/chinese_english.txt	捱	delete		非8105异体捱(同表已有挨)
+opencc/chinese_english.txt	捱打	delete		非8105异体捱(同表已有挨打)
+opencc/chinese_english.txt	矽	delete		非8105台式化学字矽(同表已有硅；保留W2矽肺/矽肺病)
+opencc/chinese_english.txt	矽酸	delete		非8105台式化学字矽(同表已有硅酸)
+opencc/chinese_english.txt	矽钢片	delete		非8105台式化学字矽(同表已有硅钢片)
+opencc/chinese_english.txt	乾草	rename	干草|干草 hay	繁体乾改规范简体干
+opencc/chinese_english.txt	大便乾燥	rename	大便干燥|大便干燥 constipated	繁体乾改规范简体干
+opencc/chinese_english.txt	白乾儿	rename	白干儿|白干儿 spirit	繁体乾改规范简体干
+opencc/chinese_english.txt	葡萄乾	rename	葡萄干|葡萄干 raisin	繁体乾改规范简体干
+opencc/chinese_english.txt	国际电话电报谘询委员会	rename	国际电话电报咨询委员会|国际电话电报咨询委员会 International Consultative Committee for Telephone and Telegraph CCITT	非8105繁体谘改规范简体咨
+opencc/chinese_english.txt	谘议局	rename	咨议局|咨议局 advisory bureau	非8105繁体谘改规范简体咨
+opencc/chinese_english.txt	老虎箝	rename	老虎钳|老虎钳 vice pincer pliers	非8105异体箝改规范简体钳
+opencc/chinese_english.txt	醣化	rename	糖化|糖化 saccharify saccharification	非8105繁体醣改规范简体糖
+opencc/chinese_english.txt	醣厂	rename	糖厂|糖厂 sugar refinery	非8105繁体醣改规范简体糖
+opencc/chinese_english.txt	醣水	rename	糖水|糖水 syrup	非8105繁体醣改规范简体糖
+opencc/chinese_english.txt	醣蜜	rename	糖蜜|糖蜜 molasses	非8105繁体醣改规范简体糖
+opencc/chinese_english.txt	醣衣	rename	糖衣|糖衣 sugarcoating	非8105繁体醣改规范简体糖
+opencc/chinese_english.txt	捱到	rename	挨到|挨到 endure through	非8105异体捱改规范简体挨
+opencc/chinese_english.txt	捱饿	rename	挨饿|挨饿 suffer from hunger hungry	非8105异体捱改规范简体挨并修英文suffer from hunger
+opencc/chinese_english.txt	难捱	rename	难挨|难挨 trying, difficult	非8105异体捱改规范简体挨
+opencc/chinese_english.txt	卡内基－梅隆大学	rename	卡内基梅隆大学|卡内基梅隆大学 Carnegie-Mellon University	移除不可达全角连字符－改规范中文名
+opencc/chinese_english.txt	克里福特－伍斯特	delete		清理含不可达连字符的中文地名键
+opencc/chinese_english.txt	圣地亚哥－德尔埃斯特罗	delete		清理含不可达连字符的中文地名键
+opencc/chinese_english.txt	塞莱比－皮奎	delete		清理含不可达连字符的中文地名键
+opencc/chinese_english.txt	威尔克斯－巴里	delete		清理含不可达连字符的中文地名键
+opencc/chinese_english.txt	安嫩代尔-埃斯克代尔	delete		清理含不可达连字符的中文地名键
+opencc/chinese_english.txt	巴德诺赫－斯特拉斯佩	delete		清理含不可达连字符的中文地名键
+opencc/chinese_english.txt	斯凯－洛哈尔什	delete		清理含不可达连字符的中文地名键
+opencc/chinese_english.txt	泰恩－威尔	delete		清理含不可达连字符的中文地名键
+opencc/chinese_english.txt	珀斯－金罗斯	delete		清理含不可达连字符的中文地名键
+opencc/chinese_english.txt	班夫－巴肯	delete		清理含不可达连字符的中文地名键
+opencc/chinese_english.txt	罗斯－克罗马蒂	delete		清理含不可达连字符的中文地名键
+opencc/chinese_english.txt	费尔南多－迪诺罗尼亚	delete		清理含不可达连字符的中文地名键
+opencc/chinese_english.txt	邓弗里斯－盖洛韦	delete		清理含不可达连字符的中文地名键
+opencc/chinese_english.txt	金卡丁－迪赛德	delete		清理含不可达连字符的中文地名键
+opencc/english_chinese.txt	am	replace	am v.是;在 n.午前	修正高频动词am词性误标prep.->v.
+opencc/english_chinese.txt	be	replace	be v.是;有;在	修正高频动词be词性误标prep.->v.
+opencc/english_chinese.txt	being	replace	being n.人;生物;存在 vbl.在;有;是	修正being词性误标art.->vbl.
+opencc/english_chinese.txt	can	replace	can v.aux.能;可以 vt.装罐 n.罐头;容器	修正高频情态动词can词性误标conj.->v.aux.
+opencc/english_chinese.txt	does	replace	does v.做;有用;工作 v.aux.助动词(do的第三人称单数)	修正高频动词does词性误标conj.->v.aux.
+opencc/english_chinese.txt	had	replace	had vbl.have的过去式和过去分词 v.有	修正高频动词had词性误标conj.->v.
+opencc/english_chinese.txt	is	replace	is v.是	修正高频动词is词性误标prep.->v.
+opencc/english_chinese.txt	excluding	replace	excluding prep.除...以外;不包括	修正截断词性pre.->prep.
+opencc/english_chinese.txt	Amtrak	replace	Amtrak n.美国全国铁路客运公司(美铁)	修正错译(原误抄水陆两用车amtrac)
+opencc/english_chinese.txt	nicotinamide	replace	nicotinamide n.烟酰胺;尼克酰胺	修正错译(原误抄烟碱nicotine)
+opencc/english_chinese.txt	rectenna	replace	rectenna n.整流天线	修正错译与台式矽控二极体(全国科技名词委：整流天线)
+opencc/english_chinese.txt	www	replace	www n.万维网(World Wide Web)	修正拼写Inernet与过时错译
+opencc/english_chinese.txt	petrologist	replace	petrologist n.岩石学家	修正误抄相邻词条petrology
+opencc/english_chinese.txt	typhus	replace	typhus n.斑疹伤寒	修正误抄相邻词条typhous
+opencc/english_chinese.txt	cheque	replace	cheque n.支票	修正误抄相邻词条check
+opencc/english_chinese.txt	twining	replace	twining a.缠绕的;盘绕的 vbl.缠绕;搓合	修正错译(原误混为twinning双生)
+opencc/english_chinese.txt	bulginess	replace	bulginess n.凸出;鼓胀;膨胀	修正误抄相邻词条bulger
+opencc/english_chinese.txt	strikebreaker	replace	strikebreaker n.破坏罢工者;工贼	修正误抄相邻词条strikebreaking
+opencc/english_chinese.txt	caudal	replace	caudal a.尾部的;近尾部的	修正误抄相邻词条caudad
+opencc/english_chinese.txt	conjunctival	replace	conjunctival a.结膜的	修正误抄相邻词条conjunctiva
+opencc/english_chinese.txt	pasting	replace	pasting n.粘贴;痛打 vbl.粘贴	修正错译(原ing.传送)
+opencc/english_chinese.txt	remnant	replace	remnant n.残余;剩余物;零头 a.剩余的;残余的	修正误抄相邻词条remanent并补全主名词义
+opencc/english_chinese.txt	snapshot	replace	snapshot n.快照;快拍 vt.快速拍摄	修正误抄相邻词条snapshoot并补全主名词义
+opencc/english_chinese.txt	soufflé	replace	soufflé n.舒芙蕾;蛋奶酥	修正误抄医学词条souffle杂音
+opencc/english_chinese.txt	seraphim	replace	seraphim n.炽天使;六翼天使(seraph的复数)	修正错译(原误译高雅的人)
+opencc/english_chinese.txt	graftable	replace	graftable a.可嫁接的;可移植的	修正误抄截断DOS命令graftabl
+opencc/english_chinese.txt	interlink	replace	interlink vt.vi.(使)互相连接;连锁	修正误抄DOS命令interlnk
+opencc/english_chinese.txt	adrenocorticotropic	replace	adrenocorticotropic a.促肾上腺皮质的	修正形容词-ic词性与释义
+opencc/english_chinese.txt	graftabl	replace	graftabl n.DOS命令:将应用程序可能使用的扩展字符集装入内存;以便得到彩色图形适配器的特性参数	补全截断释义(特性参->特性参数)
+opencc/english_chinese.txt	replace	replace	replace vt.代替;替换;放回;使恢复;归还 v.替换 n.DOS命令:用源目录中的同名文件取代目标目录中的文件;或将源目录中的文件添加到目标目录	补全截断释义
+opencc/english_chinese.txt	prompt	replace	prompt n.提示;提醒;提白;付款期限 a.迅速的;敏捷的;立刻的;提白员的 vt.激励;鼓动;提示 ad.准时地 n.DOS命令:改变DOS系统提示符的形式;将ESC键代码送到ANSI.SYS文件	修正拼写ANSY.SYS->ANSI.SYS并去除重复n.提示
+opencc/english_chinese.txt	graphics	replace	graphics n.制图法;制图学;图表算法 n.图形 n.DOS命令:允许使用Shift-PrtSc键打印屏幕图形	修正拼写Shift-PtrSc->Shift-PrtSc
+opencc/english_chinese.txt	inspirer	replace	inspirer n.鼓舞者;启发者	补全缺失中文释义(原仅n.inspiring)
+opencc/english_chinese.txt	plumply	replace	plumply ad.丰满地;直率地	补全缺失中文释义(原仅ad.plumpness)
+opencc/english_chinese.txt	unwarily	replace	unwarily ad.不小心地;轻率地	补全缺失中文释义
+opencc/english_chinese.txt	Acadia	replace	Acadia n.包括现在Nova Scotia州的旧称	补全专名粘连空格NovaScotia
+opencc/english_chinese.txt	Albany	replace	Albany n.美国New York州的首府	补全专名粘连空格NewYork
+opencc/english_chinese.txt	Hudson	replace	Hudson n.美国New York州东部的河流	补全专名粘连空格NewYork
+opencc/english_chinese.txt	irg	replace	irg n.记录间隔(Inter-Record Gap)	补全专名粘连空格Inter-RecordGap
+opencc/english_chinese.txt	newspeak	replace	newspeak n.在George Orwell小说中所创的新语	补全专名粘连空格GeorgeOrwell
+opencc/english_chinese.txt	Rolls-Royce	replace	Rolls-Royce n.劳斯莱斯	修正非标准词性pn.及品牌误译罗斯莱思->劳斯莱斯
+opencc/english_chinese.txt	collage	replace	collage n.抽象拼贴画	非8105异体拚->拼
+opencc/english_chinese.txt	respell	replace	respell vt.再拼	非8105异体拚->拼
+opencc/english_chinese.txt	nut	replace	nut n.坚果;核心;螺钉帽	非8105错字镙钉帽->螺钉帽
+opencc/english_chinese.txt	carborundum	replace	carborundum n.碳化硅;金刚砂	非W2化学字矽->硅并修正金刚矽->金刚砂
+opencc/english_chinese.txt	diatom	replace	diatom n.硅藻类	非W2化学字矽藻->硅藻
+opencc/english_chinese.txt	argillite	replace	argillite n.硅质黏土岩;黏板岩	非W2化学字矽->硅与W3粘->黏
+opencc/english_chinese.txt	buhrstone	replace	buhrstone n.硅石;以硅石所做的石臼	非W2化学字矽石->硅石
+opencc/english_chinese.txt	chert	replace	chert n.黑硅石;角岩	非W2化学字矽石->硅石
+opencc/english_chinese.txt	quartzite	replace	quartzite n.石英岩;硅岩	非W2化学字矽岩->硅岩
+opencc/english_chinese.txt	isv	replace	isv n.独立软件厂商	修正OCR错字广商->厂商
+opencc/english_chinese.txt	damages	replace	damages n.损害赔偿	修正OCR错字赔长->赔偿
+opencc/english_chinese.txt	d/p	replace	d/p n.付款交单	修正OCR错字付款交丹->付款交单
+opencc/english_chinese.txt	w/b	replace	w/b n.送货单	修正OCR错字送货丹->送货单
+opencc/english_chinese.txt	clicking	replace	clicking vbl.点击;发出咔哒声	修正OCR错字按搐及词性ing.
+opencc/english_chinese.txt	decollate	replace	decollate v.分表;分开;拆散	修正OCR错字折散->拆散
+opencc/english_chinese.txt	cadaverous	replace	cadaverous a.像尸体的;苍白的	修正OCR错字苍的的->苍白的
+opencc/english_chinese.txt	unhulled	replace	unhulled a.未去壳的	修正叠字错写未去壳的的
+opencc/english_chinese.txt	unbuttoned	replace	unbuttoned adj.敞着纽扣;解开纽扣的	修正繁体著与W5错字扭子->纽扣
+opencc/english_chinese.txt	adhering	replace	adhering vbl.黏着	修正词性ing.->vbl.与繁体著
+opencc/english_chinese.txt	harbouring	replace	harbouring vbl.怀着	修正词性ing.->vbl.与繁体著
+opencc/english_chinese.txt	harboring	replace	harboring vbl.怀着	修正词性ing.->vbl.与繁体著
+opencc/english_chinese.txt	time	replace	time n.时间;时候;时机;时期;期限;次数;节拍;暂停;比赛限时 vt.安排...的时间;记录...的时间;计时;定时 a.时间的;记时的;定时的;定期的;分期的 n.DOS命令:显示并允许改变系统时间	修正W5错字时侯->时候
+opencc/english_chinese.txt	when	replace	when conj.当...的时候 ad.何时;什么时候 pron.什么时候 n.时间	修正W5错字什么时侯->什么时候
+opencc/english_chinese.txt	salutation	replace	salutation n.招呼;寒暄;问候	修正W5错字寒喧->寒暄
+opencc/english_chinese.txt	copybook	replace	copybook n.字帖;习字簿;复写簿 a.陈腐的;陈腔滥调的	修正W5错字陈腔烂调->陈腔滥调
+opencc/english_chinese.txt	emittance	replace	emittance n.由能源所辐射的每单位面积功率	修正W5错字幅射->辐射
+opencc/english_chinese.txt	quintessence	replace	quintessence n.精粹;精华(物体)最纯粹的形体;典型	修正W3/W5错字精萃->精粹
+opencc/english_chinese.txt	quintessential	replace	quintessential a.精粹的;精髓的;典型的	修正W3/W5错字精萃->精粹
+opencc/english_chinese.txt	array	replace	array n.排列;衣服;大批 vt.部署;穿着;排列	修正W3/W5错字布署->部署
+opencc/english_chinese.txt	adrenocorticotro	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	atmospheric-circul	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	bathyconductorgrahp	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	caf'e	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	caire	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	decollat	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	erod	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	hadorwould	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	helply	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	hygenics	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	inflictabl	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	isorhas	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	repently	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	seige	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	seraphium	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	sillicosis	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	sising	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	testerone	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	translat	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	wo'nt	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	ibid.	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	approx.	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	etc.	delete		清理OCR截断/错拼或不可达句点后缀词条
+opencc/english_chinese.txt	kolun	rename	kohm|kohm n.千欧姆的缩写	修复OCR错字kolun->kohm与仟->千

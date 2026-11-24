@@ -592,6 +592,19 @@ def check_schema_and_opencc(
             for ref_file in _collect_opencc_json_files(doc):
                 if not (occ_dir / ref_file).exists():
                     errors.append(f"opencc/{jf.name}: referenced dictionary file 'opencc/{ref_file}' does not exist")
+            stack = [doc]
+            while stack:
+                node = stack.pop()
+                if isinstance(node, dict):
+                    if node.get("type") == "group":
+                        mp = node.get("match_policy")
+                        if mp not in ("short_circuit", "union"):
+                            errors.append(
+                                f"opencc/{jf.name}: group dict missing valid 'match_policy' (expected 'short_circuit' or 'union')"
+                            )
+                    stack.extend(node.values())
+                elif isinstance(node, list):
+                    stack.extend(node)
 
         for rel in MANAGED_OPENCC_FILES:
             p = root / rel

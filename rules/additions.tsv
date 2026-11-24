@@ -769,3 +769,5 @@ cn_dicts/base.dict.yaml	还给我们	huan gei wo men	214	phonetic	现汉第7版(
 cn_dicts/base.dict.yaml	还回	huan hui	88	phonetic	现汉第7版(归还义补录，<唤回97/换回854)
 cn_dicts/base.dict.yaml	还多了	huan duo le	40	phonetic	现汉第7版(归还过多义补录，次于hai duo le 344)
 cn_dicts/base.dict.yaml	削了	xiao le	180	phonetic	现汉第7版(削皮义补录，严控<消了223，保留xue le 279)
+# Batch 4 (others): diezi parity with opencc/others.txt (335/335)
+cn_dicts/others.dict.yaml	四个曰	si ge yue	0	common	补齐opencc/others.txt叠字触发键(335/335对齐)
