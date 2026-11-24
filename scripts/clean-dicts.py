@@ -1176,6 +1176,16 @@ def post_normalize_medication(lines: list[str], stats: dict) -> list[str]:
                 w, py, "壳", "ke", "qiao",
                 cond=lambda wd, sy, i: (i > 0 and wd[i - 1] == "枳") or (i >= 2 and wd[i - 2 : i] == "罂粟"),
             )
+        if "参" in w and "can" in py.split():
+            med_can_allow = (
+                "参考", "参数", "参照", "参比", "参赛", "参入", "脱参",
+                "参天制药", "仆参", "衷中参西", "三部不参", "参德力",
+                "参与", "参加", "参预", "参观", "参展", "参会", "参评",
+                "参量", "参看", "参酌", "参杂",
+            )
+            if not any(s in w for s in med_can_allow):
+                py = replace_syl_at(w, py, "参", "can", "shen")
+        py = fix_non_shenme_shi(w, py)
         if w.endswith("俞"):
             syls = py.split()
             if len(syls) == len(w) and syls[-1] == "yu":
@@ -1190,7 +1200,7 @@ def post_normalize_medication(lines: list[str], stats: dict) -> list[str]:
 
 
 def post_normalize_shulihua(lines: list[str], stats: dict) -> list[str]:
-    """Post-overlay pass: normalize W3 physical-property 粘* -> 黏* in shulihua.dict.yaml."""
+    """Post-overlay pass: normalize W3 physical-property 粘* -> 黏* and non-什么 什 in shulihua.dict.yaml."""
     hdr, body = split_header_body(lines)
     out = list(hdr)
     word_replacements = (
@@ -1213,6 +1223,7 @@ def post_normalize_shulihua(lines: list[str], stats: dict) -> list[str]:
                 w = w.replace(old_sub, new_sub)
         if "黏" in w and "zhan" in py.split():
             py = replace_syl_at(w, py, "黏", "zhan", "nian")
+        py = fix_non_shenme_shi(w, py)
         if w != orig_w:
             stats["fixed_word_or_trad"] += 1
         if py != orig_py:

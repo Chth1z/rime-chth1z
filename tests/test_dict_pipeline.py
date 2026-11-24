@@ -572,6 +572,37 @@ class TestCleanerHardeningAndZeroPingPong(unittest.TestCase):
         self.assertIn("炮二平五\tpao er ping wu\t5", joined)
         self.assertEqual(st["deleted_trad_piece"], 2)
 
+    def test_post_normalize_medication_can_allowlist_and_shi(self) -> None:
+        lines = [
+            "---",
+            "name: medication",
+            "...",
+            "蚕参健脾颗粒\tcan can jian pi ke li\t0",
+            "参苓白术丸\tcan ling bai zhu wan\t18",
+            "医学参考值\tyi xue can kao zhi\t1",
+            "仆参穴\tpu can xue\t0",
+            "人迎趺阳三部不参\tren ying fu yang san bu bu can\t0",
+            "参德力糖浆\tcan de li tang jiang\t0",
+            "奥罗普什热\tao luo pu shen re\t0",
+        ]
+        st: Counter = Counter()
+        out = clean_dicts.post_normalize_medication(lines, st)
+        joined = "\n".join(out)
+        self.assertIn("蚕参健脾颗粒\tcan shen jian pi ke li\t0", joined)
+        self.assertIn("参苓白术丸\tshen ling bai zhu wan\t18", joined)
+        self.assertIn("医学参考值\tyi xue can kao zhi\t1", joined)
+        self.assertIn("仆参穴\tpu can xue\t0", joined)
+        self.assertIn("人迎趺阳三部不参\tren ying fu yang san bu bu can\t0", joined)
+        self.assertIn("参德力糖浆\tcan de li tang jiang\t0", joined)
+        self.assertIn("奥罗普什热\tao luo pu shi re\t0", joined)
+        self.assertEqual(st["fixed_py"], 3)
+
+        sh_lines = ["---", "name: shulihua", "...", "福科什引理\tfu ke shen yin li\t0"]
+        sh_st: Counter = Counter()
+        sh_out = "\n".join(clean_dicts.post_normalize_shulihua(sh_lines, sh_st))
+        self.assertIn("福科什引理\tfu ke shi yin li\t0", sh_out)
+        self.assertEqual(sh_st["fixed_py"], 1)
+
 
 if __name__ == "__main__":
     unittest.main()

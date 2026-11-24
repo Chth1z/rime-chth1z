@@ -755,3 +755,57 @@ cn_dicts_cell/food.dict.yaml	网油棒榻	*	网油椿塌	wang you chun ta	W5传�
 cn_dicts_cell/food.dict.yaml	油条西舌	*	油条西施舌	you tiao xi shi she	W5闽菜“油条西施舌”漏字（脱“施”字）	闽菜菜谱
 cn_dicts_cell/food.dict.yaml	鱼包三经	*	鱼包三丝	yu bao san si	W5传统鲁菜“鱼包三丝”OCR错字（丝->经）	鲁菜菜谱
 cn_dicts_cell/food.dict.yaml	椰汁板兰糕	*	椰汁斑斓糕	ye zhi ban lan gao	W5“斑斓”误作“板兰”	菜谱正字
+# Batch 3 (medication & shulihua): verified OCR/word-form fixes
+cn_dicts_cell/medication.dict.yaml	未闻及湿罗音	wei wen ji shi luo yin	未闻及湿啰音	*	W3医学规范“啰音”作口字旁啰（与 base 干啰音/湿啰音统一）	现汉第7版/全国科技名词委(L1/L2)
+cn_dicts_cell/medication.dict.yaml	回波平面显象	hui bo ping mian xian xiang	回波平面显像	*	W3异形词整理表“显像”规范作像	第一批异形词整理表(L1)
+cn_dicts_cell/medication.dict.yaml	聚酰氨膜透析器	ju xian an mo tou xi qi	聚酰胺膜透析器	*	W5错别字：聚酰胺(polyamide)误作聚酰氨	全国科技名词委/化工命名(L2)
+cn_dicts_cell/medication.dict.yaml	聚氰基丙烯酸异丁脂	ju qing ji bing xi suan yi ding zhi	聚氰基丙烯酸异丁酯	*	W5错别字：酯(ester)误作脂	化学命名原则(L2)
+cn_dicts_cell/medication.dict.yaml	乌柏脂	wu bai zhi	乌桕脂	wu jiu zhi	W5 OCR错字：乌桕(Triadica sebifera)误作乌柏	中国植物志/中华本草(L2)
+cn_dicts_cell/medication.dict.yaml	拉姆齐享特二氏神经痛	la mu qi xiang te er shi shen jing tong	拉姆齐亨特二氏神经痛	la mu qi heng te er shi shen jing tong	W5 OCR错字：Ramsay Hunt 亨特误作享特	全国科技名词委(L2)
+cn_dicts_cell/medication.dict.yaml	享特共济失调	xiang te gong ji shi tiao	亨特共济失调	heng te gong ji shi tiao	W5 OCR错字：Hunt 亨特误作享特	全国科技名词委(L2)
+cn_dicts_cell/medication.dict.yaml	健康体重称	jian kang ti zhong cheng	健康体重秤	*	W5错别字：衡器“体重秤”误作称	现汉第7版(L1)
+cn_dicts_cell/medication.dict.yaml	深部拉勾	shen bu la gou	深部拉钩	*	W5错别字：外科器械“拉钩”误作拉勾	医疗器械分类目录/现汉第7版(L1/L2)
+cn_dicts_cell/medication.dict.yaml	双爪皮肤拉勾	shuang zhua pi fu la gou	双爪皮肤拉钩	shuang zhao pi fu la gou	W5错别字拉勾->拉钩，并正爪 zhǎo	医疗器械分类目录/现汉第7版(L1/L2)
+cn_dicts_cell/medication.dict.yaml	五洋一号拉勾	wu yang yi hao la gou	五洋一号拉钩	*	W5错别字：外科器械“拉钩”误作拉勾	医疗器械分类目录(L2)
+cn_dicts_cell/medication.dict.yaml	五洋二号拉勾	wu yang er hao la gou	五洋二号拉钩	*	W5错别字：外科器械“拉钩”误作拉勾	医疗器械分类目录(L2)
+cn_dicts_cell/medication.dict.yaml	五洋三号拉勾	wu yang san hao la gou	五洋三号拉钩	*	W5错别字：外科器械“拉钩”误作拉勾	医疗器械分类目录(L2)
+cn_dicts_cell/medication.dict.yaml	五洋四号拉勾	wu yang si hao la gou	五洋四号拉钩	*	W5错别字：外科器械“拉钩”误作拉勾	医疗器械分类目录(L2)
+cn_dicts_cell/medication.dict.yaml	五洋五号拉勾	wu yang wu hao la gou	五洋五号拉钩	*	W5错别字：外科器械“拉钩”误作拉勾	医疗器械分类目录(L2)
+cn_dicts_cell/medication.dict.yaml	心脏动脉瘤破裂修朴	xin zang dong mai liu po lie xiu pu	心脏动脉瘤破裂修补	xin zang dong mai liu po lie xiu bu	W5 OCR错字：修补误作修朴	全国科技名词委(L2)
+cn_dicts_cell/medication.dict.yaml	乙状结肠造瘘还讷术	yi zhuang jie chang zao lou hai ne shu	乙状结肠造瘘还纳术	yi zhuang jie chang zao lou huan na shu	W5错字还讷->还纳并正音 huán nà	全国科技名词委(L2)
+cn_dicts_cell/medication.dict.yaml	对二乙酰胺基苯矾	dui er yi xian an ji ben fan	对二乙酰胺基苯砜	dui er yi xian an ji ben feng	W5 OCR错字：acedapsone 苯砜(sulfone)误作苯矾	全国科技名词委/药学名词(L2)
+cn_dicts_cell/medication.dict.yaml	复方甘草酸胺针	fu fang gan cao suan an zhen	复方甘草酸铵针	*	W5错别字：甘草酸铵(ammonium)误作胺	中国药典/NMPA药品标准(L2)
+cn_dicts_cell/medication.dict.yaml	欧洲越桔华青苷胡萝卜素	ou zhou yue ju hua qing gan hu luo bo su	欧洲越桔花青苷胡萝卜素	*	W5错别字：花青苷(anthocyanin)误作华青苷	全国科技名词委(L2)
+cn_dicts_cell/medication.dict.yaml	荠薴	ji ning	荠苧	*	非8105繁体“薴”规范作8105“苧”(níng)	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/medication.dict.yaml	乙菧酚	yi di fen	乙茋酚	*	非8105异体“菧”规范作8105“茋”(dǐ)	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/medication.dict.yaml	山萮醇	shan yu chun	山嵛醇	*	非8105异体“萮”规范作8105“嵛”	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/medication.dict.yaml	匍伏蓳	pu fu jin	匍匐堇	*	非8105异体“蓳”->“堇”及错字“匍伏”->“匍匐”	通用规范汉字表/中国植物志(L1/L2)
+cn_dicts_cell/medication.dict.yaml	越王余筭	yue wang yu suan	越王余算	*	非8105异体“筭”规范作8105“算”	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/shulihua.dict.yaml	渐进自由	jian jin zi you	渐近自由	*	W5物理术语错字：QCD asymptotic freedom 规范作“渐近自由”	全国科技名词委《物理学名词》(L2)
+cn_dicts_cell/shulihua.dict.yaml	三菲咯啉钉	san fei ge lin ding	三菲咯啉钌	san fei luo lin liao	W5 OCR错字钉->钌（同 deletions:1895/1900等）并正菲咯啉 luò	化学命名原则/全国科技名词委(L2)
+cn_dicts_cell/shulihua.dict.yaml	盐酸阿朴吗啉	yan suan a pu ma lin	盐酸阿朴吗啡	yan suan a pu ma fei	W5错字：Apomorphine 阿朴吗啡误作吗啉	中国药典(L2)
+cn_dicts_cell/shulihua.dict.yaml	山俞酸酐	shan yu suan gan	山嵛酸酐	*	W5错字：behenic acid 山嵛酸误作山俞酸	化学命名原则(L2)
+cn_dicts_cell/shulihua.dict.yaml	山萮酸银	shan yu suan yin	山嵛酸银	*	非8105异体“萮”规范作8105“嵛”	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/shulihua.dict.yaml	菧二酸	di er suan	茋二酸	*	非8105异体“菧”规范作8105“茋”(dǐ)	通用规范汉字表/DICTIONARY_SPEC §2.6
+cn_dicts_cell/shulihua.dict.yaml	碘化十烃季胺	dian hua shi ting ji an	碘化十烃季铵	*	W5错字：季铵盐(decamethonium)规范作金字旁铵	全国科技名词委《化学名词》(L2)
+cn_dicts_cell/shulihua.dict.yaml	溴化十烃季胺	xiu hua shi ting ji an	溴化十烃季铵	*	W5错字：季铵盐规范作金字旁铵	全国科技名词委《化学名词》(L2)
+cn_dicts_cell/shulihua.dict.yaml	三羟乙基季胺甲基硫酸盐	san qiang yi ji ji an jia ji liu suan yan	三羟乙基季铵甲基硫酸盐	*	W5错字：季铵盐规范作金字旁铵	全国科技名词委《化学名词》(L2)
+cn_dicts_cell/shulihua.dict.yaml	二甘醇二丙脂	er gan chun er bing zhi	二甘醇二丙酯	*	W5错字：酯(ester)误作脂	化学命名原则(L2)
+cn_dicts_cell/shulihua.dict.yaml	尼泊金丙脂	ni bo jin bing zhi	尼泊金丙酯	*	W5错字：尼泊金丙酯(propylparaben)误作脂	中国药典/化学命名原则(L2)
+cn_dicts_cell/shulihua.dict.yaml	醋酸异丙脂	cu suan yi bing zhi	醋酸异丙酯	*	W5错字：酯(ester)误作脂	化学命名原则(L2)
+cn_dicts_cell/shulihua.dict.yaml	技术琼脂	ji shu qiong zhi	计数琼脂	*	W5错字：微生物 Plate Count Agar 计数琼脂误作技术琼脂	国家食品安全标准GB 4789(L2)
+cn_dicts_cell/shulihua.dict.yaml	细菌技术琼脂	xi jun ji shu qiong zhi	细菌计数琼脂	*	W5错字：细菌计数琼脂误作技术琼脂	国家食品安全标准GB 4789(L2)
+cn_dicts_cell/shulihua.dict.yaml	焦炭称	jiao tan cheng	焦炭秤	*	W5错字：衡器“秤”误作称	现汉第7版(L1)
+cn_dicts_cell/shulihua.dict.yaml	范拓朴	fan tuo pu	范拓扑	*	W5错字：拓扑(topology)误作拓朴（同 base:1570 规范）	现汉第7版/全国科技名词委(L1/L2)
+cn_dicts_cell/shulihua.dict.yaml	组合拓朴学	zu he tuo pu xue	组合拓扑学	*	W5错字：拓扑误作拓朴	现汉第7版/全国科技名词委(L1/L2)
+cn_dicts_cell/shulihua.dict.yaml	特征座标	te zheng zuo biao	特征坐标	*	W3坐标规范用坐（同 word_fixes:708-710）	现汉第7版(L1)
+cn_dicts_cell/shulihua.dict.yaml	循环座标	xun huan zuo biao	循环坐标	*	W3坐标规范用坐	现汉第7版(L1)
+cn_dicts_cell/shulihua.dict.yaml	单凋列	dan diao lie	单调列	*	W5数学词库OCR错字凋->调	全国科技名词委《数学名词》(L2)
+cn_dicts_cell/shulihua.dict.yaml	多重单凋列	duo chong dan diao lie	多重单调列	*	W5数学词库OCR错字凋->调	全国科技名词委《数学名词》(L2)
+cn_dicts_cell/shulihua.dict.yaml	完全单凋列	wan quan dan diao lie	完全单调列	*	W5数学词库OCR错字凋->调	全国科技名词委《数学名词》(L2)
+cn_dicts_cell/shulihua.dict.yaml	严格单凋列	yan ge dan diao lie	严格单调列	*	W5数学词库OCR错字凋->调	全国科技名词委《数学名词》(L2)
+cn_dicts_cell/shulihua.dict.yaml	上同凋列	shang tong diao lie	上同调列	*	W5数学词库OCR错字凋->调	全国科技名词委《数学名词》(L2)
+cn_dicts_cell/shulihua.dict.yaml	同凋列	tong diao lie	同调列	*	W5数学词库OCR错字凋->调	全国科技名词委《数学名词》(L2)
+cn_dicts_cell/shulihua.dict.yaml	正合上同凋列	zheng he shang tong diao lie	正合上同调列	*	W5数学词库OCR错字凋->调	全国科技名词委《数学名词》(L2)
+cn_dicts_cell/shulihua.dict.yaml	自校验代吗	zi jiao yan dai ma	自校验代码	*	W5数学词库OCR错字吗->码	全国科技名词委(L2)
+cn_dicts_cell/shulihua.dict.yaml	蛤同性体	ge tong xing ti	各向同性体	ge xiang tong xing ti	W5数学词库系统性码表损坏：各向->蛤	全国科技名词委《物理学名词》(L2)

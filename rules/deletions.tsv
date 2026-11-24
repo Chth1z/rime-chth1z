@@ -934,15 +934,11 @@ cn_dicts_cell/medication.dict.yaml	一次性使用导光鼻塞	yi ci xing shi yo
 cn_dicts_cell/medication.dict.yaml	一次性使用输氧管输出管加鼻塞	yi ci xing shi yong shu yang guan shu chu guan jia bi se	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	三焦俞穴	san jiao yu xue	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	中以保身长全	zhong yi bao shen zhang quan	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	丹参保心茶	dan can bao xin cha	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	人体对称美	ren ti dui cheng mei	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	人参保肺	ren can bao fei	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	人参保肺丸	ren can bao fei wan	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	人禀五常以有五藏	ren bing wu chang yi you wu cang	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	人造石面地柜	ren zao shi mian de gui	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	以有五藏	yi you wu cang	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	伤风鼻塞病	shang feng bi sai bing	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	全须生晒参	quan xu sheng shai can	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	关元俞穴	guan yuan yu xue	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	冷荨麻疹	leng qian ma zhen	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	切开法重睑成形术	qie kai fa zhong jian cheng xing shu	R1清理医药重复错音行
@@ -951,12 +947,9 @@ cn_dicts_cell/medication.dict.yaml	前列仙	*	R1/R2清理医药噪声词
 cn_dicts_cell/medication.dict.yaml	厥阴俞穴	jue yin yu xue	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	受调分泌	shou diao fen mi	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	埋线法重睑成形术	mai xian fa zhong jian cheng xing shu	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	墨元参	mo yuan can	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	天行赤眼暴翳病	tian hang chi yan bao yi bing	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	天行赤眼病	tian hang chi yan bing	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	姜汤调服止嗽频	jiang tang diao fu zhi sou pin	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	实者枳壳易人参	shi zhe zhi qiao yi ren can	R1清理医药重复错音行(人参误注can)
-cn_dicts_cell/medication.dict.yaml	干姜甘草与人参	gan jiang gan cao yu ren can	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	心俞穴	xin yu xue	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	悸眩瞤惕急煎尝	ji xuan shun ti ji jian chang	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	术附汤	shu fu tang	R1清理医药重复错音行
@@ -975,8 +968,6 @@ cn_dicts_cell/medication.dict.yaml	派蒙	*	R1/R2清理医药噪声词
 cn_dicts_cell/medication.dict.yaml	海咯因检测试剂	*	R1/R2清理医药噪声词
 cn_dicts_cell/medication.dict.yaml	海尔洗衣机	*	R1/R2清理医药噪声词
 cn_dicts_cell/medication.dict.yaml	牛羊等	*	R1/R2清理医药噪声词
-cn_dicts_cell/medication.dict.yaml	猫人参	mao ren can	R1清理医药重复错音行
-cn_dicts_cell/medication.dict.yaml	生脉麦味与人参	sheng mai mai wei yu ren can	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	痔疮栓塞	zhi chuang shuan sai	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	白内障针拨套出术	bai nei zhang zhen bo tao chu zhu	R1清理医药重复错音行
 cn_dicts_cell/medication.dict.yaml	白沙糖	*	R1/R2清理医药噪声词
@@ -1954,7 +1945,7 @@ cn_dicts_cell/sport.dict.yaml	中段手刀外展格档对拆	zhong duan shou dao
 cn_dicts_cell/sport.dict.yaml	弗郎西斯科莫德斯托	fu lang xi si ke mo de si tuo	人名译写错字（弗郎西斯科->弗朗西斯科）
 cn_dicts_cell/sport.dict.yaml	巴林英特拉格斯赛道	ba lin ying te la ge si sai dao	事实错误/错字（英特拉格斯赛道在巴西圣保罗，非巴林）
 cn_dicts_cell/medication.dict.yaml	去胸腺并经照射的无	qu xiong xian bing jing zhao she de wu	L13369: Truncated medical term ending in 的无
-cn_dicts_cell/medication.dict.yaml	正韩别直参精美纸盒装	zheng han bie zhi can jing mei zhi he zhuang	L22500: E-commerce gift-box packaging ad text
+cn_dicts_cell/medication.dict.yaml	正韩别直参精美纸盒装	*	L22500: E-commerce gift-box packaging ad text
 cn_dicts_cell/medication.dict.yaml	半侧下颌骨踽环模型	ban ce xia he gu ju huan mo xing	L23750: OCR typo 踽环 for 龋坏
 cn_dicts_cell/medication.dict.yaml	带有推送系统的支架支架和静脉支架	dai you tui song xi tong de zhi jia zhi jia he jing mai zhi jia	L23945: Garbled/Latin-stripped duplicate 支架支架
 cn_dicts_cell/medication.dict.yaml	高压球囊扩张导管球囊扩张导管	gao ya qiu nang kuo zhang dao guan qiu nang kuo zhang dao guan	L24221: Corrupted duplicate concatenation 球囊扩张导管x2
@@ -2946,3 +2937,165 @@ cn_dicts_cell/food.dict.yaml	兴业容器	*	非食品包装企业名噪声（同
 cn_dicts_cell/food.dict.yaml	樽皇酒具	*	非食品器皿抓取噪声（酒具）
 # --- Batch 2: 8105.dict.yaml non-L1 deletion ---
 cn_dicts/8105.dict.yaml	呒	mu	现汉第7版/新华字典12无mu读音(仅收fǔ与吴语鼻音ḿ)，且w=25倒挂规范主读fu(5)
+# Batch 3 (medication & shulihua): verified typos, OCR corruption & math-section mojibake cleanup
+cn_dicts_cell/medication.dict.yaml	干罗音	gan luo yin	W3异形词（base:85171 已有正形“干啰音”）
+cn_dicts_cell/medication.dict.yaml	胃超声显象液	wei chao sheng xian xiang ye	W3异形词（同文件 L55893 已有正形“胃超声显像液”）
+cn_dicts_cell/medication.dict.yaml	显象剂	xian xiang ji	W3异形词（ext:159855 已有正形“显像剂”）
+cn_dicts_cell/medication.dict.yaml	参苏感昌片	*	L30361: W5 OCR错字感昌->感冒（同文件 L30363 已有参苏感冒片）
+cn_dicts_cell/medication.dict.yaml	感昌咳嗽颗粒	gan chang ke sou ke li	L37064: W5 OCR错字感昌->感冒（同文件 L37245 已有感冒咳嗽颗粒）
+cn_dicts_cell/medication.dict.yaml	感昌退烧片	gan chang tui shao pian	L37065: W5 OCR错字感昌->感冒（同文件 L37275 已有感冒退烧片）
+cn_dicts_cell/medication.dict.yaml	清热感昌颗粒	qing re gan chang ke li	L49715: W5 OCR错字感昌->感冒（同文件 L49718 已有清热感冒颗粒）
+cn_dicts_cell/medication.dict.yaml	桑菊感昌颗粒	sang ju gan chang ke li	L51530: W5 OCR错字感昌->感冒（同文件 L51533 已有桑菊感冒颗粒）
+cn_dicts_cell/medication.dict.yaml	桑菊感昌片	sang ju gan chang pian	L51531: W5 OCR错字感昌->感冒（base:223524 已有桑菊感冒片）
+cn_dicts_cell/medication.dict.yaml	银花感昌颗粒	yin hua gan chang ke li	L62185: W5 OCR错字感昌->感冒（同文件 L62187 已有银花感冒颗粒）
+cn_dicts_cell/medication.dict.yaml	参伯舒阴洗液	*	L30185: W5错字参伯->参柏（同文件 L30174 已有参柏舒阴洗液）
+cn_dicts_cell/medication.dict.yaml	参苟胶囊	*	L30220: W5 OCR错字参苟->参芍（同文件 L1283 已有参芍胶囊）
+cn_dicts_cell/medication.dict.yaml	参芩白术散	*	L30329: W5错字参芩->参苓（base:230521 已有参苓白术散）
+cn_dicts_cell/medication.dict.yaml	藏菌陈	*	L1312: W5错字菌陈->茵陈（同文件 L30438 已有藏茵陈）
+cn_dicts_cell/medication.dict.yaml	霍朴夏苓汤	*	L7175: W5错字霍->藿（同文件 L7174 已有藿朴夏苓汤）
+cn_dicts_cell/medication.dict.yaml	加味香吵枳术丸	*	L40632: W5 OCR错字香吵->香砂（同文件 L40636 已有加味香砂枳术丸）
+cn_dicts_cell/medication.dict.yaml	曲麦枳术刃	*	L50147: W5 OCR错字刃->丸（同文件 L13312 已有曲麦枳术丸）
+cn_dicts_cell/medication.dict.yaml	香砂积术丸	*	L57439: W5 OCR错字积术->枳术（同文件 L57463 已有香砂枳术丸）
+cn_dicts_cell/medication.dict.yaml	积术宽中胶囊	*	L92242: W5 OCR错字积术->枳术（同文件 L22740 已有枳术宽中胶囊）
+cn_dicts_cell/medication.dict.yaml	呐咯酮	na ge tong	L47071: W5错字呐咯酮->纳洛酮（base:186404 已有纳洛酮）
+cn_dicts_cell/medication.dict.yaml	噻吗咯尔片	sai ma ge er pian	L51114: W5错字咯->洛（同文件 L51118 已有法定名噻吗洛尔片）
+cn_dicts_cell/medication.dict.yaml	吲哚咯尔片	yin duo ge er pian	L62145: W5错字咯->洛（同文件 L62150 已有法定名吲哚洛尔片）
+cn_dicts_cell/medication.dict.yaml	小儿复方盐酸妥咯特罗片	xiao er fu fang yan suan tuo ge te luo pian	L57678: W5错字咯->洛（同文件 L57682 已有法定名小儿复方盐酸妥洛特罗片）
+cn_dicts_cell/medication.dict.yaml	交联聚乙烯比咯烷酮	jiao lian ju yi xi bi ge wan tong	L94312: W5错字比咯->吡咯（同文件 L41172 已有交联聚乙烯吡咯烷酮）
+cn_dicts_cell/medication.dict.yaml	聚乙烯比咯烷酮	ju yi xi bi ge wan tong	L96371: W5错字比咯->吡咯（shulihua:4796 已有聚乙烯吡咯烷酮）
+cn_dicts_cell/medication.dict.yaml	二乙胺基辛脂	er yi an ji xin zhi	L84734: W5错字脂->酯（同文件 L84735 已有二乙胺基辛酯）
+cn_dicts_cell/medication.dict.yaml	高甘油三脂	gao gan you san zhi	L87957: W5错字脂->酯（composite:563800 已有高甘油三酯）
+cn_dicts_cell/medication.dict.yaml	高甘油三脂血症	gao gan you san zhi xue zheng	L87958: W5错字脂->酯（同文件 L87959 已有高甘油三酯血症）
+cn_dicts_cell/medication.dict.yaml	金扃柏	jin jiong bai	L95115: W5 OCR错字扃->扁（同文件 L95058 已有金扁柏）
+cn_dicts_cell/medication.dict.yaml	皮肤塬着病	pi fu yuan zhe bing	L103403: W5 OCR错字塬->垢（同文件 L103292 已有皮肤垢着病）
+cn_dicts_cell/medication.dict.yaml	啊朴啡	a pu fei	L27325: W5错字漏字（正名阿朴吗啡）
+cn_dicts_cell/medication.dict.yaml	哌泊噻棕榈酸酯	pai bo sai zong lv suan zhi	L47981: 漏字“嗪”（正名哌泊噻嗪棕榈酸酯，L47980 已有）
+cn_dicts_cell/medication.dict.yaml	二乙酰氨乙酰二胺注射液	er yi xian an yi xian er an zhu she ye	L33707: 药品名错写（正名 L33706 二乙酰氨乙酸乙二胺注射液）
+cn_dicts_cell/medication.dict.yaml	外用冻干人纤维蛋白粘口服液	wai yong dong gan ren xian wei dan bai zhan kou fu ye	L55719: 严重错拼垃圾（对比上行 L55718 外用冻干人纤维蛋白粘合剂，合剂被误替为口服液）
+cn_dicts_cell/medication.dict.yaml	纤维蛋白粘口服液	xian wei dan bai zhan kou fu ye	L57311: 严重错拼垃圾（对比上行 L57310 纤维蛋白粘合剂）
+cn_dicts_cell/medication.dict.yaml	天酸粘固粉	tian suan zhan gu fen	L25581: 医疗器械目录 OCR 错字（磷酸/硅酸误作天酸）
+cn_dicts_cell/medication.dict.yaml	俤综合征	di zong he zheng	L82672: OCR 乱码残缺综合征名
+cn_dicts_cell/medication.dict.yaml	豇豇豆球朊	jiang jiang dou qiu ruan	L94200: 叠字错拼垃圾（豇豇）
+cn_dicts_cell/medication.dict.yaml	颈外动静脉脉	jing wai dong jing mo mo	L72673: 尾字重复“脉脉”并致错音 mo mo
+cn_dicts_cell/medication.dict.yaml	病病毒血清型型	bing bing du xue qing xing xing	L78795: 首尾双重叠字垃圾（病病+型型）
+cn_dicts_cell/medication.dict.yaml	动脉调转术术	dong mai diao zhuan shu shu	L83117: 尾字重复“术术”（同 deletions:1977/1992）
+cn_dicts_cell/medication.dict.yaml	肱动脉结扎术术	gong dong mai jie za shu shu	L88494: 尾字重复“术术”
+cn_dicts_cell/medication.dict.yaml	先天性重唇唇畸形	xian tian xing zhong chun chun ji xing	L112115: 叠字错拼“唇唇”
+cn_dicts_cell/medication.dict.yaml	法洛法乐五联症	fa luo fa yue wu lian zheng	L84833: 同义词条拼接垃圾（法洛+法乐）
+cn_dicts_cell/medication.dict.yaml	王不留行留行子	wang bu liu xing liu hang zi	L17687: 同义词条拼接垃圾（王不留行+留行子）
+cn_dicts_cell/medication.dict.yaml	地榆地榆	di yu di yu	L82652: X+X 重复拼接垃圾（同 deletions:1985）
+cn_dicts_cell/medication.dict.yaml	番泻苷番泻苷	fan xie gan fan xie gan	L85051: X+X 重复拼接垃圾
+cn_dicts_cell/medication.dict.yaml	甘草甘草	gan cao gan cao	L87318: X+X 重复拼接垃圾
+cn_dicts_cell/medication.dict.yaml	藁本藁本	gao ben gao ben	L87911: X+X 重复拼接垃圾
+cn_dicts_cell/medication.dict.yaml	静脉静脉	jing mai jing mai	L95625: X+X 重复拼接垃圾
+cn_dicts_cell/medication.dict.yaml	卷柏卷柏	juan bai juan bai	L96412: X+X 重复拼接垃圾
+cn_dicts_cell/medication.dict.yaml	立思丁立思丁	li si ding li si ding	L98919: X+X 重复拼接垃圾
+cn_dicts_cell/medication.dict.yaml	龙胆龙胆	long dan long dan	L99742: X+X 重复拼接垃圾
+cn_dicts_cell/medication.dict.yaml	羌活羌活	qiang huo qiang huo	L104547: X+X 重复拼接垃圾
+cn_dicts_cell/medication.dict.yaml	旋覆花旋覆花	xuan fu hua xuan fu hua	L113682: X+X 重复拼接垃圾
+cn_dicts_cell/medication.dict.yaml	正韩别直参精美纸	*	L22467: 电商礼盒广告截断残片（对比 deletions:1957 正韩别直参精美纸盒装）
+cn_dicts_cell/medication.dict.yaml	盒装和参考源	he zhuang he can kao yuan	L90278: 希腊/拉丁字母剥离残缺词（盒装α和β参考源）
+cn_dicts_cell/medication.dict.yaml	的抗原	de kang yuan	L2995: “的”字开头抓取碎片
+cn_dicts_cell/medication.dict.yaml	次黄嘌呤鸟嘌呤磷	ci huang piao ling niao piao ling lin	L31200: 下行 L31201（次黄嘌呤鸟嘌呤转磷酸核糖基酶）尾部截断残片
+cn_dicts_cell/medication.dict.yaml	或湖	huo hu	L39786: 字母/词组剥离残缺碎片
+cn_dicts_cell/medication.dict.yaml	或花	huo hua	L39787: 字母/词组剥离残缺碎片
+cn_dicts_cell/medication.dict.yaml	或酯	huo zhi	L39904: 字母/词组剥离残缺碎片
+cn_dicts_cell/medication.dict.yaml	及克	ji ke	L39982: 字母/数字剥离残缺碎片
+cn_dicts_cell/medication.dict.yaml	利什特海姆综合征型	*	L98900: 尾部字母/罗马数字剥离残缺且什误读 shen
+cn_dicts_cell/medication.dict.yaml	副粘病毒型	fu zhan bing du xing	L87151: 尾部数字剥离残缺（副黏病毒1/2/3型）
+cn_dicts_cell/medication.dict.yaml	醋酸氯已定酊协和	cu suan lv yi ding ding xie he	L81247: 错字氯已定->氯己定+医院名截断
+cn_dicts_cell/medication.dict.yaml	醋酸氯已定协和	cu suan lv yi ding xie he	L81248: 错字氯已定->氯己定+医院名截断
+cn_dicts_cell/medication.dict.yaml	畅脉乐号胶囊省二	chang mai le hao jiao nang sheng er	L80006: 数字剥离+医院名截断制剂（同 deletions:1980/1986-1989）
+cn_dicts_cell/medication.dict.yaml	氢松鱼比油号市皮	qing song yu bi you hao shi pi	L104822: 数字剥离+医院名截断+错字（鱼石脂/比油）
+cn_dicts_cell/medication.dict.yaml	乳消号胶囊省二	ru xiao hao jiao nang sheng er	L106000: 数字剥离+医院名截断制剂
+cn_dicts_cell/medication.dict.yaml	头发洗剂号市皮	tou fa xi ji hao shi pi	L109851: 数字剥离+医院名截断制剂
+cn_dicts_cell/shulihua.dict.yaml	直角座标	zhi jiao zuo biao	L23909: W3座标->坐标（base:354405 已有直角坐标）
+cn_dicts_cell/shulihua.dict.yaml	蕃茄苷	fan qie gan	L27137: W3蕃茄->番茄（同文件 L27138 已有番茄苷）
+cn_dicts_cell/shulihua.dict.yaml	过硫酸胺	guo liu suan an	L27865: W5错字胺->铵（同文件 L3657 已有过硫酸铵）
+cn_dicts_cell/shulihua.dict.yaml	三碘季胺酚	san dian ji an fen	L31225: W5错字季胺->季铵（medication:106215 已有三碘季铵酚）
+cn_dicts_cell/shulihua.dict.yaml	水杨酸甲脂	shui yang suan jia zhi	L31752: W5错字脂->酯（base:246475 已有水杨酸甲酯）
+cn_dicts_cell/shulihua.dict.yaml	碳酸二乙脂	tan suan er yi zhi	L32081: W5错字脂->酯（同文件 L32082 已有碳酸二乙酯）
+cn_dicts_cell/shulihua.dict.yaml	聚甲基丙烯酸甲脂	ju jia ji bing xi suan jia zhi	L34694: W5错字脂->酯（base:144381 已有聚甲基丙烯酸甲酯）
+cn_dicts_cell/shulihua.dict.yaml	乙酸异丙脂	yi suan yi bing zhi	L34947: W5错字脂->酯（同文件 L10307 已有乙酸异丙酯）
+cn_dicts_cell/shulihua.dict.yaml	乙酸正丙脂	yi suan zheng bing zhi	L34951: W5错字脂->酯（同文件 L10316 已有乙酸正丙酯）
+cn_dicts_cell/shulihua.dict.yaml	代吗	dai ma	L13127: W5 OCR错字吗->码（base:51180 已有代码）
+cn_dicts_cell/shulihua.dict.yaml	二进制吗	er jin zhi ma	L14290: W5 OCR错字吗->码（ext:43616 已有二进制码）
+cn_dicts_cell/shulihua.dict.yaml	蛤异性	ge yi xing	L15308: 码表损坏（各向异性->蛤异性；base:89385 已有各向异性）
+cn_dicts_cell/shulihua.dict.yaml	二氢咪唑重基	er qing mi zuo zhong ji	L2934: 化学目录 OCR 错乱（对比上行 L2933 二氢咪唑基）
+cn_dicts_cell/shulihua.dict.yaml	丙烷聚碳酯酯	bing wan ju tan zhi zhi	L34510: 尾字重复“酯酯”且漏字（聚碳酸酯）
+cn_dicts_cell/shulihua.dict.yaml	对萘酚苯并	dui nai fen ben bing	L26262: 化学名尾部截断残缺（停在苯并）
+cn_dicts_cell/shulihua.dict.yaml	倒数的倒数为	dao shu de dao shu wei	L11446: 释义句截断垃圾（缺结尾“本身”）
+cn_dicts_cell/shulihua.dict.yaml	还制出和	hai zhi chu he	L27937: 科普正文抓取+字母剥离垃圾碎片
+cn_dicts_cell/shulihua.dict.yaml	近代原子论使	jin dai yuan zi lun shi	L28884: 科普正文抓取截断碎片
+cn_dicts_cell/shulihua.dict.yaml	炼丹术已	lian dan shu yi	L29284: 科普正文抓取截断碎片
+cn_dicts_cell/shulihua.dict.yaml	希腊也	xi la ye	L32608: 科普正文抓取截断碎片
+cn_dicts_cell/shulihua.dict.yaml	保形连通廖	bao xing lian tong liao	L11872: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	闭线性廖	bi xian xing liao	L12051: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	边界廖	bian jie liao	L12110: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	超代数廖	chao dai shu liao	L12690: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	初始廖	chu shi liao	L12915: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	次射影廖	ci she ying liao	L13013: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	殆复廖	dai fu liao	L13112: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	仿射连通廖	fang she lian tong liao	L14547: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	非分歧廖	fei fen qi liao	L14617: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	芬斯莱廖	fen si lai liao	L14930: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	覆盖廖	fu gai liao	L15013: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	复解析廖	fu jie xi liao	L15065: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	极小子廖	ji xiao zi liao	L16346: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	解析廖	jie xi liao	L16764: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	局部欧几里得廖	ju bu ou ji li de liao	L16947: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	可平行廖	ke ping xing liao	L17391: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	类空廖	lei kong liao	L17669: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	类微分廖	lei wei fen liao	L17674: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	黎曼廖	li man liao	L17718: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	黎曼子廖	li man zi liao	L17728: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	廖分类	liao fen lei	L17962: 数学词库编码损坏（流形分类->廖分类）
+cn_dicts_cell/shulihua.dict.yaml	拟复廖	ni fu liao	L18547: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	庞加莱廖	pang jia lai liao	L18800: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	配边廖	pei bian liao	L18838: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	全形凸廖	quan xing tu liao	L19521: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	弱殆复廖	ruo dai fu liao	L19667: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	四次廖	si ci liao	L20488: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	拓扑廖	tuo pu liao	L21167: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	伪复廖	wei fu liao	L21498: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	稳定廖	wen ding liao	L21628: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	无边廖	wu bian liao	L21658: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	无限覆盖廖	wu xian fu gai liao	L21791: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	线性廖	xian xing liao	L21976: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	叶状廖	ye zhuang liao	L22638: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	组合廖	zu he liao	L24439: 数学词库编码损坏（流形->廖）
+cn_dicts_cell/shulihua.dict.yaml	次低函数	ci di han shu	L12988: 数学词库编码损坏（调和/谐函数->低函数）
+cn_dicts_cell/shulihua.dict.yaml	低函数	di han shu	L13586: 数学词库编码损坏（调和/谐函数->低函数）
+cn_dicts_cell/shulihua.dict.yaml	多重低方程	duo chong di fang cheng	L14049: 数学词库编码损坏（调和/谐方程->低方程）
+cn_dicts_cell/shulihua.dict.yaml	多重低函数	duo chong di han shu	L14050: 数学词库编码损坏（对比 L14071 多重调和函数）
+cn_dicts_cell/shulihua.dict.yaml	强多重次低函数	qiang duo chong ci di han shu	L19240: 数学词库编码损坏（调和/谐函数->低函数）
+cn_dicts_cell/shulihua.dict.yaml	球面低函数	qiu mian di han shu	L19358: 数学词库编码损坏（球面调和/球谐函数->低函数）
+cn_dicts_cell/shulihua.dict.yaml	扇低函数	shan di han shu	L19856: 数学词库编码损坏（扇调和/扇谐函数->低函数）
+cn_dicts_cell/shulihua.dict.yaml	上低函数	shang di han shu	L19882: 数学词库编码损坏（对比 L19929 上调和函数）
+cn_dicts_cell/shulihua.dict.yaml	双低方程	shuang di fang cheng	L20350: 数学词库编码损坏（对比 L20422 双调和方程）
+cn_dicts_cell/shulihua.dict.yaml	双低函数	shuang di han shu	L20351: 数学词库编码损坏（对比 L20423 双调和函数）
+cn_dicts_cell/shulihua.dict.yaml	双轴球面低函数	shuang zhou qiu mian di han shu	L20464: 数学词库编码损坏（调和/谐函数->低函数）
+cn_dicts_cell/shulihua.dict.yaml	椭球低函数	tuo qiu di han shu	L21196: 数学词库编码损坏（对比 L21200 椭球调和函数）
+cn_dicts_cell/shulihua.dict.yaml	伪低函数	wei di han shu	L21451: 数学词库编码损坏（调和/谐函数->低函数）
+cn_dicts_cell/shulihua.dict.yaml	亚低函数	ya di han shu	L22503: 数学词库编码损坏（对比 L22541 亚调和函数）
+cn_dicts_cell/shulihua.dict.yaml	不可约特贞	bu ke yue te zhen	L12454: 数学词库编码损坏（特征标->特贞）
+cn_dicts_cell/shulihua.dict.yaml	乘法特贞	cheng fa te zhen	L12791: 数学词库编码损坏（特征标->特贞）
+cn_dicts_cell/shulihua.dict.yaml	单位特贞	dan wei te zhen	L13330: 数学词库编码损坏（特征标->特贞）
+cn_dicts_cell/shulihua.dict.yaml	黑克特贞	hei ke te zhen	L15785: 数学词库编码损坏（特征标->特贞）
+cn_dicts_cell/shulihua.dict.yaml	简单特贞	jian dan te zhen	L16486: 数学词库编码损坏（特征标->特贞）
+cn_dicts_cell/shulihua.dict.yaml	特战程	te zhan cheng	L20764: 数学词库编码损坏（特征方程->特战程）
+cn_dicts_cell/shulihua.dict.yaml	特战向	te zhan xiang	L20771: 数学词库编码损坏（特征向量->特战向）
+cn_dicts_cell/shulihua.dict.yaml	特贞群	te zhen qun	L20782: 数学词库编码损坏（特征标群->特贞群）
+cn_dicts_cell/shulihua.dict.yaml	北午角规则	bei wu jiao gui ze	L11919: OCR错乱（西北角规则->北午角规则）
+cn_dicts_cell/shulihua.dict.yaml	助率方向	zhu lv fang xiang	L24136: OCR错乱（曲率方向->助率方向）
+cn_dicts_cell/shulihua.dict.yaml	维行向量	wei xing xiang liang	L21583: 字母剥离残片（n维行向量）且行误读 xing
+cn_dicts_cell/shulihua.dict.yaml	维列向量	wei lie xiang liang	L21515: 字母剥离残片（n维列向量）
+cn_dicts_cell/shulihua.dict.yaml	维胞腔	wei bao qiang	L21433: 字母剥离残片（n维胞腔）
+cn_dicts_cell/shulihua.dict.yaml	维骨架	wei gu jia	L21500: 字母剥离残片（n维骨架）
+cn_dicts_cell/shulihua.dict.yaml	维球体	wei qiu ti	L21535: 字母剥离残片（n维球体）
+cn_dicts_cell/shulihua.dict.yaml	进代数	jin dai shu	L16802: 字母剥离残片（p进代数）
+cn_dicts_cell/shulihua.dict.yaml	进赋值	jin fu zhi	L16806: 字母剥离残片（p进赋值）
+cn_dicts_cell/shulihua.dict.yaml	进上同调	jin shang tong diao	L16821: 字母剥离残片（p进上同调）
+cn_dicts_cell/shulihua.dict.yaml	进数	jin shu	L16827: 字母剥离残片（p进数）
+cn_dicts_cell/shulihua.dict.yaml	进拓扑	jin tuo pu	L16853: 字母剥离残片（p进拓扑）
+cn_dicts_cell/shulihua.dict.yaml	元调和方程	yuan tiao he fang cheng	L23329: 字母剥离残片（n元调和方程）
