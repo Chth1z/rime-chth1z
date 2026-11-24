@@ -2024,8 +2024,16 @@ def run_pipeline(
         st = file_stats[rel]
         is_corrections = rel == "cn_dicts/corrections.dict.yaml"
         is_luna = rel == "cn_dicts_cell/luna.dict.yaml"
+        is_others = rel == "cn_dicts/others.dict.yaml"
+        in_diezi_block = False
         final_body = []
         for l in body:
+            if is_others:
+                ls = l.strip()
+                if ls.startswith("##### 叠字"):
+                    in_diezi_block = True
+                elif ls.startswith("##### "):
+                    in_diezi_block = False
             p = parse_entry(l)
             if not p:
                 final_body.append(l)
@@ -2038,8 +2046,9 @@ def run_pipeline(
             if not is_corrections and not is_luna:
                 global_seen.add(k)
                 is_pinned = (rel, w, py) in pinned_exact or (rel, w) in pinned_wild
+                is_diezi_zero = is_others and in_diezi_block and w.startswith(("两个", "三个", "四个"))
                 bw = best_weight.get(k, 0)
-                if not is_pinned and bw > w_int(wt):
+                if not is_pinned and not is_diezi_zero and bw > w_int(wt):
                     l = format_entry(w, py, str(bw), extra)
                     st["dedup_weight_promoted"] += 1
             final_body.append(l)
