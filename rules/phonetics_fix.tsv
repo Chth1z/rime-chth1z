@@ -2506,10 +2506,13 @@ cn_dicts_cell/chess.dict.yaml	将军抽车	jiang jun chou che	jiang jun chou ju	
 cn_dicts_cell/chess.dict.yaml	车马冷着	che ma leng zhao	ju ma leng zhao	中国象棋「车」规范读jū(与base.dict对齐)	现汉第7版
 cn_dicts_cell/chess.dict.yaml	巡河车	xun he che	xun he ju	中国象棋「车」规范读jū(与base.dict对齐)	现汉第7版
 cn_dicts_cell/chess2.dict.yaml	双车错	shuang che cuo	shuang ju cuo	中国象棋「车」规范读jū(与base.dict对齐)	现汉第7版
-cn_dicts/ext.dict.yaml	全须全尾	quan xu quan yi	quan xu quan wei	全须全尾规范读 quán xū quán wěi（与 idiom 统一）	现汉第7版(L1)
 cn_dicts/ext.dict.yaml	舌苔薄白	she tai bao bai	she tai bo bai	中医舌象薄白规范读 bó bái（与 medication 统一）	现汉第7版/全国科技名词委
-cn_dicts/ext.dict.yaml	康柏西普	kang bo xi pu	kang bai xi pu	眼科药 Conbercept 规范读 kāng bǎi xī pǔ（与 medication 统一）	中国药典/INN译名
-cn_dicts/ext.dict.yaml	剥皮抽筋	bo pi chou jin	bao pi chou jin	具体动作剥皮规范读 bāo pí（与 idiom 及全库统一）	现汉第7版(L1)
+cn_dicts_cell/composite.dict.yaml	舌苔薄白	she tai bao bai	she tai bo bai	中医舌象薄白规范读 bó bái（同步清理上游重复错音，与 ext 去重）	现汉第7版/全国科技名词委
+cn_dicts_cell/medication.dict.yaml	康柏西普	kang bai xi pu	kang bo xi pu	眼科药 Conbercept 核准说明书拼音 Kangboxipu 规范读 kāng bó xī pǔ（与 ext 去重）	NMPA药品说明书(S20130012)
+cn_dicts_cell/idiom.dict.yaml	剥皮抽筋	bao pi chou jin	bo pi chou jin	成语书面剥规范读 bō pí chōu jīn（与 ext 去重，口语音迁入 corrections）	现汉第7版/汉语成语大词典(L1)
+cn_dicts_cell/game.dict.yaml	龙爪手	long zhua shou	long zhao shou	书面/武侠龙爪规范读 lóng zhǎo shǒu（与 composite 去重，口语音迁入 corrections）	现汉第7版(L1)
+cn_dicts_cell/medication.dict.yaml	龙爪树	long zhua shu	long zhao shu	植物名龙爪树规范读 lóng zhǎo shù（同龙爪槐，与 composite 去重）	现汉第7版(L1)
+cn_dicts_cell/game.dict.yaml	黄裳元吉	huang shang yuan ji	huang chang yuan ji	古籍周易黄裳规范读 huáng cháng（同步清理上游重复错音，与 literature 去重）	周易/现汉第7版
 cn_dicts_cell/game.dict.yaml	朝阳峰巅	zhao yang feng dian	chao yang feng dian	地名朝阳峰规范读 cháo yáng fēng（与 ext 朝阳峰统一）	现汉第7版/地名规范
 cn_dicts_cell/literature.dict.yaml	饧香更	tang xiang geng	xing xiang geng	汉字饧规范统读 xíng（古诗文无 tang 音）	现汉第7版(L1)
 cn_dicts_cell/idiom.dict.yaml	涎脸饧眼	xian lian tang yan	xian lian xing yan	成语涎脸饧眼规范读 xián liǎn xíng yǎn	现汉第7版(L1)

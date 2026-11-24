@@ -2846,20 +2846,16 @@ cn_dicts_cell/idiom.dict.yaml	恶之欲其	e zhi yu qi	上游古籍重复残留�
 cn_dicts_cell/idiom.dict.yaml	血石坠子	xie shi zhui zi	游戏装备名混入成语且误注 xie（game 已有 xue shi zhui zi）
 cn_dicts_cell/idiom.dict.yaml	走到哪儿于到哪儿	*	W5错字残句（OCR 讹误于字）
 cn_dicts_cell/idiom.dict.yaml	安土重还	*	W5成语错字（正词安土重迁已在 base）
-cn_dicts_cell/idiom.dict.yaml	曾经沧桑	*	W5成语错字杂糅（正词曾经沧海已在 base）
 cn_dicts_cell/idiom.dict.yaml	耳提在命	*	W5成语错字（正词耳提面命已在 base）
 cn_dicts_cell/idiom.dict.yaml	廖若晨星	*	W5成语错字（正词寥若晨星已在 base）
-cn_dicts_cell/idiom.dict.yaml	蓬荜增辉	*	W5成语错字（正词蓬荜生辉已在 base）
 cn_dicts_cell/idiom.dict.yaml	喜结金兰	*	W5成语错字（正词义结金兰已在 base）
 cn_dicts_cell/idiom.dict.yaml	余能可贾	*	W5成语错字（正词余勇可贾已在 base）
 cn_dicts_cell/idiom.dict.yaml	越俎代疱	*	W5成语错字（正词越俎代庖已在 base）
 cn_dicts_cell/industry_product.dict.yaml	脱模剂	tuo mo ji	L1实物模具脱模规范读 mú（base 已有 tuo mu ji）
 cn_dicts_cell/industry_product.dict.yaml	纸浆模塑	zhi jiang mo su	L1实物模具模塑规范读 mú（base 已有 zhi jiang mu su）
 cn_dicts_cell/composite.dict.yaml	如嚼鸡肋	ru jue ji lei	L1成语嚼规范读 jiáo（idiom 已有 ru jiao ji lei）
-cn_dicts_cell/composite.dict.yaml	龙爪手	long zhao shou	统一爪读音为 zhuǎ（game 已有 long zhua shou）
 cn_dicts_cell/composite.dict.yaml	石爪山脉	shi zhao shan mai	统一魔兽地名爪读音为 zhuǎ（game 已有 shi zhua shan mai）
 cn_dicts_cell/composite.dict.yaml	石爪峰	shi zhao feng	统一魔兽地名爪读音为 zhuǎ（game 已有 shi zhua feng）
-cn_dicts_cell/composite.dict.yaml	龙爪树	long zhao shu	统一植物名爪读音为 zhuǎ（medication 已有 long zhua shu）
 cn_dicts_cell/game.dict.yaml	石爪图腾效果	shi zhao tu teng xiao guo	同文件已有规范读音 shi zhua tu teng xiao guo
 cn_dicts_cell/game.dict.yaml	朝阳峰	zhao yang feng	地名朝阳峰规范读 cháo yáng fēng（ext 已有 chao yang feng）
 cn_dicts_cell/game.dict.yaml	农村上网贵进来请准备	*	早期论坛标题党垃圾（同步 idiom 已删规则）
